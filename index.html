@@ -162,12 +162,17 @@ function render(fit) {
     .attr("r", d => d.depth === 0 ? 9 : d.depth === 1 ? 7 : 5)
     .attr("fill", d => d.data.data.status === "done" ? color(d.data.data.domain) : css("--bg"))
     .attr("stroke", d => d.data.data.status === "done" ? color(d.data.data.domain) : css("--planned"));
-  node.append("text").attr("dy", "0.32em").attr("x", d => (d.data._children || d.data.children) ? -12 : 12)
-    .attr("text-anchor", d => (d.data._children || d.data.children) ? "end" : "start")
+  // 펼친 노드는 이름을 점 위에, 끝 노드는 오른쪽에 둔다(선과 겹치지 않게)
+  const open = d => !!d.data.children && d.data.children.length;
+  node.append("text")
+    .attr("dy", d => open(d) ? "-0.9em" : "0.32em")
+    .attr("x", d => open(d) ? 0 : 12)
+    .attr("text-anchor", d => open(d) ? "middle" : "start")
     .text(d => d.data.data.label + (d.data._children ? ` (+${d.data._children.length})` : ""));
   if (fit) {
-    const el = document.getElementById("map");
-    svg.call(zoom.transform, d3.zoomIdentity.translate(80, el.clientHeight / 2).scale(window.innerWidth < 820 ? 0.8 : 1));
+    const box = svg.node().getBoundingClientRect();
+    const height = box.height || (window.innerHeight - 56);
+    svg.call(zoom.transform, d3.zoomIdentity.translate(60, height / 2).scale(window.innerWidth < 820 ? 0.85 : 1));
   }
 }
 
