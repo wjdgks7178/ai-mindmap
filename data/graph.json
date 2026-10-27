@@ -35,9 +35,10 @@
    "label": "바이브코딩",
    "parent": "ai",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 1,
-   "summary": "코드를 직접 짜는 대신 AI에게 말로 설명해 웹앱·도구를 만드는 방식. 웹앱 개발 용어 포함."
+   "summary": "코드를 직접 짜는 대신 AI에게 말로 설명해 웹앱·도구를 만드는 방식. 웹앱 개발 용어 포함.",
+   "done": "2026-10-28"
   },
   {
    "id": "langgraph",
@@ -264,6 +265,76 @@
    "status": "planned",
    "priority": 4,
    "summary": "규칙 기반 화면 자동화와 AI 판단 자동화의 차이.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "webapp-terms",
+   "label": "웹앱 기본 용어",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 2,
+   "summary": "프론트엔드·백엔드·API·DB·배포 등 웹앱을 AI에게 시키기 위한 어휘.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "ai-assisted-coding",
+   "label": "AI 보조 개발",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드를 검토·테스트하며 AI를 도구로 쓰는 전문 개발 방식.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "frontend-backend",
+   "label": "프론트엔드와 백엔드",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "화면 쪽과 서버 쪽의 역할 구분.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "api-basics",
+   "label": "API",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프로그램끼리 요청·응답을 주고받는 약속.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "database-basics",
+   "label": "데이터베이스",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "앱의 데이터를 저장·조회하는 곳.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "deploy-hosting",
+   "label": "배포와 호스팅",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "만든 앱을 인터넷에 올려 남이 쓰게 하는 것.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "vibecoding-safety",
+   "label": "바이브코딩 보안·검토",
+   "parent": "vibecoding",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토 없이 만든 코드의 위험과 점검 방법.",
    "added": "2026-10-28"
   }
  ]
