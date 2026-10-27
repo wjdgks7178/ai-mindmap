@@ -59,9 +59,14 @@
    "label": "AI 아키텍처",
    "parent": "ai",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 1,
-   "summary": "에이전트를 움직이는 뼈대: 루프, 하네스, AI 팩토리."
+   "summary": "에이전트를 움직이는 뼈대: 루프, 하네스, AI 팩토리.",
+   "done": "2026-10-28",
+   "related": [
+    "workflow-vs-agent",
+    "langgraph"
+   ]
   },
   {
    "id": "methodology",
@@ -400,6 +405,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "두 라이브러리의 역할 차이.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "harness-engineering",
+   "label": "하네스 엔지니어링",
+   "parent": "architecture",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 2,
+   "summary": "모델 바깥 환경을 설계해 에이전트를 믿고 맡기는 분야.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "context-engineering",
+   "label": "컨텍스트 엔지니어링",
+   "parent": "architecture",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델에 넣을 정보를 설계·관리하는 기술.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "agents-md",
+   "label": "AGENTS.md와 기록 시스템",
+   "parent": "architecture",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에이전트가 읽는 짧은 목차 문서와 docs 구조.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "agent-verification",
+   "label": "에이전트 검증 루프",
+   "parent": "architecture",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테스트·린트·리뷰 에이전트로 품질을 게이트하는 방식.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "agent-memory",
+   "label": "에이전트 메모리",
+   "parent": "architecture",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "세션을 넘어 기억을 쌓고 정리하는 구조.",
    "added": "2026-10-28"
   }
  ]
