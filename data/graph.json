@@ -45,9 +45,14 @@
    "label": "LangGraph",
    "parent": "ai",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 1,
-   "summary": "LLM 에이전트의 흐름을 노드와 엣지로 이루어진 그래프로 설계하는 프레임워크."
+   "summary": "LLM 에이전트의 흐름을 노드와 엣지로 이루어진 그래프로 설계하는 프레임워크.",
+   "done": "2026-10-28",
+   "related": [
+    "agent-loop",
+    "workflow-vs-agent"
+   ]
   },
   {
    "id": "architecture",
@@ -335,6 +340,66 @@
    "status": "planned",
    "priority": 3,
    "summary": "검토 없이 만든 코드의 위험과 점검 방법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langgraph-state",
+   "label": "State(상태)",
+   "parent": "langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 2,
+   "summary": "그래프 단계 사이에 전달되는 공유 데이터와 갱신 규칙.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langgraph-nodes-edges",
+   "label": "노드와 엣지",
+   "parent": "langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 2,
+   "summary": "작업 단위와 흐름 연결, 조건부 분기.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langgraph-checkpoint",
+   "label": "체크포인트와 영속성",
+   "parent": "langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실행 중간 상태를 저장해 실패 후 재개·되감기.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "human-in-the-loop",
+   "label": "Human-in-the-loop",
+   "parent": "langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에이전트 실행 중 사람이 승인·수정하는 지점.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langgraph-multi-agent",
+   "label": "멀티 에이전트 그래프",
+   "parent": "langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 에이전트를 서브그래프·감독자로 엮는 구성.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langchain-vs-langgraph",
+   "label": "LangChain과 LangGraph",
+   "parent": "langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 라이브러리의 역할 차이.",
    "added": "2026-10-28"
   }
  ]
