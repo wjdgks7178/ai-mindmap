@@ -287,16 +287,6 @@
    "added": "2026-10-28"
   },
   {
-   "id": "webapp-terms",
-   "label": "웹앱 기본 용어",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 2,
-   "summary": "프론트엔드·백엔드·API·DB·배포 등 웹앱을 AI에게 시키기 위한 어휘.",
-   "added": "2026-10-28"
-  },
-  {
    "id": "ai-assisted-coding",
    "label": "AI 보조 개발",
    "parent": "vibecoding",
@@ -414,16 +404,6 @@
    "status": "planned",
    "priority": 4,
    "summary": "두 라이브러리의 역할 차이.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "harness-engineering",
-   "label": "하네스 엔지니어링",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 2,
-   "summary": "모델 바깥 환경을 설계해 에이전트를 믿고 맡기는 분야.",
    "added": "2026-10-28"
   },
   {

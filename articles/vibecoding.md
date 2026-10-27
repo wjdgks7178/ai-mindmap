@@ -43,7 +43,7 @@ flowchart TD
 | 바이브코딩 | 코드 검토 없이 결과 중심 |
 | [AI 보조 개발](#ai-assisted-coding) | 전문가가 검토·테스트하며 AI를 도구로 사용 |
 | 노코드 | 미리 만든 블록을 조립. AI가 코드를 생성하지는 않음 |
-| [웹앱 기본 용어](#webapp-terms) | 바이브코딩을 잘 시키려면 필요한 어휘 |
+| [웹앱 기본 용어](#web-app-basics) | 바이브코딩을 잘 시키려면 필요한 어휘 |
 
 ## 더 읽을거리
 - [Simon Willison — Vibe coding](https://simonwillison.net/2025/Mar/19/vibe-coding/) — 정의와 AI 보조 개발과의 구분
