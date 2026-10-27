@@ -73,9 +73,14 @@
    "label": "방법론",
    "parent": "ai",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 1,
-   "summary": "AI와 일하고 배우는 방법: SDD, TDD, 소크라테스 논증법, 재귀적 공백 채우기, 파인만 기법."
+   "summary": "AI와 일하고 배우는 방법: SDD, TDD, 소크라테스 논증법, 재귀적 공백 채우기, 파인만 기법.",
+   "done": "2026-10-28",
+   "related": [
+    "literacy",
+    "agent-verification"
+   ]
   },
   {
    "id": "multimodal",
@@ -455,6 +460,16 @@
    "status": "planned",
    "priority": 4,
    "summary": "세션을 넘어 기억을 쌓고 정리하는 구조.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "spec-kit",
+   "label": "GitHub Spec Kit",
+   "parent": "methodology",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Specify-Plan-Tasks-Implement를 돕는 SDD 오픈소스 툴킷.",
    "added": "2026-10-28"
   }
  ]
