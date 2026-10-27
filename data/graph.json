@@ -87,9 +87,13 @@
    "label": "멀티모달",
    "parent": "ai",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 1,
-   "summary": "글뿐 아니라 이미지·음성·영상을 함께 이해하고 만드는 AI."
+   "summary": "글뿐 아니라 이미지·음성·영상을 함께 이해하고 만드는 AI.",
+   "done": "2026-10-28",
+   "related": [
+    "vibecoding"
+   ]
   },
   {
    "id": "web-app-basics",
@@ -470,6 +474,66 @@
    "status": "planned",
    "priority": 4,
    "summary": "Specify-Plan-Tasks-Implement를 돕는 SDD 오픈소스 툴킷.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "vision-models",
+   "label": "비전 모델",
+   "parent": "multimodal",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 2,
+   "summary": "이미지를 이해하는 모델(캡셔닝, 시각 질의응답, OCR).",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "image-generation",
+   "label": "이미지 생성",
+   "parent": "multimodal",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "글에서 그림을 만드는 확산 모델 등.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "speech-asr-tts",
+   "label": "음성 인식과 합성",
+   "parent": "multimodal",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "음성→글(ASR, Whisper)과 글→음성(TTS).",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "video-ai",
+   "label": "영상 이해와 생성",
+   "parent": "multimodal",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상을 요약하거나 새로 만드는 AI.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "embedding-clip",
+   "label": "임베딩과 CLIP",
+   "parent": "multimodal",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서로 다른 데이터를 같은 의미 공간에 놓는 방법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "fusion-architectures",
+   "label": "융합 아키텍처",
+   "parent": "multimodal",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "초기·중간 융합과 공동 임베딩의 구조 차이.",
    "added": "2026-10-28"
   }
  ]
