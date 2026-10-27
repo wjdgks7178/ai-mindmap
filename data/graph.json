@@ -109,9 +109,14 @@
    "label": "에이전트 루프",
    "parent": "architecture",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "생각→도구 사용→결과 확인을 목표에 닿을 때까지 반복하는 구조."
+   "summary": "생각→도구 사용→결과 확인을 목표에 닿을 때까지 반복하는 구조.",
+   "done": "2026-10-28",
+   "related": [
+    "langgraph",
+    "workflow-vs-agent"
+   ]
   },
   {
    "id": "harness",
@@ -514,6 +519,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "초기·중간 융합과 공동 임베딩의 구조 차이.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "tool-use",
+   "label": "도구 사용(Tool use)",
+   "parent": "agent-loop",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 2,
+   "summary": "LLM이 함수·API를 호출해 바깥 세상에 영향을 주는 방식.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "agent-computer-interface",
+   "label": "에이전트-컴퓨터 인터페이스",
+   "parent": "agent-loop",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 쓰기 쉬운 도구 설명·형식을 설계하는 일.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "stop-conditions",
+   "label": "종료 조건과 가드레일",
+   "parent": "agent-loop",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 한도·체크포인트로 에이전트를 통제.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "react-pattern",
+   "label": "ReAct 패턴",
+   "parent": "agent-loop",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론(Reason)과 행동(Act)을 번갈아 하는 프롬프트 패턴.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "sandboxing",
+   "label": "샌드박스",
+   "parent": "agent-loop",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에이전트 실행을 격리된 환경에 가두는 안전장치.",
    "added": "2026-10-28"
   }
  ]
