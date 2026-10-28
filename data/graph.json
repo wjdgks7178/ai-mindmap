@@ -100,9 +100,13 @@
    "label": "웹앱 개발 기초 용어",
    "parent": "vibecoding",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "프론트엔드, 백엔드, API, DB, 배포 등 바이브코딩에 꼭 필요한 단어들."
+   "summary": "프론트엔드, 백엔드, API, DB, 배포 등 바이브코딩에 꼭 필요한 단어들.",
+   "done": "2026-10-28",
+   "related": [
+    "api-basics"
+   ]
   },
   {
    "id": "agent-loop",
@@ -569,6 +573,56 @@
    "status": "planned",
    "priority": 3,
    "summary": "에이전트 실행을 격리된 환경에 가두는 안전장치.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "http-basics",
+   "label": "HTTP 요청과 상태 코드",
+   "parent": "web-app-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "GET·POST와 200·404 같은 코드로 읽는 브라우저-서버 대화.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "json-format",
+   "label": "JSON",
+   "parent": "web-app-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "API가 데이터를 주고받는 가장 흔한 텍스트 형식.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "web-frameworks",
+   "label": "웹 프레임워크 (React·Next.js)",
+   "parent": "web-app-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "화면과 서버 코드를 정해진 틀로 빠르게 만들게 해 주는 도구.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "git-github",
+   "label": "Git과 GitHub",
+   "parent": "web-app-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "코드 변경 이력을 저장·되돌리고 공유하는 도구. AI 코딩의 안전망.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "env-secrets",
+   "label": "환경 변수와 API 키",
+   "parent": "web-app-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비밀번호·키를 코드 밖에 두는 법. 유출 사고를 막는 기본기.",
    "added": "2026-10-28"
   }
  ]
