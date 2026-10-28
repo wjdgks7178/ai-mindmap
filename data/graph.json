@@ -207,9 +207,14 @@
    "label": "파인만 기법",
    "parent": "methodology",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "어린아이에게 설명하듯 쉽게 풀어 보며 진짜 이해했는지 확인하는 학습법."
+   "summary": "어린아이에게 설명하듯 쉽게 풀어 보며 진짜 이해했는지 확인하는 학습법.",
+   "done": "2026-10-28",
+   "related": [
+    "prompt-engineering",
+    "hallucination"
+   ]
   },
   {
    "id": "hallucination",
@@ -903,6 +908,56 @@
    "related": [
     "prompt-engineering"
    ]
+  },
+  {
+   "id": "explain-to-ai-student",
+   "label": "AI를 학생으로 두고 가르치기",
+   "parent": "feynman-technique",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AI에게 순진한 학생 역할을 시켜 내 설명의 빈틈을 찾는 프롬프트 방식.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "curse-of-knowledge",
+   "label": "지식의 저주",
+   "parent": "feynman-technique",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "아는 사람이 모르는 사람의 눈높이를 잊어 설명이 어려워지는 현상.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "illusion-of-explanatory-depth",
+   "label": "설명 깊이의 착각",
+   "parent": "feynman-technique",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "읽기만 하고 안다고 착각하다 설명하려 하면 무너지는 현상.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "active-recall",
+   "label": "능동적 인출",
+   "parent": "feynman-technique",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "자료를 다시 읽지 않고 기억에서 꺼내 보는 학습법. 파인만 기법의 심리학적 근거.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "spaced-repetition",
+   "label": "간격 반복",
+   "parent": "feynman-technique",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "복습 간격을 점점 늘려 장기 기억으로 만드는 학습법.",
+   "added": "2026-10-28"
   }
  ]
 }
