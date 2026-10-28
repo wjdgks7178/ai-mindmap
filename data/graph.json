@@ -127,9 +127,15 @@
    "label": "하네스",
    "parent": "architecture",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "모델을 감싸 도구·기억·권한·검증을 붙여 실제로 일하게 만드는 틀."
+   "summary": "모델을 감싸 도구·기억·권한·검증을 붙여 실제로 일하게 만드는 틀.",
+   "done": "2026-10-28",
+   "related": [
+    "agent-loop",
+    "context-engineering",
+    "langgraph"
+   ]
   },
   {
    "id": "ai-factory",
@@ -623,6 +629,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "비밀번호·키를 코드 밖에 두는 법. 유출 사고를 막는 기본기.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "harness-components",
+   "label": "하네스 구성 요소",
+   "parent": "harness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "컨텍스트·도구·권한·검증·청소의 6가지 부품.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "initializer-coding-agent",
+   "label": "초기화·코딩 에이전트 패턴",
+   "parent": "harness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "첫 세션이 환경을 세팅하고 이후 세션이 기능 하나씩 만드는 장기 작업 패턴.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "progress-files",
+   "label": "진행 로그와 기능 목록",
+   "parent": "harness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "세션 사이 기억을 파일과 git으로 넘기는 법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "mechanical-constraints",
+   "label": "기계적 제약 (린터·구조 테스트)",
+   "parent": "harness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "규칙을 말이 아니라 코드로 강제하는 하네스 기법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "harness-decay",
+   "label": "하네스 부품의 유통기한",
+   "parent": "harness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 좋아지면 불필요해지는 스캐폴딩을 덜어내는 관점.",
    "added": "2026-10-28"
   }
  ]
