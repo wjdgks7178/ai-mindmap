@@ -184,9 +184,14 @@
    "label": "소크라테스 논증법",
    "parent": "methodology",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "답을 주지 않고 질문을 이어 가며 생각의 빈틈을 스스로 찾게 하는 방법."
+   "summary": "답을 주지 않고 질문을 이어 가며 생각의 빈틈을 스스로 찾게 하는 방법.",
+   "done": "2026-10-28",
+   "related": [
+    "hallucination",
+    "prompt-engineering"
+   ]
   },
   {
    "id": "recursive-gap-filling",
@@ -845,6 +850,59 @@
    "priority": 4,
    "summary": "토큰을 생산하는 데이터센터라는 같은 이름 다른 개념.",
    "added": "2026-10-28"
+  },
+  {
+   "id": "elenchus",
+   "label": "엘렝코스(반박 검증)",
+   "parent": "socratic-method",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "소크라테스식 대화의 핵심 절차: 주장→전제 모으기→모순 드러내기→수정.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aporia",
+   "label": "아포리아",
+   "parent": "socratic-method",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "정답 없이 \"모르겠다\"에서 끝나는 상태. 배움의 출발점으로 본다.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "socratic-seminar",
+   "label": "소크라테스 세미나",
+   "parent": "socratic-method",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "교사는 진행만, 학생이 본문을 놓고 열린 질문으로 토론하는 수업 형식.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "socratic-questioning-types",
+   "label": "소크라테스식 질문 유형",
+   "parent": "socratic-method",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "명료화·근거·가정·반례·결과 질문 등 질문을 고르는 틀.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "ai-socratic-tutor",
+   "label": "AI 소크라테스 튜터 프롬프트",
+   "parent": "socratic-method",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AI에게 답 대신 질문을 시켜 내 이해를 검증하는 프롬프트 설계.",
+   "added": "2026-10-28",
+   "related": [
+    "prompt-engineering"
+   ]
   }
  ]
 }
