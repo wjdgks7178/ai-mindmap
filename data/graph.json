@@ -142,9 +142,14 @@
    "label": "AI 팩토리",
    "parent": "architecture",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "여러 에이전트가 공장 라인처럼 역할을 나눠 결과물을 계속 만들어 내는 구조."
+   "summary": "여러 에이전트가 공장 라인처럼 역할을 나눠 결과물을 계속 만들어 내는 구조.",
+   "done": "2026-10-28",
+   "related": [
+    "harness",
+    "orchestrator-workers"
+   ]
   },
   {
    "id": "sdd",
@@ -779,6 +784,66 @@
    "status": "planned",
    "priority": 4,
    "summary": "역할별로 컨텍스트를 분리한 보조 에이전트.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "factory-roles",
+   "label": "팩토리의 에이전트 역할",
+   "parent": "ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Triage·구현·검증·릴리스·문서·감시로 나누는 이유.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "human-gates",
+   "label": "사람 관문 설계",
+   "parent": "ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어디서 사람이 승인해야 하는가: 지침·설계·장애.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "verification-bottleneck",
+   "label": "검증 병목",
+   "parent": "ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "코드 생성은 빨라졌는데 리뷰·검증이 느려지는 문제.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "dark-factory",
+   "label": "다크 팩토리 (무인 공장)",
+   "parent": "ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람이 코드를 쓰지도 리뷰하지도 않는 극단적 모델과 위험.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "drift-detection",
+   "label": "드리프트 감지 루프",
+   "parent": "ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "코드와 문서가 어긋나는 것을 자동 발견하는 루프.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "nvidia-ai-factory",
+   "label": "NVIDIA의 AI factory",
+   "parent": "ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰을 생산하는 데이터센터라는 같은 이름 다른 개념.",
    "added": "2026-10-28"
   }
  ]
