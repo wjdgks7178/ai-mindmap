@@ -241,10 +241,16 @@
    "label": "프롬프트 엔지니어링",
    "parent": "literacy",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
    "summary": "AI에게 원하는 결과를 얻도록 지시문을 설계하는 기술.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-10-28",
+   "related": [
+    "harness",
+    "sdd",
+    "agent-loop"
+   ]
   },
   {
    "id": "ai-fluency-4d",
@@ -1067,6 +1073,76 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델이 학습한 시점 이후를 모르는 한계와 웹 검색 보완.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "few-shot-prompting",
+   "label": "예시 프롬프트(few-shot)",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "잘된 예시 몇 개를 보여 줘 형식·톤을 맞추는 기법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "xml-tag-prompting",
+   "label": "XML 태그로 프롬프트 구조화",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지시·자료·예시를 태그로 구분해 혼동을 줄이는 기법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "role-prompting",
+   "label": "역할 부여 프롬프트",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "\"너는 ○○ 전문가야\"로 관점과 어조를 정하는 기법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "prompt-chaining",
+   "label": "프롬프트 연쇄",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 일을 여러 프롬프트 단계로 쪼개 앞 결과를 다음에 넘기는 기법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "chain-of-thought",
+   "label": "생각의 사슬·사고 모드",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단계별로 추론하게 해 정확도를 높이는 방식과 thinking 기능.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "context-engineering",
+   "label": "컨텍스트 엔지니어링",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트를 넘어 모델이 보는 정보 전체를 설계하는 접근.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "prompt-evaluation",
+   "label": "프롬프트 평가",
+   "parent": "prompt-engineering",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "성공 기준과 테스트 세트로 프롬프트 개선을 측정하는 방법.",
    "added": "2026-10-28"
   }
  ]
