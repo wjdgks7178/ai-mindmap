@@ -1106,16 +1106,6 @@
    "added": "2026-10-28"
   },
   {
-   "id": "prompt-chaining",
-   "label": "프롬프트 연쇄",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "큰 일을 여러 프롬프트 단계로 쪼개 앞 결과를 다음에 넘기는 기법.",
-   "added": "2026-10-28"
-  },
-  {
    "id": "chain-of-thought",
    "label": "생각의 사슬·사고 모드",
    "parent": "prompt-engineering",
@@ -1123,16 +1113,6 @@
    "status": "planned",
    "priority": 4,
    "summary": "단계별로 추론하게 해 정확도를 높이는 방식과 thinking 기능.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "context-engineering",
-   "label": "컨텍스트 엔지니어링",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "프롬프트를 넘어 모델이 보는 정보 전체를 설계하는 접근.",
    "added": "2026-10-28"
   },
   {
