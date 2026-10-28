@@ -413,10 +413,15 @@
    "label": "State(상태)",
    "parent": "langgraph",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
    "summary": "그래프 단계 사이에 전달되는 공유 데이터와 갱신 규칙.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-10-28",
+   "related": [
+    "agent-loop",
+    "context-pollution"
+   ]
   },
   {
    "id": "langgraph-nodes-edges",
@@ -1169,6 +1174,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "LLM 한 번 호출로 충분한지 먼저 보고 복잡도를 올리는 원칙.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langgraph-reducer",
+   "label": "리듀서(reducer)",
+   "parent": "langgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키마다 업데이트를 덮어쓸지 누적할지 정하는 합치기 규칙.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "messages-state",
+   "label": "MessagesState와 add_messages",
+   "parent": "langgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대화 기록용 프리빌트 상태. 메시지 ID로 교체·추가.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "langgraph-multiple-schemas",
+   "label": "입력·출력·내부 스키마",
+   "parent": "langgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "호출자가 보는 키와 내부 작업용 키를 분리하는 설계.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "typeddict-vs-pydantic",
+   "label": "TypedDict vs Pydantic",
+   "parent": "langgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "상태 스키마 선택: 속도 vs 재귀적 검증.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "state-vs-memory",
+   "label": "상태와 장기 메모리",
+   "parent": "langgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 실행 안의 상태와 대화·세션을 넘는 메모리(store)의 차이.",
    "added": "2026-10-28"
   }
  ]
