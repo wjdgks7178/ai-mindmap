@@ -226,10 +226,15 @@
    "label": "환각",
    "parent": "literacy",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
    "summary": "AI가 사실이 아닌 내용을 그럴듯하게 지어내는 현상.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-10-28",
+   "related": [
+    "agent-verification",
+    "tdd"
+   ]
   },
   {
    "id": "prompt-engineering",
@@ -1012,6 +1017,56 @@
    "status": "planned",
    "priority": 5,
    "summary": "AI에게 선행 개념을 묻고 순서 있는 학습 계획을 만들게 하는 프롬프트.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "rag",
+   "label": "RAG(검색 증강 생성)",
+   "parent": "hallucination",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "근거 문서를 검색해 붙여 환각을 줄이는 구조.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "citation-verification",
+   "label": "출처 검증 습관",
+   "parent": "hallucination",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 준 인용·링크를 직접 열어 확인하는 방법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "sycophancy",
+   "label": "아첨(sycophancy)",
+   "parent": "hallucination",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용자 의견에 맞춰 사실을 굽히는 AI 경향. 환각과 짝으로 헷갈린다.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "calibration",
+   "label": "확신도 보정",
+   "parent": "hallucination",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 말하는 확신과 실제 정답률이 맞는 정도.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "knowledge-cutoff",
+   "label": "지식 기준일",
+   "parent": "hallucination",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 학습한 시점 이후를 모르는 한계와 웹 검색 보완.",
    "added": "2026-10-28"
   }
  ]
