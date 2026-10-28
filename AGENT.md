@@ -5,18 +5,25 @@
 
 ## 데이터
 - `data/graph.json` `nodes[]`: `{"id","label","parent","domain","status":"planned|done","priority":1-9,"summary","aka":[],"related":[],"added":"YYYY-MM-DD","done":"YYYY-MM-DD"}`
-  - `id`: kebab-case 영문, 파일명과 같다. `domain`: root | literacy | automation | vibecoding | langgraph | architecture | methodology | multimodal (부모의 domain을 물려받는다).
+  - `id`: kebab-case 영문, 파일명과 같다. `domain`: 그 노드가 속한 **큰 가지(depth 1) 노드의 id**(루트는 `root`, 큰 가지 자신은 자기 id). 하위 노드는 부모의 domain을 물려받는다. 큰 가지 목록은 고정이 아니다(아래 "큰 가지 넓히기").
   - `priority`: 작을수록 먼저. 큰 가지(depth 1) = 1, 사용자가 이름을 댄 노드 = 2, 그 밖 = 3~9.
   - `related`: 다른 가지에 있는 관련 노드 id(가로 연결). 같은 부모의 형제는 넣지 않는다.
 - `articles/<id>.md`: 노드 글. `status: done`인 노드만 글이 있다.
 - `changelog/YYYY-MM-DD.md`: 그날 새로 정리한 노드와 새로 뻗은 가지 목록(밤 책 루틴이 읽어 책에 기사로 싣는다).
 
 ## 한 번 실행할 때
-1. `python scripts/check.py next 5` → 다음에 정리할 planned 노드(우선순위·얕은 깊이 순).
+1. `python scripts/check.py stats`로 큰 가지를 점검("큰 가지 넓히기")한 뒤 `python scripts/check.py next 5` → 다음에 정리할 planned 노드(우선순위·얕은 깊이 순).
 2. 노드 하나씩 끝까지: 조사 → 글 쓰기 → graph.json 갱신(`status: done`, `done` 날짜) → **새 가지 3~8개를 planned로 추가**(글에 나온 핵심 용어·하위 개념·자주 헷갈리는 짝) → `python scripts/check.py` 통과 → 커밋·push.
    - **노드 하나 끝날 때마다 커밋·push**한다. 사용량 한도에 닿아 중간에 끊겨도 끝낸 것은 남는다.
 3. 그날 `changelog/YYYY-MM-DD.md`에 `- [done] <label> (<id>)`, `- [new] <label> (<id>) ← <parent label>` 줄을 덧붙인다(노드마다 같이 커밋).
 4. 한도·시간까지 반복. 너무 넓게만 퍼지지 않게, 한 가지를 2~3단계 깊이까지 판 뒤 다른 가지로 간다(우선순위로 조절).
+
+## 큰 가지 넓히기 (항상 열어 둔다)
+처음 7개(리터러시·자동화·바이브코딩·LangGraph·아키텍처·방법론·멀티모달)는 사용자가 **예시로 든 출발점**일 뿐 정답이 아니다. 사용자는 AI 전체 지형을 모르므로, 빠진 큰 분야를 찾아 넓히는 것도 이 루틴의 일이다.
+- 실행마다 처음에 `python scripts/check.py stats`로 큰 가지 목록을 보고, "AI 입문자가 전체 지형을 이해하려면 꼭 있어야 하는데 빠진 분야"가 있는지 따져 본다. 판단 근거: 공신력 있는 AI 입문 커리큘럼·로드맵(대학 강의, Anthropic·Google·Microsoft 등의 학습 과정, AI 리터러시 프레임워크), 그날 정리하다 기존 큰 가지 어디에도 자연스럽게 안 들어가는 개념.
+- 빠진 분야가 있으면 루트(`ai`) 바로 아래에 새 큰 가지를 planned, `priority: 1`, `domain: <자기 id>`로 추가한다. 하루 최대 2개, 기존 큰 가지와 겹치면 만들지 않는다. changelog에 `- [new] <label> (<id>) ← AI`로 남긴다.
+- 새 큰 가지가 생기면 기존 planned 노드 중 그쪽이 더 맞는 것은 옮겨도 된다(`parent`와 하위 전체의 `domain`을 함께 바꾸고 check 통과). done 노드는 옮기지 않고 `related`로 잇는다.
+- 사이트는 큰 가지 이름·색을 graph.json에서 자동으로 만든다. index.html은 고치지 않아도 된다.
 
 ## 글 형식 (`articles/<id>.md`)
 ```

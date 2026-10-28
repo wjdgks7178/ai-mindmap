@@ -3,7 +3,7 @@
 usage:
   python scripts/check.py            # graph.json·articles 일관성 검사. 문제 있으면 종료 코드 1
   python scripts/check.py next [n]   # 다음에 정리할 planned 노드 n개(우선순위 → 얕은 깊이 → 추가 순)
-  python scripts/check.py stats      # 가지별 노드 수(전체/정리)
+  python scripts/check.py stats      # 큰 가지별 노드 수(전체/정리)
 """
 import json
 import re
@@ -12,7 +12,6 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parent.parent
-DOMAINS = {"root", "literacy", "automation", "vibecoding", "langgraph", "architecture", "methodology", "multimodal"}
 
 
 def load():
@@ -24,6 +23,15 @@ def depth(byid, n):
     while n.get("parent"):
         n, d = byid[n["parent"]], d + 1
     return d
+
+
+def domain_of(byid, n):
+    """노드가 속한 큰 가지(depth 1 조상)의 id. 루트는 'root'."""
+    if not n.get("parent"):
+        return "root"
+    while byid[n["parent"]].get("parent"):
+        n = byid[n["parent"]]
+    return n["id"]
 
 
 def check(g):
@@ -42,8 +50,8 @@ def check(g):
             errs.append(f"id 형식: {i}")
         if n.get("parent") and n["parent"] not in byid:
             errs.append(f"부모 없음: {i} → {n['parent']}")
-        if n.get("domain") not in DOMAINS:
-            errs.append(f"domain 값: {i} = {n.get('domain')}")
+        if n.get("parent") in byid and n.get("domain") != domain_of(byid, n):
+            errs.append(f"domain 값: {i} = {n.get('domain')} (큰 가지 id {domain_of(byid, n)}여야 함)")
         if n.get("status") not in ("planned", "done"):
             errs.append(f"status 값: {i}")
         art = ROOT / "articles" / f"{i}.md"
@@ -78,9 +86,11 @@ def main():
             print(f"{n['id']}\t{n['label']}\t부모={n.get('parent')}\tp={n.get('priority', 5)}\t{n.get('summary', '')}")
         print(f"planned {len(todo)}개 남음")
     elif cmd == "stats":
-        for d in sorted(DOMAINS):
-            ns = [n for n in g["nodes"] if n.get("domain") == d]
-            print(f"{d}\t{len(ns)}\tdone {sum(n.get('status') == 'done' for n in ns)}")
+        tops = [n for n in g["nodes"] if n.get("parent") and not byid[n["parent"]].get("parent")]
+        for t in tops:
+            ns = [n for n in g["nodes"] if n.get("domain") == t["id"]]
+            print(f"{t['id']}\t{t['label']}\t{len(ns)}\tdone {sum(n.get('status') == 'done' for n in ns)}")
+        print(f"큰 가지 {len(tops)}개")
     else:
         errs = check(g)
         print("\n".join(errs) if errs else f"OK · 노드 {len(g['nodes'])}개")
