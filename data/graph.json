@@ -287,10 +287,16 @@
    "label": "워크플로 vs 에이전트",
    "parent": "automation",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
    "summary": "미리 정한 경로로 도는 것과 AI가 스스로 경로를 정하는 것의 차이.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-10-28",
+   "related": [
+    "agent-loop",
+    "langgraph",
+    "harness"
+   ]
   },
   {
    "id": "prompt-chaining",
@@ -1123,6 +1129,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "성공 기준과 테스트 세트로 프롬프트 개선을 측정하는 방법.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "parallelization-pattern",
+   "label": "병렬화 패턴",
+   "parent": "workflow-vs-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "독립 작업을 동시에 돌리거나 같은 일을 여러 번 돌려 비교하는 워크플로.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "guardrails",
+   "label": "가드레일",
+   "parent": "workflow-vs-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트가 넘지 말아야 할 선을 입력·출력·권한으로 막는 장치.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "agent-cost-latency",
+   "label": "에이전트 비용·지연 트레이드오프",
+   "parent": "workflow-vs-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트가 성능을 얻는 대신 치르는 토큰·시간 비용.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "simplest-solution-first",
+   "label": "가장 단순한 해법부터",
+   "parent": "workflow-vs-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "LLM 한 번 호출로 충분한지 먼저 보고 복잡도를 올리는 원칙.",
    "added": "2026-10-28"
   }
  ]
