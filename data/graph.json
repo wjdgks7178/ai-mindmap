@@ -165,9 +165,14 @@
    "label": "TDD (테스트 주도 개발)",
    "parent": "methodology",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "테스트를 먼저 쓰고 그 테스트를 통과하도록 코드를 만드는 방식."
+   "summary": "테스트를 먼저 쓰고 그 테스트를 통과하도록 코드를 만드는 방식.",
+   "done": "2026-10-28",
+   "related": [
+    "agent-verification",
+    "sdd"
+   ]
   },
   {
    "id": "socratic-method",
@@ -724,6 +729,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "계획을 AI가 한 번에 끝낼 작은 작업으로 쪼개는 기술.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "red-green-refactor",
+   "label": "Red-Green-Refactor",
+   "parent": "tdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "TDD의 3박자 반복 사이클.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "context-pollution",
+   "label": "컨텍스트 오염",
+   "parent": "tdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구현 정보가 테스트 설계로 새어 테스트가 무력해지는 현상과 서브에이전트 분리.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "test-types",
+   "label": "단위·통합·E2E 테스트",
+   "parent": "tdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "테스트의 층과 AI가 쓰기 좋은 테스트 고르기.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "test-tampering",
+   "label": "테스트 조작 방지",
+   "parent": "tdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 통과하려고 테스트를 고치지 못하게 하는 규칙.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "subagents",
+   "label": "서브에이전트",
+   "parent": "tdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "역할별로 컨텍스트를 분리한 보조 에이전트.",
    "added": "2026-10-28"
   }
  ]
