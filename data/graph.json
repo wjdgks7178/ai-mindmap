@@ -588,10 +588,15 @@
       "label": "도구 사용(Tool use)",
       "parent": "agent-loop",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "LLM이 함수·API를 호출해 바깥 세상에 영향을 주는 방식.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-29",
+      "related": [
+        "rag",
+        "workflow-vs-agent"
+      ]
     },
     {
       "id": "agent-computer-interface",
@@ -1508,6 +1513,66 @@
       ],
       "added": "2026-10-29",
       "status": "planned"
+    },
+    {
+      "id": "mcp",
+      "label": "MCP(Model Context Protocol)",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도구·데이터를 AI 앱에 표준 방식으로 연결하는 개방형 프로토콜.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "function-calling-schema",
+      "label": "도구 스키마 설계",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "JSON Schema로 도구 이름·설명·인자를 정의하고 좋은 설명을 쓰는 법.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "tool-choice-strict",
+      "label": "tool_choice와 strict",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도구 호출을 강제·금지하고 인자를 스키마에 맞추는 옵션.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "parallel-tool-use",
+      "label": "병렬 도구 호출",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 번의 응답에서 여러 도구를 동시에 호출하는 방식.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "server-vs-client-tools",
+      "label": "서버 도구 vs 클라이언트 도구",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "누가 코드를 실행하느냐에 따른 도구 분류와 보안 차이.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "tool-search",
+      "label": "도구 검색(Tool search)",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도구가 수천 개일 때 필요한 것만 찾아 불러와 토큰을 아끼는 기법.",
+      "added": "2026-10-29"
     }
   ]
 }
