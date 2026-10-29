@@ -428,10 +428,15 @@
       "label": "노드와 엣지",
       "parent": "langgraph",
       "domain": "langgraph",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "작업 단위와 흐름 연결, 조건부 분기.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-29",
+      "related": [
+        "agent-loop",
+        "workflow-vs-agent"
+      ]
     },
     {
       "id": "langgraph-checkpoint",
@@ -1572,6 +1577,56 @@
       "status": "planned",
       "priority": 3,
       "summary": "도구가 수천 개일 때 필요한 것만 찾아 불러와 토큰을 아끼는 기법.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-conditional-edges",
+      "label": "조건부 엣지와 라우팅 함수",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "상태를 보고 다음 노드를 고르는 add_conditional_edges.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-command",
+      "label": "Command(goto·update)",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "노드 안에서 상태 변경과 이동을 한 번에 하는 반환값.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-send-map-reduce",
+      "label": "Send와 map-reduce",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "실행 때 개수가 정해지는 작업을 병렬로 나눠 보내고 모으는 패턴.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-super-step",
+      "label": "Super-step과 병렬 실행",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 단계에서 여러 노드가 동시에 실행되는 실행 단위.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-compile",
+      "label": "compile과 그래프 검증",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "그래프를 실행 가능한 형태로 만들고 구조를 점검하는 단계.",
       "added": "2026-10-29"
     }
   ]
