@@ -1231,15 +1231,18 @@
       "label": "머신러닝·딥러닝 기초",
       "parent": "ai",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 1,
       "summary": "AI·머신러닝·딥러닝의 관계와 \"데이터로 규칙을 배운다\"는 기본 원리.",
       "aka": [
         "ML",
         "Deep Learning"
       ],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "llm-basics"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
     },
     {
       "id": "llm-basics",
