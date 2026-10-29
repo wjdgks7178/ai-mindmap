@@ -1246,7 +1246,7 @@
       "label": "LLM과 생성형 AI",
       "parent": "ai",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 1,
       "summary": "ChatGPT·Claude 같은 대규모 언어 모델이 어떻게 만들어지고 답을 내는지.",
       "aka": [
@@ -1255,9 +1255,12 @@
       ],
       "related": [
         "prompt-engineering",
-        "hallucination"
+        "hallucination",
+        "multimodal",
+        "rag"
       ],
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "done": "2026-10-29"
     },
     {
       "id": "ai-ml-dl-relation",
