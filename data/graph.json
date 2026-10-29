@@ -265,10 +265,10 @@
     {
       "id": "ai-bias-ethics",
       "label": "편향과 AI 윤리",
-      "parent": "literacy",
-      "domain": "literacy",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
       "status": "planned",
-      "priority": 3,
+      "priority": 2,
       "summary": "학습 데이터에서 온 편향과 공정성·투명성 문제.",
       "added": "2026-10-28"
     },
@@ -566,8 +566,8 @@
     {
       "id": "embedding-clip",
       "label": "임베딩과 CLIP",
-      "parent": "multimodal",
-      "domain": "multimodal",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
       "status": "planned",
       "priority": 4,
       "summary": "서로 다른 데이터를 같은 의미 공간에 놓는 방법.",
@@ -1039,12 +1039,15 @@
     {
       "id": "rag",
       "label": "RAG(검색 증강 생성)",
-      "parent": "hallucination",
-      "domain": "literacy",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
       "status": "planned",
-      "priority": 4,
+      "priority": 2,
       "summary": "근거 문서를 검색해 붙여 환각을 줄이는 구조.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "related": [
+        "hallucination"
+      ]
     },
     {
       "id": "citation-verification",
@@ -1478,6 +1481,33 @@
       "aka": [],
       "related": [],
       "added": "2026-10-29"
+    },
+    {
+      "id": "ai-safety",
+      "label": "AI 안전·윤리·거버넌스",
+      "parent": "ai",
+      "domain": "ai-safety",
+      "priority": 1,
+      "summary": "AI의 위험(오작동·편향·오남용)을 줄이고 책임 있게 쓰기 위한 원칙·기법·규제.",
+      "related": [
+        "hallucination",
+        "vibecoding-safety"
+      ],
+      "added": "2026-10-29",
+      "status": "planned"
+    },
+    {
+      "id": "knowledge-retrieval",
+      "label": "검색·지식 연결(RAG·임베딩·메모리)",
+      "parent": "ai",
+      "domain": "knowledge-retrieval",
+      "priority": 1,
+      "summary": "모델이 모르는 최신·사내 정보를 찾아 붙이는 기술 묶음: 임베딩, 벡터 검색, RAG, 메모리.",
+      "related": [
+        "context-window"
+      ],
+      "added": "2026-10-29",
+      "status": "planned"
     }
   ]
 }
