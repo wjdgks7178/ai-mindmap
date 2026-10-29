@@ -1346,12 +1346,16 @@
       "label": "트랜스포머와 어텐션",
       "parent": "llm-basics",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "LLM의 뼈대 구조와 문맥을 가중해 읽는 방법.",
       "aka": [],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "embedding-clip",
+        "fusion-architectures"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
     },
     {
       "id": "llm-training-stages",
@@ -1435,6 +1439,42 @@
       "status": "planned",
       "priority": 5,
       "summary": "같은 내용도 언어에 따라 토큰 수가 달라지는 이유.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "self-attention-qkv",
+      "label": "셀프 어텐션 Q·K·V",
+      "parent": "transformer-attention",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "질의·키·값으로 단어 간 관련도를 계산하는 방식.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "positional-encoding",
+      "label": "위치 인코딩",
+      "parent": "transformer-attention",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "어순 정보를 입력에 더하는 방법.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "encoder-decoder-types",
+      "label": "인코더·디코더 모델 종류",
+      "parent": "transformer-attention",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "BERT·GPT·T5 계열의 쓰임 차이.",
       "aka": [],
       "related": [],
       "added": "2026-10-29"
