@@ -1330,12 +1330,16 @@
       "label": "토큰과 토큰화",
       "parent": "llm-basics",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "LLM이 글자를 처리하는 단위와 비용·길이 한도의 기준.",
       "aka": [],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "context-engineering",
+        "embedding-clip"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
     },
     {
       "id": "transformer-attention",
@@ -1405,6 +1409,32 @@
       "status": "planned",
       "priority": 4,
       "summary": "모델을 받아 쓰는 방식의 차이.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "bpe-subword",
+      "label": "BPE·서브워드 토크나이저",
+      "parent": "token-tokenization",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "자주 나오는 글자쌍을 합쳐 어휘를 만드는 방식.",
+      "aka": [
+        "BPE"
+      ],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "token-cost-language",
+      "label": "언어별 토큰 비용",
+      "parent": "token-tokenization",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "같은 내용도 언어에 따라 토큰 수가 달라지는 이유.",
       "aka": [],
       "related": [],
       "added": "2026-10-29"
