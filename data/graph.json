@@ -1504,10 +1504,12 @@
    "summary": "AI의 위험(오작동·편향·오남용)을 줄이고 책임 있게 쓰기 위한 원칙·기법·규제.",
    "related": [
     "hallucination",
-    "vibecoding-safety"
+    "vibecoding-safety",
+    "human-in-the-loop"
    ],
    "added": "2026-10-29",
-   "status": "planned"
+   "status": "done",
+   "done": "2026-10-30"
   },
   {
    "id": "knowledge-retrieval",
@@ -1733,6 +1735,106 @@
    "status": "planned",
    "priority": 5,
    "summary": "문서 속 개체·관계를 그래프로 만들어 연결된 질문에 답하는 RAG 변형.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "red-teaming",
+   "label": "레드팀",
+   "parent": "ai-safety",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부러 공격해 모델의 약점을 찾는 안전 점검.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "constitutional-ai",
+   "label": "Constitutional AI",
+   "parent": "ai-safety",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원칙 목록으로 모델이 스스로 비판·수정하는 학습법.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "prompt-injection",
+   "label": "프롬프트 인젝션",
+   "parent": "ai-safety",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 텍스트에 숨은 지시로 모델을 속이는 공격.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "eu-ai-act",
+   "label": "EU AI Act",
+   "parent": "ai-safety",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험 등급별로 의무를 정한 EU 법.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "nist-ai-rmf",
+   "label": "NIST AI RMF",
+   "parent": "ai-safety",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Govern·Map·Measure·Manage 위험관리 틀.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "ai-alignment",
+   "label": "정렬(Alignment)",
+   "parent": "ai-safety",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 목표를 사람의 의도·가치와 맞추는 문제.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "ai-evaluation",
+   "label": "AI 평가·벤치마크",
+   "parent": "ai",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 1,
+   "summary": "모델·에이전트·프롬프트가 얼마나 잘 하는지 재는 방법: 벤치마크, 평가셋, LLM 심사.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "benchmarks",
+   "label": "벤치마크",
+   "parent": "ai-evaluation",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 2,
+   "summary": "MMLU·SWE-bench 같은 표준 시험과 그 한계.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "llm-as-judge",
+   "label": "LLM 심사위원",
+   "parent": "ai-evaluation",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 2,
+   "summary": "LLM으로 답의 품질을 채점하는 방법.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "eval-set",
+   "label": "평가셋 만들기",
+   "parent": "ai-evaluation",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 2,
+   "summary": "내 업무용 테스트 질문·정답 모음 설계.",
    "added": "2026-10-30"
   }
  ]
