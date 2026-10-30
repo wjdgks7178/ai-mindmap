@@ -1517,10 +1517,13 @@
    "priority": 1,
    "summary": "모델이 모르는 최신·사내 정보를 찾아 붙이는 기술 묶음: 임베딩, 벡터 검색, RAG, 메모리.",
    "related": [
-    "context-window"
+    "agent-memory",
+    "context-window",
+    "tool-use"
    ],
    "added": "2026-10-29",
-   "status": "planned"
+   "status": "done",
+   "done": "2026-10-30"
   },
   {
    "id": "mcp",
@@ -1700,6 +1703,36 @@
    "status": "planned",
    "priority": 5,
    "summary": "검색 품질(recall)과 답변 충실도를 따로 재는 방법.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "semantic-vs-keyword-search",
+   "label": "의미 검색 vs 키워드 검색",
+   "parent": "knowledge-retrieval",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뜻이 비슷한 글을 찾는 방식과 같은 단어를 찾는 방식의 차이와 선택 기준.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "long-context-vs-rag",
+   "label": "긴 컨텍스트 vs RAG",
+   "parent": "knowledge-retrieval",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서를 통째로 넣을지 검색해 일부만 넣을지 정하는 기준과 비용.",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "graph-rag",
+   "label": "GraphRAG",
+   "parent": "knowledge-retrieval",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "문서 속 개체·관계를 그래프로 만들어 연결된 질문에 답하는 RAG 변형.",
    "added": "2026-10-30"
   }
  ]
