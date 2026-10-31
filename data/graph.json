@@ -445,10 +445,16 @@
       "label": "바이브코딩 보안·검토",
       "parent": "vibecoding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "검토 없이 만든 코드의 위험과 점검 방법.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "secrets-env",
+        "prompt-injection",
+        "privacy-copyright"
+      ]
     },
     {
       "id": "langgraph-state",
@@ -2717,6 +2723,36 @@
       "status": "planned",
       "priority": 4,
       "summary": "호스팅 방식이 갈리는 기준.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "access-control",
+      "label": "인증과 인가",
+      "parent": "vibecoding-safety",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 2,
+      "summary": "로그인과 권한 검사를 구분하기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "input-validation",
+      "label": "입력 검증과 인젝션",
+      "parent": "vibecoding-safety",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SQL 인젝션·XSS 막는 기본.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "dependency-risk",
+      "label": "패키지 의존성 위험",
+      "parent": "vibecoding-safety",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "낯선 패키지·가짜 패키지 이름 점검.",
       "added": "2026-10-31"
     }
   ]
