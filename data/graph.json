@@ -1894,10 +1894,14 @@
       "label": "AI 인프라·배포",
       "parent": "ai",
       "domain": "ai-infra",
-      "status": "planned",
+      "status": "done",
       "priority": 1,
       "summary": "GPU·추론 서버·로컬 실행·API 호출 등 모델을 실제로 돌리는 기반.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31",
+      "related": [
+        "mcp"
+      ]
     },
     {
       "id": "gpu-basics",
@@ -2634,6 +2638,16 @@
       "status": "planned",
       "priority": 4,
       "summary": "사람이 중간 결과를 고쳐서 이어 가기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "model-hosting-options",
+      "label": "모델 호스팅 선택지",
+      "parent": "ai-infra",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "API·클라우드 GPU·로컬·엣지 비교.",
       "added": "2026-10-31"
     }
   ]
