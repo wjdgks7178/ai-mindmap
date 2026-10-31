@@ -267,10 +267,11 @@
       "label": "편향과 AI 윤리",
       "parent": "ai-safety",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "학습 데이터에서 온 편향과 공정성·투명성 문제.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31"
     },
     {
       "id": "privacy-copyright",
@@ -533,10 +534,14 @@
       "label": "비전 모델",
       "parent": "multimodal",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "이미지를 이해하는 모델(캡셔닝, 시각 질의응답, OCR).",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "image-generation"
+      ]
     },
     {
       "id": "image-generation",
@@ -1286,12 +1291,13 @@
       "label": "AI·ML·DL의 관계",
       "parent": "ml-fundamentals",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "인공지능 ⊃ 머신러닝 ⊃ 딥러닝 포함 관계.",
       "aka": [],
       "related": [],
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "done": "2026-10-31"
     },
     {
       "id": "supervised-unsupervised",
@@ -1862,8 +1868,8 @@
       "added": "2026-10-31"
     },
     {
-      "id": "inference-vs-training",
-      "label": "추론 vs 학습",
+      "id": "training-inference-cost",
+      "label": "학습 vs 추론 비용·장비",
       "parent": "ai-infra",
       "domain": "ai-infra",
       "status": "planned",
@@ -1983,6 +1989,89 @@
       "related": [
         "harness"
       ]
+    },
+    {
+      "id": "rule-based-ai",
+      "label": "규칙 기반 AI와 전문가 시스템",
+      "parent": "ai-ml-dl-relation",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "데이터가 아닌 사람이 쓴 규칙으로 판단하는 고전 AI.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "foundation-model",
+      "label": "파운데이션 모델",
+      "parent": "ai-ml-dl-relation",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 번 크게 학습해 여러 용도로 쓰는 범용 모델.",
+      "added": "2026-10-31",
+      "related": [
+        "open-vs-closed-models"
+      ]
+    },
+    {
+      "id": "generative-ai",
+      "label": "생성형 AI",
+      "parent": "ai-ml-dl-relation",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "글·그림·음성을 새로 만들어 내는 모델 계열.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "fairness-metrics",
+      "label": "공정성 지표",
+      "parent": "ai-bias-ethics",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "집단 간 성능 차이를 재는 방법(동등 기회 등).",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "explainability",
+      "label": "설명 가능성",
+      "parent": "ai-bias-ethics",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델의 판단 이유를 사람이 이해하게 하는 기법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "data-provenance",
+      "label": "데이터 출처와 저작권",
+      "parent": "ai-bias-ethics",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "학습 데이터의 출처·동의·저작권 쟁점.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "vlm-architecture",
+      "label": "VLM 구조: 인코더·프로젝터",
+      "parent": "vision-models",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "이미지 패치가 LLM 입력이 되는 과정.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "ocr-doc-ai",
+      "label": "OCR과 문서 이해",
+      "parent": "vision-models",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "글자 인식과 표·문서 이해를 VLM으로 하는 방법.",
+      "added": "2026-10-31"
     }
   ]
 }
