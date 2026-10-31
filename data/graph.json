@@ -557,10 +557,15 @@
       "label": "AGENTS.md와 기록 시스템",
       "parent": "architecture",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "에이전트가 읽는 짧은 목차 문서와 docs 구조.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "ai-assisted-coding",
+        "context-engineering"
+      ]
     },
     {
       "id": "agent-verification",
@@ -2799,6 +2804,26 @@
       "status": "planned",
       "priority": 4,
       "summary": "도구 정의가 컨텍스트를 먹는 문제.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "docs-as-system-of-record",
+      "label": "문서를 기록 시스템으로",
+      "parent": "agents-md",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "repo 안 docs를 에이전트의 단일 진실 원천으로.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "claude-md",
+      "label": "CLAUDE.md 쓰는 법",
+      "parent": "agents-md",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Claude Code 지침 파일 구성과 길이 관리.",
       "added": "2026-10-31"
     }
   ]
