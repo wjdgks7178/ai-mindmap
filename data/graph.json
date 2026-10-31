@@ -382,10 +382,14 @@
       "label": "프론트엔드와 백엔드",
       "parent": "vibecoding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "화면 쪽과 서버 쪽의 역할 구분.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "api-basics"
+      ]
     },
     {
       "id": "api-basics",
@@ -2401,6 +2405,46 @@
       "status": "planned",
       "priority": 3,
       "summary": "테스트·린터 결과를 평가자로 쓰기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "http-basics",
+      "label": "HTTP 요청과 상태 코드",
+      "parent": "frontend-backend",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "메서드·헤더·상태 코드 읽는 법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "database-basics",
+      "label": "데이터베이스 기초",
+      "parent": "frontend-backend",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "앱이 데이터를 저장하는 방식.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "secrets-env",
+      "label": "환경 변수와 비밀 관리",
+      "parent": "frontend-backend",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 2,
+      "summary": "API 키를 코드에 넣지 않는 법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "deployment-basics",
+      "label": "배포 기초",
+      "parent": "frontend-backend",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "만든 앱을 인터넷에 올리는 단계.",
       "added": "2026-10-31"
     }
   ]
