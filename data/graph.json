@@ -541,10 +541,16 @@
       "label": "컨텍스트 엔지니어링",
       "parent": "architecture",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "모델에 넣을 정보를 설계·관리하는 기술.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "agent-memory",
+        "prompt-engineering",
+        "kv-cache"
+      ]
     },
     {
       "id": "agents-md",
@@ -2753,6 +2759,46 @@
       "status": "planned",
       "priority": 3,
       "summary": "낯선 패키지·가짜 패키지 이름 점검.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "context-rot",
+      "label": "컨텍스트 부패",
+      "parent": "context-engineering",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "긴 컨텍스트에서 회상이 떨어지는 현상.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "compaction",
+      "label": "압축(compaction)",
+      "parent": "context-engineering",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "대화를 요약해 새 창에서 이어 가기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "just-in-time-retrieval",
+      "label": "JIT 검색",
+      "parent": "context-engineering",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "참조만 들고 있다가 필요할 때 불러오기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "tool-selection",
+      "label": "도구 노출 최소화",
+      "parent": "context-engineering",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "도구 정의가 컨텍스트를 먹는 문제.",
       "added": "2026-10-31"
     }
   ]
