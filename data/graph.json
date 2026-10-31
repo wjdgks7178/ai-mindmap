@@ -257,10 +257,11 @@
       "label": "AI Fluency 4D",
       "parent": "literacy",
       "domain": "literacy",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "위임·설명·평가·책임 네 가지 역량 프레임워크.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31"
     },
     {
       "id": "ai-bias-ethics",
@@ -304,20 +305,22 @@
       "label": "프롬프트 체이닝",
       "parent": "automation",
       "domain": "automation",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "작업을 단계로 쪼개 앞 출력을 다음 입력으로 넘기는 패턴.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31"
     },
     {
       "id": "routing-pattern",
       "label": "라우팅",
       "parent": "automation",
       "domain": "automation",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "입력을 분류해 알맞은 처리 경로로 보내는 패턴.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31"
     },
     {
       "id": "orchestrator-workers",
@@ -2172,6 +2175,82 @@
       "priority": 4,
       "summary": "로컬·타사 서버가 같은 요청 형식을 쓰는 표준적 관행.",
       "added": "2026-10-31"
+    },
+    {
+      "id": "delegation-skill",
+      "label": "위임 판단하기",
+      "parent": "ai-fluency-4d",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 3,
+      "summary": "어떤 일을 AI에 맡기고 어떤 일은 내가 할지 정하는 기준.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "discernment-skill",
+      "label": "결과 평가 습관",
+      "parent": "ai-fluency-4d",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 3,
+      "summary": "AI 결과를 비판적으로 읽는 체크 방법.",
+      "added": "2026-10-31",
+      "related": [
+        "eval-set"
+      ]
+    },
+    {
+      "id": "diligence-skill",
+      "label": "책임과 공개",
+      "parent": "ai-fluency-4d",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "AI 사용 사실 공개·검수·기밀 보호의 책임.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "gate-check",
+      "label": "게이트 검사",
+      "parent": "prompt-chaining",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "체인 중간에 코드로 하는 통과 검사.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "prompt-chain-example",
+      "label": "체이닝 실습: 보고서 3단계",
+      "parent": "prompt-chaining",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "추출→표→요약을 3단계로 묶는 실습.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "model-routing",
+      "label": "모델 라우팅",
+      "parent": "routing-pattern",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "난이도에 따라 작은·큰 모델로 나눠 비용 줄이기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "classifier-router",
+      "label": "분류기 설계",
+      "parent": "routing-pattern",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "라우터 분류 정확도를 높이는 방법.",
+      "added": "2026-10-31",
+      "related": [
+        "eval-set"
+      ]
     }
   ]
 }
