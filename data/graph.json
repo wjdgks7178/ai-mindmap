@@ -430,10 +430,15 @@
       "label": "배포와 호스팅",
       "parent": "vibecoding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "만든 앱을 인터넷에 올려 남이 쓰게 하는 것.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "secrets-env",
+        "frontend-backend"
+      ]
     },
     {
       "id": "vibecoding-safety",
@@ -2682,6 +2687,36 @@
       "status": "planned",
       "priority": 3,
       "summary": "데이터 잃지 않는 최소 습관.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "ci-cd",
+      "label": "CI/CD",
+      "parent": "deploy-hosting",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "푸시할 때 테스트·배포를 자동으로 돌리기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "domain-dns",
+      "label": "도메인과 DNS",
+      "parent": "deploy-hosting",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "이름이 서버 주소로 연결되는 과정.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "static-vs-server",
+      "label": "정적 사이트 vs 서버 앱",
+      "parent": "deploy-hosting",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "호스팅 방식이 갈리는 기준.",
       "added": "2026-10-31"
     }
   ]
