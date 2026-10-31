@@ -2418,26 +2418,6 @@
       "added": "2026-10-31"
     },
     {
-      "id": "http-basics",
-      "label": "HTTP 요청과 상태 코드",
-      "parent": "frontend-backend",
-      "domain": "vibecoding",
-      "status": "planned",
-      "priority": 3,
-      "summary": "메서드·헤더·상태 코드 읽는 법.",
-      "added": "2026-10-31"
-    },
-    {
-      "id": "database-basics",
-      "label": "데이터베이스 기초",
-      "parent": "frontend-backend",
-      "domain": "vibecoding",
-      "status": "planned",
-      "priority": 3,
-      "summary": "앱이 데이터를 저장하는 방식.",
-      "added": "2026-10-31"
-    },
-    {
       "id": "secrets-env",
       "label": "환경 변수와 비밀 관리",
       "parent": "frontend-backend",
