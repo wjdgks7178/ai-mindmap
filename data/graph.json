@@ -372,10 +372,15 @@
       "label": "AI 보조 개발",
       "parent": "vibecoding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "코드를 검토·테스트하며 AI를 도구로 쓰는 전문 개발 방식.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "agent-verification",
+        "agents-md"
+      ]
     },
     {
       "id": "frontend-backend",
@@ -2480,6 +2485,46 @@
       "status": "planned",
       "priority": 4,
       "summary": "라이브러리로 감싼 호출과 직접 호출 비교.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "code-review-ai",
+      "label": "AI 코드 리뷰 습관",
+      "parent": "ai-assisted-coding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "AI가 쓴 코드에서 사람이 볼 지점.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "test-first-with-ai",
+      "label": "테스트 먼저 시키기",
+      "parent": "ai-assisted-coding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "재현 테스트로 AI의 완료 기준 만들기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "git-basics",
+      "label": "Git 기초",
+      "parent": "ai-assisted-coding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 2,
+      "summary": "되돌릴 수 있게 커밋·브랜치 쓰기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "hooks-guardrails",
+      "label": "훅과 가드레일",
+      "parent": "ai-assisted-coding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "어겨선 안 될 규칙을 자동으로 강제.",
       "added": "2026-10-31"
     }
   ]
