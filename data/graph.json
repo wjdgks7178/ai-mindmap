@@ -347,10 +347,15 @@
       "label": "평가자-최적화 루프",
       "parent": "automation",
       "domain": "automation",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "생성과 평가를 반복해 품질을 올리는 패턴.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "llm-as-judge",
+        "agent-verification"
+      ]
     },
     {
       "id": "rpa-vs-ai-automation",
@@ -2366,6 +2371,36 @@
       "status": "planned",
       "priority": 3,
       "summary": "워커가 오해하지 않게 작업을 명세하기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "stop-condition",
+      "label": "루프 종료 조건",
+      "parent": "evaluator-optimizer",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "통과 점수·최대 횟수·개선폭 기준 설계.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "self-refine",
+      "label": "Self-Refine",
+      "parent": "evaluator-optimizer",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델이 스스로 비평하고 고치는 연구 기법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "deterministic-feedback",
+      "label": "결정적 피드백",
+      "parent": "evaluator-optimizer",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "테스트·린터 결과를 평가자로 쓰기.",
       "added": "2026-10-31"
     }
   ]
