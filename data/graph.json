@@ -491,10 +491,15 @@
       "label": "Human-in-the-loop",
       "parent": "langgraph",
       "domain": "langgraph",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "에이전트 실행 중 사람이 승인·수정하는 지점.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "agent-verification",
+        "delegation-skill"
+      ]
     },
     {
       "id": "langgraph-multi-agent",
@@ -2599,6 +2604,36 @@
       "status": "planned",
       "priority": 4,
       "summary": "스레드 간 장기 메모리.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "approval-policy",
+      "label": "승인 정책 설계",
+      "parent": "human-in-the-loop",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "어떤 행동에 사람 승인을 걸지 위험도로 정하기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "idempotency",
+      "label": "멱등성",
+      "parent": "human-in-the-loop",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "같은 작업을 두 번 해도 결과가 같게 만들기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "edit-state-resume",
+      "label": "상태 수정 후 재개",
+      "parent": "human-in-the-loop",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사람이 중간 결과를 고쳐서 이어 가기.",
       "added": "2026-10-31"
     }
   ]
