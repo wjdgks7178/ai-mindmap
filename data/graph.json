@@ -476,10 +476,15 @@
       "label": "체크포인트와 영속성",
       "parent": "langgraph",
       "domain": "langgraph",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "실행 중간 상태를 저장해 실패 후 재개·되감기.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "agent-memory",
+        "agent-verification"
+      ]
     },
     {
       "id": "human-in-the-loop",
@@ -2564,6 +2569,36 @@
       "status": "planned",
       "priority": 4,
       "summary": "restore·revert·reset 차이.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "time-travel",
+      "label": "타임 트래블",
+      "parent": "langgraph-checkpoint",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "과거 체크포인트로 돌아가 다른 경로 시도.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "checkpointer-backends",
+      "label": "체크포인터 저장소 선택",
+      "parent": "langgraph-checkpoint",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "메모리·SQLite·Postgres 비교.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "langgraph-store",
+      "label": "LangGraph 스토어",
+      "parent": "langgraph-checkpoint",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "스레드 간 장기 메모리.",
       "added": "2026-10-31"
     }
   ]
