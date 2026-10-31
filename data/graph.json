@@ -2497,10 +2497,14 @@
       "label": "Git 기초",
       "parent": "ai-assisted-coding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "되돌릴 수 있게 커밋·브랜치 쓰기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31",
+      "related": [
+        "ai-assisted-coding"
+      ]
     },
     {
       "id": "hooks-guardrails",
@@ -2530,6 +2534,36 @@
       "status": "planned",
       "priority": 4,
       "summary": "로컬 개발용 환경 변수 파일 관리.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "branch-merge",
+      "label": "브랜치와 병합",
+      "parent": "git-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "갈래를 따서 실험하고 합치는 법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "pull-request",
+      "label": "풀 리퀘스트",
+      "parent": "git-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "변경을 리뷰받고 병합하는 협업 단위.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "git-undo",
+      "label": "되돌리기 명령",
+      "parent": "git-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "restore·revert·reset 차이.",
       "added": "2026-10-31"
     }
   ]
