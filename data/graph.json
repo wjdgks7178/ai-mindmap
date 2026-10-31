@@ -396,10 +396,15 @@
       "label": "API",
       "parent": "vibecoding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "프로그램끼리 요청·응답을 주고받는 약속.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "llm-api-basics",
+        "mcp"
+      ]
     },
     {
       "id": "database-basics",
@@ -2445,6 +2450,36 @@
       "status": "planned",
       "priority": 3,
       "summary": "만든 앱을 인터넷에 올리는 단계.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "rest-json",
+      "label": "REST와 JSON",
+      "parent": "api-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "URL로 자원을 다루는 관례와 데이터 형식.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "webhook",
+      "label": "웹훅",
+      "parent": "api-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "이벤트가 생기면 서버가 알려 주는 방식.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "sdk-vs-api",
+      "label": "SDK vs API",
+      "parent": "api-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "라이브러리로 감싼 호출과 직접 호출 비교.",
       "added": "2026-10-31"
     }
   ]
