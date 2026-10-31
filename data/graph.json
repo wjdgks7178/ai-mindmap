@@ -1,1841 +1,1988 @@
 {
- "updated": "2026-10-30",
- "nodes": [
-  {
-   "id": "ai",
-   "label": "AI",
-   "parent": null,
-   "domain": "root",
-   "status": "done",
-   "summary": "사람의 지적 작업을 기계가 하게 만드는 기술 전체. 이 지도의 출발점.",
-   "related": []
-  },
-  {
-   "id": "literacy",
-   "label": "AI 리터러시",
-   "parent": "ai",
-   "domain": "literacy",
-   "status": "done",
-   "priority": 1,
-   "summary": "AI가 무엇을 잘하고 못하는지 알고, 안전하고 똑똑하게 쓰는 능력.",
-   "done": "2026-10-28"
-  },
-  {
-   "id": "automation",
-   "label": "자동화",
-   "parent": "ai",
-   "domain": "automation",
-   "status": "done",
-   "priority": 1,
-   "summary": "반복되는 업무를 AI와 도구로 사람 없이 돌아가게 만드는 것.",
-   "done": "2026-10-28"
-  },
-  {
-   "id": "vibecoding",
-   "label": "바이브코딩",
-   "parent": "ai",
-   "domain": "vibecoding",
-   "status": "done",
-   "priority": 1,
-   "summary": "코드를 직접 짜는 대신 AI에게 말로 설명해 웹앱·도구를 만드는 방식. 웹앱 개발 용어 포함.",
-   "done": "2026-10-28"
-  },
-  {
-   "id": "langgraph",
-   "label": "LangGraph",
-   "parent": "ai",
-   "domain": "langgraph",
-   "status": "done",
-   "priority": 1,
-   "summary": "LLM 에이전트의 흐름을 노드와 엣지로 이루어진 그래프로 설계하는 프레임워크.",
-   "done": "2026-10-28",
-   "related": [
-    "agent-loop",
-    "workflow-vs-agent"
-   ]
-  },
-  {
-   "id": "architecture",
-   "label": "AI 아키텍처",
-   "parent": "ai",
-   "domain": "architecture",
-   "status": "done",
-   "priority": 1,
-   "summary": "에이전트를 움직이는 뼈대: 루프, 하네스, AI 팩토리.",
-   "done": "2026-10-28",
-   "related": [
-    "workflow-vs-agent",
-    "langgraph"
-   ]
-  },
-  {
-   "id": "methodology",
-   "label": "방법론",
-   "parent": "ai",
-   "domain": "methodology",
-   "status": "done",
-   "priority": 1,
-   "summary": "AI와 일하고 배우는 방법: SDD, TDD, 소크라테스 논증법, 재귀적 공백 채우기, 파인만 기법.",
-   "done": "2026-10-28",
-   "related": [
-    "literacy",
-    "agent-verification"
-   ]
-  },
-  {
-   "id": "multimodal",
-   "label": "멀티모달",
-   "parent": "ai",
-   "domain": "multimodal",
-   "status": "done",
-   "priority": 1,
-   "summary": "글뿐 아니라 이미지·음성·영상을 함께 이해하고 만드는 AI.",
-   "done": "2026-10-28",
-   "related": [
-    "vibecoding"
-   ]
-  },
-  {
-   "id": "web-app-basics",
-   "label": "웹앱 개발 기초 용어",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "done",
-   "priority": 2,
-   "summary": "프론트엔드, 백엔드, API, DB, 배포 등 바이브코딩에 꼭 필요한 단어들.",
-   "done": "2026-10-28",
-   "related": [
-    "api-basics"
-   ]
-  },
-  {
-   "id": "agent-loop",
-   "label": "에이전트 루프",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "done",
-   "priority": 2,
-   "summary": "생각→도구 사용→결과 확인을 목표에 닿을 때까지 반복하는 구조.",
-   "done": "2026-10-28",
-   "related": [
-    "langgraph",
-    "workflow-vs-agent"
-   ]
-  },
-  {
-   "id": "harness",
-   "label": "하네스",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "done",
-   "priority": 2,
-   "summary": "모델을 감싸 도구·기억·권한·검증을 붙여 실제로 일하게 만드는 틀.",
-   "done": "2026-10-28",
-   "related": [
-    "agent-loop",
-    "context-engineering",
-    "langgraph"
-   ]
-  },
-  {
-   "id": "ai-factory",
-   "label": "AI 팩토리",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "done",
-   "priority": 2,
-   "summary": "여러 에이전트가 공장 라인처럼 역할을 나눠 결과물을 계속 만들어 내는 구조.",
-   "done": "2026-10-28",
-   "related": [
-    "harness",
-    "orchestrator-workers"
-   ]
-  },
-  {
-   "id": "sdd",
-   "label": "SDD (스펙 주도 개발)",
-   "parent": "methodology",
-   "domain": "methodology",
-   "status": "done",
-   "priority": 2,
-   "summary": "코드보다 먼저 명세(스펙)를 쓰고, AI가 그 스펙대로 만들게 하는 방식.",
-   "done": "2026-10-28",
-   "related": [
-    "vibecoding",
-    "agents-md"
-   ]
-  },
-  {
-   "id": "tdd",
-   "label": "TDD (테스트 주도 개발)",
-   "parent": "methodology",
-   "domain": "methodology",
-   "status": "done",
-   "priority": 2,
-   "summary": "테스트를 먼저 쓰고 그 테스트를 통과하도록 코드를 만드는 방식.",
-   "done": "2026-10-28",
-   "related": [
-    "agent-verification",
-    "sdd"
-   ]
-  },
-  {
-   "id": "socratic-method",
-   "label": "소크라테스 논증법",
-   "parent": "methodology",
-   "domain": "methodology",
-   "status": "done",
-   "priority": 2,
-   "summary": "답을 주지 않고 질문을 이어 가며 생각의 빈틈을 스스로 찾게 하는 방법.",
-   "done": "2026-10-28",
-   "related": [
-    "hallucination",
-    "prompt-engineering"
-   ]
-  },
-  {
-   "id": "recursive-gap-filling",
-   "label": "재귀적 공백 채우기",
-   "parent": "methodology",
-   "domain": "methodology",
-   "status": "done",
-   "priority": 2,
-   "summary": "모르는 부분을 찾아 채우고, 그 안에서 또 모르는 부분을 찾아 반복하는 학습법.",
-   "done": "2026-10-28",
-   "related": [
-    "langgraph",
-    "prompt-engineering"
-   ]
-  },
-  {
-   "id": "feynman-technique",
-   "label": "파인만 기법",
-   "parent": "methodology",
-   "domain": "methodology",
-   "status": "done",
-   "priority": 2,
-   "summary": "어린아이에게 설명하듯 쉽게 풀어 보며 진짜 이해했는지 확인하는 학습법.",
-   "done": "2026-10-28",
-   "related": [
-    "prompt-engineering",
-    "hallucination"
-   ]
-  },
-  {
-   "id": "hallucination",
-   "label": "환각",
-   "parent": "literacy",
-   "domain": "literacy",
-   "status": "done",
-   "priority": 2,
-   "summary": "AI가 사실이 아닌 내용을 그럴듯하게 지어내는 현상.",
-   "added": "2026-10-28",
-   "done": "2026-10-28",
-   "related": [
-    "agent-verification",
-    "tdd"
-   ]
-  },
-  {
-   "id": "prompt-engineering",
-   "label": "프롬프트 엔지니어링",
-   "parent": "literacy",
-   "domain": "literacy",
-   "status": "done",
-   "priority": 2,
-   "summary": "AI에게 원하는 결과를 얻도록 지시문을 설계하는 기술.",
-   "added": "2026-10-28",
-   "done": "2026-10-28",
-   "related": [
-    "harness",
-    "sdd",
-    "agent-loop"
-   ]
-  },
-  {
-   "id": "ai-fluency-4d",
-   "label": "AI Fluency 4D",
-   "parent": "literacy",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 3,
-   "summary": "위임·설명·평가·책임 네 가지 역량 프레임워크.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "ai-bias-ethics",
-   "label": "편향과 AI 윤리",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 2,
-   "summary": "학습 데이터에서 온 편향과 공정성·투명성 문제.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "privacy-copyright",
-   "label": "개인정보와 저작권",
-   "parent": "literacy",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 3,
-   "summary": "AI에 넣어도 되는 정보와 생성물의 권리 문제.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "workflow-vs-agent",
-   "label": "워크플로 vs 에이전트",
-   "parent": "automation",
-   "domain": "automation",
-   "status": "done",
-   "priority": 2,
-   "summary": "미리 정한 경로로 도는 것과 AI가 스스로 경로를 정하는 것의 차이.",
-   "added": "2026-10-28",
-   "done": "2026-10-28",
-   "related": [
-    "agent-loop",
-    "langgraph",
-    "harness"
-   ]
-  },
-  {
-   "id": "prompt-chaining",
-   "label": "프롬프트 체이닝",
-   "parent": "automation",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 3,
-   "summary": "작업을 단계로 쪼개 앞 출력을 다음 입력으로 넘기는 패턴.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "routing-pattern",
-   "label": "라우팅",
-   "parent": "automation",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 3,
-   "summary": "입력을 분류해 알맞은 처리 경로로 보내는 패턴.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "orchestrator-workers",
-   "label": "오케스트레이터-워커",
-   "parent": "automation",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 3,
-   "summary": "중앙 LLM이 작업을 쪼개 워커에게 맡기고 취합하는 패턴.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "evaluator-optimizer",
-   "label": "평가자-최적화 루프",
-   "parent": "automation",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 3,
-   "summary": "생성과 평가를 반복해 품질을 올리는 패턴.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "rpa-vs-ai-automation",
-   "label": "RPA와 AI 자동화",
-   "parent": "automation",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 4,
-   "summary": "규칙 기반 화면 자동화와 AI 판단 자동화의 차이.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "ai-assisted-coding",
-   "label": "AI 보조 개발",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 3,
-   "summary": "코드를 검토·테스트하며 AI를 도구로 쓰는 전문 개발 방식.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "frontend-backend",
-   "label": "프론트엔드와 백엔드",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 3,
-   "summary": "화면 쪽과 서버 쪽의 역할 구분.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "api-basics",
-   "label": "API",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 3,
-   "summary": "프로그램끼리 요청·응답을 주고받는 약속.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "database-basics",
-   "label": "데이터베이스",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 3,
-   "summary": "앱의 데이터를 저장·조회하는 곳.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "deploy-hosting",
-   "label": "배포와 호스팅",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 3,
-   "summary": "만든 앱을 인터넷에 올려 남이 쓰게 하는 것.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "vibecoding-safety",
-   "label": "바이브코딩 보안·검토",
-   "parent": "vibecoding",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 3,
-   "summary": "검토 없이 만든 코드의 위험과 점검 방법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "langgraph-state",
-   "label": "State(상태)",
-   "parent": "langgraph",
-   "domain": "langgraph",
-   "status": "done",
-   "priority": 2,
-   "summary": "그래프 단계 사이에 전달되는 공유 데이터와 갱신 규칙.",
-   "added": "2026-10-28",
-   "done": "2026-10-28",
-   "related": [
-    "agent-loop",
-    "context-pollution"
-   ]
-  },
-  {
-   "id": "langgraph-nodes-edges",
-   "label": "노드와 엣지",
-   "parent": "langgraph",
-   "domain": "langgraph",
-   "status": "done",
-   "priority": 2,
-   "summary": "작업 단위와 흐름 연결, 조건부 분기.",
-   "added": "2026-10-28",
-   "done": "2026-10-29",
-   "related": [
-    "agent-loop",
-    "workflow-vs-agent"
-   ]
-  },
-  {
-   "id": "langgraph-checkpoint",
-   "label": "체크포인트와 영속성",
-   "parent": "langgraph",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "실행 중간 상태를 저장해 실패 후 재개·되감기.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "human-in-the-loop",
-   "label": "Human-in-the-loop",
-   "parent": "langgraph",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "에이전트 실행 중 사람이 승인·수정하는 지점.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "langgraph-multi-agent",
-   "label": "멀티 에이전트 그래프",
-   "parent": "langgraph",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "여러 에이전트를 서브그래프·감독자로 엮는 구성.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "langchain-vs-langgraph",
-   "label": "LangChain과 LangGraph",
-   "parent": "langgraph",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "두 라이브러리의 역할 차이.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "context-engineering",
-   "label": "컨텍스트 엔지니어링",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "모델에 넣을 정보를 설계·관리하는 기술.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "agents-md",
-   "label": "AGENTS.md와 기록 시스템",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "에이전트가 읽는 짧은 목차 문서와 docs 구조.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "agent-verification",
-   "label": "에이전트 검증 루프",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "테스트·린트·리뷰 에이전트로 품질을 게이트하는 방식.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "agent-memory",
-   "label": "에이전트 메모리",
-   "parent": "architecture",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "세션을 넘어 기억을 쌓고 정리하는 구조.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "spec-kit",
-   "label": "GitHub Spec Kit",
-   "parent": "methodology",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "Specify-Plan-Tasks-Implement를 돕는 SDD 오픈소스 툴킷.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "vision-models",
-   "label": "비전 모델",
-   "parent": "multimodal",
-   "domain": "multimodal",
-   "status": "planned",
-   "priority": 2,
-   "summary": "이미지를 이해하는 모델(캡셔닝, 시각 질의응답, OCR).",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "image-generation",
-   "label": "이미지 생성",
-   "parent": "multimodal",
-   "domain": "multimodal",
-   "status": "planned",
-   "priority": 3,
-   "summary": "글에서 그림을 만드는 확산 모델 등.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "speech-asr-tts",
-   "label": "음성 인식과 합성",
-   "parent": "multimodal",
-   "domain": "multimodal",
-   "status": "planned",
-   "priority": 3,
-   "summary": "음성→글(ASR, Whisper)과 글→음성(TTS).",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "video-ai",
-   "label": "영상 이해와 생성",
-   "parent": "multimodal",
-   "domain": "multimodal",
-   "status": "planned",
-   "priority": 3,
-   "summary": "영상을 요약하거나 새로 만드는 AI.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "embedding-clip",
-   "label": "임베딩과 CLIP",
-   "parent": "knowledge-retrieval",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 4,
-   "summary": "서로 다른 데이터를 같은 의미 공간에 놓는 방법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "fusion-architectures",
-   "label": "융합 아키텍처",
-   "parent": "multimodal",
-   "domain": "multimodal",
-   "status": "planned",
-   "priority": 4,
-   "summary": "초기·중간 융합과 공동 임베딩의 구조 차이.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "tool-use",
-   "label": "도구 사용(Tool use)",
-   "parent": "agent-loop",
-   "domain": "architecture",
-   "status": "done",
-   "priority": 2,
-   "summary": "LLM이 함수·API를 호출해 바깥 세상에 영향을 주는 방식.",
-   "added": "2026-10-28",
-   "done": "2026-10-29",
-   "related": [
-    "rag",
-    "workflow-vs-agent"
-   ]
-  },
-  {
-   "id": "agent-computer-interface",
-   "label": "에이전트-컴퓨터 인터페이스",
-   "parent": "agent-loop",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "모델이 쓰기 쉬운 도구 설명·형식을 설계하는 일.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "stop-conditions",
-   "label": "종료 조건과 가드레일",
-   "parent": "agent-loop",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "반복 한도·체크포인트로 에이전트를 통제.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "react-pattern",
-   "label": "ReAct 패턴",
-   "parent": "agent-loop",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "추론(Reason)과 행동(Act)을 번갈아 하는 프롬프트 패턴.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "sandboxing",
-   "label": "샌드박스",
-   "parent": "agent-loop",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "에이전트 실행을 격리된 환경에 가두는 안전장치.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "http-basics",
-   "label": "HTTP 요청과 상태 코드",
-   "parent": "web-app-basics",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 4,
-   "summary": "GET·POST와 200·404 같은 코드로 읽는 브라우저-서버 대화.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "json-format",
-   "label": "JSON",
-   "parent": "web-app-basics",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 4,
-   "summary": "API가 데이터를 주고받는 가장 흔한 텍스트 형식.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "web-frameworks",
-   "label": "웹 프레임워크 (React·Next.js)",
-   "parent": "web-app-basics",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 4,
-   "summary": "화면과 서버 코드를 정해진 틀로 빠르게 만들게 해 주는 도구.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "git-github",
-   "label": "Git과 GitHub",
-   "parent": "web-app-basics",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 4,
-   "summary": "코드 변경 이력을 저장·되돌리고 공유하는 도구. AI 코딩의 안전망.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "env-secrets",
-   "label": "환경 변수와 API 키",
-   "parent": "web-app-basics",
-   "domain": "vibecoding",
-   "status": "planned",
-   "priority": 4,
-   "summary": "비밀번호·키를 코드 밖에 두는 법. 유출 사고를 막는 기본기.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "harness-components",
-   "label": "하네스 구성 요소",
-   "parent": "harness",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "컨텍스트·도구·권한·검증·청소의 6가지 부품.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "initializer-coding-agent",
-   "label": "초기화·코딩 에이전트 패턴",
-   "parent": "harness",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "첫 세션이 환경을 세팅하고 이후 세션이 기능 하나씩 만드는 장기 작업 패턴.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "progress-files",
-   "label": "진행 로그와 기능 목록",
-   "parent": "harness",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "세션 사이 기억을 파일과 git으로 넘기는 법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "mechanical-constraints",
-   "label": "기계적 제약 (린터·구조 테스트)",
-   "parent": "harness",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "규칙을 말이 아니라 코드로 강제하는 하네스 기법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "harness-decay",
-   "label": "하네스 부품의 유통기한",
-   "parent": "harness",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "모델이 좋아지면 불필요해지는 스캐폴딩을 덜어내는 관점.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "sdd-constitution",
-   "label": "프로젝트 헌법 (constitution)",
-   "parent": "sdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "모든 기능에 적용되는 원칙을 한 번 정해 두는 SDD의 첫 단계.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "writing-good-specs",
-   "label": "좋은 명세 쓰는 법",
-   "parent": "sdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "무엇·왜 중심으로 쓰고 범위 밖을 명시하며 모호함을 질문으로 푸는 요령.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "spec-convergence",
-   "label": "명세-코드 수렴 검사",
-   "parent": "sdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "구현이 명세와 일치할 때까지 반복해 확인하는 단계.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "tasks-breakdown",
-   "label": "작업 분해",
-   "parent": "sdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "계획을 AI가 한 번에 끝낼 작은 작업으로 쪼개는 기술.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "red-green-refactor",
-   "label": "Red-Green-Refactor",
-   "parent": "tdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "TDD의 3박자 반복 사이클.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "context-pollution",
-   "label": "컨텍스트 오염",
-   "parent": "tdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "구현 정보가 테스트 설계로 새어 테스트가 무력해지는 현상과 서브에이전트 분리.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "test-types",
-   "label": "단위·통합·E2E 테스트",
-   "parent": "tdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "테스트의 층과 AI가 쓰기 좋은 테스트 고르기.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "test-tampering",
-   "label": "테스트 조작 방지",
-   "parent": "tdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "AI가 통과하려고 테스트를 고치지 못하게 하는 규칙.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "subagents",
-   "label": "서브에이전트",
-   "parent": "tdd",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 4,
-   "summary": "역할별로 컨텍스트를 분리한 보조 에이전트.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "factory-roles",
-   "label": "팩토리의 에이전트 역할",
-   "parent": "ai-factory",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "Triage·구현·검증·릴리스·문서·감시로 나누는 이유.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "human-gates",
-   "label": "사람 관문 설계",
-   "parent": "ai-factory",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "어디서 사람이 승인해야 하는가: 지침·설계·장애.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "verification-bottleneck",
-   "label": "검증 병목",
-   "parent": "ai-factory",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "코드 생성은 빨라졌는데 리뷰·검증이 느려지는 문제.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "dark-factory",
-   "label": "다크 팩토리 (무인 공장)",
-   "parent": "ai-factory",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "사람이 코드를 쓰지도 리뷰하지도 않는 극단적 모델과 위험.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "drift-detection",
-   "label": "드리프트 감지 루프",
-   "parent": "ai-factory",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "코드와 문서가 어긋나는 것을 자동 발견하는 루프.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "nvidia-ai-factory",
-   "label": "NVIDIA의 AI factory",
-   "parent": "ai-factory",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 4,
-   "summary": "토큰을 생산하는 데이터센터라는 같은 이름 다른 개념.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "elenchus",
-   "label": "엘렝코스(반박 검증)",
-   "parent": "socratic-method",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "소크라테스식 대화의 핵심 절차: 주장→전제 모으기→모순 드러내기→수정.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "aporia",
-   "label": "아포리아",
-   "parent": "socratic-method",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "정답 없이 \"모르겠다\"에서 끝나는 상태. 배움의 출발점으로 본다.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "socratic-seminar",
-   "label": "소크라테스 세미나",
-   "parent": "socratic-method",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "교사는 진행만, 학생이 본문을 놓고 열린 질문으로 토론하는 수업 형식.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "socratic-questioning-types",
-   "label": "소크라테스식 질문 유형",
-   "parent": "socratic-method",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "명료화·근거·가정·반례·결과 질문 등 질문을 고르는 틀.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "ai-socratic-tutor",
-   "label": "AI 소크라테스 튜터 프롬프트",
-   "parent": "socratic-method",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "AI에게 답 대신 질문을 시켜 내 이해를 검증하는 프롬프트 설계.",
-   "added": "2026-10-28",
-   "related": [
-    "prompt-engineering"
-   ]
-  },
-  {
-   "id": "explain-to-ai-student",
-   "label": "AI를 학생으로 두고 가르치기",
-   "parent": "feynman-technique",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "AI에게 순진한 학생 역할을 시켜 내 설명의 빈틈을 찾는 프롬프트 방식.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "curse-of-knowledge",
-   "label": "지식의 저주",
-   "parent": "feynman-technique",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "아는 사람이 모르는 사람의 눈높이를 잊어 설명이 어려워지는 현상.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "illusion-of-explanatory-depth",
-   "label": "설명 깊이의 착각",
-   "parent": "feynman-technique",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "읽기만 하고 안다고 착각하다 설명하려 하면 무너지는 현상.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "active-recall",
-   "label": "능동적 인출",
-   "parent": "feynman-technique",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "자료를 다시 읽지 않고 기억에서 꺼내 보는 학습법. 파인만 기법의 심리학적 근거.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "spaced-repetition",
-   "label": "간격 반복",
-   "parent": "feynman-technique",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "복습 간격을 점점 늘려 장기 기억으로 만드는 학습법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "prerequisite-graph",
-   "label": "선행 개념 그래프",
-   "parent": "recursive-gap-filling",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "개념 사이의 \"이걸 알아야 저걸 안다\" 관계를 그린 지도.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "unknown-unknowns",
-   "label": "모르는 줄 모르는 것",
-   "parent": "recursive-gap-filling",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "스스로 이름 붙이지 못하는 지식 공백. 탐지가 학습의 첫 관문.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "knowledge-tracing",
-   "label": "지식 추적",
-   "parent": "recursive-gap-filling",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "학습자가 무엇을 아는지 시간에 따라 추정하는 교육 AI 기술.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "zone-of-proximal-development",
-   "label": "근접발달영역",
-   "parent": "recursive-gap-filling",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "혼자는 못 하지만 도움받으면 할 수 있는 범위. 공백 채우기의 난이도 기준.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "ai-learning-path-prompt",
-   "label": "AI로 학습 경로 만들기",
-   "parent": "recursive-gap-filling",
-   "domain": "methodology",
-   "status": "planned",
-   "priority": 5,
-   "summary": "AI에게 선행 개념을 묻고 순서 있는 학습 계획을 만들게 하는 프롬프트.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "rag",
-   "label": "RAG(검색 증강 생성)",
-   "parent": "knowledge-retrieval",
-   "domain": "knowledge-retrieval",
-   "status": "done",
-   "priority": 2,
-   "summary": "근거 문서를 검색해 붙여 환각을 줄이는 구조.",
-   "added": "2026-10-28",
-   "related": [
-    "hallucination",
-    "tool-use",
-    "context-window"
-   ],
-   "done": "2026-10-30"
-  },
-  {
-   "id": "citation-verification",
-   "label": "출처 검증 습관",
-   "parent": "hallucination",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "AI가 준 인용·링크를 직접 열어 확인하는 방법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "sycophancy",
-   "label": "아첨(sycophancy)",
-   "parent": "hallucination",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "사용자 의견에 맞춰 사실을 굽히는 AI 경향. 환각과 짝으로 헷갈린다.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "calibration",
-   "label": "확신도 보정",
-   "parent": "hallucination",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "모델이 말하는 확신과 실제 정답률이 맞는 정도.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "knowledge-cutoff",
-   "label": "지식 기준일",
-   "parent": "hallucination",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "모델이 학습한 시점 이후를 모르는 한계와 웹 검색 보완.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "few-shot-prompting",
-   "label": "예시 프롬프트(few-shot)",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "잘된 예시 몇 개를 보여 줘 형식·톤을 맞추는 기법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "xml-tag-prompting",
-   "label": "XML 태그로 프롬프트 구조화",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "지시·자료·예시를 태그로 구분해 혼동을 줄이는 기법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "role-prompting",
-   "label": "역할 부여 프롬프트",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "\"너는 ○○ 전문가야\"로 관점과 어조를 정하는 기법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "chain-of-thought",
-   "label": "생각의 사슬·사고 모드",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "단계별로 추론하게 해 정확도를 높이는 방식과 thinking 기능.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "prompt-evaluation",
-   "label": "프롬프트 평가",
-   "parent": "prompt-engineering",
-   "domain": "literacy",
-   "status": "planned",
-   "priority": 4,
-   "summary": "성공 기준과 테스트 세트로 프롬프트 개선을 측정하는 방법.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "parallelization-pattern",
-   "label": "병렬화 패턴",
-   "parent": "workflow-vs-agent",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 4,
-   "summary": "독립 작업을 동시에 돌리거나 같은 일을 여러 번 돌려 비교하는 워크플로.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "guardrails",
-   "label": "가드레일",
-   "parent": "workflow-vs-agent",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 4,
-   "summary": "에이전트가 넘지 말아야 할 선을 입력·출력·권한으로 막는 장치.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "agent-cost-latency",
-   "label": "에이전트 비용·지연 트레이드오프",
-   "parent": "workflow-vs-agent",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 4,
-   "summary": "에이전트가 성능을 얻는 대신 치르는 토큰·시간 비용.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "simplest-solution-first",
-   "label": "가장 단순한 해법부터",
-   "parent": "workflow-vs-agent",
-   "domain": "automation",
-   "status": "planned",
-   "priority": 4,
-   "summary": "LLM 한 번 호출로 충분한지 먼저 보고 복잡도를 올리는 원칙.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "langgraph-reducer",
-   "label": "리듀서(reducer)",
-   "parent": "langgraph-state",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "키마다 업데이트를 덮어쓸지 누적할지 정하는 합치기 규칙.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "messages-state",
-   "label": "MessagesState와 add_messages",
-   "parent": "langgraph-state",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "대화 기록용 프리빌트 상태. 메시지 ID로 교체·추가.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "langgraph-multiple-schemas",
-   "label": "입력·출력·내부 스키마",
-   "parent": "langgraph-state",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "호출자가 보는 키와 내부 작업용 키를 분리하는 설계.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "typeddict-vs-pydantic",
-   "label": "TypedDict vs Pydantic",
-   "parent": "langgraph-state",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "상태 스키마 선택: 속도 vs 재귀적 검증.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "state-vs-memory",
-   "label": "상태와 장기 메모리",
-   "parent": "langgraph-state",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 4,
-   "summary": "한 실행 안의 상태와 대화·세션을 넘는 메모리(store)의 차이.",
-   "added": "2026-10-28"
-  },
-  {
-   "id": "ml-fundamentals",
-   "label": "머신러닝·딥러닝 기초",
-   "parent": "ai",
-   "domain": "ml-fundamentals",
-   "status": "done",
-   "priority": 1,
-   "summary": "AI·머신러닝·딥러닝의 관계와 \"데이터로 규칙을 배운다\"는 기본 원리.",
-   "aka": [
-    "ML",
-    "Deep Learning"
-   ],
-   "related": [
-    "llm-basics"
-   ],
-   "added": "2026-10-29",
-   "done": "2026-10-29"
-  },
-  {
-   "id": "llm-basics",
-   "label": "LLM과 생성형 AI",
-   "parent": "ai",
-   "domain": "llm-basics",
-   "status": "done",
-   "priority": 1,
-   "summary": "ChatGPT·Claude 같은 대규모 언어 모델이 어떻게 만들어지고 답을 내는지.",
-   "aka": [
-    "LLM",
-    "생성형 AI"
-   ],
-   "related": [
-    "prompt-engineering",
-    "hallucination",
-    "multimodal",
-    "rag"
-   ],
-   "added": "2026-10-29",
-   "done": "2026-10-29"
-  },
-  {
-   "id": "ai-ml-dl-relation",
-   "label": "AI·ML·DL의 관계",
-   "parent": "ml-fundamentals",
-   "domain": "ml-fundamentals",
-   "status": "planned",
-   "priority": 2,
-   "summary": "인공지능 ⊃ 머신러닝 ⊃ 딥러닝 포함 관계.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "supervised-unsupervised",
-   "label": "지도·비지도·강화학습",
-   "parent": "ml-fundamentals",
-   "domain": "ml-fundamentals",
-   "status": "planned",
-   "priority": 3,
-   "summary": "정답 유무와 보상에 따른 학습 방식 세 갈래.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "neural-network-basics",
-   "label": "신경망 기초",
-   "parent": "ml-fundamentals",
-   "domain": "ml-fundamentals",
-   "status": "planned",
-   "priority": 3,
-   "summary": "뉴런·가중치·층으로 이루어진 함수 근사기.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "overfitting",
-   "label": "과적합과 일반화",
-   "parent": "ml-fundamentals",
-   "domain": "ml-fundamentals",
-   "status": "planned",
-   "priority": 4,
-   "summary": "학습 데이터만 외우고 새 데이터에 약해지는 문제.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "training-inference",
-   "label": "학습과 추론",
-   "parent": "ml-fundamentals",
-   "domain": "ml-fundamentals",
-   "status": "planned",
-   "priority": 4,
-   "summary": "모델을 만드는 단계와 쓰는 단계의 차이.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "token-tokenization",
-   "label": "토큰과 토큰화",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "done",
-   "priority": 2,
-   "summary": "LLM이 글자를 처리하는 단위와 비용·길이 한도의 기준.",
-   "aka": [],
-   "related": [
-    "context-engineering",
-    "embedding-clip"
-   ],
-   "added": "2026-10-29",
-   "done": "2026-10-29"
-  },
-  {
-   "id": "transformer-attention",
-   "label": "트랜스포머와 어텐션",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "done",
-   "priority": 2,
-   "summary": "LLM의 뼈대 구조와 문맥을 가중해 읽는 방법.",
-   "aka": [],
-   "related": [
-    "embedding-clip",
-    "fusion-architectures"
-   ],
-   "added": "2026-10-29",
-   "done": "2026-10-29"
-  },
-  {
-   "id": "llm-training-stages",
-   "label": "LLM 학습 3단계",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 3,
-   "summary": "사전학습 → 지도 미세조정 → 선호 학습(RLHF 등).",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "context-window",
-   "label": "컨텍스트 윈도우",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 3,
-   "summary": "모델이 한 번에 볼 수 있는 입력 길이.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "temperature-sampling",
-   "label": "온도와 샘플링",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 4,
-   "summary": "같은 질문에 답이 달라지는 이유와 조절법.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "reasoning-models",
-   "label": "추론 모델",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 4,
-   "summary": "답하기 전에 길게 생각하는 모델.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "open-vs-closed-models",
-   "label": "오픈 가중치 vs 폐쇄 모델",
-   "parent": "llm-basics",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 4,
-   "summary": "모델을 받아 쓰는 방식의 차이.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "bpe-subword",
-   "label": "BPE·서브워드 토크나이저",
-   "parent": "token-tokenization",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 5,
-   "summary": "자주 나오는 글자쌍을 합쳐 어휘를 만드는 방식.",
-   "aka": [
-    "BPE"
-   ],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "token-cost-language",
-   "label": "언어별 토큰 비용",
-   "parent": "token-tokenization",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 5,
-   "summary": "같은 내용도 언어에 따라 토큰 수가 달라지는 이유.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "self-attention-qkv",
-   "label": "셀프 어텐션 Q·K·V",
-   "parent": "transformer-attention",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 5,
-   "summary": "질의·키·값으로 단어 간 관련도를 계산하는 방식.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "positional-encoding",
-   "label": "위치 인코딩",
-   "parent": "transformer-attention",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 5,
-   "summary": "어순 정보를 입력에 더하는 방법.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "encoder-decoder-types",
-   "label": "인코더·디코더 모델 종류",
-   "parent": "transformer-attention",
-   "domain": "llm-basics",
-   "status": "planned",
-   "priority": 5,
-   "summary": "BERT·GPT·T5 계열의 쓰임 차이.",
-   "aka": [],
-   "related": [],
-   "added": "2026-10-29"
-  },
-  {
-   "id": "ai-safety",
-   "label": "AI 안전·윤리·거버넌스",
-   "parent": "ai",
-   "domain": "ai-safety",
-   "priority": 1,
-   "summary": "AI의 위험(오작동·편향·오남용)을 줄이고 책임 있게 쓰기 위한 원칙·기법·규제.",
-   "related": [
-    "hallucination",
-    "vibecoding-safety",
-    "human-in-the-loop"
-   ],
-   "added": "2026-10-29",
-   "status": "done",
-   "done": "2026-10-30"
-  },
-  {
-   "id": "knowledge-retrieval",
-   "label": "검색·지식 연결(RAG·임베딩·메모리)",
-   "parent": "ai",
-   "domain": "knowledge-retrieval",
-   "priority": 1,
-   "summary": "모델이 모르는 최신·사내 정보를 찾아 붙이는 기술 묶음: 임베딩, 벡터 검색, RAG, 메모리.",
-   "related": [
-    "agent-memory",
-    "context-window",
-    "tool-use"
-   ],
-   "added": "2026-10-29",
-   "status": "done",
-   "done": "2026-10-30"
-  },
-  {
-   "id": "mcp",
-   "label": "MCP(Model Context Protocol)",
-   "parent": "tool-use",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "도구·데이터를 AI 앱에 표준 방식으로 연결하는 개방형 프로토콜.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "function-calling-schema",
-   "label": "도구 스키마 설계",
-   "parent": "tool-use",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "JSON Schema로 도구 이름·설명·인자를 정의하고 좋은 설명을 쓰는 법.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "tool-choice-strict",
-   "label": "tool_choice와 strict",
-   "parent": "tool-use",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "도구 호출을 강제·금지하고 인자를 스키마에 맞추는 옵션.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "parallel-tool-use",
-   "label": "병렬 도구 호출",
-   "parent": "tool-use",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "한 번의 응답에서 여러 도구를 동시에 호출하는 방식.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "server-vs-client-tools",
-   "label": "서버 도구 vs 클라이언트 도구",
-   "parent": "tool-use",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "누가 코드를 실행하느냐에 따른 도구 분류와 보안 차이.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "tool-search",
-   "label": "도구 검색(Tool search)",
-   "parent": "tool-use",
-   "domain": "architecture",
-   "status": "planned",
-   "priority": 3,
-   "summary": "도구가 수천 개일 때 필요한 것만 찾아 불러와 토큰을 아끼는 기법.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "langgraph-conditional-edges",
-   "label": "조건부 엣지와 라우팅 함수",
-   "parent": "langgraph-nodes-edges",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "상태를 보고 다음 노드를 고르는 add_conditional_edges.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "langgraph-command",
-   "label": "Command(goto·update)",
-   "parent": "langgraph-nodes-edges",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "노드 안에서 상태 변경과 이동을 한 번에 하는 반환값.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "langgraph-send-map-reduce",
-   "label": "Send와 map-reduce",
-   "parent": "langgraph-nodes-edges",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "실행 때 개수가 정해지는 작업을 병렬로 나눠 보내고 모으는 패턴.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "langgraph-super-step",
-   "label": "Super-step과 병렬 실행",
-   "parent": "langgraph-nodes-edges",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "같은 단계에서 여러 노드가 동시에 실행되는 실행 단위.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "langgraph-compile",
-   "label": "compile과 그래프 검증",
-   "parent": "langgraph-nodes-edges",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "그래프를 실행 가능한 형태로 만들고 구조를 점검하는 단계.",
-   "added": "2026-10-29"
-  },
-  {
-   "id": "chunking",
-   "label": "청킹(문서 쪼개기)",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 3,
-   "summary": "문서를 검색 단위 조각으로 나누는 전략(크기·겹침·구조 기준).",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "vector-db",
-   "label": "벡터 DB",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 3,
-   "summary": "임베딩 벡터를 저장하고 가까운 것을 빨리 찾는 데이터베이스.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "hybrid-search-bm25",
-   "label": "하이브리드 검색과 BM25",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 3,
-   "summary": "키워드 점수 BM25와 벡터 검색을 합쳐 정확 일치와 의미 일치를 함께 잡는 방식.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "reranking",
-   "label": "리랭킹",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 4,
-   "summary": "1차 검색 후보를 별도 모델로 재채점해 상위만 고르는 단계.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "contextual-retrieval",
-   "label": "Contextual Retrieval",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 4,
-   "summary": "조각마다 문서 맥락 설명을 붙여 검색 실패율을 줄이는 Anthropic 기법.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "agentic-rag",
-   "label": "에이전틱 RAG",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 4,
-   "summary": "에이전트가 필요할 때 스스로 질의를 바꿔 여러 번 검색하는 RAG.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "rag-evaluation",
-   "label": "RAG 평가",
-   "parent": "rag",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 5,
-   "summary": "검색 품질(recall)과 답변 충실도를 따로 재는 방법.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "semantic-vs-keyword-search",
-   "label": "의미 검색 vs 키워드 검색",
-   "parent": "knowledge-retrieval",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 3,
-   "summary": "뜻이 비슷한 글을 찾는 방식과 같은 단어를 찾는 방식의 차이와 선택 기준.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "long-context-vs-rag",
-   "label": "긴 컨텍스트 vs RAG",
-   "parent": "knowledge-retrieval",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 3,
-   "summary": "문서를 통째로 넣을지 검색해 일부만 넣을지 정하는 기준과 비용.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "graph-rag",
-   "label": "GraphRAG",
-   "parent": "knowledge-retrieval",
-   "domain": "knowledge-retrieval",
-   "status": "planned",
-   "priority": 5,
-   "summary": "문서 속 개체·관계를 그래프로 만들어 연결된 질문에 답하는 RAG 변형.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "red-teaming",
-   "label": "레드팀",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 3,
-   "summary": "일부러 공격해 모델의 약점을 찾는 안전 점검.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "constitutional-ai",
-   "label": "Constitutional AI",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 3,
-   "summary": "원칙 목록으로 모델이 스스로 비판·수정하는 학습법.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "prompt-injection",
-   "label": "프롬프트 인젝션",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 3,
-   "summary": "외부 텍스트에 숨은 지시로 모델을 속이는 공격.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "eu-ai-act",
-   "label": "EU AI Act",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 3,
-   "summary": "위험 등급별로 의무를 정한 EU 법.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "nist-ai-rmf",
-   "label": "NIST AI RMF",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 3,
-   "summary": "Govern·Map·Measure·Manage 위험관리 틀.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "ai-alignment",
-   "label": "정렬(Alignment)",
-   "parent": "ai-safety",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 3,
-   "summary": "AI 목표를 사람의 의도·가치와 맞추는 문제.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "ai-evaluation",
-   "label": "AI 평가·벤치마크",
-   "parent": "ai",
-   "domain": "ai-evaluation",
-   "status": "planned",
-   "priority": 1,
-   "summary": "모델·에이전트·프롬프트가 얼마나 잘 하는지 재는 방법: 벤치마크, 평가셋, LLM 심사.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "benchmarks",
-   "label": "벤치마크",
-   "parent": "ai-evaluation",
-   "domain": "ai-evaluation",
-   "status": "planned",
-   "priority": 2,
-   "summary": "MMLU·SWE-bench 같은 표준 시험과 그 한계.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "llm-as-judge",
-   "label": "LLM 심사위원",
-   "parent": "ai-evaluation",
-   "domain": "ai-evaluation",
-   "status": "planned",
-   "priority": 2,
-   "summary": "LLM으로 답의 품질을 채점하는 방법.",
-   "added": "2026-10-30"
-  },
-  {
-   "id": "eval-set",
-   "label": "평가셋 만들기",
-   "parent": "ai-evaluation",
-   "domain": "ai-evaluation",
-   "status": "planned",
-   "priority": 2,
-   "summary": "내 업무용 테스트 질문·정답 모음 설계.",
-   "added": "2026-10-30"
-  }
- ]
+  "updated": "2026-10-31",
+  "nodes": [
+    {
+      "id": "ai",
+      "label": "AI",
+      "parent": null,
+      "domain": "root",
+      "status": "done",
+      "summary": "사람의 지적 작업을 기계가 하게 만드는 기술 전체. 이 지도의 출발점.",
+      "related": []
+    },
+    {
+      "id": "literacy",
+      "label": "AI 리터러시",
+      "parent": "ai",
+      "domain": "literacy",
+      "status": "done",
+      "priority": 1,
+      "summary": "AI가 무엇을 잘하고 못하는지 알고, 안전하고 똑똑하게 쓰는 능력.",
+      "done": "2026-10-28"
+    },
+    {
+      "id": "automation",
+      "label": "자동화",
+      "parent": "ai",
+      "domain": "automation",
+      "status": "done",
+      "priority": 1,
+      "summary": "반복되는 업무를 AI와 도구로 사람 없이 돌아가게 만드는 것.",
+      "done": "2026-10-28"
+    },
+    {
+      "id": "vibecoding",
+      "label": "바이브코딩",
+      "parent": "ai",
+      "domain": "vibecoding",
+      "status": "done",
+      "priority": 1,
+      "summary": "코드를 직접 짜는 대신 AI에게 말로 설명해 웹앱·도구를 만드는 방식. 웹앱 개발 용어 포함.",
+      "done": "2026-10-28"
+    },
+    {
+      "id": "langgraph",
+      "label": "LangGraph",
+      "parent": "ai",
+      "domain": "langgraph",
+      "status": "done",
+      "priority": 1,
+      "summary": "LLM 에이전트의 흐름을 노드와 엣지로 이루어진 그래프로 설계하는 프레임워크.",
+      "done": "2026-10-28",
+      "related": [
+        "agent-loop",
+        "workflow-vs-agent"
+      ]
+    },
+    {
+      "id": "architecture",
+      "label": "AI 아키텍처",
+      "parent": "ai",
+      "domain": "architecture",
+      "status": "done",
+      "priority": 1,
+      "summary": "에이전트를 움직이는 뼈대: 루프, 하네스, AI 팩토리.",
+      "done": "2026-10-28",
+      "related": [
+        "workflow-vs-agent",
+        "langgraph"
+      ]
+    },
+    {
+      "id": "methodology",
+      "label": "방법론",
+      "parent": "ai",
+      "domain": "methodology",
+      "status": "done",
+      "priority": 1,
+      "summary": "AI와 일하고 배우는 방법: SDD, TDD, 소크라테스 논증법, 재귀적 공백 채우기, 파인만 기법.",
+      "done": "2026-10-28",
+      "related": [
+        "literacy",
+        "agent-verification"
+      ]
+    },
+    {
+      "id": "multimodal",
+      "label": "멀티모달",
+      "parent": "ai",
+      "domain": "multimodal",
+      "status": "done",
+      "priority": 1,
+      "summary": "글뿐 아니라 이미지·음성·영상을 함께 이해하고 만드는 AI.",
+      "done": "2026-10-28",
+      "related": [
+        "vibecoding"
+      ]
+    },
+    {
+      "id": "web-app-basics",
+      "label": "웹앱 개발 기초 용어",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "done",
+      "priority": 2,
+      "summary": "프론트엔드, 백엔드, API, DB, 배포 등 바이브코딩에 꼭 필요한 단어들.",
+      "done": "2026-10-28",
+      "related": [
+        "api-basics"
+      ]
+    },
+    {
+      "id": "agent-loop",
+      "label": "에이전트 루프",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "done",
+      "priority": 2,
+      "summary": "생각→도구 사용→결과 확인을 목표에 닿을 때까지 반복하는 구조.",
+      "done": "2026-10-28",
+      "related": [
+        "langgraph",
+        "workflow-vs-agent"
+      ]
+    },
+    {
+      "id": "harness",
+      "label": "하네스",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "done",
+      "priority": 2,
+      "summary": "모델을 감싸 도구·기억·권한·검증을 붙여 실제로 일하게 만드는 틀.",
+      "done": "2026-10-28",
+      "related": [
+        "agent-loop",
+        "context-engineering",
+        "langgraph"
+      ]
+    },
+    {
+      "id": "ai-factory",
+      "label": "AI 팩토리",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "done",
+      "priority": 2,
+      "summary": "여러 에이전트가 공장 라인처럼 역할을 나눠 결과물을 계속 만들어 내는 구조.",
+      "done": "2026-10-28",
+      "related": [
+        "harness",
+        "orchestrator-workers"
+      ]
+    },
+    {
+      "id": "sdd",
+      "label": "SDD (스펙 주도 개발)",
+      "parent": "methodology",
+      "domain": "methodology",
+      "status": "done",
+      "priority": 2,
+      "summary": "코드보다 먼저 명세(스펙)를 쓰고, AI가 그 스펙대로 만들게 하는 방식.",
+      "done": "2026-10-28",
+      "related": [
+        "vibecoding",
+        "agents-md"
+      ]
+    },
+    {
+      "id": "tdd",
+      "label": "TDD (테스트 주도 개발)",
+      "parent": "methodology",
+      "domain": "methodology",
+      "status": "done",
+      "priority": 2,
+      "summary": "테스트를 먼저 쓰고 그 테스트를 통과하도록 코드를 만드는 방식.",
+      "done": "2026-10-28",
+      "related": [
+        "agent-verification",
+        "sdd"
+      ]
+    },
+    {
+      "id": "socratic-method",
+      "label": "소크라테스 논증법",
+      "parent": "methodology",
+      "domain": "methodology",
+      "status": "done",
+      "priority": 2,
+      "summary": "답을 주지 않고 질문을 이어 가며 생각의 빈틈을 스스로 찾게 하는 방법.",
+      "done": "2026-10-28",
+      "related": [
+        "hallucination",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "recursive-gap-filling",
+      "label": "재귀적 공백 채우기",
+      "parent": "methodology",
+      "domain": "methodology",
+      "status": "done",
+      "priority": 2,
+      "summary": "모르는 부분을 찾아 채우고, 그 안에서 또 모르는 부분을 찾아 반복하는 학습법.",
+      "done": "2026-10-28",
+      "related": [
+        "langgraph",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "feynman-technique",
+      "label": "파인만 기법",
+      "parent": "methodology",
+      "domain": "methodology",
+      "status": "done",
+      "priority": 2,
+      "summary": "어린아이에게 설명하듯 쉽게 풀어 보며 진짜 이해했는지 확인하는 학습법.",
+      "done": "2026-10-28",
+      "related": [
+        "prompt-engineering",
+        "hallucination"
+      ]
+    },
+    {
+      "id": "hallucination",
+      "label": "환각",
+      "parent": "literacy",
+      "domain": "literacy",
+      "status": "done",
+      "priority": 2,
+      "summary": "AI가 사실이 아닌 내용을 그럴듯하게 지어내는 현상.",
+      "added": "2026-10-28",
+      "done": "2026-10-28",
+      "related": [
+        "agent-verification",
+        "tdd"
+      ]
+    },
+    {
+      "id": "prompt-engineering",
+      "label": "프롬프트 엔지니어링",
+      "parent": "literacy",
+      "domain": "literacy",
+      "status": "done",
+      "priority": 2,
+      "summary": "AI에게 원하는 결과를 얻도록 지시문을 설계하는 기술.",
+      "added": "2026-10-28",
+      "done": "2026-10-28",
+      "related": [
+        "harness",
+        "sdd",
+        "agent-loop"
+      ]
+    },
+    {
+      "id": "ai-fluency-4d",
+      "label": "AI Fluency 4D",
+      "parent": "literacy",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 3,
+      "summary": "위임·설명·평가·책임 네 가지 역량 프레임워크.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "ai-bias-ethics",
+      "label": "편향과 AI 윤리",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 2,
+      "summary": "학습 데이터에서 온 편향과 공정성·투명성 문제.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "privacy-copyright",
+      "label": "개인정보와 저작권",
+      "parent": "literacy",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 3,
+      "summary": "AI에 넣어도 되는 정보와 생성물의 권리 문제.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "workflow-vs-agent",
+      "label": "워크플로 vs 에이전트",
+      "parent": "automation",
+      "domain": "automation",
+      "status": "done",
+      "priority": 2,
+      "summary": "미리 정한 경로로 도는 것과 AI가 스스로 경로를 정하는 것의 차이.",
+      "added": "2026-10-28",
+      "done": "2026-10-28",
+      "related": [
+        "agent-loop",
+        "langgraph",
+        "harness"
+      ]
+    },
+    {
+      "id": "prompt-chaining",
+      "label": "프롬프트 체이닝",
+      "parent": "automation",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "작업을 단계로 쪼개 앞 출력을 다음 입력으로 넘기는 패턴.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "routing-pattern",
+      "label": "라우팅",
+      "parent": "automation",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "입력을 분류해 알맞은 처리 경로로 보내는 패턴.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "orchestrator-workers",
+      "label": "오케스트레이터-워커",
+      "parent": "automation",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "중앙 LLM이 작업을 쪼개 워커에게 맡기고 취합하는 패턴.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "evaluator-optimizer",
+      "label": "평가자-최적화 루프",
+      "parent": "automation",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "생성과 평가를 반복해 품질을 올리는 패턴.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "rpa-vs-ai-automation",
+      "label": "RPA와 AI 자동화",
+      "parent": "automation",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "규칙 기반 화면 자동화와 AI 판단 자동화의 차이.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "ai-assisted-coding",
+      "label": "AI 보조 개발",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "코드를 검토·테스트하며 AI를 도구로 쓰는 전문 개발 방식.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "frontend-backend",
+      "label": "프론트엔드와 백엔드",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "화면 쪽과 서버 쪽의 역할 구분.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "api-basics",
+      "label": "API",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "프로그램끼리 요청·응답을 주고받는 약속.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "database-basics",
+      "label": "데이터베이스",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "앱의 데이터를 저장·조회하는 곳.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "deploy-hosting",
+      "label": "배포와 호스팅",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "만든 앱을 인터넷에 올려 남이 쓰게 하는 것.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "vibecoding-safety",
+      "label": "바이브코딩 보안·검토",
+      "parent": "vibecoding",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "검토 없이 만든 코드의 위험과 점검 방법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "langgraph-state",
+      "label": "State(상태)",
+      "parent": "langgraph",
+      "domain": "langgraph",
+      "status": "done",
+      "priority": 2,
+      "summary": "그래프 단계 사이에 전달되는 공유 데이터와 갱신 규칙.",
+      "added": "2026-10-28",
+      "done": "2026-10-28",
+      "related": [
+        "agent-loop",
+        "context-pollution"
+      ]
+    },
+    {
+      "id": "langgraph-nodes-edges",
+      "label": "노드와 엣지",
+      "parent": "langgraph",
+      "domain": "langgraph",
+      "status": "done",
+      "priority": 2,
+      "summary": "작업 단위와 흐름 연결, 조건부 분기.",
+      "added": "2026-10-28",
+      "done": "2026-10-29",
+      "related": [
+        "agent-loop",
+        "workflow-vs-agent"
+      ]
+    },
+    {
+      "id": "langgraph-checkpoint",
+      "label": "체크포인트와 영속성",
+      "parent": "langgraph",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "실행 중간 상태를 저장해 실패 후 재개·되감기.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "human-in-the-loop",
+      "label": "Human-in-the-loop",
+      "parent": "langgraph",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "에이전트 실행 중 사람이 승인·수정하는 지점.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "langgraph-multi-agent",
+      "label": "멀티 에이전트 그래프",
+      "parent": "langgraph",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "여러 에이전트를 서브그래프·감독자로 엮는 구성.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "langchain-vs-langgraph",
+      "label": "LangChain과 LangGraph",
+      "parent": "langgraph",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "두 라이브러리의 역할 차이.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "context-engineering",
+      "label": "컨텍스트 엔지니어링",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모델에 넣을 정보를 설계·관리하는 기술.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "agents-md",
+      "label": "AGENTS.md와 기록 시스템",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "에이전트가 읽는 짧은 목차 문서와 docs 구조.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "agent-verification",
+      "label": "에이전트 검증 루프",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "테스트·린트·리뷰 에이전트로 품질을 게이트하는 방식.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "agent-memory",
+      "label": "에이전트 메모리",
+      "parent": "architecture",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "세션을 넘어 기억을 쌓고 정리하는 구조.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "spec-kit",
+      "label": "GitHub Spec Kit",
+      "parent": "methodology",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "Specify-Plan-Tasks-Implement를 돕는 SDD 오픈소스 툴킷.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "vision-models",
+      "label": "비전 모델",
+      "parent": "multimodal",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 2,
+      "summary": "이미지를 이해하는 모델(캡셔닝, 시각 질의응답, OCR).",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "image-generation",
+      "label": "이미지 생성",
+      "parent": "multimodal",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "글에서 그림을 만드는 확산 모델 등.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "speech-asr-tts",
+      "label": "음성 인식과 합성",
+      "parent": "multimodal",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "음성→글(ASR, Whisper)과 글→음성(TTS).",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "video-ai",
+      "label": "영상 이해와 생성",
+      "parent": "multimodal",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "영상을 요약하거나 새로 만드는 AI.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "embedding-clip",
+      "label": "임베딩과 CLIP",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "서로 다른 데이터를 같은 의미 공간에 놓는 방법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "fusion-architectures",
+      "label": "융합 아키텍처",
+      "parent": "multimodal",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "초기·중간 융합과 공동 임베딩의 구조 차이.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "tool-use",
+      "label": "도구 사용(Tool use)",
+      "parent": "agent-loop",
+      "domain": "architecture",
+      "status": "done",
+      "priority": 2,
+      "summary": "LLM이 함수·API를 호출해 바깥 세상에 영향을 주는 방식.",
+      "added": "2026-10-28",
+      "done": "2026-10-29",
+      "related": [
+        "rag",
+        "workflow-vs-agent"
+      ]
+    },
+    {
+      "id": "agent-computer-interface",
+      "label": "에이전트-컴퓨터 인터페이스",
+      "parent": "agent-loop",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모델이 쓰기 쉬운 도구 설명·형식을 설계하는 일.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "stop-conditions",
+      "label": "종료 조건과 가드레일",
+      "parent": "agent-loop",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "반복 한도·체크포인트로 에이전트를 통제.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "react-pattern",
+      "label": "ReAct 패턴",
+      "parent": "agent-loop",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "추론(Reason)과 행동(Act)을 번갈아 하는 프롬프트 패턴.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "sandboxing",
+      "label": "샌드박스",
+      "parent": "agent-loop",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "에이전트 실행을 격리된 환경에 가두는 안전장치.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "http-basics",
+      "label": "HTTP 요청과 상태 코드",
+      "parent": "web-app-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "GET·POST와 200·404 같은 코드로 읽는 브라우저-서버 대화.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "json-format",
+      "label": "JSON",
+      "parent": "web-app-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "API가 데이터를 주고받는 가장 흔한 텍스트 형식.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "web-frameworks",
+      "label": "웹 프레임워크 (React·Next.js)",
+      "parent": "web-app-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "화면과 서버 코드를 정해진 틀로 빠르게 만들게 해 주는 도구.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "git-github",
+      "label": "Git과 GitHub",
+      "parent": "web-app-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "코드 변경 이력을 저장·되돌리고 공유하는 도구. AI 코딩의 안전망.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "env-secrets",
+      "label": "환경 변수와 API 키",
+      "parent": "web-app-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "비밀번호·키를 코드 밖에 두는 법. 유출 사고를 막는 기본기.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "harness-components",
+      "label": "하네스 구성 요소",
+      "parent": "harness",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "컨텍스트·도구·권한·검증·청소의 6가지 부품.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "initializer-coding-agent",
+      "label": "초기화·코딩 에이전트 패턴",
+      "parent": "harness",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "첫 세션이 환경을 세팅하고 이후 세션이 기능 하나씩 만드는 장기 작업 패턴.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "progress-files",
+      "label": "진행 로그와 기능 목록",
+      "parent": "harness",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "세션 사이 기억을 파일과 git으로 넘기는 법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "mechanical-constraints",
+      "label": "기계적 제약 (린터·구조 테스트)",
+      "parent": "harness",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "규칙을 말이 아니라 코드로 강제하는 하네스 기법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "harness-decay",
+      "label": "하네스 부품의 유통기한",
+      "parent": "harness",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델이 좋아지면 불필요해지는 스캐폴딩을 덜어내는 관점.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "sdd-constitution",
+      "label": "프로젝트 헌법 (constitution)",
+      "parent": "sdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모든 기능에 적용되는 원칙을 한 번 정해 두는 SDD의 첫 단계.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "writing-good-specs",
+      "label": "좋은 명세 쓰는 법",
+      "parent": "sdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "무엇·왜 중심으로 쓰고 범위 밖을 명시하며 모호함을 질문으로 푸는 요령.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "spec-convergence",
+      "label": "명세-코드 수렴 검사",
+      "parent": "sdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "구현이 명세와 일치할 때까지 반복해 확인하는 단계.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "tasks-breakdown",
+      "label": "작업 분해",
+      "parent": "sdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "계획을 AI가 한 번에 끝낼 작은 작업으로 쪼개는 기술.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "red-green-refactor",
+      "label": "Red-Green-Refactor",
+      "parent": "tdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "TDD의 3박자 반복 사이클.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "context-pollution",
+      "label": "컨텍스트 오염",
+      "parent": "tdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "구현 정보가 테스트 설계로 새어 테스트가 무력해지는 현상과 서브에이전트 분리.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "test-types",
+      "label": "단위·통합·E2E 테스트",
+      "parent": "tdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "테스트의 층과 AI가 쓰기 좋은 테스트 고르기.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "test-tampering",
+      "label": "테스트 조작 방지",
+      "parent": "tdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "AI가 통과하려고 테스트를 고치지 못하게 하는 규칙.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "subagents",
+      "label": "서브에이전트",
+      "parent": "tdd",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 4,
+      "summary": "역할별로 컨텍스트를 분리한 보조 에이전트.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "factory-roles",
+      "label": "팩토리의 에이전트 역할",
+      "parent": "ai-factory",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "Triage·구현·검증·릴리스·문서·감시로 나누는 이유.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "human-gates",
+      "label": "사람 관문 설계",
+      "parent": "ai-factory",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "어디서 사람이 승인해야 하는가: 지침·설계·장애.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "verification-bottleneck",
+      "label": "검증 병목",
+      "parent": "ai-factory",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "코드 생성은 빨라졌는데 리뷰·검증이 느려지는 문제.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "dark-factory",
+      "label": "다크 팩토리 (무인 공장)",
+      "parent": "ai-factory",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사람이 코드를 쓰지도 리뷰하지도 않는 극단적 모델과 위험.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "drift-detection",
+      "label": "드리프트 감지 루프",
+      "parent": "ai-factory",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "코드와 문서가 어긋나는 것을 자동 발견하는 루프.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "nvidia-ai-factory",
+      "label": "NVIDIA의 AI factory",
+      "parent": "ai-factory",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "토큰을 생산하는 데이터센터라는 같은 이름 다른 개념.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "elenchus",
+      "label": "엘렝코스(반박 검증)",
+      "parent": "socratic-method",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "소크라테스식 대화의 핵심 절차: 주장→전제 모으기→모순 드러내기→수정.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "aporia",
+      "label": "아포리아",
+      "parent": "socratic-method",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "정답 없이 \"모르겠다\"에서 끝나는 상태. 배움의 출발점으로 본다.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "socratic-seminar",
+      "label": "소크라테스 세미나",
+      "parent": "socratic-method",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "교사는 진행만, 학생이 본문을 놓고 열린 질문으로 토론하는 수업 형식.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "socratic-questioning-types",
+      "label": "소크라테스식 질문 유형",
+      "parent": "socratic-method",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "명료화·근거·가정·반례·결과 질문 등 질문을 고르는 틀.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "ai-socratic-tutor",
+      "label": "AI 소크라테스 튜터 프롬프트",
+      "parent": "socratic-method",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "AI에게 답 대신 질문을 시켜 내 이해를 검증하는 프롬프트 설계.",
+      "added": "2026-10-28",
+      "related": [
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "explain-to-ai-student",
+      "label": "AI를 학생으로 두고 가르치기",
+      "parent": "feynman-technique",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "AI에게 순진한 학생 역할을 시켜 내 설명의 빈틈을 찾는 프롬프트 방식.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "curse-of-knowledge",
+      "label": "지식의 저주",
+      "parent": "feynman-technique",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "아는 사람이 모르는 사람의 눈높이를 잊어 설명이 어려워지는 현상.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "illusion-of-explanatory-depth",
+      "label": "설명 깊이의 착각",
+      "parent": "feynman-technique",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "읽기만 하고 안다고 착각하다 설명하려 하면 무너지는 현상.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "active-recall",
+      "label": "능동적 인출",
+      "parent": "feynman-technique",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "자료를 다시 읽지 않고 기억에서 꺼내 보는 학습법. 파인만 기법의 심리학적 근거.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "spaced-repetition",
+      "label": "간격 반복",
+      "parent": "feynman-technique",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "복습 간격을 점점 늘려 장기 기억으로 만드는 학습법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "prerequisite-graph",
+      "label": "선행 개념 그래프",
+      "parent": "recursive-gap-filling",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "개념 사이의 \"이걸 알아야 저걸 안다\" 관계를 그린 지도.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "unknown-unknowns",
+      "label": "모르는 줄 모르는 것",
+      "parent": "recursive-gap-filling",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "스스로 이름 붙이지 못하는 지식 공백. 탐지가 학습의 첫 관문.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "knowledge-tracing",
+      "label": "지식 추적",
+      "parent": "recursive-gap-filling",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "학습자가 무엇을 아는지 시간에 따라 추정하는 교육 AI 기술.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "zone-of-proximal-development",
+      "label": "근접발달영역",
+      "parent": "recursive-gap-filling",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "혼자는 못 하지만 도움받으면 할 수 있는 범위. 공백 채우기의 난이도 기준.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "ai-learning-path-prompt",
+      "label": "AI로 학습 경로 만들기",
+      "parent": "recursive-gap-filling",
+      "domain": "methodology",
+      "status": "planned",
+      "priority": 5,
+      "summary": "AI에게 선행 개념을 묻고 순서 있는 학습 계획을 만들게 하는 프롬프트.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "rag",
+      "label": "RAG(검색 증강 생성)",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
+      "status": "done",
+      "priority": 2,
+      "summary": "근거 문서를 검색해 붙여 환각을 줄이는 구조.",
+      "added": "2026-10-28",
+      "related": [
+        "hallucination",
+        "tool-use",
+        "context-window"
+      ],
+      "done": "2026-10-30"
+    },
+    {
+      "id": "citation-verification",
+      "label": "출처 검증 습관",
+      "parent": "hallucination",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "AI가 준 인용·링크를 직접 열어 확인하는 방법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "sycophancy",
+      "label": "아첨(sycophancy)",
+      "parent": "hallucination",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사용자 의견에 맞춰 사실을 굽히는 AI 경향. 환각과 짝으로 헷갈린다.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "calibration",
+      "label": "확신도 보정",
+      "parent": "hallucination",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델이 말하는 확신과 실제 정답률이 맞는 정도.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "knowledge-cutoff",
+      "label": "지식 기준일",
+      "parent": "hallucination",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델이 학습한 시점 이후를 모르는 한계와 웹 검색 보완.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "few-shot-prompting",
+      "label": "예시 프롬프트(few-shot)",
+      "parent": "prompt-engineering",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "잘된 예시 몇 개를 보여 줘 형식·톤을 맞추는 기법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "xml-tag-prompting",
+      "label": "XML 태그로 프롬프트 구조화",
+      "parent": "prompt-engineering",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "지시·자료·예시를 태그로 구분해 혼동을 줄이는 기법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "role-prompting",
+      "label": "역할 부여 프롬프트",
+      "parent": "prompt-engineering",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "\"너는 ○○ 전문가야\"로 관점과 어조를 정하는 기법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "chain-of-thought",
+      "label": "생각의 사슬·사고 모드",
+      "parent": "prompt-engineering",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "단계별로 추론하게 해 정확도를 높이는 방식과 thinking 기능.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "prompt-evaluation",
+      "label": "프롬프트 평가",
+      "parent": "prompt-engineering",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "성공 기준과 테스트 세트로 프롬프트 개선을 측정하는 방법.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "parallelization-pattern",
+      "label": "병렬화 패턴",
+      "parent": "workflow-vs-agent",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "독립 작업을 동시에 돌리거나 같은 일을 여러 번 돌려 비교하는 워크플로.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "guardrails",
+      "label": "가드레일",
+      "parent": "workflow-vs-agent",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "에이전트가 넘지 말아야 할 선을 입력·출력·권한으로 막는 장치.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "agent-cost-latency",
+      "label": "에이전트 비용·지연 트레이드오프",
+      "parent": "workflow-vs-agent",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "에이전트가 성능을 얻는 대신 치르는 토큰·시간 비용.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "simplest-solution-first",
+      "label": "가장 단순한 해법부터",
+      "parent": "workflow-vs-agent",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "LLM 한 번 호출로 충분한지 먼저 보고 복잡도를 올리는 원칙.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "langgraph-reducer",
+      "label": "리듀서(reducer)",
+      "parent": "langgraph-state",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "키마다 업데이트를 덮어쓸지 누적할지 정하는 합치기 규칙.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "messages-state",
+      "label": "MessagesState와 add_messages",
+      "parent": "langgraph-state",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "대화 기록용 프리빌트 상태. 메시지 ID로 교체·추가.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "langgraph-multiple-schemas",
+      "label": "입력·출력·내부 스키마",
+      "parent": "langgraph-state",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "호출자가 보는 키와 내부 작업용 키를 분리하는 설계.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "typeddict-vs-pydantic",
+      "label": "TypedDict vs Pydantic",
+      "parent": "langgraph-state",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "상태 스키마 선택: 속도 vs 재귀적 검증.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "state-vs-memory",
+      "label": "상태와 장기 메모리",
+      "parent": "langgraph-state",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "한 실행 안의 상태와 대화·세션을 넘는 메모리(store)의 차이.",
+      "added": "2026-10-28"
+    },
+    {
+      "id": "ml-fundamentals",
+      "label": "머신러닝·딥러닝 기초",
+      "parent": "ai",
+      "domain": "ml-fundamentals",
+      "status": "done",
+      "priority": 1,
+      "summary": "AI·머신러닝·딥러닝의 관계와 \"데이터로 규칙을 배운다\"는 기본 원리.",
+      "aka": [
+        "ML",
+        "Deep Learning"
+      ],
+      "related": [
+        "llm-basics"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
+    },
+    {
+      "id": "llm-basics",
+      "label": "LLM과 생성형 AI",
+      "parent": "ai",
+      "domain": "llm-basics",
+      "status": "done",
+      "priority": 1,
+      "summary": "ChatGPT·Claude 같은 대규모 언어 모델이 어떻게 만들어지고 답을 내는지.",
+      "aka": [
+        "LLM",
+        "생성형 AI"
+      ],
+      "related": [
+        "prompt-engineering",
+        "hallucination",
+        "multimodal",
+        "rag"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
+    },
+    {
+      "id": "ai-ml-dl-relation",
+      "label": "AI·ML·DL의 관계",
+      "parent": "ml-fundamentals",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 2,
+      "summary": "인공지능 ⊃ 머신러닝 ⊃ 딥러닝 포함 관계.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "supervised-unsupervised",
+      "label": "지도·비지도·강화학습",
+      "parent": "ml-fundamentals",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정답 유무와 보상에 따른 학습 방식 세 갈래.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "neural-network-basics",
+      "label": "신경망 기초",
+      "parent": "ml-fundamentals",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "뉴런·가중치·층으로 이루어진 함수 근사기.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "overfitting",
+      "label": "과적합과 일반화",
+      "parent": "ml-fundamentals",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "학습 데이터만 외우고 새 데이터에 약해지는 문제.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "training-inference",
+      "label": "학습과 추론",
+      "parent": "ml-fundamentals",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델을 만드는 단계와 쓰는 단계의 차이.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "token-tokenization",
+      "label": "토큰과 토큰화",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "done",
+      "priority": 2,
+      "summary": "LLM이 글자를 처리하는 단위와 비용·길이 한도의 기준.",
+      "aka": [],
+      "related": [
+        "context-engineering",
+        "embedding-clip"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
+    },
+    {
+      "id": "transformer-attention",
+      "label": "트랜스포머와 어텐션",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "done",
+      "priority": 2,
+      "summary": "LLM의 뼈대 구조와 문맥을 가중해 읽는 방법.",
+      "aka": [],
+      "related": [
+        "embedding-clip",
+        "fusion-architectures"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-10-29"
+    },
+    {
+      "id": "llm-training-stages",
+      "label": "LLM 학습 3단계",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사전학습 → 지도 미세조정 → 선호 학습(RLHF 등).",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "context-window",
+      "label": "컨텍스트 윈도우",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모델이 한 번에 볼 수 있는 입력 길이.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "temperature-sampling",
+      "label": "온도와 샘플링",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "같은 질문에 답이 달라지는 이유와 조절법.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "reasoning-models",
+      "label": "추론 모델",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "답하기 전에 길게 생각하는 모델.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "open-vs-closed-models",
+      "label": "오픈 가중치 vs 폐쇄 모델",
+      "parent": "llm-basics",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델을 받아 쓰는 방식의 차이.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "bpe-subword",
+      "label": "BPE·서브워드 토크나이저",
+      "parent": "token-tokenization",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "자주 나오는 글자쌍을 합쳐 어휘를 만드는 방식.",
+      "aka": [
+        "BPE"
+      ],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "token-cost-language",
+      "label": "언어별 토큰 비용",
+      "parent": "token-tokenization",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "같은 내용도 언어에 따라 토큰 수가 달라지는 이유.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "self-attention-qkv",
+      "label": "셀프 어텐션 Q·K·V",
+      "parent": "transformer-attention",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "질의·키·값으로 단어 간 관련도를 계산하는 방식.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "positional-encoding",
+      "label": "위치 인코딩",
+      "parent": "transformer-attention",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "어순 정보를 입력에 더하는 방법.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "encoder-decoder-types",
+      "label": "인코더·디코더 모델 종류",
+      "parent": "transformer-attention",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "BERT·GPT·T5 계열의 쓰임 차이.",
+      "aka": [],
+      "related": [],
+      "added": "2026-10-29"
+    },
+    {
+      "id": "ai-safety",
+      "label": "AI 안전·윤리·거버넌스",
+      "parent": "ai",
+      "domain": "ai-safety",
+      "priority": 1,
+      "summary": "AI의 위험(오작동·편향·오남용)을 줄이고 책임 있게 쓰기 위한 원칙·기법·규제.",
+      "related": [
+        "hallucination",
+        "vibecoding-safety",
+        "human-in-the-loop"
+      ],
+      "added": "2026-10-29",
+      "status": "done",
+      "done": "2026-10-30"
+    },
+    {
+      "id": "knowledge-retrieval",
+      "label": "검색·지식 연결(RAG·임베딩·메모리)",
+      "parent": "ai",
+      "domain": "knowledge-retrieval",
+      "priority": 1,
+      "summary": "모델이 모르는 최신·사내 정보를 찾아 붙이는 기술 묶음: 임베딩, 벡터 검색, RAG, 메모리.",
+      "related": [
+        "agent-memory",
+        "context-window",
+        "tool-use"
+      ],
+      "added": "2026-10-29",
+      "status": "done",
+      "done": "2026-10-30"
+    },
+    {
+      "id": "mcp",
+      "label": "MCP(Model Context Protocol)",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도구·데이터를 AI 앱에 표준 방식으로 연결하는 개방형 프로토콜.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "function-calling-schema",
+      "label": "도구 스키마 설계",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "JSON Schema로 도구 이름·설명·인자를 정의하고 좋은 설명을 쓰는 법.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "tool-choice-strict",
+      "label": "tool_choice와 strict",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도구 호출을 강제·금지하고 인자를 스키마에 맞추는 옵션.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "parallel-tool-use",
+      "label": "병렬 도구 호출",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 번의 응답에서 여러 도구를 동시에 호출하는 방식.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "server-vs-client-tools",
+      "label": "서버 도구 vs 클라이언트 도구",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "누가 코드를 실행하느냐에 따른 도구 분류와 보안 차이.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "tool-search",
+      "label": "도구 검색(Tool search)",
+      "parent": "tool-use",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도구가 수천 개일 때 필요한 것만 찾아 불러와 토큰을 아끼는 기법.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-conditional-edges",
+      "label": "조건부 엣지와 라우팅 함수",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "상태를 보고 다음 노드를 고르는 add_conditional_edges.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-command",
+      "label": "Command(goto·update)",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "노드 안에서 상태 변경과 이동을 한 번에 하는 반환값.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-send-map-reduce",
+      "label": "Send와 map-reduce",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "실행 때 개수가 정해지는 작업을 병렬로 나눠 보내고 모으는 패턴.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-super-step",
+      "label": "Super-step과 병렬 실행",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 단계에서 여러 노드가 동시에 실행되는 실행 단위.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "langgraph-compile",
+      "label": "compile과 그래프 검증",
+      "parent": "langgraph-nodes-edges",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 3,
+      "summary": "그래프를 실행 가능한 형태로 만들고 구조를 점검하는 단계.",
+      "added": "2026-10-29"
+    },
+    {
+      "id": "chunking",
+      "label": "청킹(문서 쪼개기)",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서를 검색 단위 조각으로 나누는 전략(크기·겹침·구조 기준).",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "vector-db",
+      "label": "벡터 DB",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임베딩 벡터를 저장하고 가까운 것을 빨리 찾는 데이터베이스.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "hybrid-search-bm25",
+      "label": "하이브리드 검색과 BM25",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 3,
+      "summary": "키워드 점수 BM25와 벡터 검색을 합쳐 정확 일치와 의미 일치를 함께 잡는 방식.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "reranking",
+      "label": "리랭킹",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "1차 검색 후보를 별도 모델로 재채점해 상위만 고르는 단계.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "contextual-retrieval",
+      "label": "Contextual Retrieval",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "조각마다 문서 맥락 설명을 붙여 검색 실패율을 줄이는 Anthropic 기법.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "agentic-rag",
+      "label": "에이전틱 RAG",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "에이전트가 필요할 때 스스로 질의를 바꿔 여러 번 검색하는 RAG.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "rag-evaluation",
+      "label": "RAG 평가",
+      "parent": "rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "검색 품질(recall)과 답변 충실도를 따로 재는 방법.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "semantic-vs-keyword-search",
+      "label": "의미 검색 vs 키워드 검색",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 3,
+      "summary": "뜻이 비슷한 글을 찾는 방식과 같은 단어를 찾는 방식의 차이와 선택 기준.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "long-context-vs-rag",
+      "label": "긴 컨텍스트 vs RAG",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서를 통째로 넣을지 검색해 일부만 넣을지 정하는 기준과 비용.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "graph-rag",
+      "label": "GraphRAG",
+      "parent": "knowledge-retrieval",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "문서 속 개체·관계를 그래프로 만들어 연결된 질문에 답하는 RAG 변형.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "red-teaming",
+      "label": "레드팀",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 3,
+      "summary": "일부러 공격해 모델의 약점을 찾는 안전 점검.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "constitutional-ai",
+      "label": "Constitutional AI",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 3,
+      "summary": "원칙 목록으로 모델이 스스로 비판·수정하는 학습법.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "prompt-injection",
+      "label": "프롬프트 인젝션",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 3,
+      "summary": "외부 텍스트에 숨은 지시로 모델을 속이는 공격.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "eu-ai-act",
+      "label": "EU AI Act",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 3,
+      "summary": "위험 등급별로 의무를 정한 EU 법.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "nist-ai-rmf",
+      "label": "NIST AI RMF",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Govern·Map·Measure·Manage 위험관리 틀.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "ai-alignment",
+      "label": "정렬(Alignment)",
+      "parent": "ai-safety",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 3,
+      "summary": "AI 목표를 사람의 의도·가치와 맞추는 문제.",
+      "added": "2026-10-30"
+    },
+    {
+      "id": "ai-evaluation",
+      "label": "AI 평가·벤치마크",
+      "parent": "ai",
+      "domain": "ai-evaluation",
+      "status": "done",
+      "priority": 1,
+      "summary": "모델·에이전트·프롬프트가 얼마나 잘 하는지 재는 방법: 벤치마크, 평가셋, LLM 심사.",
+      "added": "2026-10-30",
+      "done": "2026-10-31"
+    },
+    {
+      "id": "benchmarks",
+      "label": "벤치마크",
+      "parent": "ai-evaluation",
+      "domain": "ai-evaluation",
+      "status": "done",
+      "priority": 2,
+      "summary": "MMLU·SWE-bench 같은 표준 시험과 그 한계.",
+      "added": "2026-10-30",
+      "done": "2026-10-31"
+    },
+    {
+      "id": "llm-as-judge",
+      "label": "LLM 심사위원",
+      "parent": "ai-evaluation",
+      "domain": "ai-evaluation",
+      "status": "done",
+      "priority": 2,
+      "summary": "LLM으로 답의 품질을 채점하는 방법.",
+      "added": "2026-10-30",
+      "done": "2026-10-31"
+    },
+    {
+      "id": "eval-set",
+      "label": "평가셋 만들기",
+      "parent": "ai-evaluation",
+      "domain": "ai-evaluation",
+      "status": "done",
+      "priority": 2,
+      "summary": "내 업무용 테스트 질문·정답 모음 설계.",
+      "added": "2026-10-30",
+      "done": "2026-10-31"
+    },
+    {
+      "id": "ai-infra",
+      "label": "AI 인프라·배포",
+      "parent": "ai",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 1,
+      "summary": "GPU·추론 서버·로컬 실행·API 호출 등 모델을 실제로 돌리는 기반.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "gpu-basics",
+      "label": "GPU와 VRAM",
+      "parent": "ai-infra",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 2,
+      "summary": "AI가 GPU를 쓰는 이유와 VRAM이 모델 크기를 정하는 방식.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "inference-vs-training",
+      "label": "추론 vs 학습",
+      "parent": "ai-infra",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 2,
+      "summary": "모델을 만드는 단계와 쓰는 단계의 비용·장비 차이.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "quantization",
+      "label": "양자화",
+      "parent": "ai-infra",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 2,
+      "summary": "모델 숫자 정밀도를 낮춰 메모리를 줄이는 기법(INT8, 4bit).",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "local-llm",
+      "label": "로컬 LLM 실행",
+      "parent": "ai-infra",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 2,
+      "summary": "Ollama·llama.cpp 등으로 내 PC에서 모델을 돌리기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "llm-api-basics",
+      "label": "LLM API 기초",
+      "parent": "ai-infra",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 2,
+      "summary": "토큰 과금·스트리밍·레이트 리밋 등 API 호출의 기본.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "swe-bench",
+      "label": "SWE-bench",
+      "parent": "benchmarks",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "실제 GitHub 이슈 해결로 코딩 에이전트를 재는 벤치마크와 Verified·Pro 변형.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "data-contamination",
+      "label": "데이터 오염",
+      "parent": "benchmarks",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시험 문제가 학습 데이터에 섞여 점수가 부풀려지는 문제.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "benchmark-saturation",
+      "label": "벤치마크 포화",
+      "parent": "benchmarks",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "만점 근처라 모델을 가릴 수 없게 된 시험과 대응.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "pass-at-k",
+      "label": "pass@k와 pass^k",
+      "parent": "ai-evaluation",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 번이라도 성공 vs 매번 성공을 재는 두 지표.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "rubric-design",
+      "label": "루브릭 설계",
+      "parent": "llm-as-judge",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "채점 기준표를 차원별로 쪼개 쓰는 법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "judge-bias",
+      "label": "심사위원 편향",
+      "parent": "llm-as-judge",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "위치·장황함·자기 선호 편향과 완화책.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "regression-eval",
+      "label": "회귀 평가",
+      "parent": "eval-set",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "바꾼 뒤 기존 기능이 망가졌는지 보는 평가.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "eval-harness",
+      "label": "평가 하네스",
+      "parent": "ai-evaluation",
+      "domain": "ai-evaluation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "과제 실행·채점·집계를 자동화하는 평가 인프라.",
+      "added": "2026-10-31",
+      "related": [
+        "harness"
+      ]
+    }
+  ]
 }
