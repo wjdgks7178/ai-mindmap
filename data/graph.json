@@ -279,10 +279,15 @@
       "label": "개인정보와 저작권",
       "parent": "literacy",
       "domain": "literacy",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "AI에 넣어도 되는 정보와 생성물의 권리 문제.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "data-provenance",
+        "prompt-injection"
+      ]
     },
     {
       "id": "workflow-vs-agent",
@@ -2296,6 +2301,36 @@
       "status": "planned",
       "priority": 3,
       "summary": "입력·출력·캐시 단가와 월 비용 추산법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "data-masking",
+      "label": "데이터 마스킹",
+      "parent": "privacy-copyright",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "개인정보를 치환해 AI에 넣는 방법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "enterprise-data-terms",
+      "label": "기업용 AI 약관 읽기",
+      "parent": "privacy-copyright",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 3,
+      "summary": "보관·학습 사용·리전 조항 체크리스트.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "ai-authorship",
+      "label": "AI 저작자 문제",
+      "parent": "privacy-copyright",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사람의 창작 기여 기준과 등록 사례.",
       "added": "2026-10-31"
     }
   ]
