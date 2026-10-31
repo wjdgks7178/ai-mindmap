@@ -2422,10 +2422,15 @@
       "label": "환경 변수와 비밀 관리",
       "parent": "frontend-backend",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "API 키를 코드에 넣지 않는 법.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31",
+      "related": [
+        "llm-api-basics",
+        "privacy-copyright"
+      ]
     },
     {
       "id": "deployment-basics",
@@ -2505,6 +2510,26 @@
       "status": "planned",
       "priority": 3,
       "summary": "어겨선 안 될 규칙을 자동으로 강제.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "secret-leak-response",
+      "label": "키 유출 대응",
+      "parent": "secrets-env",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "깃에 올린 키를 발견했을 때의 절차.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "dotenv-usage",
+      "label": ".env 파일 쓰는 법",
+      "parent": "secrets-env",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "로컬 개발용 환경 변수 파일 관리.",
       "added": "2026-10-31"
     }
   ]
