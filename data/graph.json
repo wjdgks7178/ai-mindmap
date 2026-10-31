@@ -332,10 +332,15 @@
       "label": "오케스트레이터-워커",
       "parent": "automation",
       "domain": "automation",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "중앙 LLM이 작업을 쪼개 워커에게 맡기고 취합하는 패턴.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "subagents",
+        "langgraph-multi-agent"
+      ]
     },
     {
       "id": "evaluator-optimizer",
@@ -2331,6 +2336,36 @@
       "status": "planned",
       "priority": 4,
       "summary": "사람의 창작 기여 기준과 등록 사례.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "worker-context-isolation",
+      "label": "워커의 컨텍스트 분리",
+      "parent": "orchestrator-workers",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "워커가 깨끗한 컨텍스트로 일하는 이점.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "result-synthesis",
+      "label": "결과 종합 단계",
+      "parent": "orchestrator-workers",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "워커 출력의 충돌·누락을 합치는 방법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "delegation-prompt",
+      "label": "위임 지시문 쓰기",
+      "parent": "orchestrator-workers",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 3,
+      "summary": "워커가 오해하지 않게 작업을 명세하기.",
       "added": "2026-10-31"
     }
   ]
