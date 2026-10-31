@@ -1862,10 +1862,11 @@
       "label": "GPU와 VRAM",
       "parent": "ai-infra",
       "domain": "ai-infra",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "AI가 GPU를 쓰는 이유와 VRAM이 모델 크기를 정하는 방식.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31"
     },
     {
       "id": "training-inference-cost",
@@ -1882,30 +1883,33 @@
       "label": "양자화",
       "parent": "ai-infra",
       "domain": "ai-infra",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "모델 숫자 정밀도를 낮춰 메모리를 줄이는 기법(INT8, 4bit).",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31"
     },
     {
       "id": "local-llm",
       "label": "로컬 LLM 실행",
       "parent": "ai-infra",
       "domain": "ai-infra",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "Ollama·llama.cpp 등으로 내 PC에서 모델을 돌리기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31"
     },
     {
       "id": "llm-api-basics",
       "label": "LLM API 기초",
       "parent": "ai-infra",
       "domain": "ai-infra",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "토큰 과금·스트리밍·레이트 리밋 등 API 호출의 기본.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31"
     },
     {
       "id": "swe-bench",
@@ -2071,6 +2075,102 @@
       "status": "planned",
       "priority": 3,
       "summary": "글자 인식과 표·문서 이해를 VLM으로 하는 방법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "prompt-caching",
+      "label": "프롬프트 캐싱",
+      "parent": "llm-api-basics",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "반복되는 앞부분을 캐시해 비용·한도를 아끼는 기능.",
+      "added": "2026-10-31",
+      "related": [
+        "context-window"
+      ]
+    },
+    {
+      "id": "rate-limit-retry",
+      "label": "재시도와 백오프",
+      "parent": "llm-api-basics",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "429 오류에 retry-after와 지수 백오프로 대응하는 법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "batch-api",
+      "label": "배치 API",
+      "parent": "llm-api-basics",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "대량 비동기 처리로 비용을 줄이는 방식.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "kv-cache",
+      "label": "KV 캐시",
+      "parent": "gpu-basics",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "컨텍스트가 길수록 VRAM을 먹는 어텐션 캐시.",
+      "added": "2026-10-31",
+      "related": [
+        "transformer-attention"
+      ]
+    },
+    {
+      "id": "gpu-cloud-vs-local",
+      "label": "클라우드 GPU vs 로컬 GPU",
+      "parent": "gpu-basics",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "임대와 구매의 비용·성능 비교.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "gguf-format",
+      "label": "GGUF와 모델 파일 형식",
+      "parent": "quantization",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "GGUF·safetensors 등 가중치 파일 형식과 이름 읽는 법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "distillation",
+      "label": "증류",
+      "parent": "quantization",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "큰 모델의 지식을 작은 모델에 옮기는 방법.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "llama-cpp",
+      "label": "llama.cpp",
+      "parent": "local-llm",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "CPU·GPU에서 LLM을 돌리는 C++ 추론 엔진.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "openai-compatible-api",
+      "label": "OpenAI 호환 API",
+      "parent": "local-llm",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "로컬·타사 서버가 같은 요청 형식을 쓰는 표준적 관행.",
       "added": "2026-10-31"
     }
   ]
