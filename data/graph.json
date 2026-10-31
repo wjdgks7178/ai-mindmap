@@ -416,10 +416,14 @@
       "label": "데이터베이스",
       "parent": "vibecoding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "앱의 데이터를 저장·조회하는 곳.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-10-31",
+      "related": [
+        "knowledge-retrieval"
+      ]
     },
     {
       "id": "deploy-hosting",
@@ -2648,6 +2652,36 @@
       "status": "planned",
       "priority": 4,
       "summary": "API·클라우드 GPU·로컬·엣지 비교.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "sql-basics",
+      "label": "SQL 기초",
+      "parent": "database-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SELECT·JOIN·WHERE로 데이터 읽기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "db-migration",
+      "label": "마이그레이션",
+      "parent": "database-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "스키마 변경을 안전하게 적용하기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "db-backup",
+      "label": "백업과 복구",
+      "parent": "database-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터 잃지 않는 최소 습관.",
       "added": "2026-10-31"
     }
   ]
