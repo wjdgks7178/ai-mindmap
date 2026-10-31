@@ -1876,10 +1876,16 @@
       "label": "학습 vs 추론 비용·장비",
       "parent": "ai-infra",
       "domain": "ai-infra",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "모델을 만드는 단계와 쓰는 단계의 비용·장비 차이.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-10-31",
+      "related": [
+        "gpu-basics",
+        "quantization",
+        "prompt-caching"
+      ]
     },
     {
       "id": "quantization",
@@ -2251,6 +2257,46 @@
       "related": [
         "eval-set"
       ]
+    },
+    {
+      "id": "inference-memory-bound",
+      "label": "메모리 병목 추론",
+      "parent": "training-inference-cost",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "왜 LLM 추론은 계산보다 메모리 대역폭이 병목인가.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "batching-serving",
+      "label": "배칭과 서빙 소프트웨어",
+      "parent": "training-inference-cost",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 4,
+      "summary": "vLLM 등으로 여러 요청을 묶어 처리량 올리기.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "api-vs-self-host",
+      "label": "API vs 자체 호스팅",
+      "parent": "training-inference-cost",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "손익분기와 보안 관점의 선택.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": "token-pricing",
+      "label": "토큰 가격 읽기",
+      "parent": "training-inference-cost",
+      "domain": "ai-infra",
+      "status": "planned",
+      "priority": 3,
+      "summary": "입력·출력·캐시 단가와 월 비용 추산법.",
+      "added": "2026-10-31"
     }
   ]
 }
