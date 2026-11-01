@@ -1376,12 +1376,13 @@
       "label": "지도·비지도·강화학습",
       "parent": "ml-fundamentals",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "정답 유무와 보상에 따른 학습 방식 세 갈래.",
       "aka": [],
       "related": [],
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "done": "2026-11-01"
     },
     {
       "id": "neural-network-basics",
@@ -2851,13 +2852,14 @@
       "label": "강화학습",
       "parent": "ml-fundamentals",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "보상을 최대화하도록 시행착오로 배우는 학습 방식. RLHF와 로봇 제어의 뿌리.",
       "added": "2026-11-01",
       "related": [
         "physical-ai"
-      ]
+      ],
+      "done": "2026-11-01"
     },
     {
       "id": "idor",
@@ -3125,6 +3127,75 @@
       "status": "planned",
       "priority": 4,
       "summary": "카메라 움직임·길이·장면 전환 지시법.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "classification-regression",
+      "label": "분류와 회귀",
+      "parent": "supervised-unsupervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "지도학습의 두 대표 문제 유형.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "clustering",
+      "label": "군집화",
+      "parent": "supervised-unsupervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "레이블 없이 비슷한 데이터끼리 묶기.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "self-supervised",
+      "label": "자기지도학습",
+      "parent": "supervised-unsupervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터 일부를 가려 맞히며 배우는 LLM 사전학습의 기반.",
+      "added": "2026-11-01",
+      "related": [
+        "llm-basics"
+      ]
+    },
+    {
+      "id": "rlhf",
+      "label": "RLHF",
+      "parent": "reinforcement-learning",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람 선호를 보상으로 모델을 다듬는 방법.",
+      "added": "2026-11-01",
+      "related": [
+        "llm-basics"
+      ]
+    },
+    {
+      "id": "reward-hacking",
+      "label": "보상 해킹",
+      "parent": "reinforcement-learning",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "보상 규칙의 허점을 노려 편법으로 점수를 얻는 현상.",
+      "added": "2026-11-01",
+      "related": [
+        "ai-safety"
+      ]
+    },
+    {
+      "id": "explore-exploit",
+      "label": "탐험과 활용",
+      "parent": "reinforcement-learning",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "새 시도와 검증된 선택 사이의 균형.",
       "added": "2026-11-01"
     }
   ]
