@@ -1458,12 +1458,15 @@
       "label": "LLM 학습 3단계",
       "parent": "llm-basics",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "사전학습 → 지도 미세조정 → 선호 학습(RLHF 등).",
       "aka": [],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "rlhf"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-11-01"
     },
     {
       "id": "context-window",
@@ -3231,6 +3234,61 @@
       "related": [
         "llm-basics"
       ]
+    },
+    {
+      "id": "pretraining",
+      "label": "사전학습",
+      "parent": "llm-training-stages",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "대량 텍스트로 다음 단어를 맞히며 언어를 익히는 단계.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "sft",
+      "label": "지도 미세조정(SFT)",
+      "parent": "llm-training-stages",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "(질문, 좋은 답) 예시로 지시 따르기를 배우는 단계.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "reward-model",
+      "label": "보상 모델",
+      "parent": "llm-training-stages",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사람 선호 순위로 답의 점수를 내도록 학습한 모델.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "dpo",
+      "label": "DPO",
+      "parent": "llm-training-stages",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "보상 모델 없이 선호 쌍으로 직접 학습하는 방법.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "tokenization",
+      "label": "토큰화",
+      "parent": "llm-training-stages",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "글을 모델이 읽는 토큰 조각으로 나누는 일.",
+      "added": "2026-11-01",
+      "related": []
     }
   ]
 }
