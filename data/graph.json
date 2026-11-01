@@ -1865,10 +1865,17 @@
       "label": "Constitutional AI",
       "parent": "ai-safety",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "원칙 목록으로 모델이 스스로 비판·수정하는 학습법.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "ai-alignment",
+        "guardrails",
+        "llm-as-judge",
+        "rlhf"
+      ]
     },
     {
       "id": "prompt-injection",
@@ -3449,6 +3456,39 @@
       "status": "planned",
       "priority": 4,
       "summary": "모델의 용도·한계·평가 결과를 적은 문서.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "rlaif",
+      "label": "RLAIF",
+      "parent": "constitutional-ai",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사람 대신 AI가 선호를 판정해 강화학습하는 방식.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "ai-constitution",
+      "label": "모델 헌법",
+      "parent": "constitutional-ai",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델 행동의 기준이 되는 공개 원칙 문서.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "critique-revision",
+      "label": "비판·수정 루프",
+      "parent": "constitutional-ai",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델이 자기 답을 비판하고 고쳐 쓰게 하는 기법.",
       "added": "2026-11-01",
       "related": []
     }
