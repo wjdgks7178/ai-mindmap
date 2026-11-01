@@ -1847,10 +1847,18 @@
       "label": "레드팀",
       "parent": "ai-safety",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "일부러 공격해 모델의 약점을 찾는 안전 점검.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "ai-evaluation",
+        "guardrails",
+        "nist-ai-rmf",
+        "prompt-injection",
+        "rlhf"
+      ]
     },
     {
       "id": "constitutional-ai",
@@ -3408,6 +3416,39 @@
       "status": "planned",
       "priority": 4,
       "summary": "긴 입력 속에 숨긴 사실을 찾는지 재는 평가.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "jailbreak",
+      "label": "탈옥",
+      "parent": "red-teaming",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "안전 규칙을 우회하도록 유도하는 입력 기법.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "automated-red-teaming",
+      "label": "자동 레드팀",
+      "parent": "red-teaming",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "LLM이 공격 프롬프트를 대량 생성해 점검하는 방식.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "model-card",
+      "label": "모델 카드",
+      "parent": "red-teaming",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "모델의 용도·한계·평가 결과를 적은 문서.",
       "added": "2026-11-01",
       "related": []
     }
