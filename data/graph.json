@@ -1899,20 +1899,30 @@
       "label": "EU AI Act",
       "parent": "ai-safety",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "위험 등급별로 의무를 정한 EU 법.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "literacy",
+        "nist-ai-rmf"
+      ]
     },
     {
       "id": "nist-ai-rmf",
       "label": "NIST AI RMF",
       "parent": "ai-safety",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "Govern·Map·Measure·Manage 위험관리 틀.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "eu-ai-act",
+        "red-teaming"
+      ]
     },
     {
       "id": "ai-alignment",
@@ -3529,6 +3539,83 @@
       "status": "planned",
       "priority": 4,
       "summary": "에이전트에게 필요한 도구·권한만 주는 설계.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "ai-act-risk-tiers",
+      "label": "AI Act 위험 등급",
+      "parent": "eu-ai-act",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "금지·고위험·투명성·최소 위험 4단계 분류.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "gpai-obligations",
+      "label": "범용 AI 모델 의무",
+      "parent": "eu-ai-act",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "GPAI 제공자에게 문서화·평가 등을 요구하는 규칙.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "ai-literacy-obligation",
+      "label": "AI 리터러시 의무",
+      "parent": "eu-ai-act",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "2025-02부터 조직이 직원의 AI 이해를 갖추게 하는 규정.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "gdpr-ai",
+      "label": "GDPR과 AI",
+      "parent": "eu-ai-act",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "개인정보 보호법이 AI 학습·서비스에 미치는 영향.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "rmf-genai-profile",
+      "label": "생성형 AI 프로파일",
+      "parent": "nist-ai-rmf",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "NIST-AI-600-1, 생성형 AI 고유 위험 대응 지침.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "iso-42001",
+      "label": "ISO/IEC 42001",
+      "parent": "nist-ai-rmf",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "AI 경영시스템 인증 표준.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "ai-risk-register",
+      "label": "AI 위험 대장",
+      "parent": "nist-ai-rmf",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "식별한 AI 위험을 기록·추적하는 목록.",
       "added": "2026-11-01",
       "related": []
     }
