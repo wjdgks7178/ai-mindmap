@@ -1882,10 +1882,17 @@
       "label": "프롬프트 인젝션",
       "parent": "ai-safety",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "외부 텍스트에 숨은 지시로 모델을 속이는 공격.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "guardrails",
+        "human-in-the-loop",
+        "jailbreak",
+        "red-teaming"
+      ]
     },
     {
       "id": "eu-ai-act",
@@ -3489,6 +3496,39 @@
       "status": "planned",
       "priority": 4,
       "summary": "모델이 자기 답을 비판하고 고쳐 쓰게 하는 기법.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "indirect-prompt-injection",
+      "label": "간접 프롬프트 인젝션",
+      "parent": "prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "외부 콘텐츠에 숨은 지시로 에이전트를 조종하는 공격.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "lethal-trifecta",
+      "label": "치명적 3요소",
+      "parent": "prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "비공개 데이터·신뢰 못 할 입력·외부 통신이 겹치면 유출되는 조건.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "least-privilege-agents",
+      "label": "에이전트 최소 권한",
+      "parent": "prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 4,
+      "summary": "에이전트에게 필요한 도구·권한만 주는 설계.",
       "added": "2026-11-01",
       "related": []
     }
