@@ -1473,12 +1473,19 @@
       "label": "컨텍스트 윈도우",
       "parent": "llm-basics",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "모델이 한 번에 볼 수 있는 입력 길이.",
       "aka": [],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "compaction",
+        "context-rot",
+        "kv-cache",
+        "long-context-vs-rag",
+        "prompt-caching"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-11-01"
     },
     {
       "id": "temperature-sampling",
@@ -3287,6 +3294,39 @@
       "status": "planned",
       "priority": 4,
       "summary": "글을 모델이 읽는 토큰 조각으로 나누는 일.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "lost-in-the-middle",
+      "label": "Lost in the Middle",
+      "parent": "context-window",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "관련 정보가 입력 중간에 있으면 성능이 떨어지는 위치 편향.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "token-budget",
+      "label": "토큰 예산",
+      "parent": "context-window",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "작업별로 쓸 토큰 총량을 정해 관리하는 방식.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "output-token-limit",
+      "label": "최대 출력 토큰",
+      "parent": "context-window",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 4,
+      "summary": "한 번에 생성할 수 있는 출력 길이 한도와 max_tokens.",
       "added": "2026-11-01",
       "related": []
     }
