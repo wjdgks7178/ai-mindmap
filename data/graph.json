@@ -616,10 +616,11 @@
       "label": "이미지 생성",
       "parent": "multimodal",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "글에서 그림을 만드는 확산 모델 등.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-11-01"
     },
     {
       "id": "speech-asr-tts",
@@ -2970,6 +2971,59 @@
       "priority": 4,
       "summary": "로봇 학습의 데이터 병목과 수집법.",
       "added": "2026-11-01"
+    },
+    {
+      "id": "diffusion-model",
+      "label": "확산 모델",
+      "parent": "image-generation",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "노이즈 추가·제거로 데이터 분포를 학습하는 생성 모델.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "image-prompting",
+      "label": "이미지 프롬프트 쓰기",
+      "parent": "image-generation",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "피사체·스타일·구도·조명으로 나눠 쓰는 법.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "controlnet-inpainting",
+      "label": "ControlNet·인페인팅",
+      "parent": "image-generation",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "포즈·윤곽 조건 지정과 부분 수정.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "lora-finetune",
+      "label": "LoRA 미세조정",
+      "parent": "image-generation",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "작은 추가 가중치로 특정 화풍·인물을 학습.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "ai-image-copyright",
+      "label": "AI 이미지 저작권",
+      "parent": "image-generation",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "학습 데이터와 생성물의 권리 쟁점.",
+      "added": "2026-11-01",
+      "related": [
+        "ai-safety"
+      ]
     }
   ]
 }
