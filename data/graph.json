@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "nodes": [
     {
       "id": "ai",
@@ -2825,6 +2825,33 @@
       "priority": 3,
       "summary": "Claude Code 지침 파일 구성과 길이 관리.",
       "added": "2026-10-31"
+    },
+    {
+      "id": "physical-ai",
+      "label": "피지컬 AI·로보틱스",
+      "parent": "ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 1,
+      "summary": "화면 속을 넘어 로봇·자율주행처럼 현실 세계에서 보고 움직이는 AI.",
+      "added": "2026-11-01",
+      "related": [
+        "multimodal",
+        "reinforcement-learning"
+      ]
+    },
+    {
+      "id": "reinforcement-learning",
+      "label": "강화학습",
+      "parent": "ml-fundamentals",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "보상을 최대화하도록 시행착오로 배우는 학습 방식. RLHF와 로봇 제어의 뿌리.",
+      "added": "2026-11-01",
+      "related": [
+        "physical-ai"
+      ]
     }
   ]
 }
