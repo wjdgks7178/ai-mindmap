@@ -1389,12 +1389,13 @@
       "label": "신경망 기초",
       "parent": "ml-fundamentals",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "뉴런·가중치·층으로 이루어진 함수 근사기.",
       "aka": [],
       "related": [],
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "done": "2026-11-01"
     },
     {
       "id": "overfitting",
@@ -3197,6 +3198,39 @@
       "priority": 4,
       "summary": "새 시도와 검증된 선택 사이의 균형.",
       "added": "2026-11-01"
+    },
+    {
+      "id": "activation-functions",
+      "label": "활성화 함수",
+      "parent": "neural-network-basics",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "sigmoid·tanh·ReLU와 비선형의 역할.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "backpropagation",
+      "label": "역전파와 경사하강법",
+      "parent": "neural-network-basics",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "손실의 기울기로 가중치를 조정하는 학습 알고리즘.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "transformer-architecture",
+      "label": "Transformer",
+      "parent": "neural-network-basics",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "어텐션으로 문맥을 처리하는 LLM의 기반 구조.",
+      "added": "2026-11-01",
+      "related": [
+        "llm-basics"
+      ]
     }
   ]
 }
