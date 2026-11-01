@@ -572,10 +572,11 @@
       "label": "에이전트 검증 루프",
       "parent": "architecture",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "테스트·린트·리뷰 에이전트로 품질을 게이트하는 방식.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-11-01"
     },
     {
       "id": "agent-memory",
@@ -627,10 +628,11 @@
       "label": "음성 인식과 합성",
       "parent": "multimodal",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "음성→글(ASR, Whisper)과 글→음성(TTS).",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-11-01"
     },
     {
       "id": "video-ai",
@@ -3024,6 +3026,62 @@
       "related": [
         "ai-safety"
       ]
+    },
+    {
+      "id": "independent-reviewer",
+      "label": "독립 리뷰어 에이전트",
+      "parent": "agent-verification",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "생성자와 맥락을 분리한 검토자를 쓰는 이유.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "whisper",
+      "label": "Whisper",
+      "parent": "speech-asr-tts",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "OpenAI 오픈소스 음성 인식 모델과 로컬 실행.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "voice-agent",
+      "label": "음성 에이전트",
+      "parent": "speech-asr-tts",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "ASR-LLM-TTS 파이프라인 vs 실시간 음성 모델.",
+      "added": "2026-11-01",
+      "related": [
+        "agent-loop"
+      ]
+    },
+    {
+      "id": "voice-cloning-ethics",
+      "label": "음성 복제와 윤리",
+      "parent": "speech-asr-tts",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "목소리 복제의 동의·사칭 문제.",
+      "added": "2026-11-01",
+      "related": [
+        "ai-safety"
+      ]
+    },
+    {
+      "id": "wer",
+      "label": "WER 단어 오류율",
+      "parent": "speech-asr-tts",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "음성 인식 정확도를 재는 지표.",
+      "added": "2026-11-01"
     }
   ]
 }
