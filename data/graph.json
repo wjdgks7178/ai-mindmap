@@ -2832,14 +2832,15 @@
       "label": "피지컬 AI·로보틱스",
       "parent": "ai",
       "domain": "physical-ai",
-      "status": "planned",
+      "status": "done",
       "priority": 1,
       "summary": "화면 속을 넘어 로봇·자율주행처럼 현실 세계에서 보고 움직이는 AI.",
       "added": "2026-11-01",
       "related": [
         "multimodal",
         "reinforcement-learning"
-      ]
+      ],
+      "done": "2026-11-01"
     },
     {
       "id": "reinforcement-learning",
@@ -2902,6 +2903,72 @@
       "status": "planned",
       "priority": 4,
       "summary": "역할에 권한을 묶어 관리하는 인가 모델.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "vla-model",
+      "label": "VLA 모델",
+      "parent": "physical-ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 3,
+      "summary": "보기+언어+행동을 한 모델로 묶은 로봇용 파운데이션 모델.",
+      "added": "2026-11-01",
+      "related": [
+        "multimodal"
+      ]
+    },
+    {
+      "id": "sim-to-real",
+      "label": "Sim-to-real",
+      "parent": "physical-ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시뮬레이션 학습을 현실 로봇으로 옮길 때의 간극과 해법.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "world-model",
+      "label": "월드 모델",
+      "parent": "physical-ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 3,
+      "summary": "행동 결과를 미리 상상하는 모델.",
+      "added": "2026-11-01",
+      "related": [
+        "video-ai"
+      ]
+    },
+    {
+      "id": "humanoid-robots",
+      "label": "휴머노이드 로봇",
+      "parent": "physical-ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 4,
+      "summary": "사람 모양 로봇이 주목받는 이유와 현황.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "autonomous-driving",
+      "label": "자율주행",
+      "parent": "physical-ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 4,
+      "summary": "가장 널리 상용화된 피지컬 AI.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "teleoperation-data",
+      "label": "원격조종 시연 데이터",
+      "parent": "physical-ai",
+      "domain": "physical-ai",
+      "status": "planned",
+      "priority": 4,
+      "summary": "로봇 학습의 데이터 병목과 수집법.",
       "added": "2026-11-01"
     }
   ]
