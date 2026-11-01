@@ -639,10 +639,11 @@
       "label": "영상 이해와 생성",
       "parent": "multimodal",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "영상을 요약하거나 새로 만드는 AI.",
-      "added": "2026-10-28"
+      "added": "2026-10-28",
+      "done": "2026-11-01"
     },
     {
       "id": "embedding-clip",
@@ -3081,6 +3082,49 @@
       "status": "planned",
       "priority": 5,
       "summary": "음성 인식 정확도를 재는 지표.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "video-understanding",
+      "label": "영상 이해와 요약",
+      "parent": "video-ai",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "프레임 샘플링과 자막으로 긴 영상을 요약·검색.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "spacetime-patches",
+      "label": "시공간 패치",
+      "parent": "video-ai",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "영상을 토큰처럼 쪼개는 단위.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "deepfake",
+      "label": "딥페이크와 합성물 표시",
+      "parent": "video-ai",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "영상 합성의 악용과 워터마크·표기 대응.",
+      "added": "2026-11-01",
+      "related": [
+        "ai-safety"
+      ]
+    },
+    {
+      "id": "text-to-video-prompting",
+      "label": "영상 프롬프트 쓰기",
+      "parent": "video-ai",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "카메라 움직임·길이·장면 전환 지시법.",
       "added": "2026-11-01"
     }
   ]
