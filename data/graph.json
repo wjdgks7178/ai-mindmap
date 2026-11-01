@@ -1819,10 +1819,18 @@
       "label": "긴 컨텍스트 vs RAG",
       "parent": "knowledge-retrieval",
       "domain": "knowledge-retrieval",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "문서를 통째로 넣을지 검색해 일부만 넣을지 정하는 기준과 비용.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "agentic-rag",
+        "context-window",
+        "contextual-retrieval",
+        "prompt-caching",
+        "rag"
+      ]
     },
     {
       "id": "graph-rag",
@@ -3378,6 +3386,28 @@
       "status": "planned",
       "priority": 4,
       "summary": "키워드와 의미 검색을 함께 쓰는 구성.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "self-route",
+      "label": "Self-Route",
+      "parent": "long-context-vs-rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "쿼리별로 RAG와 긴 컨텍스트 경로를 고르는 라우팅.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "needle-in-haystack",
+      "label": "건초더미 속 바늘 테스트",
+      "parent": "long-context-vs-rag",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "긴 입력 속에 숨긴 사실을 찾는지 재는 평가.",
       "added": "2026-11-01",
       "related": []
     }
