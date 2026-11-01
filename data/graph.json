@@ -2741,10 +2741,11 @@
       "label": "인증과 인가",
       "parent": "vibecoding-safety",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 2,
       "summary": "로그인과 권한 검사를 구분하기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-01"
     },
     {
       "id": "input-validation",
@@ -2852,6 +2853,56 @@
       "related": [
         "physical-ai"
       ]
+    },
+    {
+      "id": "idor",
+      "label": "IDOR(남의 번호로 접근)",
+      "parent": "access-control",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "URL·요청의 식별자만 바꿔 남의 데이터에 접근하는 취약점.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "jwt-session",
+      "label": "세션과 JWT",
+      "parent": "access-control",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "로그인 상태를 유지하는 두 방식과 장단점.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "oauth-sso",
+      "label": "OAuth와 소셜 로그인",
+      "parent": "access-control",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "외부 신원 제공자에게 인증을 맡기는 표준.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "passkeys",
+      "label": "패스키",
+      "parent": "access-control",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "비밀번호 없이 기기 서명으로 로그인하는 방식.",
+      "added": "2026-11-01"
+    },
+    {
+      "id": "rbac",
+      "label": "역할 기반 접근 제어(RBAC)",
+      "parent": "access-control",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "역할에 권한을 묶어 관리하는 인가 모델.",
+      "added": "2026-11-01"
     }
   ]
 }
