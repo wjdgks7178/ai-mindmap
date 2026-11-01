@@ -1802,10 +1802,17 @@
       "label": "의미 검색 vs 키워드 검색",
       "parent": "knowledge-retrieval",
       "domain": "knowledge-retrieval",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "뜻이 비슷한 글을 찾는 방식과 같은 단어를 찾는 방식의 차이와 선택 기준.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-01",
+      "related": [
+        "embedding-clip",
+        "rag",
+        "reranking",
+        "vector-db"
+      ]
     },
     {
       "id": "long-context-vs-rag",
@@ -3327,6 +3334,50 @@
       "status": "planned",
       "priority": 4,
       "summary": "한 번에 생성할 수 있는 출력 길이 한도와 max_tokens.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "bm25",
+      "label": "BM25",
+      "parent": "semantic-vs-keyword-search",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "단어 빈도와 희소성으로 점수를 매기는 키워드 검색 알고리즘.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "cosine-similarity",
+      "label": "코사인 유사도",
+      "parent": "semantic-vs-keyword-search",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "두 벡터가 가리키는 방향이 얼마나 비슷한지로 뜻의 가까움을 재는 값.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "rrf",
+      "label": "RRF",
+      "parent": "semantic-vs-keyword-search",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "여러 검색 결과를 순위만으로 합치는 방법.",
+      "added": "2026-11-01",
+      "related": []
+    },
+    {
+      "id": "hybrid-search",
+      "label": "하이브리드 검색",
+      "parent": "semantic-vs-keyword-search",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 4,
+      "summary": "키워드와 의미 검색을 함께 쓰는 구성.",
       "added": "2026-11-01",
       "related": []
     }
