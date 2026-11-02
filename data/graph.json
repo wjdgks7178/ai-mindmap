@@ -2075,20 +2075,22 @@
    "label": "SWE-bench",
    "parent": "benchmarks",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 GitHub 이슈 해결로 코딩 에이전트를 재는 벤치마크와 Verified·Pro 변형.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-02"
   },
   {
    "id": "data-contamination",
    "label": "데이터 오염",
    "parent": "benchmarks",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시험 문제가 학습 데이터에 섞여 점수가 부풀려지는 문제.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-02"
   },
   {
    "id": "benchmark-saturation",
@@ -4024,10 +4026,11 @@
    "label": "텍스트 임베딩 모델",
    "parent": "knowledge-retrieval",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문장을 의미 벡터로 바꾸는 모델과 차원·거리 척도.",
-   "added": "2026-11-02"
+   "added": "2026-11-02",
+   "done": "2026-11-02"
   },
   {
    "id": "semantic-chunking",
@@ -4087,6 +4090,76 @@
    "status": "planned",
    "priority": 5,
    "summary": "IDF·k1·b가 점수에 미치는 영향.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "mteb",
+   "label": "MTEB 리더보드 읽기",
+   "parent": "text-embedding",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임베딩 모델 비교표의 과제·점수를 읽는 법.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "matryoshka-embedding",
+   "label": "마트료시카 임베딩",
+   "parent": "text-embedding",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "앞부분만 잘라 차원을 줄여도 쓸 수 있는 임베딩.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "embedding-drift",
+   "label": "임베딩 모델 교체와 재색인",
+   "parent": "text-embedding",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델을 바꿀 때 전체 재임베딩과 버전 관리.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "swe-bench-verified",
+   "label": "SWE-bench Verified",
+   "parent": "swe-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람이 검증한 부분집합이 왜 만들어졌는지.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "agent-harness-variance",
+   "label": "하네스에 따른 점수 차이",
+   "parent": "swe-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 모델도 에이전트 구성에 따라 점수가 달라지는 이유.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "live-benchmark",
+   "label": "갱신형 벤치마크",
+   "parent": "data-contamination",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 마감 이후 문제로 오염을 피하는 평가.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "membership-inference",
+   "label": "멤버십 추론",
+   "parent": "data-contamination",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "특정 데이터가 학습에 쓰였는지 추정하는 기법.",
    "added": "2026-11-02"
   }
  ]
