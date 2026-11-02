@@ -2980,23 +2980,28 @@
    "label": "VLA 모델",
    "parent": "physical-ai",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보기+언어+행동을 한 모델로 묶은 로봇용 파운데이션 모델.",
    "added": "2026-11-01",
    "related": [
     "multimodal"
-   ]
+   ],
+   "done": "2026-11-02"
   },
   {
    "id": "sim-to-real",
    "label": "Sim-to-real",
    "parent": "physical-ai",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시뮬레이션 학습을 현실 로봇으로 옮길 때의 간극과 해법.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-02",
+   "related": [
+    "reinforcement-learning"
+   ]
   },
   {
    "id": "world-model",
@@ -3709,6 +3714,79 @@
    "status": "planned",
    "priority": 4,
    "summary": "평가 중 에이전트가 환경을 망치거나 정답을 훔쳐보지 못하게 하는 샌드박스.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "action-tokenization",
+   "label": "행동 토큰화",
+   "parent": "vla-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연속 로봇 행동을 구간·DCT로 토큰화하는 방법(RT-2, FAST).",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "flow-matching",
+   "label": "플로 매칭",
+   "parent": "vla-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "노이즈에서 연속 행동·이미지를 생성하는 확률 모델, 확산 모델의 친척.",
+   "added": "2026-11-02",
+   "related": [
+    "image-generation"
+   ]
+  },
+  {
+   "id": "openvla",
+   "label": "OpenVLA",
+   "parent": "vla-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "7B 오픈소스 VLA, 자기 로봇 데이터로 미세조정 가능.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "cross-embodiment",
+   "label": "교차 로봇 학습",
+   "parent": "vla-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 종류 로봇 데이터를 합쳐 한 모델을 학습하는 접근.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "domain-randomization",
+   "label": "도메인 랜덤화",
+   "parent": "sim-to-real",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시뮬레이션 조건을 무작위로 바꿔 현실 일반화를 높이는 기법.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "system-identification",
+   "label": "시스템 식별",
+   "parent": "sim-to-real",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "현실 측정으로 시뮬레이터 물리 파라미터를 보정하는 방법.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "physics-simulators",
+   "label": "로봇 물리 시뮬레이터",
+   "parent": "sim-to-real",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Isaac Sim·MuJoCo 등 로봇 학습용 시뮬레이터 비교.",
    "added": "2026-11-02"
   }
  ]
