@@ -696,10 +696,14 @@
    "label": "종료 조건과 가드레일",
    "parent": "agent-loop",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "반복 한도·체크포인트로 에이전트를 통제.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-02",
+   "related": [
+    "human-in-the-loop"
+   ]
   },
   {
    "id": "react-pattern",
@@ -716,10 +720,11 @@
    "label": "샌드박스",
    "parent": "agent-loop",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "에이전트 실행을 격리된 환경에 가두는 안전장치.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-02"
   },
   {
    "id": "http-basics",
@@ -1704,20 +1709,22 @@
    "label": "Send와 map-reduce",
    "parent": "langgraph-nodes-edges",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실행 때 개수가 정해지는 작업을 병렬로 나눠 보내고 모으는 패턴.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-02"
   },
   {
    "id": "langgraph-super-step",
    "label": "Super-step과 병렬 실행",
    "parent": "langgraph-nodes-edges",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 단계에서 여러 노드가 동시에 실행되는 실행 단위.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-02"
   },
   {
    "id": "langgraph-compile",
@@ -3886,6 +3893,95 @@
    "status": "planned",
    "priority": 4,
    "summary": "그래프를 끝내는 END 노드와 반복 상한(recursion limit).",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "gvisor-firecracker",
+   "label": "gVisor와 Firecracker",
+   "parent": "sandboxing",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용자 공간 커널과 마이크로VM 격리 방식의 차이.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "network-egress-policy",
+   "label": "네트워크 송신 통제",
+   "parent": "sandboxing",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "샌드박스 밖으로 나가는 통신을 허용 목록으로 제한.",
+   "added": "2026-11-02",
+   "related": [
+    "lethal-trifecta"
+   ]
+  },
+  {
+   "id": "ephemeral-environments",
+   "label": "일회용 실행 환경",
+   "parent": "sandboxing",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작업마다 만들고 버리는 환경으로 오염을 막는 방법.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "checkpointer",
+   "label": "체크포인트와 상태 저장",
+   "parent": "stop-conditions",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중단·재개를 위해 실행 상태를 저장하는 장치.",
+   "added": "2026-11-02",
+   "related": [
+    "langgraph-super-step"
+   ]
+  },
+  {
+   "id": "budget-limits",
+   "label": "토큰·비용 예산 한도",
+   "parent": "stop-conditions",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "반복·비용·시간 상한으로 폭주를 막기.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "langgraph-reducers",
+   "label": "리듀서와 상태 병합",
+   "parent": "langgraph-super-step",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "병렬 노드가 같은 키에 쓸 때 값을 합치는 규칙.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "langgraph-recursion-limit",
+   "label": "recursion_limit",
+   "parent": "langgraph-super-step",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "super-step 수 상한과 버전별 기본값.",
+   "added": "2026-11-02",
+   "related": [
+    "stop-conditions"
+   ]
+  },
+  {
+   "id": "langgraph-subgraph",
+   "label": "서브그래프",
+   "parent": "langgraph-send-map-reduce",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "그래프 안에 그래프를 넣어 재사용하고 병렬화.",
    "added": "2026-11-02"
   }
  ]
