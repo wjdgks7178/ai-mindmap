@@ -685,10 +685,11 @@
    "label": "에이전트-컴퓨터 인터페이스",
    "parent": "agent-loop",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 쓰기 쉬운 도구 설명·형식을 설계하는 일.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-02"
   },
   {
    "id": "stop-conditions",
@@ -1682,10 +1683,11 @@
    "label": "조건부 엣지와 라우팅 함수",
    "parent": "langgraph-nodes-edges",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상태를 보고 다음 노드를 고르는 add_conditional_edges.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-02"
   },
   {
    "id": "langgraph-command",
@@ -3008,13 +3010,14 @@
    "label": "월드 모델",
    "parent": "physical-ai",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "행동 결과를 미리 상상하는 모델.",
    "added": "2026-11-01",
    "related": [
-    "video-ai"
-   ]
+    "llm-basics"
+   ],
+   "done": "2026-11-02"
   },
   {
    "id": "humanoid-robots",
@@ -3787,6 +3790,102 @@
    "status": "planned",
    "priority": 4,
    "summary": "Isaac Sim·MuJoCo 등 로봇 학습용 시뮬레이터 비교.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "jepa",
+   "label": "JEPA",
+   "parent": "world-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "픽셀 대신 잠재 공간에서 미래를 예측하는 LeCun의 아키텍처.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "genie-world-generation",
+   "label": "생성형 월드 모델(Genie·Cosmos)",
+   "parent": "world-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "영상으로 학습해 탐험 가능한 세계를 생성하는 모델.",
+   "added": "2026-11-02",
+   "related": [
+    "image-generation"
+   ]
+  },
+  {
+   "id": "model-predictive-control",
+   "label": "모델 예측 제어(MPC)",
+   "parent": "world-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "월드 모델로 여러 행동을 상상해 최선을 고르는 제어.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "compounding-error",
+   "label": "예측 오차 누적",
+   "parent": "world-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "롤아웃이 길어질수록 작은 오차가 커지는 문제.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "tool-description-design",
+   "label": "도구 설명 작성법",
+   "parent": "agent-computer-interface",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이름·설명·예시·출력 형식 설계 체크리스트.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "poka-yoke-tools",
+   "label": "실수 방지형 도구 설계",
+   "parent": "agent-computer-interface",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "절대경로 강제 등 에이전트가 실수하기 어렵게 만드는 설계.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "tool-eval-loop",
+   "label": "도구 평가·개선 루프",
+   "parent": "agent-computer-interface",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실행 기록을 보고 도구를 고치는 평가 사이클.",
+   "added": "2026-11-02",
+   "related": [
+    "eval-transcripts"
+   ]
+  },
+  {
+   "id": "langgraph-router-loop",
+   "label": "LangGraph 루프 만들기",
+   "parent": "langgraph-conditional-edges",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "조건부 엣지로 수정-재검사 반복과 종료를 구성하기.",
+   "added": "2026-11-02"
+  },
+  {
+   "id": "langgraph-end-node",
+   "label": "END와 종료 처리",
+   "parent": "langgraph-conditional-edges",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "그래프를 끝내는 END 노드와 반복 상한(recursion limit).",
    "added": "2026-11-02"
   }
  ]
