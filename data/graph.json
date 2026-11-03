@@ -2400,10 +2400,16 @@
    "label": "게이트 검사",
    "parent": "prompt-chaining",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "체인 중간에 코드로 하는 통과 검사.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "prompt-chaining",
+    "agent-verification",
+    "eval-set"
+   ]
   },
   {
    "id": "prompt-chain-example",
@@ -4612,6 +4618,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "수치·인용·코드를 확인하는 순서.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "retry-budget",
+   "label": "재시도 한도",
+   "parent": "gate-check",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "게이트 실패 시 몇 번까지 다시 시도할지 정하기.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "schema-validation",
+   "label": "스키마 검증",
+   "parent": "gate-check",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "JSON 스키마로 출력 형식을 기계적으로 확인.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "fail-fast",
+   "label": "빨리 실패하기",
+   "parent": "gate-check",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오류를 앞 단계에서 잡아 비용을 줄이는 원칙.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "llm-gate",
+   "label": "LLM 게이트",
+   "parent": "gate-check",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "다른 모델이 중간 결과를 판정하는 게이트.",
    "added": "2026-11-03"
   }
  ]
