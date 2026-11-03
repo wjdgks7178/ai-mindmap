@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "nodes": [
   {
    "id": "ai",
@@ -2118,30 +2118,33 @@
    "label": "루브릭 설계",
    "parent": "llm-as-judge",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "채점 기준표를 차원별로 쪼개 쓰는 법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "judge-bias",
    "label": "심사위원 편향",
    "parent": "llm-as-judge",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위치·장황함·자기 선호 편향과 완화책.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "regression-eval",
    "label": "회귀 평가",
    "parent": "eval-set",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "바꾼 뒤 기존 기능이 망가졌는지 보는 평가.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "eval-harness",
@@ -2172,23 +2175,25 @@
    "label": "파운데이션 모델",
    "parent": "ai-ml-dl-relation",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 번 크게 학습해 여러 용도로 쓰는 범용 모델.",
    "added": "2026-10-31",
    "related": [
     "open-vs-closed-models"
-   ]
+   ],
+   "done": "2026-11-03"
   },
   {
    "id": "generative-ai",
    "label": "생성형 AI",
    "parent": "ai-ml-dl-relation",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "글·그림·음성을 새로 만들어 내는 모델 계열.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "fairness-metrics",
@@ -4161,6 +4166,146 @@
    "priority": 5,
    "summary": "특정 데이터가 학습에 쓰였는지 추정하는 기법.",
    "added": "2026-11-02"
+  },
+  {
+   "id": "analytic-vs-holistic-rubric",
+   "label": "분석적 vs 총체적 루브릭",
+   "parent": "rubric-design",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "차원별 점수와 한 줄 총점 방식의 장단.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "unknown-exit",
+   "label": "Unknown 출구",
+   "parent": "rubric-design",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "근거 부족 시 모른다고 답하게 하는 장치.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "grader-calibration",
+   "label": "채점기 교정",
+   "parent": "rubric-design",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "심사 LLM을 사람 채점과 맞추는 절차.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "position-bias",
+   "label": "위치 편향",
+   "parent": "judge-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "순서가 점수를 좌우하는 문제.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "verbosity-bias",
+   "label": "장황함 편향",
+   "parent": "judge-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 답을 높게 쳐 주는 버릇.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "self-preference-bias",
+   "label": "자기 선호 편향",
+   "parent": "judge-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자기 모델 답에 후한 경향.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "capability-eval",
+   "label": "능력 평가",
+   "parent": "regression-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새로 얼마나 잘하나를 재는 평가.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "eval-saturation",
+   "label": "평가 포화",
+   "parent": "regression-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통과율 100%에서 신호가 사라지는 현상.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "eval-in-ci",
+   "label": "CI에서의 평가",
+   "parent": "regression-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "변경마다 자동으로 평가를 돌리는 습관.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "emergent-abilities",
+   "label": "창발 능력",
+   "parent": "foundation-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "규모가 커지며 나타나는 예상 밖 능력.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "homogenization-risk",
+   "label": "동질화 위험",
+   "parent": "foundation-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 기반 모델의 결함이 전파되는 문제.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "fine-tuning-vs-prompting",
+   "label": "미세조정 vs 프롬프팅",
+   "parent": "foundation-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기반 모델을 적응시키는 두 방법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "gan",
+   "label": "GAN",
+   "parent": "generative-ai",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생성기와 판별기가 경쟁하는 생성 모델.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "vae",
+   "label": "VAE",
+   "parent": "generative-ai",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "잠재 공간으로 압축·복원하는 생성 모델.",
+   "added": "2026-11-03"
   }
  ]
 }
