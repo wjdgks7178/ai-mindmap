@@ -2250,13 +2250,14 @@
    "label": "프롬프트 캐싱",
    "parent": "llm-api-basics",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "반복되는 앞부분을 캐시해 비용·한도를 아끼는 기능.",
    "added": "2026-10-31",
    "related": [
     "context-window"
-   ]
+   ],
+   "done": "2026-11-03"
   },
   {
    "id": "rate-limit-retry",
@@ -2283,13 +2284,14 @@
    "label": "KV 캐시",
    "parent": "gpu-basics",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "컨텍스트가 길수록 VRAM을 먹는 어텐션 캐시.",
    "added": "2026-10-31",
    "related": [
     "transformer-attention"
-   ]
+   ],
+   "done": "2026-11-03"
   },
   {
    "id": "gpu-cloud-vs-local",
@@ -2306,30 +2308,33 @@
    "label": "GGUF와 모델 파일 형식",
    "parent": "quantization",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "GGUF·safetensors 등 가중치 파일 형식과 이름 읽는 법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "distillation",
    "label": "증류",
    "parent": "quantization",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "큰 모델의 지식을 작은 모델에 옮기는 방법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "llama-cpp",
    "label": "llama.cpp",
    "parent": "local-llm",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "CPU·GPU에서 LLM을 돌리는 C++ 추론 엔진.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03"
   },
   {
    "id": "openai-compatible-api",
@@ -4305,6 +4310,126 @@
    "status": "planned",
    "priority": 4,
    "summary": "잠재 공간으로 압축·복원하는 생성 모델.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "cache-breakpoint",
+   "label": "캐시 중단점",
+   "parent": "prompt-caching",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "cache_control을 붙일 위치 고르는 법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "cache-ttl",
+   "label": "캐시 TTL",
+   "parent": "prompt-caching",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "5분과 1시간 중 고르는 기준.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "cache-invalidation",
+   "label": "캐시 무효화",
+   "parent": "prompt-caching",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "앞부분이 바뀌면 뒤가 모두 깨지는 규칙.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "soft-targets",
+   "label": "소프트 타깃",
+   "parent": "distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교사의 확률 분포를 학습 신호로 쓰는 법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "synthetic-data",
+   "label": "합성 데이터",
+   "parent": "distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 만든 데이터로 학습하는 방법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "small-language-model",
+   "label": "소형 언어모델",
+   "parent": "distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작지만 특정 작업에 충분한 모델.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "ollama",
+   "label": "Ollama",
+   "parent": "llama-cpp",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로컬 모델 관리·실행 도구.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "vram-budgeting",
+   "label": "VRAM 예산 계산",
+   "parent": "llama-cpp",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델 크기와 컨텍스트로 메모리 가늠하기.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "safetensors",
+   "label": "safetensors",
+   "parent": "gguf-format",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허깅페이스 표준 가중치 파일 형식.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "quant-naming",
+   "label": "Q4_K_M 이름 읽기",
+   "parent": "gguf-format",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "양자화 표기 해독법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "attention-mechanism",
+   "label": "어텐션",
+   "parent": "kv-cache",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰 사이 관련도를 계산하는 핵심 연산.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "kv-quantization",
+   "label": "KV 양자화",
+   "parent": "kv-cache",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "KV 캐시 메모리를 줄이는 방법.",
    "added": "2026-11-03"
   }
  ]
