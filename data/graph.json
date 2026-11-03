@@ -2404,10 +2404,16 @@
    "label": "모델 라우팅",
    "parent": "routing-pattern",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "난이도에 따라 작은·큰 모델로 나눠 비용 줄이기.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "distillation",
+    "prompt-caching",
+    "eval-set"
+   ]
   },
   {
    "id": "classifier-router",
@@ -4430,6 +4436,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "KV 캐시 메모리를 줄이는 방법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "router-training-data",
+   "label": "라우터 학습 데이터",
+   "parent": "model-routing",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "선호 데이터(Chatbot Arena)로 라우터를 학습하는 방식.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "cascade-routing",
+   "label": "캐스케이드 라우팅",
+   "parent": "model-routing",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "싼 모델 먼저, 불충분하면 큰 모델로 승격.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "llm-gateway",
+   "label": "LLM 게이트웨이",
+   "parent": "model-routing",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 모델 API 앞단에서 라우팅·로깅·비용 제어를 맡는 프록시.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "routing-cost-quality-tradeoff",
+   "label": "비용-품질 트레이드오프",
+   "parent": "model-routing",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "라우팅 임계값을 조절해 비용과 품질 균형을 잡는 법.",
    "added": "2026-11-03"
   }
  ]
