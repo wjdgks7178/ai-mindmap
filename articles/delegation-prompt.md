@@ -34,7 +34,7 @@ flowchart TD
 |---|---|
 | 위임 지시문 | AI가 다른 AI에게 주는 명세 |
 | [위임 판단하기](#delegation-skill) | 사람이 AI에 맡길지 정하는 판단 |
-| [시스템 프롬프트](#system-prompt) | 역할 전체의 상시 지침 |
+| 시스템 프롬프트 | 역할 전체의 상시 지침 |
 
 ## 더 읽을거리
 - [How we built our multi-agent research system(Anthropic)](https://www.anthropic.com/engineering/multi-agent-research-system) — 위임 지시문 실패 사례와 규칙.
