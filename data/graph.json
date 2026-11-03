@@ -2475,10 +2475,16 @@
    "label": "API vs 자체 호스팅",
    "parent": "training-inference-cost",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "손익분기와 보안 관점의 선택.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "training-inference-cost",
+    "gpu-basics",
+    "gguf-format"
+   ]
   },
   {
    "id": "token-pricing",
@@ -4658,6 +4664,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "다른 모델이 중간 결과를 판정하는 게이트.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "tco-calculation",
+   "label": "총소유비용 계산",
+   "parent": "api-vs-self-host",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "GPU·전력·인력까지 넣은 실제 비용 계산법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "gpu-utilization",
+   "label": "GPU 활용률",
+   "parent": "api-vs-self-host",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "놀리는 시간이 토큰당 단가를 올리는 원리.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "data-residency",
+   "label": "데이터 거주성",
+   "parent": "api-vs-self-host",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터가 어느 나라 서버에 있어야 하는지의 규제.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "private-endpoint",
+   "label": "프라이빗 엔드포인트",
+   "parent": "api-vs-self-host",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "클라우드 안에서 격리해 모델을 쓰는 방식.",
    "added": "2026-11-03"
   }
  ]
