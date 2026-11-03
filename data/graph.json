@@ -2558,10 +2558,16 @@
    "label": "위임 지시문 쓰기",
    "parent": "orchestrator-workers",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "워커가 오해하지 않게 작업을 명세하기.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "orchestrator-workers",
+    "context-engineering",
+    "delegation-skill"
+   ]
   },
   {
    "id": "stop-condition",
@@ -4741,6 +4747,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "요청 수와 토큰 수로 월 비용 계산.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "effort-scaling-rule",
+   "label": "노력 규모 규칙",
+   "parent": "delegation-prompt",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질문 복잡도에 따라 에이전트 수와 호출 수를 정하는 규칙.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "task-boundary",
+   "label": "작업 경계",
+   "parent": "delegation-prompt",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "워커 간 역할 중복을 막는 범위 지정.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "output-format-spec",
+   "label": "출력 형식 명세",
+   "parent": "delegation-prompt",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "워커가 돌려줄 결과의 구조를 지정하기.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "duplicate-work",
+   "label": "중복 작업 문제",
+   "parent": "delegation-prompt",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 워커가 같은 일을 반복하는 실패 패턴.",
    "added": "2026-11-03"
   }
  ]
