@@ -2373,13 +2373,17 @@
    "label": "결과 평가 습관",
    "parent": "ai-fluency-4d",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 결과를 비판적으로 읽는 체크 방법.",
    "added": "2026-10-31",
    "related": [
-    "eval-set"
-   ]
+    "ai-evaluation",
+    "eval-set",
+    "judge-bias",
+    "hallucination"
+   ],
+   "done": "2026-11-03"
   },
   {
    "id": "diligence-skill",
@@ -4568,6 +4572,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "쓰는 AI의 강점·한계·지식 시점을 파악하기.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "product-discernment",
+   "label": "결과물 평가",
+   "parent": "discernment-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "내용 정확성·완결성·형식 점검.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "process-discernment",
+   "label": "과정 평가",
+   "parent": "discernment-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론 단계와 근거를 점검.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "sycophancy-check",
+   "label": "아첨 점검",
+   "parent": "discernment-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 동의만 하는지 확인하는 법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "verification-checklist",
+   "label": "검증 체크리스트",
+   "parent": "discernment-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "수치·인용·코드를 확인하는 순서.",
    "added": "2026-11-03"
   }
  ]
