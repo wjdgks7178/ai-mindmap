@@ -2357,10 +2357,16 @@
    "label": "위임 판단하기",
    "parent": "ai-fluency-4d",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어떤 일을 AI에 맡기고 어떤 일은 내가 할지 정하는 기준.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "ai-fluency-4d",
+    "human-in-the-loop",
+    "hallucination"
+   ]
   },
   {
    "id": "discernment-skill",
@@ -4522,6 +4528,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "VLM이 없는 글자를 지어내는 오류와 대응.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "description-skill",
+   "label": "설명하기 역량",
+   "parent": "delegation-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "목표와 방식을 AI에게 정확히 전하는 역량.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "collaboration-modes",
+   "label": "협업 모드",
+   "parent": "delegation-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자동화·증강·에이전시 세 가지 일 나누는 방식.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "task-risk-matrix",
+   "label": "업무 위험 매트릭스",
+   "parent": "delegation-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "피해 크기와 AI 적합도로 위임 여부를 정하는 표.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "platform-awareness",
+   "label": "플랫폼 이해",
+   "parent": "delegation-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쓰는 AI의 강점·한계·지식 시점을 파악하기.",
    "added": "2026-11-03"
   }
  ]
