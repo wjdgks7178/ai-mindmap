@@ -2574,10 +2574,18 @@
    "label": "루프 종료 조건",
    "parent": "evaluator-optimizer",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "통과 점수·최대 횟수·개선폭 기준 설계.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "evaluator-optimizer",
+    "agent-loop",
+    "rubric-design",
+    "gate-check",
+    "human-in-the-loop"
+   ]
   },
   {
    "id": "self-refine",
@@ -4787,6 +4795,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "여러 워커가 같은 일을 반복하는 실패 패턴.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "max-iterations",
+   "label": "최대 반복 횟수",
+   "parent": "stop-condition",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "루프가 도는 횟수 상한.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "plateau-detection",
+   "label": "정체 감지",
+   "parent": "stop-condition",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개선폭이 줄어 멈출 때를 알아채는 법.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "budget-guard",
+   "label": "예산 가드",
+   "parent": "stop-condition",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰·시간·비용 상한으로 폭주를 막기.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "stop-reason-logging",
+   "label": "종료 사유 기록",
+   "parent": "stop-condition",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "왜 멈췄는지 남겨 디버깅하기.",
    "added": "2026-11-03"
   }
  ]
