@@ -2491,10 +2491,17 @@
    "label": "토큰 가격 읽기",
    "parent": "training-inference-cost",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력·출력·캐시 단가와 월 비용 추산법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-03",
+   "related": [
+    "training-inference-cost",
+    "prompt-caching",
+    "context-window",
+    "model-routing"
+   ]
   },
   {
    "id": "data-masking",
@@ -4704,6 +4711,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "클라우드 안에서 격리해 모델을 쓰는 방식.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "output-token-cost",
+   "label": "출력 토큰 비용",
+   "parent": "token-pricing",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "출력이 비싼 이유와 답변 길이 줄이기.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "tokenizer-language",
+   "label": "언어별 토큰 수",
+   "parent": "token-pricing",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한국어가 영어보다 토큰이 더 드는 이유.",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "cost-estimation-sheet",
+   "label": "비용 추산표",
+   "parent": "token-pricing",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청 수와 토큰 수로 월 비용 계산.",
    "added": "2026-11-03"
   }
  ]
