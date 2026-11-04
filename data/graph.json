@@ -2863,10 +2863,14 @@
       "label": "SQL 기초",
       "parent": "database-basics",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "SELECT·JOIN·WHERE로 데이터 읽기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "db-backup"
+      ]
     },
     {
       "id": "db-migration",
@@ -2883,20 +2887,29 @@
       "label": "백업과 복구",
       "parent": "database-basics",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "데이터 잃지 않는 최소 습관.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "rollback"
+      ]
     },
     {
       "id": "ci-cd",
       "label": "CI/CD",
       "parent": "deploy-hosting",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "푸시할 때 테스트·배포를 자동으로 돌리기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "code-review-ai",
+        "deterministic-feedback"
+      ]
     },
     {
       "id": "domain-dns",
@@ -5107,6 +5120,96 @@
       "status": "planned",
       "priority": 4,
       "summary": "되돌림·범위·민감도로 등급 매기기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "sql-injection",
+      "label": "SQL 인젝션",
+      "parent": "sql-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "입력을 쿼리에 이어붙일 때의 취약점과 파라미터 바인딩.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "db-index",
+      "label": "인덱스",
+      "parent": "sql-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "조회를 빠르게 하는 색인과 비용.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "db-transaction",
+      "label": "트랜잭션",
+      "parent": "sql-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "여러 변경을 전부 성공 또는 전부 취소로 묶기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "pitr",
+      "label": "시점 복구(PITR)",
+      "parent": "db-backup",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 5,
+      "summary": "WAL로 원하는 시각까지 되돌리기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "restore-drill",
+      "label": "복구 리허설",
+      "parent": "db-backup",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "백업이 실제로 복원되는지 정기 확인.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "rpo-rto",
+      "label": "RPO와 RTO",
+      "parent": "db-backup",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 5,
+      "summary": "허용 데이터 손실과 복구 시간 목표.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "github-actions",
+      "label": "GitHub Actions",
+      "parent": "ci-cd",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "workflow·job·step 구조로 자동화 짜기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "branch-protection",
+      "label": "브랜치 보호 규칙",
+      "parent": "ci-cd",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "CI 통과 없이는 머지 못 하게 막기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "secrets-in-ci",
+      "label": "CI 시크릿 다루기",
+      "parent": "ci-cd",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "저장소 시크릿과 로그 노출 방지.",
       "added": "2026-11-04"
     }
   ]
