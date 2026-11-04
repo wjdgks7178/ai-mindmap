@@ -1628,10 +1628,11 @@
       "label": "MCP(Model Context Protocol)",
       "parent": "tool-use",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "도구·데이터를 AI 앱에 표준 방식으로 연결하는 개방형 프로토콜.",
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "done": "2026-11-04"
     },
     {
       "id": "function-calling-schema",
@@ -5705,6 +5706,56 @@
       "status": "planned",
       "priority": 5,
       "summary": "원래 모델에서 멀어지지 않게 하는 고삐.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "mcp-transport",
+      "label": "MCP 전송: stdio·Streamable HTTP",
+      "parent": "mcp",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "로컬과 원격 MCP 서버 연결 방식.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "mcp-primitives",
+      "label": "MCP 프리미티브",
+      "parent": "mcp",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Tools·Resources·Prompts의 역할 구분.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "mcp-security",
+      "label": "MCP 보안",
+      "parent": "mcp",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "도구 권한·OAuth·악성 서버 위험.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "json-rpc",
+      "label": "JSON-RPC 2.0",
+      "parent": "mcp",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 6,
+      "summary": "MCP가 쓰는 요청·응답 메시지 규약.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "progressive-tool-discovery",
+      "label": "점진적 도구 탐색",
+      "parent": "mcp",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 5,
+      "summary": "도구가 많을 때 필요한 것만 불러오는 설계.",
       "added": "2026-11-04"
     }
   ]
