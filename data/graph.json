@@ -3383,13 +3383,14 @@
       "label": "자기지도학습",
       "parent": "supervised-unsupervised",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "데이터 일부를 가려 맞히며 배우는 LLM 사전학습의 기반.",
       "added": "2026-11-01",
       "related": [
         "llm-basics"
-      ]
+      ],
+      "done": "2026-11-04"
     },
     {
       "id": "rlhf",
@@ -5633,6 +5634,56 @@
       "status": "planned",
       "priority": 4,
       "summary": "y = b + wx 형태로 관계를 찾는 가장 기본 모델.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "pretext-task",
+      "label": "프리텍스트 과제",
+      "parent": "self-supervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "데이터로 만든 가짜 문제. 목적은 표현 학습.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "contrastive-learning",
+      "label": "대조 학습",
+      "parent": "self-supervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "같은 데이터의 변형은 가깝게 다른 데이터는 멀게 학습.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "masked-language-model",
+      "label": "마스크드 언어 모델",
+      "parent": "self-supervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "가린 토큰을 맞히는 BERT식 학습.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "next-token-prediction",
+      "label": "다음 토큰 예측",
+      "parent": "self-supervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM 사전학습의 핵심 목적 함수.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "representation-learning",
+      "label": "표현 학습",
+      "parent": "self-supervised",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "데이터를 유용한 벡터로 바꾸는 학습.",
       "added": "2026-11-04"
     }
   ]
