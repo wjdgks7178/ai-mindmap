@@ -3205,10 +3205,11 @@
       "label": "확산 모델",
       "parent": "image-generation",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "노이즈 추가·제거로 데이터 분포를 학습하는 생성 모델.",
-      "added": "2026-11-01"
+      "added": "2026-11-01",
+      "done": "2026-11-04"
     },
     {
       "id": "image-prompting",
@@ -5407,6 +5408,56 @@
       "status": "planned",
       "priority": 5,
       "summary": "깨진 링크·낡은 날짜 자동 점검.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "ddpm",
+      "label": "DDPM",
+      "parent": "diffusion-model",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "확산 모델 학습의 표준: 노이즈 예측 손실과 선형 스케줄.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "latent-diffusion",
+      "label": "잠재 확산·Stable Diffusion",
+      "parent": "diffusion-model",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 3,
+      "summary": "오토인코더 잠재 공간에서 확산해 비용을 줄이는 구조.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "classifier-free-guidance",
+      "label": "Classifier-free guidance",
+      "parent": "diffusion-model",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "조건·무조건 예측을 섞어 프롬프트 충실도를 조절.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "dit",
+      "label": "DiT",
+      "parent": "diffusion-model",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "U-Net 대신 트랜스포머로 노이즈를 제거하는 확산 모델.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "controlnet",
+      "label": "ControlNet",
+      "parent": "diffusion-model",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "윤곽·포즈 같은 구조 조건을 추가해 생성 제어.",
       "added": "2026-11-04"
     }
   ]
