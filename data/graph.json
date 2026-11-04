@@ -2990,10 +2990,15 @@
       "label": "압축(compaction)",
       "parent": "context-engineering",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "대화를 요약해 새 창에서 이어 가기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "context-rot",
+        "prompt-caching"
+      ]
     },
     {
       "id": "just-in-time-retrieval",
@@ -3020,20 +3025,29 @@
       "label": "문서를 기록 시스템으로",
       "parent": "agents-md",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "repo 안 docs를 에이전트의 단일 진실 원천으로.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "claude-md",
+        "compaction"
+      ]
     },
     {
       "id": "claude-md",
       "label": "CLAUDE.md 쓰는 법",
       "parent": "agents-md",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "Claude Code 지침 파일 구성과 길이 관리.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "hooks-guardrails"
+      ]
     },
     {
       "id": "physical-ai",
@@ -5303,6 +5317,96 @@
       "status": "planned",
       "priority": 4,
       "summary": "긴 작업을 요약으로 넘겨 새로 시작하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "claude-local-md",
+      "label": "CLAUDE.local.md",
+      "parent": "claude-md",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 5,
+      "summary": "개인 취향을 저장소 밖에 두는 파일.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "skills-vs-claude-md",
+      "label": "스킬과 CLAUDE.md 분담",
+      "parent": "claude-md",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "상시 로드 vs 필요 시 로드.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "instruction-drift",
+      "label": "지침 무시 진단",
+      "parent": "claude-md",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "길이 과다·강제 대상 규칙 구분하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "compact-focus",
+      "label": "초점 지정 압축",
+      "parent": "compaction",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "남길 것을 지정해 요약하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "clear-between-tasks",
+      "label": "작업 사이 /clear",
+      "parent": "compaction",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "무관한 작업을 한 세션에 쌓지 않기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "structured-notes",
+      "label": "구조화 노트",
+      "parent": "compaction",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "압축 밖에 결정을 파일로 남기기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "adr",
+      "label": "결정 기록(ADR)",
+      "parent": "docs-as-system-of-record",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "결정의 맥락·선택·이유를 짧게 남기기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "append-only-log",
+      "label": "append-only 로그",
+      "parent": "docs-as-system-of-record",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "충돌 없이 에이전트가 갱신하는 기록.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "docs-lint",
+      "label": "문서 린트",
+      "parent": "docs-as-system-of-record",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 5,
+      "summary": "깨진 링크·낡은 날짜 자동 점검.",
       "added": "2026-11-04"
     }
   ]
