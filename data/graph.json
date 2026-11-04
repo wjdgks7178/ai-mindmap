@@ -3362,10 +3362,11 @@
       "label": "분류와 회귀",
       "parent": "supervised-unsupervised",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "지도학습의 두 대표 문제 유형.",
-      "added": "2026-11-01"
+      "added": "2026-11-01",
+      "done": "2026-11-04"
     },
     {
       "id": "clustering",
@@ -5592,6 +5593,46 @@
       "status": "planned",
       "priority": 5,
       "summary": "해상도에 따라 달라지는 이미지·영상 토큰 비용.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "precision-recall",
+      "label": "정밀도·재현율·F1",
+      "parent": "classification-regression",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "분류 오류의 종류를 구분해 재는 지표.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "class-imbalance",
+      "label": "클래스 불균형",
+      "parent": "classification-regression",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 5,
+      "summary": "소수 클래스가 드문 데이터에서 정확도가 속이는 문제.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "loss-function",
+      "label": "손실 함수",
+      "parent": "classification-regression",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 3,
+      "summary": "예측이 얼마나 틀렸는지 숫자로 재는 학습의 기준.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "linear-regression",
+      "label": "선형 회귀",
+      "parent": "classification-regression",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 4,
+      "summary": "y = b + wx 형태로 관계를 찾는 가장 기본 모델.",
       "added": "2026-11-04"
     }
   ]
