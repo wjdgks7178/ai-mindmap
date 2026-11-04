@@ -2602,10 +2602,15 @@
       "label": "결정적 피드백",
       "parent": "evaluator-optimizer",
       "domain": "automation",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "테스트·린터 결과를 평가자로 쓰기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "code-review-ai",
+        "llm-as-judge"
+      ]
     },
     {
       "id": "secrets-env",
@@ -2627,10 +2632,14 @@
       "label": "배포 기초",
       "parent": "frontend-backend",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "만든 앱을 인터넷에 올리는 단계.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "rest-json"
+      ]
     },
     {
       "id": "rest-json",
@@ -2672,10 +2681,14 @@
       "label": "AI 코드 리뷰 습관",
       "parent": "ai-assisted-coding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "AI가 쓴 코드에서 사람이 볼 지점.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "tdd"
+      ]
     },
     {
       "id": "test-first-with-ai",
@@ -4880,6 +4893,86 @@
       "status": "planned",
       "priority": 4,
       "summary": "큰 목록을 나눠 받고 호출 횟수 제한 다루기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "preview-vs-production",
+      "label": "프리뷰와 프로덕션 환경",
+      "parent": "deployment-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "검수용 임시 배포와 실서비스 배포의 분리.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "env-variables-secrets",
+      "label": "환경변수와 비밀키 관리",
+      "parent": "deployment-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "키를 코드 밖에 두는 법.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "rollback",
+      "label": "롤백",
+      "parent": "deployment-basics",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "문제 배포를 이전 정상 버전으로 되돌리기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "diff-scope-check",
+      "label": "변경 범위(diff) 점검",
+      "parent": "code-review-ai",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "요청 밖 파일을 건드렸는지 확인하는 습관.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "cross-model-review",
+      "label": "교차 모델 리뷰",
+      "parent": "code-review-ai",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "다른 세션·모델에 리뷰를 시켜 편향 줄이기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "linter-typechecker-signal",
+      "label": "린터·타입체커 신호",
+      "parent": "deterministic-feedback",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "정적 검사 결과를 에이전트 루프에 연결.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "structured-output-validation",
+      "label": "구조화 출력 검증",
+      "parent": "deterministic-feedback",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "JSON 스키마로 LLM 출력을 기계 검증.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "reward-hacking-tests",
+      "label": "테스트 속이기(보상 해킹)",
+      "parent": "deterministic-feedback",
+      "domain": "automation",
+      "status": "planned",
+      "priority": 4,
+      "summary": "통과만 노리는 편법의 예방.",
       "added": "2026-11-04"
     }
   ]
