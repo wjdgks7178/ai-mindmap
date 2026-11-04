@@ -2947,30 +2947,43 @@
       "label": "입력 검증과 인젝션",
       "parent": "vibecoding-safety",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "SQL 인젝션·XSS 막는 기본.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "prompt-injection",
+        "sql-basics"
+      ]
     },
     {
       "id": "dependency-risk",
       "label": "패키지 의존성 위험",
       "parent": "vibecoding-safety",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "낯선 패키지·가짜 패키지 이름 점검.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "ci-cd"
+      ]
     },
     {
       "id": "context-rot",
       "label": "컨텍스트 부패",
       "parent": "context-engineering",
       "domain": "architecture",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "긴 컨텍스트에서 회상이 떨어지는 현상.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "needle-in-haystack"
+      ]
     },
     {
       "id": "compaction",
@@ -5123,16 +5136,6 @@
       "added": "2026-11-04"
     },
     {
-      "id": "sql-injection",
-      "label": "SQL 인젝션",
-      "parent": "sql-basics",
-      "domain": "vibecoding",
-      "status": "planned",
-      "priority": 3,
-      "summary": "입력을 쿼리에 이어붙일 때의 취약점과 파라미터 바인딩.",
-      "added": "2026-11-04"
-    },
-    {
       "id": "db-index",
       "label": "인덱스",
       "parent": "sql-basics",
@@ -5210,6 +5213,96 @@
       "status": "planned",
       "priority": 4,
       "summary": "저장소 시크릿과 로그 노출 방지.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "xss",
+      "label": "XSS(교차 사이트 스크립팅)",
+      "parent": "input-validation",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "출력 인코딩으로 막는 스크립트 삽입 공격.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "parameterized-query",
+      "label": "파라미터화 쿼리",
+      "parent": "input-validation",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "값을 SQL 구조와 분리해 바인딩하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "allowlist-vs-denylist",
+      "label": "허용 목록과 금지 목록",
+      "parent": "input-validation",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "검증 설계의 기본 선택.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "lockfile",
+      "label": "락파일",
+      "parent": "dependency-risk",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "의존성 버전을 고정해 재현 가능하게 하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "sbom",
+      "label": "SBOM",
+      "parent": "dependency-risk",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "소프트웨어 구성요소 목록으로 영향 범위 파악.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "package-hallucination",
+      "label": "패키지 할루시네이션",
+      "parent": "dependency-risk",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 3,
+      "summary": "AI가 지어낸 패키지 이름과 선점 공격.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "distractor-effect",
+      "label": "방해 정보 효과",
+      "parent": "context-rot",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "관련 있어 보이는 잡음이 정확도를 깎는 현상.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "focused-vs-full-prompt",
+      "label": "집중 프롬프트 vs 전체 투입",
+      "parent": "context-rot",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "짧은 선별 입력과 통째 투입의 성능 비교.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "fresh-session-handoff",
+      "label": "새 세션 인계 요약",
+      "parent": "context-rot",
+      "domain": "architecture",
+      "status": "planned",
+      "priority": 4,
+      "summary": "긴 작업을 요약으로 넘겨 새로 시작하기.",
       "added": "2026-11-04"
     }
   ]
