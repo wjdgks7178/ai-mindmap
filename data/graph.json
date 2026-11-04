@@ -3318,10 +3318,11 @@
       "label": "영상 이해와 요약",
       "parent": "video-ai",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "프레임 샘플링과 자막으로 긴 영상을 요약·검색.",
-      "added": "2026-11-01"
+      "added": "2026-11-01",
+      "done": "2026-11-04"
     },
     {
       "id": "spacetime-patches",
@@ -5561,6 +5562,36 @@
       "status": "planned",
       "priority": 5,
       "summary": "동시에 듣고 말하는 방식.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "frame-sampling",
+      "label": "프레임 샘플링",
+      "parent": "video-understanding",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "영상에서 몇 장을 뽑을지 정하는 fps 전략.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "agentic-video-processing",
+      "label": "에이전트식 영상 처리",
+      "parent": "video-understanding",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "필요한 구간만 불러오는 방식으로 긴 영상 토큰 절약.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "media-resolution",
+      "label": "미디어 해상도와 토큰",
+      "parent": "video-understanding",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "해상도에 따라 달라지는 이미지·영상 토큰 비용.",
       "added": "2026-11-04"
     }
   ]
