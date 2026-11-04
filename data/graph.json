@@ -3216,10 +3216,11 @@
       "label": "이미지 프롬프트 쓰기",
       "parent": "image-generation",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "피사체·스타일·구도·조명으로 나눠 쓰는 법.",
-      "added": "2026-11-01"
+      "added": "2026-11-01",
+      "done": "2026-11-04"
     },
     {
       "id": "controlnet-inpainting",
@@ -5458,6 +5459,36 @@
       "status": "planned",
       "priority": 5,
       "summary": "윤곽·포즈 같은 구조 조건을 추가해 생성 제어.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "prompt-iteration",
+      "label": "프롬프트 반복 개선",
+      "parent": "image-prompting",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "한 번에 하나만 바꾸며 비교하는 생성 워크플로.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "style-consistency",
+      "label": "스타일 일관성 유지",
+      "parent": "image-prompting",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "시리즈 이미지에서 화풍·캐릭터를 고정하는 방법.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "negative-prompt",
+      "label": "네거티브 프롬프트",
+      "parent": "image-prompting",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "제외하고 싶은 요소를 지정하는 기능과 모델별 차이.",
       "added": "2026-11-04"
     }
   ]
