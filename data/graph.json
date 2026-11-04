@@ -3270,10 +3270,11 @@
       "label": "Whisper",
       "parent": "speech-asr-tts",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "OpenAI 오픈소스 음성 인식 모델과 로컬 실행.",
-      "added": "2026-11-01"
+      "added": "2026-11-01",
+      "done": "2026-11-04"
     },
     {
       "id": "voice-agent",
@@ -5489,6 +5490,36 @@
       "status": "planned",
       "priority": 5,
       "summary": "제외하고 싶은 요소를 지정하는 기능과 모델별 차이.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "faster-whisper",
+      "label": "faster-whisper",
+      "parent": "whisper",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "CTranslate2 기반으로 Whisper를 더 빠르게 돌리는 구현.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "speaker-diarization",
+      "label": "화자 분리",
+      "parent": "whisper",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "누가 말했는지 구간별로 나누는 기술.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "log-mel-spectrogram",
+      "label": "로그-멜 스펙트로그램",
+      "parent": "whisper",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "소리를 모델이 읽는 이미지 같은 표로 바꾸는 표현.",
       "added": "2026-11-04"
     }
   ]
