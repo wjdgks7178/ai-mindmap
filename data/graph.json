@@ -3397,13 +3397,14 @@
       "label": "RLHF",
       "parent": "reinforcement-learning",
       "domain": "ml-fundamentals",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "사람 선호를 보상으로 모델을 다듬는 방법.",
       "added": "2026-11-01",
       "related": [
         "llm-basics"
-      ]
+      ],
+      "done": "2026-11-04"
     },
     {
       "id": "reward-hacking",
@@ -5684,6 +5685,26 @@
       "status": "planned",
       "priority": 4,
       "summary": "데이터를 유용한 벡터로 바꾸는 학습.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "ppo",
+      "label": "PPO",
+      "parent": "rlhf",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 5,
+      "summary": "정책을 안정적으로 조금씩 업데이트하는 RL 알고리즘.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "kl-penalty",
+      "label": "KL 페널티",
+      "parent": "rlhf",
+      "domain": "ml-fundamentals",
+      "status": "planned",
+      "priority": 5,
+      "summary": "원래 모델에서 멀어지지 않게 하는 고삐.",
       "added": "2026-11-04"
     }
   ]
