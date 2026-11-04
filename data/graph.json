@@ -3281,13 +3281,14 @@
       "label": "음성 에이전트",
       "parent": "speech-asr-tts",
       "domain": "multimodal",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "ASR-LLM-TTS 파이프라인 vs 실시간 음성 모델.",
       "added": "2026-11-01",
       "related": [
         "agent-loop"
-      ]
+      ],
+      "done": "2026-11-04"
     },
     {
       "id": "voice-cloning-ethics",
@@ -5520,6 +5521,46 @@
       "status": "planned",
       "priority": 5,
       "summary": "소리를 모델이 읽는 이미지 같은 표로 바꾸는 표현.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "barge-in",
+      "label": "끼어들기(barge-in)",
+      "parent": "voice-agent",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 4,
+      "summary": "AI가 말하는 중 사용자가 끊고 들어오는 상황 처리.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "webrtc",
+      "label": "WebRTC",
+      "parent": "voice-agent",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "브라우저·모바일에서 실시간 음성·영상을 주고받는 표준 기술.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "voice-latency",
+      "label": "음성 지연 시간",
+      "parent": "voice-agent",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "첫 유용한 답까지 시간과 p50·p95 측정.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "full-duplex",
+      "label": "전이중 대화",
+      "parent": "voice-agent",
+      "domain": "multimodal",
+      "status": "planned",
+      "priority": 5,
+      "summary": "동시에 듣고 말하는 방식.",
       "added": "2026-11-04"
     }
   ]
