@@ -2518,10 +2518,12 @@
       "label": "기업용 AI 약관 읽기",
       "parent": "privacy-copyright",
       "domain": "literacy",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "보관·학습 사용·리전 조항 체크리스트.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": []
     },
     {
       "id": "ai-authorship",
@@ -2695,10 +2697,14 @@
       "label": "테스트 먼저 시키기",
       "parent": "ai-assisted-coding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "재현 테스트로 AI의 완료 기준 만들기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "deterministic-feedback"
+      ]
     },
     {
       "id": "git-basics",
@@ -2719,10 +2725,14 @@
       "label": "훅과 가드레일",
       "parent": "ai-assisted-coding",
       "domain": "vibecoding",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "어겨선 안 될 규칙을 자동으로 강제.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "least-privilege-agents"
+      ]
     },
     {
       "id": "secret-leak-response",
@@ -2809,10 +2819,14 @@
       "label": "승인 정책 설계",
       "parent": "human-in-the-loop",
       "domain": "langgraph",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
       "summary": "어떤 행동에 사람 승인을 걸지 위험도로 정하기.",
-      "added": "2026-10-31"
+      "added": "2026-10-31",
+      "done": "2026-11-04",
+      "related": [
+        "hooks-guardrails"
+      ]
     },
     {
       "id": "idempotency",
@@ -4973,6 +4987,126 @@
       "status": "planned",
       "priority": 4,
       "summary": "통과만 노리는 편법의 예방.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "dpa",
+      "label": "DPA(데이터 처리 부속계약)",
+      "parent": "enterprise-data-terms",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "개인정보 처리 위탁 조건 읽는 법.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "zero-data-retention",
+      "label": "제로 데이터 보관",
+      "parent": "enterprise-data-terms",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "입력·출력을 저장하지 않는 옵션.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "ip-indemnity",
+      "label": "IP 면책 조항",
+      "parent": "enterprise-data-terms",
+      "domain": "literacy",
+      "status": "planned",
+      "priority": 4,
+      "summary": "출력물 저작권 분쟁 시 공급사 책임.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "repro-test-first",
+      "label": "재현 테스트 먼저",
+      "parent": "test-first-with-ai",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "버그를 실패 테스트로 고정하고 고치기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "stop-hook-gate",
+      "label": "Stop 훅 완료 게이트",
+      "parent": "test-first-with-ai",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "통과 전엔 턴을 못 끝내게 하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "evidence-reporting",
+      "label": "증거 보고 요구",
+      "parent": "test-first-with-ai",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "명령과 출력을 보여 달라고 시키기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "pretooluse-hook",
+      "label": "PreToolUse 훅",
+      "parent": "hooks-guardrails",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "도구 실행 전에 검사하고 차단하기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "hook-exit-codes",
+      "label": "훅 종료 코드 규약",
+      "parent": "hooks-guardrails",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 4,
+      "summary": "exit 0과 2의 차이.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "prompt-based-hook",
+      "label": "프롬프트 기반 훅",
+      "parent": "hooks-guardrails",
+      "domain": "vibecoding",
+      "status": "planned",
+      "priority": 5,
+      "summary": "판단이 필요한 규칙을 모델에게 평가시키기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "approval-fatigue",
+      "label": "승인 피로",
+      "parent": "approval-policy",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "승인 창이 많으면 무심코 허용하게 되는 문제.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "approval-queue",
+      "label": "승인 대기열",
+      "parent": "approval-policy",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "무인 실행에서 사람 몫을 큐에 쌓기.",
+      "added": "2026-11-04"
+    },
+    {
+      "id": "risk-tiering",
+      "label": "행동 위험도 등급",
+      "parent": "approval-policy",
+      "domain": "langgraph",
+      "status": "planned",
+      "priority": 4,
+      "summary": "되돌림·범위·민감도로 등급 매기기.",
       "added": "2026-11-04"
     }
   ]
