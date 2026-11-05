@@ -5329,10 +5329,14 @@
    "label": "패키지 할루시네이션",
    "parent": "dependency-risk",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI가 지어낸 패키지 이름과 선점 공격.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "env-variables-secrets"
+   ]
   },
   {
    "id": "distractor-effect",
@@ -6382,6 +6386,46 @@
    "status": "planned",
    "priority": 5,
    "summary": "인젝션 피해 반경을 줄이는 DB 권한 설계.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "lockfile-pinning",
+   "label": "lockfile과 버전 고정",
+   "parent": "package-hallucination",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "의존성 버전을 고정해 공급망 변동 막기.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "dependency-scanning",
+   "label": "의존성 스캐너(audit·Dependabot)",
+   "parent": "package-hallucination",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "알려진 취약점·악성 패키지 탐지.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "typosquatting",
+   "label": "타이포스쿼팅과 의존성 혼동",
+   "parent": "package-hallucination",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이름 오타·사내 이름 선점 공격.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "install-scripts",
+   "label": "설치 스크립트(postinstall) 위험",
+   "parent": "package-hallucination",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "설치 시 임의 코드가 실행되는 경로.",
    "added": "2026-11-05"
   }
  ]
