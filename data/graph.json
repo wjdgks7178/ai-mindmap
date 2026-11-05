@@ -3101,10 +3101,14 @@
    "label": "세션과 JWT",
    "parent": "access-control",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로그인 상태를 유지하는 두 방식과 장단점.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-05",
+   "related": [
+    "rest-json"
+   ]
   },
   {
    "id": "oauth-sso",
@@ -6075,6 +6079,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "force push와 그 위험.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "refresh-token",
+   "label": "리프레시 토큰",
+   "parent": "jwt-session",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "짧은 access token을 갱신하는 장수 토큰과 회전.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "cookie-attributes",
+   "label": "쿠키 속성(HttpOnly·SameSite)",
+   "parent": "jwt-session",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Secure·HttpOnly·SameSite가 막는 공격.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "csrf-xss",
+   "label": "CSRF와 XSS",
+   "parent": "jwt-session",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰 탈취와 요청 위조의 차이.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "session-fixation",
+   "label": "세션 고정 공격",
+   "parent": "jwt-session",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "로그인 후 세션 ID 재발급이 필요한 이유.",
    "added": "2026-11-05"
   }
  ]
