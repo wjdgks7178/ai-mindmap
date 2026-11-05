@@ -5240,10 +5240,15 @@
    "label": "GitHub Actions",
    "parent": "ci-cd",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "workflow·job·step 구조로 자동화 짜기.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "env-variables-secrets",
+    "package-hallucination"
+   ]
   },
   {
    "id": "branch-protection",
@@ -6426,6 +6431,56 @@
    "status": "planned",
    "priority": 5,
    "summary": "설치 시 임의 코드가 실행되는 경로.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "actions-secrets-permissions",
+   "label": "Actions 시크릿과 permissions",
+   "parent": "github-actions",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비밀값 주입과 토큰 권한 최소화.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "actions-pin-sha",
+   "label": "액션 커밋 해시 고정",
+   "parent": "github-actions",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "서드파티 액션의 공급망 위험 줄이기.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "actions-matrix",
+   "label": "매트릭스 빌드",
+   "parent": "github-actions",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "여러 버전·OS 조합을 병렬 테스트.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "actions-schedule-cron",
+   "label": "예약 실행(cron)",
+   "parent": "github-actions",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "schedule 이벤트로 정기 작업 돌리기.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "ai-pr-review",
+   "label": "AI PR 리뷰 자동화",
+   "parent": "github-actions",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PR마다 AI 리뷰를 돌리는 워크플로.",
    "added": "2026-11-05"
   }
  ]
