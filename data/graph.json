@@ -3456,13 +3456,14 @@
    "label": "Transformer",
    "parent": "neural-network-basics",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어텐션으로 문맥을 처리하는 LLM의 기반 구조.",
    "added": "2026-11-01",
    "related": [
     "llm-basics"
-   ]
+   ],
+   "done": "2026-11-05"
   },
   {
    "id": "pretraining",
@@ -5797,6 +5798,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "PyTorch가 backward를 구현하는 방식.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "self-attention",
+   "label": "셀프 어텐션",
+   "parent": "transformer-architecture",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Q·K·V 내적으로 토큰 간 관련도를 계산.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "multi-head-attention",
+   "label": "멀티헤드 어텐션",
+   "parent": "transformer-architecture",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 헤드로 다른 관계를 동시에 보는 구조.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "encoder-decoder-models",
+   "label": "인코더·디코더 모델 계보",
+   "parent": "transformer-architecture",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "BERT·GPT·T5의 구조 차이.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "quadratic-attention-cost",
+   "label": "어텐션 비용과 긴 컨텍스트",
+   "parent": "transformer-architecture",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력 길이 제곱 비용과 완화 기법.",
    "added": "2026-11-05"
   }
  ]
