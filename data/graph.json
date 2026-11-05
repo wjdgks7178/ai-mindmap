@@ -4996,10 +4996,14 @@
    "label": "환경변수와 비밀키 관리",
    "parent": "deployment-basics",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "키를 코드 밖에 두는 법.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "oauth-sso"
+   ]
   },
   {
    "id": "rollback",
@@ -6249,6 +6253,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "일관된 에러 JSON 포맷(problem details).",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "dotenv-gitignore",
+   "label": ".env와 .gitignore",
+   "parent": "env-variables-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로컬 비밀값 파일과 커밋 방지.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "public-vs-secret-keys",
+   "label": "공개 키와 비밀 키",
+   "parent": "env-variables-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "NEXT_PUBLIC·anon key와 service key의 차이.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "twelve-factor-app",
+   "label": "12-Factor App",
+   "parent": "env-variables-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "클라우드 앱 설계 12원칙.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "key-rotation",
+   "label": "키 교체(로테이션)",
+   "parent": "env-variables-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "주기적·유출 시 키 재발급 절차.",
    "added": "2026-11-05"
   }
  ]
