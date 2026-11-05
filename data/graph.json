@@ -4951,10 +4951,15 @@
    "label": "HTTP 상태 코드 읽기",
    "parent": "rest-json",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "2xx~5xx 코드로 성공·실패 원인 판단하기.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "jwt-session",
+    "access-control"
+   ]
   },
   {
    "id": "json-schema",
@@ -6204,6 +6209,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "승인, 편집, 정보 요청 세 가지 사람 개입 설계.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "rate-limiting-429",
+   "label": "속도 제한과 429",
+   "parent": "http-status-codes",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청 과다 처리와 Retry-After 백오프.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "http-redirects",
+   "label": "리다이렉트와 Location",
+   "parent": "http-status-codes",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "301·302·307·308의 차이.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "http-caching",
+   "label": "HTTP 캐싱(304·ETag)",
+   "parent": "http-status-codes",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "캐시가 응답 시간을 줄이는 방식.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "error-response-format",
+   "label": "API 에러 응답 설계",
+   "parent": "http-status-codes",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일관된 에러 JSON 포맷(problem details).",
    "added": "2026-11-05"
   }
  ]
