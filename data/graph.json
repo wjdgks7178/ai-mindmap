@@ -2745,10 +2745,11 @@
    "label": "키 유출 대응",
    "parent": "secrets-env",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "깃에 올린 키를 발견했을 때의 절차.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-05"
   },
   {
    "id": "dotenv-usage",
@@ -3089,10 +3090,11 @@
    "label": "IDOR(남의 번호로 접근)",
    "parent": "access-control",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "URL·요청의 식별자만 바꿔 남의 데이터에 접근하는 취약점.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-05"
   },
   {
    "id": "jwt-session",
@@ -6013,6 +6015,66 @@
    "status": "planned",
    "priority": 4,
    "summary": "필요할 때 불러오는 컨텍스트 원칙.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "rls-row-level-security",
+   "label": "행 수준 보안 (RLS)",
+   "parent": "idor",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "DB 정책으로 소유자 검사를 구조적으로 강제.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "bola-api-security",
+   "label": "BOLA (API 객체 수준 권한)",
+   "parent": "idor",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "API 환경의 IDOR 변종.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "authz-testing",
+   "label": "권한 테스트 계정 2개",
+   "parent": "idor",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서로 다른 계정으로 교차 접근 시험.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "push-protection",
+   "label": "Push protection",
+   "parent": "secret-leak-response",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시크릿이 포함된 푸시를 차단하는 기능.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "secrets-manager",
+   "label": "시크릿 매니저",
+   "parent": "secret-leak-response",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키를 코드 밖 전용 저장소에 보관.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "git-history-rewrite",
+   "label": "깃 이력 재작성",
+   "parent": "secret-leak-response",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "force push와 그 위험.",
    "added": "2026-11-05"
   }
  ]
