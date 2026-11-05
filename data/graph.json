@@ -1672,20 +1672,22 @@
    "label": "서버 도구 vs 클라이언트 도구",
    "parent": "tool-use",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "누가 코드를 실행하느냐에 따른 도구 분류와 보안 차이.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-05"
   },
   {
    "id": "tool-search",
    "label": "도구 검색(Tool search)",
    "parent": "tool-use",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도구가 수천 개일 때 필요한 것만 찾아 불러와 토큰을 아끼는 기법.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-05"
   },
   {
    "id": "langgraph-conditional-edges",
@@ -5931,6 +5933,86 @@
    "status": "planned",
    "priority": 4,
    "summary": "asyncio로 도구를 동시 실행하는 패턴.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "web-search-tool",
+   "label": "웹 검색 도구",
+   "parent": "server-vs-client-tools",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Anthropic이 실행하는 서버 도구, 인용 포함.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "code-execution-tool",
+   "label": "코드 실행 도구",
+   "parent": "server-vs-client-tools",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "샌드박스 컨테이너에서 Python·Bash 실행.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "bash-text-editor-tools",
+   "label": "bash·텍스트 편집 도구",
+   "parent": "server-vs-client-tools",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스키마가 공개된 클라이언트 도구.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "tool-sandbox-security",
+   "label": "도구 실행 보안과 샌드박스",
+   "parent": "server-vs-client-tools",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "클라이언트 도구의 권한·승인 설계.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "defer-loading",
+   "label": "defer_loading",
+   "parent": "tool-search",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구 정의를 컨텍스트에서 미룬다.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "custom-tool-search",
+   "label": "커스텀 도구 검색 구현",
+   "parent": "tool-search",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임베딩으로 tool_reference를 돌려주기.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "bm25-search",
+   "label": "BM25 검색",
+   "parent": "tool-search",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단어 빈도 기반 랭킹 알고리즘.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "just-in-time-context",
+   "label": "Just-in-time 컨텍스트",
+   "parent": "tool-search",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "필요할 때 불러오는 컨텍스트 원칙.",
    "added": "2026-11-05"
   }
  ]
