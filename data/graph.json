@@ -3115,10 +3115,14 @@
    "label": "OAuth와 소셜 로그인",
    "parent": "access-control",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "외부 신원 제공자에게 인증을 맡기는 표준.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-05",
+   "related": [
+    "jwt-session"
+   ]
   },
   {
    "id": "passkeys",
@@ -6119,6 +6123,46 @@
    "status": "planned",
    "priority": 5,
    "summary": "로그인 후 세션 ID 재발급이 필요한 이유.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "pkce",
+   "label": "PKCE",
+   "parent": "oauth-sso",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "code_verifier/challenge로 인가 코드 가로채기를 막는 확장.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "oidc",
+   "label": "OpenID Connect(id_token)",
+   "parent": "oauth-sso",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "OAuth 위에 얹은 신원 확인 표준.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "oauth-scopes",
+   "label": "OAuth 스코프와 최소 권한",
+   "parent": "oauth-sso",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "앱이 요청하는 권한 범위 설계.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "saml-sso",
+   "label": "SAML과 기업 SSO",
+   "parent": "oauth-sso",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 6,
+   "summary": "사내 SSO의 전통적 표준.",
    "added": "2026-11-05"
   }
  ]
