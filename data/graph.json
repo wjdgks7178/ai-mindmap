@@ -1639,30 +1639,33 @@
    "label": "도구 스키마 설계",
    "parent": "tool-use",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "JSON Schema로 도구 이름·설명·인자를 정의하고 좋은 설명을 쓰는 법.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-05"
   },
   {
    "id": "tool-choice-strict",
    "label": "tool_choice와 strict",
    "parent": "tool-use",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도구 호출을 강제·금지하고 인자를 스키마에 맞추는 옵션.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-05"
   },
   {
    "id": "parallel-tool-use",
    "label": "병렬 도구 호출",
    "parent": "tool-use",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 번의 응답에서 여러 도구를 동시에 호출하는 방식.",
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-05"
   },
   {
    "id": "server-vs-client-tools",
@@ -5838,6 +5841,96 @@
    "status": "planned",
    "priority": 4,
    "summary": "입력 길이 제곱 비용과 완화 기법.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "tool-description-writing",
+   "label": "도구 설명 쓰는 법",
+   "parent": "function-calling-schema",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "언제 쓰고 쓰지 말지까지 담는 description 작성.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "tool-response-design",
+   "label": "도구 응답 설계",
+   "parent": "function-calling-schema",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고신호 정보·안정 식별자만 돌려주기.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "tool-consolidation",
+   "label": "도구 통합과 네임스페이스",
+   "parent": "function-calling-schema",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "action 파라미터와 접두어로 도구 수 줄이기.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "structured-outputs",
+   "label": "구조화 출력",
+   "parent": "tool-choice-strict",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "응답을 고정 JSON 스키마로 받는 기능.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "forced-tool-limits",
+   "label": "강제 호출의 제약",
+   "parent": "tool-choice-strict",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "any/tool 미지원 모델과 사고 생략.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "prompt-cache-tool-choice",
+   "label": "tool_choice와 프롬프트 캐시",
+   "parent": "tool-choice-strict",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "옵션 변경이 캐시를 무효화하는 방식.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "tool-result-matching",
+   "label": "tool_result 짝 맞추기",
+   "parent": "parallel-tool-use",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "tool_use_id로 결과를 대응시키는 규칙.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "tool-call-error-handling",
+   "label": "도구 호출 오류 처리",
+   "parent": "parallel-tool-use",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "부분 실패·재시도·속도 제한.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "async-tool-execution",
+   "label": "비동기 도구 실행",
+   "parent": "parallel-tool-use",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "asyncio로 도구를 동시 실행하는 패턴.",
    "added": "2026-11-05"
   }
  ]
