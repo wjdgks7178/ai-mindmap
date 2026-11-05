@@ -4159,10 +4159,11 @@
    "label": "interrupt와 사람 승인(HITL)",
    "parent": "langgraph-command",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실행을 멈추고 사람 입력을 받은 뒤 Command(resume)로 이어 가는 기능.",
-   "added": "2026-11-02"
+   "added": "2026-11-02",
+   "done": "2026-11-05"
   },
   {
    "id": "langgraph-parent-command",
@@ -6163,6 +6164,46 @@
    "status": "planned",
    "priority": 6,
    "summary": "사내 SSO의 전통적 표준.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "langgraph-checkpointer",
+   "label": "체크포인터와 thread_id",
+   "parent": "langgraph-interrupt",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상태를 저장해 멈춤·재개·되감기를 가능하게 하는 계층.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "idempotent-side-effects",
+   "label": "재실행 안전한 부작용(멱등)",
+   "parent": "langgraph-interrupt",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "interrupt 재개 때 중복 실행돼도 안전한 코드.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "interrupt-before-after",
+   "label": "정적 중단점",
+   "parent": "langgraph-interrupt",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "컴파일 시 지정하는 interrupt_before/after.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "hitl-approval-patterns",
+   "label": "승인·수정·되묻기 HITL 패턴",
+   "parent": "langgraph-interrupt",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "승인, 편집, 정보 요청 세 가지 사람 개입 설계.",
    "added": "2026-11-05"
   }
  ]
