@@ -5270,20 +5270,29 @@
    "label": "XSS(교차 사이트 스크립팅)",
    "parent": "input-validation",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "출력 인코딩으로 막는 스크립트 삽입 공격.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "jwt-session",
+    "env-variables-secrets"
+   ]
   },
   {
    "id": "parameterized-query",
    "label": "파라미터화 쿼리",
    "parent": "input-validation",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "값을 SQL 구조와 분리해 바인딩하기.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "xss"
+   ]
   },
   {
    "id": "allowlist-vs-denylist",
@@ -6293,6 +6302,86 @@
    "status": "planned",
    "priority": 5,
    "summary": "주기적·유출 시 키 재발급 절차.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "csp",
+   "label": "CSP(콘텐츠 보안 정책)",
+   "parent": "xss",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스크립트 출처를 제한하는 응답 헤더.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "dompurify",
+   "label": "HTML 정제(DOMPurify)",
+   "parent": "xss",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용자 HTML을 안전하게 렌더링하는 법.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "csrf",
+   "label": "CSRF",
+   "parent": "xss",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로그인 상태를 악용한 요청 위조와 SameSite.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "output-encoding",
+   "label": "출력 인코딩",
+   "parent": "xss",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "컨텍스트별 이스케이프 규칙.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "sql-injection",
+   "label": "SQL 인젝션",
+   "parent": "parameterized-query",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열 연결이 만드는 대표 공격과 피해.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "orm-raw-query",
+   "label": "ORM 원시 쿼리 주의",
+   "parent": "parameterized-query",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "raw 쿼리에서 되살아나는 인젝션.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "allowlist-identifiers",
+   "label": "식별자 허용 목록",
+   "parent": "parameterized-query",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "테이블·컬럼명을 동적으로 쓸 때의 안전한 방법.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "least-privilege-db",
+   "label": "DB 최소 권한 계정",
+   "parent": "parameterized-query",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 5,
+   "summary": "인젝션 피해 반경을 줄이는 DB 권한 설계.",
    "added": "2026-11-05"
   }
  ]
