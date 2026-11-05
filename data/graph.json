@@ -5468,10 +5468,14 @@
    "label": "DDPM",
    "parent": "diffusion-model",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확산 모델 학습의 표준: 노이즈 예측 손실과 선형 스케줄.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-05",
+   "related": [
+    "loss-function"
+   ]
   },
   {
    "id": "latent-diffusion",
@@ -6481,6 +6485,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "PR마다 AI 리뷰를 돌리는 워크플로.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "ddim",
+   "label": "DDIM 샘플링",
+   "parent": "ddpm",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단계를 줄여 확산 모델 생성을 빠르게 하는 방법.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "noise-schedule",
+   "label": "노이즈 스케줄(선형·코사인)",
+   "parent": "ddpm",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "β_t를 정하는 방식이 품질에 미치는 영향.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "unet",
+   "label": "U-Net",
+   "parent": "ddpm",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "확산 모델에서 노이즈를 예측하는 대표 신경망.",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "ddpm-variational-bound",
+   "label": "DDPM 변분 하한과 score matching",
+   "parent": "ddpm",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "가중 변분 하한과 denoising score matching의 연결.",
    "added": "2026-11-05"
   }
  ]
