@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "nodes": [
   {
    "id": "ai",
@@ -5482,10 +5482,11 @@
    "label": "잠재 확산·Stable Diffusion",
    "parent": "diffusion-model",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오토인코더 잠재 공간에서 확산해 비용을 줄이는 구조.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-06"
   },
   {
    "id": "classifier-free-guidance",
@@ -5672,10 +5673,14 @@
    "label": "손실 함수",
    "parent": "classification-regression",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측이 얼마나 틀렸는지 숫자로 재는 학습의 기준.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-06",
+   "related": [
+    "next-token-prediction"
+   ]
   },
   {
    "id": "linear-regression",
@@ -5722,10 +5727,14 @@
    "label": "다음 토큰 예측",
    "parent": "self-supervised",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM 사전학습의 핵심 목적 함수.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-06",
+   "related": [
+    "transformer-architecture"
+   ]
   },
   {
    "id": "representation-learning",
@@ -5772,10 +5781,14 @@
    "label": "MCP 프리미티브",
    "parent": "mcp",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Tools·Resources·Prompts의 역할 구분.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-06",
+   "related": [
+    "tool-use"
+   ]
   },
   {
    "id": "mcp-security",
@@ -6202,10 +6215,14 @@
    "label": "체크포인터와 thread_id",
    "parent": "langgraph-interrupt",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상태를 저장해 멈춤·재개·되감기를 가능하게 하는 계층.",
-   "added": "2026-11-05"
+   "added": "2026-11-05",
+   "done": "2026-11-06",
+   "related": [
+    "langgraph-store"
+   ]
   },
   {
    "id": "idempotent-side-effects",
@@ -6526,6 +6543,186 @@
    "priority": 5,
    "summary": "가중 변분 하한과 denoising score matching의 연결.",
    "added": "2026-11-05"
+  },
+  {
+   "id": "cross-entropy",
+   "label": "교차 엔트로피",
+   "parent": "loss-function",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류·LLM 학습에서 쓰는 손실. 정답에 준 확률이 낮을수록 크게 벌한다.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mse-vs-mae",
+   "label": "MSE와 MAE 비교",
+   "parent": "loss-function",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제곱 오차와 절대 오차가 이상치를 다루는 방식 차이.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "regularization-loss",
+   "label": "정규화 항",
+   "parent": "loss-function",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손실에 벌점을 더해 과적합을 막는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "evaluation-metrics-basic",
+   "label": "정확도·정밀도·재현율",
+   "parent": "loss-function",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손실과 구분되는 사람용 평가 지표.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "attention-mask",
+   "label": "어텐션 마스크",
+   "parent": "next-token-prediction",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미래 토큰을 못 보게 가리는 장치.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "sampling-temperature",
+   "label": "샘플링과 temperature",
+   "parent": "next-token-prediction",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 분포에서 토큰을 뽑는 방식과 무작위성 조절.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "perplexity",
+   "label": "퍼플렉시티",
+   "parent": "next-token-prediction",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어 모델이 다음 토큰을 얼마나 잘 맞히는지 재는 지표.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "clip-text-encoder",
+   "label": "CLIP 텍스트 인코더",
+   "parent": "latent-diffusion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텍스트와 이미지를 같은 공간에 맞추는 모델. 프롬프트를 임베딩으로 변환.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "unet-denoiser",
+   "label": "U-Net 잡음 제거기",
+   "parent": "latent-diffusion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈 잔차를 예측하는 인코더-디코더 구조.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "lora-image",
+   "label": "LoRA로 이미지 모델 맞춤화",
+   "parent": "latent-diffusion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적은 파라미터만 학습해 화풍·캐릭터를 입히는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-tools",
+   "label": "MCP Tools",
+   "parent": "mcp-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 호출하는 함수의 정의(스키마)와 호출 흐름.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-resources",
+   "label": "MCP Resources",
+   "parent": "mcp-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "URI로 식별하는 읽기용 맥락 데이터.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-prompts",
+   "label": "MCP Prompts",
+   "parent": "mcp-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자가 고르는 재사용 프롬프트 템플릿.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-client-primitives",
+   "label": "MCP 클라이언트 기능",
+   "parent": "mcp-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "sampling·roots 등 클라이언트가 서버에 제공하는 기능.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-time-travel",
+   "label": "타임 트래블",
+   "parent": "langgraph-checkpointer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 체크포인트로 되돌려 다른 입력으로 다시 실행.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-get-state",
+   "label": "get_state와 상태 기록",
+   "parent": "langgraph-checkpointer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "현재·과거 상태를 조회하는 API.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-durable-execution",
+   "label": "내구성 있는 실행",
+   "parent": "langgraph-checkpointer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패해도 저장 지점부터 재개하는 성질.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-serde",
+   "label": "체크포인트 직렬화",
+   "parent": "langgraph-checkpointer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상태를 저장 가능한 형식으로 바꾸는 방법.",
+   "added": "2026-11-06"
   }
  ]
 }
