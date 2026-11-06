@@ -6659,30 +6659,33 @@
    "label": "CLIP 텍스트 인코더",
    "parent": "latent-diffusion",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "텍스트와 이미지를 같은 공간에 맞추는 모델. 프롬프트를 임베딩으로 변환.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "unet-denoiser",
    "label": "U-Net 잡음 제거기",
    "parent": "latent-diffusion",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노이즈 잔차를 예측하는 인코더-디코더 구조.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "lora-image",
    "label": "LoRA로 이미지 모델 맞춤화",
    "parent": "latent-diffusion",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "적은 파라미터만 학습해 화풍·캐릭터를 입히는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "mcp-tools",
@@ -6734,10 +6737,11 @@
    "label": "MCP 클라이언트 기능",
    "parent": "mcp-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "sampling·roots 등 클라이언트가 서버에 제공하는 기능.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "langgraph-time-travel",
@@ -6758,10 +6762,11 @@
    "label": "get_state와 상태 기록",
    "parent": "langgraph-checkpointer",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "현재·과거 상태를 조회하는 API.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "langgraph-durable-execution",
@@ -7115,6 +7120,176 @@
    "status": "planned",
    "priority": 3,
    "summary": "쌓이는 체크포인트를 정리하는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "clip-77-token-limit",
+   "label": "77토큰 한계와 긴 프롬프트",
+   "parent": "clip-text-encoder",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CLIP이 프롬프트를 77토큰에서 자르는 제약과 우회(청킹·T5 병용).",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "zero-shot-clip",
+   "label": "CLIP 제로샷 분류",
+   "parent": "clip-text-encoder",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 없이 문장 비교로 이미지를 분류.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "diffusion-scheduler",
+   "label": "확산 스케줄러",
+   "parent": "unet-denoiser",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DDIM·PNDM 등 노이즈를 단계별로 제거하는 규칙.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "cross-attention-diffusion",
+   "label": "교차 어텐션",
+   "parent": "unet-denoiser",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텍스트 임베딩이 이미지 생성에 영향을 주는 경로.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "dit-diffusion-transformer",
+   "label": "DiT(확산 트랜스포머)",
+   "parent": "unet-denoiser",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "U-Net을 Transformer로 바꾼 SD3·Flux 계열 뼈대.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "vae-latent",
+   "label": "VAE 오토인코더",
+   "parent": "unet-denoiser",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "픽셀과 잠재 공간을 오가는 압축기.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "lora-rank-alpha",
+   "label": "LoRA rank와 alpha",
+   "parent": "lora-image",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표현력과 파일 크기를 정하는 하이퍼파라미터.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "dreambooth",
+   "label": "DreamBooth",
+   "parent": "lora-image",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특정 대상을 소량 사진으로 가르치는 파인튜닝.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "lora-merging",
+   "label": "LoRA 합치기·가중치",
+   "parent": "lora-image",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 LoRA를 섞어 쓰는 방법과 부작용.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "image-training-data-ethics",
+   "label": "학습 데이터 저작권·초상권",
+   "parent": "lora-image",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LoRA 학습 시 지켜야 할 권리 문제.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-sampling",
+   "label": "MCP Sampling",
+   "parent": "mcp-client-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버가 클라이언트 모델 호출을 요청하는 흐름.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-roots",
+   "label": "MCP Roots",
+   "parent": "mcp-client-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버의 작업 가능 경로 범위.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-elicitation",
+   "label": "MCP Elicitation",
+   "parent": "mcp-client-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버가 사용자에게 추가 입력을 요청.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "model-preferences-mcp",
+   "label": "modelPreferences",
+   "parent": "mcp-client-primitives",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용·속도·지능 우선순위와 모델 힌트.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-state-snapshot",
+   "label": "StateSnapshot 필드",
+   "parent": "langgraph-get-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "values·next·metadata 등 스냅샷 구조.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-state-history-ui",
+   "label": "상태 기록 UI 패턴",
+   "parent": "langgraph-get-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기록을 화면에 보여 시점 선택.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-subgraph-state",
+   "label": "서브그래프 상태 조회",
+   "parent": "langgraph-get-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하위 그래프의 상태를 읽는 법.",
    "added": "2026-11-06"
   }
  ]
