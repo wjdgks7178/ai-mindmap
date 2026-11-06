@@ -6299,10 +6299,14 @@
    "label": ".env와 .gitignore",
    "parent": "env-variables-secrets",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로컬 비밀값 파일과 커밋 방지.",
-   "added": "2026-11-05"
+   "added": "2026-11-05",
+   "done": "2026-11-06",
+   "related": [
+    "secrets-manager"
+   ]
   },
   {
    "id": "public-vs-secret-keys",
@@ -6379,10 +6383,15 @@
    "label": "SQL 인젝션",
    "parent": "parameterized-query",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문자열 연결이 만드는 대표 공격과 피해.",
-   "added": "2026-11-05"
+   "added": "2026-11-05",
+   "done": "2026-11-06",
+   "related": [
+    "access-control",
+    "prompt-injection"
+   ]
   },
   {
    "id": "orm-raw-query",
@@ -6549,10 +6558,14 @@
    "label": "교차 엔트로피",
    "parent": "loss-function",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분류·LLM 학습에서 쓰는 손실. 정답에 준 확률이 낮을수록 크게 벌한다.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "overfitting"
+   ]
   },
   {
    "id": "mse-vs-mae",
@@ -6589,20 +6602,29 @@
    "label": "어텐션 마스크",
    "parent": "next-token-prediction",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "미래 토큰을 못 보게 가리는 장치.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "kv-cache",
+    "self-attention"
+   ]
   },
   {
    "id": "sampling-temperature",
    "label": "샘플링과 temperature",
    "parent": "next-token-prediction",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확률 분포에서 토큰을 뽑는 방식과 무작위성 조절.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "hallucination"
+   ]
   },
   {
    "id": "perplexity",
@@ -6722,6 +6744,146 @@
    "status": "planned",
    "priority": 3,
    "summary": "상태를 저장 가능한 형식으로 바꾸는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "softmax",
+   "label": "소프트맥스",
+   "parent": "cross-entropy",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수를 합이 1인 확률로 바꾸는 함수.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "label-smoothing",
+   "label": "레이블 스무딩",
+   "parent": "cross-entropy",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 확률을 살짝 낮춰 과신을 막는 기법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "kl-divergence",
+   "label": "KL 발산",
+   "parent": "cross-entropy",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 확률 분포가 얼마나 다른지 재는 값.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "orm-injection",
+   "label": "ORM과 인젝션",
+   "parent": "sql-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ORM을 써도 raw 쿼리에서 생기는 인젝션.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "allow-list-validation",
+   "label": "허용 목록 검증",
+   "parent": "sql-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정해진 값만 통과시키는 입력 검증 방식.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "env-example",
+   "label": "env.example 견본",
+   "parent": "dotenv-gitignore",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 값 없이 필요한 변수 목록을 공유하는 파일.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "git-history-secret",
+   "label": "git 기록 속 비밀값",
+   "parent": "dotenv-gitignore",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "커밋에서 지워도 기록에 남는 키 문제.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "pre-commit-secret-scan",
+   "label": "커밋 전 비밀값 스캔",
+   "parent": "dotenv-gitignore",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "gitleaks 등으로 커밋 전에 키를 찾는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "greedy-vs-beam",
+   "label": "Greedy와 Beam search",
+   "parent": "sampling-temperature",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 없는 디코딩 두 방식의 차이.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "repetition-penalty",
+   "label": "반복 억제",
+   "parent": "sampling-temperature",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문장이 반복되는 현상을 줄이는 설정.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "structured-output-decoding",
+   "label": "제약 디코딩",
+   "parent": "sampling-temperature",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "JSON 같은 형식을 강제하며 토큰을 고르는 방식.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "padding-mask",
+   "label": "패딩 마스크",
+   "parent": "attention-mask",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배치 길이를 맞추려 채운 토큰을 무시하는 마스크.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "bidirectional-attention",
+   "label": "양방향 어텐션",
+   "parent": "attention-mask",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "BERT류에서 양쪽 문맥을 모두 보는 방식.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "flash-attention",
+   "label": "FlashAttention",
+   "parent": "attention-mask",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어텐션 계산을 메모리 효율적으로 하는 구현.",
    "added": "2026-11-06"
   }
  ]
