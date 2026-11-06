@@ -6797,40 +6797,44 @@
    "label": "소프트맥스",
    "parent": "cross-entropy",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "점수를 합이 1인 확률로 바꾸는 함수.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "label-smoothing",
    "label": "레이블 스무딩",
    "parent": "cross-entropy",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답 확률을 살짝 낮춰 과신을 막는 기법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "kl-divergence",
    "label": "KL 발산",
    "parent": "cross-entropy",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 확률 분포가 얼마나 다른지 재는 값.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "orm-injection",
    "label": "ORM과 인젝션",
    "parent": "sql-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "ORM을 써도 raw 쿼리에서 생기는 인젝션.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06"
   },
   {
    "id": "allow-list-validation",
@@ -7290,6 +7294,126 @@
    "status": "planned",
    "priority": 3,
    "summary": "하위 그래프의 상태를 읽는 법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "logits",
+   "label": "로짓",
+   "parent": "softmax",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "softmax 이전의 원점수.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "sampling-temperature-topp",
+   "label": "온도·top-p 샘플링",
+   "parent": "softmax",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 확률에서 토큰을 고르는 방식.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "log-sum-exp",
+   "label": "log-sum-exp 안정화",
+   "parent": "softmax",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "softmax·손실을 안정적으로 계산하는 요령.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "kl-penalty-finetuning",
+   "label": "파인튜닝의 KL 페널티",
+   "parent": "kl-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원 모델에서 멀어지지 않게 하는 항.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "vae-kl-term",
+   "label": "VAE의 KL 항",
+   "parent": "kl-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잠재 분포를 표준정규에 가깝게 하는 정규화.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "jensen-shannon",
+   "label": "JS 발산",
+   "parent": "kl-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL을 대칭으로 만든 변형.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "model-calibration",
+   "label": "모델 보정",
+   "parent": "label-smoothing",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 확률이 실제 정확도와 맞는 정도.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "knowledge-distillation-loss",
+   "label": "증류 손실",
+   "parent": "label-smoothing",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "teacher 분포를 학생이 따라 하는 학습.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "overconfidence",
+   "label": "과신",
+   "parent": "label-smoothing",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀려도 높은 확률을 내는 현상.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "allowlist-validation",
+   "label": "허용 목록 검증",
+   "parent": "orm-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "바인딩 불가 부분(정렬 컬럼)을 안전하게 처리.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "ai-generated-code-security-review",
+   "label": "AI 생성 코드 보안 리뷰",
+   "parent": "orm-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "바이브코딩 결과물의 취약점 점검 체크리스트.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "nosql-injection",
+   "label": "NoSQL 인젝션",
+   "parent": "orm-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MongoDB 등에서 생기는 비슷한 공격.",
    "added": "2026-11-06"
   }
  ]
