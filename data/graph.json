@@ -6705,20 +6705,29 @@
    "label": "MCP Resources",
    "parent": "mcp-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "URI로 식별하는 읽기용 맥락 데이터.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "mcp-security",
+    "tool-use"
+   ]
   },
   {
    "id": "mcp-prompts",
    "label": "MCP Prompts",
    "parent": "mcp-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용자가 고르는 재사용 프롬프트 템플릿.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "tool-use"
+   ]
   },
   {
    "id": "mcp-client-primitives",
@@ -6735,10 +6744,14 @@
    "label": "타임 트래블",
    "parent": "langgraph-checkpointer",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과거 체크포인트로 되돌려 다른 입력으로 다시 실행.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "langgraph-interrupt"
+   ]
   },
   {
    "id": "langgraph-get-state",
@@ -6755,10 +6768,14 @@
    "label": "내구성 있는 실행",
    "parent": "langgraph-checkpointer",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실패해도 저장 지점부터 재개하는 성질.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-06",
+   "related": [
+    "langgraph-interrupt"
+   ]
   },
   {
    "id": "langgraph-serde",
@@ -7038,6 +7055,66 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델이 잘 고르도록 이름·설명·스키마를 쓰는 요령.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-resource-templates",
+   "label": "리소스 템플릿",
+   "parent": "mcp-resources",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "URI 템플릿으로 매개변수화된 리소스를 노출하는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-subscriptions",
+   "label": "리소스 구독",
+   "parent": "mcp-resources",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경 알림을 받아 최신 맥락을 유지하는 흐름.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "mcp-completion",
+   "label": "MCP 인자 자동완성",
+   "parent": "mcp-prompts",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트·리소스 인자를 completion API로 완성하는 방법.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "slash-command-ui",
+   "label": "슬래시 명령 UI",
+   "parent": "mcp-prompts",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트를 사용자에게 노출하는 대표 방식.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-update-state",
+   "label": "update_state와 as_node",
+   "parent": "langgraph-time-travel",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상태를 직접 고치고 재개 위치를 정하는 API.",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "langgraph-checkpoint-retention",
+   "label": "체크포인트 보존 정책",
+   "parent": "langgraph-durable-execution",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쌓이는 체크포인트를 정리하는 방법.",
    "added": "2026-11-06"
   }
  ]
