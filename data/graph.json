@@ -7128,30 +7128,33 @@
    "label": "슬래시 명령 UI",
    "parent": "mcp-prompts",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프롬프트를 사용자에게 노출하는 대표 방식.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "langgraph-update-state",
    "label": "update_state와 as_node",
    "parent": "langgraph-time-travel",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상태를 직접 고치고 재개 위치를 정하는 API.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "langgraph-checkpoint-retention",
    "label": "체크포인트 보존 정책",
    "parent": "langgraph-durable-execution",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "쌓이는 체크포인트를 정리하는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "clip-77-token-limit",
@@ -8321,6 +8324,66 @@
    "status": "planned",
    "priority": 3,
    "summary": "오타·부분 입력에도 후보를 찾는 방식.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-prompt-security",
+   "label": "MCP 프롬프트 보안",
+   "parent": "slash-command-ui",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 입력·출력 검증과 주입 공격 방어.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "team-prompt-library",
+   "label": "팀 프롬프트 라이브러리",
+   "parent": "slash-command-ui",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬래시 명령으로 팀 지시문을 공유하는 운영법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "invalid-update-error",
+   "label": "InvalidUpdateError",
+   "parent": "langgraph-update-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "병렬 가지가 같은 단계에서 갱신할 때 나는 오류.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "state-forking",
+   "label": "상태 분기(fork)",
+   "parent": "langgraph-update-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 지점에서 다른 값으로 갈라져 실행하기.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "checkpoint-pruning-job",
+   "label": "체크포인트 정리 작업",
+   "parent": "langgraph-checkpoint-retention",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오래된 체크포인트를 스케줄로 삭제하는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "data-retention-policy",
+   "label": "데이터 보존 정책",
+   "parent": "langgraph-checkpoint-retention",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인정보와 비용을 고려한 보존 기간 결정.",
    "added": "2026-11-07"
   }
  ]
