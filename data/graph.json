@@ -7062,60 +7062,66 @@
    "label": "Tool annotations",
    "parent": "mcp-tools",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "읽기 전용·파괴적 같은 도구 성격 힌트와 신뢰 문제.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-structured-output",
    "label": "구조화된 도구 결과",
    "parent": "mcp-tools",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "outputSchema와 structuredContent 사용법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-tool-description-design",
    "label": "도구 설명 설계",
    "parent": "mcp-tools",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 잘 고르도록 이름·설명·스키마를 쓰는 요령.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-resource-templates",
    "label": "리소스 템플릿",
    "parent": "mcp-resources",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "URI 템플릿으로 매개변수화된 리소스를 노출하는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-subscriptions",
    "label": "리소스 구독",
    "parent": "mcp-resources",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경 알림을 받아 최신 맥락을 유지하는 흐름.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-completion",
    "label": "MCP 인자 자동완성",
    "parent": "mcp-prompts",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프롬프트·리소스 인자를 completion API로 완성하는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "slash-command-ui",
@@ -8205,6 +8211,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "권리자가 AI 학습 사용을 거부하는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-trust-boundary",
+   "label": "MCP 신뢰 경계",
+   "parent": "mcp-tool-annotations",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신뢰 서버와 비신뢰 서버의 메타데이터를 구분하는 원칙.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-tool-poisoning",
+   "label": "도구 설명 오염 공격",
+   "parent": "mcp-tool-annotations",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "악성 서버가 도구 설명으로 모델을 조종하는 위험.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-error-handling",
+   "label": "MCP 오류 처리",
+   "parent": "mcp-structured-output",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프로토콜 오류와 isError 실행 오류의 구분.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "json-schema-basics",
+   "label": "JSON Schema 기초",
+   "parent": "mcp-structured-output",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형태를 선언하는 표준 스키마 언어.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "response-format-concise",
+   "label": "concise·detailed 응답",
+   "parent": "mcp-tool-description-design",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토큰을 아끼는 응답 형식 선택 인자.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "uri-template-rfc6570",
+   "label": "URI 템플릿 RFC 6570",
+   "parent": "mcp-resource-templates",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "{변수}가 들어간 주소 양식 표준.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-resource-annotations",
+   "label": "리소스 주석",
+   "parent": "mcp-resource-templates",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "audience·priority·lastModified 힌트.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-list-changed",
+   "label": "list_changed 알림",
+   "parent": "mcp-subscriptions",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구·리소스 목록이 바뀔 때 보내는 알림.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "polling-vs-push",
+   "label": "폴링과 푸시",
+   "parent": "mcp-subscriptions",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확인 방식의 차이와 선택 기준.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-pagination",
+   "label": "MCP 페이지네이션",
+   "parent": "mcp-completion",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "cursor로 긴 목록을 나눠 받는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "fuzzy-matching",
+   "label": "퍼지 매칭",
+   "parent": "mcp-completion",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오타·부분 입력에도 후보를 찾는 방식.",
    "added": "2026-11-07"
   }
  ]
