@@ -7342,20 +7342,22 @@
    "label": "서브그래프 상태 조회",
    "parent": "langgraph-get-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "하위 그래프의 상태를 읽는 법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "logits",
    "label": "로짓",
    "parent": "softmax",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "softmax 이전의 원점수.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "sampling-temperature-topp",
@@ -8525,6 +8527,56 @@
    "status": "planned",
    "priority": 3,
    "summary": "체크포인트가 연결 리스트처럼 이어지는 구조",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "logit-bias",
+   "label": "logit bias",
+   "parent": "logits",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특정 토큰 로짓에 값을 더해 출력을 조절",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "temperature-scaling",
+   "label": "온도 스케일링",
+   "parent": "logits",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로짓을 T로 나눠 분포의 뾰족함을 조절",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "log-odds",
+   "label": "log-odds",
+   "parent": "logits",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계의 logit 정의 log(p/(1-p))",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "langgraph-subgraph-checkpointer-modes",
+   "label": "서브그래프 checkpointer 모드",
+   "parent": "langgraph-subgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "None·True·False 세 모드의 차이",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "subgraph-in-tool-limit",
+   "label": "도구 안 서브그래프 한계",
+   "parent": "langgraph-subgraph-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구 함수 안에서 호출하면 상태 조회가 안 됨",
    "added": "2026-11-07"
   }
  ]
