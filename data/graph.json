@@ -6842,40 +6842,44 @@
    "label": "허용 목록 검증",
    "parent": "sql-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정해진 값만 통과시키는 입력 검증 방식.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "env-example",
    "label": "env.example 견본",
    "parent": "dotenv-gitignore",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 값 없이 필요한 변수 목록을 공유하는 파일.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "git-history-secret",
    "label": "git 기록 속 비밀값",
    "parent": "dotenv-gitignore",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "커밋에서 지워도 기록에 남는 키 문제.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "pre-commit-secret-scan",
    "label": "커밋 전 비밀값 스캔",
    "parent": "dotenv-gitignore",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "gitleaks 등으로 커밋 전에 키를 찾는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "greedy-vs-beam",
@@ -7455,6 +7459,96 @@
    "status": "planned",
    "priority": 3,
    "summary": "커스텀 체크포인터가 왕복 직렬화를 지키는지 검증하는 테스트.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "denylist-bypass",
+   "label": "거부 목록 우회",
+   "parent": "allow-list-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차단 문자열을 인코딩·변형으로 피해 가는 방식.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mass-assignment",
+   "label": "대량 할당 취약점",
+   "parent": "allow-list-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청 필드를 객체에 통째 바인딩할 때 생기는 권한 문제.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "twelve-factor",
+   "label": "12-Factor App",
+   "parent": "env-example",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클라우드 앱을 만드는 12가지 원칙(설정 분리 포함).",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "dotenv-loading",
+   "label": "dotenv 로딩 방식",
+   "parent": "env-example",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "앱이 .env를 읽어 환경 변수로 올리는 과정.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "github-push-protection",
+   "label": "GitHub 푸시 보호",
+   "parent": "pre-commit-secret-scan",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버 측에서 비밀값 포함 푸시를 차단하는 기능.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "secret-rotation",
+   "label": "키 교체 절차",
+   "parent": "pre-commit-secret-scan",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노출·정기 교체 시 키를 재발급하고 적용하는 순서.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "pre-commit-framework",
+   "label": "pre-commit 프레임워크",
+   "parent": "pre-commit-secret-scan",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 훅을 선언적으로 관리하는 도구.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "git-filter-repo",
+   "label": "git-filter-repo",
+   "parent": "git-history-secret",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기록을 다시 쓰는 공식 권장 도구.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "force-push-risks",
+   "label": "force push 위험",
+   "parent": "git-history-secret",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원격 기록을 덮어쓸 때 협업자에게 생기는 문제.",
    "added": "2026-11-07"
   }
  ]
