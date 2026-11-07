@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "nodes": [
   {
    "id": "ai",
@@ -6787,10 +6787,11 @@
    "label": "체크포인트 직렬화",
    "parent": "langgraph-checkpointer",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상태를 저장 가능한 형식으로 바꾸는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "softmax",
@@ -7415,6 +7416,46 @@
    "priority": 3,
    "summary": "MongoDB 등에서 생기는 비슷한 공격.",
    "added": "2026-11-06"
+  },
+  {
+   "id": "pickle-security",
+   "label": "pickle 역직렬화 위험",
+   "parent": "langgraph-serde",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불러오는 순간 임의 코드가 실행될 수 있는 pickle의 보안 문제.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "msgpack-vs-json",
+   "label": "msgpack과 JSON",
+   "parent": "langgraph-serde",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이진 직렬화와 텍스트 직렬화의 차이와 선택 기준.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "encryption-at-rest",
+   "label": "저장 데이터 암호화",
+   "parent": "langgraph-serde",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "디스크·DB에 저장된 데이터를 AES 등으로 보호하는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "langgraph-conformance-tests",
+   "label": "체크포인터 적합성 테스트",
+   "parent": "langgraph-serde",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "커스텀 체크포인터가 왕복 직렬화를 지키는지 검증하는 테스트.",
+   "added": "2026-11-07"
   }
  ]
 }
