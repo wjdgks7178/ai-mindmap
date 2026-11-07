@@ -6886,30 +6886,33 @@
    "label": "Greedy와 Beam search",
    "parent": "sampling-temperature",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무작위 없는 디코딩 두 방식의 차이.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "repetition-penalty",
    "label": "반복 억제",
    "parent": "sampling-temperature",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 문장이 반복되는 현상을 줄이는 설정.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "structured-output-decoding",
    "label": "제약 디코딩",
    "parent": "sampling-temperature",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "JSON 같은 형식을 강제하며 토큰을 고르는 방식.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "padding-mask",
@@ -7549,6 +7552,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "원격 기록을 덮어쓸 때 협업자에게 생기는 문제.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "beam-search-length-penalty",
+   "label": "길이 페널티",
+   "parent": "greedy-vs-beam",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "beam search가 짧은 문장을 선호하는 편향을 보정하는 값.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "contrastive-search",
+   "label": "대조 탐색",
+   "parent": "greedy-vs-beam",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복을 줄이면서 일관성을 유지하는 디코딩.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "speculative-decoding",
+   "label": "추측 디코딩",
+   "parent": "greedy-vs-beam",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 모델이 초안을 쓰고 큰 모델이 검증해 속도를 높이는 방식.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "frequency-presence-penalty",
+   "label": "빈도·존재 페널티",
+   "parent": "repetition-penalty",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "API에서 반복을 줄이는 frequency/presence 설정.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "degeneration-loop",
+   "label": "생성 루프(퇴화)",
+   "parent": "repetition-penalty",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 같은 구절에 갇히는 현상의 원인.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "json-schema-output",
+   "label": "JSON 스키마 출력",
+   "parent": "structured-output-decoding",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "API의 structured outputs로 형식을 보장하는 기능.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "logit-masking",
+   "label": "로짓 마스킹",
+   "parent": "structured-output-decoding",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용되지 않는 토큰의 점수를 제거해 선택을 제한하는 기법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "grammar-constrained-llamacpp",
+   "label": "GBNF 문법 제약",
+   "parent": "structured-output-decoding",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "llama.cpp에서 문법 파일로 출력을 제한하는 방법.",
    "added": "2026-11-07"
   }
  ]
