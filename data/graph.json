@@ -6974,60 +6974,66 @@
    "label": "드롭아웃",
    "parent": "regularization-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 중 뉴런을 무작위로 꺼 과적합을 줄이는 기법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "early-stopping",
    "label": "조기 종료",
    "parent": "regularization-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검증 손실이 나빠지기 시작하면 학습을 멈추는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "hyperparameter",
    "label": "하이퍼파라미터",
    "parent": "regularization-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "λ·학습률처럼 학습 전에 사람이 정하는 값.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "confusion-matrix",
    "label": "혼동 행렬",
    "parent": "evaluation-metrics-basic",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "TP·FP·FN·TN을 표로 정리한 분류 결과.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "f1-score",
    "label": "F1 점수",
    "parent": "evaluation-metrics-basic",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정밀도와 재현율의 조화 평균.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "imbalanced-data",
    "label": "불균형 데이터",
    "parent": "evaluation-metrics-basic",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한쪽 클래스가 매우 적은 데이터 다루기.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "sliding-window-eval",
@@ -7767,6 +7773,146 @@
    "status": "planned",
    "priority": 3,
    "summary": "정상 패턴에서 벗어난 사례를 찾는 문제 전반.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "co-adaptation",
+   "label": "공적응(co-adaptation)",
+   "parent": "dropout",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뉴런끼리 서로에게 과하게 의존하는 현상.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "inverted-dropout",
+   "label": "Inverted dropout",
+   "parent": "dropout",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 때 값을 1/(1-p)배 키워 추론을 단순화하는 구현.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "train-vs-eval-mode",
+   "label": "train·eval 모드",
+   "parent": "dropout",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PyTorch에서 드롭아웃·배치정규화 동작이 바뀌는 스위치.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "validation-set",
+   "label": "검증 세트",
+   "parent": "early-stopping",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 중 성능을 점검하려고 따로 떼어 둔 데이터.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "checkpoint-selection",
+   "label": "최고 체크포인트 선택",
+   "parent": "early-stopping",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 성적이 가장 좋은 시점의 저장본을 쓰는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "grid-vs-random-search",
+   "label": "그리드·랜덤 탐색",
+   "parent": "hyperparameter",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하이퍼파라미터 탐색 방식 비교.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "nested-cross-validation",
+   "label": "중첩 교차검증",
+   "parent": "hyperparameter",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜닝과 평가를 분리해 낙관 편향을 줄이는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "precision-recall-tradeoff",
+   "label": "정밀도-재현율 트레이드오프",
+   "parent": "confusion-matrix",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값에 따라 한쪽이 오르면 한쪽이 내리는 관계.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "roc-auc",
+   "label": "ROC·AUC",
+   "parent": "confusion-matrix",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값 전체에서 분류 성능을 요약하는 곡선과 면적.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "macro-micro-average",
+   "label": "macro·micro 평균",
+   "parent": "f1-score",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다중 분류 점수를 합치는 방식의 차이.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "f-beta",
+   "label": "F-beta",
+   "parent": "f1-score",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현율과 정밀도에 다른 가중을 주는 일반화.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "smote",
+   "label": "SMOTE",
+   "parent": "imbalanced-data",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 클래스 사이를 보간해 합성 샘플을 만드는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "class-weights",
+   "label": "클래스 가중치",
+   "parent": "imbalanced-data",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 클래스 오류에 더 큰 벌점을 주는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "data-leakage",
+   "label": "데이터 누수",
+   "parent": "imbalanced-data",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 데이터 정보가 학습에 새어 성능이 부풀려지는 문제.",
    "added": "2026-11-07"
   }
  ]
