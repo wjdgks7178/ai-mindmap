@@ -7321,10 +7321,11 @@
    "label": "StateSnapshot 필드",
    "parent": "langgraph-get-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "values·next·metadata 등 스냅샷 구조.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "langgraph-state-history-ui",
@@ -8484,6 +8485,46 @@
    "status": "planned",
    "priority": 3,
    "summary": "이름 부분 문자열로 다른 제공사 모델에 매핑",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "snapshot-metadata-source",
+   "label": "metadata.source",
+   "parent": "langgraph-state-snapshot",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "input·loop·update 세 출처의 의미",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "langgraph-replay",
+   "label": "체크포인트 리플레이",
+   "parent": "langgraph-state-snapshot",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "snapshot.config로 invoke(None) 재실행",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "pregel-task",
+   "label": "PregelTask",
+   "parent": "langgraph-state-snapshot",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "tasks 항목의 id·name·error·interrupts",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "checkpoint-parent-chain",
+   "label": "parent_config 체인",
+   "parent": "langgraph-state-snapshot",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "체크포인트가 연결 리스트처럼 이어지는 구조",
    "added": "2026-11-07"
   }
  ]
