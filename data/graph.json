@@ -7040,20 +7040,22 @@
    "label": "슬라이딩 윈도 평가",
    "parent": "perplexity",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "긴 텍스트를 겹치게 잘라 문맥을 보존하며 평가.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "quantization-quality",
    "label": "양자화 품질 점검",
    "parent": "perplexity",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "양자화 전후 PPL 등으로 품질 손실 확인.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-tool-annotations",
@@ -7150,40 +7152,44 @@
    "label": "77토큰 한계와 긴 프롬프트",
    "parent": "clip-text-encoder",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "CLIP이 프롬프트를 77토큰에서 자르는 제약과 우회(청킹·T5 병용).",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "zero-shot-clip",
    "label": "CLIP 제로샷 분류",
    "parent": "clip-text-encoder",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "라벨 없이 문장 비교로 이미지를 분류.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "diffusion-scheduler",
    "label": "확산 스케줄러",
    "parent": "unet-denoiser",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "DDIM·PNDM 등 노이즈를 단계별로 제거하는 규칙.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "cross-attention-diffusion",
    "label": "교차 어텐션",
    "parent": "unet-denoiser",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "텍스트 임베딩이 이미지 생성에 영향을 주는 경로.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "dit-diffusion-transformer",
@@ -7913,6 +7919,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가 데이터 정보가 학습에 새어 성능이 부풀려지는 문제.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "bits-per-character",
+   "label": "BPC(문자당 비트)",
+   "parent": "sliding-window-eval",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토크나이저에 덜 민감한 언어 모델 평가 단위.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "perplexity-tokenizer-dependence",
+   "label": "PPL과 토크나이저",
+   "parent": "sliding-window-eval",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토큰화에 따라 PPL이 달라져 비교가 어려운 이유.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "gptq-awq",
+   "label": "GPTQ와 AWQ",
+   "parent": "quantization-quality",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사후 양자화 방식 두 가지의 차이.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "task-level-eval",
+   "label": "과제 단위 평가",
+   "parent": "quantization-quality",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 업무 질문으로 모델을 비교하는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "prompt-chunking",
+   "label": "프롬프트 청킹",
+   "parent": "clip-77-token-limit",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴 프롬프트를 나눠 인코딩해 잇는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "t5-text-encoder",
+   "label": "T5 텍스트 인코더",
+   "parent": "clip-77-token-limit",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CLIP보다 긴 문장을 처리하는 인코더.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "prompt-template-ensembling",
+   "label": "프롬프트 템플릿 앙상블",
+   "parent": "zero-shot-clip",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 문장 템플릿 결과를 평균내 제로샷 정확도를 올리는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "image-text-retrieval",
+   "label": "이미지-텍스트 검색",
+   "parent": "zero-shot-clip",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CLIP 임베딩으로 이미지와 문장을 서로 찾는 응용.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "karras-sigmas",
+   "label": "Karras sigmas",
+   "parent": "diffusion-scheduler",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구조가 정해지는 구간에 노이즈 단계를 촘촘히 두는 방식.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "few-step-generation",
+   "label": "적은 단계 생성(LCM·TCD)",
+   "parent": "diffusion-scheduler",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증류로 몇 단계 만에 이미지를 만드는 기법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "cross-attention-visualization",
+   "label": "교차 어텐션 시각화",
+   "parent": "cross-attention-diffusion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단어가 영향을 주는 이미지 영역을 보는 방법.",
    "added": "2026-11-07"
   }
  ]
