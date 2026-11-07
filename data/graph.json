@@ -7271,40 +7271,50 @@
    "label": "MCP Sampling",
    "parent": "mcp-client-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서버가 클라이언트 모델 호출을 요청하는 흐름.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07",
+   "related": [
+    "model-preferences-mcp"
+   ]
   },
   {
    "id": "mcp-roots",
    "label": "MCP Roots",
    "parent": "mcp-client-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서버의 작업 가능 경로 범위.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "mcp-elicitation",
    "label": "MCP Elicitation",
    "parent": "mcp-client-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서버가 사용자에게 추가 입력을 요청.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "model-preferences-mcp",
    "label": "modelPreferences",
    "parent": "mcp-client-primitives",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비용·속도·지능 우선순위와 모델 힌트.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07",
+   "related": [
+    "mcp-sampling"
+   ]
   },
   {
    "id": "langgraph-state-snapshot",
@@ -8384,6 +8394,96 @@
    "status": "planned",
    "priority": 3,
    "summary": "개인정보와 비용을 고려한 보존 기간 결정.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-sampling-hitl",
+   "label": "Sampling 사람 검토(HITL)",
+   "parent": "mcp-sampling",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청·응답을 사람이 검토하는 UI 설계",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-nested-agent",
+   "label": "서버 중첩 에이전트",
+   "parent": "mcp-sampling",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구 안에서 LLM을 호출하는 서버 설계",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "sampling-stop-reason",
+   "label": "stopReason",
+   "parent": "mcp-sampling",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "endTurn·maxTokens 등 종료 사유",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "path-traversal",
+   "label": "경로 탈출(Path Traversal)",
+   "parent": "mcp-roots",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "../로 허용 경로 밖에 접근하는 공격",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-roots-vs-sandbox",
+   "label": "Roots와 샌드박스",
+   "parent": "mcp-roots",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "협조 규약과 실제 격리의 차이",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "elicitation-schema",
+   "label": "requestedSchema 제한",
+   "parent": "mcp-elicitation",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "납작한 객체·원시 타입만 허용하는 이유",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "elicitation-actions",
+   "label": "accept·decline·cancel",
+   "parent": "mcp-elicitation",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "세 응답 액션과 서버 처리법",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "human-in-the-loop-input",
+   "label": "사람 입력 되묻기 패턴",
+   "parent": "mcp-elicitation",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에이전트가 필요할 때만 사용자에게 묻기",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "mcp-model-hints",
+   "label": "모델 힌트 매칭",
+   "parent": "model-preferences-mcp",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이름 부분 문자열로 다른 제공사 모델에 매핑",
    "added": "2026-11-07"
   }
  ]
