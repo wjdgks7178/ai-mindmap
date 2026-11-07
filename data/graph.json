@@ -6919,50 +6919,55 @@
    "label": "패딩 마스크",
    "parent": "attention-mask",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "배치 길이를 맞추려 채운 토큰을 무시하는 마스크.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "bidirectional-attention",
    "label": "양방향 어텐션",
    "parent": "attention-mask",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "BERT류에서 양쪽 문맥을 모두 보는 방식.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "flash-attention",
    "label": "FlashAttention",
    "parent": "attention-mask",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어텐션 계산을 메모리 효율적으로 하는 구현.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "huber-loss",
    "label": "Huber 손실",
    "parent": "mse-vs-mae",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "작은 오차엔 MSE, 큰 오차엔 MAE처럼 동작하는 절충 손실.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "outlier-handling",
    "label": "이상치 처리",
    "parent": "mse-vs-mae",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이상치를 찾고 제거·완화하는 방법.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-07"
   },
   {
    "id": "dropout",
@@ -7632,6 +7637,136 @@
    "status": "planned",
    "priority": 3,
    "summary": "llama.cpp에서 문법 파일로 출력을 제한하는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "left-vs-right-padding",
+   "label": "좌측·우측 패딩",
+   "parent": "padding-mask",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성 모델에서 패딩을 앞에 두는 이유.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "attention-mask-combination",
+   "label": "마스크 합치기",
+   "parent": "padding-mask",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패딩 마스크와 인과 마스크를 함께 적용하는 방식.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "masked-language-modeling",
+   "label": "마스크드 언어 모델링",
+   "parent": "bidirectional-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 토큰을 가리고 맞히며 배우는 사전학습 방식.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "encoder-vs-decoder-models",
+   "label": "인코더·디코더 모델",
+   "parent": "bidirectional-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이해용 구조와 생성용 구조의 차이.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "bert",
+   "label": "BERT",
+   "parent": "bidirectional-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양방향 인코더 모델의 대표.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "io-aware-algorithms",
+   "label": "IO 인식 알고리즘",
+   "parent": "flash-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메모리 이동량을 기준으로 설계한 계산법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "gpu-memory-hierarchy",
+   "label": "GPU 메모리 계층",
+   "parent": "flash-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HBM과 SRAM의 속도 차이.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "paged-attention",
+   "label": "PagedAttention",
+   "parent": "flash-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KV 캐시를 페이지 단위로 관리하는 vLLM 기법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "ransac",
+   "label": "RANSAC",
+   "parent": "huber-loss",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 표본으로 이상치에 강한 모델을 찾는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "robust-regression",
+   "label": "강건 회귀",
+   "parent": "huber-loss",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상치 영향을 줄이는 회귀 기법 모음.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "isolation-forest",
+   "label": "Isolation Forest",
+   "parent": "outlier-handling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빨리 고립되는 점을 이상치로 보는 알고리즘.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "local-outlier-factor",
+   "label": "LOF",
+   "parent": "outlier-handling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지역 밀도 비교로 이상치를 찾는 방법.",
+   "added": "2026-11-07"
+  },
+  {
+   "id": "anomaly-detection",
+   "label": "이상 탐지",
+   "parent": "outlier-handling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 패턴에서 벗어난 사례를 찾는 문제 전반.",
    "added": "2026-11-07"
   }
  ]
