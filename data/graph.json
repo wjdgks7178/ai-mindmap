@@ -3867,13 +3867,15 @@
       "label": "해석 가능성(기계적 해석)",
       "parent": "ai-alignment",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 4,
       "summary": "모델 내부 회로·특징을 들여다보아 왜 그렇게 답하는지 이해하는 연구.",
       "added": "2026-11-02",
       "related": [
+        "ai-alignment",
         "explainability"
-      ]
+      ],
+      "done": "2026-11-08"
     },
     {
       "id": "pass-hat-k-tau-bench",
@@ -9208,6 +9210,56 @@
       "status": "planned",
       "priority": 5,
       "summary": "정확도 대비 추가 지연과 호출 비용 계산법.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "sparse-autoencoder",
+      "label": "희소 오토인코더(SAE)",
+      "parent": "interpretability",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "활성값을 해석 가능한 특징으로 분해하는 도구.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "circuits",
+      "label": "회로(circuits)",
+      "parent": "interpretability",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "특징들이 연결돼 하나의 계산을 이루는 경로.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "feature-steering",
+      "label": "특징 조향",
+      "parent": "interpretability",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "내부 특징을 증폭·억제해 행동을 바꾸는 실험.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "superposition",
+      "label": "중첩(superposition)",
+      "parent": "interpretability",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "뉴런 하나가 여러 개념을 겹쳐 담아 해석이 어려운 이유.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "mechanistic-interpretability",
+      "label": "기계적 해석가능성",
+      "parent": "interpretability",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "신경망을 역공학해 작동 원리를 밝히는 접근.",
       "added": "2026-11-08"
     }
   ]
