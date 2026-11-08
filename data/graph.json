@@ -1513,12 +1513,16 @@
       "label": "추론 모델",
       "parent": "llm-basics",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 4,
       "summary": "답하기 전에 길게 생각하는 모델.",
       "aka": [],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "context-window",
+        "token-budget"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-11-08"
     },
     {
       "id": "open-vs-closed-models",
@@ -8959,6 +8963,56 @@
       "status": "planned",
       "priority": 5,
       "summary": "온도 0이어도 결과가 달라질 수 있는 이유와 대처.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "test-time-compute",
+      "label": "테스트 시점 연산(Test-time compute)",
+      "parent": "reasoning-models",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "훈련이 아니라 답을 낼 때 연산을 늘려 성능을 올리는 접근.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "adaptive-thinking",
+      "label": "적응형 생각(adaptive thinking)",
+      "parent": "reasoning-models",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "모델이 질문마다 생각 여부와 분량을 스스로 정하는 방식.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "effort-parameter",
+      "label": "effort 파라미터",
+      "parent": "reasoning-models",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "응답 전체의 노력(생각 깊이·토큰 사용)을 low~high로 조절하는 설정.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "rl-verifiable-rewards",
+      "label": "검증 가능한 보상 강화학습(RLVR)",
+      "parent": "reasoning-models",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "정답을 자동 채점할 수 있는 문제로 추론 능력을 키우는 훈련.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "thinking-faithfulness",
+      "label": "생각의 충실성",
+      "parent": "reasoning-models",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "모델이 보여 주는 생각이 실제 판단 근거와 일치하는가의 문제.",
       "added": "2026-11-08"
     }
   ]
