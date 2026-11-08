@@ -1792,10 +1792,14 @@
       "label": "리랭킹",
       "parent": "rag",
       "domain": "knowledge-retrieval",
-      "status": "planned",
+      "status": "done",
       "priority": 4,
       "summary": "1차 검색 후보를 별도 모델로 재채점해 상위만 고르는 단계.",
-      "added": "2026-10-30"
+      "added": "2026-10-30",
+      "done": "2026-11-08",
+      "related": [
+        "bm25"
+      ]
     },
     {
       "id": "contextual-retrieval",
@@ -9154,6 +9158,56 @@
       "status": "planned",
       "priority": 5,
       "summary": "에이전트에 공격 문구를 심어 방어를 점검하는 레드팀 실습.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "cross-encoder",
+      "label": "크로스 인코더",
+      "parent": "reranking",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "질문·문서를 한 번에 넣어 관련도를 채점하는 모델 구조.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "bi-encoder",
+      "label": "바이 인코더",
+      "parent": "reranking",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "질문과 문서를 각각 벡터로 만들어 비교하는 구조(임베딩 검색).",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "top-k-retrieval",
+      "label": "top-K 검색 개수 정하기",
+      "parent": "reranking",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "몇 개를 가져와 몇 개를 LLM에 넘길지 정하는 트레이드오프.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "retrieval-failure-rate",
+      "label": "검색 실패율",
+      "parent": "reranking",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "정답 청크가 상위 K개에 못 드는 비율, RAG 품질의 1차 지표.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "rerank-latency-cost",
+      "label": "리랭킹의 지연·비용",
+      "parent": "reranking",
+      "domain": "knowledge-retrieval",
+      "status": "planned",
+      "priority": 5,
+      "summary": "정확도 대비 추가 지연과 호출 비용 계산법.",
       "added": "2026-11-08"
     }
   ]
