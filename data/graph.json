@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "nodes": [
   {
    "id": "ai",
@@ -7364,30 +7364,42 @@
    "label": "온도·top-p 샘플링",
    "parent": "softmax",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM이 확률에서 토큰을 고르는 방식.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08",
+   "related": [
+    "structured-output-decoding",
+    "speculative-decoding"
+   ]
   },
   {
    "id": "log-sum-exp",
    "label": "log-sum-exp 안정화",
    "parent": "softmax",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "softmax·손실을 안정적으로 계산하는 요령.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08"
   },
   {
    "id": "kl-penalty-finetuning",
    "label": "파인튜닝의 KL 페널티",
    "parent": "kl-divergence",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원 모델에서 멀어지지 않게 하는 항.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08",
+   "related": [
+    "rlhf",
+    "ppo",
+    "dpo"
+   ]
   },
   {
    "id": "vae-kl-term",
@@ -8578,6 +8590,56 @@
    "priority": 3,
    "summary": "도구 함수 안에서 호출하면 상태 조회가 안 됨",
    "added": "2026-11-07"
+  },
+  {
+   "id": "min-p-sampling",
+   "label": "min-p 샘플링",
+   "parent": "sampling-temperature-topp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1등 확률 대비 비율로 후보를 자르는 방식.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "greedy-beam-search",
+   "label": "그리디·빔 서치",
+   "parent": "sampling-temperature-topp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정적 디코딩과 여러 후보 경로 탐색.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "logsumexp-cross-entropy-fused",
+   "label": "교차 엔트로피 융합 구현",
+   "parent": "log-sum-exp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로짓과 손실을 합쳐 안정적으로 계산.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "numerical-precision-fp16-bf16",
+   "label": "수치 정밀도 fp16·bf16",
+   "parent": "log-sum-exp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부동소수점 형식과 오버플로 관계.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "reference-model",
+   "label": "기준 모델(reference model)",
+   "parent": "kl-penalty-finetuning",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL의 기준이 되는 동결된 모델.",
+   "added": "2026-11-08"
   }
  ]
 }
