@@ -7493,40 +7493,50 @@
    "label": "NoSQL 인젝션",
    "parent": "orm-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "MongoDB 등에서 생기는 비슷한 공격.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08",
+   "related": [
+    "sql-injection"
+   ]
   },
   {
    "id": "pickle-security",
    "label": "pickle 역직렬화 위험",
    "parent": "langgraph-serde",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불러오는 순간 임의 코드가 실행될 수 있는 pickle의 보안 문제.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-08",
+   "related": [
+    "sql-injection"
+   ]
   },
   {
    "id": "msgpack-vs-json",
    "label": "msgpack과 JSON",
    "parent": "langgraph-serde",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이진 직렬화와 텍스트 직렬화의 차이와 선택 기준.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-08"
   },
   {
    "id": "encryption-at-rest",
    "label": "저장 데이터 암호화",
    "parent": "langgraph-serde",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "디스크·DB에 저장된 데이터를 AES 등으로 보호하는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-08"
   },
   {
    "id": "langgraph-conformance-tests",
@@ -8816,6 +8826,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "거부 vs 변형 방식의 차이.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "mongoose-schema-validation",
+   "label": "스키마 검증으로 입력 타입 고정",
+   "parent": "nosql-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열 자리에 객체가 들어오는 것을 막는 방법.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "mongodb-where-operator",
+   "label": "$where와 서버 측 JS",
+   "parent": "nosql-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버에서 JS가 실행되는 쿼리 연산자의 위험.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "ml-model-file-safety",
+   "label": "모델 파일 안전(pkl·safetensors)",
+   "parent": "pickle-security",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처 불명 모델 파일을 열 때의 위험.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "protobuf-vs-msgpack",
+   "label": "Protocol Buffers와 msgpack",
+   "parent": "msgpack-vs-json",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마 기반 이진 직렬화와의 비교.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "json-lines",
+   "label": "JSON Lines",
+   "parent": "msgpack-vs-json",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 줄에 JSON 하나인 로그·데이터 포맷.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "envelope-encryption",
+   "label": "봉투 암호화(DEK·KEK)",
+   "parent": "encryption-at-rest",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 키와 키 암호화 키 구조.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "secrets-management",
+   "label": "시크릿 관리",
+   "parent": "encryption-at-rest",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "키·토큰을 코드 밖에서 안전하게 보관.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "tls-encryption-in-transit",
+   "label": "전송 중 암호화(TLS)",
+   "parent": "encryption-at-rest",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "네트워크 구간을 보호하는 암호화.",
    "added": "2026-11-08"
   }
  ]
