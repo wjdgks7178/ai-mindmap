@@ -7433,40 +7433,50 @@
    "label": "모델 보정",
    "parent": "label-smoothing",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측 확률이 실제 정확도와 맞는 정도.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08",
+   "related": [
+    "temperature-scaling"
+   ]
   },
   {
    "id": "knowledge-distillation-loss",
    "label": "증류 손실",
    "parent": "label-smoothing",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "teacher 분포를 학생이 따라 하는 학습.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08",
+   "related": [
+    "distillation"
+   ]
   },
   {
    "id": "overconfidence",
    "label": "과신",
    "parent": "label-smoothing",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "틀려도 높은 확률을 내는 현상.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08"
   },
   {
    "id": "allowlist-validation",
    "label": "허용 목록 검증",
    "parent": "orm-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "바인딩 불가 부분(정렬 컬럼)을 안전하게 처리.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08"
   },
   {
    "id": "ai-generated-code-security-review",
@@ -8726,6 +8736,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "재실행이 메일 발송 같은 호출을 되풀이하는 문제.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "reliability-diagram",
+   "label": "신뢰도 곡선",
+   "parent": "model-calibration",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간별 확신도 대 실제 정답률 그림.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "expected-calibration-error",
+   "label": "ECE(기대 보정 오차)",
+   "parent": "model-calibration",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보정 불일치를 숫자 하나로 요약.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "llm-verbalized-confidence",
+   "label": "LLM의 말로 한 확신도",
+   "parent": "overconfidence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 말하는 자신감과 실제 정확도.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "ensemble-uncertainty",
+   "label": "앙상블과 불확실성",
+   "parent": "overconfidence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 모델로 불확실성을 추정.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "self-distillation",
+   "label": "자기 증류",
+   "parent": "knowledge-distillation-loss",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 구조의 모델끼리 증류.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "distillation-llm-practice",
+   "label": "LLM 증류 실무",
+   "parent": "knowledge-distillation-loss",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 LLM 출력으로 작은 모델 학습.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "order-by-injection",
+   "label": "ORDER BY 인젝션",
+   "parent": "allowlist-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정렬 구문에 들어오는 공격.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "input-validation-vs-sanitization",
+   "label": "검증과 정화의 차이",
+   "parent": "allowlist-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거부 vs 변형 방식의 차이.",
    "added": "2026-11-08"
   }
  ]
