@@ -3718,11 +3718,16 @@
       "label": "간접 프롬프트 인젝션",
       "parent": "prompt-injection",
       "domain": "ai-safety",
-      "status": "planned",
+      "status": "done",
       "priority": 4,
       "summary": "외부 콘텐츠에 숨은 지시로 에이전트를 조종하는 공격.",
       "added": "2026-11-01",
-      "related": []
+      "related": [
+        "agent-loop",
+        "human-in-the-loop",
+        "sandboxing"
+      ],
+      "done": "2026-11-08"
     },
     {
       "id": "lethal-trifecta",
@@ -9099,6 +9104,56 @@
       "status": "planned",
       "priority": 5,
       "summary": "특정 도메인 텍스트로 사전학습을 이어 가는 방식.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "data-exfiltration-markdown",
+      "label": "마크다운 이미지·링크 유출",
+      "parent": "indirect-prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "출력된 링크·이미지 URL에 데이터를 실어 빼내는 수법과 차단.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "instruction-hierarchy",
+      "label": "지시 계층(instruction hierarchy)",
+      "parent": "indirect-prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "시스템·사용자·도구 결과의 신뢰 순서를 모델에 가르치는 방어.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "untrusted-content-marking",
+      "label": "외부 콘텐츠 구분 표시",
+      "parent": "indirect-prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "신뢰할 수 없는 텍스트를 태그로 감싸 데이터로 취급하게 하는 방법.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "tool-permission-confirm",
+      "label": "도구 호출 승인 정책",
+      "parent": "indirect-prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "민감한 도구 호출 전에 사람 확인을 요구하는 설계.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "prompt-injection-testing",
+      "label": "인젝션 테스트",
+      "parent": "indirect-prompt-injection",
+      "domain": "ai-safety",
+      "status": "planned",
+      "priority": 5,
+      "summary": "에이전트에 공격 문구를 심어 방어를 점검하는 레드팀 실습.",
       "added": "2026-11-08"
     }
   ]
