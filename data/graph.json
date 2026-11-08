@@ -3495,11 +3495,14 @@
       "label": "사전학습",
       "parent": "llm-training-stages",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 4,
       "summary": "대량 텍스트로 다음 단어를 맞히며 언어를 익히는 단계.",
       "added": "2026-11-01",
-      "related": []
+      "related": [
+        "data-contamination"
+      ],
+      "done": "2026-11-08"
     },
     {
       "id": "sft",
@@ -9056,6 +9059,46 @@
       "status": "planned",
       "priority": 6,
       "summary": "K·V 헤드를 공유해 KV 캐시 메모리를 줄이는 변형.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "scaling-laws",
+      "label": "스케일링 법칙",
+      "parent": "pretraining",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "모델 크기·데이터·연산을 늘릴수록 손실이 예측 가능하게 줄어든다는 경험칙.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "pretraining-data",
+      "label": "사전학습 데이터",
+      "parent": "pretraining",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "웹 크롤·책·코드 등 학습 재료와 정제(중복 제거·필터링) 과정.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "base-vs-instruct",
+      "label": "base 모델 vs instruct 모델",
+      "parent": "pretraining",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "글을 이어 쓰는 모델과 지시를 따르는 모델의 차이.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "continued-pretraining",
+      "label": "계속 사전학습",
+      "parent": "pretraining",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 5,
+      "summary": "특정 도메인 텍스트로 사전학습을 이어 가는 방식.",
       "added": "2026-11-08"
     }
   ]
