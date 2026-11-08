@@ -1567,12 +1567,15 @@
       "label": "셀프 어텐션 Q·K·V",
       "parent": "transformer-attention",
       "domain": "llm-basics",
-      "status": "planned",
+      "status": "done",
       "priority": 5,
       "summary": "질의·키·값으로 단어 간 관련도를 계산하는 방식.",
       "aka": [],
-      "related": [],
-      "added": "2026-10-29"
+      "related": [
+        "kv-cache"
+      ],
+      "added": "2026-10-29",
+      "done": "2026-11-08"
     },
     {
       "id": "positional-encoding",
@@ -9013,6 +9016,46 @@
       "status": "planned",
       "priority": 5,
       "summary": "모델이 보여 주는 생각이 실제 판단 근거와 일치하는가의 문제.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "scaled-dot-product",
+      "label": "스케일드 닷프로덕트",
+      "parent": "self-attention-qkv",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 6,
+      "summary": "QKᵀ를 √d_k로 나누는 이유와 효과.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "causal-mask",
+      "label": "인과 마스크",
+      "parent": "self-attention-qkv",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 6,
+      "summary": "디코더가 미래 토큰을 못 보게 가리는 삼각 마스크.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "attention-complexity",
+      "label": "어텐션의 n² 비용",
+      "parent": "self-attention-qkv",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 6,
+      "summary": "컨텍스트 길이가 늘면 연산·메모리가 제곱으로 커지는 문제.",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "grouped-query-attention",
+      "label": "GQA·MQA",
+      "parent": "self-attention-qkv",
+      "domain": "llm-basics",
+      "status": "planned",
+      "priority": 6,
+      "summary": "K·V 헤드를 공유해 KV 캐시 메모리를 줄이는 변형.",
       "added": "2026-11-08"
     }
   ]
