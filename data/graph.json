@@ -7332,10 +7332,11 @@
    "label": "상태 기록 UI 패턴",
    "parent": "langgraph-get-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기록을 화면에 보여 시점 선택.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08"
   },
   {
    "id": "langgraph-subgraph-state",
@@ -7406,20 +7407,26 @@
    "label": "VAE의 KL 항",
    "parent": "kl-divergence",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "잠재 분포를 표준정규에 가깝게 하는 정규화.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08",
+   "related": [
+    "vae",
+    "kl-penalty-finetuning"
+   ]
   },
   {
    "id": "jensen-shannon",
    "label": "JS 발산",
    "parent": "kl-divergence",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "KL을 대칭으로 만든 변형.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-08"
   },
   {
    "id": "model-calibration",
@@ -8639,6 +8646,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "KL의 기준이 되는 동결된 모델.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "beta-vae",
+   "label": "β-VAE와 분리된 표현",
+   "parent": "vae-kl-term",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL 가중치 β로 잠재 요인을 분리.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "posterior-collapse",
+   "label": "사후 붕괴",
+   "parent": "vae-kl-term",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "디코더가 잠재 변수를 무시하는 현상.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "elbo",
+   "label": "ELBO(증거 하한)",
+   "parent": "vae-kl-term",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "VAE가 최대화하는 로그 우도의 하한.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "gan-js-divergence",
+   "label": "GAN과 JS 발산",
+   "parent": "jensen-shannon",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원조 GAN 손실과 JSD의 관계.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "wasserstein-distance",
+   "label": "바서슈타인 거리",
+   "parent": "jensen-shannon",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포를 옮기는 비용으로 재는 거리.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "total-variation-distance",
+   "label": "총변동 거리",
+   "parent": "jensen-shannon",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 차이를 확률 질량 차로 재는 거리.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "langgraph-fork-vs-replay",
+   "label": "재생과 분기 비교",
+   "parent": "langgraph-state-history-ui",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재실행과 상태 수정 분기의 부수효과 차이.",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "langgraph-side-effects-replay",
+   "label": "재생 시 부수효과 관리",
+   "parent": "langgraph-state-history-ui",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재실행이 메일 발송 같은 호출을 되풀이하는 문제.",
    "added": "2026-11-08"
   }
  ]
