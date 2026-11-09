@@ -7675,60 +7675,66 @@
    "label": "dotenv 로딩 방식",
    "parent": "env-example",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "앱이 .env를 읽어 환경 변수로 올리는 과정.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "github-push-protection",
    "label": "GitHub 푸시 보호",
    "parent": "pre-commit-secret-scan",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서버 측에서 비밀값 포함 푸시를 차단하는 기능.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "secret-rotation",
    "label": "키 교체 절차",
    "parent": "pre-commit-secret-scan",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노출·정기 교체 시 키를 재발급하고 적용하는 순서.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "pre-commit-framework",
    "label": "pre-commit 프레임워크",
    "parent": "pre-commit-secret-scan",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 훅을 선언적으로 관리하는 도구.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "git-filter-repo",
    "label": "git-filter-repo",
    "parent": "git-history-secret",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기록을 다시 쓰는 공식 권장 도구.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "force-push-risks",
    "label": "force push 위험",
    "parent": "git-history-secret",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원격 기록을 덮어쓸 때 협업자에게 생기는 문제.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "beam-search-length-penalty",
@@ -9866,6 +9872,126 @@
    "status": "planned",
    "priority": 4,
    "summary": "AI가 지어낸 패키지 이름을 공격자가 선점하는 공급망 위험.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "dotenvx",
+   "label": "dotenvx",
+   "parent": "dotenv-loading",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "암호화·다중 환경을 지원하는 dotenv 확장.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "esm-import-order",
+   "label": "ESM import 순서 함정",
+   "parent": "dotenv-loading",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "import가 먼저 평가돼 환경 변수가 비는 문제.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "bundler-env-prefix",
+   "label": "번들러 환경 변수 접두사",
+   "parent": "dotenv-loading",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "브라우저 코드에 노출되는 변수 규칙(REACT_APP_ 등).",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "secret-scanning-patterns",
+   "label": "시크릿 스캐닝 패턴 종류",
+   "parent": "github-push-protection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "파트너·일반·커스텀·AI 탐지 패턴.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "delegated-bypass",
+   "label": "위임 우회",
+   "parent": "github-push-protection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "푸시 보호 우회 권한을 특정 사용자에게만 주는 설정.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "dual-key-rotation",
+   "label": "이중 키 교체",
+   "parent": "secret-rotation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 키 적용 확인 후 옛 키를 폐기하는 무중단 방식.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "least-privilege-key",
+   "label": "최소 권한 키",
+   "parent": "secret-rotation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키에 필요한 권한만 부여하는 원칙.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "gitleaks",
+   "label": "gitleaks",
+   "parent": "pre-commit-framework",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "커밋·기록에서 비밀값을 찾는 오픈소스 스캐너.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "pre-commit-config-yaml",
+   "label": "pre-commit 설정 파일",
+   "parent": "pre-commit-framework",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "repo·rev·hooks를 선언하는 YAML 구조.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "filter-repo-replace-text",
+   "label": "replace-text 치환",
+   "parent": "git-filter-repo",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기록 속 특정 문자열을 일괄 치환하는 옵션.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "git-clone-cleanup",
+   "label": "재클론 안내",
+   "parent": "git-filter-repo",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기록 재작성 후 협업자가 해야 할 일.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "force-with-lease",
+   "label": "force-with-lease",
+   "parent": "force-push-risks",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기대 상태일 때만 덮어쓰는 안전한 강제 푸시.",
    "added": "2026-11-09"
   }
  ]
