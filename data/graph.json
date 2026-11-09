@@ -5836,10 +5836,15 @@
    "label": "MCP 보안",
    "parent": "mcp",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "도구 권한·OAuth·악성 서버 위험.",
-   "added": "2026-11-04"
+   "added": "2026-11-04",
+   "done": "2026-11-09",
+   "related": [
+    "prompt-injection",
+    "allow-list-validation"
+   ]
   },
   {
    "id": "json-rpc",
@@ -9342,10 +9347,15 @@
    "label": "시스템 프롬프트 vs 사용자 프롬프트",
    "parent": "prompt-engineering",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "고정 지침과 매 요청 입력의 역할 구분.",
-   "added": "2026-11-09"
+   "added": "2026-11-09",
+   "done": "2026-11-09",
+   "related": [
+    "agents-md",
+    "prompt-injection"
+   ]
   },
   {
    "id": "zero-shot-vs-few-shot",
@@ -9455,6 +9465,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "적힌 추론이 실제 계산과 맞는지의 문제.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "confused-deputy",
+   "label": "Confused deputy 문제",
+   "parent": "mcp-security",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "권한 있는 중간자가 공격자 요청에 이용되는 구조.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "token-passthrough",
+   "label": "토큰 통과 안티패턴",
+   "parent": "mcp-security",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서버 발급이 아닌 토큰을 하위 API로 넘기는 위험.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "ssrf",
+   "label": "SSRF(서버 측 요청 위조)",
+   "parent": "mcp-security",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서버가 내부 주소를 호출하게 속이는 공격.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "oauth-scope-minimization",
+   "label": "OAuth 스코프 최소화",
+   "parent": "mcp-security",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "필요한 권한만 점진적으로 요청하는 원칙.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "prompt-leakage",
+   "label": "시스템 프롬프트 유출",
+   "parent": "system-vs-user-prompt",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "숨긴 지침이 드러나는 문제와 대응.",
    "added": "2026-11-09"
   }
  ]
