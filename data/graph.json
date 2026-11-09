@@ -7876,80 +7876,91 @@
    "label": "BERT",
    "parent": "bidirectional-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "양방향 인코더 모델의 대표.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "io-aware-algorithms",
    "label": "IO 인식 알고리즘",
    "parent": "flash-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "메모리 이동량을 기준으로 설계한 계산법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "gpu-memory-hierarchy",
    "label": "GPU 메모리 계층",
    "parent": "flash-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "HBM과 SRAM의 속도 차이.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "paged-attention",
    "label": "PagedAttention",
    "parent": "flash-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "KV 캐시를 페이지 단위로 관리하는 vLLM 기법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09",
+   "related": [
+    "ai-infra"
+   ]
   },
   {
    "id": "ransac",
    "label": "RANSAC",
    "parent": "huber-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무작위 표본으로 이상치에 강한 모델을 찾는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "robust-regression",
    "label": "강건 회귀",
    "parent": "huber-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이상치 영향을 줄이는 회귀 기법 모음.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "isolation-forest",
    "label": "Isolation Forest",
    "parent": "outlier-handling",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "빨리 고립되는 점을 이상치로 보는 알고리즘.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "local-outlier-factor",
    "label": "LOF",
    "parent": "outlier-handling",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지역 밀도 비교로 이상치를 찾는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "anomaly-detection",
@@ -10247,6 +10258,206 @@
    "status": "planned",
    "priority": 4,
    "summary": "인코더형 임베딩 모델과 생성형 모델의 용도 차이.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "cls-sep-tokens",
+   "label": "[CLS]·[SEP] 토큰",
+   "parent": "bert",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "BERT 입력의 특수 토큰과 문장 쌍 표현.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "next-sentence-prediction",
+   "label": "다음 문장 예측(NSP)",
+   "parent": "bert",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "BERT 원 논문의 보조 사전학습 과제.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "roberta-distilbert",
+   "label": "RoBERTa·DistilBERT",
+   "parent": "bert",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "BERT를 개선·경량화한 후속 모델.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "tiling",
+   "label": "타일링",
+   "parent": "io-aware-algorithms",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 계산을 SRAM에 들어가는 블록으로 쪼개 처리.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "memory-bound-vs-compute-bound",
+   "label": "메모리 병목 vs 연산 병목",
+   "parent": "io-aware-algorithms",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작업이 무엇에 막히는지 구분하는 관점.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "hbm",
+   "label": "HBM",
+   "parent": "gpu-memory-hierarchy",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "GPU의 큰 고대역폭 메모리.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "sram-on-chip",
+   "label": "칩 내 SRAM",
+   "parent": "gpu-memory-hierarchy",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작고 빠른 온칩 메모리.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "vllm",
+   "label": "vLLM",
+   "parent": "paged-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PagedAttention 기반 오픈소스 LLM 서빙 엔진.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "continuous-batching",
+   "label": "연속 배칭",
+   "parent": "paged-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청을 토큰 단위로 끼워 넣어 GPU를 놀리지 않는 스케줄링.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "kv-cache-sharing",
+   "label": "KV 캐시 공유",
+   "parent": "paged-attention",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트 접두사 캐시를 여러 요청이 재사용.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "inlier-outlier",
+   "label": "inlier와 outlier",
+   "parent": "ransac",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델에 동의하는 점과 벗어난 점.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "residual-threshold",
+   "label": "잔차 임계값",
+   "parent": "ransac",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "inlier를 가르는 기준값 설정.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "theil-sen",
+   "label": "Theil-Sen 회귀",
+   "parent": "robust-regression",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공간 중앙값 기반 강건 회귀와 붕괴점 29.3%.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "breakdown-point",
+   "label": "붕괴점",
+   "parent": "robust-regression",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오염 데이터를 얼마나 견디는지의 척도.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "huber-regressor",
+   "label": "HuberRegressor",
+   "parent": "robust-regression",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이상치 가중을 낮추는 사이킷런 구현.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "anomaly-score",
+   "label": "이상 점수",
+   "parent": "isolation-forest",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "경로 길이를 점수로 바꾼 값.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "contamination-param",
+   "label": "contamination 파라미터",
+   "parent": "isolation-forest",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이상치 비율 가정과 임계값 설정.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "novelty-vs-outlier-detection",
+   "label": "이상치 탐지 vs 신규성 탐지",
+   "parent": "isolation-forest",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 데이터에 이상치가 섞였는지에 따른 구분.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "local-density",
+   "label": "지역 밀도",
+   "parent": "local-outlier-factor",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "주변 점들의 빽빽함 정도.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "one-class-svm",
+   "label": "One-Class SVM",
+   "parent": "local-outlier-factor",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정상 영역 경계를 학습하는 이상 탐지.",
    "added": "2026-11-09"
   }
  ]
