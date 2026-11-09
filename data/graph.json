@@ -7810,60 +7810,66 @@
    "label": "로짓 마스킹",
    "parent": "structured-output-decoding",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허용되지 않는 토큰의 점수를 제거해 선택을 제한하는 기법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "grammar-constrained-llamacpp",
    "label": "GBNF 문법 제약",
    "parent": "structured-output-decoding",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "llama.cpp에서 문법 파일로 출력을 제한하는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "left-vs-right-padding",
    "label": "좌측·우측 패딩",
    "parent": "padding-mask",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "생성 모델에서 패딩을 앞에 두는 이유.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "attention-mask-combination",
    "label": "마스크 합치기",
    "parent": "padding-mask",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "패딩 마스크와 인과 마스크를 함께 적용하는 방식.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "masked-language-modeling",
    "label": "마스크드 언어 모델링",
    "parent": "bidirectional-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일부 토큰을 가리고 맞히며 배우는 사전학습 방식.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "encoder-vs-decoder-models",
    "label": "인코더·디코더 모델",
    "parent": "bidirectional-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이해용 구조와 생성용 구조의 차이.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "bert",
@@ -10111,6 +10117,136 @@
    "status": "planned",
    "priority": 4,
    "summary": "strict 모드에서 쓰지 못하는 JSON Schema 기능.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "outlines-library",
+   "label": "Outlines",
+   "parent": "logit-masking",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정규식·JSON 스키마로 생성을 제약하는 파이썬 라이브러리.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "logits-processor",
+   "label": "LogitsProcessor",
+   "parent": "logit-masking",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생성 직전에 로짓을 가공하는 transformers 훅.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "constrained-decoding-quality",
+   "label": "제약 디코딩과 품질",
+   "parent": "logit-masking",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "강한 제약이 답변 품질에 주는 영향.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "gbnf-syntax",
+   "label": "GBNF 문법 문법",
+   "parent": "grammar-constrained-llamacpp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "name ::= 규칙과 반복·선택 연산자.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "json-schema-to-gbnf",
+   "label": "JSON Schema → GBNF 변환",
+   "parent": "grammar-constrained-llamacpp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스키마를 문법으로 바꾸는 도구와 미지원 기능.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "llama-server",
+   "label": "llama-server",
+   "parent": "grammar-constrained-llamacpp",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "llama.cpp의 OpenAI 호환 서버.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "pad-token",
+   "label": "PAD 토큰",
+   "parent": "left-vs-right-padding",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치 길이를 맞추는 빈 토큰과 eos로 대체하는 관행.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "batch-inference",
+   "label": "배치 추론",
+   "parent": "left-vs-right-padding",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 프롬프트를 묶어 처리량을 높이는 방식.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "position-ids",
+   "label": "위치 id",
+   "parent": "attention-mask-combination",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰 위치를 모델에 알리는 입력과 패딩의 영향.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "fill-mask-pipeline",
+   "label": "fill-mask 파이프라인",
+   "parent": "masked-language-modeling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "빈칸 예측을 바로 해 보는 도구.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "t5-seq2seq",
+   "label": "T5와 seq2seq",
+   "parent": "encoder-vs-decoder-models",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모든 작업을 텍스트→텍스트로 푸는 인코더-디코더.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "decoder-only-dominance",
+   "label": "디코더 전용이 주류가 된 이유",
+   "parent": "encoder-vs-decoder-models",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "현대 LLM이 디코더 구조를 택한 배경.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "embedding-model-vs-llm",
+   "label": "임베딩 모델과 생성 LLM",
+   "parent": "encoder-vs-decoder-models",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인코더형 임베딩 모델과 생성형 모델의 용도 차이.",
    "added": "2026-11-09"
   }
  ]
