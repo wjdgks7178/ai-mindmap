@@ -583,10 +583,15 @@
    "label": "에이전트 메모리",
    "parent": "architecture",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "세션을 넘어 기억을 쌓고 정리하는 구조.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-09",
+   "related": [
+    "prompt-injection",
+    "agents-md"
+   ]
   },
   {
    "id": "spec-kit",
@@ -710,10 +715,14 @@
    "label": "ReAct 패턴",
    "parent": "agent-loop",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "추론(Reason)과 행동(Act)을 번갈아 하는 프롬프트 패턴.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-09",
+   "related": [
+    "agent-loop"
+   ]
   },
   {
    "id": "sandboxing",
@@ -1160,10 +1169,15 @@
    "label": "아첨(sycophancy)",
    "parent": "hallucination",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "사용자 의견에 맞춰 사실을 굽히는 AI 경향. 환각과 짝으로 헷갈린다.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-09",
+   "related": [
+    "rlhf",
+    "hallucination"
+   ]
   },
   {
    "id": "calibration",
@@ -9515,6 +9529,76 @@
    "status": "planned",
    "priority": 4,
    "summary": "숨긴 지침이 드러나는 문제와 대응.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "react-tool-trace",
+   "label": "ReAct 추적 로그 읽기",
+   "parent": "react-pattern",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생각·행동·관찰 로그로 에이전트 실패를 디버깅하는 법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "reflexion",
+   "label": "Reflexion(반성 루프)",
+   "parent": "react-pattern",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실패를 글로 반성해 다음 시도에 반영하는 패턴.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "loop-termination",
+   "label": "에이전트 종료 조건",
+   "parent": "react-pattern",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "무한 반복을 막는 최대 단계·성공 기준.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "sycophancy-evals",
+   "label": "아첨 평가하기",
+   "parent": "sycophancy",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "반박·의견 주입으로 번복 정도를 재는 테스트.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "memory-staleness",
+   "label": "오래된 메모리 문제",
+   "parent": "agent-memory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "유효기간·망각·검증으로 낡은 기억을 다루는 법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "memory-types",
+   "label": "메모리 종류(단기·장기·절차)",
+   "parent": "agent-memory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에피소드·의미·절차 기억의 구분.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "memory-injection",
+   "label": "메모리 오염과 주입",
+   "parent": "agent-memory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공유 메모리가 공격 경로가 되는 문제.",
    "added": "2026-11-09"
   }
  ]
