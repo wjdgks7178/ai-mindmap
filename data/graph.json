@@ -790,10 +790,15 @@
    "label": "하네스 구성 요소",
    "parent": "harness",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "컨텍스트·도구·권한·검증·청소의 6가지 부품.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-09",
+   "related": [
+    "agent-verification",
+    "context-engineering"
+   ]
   },
   {
    "id": "initializer-coding-agent",
@@ -1435,12 +1440,15 @@
    "label": "과적합과 일반화",
    "parent": "ml-fundamentals",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "학습 데이터만 외우고 새 데이터에 약해지는 문제.",
    "aka": [],
-   "related": [],
-   "added": "2026-10-29"
+   "related": [
+    "data-contamination"
+   ],
+   "added": "2026-10-29",
+   "done": "2026-11-09"
   },
   {
    "id": "training-inference",
@@ -9526,10 +9534,15 @@
    "label": "시스템 프롬프트 유출",
    "parent": "system-vs-user-prompt",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "숨긴 지침이 드러나는 문제와 대응.",
-   "added": "2026-11-09"
+   "added": "2026-11-09",
+   "done": "2026-11-09",
+   "related": [
+    "prompt-injection",
+    "env-secrets"
+   ]
   },
   {
    "id": "react-tool-trace",
@@ -9599,6 +9612,66 @@
    "status": "planned",
    "priority": 4,
    "summary": "공유 메모리가 공격 경로가 되는 문제.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "regularization",
+   "label": "정규화·드롭아웃",
+   "parent": "overfitting",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델을 단순하게 만들어 과적합을 줄이는 기법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "train-val-test",
+   "label": "훈련·검증·테스트 분할",
+   "parent": "overfitting",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터를 나누는 이유와 누수 방지.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "output-screening",
+   "label": "출력 검사·후처리 필터",
+   "parent": "prompt-leakage",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정규식·LLM 심사로 유출을 잡는 방법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "secrets-out-of-prompt",
+   "label": "비밀을 프롬프트 밖에 두기",
+   "parent": "prompt-leakage",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키·공식은 서버 도구에 두는 설계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "agents-md-as-map",
+   "label": "AGENTS.md는 목차",
+   "parent": "harness-components",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "백과사전이 아닌 100줄 지도와 점진적 공개.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "legibility",
+   "label": "에이전트 가독성",
+   "parent": "harness-components",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트가 앱·로그를 직접 볼 수 있게 하는 설계.",
    "added": "2026-11-09"
   }
  ]
