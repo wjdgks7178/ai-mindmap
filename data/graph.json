@@ -7977,70 +7977,77 @@
    "label": "공적응(co-adaptation)",
    "parent": "dropout",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "뉴런끼리 서로에게 과하게 의존하는 현상.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "inverted-dropout",
    "label": "Inverted dropout",
    "parent": "dropout",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 때 값을 1/(1-p)배 키워 추론을 단순화하는 구현.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "train-vs-eval-mode",
    "label": "train·eval 모드",
    "parent": "dropout",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "PyTorch에서 드롭아웃·배치정규화 동작이 바뀌는 스위치.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "validation-set",
    "label": "검증 세트",
    "parent": "early-stopping",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 중 성능을 점검하려고 따로 떼어 둔 데이터.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "checkpoint-selection",
    "label": "최고 체크포인트 선택",
    "parent": "early-stopping",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검증 성적이 가장 좋은 시점의 저장본을 쓰는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "grid-vs-random-search",
    "label": "그리드·랜덤 탐색",
    "parent": "hyperparameter",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "하이퍼파라미터 탐색 방식 비교.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "nested-cross-validation",
    "label": "중첩 교차검증",
    "parent": "hyperparameter",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "튜닝과 평가를 분리해 낙관 편향을 줄이는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "precision-recall-tradeoff",
@@ -10458,6 +10465,156 @@
    "status": "planned",
    "priority": 4,
    "summary": "정상 영역 경계를 학습하는 이상 탐지.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "thinned-network",
+   "label": "얇아진 네트워크(thinned network)",
+   "parent": "co-adaptation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "드롭아웃이 매 스텝 만드는 부분 네트워크.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "model-averaging",
+   "label": "모델 평균(앙상블)",
+   "parent": "co-adaptation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 모델 예측을 평균해 분산을 줄이는 방법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "dropout-rate",
+   "label": "드롭아웃 비율 p",
+   "parent": "inverted-dropout",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "얼마나 끌지 정하는 값과 일반적 범위.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "monte-carlo-dropout",
+   "label": "MC Dropout",
+   "parent": "inverted-dropout",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론 때도 드롭아웃을 켜 불확실성을 추정하는 기법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "batch-norm-running-stats",
+   "label": "배치 정규화 이동 통계",
+   "parent": "train-vs-eval-mode",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론 때 쓰는 저장된 평균·분산.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "torch-no-grad",
+   "label": "torch.no_grad",
+   "parent": "train-vs-eval-mode",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론 때 기울기 기록을 끄는 컨텍스트.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "time-series-split",
+   "label": "TimeSeriesSplit",
+   "parent": "validation-set",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시간 순서를 지키는 교차검증.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "group-kfold",
+   "label": "GroupKFold",
+   "parent": "validation-set",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 그룹이 학습·평가에 나뉘지 않게 하는 분할.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "patience",
+   "label": "patience(참을성)",
+   "parent": "checkpoint-selection",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개선이 없어도 기다리는 검증 횟수.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "model-checkpoint-callback",
+   "label": "ModelCheckpoint 콜백",
+   "parent": "checkpoint-selection",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "best 저장 옵션을 다루는 Lightning 도구.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "successive-halving",
+   "label": "Successive Halving",
+   "parent": "grid-vs-random-search",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "적은 자원으로 시작해 상위 후보에 자원을 몰아주는 탐색.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "bayesian-optimization",
+   "label": "베이지안 최적화",
+   "parent": "grid-vs-random-search",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이전 결과를 이용해 다음 후보를 고르는 탐색.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "loguniform-distribution",
+   "label": "로그 균등 분포",
+   "parent": "grid-vs-random-search",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습률처럼 자릿수로 변하는 값을 뽑는 분포.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "optimistic-bias",
+   "label": "낙관 편향",
+   "parent": "nested-cross-validation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 데이터로 선택·평가해 점수가 부풀려지는 현상.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "cross-val-score",
+   "label": "cross_val_score",
+   "parent": "nested-cross-validation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사이킷런의 교차검증 점수 계산 함수.",
    "added": "2026-11-09"
   }
  ]
