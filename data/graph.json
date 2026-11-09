@@ -1272,20 +1272,26 @@
    "label": "병렬화 패턴",
    "parent": "workflow-vs-agent",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "독립 작업을 동시에 돌리거나 같은 일을 여러 번 돌려 비교하는 워크플로.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-09"
   },
   {
    "id": "guardrails",
    "label": "가드레일",
    "parent": "workflow-vs-agent",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "에이전트가 넘지 말아야 할 선을 입력·출력·권한으로 막는 장치.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-09",
+   "related": [
+    "prompt-injection",
+    "allow-list-validation"
+   ]
   },
   {
    "id": "agent-cost-latency",
@@ -1845,10 +1851,14 @@
    "label": "Contextual Retrieval",
    "parent": "rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "조각마다 문서 맥락 설명을 붙여 검색 실패율을 줄이는 Anthropic 기법.",
-   "added": "2026-10-30"
+   "added": "2026-10-30",
+   "done": "2026-11-09",
+   "related": [
+    "prompt-caching"
+   ]
   },
   {
    "id": "agentic-rag",
@@ -9672,6 +9682,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "에이전트가 앱·로그를 직접 볼 수 있게 하는 설계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "input-output-guard",
+   "label": "입력·출력 가드 설계",
+   "parent": "guardrails",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어디서 무엇을 검사할지 정하는 방법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "human-approval-gate",
+   "label": "사람 승인 게이트",
+   "parent": "guardrails",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "위험한 행동 앞에 사람 확인을 두는 설계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "llm-voting",
+   "label": "LLM 투표와 합의",
+   "parent": "parallelization-pattern",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 결과를 다수결로 합치는 방식과 한계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "contextual-bm25",
+   "label": "Contextual BM25",
+   "parent": "contextual-retrieval",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키워드 검색에도 맥락 청크를 쓰는 방식.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "chunk-context-cost",
+   "label": "맥락 생성 비용과 캐싱",
+   "parent": "contextual-retrieval",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트 캐싱으로 색인 비용을 줄이는 법.",
    "added": "2026-11-09"
   }
  ]
