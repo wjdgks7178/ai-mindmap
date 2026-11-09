@@ -9094,10 +9094,14 @@
    "label": "스케일링 법칙",
    "parent": "pretraining",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
    "summary": "모델 크기·데이터·연산을 늘릴수록 손실이 예측 가능하게 줄어든다는 경험칙.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-09",
+   "related": [
+    "open-weights"
+   ]
   },
   {
    "id": "pretraining-data",
@@ -9324,10 +9328,14 @@
    "label": "생각 사슬 프롬프트",
    "parent": "prompt-engineering",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "단계별로 생각하게 해 추론 정확도를 높이는 기법.",
-   "added": "2026-11-09"
+   "added": "2026-11-09",
+   "done": "2026-11-09",
+   "related": [
+    "agent-verification"
+   ]
   },
   {
    "id": "system-vs-user-prompt",
@@ -9387,6 +9395,66 @@
    "status": "planned",
    "priority": 4,
    "summary": "과장된 권위·편향·안전 문제.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "chinchilla-optimal",
+   "label": "Chinchilla 최적 비율",
+   "parent": "scaling-laws",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연산 예산에 맞는 모델 크기와 토큰 수의 균형.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "data-wall",
+   "label": "데이터 고갈 문제",
+   "parent": "scaling-laws",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고품질 학습 데이터가 부족해지는 한계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "inference-time-compute",
+   "label": "추론 시간 연산",
+   "parent": "scaling-laws",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "답할 때 더 오래 생각해 성능을 올리는 새 축.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "thinking-effort",
+   "label": "thinking과 effort 조절",
+   "parent": "chain-of-thought-prompting",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "내장 추론의 깊이와 비용을 맞추는 설정.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "self-consistency",
+   "label": "자기 일관성 투표",
+   "parent": "chain-of-thought-prompting",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 추론 결과를 다수결로 정하는 기법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "faithful-reasoning",
+   "label": "추론 설명의 충실성",
+   "parent": "chain-of-thought-prompting",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "적힌 추론이 실제 계산과 맞는지의 문제.",
    "added": "2026-11-09"
   }
  ]
