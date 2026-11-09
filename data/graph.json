@@ -7561,10 +7561,14 @@
    "label": "AI 생성 코드 보안 리뷰",
    "parent": "orm-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "바이브코딩 결과물의 취약점 점검 체크리스트.",
-   "added": "2026-11-06"
+   "added": "2026-11-06",
+   "done": "2026-11-09",
+   "related": [
+    "guardrails"
+   ]
   },
   {
    "id": "nosql-injection",
@@ -7621,40 +7625,50 @@
    "label": "체크포인터 적합성 테스트",
    "parent": "langgraph-serde",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "커스텀 체크포인터가 왕복 직렬화를 지키는지 검증하는 테스트.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "denylist-bypass",
    "label": "거부 목록 우회",
    "parent": "allow-list-validation",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "차단 문자열을 인코딩·변형으로 피해 가는 방식.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09"
   },
   {
    "id": "mass-assignment",
    "label": "대량 할당 취약점",
    "parent": "allow-list-validation",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "요청 필드를 객체에 통째 바인딩할 때 생기는 권한 문제.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09",
+   "related": [
+    "guardrails"
+   ]
   },
   {
    "id": "twelve-factor",
    "label": "12-Factor App",
    "parent": "env-example",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "클라우드 앱을 만드는 12가지 원칙(설정 분리 포함).",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-09",
+   "related": [
+    "ai-infra"
+   ]
   },
   {
    "id": "dotenv-loading",
@@ -9732,6 +9746,126 @@
    "status": "planned",
    "priority": 4,
    "summary": "프롬프트 캐싱으로 색인 비용을 줄이는 법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "dto-pattern",
+   "label": "DTO 패턴",
+   "parent": "mass-assignment",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력 전용 객체로 도메인 모델을 보호하는 설계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "strong-parameters",
+   "label": "Strong Parameters",
+   "parent": "mass-assignment",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Rails의 허용 필드 선언 방식.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "input-canonicalization",
+   "label": "입력 정규화·디코딩 일관성",
+   "parent": "denylist-bypass",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검증 전에 디코딩·유니코드 정규화를 한 번만 하는 원칙.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "double-encoding",
+   "label": "이중 인코딩",
+   "parent": "denylist-bypass",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 번 인코딩해 필터를 지나가는 우회 기법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "stateless-process",
+   "label": "무상태 프로세스",
+   "parent": "twelve-factor",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청 간 로컬 상태를 두지 않는 설계.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "config-in-environment",
+   "label": "환경 변수 기반 설정",
+   "parent": "twelve-factor",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설정을 코드 밖 환경에서 주입하는 원칙.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "dev-prod-parity",
+   "label": "개발·운영 환경 일치",
+   "parent": "twelve-factor",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "환경 차이로 인한 배포 사고를 줄이는 원칙.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "checkpointer-capabilities",
+   "label": "체크포인터 기본·확장 능력",
+   "parent": "langgraph-conformance-tests",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "put·list 등 필수와 prune·copy_thread 등 선택 연산.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "pytest-asyncio",
+   "label": "pytest-asyncio",
+   "parent": "langgraph-conformance-tests",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비동기 테스트를 pytest로 돌리는 방법.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "sast",
+   "label": "SAST(정적 분석 보안 테스트)",
+   "parent": "ai-generated-code-security-review",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "코드를 실행하지 않고 취약점을 찾는 도구 유형.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "secret-scanning",
+   "label": "시크릿 스캐닝",
+   "parent": "ai-generated-code-security-review",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "커밋에 섞인 키·토큰을 자동 탐지.",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "slopsquatting",
+   "label": "슬롭스쿼팅",
+   "parent": "ai-generated-code-security-review",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 지어낸 패키지 이름을 공격자가 선점하는 공급망 위험.",
    "added": "2026-11-09"
   }
  ]
