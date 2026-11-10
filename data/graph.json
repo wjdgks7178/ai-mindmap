@@ -8154,20 +8154,22 @@
    "label": "GPTQ와 AWQ",
    "parent": "quantization-quality",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사후 양자화 방식 두 가지의 차이.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "task-level-eval",
    "label": "과제 단위 평가",
    "parent": "quantization-quality",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 업무 질문으로 모델을 비교하는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "prompt-chunking",
@@ -10815,6 +10817,66 @@
    "status": "planned",
    "priority": 4,
    "summary": "PPL의 로그 형태인 학습 손실.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "calibration-data",
+   "label": "보정(calibration) 데이터",
+   "parent": "gptq-awq",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "양자화 때 쓰는 소량 샘플과 선택 요령.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "weight-only-quantization",
+   "label": "가중치 전용 양자화",
+   "parent": "gptq-awq",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "활성값은 유지하고 가중치만 줄이는 방식.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "bitsandbytes-quantization",
+   "label": "bitsandbytes",
+   "parent": "gptq-awq",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보정 없이 4/8비트로 즉석 로드하는 라이브러리.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "eval-set-design",
+   "label": "평가 세트 설계",
+   "parent": "task-level-eval",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대표성·난이도·정답 기준을 갖춘 시험지 만들기.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "llm-as-judge-bias",
+   "label": "LLM 심판의 편향",
+   "parent": "task-level-eval",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "위치·길이·자기 선호 편향과 보정법.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "regression-threshold",
+   "label": "회귀 허용 기준선",
+   "parent": "task-level-eval",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교체 승인 기준을 숫자로 정하기.",
    "added": "2026-11-10"
   }
  ]
