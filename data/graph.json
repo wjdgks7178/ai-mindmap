@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "nodes": [
   {
    "id": "ai",
@@ -7967,10 +7967,11 @@
    "label": "이상 탐지",
    "parent": "outlier-handling",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정상 패턴에서 벗어난 사례를 찾는 문제 전반.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "co-adaptation",
@@ -10773,6 +10774,16 @@
    "priority": 4,
    "summary": "정답에서 파생된 특성을 쓰는 실수.",
    "added": "2026-11-09"
+  },
+  {
+   "id": "contamination-parameter",
+   "label": "contamination 파라미터",
+   "parent": "anomaly-detection",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이상 비율 가정이 임계값을 정하는 방식.",
+   "added": "2026-11-10"
   }
  ]
 }
