@@ -8249,10 +8249,11 @@
    "label": "MMDiT",
    "parent": "dit-diffusion-transformer",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "텍스트·이미지 토큰을 함께 처리하는 SD3 계열 구조.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "adaln-zero",
@@ -10920,6 +10921,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "CLIP 특성 위에 선형 분류기만 학습.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "joint-attention",
+   "label": "Joint Attention",
+   "parent": "mmdit",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모달리티 토큰을 이어 붙여 한 번에 어텐션을 계산하는 방식.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "pooled-text-embedding",
+   "label": "Pooled 텍스트 임베딩",
+   "parent": "mmdit",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 전체를 요약한 벡터로 조건을 주입하는 방법.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "flux-architecture",
+   "label": "FLUX 구조",
+   "parent": "mmdit",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MMDiT를 변형한 이중·단일 스트림 블록의 최신 이미지 모델.",
    "added": "2026-11-10"
   }
  ]
