@@ -8176,30 +8176,33 @@
    "label": "프롬프트 청킹",
    "parent": "clip-77-token-limit",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "긴 프롬프트를 나눠 인코딩해 잇는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "t5-text-encoder",
    "label": "T5 텍스트 인코더",
    "parent": "clip-77-token-limit",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "CLIP보다 긴 문장을 처리하는 인코더.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "prompt-template-ensembling",
    "label": "프롬프트 템플릿 앙상블",
    "parent": "zero-shot-clip",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 문장 템플릿 결과를 평균내 제로샷 정확도를 올리는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "image-text-retrieval",
@@ -10877,6 +10880,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "교체 승인 기준을 숫자로 정하기.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "rectified-flow",
+   "label": "Rectified Flow",
+   "parent": "t5-text-encoder",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터와 잡음을 직선으로 잇는 생성 방식.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "sd3-memory-optimization",
+   "label": "SD3 메모리 최적화",
+   "parent": "t5-text-encoder",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오프로딩·T5 제거·8비트로 VRAM 줄이기.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "cosine-similarity-clip",
+   "label": "코사인 유사도",
+   "parent": "prompt-template-ensembling",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "CLIP 벡터 비교에 쓰는 유사도.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "few-shot-linear-probe",
+   "label": "선형 프로브",
+   "parent": "prompt-template-ensembling",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "CLIP 특성 위에 선형 분류기만 학습.",
    "added": "2026-11-10"
   }
  ]
