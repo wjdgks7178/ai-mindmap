@@ -8263,10 +8263,11 @@
    "label": "AdaLN-Zero",
    "parent": "dit-diffusion-transformer",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시간 단계·조건을 정규화 층에 주입하는 방식.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "scaling-laws-diffusion",
@@ -11084,6 +11085,46 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미지·문서 페이지를 검색해 답에 활용하는 RAG.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "layer-norm",
+   "label": "LayerNorm",
+   "parent": "adaln-zero",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토큰별로 평균·분산을 맞춰 학습을 안정화하는 정규화.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "modulation-conditioning",
+   "label": "조절(modulation) 조건 주입",
+   "parent": "adaln-zero",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스케일·시프트로 조건을 모델 내부에 넣는 일반 기법.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "zero-initialization",
+   "label": "제로 초기화",
+   "parent": "adaln-zero",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 경로를 0에서 시작해 안정적으로 학습하는 기법.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "patchify",
+   "label": "패치화(patchify)",
+   "parent": "adaln-zero",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지를 작은 조각으로 잘라 토큰으로 만드는 과정.",
    "added": "2026-11-10"
   }
  ]
