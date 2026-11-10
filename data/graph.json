@@ -8219,10 +8219,11 @@
    "label": "Karras sigmas",
    "parent": "diffusion-scheduler",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "구조가 정해지는 구간에 노이즈 단계를 촘촘히 두는 방식.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "few-step-generation",
@@ -10951,6 +10952,46 @@
    "status": "planned",
    "priority": 3,
    "summary": "MMDiT를 변형한 이중·단일 스트림 블록의 최신 이미지 모델.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "edm-preconditioning",
+   "label": "EDM 전처리",
+   "parent": "karras-sigmas",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력·출력 스케일을 σ에 맞춰 조정해 학습을 안정화하는 설계.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "exponential-beta-sigmas",
+   "label": "Exponential·Beta sigmas",
+   "parent": "karras-sigmas",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Karras 외에 노이즈 눈금을 매기는 다른 규칙.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "euler-sampler",
+   "label": "Euler 샘플러",
+   "parent": "karras-sigmas",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 단순한 1차 수치해법 기반 확산 샘플러.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "sigma-min-max",
+   "label": "sigma_min·sigma_max",
+   "parent": "karras-sigmas",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플링 노이즈 범위를 정하는 두 값.",
    "added": "2026-11-10"
   }
  ]
