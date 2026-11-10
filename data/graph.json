@@ -8132,20 +8132,22 @@
    "label": "BPC(문자당 비트)",
    "parent": "sliding-window-eval",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "토크나이저에 덜 민감한 언어 모델 평가 단위.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "perplexity-tokenizer-dependence",
    "label": "PPL과 토크나이저",
    "parent": "sliding-window-eval",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "토큰화에 따라 PPL이 달라져 비교가 어려운 이유.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "gptq-awq",
@@ -10783,6 +10785,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "이상 비율 가정이 임계값을 정하는 방식.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "bits-per-byte",
+   "label": "BPB(바이트당 비트)",
+   "parent": "perplexity-tokenizer-dependence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문자 인코딩 차이까지 없앤 비교 단위.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "tokenizer-fertility",
+   "label": "토크나이저 fertility",
+   "parent": "perplexity-tokenizer-dependence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단어당 토큰 수가 언어마다 다른 현상.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "cross-entropy-loss-lm",
+   "label": "언어 모델 교차 엔트로피",
+   "parent": "perplexity-tokenizer-dependence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PPL의 로그 형태인 학습 손실.",
    "added": "2026-11-10"
   }
  ]
