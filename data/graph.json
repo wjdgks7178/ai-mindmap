@@ -8230,10 +8230,11 @@
    "label": "적은 단계 생성(LCM·TCD)",
    "parent": "diffusion-scheduler",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "증류로 몇 단계 만에 이미지를 만드는 기법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "cross-attention-visualization",
@@ -10992,6 +10993,56 @@
    "status": "planned",
    "priority": 3,
    "summary": "샘플링 노이즈 범위를 정하는 두 값.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "consistency-model",
+   "label": "Consistency Model",
+   "parent": "few-step-generation",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 노이즈 수준에서든 같은 최종 이미지로 보내도록 학습하는 모델.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "lcm-lora",
+   "label": "LCM-LoRA",
+   "parent": "few-step-generation",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LoRA 형태로 기존 모델에 적은 단계 능력을 붙이는 방법.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "probability-flow-ode",
+   "label": "확률 흐름 ODE",
+   "parent": "few-step-generation",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확산 과정을 결정론적 경로로 바꿔 푸는 관점.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "distillation-diffusion",
+   "label": "확산 모델 증류",
+   "parent": "few-step-generation",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교사 모델의 여러 단계를 학생 모델의 적은 단계로 압축.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "adversarial-diffusion-distillation",
+   "label": "적대적 확산 증류(ADD)",
+   "parent": "few-step-generation",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판별기를 써서 1~4단계에서 품질을 유지하는 증류.",
    "added": "2026-11-10"
   }
  ]
