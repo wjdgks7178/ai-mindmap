@@ -8209,10 +8209,11 @@
    "label": "이미지-텍스트 검색",
    "parent": "zero-shot-clip",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "CLIP 임베딩으로 이미지와 문장을 서로 찾는 응용.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-10"
   },
   {
    "id": "karras-sigmas",
@@ -11043,6 +11044,46 @@
    "status": "planned",
    "priority": 3,
    "summary": "판별기를 써서 1~4단계에서 품질을 유지하는 증류.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "multimodal-vector-db",
+   "label": "멀티모달 벡터 DB",
+   "parent": "image-text-retrieval",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지·텍스트 임베딩을 함께 저장·검색하는 저장소.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "contrastive-loss-clip",
+   "label": "CLIP 대조 손실",
+   "parent": "image-text-retrieval",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞는 짝은 가깝게, 틀린 짝은 멀게 하는 학습 목표.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "siglip",
+   "label": "SigLIP",
+   "parent": "image-text-retrieval",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시그모이드 손실로 CLIP을 개선한 이미지-텍스트 모델.",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "visual-rag",
+   "label": "시각 RAG",
+   "parent": "image-text-retrieval",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지·문서 페이지를 검색해 답에 활용하는 RAG.",
    "added": "2026-11-10"
   }
  ]
