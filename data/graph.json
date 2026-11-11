@@ -8385,20 +8385,22 @@
    "label": "TIES·DARE 병합",
    "parent": "lora-merging",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어댑터 간 충돌을 줄여 합치는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "merge-and-unload",
    "label": "merge_and_unload",
    "parent": "lora-merging",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LoRA를 원본 모델에 합쳐 일반 모델로 만드는 함수.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "fair-use-korea",
@@ -11406,6 +11408,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "VRAM 대신 CPU·NVMe를 쓰는 학습.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "add-weighted-adapter",
+   "label": "add_weighted_adapter",
+   "parent": "ties-dare-merging",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PEFT에서 어댑터를 가중 병합하는 메서드.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "model-merging",
+   "label": "모델 병합",
+   "parent": "ties-dare-merging",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추가 학습 없이 여러 모델 능력을 합침.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "lora-inference-latency",
+   "label": "LoRA 추론 지연",
+   "parent": "merge-and-unload",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "합치지 않은 어댑터가 만드는 추가 연산.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "adapter-hot-swap",
+   "label": "어댑터 교체 서빙",
+   "parent": "merge-and-unload",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "하나의 베이스에서 어댑터를 바꿔 끼우는 서빙.",
    "added": "2026-11-11"
   }
  ]
