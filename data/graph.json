@@ -8352,30 +8352,33 @@
    "label": "Prior preservation loss",
    "parent": "dreambooth",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "클래스 일반 지식을 유지하려는 보조 손실.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "textual-inversion",
    "label": "텍스트 인버전",
    "parent": "dreambooth",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "새 단어 임베딩만 학습해 대상을 가르치는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "training-vram-tips",
    "label": "학습 VRAM 절약 팁",
    "parent": "dreambooth",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "gradient checkpointing·8bit Adam 등 메모리 절약 기법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "ties-dare-merging",
@@ -11323,6 +11326,86 @@
    "status": "planned",
    "priority": 4,
    "summary": "모든 선형층에 어댑터를 붙이는 옵션.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "class-images-generation",
+   "label": "클래스 이미지 생성",
+   "parent": "prior-preservation-loss",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "prior 손실용으로 모델이 직접 만드는 같은 클래스 이미지.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "dreambooth-overfitting",
+   "label": "DreamBooth 과적합",
+   "parent": "prior-preservation-loss",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "적은 이미지 학습 때 생기는 암기 현상.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "placeholder-token",
+   "label": "플레이스홀더 토큰",
+   "parent": "textual-inversion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 개념에 묶는 특수 단어.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "learned-embeddings-file",
+   "label": "학습된 임베딩 파일",
+   "parent": "textual-inversion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "learned_embeds.bin처럼 작은 결과물.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "negative-embedding",
+   "label": "네거티브 임베딩",
+   "parent": "textual-inversion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "피하고 싶은 특성을 담은 임베딩.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "gradient-checkpointing",
+   "label": "Gradient checkpointing",
+   "parent": "training-vram-tips",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "활성값을 재계산해 메모리를 아끼는 기법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "eight-bit-adam",
+   "label": "8비트 Adam",
+   "parent": "training-vram-tips",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "옵티마이저 상태를 8비트로 줄임.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "deepspeed-offload",
+   "label": "DeepSpeed 오프로드",
+   "parent": "training-vram-tips",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "VRAM 대신 CPU·NVMe를 쓰는 학습.",
    "added": "2026-11-11"
   }
  ]
