@@ -8483,10 +8483,14 @@
    "label": "MCP 오류 처리",
    "parent": "mcp-structured-output",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프로토콜 오류와 isError 실행 오류의 구분.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11",
+   "related": [
+    "prompt-injection"
+   ]
   },
   {
    "id": "json-schema-basics",
@@ -11664,6 +11668,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "피해 시 증거 확보·신고·삭제 지원 경로.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "json-rpc-error-codes",
+   "label": "JSON-RPC 오류 코드",
+   "parent": "mcp-error-handling",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "-32602 등 표준 코드의 의미.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "actionable-error-message",
+   "label": "행동 가능한 오류 메시지",
+   "parent": "mcp-error-handling",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 재시도할 수 있게 쓰는 오류 문구 패턴.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-timeouts-retries",
+   "label": "타임아웃과 재시도",
+   "parent": "mcp-error-handling",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구 호출 시간 제한·재시도 정책.",
    "added": "2026-11-11"
   }
  ]
