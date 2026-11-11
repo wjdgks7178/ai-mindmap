@@ -8422,10 +8422,15 @@
    "label": "초상권과 딥페이크",
    "parent": "image-training-data-ethics",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "얼굴 이용과 합성 이미지에 따른 법적 문제.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11",
+   "related": [
+    "deepfake",
+    "privacy-copyright"
+   ]
   },
   {
    "id": "opt-out-training",
@@ -11619,6 +11624,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "이미지를 미세 변형해 학습을 방해하는 도구.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "publicity-right",
+   "label": "퍼블리시티권",
+   "parent": "portrait-rights",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "유명인 이름·모습의 상업적 가치를 보호하는 권리.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "voice-cloning-consent",
+   "label": "음성 복제와 동의",
+   "parent": "portrait-rights",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "목소리 합성의 동의·표시 의무와 위험.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "synthetic-media-labeling",
+   "label": "AI 생성물 표시 의무",
+   "parent": "portrait-rights",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 기본법 등에서 요구하는 생성물 고지·워터마크.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "takedown-process",
+   "label": "합성물 삭제 요청 절차",
+   "parent": "portrait-rights",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "피해 시 증거 확보·신고·삭제 지원 경로.",
    "added": "2026-11-11"
   }
  ]
