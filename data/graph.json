@@ -8432,10 +8432,15 @@
    "label": "학습 거부(opt-out)",
    "parent": "image-training-data-ethics",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "권리자가 AI 학습 사용을 거부하는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11",
+   "related": [
+    "ai-image-copyright",
+    "privacy-copyright"
+   ]
   },
   {
    "id": "mcp-trust-boundary",
@@ -11574,6 +11579,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "AI 학습을 둘러싼 미국 4요소 판단과 판례 흐름.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "tdmrep",
+   "label": "TDMRep",
+   "parent": "opt-out-training",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "텍스트·데이터 마이닝 유보를 선언하는 W3C 커뮤니티 규격.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "ai-crawler-user-agents",
+   "label": "AI 크롤러 UA 목록",
+   "parent": "opt-out-training",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "GPTBot·CCBot·Google-Extended 등 크롤러 이름과 용도.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "eu-dsm-tdm",
+   "label": "EU DSM 지침 TDM 예외",
+   "parent": "opt-out-training",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제3·4조 마이닝 예외와 권리자 유보 구조.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "image-cloaking",
+   "label": "이미지 글레이징·나이트셰이드",
+   "parent": "opt-out-training",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지를 미세 변형해 학습을 방해하는 도구.",
    "added": "2026-11-11"
   }
  ]
