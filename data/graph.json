@@ -8555,10 +8555,11 @@
    "label": "폴링과 푸시",
    "parent": "mcp-subscriptions",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확인 방식의 차이와 선택 기준.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "mcp-pagination",
@@ -11857,6 +11858,26 @@
    "status": "planned",
    "priority": 4,
    "summary": "초기화 응답에 담는 서버 사용 안내.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "server-sent-events",
+   "label": "SSE",
+   "parent": "polling-vs-push",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서버가 이벤트를 단방향으로 흘려보내는 HTTP 스트림.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "websocket",
+   "label": "WebSocket",
+   "parent": "polling-vs-push",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "양방향 영구 연결 프로토콜(RFC 6455).",
    "added": "2026-11-11"
   }
  ]
