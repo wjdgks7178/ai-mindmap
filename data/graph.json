@@ -11813,10 +11813,11 @@
    "label": "MCP 기능 협상",
    "parent": "mcp-list-changed",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "초기화 때 capabilities로 지원 기능을 합의하는 과정.",
-   "added": "2026-11-11"
+   "added": "2026-11-11",
+   "done": "2026-11-11"
   },
   {
    "id": "mcp-dynamic-tools",
@@ -11826,6 +11827,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "상태·권한에 따라 도구 목록을 바꾸는 서버 설계.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-protocol-version",
+   "label": "MCP 프로토콜 버전",
+   "parent": "mcp-capability-negotiation",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "날짜 형식 버전과 버전 협상 규칙.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-shutdown",
+   "label": "MCP 종료 절차",
+   "parent": "mcp-capability-negotiation",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "stdio·HTTP별 정상 종료 방식.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-server-instructions",
+   "label": "서버 instructions 필드",
+   "parent": "mcp-capability-negotiation",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "초기화 응답에 담는 서버 사용 안내.",
    "added": "2026-11-11"
   }
  ]
