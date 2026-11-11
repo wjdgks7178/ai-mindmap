@@ -8437,10 +8437,15 @@
    "label": "MCP 신뢰 경계",
    "parent": "mcp-tool-annotations",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "신뢰 서버와 비신뢰 서버의 메타데이터를 구분하는 원칙.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11",
+   "related": [
+    "prompt-injection",
+    "mcp-security"
+   ]
   },
   {
    "id": "mcp-tool-poisoning",
@@ -11494,6 +11499,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "설명뿐 아니라 파라미터 이름·기본값까지 지시를 숨기는 변형.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-least-privilege",
+   "label": "MCP 최소 권한",
+   "parent": "mcp-trust-boundary",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서버별 폴더·토큰 범위를 따로 주는 원칙.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-cross-server-flow",
+   "label": "서버 간 데이터 흐름 통제",
+   "parent": "mcp-trust-boundary",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "민감 읽기 뒤 외부 전송을 잇는 조합을 막는 방법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-approval-ui",
+   "label": "도구 호출 승인 화면",
+   "parent": "mcp-trust-boundary",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인자 전체를 보여 주는 승인 UI 설계.",
    "added": "2026-11-11"
   }
  ]
