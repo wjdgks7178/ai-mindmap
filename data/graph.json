@@ -8242,10 +8242,11 @@
    "label": "교차 어텐션 시각화",
    "parent": "cross-attention-diffusion",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "단어가 영향을 주는 이미지 영역을 보는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "mmdit",
@@ -8274,10 +8275,11 @@
    "label": "확산 모델 스케일링",
    "parent": "dit-diffusion-transformer",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 크기를 키울수록 품질이 오르는 경향.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "latent-space",
@@ -11198,6 +11200,56 @@
    "status": "planned",
    "priority": 4,
    "summary": "가중치를 fp8로 저장하고 계산 때 올리는 기법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "gflops-vs-params",
+   "label": "Gflops와 파라미터",
+   "parent": "scaling-laws-diffusion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "품질을 좌우하는 것은 연산량이라는 관찰.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "fid-metric",
+   "label": "FID 점수",
+   "parent": "scaling-laws-diffusion",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생성 이미지 품질을 재는 대표 지표.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "prompt-to-prompt",
+   "label": "Prompt-to-Prompt 편집",
+   "parent": "cross-attention-visualization",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교차 어텐션을 조작해 프롬프트만으로 이미지를 편집.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "attention-reweighting",
+   "label": "어텐션 재가중",
+   "parent": "cross-attention-visualization",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특정 단어의 영향 강도를 조절.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "attention-heatmap",
+   "label": "어텐션 히트맵",
+   "parent": "cross-attention-visualization",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어텐션 확률을 이미지에 겹쳐 그린 지도.",
    "added": "2026-11-11"
   }
  ]
