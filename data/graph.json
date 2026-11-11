@@ -8497,10 +8497,11 @@
    "label": "JSON Schema 기초",
    "parent": "mcp-structured-output",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "형태를 선언하는 표준 스키마 언어.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "response-format-concise",
@@ -11698,6 +11699,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "도구 호출 시간 제한·재시도 정책.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "schema-validation-libs",
+   "label": "스키마 검증 라이브러리",
+   "parent": "json-schema-basics",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Zod·Pydantic·Ajv로 스키마를 코드에서 검증하는 방법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "schema-composition",
+   "label": "oneOf·anyOf·allOf",
+   "parent": "json-schema-basics",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스키마를 조합하는 키워드.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "llm-structured-outputs",
+   "label": "LLM 구조화 출력",
+   "parent": "json-schema-basics",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델 생성을 스키마에 맞추는 기능과 MCP 스키마의 차이.",
    "added": "2026-11-11"
   }
  ]
