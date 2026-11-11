@@ -8508,10 +8508,11 @@
    "label": "concise·detailed 응답",
    "parent": "mcp-tool-description-design",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "토큰을 아끼는 응답 형식 선택 인자.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "uri-template-rfc6570",
@@ -11729,6 +11730,36 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델 생성을 스키마에 맞추는 기능과 MCP 스키마의 차이.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "tool-response-truncation",
+   "label": "도구 응답 잘라내기",
+   "parent": "response-format-concise",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰 상한과 잘림 안내 메시지 설계.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "tool-token-budget",
+   "label": "도구 응답 토큰 예산",
+   "parent": "response-format-concise",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "컨텍스트 비용을 계산해 응답 크기를 정하는 법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "targeted-search-pattern",
+   "label": "작고 잦은 검색 패턴",
+   "parent": "response-format-concise",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "넓은 검색 1번보다 좁은 검색 여러 번이 유리한 이유.",
    "added": "2026-11-11"
   }
  ]
