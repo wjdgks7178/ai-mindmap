@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "nodes": [
   {
    "id": "ai",
@@ -8284,30 +8284,33 @@
    "label": "잠재 공간",
    "parent": "vae-latent",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터를 압축해 의미를 담은 저차원 표현 공간.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "vae-kl-loss",
    "label": "VAE의 KL 손실",
    "parent": "vae-latent",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "잠재 분포를 정규화하는 손실 항.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "vae-tiling",
    "label": "VAE 타일링",
    "parent": "vae-latent",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "큰 이미지를 타일로 나눠 메모리를 아끼는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "rslora",
@@ -11126,6 +11129,76 @@
    "priority": 3,
    "summary": "이미지를 작은 조각으로 잘라 토큰으로 만드는 과정.",
    "added": "2026-11-10"
+  },
+  {
+   "id": "latent-interpolation",
+   "label": "잠재 보간",
+   "parent": "latent-space",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 잠재 벡터 사이를 이동해 중간 결과를 만든다.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "scaling-factor-latent",
+   "label": "잠재 스케일링 팩터",
+   "parent": "latent-space",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "잠재 분산을 1로 맞추는 상수 0.18215.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "autoencoder-basic",
+   "label": "일반 오토인코더",
+   "parent": "latent-space",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "KL 없이 압축·복원만 하는 구조.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "reparameterization-trick",
+   "label": "재매개변수화 트릭",
+   "parent": "vae-kl-loss",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "샘플링을 미분 가능하게 만드는 기법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "vae-slicing",
+   "label": "VAE 슬라이싱",
+   "parent": "vae-tiling",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치를 한 장씩 디코딩해 메모리를 아낀다.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "cpu-offloading",
+   "label": "CPU 오프로딩",
+   "parent": "vae-tiling",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쓰지 않는 모델 부분을 CPU로 옮기는 기법.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "layerwise-casting",
+   "label": "레이어별 캐스팅",
+   "parent": "vae-tiling",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가중치를 fp8로 저장하고 계산 때 올리는 기법.",
+   "added": "2026-11-11"
   }
  ]
 }
