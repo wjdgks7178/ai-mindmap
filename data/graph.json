@@ -8541,10 +8541,14 @@
    "label": "list_changed 알림",
    "parent": "mcp-subscriptions",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도구·리소스 목록이 바뀔 때 보내는 알림.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11",
+   "related": [
+    "mcp-tool-poisoning"
+   ]
   },
   {
    "id": "polling-vs-push",
@@ -11802,6 +11806,26 @@
    "status": "planned",
    "priority": 4,
    "summary": "scheme·authority·path·query·fragment 구성.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-capability-negotiation",
+   "label": "MCP 기능 협상",
+   "parent": "mcp-list-changed",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "초기화 때 capabilities로 지원 기능을 합의하는 과정.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-dynamic-tools",
+   "label": "동적 도구 노출",
+   "parent": "mcp-list-changed",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "상태·권한에 따라 도구 목록을 바꾸는 서버 설계.",
    "added": "2026-11-11"
   }
  ]
