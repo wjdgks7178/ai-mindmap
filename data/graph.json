@@ -8529,10 +8529,11 @@
    "label": "리소스 주석",
    "parent": "mcp-resource-templates",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "audience·priority·lastModified 힌트.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11"
   },
   {
    "id": "mcp-list-changed",
@@ -11760,6 +11761,26 @@
    "status": "planned",
    "priority": 4,
    "summary": "넓은 검색 1번보다 좁은 검색 여러 번이 유리한 이유.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "context-prioritization",
+   "label": "컨텍스트 우선순위 정하기",
+   "parent": "mcp-resource-annotations",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "priority를 이용해 컨텍스트에 넣을 자료를 고르는 전략.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-resource-picker",
+   "label": "리소스 선택 UI",
+   "parent": "mcp-resource-annotations",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용자가 리소스를 고르는 호스트 UI 패턴.",
    "added": "2026-11-11"
   }
  ]
