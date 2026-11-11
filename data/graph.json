@@ -8407,10 +8407,15 @@
    "label": "한국 공정이용 가이드",
    "parent": "image-training-data-ethics",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 학습의 공정이용 판단 4요소.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-11",
+   "related": [
+    "ai-image-copyright",
+    "privacy-copyright"
+   ]
   },
   {
    "id": "portrait-rights",
@@ -11529,6 +11534,46 @@
    "status": "planned",
    "priority": 4,
    "summary": "인자 전체를 보여 주는 승인 UI 설계.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "transformative-use",
+   "label": "변형적 이용",
+   "parent": "fair-use-korea",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "원작과 다른 목적·성격으로 쓰는지 따지는 공정이용의 핵심 기준.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "ai-data-licensing",
+   "label": "AI 학습 데이터 라이선스 계약",
+   "parent": "fair-use-korea",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "언론사·플랫폼과 AI 기업이 맺는 이용허락 계약의 유형.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "training-data-audit",
+   "label": "학습 데이터 감사",
+   "parent": "fair-use-korea",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 데이터 출처·권리를 점검하고 문제 데이터를 제거하는 절차.",
+   "added": "2026-11-11"
+  },
+  {
+   "id": "us-fair-use-ai",
+   "label": "미국 fair use와 AI",
+   "parent": "fair-use-korea",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 학습을 둘러싼 미국 4요소 판단과 판례 흐름.",
    "added": "2026-11-11"
   }
  ]
