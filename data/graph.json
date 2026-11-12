@@ -8720,10 +8720,11 @@
    "label": "accept·decline·cancel",
    "parent": "mcp-elicitation",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "세 응답 액션과 서버 처리법",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "human-in-the-loop-input",
@@ -12209,9 +12210,63 @@
    "label": "민감 정보 요청 금지",
    "parent": "elicitation-schema",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "elicitation으로 비밀번호 등을 묻지 못하는 규칙.",
+   "added": "2026-11-12",
+   "done": "2026-11-12",
+   "related": [
+    "token-passthrough"
+   ]
+  },
+  {
+   "id": "mcp-elicitation-statefulness",
+   "label": "서버의 사용자별 상태 관리",
+   "parent": "elicitation-actions",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 여부·토큰을 세션 ID가 아닌 사용자 신원에 묶기",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "mcp-url-elicitation-required-error",
+   "label": "URLElicitationRequiredError",
+   "parent": "elicitation-actions",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드 -32042로 URL 모드 선행을 요구하는 오류",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "mcp-url-mode-elicitation",
+   "label": "URL 모드 Elicitation",
+   "parent": "mcp-sensitive-info-rule",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2025-11-25에 추가된 대역 밖 입력·OAuth 방식",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "mcp-elicitation-phishing",
+   "label": "Elicitation 피싱 공격",
+   "parent": "mcp-sensitive-info-rule",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 사용자가 URL을 열게 만들어 토큰을 가로채는 시나리오",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "oauth-basics",
+   "label": "OAuth 기초",
+   "parent": "mcp-sensitive-info-rule",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권한 위임 표준의 흐름과 용어",
    "added": "2026-11-12"
   }
  ]
