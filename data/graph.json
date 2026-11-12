@@ -8756,10 +8756,14 @@
    "label": "metadata.source",
    "parent": "langgraph-state-snapshot",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "input·loop·update 세 출처의 의미",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12",
+   "related": [
+    "langgraph-update-state"
+   ]
   },
   {
    "id": "langgraph-replay",
@@ -8780,20 +8784,22 @@
    "label": "PregelTask",
    "parent": "langgraph-state-snapshot",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "tasks 항목의 id·name·error·interrupts",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "checkpoint-parent-chain",
    "label": "parent_config 체인",
    "parent": "langgraph-state-snapshot",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "체크포인트가 연결 리스트처럼 이어지는 구조",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "logit-bias",
@@ -12326,6 +12332,36 @@
    "status": "planned",
    "priority": 3,
    "summary": "사람이 답하지 않을 때 보류·재질문·중단 설계",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "pregel-super-step",
+   "label": "Pregel super-step 모델",
+   "parent": "pregel-task",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "병렬 노드를 한 단계로 묶어 실행하는 LangGraph 실행 모델",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "langgraph-subgraph-snapshot",
+   "label": "서브그래프 스냅샷 조회",
+   "parent": "pregel-task",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "get_state(subgraphs=True)로 하위 상태 보기",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "state-branching",
+   "label": "상태 갈래(분기)",
+   "parent": "checkpoint-parent-chain",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 체크포인트에서 편집해 체인이 갈라지는 구조",
    "added": "2026-11-12"
   }
  ]
