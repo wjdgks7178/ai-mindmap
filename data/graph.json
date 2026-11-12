@@ -8839,10 +8839,11 @@
    "label": "서브그래프 checkpointer 모드",
    "parent": "langgraph-subgraph-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "None·True·False 세 모드의 차이",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "subgraph-in-tool-limit",
@@ -8859,10 +8860,14 @@
    "label": "min-p 샘플링",
    "parent": "sampling-temperature-topp",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "1등 확률 대비 비율로 후보를 자르는 방식.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-12",
+   "related": [
+    "temperature-scaling"
+   ]
   },
   {
    "id": "greedy-beam-search",
@@ -12415,6 +12420,36 @@
    "status": "planned",
    "priority": 3,
    "summary": "log-odds를 선형식으로 모델링",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "subgraph-parallel-namespace",
+   "label": "서브그래프 병렬 호출과 네임스페이스",
+   "parent": "langgraph-subgraph-checkpointer-modes",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "per-thread 서브그래프 병렬 호출 충돌과 우회",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "top-p-nucleus",
+   "label": "top-p 핵 샘플링",
+   "parent": "min-p-sampling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누적 확률 p까지의 후보만 남기는 방식",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "sampling-truncation-comparison",
+   "label": "샘플링 절단 방식 비교",
+   "parent": "min-p-sampling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "top-k·top-p·min-p를 같은 분포에 적용해 보기",
    "added": "2026-11-12"
   }
  ]
