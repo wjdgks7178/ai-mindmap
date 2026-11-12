@@ -8806,30 +8806,33 @@
    "label": "logit bias",
    "parent": "logits",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특정 토큰 로짓에 값을 더해 출력을 조절",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "temperature-scaling",
    "label": "온도 스케일링",
    "parent": "logits",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로짓을 T로 나눠 분포의 뾰족함을 조절",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "log-odds",
    "label": "log-odds",
    "parent": "logits",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "통계의 logit 정의 log(p/(1-p))",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "langgraph-subgraph-checkpointer-modes",
@@ -12362,6 +12365,56 @@
    "status": "planned",
    "priority": 3,
    "summary": "과거 체크포인트에서 편집해 체인이 갈라지는 구조",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "tokenization-leading-space",
+   "label": "토큰화와 앞 공백 함정",
+   "parent": "logit-bias",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Trump와 공백 포함 토큰이 달라 편향이 안 먹는 문제",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "constrained-decoding",
+   "label": "제약 디코딩",
+   "parent": "logit-bias",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 토큰만 고르게 강제하는 출력 제어",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "temperature-calibration",
+   "label": "확률 보정 temperature scaling",
+   "parent": "temperature-scaling",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류 모델의 과신 확률을 T로 보정",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "sigmoid-function",
+   "label": "시그모이드 함수",
+   "parent": "log-odds",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로짓의 역함수 1/(1+e^-x)",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "logistic-regression",
+   "label": "로지스틱 회귀",
+   "parent": "log-odds",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "log-odds를 선형식으로 모델링",
    "added": "2026-11-12"
   }
  ]
