@@ -8599,10 +8599,11 @@
    "label": "팀 프롬프트 라이브러리",
    "parent": "slash-command-ui",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "슬래시 명령으로 팀 지시문을 공유하는 운영법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "invalid-update-error",
@@ -8631,20 +8632,22 @@
    "label": "체크포인트 정리 작업",
    "parent": "langgraph-checkpoint-retention",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오래된 체크포인트를 스케줄로 삭제하는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "data-retention-policy",
    "label": "데이터 보존 정책",
    "parent": "langgraph-checkpoint-retention",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개인정보와 비용을 고려한 보존 기간 결정.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "mcp-sampling-hitl",
@@ -12013,6 +12016,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "그래프를 시각적으로 실행·되감기하는 개발 도구.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "prompt-versioning",
+   "label": "프롬프트 버전 관리",
+   "parent": "team-prompt-library",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트를 git으로 변경 이력·리뷰하며 관리하는 방법.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "claude-code-plugins",
+   "label": "Claude Code 플러그인",
+   "parent": "team-prompt-library",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스킬·명령을 묶어 팀·조직에 배포하는 단위.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "disable-model-invocation",
+   "label": "사람만 실행 옵션",
+   "parent": "team-prompt-library",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부작용 있는 명령을 모델이 마음대로 못 쓰게 하는 설정.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "postgres-saver",
+   "label": "PostgresSaver",
+   "parent": "checkpoint-pruning-job",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영용 체크포인트 저장소.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "retention-audit-log",
+   "label": "삭제 감사 로그",
+   "parent": "checkpoint-pruning-job",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무엇을 언제 지웠는지 남기는 기록.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "data-minimization",
+   "label": "데이터 최소화",
+   "parent": "data-retention-policy",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목적에 필요한 만큼만 수집하는 원칙.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "pii-masking",
+   "label": "개인정보 마스킹",
+   "parent": "data-retention-policy",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로그·기록에서 개인정보를 가리는 방법.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "legal-hold",
+   "label": "법적 보존 의무",
+   "parent": "data-retention-policy",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 대신 보존해야 하는 예외 상황.",
    "added": "2026-11-12"
   }
  ]
