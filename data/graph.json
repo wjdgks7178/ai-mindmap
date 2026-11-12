@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "nodes": [
   {
    "id": "ai",
@@ -8566,20 +8566,22 @@
    "label": "MCP 페이지네이션",
    "parent": "mcp-completion",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "cursor로 긴 목록을 나눠 받는 방법.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "fuzzy-matching",
    "label": "퍼지 매칭",
    "parent": "mcp-completion",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오타·부분 입력에도 후보를 찾는 방식.",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "mcp-prompt-security",
@@ -11879,6 +11881,56 @@
    "priority": 4,
    "summary": "양방향 영구 연결 프로토콜(RFC 6455).",
    "added": "2026-11-11"
+  },
+  {
+   "id": "mcp-cursor-stability",
+   "label": "커서 안정성",
+   "parent": "mcp-pagination",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터가 바뀌는 중에도 목록이 빠지거나 중복되지 않게 하는 설계.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "keyset-pagination",
+   "label": "키셋 페이지네이션",
+   "parent": "mcp-pagination",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오프셋 대신 마지막 키로 이어 받는 DB 방식.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "levenshtein-distance",
+   "label": "레벤슈타인 거리",
+   "parent": "fuzzy-matching",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삽입·삭제·치환 최소 횟수로 두 문자열의 차이를 재는 방법.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "n-gram-index",
+   "label": "n-gram 색인",
+   "parent": "fuzzy-matching",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열을 n글자 조각으로 나눠 후보를 빠르게 줄이는 방법.",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "fzf-tool",
+   "label": "fzf",
+   "parent": "fuzzy-matching",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "터미널용 퍼지 검색 도구.",
+   "added": "2026-11-12"
   }
  ]
 }
