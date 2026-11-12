@@ -8731,20 +8731,25 @@
    "label": "사람 입력 되묻기 패턴",
    "parent": "mcp-elicitation",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "에이전트가 필요할 때만 사용자에게 묻기",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12",
+   "related": [
+    "langgraph-interrupt"
+   ]
   },
   {
    "id": "mcp-model-hints",
    "label": "모델 힌트 매칭",
    "parent": "model-preferences-mcp",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이름 부분 문자열로 다른 제공사 모델에 매핑",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12"
   },
   {
    "id": "snapshot-metadata-source",
@@ -8761,10 +8766,14 @@
    "label": "체크포인트 리플레이",
    "parent": "langgraph-state-snapshot",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "snapshot.config로 invoke(None) 재실행",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-12",
+   "related": [
+    "langgraph-time-travel"
+   ]
   },
   {
    "id": "pregel-task",
@@ -12267,6 +12276,56 @@
    "status": "planned",
    "priority": 3,
    "summary": "권한 위임 표준의 흐름과 용어",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "replay-side-effects",
+   "label": "리플레이 부작용 주의",
+   "parent": "langgraph-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이후 노드가 재실행되며 API·메일이 반복되는 문제",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "langgraph-fork-state",
+   "label": "상태 편집 후 갈래 만들기",
+   "parent": "langgraph-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "update_state로 새 체크포인트 갈래를 만들어 실행",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "mcp-cost-speed-intelligence",
+   "label": "비용·속도·지능 우선순위",
+   "parent": "mcp-model-hints",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0~1 세 값으로 모델 특성 선호를 표현",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "elicitation-rate-limit",
+   "label": "질문 속도 제한과 피로",
+   "parent": "human-in-the-loop-input",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과도한 되묻기를 막는 클라이언트 속도 제한",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "interrupt-timeout-policy",
+   "label": "응답 대기 타임아웃 정책",
+   "parent": "human-in-the-loop-input",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 답하지 않을 때 보류·재질문·중단 설계",
    "added": "2026-11-12"
   }
  ]
