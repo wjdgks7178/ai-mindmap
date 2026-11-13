@@ -9182,10 +9182,12 @@
    "label": "모델 파일 안전(pkl·safetensors)",
    "parent": "pickle-security",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "출처 불명 모델 파일을 열 때의 위험.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": []
   },
   {
    "id": "protobuf-vs-msgpack",
@@ -13502,6 +13504,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "입력에 쿼리 연산자 객체를 끼워 인증을 우회하는 공격.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "trust-remote-code",
+   "label": "trust_remote_code 위험",
+   "parent": "ml-model-file-safety",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 저장소의 파이썬 코드를 실행하게 하는 옵션.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "pickle-import-scan",
+   "label": "pickle import 스캔과 fickling",
+   "parent": "ml-model-file-safety",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "opcode를 실행 없이 읽어 위험 import를 찾는 기법.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "safetensors-format",
+   "label": "safetensors 파일 구조",
+   "parent": "ml-model-file-safety",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "헤더 JSON과 텐서 바이트로 이뤄진 형식.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "model-supply-chain",
+   "label": "모델 공급망 보안",
+   "parent": "ml-model-file-safety",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다운로드한 모델·데이터셋을 믿을 수 있는지 검증하는 관행.",
    "added": "2026-11-13",
    "related": []
   }
