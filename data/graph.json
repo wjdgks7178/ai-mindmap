@@ -13457,22 +13457,24 @@
    "label": "자체 구축 vs 구매",
    "parent": "ai-applications",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "API 사용·파인튜닝·자체 모델 중 고르는 기준.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-13"
   },
   {
    "id": "ai-product-design",
    "label": "AI 제품 설계(UX)",
    "parent": "ai-applications",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불확실한 출력을 다루는 인터페이스와 사람 확인 지점.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-13"
   },
   {
    "id": "mongodb-javascript-disable",
@@ -13600,22 +13602,24 @@
    "label": "파일럿 지표 설계",
    "parent": "ai-adoption-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기준선·성공 기준·중단 기준 정하기.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-13"
   },
   {
    "id": "ambient-scribe",
    "label": "앰비언트 스크라이브",
    "parent": "ai-in-healthcare",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "진료 대화를 듣고 기록 초안을 쓰는 AI.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-13"
   },
   {
    "id": "fda-ai-devices",
@@ -13644,11 +13648,12 @@
    "label": "EU AI Act 고위험 분류",
    "parent": "ai-in-finance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "부속서 III의 고위험 용도 목록.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-13"
   },
   {
    "id": "agent-assist",
@@ -13823,6 +13828,127 @@
    "status": "planned",
    "priority": 3,
    "summary": "클라이언트도 인증서로 신원을 증명하는 방식.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "eu-ai-act-gpai",
+   "label": "EU AI Act 범용 AI 의무",
+   "parent": "eu-ai-act-high-risk",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범용 모델 제공자에게 붙는 별도 의무.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "eu-ai-act-penalties",
+   "label": "EU AI Act 과태료",
+   "parent": "eu-ai-act-high-risk",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위반 유형별 상한 금액과 매출 비율.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "hax-guidelines",
+   "label": "Microsoft HAX 18개 지침",
+   "parent": "ai-product-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인간-AI 상호작용 지침 상세.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "pair-guidebook",
+   "label": "Google PAIR 가이드북",
+   "parent": "ai-product-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "심성 모델·피드백·오류 장별 정리.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ai-confidence-display",
+   "label": "AI 확신도 표시",
+   "parent": "ai-product-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불확실성을 사용자에게 보여 주는 방법.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "prompt-rag-finetune-choice",
+   "label": "프롬프트·RAG·파인튜닝 선택",
+   "parent": "build-vs-buy-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패 유형별로 기법 고르는 흐름.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "accuracy-economics",
+   "label": "목표 정확도의 경제성",
+   "parent": "build-vs-buy-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성공 가치와 실패 비용으로 손익분기 계산.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "clinical-note-accuracy",
+   "label": "임상 노트 정확도 평가",
+   "parent": "ambient-scribe",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누락·환각을 어떻게 재는가.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "recording-consent-law",
+   "label": "녹음 동의와 법",
+   "parent": "ambient-scribe",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HIPAA와 주 도청법의 구분.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "llm-auto-rater",
+   "label": "LLM auto-rater",
+   "parent": "ai-pilot-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 답변을 채점하는 방식과 보정.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "nist-ai-rmf-measure",
+   "label": "NIST AI RMF Measure",
+   "parent": "ai-pilot-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정 기능의 하위 항목.",
    "added": "2026-11-13",
    "related": []
   }
