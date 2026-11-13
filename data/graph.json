@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "nodes": [
   {
    "id": "ai",
@@ -8874,10 +8874,14 @@
    "label": "그리디·빔 서치",
    "parent": "sampling-temperature-topp",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결정적 디코딩과 여러 후보 경로 탐색.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "structured-output-decoding"
+   ]
   },
   {
    "id": "logsumexp-cross-entropy-fused",
@@ -8894,10 +8898,14 @@
    "label": "수치 정밀도 fp16·bf16",
    "parent": "log-sum-exp",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "부동소수점 형식과 오버플로 관계.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "quantization"
+   ]
   },
   {
    "id": "reference-model",
@@ -12451,6 +12459,56 @@
    "priority": 3,
    "summary": "top-k·top-p·min-p를 같은 분포에 적용해 보기",
    "added": "2026-11-12"
+  },
+  {
+   "id": "decoding-strategy-comparison",
+   "label": "디코딩 전략 고르기",
+   "parent": "greedy-beam-search",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "번역·요약·채팅·코드에 맞는 디코딩 선택표.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "loss-scaling",
+   "label": "loss scaling",
+   "parent": "numerical-precision-fp16-bf16",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "fp16 그래디언트 underflow를 막는 스케일 기법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "mixed-precision-training",
+   "label": "혼합 정밀도 학습",
+   "parent": "numerical-precision-fp16-bf16",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "fp32 마스터 가중치와 16비트 연산을 섞는 학습.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "fp8-training",
+   "label": "fp8 학습·추론",
+   "parent": "numerical-precision-fp16-bf16",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "8비트 부동소수점 형식 E4M3·E5M2.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "nan-debugging",
+   "label": "학습 중 nan 디버깅",
+   "parent": "numerical-precision-fp16-bf16",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "loss가 nan이 될 때 점검 순서.",
+   "added": "2026-11-13"
   }
  ]
 }
