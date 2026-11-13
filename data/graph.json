@@ -13690,6 +13690,39 @@
    "summary": "AI 도움으로 과제를 잘해도 실력이 안 느는 문제.",
    "added": "2026-11-13",
    "related": []
+  },
+  {
+   "id": "jsonl-finetune-data",
+   "label": "파인튜닝용 JSONL 데이터",
+   "parent": "json-lines",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메시지 형식 학습 데이터를 한 줄 한 샘플로 만드는 법.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ndjson-vs-jsonl",
+   "label": "NDJSON과 JSONL",
+   "parent": "json-lines",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거의 같은 두 이름과 미묘한 차이.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "log-structured-agent-traces",
+   "label": "에이전트 실행 로그(JSONL)",
+   "parent": "json-lines",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구 호출·응답을 줄 단위로 남겨 재현·평가하기.",
+   "added": "2026-11-13",
+   "related": []
   }
  ]
 }
