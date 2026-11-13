@@ -8850,10 +8850,14 @@
    "label": "도구 안 서브그래프 한계",
    "parent": "langgraph-subgraph-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도구 함수 안에서 호출하면 상태 조회가 안 됨",
-   "added": "2026-11-07"
+   "added": "2026-11-07",
+   "done": "2026-11-13",
+   "related": [
+    "subagents"
+   ]
   },
   {
    "id": "min-p-sampling",
@@ -8941,10 +8945,14 @@
    "label": "사후 붕괴",
    "parent": "vae-kl-term",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "디코더가 잠재 변수를 무시하는 현상.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "diffusion-model"
+   ]
   },
   {
    "id": "elbo",
@@ -12597,6 +12605,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "로짓 크기를 제한해 안정화하는 기법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "subgraph-as-node-pattern",
+   "label": "서브그래프를 노드로 연결하기",
+   "parent": "subgraph-in-tool-limit",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상태 조회가 되는 표준 연결 방식.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "subgraph-checkpointer-modes",
+   "label": "서브그래프 체크포인트 모드",
+   "parent": "subgraph-in-tool-limit",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무상태·호출 단위·누적 영속성의 차이.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "subagent-tool-state-return",
+   "label": "서브에이전트 결과를 상태로 올리기",
+   "parent": "subgraph-in-tool-limit",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구 반환값으로 하위 상태를 부모에 전달.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "interrupt-propagation",
+   "label": "interrupt의 중첩 전파",
+   "parent": "subgraph-in-tool-limit",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하위 그래프의 interrupt가 최상위로 올라가는 방식.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "kl-annealing",
+   "label": "KL annealing",
+   "parent": "posterior-collapse",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL 가중치를 점차 키우는 VAE 학습 요령.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "free-bits",
+   "label": "free bits",
+   "parent": "posterior-collapse",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL에 하한을 두어 잠재 변수를 쓰게 하는 기법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "vq-vae",
+   "label": "VQ-VAE",
+   "parent": "posterior-collapse",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이산 코드북으로 사후 붕괴를 피하는 변형.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "strong-decoder-problem",
+   "label": "강한 디코더 문제",
+   "parent": "posterior-collapse",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자기회귀 디코더가 잠재 변수를 무시하는 이유.",
    "added": "2026-11-13"
   }
  ]
