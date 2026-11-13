@@ -8888,10 +8888,14 @@
    "label": "교차 엔트로피 융합 구현",
    "parent": "log-sum-exp",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로짓과 손실을 합쳐 안정적으로 계산.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "cross-entropy"
+   ]
   },
   {
    "id": "numerical-precision-fp16-bf16",
@@ -8912,10 +8916,15 @@
    "label": "기준 모델(reference model)",
    "parent": "kl-penalty-finetuning",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "KL의 기준이 되는 동결된 모델.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "dpo",
+    "rlhf"
+   ]
   },
   {
    "id": "beta-vae",
@@ -12508,6 +12517,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "loss가 nan이 될 때 점검 순서.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "tr-dpo-ref-sync",
+   "label": "TR-DPO 기준 모델 동기화",
+   "parent": "reference-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 모델을 주기적으로 정책과 섞어 갱신.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "precompute-ref-logprobs",
+   "label": "기준 로그확률 사전 계산",
+   "parent": "reference-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 모델을 메모리에 두지 않는 절감 기법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "lora-adapter-as-reference",
+   "label": "LoRA 어댑터 끄기 = 기준 모델",
+   "parent": "reference-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사본 없이 어댑터 비활성화로 기준 확보.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "dpo-beta",
+   "label": "DPO의 β 하이퍼파라미터",
+   "parent": "reference-model",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 모델에서 벗어나는 정도를 정하는 값.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "chunked-cross-entropy",
+   "label": "청크 교차 엔트로피",
+   "parent": "logsumexp-cross-entropy-fused",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로짓을 구간별로 나눠 메모리를 줄이는 계산.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "liger-kernel",
+   "label": "Liger Kernel",
+   "parent": "logsumexp-cross-entropy-fused",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Triton 융합 커널로 LLM 학습 메모리를 줄이는 라이브러리.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "nll-loss",
+   "label": "NLLLoss와 log-softmax",
+   "parent": "logsumexp-cross-entropy-fused",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "cross_entropy를 두 조각으로 나눈 형태.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "logit-softcapping",
+   "label": "로짓 소프트캡핑",
+   "parent": "logsumexp-cross-entropy-fused",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로짓 크기를 제한해 안정화하는 기법.",
    "added": "2026-11-13"
   }
  ]
