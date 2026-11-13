@@ -13368,6 +13368,97 @@
    "priority": 3,
    "summary": "선생 대비 허용 성능 격차와 속도·메모리 지표.",
    "added": "2026-11-13"
+  },
+  {
+   "id": "ai-applications",
+   "label": "AI 응용·산업 도입",
+   "parent": "ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 1,
+   "summary": "AI가 실제 산업·업무에 쓰이는 방식과, 조직이 도입할 때 따지는 것들.",
+   "added": "2026-11-13",
+   "related": [
+    "literacy",
+    "automation"
+   ]
+  },
+  {
+   "id": "ai-in-healthcare",
+   "label": "의료·헬스케어 AI",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상 판독·문서화 등 의료 현장의 AI 활용과 규제.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ai-in-finance",
+   "label": "금융 AI",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사기 탐지·신용평가·상담 자동화와 설명 가능성 요구.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ai-in-education",
+   "label": "교육 AI",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인화 튜터·자동 채점과 학습 효과 근거.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ai-in-customer-support",
+   "label": "고객 지원 AI",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "챗봇·상담 요약·에이전트 보조의 도입 패턴.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ai-adoption-roi",
+   "label": "AI 도입 ROI와 파일럿",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 2,
+   "summary": "작게 시작해 효과를 재는 법과 흔한 실패 원인.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "build-vs-buy-ai",
+   "label": "자체 구축 vs 구매",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "API 사용·파인튜닝·자체 모델 중 고르는 기준.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "ai-product-design",
+   "label": "AI 제품 설계(UX)",
+   "parent": "ai-applications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불확실한 출력을 다루는 인터페이스와 사람 확인 지점.",
+   "added": "2026-11-13",
+   "related": []
   }
  ]
 }
