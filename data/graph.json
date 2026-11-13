@@ -8935,10 +8935,11 @@
    "label": "β-VAE와 분리된 표현",
    "parent": "vae-kl-term",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "KL 가중치 β로 잠재 요인을 분리.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13"
   },
   {
    "id": "posterior-collapse",
@@ -8959,10 +8960,14 @@
    "label": "ELBO(증거 하한)",
    "parent": "vae-kl-term",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "VAE가 최대화하는 로그 우도의 하한.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "diffusion-model"
+   ]
   },
   {
    "id": "gan-js-divergence",
@@ -12685,6 +12690,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "자기회귀 디코더가 잠재 변수를 무시하는 이유.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "iwae",
+   "label": "IWAE(중요도 가중 하한)",
+   "parent": "elbo",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플 여러 개로 ELBO보다 빡빡한 하한.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "variational-inference",
+   "label": "변분 추론",
+   "parent": "elbo",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어려운 사후 분포를 쉬운 분포로 근사하는 틀.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "vae-reconstruction-term",
+   "label": "VAE 재구성 항",
+   "parent": "elbo",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MSE·BCE로 구현하는 복원 손실.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "diffusion-elbo",
+   "label": "확산 모델의 변분 하한",
+   "parent": "elbo",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확산 학습 목적이 ELBO에서 나오는 과정.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "disentangled-representation",
+   "label": "분리된 표현(disentanglement)",
+   "parent": "beta-vae",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잠재 차원 하나가 요인 하나에 대응.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "capacity-annealing",
+   "label": "capacity annealing(Burgess)",
+   "parent": "beta-vae",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL 용량 목표를 서서히 키우는 β-VAE 개선.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "disentanglement-metrics",
+   "label": "분리 정도 측정 지표",
+   "parent": "beta-vae",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MIG·DCI 등 분리 표현 평가.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "disentanglement-impossibility",
+   "label": "비지도 분리 불가능성",
+   "parent": "beta-vae",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "귀납 편향 없이는 분리를 보장 못 한다는 비판.",
    "added": "2026-11-13"
   }
  ]
