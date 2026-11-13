@@ -8974,20 +8974,28 @@
    "label": "GAN과 JS 발산",
    "parent": "jensen-shannon",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원조 GAN 손실과 JSD의 관계.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "wasserstein-distance"
+   ]
   },
   {
    "id": "wasserstein-distance",
    "label": "바서슈타인 거리",
    "parent": "jensen-shannon",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분포를 옮기는 비용으로 재는 거리.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "flow-matching"
+   ]
   },
   {
    "id": "total-variation-distance",
@@ -12770,6 +12778,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "귀납 편향 없이는 분리를 보장 못 한다는 비판.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "gan-mode-collapse",
+   "label": "GAN 모드 붕괴",
+   "parent": "gan-js-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성자가 소수 출력만 반복하는 현상.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "non-saturating-gan-loss",
+   "label": "비포화 GAN 손실",
+   "parent": "gan-js-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "-log D(G(z)) 로 초반 기울기를 살리는 변형.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "gan-training-dilemma",
+   "label": "판별자 강약 딜레마",
+   "parent": "gan-js-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "D가 약하면 부정확, 강하면 기울기 소실.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "f-divergence-gan",
+   "label": "f-GAN",
+   "parent": "gan-js-divergence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "JS 외 다양한 f-발산으로 GAN 일반화.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "wgan",
+   "label": "WGAN",
+   "parent": "wasserstein-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "바서슈타인 거리로 GAN을 학습하는 방법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "wgan-gp",
+   "label": "WGAN-GP(그래디언트 페널티)",
+   "parent": "wasserstein-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "weight clipping 대신 기울기 노름에 벌점.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "lipschitz-constraint",
+   "label": "립시츠 제약",
+   "parent": "wasserstein-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "함수의 기울기가 K 이하라는 조건과 구현법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "optimal-transport",
+   "label": "최적 수송(optimal transport)",
+   "parent": "wasserstein-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포를 옮기는 최소 비용 문제.",
    "added": "2026-11-13"
   }
  ]
