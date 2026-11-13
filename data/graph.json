@@ -9002,20 +9002,28 @@
    "label": "총변동 거리",
    "parent": "jensen-shannon",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분포 차이를 확률 질량 차로 재는 거리.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "speculative-decoding"
+   ]
   },
   {
    "id": "langgraph-fork-vs-replay",
    "label": "재생과 분기 비교",
    "parent": "langgraph-state-history-ui",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "재실행과 상태 수정 분기의 부수효과 차이.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "idempotency"
+   ]
   },
   {
    "id": "langgraph-side-effects-replay",
@@ -12858,6 +12866,76 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포를 옮기는 최소 비용 문제.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "pinsker-inequality",
+   "label": "Pinsker 부등식",
+   "parent": "total-variation-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TV와 KL을 잇는 부등식.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "hellinger-distance",
+   "label": "Hellinger 거리",
+   "parent": "total-variation-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제곱근 확률로 재는 대칭 분포 거리.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "coupling",
+   "label": "결합(coupling)",
+   "parent": "total-variation-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 분포를 한 확률공간에서 맞춰 뽑는 방법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "integral-probability-metric",
+   "label": "적분 확률 척도(IPM)",
+   "parent": "total-variation-distance",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TV·바서슈타인을 묶는 거리 가족.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "langgraph-as-node",
+   "label": "update_state의 as_node",
+   "parent": "langgraph-fork-vs-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업데이트를 한 노드를 지정해 재개 지점을 정함.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "langgraph-history-pruning",
+   "label": "체크포인트 이력 정리",
+   "parent": "langgraph-fork-vs-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오래된 체크포인트 삭제와 보존 정책.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "fork-for-what-if",
+   "label": "what-if 분석용 분기",
+   "parent": "langgraph-fork-vs-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상태를 바꿔 다른 결과를 비교하는 디버깅.",
    "added": "2026-11-13"
   }
  ]
