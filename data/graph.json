@@ -9125,20 +9125,28 @@
    "label": "ORDER BY 인젝션",
    "parent": "allowlist-validation",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정렬 구문에 들어오는 공격.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "orm-injection"
+   ]
   },
   {
    "id": "input-validation-vs-sanitization",
    "label": "검증과 정화의 차이",
    "parent": "allowlist-validation",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "거부 vs 변형 방식의 차이.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "prompt-injection"
+   ]
   },
   {
    "id": "mongoose-schema-validation",
@@ -13191,6 +13199,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "자기 생성 데이터 재학습으로 다양성이 사라지는 위험.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "blind-sql-injection",
+   "label": "블라인드 SQL 인젝션",
+   "parent": "order-by-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과가 안 보여도 참·거짓 반응으로 정보를 빼내는 공격.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "sort-parameter-mapping",
+   "label": "정렬 파라미터 매핑 패턴",
+   "parent": "order-by-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 선택값을 서버 목록 리터럴로 변환.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "dynamic-identifier-quoting",
+   "label": "식별자 인용 처리",
+   "parent": "order-by-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컬럼·테이블명을 안전하게 쓰는 DB별 방법과 한계.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "sql-injection-code-review",
+   "label": "AI 생성 코드의 인젝션 점검",
+   "parent": "order-by-injection",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열 결합 쿼리를 찾는 리뷰 체크리스트.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "syntactic-vs-semantic-validation",
+   "label": "구문 검증과 의미 검증",
+   "parent": "input-validation-vs-sanitization",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식이 맞는지 vs 업무적으로 말이 되는지.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "denylist-weakness",
+   "label": "차단 목록의 약점",
+   "parent": "input-validation-vs-sanitization",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인코딩·변형으로 우회되는 이유.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "html-sanitizer-library",
+   "label": "HTML 정화 라이브러리",
+   "parent": "input-validation-vs-sanitization",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "리치 텍스트를 안전하게 만드는 검증된 도구.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "input-normalization",
+   "label": "입력 정규화",
+   "parent": "input-validation-vs-sanitization",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유니코드·인코딩 통일 — 정화와 다름.",
    "added": "2026-11-13"
   }
  ]
