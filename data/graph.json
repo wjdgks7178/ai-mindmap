@@ -9087,20 +9087,28 @@
    "label": "앙상블과 불확실성",
    "parent": "overconfidence",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 모델로 불확실성을 추정.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "knowledge-distillation-loss"
+   ]
   },
   {
    "id": "self-distillation",
    "label": "자기 증류",
    "parent": "knowledge-distillation-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 구조의 모델끼리 증류.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "ensemble-uncertainty"
+   ]
   },
   {
    "id": "distillation-llm-practice",
@@ -13103,6 +13111,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 번 샘플해 일치율로 확신도 추정.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "deep-ensembles",
+   "label": "딥 앙상블",
+   "parent": "ensemble-uncertainty",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 초기화가 다른 네트워크를 여러 개 학습.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "mc-dropout",
+   "label": "MC dropout",
+   "parent": "ensemble-uncertainty",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추론 때 dropout을 켠 채 반복해 불확실성 추정.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "epistemic-vs-aleatoric",
+   "label": "인식적·우연적 불확실성",
+   "parent": "ensemble-uncertainty",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 몰라서 vs 데이터 자체가 잡음.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "ood-detection",
+   "label": "분포 밖(OOD) 탐지",
+   "parent": "ensemble-uncertainty",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습에 없던 입력을 알아채는 문제.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "born-again-networks",
+   "label": "Born-Again Networks",
+   "parent": "self-distillation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 구조 학생이 선생을 넘는 증류 실험.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "multi-generation-distillation",
+   "label": "다세대 증류",
+   "parent": "self-distillation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학생이 다음 선생이 되는 반복 증류.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "synthetic-data-self-improvement",
+   "label": "합성 데이터 자기 개선",
+   "parent": "self-distillation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 만든 데이터로 다시 학습.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "model-collapse",
+   "label": "모델 붕괴",
+   "parent": "self-distillation",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자기 생성 데이터 재학습으로 다양성이 사라지는 위험.",
    "added": "2026-11-13"
   }
  ]
