@@ -9171,10 +9171,11 @@
    "label": "$where와 서버 측 JS",
    "parent": "nosql-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서버에서 JS가 실행되는 쿼리 연산자의 위험.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13"
   },
   {
    "id": "ml-model-file-safety",
@@ -13457,6 +13458,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "불확실한 출력을 다루는 인터페이스와 사람 확인 지점.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "mongodb-javascript-disable",
+   "label": "서버 측 JS 끄기(noscripting)",
+   "parent": "mongodb-where-operator",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "javascriptEnabled 설정으로 공격면을 줄이는 법.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "mongodb-expr-operator",
+   "label": "$expr 연산자",
+   "parent": "mongodb-where-operator",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "JS 없이 필드 간 비교를 하는 집계 식 쿼리.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "blind-nosql-injection",
+   "label": "블라인드·타이밍 NoSQL 인젝션",
+   "parent": "mongodb-where-operator",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답 차이·지연으로 값을 한 글자씩 추정하는 공격.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "operator-injection",
+   "label": "연산자 주입($ne·$regex)",
+   "parent": "mongodb-where-operator",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력에 쿼리 연산자 객체를 끼워 인증을 우회하는 공격.",
    "added": "2026-11-13",
    "related": []
   }
