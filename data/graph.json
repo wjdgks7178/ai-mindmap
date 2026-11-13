@@ -9058,20 +9058,29 @@
    "label": "ECE(기대 보정 오차)",
    "parent": "model-calibration",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보정 불일치를 숫자 하나로 요약.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "model-calibration"
+   ]
   },
   {
    "id": "llm-verbalized-confidence",
    "label": "LLM의 말로 한 확신도",
    "parent": "overconfidence",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM이 말하는 자신감과 실제 정확도.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "hallucination",
+    "rlhf"
+   ]
   },
   {
    "id": "ensemble-uncertainty",
@@ -13014,6 +13023,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 입력에도 출력이 달라지는 문제와 완화.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "ece-binning-sensitivity",
+   "label": "ECE의 구간 민감성",
+   "parent": "expected-calibration-error",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간 수·방식에 따라 값이 달라지는 문제.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "adaptive-ece",
+   "label": "적응형 ECE",
+   "parent": "expected-calibration-error",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간별 샘플 수를 같게 맞춘 ECE 변형.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "maximum-calibration-error",
+   "label": "MCE(최대 보정 오차)",
+   "parent": "expected-calibration-error",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간별 최악의 격차를 보는 지표.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "selective-prediction",
+   "label": "선택적 예측(기권)",
+   "parent": "expected-calibration-error",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신도가 낮으면 답하지 않는 설계.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "token-probability-confidence",
+   "label": "토큰 확률 기반 확신도",
+   "parent": "llm-verbalized-confidence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "logprobs로 확신도를 추정하는 방법과 한계.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "multi-answer-confidence-prompt",
+   "label": "다중 답안 확신도 프롬프트",
+   "parent": "llm-verbalized-confidence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 여러 개와 각 확률을 내게 하는 방식.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "confidence-threshold-escalation",
+   "label": "확신도 임계값 + 사람 검토",
+   "parent": "llm-verbalized-confidence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 확신도 답을 사람에게 넘기는 운영 규칙.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "self-consistency-confidence",
+   "label": "자기 일관성 기반 확신도",
+   "parent": "llm-verbalized-confidence",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 번 샘플해 일치율로 확신도 추정.",
    "added": "2026-11-13"
   }
  ]
