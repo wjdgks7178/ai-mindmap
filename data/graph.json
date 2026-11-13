@@ -13378,14 +13378,15 @@
    "label": "AI 응용·산업 도입",
    "parent": "ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 1,
    "summary": "AI가 실제 산업·업무에 쓰이는 방식과, 조직이 도입할 때 따지는 것들.",
    "added": "2026-11-13",
    "related": [
     "literacy",
     "automation"
-   ]
+   ],
+   "done": "2026-11-13"
   },
   {
    "id": "ai-in-healthcare",
