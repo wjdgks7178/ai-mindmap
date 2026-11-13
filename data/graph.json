@@ -9205,10 +9205,11 @@
    "label": "JSON Lines",
    "parent": "msgpack-vs-json",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 줄에 JSON 하나인 로그·데이터 포맷.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13"
   },
   {
    "id": "envelope-encryption",
