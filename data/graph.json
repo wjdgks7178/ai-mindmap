@@ -9194,10 +9194,11 @@
    "label": "Protocol Buffers와 msgpack",
    "parent": "msgpack-vs-json",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "스키마 기반 이진 직렬화와의 비교.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13"
   },
   {
    "id": "json-lines",
@@ -13548,6 +13549,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "다운로드한 모델·데이터셋을 믿을 수 있는지 검증하는 관행.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "protobuf-field-numbers",
+   "label": "protobuf 필드 번호와 reserved",
+   "parent": "protobuf-vs-msgpack",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "번호 재사용이 왜 데이터 손상을 부르는가.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "grpc-basics",
+   "label": "gRPC 기초",
+   "parent": "protobuf-vs-msgpack",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "protobuf 위에서 동작하는 원격 호출 방식.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "schema-evolution",
+   "label": "스키마 진화와 호환성",
+   "parent": "protobuf-vs-msgpack",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필드 추가·삭제에도 옛 데이터를 읽는 규칙.",
    "added": "2026-11-13",
    "related": []
   }
