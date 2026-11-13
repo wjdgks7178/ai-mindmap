@@ -9216,10 +9216,11 @@
    "label": "봉투 암호화(DEK·KEK)",
    "parent": "encryption-at-rest",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 키와 키 암호화 키 구조.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13"
   },
   {
    "id": "secrets-management",
@@ -13721,6 +13722,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "도구 호출·응답을 줄 단위로 남겨 재현·평가하기.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "hsm-kms",
+   "label": "HSM과 KMS",
+   "parent": "envelope-encryption",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "키가 하드웨어 밖으로 안 나가는 구조.",
+   "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "aes-gcm",
+   "label": "AES-GCM 인증 암호화",
+   "parent": "envelope-encryption",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "암호화와 변조 검출을 함께 하는 방식.",
    "added": "2026-11-13",
    "related": []
   }
