@@ -9115,10 +9115,14 @@
    "label": "LLM 증류 실무",
    "parent": "knowledge-distillation-loss",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "큰 LLM 출력으로 작은 모델 학습.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "synthetic-data-self-improvement"
+   ]
   },
   {
    "id": "order-by-injection",
@@ -9153,10 +9157,14 @@
    "label": "스키마 검증으로 입력 타입 고정",
    "parent": "nosql-injection",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문자열 자리에 객체가 들어오는 것을 막는 방법.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "input-validation-vs-sanitization"
+   ]
   },
   {
    "id": "mongodb-where-operator",
@@ -13279,6 +13287,86 @@
    "status": "planned",
    "priority": 3,
    "summary": "유니코드·인코딩 통일 — 정화와 다름.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "mongoose-sanitize-filter",
+   "label": "Mongoose sanitizeFilter",
+   "parent": "mongoose-schema-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쿼리 연산자를 $eq로 감싸는 옵션과 우회 CVE.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "zod-input-validation",
+   "label": "Zod로 입력 검증",
+   "parent": "mongoose-schema-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "타입 스키마로 요청 본문을 파싱·거부.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "dependency-security-updates",
+   "label": "의존성 보안 업데이트",
+   "parent": "mongoose-schema-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CVE 권고를 보고 패치 버전으로 올리는 습관.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "password-hash-compare",
+   "label": "비밀번호 해시 비교",
+   "parent": "mongoose-schema-validation",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평문 조회 대신 해시 검증으로 로그인.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "hard-vs-logit-distillation",
+   "label": "하드 타깃 vs 로짓 증류",
+   "parent": "distillation-llm-practice",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력 문장만 쓰나, 확률 분포까지 쓰나.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "synthetic-data-kit",
+   "label": "Synthetic Data Kit",
+   "parent": "distillation-llm-practice",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Meta의 합성 데이터 생성 오픈소스 도구.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "distillation-terms-of-service",
+   "label": "증류와 약관·라이선스",
+   "parent": "distillation-llm-practice",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "API 출력으로 모델을 학습해도 되는 조건.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "distillation-eval-within-5pct",
+   "label": "증류 평가 기준 설계",
+   "parent": "distillation-llm-practice",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선생 대비 허용 성능 격차와 속도·메모리 지표.",
    "added": "2026-11-13"
   }
  ]
