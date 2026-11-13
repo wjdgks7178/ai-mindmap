@@ -9030,20 +9030,28 @@
    "label": "재생 시 부수효과 관리",
    "parent": "langgraph-state-history-ui",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "재실행이 메일 발송 같은 호출을 되풀이하는 문제.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "idempotency"
+   ]
   },
   {
    "id": "reliability-diagram",
    "label": "신뢰도 곡선",
    "parent": "model-calibration",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "구간별 확신도 대 실제 정답률 그림.",
-   "added": "2026-11-08"
+   "added": "2026-11-08",
+   "done": "2026-11-13",
+   "related": [
+    "overconfidence"
+   ]
   },
   {
    "id": "expected-calibration-error",
@@ -12936,6 +12944,76 @@
    "status": "planned",
    "priority": 3,
    "summary": "상태를 바꿔 다른 결과를 비교하는 디버깅.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "brier-score",
+   "label": "Brier 점수",
+   "parent": "reliability-diagram",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 예측의 제곱 오차 지표.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "platt-scaling",
+   "label": "Platt 스케일링",
+   "parent": "reliability-diagram",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로지스틱 함수로 확률을 교정하는 방법.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "isotonic-calibration",
+   "label": "등위 회귀 보정",
+   "parent": "reliability-diagram",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단조 증가 계단 함수로 교정.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "idempotency-key",
+   "label": "멱등 키 설계",
+   "parent": "langgraph-side-effects-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복 요청을 서버가 무시하게 만드는 키.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "dry-run-mode",
+   "label": "드라이런 모드",
+   "parent": "langgraph-side-effects-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 쓰기를 막고 로그만 남기는 실행 방식.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "outbox-pattern",
+   "label": "아웃박스 패턴",
+   "parent": "langgraph-side-effects-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부수효과를 기록 후 별도 실행해 중복을 막는 설계.",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "llm-nondeterminism-replay",
+   "label": "재생 시 LLM 비결정성",
+   "parent": "langgraph-side-effects-replay",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 입력에도 출력이 달라지는 문제와 완화.",
    "added": "2026-11-13"
   }
  ]
