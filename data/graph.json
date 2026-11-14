@@ -13900,11 +13900,15 @@
    "label": "AI 확신도 표시",
    "parent": "ai-product-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불확실성을 사용자에게 보여 주는 방법.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "calibration",
+    "hallucination"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "prompt-rag-finetune-choice",
@@ -14387,6 +14391,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "팀 워크숍에서 쓰는 방법.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "verbalized-confidence",
+   "label": "말로 표현한 확신",
+   "parent": "ai-confidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 자기 확신을 문장·숫자로 말하게 하는 방법.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "hedging-language-effects",
+   "label": "헤징 문구의 효과",
+   "parent": "ai-confidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불확실성 표현이 신뢰·과의존에 미치는 영향.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "user-overreliance",
+   "label": "사용자 과의존",
+   "parent": "ai-confidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도를 과대평가해 AI를 맹신하는 현상.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "evidence-agreement-score",
+   "label": "근거 일치도 표시",
+   "parent": "ai-confidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신 대신 근거 일치를 보여 주는 방식.",
    "added": "2026-11-14",
    "related": []
   }
