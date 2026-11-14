@@ -13971,11 +13971,14 @@
    "label": "LLM auto-rater",
    "parent": "ai-pilot-metrics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM이 답변을 채점하는 방식과 보정.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "accuracy-economics"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "nist-ai-rmf-measure",
@@ -14623,6 +14626,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "이관·재작업·이탈 등 실패 비용 분류.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "position-bias-judge",
+   "label": "위치 편향",
+   "parent": "llm-auto-rater",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "심판 LLM이 순서에 따라 판정이 바뀌는 현상.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cohens-kappa",
+   "label": "Cohen's kappa",
+   "parent": "llm-auto-rater",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "우연 일치를 뺀 평가자 간 일치도.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "rubric-grading",
+   "label": "기준표 채점",
+   "parent": "llm-auto-rater",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0/1 항목으로 쪼개 점수를 안정화.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "self-preference-bias",
+   "label": "자기 선호 편향",
+   "parent": "llm-auto-rater",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "심판이 자기 계열 모델 답을 더 좋게 보는 경향.",
    "added": "2026-11-14",
    "related": []
   }
