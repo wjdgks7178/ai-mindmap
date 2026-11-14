@@ -13854,22 +13854,26 @@
    "label": "EU AI Act 범용 AI 의무",
    "parent": "eu-ai-act-high-risk",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "범용 모델 제공자에게 붙는 별도 의무.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "eu-ai-act-penalties"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "eu-ai-act-penalties",
    "label": "EU AI Act 과태료",
    "parent": "eu-ai-act-high-risk",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위반 유형별 상한 금액과 매출 비율.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-14"
   },
   {
    "id": "hax-guidelines",
@@ -14484,6 +14488,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "형식은 학습, 지식은 검색으로 나누기.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "gdpr-fines",
+   "label": "GDPR 과징금",
+   "parent": "eu-ai-act-penalties",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인정보 위반 과징금과 AI Act 비교.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "sme-fine-rule",
+   "label": "SME 과태료 낮은 쪽 규칙",
+   "parent": "eu-ai-act-penalties",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중소기업은 금액·비율 중 낮은 값이 상한.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ai-act-enforcement-timeline",
+   "label": "AI Act 시행 일정",
+   "parent": "eu-ai-act-penalties",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2025-02부터 2027-08까지 단계별 적용.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ai-office",
+   "label": "EU AI Office",
+   "parent": "eu-ai-act-penalties",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GPAI 집행을 맡은 집행위 조직.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "gpai-code-of-practice",
+   "label": "GPAI 실천 규범",
+   "parent": "eu-ai-act-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2025-07 공개된 자발적 이행 규범.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "systemic-risk-threshold",
+   "label": "체계적 위험 10^25 FLOP 기준",
+   "parent": "eu-ai-act-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 연산량 기준 추정 규칙.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "training-data-summary",
+   "label": "학습 데이터 공개 요약",
+   "parent": "eu-ai-act-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제53조 템플릿 요구.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "downstream-provider-info",
+   "label": "하류 제공자 정보 의무",
+   "parent": "eu-ai-act-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 한계·사용 지침 제공.",
    "added": "2026-11-14",
    "related": []
   }
