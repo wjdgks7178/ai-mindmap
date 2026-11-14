@@ -13976,7 +13976,8 @@
    "summary": "LLM이 답변을 채점하는 방식과 보정.",
    "added": "2026-11-13",
    "related": [
-    "accuracy-economics"
+    "accuracy-economics",
+    "self-preference-bias"
    ],
    "done": "2026-11-14"
   },
@@ -14659,17 +14660,6 @@
    "status": "planned",
    "priority": 3,
    "summary": "0/1 항목으로 쪼개 점수를 안정화.",
-   "added": "2026-11-14",
-   "related": []
-  },
-  {
-   "id": "self-preference-bias",
-   "label": "자기 선호 편향",
-   "parent": "llm-auto-rater",
-   "domain": "ai-applications",
-   "status": "planned",
-   "priority": 3,
-   "summary": "심판이 자기 계열 모델 답을 더 좋게 보는 경향.",
    "added": "2026-11-14",
    "related": []
   }
