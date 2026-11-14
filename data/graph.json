@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "nodes": [
   {
    "id": "ai",
@@ -13626,11 +13626,14 @@
    "label": "FDA AI 기기 목록",
    "parent": "ai-in-healthcare",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "규제 기기로 관리되는 AI 의료기기.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "eu-ai-act"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "adverse-action-explainability",
@@ -13950,6 +13953,61 @@
    "priority": 3,
    "summary": "측정 기능의 하위 항목.",
    "added": "2026-11-13",
+   "related": []
+  },
+  {
+   "id": "fda-510k-de-novo-pma",
+   "label": "510(k)·De Novo·PMA",
+   "parent": "fda-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA 의료기기 허가 세 경로의 차이.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "fda-pccp",
+   "label": "PCCP 사전 변경 관리 계획",
+   "parent": "fda-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 후 모델 업데이트를 미리 승인받는 구조.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "samd",
+   "label": "SaMD 소프트웨어 의료기기",
+   "parent": "fda-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소프트웨어 자체가 의료기기인 경우의 정의.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "radiology-ai-dominance",
+   "label": "영상의학 AI 쏠림",
+   "parent": "fda-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 AI 기기가 영상의학에 몰린 이유.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "clinical-validation-vs-clearance",
+   "label": "허가와 임상 검증의 차이",
+   "parent": "fda-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규제 통과가 효과 입증이 아닌 이유.",
+   "added": "2026-11-14",
    "related": []
   }
  ]
