@@ -13640,11 +13640,14 @@
    "label": "거절 사유 설명 의무",
    "parent": "ai-in-finance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "블랙박스 모델과 설명 가능성 규제.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "eu-ai-act"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "eu-ai-act-high-risk",
@@ -14007,6 +14010,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "규제 통과가 효과 입증이 아닌 이유.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ecoa-reg-b",
+   "label": "ECOA·Reg B",
+   "parent": "adverse-action-explainability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미국 평등신용기회법과 거절 통지 규정.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "shap-reason-codes",
+   "label": "SHAP 사유 코드",
+   "parent": "adverse-action-explainability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기여도로 거절 사유 코드를 만드는 방법.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "interpretable-credit-models",
+   "label": "해석 가능한 신용 모델",
+   "parent": "adverse-action-explainability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단조 제약 GBM·로지스틱 회귀의 선택.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "fair-lending-disparate-impact",
+   "label": "공정 대출과 차별 효과",
+   "parent": "adverse-action-explainability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보호 속성에 따른 결과 격차 점검.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "kr-automated-decision-right",
+   "label": "한국 자동화평가 설명요구권",
+   "parent": "adverse-action-explainability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신용정보법상 설명·이의제기 권리.",
    "added": "2026-11-14",
    "related": []
   }
