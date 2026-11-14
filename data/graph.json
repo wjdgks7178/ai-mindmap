@@ -13949,22 +13949,29 @@
    "label": "임상 노트 정확도 평가",
    "parent": "ambient-scribe",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "누락·환각을 어떻게 재는가.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "llm-auto-rater",
+    "accuracy-economics"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "recording-consent-law",
    "label": "녹음 동의와 법",
    "parent": "ambient-scribe",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "HIPAA와 주 도청법의 구분.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "voice-cloning-consent"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "llm-auto-rater",
@@ -14660,6 +14667,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "0/1 항목으로 쪼개 점수를 안정화.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "pdqi-9",
+   "label": "PDQI-9",
+   "parent": "clinical-note-accuracy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의사 문서 품질 9항목 채점 도구.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "omission-vs-hallucination",
+   "label": "누락과 환각 구분",
+   "parent": "clinical-note-accuracy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노트 오류의 두 큰 유형과 위험도.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "transcription-error",
+   "label": "전사 오류",
+   "parent": "clinical-note-accuracy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "음성 인식 단계 실수가 노트로 전파.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "clinician-review-signoff",
+   "label": "의사 검토·서명 절차",
+   "parent": "clinical-note-accuracy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 초안을 사람이 확인하는 흐름.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "all-party-consent",
+   "label": "전원 동의(all-party consent)",
+   "parent": "recording-consent-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 대화 당사자 동의를 요구하는 녹음법.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "business-associate-agreement",
+   "label": "BAA(사업 파트너 계약)",
+   "parent": "recording-consent-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HIPAA에서 업체가 정보를 다루기 위한 계약.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cipa-lawsuits",
+   "label": "CIPA 소송",
+   "parent": "recording-consent-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "캘리포니아 침해 방지법 기반 AI 녹음 소송.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "kr-communication-secrecy-law",
+   "label": "한국 통신비밀보호법",
+   "parent": "recording-consent-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한국에서의 녹음 동의 규칙.",
    "added": "2026-11-14",
    "related": []
   }
