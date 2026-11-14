@@ -13915,11 +13915,16 @@
    "label": "프롬프트·RAG·파인튜닝 선택",
    "parent": "build-vs-buy-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실패 유형별로 기법 고르는 흐름.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "fine-tuning-vs-prompting",
+    "prompt-engineering",
+    "rag"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "accuracy-economics",
@@ -14435,6 +14440,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "확신 대신 근거 일치를 보여 주는 방식.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "context-paste-test",
+   "label": "문서 붙여넣기 진단",
+   "parent": "prompt-rag-finetune-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서를 컨텍스트에 넣으면 맞히는지로 RAG 필요성 판단.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "few-shot-before-finetune",
+   "label": "파인튜닝 전 few-shot",
+   "parent": "prompt-rag-finetune-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예시 몇 개로 먼저 형식을 맞춰 보기.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "finetune-data-requirements",
+   "label": "파인튜닝 데이터 요건",
+   "parent": "prompt-rag-finetune-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필요한 데이터 양·품질·재학습 비용.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "hybrid-rag-finetune",
+   "label": "RAG+파인튜닝 조합",
+   "parent": "prompt-rag-finetune-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식은 학습, 지식은 검색으로 나누기.",
    "added": "2026-11-14",
    "related": []
   }
