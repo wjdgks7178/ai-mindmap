@@ -14035,44 +14035,56 @@
    "label": "SaMD 소프트웨어 의료기기",
    "parent": "fda-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "소프트웨어 자체가 의료기기인 경우의 정의.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "radiology-ai-dominance",
    "label": "영상의학 AI 쏠림",
    "parent": "fda-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 AI 기기가 영상의학에 몰린 이유.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "samd"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "clinical-validation-vs-clearance",
    "label": "허가와 임상 검증의 차이",
    "parent": "fda-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "규제 통과가 효과 입증이 아닌 이유.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-note-accuracy"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "ecoa-reg-b",
    "label": "ECOA·Reg B",
    "parent": "adverse-action-explainability",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "미국 평등신용기회법과 거절 통지 규정.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "explainability"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "shap-reason-codes",
@@ -14885,6 +14897,160 @@
    "status": "planned",
    "priority": 3,
    "summary": "PCCP의 법적 근거 조항.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cds-exemption",
+   "label": "CDS 예외 4조건",
+   "parent": "samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임상 의사결정 지원 소프트웨어 규제 제외 조건.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "imdrf",
+   "label": "IMDRF",
+   "parent": "samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SaMD 용어를 만든 국제 규제 포럼.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "simd",
+   "label": "SiMD",
+   "parent": "samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하드웨어에 내장된 의료 소프트웨어.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "samd-risk-categorization",
+   "label": "SaMD 위험 분류",
+   "parent": "samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상황·정보 중요도로 나누는 4단계.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "fda-panel",
+   "label": "FDA 심사 패널",
+   "parent": "radiology-ai-dominance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의료기기를 분과별로 나누는 분류.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cardiology-ai-devices",
+   "label": "심혈관 AI 기기",
+   "parent": "radiology-ai-dominance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상의학 다음으로 많은 분야.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "medical-imaging-datasets",
+   "label": "의료 영상 데이터셋",
+   "parent": "radiology-ai-dominance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상 AI 학습 데이터의 특징.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "retrospective-vs-prospective",
+   "label": "후향적 vs 전향적 연구",
+   "parent": "clinical-validation-vs-clearance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 데이터 시험과 실제 환자 시험의 차이.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ai-device-recalls",
+   "label": "AI 기기 리콜",
+   "parent": "clinical-validation-vs-clearance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "리콜과 검증 부재의 상관.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "post-market-surveillance",
+   "label": "시판 후 감시",
+   "parent": "clinical-validation-vs-clearance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 후 성능 모니터링.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "adverse-action-notice",
+   "label": "불리한 조치 통지",
+   "parent": "ecoa-reg-b",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절 시 이유를 알리는 서류.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cfpb-circular-2023-03",
+   "label": "CFPB 회람 2023-03",
+   "parent": "ecoa-reg-b",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 신용모델 통지 해설.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "disparate-impact-credit",
+   "label": "신용 차별 영향 분석",
+   "parent": "ecoa-reg-b",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의도 없이 불리한 결과를 낳는 차별.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "reason-codes",
+   "label": "이유 코드",
+   "parent": "ecoa-reg-b",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 결과를 거절 사유로 바꾸는 방식.",
    "added": "2026-11-14",
    "related": []
   }
