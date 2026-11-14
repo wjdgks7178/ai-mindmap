@@ -13694,11 +13694,14 @@
    "label": "AI 튜터 가드레일",
    "parent": "ai-in-education",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답 대신 힌트를 주도록 설계하기.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "learning-vs-performance",
@@ -14170,6 +14173,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "이관율·재설명 비율·포기율을 함께 보는 법.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "staged-hints",
+   "label": "단계별 힌트 설계",
+   "parent": "ai-tutor-guardrails",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약한 힌트에서 강한 힌트로 올리는 구조.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "tutor-jailbreak-testing",
+   "label": "튜터 우회 시험",
+   "parent": "ai-tutor-guardrails",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 요구 프롬프트에 버티는지 점검.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "productive-struggle",
+   "label": "생산적 어려움",
+   "parent": "ai-tutor-guardrails",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습에 필요한 적당한 막힘의 교육학.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "learning-mode-products",
+   "label": "학습 모드 제품 비교",
+   "parent": "ai-tutor-guardrails",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Learning Mode·Study Mode 등 상용 튜터 모드.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "tutor-outcome-measurement",
+   "label": "AI 튜터 성과 측정",
+   "parent": "ai-tutor-guardrails",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전·사후 시험으로 학습 효과 재는 법.",
    "added": "2026-11-14",
    "related": []
   }
