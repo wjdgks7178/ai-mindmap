@@ -13888,11 +13888,12 @@
    "label": "Google PAIR 가이드북",
    "parent": "ai-product-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "심성 모델·피드백·오류 장별 정리.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-14"
   },
   {
    "id": "ai-confidence-display",
@@ -14342,6 +14343,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "지침 10의 구체적 설계.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "pair-user-needs",
+   "label": "PAIR 사용자 요구·성공 정의",
+   "parent": "pair-guidebook",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 정말 필요한지 판단하는 장.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "pair-mental-models",
+   "label": "PAIR 심성 모델",
+   "parent": "pair-guidebook",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자의 AI 이해와 기대 설정.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "pair-errors-graceful-failure",
+   "label": "PAIR 오류와 부드러운 실패",
+   "parent": "pair-guidebook",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류 유형과 복구 경로 설계.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "pair-worksheets",
+   "label": "PAIR 워크시트 활용",
+   "parent": "pair-guidebook",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "팀 워크숍에서 쓰는 방법.",
    "added": "2026-11-14",
    "related": []
   }
