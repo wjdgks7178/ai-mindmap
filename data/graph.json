@@ -13666,11 +13666,14 @@
    "label": "에이전트 어시스트",
    "parent": "ai-in-customer-support",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상담사에게 답변 초안을 제안하는 방식.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "rag"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "human-handoff",
@@ -14065,6 +14068,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "신용정보법상 설명·이의제기 권리.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "tacit-knowledge-diffusion",
+   "label": "암묵지 전파 효과",
+   "parent": "agent-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 숙련자 노하우를 초보에게 퍼뜨리는 현상.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "auto-call-summary",
+   "label": "통화 자동 요약·분류",
+   "parent": "agent-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상담 후처리를 AI가 채우는 기능.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "suggestion-acceptance-rate",
+   "label": "제안 수락률·수정률",
+   "parent": "agent-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어시스트 품질을 재는 지표.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "automation-bias",
+   "label": "자동화 편향",
+   "parent": "agent-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 AI 제안을 무비판 수락하는 문제.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ai-chatbot-vs-assist",
+   "label": "챗봇 vs 어시스트 도입 순서",
+   "parent": "agent-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험도 기준으로 어느 쪽부터 도입할지.",
    "added": "2026-11-14",
    "related": []
   }
