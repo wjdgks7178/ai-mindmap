@@ -13935,11 +13935,14 @@
    "label": "목표 정확도의 경제성",
    "parent": "build-vs-buy-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "성공 가치와 실패 비용으로 손익분기 계산.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "llm-auto-rater"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "clinical-note-accuracy",
@@ -14576,6 +14579,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 한계·사용 지침 제공.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "confidence-calibration",
+   "label": "신뢰도 보정",
+   "parent": "accuracy-economics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 확신도가 실제 정답률과 맞는지.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "human-in-the-loop-routing",
+   "label": "사람 개입 라우팅",
+   "parent": "accuracy-economics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신도·위험도로 자동·검토를 나누는 설계.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "sensitivity-analysis-ai-roi",
+   "label": "비용 추정 민감도 분석",
+   "parent": "accuracy-economics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가정이 흔들려도 결론이 유지되는지.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cost-of-error-types",
+   "label": "오류 유형별 비용",
+   "parent": "accuracy-economics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관·재작업·이탈 등 실패 비용 분류.",
    "added": "2026-11-14",
    "related": []
   }
