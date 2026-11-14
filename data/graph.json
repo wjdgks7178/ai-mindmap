@@ -13680,11 +13680,14 @@
    "label": "사람 이관 설계",
    "parent": "ai-in-customer-support",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI가 못 푸는 문의를 사람에게 넘기는 규칙.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "human-in-the-loop"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "ai-tutor-guardrails",
@@ -14123,6 +14126,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "위험도 기준으로 어느 쪽부터 도입할지.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "escalation-triggers",
+   "label": "이관 트리거 신호",
+   "parent": "human-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직접 요청·신뢰도·감정·루프·고위험 신호의 조합.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "warm-vs-cold-handoff",
+   "label": "웜 vs 콜드 이관",
+   "parent": "human-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컨텍스트를 넘기는지 즉시 차단하는지의 차이.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "handoff-context-packet",
+   "label": "이관 컨텍스트 패킷",
+   "parent": "human-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약·사유·고객정보를 넘기는 형식.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "escalation-metrics",
+   "label": "이관 지표",
+   "parent": "human-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관율·재설명 비율·포기율을 함께 보는 법.",
    "added": "2026-11-14",
    "related": []
   }
