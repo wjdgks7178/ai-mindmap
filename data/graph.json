@@ -13993,33 +13993,42 @@
    "label": "NIST AI RMF Measure",
    "parent": "ai-pilot-metrics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "측정 기능의 하위 항목.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "fda-510k-de-novo-pma",
    "label": "510(k)·De Novo·PMA",
    "parent": "fda-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "FDA 의료기기 허가 세 경로의 차이.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "nist-ai-rmf-measure"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "fda-pccp",
    "label": "PCCP 사전 변경 관리 계획",
    "parent": "fda-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 후 모델 업데이트를 미리 승인받는 구조.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "samd",
@@ -14755,6 +14764,127 @@
    "status": "planned",
    "priority": 3,
    "summary": "한국에서의 녹음 동의 규칙.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "tevv",
+   "label": "TEVV 시험·평가·검증·확인",
+   "parent": "nist-ai-rmf-measure",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI RMF의 전 과정 평가 개념.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "trustworthiness-characteristics",
+   "label": "신뢰할 수 있는 AI 특성",
+   "parent": "nist-ai-rmf-measure",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "타당성·안전·보안·공정성 등 7가지 특성.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "risk-tracking-over-time",
+   "label": "위험 추적",
+   "parent": "nist-ai-rmf-measure",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영 중 위험 지표를 시간에 따라 모니터링.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "measurement-validity",
+   "label": "측정 타당성",
+   "parent": "nist-ai-rmf-measure",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표가 재려는 것을 제대로 재는지.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "predicate-device",
+   "label": "predicate 기기",
+   "parent": "fda-510k-de-novo-pma",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "510(k)에서 비교하는 기존 허가 기기.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "device-risk-classes",
+   "label": "의료기기 등급 I·II·III",
+   "parent": "fda-510k-de-novo-pma",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험도에 따른 FDA 분류.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "fda-ai-enabled-device-list",
+   "label": "FDA AI 기기 목록",
+   "parent": "fda-510k-de-novo-pma",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가된 AI 의료기기 공개 목록.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "clinical-validation-evidence",
+   "label": "임상 근거",
+   "parent": "fda-510k-de-novo-pma",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 심사에서 요구하는 성능 입증.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "modification-protocol",
+   "label": "수정 프로토콜",
+   "parent": "fda-pccp",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PCCP에 들어가는 재학습·검증 절차.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "model-drift-monitoring",
+   "label": "모델 드리프트 모니터링",
+   "parent": "fda-pccp",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 후 성능 변화 감시.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "section-515c",
+   "label": "FD&C Act 515C",
+   "parent": "fda-pccp",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PCCP의 법적 근거 조항.",
    "added": "2026-11-14",
    "related": []
   }
