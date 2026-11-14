@@ -13708,11 +13708,14 @@
    "label": "학습 vs 수행",
    "parent": "ai-in-education",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 도움으로 과제를 잘해도 실력이 안 느는 문제.",
    "added": "2026-11-13",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-14"
   },
   {
    "id": "jsonl-finetune-data",
@@ -14228,6 +14231,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "사전·사후 시험으로 학습 효과 재는 법.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ai-as-crutch",
+   "label": "AI 목발 효과",
+   "parent": "learning-vs-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연습 중 AI 의존이 시험 성적을 낮추는 현상.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cognitive-offloading",
+   "label": "인지적 오프로딩",
+   "parent": "learning-vs-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생각을 외부 도구에 맡기는 것의 득실.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "desirable-difficulties",
+   "label": "바람직한 어려움",
+   "parent": "learning-vs-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습에 도움이 되는 어려움의 교육학 개념.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "ai-free-assessment",
+   "label": "AI 없는 평가 설계",
+   "parent": "learning-vs-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구술·현장 시험으로 실력 확인하기.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "cognitive-debt-debate",
+   "label": "인지 부채 논쟁",
+   "parent": "learning-vs-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MIT 연구의 한계와 반론.",
    "added": "2026-11-14",
    "related": []
   }
