@@ -13876,11 +13876,12 @@
    "label": "Microsoft HAX 18개 지침",
    "parent": "ai-product-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "인간-AI 상호작용 지침 상세.",
    "added": "2026-11-13",
-   "related": []
+   "related": [],
+   "done": "2026-11-14"
   },
   {
    "id": "pair-guidebook",
@@ -14286,6 +14287,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "MIT 연구의 한계와 반론.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "hax-toolkit",
+   "label": "HAX Toolkit",
+   "parent": "hax-guidelines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침에 패턴·예시를 붙인 도구 모음.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "hax-when-wrong",
+   "label": "HAX 틀렸을 때 5개 지침",
+   "parent": "hax-guidelines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "호출·무시·수정·범위 축소·설명.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "hax-over-time",
+   "label": "HAX 시간 경과 7개 지침",
+   "parent": "hax-guidelines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기억·학습·피드백·변경 고지.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "explain-why-pattern",
+   "label": "왜 그랬는지 설명 패턴",
+   "parent": "hax-guidelines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 11의 UI 구현 방식.",
+   "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "graceful-degradation-ai",
+   "label": "불확실할 때 범위 좁히기",
+   "parent": "hax-guidelines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 10의 구체적 설계.",
    "added": "2026-11-14",
    "related": []
   }
