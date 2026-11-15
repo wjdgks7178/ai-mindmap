@@ -14283,55 +14283,70 @@
    "label": "생산적 어려움",
    "parent": "ai-tutor-guardrails",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습에 필요한 적당한 막힘의 교육학.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "learning-mode-products",
    "label": "학습 모드 제품 비교",
    "parent": "ai-tutor-guardrails",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Learning Mode·Study Mode 등 상용 튜터 모드.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "tutor-outcome-measurement",
    "label": "AI 튜터 성과 측정",
    "parent": "ai-tutor-guardrails",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사전·사후 시험으로 학습 효과 재는 법.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "ai-as-crutch",
    "label": "AI 목발 효과",
    "parent": "learning-vs-performance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "연습 중 AI 의존이 시험 성적을 낮추는 현상.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cognitive-offloading",
    "label": "인지적 오프로딩",
    "parent": "learning-vs-performance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "생각을 외부 도구에 맡기는 것의 득실.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "desirable-difficulties",
@@ -15562,6 +15577,160 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델·프롬프트 변경마다 재시험.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "interleaving-practice",
+   "label": "섞어 풀기",
+   "parent": "productive-struggle",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "섞어 풀기의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "retrieval-practice",
+   "label": "인출 연습",
+   "parent": "productive-struggle",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인출 연습의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "feedback-timing",
+   "label": "피드백 시점",
+   "parent": "productive-struggle",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "피드백 시점의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "socratic-tutor-prompt",
+   "label": "소크라테스식 튜터 프롬프트",
+   "parent": "learning-mode-products",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소크라테스식 튜터 프롬프트의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "study-mode-limits",
+   "label": "학습 모드의 한계",
+   "parent": "learning-mode-products",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 모드의 한계의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ai-quiz-generation",
+   "label": "AI 퀴즈 생성",
+   "parent": "learning-mode-products",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 퀴즈 생성의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "delayed-posttest",
+   "label": "지연 사후 시험",
+   "parent": "tutor-outcome-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지연 사후 시험의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "transfer-of-learning",
+   "label": "학습 전이",
+   "parent": "tutor-outcome-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 전이의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "control-group-design",
+   "label": "대조군 설계",
+   "parent": "tutor-outcome-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대조군 설계의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "independent-practice-rule",
+   "label": "먼저 혼자 풀기 규칙",
+   "parent": "ai-as-crutch",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "먼저 혼자 풀기 규칙의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ai-free-checkpoint",
+   "label": "AI 없는 점검 시험",
+   "parent": "ai-as-crutch",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 없는 점검 시험의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "verification-habit",
+   "label": "결과 검증 습관",
+   "parent": "cognitive-offloading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "결과 검증 습관의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "metacognition",
+   "label": "메타인지",
+   "parent": "cognitive-offloading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "메타인지의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "critical-thinking-with-ai",
+   "label": "AI와 비판적 사고",
+   "parent": "cognitive-offloading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI와 비판적 사고의 개념과 쓰임.",
    "added": "2026-11-15",
    "related": []
   }
