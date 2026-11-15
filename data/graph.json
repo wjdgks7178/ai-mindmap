@@ -14564,22 +14564,30 @@
    "label": "근거 일치도 표시",
    "parent": "ai-confidence-display",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확신 대신 근거 일치를 보여 주는 방식.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "hallucination",
+    "rag"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "context-paste-test",
    "label": "문서 붙여넣기 진단",
    "parent": "prompt-rag-finetune-choice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문서를 컨텍스트에 넣으면 맞히는지로 RAG 필요성 판단.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "rag",
+    "few-shot-prompting"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "few-shot-before-finetune",
@@ -16063,6 +16071,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 작업의 좋은·나쁜 기사 제목을 써 보는 점검.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "claim-level-attribution",
+   "label": "주장 단위 출처 연결",
+   "parent": "evidence-agreement-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 아닌 주장별로 근거 스팬을 연결.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "groundedness-metric",
+   "label": "근거성(groundedness) 지표",
+   "parent": "evidence-agreement-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답이 검색 근거에 지지되는 비율 측정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "citation-ui",
+   "label": "인용 UI 패턴",
+   "parent": "evidence-agreement-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위첨자·호버 미리보기 등 근거 표시 방식.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "long-context-limits",
+   "label": "긴 컨텍스트의 한계",
+   "parent": "context-paste-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "많이 넣어도 모델이 다 활용하진 않는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "eval-set-first",
+   "label": "질문·정답 세트 먼저 만들기",
+   "parent": "context-paste-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방식 선택 전에 평가 세트를 준비하는 원칙.",
    "added": "2026-11-15",
    "related": []
   }
