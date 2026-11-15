@@ -14159,22 +14159,26 @@
    "label": "통화 자동 요약·분류",
    "parent": "agent-assist",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상담 후처리를 AI가 채우는 기능.",
    "added": "2026-11-14",
-   "related": []
+   "related": [],
+   "done": "2026-11-15"
   },
   {
    "id": "suggestion-acceptance-rate",
    "label": "제안 수락률·수정률",
    "parent": "agent-assist",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어시스트 품질을 재는 지표.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "automation-bias"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "automation-bias",
@@ -15298,6 +15302,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "Reg B 개정과 별도로 차별 효과가 남는 법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "after-call-work",
+   "label": "후처리 시간 ACW",
+   "parent": "auto-call-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통화 후 기록 시간과 그 측정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "stt-error-propagation",
+   "label": "전사 오류 전파",
+   "parent": "auto-call-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "STT 오류가 요약·기록으로 번지는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "call-disposition-classification",
+   "label": "통화 처리 결과 분류",
+   "parent": "auto-call-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문의 유형·해결 여부 자동 태깅.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "accept-without-edit-rate",
+   "label": "무수정 수락률",
+   "parent": "suggestion-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과신 여부를 보는 보조 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "edit-distance-metric",
+   "label": "편집 거리 지표",
+   "parent": "suggestion-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제안과 최종본 차이를 재는 법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "post-acceptance-edit-rate",
+   "label": "수락 후 수정률",
+   "parent": "suggestion-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수락했지만 나중에 고친 비율.",
    "added": "2026-11-15",
    "related": []
   }
