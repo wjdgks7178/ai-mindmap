@@ -14609,11 +14609,14 @@
    "label": "파인튜닝 데이터 요건",
    "parent": "prompt-rag-finetune-choice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "필요한 데이터 양·품질·재학습 비용.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "rag"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "hybrid-rag-finetune",
@@ -16163,6 +16166,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "긴 예시가 호출량에 따라 비용·지연을 키우는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "lora-adapters",
+   "label": "LoRA 어댑터",
+   "parent": "finetune-data-requirements",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체가 아닌 저랭크 어댑터만 학습해 비용을 줄이는 방법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "train-eval-split",
+   "label": "학습·검증·평가 분할",
+   "parent": "finetune-data-requirements",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 데이터 누수를 막는 데이터 분할.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "data-labeling-qa",
+   "label": "라벨링 품질 관리",
+   "parent": "finetune-data-requirements",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차 검수·합의로 정답 오류를 줄이는 법.",
    "added": "2026-11-15",
    "related": []
   }
