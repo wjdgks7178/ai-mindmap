@@ -14682,22 +14682,30 @@
    "label": "EU AI Office",
    "parent": "eu-ai-act-penalties",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "GPAI 집행을 맡은 집행위 조직.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-gpai",
+    "gpai-code-of-practice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "gpai-code-of-practice",
    "label": "GPAI 실천 규범",
    "parent": "eu-ai-act-gpai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "2025-07 공개된 자발적 이행 규범.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-gpai",
+    "ai-office"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "systemic-risk-threshold",
@@ -16481,6 +16489,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI Act 집행을 맡는 국가별 당국.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "systemic-risk-model",
+   "label": "시스템 리스크 모델",
+   "parent": "ai-office",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Office가 분류하는 최고 수준 범용 모델.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ai-board",
+   "label": "AI Board",
+   "parent": "ai-office",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "회원국 대표로 구성된 협의체.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "scientific-panel",
+   "label": "AI 과학 패널",
+   "parent": "ai-office",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 전문가가 시스템 리스크를 자문.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "model-documentation-form",
+   "label": "모델 문서 양식",
+   "parent": "gpai-code-of-practice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "투명성 장의 제출 양식.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "copyright-policy-gpai",
+   "label": "GPAI 저작권 정책",
+   "parent": "gpai-code-of-practice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "EU 저작권법 준수 정책 수립.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "safety-security-chapter",
+   "label": "안전·보안 장",
+   "parent": "gpai-code-of-practice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시스템 리스크 관리 모범 사례.",
    "added": "2026-11-15",
    "related": []
   }
