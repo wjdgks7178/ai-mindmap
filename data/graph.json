@@ -15321,11 +15321,15 @@
    "label": "이유 코드",
    "parent": "ecoa-reg-b",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 결과를 거절 사유로 바꾸는 방식.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ecoa-reg-b",
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "shapley-values",
@@ -15374,11 +15378,15 @@
    "label": "변수→이유 문구 매핑",
    "parent": "shap-reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "SHAP 순위를 통지문 이유로 바꾸는 작업.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "shap-reason-codes",
+    "reason-codes"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "experience-curve-ai",
@@ -17896,6 +17904,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "도메인 규칙으로 모델 점검.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "adverse-action-timing",
+   "label": "통지 시한 30일·60일",
+   "parent": "reason-codes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접수 후 통지와 이유 요청 시한.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "automatic-denial-factors",
+   "label": "자동 거절 요인",
+   "parent": "reason-codes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파산 등 결정 요인 명시 의무.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "four-reason-guideline",
+   "label": "이유 4개 이내 권고",
+   "parent": "reason-codes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석의 개수 권고.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "reason-grouping",
+   "label": "이유 그룹핑",
+   "parent": "reason-code-mapping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상관된 변수를 하나의 이유로 묶기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "shap-background-choice",
+   "label": "SHAP 기준 분포 선택",
+   "parent": "reason-code-mapping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배경 데이터가 순위에 미치는 영향.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "mapping-version-control",
+   "label": "매핑표 버전 관리",
+   "parent": "reason-code-mapping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델과 문구표를 함께 관리.",
    "added": "2026-11-15",
    "related": []
   }
