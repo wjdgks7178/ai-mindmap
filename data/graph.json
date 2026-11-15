@@ -14843,11 +14843,15 @@
    "label": "기준표 채점",
    "parent": "llm-auto-rater",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "0/1 항목으로 쪼개 점수를 안정화.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "llm-auto-rater",
+    "cohens-kappa"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "pdqi-9",
@@ -16738,6 +16742,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "등급 간 거리를 반영한 kappa.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "binary-checklist-eval",
+   "label": "이진 체크리스트 평가",
+   "parent": "rubric-grading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예/아니오 항목으로 쪼개는 평가 설계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "likert-scale-anchors",
+   "label": "척도 기준 문장",
+   "parent": "rubric-grading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "척도 양끝을 서술문으로 고정하기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "grader-different-model",
+   "label": "채점 모델 분리",
+   "parent": "rubric-grading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성 모델과 다른 모델로 채점하는 이유.",
    "added": "2026-11-15",
    "related": []
   }
