@@ -14976,22 +14976,30 @@
    "label": "TEVV 시험·평가·검증·확인",
    "parent": "nist-ai-rmf-measure",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI RMF의 전 과정 평가 개념.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "nist-ai-rmf-measure",
+    "ai-evaluation"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "trustworthiness-characteristics",
    "label": "신뢰할 수 있는 AI 특성",
    "parent": "nist-ai-rmf-measure",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "타당성·안전·보안·공정성 등 7가지 특성.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "nist-ai-rmf-measure",
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "risk-tracking-over-time",
@@ -17058,6 +17066,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "참석자 동의·고지 설계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "measure-function",
+   "label": "MEASURE 함수",
+   "parent": "tevv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 위험을 분석·평가·추적하는 단계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "tevv-docs",
+   "label": "TEVV 문서화",
+   "parent": "tevv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테스트 세트·지표·도구 기록.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "independent-assessor",
+   "label": "독립 평가자",
+   "parent": "tevv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개발자가 아닌 평가 참여자.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "valid-and-reliable",
+   "label": "타당하고 신뢰할 수 있음",
+   "parent": "trustworthiness-characteristics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 특성의 기반이 되는 필요조건.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "trustworthiness-tradeoffs",
+   "label": "신뢰 특성 간 상충",
+   "parent": "trustworthiness-characteristics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도·해석·프라이버시 충돌 해결.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "nist-bias-categories",
+   "label": "NIST 편향 세 범주",
+   "parent": "trustworthiness-characteristics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시스템적·계산통계적·인지적 편향.",
    "added": "2026-11-15",
    "related": []
   }
