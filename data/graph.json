@@ -14769,11 +14769,14 @@
    "label": "오류 유형별 비용",
    "parent": "accuracy-economics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이관·재작업·이탈 등 실패 비용 분류.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "accuracy-economics"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "position-bias-judge",
@@ -16334,6 +16337,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "결과가 뒤집히는 가정 값을 미리 정해 두기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "cost-matrix",
+   "label": "비용 행렬",
+   "parent": "cost-of-error-types",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 4칸에 금액을 매겨 기대 비용을 계산.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "handling-time-cost",
+   "label": "건당 처리 비용 추정",
+   "parent": "cost-of-error-types",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간×인건비로 이관·재작업 비용 구하기.",
    "added": "2026-11-15",
    "related": []
   }
