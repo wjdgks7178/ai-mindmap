@@ -15151,33 +15151,44 @@
    "label": "IMDRF",
    "parent": "samd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "SaMD 용어를 만든 국제 규제 포럼.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "samd"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "simd",
    "label": "SiMD",
    "parent": "samd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "하드웨어에 내장된 의료 소프트웨어.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "samd",
+    "imdrf"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "samd-risk-categorization",
    "label": "SaMD 위험 분류",
    "parent": "samd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "상황·정보 중요도로 나누는 4단계.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "samd",
+    "device-risk-classes"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "fda-panel",
@@ -17464,6 +17475,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "긴급 상황에서 커지는 과의존.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "significance-of-information",
+   "label": "정보의 중요도 축",
+   "parent": "samd-risk-categorization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "치료·진단/관리 주도/참고 구분.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "healthcare-situation-axis",
+   "label": "상황 심각도 축",
+   "parent": "samd-risk-categorization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위급·중증·비중증.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "singapore-hsa-samd",
+   "label": "싱가포르 HSA SaMD 지침",
+   "parent": "samd-risk-categorization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IMDRF 틀을 참조한 국가 지침 예.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "n10-samd-definition",
+   "label": "N10 SaMD 정의",
+   "parent": "imdrf",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2013 IMDRF 용어 문서.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "samd-qms",
+   "label": "SaMD 품질관리",
+   "parent": "imdrf",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IMDRF 품질 관리 체계 문서.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "regulatory-harmonization",
+   "label": "규제 조화",
+   "parent": "imdrf",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "국가 간 의료기기 규칙 맞춤.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "firmware-medical",
+   "label": "기기 펌웨어",
+   "parent": "simd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기기 내장 소프트웨어의 규제 요건.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "software-function-policy",
+   "label": "소프트웨어 기능 정책",
+   "parent": "simd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA 기기 소프트웨어 기능 정책 문서.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "embedded-ai",
+   "label": "내장형 AI",
+   "parent": "simd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기기 안에서 도는 AI의 분류 문제.",
    "added": "2026-11-15",
    "related": []
   }
