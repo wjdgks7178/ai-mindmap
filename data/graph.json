@@ -15006,22 +15006,30 @@
    "label": "위험 추적",
    "parent": "nist-ai-rmf-measure",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "운영 중 위험 지표를 시간에 따라 모니터링.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "nist-ai-rmf-measure",
+    "tevv"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "measurement-validity",
    "label": "측정 타당성",
    "parent": "nist-ai-rmf-measure",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지표가 재려는 것을 제대로 재는지.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "nist-ai-rmf-measure",
+    "tevv"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "predicate-device",
@@ -17132,6 +17140,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "시스템적·계산통계적·인지적 편향.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "user-appeal-channel",
+   "label": "이의 제기 채널",
+   "parent": "risk-tracking-over-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영향받는 사람이 결과를 신고·이의 제기하는 경로.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "alternative-tracking",
+   "label": "대체 추적 방식",
+   "parent": "risk-tracking-over-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표 없는 위험을 전문가 검토로 추적.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "construct-validity",
+   "label": "구성 타당성",
+   "parent": "measurement-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표가 개념을 제대로 대표하는지.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "proxy-metric",
+   "label": "대리 지표",
+   "parent": "measurement-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정 어려운 목표를 다른 값으로 대체하는 위험.",
    "added": "2026-11-15",
    "related": []
   }
