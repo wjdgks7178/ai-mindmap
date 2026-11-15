@@ -14829,11 +14829,14 @@
    "label": "Cohen's kappa",
    "parent": "llm-auto-rater",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "우연 일치를 뺀 평가자 간 일치도.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "llm-auto-rater"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "rubric-grading",
@@ -16691,6 +16694,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "점수제 평가에서 순서 편향 줄이기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fleiss-kappa",
+   "label": "Fleiss kappa",
+   "parent": "cohens-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가자 3명 이상의 일치도.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "krippendorff-alpha",
+   "label": "Krippendorff alpha",
+   "parent": "cohens-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측·순서형도 다루는 일치도 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "kappa-prevalence-problem",
+   "label": "kappa의 유병률 문제",
+   "parent": "cohens-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 범주에서 일치가 높아도 낮게 나오는 현상.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "weighted-kappa",
+   "label": "가중 kappa",
+   "parent": "cohens-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "등급 간 거리를 반영한 kappa.",
    "added": "2026-11-15",
    "related": []
   }
