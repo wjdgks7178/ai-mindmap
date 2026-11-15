@@ -14623,11 +14623,14 @@
    "label": "RAG+파인튜닝 조합",
    "parent": "prompt-rag-finetune-choice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "형식은 학습, 지식은 검색으로 나누기.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "rag"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "gdpr-fines",
@@ -16199,6 +16202,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차 검수·합의로 정답 오류를 줄이는 법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "raft",
+   "label": "RAFT",
+   "parent": "hybrid-rag-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방해 문서 속에서 관련 문장을 인용하도록 파인튜닝하는 방법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "distractor-documents",
+   "label": "방해 문서(distractor)",
+   "parent": "hybrid-rag-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답과 무관하지만 비슷해 보이는 검색 문서.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hybrid-eval",
+   "label": "하이브리드 평가 설계",
+   "parent": "hybrid-rag-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RAG·파인튜닝 효과를 따로 분리 측정하는 법.",
    "added": "2026-11-15",
    "related": []
   }
