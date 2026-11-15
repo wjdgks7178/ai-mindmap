@@ -14199,11 +14199,12 @@
    "label": "챗봇 vs 어시스트 도입 순서",
    "parent": "agent-assist",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위험도 기준으로 어느 쪽부터 도입할지.",
    "added": "2026-11-14",
-   "related": []
+   "related": [],
+   "done": "2026-11-15"
   },
   {
    "id": "escalation-triggers",
@@ -15368,6 +15369,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "수락했지만 나중에 고친 비율.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "deflection-rate",
+   "label": "응대 전환율 deflection",
+   "parent": "ai-chatbot-vs-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "챗봇이 사람 없이 해결한 비율과 함정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "risk-tiered-intents",
+   "label": "문의 위험 등급화",
+   "parent": "ai-chatbot-vs-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문의를 위험도별로 나눠 자동화 범위 정하기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "rollout-gates",
+   "label": "단계 전환 기준",
+   "parent": "ai-chatbot-vs-assist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다음 단계로 넘어가는 지표 조건.",
    "added": "2026-11-15",
    "related": []
   }
