@@ -14858,22 +14858,30 @@
    "label": "PDQI-9",
    "parent": "clinical-note-accuracy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의사 문서 품질 9항목 채점 도구.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-note-accuracy",
+    "rubric-grading"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "omission-vs-hallucination",
    "label": "누락과 환각 구분",
    "parent": "clinical-note-accuracy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노트 오류의 두 큰 유형과 위험도.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "hallucination",
+    "pdqi-9"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "transcription-error",
@@ -16775,6 +16783,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "생성 모델과 다른 모델로 채점하는 이유.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "inter-rater-rwg",
+   "label": "평가자 간 일치도 RWG",
+   "parent": "pdqi-9",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "척도 평가자 일치 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "clinical-note-safety-review",
+   "label": "임상 노트 안전 검토",
+   "parent": "pdqi-9",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수와 별개로 중대 오류를 따로 거르는 절차.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "critical-omission-checklist",
+   "label": "필수 항목 누락 체크리스트",
+   "parent": "omission-vs-hallucination",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "알레르기·용량 등 필수 정보의 존재 확인.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "negative-finding-fabrication",
+   "label": "음성 소견 날조",
+   "parent": "omission-vs-hallucination",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "말하지 않은 없음을 기록하는 환각.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "error-denominator",
+   "label": "오류율 분모 문제",
+   "parent": "omission-vs-hallucination",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노트·문장·진료 기준에 따라 비율이 달라지는 이유.",
    "added": "2026-11-15",
    "related": []
   }
