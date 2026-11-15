@@ -14353,55 +14353,70 @@
    "label": "바람직한 어려움",
    "parent": "learning-vs-performance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습에 도움이 되는 어려움의 교육학 개념.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "ai-free-assessment",
    "label": "AI 없는 평가 설계",
    "parent": "learning-vs-performance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "구술·현장 시험으로 실력 확인하기.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cognitive-debt-debate",
    "label": "인지 부채 논쟁",
    "parent": "learning-vs-performance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "MIT 연구의 한계와 반론.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "hax-toolkit",
    "label": "HAX Toolkit",
    "parent": "hax-guidelines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지침에 패턴·예시를 붙인 도구 모음.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "hax-when-wrong",
    "label": "HAX 틀렸을 때 5개 지침",
    "parent": "hax-guidelines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "호출·무시·수정·범위 축소·설명.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "hax-over-time",
@@ -15731,6 +15746,116 @@
    "status": "planned",
    "priority": 4,
    "summary": "AI와 비판적 사고의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "oral-exam-design",
+   "label": "구술시험 설계",
+   "parent": "ai-free-assessment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구술시험 설계의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "interactive-oral-assessment",
+   "label": "상호작용 구술 평가",
+   "parent": "ai-free-assessment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "상호작용 구술 평가의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ai-detector-limits",
+   "label": "AI 탐지기의 한계",
+   "parent": "ai-free-assessment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 탐지기의 한계의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "eeg-study-limits",
+   "label": "EEG 연구 해석의 한계",
+   "parent": "cognitive-debt-debate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "EEG 연구 해석의 한계의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "preprint-vs-peer-review",
+   "label": "프리프린트와 동료 심사",
+   "parent": "cognitive-debt-debate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프리프린트와 동료 심사의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "media-overclaim",
+   "label": "연구 과장 보도 읽기",
+   "parent": "cognitive-debt-debate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연구 과장 보도 읽기의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hax-design-library",
+   "label": "HAX Design Library",
+   "parent": "hax-toolkit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "HAX Design Library의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hax-workbook",
+   "label": "HAX Workbook",
+   "parent": "hax-toolkit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "HAX Workbook의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hax-disambiguation",
+   "label": "HAX 모호성 해소 패턴",
+   "parent": "hax-when-wrong",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "HAX 모호성 해소 패턴의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hax-explanation-patterns",
+   "label": "HAX 설명 패턴",
+   "parent": "hax-when-wrong",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "HAX 설명 패턴의 개념과 쓰임.",
    "added": "2026-11-15",
    "related": []
   }
