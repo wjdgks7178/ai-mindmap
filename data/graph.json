@@ -14465,33 +14465,42 @@
    "label": "PAIR 사용자 요구·성공 정의",
    "parent": "pair-guidebook",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI가 정말 필요한지 판단하는 장.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "automation"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "pair-mental-models",
    "label": "PAIR 심성 모델",
    "parent": "pair-guidebook",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용자의 AI 이해와 기대 설정.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "literacy"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "pair-errors-graceful-failure",
    "label": "PAIR 오류와 부드러운 실패",
    "parent": "pair-guidebook",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오류 유형과 복구 경로 설계.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "pair-worksheets",
@@ -14509,22 +14518,28 @@
    "label": "말로 표현한 확신",
    "parent": "ai-confidence-display",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 자기 확신을 문장·숫자로 말하게 하는 방법.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "hedging-language-effects",
    "label": "헤징 문구의 효과",
    "parent": "ai-confidence-display",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불확실성 표현이 신뢰·과의존에 미치는 영향.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "user-overreliance",
@@ -15887,6 +15902,83 @@
    "status": "planned",
    "priority": 4,
    "summary": "되돌릴 수 없는 행동 전 확인의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "automation-vs-augmentation",
+   "label": "자동화 vs 증강",
+   "parent": "pair-user-needs",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자동화 vs 증강의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "reward-function-design",
+   "label": "보상 함수 설계",
+   "parent": "pair-user-needs",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보상 함수 설계의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "anthropomorphism-in-ai",
+   "label": "AI 의인화",
+   "parent": "pair-mental-models",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 의인화의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "background-errors",
+   "label": "배경 오류",
+   "parent": "pair-errors-graceful-failure",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배경 오류의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "human-handoff-on-failure",
+   "label": "실패 시 사람에게 통제권 돌려주기",
+   "parent": "pair-errors-graceful-failure",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실패 시 사람에게 통제권 돌려주기의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "calibration-ai",
+   "label": "보정(calibration)",
+   "parent": "verbalized-confidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보정(calibration)의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "uncertainty-ui-patterns",
+   "label": "불확실성 UI 패턴",
+   "parent": "hedging-language-effects",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "불확실성 UI 패턴의 개념과 쓰임.",
    "added": "2026-11-15",
    "related": []
   }
