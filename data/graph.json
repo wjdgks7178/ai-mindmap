@@ -15136,11 +15136,15 @@
    "label": "CDS 예외 4조건",
    "parent": "samd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "임상 의사결정 지원 소프트웨어 규제 제외 조건.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "samd",
+    "user-overreliance"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "imdrf",
@@ -17427,6 +17431,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정답이 늦게 올 때 대리 지표로 감시.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "cds-criterion-4",
+   "label": "조건 4: 근거 제시",
+   "parent": "cds-exemption",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의료진이 추천에만 의존하지 않도록 근거 공개.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "enforcement-discretion",
+   "label": "집행 재량",
+   "parent": "cds-exemption",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA가 요건을 집행하지 않겠다고 밝히는 방식.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "automation-bias-cds",
+   "label": "CDS의 자동화 편향",
+   "parent": "cds-exemption",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴급 상황에서 커지는 과의존.",
    "added": "2026-11-15",
    "related": []
   }
