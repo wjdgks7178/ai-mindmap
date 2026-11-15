@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "nodes": [
   {
    "id": "ai",
@@ -14105,22 +14105,26 @@
    "label": "해석 가능한 신용 모델",
    "parent": "adverse-action-explainability",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "단조 제약 GBM·로지스틱 회귀의 선택.",
    "added": "2026-11-14",
-   "related": []
+   "related": [],
+   "done": "2026-11-15"
   },
   {
    "id": "fair-lending-disparate-impact",
    "label": "공정 대출과 차별 효과",
    "parent": "adverse-action-explainability",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보호 속성에 따른 결과 격차 점검.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-bias-ethics"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "kr-automated-decision-right",
@@ -15218,6 +15222,83 @@
    "priority": 3,
    "summary": "권리 사용이 줄어드는 이유.",
    "added": "2026-11-14",
+   "related": []
+  },
+  {
+   "id": "woe-binning",
+   "label": "WoE 구간화",
+   "parent": "interpretable-credit-models",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주·구간을 위험 가중치 값으로 바꾸는 스코어카드 전처리.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "monotone-constraints",
+   "label": "단조 제약 설정법",
+   "parent": "interpretable-credit-models",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "XGBoost·LightGBM에서 변수별 방향을 거는 방법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "wrong-sign-diagnostic",
+   "label": "잘못된 부호 진단",
+   "parent": "interpretable-credit-models",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제약이 데이터와 어긋났는지 확인하는 점검.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "four-fifths-rule",
+   "label": "4/5 규칙",
+   "parent": "fair-lending-disparate-impact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "승인율 비 0.8 기준의 스크리닝 지표와 한계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "less-discriminatory-alternative",
+   "label": "덜 차별적 대안 LDA",
+   "parent": "fair-lending-disparate-impact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 목적을 달성하는 격차 작은 모델 탐색.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "proxy-variable",
+   "label": "프록시 변수",
+   "parent": "fair-lending-disparate-impact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보호 속성을 간접 반영하는 변수(우편번호 등).",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fair-housing-act",
+   "label": "공정주택법 FHA",
+   "parent": "fair-lending-disparate-impact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Reg B 개정과 별도로 차별 효과가 남는 법.",
+   "added": "2026-11-15",
    "related": []
   }
  ]
