@@ -15036,33 +15036,42 @@
    "label": "predicate 기기",
    "parent": "fda-510k-de-novo-pma",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "510(k)에서 비교하는 기존 허가 기기.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "device-risk-classes",
    "label": "의료기기 등급 I·II·III",
    "parent": "fda-510k-de-novo-pma",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위험도에 따른 FDA 분류.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "fda-ai-enabled-device-list",
    "label": "FDA AI 기기 목록",
    "parent": "fda-510k-de-novo-pma",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가된 AI 의료기기 공개 목록.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "clinical-validation-evidence",
@@ -17184,6 +17193,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "측정 어려운 목표를 다른 값으로 대체하는 위험.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "substantial-equivalence",
+   "label": "실질적 동등성(SE)",
+   "parent": "predicate-device",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "predicate와 용도·안전·효과가 같은 수준임을 보이는 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "predicate-creep",
+   "label": "predicate 사슬 문제",
+   "parent": "predicate-device",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연쇄 비교로 원본과 멀어지는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "pccp",
+   "label": "변경 관리 계획(PCCP)",
+   "parent": "predicate-device",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 후 AI 업데이트를 사전 승인받는 계획.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "general-vs-special-controls",
+   "label": "일반 통제 vs 특별 통제",
+   "parent": "device-risk-classes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "등급별 추가 요구 사항.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "intended-use-classification",
+   "label": "용도 기반 분류",
+   "parent": "device-risk-classes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 기술도 용도에 따라 등급이 달라짐.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "foundation-model-tagging",
+   "label": "파운데이션 모델 기기 표시",
+   "parent": "fda-ai-enabled-device-list",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 사용 기기 식별 계획.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fda-device-database",
+   "label": "FDA 기기 데이터베이스",
+   "parent": "fda-ai-enabled-device-list",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "510(k)·De Novo·PMA 기록 조회.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "radiology-ai-share",
+   "label": "영상의학 AI 비중",
+   "parent": "fda-ai-enabled-device-list",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허가 AI 기기에서 분야별 분포.",
    "added": "2026-11-15",
    "related": []
   }
