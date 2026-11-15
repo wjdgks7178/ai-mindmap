@@ -14740,11 +14740,15 @@
    "label": "사람 개입 라우팅",
    "parent": "accuracy-economics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확신도·위험도로 자동·검토를 나누는 설계.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "confidence-calibration",
+    "human-in-the-loop"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "sensitivity-analysis-ai-roi",
@@ -16250,6 +16254,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "확신과 정답률 차이를 요약한 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "double-threshold-policy",
+   "label": "이중 임계값 정책",
+   "parent": "human-in-the-loop-routing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위·아래 기준으로 자동 수락/거절/사람 검토를 가르는 방식.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "learning-to-defer",
+   "label": "위임 학습(learning to defer)",
+   "parent": "human-in-the-loop-routing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 스스로 사람에게 넘길 시점을 학습.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "review-queue-design",
+   "label": "검토 큐 설계",
+   "parent": "human-in-the-loop-routing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신·금액 기준 정렬과 기록 항목.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "active-learning-review",
+   "label": "능동 학습형 검토",
+   "parent": "human-in-the-loop-routing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보량 큰 건을 우선 사람에게 보내 학습에 반영.",
    "added": "2026-11-15",
    "related": []
   }
