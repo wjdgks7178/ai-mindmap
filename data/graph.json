@@ -14546,11 +14546,15 @@
    "label": "사용자 과의존",
    "parent": "ai-confidence-display",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정확도를 과대평가해 AI를 맹신하는 현상.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "hallucination",
+    "calibration"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "evidence-agreement-score",
@@ -15979,6 +15983,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "불확실성 UI 패턴의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "undertrust-ai",
+   "label": "AI 과소의존",
+   "parent": "user-overreliance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞는 AI 답도 믿지 않는 반대 방향 오류.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "trust-calibration",
+   "label": "신뢰 보정",
+   "parent": "user-overreliance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 신뢰를 AI 실제 신뢰도에 맞추는 설계 목표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "friction-by-design",
+   "label": "의도적 마찰 설계",
+   "parent": "user-overreliance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확인 단계를 넣어 맹신을 줄이는 UX.",
    "added": "2026-11-15",
    "related": []
   }
