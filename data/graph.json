@@ -14888,11 +14888,15 @@
    "label": "전사 오류",
    "parent": "clinical-note-accuracy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "음성 인식 단계 실수가 노트로 전파.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-note-accuracy",
+    "hallucination"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "clinician-review-signoff",
@@ -16838,6 +16842,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "노트·문장·진료 기준에 따라 비율이 달라지는 이유.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "voice-activity-detection",
+   "label": "음성 구간 검출(VAD)",
+   "parent": "transcription-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무음 구간을 걸러 환각을 줄이는 전처리.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "wer-limits",
+   "label": "WER의 한계",
+   "parent": "transcription-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 단위 환각을 놓치는 지표 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "audio-retention-tradeoff",
+   "label": "원본 오디오 보관 딜레마",
+   "parent": "transcription-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 가능성과 개인정보 보호의 균형.",
    "added": "2026-11-15",
    "related": []
   }
