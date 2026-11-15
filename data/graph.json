@@ -15589,44 +15589,60 @@
    "label": "4/5 규칙",
    "parent": "fair-lending-disparate-impact",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "승인율 비 0.8 기준의 스크리닝 지표와 한계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fair-lending-disparate-impact",
+    "disparate-impact-credit"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "less-discriminatory-alternative",
    "label": "덜 차별적 대안 LDA",
    "parent": "fair-lending-disparate-impact",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 목적을 달성하는 격차 작은 모델 탐색.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fair-lending-disparate-impact",
+    "disparate-impact-credit"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "proxy-variable",
    "label": "프록시 변수",
    "parent": "fair-lending-disparate-impact",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보호 속성을 간접 반영하는 변수(우편번호 등).",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fair-lending-disparate-impact",
+    "disparate-impact-credit"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "fair-housing-act",
    "label": "공정주택법 FHA",
    "parent": "fair-lending-disparate-impact",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Reg B 개정과 별도로 차별 효과가 남는 법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fair-lending-disparate-impact",
+    "disparate-impact-credit"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "after-call-work",
@@ -18518,6 +18534,138 @@
    "status": "planned",
    "priority": 3,
    "summary": "방향 가정을 사람이 확인.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "adverse-impact-ratio",
+   "label": "불리한 영향 비율",
+   "parent": "four-fifths-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 선발률 비를 계산하는 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "statistical-significance-adverse-impact",
+   "label": "통계적 유의성과 실질적 유의성",
+   "parent": "four-fifths-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 크기와 효과 크기를 함께 보기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "small-sample-caveat",
+   "label": "작은 표본 주의",
+   "parent": "four-fifths-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 작을 때 비율의 불안정성.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "model-multiplicity",
+   "label": "모델 다중성",
+   "parent": "less-discriminatory-alternative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성능이 같은 모델이 여러 개 존재.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "lda-search-process",
+   "label": "LDA 탐색 절차",
+   "parent": "less-discriminatory-alternative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 생성·비교·기록.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fairness-constrained-training",
+   "label": "공정성 제약 학습",
+   "parent": "less-discriminatory-alternative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 단계에서 격차 제한.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "protected-attribute-inference",
+   "label": "보호 속성 추정",
+   "parent": "proxy-variable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이름·지역으로 인종·성별을 추정하는 방법과 오차.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "proxy-detection-model",
+   "label": "프록시 탐지 모델",
+   "parent": "proxy-variable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 변수로 보호 속성을 예측해 보는 점검.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "performance-fairness-tradeoff",
+   "label": "성능-공정성 균형",
+   "parent": "proxy-variable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수 제거 시 성능 하락 기록.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hud-disparate-impact-rule",
+   "label": "HUD 차별 영향 규정",
+   "parent": "fair-housing-act",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2013·2023 규정과 2026 폐지 제안.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "loper-bright",
+   "label": "Loper Bright 판결",
+   "parent": "fair-housing-act",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기관 해석 존중 약화 판결.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "inclusive-communities",
+   "label": "Inclusive Communities 사건",
+   "parent": "fair-housing-act",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FHA 차별 영향 책임을 인정한 사건.",
    "added": "2026-11-15",
    "related": []
   }
