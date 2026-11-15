@@ -14903,11 +14903,15 @@
    "label": "의사 검토·서명 절차",
    "parent": "clinical-note-accuracy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 초안을 사람이 확인하는 흐름.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-note-accuracy",
+    "user-overreliance"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "all-party-consent",
@@ -16875,6 +16879,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "검증 가능성과 개인정보 보호의 균형.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "attestation-weakness",
+   "label": "한 번 클릭 인증의 약점",
+   "parent": "clinician-review-signoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식적 서명을 막는 설계 필요.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "unedited-note-rate",
+   "label": "무수정 서명 비율",
+   "parent": "clinician-review-signoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토 형식화를 감지하는 운영 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "source-linked-note",
+   "label": "근거 연결형 노트",
+   "parent": "clinician-review-signoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장마다 원본 대화 구간을 링크.",
    "added": "2026-11-15",
    "related": []
   }
