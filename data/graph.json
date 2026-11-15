@@ -15195,11 +15195,15 @@
    "label": "FDA 심사 패널",
    "parent": "radiology-ai-dominance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의료기기를 분과별로 나누는 분류.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "radiology-ai-dominance",
+    "device-risk-classes"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cardiology-ai-devices",
@@ -17574,6 +17578,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "기기 안에서 도는 AI의 분류 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "product-code",
+   "label": "제품 코드",
+   "parent": "fda-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA 기기 유형 식별 코드.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "cfr-862-892",
+   "label": "21 CFR 862~892",
+   "parent": "fda-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분과별 기기 분류 규정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "advisory-panel-meeting",
+   "label": "FDA 자문 패널 회의",
+   "parent": "fda-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 전문가 자문 회의와 용어 구분.",
    "added": "2026-11-15",
    "related": []
   }
