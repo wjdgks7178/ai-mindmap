@@ -14247,33 +14247,36 @@
    "label": "이관 지표",
    "parent": "human-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이관율·재설명 비율·포기율을 함께 보는 법.",
    "added": "2026-11-14",
-   "related": []
+   "related": [],
+   "done": "2026-11-15"
   },
   {
    "id": "staged-hints",
    "label": "단계별 힌트 설계",
    "parent": "ai-tutor-guardrails",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "약한 힌트에서 강한 힌트로 올리는 구조.",
    "added": "2026-11-14",
-   "related": []
+   "related": [],
+   "done": "2026-11-15"
   },
   {
    "id": "tutor-jailbreak-testing",
    "label": "튜터 우회 시험",
    "parent": "ai-tutor-guardrails",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답 요구 프롬프트에 버티는지 점검.",
    "added": "2026-11-14",
-   "related": []
+   "related": [],
+   "done": "2026-11-15"
   },
   {
    "id": "productive-struggle",
@@ -15482,6 +15485,83 @@
    "status": "planned",
    "priority": 3,
    "summary": "필요한 정보만 넘기는 원칙.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "containment-rate-trap",
+   "label": "봉쇄율의 함정",
+   "parent": "escalation-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "포기를 성공으로 세는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "transfer-success-rate",
+   "label": "이관 성공률",
+   "parent": "escalation-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맥락이 보존된 이관 비율.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "queue-abandonment",
+   "label": "대기열 이탈률",
+   "parent": "escalation-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 대기 중 떠나는 고객.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hint-escalation-rule",
+   "label": "힌트 상승 규칙",
+   "parent": "staged-hints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언제 다음 단계로 넘기나.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hint-abuse-detection",
+   "label": "힌트 남용 탐지",
+   "parent": "staged-hints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시도 없이 힌트만 소비하는 패턴.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "bypass-prompt-set",
+   "label": "우회 프롬프트 세트",
+   "parent": "tutor-jailbreak-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 요구 시나리오 모음.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "tutor-regression-eval",
+   "label": "튜터 회귀 평가",
+   "parent": "tutor-jailbreak-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델·프롬프트 변경마다 재시험.",
    "added": "2026-11-15",
    "related": []
   }
