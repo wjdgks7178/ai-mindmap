@@ -14637,22 +14637,30 @@
    "label": "GDPR 과징금",
    "parent": "eu-ai-act-penalties",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개인정보 위반 과징금과 AI Act 비교.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-penalties",
+    "gdpr-ai"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "sme-fine-rule",
    "label": "SME 과태료 낮은 쪽 규칙",
    "parent": "eu-ai-act-penalties",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "중소기업은 금액·비율 중 낮은 값이 상한.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-penalties",
+    "gdpr-fines"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "ai-act-enforcement-timeline",
@@ -16359,6 +16367,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "시간×인건비로 이관·재작업 비용 구하기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "dpa-enforcement",
+   "label": "감독기관 집행 사례",
+   "parent": "gdpr-fines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 부과된 GDPR 과징금과 사유.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fine-factors",
+   "label": "과징금 결정 요소",
+   "parent": "gdpr-fines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고의·협조·완화 조치 등이 금액에 미치는 영향.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "data-protection-by-design",
+   "label": "설계 단계 개인정보 보호",
+   "parent": "gdpr-fines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 의무와 AI 개발 적용.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "sme-definition",
+   "label": "SME 정의",
+   "parent": "sme-fine-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직원 수·매출·자산으로 구분하는 EU 중소기업 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "small-mid-cap",
+   "label": "소형 중견기업",
+   "parent": "sme-fine-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Act 개정에 새로 등장한 중간 규모 범주.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "digital-omnibus",
+   "label": "디지털 옴니버스",
+   "parent": "sme-fine-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Act 적용 일정·부담 완화 개정 논의.",
    "added": "2026-11-15",
    "related": []
   }
