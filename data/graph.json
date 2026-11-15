@@ -15442,44 +15442,58 @@
    "label": "인지적 강제 장치",
    "parent": "automation-bias",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 답을 보기 전에 자기 판단을 먼저 쓰게 하는 설계.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "automation-bias",
+    "user-overreliance"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "deskilling",
    "label": "숙련도 저하",
    "parent": "automation-bias",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI에 의존해 기본 역량이 퇴화하는 위험.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "automation-bias"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "automation-complacency",
    "label": "자동화 안주",
    "parent": "automation-bias",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템 감시에 대한 주의가 줄어드는 현상.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "automation-bias"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "explanations-overreliance",
    "label": "설명이 과신을 부르는 문제",
    "parent": "automation-bias",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "근거 표시가 오히려 수용을 높이는 현상.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "automation-bias",
+    "user-overreliance"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "credit-info-act-36-2",
@@ -18151,6 +18165,138 @@
    "status": "planned",
    "priority": 3,
    "summary": "제한 접근 데이터 이용 조건.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "decide-first-then-ai",
+   "label": "먼저 판단하고 AI 보기",
+   "parent": "cognitive-forcing-function",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 판단 후 추천 공개.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "need-for-cognition",
+   "label": "인지 욕구",
+   "parent": "cognitive-forcing-function",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노력이 드는 사고를 즐기는 정도와 효과 차이.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "trust-vs-effectiveness",
+   "label": "신뢰와 효과의 긴장",
+   "parent": "cognitive-forcing-function",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "효과가 큰 설계가 덜 선호되는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "complementary-team-performance",
+   "label": "보완적 팀 성능",
+   "parent": "explanations-overreliance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람+AI가 각자보다 나은 상태.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "acceptance-by-correctness",
+   "label": "정답·오답별 수용률",
+   "parent": "explanations-overreliance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명 효과를 가르는 측정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "counter-evidence-display",
+   "label": "반대 근거 함께 보이기",
+   "parent": "explanations-overreliance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명의 균형을 맞추는 방법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "adenoma-detection-rate",
+   "label": "선종 발견율(ADR)",
+   "parent": "deskilling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대장내시경 질 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ai-off-training",
+   "label": "AI 없는 훈련",
+   "parent": "deskilling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 없이 수행하는 정기 연습.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "observational-vs-causal",
+   "label": "관찰 연구와 인과",
+   "parent": "deskilling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전후 비교의 한계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "seeded-error-testing",
+   "label": "오류 삽입 테스트",
+   "parent": "automation-complacency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "알려진 오류를 섞어 검수 주의 측정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "vigilance-decrement",
+   "label": "경계 저하",
+   "parent": "automation-complacency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감시 과제에서 시간이 갈수록 주의가 떨어짐.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "takeover-timing",
+   "label": "수동 인수 지연",
+   "parent": "automation-complacency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 시스템 실패 시 반응 지연.",
    "added": "2026-11-15",
    "related": []
   }
