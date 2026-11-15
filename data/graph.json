@@ -15500,33 +15500,44 @@
    "label": "신용정보법 제36조의2",
    "parent": "kr-automated-decision-right",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자동화평가 설명·이의제기 조항.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "kr-automated-decision-right",
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "pipa-automated-decision",
    "label": "개인정보 보호법 자동화 결정 대응권",
    "parent": "kr-automated-decision-right",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정보주체의 별도 대응권.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "kr-automated-decision-right",
+    "credit-info-act-36-2"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "explanation-request-trend",
    "label": "설명요구 이용 현황",
    "parent": "kr-automated-decision-right",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "권리 사용이 줄어드는 이유.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "kr-automated-decision-right"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "woe-binning",
@@ -18297,6 +18308,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "자동 시스템 실패 시 반응 지연.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "automated-evaluation",
+   "label": "자동화평가",
+   "parent": "credit-info-act-36-2",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 개입 없이 컴퓨터로만 하는 평가.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "recalculation-request",
+   "label": "결과 재산출 요구",
+   "parent": "credit-info-act-36-2",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정정·삭제 후 평가를 다시 산출.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "refusal-grounds",
+   "label": "요구 거부 사유",
+   "parent": "credit-info-act-36-2",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "법령·거래 곤란 등.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fully-automated",
+   "label": "완전 자동화 결정",
+   "parent": "pipa-automated-decision",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 개입이 없는 결정의 판단 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "significant-impact",
+   "label": "중대한 영향",
+   "parent": "pipa-automated-decision",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거부권 적용 대상 판단 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "human-reprocessing",
+   "label": "인적 개입 재처리",
+   "parent": "pipa-automated-decision",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 다시 검토하는 조치.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "right-awareness",
+   "label": "권리 인지율",
+   "parent": "explanation-request-trend",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보주체가 권리를 아는 정도.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "exercise-barriers",
+   "label": "권리 행사 장벽",
+   "parent": "explanation-request-trend",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요건·절차·정보 비대칭.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "automated-decision-stats-source",
+   "label": "공식 통계 출처",
+   "parent": "explanation-request-trend",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "금감원·신정원·개인정보위 자료.",
    "added": "2026-11-15",
    "related": []
   }
