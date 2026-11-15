@@ -15210,22 +15210,29 @@
    "label": "심혈관 AI 기기",
    "parent": "radiology-ai-dominance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "영상의학 다음으로 많은 분야.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "radiology-ai-dominance",
+    "fda-panel"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "medical-imaging-datasets",
    "label": "의료 영상 데이터셋",
    "parent": "radiology-ai-dominance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "영상 AI 학습 데이터의 특징.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "radiology-ai-dominance"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "retrospective-vs-prospective",
@@ -18067,6 +18074,83 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 데이터 제공 보상 설계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ecg-ai",
+   "label": "ECG AI",
+   "parent": "cardiology-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "심전도 신호를 분석하는 AI.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "echocardiography-ai",
+   "label": "심초음파 AI",
+   "parent": "cardiology-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박출률 등을 자동 측정하는 AI.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "panel-classification-caveat",
+   "label": "패널 분류의 함정",
+   "parent": "cardiology-ai-devices",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 심장 AI도 분야가 달라질 수 있음.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "mimic-cxr",
+   "label": "MIMIC-CXR",
+   "parent": "medical-imaging-datasets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보스턴 병원 흉부 X선과 판독문 데이터셋.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "tcia",
+   "label": "TCIA",
+   "parent": "medical-imaging-datasets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "암 영상 공개 아카이브.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "dicom-deidentification",
+   "label": "DICOM 비식별화",
+   "parent": "medical-imaging-datasets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상 메타데이터의 개인정보 제거.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "data-use-agreement",
+   "label": "데이터 사용 계약(DUA)",
+   "parent": "medical-imaging-datasets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제한 접근 데이터 이용 조건.",
    "added": "2026-11-15",
    "related": []
   }
