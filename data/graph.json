@@ -14712,33 +14712,45 @@
    "label": "체계적 위험 10^25 FLOP 기준",
    "parent": "eu-ai-act-gpai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 연산량 기준 추정 규칙.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-gpai",
+    "ai-office"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "training-data-summary",
    "label": "학습 데이터 공개 요약",
    "parent": "eu-ai-act-gpai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제53조 템플릿 요구.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-gpai",
+    "gpai-code-of-practice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "downstream-provider-info",
    "label": "하류 제공자 정보 의무",
    "parent": "eu-ai-act-gpai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 한계·사용 지침 제공.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act-gpai",
+    "gpai-code-of-practice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "confidence-calibration",
@@ -16555,6 +16567,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "시스템 리스크 관리 모범 사례.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "flop-compute",
+   "label": "FLOP(연산량)",
+   "parent": "systemic-risk-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습에 쓰인 부동소수점 연산 횟수.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "annex-xiii-criteria",
+   "label": "부속서 XIII 기준",
+   "parent": "systemic-risk-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연산량 외 시스템 리스크 지정 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "art-55-obligations",
+   "label": "55조 시스템 리스크 의무",
+   "parent": "systemic-risk-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가·적대적 테스트·사고 보고·보안.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "tdm-opt-out",
+   "label": "TDM 옵트아웃",
+   "parent": "training-data-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저작권 지침 4(3)조의 권리 유보 제도.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "annex-xi-documentation",
+   "label": "부속서 XI 기술 문서",
+   "parent": "training-data-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Office·당국에 제공하는 문서 항목.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "open-source-exemption-gpai",
+   "label": "GPAI 오픈소스 면제",
+   "parent": "training-data-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "53조 2항 면제 범위와 예외.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "annex-xii-info",
+   "label": "부속서 XII 정보 항목",
+   "parent": "downstream-provider-info",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하류 제공자에게 줄 정보 목록.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "deployer-vs-provider",
+   "label": "제공자 vs 배포자",
+   "parent": "downstream-provider-info",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Act의 역할 구분.",
    "added": "2026-11-15",
    "related": []
   }
