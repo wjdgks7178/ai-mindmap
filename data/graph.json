@@ -15277,33 +15277,44 @@
    "label": "불리한 조치 통지",
    "parent": "ecoa-reg-b",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "거절 시 이유를 알리는 서류.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ecoa-reg-b"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cfpb-circular-2023-03",
    "label": "CFPB 회람 2023-03",
    "parent": "ecoa-reg-b",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 신용모델 통지 해설.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ecoa-reg-b",
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "disparate-impact-credit",
    "label": "신용 차별 영향 분석",
    "parent": "ecoa-reg-b",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의도 없이 불리한 결과를 낳는 차별.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ecoa-reg-b",
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "reason-codes",
@@ -17733,6 +17744,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 방식에 따른 감시 차이.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "post-hoc-explanation-validity",
+   "label": "사후 설명의 정확도 검증",
+   "parent": "adverse-action-notice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근사 설명이 모델 실제 동작과 맞는지 검증.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "cfpb-guidance-withdrawal-2025",
+   "label": "CFPB 지침 철회 2025",
+   "parent": "adverse-action-notice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2025-05-12 철회 목록과 의미.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "sample-forms-checklist",
+   "label": "샘플 양식 체크리스트",
+   "parent": "cfpb-circular-2023-03",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Reg B 샘플 이유 목록 사용의 한계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "guidance-vs-regulation",
+   "label": "지침과 조문의 차이",
+   "parent": "cfpb-circular-2023-03",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "철회되어도 조문은 남는 이유.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "proxy-variable-credit",
+   "label": "대리 변수",
+   "parent": "disparate-impact-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보호 속성과 상관된 중립 변수 문제.",
    "added": "2026-11-15",
    "related": []
   }
