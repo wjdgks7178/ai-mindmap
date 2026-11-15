@@ -14507,11 +14507,14 @@
    "label": "PAIR 워크시트 활용",
    "parent": "pair-guidebook",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "팀 워크숍에서 쓰는 방법.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "user-overreliance"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "verbalized-confidence",
@@ -16016,6 +16019,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "확인 단계를 넣어 맹신을 줄이는 UX.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "errors-audit",
+   "label": "오류 감사",
+   "parent": "pair-worksheets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시스템이 낼 오류와 사용자 영향, 예방·복구 계획을 정리.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "explainability-audit",
+   "label": "설명 가능성 감사",
+   "parent": "pair-worksheets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자에게 보이는 설명이 상태·지식 격차에 맞는지 점검.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "controls-audit",
+   "label": "통제 감사",
+   "parent": "pair-worksheets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험에 맞춰 사용자 통제 수준을 정하는 활동.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "data-headlines",
+   "label": "데이터 헤드라인",
+   "parent": "pair-worksheets",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 작업의 좋은·나쁜 기사 제목을 써 보는 점검.",
    "added": "2026-11-15",
    "related": []
   }
