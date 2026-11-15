@@ -15078,11 +15078,15 @@
    "label": "임상 근거",
    "parent": "fda-510k-de-novo-pma",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 심사에서 요구하는 성능 입증.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma",
+    "tevv"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "modification-protocol",
@@ -17281,6 +17285,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "허가 AI 기기에서 분야별 분포.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "mrmc-study",
+   "label": "MRMC 독자 연구",
+   "parent": "clinical-validation-evidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 판독자·증례로 AI 보조 효과를 비교하는 설계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "external-validation",
+   "label": "외부 검증",
+   "parent": "clinical-validation-evidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간·병원이 분리된 데이터로 일반화 확인.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "pre-sub",
+   "label": "FDA 사전 상담(Pre-Sub)",
+   "parent": "clinical-validation-evidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제출 전 시험 설계를 FDA와 협의.",
    "added": "2026-11-15",
    "related": []
   }
