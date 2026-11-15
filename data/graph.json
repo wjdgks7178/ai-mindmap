@@ -15332,33 +15332,42 @@
    "label": "Shapley 값",
    "parent": "shap-reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "게임이론 기반 기여도 분배 개념.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "shap-reason-codes"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "monotonic-constraints",
    "label": "단조 제약",
    "parent": "shap-reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변수와 점수의 방향을 고정하는 학습 제약.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "shap-reason-codes"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "counterfactual-explanation",
    "label": "반사실 설명",
    "parent": "shap-reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무엇을 바꾸면 결과가 바뀌는지 알려 주는 설명.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "shap-reason-codes"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "reason-code-mapping",
@@ -17799,6 +17808,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "보호 속성과 상관된 중립 변수 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "shap-library",
+   "label": "SHAP 라이브러리",
+   "parent": "shapley-values",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Shapley 기반 설명 도구와 시각화.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "feature-correlation-shap",
+   "label": "상관 변수와 SHAP",
+   "parent": "shapley-values",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수 간 상관이 해석에 주는 영향.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "global-vs-local-explanation",
+   "label": "전역 vs 지역 설명",
+   "parent": "shapley-values",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 모델 설명과 한 건 설명의 차이.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "actionable-recourse",
+   "label": "실행 가능한 구제(recourse)",
+   "parent": "counterfactual-explanation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자가 실제로 바꿀 수 있는 변경만 제시.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "counterfactual-diversity",
+   "label": "반사실의 다양성",
+   "parent": "counterfactual-explanation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 대안을 주는 이유.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "explanation-right-gdpr",
+   "label": "GDPR 설명받을 권리 논쟁",
+   "parent": "counterfactual-explanation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "법적 근거와 한계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "monotone-constraints-xgboost",
+   "label": "XGBoost 단조 제약 설정",
+   "parent": "monotonic-constraints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "monotone_constraints 사용법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "model-sanity-rules",
+   "label": "모델 상식 규칙",
+   "parent": "monotonic-constraints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인 규칙으로 모델 점검.",
    "added": "2026-11-15",
    "related": []
   }
