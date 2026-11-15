@@ -14667,11 +14667,15 @@
    "label": "AI Act 시행 일정",
    "parent": "eu-ai-act-penalties",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "2025-02부터 2027-08까지 단계별 적용.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "eu-ai-act",
+    "eu-ai-act-gpai"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "ai-office",
@@ -16433,6 +16437,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI Act 적용 일정·부담 완화 개정 논의.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "article-50-transparency",
+   "label": "50조 투명성 의무",
+   "parent": "ai-act-enforcement-timeline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 상호작용 고지·생성물 표시 의무.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "ai-act-sandbox",
+   "label": "AI 규제 샌드박스",
+   "parent": "ai-act-enforcement-timeline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "회원국이 2027-08까지 운영해야 하는 시험 환경.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "annex-iii-delay",
+   "label": "부속서 III 적용 연기",
+   "parent": "ai-act-enforcement-timeline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고위험 적용일 2027-12로 늦춰진 경위 확인.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "national-authorities",
+   "label": "회원국 감독기관",
+   "parent": "ai-act-enforcement-timeline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Act 집행을 맡는 국가별 당국.",
    "added": "2026-11-15",
    "related": []
   }
