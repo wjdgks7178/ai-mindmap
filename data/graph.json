@@ -14918,44 +14918,58 @@
    "label": "전원 동의(all-party consent)",
    "parent": "recording-consent-law",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모든 대화 당사자 동의를 요구하는 녹음법.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "recording-consent-law"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "business-associate-agreement",
    "label": "BAA(사업 파트너 계약)",
    "parent": "recording-consent-law",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "HIPAA에서 업체가 정보를 다루기 위한 계약.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "recording-consent-law"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cipa-lawsuits",
    "label": "CIPA 소송",
    "parent": "recording-consent-law",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "캘리포니아 침해 방지법 기반 AI 녹음 소송.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "recording-consent-law",
+    "all-party-consent"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "kr-communication-secrecy-law",
    "label": "한국 통신비밀보호법",
    "parent": "recording-consent-law",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한국에서의 녹음 동의 규칙.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "recording-consent-law",
+    "all-party-consent"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "tevv",
@@ -16912,6 +16926,138 @@
    "status": "planned",
    "priority": 3,
    "summary": "문장마다 원본 대화 구간을 링크.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "one-party-consent",
+   "label": "일방 동의",
+   "parent": "all-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화 참여자 한 명 동의로 녹음 가능한 규칙.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "recording-notice-design",
+   "label": "녹음 고지 설계",
+   "parent": "all-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통화 초반 고지·동의·거부 흐름.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "cross-state-calls",
+   "label": "주 경계 통화",
+   "parent": "all-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주마다 다른 녹음법이 겹칠 때.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "phi",
+   "label": "PHI(보호 대상 건강정보)",
+   "parent": "business-associate-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HIPAA가 보호하는 개인 식별 가능 건강 정보.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "baa-model-training",
+   "label": "BAA와 모델 학습 조항",
+   "parent": "business-associate-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PHI를 학습에 쓸 수 있는지 계약으로 규정.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "subcontractor-flowdown",
+   "label": "하청 BAA 연쇄",
+   "parent": "business-associate-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업체의 업체까지 의무가 이어지는 구조.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "capability-test",
+   "label": "능력 테스트",
+   "parent": "cipa-lawsuits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업체가 데이터를 이용할 능력만으로 제3자로 보는 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "extension-test",
+   "label": "연장 테스트",
+   "parent": "cipa-lawsuits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업체가 기업의 녹음기에 불과한지 보는 기준.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "popa-v-microsoft",
+   "label": "Popa v. Microsoft",
+   "parent": "cipa-lawsuits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "당사자 적격 요건을 높인 2025 판결.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "party-recording-rule",
+   "label": "당사자 녹음 원칙",
+   "parent": "kr-communication-secrecy-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "참여자가 자기 대화를 녹음하는 경우의 법적 취급.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "voice-personal-data",
+   "label": "음성의 개인정보 성격",
+   "parent": "kr-communication-secrecy-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "녹음 음성이 개인정보법 대상이 되는 경우.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "meeting-ai-notetaker",
+   "label": "회의 AI 노트테이커",
+   "parent": "kr-communication-secrecy-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "참석자 동의·고지 설계.",
    "added": "2026-11-15",
    "related": []
   }
