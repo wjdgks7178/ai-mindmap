@@ -15232,33 +15232,45 @@
    "label": "후향적 vs 전향적 연구",
    "parent": "clinical-validation-vs-clearance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과거 데이터 시험과 실제 환자 시험의 차이.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-validation-vs-clearance",
+    "clinical-validation-evidence"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "ai-device-recalls",
    "label": "AI 기기 리콜",
    "parent": "clinical-validation-vs-clearance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "리콜과 검증 부재의 상관.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-validation-vs-clearance",
+    "model-drift-monitoring"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "post-market-surveillance",
    "label": "시판 후 감시",
    "parent": "clinical-validation-vs-clearance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 후 성능 모니터링.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "clinical-validation-vs-clearance",
+    "model-drift-monitoring"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "adverse-action-notice",
@@ -17611,6 +17623,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "외부 전문가 자문 회의와 용어 구분.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "selection-bias-medical-data",
+   "label": "선택 편향",
+   "parent": "retrospective-vs-prospective",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정리된 병원 데이터만 쓸 때의 편향.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "randomized-controlled-trial-ai",
+   "label": "AI의 RCT",
+   "parent": "retrospective-vs-prospective",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 개선을 입증하는 가장 강한 설계.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "workflow-integration-study",
+   "label": "워크플로 통합 연구",
+   "parent": "retrospective-vs-prospective",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 사용 방식에서 효과를 보는 연구.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "recall-causes",
+   "label": "리콜 원인",
+   "parent": "ai-device-recalls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소프트웨어 오류·표시 문제 등 유형 분류.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "time-to-recall",
+   "label": "리콜까지 걸린 시간",
+   "parent": "ai-device-recalls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중앙값 458일 연구 결과.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "credible-interval-reading",
+   "label": "신뢰구간 읽기",
+   "parent": "ai-device-recalls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간이 1을 포함하면 근거가 약하다는 해석.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "mdr-reporting",
+   "label": "MDR 이상 사례 보고",
+   "parent": "post-market-surveillance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제조사의 의무 보고 제도.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "maude",
+   "label": "MAUDE",
+   "parent": "post-market-surveillance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보고 데이터베이스.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "section-522",
+   "label": "522 감시 연구",
+   "parent": "post-market-surveillance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA가 명령하는 시판 후 연구.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "locked-vs-continuous",
+   "label": "고정 vs 지속 학습 AI 감시",
+   "parent": "post-market-surveillance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 방식에 따른 감시 차이.",
    "added": "2026-11-15",
    "related": []
   }
