@@ -14423,33 +14423,42 @@
    "label": "HAX 시간 경과 7개 지침",
    "parent": "hax-guidelines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기억·학습·피드백·변경 고지.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "explain-why-pattern",
    "label": "왜 그랬는지 설명 패턴",
    "parent": "hax-guidelines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지침 11의 UI 구현 방식.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "graceful-degradation-ai",
    "label": "불확실할 때 범위 좁히기",
    "parent": "hax-guidelines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지침 10의 구체적 설계.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "pair-user-needs",
@@ -15856,6 +15865,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "HAX 설명 패턴의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "hax-memory-controls",
+   "label": "HAX 기억·전역 제어",
+   "parent": "hax-over-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "HAX 기억·전역 제어의 개념과 쓰임.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "confirm-before-irreversible",
+   "label": "되돌릴 수 없는 행동 전 확인",
+   "parent": "graceful-degradation-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "되돌릴 수 없는 행동 전 확인의 개념과 쓰임.",
    "added": "2026-11-15",
    "related": []
   }
