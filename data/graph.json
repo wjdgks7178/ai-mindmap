@@ -15393,33 +15393,42 @@
    "label": "경험 곡선 단축",
    "parent": "tacit-knowledge-diffusion",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "초보가 숙련도에 도달하는 시간이 줄어드는 효과.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "tacit-knowledge-diffusion"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "skill-gap-compression",
    "label": "숙련도 격차 축소",
    "parent": "tacit-knowledge-diffusion",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI가 하위 성과자를 더 끌어올리는 현상.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "tacit-knowledge-diffusion"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "knowledge-capture-credit",
    "label": "숙련자 기여 보상",
    "parent": "tacit-knowledge-diffusion",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노하우가 학습 데이터가 될 때의 공정성 문제.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "tacit-knowledge-diffusion"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cognitive-forcing-function",
@@ -17970,6 +17979,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델과 문구표를 함께 관리.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "tenure-productivity-curve",
+   "label": "근속 기간별 생산성 곡선",
+   "parent": "experience-curve-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입사 후 개월 수에 따른 해결 건수 변화.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "training-with-ai-assistant",
+   "label": "AI 보조 하의 신입 교육",
+   "parent": "experience-curve-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추천 이유를 학습 자료로 쓰기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "rapidly-changing-domains",
+   "label": "빠르게 바뀌는 분야의 한계",
+   "parent": "experience-curve-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낡은 관행 전파 위험.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "skill-biased-technical-change",
+   "label": "숙련 편향적 기술 변화",
+   "parent": "skill-gap-compression",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고숙련에 유리한 기존 기술 변화 패턴.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "relative-pay-effects",
+   "label": "상대 평가 보상 효과",
+   "parent": "skill-gap-compression",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 도입 후 보너스 체계의 변화.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "quality-decline-top-agents",
+   "label": "상위자 품질 하락",
+   "parent": "skill-gap-compression",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최고 숙련자의 대화 품질이 낮아질 가능성.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "data-ownership-employee",
+   "label": "직원 생성 데이터 소유",
+   "parent": "knowledge-capture-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업무 중 만든 데이터의 권리 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "contribution-incentive",
+   "label": "데이터 기여 인센티브",
+   "parent": "knowledge-capture-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터 제공 보상 설계.",
    "added": "2026-11-15",
    "related": []
   }
