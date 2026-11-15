@@ -14815,11 +14815,14 @@
    "label": "위치 편향",
    "parent": "llm-auto-rater",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "심판 LLM이 순서에 따라 판정이 바뀌는 현상.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "llm-auto-rater"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cohens-kappa",
@@ -16655,6 +16658,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI Act의 역할 구분.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "self-enhancement-bias",
+   "label": "자기 선호 편향",
+   "parent": "position-bias-judge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "심판이 자기와 같은 모델의 답을 선호.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "judge-consistency",
+   "label": "판정 일관성 측정",
+   "parent": "position-bias-judge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서 맞바꿈 일치율 계산법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "rubric-permutation",
+   "label": "루브릭 순열 평균",
+   "parent": "position-bias-judge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수제 평가에서 순서 편향 줄이기.",
    "added": "2026-11-15",
    "related": []
   }
