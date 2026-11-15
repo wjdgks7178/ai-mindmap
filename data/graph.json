@@ -14755,11 +14755,14 @@
    "label": "비용 추정 민감도 분석",
    "parent": "accuracy-economics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가정이 흔들려도 결론이 유지되는지.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "accuracy-economics"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cost-of-error-types",
@@ -16298,6 +16301,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정보량 큰 건을 우선 사람에게 보내 학습에 반영.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "tornado-chart",
+   "label": "토네이도 차트",
+   "parent": "sensitivity-analysis-ai-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력별 영향 폭을 정렬해 보여 주는 민감도 차트.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "monte-carlo-roi",
+   "label": "몬테카를로 ROI 시뮬레이션",
+   "parent": "sensitivity-analysis-ai-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력을 분포로 두고 반복 시뮬레이션해 범위를 얻기.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "stop-criteria",
+   "label": "중단 기준 정하기",
+   "parent": "sensitivity-analysis-ai-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과가 뒤집히는 가정 값을 미리 정해 두기.",
    "added": "2026-11-15",
    "related": []
   }
