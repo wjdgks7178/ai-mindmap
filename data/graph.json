@@ -15093,33 +15093,43 @@
    "label": "수정 프로토콜",
    "parent": "fda-pccp",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "PCCP에 들어가는 재학습·검증 절차.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-pccp"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "model-drift-monitoring",
    "label": "모델 드리프트 모니터링",
    "parent": "fda-pccp",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 후 성능 변화 감시.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-pccp",
+    "risk-tracking-over-time"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "section-515c",
    "label": "FD&C Act 515C",
    "parent": "fda-pccp",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "PCCP의 법적 근거 조항.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "fda-pccp"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "cds-exemption",
@@ -17318,6 +17328,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "제출 전 시험 설계를 FDA와 협의.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "fdora",
+   "label": "FDORA",
+   "parent": "section-515c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2022 식품의약품 옴니버스 개혁법, PCCP 근거.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "predicate-pre-change-version",
+   "label": "변경 전 버전 predicate 규칙",
+   "parent": "section-515c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PCCP 변경 후 버전은 predicate 불가.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "pccp-ai-final-guidance",
+   "label": "AI PCCP 최종 지침",
+   "parent": "section-515c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2024-12 AI 기기 소프트웨어 대상 지침.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "reference-standard-setting",
+   "label": "기준 표준 설정",
+   "parent": "modification-protocol",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답(ground truth)을 정하는 방식.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "unresolvable-failure-handling",
+   "label": "해결 불가 실패 처리",
+   "parent": "modification-protocol",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 실패 시 롤백·보류 규칙.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "pccp-description-of-modifications",
+   "label": "변경 설명 작성",
+   "parent": "modification-protocol",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경 목록·빈도·가드레일 정의.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "data-drift",
+   "label": "데이터 드리프트",
+   "parent": "model-drift-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력 분포가 학습 때와 달라지는 현상.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "concept-drift",
+   "label": "개념 드리프트",
+   "parent": "model-drift-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력-정답 관계 자체가 바뀌는 현상.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "delayed-label-monitoring",
+   "label": "지연 라벨 모니터링",
+   "parent": "model-drift-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답이 늦게 올 때 대리 지표로 감시.",
    "added": "2026-11-15",
    "related": []
   }
