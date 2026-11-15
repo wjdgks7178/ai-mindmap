@@ -15544,33 +15544,45 @@
    "label": "WoE 구간화",
    "parent": "interpretable-credit-models",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "범주·구간을 위험 가중치 값으로 바꾸는 스코어카드 전처리.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "interpretable-credit-models",
+    "monotonic-constraints"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "monotone-constraints",
    "label": "단조 제약 설정법",
    "parent": "interpretable-credit-models",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "XGBoost·LightGBM에서 변수별 방향을 거는 방법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "interpretable-credit-models",
+    "monotonic-constraints"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "wrong-sign-diagnostic",
    "label": "잘못된 부호 진단",
    "parent": "interpretable-credit-models",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제약이 데이터와 어긋났는지 확인하는 점검.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "interpretable-credit-models",
+    "monotonic-constraints"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "four-fifths-rule",
@@ -18407,6 +18419,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "금감원·신정원·개인정보위 자료.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "information-value",
+   "label": "IV(정보값)",
+   "parent": "woe-binning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수 구분력 요약 지표.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "scorecard-points",
+   "label": "스코어카드 점수화",
+   "parent": "woe-binning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로지스틱 계수를 점수표로 변환.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "optbinning",
+   "label": "OptBinning",
+   "parent": "woe-binning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최적 구간화 라이브러리.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "partial-dependence-check",
+   "label": "부분 의존 곡선 점검",
+   "parent": "monotone-constraints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제약 후 단조성 확인 방법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "lightgbm-mc-method",
+   "label": "LightGBM 제약 방식",
+   "parent": "monotone-constraints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "basic·intermediate·advanced 차이.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "constraint-performance-tradeoff",
+   "label": "제약과 성능 트레이드오프",
+   "parent": "monotone-constraints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방향 강제가 성능에 미치는 영향.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "multicollinearity",
+   "label": "다중공선성",
+   "parent": "wrong-sign-diagnostic",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수 간 상관이 계수를 흔드는 문제.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "sign-check-table",
+   "label": "계수 부호 점검표",
+   "parent": "wrong-sign-diagnostic",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수별 기대 방향과 실제 비교.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "domain-expert-review",
+   "label": "도메인 전문가 검토",
+   "parent": "wrong-sign-diagnostic",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방향 가정을 사람이 확인.",
    "added": "2026-11-15",
    "related": []
   }
