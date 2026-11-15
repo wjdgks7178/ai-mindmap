@@ -14594,11 +14594,15 @@
    "label": "파인튜닝 전 few-shot",
    "parent": "prompt-rag-finetune-choice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예시 몇 개로 먼저 형식을 맞춰 보기.",
    "added": "2026-11-14",
-   "related": []
+   "related": [
+    "rag",
+    "few-shot-prompting"
+   ],
+   "done": "2026-11-15"
   },
   {
    "id": "finetune-data-requirements",
@@ -16126,6 +16130,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "방식 선택 전에 평가 세트를 준비하는 원칙.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "example-selection",
+   "label": "예시 고르기",
+   "parent": "few-shot-before-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관련성·다양성·엣지 케이스 기준으로 few-shot 예시를 고르는 법.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "examples-to-training-data",
+   "label": "예시를 학습 데이터로",
+   "parent": "few-shot-before-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "few-shot 예시를 파인튜닝 데이터로 확장.",
+   "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "prompt-token-cost",
+   "label": "프롬프트 토큰 비용",
+   "parent": "few-shot-before-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴 예시가 호출량에 따라 비용·지연을 키우는 문제.",
    "added": "2026-11-15",
    "related": []
   }
