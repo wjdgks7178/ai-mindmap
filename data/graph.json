@@ -3800,11 +3800,15 @@
    "label": "코사인 유사도",
    "parent": "semantic-vs-keyword-search",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "두 벡터가 가리키는 방향이 얼마나 비슷한지로 뜻의 가까움을 재는 값.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "embedding-clip",
+    "hybrid-search"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "rrf",
@@ -26008,6 +26012,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "코드·이름 질의와 개념 질의를 구분하는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "vector-normalization",
+   "label": "벡터 정규화",
+   "parent": "cosine-similarity",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "벡터를 길이 1로 맞춰 내적과 코사인을 같게 만드는 처리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "dot-product-similarity",
+   "label": "내적 유사도",
+   "parent": "cosine-similarity",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "길이까지 반영하는 유사도와 쓰임.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "euclidean-distance",
+   "label": "유클리드 거리",
+   "parent": "cosine-similarity",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "점 사이 직선 거리와 코사인과의 관계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "similarity-threshold",
+   "label": "유사도 임계값 정하기",
+   "parent": "cosine-similarity",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델마다 다른 점수 분포에서 기준값을 정하는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pearson-correlation",
+   "label": "피어슨 상관계수",
+   "parent": "cosine-similarity",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중심화한 코사인 유사도로서의 상관.",
    "added": "2026-11-16",
    "related": []
   }
