@@ -16824,11 +16824,14 @@
    "label": "부속서 III 적용 연기",
    "parent": "ai-act-enforcement-timeline",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "고위험 적용일 2027-12로 늦춰진 경위 확인.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "article-50-transparency"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "national-authorities",
@@ -21458,6 +21461,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "7항, AI 생성물 표시 행동강령.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-omnibus-2025-11",
+   "label": "AI Omnibus 2025-11-19",
+   "parent": "annex-iii-delay",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집행위가 일정 연기를 담아 발표한 패키지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "provisional-agreement-2026-05",
+   "label": "2026-05-07 잠정 합의",
+   "parent": "annex-iii-delay",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이사회·의회 합의 내용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "annex-i-vs-iii",
+   "label": "부속서 I vs III",
+   "parent": "annex-iii-delay",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내장형과 독립형 고위험의 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "standards-delay-reason",
+   "label": "표준 지연이라는 배경",
+   "parent": "annex-iii-delay",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "harmonised standards 공개 지연.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "adoption-status-check",
+   "label": "채택 상태 확인법",
+   "parent": "annex-iii-delay",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관보로 최종 문구와 날짜 확인.",
    "added": "2026-11-16",
    "related": []
   }
