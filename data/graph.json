@@ -16454,11 +16454,14 @@
    "label": "질문·정답 세트 먼저 만들기",
    "parent": "context-paste-test",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "방식 선택 전에 평가 세트를 준비하는 원칙.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "long-context-limits"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "example-selection",
@@ -20186,6 +20189,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "장문 검색 시험과 그 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "golden-reference-set",
+   "label": "골든 레퍼런스 세트",
+   "parent": "eval-set-first",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문과 정답 기준을 짝지어 고정한 세트.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "one-variable-at-a-time",
+   "label": "한 번에 한 변수",
+   "parent": "eval-set-first",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원인 분리를 위한 실험 원칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "retrieval-vs-generation-eval",
+   "label": "검색 평가 vs 생성 평가",
+   "parent": "eval-set-first",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RAG의 두 구성요소를 따로 재기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "held-out-eval-set",
+   "label": "보류 평가 세트",
+   "parent": "eval-set-first",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜닝에 안 쓴 최종 보고용 세트.",
    "added": "2026-11-16",
    "related": []
   }
