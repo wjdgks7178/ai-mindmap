@@ -16724,11 +16724,14 @@
    "label": "감독기관 집행 사례",
    "parent": "gdpr-fines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 부과된 GDPR 과징금과 사유.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fine-factors"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "fine-factors",
@@ -22218,6 +22221,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "가능한 범위에서 정보 공개.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "meta-transfer-fine-2023",
+   "label": "Meta 12억 유로 국외 이전",
+   "parent": "dpa-enforcement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2023-05-12 아일랜드 결정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cookie-consent-fines",
+   "label": "쿠키 동의 과징금",
+   "parent": "dpa-enforcement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CNIL의 Google·Amazon 사례.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "employee-surveillance-fine",
+   "label": "직원 감시 과징금",
+   "parent": "dpa-enforcement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "H&M 3,530만 유로.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "security-failure-fines",
+   "label": "보안 미비 과징금",
+   "parent": "dpa-enforcement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "British Airways·Marriott.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fine-reduction-appeal",
+   "label": "과징금 감액",
+   "parent": "dpa-enforcement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "발표 금액이 최종과 다를 수 있음.",
    "added": "2026-11-16",
    "related": []
   }
