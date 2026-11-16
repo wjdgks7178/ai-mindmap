@@ -16540,11 +16540,14 @@
    "label": "RAFT",
    "parent": "hybrid-rag-finetune",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "방해 문서 속에서 관련 문장을 인용하도록 파인튜닝하는 방법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "long-context-limits"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "distractor-documents",
@@ -20415,6 +20418,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "판단 절차·근접 오답 예시·우선 규칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "oracle-document",
+   "label": "정답 문서 oracle",
+   "parent": "raft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문에 답이 들어 있는 문서.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "verbatim-quote-cot",
+   "label": "인용구 포함 사고 연쇄",
+   "parent": "raft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근거 문장을 그대로 인용하며 추론.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "open-book-domain-qa",
+   "label": "도메인 오픈북 QA",
+   "parent": "raft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인이 정해진 검색 기반 질의응답.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "dsf-domain-specific-finetuning",
+   "label": "도메인 특화 미세조정 DSF",
+   "parent": "raft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 없이 도메인 지식만 주입.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "raft-data-construction",
+   "label": "RAFT 학습 데이터 구성",
+   "parent": "raft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "P 비율로 정답 문서 포함·제외 섞기.",
    "added": "2026-11-16",
    "related": []
   }
