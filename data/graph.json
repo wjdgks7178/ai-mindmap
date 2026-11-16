@@ -2666,10 +2666,16 @@
    "label": "배칭과 서빙 소프트웨어",
    "parent": "training-inference-cost",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "vLLM 등으로 여러 요청을 묶어 처리량 올리기.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "paged-attention",
+    "vllm",
+    "model-hosting-options"
+   ]
   },
   {
    "id": "api-vs-self-host",
@@ -26359,6 +26365,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "가중치 크기÷대역폭으로 토큰 속도 상한 추정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "iteration-level-scheduling",
+   "label": "반복 단위 스케줄링",
+   "parent": "batching-serving",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰 단계마다 배치를 재구성하는 방식(Orca).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "static-batching-waste",
+   "label": "정적 배칭의 낭비",
+   "parent": "batching-serving",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가장 긴 응답을 기다리며 GPU가 노는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "throughput-vs-latency",
+   "label": "처리량 대 지연",
+   "parent": "batching-serving",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치를 키울 때 생기는 개별 요청 지연의 증가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "kv-cache-fragmentation",
+   "label": "KV 캐시 조각화",
+   "parent": "batching-serving",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청마다 크기가 변해 메모리가 낭비되는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "serving-load-test",
+   "label": "서빙 부하 시험",
+   "parent": "batching-serving",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "동시 요청 수를 올려 처리량·지연을 재는 법.",
    "added": "2026-11-16",
    "related": []
   }
