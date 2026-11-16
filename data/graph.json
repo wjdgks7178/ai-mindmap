@@ -16801,11 +16801,12 @@
    "label": "50조 투명성 의무",
    "parent": "ai-act-enforcement-timeline",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 상호작용 고지·생성물 표시 의무.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "ai-act-sandbox",
@@ -21402,6 +21403,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "스프레드시트로 0이 될 때까지 조정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-disclosure-chatbot",
+   "label": "챗봇 AI 고지",
+   "parent": "article-50-transparency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1항, 대화 상대가 AI임을 알림.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "machine-readable-marking",
+   "label": "기계 판독 표시",
+   "parent": "article-50-transparency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2항, 합성 출력의 탐지 가능한 표시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "deepfake-disclosure",
+   "label": "딥페이크 공개 의무",
+   "parent": "article-50-transparency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4항, 예술·풍자 예외 포함.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "editorial-control-exception",
+   "label": "편집 통제 예외",
+   "parent": "article-50-transparency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 검토·편집 책임이 있으면 공개 불필요.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "code-of-practice-labelling",
+   "label": "라벨링 행동강령",
+   "parent": "article-50-transparency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "7항, AI 생성물 표시 행동강령.",
    "added": "2026-11-16",
    "related": []
   }
