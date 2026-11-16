@@ -15897,11 +15897,12 @@
    "label": "힌트 상승 규칙",
    "parent": "staged-hints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "언제 다음 단계로 넘기나.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "hint-abuse-detection",
@@ -19508,6 +19509,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI를 거쳐 온 고객의 이탈 패턴.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bottom-out-hint",
+   "label": "바텀아웃 힌트",
+   "parent": "hint-escalation-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답을 직접 주는 마지막 단계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hints-on-demand",
+   "label": "요청 시 힌트",
+   "parent": "hint-escalation-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학생이 눌러야 다음 힌트가 나오는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hint-request-penalty",
+   "label": "힌트 요청 패널티",
+   "parent": "hint-escalation-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "힌트를 오답처럼 기록하는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hint-timing-context",
+   "label": "힌트 시점과 맥락",
+   "parent": "hint-escalation-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전지식·마감에 따라 효과가 다름.",
    "added": "2026-11-16",
    "related": []
   }
