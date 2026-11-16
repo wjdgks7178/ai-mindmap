@@ -16790,11 +16790,15 @@
    "label": "디지털 옴니버스",
    "parent": "sme-fine-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI Act 적용 일정·부담 완화 개정 논의.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "annex-iii-delay",
+    "article-50-transparency"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "article-50-transparency",
@@ -21726,6 +21730,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "금융기관 고위험 AI 담당.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "nudifier-ban",
+   "label": "nudifier 금지",
+   "parent": "digital-omnibus",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동의 없는 성적 콘텐츠 생성 AI 금지, 2026-12-02부터.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "high-risk-db-registration",
+   "label": "고위험 DB 등록",
+   "parent": "digital-omnibus",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외 주장 시스템도 등록해야 함.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "special-category-data-bias",
+   "label": "특수 범주 데이터와 편향 시정",
+   "parent": "digital-omnibus",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엄격히 필요 기준 복원.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sectoral-guidance-2027",
+   "label": "부문 법 중복 지침",
+   "parent": "digital-omnibus",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2027-08-01까지 집행위 지침.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "labelling-grace-period",
+   "label": "라벨링 유예 2026-12-02",
+   "parent": "digital-omnibus",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기존 출시 시스템 대상.",
    "added": "2026-11-16",
    "related": []
   }
