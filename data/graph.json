@@ -16409,11 +16409,14 @@
    "label": "근거성(groundedness) 지표",
    "parent": "evidence-agreement-score",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "답이 검색 근거에 지지되는 비율 측정.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "hallucination"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "citation-ui",
@@ -20020,6 +20023,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가가 놓치기 쉬운 부작용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "claim-decomposition",
+   "label": "진술 분해",
+   "parent": "groundedness-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답변을 검증 가능한 진술로 쪼개기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hhem-classifier",
+   "label": "HHEM 환각 분류기",
+   "parent": "groundedness-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 판정 대신 쓰는 소형 분류기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "faithful-but-wrong",
+   "label": "충실하지만 틀린 답",
+   "parent": "groundedness-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문맥이 틀릴 때 생기는 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "context-quality-vs-faithfulness",
+   "label": "문맥 품질 vs 충실도",
+   "parent": "groundedness-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 품질과 답변 충실도를 구분.",
    "added": "2026-11-16",
    "related": []
   }
