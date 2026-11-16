@@ -15933,11 +15933,14 @@
    "label": "튜터 회귀 평가",
    "parent": "tutor-jailbreak-testing",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델·프롬프트 변경마다 재시험.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "bypass-prompt-set"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "interleaving-practice",
@@ -19654,6 +19657,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙 필터 뒤 이진 라벨을 붙이는 판정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "golden-dataset-versioning",
+   "label": "골든 데이터셋 버전 관리",
+   "parent": "tutor-regression-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경마다 버전·변경 이력 남기기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "slice-level-gating",
+   "label": "조각별 게이트",
+   "parent": "tutor-regression-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약한 조각이 평균에 가려지지 않게.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "shadow-eval",
+   "label": "섀도 평가",
+   "parent": "tutor-regression-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영 샘플을 비동기로 채점해 드리프트 감시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "eval-baseline-rebaselining",
+   "label": "기준선 재설정",
+   "parent": "tutor-regression-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 재설정이 위험한 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "judge-prompt-versioning",
+   "label": "판정 프롬프트 버전 관리",
+   "parent": "tutor-regression-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판정 프롬프트가 곧 측정 도구.",
    "added": "2026-11-16",
    "related": []
   }
