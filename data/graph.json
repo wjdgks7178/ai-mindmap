@@ -15796,11 +15796,12 @@
    "label": "에스컬레이션율 목표",
    "parent": "escalation-triggers",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "너무 높거나 낮을 때의 신호.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "handoff-wait-time",
@@ -19099,6 +19100,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "근거 문서 유사도로 이관 판단.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "escalation-reason-taxonomy",
+   "label": "이관 사유 분류",
+   "parent": "escalation-rate-target",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "6가지 이유와 담당 조직 매핑.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "knowledge-gap-escalation",
+   "label": "지식 공백 이관",
+   "parent": "escalation-rate-target",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서에 답이 없어서 넘어가는 경우.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "intentional-vs-failure-escalation",
+   "label": "의도된 이관 vs 실패성 이관",
+   "parent": "escalation-rate-target",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책 이관과 실패를 따로 보고하기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "per-task-escalation-rate",
+   "label": "업무별 이관율",
+   "parent": "escalation-rate-target",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전역 임계값 하나를 피하는 법.",
    "added": "2026-11-16",
    "related": []
   }
