@@ -16572,11 +16572,14 @@
    "label": "하이브리드 평가 설계",
    "parent": "hybrid-rag-finetune",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "RAG·파인튜닝 효과를 따로 분리 측정하는 법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "eval-set-first"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "ece-metric",
@@ -20973,6 +20976,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포 가정의 근거를 적어 두기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "two-by-two-ablation",
+   "label": "2×2 어블레이션",
+   "parent": "hybrid-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본/RAG/미세조정/결합 네 칸 비교.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "knowledge-injection",
+   "label": "지식 주입",
+   "parent": "hybrid-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델에 새 지식을 넣는 방법들.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fact-paraphrase-training",
+   "label": "같은 사실의 다양한 표현 학습",
+   "parent": "hybrid-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미세조정이 새 사실을 배우게 돕는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "llm-evaluator-bias",
+   "label": "LLM 평가자 편향",
+   "parent": "hybrid-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 채점할 때의 편향과 사람 검증.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cumulative-effect-check",
+   "label": "효과 누적성 확인",
+   "parent": "hybrid-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결합 효과가 합보다 큰지 작은지.",
    "added": "2026-11-16",
    "related": []
   }
