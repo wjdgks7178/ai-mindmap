@@ -17201,11 +17201,15 @@
    "label": "평가자 간 일치도 RWG",
    "parent": "pdqi-9",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "척도 평가자 일치 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "icc-reliability",
+    "krippendorff-alpha"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "clinical-note-safety-review",
@@ -23646,6 +23650,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "요약·훈련 사용을 고지문에 반영.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "expected-random-variance",
+   "label": "기대 무작위 분산",
+   "parent": "inter-rater-rwg",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5점 척도에서 2, 일반식 (A²−1)/12.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rwg-truncation",
+   "label": "rwg 잘라내기",
+   "parent": "inter-rater-rwg",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관찰 분산이 기대보다 크면 0 처리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rwg-j-multi-item",
+   "label": "rwg(j) 다문항",
+   "parent": "inter-rater-rwg",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 문항 척도용 확장.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sample-vs-population-variance",
+   "label": "표본 분산 vs 모분산",
+   "parent": "inter-rater-rwg",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "rwg 계산 방식 명시.",
    "added": "2026-11-16",
    "related": []
   }
