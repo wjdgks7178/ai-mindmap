@@ -3584,11 +3584,14 @@
    "label": "DPO",
    "parent": "llm-training-stages",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "보상 모델 없이 선호 쌍으로 직접 학습하는 방법.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rlhf"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "tokenization",
@@ -23741,6 +23744,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "사건·환자별 신고 집계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "simpo",
+   "label": "SimPO",
+   "parent": "dpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "길이 정규화로 기준 모델 없이 선호를 학습하는 DPO 변형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ipo-loss",
+   "label": "IPO",
+   "parent": "dpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "DPO의 과적합을 막으려 항등 변환을 쓰는 선호 최적화 변형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "kto",
+   "label": "KTO",
+   "parent": "dpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쌍 대신 좋다/나쁘다 단일 라벨로 학습하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "preference-dataset",
+   "label": "선호 데이터셋",
+   "parent": "dpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "prompt·chosen·rejected로 이뤄진 정렬용 데이터.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "offline-vs-online-preference",
+   "label": "오프라인 vs 온라인 선호 학습",
+   "parent": "dpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고정 데이터(DPO)와 모델이 직접 생성하는 방식(PPO)의 차이.",
    "added": "2026-11-16",
    "related": []
   }
