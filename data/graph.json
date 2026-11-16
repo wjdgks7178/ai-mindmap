@@ -3316,10 +3316,16 @@
    "label": "휴머노이드 로봇",
    "parent": "physical-ai",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "사람 모양 로봇이 주목받는 이유와 현황.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-16",
+   "related": [
+    "vla-model",
+    "teleoperation-data",
+    "autonomous-driving"
+   ]
   },
   {
    "id": "autonomous-driving",
@@ -24690,6 +24696,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "드문 상황이 무한히 많아 완전 자동화가 어려운 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "robots-as-a-service",
+   "label": "서비스형 로봇(RaaS)",
+   "parent": "humanoid-robots",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로봇을 사지 않고 월 구독으로 쓰는 도입 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cooperatively-safe-robot",
+   "label": "협동 안전 로봇",
+   "parent": "humanoid-robots",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 곁에서 일해도 안전하도록 설계·인증한 로봇.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "figure-helix",
+   "label": "Figure Helix",
+   "parent": "humanoid-robots",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Figure의 휴머노이드용 VLA 모델.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "wheeled-vs-legged",
+   "label": "바퀴형 vs 다리형",
+   "parent": "humanoid-robots",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "범용성과 효율 사이의 로봇 형태 선택.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "humanoid-unit-economics",
+   "label": "휴머노이드 단가와 ROI",
+   "parent": "humanoid-robots",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가격·가동률·인건비로 따지는 도입 타당성.",
    "added": "2026-11-16",
    "related": []
   }
