@@ -3867,11 +3867,16 @@
    "label": "모델 카드",
    "parent": "red-teaming",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "모델의 용도·한계·평가 결과를 적은 문서.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "data-provenance",
+    "fairness-metrics",
+    "eu-ai-act"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "rlaif",
@@ -25690,6 +25695,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델·필터·모니터링·레드팀을 겹쳐 쓰는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "system-card",
+   "label": "시스템 카드",
+   "parent": "model-card",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "업체가 모델의 안전 평가를 길게 공개하는 문서.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "model-card-metadata",
+   "label": "모델 카드 메타데이터",
+   "parent": "model-card",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "license·datasets·base_model 등 YAML 항목.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "disaggregated-evaluation",
+   "label": "집단별 분리 평가",
+   "parent": "model-card",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인구통계 집단별로 성능을 쪼개 보고하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "model-selection-checklist",
+   "label": "모델 선정 체크리스트",
+   "parent": "model-card",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델 카드를 보며 도입 적합성을 따지는 항목.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "intended-use-statement",
+   "label": "의도한 사용 선언",
+   "parent": "model-card",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쓰면 되는 곳과 쓰면 안 되는 곳을 밝히는 문구.",
    "added": "2026-11-16",
    "related": []
   }
