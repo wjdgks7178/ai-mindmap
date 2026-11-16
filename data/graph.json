@@ -2542,10 +2542,17 @@
    "label": "OpenAI 호환 API",
    "parent": "local-llm",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "로컬·타사 서버가 같은 요청 형식을 쓰는 표준적 관행.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "model-hosting-options",
+    "model-routing",
+    "llm-api-basics",
+    "llm-gateway"
+   ]
   },
   {
    "id": "delegation-skill",
@@ -26420,6 +26427,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "동시 요청 수를 올려 처리량·지연을 재는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "base-url-swap",
+   "label": "base_url 바꿔 끼우기",
+   "parent": "openai-compatible-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "클라이언트 코드 그대로 서버만 교체하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "partial-compatibility",
+   "label": "부분 호환의 함정",
+   "parent": "openai-compatible-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "tool_choice·logit_bias 등 빠진 기능 확인법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "modelfile-num-ctx",
+   "label": "Modelfile과 num_ctx",
+   "parent": "openai-compatible-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Ollama에서 컨텍스트 크기를 설정하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "responses-vs-chat-completions",
+   "label": "Responses API vs Chat Completions",
+   "parent": "openai-compatible-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 요청 형식의 차이와 호환 범위.",
    "added": "2026-11-16",
    "related": []
   }
