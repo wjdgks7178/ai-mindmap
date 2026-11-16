@@ -3883,11 +3883,16 @@
    "label": "RLAIF",
    "parent": "constitutional-ai",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "사람 대신 AI가 선호를 판정해 강화학습하는 방식.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rlhf",
+    "dpo",
+    "reward-model"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "ai-constitution",
@@ -25750,6 +25755,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "쓰면 되는 곳과 쓰면 안 되는 곳을 밝히는 문구.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "direct-rlaif",
+   "label": "직접 RLAIF",
+   "parent": "rlaif",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보상 모델 없이 LLM에서 보상을 바로 받는 변형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "principle-writing",
+   "label": "원칙(헌법) 작성법",
+   "parent": "rlaif",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 판단할 수 있게 원칙을 구체적으로 쓰는 요령.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-labeler-bias",
+   "label": "AI 라벨러 편향",
+   "parent": "rlaif",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "판정 AI의 편향이 학습에 증폭되는 위험.",
    "added": "2026-11-16",
    "related": []
   }
