@@ -16902,11 +16902,14 @@
    "label": "모델 문서 양식",
    "parent": "gpai-code-of-practice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "투명성 장의 제출 양식.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "annex-xi-documentation"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "copyright-policy-gpai",
@@ -22160,6 +22163,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "위협 행위자 가정과 보호 범위.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "downstream-provider-request-14d",
+   "label": "하류 제공자 추가 요청 14일",
+   "parent": "model-documentation-form",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외 없으면 14일 내 답.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "documentation-retention-10y",
+   "label": "문서 보관 10년",
+   "parent": "model-documentation-form",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출시 후 이전 버전 보관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "documentation-integrity",
+   "label": "문서 무결성",
+   "parent": "model-documentation-form",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "품질 점검과 변경 방지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "nca-access-via-ai-office",
+   "label": "국가 당국의 AI Office 경유 접근",
+   "parent": "model-documentation-form",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엄격히 필요할 때만.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "public-disclosure-encouraged",
+   "label": "공개 권장",
+   "parent": "model-documentation-form",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가능한 범위에서 정보 공개.",
    "added": "2026-11-16",
    "related": []
   }
