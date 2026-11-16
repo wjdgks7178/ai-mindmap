@@ -1293,10 +1293,16 @@
    "label": "생각의 사슬·사고 모드",
    "parent": "prompt-engineering",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "단계별로 추론하게 해 정확도를 높이는 방식과 thinking 기능.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "reasoning-models",
+    "explainability",
+    "agent-cost-latency"
+   ]
   },
   {
    "id": "prompt-evaluation",
@@ -25554,6 +25560,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "동시 호출이 속도 제한과 비용에 미치는 영향.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "thinking-tokens-billing",
+   "label": "생각 토큰 과금",
+   "parent": "chain-of-thought",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론에 쓴 토큰이 출력 토큰으로 청구되는 구조.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "few-shot-cot",
+   "label": "예시 포함 사고 사슬",
+   "parent": "chain-of-thought",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "풀이가 들어간 예시로 추론을 유도하는 프롬프트.",
    "added": "2026-11-16",
    "related": []
   }
