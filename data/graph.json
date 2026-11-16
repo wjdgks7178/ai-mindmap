@@ -16322,11 +16322,14 @@
    "label": "신뢰 보정",
    "parent": "user-overreliance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용자 신뢰를 AI 실제 신뢰도에 맞추는 설계 목표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "confidence-calibration-handoff"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "friction-by-design",
@@ -19757,6 +19760,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "객관 지표 합의 논쟁.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "confidence-score-display",
+   "label": "확신 점수 표시",
+   "parent": "trust-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측마다 확신을 보여 주는 UI.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "human-complementary-knowledge",
+   "label": "사람의 보완 지식",
+   "parent": "trust-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 오류를 바로잡을 고유 지식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "local-explanation-limits",
+   "label": "국소 설명의 한계",
+   "parent": "trust-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측별 설명이 보정에 도움 안 될 수 있음.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "prospect-theory-calibration",
+   "label": "전망이론 기반 보정",
+   "parent": "trust-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 인식 왜곡을 보정하는 접근.",
    "added": "2026-11-16",
    "related": []
   }
