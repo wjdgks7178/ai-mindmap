@@ -16754,11 +16754,14 @@
    "label": "SME 정의",
    "parent": "sme-fine-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "직원 수·매출·자산으로 구분하는 EU 중소기업 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "sme-fine-rule"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "small-mid-cap",
@@ -21124,6 +21127,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "위험이 높은 처리의 사전 평가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "autonomous-partner-linked",
+   "label": "자율·파트너·연결 기업",
+   "parent": "sme-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합산 범위를 정하는 관계 유형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "qualifying-investor-exception",
+   "label": "적격 투자자 예외",
+   "parent": "sme-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엔젤·대학·기관투자자 보유 시 자율 기업 유지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "public-control-sme",
+   "label": "공공 통제와 SME",
+   "parent": "sme-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공공기관 25% 이상이면 SME 불가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "headcount-turnover-balance",
+   "label": "직원·매출·자산 기준",
+   "parent": "sme-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직원 한도 + 매출 또는 자산 중 하나.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "group-data-aggregation",
+   "label": "그룹 수치 합산",
+   "parent": "sme-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹 소속 시 직원·매출 합산.",
    "added": "2026-11-16",
    "related": []
   }
