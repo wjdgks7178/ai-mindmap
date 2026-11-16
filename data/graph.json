@@ -3826,11 +3826,16 @@
    "label": "하이브리드 검색",
    "parent": "semantic-vs-keyword-search",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "키워드와 의미 검색을 함께 쓰는 구성.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rag",
+    "agentic-rag",
+    "reranking"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "self-route",
@@ -25948,6 +25953,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "RRF와 가중합을 자체 데이터로 비교하는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "alpha-weighting",
+   "label": "alpha 가중치",
+   "parent": "hybrid-search",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키워드와 벡터 비중을 0~1로 조절하는 설정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "relative-score-fusion",
+   "label": "상대 점수 결합",
+   "parent": "hybrid-search",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "min-max 정규화 후 가중합으로 점수 차를 보존하는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "semantic-ranker",
+   "label": "시맨틱 랭커",
+   "parent": "hybrid-search",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "하이브리드 결과를 독해 모델로 다시 정렬하는 단계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "retrieval-eval-set",
+   "label": "검색 평가 세트 만들기",
+   "parent": "hybrid-search",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질문-정답 문서 쌍으로 검색 품질을 재는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "exact-match-vs-semantic-queries",
+   "label": "정확 일치 질의 vs 의미 질의",
+   "parent": "hybrid-search",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "코드·이름 질의와 개념 질의를 구분하는 법.",
    "added": "2026-11-16",
    "related": []
   }
