@@ -16640,11 +16640,14 @@
    "label": "능동 학습형 검토",
    "parent": "human-in-the-loop-routing",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정보량 큰 건을 우선 사람에게 보내 학습에 반영.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "review-queue-design"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "tornado-chart",
@@ -20801,6 +20804,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "사후 무작위 표본으로 드리프트 감시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "uncertainty-sampling",
+   "label": "불확실성 샘플링",
+   "parent": "active-learning-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 불확실한 건을 먼저 라벨링.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "query-by-committee",
+   "label": "위원회 질의",
+   "parent": "active-learning-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 모델이 불일치하는 건 선택.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "al-cold-start",
+   "label": "능동 학습 콜드 스타트",
+   "parent": "active-learning-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기 시드 선택 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "al-stopping-criteria",
+   "label": "능동 학습 종료 기준",
+   "parent": "active-learning-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 안정화로 멈출 때 판단.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "annotation-cost-sensitive",
+   "label": "비용 민감 라벨링",
+   "parent": "active-learning-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "건별 라벨링 시간을 반영한 선택.",
    "added": "2026-11-16",
    "related": []
   }
