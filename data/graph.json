@@ -15772,11 +15772,12 @@
    "label": "감정 기반 이관",
    "parent": "escalation-triggers",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "감정 점수 임계값과 오탐.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "confidence-calibration-handoff",
@@ -19031,6 +19032,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "게이트 판단에 필요한 문의 건수 정하기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sarcasm-detection",
+   "label": "빈정거림 탐지",
+   "parent": "sentiment-trigger",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감정 분석이 약한 대표 사례.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "quiet-churn-signal",
+   "label": "조용한 이탈 신호",
+   "parent": "sentiment-trigger",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공손하지만 떠나는 고객의 행동 신호.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sentiment-threshold-calibration",
+   "label": "감정 임계값 보정",
+   "parent": "sentiment-trigger",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 티켓으로 기준 정하기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "multilingual-sentiment",
+   "label": "다국어 감정 분석",
+   "parent": "sentiment-trigger",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어별 별도 시험이 필요한 이유.",
    "added": "2026-11-16",
    "related": []
   }
