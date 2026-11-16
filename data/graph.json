@@ -15832,11 +15832,12 @@
    "label": "이관 패킷 스키마",
    "parent": "handoff-context-packet",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "고정 필드 JSON 설계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "pii-minimization-handoff",
@@ -19234,6 +19235,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "단어 겹침 지표가 요약 품질을 못 재는 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "schema-versioning",
+   "label": "스키마 버전 관리",
+   "parent": "handoff-schema",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버전 기록과 협상으로 조용한 오독 방지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "handoff-boundary-validation",
+   "label": "이관 경계 검증",
+   "parent": "handoff-schema",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필드·타입·허용값 체크.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "evidence-provenance-tags",
+   "label": "근거 출처 태그",
+   "parent": "handoff-schema",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 사실에 출처와 시각 붙이기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "authorization-scope",
+   "label": "권한 범위 명시",
+   "parent": "handoff-schema",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "받는 쪽이 할 수 있는 일을 적어 두기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "circular-handoff",
+   "label": "순환 이관",
+   "parent": "handoff-schema",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에이전트끼리 돌려 막는 실패와 감지.",
    "added": "2026-11-16",
    "related": []
   }
