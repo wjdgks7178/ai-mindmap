@@ -15808,11 +15808,12 @@
    "label": "이관 대기 시간",
    "parent": "warm-vs-cold-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대기 중 안내와 요약 사전 생성.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "handoff-summary-quality",
@@ -19144,6 +19145,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "전역 임계값 하나를 피하는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "estimated-wait-message",
+   "label": "예상 대기 안내 메시지",
+   "parent": "handoff-wait-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추정임을 밝히는 문구와 트리거 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "wait-time-estimation-limits",
+   "label": "대기 추정의 한계",
+   "parent": "handoff-wait-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "급증·데이터 부족 때 정확도 하락.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "time-to-first-useful-response",
+   "label": "첫 유용 응답까지 시간",
+   "parent": "handoff-wait-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 후 품질 지표.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "repeat-explanation-rate",
+   "label": "반복 설명률",
+   "parent": "handoff-wait-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객이 같은 말을 다시 하는 비율.",
    "added": "2026-11-16",
    "related": []
   }
