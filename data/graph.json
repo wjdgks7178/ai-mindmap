@@ -15921,11 +15921,12 @@
    "label": "우회 프롬프트 세트",
    "parent": "tutor-jailbreak-testing",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답 요구 시나리오 모음.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "tutor-regression-eval",
@@ -19598,6 +19599,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "윈저화 등 보정이 필요한 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "answer-leakage-rate",
+   "label": "정답 누출률",
+   "parent": "bypass-prompt-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜터가 정답을 말해 버린 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "adversarial-student-agent",
+   "label": "적대적 학생 에이전트",
+   "parent": "bypass-prompt-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답을 끌어내도록 학습된 시뮬레이션 학생.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reasoning-tutor-defense",
+   "label": "추론형 튜터 방어",
+   "parent": "bypass-prompt-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답하기 전에 이유를 쓰게 하는 방어.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "multi-turn-pedagogical-harm",
+   "label": "다중 턴 교육적 해악",
+   "parent": "bypass-prompt-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화가 길수록 나빠지는 튜터 행동.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "llm-judge-leakage",
+   "label": "누출 LLM 판정자",
+   "parent": "bypass-prompt-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙 필터 뒤 이진 라벨을 붙이는 판정.",
    "added": "2026-11-16",
    "related": []
   }
