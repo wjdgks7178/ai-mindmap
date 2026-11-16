@@ -2355,10 +2355,15 @@
    "label": "재시도와 백오프",
    "parent": "llm-api-basics",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "429 오류에 retry-after와 지수 백오프로 대응하는 법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "prompt-caching",
+    "idempotency"
+   ]
   },
   {
    "id": "batch-api",
@@ -24100,6 +24105,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "단계가 늘수록 작은 실수가 곱해져 커지는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "exponential-backoff-jitter",
+   "label": "지수 백오프와 지터",
+   "parent": "rate-limit-retry",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대기를 배로 늘리고 무작위를 섞어 재시도 동시 폭주를 막는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "token-bucket",
+   "label": "토큰 버킷",
+   "parent": "rate-limit-retry",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "용량이 일정 속도로 채워지는 속도 제한 알고리즘.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ramp-limit",
+   "label": "램프 한도",
+   "parent": "rate-limit-retry",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용량 급증을 막는 점진 상승 제한.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "retry-amplification",
+   "label": "재시도 증폭",
+   "parent": "rate-limit-retry",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "층마다 재시도하면 부하가 곱해지는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "circuit-breaker",
+   "label": "서킷 브레이커",
+   "parent": "rate-limit-retry",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연속 실패 시 호출을 잠시 끊어 과부하를 막는 패턴.",
    "added": "2026-11-16",
    "related": []
   }
