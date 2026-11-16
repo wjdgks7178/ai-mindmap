@@ -2314,10 +2314,16 @@
    "label": "설명 가능성",
    "parent": "ai-bias-ethics",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "모델의 판단 이유를 사람이 이해하게 하는 기법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "interpretability",
+    "shapley-values",
+    "chain-of-thought"
+   ]
   },
   {
    "id": "data-provenance",
@@ -24448,6 +24454,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "절감 시간·오류율·유지비로 자동화 가치를 따지는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "lime-method",
+   "label": "LIME",
+   "parent": "explainability",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력 주변을 단순 모델로 근사해 개별 예측을 설명하는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "permutation-importance",
+   "label": "순열 중요도",
+   "parent": "explainability",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특성을 섞어 성능 하락 폭으로 중요도를 재는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "local-vs-global-explanation",
+   "label": "로컬 vs 글로벌 설명",
+   "parent": "explainability",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 예측의 이유와 모델 전체 경향의 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "explanation-faithfulness",
+   "label": "설명의 충실성",
+   "parent": "explainability",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명이 실제 모델 계산을 반영하는지의 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "attribution-graph",
+   "label": "어트리뷰션 그래프",
+   "parent": "explainability",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력에서 출력까지 내부 특징의 연결을 그린 회로도.",
    "added": "2026-11-16",
    "related": []
   }
