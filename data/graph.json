@@ -16931,22 +16931,29 @@
    "label": "FLOP(연산량)",
    "parent": "systemic-risk-threshold",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습에 쓰인 부동소수점 연산 횟수.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "annex-xiii-criteria"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "annex-xiii-criteria",
    "label": "부속서 XIII 기준",
    "parent": "systemic-risk-threshold",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "연산량 외 시스템 리스크 지정 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "systemic-risk-model",
+    "flop-compute"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "art-55-obligations",
@@ -21785,6 +21792,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "기존 출시 시스템 대상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "market-reach-10000-users",
+   "label": "시장 도달 10,000명 추정",
+   "parent": "annex-xiii-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "등록 기업 사용자 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "modality-criterion",
+   "label": "모달리티 기준",
+   "parent": "annex-xiii-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입출력 형태와 특수 데이터 유형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "capability-evaluation-criterion",
+   "label": "능력·평가 기준",
+   "parent": "annex-xiii-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벤치마크·자율성·도구 접근.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "designation-by-commission",
+   "label": "집행위 지정",
+   "parent": "annex-xiii-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직권 또는 과학 패널 경보 후.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "six-nd-approximation",
+   "label": "6ND 근사",
+   "parent": "flop-compute",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조밀 모델의 학습 연산량 근사.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hardware-utilization",
+   "label": "하드웨어 활용률",
+   "parent": "flop-compute",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0.3 안팎, 0.75 초과는 드묾.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fma-two-flop",
+   "label": "FMA = 2 FLOP",
+   "parent": "flop-compute",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "곱셈-덧셈 계산 규칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "compute-proxies-cost-energy",
+   "label": "연산량 대리 지표",
+   "parent": "flop-compute",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용·시간·에너지.",
    "added": "2026-11-16",
    "related": []
   }
