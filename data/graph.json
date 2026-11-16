@@ -16813,11 +16813,14 @@
    "label": "AI 규제 샌드박스",
    "parent": "ai-act-enforcement-timeline",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "회원국이 2027-08까지 운영해야 하는 시험 환경.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ai-board"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "annex-iii-delay",
@@ -16860,11 +16863,14 @@
    "label": "AI Board",
    "parent": "ai-office",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "회원국 대표로 구성된 협의체.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ai-act-sandbox"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "scientific-panel",
@@ -21516,6 +21522,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "관보로 최종 문구와 날짜 확인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sandbox-exit-report",
+   "label": "샌드박스 종료 보고서",
+   "parent": "ai-act-sandbox",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증빙과 적합성 평가 가속.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sandbox-plan",
+   "label": "샌드박스 계획",
+   "parent": "ai-act-sandbox",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제공자와 당국이 합의하는 시험 계획.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "real-world-testing-supervised",
+   "label": "감독 아래 실제 환경 시험",
+   "parent": "ai-act-sandbox",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샌드박스에 포함 가능.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sandbox-liability",
+   "label": "샌드박스 참여자 책임",
+   "parent": "ai-act-sandbox",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제3자 피해 책임과 선의 시 과징금 면제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "union-level-sandbox",
+   "label": "연합 차원 샌드박스",
+   "parent": "ai-act-sandbox",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Office가 만들 수 있고 SME·SMC 우선.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "board-subgroups",
+   "label": "AI Board 하부 그룹",
+   "parent": "ai-board",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시장 감시·인증기관 상설 그룹.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "board-chair-secretariat",
+   "label": "의장과 사무국",
+   "parent": "ai-board",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의장은 회원국 대표, 사무국은 AI Office.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "adco-group",
+   "label": "ADCO 행정 협력 그룹",
+   "parent": "ai-board",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시장 감시 그룹의 별칭 역할.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "board-tasks-art66",
+   "label": "66조 Board 업무",
+   "parent": "ai-board",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자문·권고·공통 기준 마련.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "qualified-alert-gpai",
+   "label": "범용 AI 자격 경보",
+   "parent": "ai-board",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Board가 의견을 내는 절차.",
    "added": "2026-11-16",
    "related": []
   }
