@@ -3326,10 +3326,15 @@
    "label": "자율주행",
    "parent": "physical-ai",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "가장 널리 상용화된 피지컬 AI.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-16",
+   "related": [
+    "vla-model",
+    "sim-to-real"
+   ]
   },
   {
    "id": "teleoperation-data",
@@ -24630,6 +24635,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "개수·공간 관계·편향 등 약점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sae-levels",
+   "label": "SAE 자율주행 레벨",
+   "parent": "autonomous-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "운전 자동화 0~5단계와 책임 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "end-to-end-driving",
+   "label": "종단간 자율주행",
+   "parent": "autonomous-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "센서 입력에서 조작까지 한 신경망이 내는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "lidar-vs-camera",
+   "label": "LiDAR vs 카메라 방식",
+   "parent": "autonomous-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "센서 구성에 따른 Waymo·Tesla 접근 차이.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "robotaxi-safety-metrics",
+   "label": "로보택시 안전 지표",
+   "parent": "autonomous-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 대비 충돌률 비교의 방법과 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "long-tail-problem",
+   "label": "롱테일 문제",
+   "parent": "autonomous-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "드문 상황이 무한히 많아 완전 자동화가 어려운 이유.",
    "added": "2026-11-16",
    "related": []
   }
