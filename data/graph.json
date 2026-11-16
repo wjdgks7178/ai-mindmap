@@ -3003,10 +3003,15 @@
    "label": "모델 호스팅 선택지",
    "parent": "ai-infra",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "API·클라우드 GPU·로컬·엣지 비교.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "local-llm",
+    "model-routing"
+   ]
   },
   {
    "id": "sql-basics",
@@ -24951,6 +24956,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "가짜 인용으로 법원 제재를 받은 사례 흐름.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "edge-inference",
+   "label": "엣지 추론",
+   "parent": "model-hosting-options",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기 안에서 소형 모델을 돌려 지연과 전송을 줄이는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "self-hosting-ops",
+   "label": "셀프호스팅 운영",
+   "parent": "model-hosting-options",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모니터링·업데이트·보안 등 직접 돌릴 때의 책임.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hosting-decision-checklist",
+   "label": "호스팅 결정 체크리스트",
+   "parent": "model-hosting-options",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터·품질·호출량·역량으로 고르는 기준표.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "dedicated-endpoint",
+   "label": "전용 엔드포인트",
+   "parent": "model-hosting-options",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "업체 모델을 내 전용 용량으로 쓰는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hybrid-local-api",
+   "label": "로컬+API 혼합",
+   "parent": "model-hosting-options",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쉬운 작업은 로컬, 어려운 작업은 API로 보내는 구성.",
    "added": "2026-11-16",
    "related": []
   }
