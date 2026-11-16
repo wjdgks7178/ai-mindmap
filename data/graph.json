@@ -16913,11 +16913,14 @@
    "label": "GPAI 저작권 정책",
    "parent": "gpai-code-of-practice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "EU 저작권법 준수 정책 수립.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "tdm-opt-out"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "safety-security-chapter",
@@ -16989,11 +16992,14 @@
    "label": "부속서 XI 기술 문서",
    "parent": "training-data-summary",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI Office·당국에 제공하는 문서 항목.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "flop-compute"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "open-source-exemption-gpai",
@@ -21997,6 +22003,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "표시 수단과 법적 효력의 관계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "web-crawling-measure",
+   "label": "웹 크롤링 조치",
+   "parent": "copyright-policy-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "페이월 우회 금지·침해 사이트 제외.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "robots-txt-rfc9309",
+   "label": "robots.txt RFC 9309",
+   "parent": "copyright-policy-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤러가 따를 표준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "output-infringement-safeguards",
+   "label": "출력 침해 방지 안전장치",
+   "parent": "copyright-policy-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 콘텐츠를 침해적으로 재현하지 않게.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rightsholder-complaints",
+   "label": "권리자 불만 처리",
+   "parent": "copyright-policy-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전자 창구와 처리 기한.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "signatory-taskforce",
+   "label": "서명자 태스크포스",
+   "parent": "copyright-policy-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Office가 의장.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "annex-xii-downstream-info",
+   "label": "부속서 XII 하류 제공자 정보",
+   "parent": "annex-xi-documentation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통합하는 제공자를 위한 정보.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "energy-consumption-estimate",
+   "label": "에너지 소비 추정",
+   "parent": "annex-xi-documentation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모르면 연산 자원으로 추정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "training-data-curation-docs",
+   "label": "학습 데이터 큐레이션 문서화",
+   "parent": "annex-xi-documentation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처·편향 점검 기록.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "delegated-acts-annex-update",
+   "label": "부속서 개정 위임법",
+   "parent": "annex-xi-documentation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "53조 5·6항.",
    "added": "2026-11-16",
    "related": []
   }
