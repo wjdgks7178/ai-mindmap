@@ -16727,22 +16727,27 @@
    "label": "과징금 결정 요소",
    "parent": "gdpr-fines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "고의·협조·완화 조치 등이 금액에 미치는 영향.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "data-protection-by-design",
    "label": "설계 단계 개인정보 보호",
    "parent": "gdpr-fines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "25조 의무와 AI 개발 적용.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "scoped-tool-interface",
+    "pii-minimization-handoff"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "sme-definition",
@@ -21031,6 +21036,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "결합 효과가 합보다 큰지 작은지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "proportionate-dissuasive-fines",
+   "label": "효과적·비례적·억지력 있는 과징금",
+   "parent": "fine-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "83조 1항의 원칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "aggravating-mitigating-factors",
+   "label": "가중·감경 요소",
+   "parent": "fine-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고의·협조·완화 조치 등.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fine-tiers-gdpr",
+   "label": "GDPR 과징금 두 등급",
+   "parent": "fine-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2%/4% 한도 구조.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "multiple-infringements-cap",
+   "label": "복수 위반 총액 한도",
+   "parent": "fine-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 중대한 위반의 한도를 넘을 수 없음.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "data-protection-by-default",
+   "label": "기본값 개인정보 보호",
+   "parent": "data-protection-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 2항, 최소 처리가 기본.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pseudonymisation-measure",
+   "label": "가명처리 조치",
+   "parent": "data-protection-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조가 예로 든 보호 조치.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "certification-art42",
+   "label": "42조 인증",
+   "parent": "data-protection-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "준수를 입증하는 요소.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "dpia-ai",
+   "label": "AI의 영향평가 DPIA",
+   "parent": "data-protection-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험이 높은 처리의 사전 평가.",
    "added": "2026-11-16",
    "related": []
   }
