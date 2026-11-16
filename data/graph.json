@@ -12266,16 +12266,6 @@
    ]
   },
   {
-   "id": "replay-vs-fork",
-   "label": "리플레이 vs 포크",
-   "parent": "state-forking",
-   "domain": "langgraph",
-   "status": "planned",
-   "priority": 3,
-   "summary": "같은 값 재실행과 값 변경 갈래의 차이.",
-   "added": "2026-11-12"
-  },
-  {
    "id": "what-if-debugging",
    "label": "what-if 디버깅",
    "parent": "state-forking",
