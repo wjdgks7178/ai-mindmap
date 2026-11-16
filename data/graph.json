@@ -3562,11 +3562,14 @@
    "label": "지도 미세조정(SFT)",
    "parent": "llm-training-stages",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "(질문, 좋은 답) 예시로 지시 따르기를 배우는 단계.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rlhf"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "reward-model",
@@ -23836,6 +23839,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "최종 답이 아닌 추론 단계별로 점수를 매기는 모델.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "chat-template",
+   "label": "채팅 템플릿",
+   "parent": "sft",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "user/assistant 역할을 특수 토큰으로 이어 붙이는 형식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "assistant-only-loss",
+   "label": "답변 부분만 손실 계산",
+   "parent": "sft",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트 토큰을 학습에서 마스킹하는 설정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "superficial-alignment-hypothesis",
+   "label": "표면적 정렬 가설",
+   "parent": "sft",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정렬은 형식만 가르치고 지식은 사전학습에서 온다는 주장.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "instruction-dataset",
+   "label": "지시 데이터셋",
+   "parent": "sft",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Alpaca·Capybara 같은 질문-답 모음과 합성 데이터.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "catastrophic-forgetting",
+   "label": "파국적 망각",
+   "parent": "sft",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "미세조정 중 기존 능력이 사라지는 현상.",
    "added": "2026-11-16",
    "related": []
   }
