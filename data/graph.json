@@ -925,10 +925,16 @@
    "label": "컨텍스트 오염",
    "parent": "tdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "구현 정보가 테스트 설계로 새어 테스트가 무력해지는 현상과 서브에이전트 분리.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "context-engineering",
+    "context-rot",
+    "tdd"
+   ]
   },
   {
    "id": "test-types",
@@ -26176,6 +26182,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "파이썬에서 테스트를 쓰고 실행하는 최소 사용법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fresh-context-review",
+   "label": "새 컨텍스트 리뷰",
+   "parent": "context-pollution",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작성 과정을 모르는 서브에이전트가 diff를 검토하는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "verification-evidence",
+   "label": "검증 증거 요구",
+   "parent": "context-pollution",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실행 명령과 출력을 증거로 요구하는 습관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reviewer-skip-style",
+   "label": "리뷰어에게 스타일 제외 지시",
+   "parent": "context-pollution",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "불필요한 개선을 막는 리뷰 프롬프트 요령.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "subagent-cost-tradeoff",
+   "label": "서브에이전트 비용 대 이득",
+   "parent": "context-pollution",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "병렬성·격리 이득과 토큰·시간 비용의 균형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "file-based-handoff",
+   "label": "파일로 넘기는 인수인계",
+   "parent": "context-pollution",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트 간 정보를 파일로만 전달해 오염을 줄이는 법.",
    "added": "2026-11-16",
    "related": []
   }
