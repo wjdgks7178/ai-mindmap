@@ -16514,11 +16514,12 @@
    "label": "학습·검증·평가 분할",
    "parent": "finetune-data-requirements",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가 데이터 누수를 막는 데이터 분할.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "data-labeling-qa",
@@ -20334,6 +20335,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "파라미터 효율 미세조정 도구.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "group-aware-split",
+   "label": "그룹 인식 분할",
+   "parent": "train-eval-split",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 개체를 한쪽에만 넣기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "temporal-split",
+   "label": "시간 순 분할",
+   "parent": "train-eval-split",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거로 학습·미래로 평가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "preprocessing-leakage",
+   "label": "전처리 누수",
+   "parent": "train-eval-split",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 전 변환이 정보를 새게 함.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "adversarial-validation",
+   "label": "적대적 검증",
+   "parent": "train-eval-split",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·평가 분포 차이를 분류기로 탐지.",
    "added": "2026-11-16",
    "related": []
   }
