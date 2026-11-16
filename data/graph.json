@@ -15883,11 +15883,14 @@
    "label": "대기열 이탈률",
    "parent": "escalation-metrics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이관 대기 중 떠나는 고객.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "handoff-wait-time"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "hint-escalation-rule",
@@ -19450,6 +19453,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "각 이관이 어떤 신호로 발동했는지 기록.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "short-abandon-threshold",
+   "label": "단기 이탈 기준",
+   "parent": "queue-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "몇 초 안에 끊은 호를 제외하는 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "abandon-rate-denominator",
+   "label": "이탈률 분모",
+   "parent": "queue-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분모 정의에 따라 4.5%가 9%가 됨.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "interval-level-reporting",
+   "label": "구간별 보고",
+   "parent": "queue-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "30분 단위로 피크 손실 보기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "callback-option",
+   "label": "콜백 옵션",
+   "parent": "queue-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대기 대신 전화를 받는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "transferred-call-abandonment",
+   "label": "이관 호 이탈",
+   "parent": "queue-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI를 거쳐 온 고객의 이탈 패턴.",
    "added": "2026-11-16",
    "related": []
   }
