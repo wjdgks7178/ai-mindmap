@@ -1209,10 +1209,16 @@
    "label": "확신도 보정",
    "parent": "hallucination",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "모델이 말하는 확신과 실제 정답률이 맞는 정도.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "model-calibration",
+    "temperature-scaling",
+    "hallucination"
+   ]
   },
   {
    "id": "knowledge-cutoff",
@@ -24862,6 +24868,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "창작자·사이트가 AI 학습 사용을 거부하는 방법들.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "p-true-self-evaluation",
+   "label": "P(True) 자기 평가",
+   "parent": "calibration",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 자기 답이 맞을 확률을 스스로 추정하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "confidence-threshold-routing",
+   "label": "신뢰도 임계값 라우팅",
+   "parent": "calibration",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "확신이 낮으면 사람에게 넘기는 설계.",
    "added": "2026-11-16",
    "related": []
   }
