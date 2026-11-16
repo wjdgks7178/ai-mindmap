@@ -15909,11 +15909,12 @@
    "label": "힌트 남용 탐지",
    "parent": "staged-hints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시도 없이 힌트만 소비하는 패턴.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "bypass-prompt-set",
@@ -19553,6 +19554,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사전지식·마감에 따라 효과가 다름.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "gaming-the-system",
+   "label": "시스템 속이기 gaming",
+   "parent": "hint-abuse-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 환경을 오용해 배우지 않고 넘기기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "help-avoidance",
+   "label": "도움 회피",
+   "parent": "hint-abuse-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필요한데 도움을 안 쓰는 패턴.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "systematic-guessing",
+   "label": "체계적 추측",
+   "parent": "hint-abuse-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답을 대입해 가며 맞히기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "time-on-task-noise",
+   "label": "체류 시간의 노이즈",
+   "parent": "hint-abuse-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "윈저화 등 보정이 필요한 이유.",
    "added": "2026-11-16",
    "related": []
   }
