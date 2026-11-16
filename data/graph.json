@@ -16975,11 +16975,14 @@
    "label": "TDM 옵트아웃",
    "parent": "training-data-summary",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "저작권 지침 4(3)조의 권리 유보 제도.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "copyright-policy-gpai"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "annex-xi-documentation",
@@ -21939,6 +21942,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI Office 지원 대상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "tdm-definition",
+   "label": "TDM 정의",
+   "parent": "tdm-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2조 2항의 자동화된 분석 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "machine-readable-reservation",
+   "label": "기계 판독 가능한 유보",
+   "parent": "tdm-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웹 콘텐츠 옵트아웃의 적절한 방식 예.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "research-organisation-tdm",
+   "label": "연구기관 TDM 예외",
+   "parent": "tdm-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "3조, 유보 불가의 강제 예외.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "lawful-access-condition",
+   "label": "적법한 접근 조건",
+   "parent": "tdm-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4조 1항의 전제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "robots-txt-ai-optout",
+   "label": "robots.txt와 AI 옵트아웃",
+   "parent": "tdm-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표시 수단과 법적 효력의 관계.",
    "added": "2026-11-16",
    "related": []
   }
