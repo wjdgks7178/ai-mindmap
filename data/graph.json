@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "nodes": [
   {
    "id": "ai",
@@ -15736,11 +15736,12 @@
    "label": "응대 전환율 deflection",
    "parent": "ai-chatbot-vs-assist",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "챗봇이 사람 없이 해결한 비율과 함정.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "risk-tiered-intents",
@@ -18886,6 +18887,50 @@
    "priority": 3,
    "summary": "수정의 성격 분류.",
    "added": "2026-11-15",
+   "related": []
+  },
+  {
+   "id": "resolution-rate",
+   "label": "해결률 resolution rate",
+   "parent": "deflection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결 확인 신호로 세는 진짜 성과 지표.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reopened-as-ticket",
+   "label": "재문의율",
+   "parent": "deflection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "deflection 후 같은 주제로 티켓이 다시 열리는 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "measurement-window",
+   "label": "측정 창 72시간",
+   "parent": "deflection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결 인정 기간과 창을 바꾸면 생기는 왜곡.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "abandonment-vs-resolution",
+   "label": "이탈과 해결 구분",
+   "parent": "deflection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객이 포기한 것을 성공으로 세지 않기.",
+   "added": "2026-11-16",
    "related": []
   }
  ]
