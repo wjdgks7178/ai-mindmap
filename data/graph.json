@@ -16398,11 +16398,14 @@
    "label": "주장 단위 출처 연결",
    "parent": "evidence-agreement-score",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문장 아닌 주장별로 근거 스팬을 연결.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "groundedness-metric"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "groundedness-metric",
@@ -20067,6 +20070,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "검색 품질과 답변 충실도를 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "alce-benchmark",
+   "label": "ALCE 벤치마크",
+   "parent": "claim-level-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 인용 품질을 자동 평가하는 벤치마크.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "citation-recall-precision",
+   "label": "인용 재현·정밀",
+   "parent": "claim-level-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용이 주장을 충분히·필요하게 지지하는가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "supporting-quote-grounding",
+   "label": "근거 인용구 접지",
+   "parent": "claim-level-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답을 구체적 인용구에 묶는 훈련.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "nli-entailment-check",
+   "label": "NLI 함의 검사",
+   "parent": "claim-level-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자료가 문장을 함의하는지 판정.",
    "added": "2026-11-16",
    "related": []
   }
