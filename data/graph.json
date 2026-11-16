@@ -17015,11 +17015,15 @@
    "label": "GPAI 오픈소스 면제",
    "parent": "training-data-summary",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "53조 2항 면제 범위와 예외.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "systemic-risk-model",
+    "annex-xii-info"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "annex-xii-info",
@@ -22602,6 +22606,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "25조 2항.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "free-open-source-licence-definition",
+   "label": "자유·오픈소스 라이선스 정의",
+   "parent": "open-source-exemption-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실행·복사·배포·연구·수정·개선 허용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "art-2-12-open-source-general",
+   "label": "2조 12항 일반 면제",
+   "parent": "open-source-exemption-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고위험·5조·50조는 예외.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "open-weights-vs-open-source",
+   "label": "오픈 가중치 vs 오픈소스",
+   "parent": "open-source-exemption-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 범위와 라이선스의 차이.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "open-source-still-owes-copyright",
+   "label": "오픈소스도 저작권 정책 의무",
+   "parent": "open-source-exemption-gpai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "(c)(d)는 면제 대상 아님.",
    "added": "2026-11-16",
    "related": []
   }
