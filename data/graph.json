@@ -15868,11 +15868,15 @@
    "label": "이관 성공률",
    "parent": "escalation-metrics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "맥락이 보존된 이관 비율.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "repeat-explanation-rate",
+    "time-to-first-useful-response"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "queue-abandonment",
@@ -19391,6 +19395,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "재접촉을 세는 기간 정의.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "post-escalation-recontact",
+   "label": "이관 후 재접촉률",
+   "parent": "transfer-success-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "24시간 내 같은 고객의 재접촉.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "handoff-csat-gap",
+   "label": "이관 건 CSAT 격차",
+   "parent": "transfer-success-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 건과 비이관 건의 만족도 차이.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "over-escalation-false-positive",
+   "label": "과잉 이관",
+   "parent": "transfer-success-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 가진 정보로 풀리는 이관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "late-escalation-false-negative",
+   "label": "과소 이관",
+   "parent": "transfer-success-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "늦은 이관이 만드는 불만.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "trigger-attribution",
+   "label": "트리거 귀속",
+   "parent": "transfer-success-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 이관이 어떤 신호로 발동했는지 기록.",
    "added": "2026-11-16",
    "related": []
   }
