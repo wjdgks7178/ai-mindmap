@@ -17380,11 +17380,14 @@
    "label": "PHI(보호 대상 건강정보)",
    "parent": "business-associate-agreement",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "HIPAA가 보호하는 개인 식별 가능 건강 정보.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "pii-minimization-handoff"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "baa-model-training",
@@ -23436,6 +23439,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "방향이 다른 두 오류를 분리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hipaa-safe-harbor",
+   "label": "HIPAA 세이프 하버",
+   "parent": "phi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "18개 식별자 제거 + 실제 지식 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hipaa-expert-determination",
+   "label": "HIPAA 전문가 판정",
+   "parent": "phi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "식별 위험 매우 작음을 문서화.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "iihi",
+   "label": "개인 식별 가능 건강 정보 IIHI",
+   "parent": "phi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PHI의 바탕 정의.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "phi-exclusions",
+   "label": "PHI 제외 대상",
+   "parent": "phi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교육 기록·고용 기록·사망 50년 경과.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "zip-3-digit-rule",
+   "label": "우편번호 앞 3자리 규칙",
+   "parent": "phi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합산 인구 2만 명 초과 조건.",
    "added": "2026-11-16",
    "related": []
   }
