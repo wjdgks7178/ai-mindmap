@@ -15784,11 +15784,12 @@
    "label": "신뢰도 보정과 이관",
    "parent": "escalation-triggers",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 자체 신뢰도가 안 맞을 때의 대안.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "escalation-rate-target",
@@ -19076,6 +19077,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "언어별 별도 시험이 필요한 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rlhf-overconfidence",
+   "label": "RLHF 과신",
+   "parent": "confidence-calibration-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보상 모델 편향이 만드는 과도한 확신.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "retrieval-score-handoff",
+   "label": "검색 점수 기반 이관",
+   "parent": "confidence-calibration-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근거 문서 유사도로 이관 판단.",
    "added": "2026-11-16",
    "related": []
   }
