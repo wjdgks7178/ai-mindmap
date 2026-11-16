@@ -16626,11 +16626,14 @@
    "label": "검토 큐 설계",
    "parent": "human-in-the-loop-routing",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확신·금액 기준 정렬과 기록 항목.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "reviewer-capacity"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "active-learning-review",
@@ -20743,6 +20746,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "외부 의사결정자의 편향을 고려.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "littles-law-queue",
+   "label": "Little의 법칙",
+   "parent": "review-queue-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도착률이 처리율에 가까우면 큐가 무한히 늘어남.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rubber-stamping",
+   "label": "고무도장 검토",
+   "parent": "review-queue-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토자가 확신 점수를 따라 승인만 하는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "review-sla-tiers",
+   "label": "검토 SLA 등급",
+   "parent": "review-queue-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "P0·P1·P2 첫 검토 시간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "two-stage-triage",
+   "label": "2단계 분류",
+   "parent": "review-queue-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 1차로 안전·위험·애매 나누기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "audit-sampling-auto-approved",
+   "label": "자동 승인 표본 감사",
+   "parent": "review-queue-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사후 무작위 표본으로 드리프트 감시.",
    "added": "2026-11-16",
    "related": []
   }
