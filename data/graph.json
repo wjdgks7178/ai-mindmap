@@ -16350,11 +16350,12 @@
    "label": "오류 감사",
    "parent": "pair-worksheets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템이 낼 오류와 사용자 영향, 예방·복구 계획을 정리.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "explainability-audit",
@@ -19840,6 +19841,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI 추천 전에 사용자 판단을 받는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "context-error",
+   "label": "컨텍스트 오류",
+   "parent": "errors-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시스템은 맞게 작동했지만 사용자가 오류로 느끼는 것.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "background-error",
+   "label": "백그라운드 오류",
+   "parent": "errors-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "아무도 모르는 틀림, 전용 QA 필요.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "happy-accident",
+   "label": "행운의 사고",
+   "parent": "errors-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류로 표시됐지만 유용한 결과.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "graceful-failure-paths",
+   "label": "우아한 실패 경로",
+   "parent": "errors-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한계 설명·대안·통제권 반환.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "error-channel-monitoring",
+   "label": "오류 채널 모니터링",
+   "parent": "errors-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객센터·SNS·지표로 새 오류 찾기.",
    "added": "2026-11-16",
    "related": []
   }
