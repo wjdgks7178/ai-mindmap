@@ -17325,11 +17325,14 @@
    "label": "무수정 서명 비율",
    "parent": "clinician-review-signoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검토 형식화를 감지하는 운영 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "attestation-weakness"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "source-linked-note",
@@ -23694,6 +23697,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "rwg 계산 방식 명시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "review-time-metric",
+   "label": "검토 시간 지표",
+   "parent": "unedited-note-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노트 열람·검토에 쓴 시간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "audit-sample-error-rate",
+   "label": "감사 표본 오류율",
+   "parent": "unedited-note-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 감사해 찾은 오류 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "metric-gaming-goodhart",
+   "label": "지표의 목표화 문제",
+   "parent": "unedited-note-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표를 목표로 삼으면 왜곡.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "post-hoc-error-reports",
+   "label": "사후 오류 신고",
+   "parent": "unedited-note-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사건·환자별 신고 집계.",
    "added": "2026-11-16",
    "related": []
   }
