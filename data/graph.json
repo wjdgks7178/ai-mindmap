@@ -3840,11 +3840,16 @@
    "label": "탈옥",
    "parent": "red-teaming",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "안전 규칙을 우회하도록 유도하는 입력 기법.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "prompt-injection",
+    "guardrails",
+    "context-window"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "automated-red-teaming",
@@ -25630,6 +25635,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "중요 문서를 앞·뒤로 옮기는 전처리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "many-shot-jailbreaking",
+   "label": "다중 예시 탈옥",
+   "parent": "jailbreak",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가짜 대화 수백 개로 모델을 흔드는 긴 컨텍스트 공격.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "constitutional-classifiers",
+   "label": "Constitutional Classifiers",
+   "parent": "jailbreak",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "원칙으로 합성 데이터를 만들어 학습한 입출력 방어 필터.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "universal-jailbreak",
+   "label": "보편 탈옥",
+   "parent": "jailbreak",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 질문에 공통으로 통하는 우회 프롬프트.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "over-refusal",
+   "label": "과잉 거절",
+   "parent": "jailbreak",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "무해한 요청까지 막아 버리는 방어의 부작용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "defense-in-depth-ai",
+   "label": "다층 방어",
+   "parent": "jailbreak",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델·필터·모니터링·레드팀을 겹쳐 쓰는 설계.",
    "added": "2026-11-16",
    "related": []
   }
