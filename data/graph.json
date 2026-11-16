@@ -665,10 +665,16 @@
    "label": "임베딩과 CLIP",
    "parent": "knowledge-retrieval",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "서로 다른 데이터를 같은 의미 공간에 놓는 방법.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "multimodal",
+    "clip-text-encoder",
+    "image-generation"
+   ]
   },
   {
    "id": "fusion-architectures",
@@ -24569,6 +24575,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "전체 평균과 하위 집단 결과가 뒤집히는 통계 함정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "multimodal-rag",
+   "label": "멀티모달 RAG",
+   "parent": "embedding-clip",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지·표·도면을 텍스트와 함께 검색해 답에 쓰는 RAG.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "zero-shot-image-classification",
+   "label": "제로샷 이미지 분류",
+   "parent": "embedding-clip",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 없이 후보 문장과의 유사도로 이미지 분류.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "image-text-retrieval-vector-db",
+   "label": "이미지 벡터 검색 구축",
+   "parent": "embedding-clip",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지 임베딩을 벡터 DB에 넣어 글로 찾는 파이프라인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "modality-gap",
+   "label": "모달리티 간극",
+   "parent": "embedding-clip",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지 벡터와 글 벡터가 한 공간에서도 서로 몰려 있는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "clip-limitations",
+   "label": "CLIP의 한계",
+   "parent": "embedding-clip",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개수·공간 관계·편향 등 약점.",
    "added": "2026-11-16",
    "related": []
   }
