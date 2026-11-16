@@ -16491,11 +16491,12 @@
    "label": "프롬프트 토큰 비용",
    "parent": "few-shot-before-finetune",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "긴 예시가 호출량에 따라 비용·지연을 키우는 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "lora-adapters",
@@ -20520,6 +20521,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모르면 모른다고 답하게 하기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "static-prefix-design",
+   "label": "정적 앞부분 설계",
+   "parent": "prompt-token-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "캐시가 잘 맞도록 고정 내용을 앞에 두기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cache-hit-monitoring",
+   "label": "캐시 적중 모니터링",
+   "parent": "prompt-token-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답 필드로 적중 토큰 확인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "input-vs-output-token-price",
+   "label": "입력·출력 토큰 단가",
+   "parent": "prompt-token-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력과 출력이 다르게 과금되는 구조.",
    "added": "2026-11-16",
    "related": []
   }
