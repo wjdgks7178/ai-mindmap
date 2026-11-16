@@ -16768,11 +16768,14 @@
    "label": "소형 중견기업",
    "parent": "sme-fine-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI Act 개정에 새로 등장한 중간 규모 범주.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "sme-definition"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "digital-omnibus",
@@ -21182,6 +21185,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "그룹 소속 시 직원·매출 합산.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "smc-thresholds",
+   "label": "SMC 한도 논쟁",
+   "parent": "small-mid-cap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "750명·1.5억 유로 vs 의회·이사회의 더 높은 안.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "annual-work-units",
+   "label": "연간 근무 단위 AWU",
+   "parent": "small-mid-cap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직원 수 계산 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "two-consecutive-periods-rule",
+   "label": "두 회계연도 연속 규칙",
+   "parent": "small-mid-cap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한도 초과·미달 시 지위 변경 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "vc-fund-carveout",
+   "label": "벤처 펀드 예외",
+   "parent": "small-mid-cap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AIF와 운용사는 연결로 보지 않는 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "lower-ceilings-member-states",
+   "label": "회원국의 더 낮은 한도",
+   "parent": "small-mid-cap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상한은 최대치일 뿐.",
    "added": "2026-11-16",
    "related": []
   }
