@@ -1227,7 +1227,10 @@
    "related": [
     "model-calibration",
     "temperature-scaling",
-    "hallucination"
+    "hallucination",
+    "reliability-diagram",
+    "brier-score",
+    "platt-scaling"
    ]
   },
   {
@@ -1242,7 +1245,8 @@
    "done": "2026-11-16",
    "related": [
     "rag",
-    "hallucination"
+    "hallucination",
+    "web-search-tool"
    ]
   },
   {
@@ -1301,7 +1305,10 @@
    "related": [
     "reasoning-models",
     "explainability",
-    "agent-cost-latency"
+    "agent-cost-latency",
+    "adaptive-thinking",
+    "effort-parameter",
+    "emergent-abilities"
    ]
   },
   {
@@ -1353,7 +1360,8 @@
    "related": [
     "prompt-caching",
     "model-routing",
-    "batch-api"
+    "batch-api",
+    "token-budget"
    ]
   },
   {
@@ -1368,7 +1376,9 @@
    "done": "2026-11-16",
    "related": [
     "prompt-engineering",
-    "rag"
+    "rag",
+    "routing-pattern",
+    "parallelization-pattern"
    ]
   },
   {
@@ -2237,7 +2247,8 @@
    "done": "2026-11-16",
    "related": [
     "data-contamination",
-    "calibration"
+    "calibration",
+    "live-benchmark"
    ]
   },
   {
@@ -2377,7 +2388,8 @@
    "related": [
     "model-card",
     "eu-ai-act",
-    "data-contamination"
+    "data-contamination",
+    "training-data-summary"
    ]
   },
   {
@@ -3700,7 +3712,9 @@
    "added": "2026-11-01",
    "related": [
     "rlhf",
-    "dpo"
+    "dpo",
+    "reward-hacking",
+    "kl-penalty"
    ],
    "done": "2026-11-16"
   },
@@ -3740,7 +3754,8 @@
    "added": "2026-11-01",
    "related": [
     "rag",
-    "context-engineering"
+    "context-engineering",
+    "needle-in-haystack"
    ],
    "done": "2026-11-16"
   },
@@ -3890,7 +3905,9 @@
    "related": [
     "rlhf",
     "dpo",
-    "reward-model"
+    "reward-model",
+    "constitutional-ai",
+    "critique-revision"
    ],
    "done": "2026-11-16"
   },
@@ -11281,7 +11298,8 @@
    "done": "2026-11-16",
    "related": [
     "embedding-clip",
-    "image-generation"
+    "image-generation",
+    "rectified-flow"
    ]
   },
   {
@@ -12287,7 +12305,8 @@
    "done": "2026-11-16",
    "related": [
     "human-in-the-loop",
-    "context-window"
+    "context-window",
+    "messages-state"
    ]
   },
   {
@@ -12661,7 +12680,8 @@
    "done": "2026-11-16",
    "related": [
     "structured-outputs",
-    "json-schema-output"
+    "json-schema-output",
+    "outlines-library"
    ]
   },
   {
@@ -15965,7 +15985,10 @@
    "priority": 3,
    "summary": "모델 자체 신뢰도가 안 맞을 때의 대안.",
    "added": "2026-11-15",
-   "related": [],
+   "related": [
+    "expected-calibration-error",
+    "verbalized-confidence"
+   ],
    "done": "2026-11-16"
   },
   {
@@ -16491,7 +16514,9 @@
    "priority": 3,
    "summary": "맞는 AI 답도 믿지 않는 반대 방향 오류.",
    "added": "2026-11-15",
-   "related": [],
+   "related": [
+    "cognitive-forcing-function"
+   ],
    "done": "2026-11-16"
   },
   {
@@ -16518,7 +16543,8 @@
    "summary": "확인 단계를 넣어 맹신을 줄이는 UX.",
    "added": "2026-11-15",
    "related": [
-    "trust-calibration"
+    "trust-calibration",
+    "need-for-cognition"
    ],
    "done": "2026-11-16"
   },
@@ -16543,7 +16569,9 @@
    "priority": 3,
    "summary": "사용자에게 보이는 설명이 상태·지식 격차에 맞는지 점검.",
    "added": "2026-11-15",
-   "related": [],
+   "related": [
+    "counterfactual-explanation"
+   ],
    "done": "2026-11-16"
   },
   {
@@ -16622,7 +16650,11 @@
    "summary": "많이 넣어도 모델이 다 활용하진 않는 문제.",
    "added": "2026-11-15",
    "related": [
-    "groundedness-metric"
+    "groundedness-metric",
+    "lost-in-the-middle",
+    "context-rot",
+    "distractor-effect",
+    "focused-vs-full-prompt"
    ],
    "done": "2026-11-16"
   },
@@ -16636,7 +16668,8 @@
    "summary": "방식 선택 전에 평가 세트를 준비하는 원칙.",
    "added": "2026-11-15",
    "related": [
-    "long-context-limits"
+    "long-context-limits",
+    "long-context-vs-rag"
    ],
    "done": "2026-11-16"
   },
@@ -16687,7 +16720,9 @@
    "priority": 3,
    "summary": "전체가 아닌 저랭크 어댑터만 학습해 비용을 줄이는 방법.",
    "added": "2026-11-15",
-   "related": [],
+   "related": [
+    "qlora"
+   ],
    "done": "2026-11-16"
   },
   {
@@ -25788,6 +25823,72 @@
    "status": "planned",
    "priority": 4,
    "summary": "판정 AI의 편향이 학습에 증폭되는 위험.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "overconfidence-in-llms",
+   "label": "LLM의 과신",
+   "parent": "calibration",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 틀린 답도 확신 있게 말하는 경향과 점검법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "calibration-curve-by-bin",
+   "label": "구간별 정확도 측정",
+   "parent": "calibration",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "확신 구간별 실제 정답률을 표로 재는 실습.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "self-consistency-voting",
+   "label": "자기 일관성(다수결)",
+   "parent": "chain-of-thought",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 번 풀어 가장 많이 나온 답을 고르는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "thinking-vs-no-thinking",
+   "label": "생각 켜기 vs 끄기",
+   "parent": "chain-of-thought",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과제별로 사고 기능을 쓸 때와 안 쓸 때의 판단.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cot-faithfulness-caveat",
+   "label": "추론 과정의 신뢰 한계",
+   "parent": "chain-of-thought",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쓴 풀이가 실제 계산과 다를 수 있다는 주의.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "preference-label-cost",
+   "label": "선호 라벨 비용",
+   "parent": "rlaif",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 라벨과 AI 라벨의 비용·품질 비교.",
    "added": "2026-11-16",
    "related": []
   }
