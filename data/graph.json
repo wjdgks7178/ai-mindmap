@@ -17347,11 +17347,14 @@
    "label": "일방 동의",
    "parent": "all-party-consent",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대화 참여자 한 명 동의로 녹음 가능한 규칙.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "phi"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "recording-notice-design",
@@ -23494,6 +23497,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "합산 인구 2만 명 초과 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "federal-wiretap-act",
+   "label": "연방 도청법 Wiretap Act",
+   "parent": "one-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "18 USC 2511의 기본 금지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "party-consent-exception",
+   "label": "당사자 동의 예외",
+   "parent": "one-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2511(2)(d).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "tortious-purpose-limit",
+   "label": "범죄·불법행위 목적 한계",
+   "parent": "one-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외가 적용되지 않는 경우.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-participant-recording",
+   "label": "AI 참여 통화의 녹음",
+   "parent": "one-party-consent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 기록하는 통화의 동의 문제.",
    "added": "2026-11-16",
    "related": []
   }
