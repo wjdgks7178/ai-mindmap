@@ -16468,11 +16468,12 @@
    "label": "예시 고르기",
    "parent": "few-shot-before-finetune",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "관련성·다양성·엣지 케이스 기준으로 few-shot 예시를 고르는 법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "examples-to-training-data",
@@ -20233,6 +20234,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "튜닝에 안 쓴 최종 보고용 세트.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "knn-example-retrieval",
+   "label": "kNN 예시 검색",
+   "parent": "example-selection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유사도로 가까운 예시를 뽑는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "mmr-diversity",
+   "label": "MMR 다양성 선택",
+   "parent": "example-selection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관련성과 상호 보완을 함께 고려.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "example-order-sensitivity",
+   "label": "예시 순서 민감성",
+   "parent": "example-selection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서가 결과를 바꾸는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "skill-knn",
+   "label": "Skill-KNN",
+   "parent": "example-selection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력을 기술 설명으로 바꿔 임베딩.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "edge-case-examples",
+   "label": "경계 사례 예시",
+   "parent": "example-selection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "헷갈리는 사례를 일부 포함.",
    "added": "2026-11-16",
    "related": []
   }
