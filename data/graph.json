@@ -16927,11 +16927,14 @@
    "label": "안전·보안 장",
    "parent": "gpai-code-of-practice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템 리스크 관리 모범 사례.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "systemic-risk-model"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "flop-compute",
@@ -22102,6 +22105,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "53조 5·6항.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "safety-security-framework",
+   "label": "안전·보안 프레임워크",
+   "parent": "safety-security-chapter",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약속 1, 작성·이행·갱신.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "risk-tiers-capability-based",
+   "label": "능력 기반 위험 등급",
+   "parent": "safety-security-chapter",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도달하지 않은 상위 등급 정의.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "independent-external-evaluators",
+   "label": "독립 외부 평가자",
+   "parent": "safety-security-chapter",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 유능한 버전 접근과 30영업일 규칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "model-report-coc",
+   "label": "모델 보고서",
+   "parent": "safety-security-chapter",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출시 전 작성·갱신, SME는 상세 축소.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "security-goal-model-theft",
+   "label": "보안 목표와 모델 탈취 방지",
+   "parent": "safety-security-chapter",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위협 행위자 가정과 보호 범위.",
    "added": "2026-11-16",
    "related": []
   }
