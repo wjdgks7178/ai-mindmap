@@ -4071,10 +4071,15 @@
    "label": "평가 반복과 분산",
    "parent": "pass-at-k",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "같은 과제를 여러 번 돌리는 이유와 신뢰구간·시드 관리.",
-   "added": "2026-11-02"
+   "added": "2026-11-02",
+   "done": "2026-11-16",
+   "related": [
+    "benchmark-saturation",
+    "temperature-sampling"
+   ]
   },
   {
    "id": "eval-transcripts",
@@ -25226,6 +25231,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "형식이 맞아도 값이 틀릴 수 있다는 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "standard-error-of-mean",
+   "label": "평균의 표준오차",
+   "parent": "sampling-temperature-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평균 점수가 얼마나 흔들리는지 나타내는 값.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "clustered-standard-errors",
+   "label": "클러스터 표준오차",
+   "parent": "sampling-temperature-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "묶음이 있는 문제에서 오차를 과소평가하지 않는 계산.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "paired-difference-test",
+   "label": "짝지은 차이 검정",
+   "parent": "sampling-temperature-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 문제에 대한 두 모델 점수 차이를 분석.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "power-analysis",
+   "label": "검정력 분석",
+   "parent": "sampling-temperature-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "차이를 가려내려면 문제가 몇 개 필요한지 계산.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "eval-reproducibility",
+   "label": "평가 재현성",
+   "parent": "sampling-temperature-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "온도·시드·설정을 기록해 같은 결과를 다시 얻는 법.",
    "added": "2026-11-16",
    "related": []
   }
