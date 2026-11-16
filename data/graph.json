@@ -909,10 +909,16 @@
    "label": "Red-Green-Refactor",
    "parent": "tdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "TDD의 3박자 반복 사이클.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "sdd",
+    "vibecoding",
+    "test-tampering"
+   ]
   },
   {
    "id": "context-pollution",
@@ -26126,6 +26132,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델이 글자가 아닌 토큰을 보기 때문에 생기는 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "test-list-first",
+   "label": "테스트 목록 먼저",
+   "parent": "red-green-refactor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구현 전에 케이스 목록을 적고 하나씩 고르는 습관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "minimal-implementation",
+   "label": "최소 구현",
+   "parent": "red-green-refactor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통과할 만큼만 쓰는 구현 원칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "refactor-step-skipping",
+   "label": "리팩터 건너뛰기 문제",
+   "parent": "red-green-refactor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통과 후 정리를 안 해 코드가 엉망이 되는 함정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pytest-basics",
+   "label": "pytest 기초",
+   "parent": "red-green-refactor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "파이썬에서 테스트를 쓰고 실행하는 최소 사용법.",
    "added": "2026-11-16",
    "related": []
   }
