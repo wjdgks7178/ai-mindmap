@@ -4206,10 +4206,16 @@
    "label": "평가용 격리 환경",
    "parent": "eval-harness",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "평가 중 에이전트가 환경을 망치거나 정답을 훔쳐보지 못하게 하는 샌드박스.",
-   "added": "2026-11-02"
+   "added": "2026-11-02",
+   "done": "2026-11-16",
+   "related": [
+    "agent-harness-variance",
+    "prompt-injection",
+    "guardrails"
+   ]
   },
   {
    "id": "action-tokenization",
@@ -26776,6 +26782,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "낮은 통과율로 시작하는 평가와 100% 근처 유지 평가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "clean-trial-environment",
+   "label": "시도별 깨끗한 환경",
+   "parent": "eval-sandbox",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "각 시도를 초기 상태에서 시작하는 원칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "shared-state-leak",
+   "label": "공유 상태 누출",
+   "parent": "eval-sandbox",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이전 시도의 흔적이 점수를 부풀리는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "filesystem-isolation",
+   "label": "파일 시스템 격리",
+   "parent": "eval-sandbox",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작업 폴더 밖 접근을 막는 격리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "network-isolation-proxy",
+   "label": "네트워크 격리와 프록시",
+   "parent": "eval-sandbox",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도메인을 제어하는 외부 프록시 구조.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "mock-services-for-evals",
+   "label": "평가용 목 서비스",
+   "parent": "eval-sandbox",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "메일·결제 등 외부 호출을 가짜 서버로 대체.",
    "added": "2026-11-16",
    "related": []
   }
