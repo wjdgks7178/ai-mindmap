@@ -16597,11 +16597,15 @@
    "label": "이중 임계값 정책",
    "parent": "human-in-the-loop-routing",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위·아래 기준으로 자동 수락/거절/사람 검토를 가르는 방식.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "confidence-calibration-handoff",
+    "ece-metric"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "learning-to-defer",
@@ -20626,6 +20630,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "비모수 단조 함수로 보정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "abstain-vs-escalate",
+   "label": "거부 vs 이관",
+   "parent": "double-threshold-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답하지 않기와 사람에게 넘기기를 분리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reviewer-capacity",
+   "label": "검토자 용량",
+   "parent": "double-threshold-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 비율이 검토 큐 처리량에 묶이는 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "diminishing-returns-review",
+   "label": "검토의 수확 체감",
+   "parent": "double-threshold-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추가 검토 이득이 작아지는 구간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "confidence-distribution-shape",
+   "label": "확신 분포 모양",
+   "parent": "double-threshold-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평평·쌍봉 분포가 뜻하는 것.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "policy-owner",
+   "label": "정책 단일 책임자",
+   "parent": "double-threshold-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연동된 지표를 한 명이 소유.",
    "added": "2026-11-16",
    "related": []
   }
