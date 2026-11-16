@@ -3347,10 +3347,16 @@
    "label": "원격조종 시연 데이터",
    "parent": "physical-ai",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "로봇 학습의 데이터 병목과 수집법.",
-   "added": "2026-11-01"
+   "added": "2026-11-01",
+   "done": "2026-11-16",
+   "related": [
+    "sim-to-real",
+    "vla-model",
+    "humanoid-robots"
+   ]
   },
   {
    "id": "diffusion-model",
@@ -24751,6 +24757,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "가격·가동률·인건비로 따지는 도입 타당성.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "aloha-act",
+   "label": "ALOHA와 ACT",
+   "parent": "teleoperation-data",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "저가 양팔 원격조종 장치와 모방 학습 알고리즘.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "umi-gripper",
+   "label": "UMI 그리퍼",
+   "parent": "teleoperation-data",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로봇 없이 손에 쥐고 시연 데이터를 모으는 장치.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "open-x-embodiment",
+   "label": "Open X-Embodiment",
+   "parent": "teleoperation-data",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 기관·로봇 데이터를 합친 공개 데이터셋과 RT-X.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "imitation-learning",
+   "label": "모방 학습",
+   "parent": "teleoperation-data",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 시연을 따라 하도록 정책을 배우는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "demonstration-quality",
+   "label": "시연 데이터 품질",
+   "parent": "teleoperation-data",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "조종자 편차·실패 시연·라벨링 문제.",
    "added": "2026-11-16",
    "related": []
   }
