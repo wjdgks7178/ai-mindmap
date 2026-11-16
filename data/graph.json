@@ -17187,11 +17187,14 @@
    "label": "채점 모델 분리",
    "parent": "rubric-grading",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "생성 모델과 다른 모델로 채점하는 이유.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "self-enhancement-bias"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "inter-rater-rwg",
@@ -22965,6 +22968,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "차원이 서로 구분되는지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "self-recognition",
+   "label": "자기 인식",
+   "parent": "grader-different-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 자기 글을 알아보는 능력.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cross-model-grading",
+   "label": "교차 모델 채점",
+   "parent": "grader-different-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 모델이 서로 평가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "judge-calibration-human-sample",
+   "label": "심판 보정용 사람 표본",
+   "parent": "grader-different-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 평가로 심판 편향 점검.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "shared-training-data-bias",
+   "label": "학습 데이터 중복과 선호",
+   "parent": "grader-different-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 계열도 닮은 선호를 보일 가능성.",
    "added": "2026-11-16",
    "related": []
   }
