@@ -16502,11 +16502,12 @@
    "label": "LoRA 어댑터",
    "parent": "finetune-data-requirements",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전체가 아닌 저랭크 어댑터만 학습해 비용을 줄이는 방법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "train-eval-split",
@@ -20289,6 +20290,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "헷갈리는 사례를 일부 포함.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "lora-rank",
+   "label": "LoRA 랭크 r",
+   "parent": "lora-adapters",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작을수록 학습 파라미터가 줄어드는 설정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "lora-merge",
+   "label": "LoRA 병합",
+   "parent": "lora-adapters",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어댑터를 기본 모델에 합쳐 추론 지연 제거.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "multi-adapter-serving",
+   "label": "다중 어댑터 서빙",
+   "parent": "lora-adapters",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 모델 하나에 어댑터 여러 개.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "peft-library",
+   "label": "PEFT 라이브러리",
+   "parent": "lora-adapters",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파라미터 효율 미세조정 도구.",
    "added": "2026-11-16",
    "related": []
   }
