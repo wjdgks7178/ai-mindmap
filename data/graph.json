@@ -1328,10 +1328,16 @@
    "label": "프롬프트 평가",
    "parent": "prompt-engineering",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "성공 기준과 테스트 세트로 프롬프트 개선을 측정하는 방법.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "prompt-engineering",
+    "eval-set",
+    "llm-as-judge"
+   ]
   },
   {
    "id": "parallelization-pattern",
@@ -26237,6 +26243,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "에이전트 간 정보를 파일로만 전달해 오염을 줄이는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "success-criteria-smart",
+   "label": "성공 기준 SMART",
+   "parent": "prompt-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구체·측정·달성·관련 네 조건으로 목표 쓰기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "edge-case-design",
+   "label": "엣지 케이스 설계",
+   "parent": "prompt-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "빈·긴·모호·유해 입력을 평가에 넣는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "exact-match-grading",
+   "label": "정확 일치 채점",
+   "parent": "prompt-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문자열 비교로 범주형 답을 자동 채점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "llm-grader-rubric",
+   "label": "LLM 채점표 작성",
+   "parent": "prompt-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "척도 양끝과 용어를 정의한 채점 프롬프트.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "prompt-regression-test",
+   "label": "프롬프트 회귀 테스트",
+   "parent": "prompt-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트 수정 후 기존 정답이 깨지는지 확인.",
    "added": "2026-11-16",
    "related": []
   }
