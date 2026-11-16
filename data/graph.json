@@ -15856,11 +15856,12 @@
    "label": "봉쇄율의 함정",
    "parent": "escalation-metrics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "포기를 성공으로 세는 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "transfer-success-rate",
@@ -19346,6 +19347,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "범용 어시스턴트 재사용 시 경계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "silent-session-exclusion",
+   "label": "무응답 세션 제외",
+   "parent": "containment-rate-trap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분모 정의에 따라 율이 바뀜.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "silent-abandonment",
+   "label": "무언의 이탈",
+   "parent": "containment-rate-trap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화 중 떠나는 고객 처리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "deferred-contact",
+   "label": "지연 재접촉",
+   "parent": "containment-rate-trap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "며칠 뒤 다른 채널로 다시 오는 경우.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "repeat-contact-window",
+   "label": "반복 접촉 창",
+   "parent": "containment-rate-trap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재접촉을 세는 기간 정의.",
    "added": "2026-11-16",
    "related": []
   }
