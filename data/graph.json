@@ -16706,11 +16706,14 @@
    "label": "건당 처리 비용 추정",
    "parent": "cost-of-error-types",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시간×인건비로 이관·재작업 비용 구하기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cost-matrix"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "dpa-enforcement",
@@ -21285,6 +21288,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "0.5가 부적절한 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fully-loaded-hourly-cost",
+   "label": "완전 부담 시간당 비용",
+   "parent": "handling-time-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복리후생·교육을 더해 생산 시간으로 나눔.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "shrinkage-rate",
+   "label": "비생산 시간 비율 shrinkage",
+   "parent": "handling-time-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "휴식·회의·결근이 생산 시간을 줄임.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "agent-utilization",
+   "label": "상담사 활용률",
+   "parent": "handling-time-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통화·후처리 시간 ÷ 로그인 시간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cost-per-contact",
+   "label": "건당 연락 비용",
+   "parent": "handling-time-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "총 운영비 ÷ 처리 건수.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rework-time-measurement",
+   "label": "재작업 시간 실측",
+   "parent": "handling-time-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관·재접촉에 걸리는 시간 측정.",
    "added": "2026-11-16",
    "related": []
   }
