@@ -1335,10 +1335,16 @@
    "label": "에이전트 비용·지연 트레이드오프",
    "parent": "workflow-vs-agent",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "에이전트가 성능을 얻는 대신 치르는 토큰·시간 비용.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "prompt-caching",
+    "model-routing",
+    "batch-api"
+   ]
   },
   {
    "id": "simplest-solution-first",
@@ -25011,6 +25017,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "쉬운 작업은 로컬, 어려운 작업은 API로 보내는 구성.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cost-per-success",
+   "label": "성공 1건당 비용",
+   "parent": "agent-cost-latency",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "총비용을 성공한 작업 수로 나눈 에이전트 핵심 지표.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "parallel-tool-calls",
+   "label": "병렬 도구 호출",
+   "parent": "agent-cost-latency",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "독립적인 호출을 동시에 보내 지연을 줄이는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "context-growth-in-loops",
+   "label": "루프 속 컨텍스트 증가",
+   "parent": "agent-cost-latency",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "반복마다 입력이 불어나 비용이 늘어나는 구조.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "subagent-delegation-cost",
+   "label": "하위 에이전트 위임 비용",
+   "parent": "agent-cost-latency",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "위임 시 배경 정보 중복 입력으로 생기는 비용.",
    "added": "2026-11-16",
    "related": []
   }
