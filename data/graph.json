@@ -3734,11 +3734,15 @@
    "label": "Lost in the Middle",
    "parent": "context-window",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "관련 정보가 입력 중간에 있으면 성능이 떨어지는 위치 편향.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rag",
+    "context-engineering"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "token-budget",
@@ -25582,6 +25586,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "풀이가 들어간 예시로 추론을 유도하는 프롬프트.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "quote-first-prompting",
+   "label": "인용 먼저 프롬프팅",
+   "parent": "lost-in-the-middle",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "관련 부분을 먼저 인용시킨 뒤 답하게 하는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "xml-document-structure",
+   "label": "XML 태그 문서 구조화",
+   "parent": "lost-in-the-middle",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 문서를 태그로 구분해 넣는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "position-bias-test",
+   "label": "위치 편향 시험",
+   "parent": "lost-in-the-middle",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답 위치를 바꿔 모델의 편향을 재는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "context-reordering",
+   "label": "문서 재배치",
+   "parent": "lost-in-the-middle",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중요 문서를 앞·뒤로 옮기는 전처리.",
    "added": "2026-11-16",
    "related": []
   }
