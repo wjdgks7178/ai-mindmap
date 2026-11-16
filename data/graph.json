@@ -17248,11 +17248,15 @@
    "label": "오류율 분모 문제",
    "parent": "omission-vs-hallucination",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노트·문장·진료 기준에 따라 비율이 달라지는 이유.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "wer-limits",
+    "abandon-rate-denominator"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "voice-activity-detection",
@@ -23233,6 +23237,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "MIT 표기와 배지 문구 불일치.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "error-density-sentence-level",
+   "label": "오류 밀도 (문장 단위)",
+   "parent": "error-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 대비 오류 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "patient-level-error-rate",
+   "label": "환자 단위 오류율",
+   "parent": "error-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번이라도 영향받은 환자 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "error-definition-scope",
+   "label": "오류 정의 범위",
+   "parent": "error-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누락·환각 포함 여부.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "error-severity-stratification",
+   "label": "오류 심각도 구분",
+   "parent": "error-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경미와 치명을 따로 보고.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "same-denominator-comparison",
+   "label": "같은 분모 비교",
+   "parent": "error-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 간 비교 조건.",
    "added": "2026-11-16",
    "related": []
   }
