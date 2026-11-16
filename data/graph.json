@@ -25382,11 +25382,15 @@
    "label": "BPE 토크나이저",
    "parent": "tokenization-leading-space",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "자주 쓰이는 문자 조각을 병합해 어휘를 만드는 방식.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "token-tokenization",
+    "token-pricing"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "logit-bias-variants",
@@ -26067,6 +26071,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "중심화한 코사인 유사도로서의 상관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "byte-level-bpe",
+   "label": "바이트 수준 BPE",
+   "parent": "bpe-tokenizer",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "글자 대신 바이트에서 시작해 어떤 문자열도 표현하는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "vocabulary-size-tradeoff",
+   "label": "어휘 크기의 트레이드오프",
+   "parent": "bpe-tokenizer",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어휘가 크면 시퀀스는 짧고 임베딩 표는 커지는 균형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "wordpiece-unigram",
+   "label": "WordPiece와 Unigram",
+   "parent": "bpe-tokenizer",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "BPE와 다른 하위 단어 어휘 학습 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "merge-rules",
+   "label": "병합 규칙",
+   "parent": "bpe-tokenizer",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습된 병합 순서를 그대로 적용해 인코딩하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "letter-counting-tokens",
+   "label": "철자 세기가 어려운 이유",
+   "parent": "bpe-tokenizer",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 글자가 아닌 토큰을 보기 때문에 생기는 한계.",
    "added": "2026-11-16",
    "related": []
   }
