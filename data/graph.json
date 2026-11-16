@@ -17270,11 +17270,14 @@
    "label": "WER의 한계",
    "parent": "transcription-error",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문장 단위 환각을 놓치는 지표 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "voice-activity-detection"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "audio-retention-tradeoff",
@@ -23117,6 +23120,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "0.5·0.75·0.9 구간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sentence-level-hallucination-rate",
+   "label": "문장 단위 환각률",
+   "parent": "wer-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "없는 문장이 생기는 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "harmful-hallucination-share",
+   "label": "유해 환각 비율",
+   "parent": "wer-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Careless Whisper의 38%.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bag-of-hallucinations",
+   "label": "환각 모음 BoH",
+   "parent": "wer-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자주 나타나는 환각 목록으로 후처리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "non-speech-induced-hallucination",
+   "label": "비음성 유발 환각",
+   "parent": "wer-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무음·소음 구간이 환각을 부름.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "speaker-group-error-breakdown",
+   "label": "화자 집단별 오류 분리",
+   "parent": "wer-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실어증 화자 등.",
    "added": "2026-11-16",
    "related": []
   }
