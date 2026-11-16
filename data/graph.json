@@ -16852,11 +16852,14 @@
    "label": "시스템 리스크 모델",
    "parent": "ai-office",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI Office가 분류하는 최고 수준 범용 모델.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ai-board"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "ai-board",
@@ -21632,6 +21635,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Board가 의견을 내는 절차.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "flop-threshold-10e25",
+   "label": "10^25 FLOP 기준",
+   "parent": "systemic-risk-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 연산량 추정 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "adversarial-testing-gpai",
+   "label": "적대적 시험",
+   "parent": "systemic-risk-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "55조 평가 의무의 핵심.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "serious-incident-reporting-gpai",
+   "label": "중대 사고 보고",
+   "parent": "systemic-risk-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Office에 지체 없이 통지.",
    "added": "2026-11-16",
    "related": []
   }
