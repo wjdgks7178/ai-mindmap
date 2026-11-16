@@ -4600,10 +4600,16 @@
    "label": "SWE-bench Verified",
    "parent": "swe-bench",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "사람이 검증한 부분집합이 왜 만들어졌는지.",
-   "added": "2026-11-02"
+   "added": "2026-11-02",
+   "done": "2026-11-16",
+   "related": [
+    "benchmark-saturation",
+    "data-contamination",
+    "agent-cost-latency"
+   ]
   },
   {
    "id": "agent-harness-variance",
@@ -26593,6 +26599,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "허용 도구·표기·검수 책임자를 정하는 템플릿.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "human-validated-benchmark",
+   "label": "사람 검증 벤치마크",
+   "parent": "swe-bench-verified",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문항 품질을 사람이 점검해 만든 평가 세트의 의미.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "underspecified-issue",
+   "label": "불충분한 이슈 설명",
+   "parent": "swe-bench-verified",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정보가 부족해 풀 수 없는 문제가 점수를 왜곡하는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "leaderboard-reading",
+   "label": "리더보드 읽는 법",
+   "parent": "swe-bench-verified",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "부분집합·하네스·날짜·재현 여부를 함께 보는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "swe-bench-multilingual",
+   "label": "SWE-bench 다국어판",
+   "parent": "swe-bench-verified",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "파이썬 밖 언어로 확장한 변형.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fail-to-pass-tests",
+   "label": "실패→통과 테스트 채점",
+   "parent": "swe-bench-verified",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이슈 해결을 테스트 전환으로 판정하는 방식.",
    "added": "2026-11-16",
    "related": []
   }
