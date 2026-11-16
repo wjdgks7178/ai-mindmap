@@ -23067,9 +23067,56 @@
    "label": "ICC 급내상관",
    "parent": "clinical-note-safety-review",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가자 간 신뢰도 지표.",
+   "added": "2026-11-16",
+   "related": [
+    "krippendorff-alpha"
+   ],
+   "done": "2026-11-16"
+  },
+  {
+   "id": "icc-consistency-vs-absolute",
+   "label": "일관성 vs 절대 일치",
+   "parent": "icc-reliability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가자 성향 차이를 반영할지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "icc-single-vs-average",
+   "label": "단일 vs 평균 측정",
+   "parent": "icc-reliability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 명 점수와 k명 평균의 ICC.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "icc-model-selection",
+   "label": "ICC 모형 선택",
+   "parent": "icc-reliability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일원·이원 랜덤·이원 혼합.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "koo-li-icc-bands",
+   "label": "Koo & Li 해석 기준",
+   "parent": "icc-reliability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0.5·0.75·0.9 구간.",
    "added": "2026-11-16",
    "related": []
   }
