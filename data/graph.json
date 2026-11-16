@@ -16612,11 +16612,14 @@
    "label": "위임 학습(learning to defer)",
    "parent": "human-in-the-loop-routing",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 스스로 사람에게 넘길 시점을 학습.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "double-threshold-policy"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "review-queue-design",
@@ -20685,6 +20688,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "연동된 지표를 한 명이 소유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reject-option",
+   "label": "reject option",
+   "parent": "learning-to-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신이 낮으면 판단을 거부하는 분류.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rejector-model",
+   "label": "위임기(rejector)",
+   "parent": "learning-to-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "넘길지 말지를 정하는 모델.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "surrogate-loss-defer",
+   "label": "위임용 대리 손실",
+   "parent": "learning-to-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치성 있는 대리 손실 함수.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "expert-decision-history",
+   "label": "전문가 판단 이력",
+   "parent": "learning-to-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위임 학습의 입력 데이터.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "defer-fairness",
+   "label": "위임과 공정성",
+   "parent": "learning-to-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 의사결정자의 편향을 고려.",
    "added": "2026-11-16",
    "related": []
   }
