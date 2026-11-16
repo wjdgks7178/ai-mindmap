@@ -16654,11 +16654,12 @@
    "label": "토네이도 차트",
    "parent": "sensitivity-analysis-ai-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력별 영향 폭을 정렬해 보여 주는 민감도 차트.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "monte-carlo-roi",
@@ -20859,6 +20860,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "건별 라벨링 시간을 반영한 선택.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "one-way-sensitivity",
+   "label": "일원 민감도 분석",
+   "parent": "tornado-chart",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번에 한 입력만 변경.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sensitivity-range-selection",
+   "label": "민감도 범위 선택",
+   "parent": "tornado-chart",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "±20% vs 신뢰구간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "two-way-sensitivity",
+   "label": "이원 민감도 분석",
+   "parent": "tornado-chart",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 입력의 조합 효과.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "scenario-analysis-roi",
+   "label": "시나리오 분석",
+   "parent": "tornado-chart",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력을 함께 움직이는 시나리오.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "probabilistic-sensitivity-analysis",
+   "label": "확률적 민감도 분석 PSA",
+   "parent": "tornado-chart",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포를 두고 불확실성을 정량화.",
    "added": "2026-11-16",
    "related": []
   }
