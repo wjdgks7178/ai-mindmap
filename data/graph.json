@@ -16666,11 +16666,14 @@
    "label": "몬테카를로 ROI 시뮬레이션",
    "parent": "sensitivity-analysis-ai-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력을 분포로 두고 반복 시뮬레이션해 범위를 얻기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "tornado-chart"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "stop-criteria",
@@ -20915,6 +20918,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포를 두고 불확실성을 정량화.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "triangular-distribution",
+   "label": "삼각분포",
+   "parent": "monte-carlo-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최소·최빈·최대 세 값으로 정하는 분포.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "input-correlation-roi",
+   "label": "입력 간 상관",
+   "parent": "monte-carlo-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 가정이 폭을 왜곡하는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "breakeven-probability",
+   "label": "손익분기 미달 확률",
+   "parent": "monte-carlo-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ROI가 기준 아래일 확률.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "simulation-sample-size",
+   "label": "시뮬레이션 표본 수",
+   "parent": "monte-carlo-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 4배면 오차 절반.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "distribution-evidence-log",
+   "label": "분포 근거 기록",
+   "parent": "monte-carlo-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 가정의 근거를 적어 두기.",
    "added": "2026-11-16",
    "related": []
   }
