@@ -12604,10 +12604,15 @@
    "label": "토큰화와 앞 공백 함정",
    "parent": "logit-bias",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Trump와 공백 포함 토큰이 달라 편향이 안 먹는 문제",
-   "added": "2026-11-12"
+   "added": "2026-11-12",
+   "done": "2026-11-16",
+   "related": [
+    "token-tokenization",
+    "token-pricing"
+   ]
   },
   {
    "id": "constrained-decoding",
@@ -25286,6 +25291,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "온도·시드·설정을 기록해 같은 결과를 다시 얻는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bpe-tokenizer",
+   "label": "BPE 토크나이저",
+   "parent": "tokenization-leading-space",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자주 쓰이는 문자 조각을 병합해 어휘를 만드는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "logit-bias-variants",
+   "label": "로짓 편향 변형 처리",
+   "parent": "tokenization-leading-space",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공백·대소문자 변형 토큰을 모두 찾는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "tokenizer-version-differences",
+   "label": "토크나이저 버전 차이",
+   "parent": "tokenization-leading-space",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 문장이 모델마다 다른 토큰 수가 되는 이유.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "prompt-trailing-space",
+   "label": "프롬프트 끝 공백 문제",
+   "parent": "tokenization-leading-space",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "원시 완성형에서 공백으로 끝내면 생기는 부작용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "token-id-lookup",
+   "label": "토큰 ID 조회 방법",
+   "parent": "tokenization-leading-space",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "tiktoken 등으로 모델별 토큰 ID를 구하기.",
    "added": "2026-11-16",
    "related": []
   }
