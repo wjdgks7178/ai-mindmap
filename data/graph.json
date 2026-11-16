@@ -1184,10 +1184,16 @@
    "label": "출처 검증 습관",
    "parent": "hallucination",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "AI가 준 인용·링크를 직접 열어 확인하는 방법.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "rag",
+    "knowledge-cutoff",
+    "calibration"
+   ]
   },
   {
    "id": "sycophancy",
@@ -24890,6 +24896,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "확신이 낮으면 사람에게 넘기는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fabricated-citations",
+   "label": "날조된 인용",
+   "parent": "citation-verification",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "존재하지 않는 논문·판례·URL을 만들어 내는 환각.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "misrepresented-sources",
+   "label": "오인용",
+   "parent": "citation-verification",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실제 자료를 근거와 다른 내용으로 인용하는 오류.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "source-hierarchy",
+   "label": "출처 등급",
+   "parent": "citation-verification",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "1차 자료·2차 해설·AI 요약을 구분해 믿는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "verification-log",
+   "label": "검증 기록 남기기",
+   "parent": "citation-verification",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "확인한 날짜와 URL을 기록하는 습관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-legal-filing-sanctions",
+   "label": "AI 법률 서류 제재 사례",
+   "parent": "citation-verification",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가짜 인용으로 법원 제재를 받은 사례 흐름.",
    "added": "2026-11-16",
    "related": []
   }
