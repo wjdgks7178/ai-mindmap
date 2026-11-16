@@ -2722,10 +2722,16 @@
    "label": "데이터 마스킹",
    "parent": "privacy-copyright",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "개인정보를 치환해 AI에 넣는 방법.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "local-llm",
+    "data-provenance",
+    "prompt-injection"
+   ]
   },
   {
    "id": "enterprise-data-terms",
@@ -26471,6 +26477,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "두 요청 형식의 차이와 호환 범위.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pii-detection",
+   "label": "개인정보 탐지",
+   "parent": "data-masking",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정규식·사전·모델로 개인정보를 찾는 방법과 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "placeholder-consistency",
+   "label": "일관된 자리표시자",
+   "parent": "data-masking",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 값에 같은 표시를 써 문맥을 유지하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "re-identification-risk",
+   "label": "재식별 위험",
+   "parent": "data-masking",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "마스킹 후에도 조합으로 사람을 알아보는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "mapping-table-security",
+   "label": "대응표 보안",
+   "parent": "data-masking",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "복원용 대응표를 AI와 분리해 보관하는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "korean-pii-patterns",
+   "label": "한국어 개인정보 패턴",
+   "parent": "data-masking",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "주민번호·전화·주소 등 한국형 패턴과 탐지 난점.",
    "added": "2026-11-16",
    "related": []
   }
