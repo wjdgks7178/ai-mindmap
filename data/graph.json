@@ -11249,10 +11249,15 @@
    "label": "Joint Attention",
    "parent": "mmdit",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 모달리티 토큰을 이어 붙여 한 번에 어텐션을 계산하는 방식.",
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "done": "2026-11-16",
+   "related": [
+    "embedding-clip",
+    "image-generation"
+   ]
   },
   {
    "id": "pooled-text-embedding",
@@ -25346,6 +25351,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "tiktoken 등으로 모델별 토큰 ID를 구하기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "modality-specific-weights",
+   "label": "모달리티별 가중치",
+   "parent": "joint-attention",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "글과 이미지가 각자 다른 가중치를 쓰는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sd3-text-encoders",
+   "label": "SD3의 세 텍스트 인코더",
+   "parent": "joint-attention",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "CLIP 둘과 T5-XXL을 함께 쓰는 이유와 메모리 부담.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "drop-t5-memory",
+   "label": "T5 제거로 메모리 줄이기",
+   "parent": "joint-attention",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "성능을 조금 잃고 VRAM을 아끼는 추론 요령.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bidirectional-text-image-flow",
+   "label": "글·이미지 양방향 정보 흐름",
+   "parent": "joint-attention",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "글이 이미지 진행에 맞춰 갱신되는 의미.",
    "added": "2026-11-16",
    "related": []
   }
