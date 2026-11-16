@@ -4056,13 +4056,15 @@
    "label": "τ-bench",
    "parent": "pass-at-k",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "도구-에이전트-사용자 상호작용을 재는 Sierra의 벤치마크.",
    "added": "2026-11-02",
    "related": [
-    "benchmarks"
-   ]
+    "benchmark-saturation",
+    "agent-cost-latency"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "sampling-temperature-eval",
@@ -25120,6 +25122,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "하지 않을 일을 적어 임의 확장을 막는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "simulated-user-eval",
+   "label": "시뮬레이션 사용자 평가",
+   "parent": "pass-hat-k-tau-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "LLM이 사용자를 흉내 내 에이전트를 대화로 시험하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "db-state-grading",
+   "label": "DB 상태 기반 채점",
+   "parent": "pass-hat-k-tau-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대화 결과가 아니라 최종 데이터 상태로 성공을 판정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "policy-following-agent",
+   "label": "정책 준수 에이전트",
+   "parent": "pass-hat-k-tau-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "회사 규정을 일관되게 따르게 하는 과제와 어려움.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reliability-vs-capability",
+   "label": "신뢰성 vs 능력",
+   "parent": "pass-hat-k-tau-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 번 잘하는 것과 매번 잘하는 것의 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "agent-benchmarks-landscape",
+   "label": "에이전트 벤치마크 지형",
+   "parent": "pass-hat-k-tau-bench",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "τ-bench·SWE-bench·WebArena 등 에이전트 시험 비교.",
    "added": "2026-11-16",
    "related": []
   }
