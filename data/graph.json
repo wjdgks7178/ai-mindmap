@@ -17226,11 +17226,15 @@
    "label": "필수 항목 누락 체크리스트",
    "parent": "omission-vs-hallucination",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "알레르기·용량 등 필수 정보의 존재 확인.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "binary-checklist-eval",
+    "clinical-note-safety-review"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "negative-finding-fabrication",
@@ -23388,6 +23392,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "잘못된 구간 링크의 거짓 안심.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "mention-extraction",
+   "label": "필수 정보 언급 추출",
+   "parent": "critical-omission-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본에서 해당 정보가 언급됐는지 먼저 추출.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "omission-escalation-rule",
+   "label": "누락 격상 규칙",
+   "parent": "critical-omission-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 있음·노트 없음이면 격상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "checklist-item-curation",
+   "label": "체크리스트 항목 관리",
+   "parent": "critical-omission-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의료진과 만들고 정기 갱신.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fabrication-vs-omission-flag",
+   "label": "날조 vs 누락 표시",
+   "parent": "critical-omission-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방향이 다른 두 오류를 분리.",
    "added": "2026-11-16",
    "related": []
   }
