@@ -17173,11 +17173,14 @@
    "label": "척도 기준 문장",
    "parent": "rubric-grading",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "척도 양끝을 서술문으로 고정하기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "binary-checklist-eval"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "grader-different-model",
@@ -22907,6 +22910,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 항목 한 요구, 판정 가능성.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bars-scale",
+   "label": "BARS 행동 기준 평정 척도",
+   "parent": "likert-scale-anchors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "척도 점마다 행동 예시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "critical-incident-technique",
+   "label": "핵심사건 기법",
+   "parent": "likert-scale-anchors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "효과적·비효과적 행동 사례 수집.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "anchor-calibration-session",
+   "label": "앵커 보정 세션",
+   "parent": "likert-scale-anchors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수별 예시 답변으로 맞추기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "leniency-bias",
+   "label": "관대 편향",
+   "parent": "likert-scale-anchors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평정이 후하게 쏠림.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "discriminant-validity-dimensions",
+   "label": "차원 간 변별 타당도",
+   "parent": "likert-scale-anchors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차원이 서로 구분되는지.",
    "added": "2026-11-16",
    "related": []
   }
