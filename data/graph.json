@@ -17212,11 +17212,14 @@
    "label": "임상 노트 안전 검토",
    "parent": "pdqi-9",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "점수와 별개로 중대 오류를 따로 거르는 절차.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "handoff-summary-quality"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "critical-omission-checklist",
@@ -23012,6 +23015,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "다른 계열도 닮은 선호를 보일 가능성.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pdsqi-9",
+   "label": "PDSQI-9",
+   "parent": "clinical-note-safety-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 요약용으로 고친 PDQI-9.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "stigmatizing-language-check",
+   "label": "낙인 표현 점검",
+   "parent": "clinical-note-safety-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PDSQI-9의 이진 속성.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "critical-error-escalation",
+   "label": "중대 오류 격상",
+   "parent": "clinical-note-safety-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수와 무관하게 임상가 확인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "copy-paste-note-detection",
+   "label": "복사 붙여넣기 기록 탐지",
+   "parent": "clinical-note-safety-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가자가 놓치기 쉬움.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "icc-reliability",
+   "label": "ICC 급내상관",
+   "parent": "clinical-note-safety-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가자 간 신뢰도 지표.",
    "added": "2026-11-16",
    "related": []
   }
