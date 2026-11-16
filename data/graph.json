@@ -16426,11 +16426,14 @@
    "label": "인용 UI 패턴",
    "parent": "evidence-agreement-score",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위첨자·호버 미리보기 등 근거 표시 방식.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "claim-level-attribution"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "long-context-limits",
@@ -20114,6 +20117,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "자료가 문장을 함의하는지 판정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hover-card-citation",
+   "label": "호버 카드 인용",
+   "parent": "citation-ui",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마우스를 올려 출처를 미리보기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "aligned-sidebar-citation",
+   "label": "정렬 사이드바 인용",
+   "parent": "citation-ui",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본문과 정렬된 출처 사이드바.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "citation-density",
+   "label": "인용 밀도",
+   "parent": "citation-ui",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용이 많을 때 UI별 효과가 달라짐.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fabricated-citation",
+   "label": "가짜 인용",
+   "parent": "citation-ui",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "존재하지 않는 출처를 만드는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "source-label-design",
+   "label": "출처 라벨 설계",
+   "parent": "citation-ui",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명적 제목 vs 모호한 라벨.",
    "added": "2026-11-16",
    "related": []
   }
