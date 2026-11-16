@@ -16554,11 +16554,14 @@
    "label": "방해 문서(distractor)",
    "parent": "hybrid-rag-finetune",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답과 무관하지만 비슷해 보이는 검색 문서.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "distractor-effect"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "hybrid-eval",
@@ -20473,6 +20476,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "P 비율로 정답 문서 포함·제외 섞기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "power-of-noise",
+   "label": "무작위 문서의 역설",
+   "parent": "distractor-documents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무관한 문서가 정확도를 올린다는 보고.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reranking-for-rag",
+   "label": "RAG 재순위",
+   "parent": "distractor-documents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 결과를 다시 정렬해 방해 줄이기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "retrieval-top-k",
+   "label": "검색 개수 top-k",
+   "parent": "distractor-documents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "넣는 문서 수와 방해의 관계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "abstain-when-no-evidence",
+   "label": "근거 없으면 거부",
+   "parent": "distractor-documents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모르면 모른다고 답하게 하기.",
    "added": "2026-11-16",
    "related": []
   }
