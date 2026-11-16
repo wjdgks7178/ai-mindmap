@@ -2370,10 +2370,15 @@
    "label": "배치 API",
    "parent": "llm-api-basics",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "대량 비동기 처리로 비용을 줄이는 방식.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "prompt-caching",
+    "rate-limit-retry"
+   ]
   },
   {
    "id": "kv-cache",
@@ -24160,6 +24165,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "연속 실패 시 호출을 잠시 끊어 과부하를 막는 패턴.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "custom-id-matching",
+   "label": "custom_id 매칭",
+   "parent": "batch-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "순서가 보장되지 않는 결과를 입력과 짝짓는 키.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "batch-expiration",
+   "label": "배치 만료와 재제출",
+   "parent": "batch-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "24시간 안에 끝나지 않은 요청을 다시 보내는 법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "jsonl-format",
+   "label": "JSONL 형식",
+   "parent": "batch-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 줄에 JSON 하나씩 담는 대량 입출력 포맷.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "batch-vs-realtime-tradeoff",
+   "label": "배치와 실시간의 선택",
+   "parent": "batch-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지연 허용 여부로 가르는 비용 절감 판단.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "offline-evaluation-runs",
+   "label": "대량 평가 실행",
+   "parent": "batch-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치로 수천 건 테스트를 돌려 모델을 비교하는 방법.",
    "added": "2026-11-16",
    "related": []
   }
