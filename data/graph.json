@@ -16440,11 +16440,14 @@
    "label": "긴 컨텍스트의 한계",
    "parent": "context-paste-test",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "많이 넣어도 모델이 다 활용하진 않는 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "groundedness-metric"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "eval-set-first",
@@ -20172,6 +20175,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "설명적 제목 vs 모호한 라벨.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "needle-in-a-haystack",
+   "label": "Needle in a Haystack",
+   "parent": "long-context-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장문 검색 시험과 그 한계.",
    "added": "2026-11-16",
    "related": []
   }
