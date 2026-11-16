@@ -17026,22 +17026,28 @@
    "label": "부속서 XII 정보 항목",
    "parent": "downstream-provider-info",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "하류 제공자에게 줄 정보 목록.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "annex-xi-documentation"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "deployer-vs-provider",
    "label": "제공자 vs 배포자",
    "parent": "downstream-provider-info",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI Act의 역할 구분.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "annex-xii-info"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "self-enhancement-bias",
@@ -22497,6 +22503,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "해석 구간과 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "intended-tasks-and-integration",
+   "label": "의도한 과제와 통합 유형",
+   "parent": "annex-xii-info",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부속서 XII 1(a).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "context-window-max-size",
+   "label": "최대 입출력 크기",
+   "parent": "annex-xii-info",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컨텍스트 창 길이 등.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "acceptable-use-policy-info",
+   "label": "허용 사용 정책 정보",
+   "parent": "annex-xii-info",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1(b).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "model-licence-info",
+   "label": "모델 라이선스 정보",
+   "parent": "annex-xii-info",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1(h).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "provider-by-trademark",
+   "label": "이름·상표 부착 시 제공자",
+   "parent": "deployer-vs-provider",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 1항 (a).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "substantial-modification",
+   "label": "중대한 변경",
+   "parent": "deployer-vs-provider",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 1항 (b).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "purpose-change-to-high-risk",
+   "label": "용도 변경으로 고위험",
+   "parent": "deployer-vs-provider",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 1항 (c).",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "third-party-supplier-agreement",
+   "label": "제3자 공급자 서면 계약",
+   "parent": "deployer-vs-provider",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 4항.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "initial-provider-cooperation",
+   "label": "최초 제공자 협력 의무",
+   "parent": "deployer-vs-provider",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25조 2항.",
    "added": "2026-11-16",
    "related": []
   }
