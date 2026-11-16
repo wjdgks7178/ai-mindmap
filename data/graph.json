@@ -17117,11 +17117,14 @@
    "label": "Krippendorff alpha",
    "parent": "cohens-kappa",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결측·순서형도 다루는 일치도 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fleiss-kappa"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "kappa-prevalence-problem",
@@ -22791,6 +22794,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "보고 시 가중치 종류 표기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "coincidence-matrix",
+   "label": "일치 행렬",
+   "parent": "krippendorff-alpha",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "값이 짝지어지는 횟수를 코더 구분 없이 집계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "alpha-difference-function",
+   "label": "차이 함수 δ",
+   "parent": "krippendorff-alpha",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "척도별 불일치 크기 정의.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "alpha-bootstrap-ci",
+   "label": "alpha 부트스트랩 신뢰구간",
+   "parent": "krippendorff-alpha",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소표본에서 불확실성 보고.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "alpha-thresholds-0667-0800",
+   "label": "alpha 기준 0.667·0.800",
+   "parent": "krippendorff-alpha",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잠정과 신뢰 구간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "kappa-vs-alpha-chance",
+   "label": "kappa와 alpha의 우연 정의 차이",
+   "parent": "krippendorff-alpha",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 가정 vs 합산 분포.",
    "added": "2026-11-16",
    "related": []
   }
