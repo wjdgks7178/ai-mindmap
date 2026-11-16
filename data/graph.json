@@ -17361,11 +17361,14 @@
    "label": "녹음 고지 설계",
    "parent": "all-party-consent",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "통화 초반 고지·동의·거부 흐름.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "article-50-transparency"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "cross-state-calls",
@@ -23599,6 +23602,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상대 위치 모를 때 전원 동의 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "consent-log",
+   "label": "동의 로그",
+   "parent": "recording-notice-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고지·동의·거부 기록 보관.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "implied-vs-explicit-consent",
+   "label": "묵시 vs 명시 동의",
+   "parent": "recording-notice-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "계속 통화 = 동의인지 확인 질문인지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "opt-out-path",
+   "label": "녹음 거부 시 대안 경로",
+   "parent": "recording-notice-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "녹음 없는 상담 채널.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "notice-scope-ai-use",
+   "label": "고지 범위와 AI 사용",
+   "parent": "recording-notice-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약·훈련 사용을 고지문에 반영.",
    "added": "2026-11-16",
    "related": []
   }
