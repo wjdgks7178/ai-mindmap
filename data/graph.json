@@ -875,10 +875,14 @@
    "label": "좋은 명세 쓰는 법",
    "parent": "sdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "무엇·왜 중심으로 쓰고 범위 밖을 명시하며 모호함을 질문으로 푸는 요령.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "prompt-engineering"
+   ]
   },
   {
    "id": "spec-convergence",
@@ -25061,6 +25065,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "위임 시 배경 정보 중복 입력으로 생기는 비용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "needs-clarification-marker",
+   "label": "[NEEDS CLARIFICATION] 표지",
+   "parent": "writing-good-specs",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모호한 부분을 추측 대신 질문으로 남기는 표시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "acceptance-criteria",
+   "label": "수용 기준",
+   "parent": "writing-good-specs",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기능이 완료됐는지 가리는 측정 가능한 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "user-story",
+   "label": "사용자 이야기",
+   "parent": "writing-good-specs",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "누가 무엇을 왜 원하는지 한 문장으로 적는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "spec-checklist",
+   "label": "명세 체크리스트",
+   "parent": "writing-good-specs",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "명세의 완결성을 점검하는 항목 목록.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "out-of-scope",
+   "label": "범위 밖 명시",
+   "parent": "writing-good-specs",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "하지 않을 일을 적어 임의 확장을 막는 방법.",
    "added": "2026-11-16",
    "related": []
   }
