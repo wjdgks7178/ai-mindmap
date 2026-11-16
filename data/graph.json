@@ -16683,11 +16683,15 @@
    "label": "중단 기준 정하기",
    "parent": "sensitivity-analysis-ai-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결과가 뒤집히는 가정 값을 미리 정해 두기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "tornado-chart",
+    "monte-carlo-roi"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "cost-matrix",
@@ -21343,6 +21347,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "이관·재접촉에 걸리는 시간 측정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "npsv",
+   "label": "순현재사회가치 NPSV",
+   "parent": "stop-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "편익−비용의 현재가치.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "breakeven-point",
+   "label": "손익분기점",
+   "parent": "stop-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순효과가 0이 되는 지점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pilot-stop-rule",
+   "label": "파일럿 중단 규칙",
+   "parent": "stop-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경고선과 연속 기간으로 정하는 약속.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "optimism-bias",
+   "label": "낙관 편향 조정",
+   "parent": "stop-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용·기간 추정을 체계적으로 올려 잡기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "trial-and-error-solve",
+   "label": "시행착오로 구하기",
+   "parent": "stop-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스프레드시트로 0이 될 때까지 조정.",
    "added": "2026-11-16",
    "related": []
   }
