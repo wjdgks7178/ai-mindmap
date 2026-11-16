@@ -16362,22 +16362,24 @@
    "label": "설명 가능성 감사",
    "parent": "pair-worksheets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용자에게 보이는 설명이 상태·지식 격차에 맞는지 점검.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "controls-audit",
    "label": "통제 감사",
    "parent": "pair-worksheets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위험에 맞춰 사용자 통제 수준을 정하는 활동.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "data-headlines",
@@ -19896,6 +19898,83 @@
    "status": "planned",
    "priority": 3,
    "summary": "고객센터·SNS·지표로 새 오류 찾기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "partial-explanation",
+   "label": "부분 설명",
+   "parent": "explainability-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신뢰·결정에 영향 주는 부분만 설명.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "confidence-display-types",
+   "label": "확신 표시 유형",
+   "parent": "explainability-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주·N-best·숫자·시각화 비교.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "example-based-explanation",
+   "label": "예시 기반 설명",
+   "parent": "explainability-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비슷한 학습 예시를 보여 주기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "manual-fallback",
+   "label": "수동 대안",
+   "parent": "controls-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동이 안 될 때의 비자동 완료 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-opt-out",
+   "label": "AI 옵트아웃",
+   "parent": "controls-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쓰지 않을 권리와 나중에 켜기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "personalization-reset",
+   "label": "개인화 초기화",
+   "parent": "controls-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 모델로 되돌리기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "control-vs-stakes",
+   "label": "통제와 위험의 관계",
+   "parent": "controls-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험이 클수록 통제 욕구가 커짐.",
    "added": "2026-11-16",
    "related": []
   }
