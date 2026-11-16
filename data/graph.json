@@ -15748,11 +15748,12 @@
    "label": "문의 위험 등급화",
    "parent": "ai-chatbot-vs-assist",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문의를 위험도별로 나눠 자동화 범위 정하기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "rollout-gates",
@@ -18930,6 +18931,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "고객이 포기한 것을 성공으로 세지 않기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "intent-promotion-criteria",
+   "label": "승급 조건",
+   "parent": "risk-tiered-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문의를 다음 단계로 올리는 표본·정확도·안정 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "intent-demotion-triggers",
+   "label": "강등 트리거",
+   "parent": "risk-tiered-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오답 증가·사고 시 단계를 내리는 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "draft-acceptance-rate",
+   "label": "초안 수락률",
+   "parent": "risk-tiered-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Tier 1의 지표, 수정 없이 보낸 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "read-only-vs-action-intents",
+   "label": "읽기 전용 vs 행동 문의",
+   "parent": "risk-tiered-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보 안내와 계정 변경의 위험 차이.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "source-article-ownership",
+   "label": "출처 문서 소유자",
+   "parent": "risk-tiered-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 답변이 승인·날짜·담당자 있는 문서에 매핑.",
    "added": "2026-11-16",
    "related": []
   }
