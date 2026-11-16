@@ -17159,11 +17159,14 @@
    "label": "이진 체크리스트 평가",
    "parent": "rubric-grading",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예/아니오 항목으로 쪼개는 평가 설계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "rubric-permutation"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "likert-scale-anchors",
@@ -22849,6 +22852,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "독립 가정 vs 합산 분포.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "checkeval",
+   "label": "CheckEval",
+   "parent": "binary-checklist-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이진 질문 체크리스트로 LLM 심판 평가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "tick-checklist",
+   "label": "TICK 체크리스트",
+   "parent": "binary-checklist-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지시별 체크리스트 생성·채점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "checklist-self-refinement",
+   "label": "체크리스트 자기 개선",
+   "parent": "binary-checklist-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "STICK, Best-of-N에 활용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "required-vs-optional-items",
+   "label": "필수·권장 항목 구분",
+   "parent": "binary-checklist-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필수 실패 시 불합격 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "checklist-item-quality",
+   "label": "체크리스트 항목 품질",
+   "parent": "binary-checklist-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 항목 한 요구, 판정 가능성.",
    "added": "2026-11-16",
    "related": []
   }
