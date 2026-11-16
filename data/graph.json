@@ -17076,11 +17076,14 @@
    "label": "루브릭 순열 평균",
    "parent": "position-bias-judge",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "점수제 평가에서 순서 편향 줄이기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "judge-consistency"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "fleiss-kappa",
@@ -22381,6 +22384,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "수학·추론 채점 한계 완화.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "primacy-recency-rubric",
+   "label": "점수 보기 선입·최신 편향",
+   "parent": "rubric-permutation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목록 처음과 끝 점수를 선호.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bias-cost-metric",
+   "label": "Bias Cost 지표",
+   "parent": "rubric-permutation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위치별 선택 확률이 균등에서 벗어난 정도.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "balanced-cyclic-rotation",
+   "label": "균형 순환 회전",
+   "parent": "rubric-permutation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순방향·역방향 회전으로 위치 균등.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "criteria-order-bias",
+   "label": "기준 순서 편향",
+   "parent": "rubric-permutation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 기준 동시 채점 시 순서 효과.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "permutation-vs-repeat",
+   "label": "순열 vs 반복",
+   "parent": "rubric-permutation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서를 바꾸는 것과 같은 순서 반복의 차이.",
    "added": "2026-11-16",
    "related": []
   }
