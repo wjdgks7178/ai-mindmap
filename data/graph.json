@@ -15760,11 +15760,12 @@
    "label": "단계 전환 기준",
    "parent": "ai-chatbot-vs-assist",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "다음 단계로 넘어가는 지표 조건.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "sentiment-trigger",
@@ -18986,6 +18987,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모든 답변이 승인·날짜·담당자 있는 문서에 매핑.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "shadow-mode",
+   "label": "섀도 모드",
+   "parent": "rollout-gates",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 초안을 고객 대신 상담사만 보게 하는 시험 기간.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rollback-plan",
+   "label": "롤백 계획",
+   "parent": "rollout-gates",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출시 전에 합의하는 되돌리기 조건과 담당자.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "containment-rate",
+   "label": "컨테인먼트율",
+   "parent": "rollout-gates",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "봇 안에서 끝난 비율, deflection과의 관계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "minimum-sample-size",
+   "label": "단계별 최소 표본",
+   "parent": "rollout-gates",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "게이트 판단에 필요한 문의 건수 정하기.",
    "added": "2026-11-16",
    "related": []
   }
