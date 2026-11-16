@@ -2304,10 +2304,15 @@
    "label": "공정성 지표",
    "parent": "ai-bias-ethics",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "집단 간 성능 차이를 재는 방법(동등 기회 등).",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "explainability",
+    "eu-ai-act"
+   ]
   },
   {
    "id": "explainability",
@@ -24509,6 +24514,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "입력에서 출력까지 내부 특징의 연결을 그린 회로도.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "demographic-parity",
+   "label": "인구통계적 동등성",
+   "parent": "fairness-metrics",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "집단별 승인률을 같게 맞추는 공정성 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "equal-opportunity",
+   "label": "동등 기회",
+   "parent": "fairness-metrics",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자격 있는 사람의 참양성률을 집단 간 같게 맞추는 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fairness-impossibility",
+   "label": "공정성 불가능성 정리",
+   "parent": "fairness-metrics",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 공정성 조건을 동시에 만족할 수 없다는 결과.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fairlearn-library",
+   "label": "Fairlearn",
+   "parent": "fairness-metrics",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "집단별 지표를 재고 완화하는 오픈소스 파이썬 라이브러리.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "simpsons-paradox-fairness",
+   "label": "심슨의 역설과 하위 집단",
+   "parent": "fairness-metrics",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전체 평균과 하위 집단 결과가 뒤집히는 통계 함정.",
    "added": "2026-11-16",
    "related": []
   }
