@@ -15844,11 +15844,12 @@
    "label": "이관 시 개인정보 최소화",
    "parent": "handoff-context-packet",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "필요한 정보만 넘기는 원칙.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "containment-rate-trap",
@@ -19290,6 +19291,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "에이전트끼리 돌려 막는 실패와 감지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "scoped-tool-interface",
+   "label": "범위 제한 도구 인터페이스",
+   "parent": "pii-minimization-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업별 허용 필드만 반환.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pii-redaction-types",
+   "label": "PII 가림 방식",
+   "parent": "pii-minimization-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마스킹·가명처리·삭제·암호화 비교.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "pre-vs-post-inference-redaction",
+   "label": "추론 전·후 가림",
+   "parent": "pii-minimization-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시점별 장단점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "context-window-access-log",
+   "label": "맥락 창 접근 기록",
+   "parent": "pii-minimization-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 데이터가 언제 들어왔는지 기록.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "purpose-limitation",
+   "label": "목적 제한",
+   "parent": "pii-minimization-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범용 어시스턴트 재사용 시 경계.",
    "added": "2026-11-16",
    "related": []
   }
