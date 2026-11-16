@@ -16386,11 +16386,12 @@
    "label": "데이터 헤드라인",
    "parent": "pair-worksheets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 작업의 좋은·나쁜 기사 제목을 써 보는 점검.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "claim-level-attribution",
@@ -19975,6 +19976,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "위험이 클수록 통제 욕구가 커짐.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "data-cascade",
+   "label": "데이터 연쇄",
+   "parent": "data-headlines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기 데이터 문제가 하류로 연쇄되는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "representativeness-check",
+   "label": "대표성 점검",
+   "parent": "data-headlines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 분포와 학습 데이터 분포 비교.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "inter-labeler-reliability",
+   "label": "라벨러 간 신뢰도",
+   "parent": "data-headlines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러 일치도 점검.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "secondary-effects-testing",
+   "label": "부차적 효과 시험",
+   "parent": "data-headlines",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가가 놓치기 쉬운 부작용.",
    "added": "2026-11-16",
    "related": []
   }
