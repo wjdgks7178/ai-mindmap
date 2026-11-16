@@ -3811,11 +3811,15 @@
    "label": "RRF",
    "parent": "semantic-vs-keyword-search",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "여러 검색 결과를 순위만으로 합치는 방법.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rag",
+    "reranking"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "hybrid-search",
@@ -25889,6 +25893,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "사람 라벨과 AI 라벨의 비용·품질 비교.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rrf-k-constant",
+   "label": "RRF의 k 상수",
+   "parent": "rrf",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "k=60이 순위 차이의 영향력을 어떻게 완화하는지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "weighted-rrf",
+   "label": "가중 RRF",
+   "parent": "rrf",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색기별 가중치를 곱해 결합하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "score-normalization-fusion",
+   "label": "점수 정규화 결합",
+   "parent": "rrf",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "점수를 정규화해 가중합으로 합치는 대안.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "multi-query-fusion",
+   "label": "다중 쿼리 결합",
+   "parent": "rrf",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 질문 변형의 결과를 RRF로 합치는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fusion-evaluation",
+   "label": "결합 방식 평가",
+   "parent": "rrf",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "RRF와 가중합을 자체 데이터로 비교하는 법.",
    "added": "2026-11-16",
    "related": []
   }
