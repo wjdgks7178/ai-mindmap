@@ -17090,11 +17090,14 @@
    "label": "Fleiss kappa",
    "parent": "cohens-kappa",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가자 3명 이상의 일치도.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "krippendorff-alpha"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "krippendorff-alpha",
@@ -22439,6 +22442,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "순서를 바꾸는 것과 같은 순서 반복의 차이.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "conger-kappa",
+   "label": "Conger kappa",
+   "parent": "fleiss-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 평가자가 모든 항목을 평가할 때의 대안.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "scott-pi",
+   "label": "Scott의 pi",
+   "parent": "fleiss-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Fleiss kappa가 일반화한 두 평가자 지표.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "kappa-paradox",
+   "label": "kappa 역설",
+   "parent": "fleiss-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "편중된 분포에서 일치율이 높아도 kappa가 낮은 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "chance-agreement-pe",
+   "label": "우연 기대 일치 Pe",
+   "parent": "fleiss-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주 비율의 제곱합.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "landis-koch-bands",
+   "label": "Landis-Koch 구간",
+   "parent": "fleiss-kappa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해석 구간과 한계.",
    "added": "2026-11-16",
    "related": []
   }
