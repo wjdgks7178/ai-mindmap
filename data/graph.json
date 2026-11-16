@@ -2341,10 +2341,16 @@
    "label": "데이터 출처와 저작권",
    "parent": "ai-bias-ethics",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "학습 데이터의 출처·동의·저작권 쟁점.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "model-card",
+    "eu-ai-act",
+    "data-contamination"
+   ]
   },
   {
    "id": "vlm-architecture",
@@ -24812,6 +24818,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "조종자 편차·실패 시연·라벨링 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "datasheets-for-datasets",
+   "label": "데이터시트",
+   "parent": "data-provenance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터셋의 동기·구성·수집·용도를 적은 표준 문서.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "robots-txt-ai-crawlers",
+   "label": "robots.txt와 AI 크롤러",
+   "parent": "data-provenance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사이트가 AI 학습용 수집을 막는 신호와 한계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "license-miscategorization",
+   "label": "라이선스 오분류",
+   "parent": "data-provenance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터 호스팅 사이트의 표기가 틀리는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "consent-protocols",
+   "label": "동의 규약(opt-out)",
+   "parent": "data-provenance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "창작자·사이트가 AI 학습 사용을 거부하는 방법들.",
    "added": "2026-11-16",
    "related": []
   }
