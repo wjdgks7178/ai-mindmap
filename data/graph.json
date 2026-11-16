@@ -3573,11 +3573,15 @@
    "label": "보상 모델",
    "parent": "llm-training-stages",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "사람 선호 순위로 답의 점수를 내도록 학습한 모델.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rlhf",
+    "dpo"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "dpo",
@@ -23799,6 +23803,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "고정 데이터(DPO)와 모델이 직접 생성하는 방식(PPO)의 차이.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "best-of-n",
+   "label": "Best-of-N 샘플링",
+   "parent": "reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 답 중 보상 점수 최고를 고르는 간단한 정렬 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "bradley-terry-model",
+   "label": "Bradley-Terry 모델",
+   "parent": "reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쌍대 비교를 점수로 바꾸는 통계 모델.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "process-reward-model",
+   "label": "과정 보상 모델",
+   "parent": "reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "최종 답이 아닌 추론 단계별로 점수를 매기는 모델.",
    "added": "2026-11-16",
    "related": []
   }
