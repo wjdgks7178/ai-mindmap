@@ -2650,10 +2650,16 @@
    "label": "메모리 병목 추론",
    "parent": "training-inference-cost",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "왜 LLM 추론은 계산보다 메모리 대역폭이 병목인가.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "quantization",
+    "kv-cache",
+    "gpu-basics"
+   ]
   },
   {
    "id": "batching-serving",
@@ -26298,6 +26304,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "프롬프트 수정 후 기존 정답이 깨지는지 확인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "arithmetic-intensity",
+   "label": "연산 밀도",
+   "parent": "inference-memory-bound",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "바이트당 FLOP 수로 병목 위치를 가늠하는 지표.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "memory-bandwidth",
+   "label": "메모리 대역폭",
+   "parent": "inference-memory-bound",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "초당 읽을 수 있는 데이터량과 GPU 선택.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "prefill-vs-decode",
+   "label": "프리필 vs 디코드",
+   "parent": "inference-memory-bound",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력을 한꺼번에 처리하는 단계와 토큰별 생성 단계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "batch-size-crossover",
+   "label": "배치 크기 교차점",
+   "parent": "inference-memory-bound",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "메모리 병목이 연산 병목으로 바뀌는 배치 크기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "latency-estimation",
+   "label": "지연 시간 어림 계산",
+   "parent": "inference-memory-bound",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가중치 크기÷대역폭으로 토큰 속도 상한 추정.",
    "added": "2026-11-16",
    "related": []
   }
