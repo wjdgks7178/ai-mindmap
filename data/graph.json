@@ -12240,10 +12240,15 @@
    "label": "팬아웃·팬인",
    "parent": "invalid-update-error",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 노드에서 여러 노드로 갈라졌다 합치는 구조.",
-   "added": "2026-11-12"
+   "added": "2026-11-12",
+   "done": "2026-11-16",
+   "related": [
+    "parallelization-pattern",
+    "rate-limit-retry"
+   ]
   },
   {
    "id": "add-messages-reducer",
@@ -25504,6 +25509,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "직접 병합 함수를 만들어 상태 키에 다는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "static-fanout",
+   "label": "정적 팬아웃",
+   "parent": "langgraph-fanout",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "갈래 수를 코드에 고정해 병렬 실행.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fan-in-join",
+   "label": "팬인(조인) 노드",
+   "parent": "langgraph-fanout",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 병렬 결과를 모아 다음으로 넘기는 합류 지점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "parallel-result-ordering",
+   "label": "병렬 결과 순서 문제",
+   "parent": "langgraph-fanout",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "병렬 결과의 순서에 의존하지 않는 설계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "map-reduce-summarization",
+   "label": "맵-리듀스 요약",
+   "parent": "langgraph-fanout",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문서를 나눠 요약한 뒤 합쳐 다시 요약하는 패턴.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "parallel-cost-limits",
+   "label": "병렬 호출 비용·한도",
+   "parent": "langgraph-fanout",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "동시 호출이 속도 제한과 비용에 미치는 영향.",
    "added": "2026-11-16",
    "related": []
   }
