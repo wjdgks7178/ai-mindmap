@@ -4616,10 +4616,16 @@
    "label": "하네스에 따른 점수 차이",
    "parent": "swe-bench",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "같은 모델도 에이전트 구성에 따라 점수가 달라지는 이유.",
-   "added": "2026-11-02"
+   "added": "2026-11-02",
+   "done": "2026-11-16",
+   "related": [
+    "agent-benchmarks-landscape",
+    "benchmark-saturation",
+    "agent-cost-latency"
+   ]
   },
   {
    "id": "live-benchmark",
@@ -26654,6 +26660,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "이슈 해결을 테스트 전환으로 판정하는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "infrastructure-noise",
+   "label": "인프라 잡음",
+   "parent": "agent-harness-variance",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자원·시간 설정이 점수를 흔드는 현상.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "resource-multiplier-reporting",
+   "label": "자원 배수 보고",
+   "parent": "agent-harness-variance",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평가에서 사용한 자원 배수를 함께 적는 관행.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "guaranteed-vs-kill-threshold",
+   "label": "보장 할당과 강제 종료 한도",
+   "parent": "agent-harness-variance",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과제별 두 자원 값을 분리해 지정하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "scaffold-parity",
+   "label": "스캐폴드 동등 조건",
+   "parent": "agent-harness-variance",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비교 시 하네스를 맞추는 원칙.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "leaderboard-gap-skepticism",
+   "label": "리더보드 격차 회의론",
+   "parent": "agent-harness-variance",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "3%p 미만 차이를 의심해야 하는 이유.",
    "added": "2026-11-16",
    "related": []
   }
