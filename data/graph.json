@@ -17259,11 +17259,14 @@
    "label": "음성 구간 검출(VAD)",
    "parent": "transcription-error",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무음 구간을 걸러 환각을 줄이는 전처리.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "wer-limits"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "wer-limits",
@@ -23175,6 +23178,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "실어증 화자 등.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "silero-vad",
+   "label": "Silero VAD",
+   "parent": "voice-activity-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약 2MB의 사전 학습 VAD 모델.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "vad-filter-faster-whisper",
+   "label": "faster-whisper vad_filter",
+   "parent": "voice-activity-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무음 구간을 건너뛰는 옵션.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "min-silence-duration",
+   "label": "최소 무음 길이 설정",
+   "parent": "voice-activity-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 2초, 500ms로 낮출 수 있음.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "vad-missed-speech-risk",
+   "label": "VAD의 누락 위험",
+   "parent": "voice-activity-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공격적 설정이 작은 목소리를 자름.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "vad-license-check",
+   "label": "VAD 라이선스 확인",
+   "parent": "voice-activity-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MIT 표기와 배지 문구 불일치.",
    "added": "2026-11-16",
    "related": []
   }
