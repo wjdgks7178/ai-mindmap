@@ -1865,10 +1865,16 @@
    "label": "에이전틱 RAG",
    "parent": "rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "에이전트가 필요할 때 스스로 질의를 바꿔 여러 번 검색하는 RAG.",
-   "added": "2026-10-30"
+   "added": "2026-10-30",
+   "done": "2026-11-16",
+   "related": [
+    "langgraph",
+    "agent-loop",
+    "tool-use"
+   ]
   },
   {
    "id": "rag-evaluation",
@@ -23952,6 +23958,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "단어 → 문서 목록을 미리 만들어 빠르게 찾는 자료구조.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "document-grading",
+   "label": "문서 관련성 채점",
+   "parent": "agentic-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색 결과가 질문에 맞는지 LLM이 판정하는 단계.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "query-rewriting",
+   "label": "질문 재작성",
+   "parent": "agentic-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색이 빗나갔을 때 질문을 명확한 검색어로 고치기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "corrective-rag",
+   "label": "CRAG(교정형 RAG)",
+   "parent": "agentic-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색 품질을 평가해 나쁘면 웹 검색 등으로 보완하는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "self-rag",
+   "label": "Self-RAG",
+   "parent": "agentic-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 스스로 검색 필요 여부와 답의 근거성을 비판하는 방식.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "agent-loop-limit",
+   "label": "반복 횟수 제한",
+   "parent": "agentic-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트 루프의 무한 재시도를 막는 상한 설정.",
    "added": "2026-11-16",
    "related": []
   }
