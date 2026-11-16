@@ -17302,11 +17302,15 @@
    "label": "한 번 클릭 인증의 약점",
    "parent": "clinician-review-signoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "형식적 서명을 막는 설계 필요.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "undertrust-ai",
+    "cognitive-forcing-function"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "unedited-note-rate",
@@ -23292,6 +23296,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 간 비교 조건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "commission-vs-omission-error",
+   "label": "작위 오류 vs 누락 오류",
+   "parent": "attestation-weakness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 조언을 따름 vs 알림 없으면 행동 안 함.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ab-risk-ratio-126",
+   "label": "위험비 1.26",
+   "parent": "attestation-weakness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 조언 시 오판이 약 26% 증가.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "workload-time-pressure-ab",
+   "label": "업무량·시간 압박과 AB",
+   "parent": "attestation-weakness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "환경 요인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "sign-off-responsibility-text",
+   "label": "서명 책임 문구",
+   "parent": "attestation-weakness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서명 시 확인 범위 명시.",
    "added": "2026-11-16",
    "related": []
   }
