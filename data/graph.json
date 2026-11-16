@@ -1313,10 +1313,15 @@
    "label": "가장 단순한 해법부터",
    "parent": "workflow-vs-agent",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "LLM 한 번 호출로 충분한지 먼저 보고 복잡도를 올리는 원칙.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "prompt-engineering",
+    "rag"
+   ]
   },
   {
    "id": "langgraph-reducer",
@@ -24062,6 +24067,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "낡은 문법·버전을 최신으로 제안하는 코딩 실수.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "llm-call-evaluation-gate",
+   "label": "통과 기준 세우기",
+   "parent": "simplest-solution-first",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "복잡도를 올리기 전 단일 호출이 충족해야 할 평가 기준.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "framework-abstraction-risk",
+   "label": "프레임워크 추상화의 위험",
+   "parent": "simplest-solution-first",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트와 응답이 가려져 디버깅이 어려워지는 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "compounding-errors",
+   "label": "오류 누적",
+   "parent": "simplest-solution-first",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단계가 늘수록 작은 실수가 곱해져 커지는 현상.",
    "added": "2026-11-16",
    "related": []
   }
