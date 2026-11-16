@@ -15820,11 +15820,12 @@
    "label": "이관 요약 품질",
    "parent": "warm-vs-cold-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "잘못된 요약이 상담사를 오도하는 위험.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-16"
   },
   {
    "id": "handoff-schema",
@@ -19189,6 +19190,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "고객이 같은 말을 다시 하는 비율.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "summary-faithfulness-score",
+   "label": "요약 충실도 점수",
+   "parent": "handoff-summary-quality",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 판정자로 1~5점 매기기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "summary-omission",
+   "label": "요약 누락",
+   "parent": "handoff-summary-quality",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사실은 맞아도 빠진 정보 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "summary-completeness",
+   "label": "요약 완전성",
+   "parent": "handoff-summary-quality",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청·행동·약속의 커버리지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rouge-bleu-limits",
+   "label": "ROUGE·BLEU의 한계",
+   "parent": "handoff-summary-quality",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단어 겹침 지표가 요약 품질을 못 재는 이유.",
    "added": "2026-11-16",
    "related": []
   }
