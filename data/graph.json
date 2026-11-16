@@ -16583,11 +16583,14 @@
    "label": "ECE(기대 보정 오차)",
    "parent": "confidence-calibration",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확신과 정답률 차이를 요약한 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "confidence-calibration-handoff"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "double-threshold-policy",
@@ -20612,6 +20615,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "실사용 로그에서 학습 예시 만들기.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "isotonic-regression-calibration",
+   "label": "아이소토닉 보정",
+   "parent": "ece-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비모수 단조 함수로 보정.",
    "added": "2026-11-16",
    "related": []
   }
