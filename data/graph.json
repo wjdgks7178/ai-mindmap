@@ -16336,11 +16336,14 @@
    "label": "의도적 마찰 설계",
    "parent": "user-overreliance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확인 단계를 넣어 맹신을 줄이는 UX.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "trust-calibration"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "errors-audit",
@@ -19804,6 +19807,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률 인식 왜곡을 보정하는 접근.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "diagnostic-timeout",
+   "label": "진단 타임아웃",
+   "parent": "friction-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정 전 대안을 점검하는 멈춤.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "usability-vs-overreliance-tradeoff",
+   "label": "사용성과 과의존의 거래",
+   "parent": "friction-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마찰이 클수록 만족도 하락.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "decide-before-reveal",
+   "label": "먼저 결정 후 공개",
+   "parent": "friction-by-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 추천 전에 사용자 판단을 받는 설계.",
    "added": "2026-11-16",
    "related": []
   }
