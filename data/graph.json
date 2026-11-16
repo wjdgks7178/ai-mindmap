@@ -2592,10 +2592,16 @@
    "label": "책임과 공개",
    "parent": "ai-fluency-4d",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "AI 사용 사실 공개·검수·기밀 보호의 책임.",
-   "added": "2026-10-31"
+   "added": "2026-10-31",
+   "done": "2026-11-16",
+   "related": [
+    "data-masking",
+    "citation-verification",
+    "model-hosting-options"
+   ]
   },
   {
    "id": "gate-check",
@@ -26532,6 +26538,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "주민번호·전화·주소 등 한국형 패턴과 탐지 난점.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "creation-diligence",
+   "label": "제작 책임",
+   "parent": "diligence-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구와 입력 데이터를 신중히 고르는 책임.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "transparency-diligence",
+   "label": "투명성 책임",
+   "parent": "diligence-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 사용 사실을 이해관계자에게 밝히는 책임.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "deployment-diligence",
+   "label": "배포 책임",
+   "parent": "diligence-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "결과물을 검증·보증하고 영향에 책임지는 것.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "diligence-statement",
+   "label": "Diligence Statement",
+   "parent": "diligence-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI의 역할과 내 책임을 적은 공식 문구.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "ai-use-policy-template",
+   "label": "사내 AI 사용 정책 틀",
+   "parent": "diligence-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허용 도구·표기·검수 책임자를 정하는 템플릿.",
    "added": "2026-11-16",
    "related": []
   }
