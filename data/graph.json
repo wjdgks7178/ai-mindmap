@@ -16526,11 +16526,14 @@
    "label": "라벨링 품질 관리",
    "parent": "finetune-data-requirements",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "교차 검수·합의로 정답 오류를 줄이는 법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "train-eval-split"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "raft",
@@ -20379,6 +20382,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습·평가 분포 차이를 분류기로 탐지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "gold-tasks",
+   "label": "골드 문제",
+   "parent": "data-labeling-qa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답이 확실한 문제를 섞어 평가자 점검.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "adjudication",
+   "label": "판정 adjudication",
+   "parent": "data-labeling-qa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치를 선임이 결정·기록.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "labeling-guideline-design",
+   "label": "라벨링 지침 설계",
+   "parent": "data-labeling-qa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판단 절차·근접 오답 예시·우선 규칙.",
    "added": "2026-11-16",
    "related": []
   }
