@@ -16887,11 +16887,15 @@
    "label": "AI 과학 패널",
    "parent": "ai-office",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "독립 전문가가 시스템 리스크를 자문.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "systemic-risk-model",
+    "ai-board"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "model-documentation-form",
@@ -21880,6 +21884,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "비용·시간·에너지.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "qualified-alert",
+   "label": "자격 경보",
+   "parent": "scientific-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "90조, 패널이 AI Office에 내는 경보.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "panel-independence",
+   "label": "패널 독립성",
+   "parent": "scientific-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제공자로부터의 독립과 이해관계 공개.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "panel-evaluation-tools",
+   "label": "패널의 평가 도구 개발",
+   "parent": "scientific-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벤치마크·방법론.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "article-91-94-powers",
+   "label": "91~94조 평가 권한",
+   "parent": "scientific-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경보 후 집행위가 쓰는 권한.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "union-safeguard-procedure-81",
+   "label": "연합 안전장치 절차 81조",
+   "parent": "scientific-panel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI Office 지원 대상.",
    "added": "2026-11-16",
    "related": []
   }
