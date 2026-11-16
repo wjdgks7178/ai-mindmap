@@ -17372,11 +17372,14 @@
    "label": "주 경계 통화",
    "parent": "all-party-consent",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주마다 다른 녹음법이 겹칠 때.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "one-party-consent"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "phi",
@@ -23541,6 +23544,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI가 기록하는 통화의 동의 문제.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "kearney-2006",
+   "label": "Kearney v. Salomon Smith Barney",
+   "parent": "cross-state-calls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "캘리포니아 대법원의 주 경계 판단.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "fcc-recording-notice-forms",
+   "label": "FCC 녹음 고지 세 형태",
+   "parent": "cross-state-calls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전 고지·구두 고지·경고음.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "michigan-misconception",
+   "label": "Michigan 오해",
+   "parent": "cross-state-calls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일방 동의인데 전원 동의로 오해.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "use-in-court-consent",
+   "label": "법정 사용 시 동의",
+   "parent": "cross-state-calls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "VA·WI의 양쪽 동의 요건.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "strictest-rule-default",
+   "label": "가장 엄격한 기준 기본값",
+   "parent": "cross-state-calls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상대 위치 모를 때 전원 동의 기준.",
    "added": "2026-11-16",
    "related": []
   }
