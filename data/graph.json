@@ -16976,11 +16976,14 @@
    "label": "55조 시스템 리스크 의무",
    "parent": "systemic-risk-threshold",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가·적대적 테스트·사고 보고·보안.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "safety-security-chapter"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "tdm-opt-out",
@@ -22650,6 +22653,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "(c)(d)는 면제 대상 아님.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "harmonised-standard-presumption",
+   "label": "조화 표준 적합 추정",
+   "parent": "art-55-obligations",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표준 준수가 적합 추정을 줌.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "art-54-eu-representative",
+   "label": "54조 역내 대리인",
+   "parent": "art-55-obligations",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "역외 제공자의 EU 대리인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "compliance-route-choice",
+   "label": "준수 경로 선택",
+   "parent": "art-55-obligations",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동강령·표준·기타 수단.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "art-56-code-of-practice",
+   "label": "56조 행동강령",
+   "parent": "art-55-obligations",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조화 표준 전 준수 수단.",
    "added": "2026-11-16",
    "related": []
   }
