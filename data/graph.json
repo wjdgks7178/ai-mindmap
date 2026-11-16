@@ -362,10 +362,15 @@
    "label": "RPA와 AI 자동화",
    "parent": "automation",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "규칙 기반 화면 자동화와 AI 판단 자동화의 차이.",
-   "added": "2026-10-28"
+   "added": "2026-10-28",
+   "done": "2026-11-16",
+   "related": [
+    "workflow-vs-agent",
+    "human-in-the-loop"
+   ]
   },
   {
    "id": "ai-assisted-coding",
@@ -24388,6 +24393,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "원칙을 바꿀 때 근거와 영향을 기록하는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "hyperautomation",
+   "label": "하이퍼오토메이션",
+   "parent": "rpa-vs-ai-automation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "RPA에 AI·ML·프로세스 마이닝을 묶어 업무 전체를 자동화하려는 개념.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "process-mining",
+   "label": "프로세스 마이닝",
+   "parent": "rpa-vs-ai-automation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시스템 로그에서 실제 업무 흐름을 찾아 자동화 후보를 발굴.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "document-extraction-ai",
+   "label": "AI 문서 추출",
+   "parent": "rpa-vs-ai-automation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "송장·계약서 같은 비정형 문서에서 항목을 뽑는 기술.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "gui-agent",
+   "label": "GUI 에이전트",
+   "parent": "rpa-vs-ai-automation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "화면을 보고 클릭·입력하는 AI. RPA의 AI 버전.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "automation-roi",
+   "label": "자동화 ROI 계산",
+   "parent": "rpa-vs-ai-automation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "절감 시간·오류율·유지비로 자동화 가치를 따지는 법.",
    "added": "2026-11-16",
    "related": []
   }
