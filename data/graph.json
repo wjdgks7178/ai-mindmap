@@ -17328,11 +17328,15 @@
    "label": "근거 연결형 노트",
    "parent": "clinician-review-signoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문장마다 원본 대화 구간을 링크.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "citation-ui",
+    "claim-level-attribution"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "one-party-consent",
@@ -23340,6 +23344,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "서명 시 확인 범위 명시.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "cited-attribute-pdsqi",
+   "label": "Cited 속성",
+   "parent": "source-linked-note",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PDSQI-9에서 ICC 0.947.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "audio-segment-playback",
+   "label": "원본 구간 재생",
+   "parent": "source-linked-note",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "링크로 대화 구간 바로 확인.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "unlinked-sentence-flag",
+   "label": "근거 없는 문장 표시",
+   "parent": "source-linked-note",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연결이 없는 문장 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "link-accuracy-check",
+   "label": "링크 정확도 점검",
+   "parent": "source-linked-note",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잘못된 구간 링크의 거짓 안심.",
    "added": "2026-11-16",
    "related": []
   }
