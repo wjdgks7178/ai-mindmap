@@ -12250,10 +12250,15 @@
    "label": "add_messages 리듀서",
    "parent": "invalid-update-error",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "메시지 목록을 ID로 합치는 전용 리듀서.",
-   "added": "2026-11-12"
+   "added": "2026-11-12",
+   "done": "2026-11-16",
+   "related": [
+    "human-in-the-loop",
+    "context-window"
+   ]
   },
   {
    "id": "replay-vs-fork",
@@ -25455,6 +25460,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "Apache·비상업·API 전용 등 모델별 사용 조건 구분.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "remove-message",
+   "label": "RemoveMessage",
+   "parent": "add-messages-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "ID로 메시지를 삭제하라고 알리는 특수 객체.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "overwrite-bypass-reducer",
+   "label": "Overwrite로 리듀서 우회",
+   "parent": "add-messages-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "병합 규칙을 건너뛰고 값을 통째로 바꾸는 방법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "conversation-trimming",
+   "label": "대화 정리(트리밍)",
+   "parent": "add-messages-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오래된 메시지를 지워 컨텍스트를 관리하는 기법.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "custom-reducer",
+   "label": "커스텀 리듀서",
+   "parent": "add-messages-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "직접 병합 함수를 만들어 상태 키에 다는 방법.",
    "added": "2026-11-16",
    "related": []
   }
