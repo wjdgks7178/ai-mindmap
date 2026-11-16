@@ -17048,22 +17048,28 @@
    "label": "자기 선호 편향",
    "parent": "position-bias-judge",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "심판이 자기와 같은 모델의 답을 선호.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "judge-consistency"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "judge-consistency",
    "label": "판정 일관성 측정",
    "parent": "position-bias-judge",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "순서 맞바꿈 일치율 계산법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "self-enhancement-bias"
+   ],
+   "done": "2026-11-16"
   },
   {
    "id": "rubric-permutation",
@@ -22276,6 +22282,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "발표 금액이 최종과 다를 수 있음.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "win-rate-vs-human",
+   "label": "사람 대비 승률 차이",
+   "parent": "self-enhancement-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자기 선호를 의심하는 측정.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "judge-model-family-separation",
+   "label": "심판·피평가 모델 분리",
+   "parent": "self-enhancement-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 계열 심판 사용.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "controlled-style-study",
+   "label": "문체 통제 연구의 어려움",
+   "parent": "self-enhancement-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "품질을 안 바꾸고 다시 쓰기 어려움.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "mt-bench-chatbot-arena",
+   "label": "MT-Bench와 Chatbot Arena",
+   "parent": "self-enhancement-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 심판 연구의 벤치마크.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "swap-and-tie",
+   "label": "순서 맞바꿈 후 무승부",
+   "parent": "judge-consistency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 순서 모두 이긴 답만 승.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "random-position-assignment",
+   "label": "무작위 위치 배정",
+   "parent": "judge-consistency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대규모에서 위치 편향 상쇄.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "rename-prompt-name-bias",
+   "label": "이름 바꾸기와 이름 편향",
+   "parent": "judge-consistency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Assistant A 편향 검증.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "few-shot-judge",
+   "label": "퓨샷 심판",
+   "parent": "judge-consistency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일관성 65→77.5%, 비용 4배.",
+   "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "reference-guided-judge",
+   "label": "참조 답 기반 심판",
+   "parent": "judge-consistency",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수학·추론 채점 한계 완화.",
    "added": "2026-11-16",
    "related": []
   }
