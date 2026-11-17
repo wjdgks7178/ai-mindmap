@@ -18596,11 +18596,15 @@
    "label": "신뢰구간 읽기",
    "parent": "ai-device-recalls",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "구간이 1을 포함하면 근거가 약하다는 해석.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ai-device-recalls",
+    "clinical-validation-recalls"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "mdr-reporting",
@@ -29083,6 +29087,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "같은 연구의 판본 간 수치 차이를 확인하는 습관.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "confidence-interval-fallacies",
+   "label": "신뢰구간의 세 오류",
+   "parent": "credible-interval-reading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "근본적 신뢰·정밀도·우도 오류.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "credible-vs-confidence",
+   "label": "신뢰구간과 신뢰할 수 있는 구간",
+   "parent": "credible-interval-reading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "절차 기반 구간과 사전 분포 기반 구간의 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "small-sample-intervals",
+   "label": "소표본 구간 방법",
+   "parent": "credible-interval-reading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Wald의 한계와 Wilson·Clopper-Pearson 대안.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "null-value-interpretation",
+   "label": "널값 포함 구간 읽기",
+   "parent": "credible-interval-reading",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "1을 포함하는 구간을 해석하는 법.",
    "added": "2026-11-17",
    "related": []
   }
