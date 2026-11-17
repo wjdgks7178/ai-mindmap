@@ -17874,11 +17874,16 @@
    "label": "타당하고 신뢰할 수 있음",
    "parent": "trustworthiness-characteristics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "다른 특성의 기반이 되는 필요조건.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "trustworthiness-tradeoffs",
+    "tevv-docs",
+    "measure-function"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "trustworthiness-tradeoffs",
@@ -27388,6 +27393,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "평가 팀이 위험 때문에 출시를 막을 수 있는 권한.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "accuracy-robustness-tension",
+   "label": "정확도와 강건성의 긴장",
+   "parent": "valid-and-reliable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정확도를 높이면 환경 변화에 약해질 수 있다는 NIST의 지적.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "external-validity",
+   "label": "외적 타당성",
+   "parent": "valid-and-reliable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "훈련 조건 밖에서도 결과가 통하는 정도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "representative-test-set",
+   "label": "대표성 있는 테스트 세트",
+   "parent": "valid-and-reliable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기대 사용 조건을 반영한 평가용 데이터.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "disaggregated-results",
+   "label": "구간별 분해 결과",
+   "parent": "valid-and-reliable",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평균 대신 데이터 구간별로 성능을 나누어 보기.",
    "added": "2026-11-17",
    "related": []
   }
