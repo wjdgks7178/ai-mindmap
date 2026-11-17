@@ -18252,11 +18252,16 @@
    "label": "데이터 드리프트",
    "parent": "model-drift-monitoring",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력 분포가 학습 때와 달라지는 현상.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "model-drift-monitoring",
+    "concept-drift",
+    "external-validation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "concept-drift",
@@ -28316,6 +28321,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "연 1회부터 지속 적응까지의 예상 주기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "psi",
+   "label": "PSI",
+   "parent": "data-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 분포의 차이를 점수로 재는 Population Stability Index.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "prediction-drift",
+   "label": "예측 드리프트",
+   "parent": "data-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델 출력 분포의 변화, 라벨 없이 쓰는 대리 신호.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drift-data-quality-check",
+   "label": "드리프트 전 데이터 품질 확인",
+   "parent": "data-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "결측·포맷 오류가 드리프트처럼 보이는 경우를 먼저 배제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drift-statistical-tests",
+   "label": "드리프트 통계 검정",
+   "parent": "data-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "KS·카이제곱 검정과 표본 크기에 따른 과민성.",
    "added": "2026-11-17",
    "related": []
   }
