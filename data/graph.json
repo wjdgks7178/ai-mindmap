@@ -25043,11 +25043,16 @@
    "label": "순열 중요도",
    "parent": "explainability",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "특성을 섞어 성능 하락 폭으로 중요도를 재는 방법.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "global-vs-local-explanation",
+    "feature-correlation-shap",
+    "shap-library"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "local-vs-global-explanation",
@@ -30076,6 +30081,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "입력을 바꿔 설명용 표본을 만드는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "permutation-importance-correlated",
+   "label": "상관 특성과 순열 중요도",
+   "parent": "permutation-importance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "상관 특성이 있으면 중요도가 과소평가되는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "train-vs-validation-importance",
+   "label": "학습·검증 세트 중요도",
+   "parent": "permutation-importance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어느 세트로 계산하느냐에 따른 해석 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "impurity-importance-bias",
+   "label": "불순도 중요도의 편향",
+   "parent": "permutation-importance",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "트리 불순도 기반 중요도가 높은 카디널리티에 치우침.",
    "added": "2026-11-17",
    "related": []
   }
