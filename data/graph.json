@@ -18143,11 +18143,16 @@
    "label": "FDA 사전 상담(Pre-Sub)",
    "parent": "clinical-validation-evidence",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제출 전 시험 설계를 FDA와 협의.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "clinical-validation-evidence",
+    "mrmc-study",
+    "pccp"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "fdora",
@@ -28064,6 +28069,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "예측 모델 연구 보고 지침의 AI 판.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "q-submission-program",
+   "label": "Q-Submission 프로그램",
+   "parent": "pre-sub",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "FDA에 피드백·회의를 요청하는 제도 전체.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "submission-issue-request",
+   "label": "Submission Issue Request",
+   "parent": "pre-sub",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "FDA 서한 이후 해결 방안을 협의하는 요청.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pre-sub-question-design",
+   "label": "Pre-Sub 질문 설계",
+   "parent": "pre-sub",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "답할 수 있는 구체적 질문을 만드는 법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "study-risk-determination",
+   "label": "연구 위험 결정",
+   "parent": "pre-sub",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임상 연구가 IDE 대상인지 FDA에 묻는 요청.",
    "added": "2026-11-17",
    "related": []
   }
