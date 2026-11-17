@@ -18203,11 +18203,16 @@
    "label": "기준 표준 설정",
    "parent": "modification-protocol",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답(ground truth)을 정하는 방식.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "modification-protocol",
+    "pccp-ai-final-guidance",
+    "mrmc-study"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "unresolvable-failure-handling",
@@ -28201,6 +28206,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "훈련·조정·시험 데이터의 대표성 요건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "adjudication-protocol",
+   "label": "판정(adjudication) 프로토콜",
+   "parent": "reference-standard-setting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임상의 평가가 불일치할 때 최종 정답을 정하는 방식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "equivocal-case-handling",
+   "label": "애매·결측 증례 처리",
+   "parent": "reference-standard-setting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기준 표준이 불명확하거나 없을 때의 규칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "test-data-sequestration",
+   "label": "테스트 데이터 격리",
+   "parent": "reference-standard-setting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개발자가 테스트 세트에 접근하지 못하게 분리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "reference-standard-uncertainty",
+   "label": "기준 표준의 불확실성",
+   "parent": "reference-standard-setting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답 자체에 내재한 오류 가능성.",
    "added": "2026-11-17",
    "related": []
   }
