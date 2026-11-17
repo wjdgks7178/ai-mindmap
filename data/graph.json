@@ -17905,11 +17905,15 @@
    "label": "NIST 편향 세 범주",
    "parent": "trustworthiness-characteristics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템적·계산통계적·인지적 편향.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "trustworthiness-tradeoffs",
+    "valid-and-reliable"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "user-appeal-channel",
@@ -27474,6 +27478,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "어떤 가치를 택했고 왜인지 투명하게 기록.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "systemic-bias",
+   "label": "시스템적 편향",
+   "parent": "nist-bias-categories",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제도·관행·사회 구조에서 생기는 AI 편향.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "computational-statistical-bias",
+   "label": "계산·통계적 편향",
+   "parent": "nist-bias-categories",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비대표 표본 등 데이터·알고리즘의 체계적 오류.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "human-cognitive-bias-ai",
+   "label": "인간 인지적 편향",
+   "parent": "nist-bias-categories",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 정보를 해석·판단하는 사람의 편향.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "nist-sp-1270",
+   "label": "NIST SP 1270",
+   "parent": "nist-bias-categories",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 편향 식별·관리 표준을 향한 NIST 문서.",
    "added": "2026-11-17",
    "related": []
   }
