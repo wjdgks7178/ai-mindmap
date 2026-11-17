@@ -18719,11 +18719,16 @@
    "label": "지침과 조문의 차이",
    "parent": "cfpb-circular-2023-03",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "철회되어도 조문은 남는 이유.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cfpb-circular-2023-03",
+    "fda-guidance-vs-statute",
+    "cfpb-guidance-withdrawal-2025"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "proxy-variable-credit",
@@ -29902,6 +29907,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "FCRA 공시가 ECOA의 이유 제시 의무를 대신하지 않음.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "perez-v-mba",
+   "label": "Perez v. Mortgage Bankers Association",
+   "parent": "guidance-vs-regulation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "해석적 규칙에 공지·의견 수렴이 필요 없다고 한 2015 판결.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "interpretive-rule",
+   "label": "해석적 규칙",
+   "parent": "guidance-vs-regulation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기관이 법령·규정을 어떻게 읽는지 밝히는 규칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "legislative-rule",
+   "label": "입법적 규칙",
+   "parent": "guidance-vs-regulation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공지·의견 수렴을 거쳐 법의 효력을 갖는 규칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "agency-deference",
+   "label": "기관 해석 존중",
+   "parent": "guidance-vs-regulation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "법원이 기관의 해석을 어느 정도 따르는가의 문제.",
    "added": "2026-11-17",
    "related": []
   }
