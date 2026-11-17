@@ -17755,11 +17755,14 @@
    "label": "연장 테스트",
    "parent": "cipa-lawsuits",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "업체가 기업의 녹음기에 불과한지 보는 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "baa-model-training"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "popa-v-microsoft",
@@ -27071,6 +27074,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "통신 제공자가 업무상 접근하면 도청이 아니라는 ECPA 예외.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "graham-v-noom",
+   "label": "Graham v. Noom",
+   "parent": "extension-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연장 테스트의 기원이 된 2021 판결.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "party-exemption",
+   "label": "당사자 면제",
+   "parent": "extension-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자기 대화 참여자는 도청자가 아니라는 원칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tape-recorder-defense",
+   "label": "녹음기 항변",
+   "parent": "extension-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "업체는 도구를 제공했을 뿐이라는 방어 논리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "vendor-no-training-clause",
+   "label": "학습 금지 계약 조항",
+   "parent": "extension-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고객 데이터를 서비스 제공에만 쓰게 하는 조항.",
    "added": "2026-11-17",
    "related": []
   }
