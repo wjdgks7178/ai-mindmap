@@ -18064,11 +18064,16 @@
    "label": "파운데이션 모델 기기 표시",
    "parent": "fda-ai-enabled-device-list",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM 사용 기기 식별 계획.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-ai-enabled-device-list",
+    "pccp",
+    "fda-device-database"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "fda-device-database",
@@ -27864,6 +27869,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "기기에 필수인 소프트웨어는 SaMD와 구분.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "dhac",
+   "label": "FDA 디지털 헬스 자문위원회",
+   "parent": "foundation-model-tagging",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생성형 AI 기기 등을 논의하는 FDA 자문 기구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "genai-device-postmarket-monitoring",
+   "label": "생성형 AI 기기 시판 후 모니터링",
+   "parent": "foundation-model-tagging",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치 후 성능을 추적하는 방법·지표.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "llm-disclosure-in-summary",
+   "label": "LLM 사용 공개",
+   "parent": "foundation-model-tagging",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허가 요약문에 LLM 기능 정보를 적도록 하는 권고.",
    "added": "2026-11-17",
    "related": []
   }
