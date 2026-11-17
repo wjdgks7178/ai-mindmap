@@ -28697,11 +28697,16 @@
    "label": "Documentation Level",
    "parent": "firmware-medical",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "위험에 따라 Basic 또는 Enhanced 소프트웨어 문서를 정하는 틀.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "firmware-medical",
+    "pre-sub",
+    "device-risk-classes"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "enhanced-documentation",
@@ -28733,6 +28738,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "2005년 위험 수준 틀이 Documentation Level로 바뀜.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "software-design-specification",
+   "label": "소프트웨어 설계 명세(SDS)",
+   "parent": "documentation-level",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설계를 구현 수준으로 설명하는 문서, Basic은 DHF에 보관.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "software-requirements-specification",
+   "label": "소프트웨어 요구사항 명세(SRS)",
+   "parent": "documentation-level",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시스템·소프트웨어가 충족할 요구와 추적성을 적은 문서.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "iec-62304",
+   "label": "IEC 62304",
+   "parent": "documentation-level",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "의료기기 소프트웨어 수명주기 표준.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "architecture-diagram-premarket",
+   "label": "아키텍처 다이어그램(시판 전)",
+   "parent": "documentation-level",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모듈·계층·인터페이스·데이터 흐름을 그린 도면.",
    "added": "2026-11-17",
    "related": []
   }
