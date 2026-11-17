@@ -17727,11 +17727,14 @@
    "label": "하청 BAA 연쇄",
    "parent": "business-associate-agreement",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "업체의 업체까지 의무가 이어지는 구조.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "baa-model-training"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "capability-test",
@@ -26977,6 +26980,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "학습에 쓴 데이터와 비식별 사본의 삭제 의무.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "subprocessor-inventory",
+   "label": "하청 목록 확인",
+   "parent": "subcontractor-flowdown",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "업체의 모든 하청과 BAA 서명 여부를 목록으로 받는 점검.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "llm-api-as-subcontractor",
+   "label": "LLM API는 하청이다",
+   "parent": "subcontractor-flowdown",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "외부 LLM 추론 API가 PHI를 받으면 하청 BA가 됨.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "conduit-exception",
+   "label": "단순 전달자 예외",
+   "parent": "subcontractor-flowdown",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일시 전달만 하는 경우의 좁은 예외와 AI에서의 한계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ocr-subcontractor-enforcement",
+   "label": "하청 BAA 누락 집행 사례",
+   "parent": "subcontractor-flowdown",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "BAA 없이 하청이 PHI를 받아 합의금이 부과된 사례.",
    "added": "2026-11-17",
    "related": []
   }
