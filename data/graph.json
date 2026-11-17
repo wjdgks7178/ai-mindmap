@@ -30727,11 +30727,16 @@
    "label": "Yates 연속성 보정",
    "parent": "expected-frequency-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "자유도 1일 때 적용되는 보정.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "expected-frequency-rule",
+    "fisher-exact-test",
+    "chi-square-drift"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "odds-ratio-unconditional-conditional",
@@ -30763,6 +30768,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "칸 빈도가 작을 때 검정 선택.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "continuity-correction",
+   "label": "연속성 보정",
+   "parent": "yates-correction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이산 분포를 연속 분포로 근사할 때의 보정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "yates-conservative-debate",
+   "label": "Yates 보정의 보수성 논쟁",
+   "parent": "yates-correction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보정이 지나치게 보수적이라는 비판과 대안.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pearson-chi-square",
+   "label": "Pearson 카이제곱",
+   "parent": "yates-correction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보정 없는 기본 카이제곱 통계량.",
    "added": "2026-11-17",
    "related": []
   }
