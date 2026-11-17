@@ -29335,11 +29335,17 @@
    "label": "변경의 세 유형",
    "parent": "fda-2019-discussion-paper",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "성능·입력·의도한 용도 변경.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "fda-2019-discussion-paper",
+    "sps-algorithm-change-protocol",
+    "pccp-description-of-modifications",
+    "significance-of-information"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "fda-ai-action-plan-2021",
@@ -29382,6 +29388,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "새 환자군에 맞는 기준 표준을 규정하는 계획.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "performance-modification",
+   "label": "성능 변경",
+   "parent": "three-modification-types-2019",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 용도에서 임상·분석 성능을 높이는 변경.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "input-modification",
+   "label": "입력 변경",
+   "parent": "three-modification-types-2019",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 입력 출처나 유형을 추가하는 변경.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "intended-use-modification",
+   "label": "용도 변경",
+   "parent": "three-modification-types-2019",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정보 중요도나 환자군·질환이 바뀌는 변경.",
    "added": "2026-11-17",
    "related": []
   }
