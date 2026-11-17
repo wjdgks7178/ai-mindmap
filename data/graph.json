@@ -18974,11 +18974,14 @@
    "label": "매핑표 버전 관리",
    "parent": "reason-code-mapping",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델과 문구표를 함께 관리.",
+   "summary": "모델과 이유 문구표를 한 세트로 버전 관리.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "reason-code-mapping"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "tenure-productivity-curve",
@@ -31409,6 +31412,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "입력별 기준점을 정하는 CoSHAP.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "sr-26-2",
+   "label": "SR 26-2",
+   "parent": "mapping-version-control",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2026년 미국 모델 리스크 관리 지침.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "model-inventory",
+   "label": "모델 인벤토리",
+   "parent": "mapping-version-control",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 목록과 위험 등급 관리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "notice-log-reproducibility",
+   "label": "통지 로그 재현성",
+   "parent": "mapping-version-control",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "당시 모델·문구표 그대로 재현.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "mapping-regression-test",
+   "label": "매핑 회귀 테스트",
+   "parent": "mapping-version-control",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문구 변경 전후 이유 비교.",
    "added": "2026-11-17",
    "related": []
   }
