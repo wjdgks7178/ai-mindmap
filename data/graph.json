@@ -18219,11 +18219,17 @@
    "label": "해결 불가 실패 처리",
    "parent": "modification-protocol",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검증 실패 시 롤백·보류 규칙.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "modification-protocol",
+    "pccp-ai-final-guidance",
+    "pccp-deviation",
+    "acceptance-criteria"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "pccp-description-of-modifications",
@@ -28250,6 +28256,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "정답 자체에 내재한 오류 가능성.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "root-cause-analysis-retest",
+   "label": "근본 원인 분석 후 재시험",
+   "parent": "unresolvable-failure-handling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PCCP와 무관한 실패는 원인을 제거해 다시 시험.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "failure-record-retention",
+   "label": "실패 기록 보관",
+   "parent": "unresolvable-failure-handling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보류된 변경의 실패 내용을 문서로 남기는 일.",
    "added": "2026-11-17",
    "related": []
   }
