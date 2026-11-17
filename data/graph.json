@@ -28614,11 +28614,16 @@
    "label": "드리프트 적응",
    "parent": "concept-drift",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "재학습·앙상블 등으로 모델을 갱신하는 방법.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "concept-drift",
+    "drift-detection-framework",
+    "pccp"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "extreme-verification-latency",
@@ -30489,6 +30494,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "DDM 계열의 다른 감지 알고리즘.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "retrain-new-model",
+   "label": "새 모델 재학습",
+   "parent": "drift-adaptation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전역 드리프트에서 낡은 모델을 버리고 다시 학습.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ensemble-for-recurring",
+   "label": "재발용 앙상블",
+   "parent": "drift-adaptation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과거 모델을 보존해 재발 개념에 재사용.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "regional-drift-adjustment",
+   "label": "국소 드리프트 조정",
+   "parent": "drift-adaptation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "영향받는 영역만 기존 모델을 수정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "window-size-tradeoff",
+   "label": "창 크기 균형",
+   "parent": "drift-adaptation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작은 창은 최신성, 큰 창은 표본 수에 유리.",
    "added": "2026-11-17",
    "related": []
   }
