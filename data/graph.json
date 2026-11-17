@@ -30556,11 +30556,15 @@
    "label": "경험적 누적분포함수",
    "parent": "ks-test",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "표본에서 x 이하 비율을 나타내는 함수.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "ks-test",
+    "drift-statistical-tests"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "ks-exact-vs-asymptotic",
@@ -30614,6 +30618,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "분할표 구조가 바뀌는 범주형 드리프트.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "kaplan-meier",
+   "label": "Kaplan-Meier 추정량",
+   "parent": "ecdf",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중도 절단 자료의 생존 함수 추정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "survival-function",
+   "label": "경험적 생존 함수",
+   "parent": "ecdf",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "ECDF의 여집합 1−F(x).",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ecdf-confidence-interval",
+   "label": "ECDF 신뢰구간",
+   "parent": "ecdf",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Greenwood 공식 기반 구간.",
    "added": "2026-11-17",
    "related": []
   }
