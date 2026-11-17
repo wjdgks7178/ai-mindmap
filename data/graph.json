@@ -18175,11 +18175,16 @@
    "label": "변경 전 버전 predicate 규칙",
    "parent": "section-515c",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "PCCP 변경 후 버전은 predicate 불가.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "section-515c",
+    "predicate-creep",
+    "fdora"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "pccp-ai-final-guidance",
@@ -28606,6 +28611,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "선택지 제시, 정보 취합 수준.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pccp-without-predicate-chain",
+   "label": "PCCP 없는 변경의 predicate",
+   "parent": "predicate-pre-change-version",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PCCP 없이 허가된 변경 기기는 이 규칙이 막지 않음.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "predicate-version-check",
+   "label": "predicate 버전 확인",
+   "parent": "predicate-pre-change-version",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "후발 제출 전 predicate가 변경 전 버전인지 점검.",
    "added": "2026-11-17",
    "related": []
   }
