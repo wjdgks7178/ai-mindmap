@@ -18400,11 +18400,14 @@
    "label": "N10 SaMD 정의",
    "parent": "imdrf",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "2013 IMDRF 용어 문서.",
+   "summary": "하드웨어의 일부가 아닌 의료 목적 소프트웨어를 SaMD로 정의한 2013 문서.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "samd"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "samd-qms",
@@ -30959,6 +30962,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "SaMD 업데이트를 사전 합의하는 제도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "simd-software-in-medical-device",
+   "label": "SiMD 기기 내장 소프트웨어",
+   "parent": "n10-samd-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하드웨어 기기 일부라 SaMD 아님.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "samd-changes-maintenance",
+   "label": "SaMD 변경과 유지보수",
+   "parent": "n10-samd-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적응·완전·교정·예방 4종.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "samd-manufacturer-responsibility",
+   "label": "SaMD 제조사 책임",
+   "parent": "n10-samd-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GHTF 정의의 최종 규제 책임자.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ghtf-medical-purpose",
+   "label": "GHTF 의료 목적 정의",
+   "parent": "n10-samd-definition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진단·치료·생명유지 등 목록.",
    "added": "2026-11-17",
    "related": []
   }
