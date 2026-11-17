@@ -18428,11 +18428,14 @@
    "label": "규제 조화",
    "parent": "imdrf",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "국가 간 의료기기 규칙 맞춤.",
+   "summary": "나라별 의료기기 규제를 비슷하게 맞추는 노력. GHTF에서 IMDRF로.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "n10-samd-definition"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "firmware-medical",
@@ -31053,6 +31056,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "버전·변경 이력 추적.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ghtf",
+   "label": "GHTF",
+   "parent": "regulatory-harmonization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1992~2012 의료기기 규제 조화 태스크포스.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "mutual-recognition",
+   "label": "상호인정",
+   "parent": "regulatory-harmonization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 나라 승인을 다른 나라가 인정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "mdsap",
+   "label": "MDSAP",
+   "parent": "regulatory-harmonization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번의 심사로 여러 나라 인정받는 제도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "imdrf-ai-ml-documents",
+   "label": "IMDRF의 AI 의료기기 문서",
+   "parent": "regulatory-harmonization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI·ML 의료기기 용어·원칙 문서.",
    "added": "2026-11-17",
    "related": []
   }
