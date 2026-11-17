@@ -19044,11 +19044,14 @@
    "label": "상대 평가 보상 효과",
    "parent": "skill-gap-compression",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "AI 도입 후 보너스 체계의 변화.",
+   "summary": "순위 기반 보너스는 AI 도입으로 상위자에게 불리해질 수 있다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "knowledge-capture-credit"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "quality-decline-top-agents",
@@ -31669,6 +31672,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "강제하지 않는 도입 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "rank-order-tournament",
+   "label": "순위 토너먼트 보상",
+   "parent": "relative-pay-effects",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Lazear-Rosen 1981 이론.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "absolute-vs-relative-bonus",
+   "label": "절대 기준 vs 상대 기준 보너스",
+   "parent": "relative-pay-effects",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도입 후 기준 선택.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "contribution-pay-for-best-practices",
+   "label": "모범 사례 기여 수당",
+   "parent": "relative-pay-effects",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 학습 데이터 제공 보상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "common-shock-in-rankings",
+   "label": "공통 충격과 순위",
+   "parent": "relative-pay-effects",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모두 오르면 순위는 그대로.",
    "added": "2026-11-17",
    "related": []
   }
