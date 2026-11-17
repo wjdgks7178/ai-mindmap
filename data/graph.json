@@ -18703,11 +18703,16 @@
    "label": "샘플 양식 체크리스트",
    "parent": "cfpb-circular-2023-03",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Reg B 샘플 이유 목록 사용의 한계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cfpb-circular-2023-03",
+    "reason-code-mapping",
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "guidance-vs-regulation",
@@ -29864,6 +29869,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "철회된 지침 대신 조문에 근거해 정책을 기록.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "specific-principal-reasons",
+   "label": "구체적 주된 이유",
+   "parent": "sample-forms-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "내부 기준이 아닌 실제 요인을 설명하는 이유.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "four-reasons-comment",
+   "label": "이유 네 개 초과 비효율",
+   "parent": "sample-forms-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "해설 9(b)(2)-1의 개수 안내.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fcra-vs-ecoa-disclosure",
+   "label": "FCRA 공시와 ECOA 이유 제시",
+   "parent": "sample-forms-checklist",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "FCRA 공시가 ECOA의 이유 제시 의무를 대신하지 않음.",
    "added": "2026-11-17",
    "related": []
   }
