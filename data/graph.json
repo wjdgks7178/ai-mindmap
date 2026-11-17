@@ -18719,11 +18719,16 @@
    "label": "대리 변수",
    "parent": "disparate-impact-credit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보호 속성과 상관된 중립 변수 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "disparate-impact-credit",
+    "proxy-variable",
+    "less-discriminatory-alternative"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "shap-library",
@@ -29754,6 +29759,61 @@
    "status": "planned",
    "priority": 4,
    "summary": "복사본 변수를 학습 전에 정리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "reg-b-2026-final-rule",
+   "label": "Reg B 2026 최종 규칙",
+   "parent": "proxy-variable-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "효과 기준을 삭제한 CFPB 규칙, 2026-04-22 확정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "effects-test",
+   "label": "효과 기준(effects test)",
+   "parent": "proxy-variable-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "의도가 아닌 결과 차이로 차별을 판단하는 법리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "state-fair-lending-law",
+   "label": "주(州) 공정 대출법",
+   "parent": "proxy-variable-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연방 규칙과 별개로 효과 기반 청구를 인정할 수 있는 주 법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "upstart-no-action-letter",
+   "label": "Upstart 무조치 서한",
+   "parent": "proxy-variable-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대안 데이터·ML 모델의 공정 대출 시험을 다룬 CFPB 사례.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "proxy-detection-auc",
+   "label": "대리 정보 탐지 AUC",
+   "parent": "proxy-variable-credit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "변수로 보호 속성을 예측해 대리 정보를 가늠하는 방법.",
    "added": "2026-11-17",
    "related": []
   }
