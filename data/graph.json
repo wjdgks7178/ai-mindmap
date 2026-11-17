@@ -30111,9 +30111,46 @@
    "label": "불순도 중요도의 편향",
    "parent": "permutation-importance",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "트리 불순도 기반 중요도가 높은 카디널리티에 치우침.",
+   "added": "2026-11-17",
+   "related": [
+    "permutation-importance",
+    "permutation-importance-correlated"
+   ],
+   "done": "2026-11-17"
+  },
+  {
+   "id": "mdi-importance",
+   "label": "MDI 중요도",
+   "parent": "impurity-importance-bias",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "트리 학습 중 불순도 감소량을 합산한 중요도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "random-feature-baseline",
+   "label": "난수 특성 기준선",
+   "parent": "impurity-importance-bias",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일부러 넣은 무관한 열을 기준으로 중요도를 비교.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "overfit-importance",
+   "label": "과적합과 중요도",
+   "parent": "impurity-importance-bias",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 데이터에서만 보이는 분할이 중요도에 반영됨.",
    "added": "2026-11-17",
    "related": []
   }
