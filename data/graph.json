@@ -18988,11 +18988,14 @@
    "label": "근속 기간별 생산성 곡선",
    "parent": "experience-curve-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "입사 후 개월 수에 따른 해결 건수 변화.",
+   "summary": "AI를 처음부터 쓴 신입은 2개월에 2.5건, 안 쓰면 8~10개월.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "skill-gap-compression"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "training-with-ai-assistant",
@@ -31456,6 +31459,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "문구 변경 전후 이유 비교.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-adherence-rate",
+   "label": "AI 추천 채택률",
+   "parent": "tenure-productivity-curve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균 35%, 근속별로 다름.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "experienced-worker-negative-effect",
+   "label": "숙련자의 음의 효과",
+   "parent": "tenure-productivity-curve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1년 이상은 품질 지표 소폭 하락.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "experience-curve-vs-learning-curve",
+   "label": "경험 곡선 대 학습 곡선",
+   "parent": "tenure-productivity-curve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배우는지 따르는지 구별 불가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "staggered-rollout-design",
+   "label": "단계적 도입 설계",
+   "parent": "tenure-productivity-curve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5개월째 접근 그룹이 쓰인 비교.",
    "added": "2026-11-17",
    "related": []
   }
