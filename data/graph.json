@@ -19130,11 +19130,15 @@
    "label": "패널 분류의 함정",
    "parent": "cardiology-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 심장 AI도 분야가 달라질 수 있음.",
+   "summary": "Panel(Lead)는 기기당 하나. 심장 영상 AI는 영상의학 패널에 있다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-ai-enabled-device-list",
+    "radiology-ai-dominance"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "mimic-cxr",
@@ -31917,6 +31921,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "박출률이 보존된 심부전 탐지 AI.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "primary-product-code",
+   "label": "주요 제품 코드",
+   "parent": "panel-classification-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA 기기 유형 코드. 패널과 교차 검색.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "qih-product-code",
+   "label": "QIH 제품 코드",
+   "parent": "panel-classification-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상 처리 소프트웨어 계열 코드.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fda-ai-list-methodology",
+   "label": "FDA AI 목록 선정 방법",
+   "parent": "panel-classification-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 관련 용어로 고른 비전수 목록.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "competitor-search-cross-check",
+   "label": "경쟁 제품 교차 검색",
+   "parent": "panel-classification-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패널·제품 코드·키워드 병행.",
    "added": "2026-11-17",
    "related": []
   }
