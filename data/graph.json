@@ -19173,11 +19173,15 @@
    "label": "DICOM 비식별화",
    "parent": "medical-imaging-datasets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "영상 메타데이터의 개인정보 제거.",
+   "summary": "DICOM 속성·픽셀의 개인정보를 지우거나 대체. PS3.15 부록 E.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "dicom-deidentification-profile",
+    "tcia"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "data-use-agreement",
@@ -32059,6 +32063,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할·주석·방사체학 특징 공개.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "clean-pixel-data-option",
+   "label": "Clean Pixel Data 옵션",
+   "parent": "dicom-deidentification",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상 픽셀에 박힌 식별 글자 제거.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "encrypted-attributes-dataset",
+   "label": "암호화 속성 데이터셋",
+   "parent": "dicom-deidentification",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 값을 암호화해 복구 가능하게 보관.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "modified-dates-option",
+   "label": "수정된 날짜 옵션",
+   "parent": "dicom-deidentification",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "날짜를 옮기되 시간 관계는 유지.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "face-reconstruction-risk",
+   "label": "얼굴 복원 위험",
+   "parent": "dicom-deidentification",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "머리 CT·MRI 3D 재구성.",
    "added": "2026-11-17",
    "related": []
   }
