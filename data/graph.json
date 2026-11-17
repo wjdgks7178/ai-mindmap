@@ -18659,11 +18659,16 @@
    "label": "고정 vs 지속 학습 AI 감시",
    "parent": "post-market-surveillance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 방식에 따른 감시 차이.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "post-market-surveillance",
+    "model-drift-monitoring",
+    "pccp-ai-final-guidance"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "post-hoc-explanation-validity",
@@ -29256,6 +29261,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "PMA 승인 조건으로 붙는 연구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fda-2019-discussion-paper",
+   "label": "FDA 2019 AI/ML 토론 문서",
+   "parent": "locked-vs-continuous",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "SaMD 변경에 대한 규제 틀 제안과 피드백 요청.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "samd-pre-specifications",
+   "label": "SaMD 사전 명세와 변경 프로토콜",
+   "parent": "locked-vs-continuous",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "2019 제안의 SPS·ACP, 이후 PCCP로 이어짐.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "adaptation-learning-update-stages",
+   "label": "적응의 두 단계",
+   "parent": "locked-vs-continuous",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "알고리즘이 배우는 단계와 새 버전이 배포되는 단계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tplc-approach",
+   "label": "총 제품 수명주기 접근",
+   "parent": "locked-vs-continuous",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개발부터 시판 후까지 연속으로 규제하는 틀.",
    "added": "2026-11-17",
    "related": []
   }
