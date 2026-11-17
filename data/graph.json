@@ -19055,11 +19055,14 @@
    "label": "상위자 품질 하락",
    "parent": "skill-gap-compression",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "최고 숙련자의 대화 품질이 낮아질 가능성.",
+   "summary": "최상위 숙련자는 생산성 증가가 없고 품질 지표가 소폭 하락했다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "skill-biased-technical-change"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "data-ownership-employee",
@@ -31622,6 +31625,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "중간 숙련 정형 일자리 감소.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-distraction-hypothesis",
+   "label": "AI 산만 가설",
+   "parent": "quality-decline-top-agents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추천이 상위자의 직접 판단을 방해.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "quality-metrics-monitoring",
+   "label": "품질 지표 감시",
+   "parent": "quality-decline-top-agents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처리 시간만 보지 않기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "customer-escalation-requests",
+   "label": "관리자 연결 요청",
+   "parent": "quality-decline-top-agents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객 신뢰의 대리 지표.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "opt-in-ai-for-experts",
+   "label": "숙련자 선택적 AI 사용",
+   "parent": "quality-decline-top-agents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "강제하지 않는 도입 설계.",
    "added": "2026-11-17",
    "related": []
   }
