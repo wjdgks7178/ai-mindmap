@@ -17846,7 +17846,10 @@
    "summary": "테스트 세트·지표·도구 기록.",
    "added": "2026-11-15",
    "related": [
-    "measure-function"
+    "measure-function",
+    "model-card",
+    "datasheets-for-datasets",
+    "eval-reproducibility"
    ],
    "done": "2026-11-17"
   },
