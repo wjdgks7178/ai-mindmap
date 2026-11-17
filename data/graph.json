@@ -19246,11 +19246,14 @@
    "label": "보완적 팀 성능",
    "parent": "explanations-overreliance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람+AI가 각자보다 나은 상태.",
+   "summary": "팀 정확도가 사람·AI 각자보다 높은 상태. 설명은 추가 이득을 주지 않았다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cognitive-forcing-function"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "acceptance-by-correctness",
@@ -32297,6 +32300,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "고위험엔 효과 우선 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "adaptive-explanation",
+   "label": "적응형 설명",
+   "parent": "complementary-team-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신도에 따라 설명 방식을 바꾼다.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "human-ai-accuracy-matching",
+   "label": "사람·AI 정확도 맞추기",
+   "parent": "complementary-team-performance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보완 여지를 넓히는 실험 설계.",
    "added": "2026-11-17",
    "related": []
   }
