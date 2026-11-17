@@ -17841,11 +17841,14 @@
    "label": "TEVV 문서화",
    "parent": "tevv",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "테스트 세트·지표·도구 기록.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "measure-function"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "independent-assessor",
