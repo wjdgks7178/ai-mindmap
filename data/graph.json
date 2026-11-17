@@ -19030,11 +19030,14 @@
    "label": "숙련 편향적 기술 변화",
    "parent": "skill-gap-compression",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "고숙련에 유리한 기존 기술 변화 패턴.",
+   "summary": "기술이 고숙련에 유리하다는 가설과 과업 기반 재해석.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "skill-gap-compression"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "relative-pay-effects",
@@ -31575,6 +31578,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "신입 교육 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "routine-vs-nonroutine-tasks",
+   "label": "정형 과업 vs 비정형 과업",
+   "parent": "skill-biased-technical-change",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙 따르기 vs 문제 해결·소통.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "alm-task-model",
+   "label": "ALM 과업 모델",
+   "parent": "skill-biased-technical-change",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Autor-Levy-Murnane 2003 모델.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "task-content-within-occupation",
+   "label": "직업 내 과업 구성 변화",
+   "parent": "skill-biased-technical-change",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 직업명 안에서 하는 일이 바뀜.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "job-polarization",
+   "label": "일자리 양극화",
+   "parent": "skill-biased-technical-change",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중간 숙련 정형 일자리 감소.",
    "added": "2026-11-17",
    "related": []
   }
