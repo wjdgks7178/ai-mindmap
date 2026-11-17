@@ -18426,11 +18426,16 @@
    "label": "기기 펌웨어",
    "parent": "simd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기기 내장 소프트웨어의 규제 요건.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "simd",
+    "software-function-policy",
+    "samd"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "software-function-policy",
@@ -28684,6 +28689,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "2026-02-02 발효된 품질 관리 규정과 국제 표준 인용.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "documentation-level",
+   "label": "Documentation Level",
+   "parent": "firmware-medical",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "위험에 따라 Basic 또는 Enhanced 소프트웨어 문서를 정하는 틀.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "enhanced-documentation",
+   "label": "Enhanced 문서",
+   "parent": "firmware-medical",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사망·중상 개연성 위험이 있을 때 제출하는 상세 문서.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "basic-documentation",
+   "label": "Basic 문서",
+   "parent": "firmware-medical",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Enhanced에 해당하지 않을 때 제출하는 기본 문서.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "level-of-concern-replaced",
+   "label": "Level of Concern 대체",
+   "parent": "firmware-medical",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "2005년 위험 수준 틀이 Documentation Level로 바뀜.",
    "added": "2026-11-17",
    "related": []
   }
