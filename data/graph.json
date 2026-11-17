@@ -17783,11 +17783,14 @@
    "label": "당사자 녹음 원칙",
    "parent": "kr-communication-secrecy-law",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "참여자가 자기 대화를 녹음하는 경우의 법적 취급.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "all-party-consent"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "voice-personal-data",
@@ -27165,6 +27168,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "Contact Center AI 통화 처리를 겨눈 2025 집단소송.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "supreme-court-2002do123",
+   "label": "대법원 2002도123",
+   "parent": "party-recording-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "당사자 일방 녹음은 감청이 아니라고 한 판례.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "supreme-court-2020do1007",
+   "label": "대법원 2020도1007",
+   "parent": "party-recording-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가청거리 제3자 녹음을 유죄로 본 2022 판결.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "non-public-conversation",
+   "label": "공개되지 않은 대화 판단",
+   "parent": "party-recording-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "발언자 의사·장소·상대 수 등으로 비공개 여부를 가림.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recording-admissibility",
+   "label": "녹음의 증거능력",
+   "parent": "party-recording-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "위법 녹음은 재판 증거로 못 쓰는 제4조.",
    "added": "2026-11-17",
    "related": []
   }
