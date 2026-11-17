@@ -30293,11 +30293,16 @@
    "label": "카이제곱 드리프트 검정",
    "parent": "drift-statistical-tests",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "범주형 특성의 분포 변화 검정.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "drift-statistical-tests",
+    "ks-test",
+    "psi"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "effect-size-vs-pvalue",
@@ -30576,6 +30581,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "동점이 많은 이산 특성에서의 한계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "expected-frequency-rule",
+   "label": "기대 빈도 5 이상 규칙",
+   "parent": "chi-square-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "카이제곱 검정의 칸별 기대 빈도 지침.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cramers-v",
+   "label": "Cramér의 V",
+   "parent": "chi-square-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분할표 연관성의 효과 크기 지표.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "new-category-drift",
+   "label": "새 범주 등장",
+   "parent": "chi-square-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분할표 구조가 바뀌는 범주형 드리프트.",
    "added": "2026-11-17",
    "related": []
   }
