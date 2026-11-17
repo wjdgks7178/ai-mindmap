@@ -19260,11 +19260,15 @@
    "label": "정답·오답별 수용률",
    "parent": "explanations-overreliance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "설명 효과를 가르는 측정.",
+   "summary": "수용률을 AI 정답·오답 사례로 쪼개 보면 설명의 영향이 드러난다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "trap-case-kpi",
+    "complementary-team-performance"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "counter-evidence-display",
@@ -32322,6 +32326,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "보완 여지를 넓히는 실험 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "human-ai-agreement-rate",
+   "label": "인간-AI 일치율",
+   "parent": "acceptance-by-correctness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최종 결정이 AI 추천과 같은 비율.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "explain-top-1-vs-top-2",
+   "label": "Top-1 설명 vs Top-2 설명",
+   "parent": "acceptance-by-correctness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최상위만 설명할지 상위 두 후보를 설명할지.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "devils-advocate-ai",
+   "label": "악마의 변호인 AI",
+   "parent": "acceptance-by-correctness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 자기 의심을 설명하는 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "informative-vs-convincing-explanations",
+   "label": "설득하는 설명 vs 알려 주는 설명",
+   "parent": "acceptance-by-correctness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명의 목표 차이.",
    "added": "2026-11-17",
    "related": []
   }
