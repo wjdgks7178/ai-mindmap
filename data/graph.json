@@ -18516,11 +18516,16 @@
    "label": "선택 편향",
    "parent": "retrospective-vs-prospective",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정리된 병원 데이터만 쓸 때의 편향.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "retrospective-vs-prospective",
+    "external-validation",
+    "data-drift"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "randomized-controlled-trial-ai",
@@ -28958,6 +28963,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "11개 클리닉에서 간호사의 AI 사용을 관찰한 CHI 2020 연구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "target-population-identification",
+   "label": "목표 집단 식별",
+   "parent": "selection-bias-medical-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 대표하는 환자에게만 예측하고 나머지는 임상의에게 넘기는 방식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "spectrum-bias",
+   "label": "스펙트럼 편향",
+   "parent": "selection-bias-medical-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특정 질환·중증도가 과대 대표된 데이터의 편향.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "participant-flow-diagram",
+   "label": "참가자 흐름도",
+   "parent": "selection-bias-medical-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터에 들어온 환자와 제외된 환자를 보여 주는 보고 도식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "probast",
+   "label": "PROBAST",
+   "parent": "selection-bias-medical-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "예측 모델 연구의 편향 위험과 적용 가능성 평가 도구.",
    "added": "2026-11-17",
    "related": []
   }
