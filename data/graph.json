@@ -19101,11 +19101,14 @@
    "label": "ECG AI",
    "parent": "cardiology-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "심전도 신호를 분석하는 AI.",
+   "summary": "심전도 신호로 부정맥을 찾는 AI. 병원용부터 손목시계까지.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "embedded-ai"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "echocardiography-ai",
@@ -31822,6 +31825,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어떤 사례가 학습에 쓰였나.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "single-lead-vs-12-lead",
+   "label": "단일 유도 vs 12유도",
+   "parent": "ecg-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웨어러블과 병원 심전도의 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "afib-detection",
+   "label": "심방세동 탐지",
+   "parent": "ecg-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 흔한 ECG AI 과제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "inconclusive-rate",
+   "label": "판정 불가 비율",
+   "parent": "ecg-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 분류를 못 하는 기록의 비중.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "de-novo-wearable-ecg",
+   "label": "웨어러블 ECG De Novo",
+   "parent": "ecg-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소비자 제품 허가 경로.",
    "added": "2026-11-17",
    "related": []
   }
