@@ -18746,11 +18746,16 @@
    "label": "상관 변수와 SHAP",
    "parent": "shapley-values",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변수 간 상관이 해석에 주는 영향.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "shapley-values",
+    "shap-library",
+    "shap-misinterpretation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "global-vs-local-explanation",
@@ -29716,6 +29721,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "waterfall·force·beeswarm·bar·scatter.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "correlated-feature-grouping",
+   "label": "상관 변수 묶기",
+   "parent": "feature-correlation-shap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "상관 높은 변수의 SHAP를 합쳐 해석.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-stability-check",
+   "label": "SHAP 안정성 확인",
+   "parent": "feature-correlation-shap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시드·부트스트랩으로 설명이 흔들리는지 점검.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "redundant-feature-removal",
+   "label": "중복 변수 제거",
+   "parent": "feature-correlation-shap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "복사본 변수를 학습 전에 정리.",
    "added": "2026-11-17",
    "related": []
   }
