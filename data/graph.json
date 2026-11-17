@@ -18784,11 +18784,15 @@
    "label": "반사실의 다양성",
    "parent": "counterfactual-explanation",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 대안을 주는 이유.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "counterfactual-explanation",
+    "actionable-recourse"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "explanation-right-gdpr",
@@ -29497,6 +29501,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "거절 대상 중 구제 가능한 비율을 점검하는 활동.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "rashomon-effect-explanations",
+   "label": "Rashomon 효과",
+   "parent": "counterfactual-diversity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 결과를 내는 서로 다른 설명이 여러 개 존재하는 현상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "counterfactual-sparsity",
+   "label": "반사실의 희소성",
+   "parent": "counterfactual-diversity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "바꿀 특성 수를 줄여 이해와 실행을 쉽게 함.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "nsga-ii-counterfactual",
+   "label": "NSGA-II 반사실 생성",
+   "parent": "counterfactual-diversity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 목적을 동시에 최적화하는 생성 방법.",
    "added": "2026-11-17",
    "related": []
   }
