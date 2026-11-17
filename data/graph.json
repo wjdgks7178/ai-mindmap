@@ -29975,11 +29975,16 @@
    "label": "LIME·SHAP 속이기",
    "parent": "post-hoc-explanation-validity",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "비계 기법으로 편향을 숨기는 공격.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "post-hoc-explanation-validity",
+    "shap-misinterpretation",
+    "explanation-fidelity"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "interpretable-by-design",
@@ -30000,6 +30005,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "설명이 지목한 변수를 바꿔 출력 변화를 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "scaffolding-attack",
+   "label": "비계(scaffolding) 공격",
+   "parent": "fooling-lime-shap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력 종류를 판별해 설명기에는 무해하게 보이게 하는 기법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "lime",
+   "label": "LIME",
+   "parent": "fooling-lime-shap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 예측 주변에 단순 모델을 맞춰 지역 설명을 만드는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "explanation-audit-independent",
+   "label": "설명의 독립 감사",
+   "parent": "fooling-lime-shap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명 외에 모델 행동을 직접 시험하는 감사.",
    "added": "2026-11-17",
    "related": []
   }
