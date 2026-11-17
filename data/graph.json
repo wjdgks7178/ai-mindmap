@@ -18960,11 +18960,14 @@
    "label": "SHAP 기준 분포 선택",
    "parent": "reason-code-mapping",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "배경 데이터가 순위에 미치는 영향.",
+   "summary": "SHAP 배경 데이터에 따라 기여도와 순위가 달라진다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "reason-grouping"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "mapping-version-control",
@@ -31373,6 +31376,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "변수 효과가 한 방향임을 강제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-interventional-vs-path-dependent",
+   "label": "Interventional vs path-dependent",
+   "parent": "shap-background-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TreeSHAP 두 방식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "background-sensitivity-test",
+   "label": "배경 민감도 점검",
+   "parent": "shap-background-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배경을 바꿔 순위 흔들림 보기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "counterfactual-background",
+   "label": "반사실 배경",
+   "parent": "shap-background-choice",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력별 기준점을 정하는 CoSHAP.",
    "added": "2026-11-17",
    "related": []
   }
