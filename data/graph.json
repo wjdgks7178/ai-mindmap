@@ -18097,11 +18097,15 @@
    "label": "영상의학 AI 비중",
    "parent": "fda-ai-enabled-device-list",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 AI 기기에서 분야별 분포.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-ai-enabled-device-list",
+    "predicate-creep"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "mrmc-study",
@@ -27930,6 +27934,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "2002-11 이후 분류된 의료기기 리콜 조회.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "algorithm-disclosure-gap",
+   "label": "알고리즘 공개 격차",
+   "parent": "radiology-ai-share",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허가 기기 중 AI 세부를 공개한 비율이 낮다는 지적.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "prospective-validation-share",
+   "label": "전향적 검증 비율",
+   "parent": "radiology-ai-share",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허가 기기 중 전향 검증을 언급한 비율이 낮다는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "national-ai-device-registry",
+   "label": "국가 AI 기기 등록부 제안",
+   "parent": "radiology-ai-share",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표준 보고·사후 감시를 위한 등록부 제안.",
    "added": "2026-11-17",
    "related": []
   }
