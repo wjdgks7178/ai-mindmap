@@ -19318,11 +19318,14 @@
    "label": "관찰 연구와 인과",
    "parent": "deskilling",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전후 비교의 한계.",
+   "summary": "전후 비교만으로 AI 때문이라고 단정할 수 없는 이유.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "staggered-rollout-design"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "seeded-error-testing",
@@ -32512,6 +32515,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "분기별 평가 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "confounding",
+   "label": "교란",
+   "parent": "observational-vs-causal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처치와 결과 모두에 영향을 주는 제3 요인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "interrupted-time-series",
+   "label": "중단 시계열",
+   "parent": "observational-vs-causal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개입 전후의 수준·기울기 변화 분석.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "target-trial-emulation",
+   "label": "목표 시험 모방",
+   "parent": "observational-vs-causal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관찰 자료로 RCT를 흉내 내는 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "randomized-crossover-trial",
+   "label": "무작위 교차 시험",
+   "parent": "observational-vs-causal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 켜기/끄기를 무작위로 번갈아 배정.",
    "added": "2026-11-17",
    "related": []
   }
