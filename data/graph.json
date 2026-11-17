@@ -17601,11 +17601,14 @@
    "label": "원본 오디오 보관 딜레마",
    "parent": "transcription-error",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검증 가능성과 개인정보 보호의 균형.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "omission-vs-hallucination"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "attestation-weakness",
@@ -26885,6 +26888,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "ROS·진찰 항목은 의사가 직접 확인해야 기록되게 하는 장치.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "retention-matrix",
+   "label": "자료 유형별 보관표",
+   "parent": "audio-retention-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오디오·전사본·초안·승인 노트마다 보관 기간을 따로 정함.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "deletion-certificate",
+   "label": "삭제 증명서",
+   "parent": "audio-retention-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "업체가 삭제를 실제로 했음을 문서로 입증.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "transcript-retention",
+   "label": "전사본 보관 위험",
+   "parent": "audio-retention-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오디오를 지워도 전사본이 남는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "legal-hold-exception",
+   "label": "예외 보존 승인",
+   "parent": "audio-retention-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분쟁·안전 사건 때만 범위를 정해 보존.",
    "added": "2026-11-17",
    "related": []
   }
