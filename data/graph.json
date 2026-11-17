@@ -19275,11 +19275,14 @@
    "label": "반대 근거 함께 보이기",
    "parent": "explanations-overreliance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "설명의 균형을 맞추는 방법.",
+   "summary": "반대 방향 근거도 함께 보여 과의존을 줄이려는 설명 설계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "acceptance-by-correctness"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "adenoma-detection-rate",
@@ -32370,6 +32373,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "설명의 목표 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "inline-highlight-explanation",
+   "label": "인라인 형광펜 설명",
+   "parent": "counter-evidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력 텍스트에 직접 근거를 표시.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "gam-global-explanation",
+   "label": "GAM 전역 설명",
+   "parent": "counter-evidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가짜 상관을 의사가 의심하게 한 사례.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "asthma-pneumonia-spurious-correlation",
+   "label": "천식·폐렴 가짜 상관",
+   "parent": "counter-evidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 배운 위험한 지름길.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cognitive-load-of-explanations",
+   "label": "설명의 인지 부하",
+   "parent": "counter-evidence-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근거가 많을수록 읽기 비용 증가.",
    "added": "2026-11-17",
    "related": []
   }
