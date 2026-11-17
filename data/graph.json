@@ -18437,11 +18437,18 @@
    "label": "소프트웨어 기능 정책",
    "parent": "simd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "FDA 기기 소프트웨어 기능 정책 문서.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "simd",
+    "samd",
+    "cds-exemption",
+    "enforcement-discretion",
+    "intended-use-classification"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "embedded-ai",
@@ -28633,6 +28640,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "후발 제출 전 predicate가 변경 전 버전인지 점검.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "mobile-medical-app",
+   "label": "모바일 의료 앱",
+   "parent": "software-function-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기이면서 부속품이거나 플랫폼을 기기로 바꾸는 모바일 앱.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "wellness-software-discretion",
+   "label": "웰니스 소프트웨어 집행 재량",
+   "parent": "software-function-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일반 건강 관리 기능에 대한 낮은 위험 입장.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "function-not-platform",
+   "label": "기능 중심 규제",
+   "parent": "software-function-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "플랫폼이 아니라 기능이 규제 여부를 정한다는 원칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "qmsr-iso-13485",
+   "label": "QMSR과 ISO 13485",
+   "parent": "software-function-policy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "2026-02-02 발효된 품질 관리 규정과 국제 표준 인용.",
    "added": "2026-11-17",
    "related": []
   }
