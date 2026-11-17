@@ -17890,11 +17890,15 @@
    "label": "신뢰 특성 간 상충",
    "parent": "trustworthiness-characteristics",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정확도·해석·프라이버시 충돌 해결.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "valid-and-reliable",
+    "measure-function"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "nist-bias-categories",
@@ -27437,6 +27441,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "평균 대신 데이터 구간별로 성능을 나누어 보기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "accuracy-interpretability-tradeoff",
+   "label": "정확도 대 해석 가능성",
+   "parent": "trustworthiness-tradeoffs",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "복잡한 모델이 더 정확하지만 설명하기 어려운 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "privacy-accuracy-loss",
+   "label": "프라이버시 강화와 정확도 손실",
+   "parent": "trustworthiness-tradeoffs",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터 희소 시 노이즈 기법이 정확도를 떨이는 현상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tradeoff-documentation",
+   "label": "상충 판단 문서화",
+   "parent": "trustworthiness-tradeoffs",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어떤 가치를 택했고 왜인지 투명하게 기록.",
    "added": "2026-11-17",
    "related": []
   }
