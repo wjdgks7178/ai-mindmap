@@ -17715,11 +17715,12 @@
    "label": "BAA와 모델 학습 조항",
    "parent": "business-associate-agreement",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "PHI를 학습에 쓸 수 있는지 계약으로 규정.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-17"
   },
   {
    "id": "subcontractor-flowdown",
@@ -26932,6 +26933,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "분쟁·안전 사건 때만 범위를 정해 보존.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "consumer-vs-enterprise-terms",
+   "label": "소비자 약관과 기업 약관",
+   "parent": "baa-model-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소비자 플랜은 학습 기본 허용, BAA는 특정 플랜만 대상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "limited-data-set",
+   "label": "제한 데이터셋",
+   "parent": "baa-model-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비식별은 아니며 데이터 사용 계약이 필요한 PHI.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "reidentification-ban",
+   "label": "재식별 금지 조항",
+   "parent": "baa-model-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비식별 데이터를 다시 개인과 연결하는 행위를 계약으로 금지.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "training-corpus-deletion",
+   "label": "학습 말뭉치 삭제",
+   "parent": "baa-model-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습에 쓴 데이터와 비식별 사본의 삭제 의무.",
    "added": "2026-11-17",
    "related": []
   }
