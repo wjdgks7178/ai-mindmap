@@ -18611,11 +18611,16 @@
    "label": "MDR 이상 사례 보고",
    "parent": "post-market-surveillance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제조사의 의무 보고 제도.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "post-market-surveillance",
+    "maude",
+    "adverse-event-reporting"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "maude",
@@ -29131,6 +29136,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "1을 포함하는 구간을 해석하는 법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "emdr",
+   "label": "eMDR 전자 보고",
+   "parent": "mdr-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제조사·수입업자의 전자 제출 의무.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "user-facility-reporting",
+   "label": "사용 시설 보고 의무",
+   "parent": "mdr-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "병원 등의 사망·중상 보고와 연보.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "medwatch",
+   "label": "MedWatch",
+   "parent": "mdr-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자발적 이상 사례 보고 창구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-underreporting",
+   "label": "AI 오류의 과소 보고",
+   "parent": "mdr-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오류가 기기 문제로 인식되지 않아 보고되지 않는 문제.",
    "added": "2026-11-17",
    "related": []
   }
