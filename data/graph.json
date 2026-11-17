@@ -19016,11 +19016,14 @@
    "label": "빠르게 바뀌는 분야의 한계",
    "parent": "experience-curve-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "낡은 관행 전파 위험.",
+   "summary": "안정된 분야에서의 AI 보조 효과는 빠르게 바뀌는 분야엔 보장되지 않는다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "experience-curve-ai"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "skill-biased-technical-change",
@@ -31550,6 +31553,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 확인용 교육 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "knowledge-freshness-labeling",
+   "label": "출처·날짜 표시",
+   "parent": "rapidly-changing-domains",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 답변의 낡음을 알리는 장치.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "practice-spotting-wrong-ai",
+   "label": "틀린 AI 찾기 연습",
+   "parent": "rapidly-changing-domains",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신입 교육 설계.",
    "added": "2026-11-17",
    "related": []
   }
