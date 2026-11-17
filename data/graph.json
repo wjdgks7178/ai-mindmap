@@ -17952,11 +17952,16 @@
    "label": "구성 타당성",
    "parent": "measurement-validity",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지표가 개념을 제대로 대표하는지.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "measurement-validity",
+    "ai-evaluation",
+    "proxy-metric"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "proxy-metric",
@@ -27598,6 +27603,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "오류 결과로 피해를 본 사람이 시정을 요구하는 경로.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "benchmark-construct-review",
+   "label": "벤치마크 구성 타당성 점검표",
+   "parent": "construct-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "현상 정의·과제·지표를 차례로 확인하는 점검 절차.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "phenomenon-definition",
+   "label": "측정 현상의 정의",
+   "parent": "construct-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "재려는 개념을 한 문장으로 명확히 정의.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "metric-human-alignment",
+   "label": "점수와 사람 판단 대조",
+   "parent": "construct-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지표 점수가 전문가 판단과 얼마나 맞는지 확인.",
    "added": "2026-11-17",
    "related": []
   }
