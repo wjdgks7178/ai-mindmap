@@ -18284,11 +18284,17 @@
    "label": "지연 라벨 모니터링",
    "parent": "model-drift-monitoring",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답이 늦게 올 때 대리 지표로 감시.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "model-drift-monitoring",
+    "data-drift",
+    "concept-drift",
+    "prediction-drift"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "cds-criterion-4",
@@ -28414,6 +28420,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "재학습·앙상블 등으로 모델을 갱신하는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "extreme-verification-latency",
+   "label": "극단적 검증 지연",
+   "parent": "delayed-label-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답이 매우 늦거나 거의 없는 상황.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drift-triggered-investigation",
+   "label": "드리프트 경보 후 조사 절차",
+   "parent": "delayed-label-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "경보를 자동 재학습이 아닌 조사의 출발점으로 쓰는 절차.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "interim-controls-while-waiting",
+   "label": "정답 대기 중 임시 조치",
+   "parent": "delayed-label-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임계값 조정·사람 검토·일시 중단 같은 조치.",
    "added": "2026-11-17",
    "related": []
   }
