@@ -18768,11 +18768,16 @@
    "label": "실행 가능한 구제(recourse)",
    "parent": "counterfactual-explanation",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용자가 실제로 바꿀 수 있는 변경만 제시.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "counterfactual-explanation",
+    "counterfactual-diversity",
+    "explanation-right-gdpr"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "counterfactual-diversity",
@@ -29459,6 +29464,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "설명이 인과가 아니며 조작될 수 있다는 주의.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "immutable-features",
+   "label": "변경 불가 특성",
+   "parent": "actionable-recourse",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "나이처럼 바꿀 수 없어 구제에서 제외하는 변수.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recourse-cost",
+   "label": "구제 비용",
+   "parent": "actionable-recourse",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명이 요구하는 변경에 드는 노력·비용.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recourse-audit",
+   "label": "구제 가능성 감사",
+   "parent": "actionable-recourse",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "거절 대상 중 구제 가능한 비율을 점검하는 활동.",
    "added": "2026-11-17",
    "related": []
   }
