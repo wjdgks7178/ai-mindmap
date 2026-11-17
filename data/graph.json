@@ -17826,11 +17826,15 @@
    "label": "MEASURE 함수",
    "parent": "tevv",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 위험을 분석·평가·추적하는 단계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "nist-ai-rmf-measure",
+    "ai-evaluation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "tevv-docs",
@@ -27307,6 +27311,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "승인 도구·전원 동의·활용 범위 제한을 담은 정책.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "user-feedback-appeals",
+   "label": "사용자 신고·이의 제기 채널",
+   "parent": "measure-function",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "영향받는 사람이 문제를 알리고 결과에 이의하는 절차.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "metric-validity-check",
+   "label": "측정 자체의 타당성 점검",
+   "parent": "measure-function",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지표가 실제 현업 문제와 맞는지 되돌아보는 활동.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "map-function",
+   "label": "MAP 함수",
+   "parent": "measure-function",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 위험의 맥락과 대상을 파악하는 NIST 단계.",
    "added": "2026-11-17",
    "related": []
   }
