@@ -28506,11 +28506,16 @@
    "label": "PSI",
    "parent": "data-drift",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "두 분포의 차이를 점수로 재는 Population Stability Index.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "data-drift",
+    "concept-drift",
+    "model-drift-monitoring"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "prediction-drift",
@@ -30151,6 +30156,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "학습 데이터에서만 보이는 분할이 중요도에 반영됨.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "psi-thresholds",
+   "label": "PSI 경험 규칙",
+   "parent": "psi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "0.1·0.25 기준과 그 한계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "psi-binning",
+   "label": "PSI 구간 설정",
+   "parent": "psi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기준 데이터로 구간 경계를 고정하는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "psi-small-sample",
+   "label": "PSI와 표본 크기",
+   "parent": "psi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본이 작으면 같은 분포에서도 값이 커지는 현상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "population-stability-testing",
+   "label": "모집단 안정성 검정",
+   "parent": "psi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스코어카드가 개발 때 분포를 대표하는지 정기 검정.",
    "added": "2026-11-17",
    "related": []
   }
