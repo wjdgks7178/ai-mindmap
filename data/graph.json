@@ -18471,11 +18471,17 @@
    "label": "제품 코드",
    "parent": "fda-panel",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "FDA 기기 유형 식별 코드.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-panel",
+    "classification-regulation",
+    "fda-device-database",
+    "predicate-creep"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "cfr-862-892",
@@ -28782,6 +28788,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "모듈·계층·인터페이스·데이터 흐름을 그린 도면.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "product-classification-database",
+   "label": "Product Classification Database",
+   "parent": "product-code",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기명과 product code를 검색하는 FDA DB, 매주 갱신.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "code-based-predicate-search",
+   "label": "코드 기반 predicate 검색",
+   "parent": "product-code",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 코드의 기기에서 predicate 후보를 찾는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cross-code-predicate",
+   "label": "다른 코드 predicate 인용",
+   "parent": "product-code",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "다른 product code의 predicate를 인용하는 사례.",
    "added": "2026-11-17",
    "related": []
   }
