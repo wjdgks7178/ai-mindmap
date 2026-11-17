@@ -17920,11 +17920,16 @@
    "label": "이의 제기 채널",
    "parent": "risk-tracking-over-time",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "영향받는 사람이 결과를 신고·이의 제기하는 경로.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "risk-tracking-over-time",
+    "measure-function",
+    "user-feedback-appeals"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "alternative-tracking",
@@ -27522,6 +27527,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "AI 편향 식별·관리 표준을 향한 NIST 문서.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "appeal-metrics",
+   "label": "이의 제기 지표",
+   "parent": "user-appeal-channel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이의 건수·인용률·처리 시간 같은 지표.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "channel-awareness",
+   "label": "채널 인지도 측정",
+   "parent": "user-appeal-channel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람들이 피드백 채널을 아는지 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "auto-error-logging",
+   "label": "오류 신고 자동 수집",
+   "parent": "user-appeal-channel",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오류와 사용자 신고를 시스템이 자동 기록.",
    "added": "2026-11-17",
    "related": []
   }
