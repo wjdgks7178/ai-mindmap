@@ -19343,11 +19343,14 @@
    "label": "경계 저하",
    "parent": "automation-complacency",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "감시 과제에서 시간이 갈수록 주의가 떨어짐.",
+   "summary": "감시 과제에서 시간이 갈수록 드문 신호 탐지가 떨어지는 현상.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "seeded-error-testing"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "takeover-timing",
@@ -32559,6 +32562,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI 켜기/끄기를 무작위로 번갈아 배정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "mackworth-clock-test",
+   "label": "Mackworth 시계 실험",
+   "parent": "vigilance-decrement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1948년 경계 연구의 고전 과제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "signal-detection-bias-shift",
+   "label": "반응 기준 이동",
+   "parent": "vigilance-decrement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감도가 아니라 판단 기준이 바뀌는 해석.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "event-rate-effect",
+   "label": "사건 발생률 효과",
+   "parent": "vigilance-decrement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신호가 드물수록 경계 저하가 심함.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "review-rotation-breaks",
+   "label": "검수 교대·휴식",
+   "parent": "vigilance-decrement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감시 업무의 시간 구조 설계.",
    "added": "2026-11-17",
    "related": []
   }
