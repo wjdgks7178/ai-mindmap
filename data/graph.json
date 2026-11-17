@@ -29269,11 +29269,16 @@
    "label": "FDA 2019 AI/ML 토론 문서",
    "parent": "locked-vs-continuous",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "SaMD 변경에 대한 규제 틀 제안과 피드백 요청.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "locked-vs-continuous",
+    "pccp-ai-final-guidance",
+    "fdora"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "samd-pre-specifications",
@@ -29305,6 +29310,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "개발부터 시판 후까지 연속으로 규제하는 틀.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "sps-algorithm-change-protocol",
+   "label": "SPS와 ACP",
+   "parent": "fda-2019-discussion-paper",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "2019 제안의 사전 명세와 알고리즘 변경 프로토콜.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "three-modification-types-2019",
+   "label": "변경의 세 유형",
+   "parent": "fda-2019-discussion-paper",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "성능·입력·의도한 용도 변경.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fda-ai-action-plan-2021",
+   "label": "2021 AI/ML Action Plan",
+   "parent": "fda-2019-discussion-paper",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "2019 제안 이후 FDA의 후속 계획.",
    "added": "2026-11-17",
    "related": []
   }
