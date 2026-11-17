@@ -18186,11 +18186,17 @@
    "label": "AI PCCP 최종 지침",
    "parent": "section-515c",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "2024-12 AI 기기 소프트웨어 대상 지침.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "section-515c",
+    "pccp",
+    "fdora",
+    "modification-protocol"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "reference-standard-setting",
@@ -28151,6 +28157,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "지침은 권고이고 법은 구속력이 있다.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pccp-deviation",
+   "label": "PCCP 이탈",
+   "parent": "pccp-ai-final-guidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PCCP를 따르지 않았거나 따를 수 없는 상황.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pccp-version-control",
+   "label": "PCCP 버전 관리",
+   "parent": "pccp-ai-final-guidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "승인된 PCCP의 버전과 기기 유지 관리 방식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-dsf",
+   "label": "AI-DSF",
+   "parent": "pccp-ai-final-guidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 소프트웨어 기기 기능을 가리키는 FDA 용어.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pccp-data-sets",
+   "label": "PCCP 데이터 집합",
+   "parent": "pccp-ai-final-guidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "훈련·조정·시험 데이터의 대표성 요건.",
    "added": "2026-11-17",
    "related": []
   }
