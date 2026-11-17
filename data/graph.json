@@ -18527,11 +18527,16 @@
    "label": "AI의 RCT",
    "parent": "retrospective-vs-prospective",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결과 개선을 입증하는 가장 강한 설계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "retrospective-vs-prospective",
+    "mrmc-study",
+    "workflow-integration-study"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "workflow-integration-study",
@@ -28871,6 +28876,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "CADe·CADx 특별 통제에 포함된 판독자 성능 향상 시험.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "masai-trial",
+   "label": "MASAI 시험",
+   "parent": "randomized-controlled-trial-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스웨덴 유방암 검진 AI 무작위 시험.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "interval-cancer-endpoint",
+   "label": "중간암 종점",
+   "parent": "randomized-controlled-trial-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검진 사이에 발견되는 암 비율, AI 검진의 핵심 종점.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "beneficial-bias-ai-reading",
+   "label": "AI 판독의 유익한 편향",
+   "parent": "randomized-controlled-trial-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 정보가 판독자에게 주는 영향과 해석.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "surrogate-vs-patient-outcome",
+   "label": "대리 지표 대 환자 결과",
+   "parent": "randomized-controlled-trial-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "발견율과 사망률 같은 평가지표의 차이.",
    "added": "2026-11-17",
    "related": []
   }
