@@ -18016,11 +18016,16 @@
    "label": "변경 관리 계획(PCCP)",
    "parent": "predicate-device",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "허가 후 AI 업데이트를 사전 승인받는 계획.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "predicate-creep",
+    "substantial-equivalence",
+    "predicate-device"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "general-vs-special-controls",
@@ -27761,6 +27766,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "큰 용도 변화에서 predicate 대신 De Novo가 필요해지는 경계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pccp-modification-protocol",
+   "label": "PCCP 변경 프로토콜",
+   "parent": "pccp",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "변경의 개발·검증·적용 절차와 허용 기준.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "global-vs-local-updates",
+   "label": "전체 적용 vs 국소 적용",
+   "parent": "pccp",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "변경을 모든 곳에 같게 적용할지 시설·환자별로 다르게 할지.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pccp-labeling",
+   "label": "PCCP 표시 의무",
+   "parent": "pccp",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "라벨에 머신러닝과 허가된 PCCP를 밝히는 요건.",
    "added": "2026-11-17",
    "related": []
   }
