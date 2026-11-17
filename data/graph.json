@@ -18945,11 +18945,15 @@
    "label": "이유 그룹핑",
    "parent": "reason-code-mapping",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "상관된 변수를 하나의 이유로 묶기.",
+   "summary": "상관 변수를 묶어 기여도를 합쳐 이유를 만든다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "reason-codes",
+    "four-reason-guideline"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "shap-background-choice",
@@ -31325,6 +31329,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상위 4개가 흔들리는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "baseline-shapley",
+   "label": "Baseline Shapley",
+   "parent": "reason-grouping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준점과의 차이만 계산하는 B-Shap.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "variable-clustering-varclus",
+   "label": "변수 군집화",
+   "parent": "reason-grouping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상관·이유 코드 기준으로 변수 묶기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "data-envelope-problem",
+   "label": "데이터 범위 밖 평가 문제",
+   "parent": "reason-grouping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가린 변수가 만드는 비현실 입력.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "monotonic-credit-model",
+   "label": "단조 제약 신용 모델",
+   "parent": "reason-grouping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수 효과가 한 방향임을 강제.",
    "added": "2026-11-17",
    "related": []
   }
