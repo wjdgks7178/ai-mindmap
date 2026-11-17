@@ -17936,11 +17936,16 @@
    "label": "대체 추적 방식",
    "parent": "risk-tracking-over-time",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지표 없는 위험을 전문가 검토로 추적.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "risk-tracking-over-time",
+    "user-appeal-channel",
+    "measure-function"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "construct-validity",
@@ -27560,6 +27565,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "오류와 사용자 신고를 시스템이 자동 기록.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-bug-bounty",
+   "label": "AI 버그 바운티",
+   "parent": "alternative-tracking",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "외부인이 AI 결함을 찾아 신고하면 보상하는 제도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "participatory-engagement",
+   "label": "영향받는 공동체 참여",
+   "parent": "alternative-tracking",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "영향받는 사람을 평가·추적에 참여시키는 접근.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recourse-for-faulty-outputs",
+   "label": "잘못된 출력의 구제",
+   "parent": "alternative-tracking",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오류 결과로 피해를 본 사람이 시정을 요구하는 경로.",
    "added": "2026-11-17",
    "related": []
   }
