@@ -19072,11 +19072,14 @@
    "label": "직원 생성 데이터 소유",
    "parent": "knowledge-capture-credit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "업무 중 만든 데이터의 권리 문제.",
+   "summary": "저작권은 회사, 녹음·음성은 별도 동의. 미국 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "knowledge-capture-credit"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "contribution-incentive",
@@ -31716,6 +31719,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "모두 오르면 순위는 그대로.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "work-made-for-hire",
+   "label": "업무상 저작물",
+   "parent": "data-ownership-employee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고용 범위 안 창작물은 회사가 저작자.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "all-party-consent-recording",
+   "label": "전원 동의 녹음법",
+   "parent": "data-ownership-employee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약 12개 주의 도청법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "voiceprint-biometric-consent",
+   "label": "음성 지문과 생체정보 동의",
+   "parent": "data-ownership-employee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "BIPA 등.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "vendor-training-clause",
+   "label": "벤더 학습 사용 조항",
+   "parent": "data-ownership-employee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내 데이터로 모델 학습 금지 계약.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "transcript-retention-policy",
+   "label": "전사본 보관·삭제 정책",
+   "parent": "data-ownership-employee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증거개시 부담 줄이기.",
    "added": "2026-11-17",
    "related": []
   }
