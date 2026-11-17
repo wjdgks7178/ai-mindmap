@@ -18488,11 +18488,17 @@
    "label": "21 CFR 862~892",
    "parent": "fda-panel",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분과별 기기 분류 규정.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-panel",
+    "classification-regulation",
+    "product-code",
+    "mrmc-study"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "advisory-panel-meeting",
@@ -28821,6 +28827,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "다른 product code의 predicate를 인용하는 사례.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cfr-892-2070-cade",
+   "label": "892.2070 CADe",
+   "parent": "cfr-862-892",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이상 부위를 표시하는 영상 분석기 분류 규정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cfr-892-2060-cadx",
+   "label": "892.2060 CADx",
+   "parent": "cfr-862-892",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "암 의심 병변 컴퓨터 보조 진단 소프트웨어 규정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cfr-892-2080-triage",
+   "label": "892.2080 분류·알림",
+   "parent": "cfr-862-892",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "컴퓨터 보조 분류·알림 소프트웨어 규정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "special-controls-reader-performance",
+   "label": "특별 통제의 판독자 성능 요건",
+   "parent": "cfr-862-892",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "CADe·CADx 특별 통제에 포함된 판독자 성능 향상 시험.",
    "added": "2026-11-17",
    "related": []
   }
