@@ -18047,11 +18047,17 @@
    "label": "용도 기반 분류",
    "parent": "device-risk-classes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 기술도 용도에 따라 등급이 달라짐.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "device-risk-classes",
+    "general-vs-special-controls",
+    "substantial-equivalence",
+    "samd"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "foundation-model-tagging",
@@ -27836,6 +27842,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "각 기기 유형의 등급과 특별 통제를 적은 규정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "marketing-claims-as-intent",
+   "label": "마케팅 문구가 의도의 증거",
+   "parent": "intended-use-classification",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "광고·영업 진술이 의도한 용도를 보여 주는 증거가 됨.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "embedded-software-vs-samd",
+   "label": "내장 소프트웨어 vs SaMD",
+   "parent": "intended-use-classification",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기에 필수인 소프트웨어는 SaMD와 구분.",
    "added": "2026-11-17",
    "related": []
   }
