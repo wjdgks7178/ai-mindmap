@@ -18350,11 +18350,16 @@
    "label": "정보의 중요도 축",
    "parent": "samd-risk-categorization",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "치료·진단/관리 주도/참고 구분.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "samd-risk-categorization",
+    "healthcare-situation-axis",
+    "cds-criterion-3"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "healthcare-situation-axis",
@@ -28568,6 +28573,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "정보형 문구·낮은 현저성·신뢰 수준 표시.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "treat-or-diagnose-level",
+   "label": "치료·진단 수준",
+   "parent": "significance-of-information",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질환 진단·선별·검출이나 치료 제공 정보.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drive-clinical-management",
+   "label": "임상 관리 주도",
+   "parent": "significance-of-information",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "치료·확정 진단 보조, 초기 징후 분류 정보.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "inform-clinical-management",
+   "label": "임상 관리 참고",
+   "parent": "significance-of-information",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "선택지 제시, 정보 취합 수준.",
    "added": "2026-11-17",
    "related": []
   }
