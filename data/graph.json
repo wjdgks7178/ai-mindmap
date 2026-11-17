@@ -18385,11 +18385,15 @@
    "label": "싱가포르 HSA SaMD 지침",
    "parent": "samd-risk-categorization",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "IMDRF 틀을 참조한 국가 지침 예.",
+   "summary": "IMDRF 두 축을 Class A~C로 환산한 싱가포르 GL-07.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "device-risk-classes",
+    "imdrf"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "n10-samd-definition",
@@ -30911,6 +30915,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소아·고위험군이면 상황 수준이 오른다.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "hsa-gl07-vital-signs-rule",
+   "label": "활력징후·영상 예외 규칙",
+   "parent": "singapore-hsa-samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비중증 관리 주도라도 Class B.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cdss-qualification",
+   "label": "CDSS 의료기기 판별",
+   "parent": "singapore-hsa-samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표시·인쇄만 하면 의료기기 아님.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "hsa-gn13-risk-rules",
+   "label": "GN-13 일반 의료기기 위험 규칙",
+   "parent": "singapore-hsa-samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SaMD 분류의 세 번째 입력.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "hsa-gn37-change-management",
+   "label": "HSA GN-37 변경 관리",
+   "parent": "singapore-hsa-samd",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SaMD 업데이트를 사전 합의하는 제도.",
    "added": "2026-11-17",
    "related": []
   }
