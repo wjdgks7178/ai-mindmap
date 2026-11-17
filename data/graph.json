@@ -18814,11 +18814,15 @@
    "label": "XGBoost 단조 제약 설정",
    "parent": "monotonic-constraints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "monotone_constraints 사용법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "monotonic-constraints",
+    "model-sanity-rules"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "model-sanity-rules",
@@ -29582,6 +29586,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "설명권 부정·긍정 입장의 대립.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "monotone-constraints-max-bin",
+   "label": "max_bin과 얕은 트리",
+   "parent": "monotone-constraints-xgboost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제약이 분할 후보를 없앨 때 max_bin을 늘리는 대응.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "constraint-by-feature-name",
+   "label": "특성 이름으로 지정",
+   "parent": "monotone-constraints-xgboost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사전 형태로 일부 특성만 제약하는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "constraint-performance-check",
+   "label": "제약 후 성능 점검",
+   "parent": "monotone-constraints-xgboost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제약이 검증 성능에 미치는 영향 확인.",
    "added": "2026-11-17",
    "related": []
   }
