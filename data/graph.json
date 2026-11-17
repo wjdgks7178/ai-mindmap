@@ -18752,11 +18752,16 @@
    "label": "전역 vs 지역 설명",
    "parent": "shapley-values",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전체 모델 설명과 한 건 설명의 차이.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "shapley-values",
+    "counterfactual-explanation",
+    "permutation-importance"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "actionable-recourse",
@@ -29421,6 +29426,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "정보 중요도나 환자군·질환이 바뀌는 변경.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-summary-plot",
+   "label": "SHAP 요약 그림",
+   "parent": "global-vs-local-explanation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특성별 SHAP 분포로 중요도와 방향을 함께 보는 그림.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-dependence-plot",
+   "label": "SHAP 의존 그림",
+   "parent": "global-vs-local-explanation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특성 값에 따른 SHAP 값의 모양.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-misinterpretation",
+   "label": "SHAP 오해와 조작",
+   "parent": "global-vs-local-explanation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명이 인과가 아니며 조작될 수 있다는 주의.",
    "added": "2026-11-17",
    "related": []
   }
