@@ -29318,11 +29318,17 @@
    "label": "SPS와 ACP",
    "parent": "fda-2019-discussion-paper",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "2019 제안의 사전 명세와 알고리즘 변경 프로토콜.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "fda-2019-discussion-paper",
+    "pccp",
+    "modification-protocol",
+    "pccp-description-of-modifications"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "three-modification-types-2019",
@@ -29343,6 +29349,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "2019 제안 이후 FDA의 후속 계획.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "focused-review",
+   "label": "집중 검토",
+   "parent": "sps-algorithm-change-protocol",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "SPS·ACP 정련 시 FDA가 하는 제한된 검토.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "sps-acp-scope-limits",
+   "label": "SPS·ACP 적용 한계",
+   "parent": "sps-algorithm-change-protocol",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "저위험 용도의 계획을 고위험 용도에 쓸 수 없는 이유.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "acp-reference-standard-plan",
+   "label": "ACP의 기준 표준 계획",
+   "parent": "sps-algorithm-change-protocol",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 환자군에 맞는 기준 표준을 규정하는 계획.",
    "added": "2026-11-17",
    "related": []
   }
