@@ -18301,11 +18301,16 @@
    "label": "조건 4: 근거 제시",
    "parent": "cds-exemption",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의료진이 추천에만 의존하지 않도록 근거 공개.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cds-exemption",
+    "automation-bias-cds",
+    "user-overreliance"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "enforcement-discretion",
@@ -28453,6 +28458,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "임계값 조정·사람 검토·일시 중단 같은 조치.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-time-critical-limit",
+   "label": "시간 촉박한 결정 제한",
+   "parent": "cds-criterion-4",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴급한 결정용 기능은 조건 4를 충족하지 못한다는 판단.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-plain-language-basis",
+   "label": "쉬운 말 근거 설명",
+   "parent": "cds-criterion-4",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "알고리즘·데이터·검증을 의료진 눈높이로 설명.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-knowns-unknowns",
+   "label": "알려진 것과 모르는 것 표시",
+   "parent": "cds-criterion-4",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "누락·손상 입력을 출력과 함께 보여 주는 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-usability-testing",
+   "label": "CDS 사용성 시험",
+   "parent": "cds-criterion-4",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "근거 검토가 실제로 가능한지 입증하는 시험.",
    "added": "2026-11-17",
    "related": []
   }
