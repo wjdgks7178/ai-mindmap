@@ -30747,11 +30747,15 @@
    "label": "오즈비 무조건 대 조건부 추정",
    "parent": "fisher-exact-test",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "SciPy와 R의 오즈비 추정 방식 차이.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "fisher-exact-test",
+    "credible-interval-reading"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "fisher-resampling-method",
@@ -30827,6 +30831,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "치우친 표에서 phi 최댓값이 1에 못 미침.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "conditional-mle-odds-ratio",
+   "label": "조건부 최대우도 오즈비",
+   "parent": "odds-ratio-unconditional-conditional",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "주변 합 고정 조건부 분포 기반 추정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "odds-ratio-small-sample-ci",
+   "label": "소표본 오즈비 신뢰구간",
+   "parent": "odds-ratio-unconditional-conditional",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본이 작을 때 구간이 매우 넓어지는 현상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "report-estimation-method",
+   "label": "추정 방법 명시",
+   "parent": "odds-ratio-unconditional-conditional",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오즈비를 보고할 때 방법과 소프트웨어를 적기.",
    "added": "2026-11-17",
    "related": []
   }
