@@ -18627,11 +18627,16 @@
    "label": "MAUDE",
    "parent": "post-market-surveillance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보고 데이터베이스.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "post-market-surveillance",
+    "mdr-reporting",
+    "fda-device-database"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "section-522",
@@ -29180,6 +29185,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "오류가 기기 문제로 인식되지 않아 보고되지 않는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "maude-no-incidence",
+   "label": "MAUDE로 발생률을 못 구하는 이유",
+   "parent": "maude",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과소 보고·검증 부족·사용량 자료 부재.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "mdr-data-files",
+   "label": "MDR 데이터 파일",
+   "parent": "maude",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "MAUDE에 없는 오래된 보고를 담은 파일.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "maude-redaction",
+   "label": "MAUDE 가림 처리",
+   "parent": "maude",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "FOIA에 따른 (b)(4)·(b)(6) 가림.",
    "added": "2026-11-17",
    "related": []
   }
