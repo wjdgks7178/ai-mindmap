@@ -28544,11 +28544,16 @@
    "label": "드리프트 통계 검정",
    "parent": "data-drift",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "KS·카이제곱 검정과 표본 크기에 따른 과민성.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "data-drift",
+    "psi",
+    "delayed-label-monitoring"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "virtual-drift",
@@ -30238,6 +30243,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "가법성 검산을 자동 테스트로 넣는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ks-test",
+   "label": "Kolmogorov-Smirnov 검정",
+   "parent": "drift-statistical-tests",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 수치형 분포가 같은지 보는 비모수 검정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "chi-square-drift",
+   "label": "카이제곱 드리프트 검정",
+   "parent": "drift-statistical-tests",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "범주형 특성의 분포 변화 검정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "effect-size-vs-pvalue",
+   "label": "효과 크기 대 p값",
+   "parent": "drift-statistical-tests",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본 크기에 덜 민감한 크기 지표를 함께 보는 이유.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "multiple-comparison-drift",
+   "label": "드리프트 다중 비교",
+   "parent": "drift-statistical-tests",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특성이 많을 때 오경보가 늘어나는 문제.",
    "added": "2026-11-17",
    "related": []
   }
