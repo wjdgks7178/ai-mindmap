@@ -18032,11 +18032,15 @@
    "label": "일반 통제 vs 특별 통제",
    "parent": "device-risk-classes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "등급별 추가 요구 사항.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "device-risk-classes",
+    "intended-use-classification"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "intended-use-classification",
@@ -27799,6 +27803,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "라벨에 머신러닝과 허가된 PCCP를 밝히는 요건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "udi",
+   "label": "고유 기기 식별(UDI)",
+   "parent": "general-vs-special-controls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기에 고유 식별 번호를 붙이는 일반 통제 요건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "adverse-event-reporting",
+   "label": "이상 사례 보고(519)",
+   "parent": "general-vs-special-controls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기 관련 사고를 제조사가 FDA에 보고하는 의무.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "classification-regulation",
+   "label": "분류 규정",
+   "parent": "general-vs-special-controls",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "각 기기 유형의 등급과 특별 통제를 적은 규정.",
    "added": "2026-11-17",
    "related": []
   }
