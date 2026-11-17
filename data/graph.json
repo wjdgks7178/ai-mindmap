@@ -30593,11 +30593,15 @@
    "label": "기대 빈도 5 이상 규칙",
    "parent": "chi-square-drift",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "카이제곱 검정의 칸별 기대 빈도 지침.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "chi-square-drift",
+    "cramers-v"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "cramers-v",
@@ -30688,6 +30692,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "표본을 키워도 효과 크기는 그대로인 성질.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fisher-exact-test",
+   "label": "Fisher 정확 검정",
+   "parent": "expected-frequency-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작은 표본 2×2 표의 정확 p값.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "rare-category-merge",
+   "label": "희귀 범주 병합",
+   "parent": "expected-frequency-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기대 빈도가 낮은 범주를 기타로 묶는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "yates-correction",
+   "label": "Yates 연속성 보정",
+   "parent": "expected-frequency-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자유도 1일 때 적용되는 보정.",
    "added": "2026-11-17",
    "related": []
   }
