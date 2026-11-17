@@ -19002,11 +19002,14 @@
    "label": "AI 보조 하의 신입 교육",
    "parent": "experience-curve-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "추천 이유를 학습 자료로 쓰기.",
+   "summary": "AI 추천을 따르며 배운 효과는 AI가 꺼져도 남는다는 증거.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "tenure-productivity-curve"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "rapidly-changing-domains",
@@ -31503,6 +31506,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "5개월째 접근 그룹이 쓰인 비교.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-outage-natural-experiment",
+   "label": "AI 장애 자연 실험",
+   "parent": "training-with-ai-assistant",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "꺼진 순간의 성과로 학습 여부 추정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "conversation-embedding-convergence",
+   "label": "대화 임베딩 수렴",
+   "parent": "training-with-ai-assistant",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저숙련자가 고숙련자처럼 말하게 됨.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "weekly-coaching-limits",
+   "label": "주간 코칭의 한계",
+   "parent": "training-with-ai-assistant",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토 대화 수가 적고 지표 지적에 그침.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-off-practice-check",
+   "label": "AI 끄고 연습하기",
+   "parent": "training-with-ai-assistant",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 확인용 교육 설계.",
    "added": "2026-11-17",
    "related": []
   }
