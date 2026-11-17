@@ -30415,11 +30415,16 @@
    "label": "DDM",
    "parent": "drift-detection-framework",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "온라인 오류율로 경고·드리프트 수준을 정한 대표 감지 알고리즘.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "drift-detection-framework",
+    "concept-drift",
+    "delayed-label-monitoring"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "warning-level-drift-level",
@@ -30451,6 +30456,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "알림이 실제 드리프트 시점보다 늦는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ddm-false-alarms",
+   "label": "DDM의 거짓 경보",
+   "parent": "ddm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 스트림에서 최소값 기반 임계값이 우연한 변동에 걸리는 현상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "online-error-rate",
+   "label": "온라인 오류율",
+   "parent": "ddm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "운영 중 누적 오류 비율, DDM의 통계량.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "eddm-stepd-hddm",
+   "label": "EDDM·STEPD·HDDM",
+   "parent": "ddm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "DDM 계열의 다른 감지 알고리즘.",
    "added": "2026-11-17",
    "related": []
   }
