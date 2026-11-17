@@ -19332,11 +19332,14 @@
    "label": "오류 삽입 테스트",
    "parent": "automation-complacency",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "알려진 오류를 섞어 검수 주의 측정.",
+   "summary": "정답을 아는 오류를 섞어 검수 주의를 측정·유지. TIP가 선례.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "vigilance-decrement"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "vigilance-decrement",
@@ -32606,6 +32609,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "감시 업무의 시간 구조 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "threat-image-projection",
+   "label": "위협 이미지 투영(TIP)",
+   "parent": "seeded-error-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가상 위협을 합성해 보안 요원 주의를 측정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tip-realism-problem",
+   "label": "TIP 현실성 문제",
+   "parent": "seeded-error-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합성 흔적이 적중률을 부풀릴 수 있다.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "seeded-error-rate-design",
+   "label": "삽입 오류 비율 설계",
+   "parent": "seeded-error-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "몇 퍼센트를 섞을지.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "detection-feedback-loop",
+   "label": "탐지 즉시 피드백",
+   "parent": "seeded-error-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잡은 즉시 알려 주기.",
    "added": "2026-11-17",
    "related": []
   }
