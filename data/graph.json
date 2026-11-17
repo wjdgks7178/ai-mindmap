@@ -19159,11 +19159,14 @@
    "label": "TCIA",
    "parent": "medical-imaging-datasets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "암 영상 공개 아카이브.",
+   "summary": "2010년부터 공개된 암 영상 아카이브. 컬렉션 239개.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "mimic-cxr"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "dicom-deidentification",
@@ -32012,6 +32015,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "-1 값을 어떻게 학습에 쓰나.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "imaging-data-commons",
+   "label": "Imaging Data Commons",
+   "parent": "tcia",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NCI의 DICOM 데이터 접근 플랫폼.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "dicom-deidentification-profile",
+   "label": "DICOM 비식별화 프로파일",
+   "parent": "tcia",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PS3.15 Attribute Confidentiality Profile.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "nlst-collection",
+   "label": "NLST 컬렉션",
+   "parent": "tcia",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저선량 폐 CT 선별 시험 영상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "analysis-results-datasets",
+   "label": "분석 결과 데이터셋",
+   "parent": "tcia",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할·주석·방사체학 특징 공개.",
    "added": "2026-11-17",
    "related": []
   }
