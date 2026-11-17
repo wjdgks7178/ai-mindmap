@@ -30604,11 +30604,15 @@
    "label": "Cramér의 V",
    "parent": "chi-square-drift",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "분할표 연관성의 효과 크기 지표.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "chi-square-drift",
+    "effect-size-vs-pvalue"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "new-category-drift",
@@ -30651,6 +30655,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "Greenwood 공식 기반 구간.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "phi-coefficient",
+   "label": "phi 계수",
+   "parent": "cramers-v",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "2×2 표의 연관 지표, Cramér의 V의 기원.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tschuprow-t",
+   "label": "Tschuprow의 T",
+   "parent": "cramers-v",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표가 정사각이 아닐 때 V와 달라지는 연관 지표.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "v-sample-invariance",
+   "label": "V의 표본 불변성",
+   "parent": "cramers-v",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본을 키워도 효과 크기는 그대로인 성질.",
    "added": "2026-11-17",
    "related": []
   }
