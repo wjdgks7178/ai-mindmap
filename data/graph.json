@@ -19231,11 +19231,15 @@
    "label": "신뢰와 효과의 긴장",
    "parent": "cognitive-forcing-function",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "효과가 큰 설계가 덜 선호되는 문제.",
+   "summary": "신뢰·선호가 높을수록 AI 오류 사례의 성과가 낮았다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "user-overreliance",
+    "need-for-cognition"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "complementary-team-performance",
@@ -32249,6 +32253,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사용자 특성에 따라 강제 정도 조절.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "appropriate-reliance",
+   "label": "적정 의존",
+   "parent": "trust-vs-effectiveness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞을 땐 따르고 틀릴 땐 의심.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "trap-case-kpi",
+   "label": "함정 사례 포착률",
+   "parent": "trust-vs-effectiveness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류 추천을 섞어 측정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "satisfaction-vs-outcome-metrics",
+   "label": "만족도 대 결과 지표",
+   "parent": "trust-vs-effectiveness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NPS와 결정 품질 구분.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "risk-tiered-ui",
+   "label": "위험도별 UI 설계",
+   "parent": "trust-vs-effectiveness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고위험엔 효과 우선 설계.",
    "added": "2026-11-17",
    "related": []
   }
