@@ -17859,11 +17859,15 @@
    "label": "독립 평가자",
    "parent": "tevv",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개발자가 아닌 평가 참여자.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "measure-function",
+    "tevv-docs"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "valid-and-reliable",
@@ -27351,6 +27355,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "AI 위험의 맥락과 대상을 파악하는 NIST 단계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "separate-test-team",
+   "label": "별도 테스트 팀",
+   "parent": "independent-assessor",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개발팀과 분리된 평가 조직.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tevv-independence-review",
+   "label": "TEVV 독립성 점검",
+   "parent": "independent-assessor",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평가 담당자의 독립성·지위·자원을 확인하는 활동.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "release-veto-authority",
+   "label": "출시 거부권",
+   "parent": "independent-assessor",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평가 팀이 위험 때문에 출시를 막을 수 있는 권한.",
    "added": "2026-11-17",
    "related": []
   }
