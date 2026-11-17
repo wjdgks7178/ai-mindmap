@@ -18127,11 +18127,16 @@
    "label": "외부 검증",
    "parent": "clinical-validation-evidence",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시간·병원이 분리된 데이터로 일반화 확인.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "clinical-validation-evidence",
+    "mrmc-study",
+    "external-validity"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "pre-sub",
@@ -28015,6 +28020,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "MRMC 분석·표본 크기 산정용 FDA 개발 도구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "temporal-validation",
+   "label": "시간적 검증",
+   "parent": "external-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "나중 기간 데이터로 성능 유지 확인, 드리프트 대응.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "geographic-validation",
+   "label": "지리적 검증",
+   "parent": "external-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "다른 기관·지역에서의 일반화 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recurrent-local-validation",
+   "label": "반복적 현장 검증",
+   "parent": "external-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배포 전후로 사이트별 성능을 계속 재검증.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tripod-ai",
+   "label": "TRIPOD+AI",
+   "parent": "external-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "예측 모델 연구 보고 지침의 AI 판.",
    "added": "2026-11-17",
    "related": []
   }
