@@ -27462,7 +27462,7 @@
    "domain": "ai-applications",
    "status": "planned",
    "priority": 4,
-   "summary": "데이터 희소 시 노이즈 기법이 정확도를 떨이는 현상.",
+   "summary": "데이터 희소 시 노이즈 기법이 정확도를 떨어뜨리는 현상.",
    "added": "2026-11-17",
    "related": []
   },
