@@ -18414,11 +18414,14 @@
    "label": "SaMD 품질관리",
    "parent": "imdrf",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "IMDRF 품질 관리 체계 문서.",
+   "summary": "ISO 13485를 SaMD에 적용하는 IMDRF N23 문서.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "samd-risk-categorization"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "regulatory-harmonization",
@@ -31006,6 +31009,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "진단·치료·생명유지 등 목록.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "samd-lifecycle-support-processes",
+   "label": "수명주기 지원 프로세스",
+   "parent": "samd-qms",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기획·위험·문서·형상·측정·외주.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "samd-realization-use-processes",
+   "label": "실현·사용 프로세스",
+   "parent": "samd-qms",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요구사항에서 폐기까지 7단계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "iso-13485",
+   "label": "ISO 13485",
+   "parent": "samd-qms",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의료기기 QMS 국제 표준.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "configuration-management-samd",
+   "label": "SaMD 형상 관리",
+   "parent": "samd-qms",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버전·변경 이력 추적.",
    "added": "2026-11-17",
    "related": []
   }
