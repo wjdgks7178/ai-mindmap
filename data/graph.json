@@ -19303,11 +19303,15 @@
    "label": "AI 없는 훈련",
    "parent": "deskilling",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "AI 없이 수행하는 정기 연습.",
+   "summary": "AI 없이 직접 수행하는 정기 연습·평가. 항공 수동 조종 권고가 선례.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "deskilling",
+    "decide-first-then-ai"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "observational-vs-causal",
@@ -32464,6 +32468,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "검사 수 증가가 ADR에 미치는 영향.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "faa-safo-13002",
+   "label": "FAA SAFO 13002",
+   "parent": "ai-off-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2013 수동 비행 운항 권고.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-outage-drill",
+   "label": "AI 장애 대비 훈련",
+   "parent": "ai-off-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서비스 중단 시 수작업 절차 연습.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "manual-flight-proficiency",
+   "label": "수동 조종 숙련 유지",
+   "parent": "ai-off-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동화 환경의 기본 기술 관리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-off-assessment-cadence",
+   "label": "AI-off 평가 주기",
+   "parent": "ai-off-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분기별 평가 설계.",
    "added": "2026-11-17",
    "related": []
   }
