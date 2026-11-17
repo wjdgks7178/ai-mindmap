@@ -18268,11 +18268,16 @@
    "label": "개념 드리프트",
    "parent": "model-drift-monitoring",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력-정답 관계 자체가 바뀌는 현상.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "model-drift-monitoring",
+    "data-drift",
+    "delayed-label-monitoring"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "delayed-label-monitoring",
@@ -28365,6 +28370,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "KS·카이제곱 검정과 표본 크기에 따른 과민성.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "virtual-drift",
+   "label": "가상 드리프트",
+   "parent": "concept-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "P(X)만 변하고 결정 경계는 그대로인 변화.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drift-types-sudden-gradual",
+   "label": "드리프트 네 유형",
+   "parent": "concept-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "갑작스러운·점진적·증분적·재발 유형.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drift-detection-framework",
+   "label": "드리프트 감지 틀",
+   "parent": "concept-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "수집·모델링·통계량·가설 검정의 네 단계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "drift-adaptation",
+   "label": "드리프트 적응",
+   "parent": "concept-drift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "재학습·앙상블 등으로 모델을 갱신하는 방법.",
    "added": "2026-11-17",
    "related": []
   }
