@@ -18799,11 +18799,15 @@
    "label": "GDPR 설명받을 권리 논쟁",
    "parent": "counterfactual-explanation",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "법적 근거와 한계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "counterfactual-explanation",
+    "actionable-recourse"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "monotone-constraints-xgboost",
@@ -29534,6 +29538,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "여러 목적을 동시에 최적화하는 생성 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "gdpr-art-22",
+   "label": "GDPR 제22조",
+   "parent": "explanation-right-gdpr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자동화된 개별 결정과 프로파일링 관련 조항.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "right-to-human-intervention",
+   "label": "사람 개입을 얻을 권리",
+   "parent": "explanation-right-gdpr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제22조 ③이 명시한 보호 장치.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "meaningful-information-logic",
+   "label": "논리에 관한 의미 있는 정보",
+   "parent": "explanation-right-gdpr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "제13~15조 문구와 해석 논쟁.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "wachter-vs-selbst",
+   "label": "Wachter 대 Selbst·Powles",
+   "parent": "explanation-right-gdpr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명권 부정·긍정 입장의 대립.",
    "added": "2026-11-17",
    "related": []
   }
