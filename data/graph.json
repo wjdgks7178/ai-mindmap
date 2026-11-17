@@ -18159,11 +18159,16 @@
    "label": "FDORA",
    "parent": "section-515c",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "2022 식품의약품 옴니버스 개혁법, PCCP 근거.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "section-515c",
+    "pccp",
+    "predicate-creep"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "predicate-pre-change-version",
@@ -28113,6 +28118,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "임상 연구가 IDE 대상인지 FDA에 묻는 요청.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "section-524b",
+   "label": "FD&C Act 524B",
+   "parent": "fdora",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사이버 기기의 시판 전 사이버 보안 요건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cyber-device",
+   "label": "사이버 기기",
+   "parent": "fdora",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인터넷 연결 능력이 있는 소프트웨어를 가진 기기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fda-guidance-vs-statute",
+   "label": "지침과 법률의 구속력 차이",
+   "parent": "fdora",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지침은 권고이고 법은 구속력이 있다.",
    "added": "2026-11-17",
    "related": []
   }
