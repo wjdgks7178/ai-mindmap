@@ -17741,11 +17741,14 @@
    "label": "능력 테스트",
    "parent": "cipa-lawsuits",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "업체가 데이터를 이용할 능력만으로 제3자로 보는 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "baa-model-training"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "extension-test",
@@ -27024,6 +27027,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "BAA 없이 하청이 PHI를 받아 합의금이 부과된 사례.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "javier-v-assurance-iq",
+   "label": "Javier v. Assurance IQ",
+   "parent": "capability-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "능력 테스트의 출처가 된 사건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "taylor-v-conversenow",
+   "label": "Taylor v. ConverseNow",
+   "parent": "capability-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 주문 전화 업체를 제3자로 본 2025 결정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "saucedo-v-sharp",
+   "label": "Saucedo v. Sharp HealthCare",
+   "parent": "capability-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "ambient AI 문서 도구를 겨냥한 계류 중 소송.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ordinary-course-exception",
+   "label": "통상 업무 예외",
+   "parent": "capability-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통신 제공자가 업무상 접근하면 도청이 아니라는 ECPA 예외.",
    "added": "2026-11-17",
    "related": []
   }
