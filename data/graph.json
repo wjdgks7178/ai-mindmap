@@ -19086,11 +19086,15 @@
    "label": "데이터 기여 인센티브",
    "parent": "knowledge-capture-credit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 데이터 제공 보상 설계.",
+   "summary": "데이터 기여 측정(Data Shapley)과 지급 규칙은 별개다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "data-ownership-employee",
+    "relative-pay-effects"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "ecg-ai",
@@ -31774,6 +31778,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "증거개시 부담 줄이기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "data-shapley",
+   "label": "Data Shapley",
+   "parent": "contribution-incentive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 점의 기여를 Shapley 값으로 평가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "truthful-payment-mechanism",
+   "label": "진실 보고 지급 메커니즘",
+   "parent": "contribution-incentive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Myerson·VCG.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "data-marketplace",
+   "label": "데이터 마켓",
+   "parent": "contribution-incentive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 사고파는 시장 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "contributor-attribution-log",
+   "label": "기여 기록 로그",
+   "parent": "contribution-incentive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 사례가 학습에 쓰였나.",
    "added": "2026-11-17",
    "related": []
   }
