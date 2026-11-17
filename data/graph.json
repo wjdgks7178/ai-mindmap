@@ -18317,11 +18317,15 @@
    "label": "집행 재량",
    "parent": "cds-exemption",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "FDA가 요건을 집행하지 않겠다고 밝히는 방식.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cds-exemption",
+    "cds-criterion-4"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "automation-bias-cds",
@@ -28502,6 +28506,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "근거 검토가 실제로 가능한지 입증하는 시험.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "single-option-cds",
+   "label": "단일 선택지 CDS",
+   "parent": "enforcement-discretion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임상적으로 적절한 선택지가 하나뿐인 추천 기능.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-criterion-3",
+   "label": "조건 3: 의료진 추천",
+   "parent": "enforcement-discretion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "판단을 대체·지시하지 않고 추천만 제공하는 조건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-genomic-input-limit",
+   "label": "관련성 미확립 입력의 한계",
+   "parent": "enforcement-discretion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "진단과 관련성이 확립되지 않은 입력을 넣으면 예외에서 벗어남.",
    "added": "2026-11-17",
    "related": []
   }
