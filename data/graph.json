@@ -29743,11 +29743,16 @@
    "label": "SHAP 가법성 확인",
    "parent": "shap-library",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "SHAP 합과 기준값이 예측과 일치하는지 검산.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "shap-library",
+    "shapley-values",
+    "feature-correlation-shap"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "shap-plots",
@@ -30200,6 +30205,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "스코어카드가 개발 때 분포를 대표하는지 정기 검정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "local-accuracy",
+   "label": "Local accuracy",
+   "parent": "shap-additivity-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "귀속 값의 합이 예측과 기준값의 차와 같다는 성질.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-log-odds-units",
+   "label": "SHAP의 로그 오즈 단위",
+   "parent": "shap-additivity-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분류 모델에서 확률이 아닌 마진 단위로 나오는 경우.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "explanation-unit-test",
+   "label": "설명 파이프라인 단위 테스트",
+   "parent": "shap-additivity-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가법성 검산을 자동 테스트로 넣는 방법.",
    "added": "2026-11-17",
    "related": []
   }
