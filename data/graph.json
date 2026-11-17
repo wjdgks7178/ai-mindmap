@@ -19188,11 +19188,15 @@
    "label": "데이터 사용 계약(DUA)",
    "parent": "medical-imaging-datasets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "제한 접근 데이터 이용 조건.",
+   "summary": "제한 접근 데이터 이용 조건. LLM API 사용도 계약에 걸린다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "mimic-cxr",
+    "dicom-deidentification"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "decide-first-then-ai",
@@ -32107,6 +32111,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "머리 CT·MRI 3D 재구성.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "physionet-llm-policy",
+   "label": "PhysioNet 외부 AI 서비스 지침",
+   "parent": "data-use-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Azure 옵트아웃 등 허용 경로.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "human-review-opt-out",
+   "label": "사람 검토 옵트아웃",
+   "parent": "data-use-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 사업자의 오남용 검토에서 제외 신청.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "open-code-obligation",
+   "label": "결과 코드 공개 의무",
+   "parent": "data-use-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DUA의 코드 기여 조항.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "synthetic-data-for-teaching",
+   "label": "교육용 합성 데이터",
+   "parent": "data-use-agreement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DUA 없이 쓸 수 있는 대안.",
    "added": "2026-11-17",
    "related": []
   }
