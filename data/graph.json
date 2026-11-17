@@ -30700,11 +30700,16 @@
    "label": "Fisher 정확 검정",
    "parent": "expected-frequency-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "작은 표본 2×2 표의 정확 p값.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "expected-frequency-rule",
+    "chi-square-drift",
+    "cramers-v"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "rare-category-merge",
@@ -30725,6 +30730,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "자유도 1일 때 적용되는 보정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "odds-ratio-unconditional-conditional",
+   "label": "오즈비 무조건 대 조건부 추정",
+   "parent": "fisher-exact-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "SciPy와 R의 오즈비 추정 방식 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fisher-resampling-method",
+   "label": "Fisher 재표집 방법",
+   "parent": "fisher-exact-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 표에서 순열·몬테카를로로 p값 계산.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "small-sample-contingency",
+   "label": "소표본 분할표 검정",
+   "parent": "fisher-exact-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "칸 빈도가 작을 때 검정 선택.",
    "added": "2026-11-17",
    "related": []
   }
