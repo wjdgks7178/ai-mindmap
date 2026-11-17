@@ -18829,11 +18829,15 @@
    "label": "모델 상식 규칙",
    "parent": "monotonic-constraints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도메인 규칙으로 모델 점검.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "monotonic-constraints",
+    "monotone-constraints-xgboost"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "adverse-action-timing",
@@ -29619,6 +29623,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "제약이 검증 성능에 미치는 영향 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "behavioral-testing",
+   "label": "행동 테스트",
+   "parent": "model-sanity-rules",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정확도 대신 모델의 행동을 시험하는 방법론.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "invariance-test",
+   "label": "불변성 테스트",
+   "parent": "model-sanity-rules",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "무관한 변화에 결과가 바뀌지 않는지 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "directional-expectation-test",
+   "label": "방향성 기대 테스트",
+   "parent": "model-sanity-rules",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력 변화에 따른 출력 방향이 상식과 맞는지 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "checklist-tool",
+   "label": "CheckList 도구",
+   "parent": "model-sanity-rules",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동 테스트 사례를 대량 생성하는 소프트웨어.",
    "added": "2026-11-17",
    "related": []
   }
