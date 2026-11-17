@@ -17769,11 +17769,14 @@
    "label": "Popa v. Microsoft",
    "parent": "cipa-lawsuits",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "당사자 적격 요건을 높인 2025 판결.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "capability-test"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "party-recording-rule",
@@ -27118,6 +27121,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "고객 데이터를 서비스 제공에만 쓰게 하는 조항.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "article-iii-standing",
+   "label": "Article III 당사자 적격",
+   "parent": "popa-v-microsoft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연방법원에서 소송하려면 구체적 피해가 필요하다는 헌법 요건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "spokeo-transunion",
+   "label": "Spokeo와 TransUnion",
+   "parent": "popa-v-microsoft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "법 위반만으로는 자격이 안 된다는 대법원 판례 쌍.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "session-replay",
+   "label": "세션 리플레이",
+   "parent": "popa-v-microsoft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "방문자의 클릭·스크롤을 녹화해 재생하는 웹 분석 기술.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ambriz-v-google",
+   "label": "Ambriz v. Google",
+   "parent": "popa-v-microsoft",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Contact Center AI 통화 처리를 겨눈 2025 집단소송.",
    "added": "2026-11-17",
    "related": []
   }
