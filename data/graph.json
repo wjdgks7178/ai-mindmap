@@ -18903,11 +18903,14 @@
    "label": "통지 시한 30일·60일",
    "parent": "reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "접수 후 통지와 이유 요청 시한.",
+   "summary": "Reg B 통지 30일, 이유 요청 60일, 역제안 90일.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "automatic-denial-factors",
@@ -31184,6 +31187,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI·디지털 의료기기 전담 자문위원회.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "incomplete-application-notice",
+   "label": "미비 통지",
+   "parent": "adverse-action-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불완전 신청 30일 내 통지 규칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "small-creditor-oral-notice",
+   "label": "소규모 신용 제공자 구두 통지",
+   "parent": "adverse-action-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "150건 이하 예외.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "business-credit-notice",
+   "label": "사업체 신용 통지 간소 규칙",
+   "parent": "adverse-action-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "매출 100만 달러 이하 기준.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "counteroffer-90-days",
+   "label": "역제안 90일",
+   "parent": "adverse-action-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답 없을 때 통지 기한.",
    "added": "2026-11-17",
    "related": []
   }
