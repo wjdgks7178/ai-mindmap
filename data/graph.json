@@ -18580,11 +18580,16 @@
    "label": "리콜까지 걸린 시간",
    "parent": "ai-device-recalls",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "중앙값 458일 연구 결과.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ai-device-recalls",
+    "recall-causes",
+    "clinical-validation-recalls"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "credible-interval-reading",
@@ -29045,6 +29050,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "리콜 건수와 영향받은 기기 수의 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recall-free-survival",
+   "label": "리콜 없는 생존율",
+   "parent": "time-to-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허가 후 일정 기간 리콜 없이 남은 기기의 비율.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "early-recall-signal",
+   "label": "조기 리콜 신호",
+   "parent": "time-to-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허가 12개월 안에 리콜이 몰리는 것의 의미.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recall-version-discrepancy",
+   "label": "리콜 연구 판본 차이",
+   "parent": "time-to-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 연구의 판본 간 수치 차이를 확인하는 습관.",
    "added": "2026-11-17",
    "related": []
   }
