@@ -18000,11 +18000,16 @@
    "label": "predicate 사슬 문제",
    "parent": "predicate-device",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "연쇄 비교로 원본과 멀어지는 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "predicate-device",
+    "substantial-equivalence",
+    "pccp"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "pccp",
@@ -27723,6 +27728,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "SE 판단에서 기술 차이를 가르는 핵심 기준.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "predicate-distance-axes",
+   "label": "predicate 거리 축",
+   "parent": "predicate-creep",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "신체 부위·촬영 방식·사용 환경·용도 등 거리를 재는 축.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "clinical-validation-recalls",
+   "label": "임상 검증과 리콜",
+   "parent": "predicate-creep",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검증 없는 AI 기기에서 리콜이 더 많았다는 연구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "de-novo-jump-threshold",
+   "label": "De Novo로 가는 도약",
+   "parent": "predicate-creep",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 용도 변화에서 predicate 대신 De Novo가 필요해지는 경계.",
    "added": "2026-11-17",
    "related": []
   }
