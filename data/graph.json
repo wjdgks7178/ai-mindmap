@@ -18564,11 +18564,16 @@
    "label": "리콜 원인",
    "parent": "ai-device-recalls",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "소프트웨어 오류·표시 문제 등 유형 분류.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ai-device-recalls",
+    "clinical-validation-recalls",
+    "device-recall-database"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "time-to-recall",
@@ -29007,6 +29012,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "예측 모델 연구의 편향 위험과 적용 가능성 평가 도구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "diagnostic-measurement-error-recalls",
+   "label": "진단·측정 오류 리콜",
+   "parent": "recall-causes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가장 많은 리콜 원인 범주.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "functionality-delay-loss",
+   "label": "기능 지연·상실",
+   "parent": "recall-causes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기기가 제때 작동하지 못하는 유형의 리콜.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "recalled-units-vs-events",
+   "label": "리콜 건수 대 영향 단위",
+   "parent": "recall-causes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "리콜 건수와 영향받은 기기 수의 차이.",
    "added": "2026-11-17",
    "related": []
   }
