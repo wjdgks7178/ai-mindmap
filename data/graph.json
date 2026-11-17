@@ -30024,11 +30024,16 @@
    "label": "LIME",
    "parent": "fooling-lime-shap",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "한 예측 주변에 단순 모델을 맞춰 지역 설명을 만드는 방법.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "fooling-lime-shap",
+    "post-hoc-explanation-validity",
+    "global-vs-local-explanation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "explanation-audit-independent",
@@ -30038,6 +30043,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "설명 외에 모델 행동을 직접 시험하는 감사.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "local-surrogate-model",
+   "label": "지역 대리 모델",
+   "parent": "lime",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "예측 주변에서 원 모델을 흉내 내는 단순 모델.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "lime-submodular-pick",
+   "label": "LIME 대표 예측 선택",
+   "parent": "lime",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명이 붙은 대표 예측을 골라 전체 그림을 주는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "perturbation-sampling",
+   "label": "교란 표본 생성",
+   "parent": "lime",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력을 바꿔 설명용 표본을 만드는 방법.",
    "added": "2026-11-17",
    "related": []
   }
