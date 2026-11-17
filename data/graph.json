@@ -17797,11 +17797,14 @@
    "label": "음성의 개인정보 성격",
    "parent": "kr-communication-secrecy-law",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "녹음 음성이 개인정보법 대상이 되는 경우.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "party-recording-rule"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "meeting-ai-notetaker",
@@ -27212,6 +27215,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "위법 녹음은 재판 증거로 못 쓰는 제4조.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "speaker-recognition-biometric",
+   "label": "화자 인식과 생체정보",
+   "parent": "voice-personal-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "목소리로 특정인을 식별하면 민감·바이오정보가 됨.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "pseudonymization-voice",
+   "label": "음성 가명처리 한계",
+   "parent": "voice-personal-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비정형 음성 데이터는 가명처리 평가 기준이 없음.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-privacy-checklist-pipc",
+   "label": "AI 개인정보보호 자율점검표",
+   "parent": "voice-personal-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개인정보위가 낸 AI 서비스용 점검 항목.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "specific-purpose-notice",
+   "label": "목적 구체 고지",
+   "parent": "voice-personal-data",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 용도를 포괄 문구 없이 구체적으로 알리는 방식.",
    "added": "2026-11-17",
    "related": []
   }
