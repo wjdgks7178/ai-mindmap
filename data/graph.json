@@ -18112,11 +18112,15 @@
    "label": "MRMC 독자 연구",
    "parent": "clinical-validation-evidence",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 판독자·증례로 AI 보조 효과를 비교하는 설계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "clinical-validation-evidence",
+    "external-validation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "external-validation",
@@ -27967,6 +27971,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "표준 보고·사후 감시를 위한 등록부 제안.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "standalone-performance-test",
+   "label": "단독 성능 시험",
+   "parent": "mrmc-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "알고리즘만 격리 데이터에서 평가하는 분석적 타당성 시험.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "delta-auc",
+   "label": "ΔAUC",
+   "parent": "mrmc-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 보조 전후 판독자 AUC 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fully-crossed-design",
+   "label": "완전 교차 설계",
+   "parent": "mrmc-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모든 판독자가 모든 증례를 읽는 설계.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "imrmc-software",
+   "label": "iMRMC 소프트웨어",
+   "parent": "mrmc-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "MRMC 분석·표본 크기 산정용 FDA 개발 도구.",
    "added": "2026-11-17",
    "related": []
   }
