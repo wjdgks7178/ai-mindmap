@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "nodes": [
   {
    "id": "ai",
@@ -17543,11 +17543,15 @@
    "label": "음성 소견 날조",
    "parent": "omission-vs-hallucination",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "말하지 않은 없음을 기록하는 환각.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "hallucination",
+    "pdqi-9"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "error-denominator",
@@ -26838,6 +26842,50 @@
    "priority": 4,
    "summary": "메일·결제 등 외부 호출을 가짜 서버로 대체.",
    "added": "2026-11-16",
+   "related": []
+  },
+  {
+   "id": "template-autofill-bias",
+   "label": "템플릿 자동 채움 편향",
+   "parent": "negative-finding-fabrication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "틀의 빈칸을 가장 흔한 정상값으로 채우려는 경향.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "unsupported-negative-audit",
+   "label": "근거 없는 음성 감사",
+   "parent": "negative-finding-fabrication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "노트의 없음 문장마다 원본 근거를 대조하는 평가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "evidence-link-note",
+   "label": "근거 문장 링크",
+   "parent": "negative-finding-fabrication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "노트 문장에 원본 대화 위치를 연결해 검토를 쉽게 함.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ros-exam-attestation",
+   "label": "진찰 항목 의사 서명",
+   "parent": "negative-finding-fabrication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "ROS·진찰 항목은 의사가 직접 확인해야 기록되게 하는 장치.",
+   "added": "2026-11-17",
    "related": []
   }
  ]
