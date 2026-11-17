@@ -18931,11 +18931,14 @@
    "label": "이유 4개 이내 권고",
    "parent": "reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "주석의 개수 권고.",
+   "summary": "Reg B 이유 4개 권고와 FCRA 점수 요인 4(+1)개.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "reason-grouping",
@@ -31278,6 +31281,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙·점수·판단 중 어디서 탈락했나.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fcra-key-factors",
+   "label": "FCRA 점수 핵심 요인",
+   "parent": "four-reason-guideline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수에 불리했던 요인 최대 4개.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "credit-score-disclosure-contents",
+   "label": "점수 공개 항목",
+   "parent": "four-reason-guideline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수·범위·요인·날짜·제공자.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "inquiries-fifth-factor",
+   "label": "조회 횟수 다섯째 요인",
+   "parent": "four-reason-guideline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4개 밖이어도 추가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "reason-ranking-stability",
+   "label": "이유 순위 안정성",
+   "parent": "four-reason-guideline",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상위 4개가 흔들리는 문제.",
    "added": "2026-11-17",
    "related": []
   }
