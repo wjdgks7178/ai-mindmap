@@ -18525,11 +18525,14 @@
    "label": "FDA 자문 패널 회의",
    "parent": "fda-panel",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "외부 전문가 자문 회의와 용어 구분.",
+   "summary": "허가 전 외부 전문가 공개 자문 회의. 투표는 비구속.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-510k-de-novo-pma"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "selection-bias-medical-data",
@@ -31137,6 +31140,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "성별·인종·연령별 이득 검증.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "open-public-hearing",
+   "label": "공개 의견 청취",
+   "parent": "advisory-panel-meeting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패널 회의에서 환자·의료인이 의견을 말하는 시간.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "panel-voting-questions",
+   "label": "패널 투표 질문 세 가지",
+   "parent": "advisory-panel-meeting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "안전·유효성·이익위험.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fda-briefing-document",
+   "label": "FDA 브리핑 문서",
+   "parent": "advisory-panel-meeting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "회의 이틀 전 공개되는 회사·FDA 자료.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "digital-health-advisory-committee",
+   "label": "디지털 헬스 자문위원회",
+   "parent": "advisory-panel-meeting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI·디지털 의료기기 전담 자문위원회.",
    "added": "2026-11-17",
    "related": []
   }
