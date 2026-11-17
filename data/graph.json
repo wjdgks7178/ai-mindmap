@@ -18371,11 +18371,14 @@
    "label": "상황 심각도 축",
    "parent": "samd-risk-categorization",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "위급·중증·비중증.",
+   "summary": "환자 상황을 위급·중증·비중증으로 나누는 IMDRF 축.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "significance-of-information"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "singapore-hsa-samd",
@@ -30864,6 +30867,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "오즈비를 보고할 때 방법과 소프트웨어를 적기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "critical-state-definition",
+   "label": "위급 상태의 정의",
+   "parent": "healthcare-situation-axis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생명 위협·큰 치료·시간 촉박.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "error-detectability",
+   "label": "오류 감지 가능성",
+   "parent": "healthcare-situation-axis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자가 AI의 잘못된 권고를 알아챌 수 있는가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "intended-use-definition-statement",
+   "label": "SaMD 정의문",
+   "parent": "healthcare-situation-axis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질병·환자군·사용자를 적는 제조사 서술.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fragile-population",
+   "label": "취약 환자군",
+   "parent": "healthcare-situation-axis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소아·고위험군이면 상황 수준이 오른다.",
    "added": "2026-11-17",
    "related": []
   }
