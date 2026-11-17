@@ -19115,11 +19115,15 @@
    "label": "심초음파 AI",
    "parent": "cardiology-ai-devices",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "박출률 등을 자동 측정하는 AI.",
+   "summary": "초음파 영상에서 박출률 등을 자동 측정하는 AI.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "ecg-ai",
+    "embedded-ai"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "panel-classification-caveat",
@@ -31869,6 +31873,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소비자 제품 허가 경로.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ejection-fraction",
+   "label": "박출률",
+   "parent": "echocardiography-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "심장이 한 번에 내보내는 혈액 비율.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "external-validation-drop",
+   "label": "외부 병원 성능 하락",
+   "parent": "echocardiography-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내부 4.1%가 외부 6.0%로.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "point-of-care-ultrasound",
+   "label": "현장 초음파(POCUS)",
+   "parent": "echocardiography-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "휴대용 초음파와 AI 결합.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "hfpef-detection",
+   "label": "HFpEF 탐지",
+   "parent": "echocardiography-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박출률이 보존된 심부전 탐지 AI.",
    "added": "2026-11-17",
    "related": []
   }
