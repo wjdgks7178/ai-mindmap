@@ -18917,11 +18917,14 @@
    "label": "자동 거절 요인",
    "parent": "reason-codes",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "파산 등 결정 요인 명시 의무.",
+   "summary": "파산·미성년 등 즉시 거절 규칙은 그 요인을 이유로 밝혀야 한다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "adverse-action-notice"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "four-reason-guideline",
@@ -31231,6 +31234,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "응답 없을 때 통지 기한.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "rule-engine-plus-model",
+   "label": "규칙 엔진과 ML 모델 이중 구조",
+   "parent": "automatic-denial-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절 단계를 로그로 남기는 이유.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "combined-scoring-judgmental",
+   "label": "점수·판단 혼합 시스템",
+   "parent": "automatic-denial-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탈락한 구성요소에서 이유를 뽑는다.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "reason-selection-methods",
+   "label": "이유 선택 방법",
+   "parent": "automatic-denial-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균 대비 점수 격차가 큰 요인 순.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "decision-stage-logging",
+   "label": "거절 단계 로그",
+   "parent": "automatic-denial-factors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙·점수·판단 중 어디서 탈락했나.",
    "added": "2026-11-17",
    "related": []
   }
