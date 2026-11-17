@@ -18643,11 +18643,16 @@
    "label": "522 감시 연구",
    "parent": "post-market-surveillance",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "FDA가 명령하는 시판 후 연구.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "post-market-surveillance",
+    "mdr-reporting",
+    "maude"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "locked-vs-continuous",
@@ -29218,6 +29223,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "FOIA에 따른 (b)(4)·(b)(6) 가림.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "522-order-criteria",
+   "label": "522 명령 요건",
+   "parent": "section-522",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중대 결과·소아·이식·생명 유지 기기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "522-plan-timeline",
+   "label": "522 계획·일정",
+   "parent": "section-522",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "30일 계획 제출, 15개월 안 시작, 최대 36개월.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "post-approval-study",
+   "label": "시판 후 승인 연구(PAS)",
+   "parent": "section-522",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PMA 승인 조건으로 붙는 연구.",
    "added": "2026-11-17",
    "related": []
   }
