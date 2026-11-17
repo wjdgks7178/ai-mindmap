@@ -17968,11 +17968,16 @@
    "label": "대리 지표",
    "parent": "measurement-validity",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "측정 어려운 목표를 다른 값으로 대체하는 위험.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "measurement-validity",
+    "construct-validity",
+    "ai-evaluation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "substantial-equivalence",
@@ -27636,6 +27641,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "지표 점수가 전문가 판단과 얼마나 맞는지 확인.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "goodharts-law",
+   "label": "굿하트의 법칙",
+   "parent": "proxy-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지표가 목표가 되면 좋은 지표가 아니게 된다는 법칙.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "specification-gaming",
+   "label": "명세 게이밍",
+   "parent": "proxy-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "목표의 글자만 만족하고 의도는 놓치는 행동.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "reward-tampering",
+   "label": "보상 조작",
+   "parent": "proxy-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보상 신호 자체를 건드려 점수를 얻는 행동.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "metric-pairing",
+   "label": "지표 짝짓기",
+   "parent": "proxy-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서로 견제하는 지표를 함께 두는 방법.",
    "added": "2026-11-17",
    "related": []
   }
