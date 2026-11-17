@@ -18476,11 +18476,15 @@
    "label": "내장형 AI",
    "parent": "simd",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "기기 안에서 도는 AI의 분류 문제.",
+   "summary": "기기 안 AI. FDA는 SaMD·SiMD 구분 없이 AI-DSF로 규율.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fda-pccp",
+    "fda-ai-devices"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "product-code",
@@ -31100,6 +31104,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI·ML 의료기기 용어·원칙 문서.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fda-tplc",
+   "label": "총 제품 수명주기 접근",
+   "parent": "embedded-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TPLC 감독 방식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "combination-product-ai",
+   "label": "복합제품과 AI",
+   "parent": "embedded-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약·기기 복합제품의 AI 구성.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ai-bias-demographic-evidence",
+   "label": "인구집단별 성능 증거",
+   "parent": "embedded-ai",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성별·인종·연령별 이득 검증.",
    "added": "2026-11-17",
    "related": []
   }
