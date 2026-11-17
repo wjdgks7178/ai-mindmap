@@ -18543,11 +18543,16 @@
    "label": "워크플로 통합 연구",
    "parent": "retrospective-vs-prospective",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 사용 방식에서 효과를 보는 연구.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "retrospective-vs-prospective",
+    "randomized-controlled-trial-ai",
+    "external-validation"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "recall-causes",
@@ -28920,6 +28925,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "발견율과 사망률 같은 평가지표의 차이.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "human-centered-evaluation",
+   "label": "인간 중심 평가",
+   "parent": "workflow-integration-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용자 관찰·인터뷰로 AI가 현장에 맞는지 보는 평가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "image-quality-thresholds",
+   "label": "영상 품질 기준과 현장 충돌",
+   "parent": "workflow-integration-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델 입력 기준이 현장 촬영 조건과 맞지 않는 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "beede-dr-thailand",
+   "label": "태국 당뇨망막병증 현장 연구",
+   "parent": "workflow-integration-study",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "11개 클리닉에서 간호사의 AI 사용을 관찰한 CHI 2020 연구.",
    "added": "2026-11-17",
    "related": []
   }
