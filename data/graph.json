@@ -18730,11 +18730,16 @@
    "label": "SHAP 라이브러리",
    "parent": "shapley-values",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Shapley 기반 설명 도구와 시각화.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "shapley-values",
+    "global-vs-local-explanation",
+    "feature-correlation-shap"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "feature-correlation-shap",
@@ -29667,6 +29672,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "행동 테스트 사례를 대량 생성하는 소프트웨어.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "tree-explainer",
+   "label": "TreeExplainer",
+   "parent": "shap-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "트리 앙상블용 빠른 정확 SHAP 알고리즘.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "kernel-explainer",
+   "label": "KernelExplainer",
+   "parent": "shap-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델에 구애받지 않는 느린 SHAP 추정.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-additivity-check",
+   "label": "SHAP 가법성 확인",
+   "parent": "shap-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "SHAP 합과 기준값이 예측과 일치하는지 검산.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "shap-plots",
+   "label": "SHAP 그림 종류",
+   "parent": "shap-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "waterfall·force·beeswarm·bar·scatter.",
    "added": "2026-11-17",
    "related": []
   }
