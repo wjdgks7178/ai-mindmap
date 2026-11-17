@@ -17984,11 +17984,16 @@
    "label": "실질적 동등성(SE)",
    "parent": "predicate-device",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "predicate와 용도·안전·효과가 같은 수준임을 보이는 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "predicate-device",
+    "predicate-creep",
+    "pccp"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "predicate-creep",
@@ -27685,6 +27690,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "서로 견제하는 지표를 함께 두는 방법.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "nse-determination",
+   "label": "NSE 판정",
+   "parent": "substantial-equivalence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실질적 동등하지 않다는 FDA 판단과 이후 경로.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "sunset-sunrise-comparison",
+   "label": "SE 비교표",
+   "parent": "substantial-equivalence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "용도·기술·성능을 항목별로 맞춰 보는 표.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "different-questions-of-safety",
+   "label": "다른 안전·효과 의문",
+   "parent": "substantial-equivalence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "SE 판단에서 기술 차이를 가르는 핵심 기준.",
    "added": "2026-11-17",
    "related": []
   }
