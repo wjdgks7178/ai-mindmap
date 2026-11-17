@@ -30277,11 +30277,16 @@
    "label": "Kolmogorov-Smirnov 검정",
    "parent": "drift-statistical-tests",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "두 수치형 분포가 같은지 보는 비모수 검정.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "drift-statistical-tests",
+    "psi",
+    "data-drift"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "chi-square-drift",
@@ -30538,6 +30543,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "작은 창은 최신성, 큰 창은 표본 수에 유리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ecdf",
+   "label": "경험적 누적분포함수",
+   "parent": "ks-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본에서 x 이하 비율을 나타내는 함수.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ks-exact-vs-asymptotic",
+   "label": "KS exact와 점근 방법",
+   "parent": "ks-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본 크기에 따른 p값 계산 방식.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "ks-ties-discrete",
+   "label": "KS와 이산 특성",
+   "parent": "ks-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "동점이 많은 이산 특성에서의 한계.",
    "added": "2026-11-17",
    "related": []
   }
