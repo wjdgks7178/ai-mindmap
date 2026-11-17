@@ -19289,11 +19289,14 @@
    "label": "선종 발견율(ADR)",
    "parent": "deskilling",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "대장내시경 질 지표.",
+   "summary": "선종을 찾은 검사 비율. AI 없는 검사의 ADR이 28.4%에서 22.4%로.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "observational-vs-causal"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "ai-off-training",
@@ -32417,6 +32420,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "근거가 많을수록 읽기 비용 증가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "interval-cancer",
+   "label": "간격암",
+   "parent": "adenoma-detection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검사 후 다음 검진 전에 생긴 대장암.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "withdrawal-time",
+   "label": "철수 시간",
+   "parent": "adenoma-detection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내시경을 빼며 관찰하는 시간.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cade-colonoscopy",
+   "label": "CADe 대장내시경",
+   "parent": "adenoma-detection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컴퓨터 보조 검출 시스템.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "workload-confounder",
+   "label": "업무량 교란",
+   "parent": "adenoma-detection-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검사 수 증가가 ADR에 미치는 영향.",
    "added": "2026-11-17",
    "related": []
   }
