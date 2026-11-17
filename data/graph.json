@@ -19374,11 +19374,14 @@
    "label": "자동화평가",
    "parent": "credit-info-act-36-2",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람 개입 없이 컴퓨터로만 하는 평가.",
+   "summary": "사람 개입 없이 컴퓨터로만 하는 평가. 신용정보법 제36조의2의 대상.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "recalculation-request"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "recalculation-request",
@@ -32700,6 +32703,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "넘기는 순간 상황 3줄 요약.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "credit-guideline-2019",
+   "label": "2019 대응권 운영기준",
+   "parent": "automated-evaluation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "금감원 행정지도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "explanation-request-form",
+   "label": "설명요구서 서식",
+   "parent": "automated-evaluation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "별지 제15호의2 등.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "human-in-the-loop-boundary",
+   "label": "사람 개입의 경계",
+   "parent": "automated-evaluation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식적 승인도 자동화평가인가.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "credit-info-provider-user",
+   "label": "신용정보제공·이용자",
+   "parent": "automated-evaluation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "은행·보험·카드사 등 대상 기관.",
    "added": "2026-11-17",
    "related": []
   }
