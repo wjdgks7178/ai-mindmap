@@ -18675,11 +18675,16 @@
    "label": "사후 설명의 정확도 검증",
    "parent": "adverse-action-notice",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "근사 설명이 모델 실제 동작과 맞는지 검증.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "adverse-action-notice",
+    "shap-misinterpretation",
+    "sample-forms-checklist"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "cfpb-guidance-withdrawal-2025",
@@ -29951,6 +29956,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "법원이 기관의 해석을 어느 정도 따르는가의 문제.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "explanation-fidelity",
+   "label": "설명 충실도",
+   "parent": "post-hoc-explanation-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명이 모델 실제 동작을 반영하는 정도.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "fooling-lime-shap",
+   "label": "LIME·SHAP 속이기",
+   "parent": "post-hoc-explanation-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비계 기법으로 편향을 숨기는 공격.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "interpretable-by-design",
+   "label": "해석 가능한 설계",
+   "parent": "post-hoc-explanation-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Rudin이 고위험 결정에 권하는 내재적 해석 모델.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "perturbation-fidelity-test",
+   "label": "교란 기반 충실도 시험",
+   "parent": "post-hoc-explanation-validity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설명이 지목한 변수를 바꿔 출력 변화를 확인.",
    "added": "2026-11-17",
    "related": []
   }
