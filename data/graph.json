@@ -19360,11 +19360,14 @@
    "label": "수동 인수 지연",
    "parent": "automation-complacency",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자동 시스템 실패 시 반응 지연.",
+   "summary": "자동화 실패 시 사람의 통제 인수 시간은 1.9~25.7초로 크게 퍼진다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "vigilance-decrement"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "automated-evaluation",
@@ -32653,6 +32656,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "잡은 즉시 알려 주기.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "time-budget-takeover-buffer",
+   "label": "시간 예산과 인수 버퍼",
+   "parent": "takeover-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예산과 실제 인수 시간의 차.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "secondary-task-delay",
+   "label": "보조 과제 지연",
+   "parent": "takeover-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방해 활동 중이면 인수가 늦음.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "safe-default-on-timeout",
+   "label": "타임아웃 시 안전 기본값",
+   "parent": "takeover-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 응답이 없을 때의 동작.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "handoff-context-summary",
+   "label": "인수 시 맥락 요약",
+   "parent": "takeover-timing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "넘기는 순간 상황 3줄 요약.",
    "added": "2026-11-17",
    "related": []
   }
