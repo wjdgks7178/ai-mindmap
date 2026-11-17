@@ -19145,11 +19145,14 @@
    "label": "MIMIC-CXR",
    "parent": "medical-imaging-datasets",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "보스턴 병원 흉부 X선과 판독문 데이터셋.",
+   "summary": "보스턴 응급실 흉부 X선 377,110장과 판독문. 자격 심사 필요.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "external-validation-drop"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "tcia",
@@ -31965,6 +31968,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "패널·제품 코드·키워드 병행.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "chexpert-labeler",
+   "label": "CheXpert 라벨러",
+   "parent": "mimic-cxr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판독문에서 소견 라벨을 뽑는 규칙 기반 도구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "negbio",
+   "label": "NegBio",
+   "parent": "mimic-cxr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부정 표현을 처리하는 라벨 도구.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "physionet-credentialed-access",
+   "label": "PhysioNet 자격 접근",
+   "parent": "mimic-cxr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CITI 교육·동의서·라이선스.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "uncertain-labels",
+   "label": "불확실 라벨 처리",
+   "parent": "mimic-cxr",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "-1 값을 어떻게 학습에 쓰나.",
    "added": "2026-11-17",
    "related": []
   }
