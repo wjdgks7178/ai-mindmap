@@ -18332,11 +18332,18 @@
    "label": "CDS의 자동화 편향",
    "parent": "cds-exemption",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "긴급 상황에서 커지는 과의존.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cds-exemption",
+    "cds-criterion-4",
+    "user-overreliance",
+    "trust-calibration",
+    "automation-complacency"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "significance-of-information",
@@ -28539,6 +28546,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "진단과 관련성이 확립되지 않은 입력을 넣으면 예외에서 벗어남.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "commission-omission-errors",
+   "label": "작위 오류와 누락 오류",
+   "parent": "automation-bias-cds",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "틀린 조언을 따르는 것과 알림이 없어 행동하지 않는 것.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "cds-presentation-mitigators",
+   "label": "조언 제시 방식 완화책",
+   "parent": "automation-bias-cds",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정보형 문구·낮은 현저성·신뢰 수준 표시.",
    "added": "2026-11-17",
    "related": []
   }
