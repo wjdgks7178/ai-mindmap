@@ -30667,11 +30667,15 @@
    "label": "phi 계수",
    "parent": "cramers-v",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
    "summary": "2×2 표의 연관 지표, Cramér의 V의 기원.",
    "added": "2026-11-17",
-   "related": []
+   "related": [
+    "cramers-v",
+    "chi-square-drift"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "tschuprow-t",
@@ -30801,6 +30805,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "보정 없는 기본 카이제곱 통계량.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "phi-sign-direction",
+   "label": "phi의 부호",
+   "parent": "phi-coefficient",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연관의 방향을 나타내는 부호.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "phi-max-skew",
+   "label": "한계 분포 치우침과 최댓값",
+   "parent": "phi-coefficient",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "치우친 표에서 phi 최댓값이 1에 못 미침.",
    "added": "2026-11-17",
    "related": []
   }
