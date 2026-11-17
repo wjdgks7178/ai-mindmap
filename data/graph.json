@@ -19217,11 +19217,14 @@
    "label": "인지 욕구",
    "parent": "cognitive-forcing-function",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "노력이 드는 사고를 즐기는 정도와 효과 차이.",
+   "summary": "노력이 드는 사고를 즐기는 성향. 강제 장치 효과가 NFC에 따라 달랐다.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "cognitive-forcing-function"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "trust-vs-effectiveness",
@@ -32202,6 +32205,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "판단과 추천이 다를 때만 검토 강화.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "intervention-generated-inequality",
+   "label": "개입이 만드는 불평등",
+   "parent": "need-for-cognition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이득이 이미 유리한 집단에 몰리는 현상.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "central-vs-peripheral-route",
+   "label": "중심·주변 경로 설득",
+   "parent": "need-for-cognition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "논거 처리 대 단서 처리.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "nfc-short-scales",
+   "label": "NFC 단축 척도",
+   "parent": "need-for-cognition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4·6·18문항판.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "adaptive-ai-interface",
+   "label": "적응형 AI 인터페이스",
+   "parent": "need-for-cognition",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 특성에 따라 강제 정도 조절.",
    "added": "2026-11-17",
    "related": []
   }
