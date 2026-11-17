@@ -18236,11 +18236,16 @@
    "label": "변경 설명 작성",
    "parent": "modification-protocol",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경 목록·빈도·가드레일 정의.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "modification-protocol",
+    "pccp-ai-final-guidance",
+    "global-vs-local-updates"
+   ],
+   "done": "2026-11-17"
   },
   {
    "id": "data-drift",
@@ -28278,6 +28283,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "보류된 변경의 실패 내용을 문서로 남기는 일.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "update-guardrails",
+   "label": "자동 업데이트 가드레일",
+   "parent": "pccp-description-of-modifications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자동 변경의 범위를 정하는 경계 조건.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "modification-types-pccp",
+   "label": "PCCP에 맞는 변경 유형",
+   "parent": "pccp-description-of-modifications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "성능·입력·사용 변경의 세 갈래.",
+   "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "update-frequency",
+   "label": "갱신 빈도 명시",
+   "parent": "pccp-description-of-modifications",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연 1회부터 지속 적응까지의 예상 주기.",
    "added": "2026-11-17",
    "related": []
   }
