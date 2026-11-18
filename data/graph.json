@@ -37385,11 +37385,14 @@
    "label": "라벨 오류 탐지",
    "parent": "data-centric-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델-라벨 불일치로 오류 후보 찾기.",
+   "summary": "예측과 라벨의 어긋남으로 잘못된 라벨 후보 찾기. 시험 세트에도 평균 3.3% 오류.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-labeling-qa"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "targeted-data-collection",
@@ -37839,6 +37842,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 원본의 증강본이 양쪽에 걸침.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confident-learning",
+   "label": "Confident Learning",
+   "parent": "label-error-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈 라벨을 추정하는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cleanlab",
+   "label": "cleanlab",
+   "parent": "label-error-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 오류·데이터 문제 탐지 오픈소스.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-noise-benchmarks",
+   "label": "벤치마크 라벨 노이즈",
+   "parent": "label-error-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트 오류가 모델 순위를 바꾸는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "out-of-sample-pred-probs",
+   "label": "표본 밖 예측 확률",
+   "parent": "label-error-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차 검증으로 얻는 예측 확률.",
    "added": "2026-11-18",
    "related": []
   }
