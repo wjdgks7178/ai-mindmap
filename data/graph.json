@@ -19768,11 +19768,15 @@
    "label": "Inclusive Communities 사건",
    "parent": "fair-housing-act",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "FHA 차별 영향 책임을 인정한 사건.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "less-discriminatory-alternative",
+    "disparate-impact-credit"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "average-handle-time",
@@ -33651,6 +33655,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "변수·기법별 성능과 격차를 남기는 양식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "robust-causality",
+   "label": "견고한 인과관계 요건",
+   "parent": "inclusive-communities",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "격차와 피고 정책 사이의 인과를 입증해야 한다는 요건.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "griggs-v-duke-power",
+   "label": "Griggs v. Duke Power",
+   "parent": "inclusive-communities",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차별 영향 법리의 출발점이 된 1971년 판결.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "business-necessity",
+   "label": "사업 필요성 방어",
+   "parent": "inclusive-communities",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책의 정당한 이익을 입증하는 방어.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "disparate-treatment-vs-impact",
+   "label": "차별 의도와 차별 영향",
+   "parent": "inclusive-communities",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 책임 이론의 차이.",
    "added": "2026-11-18",
    "related": []
   }
