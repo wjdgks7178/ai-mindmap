@@ -20048,11 +20048,15 @@
    "label": "측정 창 72시간",
    "parent": "deflection-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "해결 인정 기간과 창을 바꾸면 생기는 왜곡.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "reopened-as-ticket",
+    "resolution-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "abandonment-vs-resolution",
@@ -34338,6 +34342,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "창 안에서 바로 티켓을 만든 사용자 수.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "maturity-guard",
+   "label": "성숙도 가드",
+   "parent": "measurement-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창이 닫히지 않은 최근 건을 집계에서 빼는 규칙.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "window-sensitivity-analysis",
+   "label": "창 민감도 분석",
+   "parent": "measurement-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 창으로 지표를 계산해 안정성을 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "product-cycle-based-window",
+   "label": "제품 주기 기반 창 선택",
+   "parent": "measurement-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재방문 주기에 맞춰 창을 정하는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "kpi-definition-change-log",
+   "label": "KPI 정의 변경 기록",
+   "parent": "measurement-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표 정의·창 변경을 문서화하는 습관.",
    "added": "2026-11-18",
    "related": []
   }
