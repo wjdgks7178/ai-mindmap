@@ -20619,11 +20619,12 @@
    "label": "추론 전·후 가림",
    "parent": "pii-minimization-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시점별 장단점.",
+   "summary": "호출 전 가림은 원본 차단, 호출 후 검사는 출력 누출 차단. 둘 다 필요.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "context-window-access-log",
@@ -36566,6 +36567,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "개인 단위 정보를 묶어서 흐리기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "presidio",
+   "label": "Presidio",
+   "parent": "pre-vs-post-inference-redaction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오픈소스 PII 탐지·익명화 도구.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "typed-placeholder-tokens",
+   "label": "유형별 대체 토큰",
+   "parent": "pre-vs-post-inference-redaction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "[PERSON_1]처럼 유형을 남기는 치환.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "tool-call-pii-leak",
+   "label": "도구 호출 인자 PII 누출",
+   "parent": "pre-vs-post-inference-redaction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력 가드레일 이전에 나가는 PII.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "llm-gateway-guardrail",
+   "label": "LLM 게이트웨이 가드레일",
+   "parent": "pre-vs-post-inference-redaction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 호출을 한 곳에서 검사하는 구조.",
    "added": "2026-11-18",
    "related": []
   }
