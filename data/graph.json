@@ -19829,11 +19829,14 @@
    "label": "숫자·고유명사 오인식",
    "parent": "stt-error-propagation",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "금액·날짜 오류가 분쟁으로 이어짐.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "stt-error-propagation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "source-linked-summary",
@@ -33888,6 +33891,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "신입과 숙련자에서 AI 도구 효과가 다른 이유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "entity-error-rate",
+   "label": "엔티티 오류율(EER)",
+   "parent": "number-entity-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "핵심 정보만 센 인식 오류 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "earnings-21",
+   "label": "Earnings-21 코퍼스",
+   "parent": "number-entity-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엔티티 밀집 실적 발표 통화 39시간 평가셋.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "number-verification-rule",
+   "label": "숫자 검증 규칙",
+   "parent": "number-entity-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "금액·날짜·번호의 형식·범위 자동 점검.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "read-back-confirmation",
+   "label": "복창 확인",
+   "parent": "number-entity-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상담사가 숫자를 고객에게 되읽어 확인하는 절차.",
    "added": "2026-11-18",
    "related": []
   }
