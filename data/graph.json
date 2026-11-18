@@ -37325,11 +37325,14 @@
    "label": "데이터 검증 도구",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Great Expectations·TFDV·Deequ.",
+   "summary": "Great Expectations·TFDV 등 데이터 규칙을 자동 검사. 스키마·편향·드리프트.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-quality-for-ai"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "k-fold-cross-validation",
@@ -37702,6 +37705,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "필요한 데이터를 빠르게 공급.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "great-expectations",
+   "label": "Great Expectations",
+   "parent": "data-validation-tools",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Expectation·Checkpoint 기반 검증 라이브러리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "tfdv",
+   "label": "TensorFlow Data Validation",
+   "parent": "data-validation-tools",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마·편향·드리프트 탐지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "training-serving-skew",
+   "label": "학습-서빙 편향",
+   "parent": "data-validation-tools",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습과 서빙 분포가 다른 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "schema-inference",
+   "label": "스키마 자동 추론",
+   "parent": "data-validation-tools",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계에서 초기 스키마를 만들고 사람이 검토.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "amazon-deequ",
+   "label": "Amazon Deequ",
+   "parent": "data-validation-tools",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Spark 기반 데이터 품질 검증.",
    "added": "2026-11-18",
    "related": []
   }
