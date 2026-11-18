@@ -20535,11 +20535,15 @@
    "label": "이관 경계 검증",
    "parent": "handoff-schema",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "필드·타입·허용값 체크.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "schema-versioning",
+    "escalation-reason-taxonomy"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "evidence-provenance-tags",
@@ -36284,6 +36288,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "송수신 양쪽이 공통 버전에 합의.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "additional-properties-false",
+   "label": "추가 필드 금지",
+   "parent": "handoff-boundary-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마에 없는 키를 거부해 오타·불일치를 조기 발견.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "validation-failure-rate",
+   "label": "검증 실패율",
+   "parent": "handoff-boundary-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 검증 실패 비율을 지표로 감시.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pydantic-validation",
+   "label": "Pydantic 검증",
+   "parent": "handoff-boundary-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파이썬 모델로 JSON을 파싱·검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "fallback-to-full-transcript",
+   "label": "원문 전체 전달 폴백",
+   "parent": "handoff-boundary-validation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 실패 시 구조화 대신 원문을 넘기는 경로.",
    "added": "2026-11-18",
    "related": []
   }
