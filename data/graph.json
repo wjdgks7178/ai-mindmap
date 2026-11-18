@@ -19926,11 +19926,15 @@
    "label": "수락률과 품질의 관계",
    "parent": "accept-without-edit-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수락률이 품질이 아닌 인식을 반영하는 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "automation-bias",
+    "seeded-error-testing"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "levenshtein",
@@ -34029,6 +34033,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "오탐이 많아 사람이 경보를 무시하는 현상.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "post-acceptance-error-rate",
+   "label": "수락 후 사후 오류율",
+   "parent": "acceptance-quality-link",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수락한 제안이 나중에 틀렸던 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rework-rate",
+   "label": "재작업 비율",
+   "parent": "acceptance-quality-link",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수락 후 되돌리거나 다시 고친 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "reliability-paradox",
+   "label": "자동화 신뢰도 역설",
+   "parent": "acceptance-quality-link",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "높지만 완벽하지 않은 신뢰도에서 안주가 커지는 현상.",
    "added": "2026-11-18",
    "related": []
   }
