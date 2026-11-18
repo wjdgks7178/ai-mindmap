@@ -19674,11 +19674,14 @@
    "label": "LDA 탐색 절차",
    "parent": "less-discriminatory-alternative",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "후보 생성·비교·기록.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "model-multiplicity"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "fairness-constrained-training",
@@ -33414,6 +33417,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어디까지를 같은 성능으로 볼지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "target-variable-reformulation",
+   "label": "목표 변수 재구성",
+   "parent": "lda-search-process",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 데이터로 목표 변수를 바꿔 격차를 줄이는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "disparity-in-tuning",
+   "label": "튜닝에 격차 지표 추가",
+   "parent": "lda-search-process",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하이퍼파라미터 탐색에 공정성 지표를 넣기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "upstart-monitorship",
+   "label": "Upstart 모니터십 사례",
+   "parent": "lda-search-process",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 모니터가 LDA를 찾았으나 합의가 안 된 사례.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "lda-documentation",
+   "label": "LDA 탐색 문서화",
+   "parent": "lda-search-process",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탐색 범위·기준·결과를 남기는 방법.",
    "added": "2026-11-18",
    "related": []
   }
