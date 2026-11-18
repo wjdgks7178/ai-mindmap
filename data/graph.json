@@ -20521,11 +20521,14 @@
    "label": "스키마 버전 관리",
    "parent": "handoff-schema",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "버전 기록과 협상으로 조용한 오독 방지.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "handoff-schema"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "handoff-boundary-validation",
@@ -36237,6 +36240,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 명 독립 라벨링의 일치 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "contract-testing",
+   "label": "계약 테스트",
+   "parent": "schema-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양쪽 구현이 스키마 계약을 지키는지 자동 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "semantic-versioning",
+   "label": "시맨틱 버저닝",
+   "parent": "schema-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MAJOR·MINOR·PATCH 규칙.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "silent-misread",
+   "label": "조용한 오독",
+   "parent": "schema-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미가 바뀌어도 오류 없이 틀리게 읽는 사고.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "version-negotiation",
+   "label": "버전 협상",
+   "parent": "schema-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "송수신 양쪽이 공통 버전에 합의.",
    "added": "2026-11-18",
    "related": []
   }
