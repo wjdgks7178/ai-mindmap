@@ -19599,11 +19599,15 @@
    "label": "계수 부호 점검표",
    "parent": "wrong-sign-diagnostic",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변수별 기대 방향과 실제 비교.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "multicollinearity",
+    "domain-expert-review"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "domain-expert-review",
@@ -34747,6 +34751,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "범주형에는 단조 제약을 걸 수 없는 이유와 우회.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "bootstrap-sign-stability",
+   "label": "부트스트랩 부호 안정성",
+   "parent": "sign-check-table",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재표본에서 계수 부호가 유지되는 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "expected-direction-rationale",
+   "label": "기대 방향 근거 기록",
+   "parent": "sign-check-table",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인 근거를 문서화해 점검표에 연결.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "coefficient-magnitude-check",
+   "label": "계수 크기 점검",
+   "parent": "sign-check-table",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부호가 맞아도 크기가 비현실적인지 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "standardized-coefficients",
+   "label": "표준화 계수",
+   "parent": "sign-check-table",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단위를 통일해 변수 영향을 비교.",
    "added": "2026-11-18",
    "related": []
   }
