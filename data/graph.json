@@ -20350,11 +20350,15 @@
    "label": "의도된 이관 vs 실패성 이관",
    "parent": "escalation-rate-target",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정책 이관과 실패를 따로 보고하기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "per-task-escalation-rate",
+    "escalation-reason-taxonomy"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "per-task-escalation-rate",
@@ -35576,6 +35580,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "업무 위험에 따라 다른 이관율 목표 설정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "human-connect-button-hiding",
+   "label": "사람 연결 버튼 숨기기의 위험",
+   "parent": "intentional-vs-failure-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관율을 낮추려 접근성을 해치는 잘못된 최적화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalation-record-schema",
+   "label": "이관 레코드 스키마",
+   "parent": "intentional-vs-failure-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사유·주체·의도 구분·담당팀 필드 설계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalation-policy-review",
+   "label": "이관 정책 적정성 검토",
+   "parent": "intentional-vs-failure-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의도된 이관이 너무 많거나 적은지 점검.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "frustration-escalation-boundary",
+   "label": "불만 이관의 경계",
+   "parent": "intentional-vs-failure-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책 이관과 실패 신호 사이의 모호한 사례.",
    "added": "2026-11-18",
    "related": []
   }
