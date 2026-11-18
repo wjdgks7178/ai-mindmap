@@ -20190,11 +20190,15 @@
    "label": "컨테인먼트율",
    "parent": "rollout-gates",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "봇 안에서 끝난 비율, deflection과의 관계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "resolution-rate",
+    "deflection-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "minimum-sample-size",
@@ -34926,6 +34930,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "건수를 유입량으로 나눠 일정에 반영.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "four-endings-classification",
+   "label": "네 가지 세션 결말 분류",
+   "parent": "containment-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결·이관·이탈·재접촉으로 나눠 세는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "usps-ivr-containment-case",
+   "label": "USPS IVR 컨테인먼트 사례",
+   "parent": "containment-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이탈을 포함해 컨테인먼트를 과대평가한 공공 사례.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gartner-self-service-resolution",
+   "label": "자가 서비스 완전 해결 비율",
+   "parent": "containment-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Gartner 조사의 자가 서비스 해결 수치.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "raw-vs-corrected-reporting",
+   "label": "원시값·보정값 병행 보고",
+   "parent": "containment-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정의 변경 시 두 수치를 함께 공개.",
    "added": "2026-11-18",
    "related": []
   }
