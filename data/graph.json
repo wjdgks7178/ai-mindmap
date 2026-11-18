@@ -33174,11 +33174,14 @@
    "label": "점수 통과율(Scoring Rate)",
    "parent": "adverse-impact-ratio",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "점수형 AEDT에서 중앙값 초과 비율.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "nyc-ll144-bias-audit"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "nyc-ll144-bias-audit",
@@ -33258,6 +33261,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "채용 AI를 고위험으로 분류하는 EU 규제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "median-vs-mean-score",
+   "label": "중앙값 기준과 평균 기준",
+   "parent": "scoring-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 점수 비교에서 중앙값을 쓰는 이유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cutoff-sensitivity",
+   "label": "컷오프 민감도",
+   "parent": "scoring-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 합격선이 중앙값과 다를 때의 격차 변화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "score-distribution-gap",
+   "label": "점수 분포 격차",
+   "parent": "scoring-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통과율 하나로 놓치는 분포 차이.",
    "added": "2026-11-18",
    "related": []
   }
