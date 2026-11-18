@@ -19617,11 +19617,14 @@
    "label": "불리한 영향 비율",
    "parent": "four-fifths-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "집단 선발률 비를 계산하는 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fully-automated"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "statistical-significance-adverse-impact",
@@ -33163,6 +33166,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "비율·사용률 같은 파생 변수로 합치기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "scoring-rate",
+   "label": "점수 통과율(Scoring Rate)",
+   "parent": "adverse-impact-ratio",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수형 AEDT에서 중앙값 초과 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "nyc-ll144-bias-audit",
+   "label": "뉴욕시 LL144 편향 감사",
+   "parent": "adverse-impact-ratio",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 채용 도구 연 1회 독립 감사와 결과 공개.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "intersectional-categories",
+   "label": "교차 범주 분석",
+   "parent": "adverse-impact-ratio",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성별×인종 등 교차 집단별 비율 계산.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "small-category-exclusion",
+   "label": "소규모 범주 제외 규칙",
+   "parent": "adverse-impact-ratio",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 2% 미만 범주 제외와 사유 공개.",
    "added": "2026-11-18",
    "related": []
   }
