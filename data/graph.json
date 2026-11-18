@@ -19925,11 +19925,15 @@
    "label": "형식적 승인 신호",
    "parent": "accept-without-edit-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무수정·즉시 승인 패턴으로 과신 감지.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "automation-bias",
+    "seeded-error-testing"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "audit-seeded-errors",
@@ -35480,6 +35484,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "수락률 상승과 만족도 하락 동시 감시.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "approval-latency-per-length",
+   "label": "길이 대비 승인 소요시간",
+   "parent": "blind-approval-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텍스트 길이에 비해 지나치게 빠른 승인 탐지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "review-interface-design",
+   "label": "검토 인터페이스 설계",
+   "parent": "blind-approval-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경점 강조·근거 링크로 실제 검토를 유도.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "review-workload-cap",
+   "label": "검수 업무량 상한",
+   "parent": "blind-approval-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간당 검수 건수 상한으로 형식화 방지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "institutional-oversight",
+   "label": "제도적 감독",
+   "parent": "blind-approval-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인 검토 대신 조직 차원의 정당화·검증.",
    "added": "2026-11-18",
    "related": []
   }
