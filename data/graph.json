@@ -20436,11 +20436,12 @@
    "label": "첫 유용 응답까지 시간",
    "parent": "handoff-wait-time",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이관 후 품질 지표.",
+   "summary": "접수 응답이 아니라 이관 후 진전된 답이 나가기까지의 시간.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "repeat-explanation-rate",
@@ -36611,6 +36612,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모든 호출을 한 곳에서 검사하는 구조.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "support-clock-rules",
+   "label": "지표 시계 규칙",
+   "parent": "time-to-first-useful-response",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관·재오픈·영업시간 처리 정의.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "useful-response-labeling",
+   "label": "유용 응답 라벨링",
+   "parent": "time-to-first-useful-response",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람·LLM 판정으로 표본 라벨.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "handoff-rate-metric",
+   "label": "이관율",
+   "parent": "time-to-first-useful-response",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 대화 중 이관 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "resolution-time-sla",
+   "label": "해결 시간 SLA",
+   "parent": "time-to-first-useful-response",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "우선순위별 해결 기한 설정.",
    "added": "2026-11-18",
    "related": []
   }
