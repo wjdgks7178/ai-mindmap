@@ -19461,22 +19461,28 @@
    "label": "권리 인지율",
    "parent": "explanation-request-trend",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정보주체가 권리를 아는 정도.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "pipa-automated-decision"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "exercise-barriers",
    "label": "권리 행사 장벽",
    "parent": "explanation-request-trend",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "요건·절차·정보 비대칭.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "pipa-automated-decision"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "automated-decision-stats-source",
@@ -32919,6 +32925,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "거절 시 사유를 알려야 하는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "information-asymmetry-ai",
+   "label": "AI 결정의 정보 비대칭",
+   "parent": "exercise-barriers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정 사실·기준을 당사자가 모르는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "decision-logging",
+   "label": "결정 로그 보존",
+   "parent": "exercise-barriers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사후 설명을 위한 입력·가중치·임계값 기록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pipa-2026-amendment",
+   "label": "2026 개인정보 보호법 개정",
+   "parent": "exercise-barriers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2026-02 국회 통과 개정안, 시행일은 확인 필요.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rights-notice-design",
+   "label": "권리 고지 설계",
+   "parent": "right-awareness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절 안내문에 권리를 알리는 방법.",
    "added": "2026-11-18",
    "related": []
   }
