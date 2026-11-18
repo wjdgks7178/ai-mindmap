@@ -20388,11 +20388,15 @@
    "label": "예상 대기 안내 메시지",
    "parent": "handoff-wait-time",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "추정임을 밝히는 문구와 트리거 설계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "wait-time-estimation-limits",
+    "erlang-c"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "wait-time-estimation-limits",
@@ -35767,6 +35771,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어려운 오류를 모두 놓쳐 총수가 과소 추정되는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "maister-first-law",
+   "label": "마이스터의 첫째 법칙",
+   "parent": "estimated-wait-message",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "만족 = 인식 − 기대.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "waiting-psychology-propositions",
+   "label": "대기 심리 명제",
+   "parent": "estimated-wait-message",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점유·불확실·설명·공정 등 대기 인식 요인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "wait-update-trigger",
+   "label": "대기 갱신 트리거",
+   "parent": "estimated-wait-message",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추정이 틀렸을 때 자동으로 갱신 안내.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "occupied-wait-design",
+   "label": "점유된 대기 설계",
+   "parent": "estimated-wait-message",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기다리는 동안 유용한 활동 제공.",
    "added": "2026-11-18",
    "related": []
   }
