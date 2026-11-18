@@ -37662,11 +37662,15 @@
    "label": "분포 밖 평가",
    "parent": "inference-data-development",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 분포 밖 입력에 대한 견고성.",
+   "summary": "학습과 다른 병원·카메라·시기 데이터로 평가. WILDS는 분포 밖 성능 격차를 보임.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-drift",
+    "ai-evaluation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "algorithmic-recourse",
@@ -38776,6 +38780,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 슬라이스의 점수는 노이즈.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "wilds-benchmark",
+   "label": "WILDS 벤치마크",
+   "parent": "ood-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 분포 변화 10개 데이터셋 모음.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ood-detection-softmax",
+   "label": "분포 밖 탐지(최대 소프트맥스)",
+   "parent": "ood-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낯선 입력을 확률로 알아채는 기준선.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "held-out-domain-split",
+   "label": "도메인 통째로 떼기",
+   "parent": "ood-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "병원·지역·기간을 통째로 시험용으로.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "distribution-shift-types",
+   "label": "분포 변화의 종류",
+   "parent": "ood-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공변량·라벨·개념 변화 구분.",
    "added": "2026-11-18",
    "related": []
   }
