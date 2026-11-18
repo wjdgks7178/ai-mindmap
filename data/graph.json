@@ -37445,11 +37445,14 @@
    "label": "Common Crawl",
    "parent": "training-data-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "공개 웹 크롤 아카이브, 사전학습 원천.",
+   "summary": "2008년부터의 공개 웹 아카이브(페타바이트). WARC·WAT·WET 형식, 사전학습 원천.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-licensing-provenance"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "fineweb",
@@ -38152,6 +38155,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "박스·마스크를 이미지와 같이 변환.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "warc-wat-wet",
+   "label": "WARC·WAT·WET 형식",
+   "parent": "common-crawl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본·메타데이터·텍스트 파일 형식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ccbot-opt-out",
+   "label": "CCBot과 옵트아웃",
+   "parent": "common-crawl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤러 식별과 사이트 운영자 거부 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "c4-dataset",
+   "label": "C4 데이터셋",
+   "parent": "common-crawl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Common Crawl 기반 휴리스틱 필터 코퍼스.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "url-index-cdx",
+   "label": "URL 색인(CDX)",
+   "parent": "common-crawl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤된 URL을 검색하는 색인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "web-crawl-quality-issues",
+   "label": "웹 크롤 품질 문제",
+   "parent": "common-crawl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "광고·잡글·중복·저품질 비율.",
    "added": "2026-11-18",
    "related": []
   }
