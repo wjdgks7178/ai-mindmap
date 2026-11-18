@@ -37246,11 +37246,12 @@
    "label": "AI용 데이터 품질",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "결측·중복·오류·편향 점검 기준.",
+   "summary": "정확성·완전성·일관성 등 항목별 데이터 점검. ISO/IEC 25012·5259 틀.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "data-licensing-provenance",
@@ -37260,17 +37261,6 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 데이터의 저작권·계보 추적.",
-   "added": "2026-11-18",
-   "related": []
-  },
-  {
-   "id": "data-labeling-agreement",
-   "label": "라벨러 간 일치도",
-   "parent": "ai-data",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "라벨 품질을 재는 지표.",
    "added": "2026-11-18",
    "related": []
   },
@@ -37529,6 +37519,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "저비용 대량, 품질 관리 필요.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "iso-iec-25012",
+   "label": "ISO/IEC 25012",
+   "parent": "data-quality-for-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 품질 모델(내재·시스템 의존 특성).",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "iso-iec-5259",
+   "label": "ISO/IEC 5259",
+   "parent": "data-quality-for-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분석·ML용 데이터 품질 표준 시리즈.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-missing-values",
+   "label": "결측값 처리",
+   "parent": "data-quality-for-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측의 유형과 대체·제외 판단.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-distribution-bias",
+   "label": "분포 편향 점검",
+   "parent": "data-quality-for-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단·시기별 과소·과대 대표 확인.",
    "added": "2026-11-18",
    "related": []
   }
