@@ -19983,11 +19983,15 @@
    "label": "지속성 지표",
    "parent": "post-acceptance-edit-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수락한 코드가 시간이 지나도 남는 정도.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "acceptance-quality-link",
+    "normalized-edit-distance"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "post-acceptance-window",
@@ -34196,6 +34200,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "숫자·부정어처럼 글자 변화는 작아도 뜻이 크게 바뀌는 수정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "fuzzy-persistence",
+   "label": "퍼지 지속률",
+   "parent": "persistence-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조금 수정된 제안까지 지속으로 치는 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "persistence-window-choice",
+   "label": "지속성 관찰 창 선택",
+   "parent": "persistence-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "30초~10분 중 어떤 창을 볼지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "spearman-correlation",
+   "label": "스피어먼 상관",
+   "parent": "persistence-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위 기반 상관계수.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "copilot-usage-metrics",
+   "label": "Copilot 사용 지표 체계",
+   "parent": "persistence-metric",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노출·수락·지속·속도 지표 묶음.",
    "added": "2026-11-18",
    "related": []
   }
