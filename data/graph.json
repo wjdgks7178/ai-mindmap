@@ -19542,11 +19542,14 @@
    "label": "부분 의존 곡선 점검",
    "parent": "monotone-constraints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제약 후 단조성 확인 방법.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "interpretable-credit-models"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "lightgbm-mc-method",
@@ -19564,11 +19567,14 @@
    "label": "제약과 성능 트레이드오프",
    "parent": "monotone-constraints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "방향 강제가 성능에 미치는 영향.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "interpretable-credit-models"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "multicollinearity",
@@ -33066,6 +33072,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상호작용 미반영 등.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ice-plot",
+   "label": "ICE 곡선",
+   "parent": "partial-dependence-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플별 예측 곡선, PDP가 가리는 이질성 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ale-plot",
+   "label": "ALE 곡선",
+   "parent": "partial-dependence-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상관 변수에 강한 PDP 대안.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "monotonicity-unit-test",
+   "label": "단조성 단위 테스트",
+   "parent": "partial-dependence-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "격자 예측을 정렬해 CI에서 자동 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "selective-constraint",
+   "label": "변수별 선택 제약",
+   "parent": "constraint-performance-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가정이 확실한 변수에만 제약 적용.",
    "added": "2026-11-18",
    "related": []
   }
