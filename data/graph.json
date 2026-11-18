@@ -19955,11 +19955,14 @@
    "label": "의미 유사도",
    "parent": "edit-distance-metric",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "표면 차이와 의미 차이 구분.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "accept-without-edit-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "normalized-edit-distance",
@@ -34160,6 +34163,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정규화 방식이 삼각부등식에 미치는 영향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "sentence-bert",
+   "label": "Sentence-BERT",
+   "parent": "semantic-similarity-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 임베딩을 샴 구조로 학습해 빠른 유사도 비교를 가능하게 한 모델.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cross-encoder-vs-bi-encoder",
+   "label": "교차 인코더와 이중 인코더",
+   "parent": "semantic-similarity-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도와 속도를 맞바꾸는 두 구조.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "critical-small-edit",
+   "label": "작지만 중요한 수정",
+   "parent": "semantic-similarity-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자·부정어처럼 글자 변화는 작아도 뜻이 크게 바뀌는 수정.",
    "added": "2026-11-18",
    "related": []
   }
