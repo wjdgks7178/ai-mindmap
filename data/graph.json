@@ -20034,11 +20034,14 @@
    "label": "재문의율",
    "parent": "deflection-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "deflection 후 같은 주제로 티켓이 다시 열리는 비율.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "resolution-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "measurement-window",
@@ -34291,6 +34294,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "고객 만족과 시스템 판정 해결의 차이.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "topic-matching-reopen",
+   "label": "재문의 주제 매칭",
+   "parent": "reopened-as-ticket",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 주제 여부를 판정하는 방법과 오차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "guardrail-metric",
+   "label": "안전장치 지표",
+   "parent": "reopened-as-ticket",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주 지표의 부작용을 잡는 보조 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "user-identity-linking",
+   "label": "사용자 식별 연결",
+   "parent": "reopened-as-ticket",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "채널을 넘어 같은 사용자를 잇는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ticket-anyway-signal",
+   "label": "ticket_anyway 신호",
+   "parent": "reopened-as-ticket",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창 안에서 바로 티켓을 만든 사용자 수.",
    "added": "2026-11-18",
    "related": []
   }
