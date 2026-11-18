@@ -37513,11 +37513,12 @@
    "label": "모델 보조 사전 라벨링",
    "parent": "data-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델이 먼저 붙이고 사람이 검증.",
+   "summary": "모델이 초벌 라벨, 사람이 검수. 속도는 오르지만 틀린 제안을 수용하는 앵커링 주의.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "programmatic-labeling-snorkel",
@@ -38430,6 +38431,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "프롬프트 기반 규칙으로 라벨링.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "automation-bias-annotation",
+   "label": "주석 자동화 편향",
+   "parent": "model-assisted-prelabeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 모델 제안을 그대로 수용하는 경향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confidence-routed-review",
+   "label": "확신도 기반 검수 분배",
+   "parent": "model-assisted-prelabeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 확신도만 전수 검토.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "suggestion-hidden-control-sample",
+   "label": "제안 비노출 대조 표본",
+   "parent": "model-assisted-prelabeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부는 제안 없이 독립 라벨링.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "skeptical-reviewer-effect",
+   "label": "회의적 검수자 효과",
+   "parent": "model-assisted-prelabeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI에 회의적인 검수자의 오류 포착 우위.",
    "added": "2026-11-18",
    "related": []
   }
