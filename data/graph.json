@@ -19660,11 +19660,14 @@
    "label": "모델 다중성",
    "parent": "less-discriminatory-alternative",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "성능이 같은 모델이 여러 개 존재.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "less-discriminatory-alternative"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "lda-search-process",
@@ -33378,6 +33381,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "난수 실험으로 오경보 확률 추정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rashomon-set",
+   "label": "Rashomon 집합",
+   "parent": "model-multiplicity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성능이 동등한 모델들의 집합.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "predictive-multiplicity",
+   "label": "예측 다중성",
+   "parent": "model-multiplicity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사람에게 모델마다 다른 예측이 나오는 현상.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "epsilon-equivalence",
+   "label": "동등 성능 임계값 ϵ",
+   "parent": "model-multiplicity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어디까지를 같은 성능으로 볼지.",
    "added": "2026-11-18",
    "related": []
   }
