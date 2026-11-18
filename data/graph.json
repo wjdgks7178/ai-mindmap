@@ -20030,11 +20030,15 @@
    "label": "오류 수정과 스타일 수정 구분",
    "parent": "post-acceptance-edit-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수정의 성격 분류.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "normalized-edit-distance",
+    "critical-small-edit"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "resolution-rate",
@@ -35384,6 +35388,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "이론식이 못 담는 변동을 시뮬레이션으로 보정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "mqm",
+   "label": "MQM(다차원 품질 지표)",
+   "parent": "fix-vs-style-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "번역 품질을 오류 유형과 심각도로 채점하는 틀.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "severity-weighted-penalty",
+   "label": "심각도 가중 벌점",
+   "parent": "fix-vs-style-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경미 1·주요 5·치명 25 같은 곱수로 오류를 점수화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "edit-tag-schema",
+   "label": "수정 태그 체계",
+   "parent": "fix-vs-style-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후편집 수정을 유형별로 기록하는 양식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "style-guide-vs-prompt",
+   "label": "스타일 가이드와 프롬프트",
+   "parent": "fix-vs-style-edit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스타일 수정이 많을 때 개선할 곳.",
    "added": "2026-11-18",
    "related": []
   }
