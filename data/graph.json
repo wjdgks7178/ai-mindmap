@@ -20371,11 +20371,15 @@
    "label": "대기 추정의 한계",
    "parent": "handoff-wait-time",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "급증·데이터 부족 때 정확도 하락.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "estimated-wait-message",
+    "average-handle-time"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "time-to-first-useful-response",
@@ -35288,6 +35292,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사전 목록 대신 대화 텍스트에서 새 사유를 찾는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "erlang-c",
+   "label": "Erlang C 모델",
+   "parent": "wait-time-estimation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "M/M/c 대기열의 대기 확률 식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "occupancy-sensitivity",
+   "label": "점유율 민감도",
+   "parent": "wait-time-estimation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점유율이 1에 가까울수록 대기가 폭증하는 성질.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "erlang-a-abandonment",
+   "label": "Erlang A(이탈 반영)",
+   "parent": "wait-time-estimation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객 이탈을 포함한 확장 대기열 모델.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "callback-offer",
+   "label": "콜백 제안",
+   "parent": "wait-time-estimation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대기가 길 때 대기 대신 콜백을 제안하는 설계.",
    "added": "2026-11-18",
    "related": []
   }
