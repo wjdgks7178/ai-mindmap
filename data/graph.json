@@ -37612,11 +37612,12 @@
    "label": "파생 데이터 라이선스 상속",
    "parent": "data-licensing-provenance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "원 데이터 조건이 파생물에 미치는지.",
+   "summary": "SA·ND·BY와 개작 정의. 저작권 허락이 필요 없는 이용은 라이선스 제한 밖(CC FAQ).",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "internal-data-card",
@@ -37634,11 +37635,12 @@
    "label": "모델 카드",
    "parent": "data-licensing-provenance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델 용도·한계·학습 데이터를 문서화.",
+   "summary": "모델 용도·집단별 성능·평가 절차를 적은 짧은 문서(Mitchell 등 2018).",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "data-slicing",
@@ -38660,6 +38662,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "사용 전 확인할 항목.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cc-sharealike",
+   "label": "CC ShareAlike",
+   "parent": "license-inheritance-derived-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개작을 같은 라이선스로.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cc-noderivatives",
+   "label": "CC NoDerivatives",
+   "parent": "license-inheritance-derived-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개작 공유 금지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "text-data-mining-exception",
+   "label": "텍스트·데이터 마이닝 예외",
+   "parent": "license-inheritance-derived-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저작권 허락이 필요 없는 이용.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "model-weights-derivative-question",
+   "label": "모델 가중치는 개작인가",
+   "parent": "license-inheritance-derived-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미해결 법적 쟁점.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "system-cards",
+   "label": "시스템 카드",
+   "parent": "model-cards",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델과 주변 시스템을 설명하는 문서.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "subgroup-performance-report",
+   "label": "집단별 성능 보고",
+   "parent": "model-cards",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인구·교차 집단별 벤치마크.",
    "added": "2026-11-18",
    "related": []
   }
