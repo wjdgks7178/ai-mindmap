@@ -37849,11 +37849,12 @@
    "label": "k 값 선택",
    "parent": "k-fold-cross-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "5·10 관행과 비용·분산 트레이드오프.",
+   "summary": "k 선택은 5·10이 관행. 직접 실험(digits): k↑ 점수 0.954→0.970, 시간 약 14배.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "leave-one-group-out",
@@ -39337,6 +39338,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습·보류·다음 날·실시간 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "repeated-cross-validation",
+   "label": "반복 교차 검증",
+   "parent": "cv-fold-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드를 바꿔 여러 번 평균.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pessimistic-bias-small-k",
+   "label": "작은 k의 비관적 편향",
+   "parent": "cv-fold-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터가 적어 점수가 낮게 나옴.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cv-score-difference-vs-noise",
+   "label": "점수 차이와 노이즈",
+   "parent": "cv-fold-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차이가 시드 간 편차보다 작으면 우열 불가.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "holdout-vs-cv-estimates",
+   "label": "홀드아웃과 CV 추정 비교",
+   "parent": "cv-fold-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "별도 시험 세트와 CV 점수의 차이.",
    "added": "2026-11-18",
    "related": []
   }
