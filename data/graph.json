@@ -37807,11 +37807,14 @@
    "label": "Amazon Deequ",
    "parent": "data-validation-tools",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Spark 기반 데이터 품질 검증.",
+   "summary": "Spark 기반 데이터 단위 테스트 라이브러리. VerificationSuite·제약 제안·이상 탐지.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-validation-tools"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "stratified-k-fold",
@@ -39242,6 +39245,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 수와 학습 시간.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pydeequ",
+   "label": "PyDeequ",
+   "parent": "amazon-deequ",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Deequ의 Python 래퍼.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "constraint-suggestion",
+   "label": "제약 자동 제안",
+   "parent": "amazon-deequ",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터에서 검증 규칙을 제안.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-quality-metrics-repository",
+   "label": "품질 지표 저장소",
+   "parent": "amazon-deequ",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "품질 지표를 쌓아 시간 변화 추적.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "dqdl",
+   "label": "DQDL(데이터 품질 정의 언어)",
+   "parent": "amazon-deequ",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선언적 품질 규칙 표기.",
    "added": "2026-11-18",
    "related": []
   }
