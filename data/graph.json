@@ -19440,11 +19440,15 @@
    "label": "인적 개입 재처리",
    "parent": "pipa-automated-decision",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사람이 다시 검토하는 조치.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "fully-automated",
+    "human-in-the-loop-boundary"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "right-awareness",
@@ -32821,6 +32825,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI 면접 평가에 대한 설명·소명 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "reprocessing-deadline-30d",
+   "label": "30일 처리 기한",
+   "parent": "human-reprocessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거부·설명 요구 후 30일, 최대 2회 연장.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "explanation-content",
+   "label": "설명 요구 시 제공 내용",
+   "parent": "human-reprocessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과·주요 정보 유형·기준·절차 설명.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "refusal-justification-pipa",
+   "label": "처리자의 거절 정당사유",
+   "parent": "human-reprocessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "타인 이익 침해 우려 등 거절 사유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "reprocessing-staff-authority",
+   "label": "재처리 담당자 권한",
+   "parent": "human-reprocessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정을 바꿀 권한이 있는 사람의 요건.",
    "added": "2026-11-18",
    "related": []
   }
