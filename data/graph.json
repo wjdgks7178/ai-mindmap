@@ -19716,11 +19716,15 @@
    "label": "프록시 탐지 모델",
    "parent": "proxy-variable",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "다른 변수로 보호 속성을 예측해 보는 점검.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "protected-attribute-inference",
+    "adverse-impact-ratio"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "performance-fairness-tradeoff",
@@ -33555,6 +33559,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "성씨 분포가 달라 BISG 적용이 어려운 이유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "balanced-error-rate",
+   "label": "균형 오류율(BER)",
+   "parent": "proxy-detection-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 집단 오류의 평균, 예측 가능성 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "disparate-impact-remover",
+   "label": "차별 영향 제거(데이터 수리)",
+   "parent": "proxy-detection-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포를 조정해 보호 속성 예측 가능성을 낮추는 전처리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "feature-ablation-proxy",
+   "label": "변수 제거로 프록시 찾기",
+   "parent": "proxy-detection-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수를 빼고 BER·성능 변화를 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ricci-v-destefano",
+   "label": "Ricci v. DeStefano",
+   "parent": "proxy-detection-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "80% 규칙과 시험 사용을 다룬 미국 판례.",
    "added": "2026-11-18",
    "related": []
   }
