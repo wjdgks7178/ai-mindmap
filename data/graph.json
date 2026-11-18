@@ -37571,11 +37571,14 @@
    "label": "결측값 처리",
    "parent": "data-quality-for-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "결측의 유형과 대체·제외 판단.",
+   "summary": "결측 이유(MCAR·MAR·MNAR)를 따져 삭제·대체·표시를 선택. sklearn 대체 도구.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-leakage"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-distribution-bias",
@@ -38520,6 +38523,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "훈련된 팀, 비용·품질 트레이드오프.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "mcar-mar-mnar",
+   "label": "MCAR·MAR·MNAR",
+   "parent": "data-missing-values",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측 메커니즘 세 분류.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "multiple-imputation",
+   "label": "다중 대체",
+   "parent": "data-missing-values",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불확실성을 반영한 여러 번의 대체.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "missing-indicator-feature",
+   "label": "결측 표시 특징",
+   "parent": "data-missing-values",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빈칸 여부 자체를 입력으로.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "native-nan-models",
+   "label": "NaN 직접 처리 모델",
+   "parent": "data-missing-values",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트리 계열 모델의 결측 처리.",
    "added": "2026-11-18",
    "related": []
   }
