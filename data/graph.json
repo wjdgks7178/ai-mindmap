@@ -37363,11 +37363,12 @@
    "label": "분할 비율 관행",
    "parent": "train-validation-test-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "8:1:1 등 관행과 데이터 크기별 조절.",
+   "summary": "80/10/10·70/15/15 등은 관행. 데이터 크기와 희귀 클래스 수에 맞춰 조절.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "label-consistency-guideline",
@@ -37944,6 +37945,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙서를 LLM 라벨링 프롬프트로 옮기기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stratified-train-test-split",
+   "label": "층화 train_test_split",
+   "parent": "split-ratio-conventions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "stratify 인자로 클래스 비율 유지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "test-set-size-rare-class",
+   "label": "희귀 클래스 기준 시험 크기",
+   "parent": "split-ratio-conventions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트에 희귀 샘플이 충분한지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "random-state-reproducibility",
+   "label": "random_state와 재현성",
+   "parent": "split-ratio-conventions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할을 고정해 재현.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "small-data-validation-strategy",
+   "label": "소규모 데이터 검증 전략",
+   "parent": "split-ratio-conventions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차 검증 중심.",
    "added": "2026-11-18",
    "related": []
   }
