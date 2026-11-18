@@ -37431,11 +37431,14 @@
    "label": "데이터 증강",
    "parent": "data-centric-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "조명·크기·시점을 바꿔 범위 확장.",
+   "summary": "뒤집기·자르기·색 변경·번역 왕복으로 학습 데이터 범위를 넓힘. 학습 세트에만.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "synthetic-data"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "common-crawl",
@@ -38094,6 +38097,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "FineWeb이 스냅샷별을 택한 이유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "mixup-cutmix",
+   "label": "MixUp·CutMix",
+   "parent": "data-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배치 샘플을 섞어 만드는 증강.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "randaugment-autoaugment",
+   "label": "RandAugment·AutoAugment",
+   "parent": "data-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위·학습된 증강 정책.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "back-translation",
+   "label": "번역 왕복(back-translation)",
+   "parent": "data-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텍스트 증강: 번역 후 되돌려 번역.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-preserving-transform",
+   "label": "라벨 보존 변환",
+   "parent": "data-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답이 바뀌지 않는 변형만 사용.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "augmentation-for-detection",
+   "label": "탐지용 증강(박스 동시 변환)",
+   "parent": "data-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박스·마스크를 이미지와 같이 변환.",
    "added": "2026-11-18",
    "related": []
   }
