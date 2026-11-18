@@ -20074,11 +20074,15 @@
    "label": "승급 조건",
    "parent": "risk-tiered-intents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문의를 다음 단계로 올리는 표본·정확도·안정 기준.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "intent-demotion-triggers",
+    "read-only-vs-action-intents"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "intent-demotion-triggers",
@@ -34507,6 +34511,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "권한 검사를 LLM이 아니라 하위 시스템에서 강제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "wilson-score-interval",
+   "label": "윌슨 구간",
+   "parent": "intent-promotion-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비율의 신뢰구간을 안정적으로 구하는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rule-of-three",
+   "label": "3의 법칙",
+   "parent": "intent-promotion-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0건 사건의 95% 오류율 상한 3/n.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "minimum-sample-size-for-bound",
+   "label": "최소 표본 수 산정",
+   "parent": "intent-promotion-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 오류율 상한을 보이는 데 필요한 표본 수.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-quality-audit",
+   "label": "라벨 품질 감사",
+   "parent": "intent-promotion-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 라벨의 오류가 평가에 미치는 영향.",
    "added": "2026-11-18",
    "related": []
   }
