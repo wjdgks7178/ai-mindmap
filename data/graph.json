@@ -19870,11 +19870,15 @@
    "label": "오류 계층 분리 감사",
    "parent": "stt-error-propagation",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "STT 오류와 요약 오류를 따로 측정.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "stt-error-propagation",
+    "number-entity-errors"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "disposition-code-design",
@@ -35815,6 +35819,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기다리는 동안 유용한 활동 제공.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gold-transcript-baseline",
+   "label": "정답 전사 기준선",
+   "parent": "error-layer-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 만든 정답 전사로 요약 모델 단독 성능을 측정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "fact-checklist-eval",
+   "label": "핵심 사실 체크리스트 평가",
+   "parent": "error-layer-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약당 핵심 사실을 미리 정해 대조하는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "jiwer",
+   "label": "jiwer",
+   "parent": "error-layer-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "WER 등 음성 인식 지표 계산 라이브러리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "error-type-breakdown",
+   "label": "오류 유형별 집계",
+   "parent": "error-layer-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자·이름·누락·환각별로 오류를 나눠 센다.",
    "added": "2026-11-18",
    "related": []
   }
