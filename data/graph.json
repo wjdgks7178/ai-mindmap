@@ -20461,11 +20461,15 @@
    "label": "요약 충실도 점수",
    "parent": "handoff-summary-quality",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM 판정자로 1~5점 매기기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "error-layer-audit",
+    "source-linked-summary"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "summary-omission",
@@ -36045,6 +36049,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미 수집된 정보를 상담사가 다시 묻는지 대화에서 탐지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "g-eval",
+   "label": "G-Eval",
+   "parent": "summary-faithfulness-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM으로 NLG를 채점하는 평가 틀.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "claim-level-faithfulness",
+   "label": "주장 단위 충실도",
+   "parent": "summary-faithfulness-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약을 주장으로 쪼개 원문과 대조.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "judge-position-bias",
+   "label": "판정자 위치 편향",
+   "parent": "summary-faithfulness-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서에 따라 점수가 달라지는 편향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "judge-human-agreement",
+   "label": "판정자·사람 일치도",
+   "parent": "summary-faithfulness-score",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 판정자를 쓰기 전 사람 표본과 상관 확인.",
    "added": "2026-11-18",
    "related": []
   }
