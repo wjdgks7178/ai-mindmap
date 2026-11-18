@@ -37459,11 +37459,14 @@
    "label": "FineWeb·FineWeb-Edu",
    "parent": "training-data-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "15조 토큰 공개 코퍼스와 교육용 부분집합.",
+   "summary": "Common Crawl 96스냅샷 15T토큰 공개 코퍼스와 LLM 점수 기반 1.3T 교육용 부분집합.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "common-crawl"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "pretraining-data-filtering",
@@ -38210,6 +38213,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "광고·잡글·중복·저품질 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "educational-quality-classifier",
+   "label": "교육 품질 분류기",
+   "parent": "fineweb",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 점수를 학습한 회귀 분류기로 데이터 선별.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "llm-as-data-annotator",
+   "label": "LLM을 데이터 주석자로",
+   "parent": "fineweb",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 대량 데이터에 점수를 매기는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ablation-data-studies",
+   "label": "데이터 ablation 실험",
+   "parent": "fineweb",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터만 바꾸고 작은 모델로 효과 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "odc-by-license",
+   "label": "ODC-By 라이선스",
+   "parent": "fineweb",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 데이터베이스 이용 조건.",
    "added": "2026-11-18",
    "related": []
   }
