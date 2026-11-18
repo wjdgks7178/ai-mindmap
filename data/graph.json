@@ -37220,11 +37220,12 @@
    "label": "학습 데이터 기초",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "학습·검증·시험 데이터의 역할과 출처.",
+   "summary": "지도·사전학습·지시 데이터의 종류. 공개 코퍼스는 Common Crawl 기반, 필터·중복 제거가 관건.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "data-labeling",
@@ -37415,6 +37416,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "조명·크기·시점을 바꿔 범위 확장.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "common-crawl",
+   "label": "Common Crawl",
+   "parent": "training-data-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 웹 크롤 아카이브, 사전학습 원천.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "fineweb",
+   "label": "FineWeb·FineWeb-Edu",
+   "parent": "training-data-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "15조 토큰 공개 코퍼스와 교육용 부분집합.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pretraining-data-filtering",
+   "label": "사전학습 데이터 필터링",
+   "parent": "training-data-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추출·언어 판별·품질 필터 파이프라인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "deduplication-minhash",
+   "label": "중복 제거(MinHash)",
+   "parent": "training-data-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근접 중복을 찾는 퍼지 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "instruction-preference-data",
+   "label": "지시·선호 데이터",
+   "parent": "training-data-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후학습에 쓰는 질문-답, 우열 데이터.",
    "added": "2026-11-18",
    "related": []
   }
