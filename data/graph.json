@@ -37771,11 +37771,14 @@
    "label": "TensorFlow Data Validation",
    "parent": "data-validation-tools",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "스키마·편향·드리프트 탐지.",
+   "summary": "TFX용 데이터 검증: 스키마 검증, 학습-서빙 편향, 드리프트(L-무한대·JS 발산).",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-validation-tools"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "training-serving-skew",
@@ -39105,6 +39108,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "옛 튜토리얼과 맞지 않는 점.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "tfdv-schema-environments",
+   "label": "TFDV 스키마 환경",
+   "parent": "tfdv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·서빙에서 필요한 특징이 다를 때.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "l-infinity-js-divergence",
+   "label": "L-무한대·젠슨-섀넌 거리",
+   "parent": "tfdv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "드리프트를 재는 거리 척도.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "facets-data-visualization",
+   "label": "Facets 데이터 시각화",
+   "parent": "tfdv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포를 눈으로 보고 버그를 발견.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "biased-sampling-reweighting",
+   "label": "편향 샘플링과 가중치 복원",
+   "parent": "tfdv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과소 슬라이스 보강 후 분포 왜곡.",
    "added": "2026-11-18",
    "related": []
   }
