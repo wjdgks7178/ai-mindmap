@@ -20144,11 +20144,15 @@
    "label": "롤백 계획",
    "parent": "rollout-gates",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "출시 전에 합의하는 되돌리기 조건과 담당자.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "shadow-mode",
+    "rollout-gates"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "containment-rate",
@@ -34434,6 +34438,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "행동을 일으키는 기능의 그림자 호출 통제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "feature-flag-rollback",
+   "label": "기능 플래그 롤백",
+   "parent": "rollback-plan",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배포 없이 기능을 끄는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "canary-vs-control",
+   "label": "카나리 대 대조군 비교",
+   "parent": "rollback-plan",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카나리와 나머지의 지표를 비교해 판정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "error-budget",
+   "label": "오류 예산",
+   "parent": "rollback-plan",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 가능한 실패 규모와 출시 속도의 관계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "post-rollback-customer-correction",
+   "label": "롤백 후 고객 정정",
+   "parent": "rollback-plan",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미 나간 잘못된 답변을 바로잡는 절차.",
    "added": "2026-11-18",
    "related": []
   }
