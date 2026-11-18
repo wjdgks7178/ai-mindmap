@@ -19514,22 +19514,28 @@
    "label": "스코어카드 점수화",
    "parent": "woe-binning",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로지스틱 계수를 점수표로 변환.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "information-value"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "optbinning",
    "label": "OptBinning",
    "parent": "woe-binning",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "최적 구간화 라이브러리.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "information-value"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "partial-dependence-check",
@@ -33016,6 +33022,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "시간에 따른 분포 변화를 재는 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "binning-constraints",
+   "label": "구간화 제약 조건",
+   "parent": "optbinning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단조성·최소 구간 크기 등 최적화 제약.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "counterfactual-scorecard",
+   "label": "스코어카드 반사실적 설명",
+   "parent": "optbinning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수를 바꾸려면 무엇을 바꿔야 하는지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pdo-scaling",
+   "label": "PDO 점수 스케일링",
+   "parent": "scorecard-points",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "odds 2배당 점수 변화로 점수를 보정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "scorecard-limitations",
+   "label": "스코어카드 한계",
+   "parent": "scorecard-points",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상호작용 미반영 등.",
    "added": "2026-11-18",
    "related": []
   }
