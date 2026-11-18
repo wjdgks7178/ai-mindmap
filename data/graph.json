@@ -35300,11 +35300,15 @@
    "label": "Erlang C 모델",
    "parent": "wait-time-estimation-limits",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "M/M/c 대기열의 대기 확률 식.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "wait-time-estimation-limits",
+    "average-handle-time"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "occupancy-sensitivity",
@@ -35336,6 +35340,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "대기가 길 때 대기 대신 콜백을 제안하는 설계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "service-level-80-20",
+   "label": "서비스 수준 80/20",
+   "parent": "erlang-c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "20초 안에 80% 응답 같은 목표 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "erlang-b",
+   "label": "Erlang B 모델",
+   "parent": "erlang-c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대기열 없는 손실 모델.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "occupancy-target",
+   "label": "점유율 목표",
+   "parent": "erlang-c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상담사 바쁨 비율과 소진 위험.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "staffing-simulation",
+   "label": "인력 산정 시뮬레이션",
+   "parent": "erlang-c",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이론식이 못 담는 변동을 시뮬레이션으로 보정.",
    "added": "2026-11-18",
    "related": []
   }
