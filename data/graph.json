@@ -37732,11 +37732,14 @@
    "label": "낡은 문서 정리",
    "parent": "data-maintenance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "RAG에서 구버전·폐기 문서 관리.",
+   "summary": "RAG 색인의 구버전·삭제 문서 제거. 임베딩 유사도는 시간을 모름. 좀비 문서·버전 드리프트.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "knowledge-retrieval"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "query-acceleration",
@@ -39000,6 +39003,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "대용량 파일 관리 방식 차이.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "zombie-documents",
+   "label": "좀비 문서",
+   "parent": "stale-document-cleanup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본에서 지웠는데 색인에 남은 문서.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "silent-version-drift",
+   "label": "조용한 버전 드리프트",
+   "parent": "stale-document-cleanup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "갱신본이 옛 버전과 나란히 추가됨.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "embedding-model-mismatch",
+   "label": "임베딩 모델 불일치",
+   "parent": "stale-document-cleanup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 교체 후 재색인 없음.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "freshness-prefilter-vs-decay",
+   "label": "신선도 사전 필터 vs 감쇠",
+   "parent": "stale-document-cleanup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제거할지 순위만 낮출지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rag-reconciliation-job",
+   "label": "RAG 대조 작업",
+   "parent": "stale-document-cleanup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본과 색인 ID를 비교해 정리.",
    "added": "2026-11-18",
    "related": []
   }
