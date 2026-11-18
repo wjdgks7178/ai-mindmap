@@ -19761,11 +19761,14 @@
    "label": "Loper Bright 판결",
    "parent": "fair-housing-act",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기관 해석 존중 약화 판결.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "hud-disparate-impact-rule"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "inclusive-communities",
@@ -33747,6 +33750,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "광고·심사 알고리즘과 FHA 책임.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "chevron-deference",
+   "label": "셰브런 존중 원칙",
+   "parent": "loper-bright",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1984년부터 2024년까지 쓰인 기관 해석 존중 틀.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "skidmore-deference",
+   "label": "Skidmore 존중",
+   "parent": "loper-bright",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설득력에 따라 기관 의견을 참고하는 약한 존중.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "agency-guidance-weight",
+   "label": "기관 가이던스의 법적 무게",
+   "parent": "loper-bright",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 관련 지침이 법원에서 갖는 지위.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "apa-judicial-review",
+   "label": "행정절차법 사법 심사",
+   "parent": "loper-bright",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "법원이 기관 행위를 심사하는 근거.",
    "added": "2026-11-18",
    "related": []
   }
