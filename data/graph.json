@@ -19500,11 +19500,14 @@
    "label": "IV(정보값)",
    "parent": "woe-binning",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변수 구분력 요약 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "optbinning"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "scorecard-points",
@@ -32969,6 +32972,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "거절 안내문에 권리를 알리는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "iv-threshold-convention",
+   "label": "IV 해석 임계값 관습",
+   "parent": "information-value",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0.02·0.1·0.3·0.5 기준과 그 한계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "iv-leakage-check",
+   "label": "IV 누수 점검",
+   "parent": "information-value",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IV가 비정상적으로 높을 때의 원인 탐색.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "jeffreys-divergence",
+   "label": "Jeffreys 발산",
+   "parent": "information-value",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KL 발산을 대칭화한 거리, IV와의 관계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "psi-stability",
+   "label": "PSI(모집단 안정성 지수)",
+   "parent": "information-value",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간에 따른 분포 변화를 재는 지표.",
    "added": "2026-11-18",
    "related": []
   }
