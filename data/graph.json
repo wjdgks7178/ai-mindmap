@@ -19645,11 +19645,15 @@
    "label": "작은 표본 주의",
    "parent": "four-fifths-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "표본이 작을 때 비율의 불안정성.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "adverse-impact-ratio",
+    "small-category-exclusion"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "model-multiplicity",
@@ -33330,6 +33334,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "격차의 크기를 표현하는 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "statistical-power",
+   "label": "검정력",
+   "parent": "small-sample-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진짜 격차를 찾아낼 확률.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confidence-interval-rate",
+   "label": "선발률 신뢰구간",
+   "parent": "small-sample-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비율의 불확실성 범위 표기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pooling-periods",
+   "label": "기간 합산 분석",
+   "parent": "small-sample-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 기간·채용 건을 합쳐 표본 확대.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "monte-carlo-false-alarm",
+   "label": "몬테카를로 오경보 실험",
+   "parent": "small-sample-caveat",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "난수 실험으로 오경보 확률 추정.",
    "added": "2026-11-18",
    "related": []
   }
