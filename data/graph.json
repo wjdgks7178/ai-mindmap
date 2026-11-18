@@ -20129,11 +20129,15 @@
    "label": "섀도 모드",
    "parent": "rollout-gates",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 초안을 고객 대신 상담사만 보게 하는 시험 기간.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "draft-acceptance-rate",
+    "rollback-plan"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "rollback-plan",
@@ -34386,6 +34390,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "지표 정의·창 변경을 문서화하는 습관.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "traffic-mirroring",
+   "label": "트래픽 미러링",
+   "parent": "shadow-mode",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청을 복제해 후보 시스템에 보내는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "canary-release",
+   "label": "카나리 릴리스",
+   "parent": "shadow-mode",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 사용자에게만 먼저 제공하는 출시 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "llm-judge-shadow",
+   "label": "LLM 판정자 채점",
+   "parent": "shadow-mode",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섀도 출력의 품질을 LLM으로 점수화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "shadow-side-effects",
+   "label": "섀도 모드의 부작용 차단",
+   "parent": "shadow-mode",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동을 일으키는 기능의 그림자 호출 통제.",
    "added": "2026-11-18",
    "related": []
   }
