@@ -19868,11 +19868,15 @@
    "label": "처리 결과 코드 설계",
    "parent": "call-disposition-classification",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "겹치지 않는 코드 체계 만들기.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "code-distribution-monitoring",
+    "escalation-recall"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "escalation-recall",
@@ -34651,6 +34655,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "수요 변화·분류기 변화·코드 변경을 가르는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "customer-intent-taxonomy",
+   "label": "고객 의도 기준 분류 체계",
+   "parent": "disposition-code-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부서가 아닌 연락 이유로 코드를 짜는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "primary-secondary-code",
+   "label": "주 코드와 보조 코드",
+   "parent": "disposition-code-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2층 구조로 이유와 세부를 분리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "code-definition-calibration",
+   "label": "코드 정의 보정 세션",
+   "parent": "disposition-code-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "애매한 건을 함께 검토해 기준을 맞추는 모임.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "other-code-overuse",
+   "label": "기타 코드 남용",
+   "parent": "disposition-code-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류가 어려울 때 기타로 몰리는 문제.",
    "added": "2026-11-18",
    "related": []
   }
