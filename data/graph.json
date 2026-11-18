@@ -20285,11 +20285,15 @@
    "label": "검색 점수 기반 이관",
    "parent": "confidence-calibration-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "근거 문서 유사도로 이관 판단.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "confidence-calibration-handoff",
+    "knowledge-gap-escalation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "escalation-reason-taxonomy",
@@ -35048,6 +35052,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기계번역으로 만든 평가셋이 실제와 다를 수 있음.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "score-gap-signal",
+   "label": "점수 간격 신호",
+   "parent": "retrieval-score-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1위와 다음 순위 점수의 차이를 기권 신호로 쓰기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "sufficient-context-classifier",
+   "label": "충분한 문맥 분류기",
+   "parent": "retrieval-score-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 문맥이 답에 충분한지 판정하는 분류기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "abstention-eval-set",
+   "label": "답 없는 질의 평가셋",
+   "parent": "retrieval-score-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기권 능력을 재기 위한 답이 없는 질문 모음.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "domain-gate",
+   "label": "도메인 게이트",
+   "parent": "retrieval-score-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범위 밖 질의를 검색 전에 거르는 단계.",
    "added": "2026-11-18",
    "related": []
   }
