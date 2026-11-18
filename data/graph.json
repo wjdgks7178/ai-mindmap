@@ -20308,11 +20308,15 @@
    "label": "이관 사유 분류",
    "parent": "escalation-rate-target",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "6가지 이유와 담당 조직 매핑.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "knowledge-gap-escalation",
+    "disposition-code-design"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "knowledge-gap-escalation",
@@ -35240,6 +35244,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상담사가 즉시 공백을 표시해 문서화하는 흐름.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalated-by-attribute",
+   "label": "이관 주체 속성(escalated by)",
+   "parent": "escalation-reason-taxonomy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 규칙·절차가 이관을 발동했는지 기록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "other-bucket-threshold",
+   "label": "기타 사유 비율 기준",
+   "parent": "escalation-reason-taxonomy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잔여 기타를 8% 미만으로 유지하는 기준.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "reason-cost-by-family",
+   "label": "사유별 처리 비용",
+   "parent": "escalation-reason-taxonomy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사유 계열별 중앙 처리 시간 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "text-cluster-reason-discovery",
+   "label": "대화 군집화로 사유 발굴",
+   "parent": "escalation-reason-taxonomy",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전 목록 대신 대화 텍스트에서 새 사유를 찾는 방법.",
    "added": "2026-11-18",
    "related": []
   }
