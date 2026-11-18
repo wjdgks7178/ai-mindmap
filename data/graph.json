@@ -20607,11 +20607,12 @@
    "label": "PII 가림 방식",
    "parent": "pii-minimization-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "마스킹·가명처리·삭제·암호화 비교.",
+   "summary": "마스킹·가명처리·삭제·암호화의 복원 가능성과 쓸모 비교.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "pre-vs-post-inference-redaction",
@@ -36521,6 +36522,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "개인정보 관련 공식 통계의 주요 출처.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pseudonym-mapping-table",
+   "label": "가명 대응표 보관",
+   "parent": "pii-redaction-types",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대응표를 원본과 분리해 보관.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "hash-brute-force-risk",
+   "label": "해시 대입 공격 위험",
+   "parent": "pii-redaction-types",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "좁은 값 범위의 해시는 역산 가능.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pseudonymization-guideline-2024",
+   "label": "가명정보 처리 가이드라인",
+   "parent": "pii-redaction-types",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인정보위 현행 가이드라인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-aggregation-categorization",
+   "label": "총계처리·범주화",
+   "parent": "pii-redaction-types",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인 단위 정보를 묶어서 흐리기.",
    "added": "2026-11-18",
    "related": []
   }
