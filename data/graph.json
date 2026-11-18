@@ -20753,11 +20753,12 @@
    "label": "트리거 귀속",
    "parent": "transfer-success-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "각 이관이 어떤 신호로 발동했는지 기록.",
+   "summary": "이관 사유를 이관 순간에 코드로 기록. 8개 코드 분류 예(자체 집계)와 활용.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "short-abandon-threshold",
@@ -37001,17 +37002,6 @@
    "related": []
   },
   {
-   "id": "escalation-trigger-attribution",
-   "label": "이관 트리거 귀속",
-   "parent": "over-escalation-false-positive",
-   "domain": "ai-applications",
-   "status": "planned",
-   "priority": 3,
-   "summary": "확신도·감정·규칙 중 무엇이 이관을 일으켰나.",
-   "added": "2026-11-18",
-   "related": []
-  },
-  {
    "id": "confidence-threshold-tuning",
    "label": "확신도 임계값 조정",
    "parent": "over-escalation-false-positive",
@@ -37129,6 +37119,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "경로별 동일 문구로 틀 편향 방지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalation-reason-code-taxonomy",
+   "label": "이관 사유 코드 체계",
+   "parent": "trigger-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주·보조 코드와 8개 코드군.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "authority-limit-escalation",
+   "label": "권한 한도 이관",
+   "parent": "trigger-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책 상한 때문에 의도적으로 넘기는 이관.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "handling-time-weighted-priority",
+   "label": "처리 시간 가중 우선순위",
+   "parent": "trigger-attribution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "건수가 아니라 소요 시간으로 개선 순위.",
    "added": "2026-11-18",
    "related": []
   }
