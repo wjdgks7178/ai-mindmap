@@ -37286,11 +37286,15 @@
    "label": "학습·검증·시험 분할",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "세트를 나누고 시험 데이터 누출을 막기.",
+   "summary": "학습·검증·시험 세트로 나눠 거짓 점수를 막는다. 시험은 마지막에 한 번.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-leakage",
+    "overfitting"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "inference-data-development",
@@ -37322,6 +37326,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Great Expectations·TFDV·Deequ.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "k-fold-cross-validation",
+   "label": "k-겹 교차 검증",
+   "parent": "train-validation-test-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 세트를 k조각으로 돌려 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "group-wise-split",
+   "label": "그룹 단위 분할",
+   "parent": "train-validation-test-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사용자·문서가 양쪽에 걸치지 않게.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "split-ratio-conventions",
+   "label": "분할 비율 관행",
+   "parent": "train-validation-test-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "8:1:1 등 관행과 데이터 크기별 조절.",
    "added": "2026-11-18",
    "related": []
   }
