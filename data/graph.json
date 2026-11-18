@@ -37258,11 +37258,14 @@
    "label": "데이터 라이선스와 출처",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 데이터의 저작권·계보 추적.",
+   "summary": "데이터의 출처·계보·라이선스 추적. 호스팅 사이트 라이선스 오표기가 흔함.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "purpose-limitation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-centric-ai",
@@ -37563,6 +37566,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "집단·시기별 과소·과대 대표 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-provenance-explorer",
+   "label": "Data Provenance Explorer",
+   "parent": "data-licensing-provenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터셋 출처·라이선스 탐색 도구.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "license-inheritance-derived-data",
+   "label": "파생 데이터 라이선스 상속",
+   "parent": "data-licensing-provenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원 데이터 조건이 파생물에 미치는지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "internal-data-card",
+   "label": "사내 데이터 카드",
+   "parent": "data-licensing-provenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처·허용 용도·삭제 기한을 한 장에.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "model-cards",
+   "label": "모델 카드",
+   "parent": "data-licensing-provenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 용도·한계·학습 데이터를 문서화.",
    "added": "2026-11-18",
    "related": []
   }
