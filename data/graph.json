@@ -20633,11 +20633,12 @@
    "label": "맥락 창 접근 기록",
    "parent": "pii-minimization-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "어떤 데이터가 언제 들어왔는지 기록.",
+   "summary": "모델 입력에 어떤 데이터가 언제 들어왔는지 남기는 기록과 한계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "purpose-limitation",
@@ -36701,6 +36702,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "장기 비밀키 위주라는 분석과 한계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "otel-genai-conventions",
+   "label": "OpenTelemetry GenAI 규약",
+   "parent": "context-window-access-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 호출 관측용 표준 속성(개발 단계).",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "prompt-content-opt-in",
+   "label": "프롬프트 내용 기록 옵트인",
+   "parent": "context-window-access-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감정보 때문에 기본 꺼두는 설정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "audit-trail-join",
+   "label": "감사 추적 결합 요소",
+   "parent": "context-window-access-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신원·분류·정책 평가를 트레이스에 결합.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "log-retention-policy",
+   "label": "로그 보관 정책",
+   "parent": "context-window-access-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필드별 보관 기간과 가림 규칙.",
    "added": "2026-11-18",
    "related": []
   }
