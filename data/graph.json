@@ -20645,11 +20645,12 @@
    "label": "목적 제한",
    "parent": "pii-minimization-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "범용 어시스턴트 재사용 시 경계.",
+   "summary": "수집 목적 범위 안에서만 쓴다. AI 학습 재이용은 별도 근거 필요.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "silent-session-exclusion",
@@ -36746,6 +36747,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "필드별 보관 기간과 가림 규칙.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "reasonable-relatedness-test",
+   "label": "합리적 관련성 판단",
+   "parent": "purpose-limitation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추가 이용 허용 여부를 가르는 기준.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "legitimate-interest-public-data",
+   "label": "정당한 이익과 공개 정보",
+   "parent": "purpose-limitation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개된 개인정보 AI 개발 근거와 한계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "korea-chatbot-training-ruling",
+   "label": "AI 챗봇 학습 판결(2025)",
+   "parent": "purpose-limitation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서울동부지법 2025.6.12 판결.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "purpose-tagged-retention",
+   "label": "목적 태그 보관",
+   "parent": "purpose-limitation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터에 목적·삭제일 태그 부착.",
    "added": "2026-11-18",
    "related": []
   }
