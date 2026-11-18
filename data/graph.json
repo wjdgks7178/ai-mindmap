@@ -20020,11 +20020,14 @@
    "label": "해결률 resolution rate",
    "parent": "deflection-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "해결 확인 신호로 세는 진짜 성과 지표.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "reopened-as-ticket"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "reopened-as-ticket",
@@ -34244,6 +34247,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "노출·수락·지속·속도 지표 묶음.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confirmed-vs-assumed-resolution",
+   "label": "확인된 해결과 가정된 해결",
+   "parent": "resolution-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "명시 확인과 무응답 이탈을 분리해 보고하는 이유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "outcome-based-pricing",
+   "label": "결과 기반 과금",
+   "parent": "resolution-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결·결과 건당 비용을 매기는 가격 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "resolution-definition-audit",
+   "label": "해결 정의 감사",
+   "parent": "resolution-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벤더별 해결 정의를 표로 비교하는 점검.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "csat-vs-resolution",
+   "label": "CSAT와 해결률",
+   "parent": "resolution-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객 만족과 시스템 판정 해결의 차이.",
    "added": "2026-11-18",
    "related": []
   }
