@@ -19614,11 +19614,15 @@
    "label": "도메인 전문가 검토",
    "parent": "wrong-sign-diagnostic",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "방향 가정을 사람이 확인.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "sign-check-table",
+    "wrong-sign-diagnostic"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "adverse-impact-ratio",
@@ -34795,6 +34799,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "단위를 통일해 변수 영향을 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "effective-challenge",
+   "label": "효과적 도전(Effective Challenge)",
+   "parent": "domain-expert-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립적 전문가가 모델 위험을 비판 분석하고 변경을 이끄는 원칙.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "model-definition-scope",
+   "label": "모델 정의와 지침 범위",
+   "parent": "domain-expert-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정량 모형·규칙 기반·생성형 AI의 범위 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "selection-bias-sign",
+   "label": "선택 편향과 계수 부호",
+   "parent": "domain-expert-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "승인된 사람만 관측될 때 부호가 뒤집히는 현상.",
    "added": "2026-11-18",
    "related": []
   }
