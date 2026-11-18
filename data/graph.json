@@ -37275,11 +37275,12 @@
    "label": "데이터 중심 AI",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 2,
-   "summary": "모델보다 데이터 품질·양 개선에 초점.",
+   "summary": "모델은 고정, 데이터의 일관성·커버리지·청결을 고쳐 성능을 올리는 접근.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "train-validation-test-split",
@@ -37359,6 +37360,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "8:1:1 등 관행과 데이터 크기별 조절.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-consistency-guideline",
+   "label": "라벨링 규칙서",
+   "parent": "data-centric-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "애매한 경우 판단 규칙을 문서화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-error-detection",
+   "label": "라벨 오류 탐지",
+   "parent": "data-centric-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델-라벨 불일치로 오류 후보 찾기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "targeted-data-collection",
+   "label": "표적 데이터 수집",
+   "parent": "data-centric-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류 분석 후 약한 곳에 데이터 추가.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "near-duplicate-removal",
+   "label": "근접 중복 제거",
+   "parent": "data-centric-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·시험 사이 거의 같은 샘플 제거.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-augmentation",
+   "label": "데이터 증강",
+   "parent": "data-centric-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조명·크기·시점을 바꿔 범위 확장.",
    "added": "2026-11-18",
    "related": []
   }
