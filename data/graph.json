@@ -37647,11 +37647,15 @@
    "label": "데이터 슬라이싱",
    "parent": "inference-data-development",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "취약한 하위 집단을 찾는 평가.",
+   "summary": "하위 집단별로 쪼개 평가. Domino 슬라이스 발견, CheckList 행동 테스트.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "data-distribution-bias"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "ood-evaluation",
@@ -38728,6 +38732,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "인구·교차 집단별 벤치마크.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "domino-slice-discovery",
+   "label": "Domino 슬라이스 발견",
+   "parent": "data-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차 모달 임베딩으로 저성능 슬라이스 설명.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "checklist-behavioral-testing",
+   "label": "CheckList 행동 테스트",
+   "parent": "data-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NLP 모델의 능력별 테스트 매트릭스.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "coherent-slice",
+   "label": "일관된 슬라이스",
+   "parent": "data-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 이해할 개념으로 묶이는 저성능 집단.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "slice-sample-size-caution",
+   "label": "슬라이스 표본 크기 주의",
+   "parent": "data-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 슬라이스의 점수는 노이즈.",
    "added": "2026-11-18",
    "related": []
   }
