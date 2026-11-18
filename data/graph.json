@@ -20234,11 +20234,15 @@
    "label": "조용한 이탈 신호",
    "parent": "sentiment-trigger",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "공손하지만 떠나는 고객의 행동 신호.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "sarcasm-detection",
+    "sentiment-threshold-calibration"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "sentiment-threshold-calibration",
@@ -35144,6 +35148,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델·언어 변경과 시간에 따른 재보정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "customer-baseline-deviation",
+   "label": "고객 자체 기준선 대비 변화",
+   "parent": "quiet-churn-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균이 아닌 그 고객의 평소 패턴과 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "friction-then-silence",
+   "label": "마찰 후 침묵",
+   "parent": "quiet-churn-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문제를 겪고도 말없이 이용 방식만 바꾸는 신호.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "leading-indicator-backtest",
+   "label": "선행 지표 백테스트",
+   "parent": "quiet-churn-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이탈 고객의 30·60·90일 전 행동으로 지표 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "save-measurement-90d",
+   "label": "이탈 방어 성공 판정 기준",
+   "parent": "quiet-churn-signal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "90일 건강한 이용 후에 방어로 세기.",
    "added": "2026-11-18",
    "related": []
   }
