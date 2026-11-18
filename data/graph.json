@@ -37720,11 +37720,12 @@
    "label": "데이터 버전 관리",
    "parent": "data-maintenance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 변경 이력과 재현성.",
+   "summary": "데이터 변경 이력을 남겨 재현·복원. DVC는 .dvc 메타데이터를 Git으로 관리.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "stale-document-cleanup",
@@ -38955,6 +38956,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 제공자에게 보상하는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "dvc",
+   "label": "DVC",
+   "parent": "data-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Git과 함께 쓰는 데이터 버전 관리 도구.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "experiment-reproducibility",
+   "label": "실험 재현성",
+   "parent": "data-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드 버전 + 데이터 버전 + 설정 기록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rag-index-versioning",
+   "label": "RAG 인덱스 버전",
+   "parent": "data-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 문서 시점의 인덱스인지 기록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "git-lfs-vs-dvc",
+   "label": "Git LFS와 DVC 비교",
+   "parent": "data-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대용량 파일 관리 방식 차이.",
    "added": "2026-11-18",
    "related": []
   }
