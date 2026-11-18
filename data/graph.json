@@ -20681,11 +20681,12 @@
    "label": "지연 재접촉",
    "parent": "containment-rate-trap",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "며칠 뒤 다른 채널로 다시 오는 경우.",
+   "summary": "봉쇄 후 며칠 뒤 다른 채널로 재접촉. 고객 식별 연결 없으면 안 보임.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "repeat-contact-window",
@@ -36881,6 +36882,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "몇 주간 요청이 단순해지는 패턴.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cross-channel-identity-resolution",
+   "label": "채널 간 고객 식별",
+   "parent": "deferred-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "채널을 넘어 같은 고객을 묶는 기술.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "contact-issue-tagging",
+   "label": "문의 사유 태깅",
+   "parent": "deferred-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문제를 판정하는 태그·케이스 ID.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "provisional-metric-labeling",
+   "label": "잠정 지표 표기",
+   "parent": "deferred-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창이 안 닫힌 수치를 잠정으로 표시.",
    "added": "2026-11-18",
    "related": []
   }
