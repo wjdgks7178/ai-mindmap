@@ -37473,22 +37473,14 @@
    "label": "사전학습 데이터 필터링",
    "parent": "training-data-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "추출·언어 판별·품질 필터 파이프라인.",
+   "summary": "Gopher식 휴리스틱(단어 수·평균 길이·반복 임계값)과 분류기로 웹 문서를 거름.",
    "added": "2026-11-18",
-   "related": []
-  },
-  {
-   "id": "deduplication-minhash",
-   "label": "중복 제거(MinHash)",
-   "parent": "training-data-basics",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "근접 중복을 찾는 퍼지 방식.",
-   "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-quality-for-ai"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "instruction-preference-data",
@@ -38257,6 +38249,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "공개 데이터베이스 이용 조건.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gopher-massivetext",
+   "label": "Gopher·MassiveText",
+   "parent": "pretraining-data-filtering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DeepMind의 데이터 파이프라인 사례.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "safesearch-vs-wordlist",
+   "label": "SafeSearch vs 금지어 목록",
+   "parent": "pretraining-data-filtering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수동 금지어가 소수 집단 콘텐츠를 과도 제거.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "repetition-thresholds",
+   "label": "반복 제거 임계값",
+   "parent": "pretraining-data-filtering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "줄·문단·n-gram 중복 비율 한계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "model-likelihood-filtering",
+   "label": "모델 우도 필터링",
+   "parent": "pretraining-data-filtering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 확률로 문서를 거르는 방식과 한계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "multilingual-filter-adaptation",
+   "label": "다국어 필터 조정",
+   "parent": "pretraining-data-filtering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영어 기준 규칙을 다른 언어에 맞추기.",
    "added": "2026-11-18",
    "related": []
   }
