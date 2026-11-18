@@ -20107,11 +20107,14 @@
    "label": "읽기 전용 vs 행동 문의",
    "parent": "risk-tiered-intents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정보 안내와 계정 변경의 위험 차이.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "intent-promotion-criteria"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "source-article-ownership",
@@ -34482,6 +34485,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미 나간 잘못된 답변을 바로잡는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "excessive-agency",
+   "label": "과도한 행위 능력(Excessive Agency)",
+   "parent": "read-only-vs-action-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM에 과도한 기능·권한·자율성을 주는 위험.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "complete-mediation",
+   "label": "완전 중재",
+   "parent": "read-only-vs-action-intents",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권한 검사를 LLM이 아니라 하위 시스템에서 강제.",
    "added": "2026-11-18",
    "related": []
   }
