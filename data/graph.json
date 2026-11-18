@@ -19815,11 +19815,14 @@
    "label": "ACW 측정법",
    "parent": "after-call-work",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도입 전후 비교 설계.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "average-handle-time"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "number-entity-errors",
@@ -33841,6 +33844,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "건수×AHT로 필요 인원을 구하는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "staggered-rollout",
+   "label": "시차 도입(Staggered Rollout)",
+   "parent": "acw-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "팀별 도입 시점 차이를 이용한 효과 측정 설계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "difference-in-differences",
+   "label": "이중차분법",
+   "parent": "acw-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처리군과 대조군의 변화 차이로 효과를 추정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "acw-definition-boundary",
+   "label": "ACW 경계 정의",
+   "parent": "acw-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어디부터 어디까지를 후처리로 볼지의 기준.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "heterogeneous-effects",
+   "label": "집단별 효과 차이",
+   "parent": "acw-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신입과 숙련자에서 AI 도구 효과가 다른 이유.",
    "added": "2026-11-18",
    "related": []
   }
