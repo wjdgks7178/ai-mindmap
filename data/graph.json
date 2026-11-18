@@ -35695,11 +35695,14 @@
    "label": "포획-재포획 추정",
    "parent": "audit-seeded-errors",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 검수자의 중복 발견으로 총 오류 수를 추정.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "audit-seeded-errors"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "seeded-error-realism",
@@ -35720,6 +35723,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "검수자·시간대·업무별 검출률 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "lincoln-petersen-estimator",
+   "label": "Lincoln–Petersen 추정",
+   "parent": "capture-recapture",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표시 비율로 총 개체 수를 추정하는 기본식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "chapman-estimator",
+   "label": "Chapman 추정",
+   "parent": "capture-recapture",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 표본에서 편향을 줄인 수정식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "independent-review-protocol",
+   "label": "독립 검수 프로토콜",
+   "parent": "capture-recapture",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수자들이 서로 결과를 보지 않게 하는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "unequal-catchability",
+   "label": "발견 확률의 불균등",
+   "parent": "capture-recapture",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어려운 오류를 모두 놓쳐 총수가 과소 추정되는 문제.",
    "added": "2026-11-18",
    "related": []
   }
