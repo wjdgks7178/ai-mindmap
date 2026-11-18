@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "nodes": [
   {
    "id": "ai",
@@ -19410,11 +19410,15 @@
    "label": "완전 자동화 결정",
    "parent": "pipa-automated-decision",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사람 개입이 없는 결정의 판단 기준.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "significant-impact",
+    "human-in-the-loop-boundary"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "significant-impact",
@@ -32748,6 +32752,28 @@
    "priority": 3,
    "summary": "은행·보험·카드사 등 대상 기관.",
    "added": "2026-11-17",
+   "related": []
+  },
+  {
+   "id": "meaningful-human-involvement",
+   "label": "실질적 인적 개입",
+   "parent": "fully-automated",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식적 서명과 구분되는 의미 있는 개입 기준.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pipc-automated-notice",
+   "label": "자동화 결정 조치 기준 고시",
+   "parent": "fully-automated",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인정보위 고시가 정한 처리자의 조치.",
+   "added": "2026-11-18",
    "related": []
   }
  ]
