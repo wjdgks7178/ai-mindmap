@@ -20705,11 +20705,12 @@
    "label": "이관 후 재접촉률",
    "parent": "transfer-success-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "24시간 내 같은 고객의 재접촉.",
+   "summary": "이관 건의 24시간 내 재접촉 비율. 20~25% 임계값은 근거 없는 벤더 주장.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "handoff-csat-gap",
@@ -36949,6 +36950,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "SaaS·핀테크·물류·통신 제안.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "handoff-tagging",
+   "label": "이관 대화 태깅",
+   "parent": "post-escalation-recontact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 건을 표시해 따로 추적.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "own-baseline-first",
+   "label": "자사 기준선 먼저",
+   "parent": "post-escalation-recontact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 임계값 대신 자체 기준선 측정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "recontact-cause-triage",
+   "label": "재접촉 원인 분류",
+   "parent": "post-escalation-recontact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맥락 손실·후속 미이행·확인차 문의.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "handoff-vs-nonhandoff-compare",
+   "label": "이관·비이관 집단 비교",
+   "parent": "post-escalation-recontact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 집단 지표를 나란히 보고.",
    "added": "2026-11-18",
    "related": []
   }
