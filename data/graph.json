@@ -37374,11 +37374,14 @@
    "label": "라벨링 규칙서",
    "parent": "data-centric-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "애매한 경우 판단 규칙을 문서화.",
+   "summary": "정의·긍부정 예시·경계 사례를 적은 라벨러용 문서. 시범→수정 반복.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-labeling-qa"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "label-error-detection",
@@ -37886,6 +37889,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차 검증으로 얻는 예측 확률.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "annotation-pilot-round",
+   "label": "시범 라벨링 라운드",
+   "parent": "label-consistency-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본 작업 전 소수로 연습하고 일치도 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "double-annotation-adjudication",
+   "label": "이중 라벨링과 판정",
+   "parent": "label-consistency-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 두 명 라벨링 후 조정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "calibration-items",
+   "label": "보정 문항",
+   "parent": "label-consistency-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공통 문서를 주기적으로 독립 라벨링.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "guideline-edge-case-log",
+   "label": "경계 사례 기록",
+   "parent": "label-consistency-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새로 발견된 애매한 사례를 규칙서에 누적.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "llm-labeler-guideline-prompt",
+   "label": "LLM 라벨러 프롬프트",
+   "parent": "label-consistency-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙서를 LLM 라벨링 프롬프트로 옮기기.",
    "added": "2026-11-18",
    "related": []
   }
