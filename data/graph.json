@@ -37830,11 +37830,12 @@
    "label": "Leave-One-Out 검증",
    "parent": "k-fold-cross-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "샘플 하나씩 빼는 극단적 교차 검증.",
+   "summary": "1개씩 빼는 교차 검증(모델 n개). 직접 실행: iris 150회 적합, 5겹의 약 18배 시간.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "cv-fold-count-choice",
@@ -39197,6 +39198,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "층화는 누수를 막지 못함.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "leave-p-out",
+   "label": "Leave-P-Out",
+   "parent": "leave-one-out-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "p개씩 빼는 모든 조합 C(n,p).",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cv-variance-bias-tradeoff",
+   "label": "교차 검증의 편향-분산 균형",
+   "parent": "leave-one-out-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "k가 클수록 편향↓·분산↑ 경향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "learning-curve",
+   "label": "학습 곡선",
+   "parent": "leave-one-out-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 크기에 따른 성능 변화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cv-compute-cost",
+   "label": "교차 검증 계산 비용",
+   "parent": "leave-one-out-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 수와 학습 시간.",
    "added": "2026-11-18",
    "related": []
   }
