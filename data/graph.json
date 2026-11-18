@@ -20476,11 +20476,15 @@
    "label": "요약 누락",
    "parent": "handoff-summary-quality",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사실은 맞아도 빠진 정보 문제.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "summary-completeness",
+    "summary-faithfulness-score"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "summary-completeness",
@@ -36141,6 +36145,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "숫자·이름 일치를 따로 보는 보조 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "key-fact-checklist",
+   "label": "핵심 사실 체크리스트",
+   "parent": "summary-omission",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통화당 반드시 들어가야 할 사실 목록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "critical-omission-zero",
+   "label": "치명 누락 0건 목표",
+   "parent": "summary-omission",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약속·위험 정보 누락을 따로 관리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "required-field-template",
+   "label": "필수 칸 템플릿",
+   "parent": "summary-omission",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약에 비어 있는 칸을 강조하는 양식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "omission-review-difficulty",
+   "label": "누락 검수의 어려움",
+   "parent": "summary-omission",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "없는 것은 눈에 띄지 않아 원문 대조가 필요.",
    "added": "2026-11-18",
    "related": []
   }
