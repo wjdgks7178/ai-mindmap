@@ -37417,11 +37417,14 @@
    "label": "근접 중복 제거",
    "parent": "data-centric-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습·시험 사이 거의 같은 샘플 제거.",
+   "summary": "거의 같은 문서를 제거. 암기 약 10배 감소·평가 겹침 4% 이상(논문 주장).",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-leakage"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-augmentation",
@@ -38036,6 +38039,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "하위표본 재학습으로 이득 추정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "minhash-lsh",
+   "label": "MinHash·LSH",
+   "parent": "near-duplicate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집합 유사도를 근사하는 지문 기법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "exact-substring-dedup",
+   "label": "정확 부분 문자열 제거",
+   "parent": "near-duplicate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴 반복 구간을 suffix array로 제거.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "datatrove",
+   "label": "datatrove",
+   "parent": "near-duplicate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Hugging Face 대규모 텍스트 처리 라이브러리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "memorization-in-llms",
+   "label": "LLM 암기",
+   "parent": "near-duplicate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 텍스트를 그대로 재현하는 현상.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "per-snapshot-vs-global-dedup",
+   "label": "스냅샷별 vs 전역 중복 제거",
+   "parent": "near-duplicate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FineWeb이 스냅샷별을 택한 이유.",
    "added": "2026-11-18",
    "related": []
   }
