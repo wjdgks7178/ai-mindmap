@@ -37691,11 +37691,15 @@
    "label": "견고성 테스트",
    "parent": "inference-data-development",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "입력 변형에 대한 안정성.",
+   "summary": "입력 변형에 대한 안정성 시험. 일반 손상(ImageNet-C)과 적대적 사례는 다른 시험.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "ai-safety",
+    "data-augmentation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-valuation",
@@ -38860,6 +38864,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "변경에 드는 노력·기간 고려.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "imagenet-c-p",
+   "label": "ImageNet-C·ImageNet-P",
+   "parent": "robustness-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일반 손상·섭동 견고성 벤치마크.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "adversarial-examples",
+   "label": "적대적 사례",
+   "parent": "robustness-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부러 만든 최악 사례 입력.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "perturbation-severity-levels",
+   "label": "변형 강도 단계",
+   "parent": "robustness-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약함→강함 단계별 성능 곡선.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "prediction-consistency-metric",
+   "label": "예측 일관성 지표",
+   "parent": "robustness-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변형 전후 답이 같은 비율.",
    "added": "2026-11-18",
    "related": []
   }
