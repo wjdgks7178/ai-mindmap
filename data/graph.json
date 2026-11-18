@@ -20446,11 +20446,15 @@
    "label": "반복 설명률",
    "parent": "handoff-wait-time",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "고객이 같은 말을 다시 하는 비율.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "estimated-wait-message",
+    "source-linked-summary"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "summary-faithfulness-score",
@@ -36008,6 +36012,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "집계 지표가 가리는 의도별 편차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "customer-effort-score",
+   "label": "고객 노력 점수(CES)",
+   "parent": "repeat-explanation-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문제 해결에 든 노력에 대한 고객 평가 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "perception-gap-leaders-vs-customers",
+   "label": "리더와 고객의 인식 격차",
+   "parent": "repeat-explanation-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관이 맥락을 보존한다는 믿음과 고객 경험의 차이.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "re-ask-detection",
+   "label": "재질문 탐지",
+   "parent": "repeat-explanation-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미 수집된 정보를 상담사가 다시 묻는지 대화에서 탐지.",
    "added": "2026-11-18",
    "related": []
   }
