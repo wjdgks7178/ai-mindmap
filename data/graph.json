@@ -37757,11 +37757,14 @@
    "label": "Great Expectations",
    "parent": "data-validation-tools",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Expectation·Checkpoint 기반 검증 라이브러리.",
+   "summary": "데이터 기대 조건을 코드로 검사. 1.25.0 직접 실행: 중복·범위·결측 위반 확인.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-validation-tools"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "tfdv",
@@ -39058,6 +39061,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "원본과 색인 ID를 비교해 정리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gx-checkpoint-actions",
+   "label": "GX Checkpoint와 Action",
+   "parent": "great-expectations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영 검증 실행과 알림.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gx-null-vs-range",
+   "label": "결측과 범위 검사의 차이",
+   "parent": "great-expectations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범위 검사는 결측을 무시.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gx-data-docs",
+   "label": "GX Data Docs",
+   "parent": "great-expectations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 결과를 사람이 읽는 페이지로.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gx-api-version-differences",
+   "label": "GX 0.x와 1.x API 차이",
+   "parent": "great-expectations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 튜토리얼과 맞지 않는 점.",
    "added": "2026-11-18",
    "related": []
   }
