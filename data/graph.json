@@ -37524,11 +37524,12 @@
    "label": "데이터 프로그래밍(Snorkel)",
    "parent": "data-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨링 함수로 대량 자동 라벨링.",
+   "summary": "라벨링 함수(규칙)로 노이즈 라벨을 만들고 통계 모델로 정리. Snorkel 논문·저장소 현황.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "crowdsourcing-labeling",
@@ -38374,6 +38375,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "사내 데이터를 밖에 내보내지 않는 구성.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "weak-supervision",
+   "label": "약한 지도(weak supervision)",
+   "parent": "programmatic-labeling-snorkel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불완전한 라벨 소스를 결합해 학습.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "labeling-function",
+   "label": "라벨링 함수",
+   "parent": "programmatic-labeling-snorkel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터에 노이즈 라벨을 붙이는 규칙 코드.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-model-denoising",
+   "label": "라벨 모델(노이즈 정리)",
+   "parent": "programmatic-labeling-snorkel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙들의 정확도·상관을 추정해 합치기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "lf-coverage-conflict",
+   "label": "LF 커버리지와 충돌",
+   "parent": "programmatic-labeling-snorkel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙이 라벨을 붙인 비율과 서로 어긋난 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "llm-as-labeling-function",
+   "label": "LLM을 라벨링 함수로",
+   "parent": "programmatic-labeling-snorkel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 기반 규칙으로 라벨링.",
    "added": "2026-11-18",
    "related": []
   }
