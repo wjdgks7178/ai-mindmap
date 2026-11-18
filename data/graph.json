@@ -9322,9 +9322,10 @@
    "priority": 3,
    "summary": "보정 불일치를 숫자 하나로 요약.",
    "added": "2026-11-08",
-   "done": "2026-11-13",
+   "done": "2026-11-18",
    "related": [
-    "model-calibration"
+    "calibration-curve",
+    "confidence-calibration-handoff"
    ]
   },
   {
