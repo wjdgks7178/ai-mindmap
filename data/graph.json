@@ -19966,11 +19966,14 @@
    "label": "정규화 편집 거리",
    "parent": "edit-distance-metric",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "길이 보정 비율.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "accept-without-edit-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "persistence-metric",
@@ -34113,6 +34116,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "단위에 따라 거리가 달라지는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rapidfuzz",
+   "label": "RapidFuzz",
+   "parent": "normalized-edit-distance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빠른 문자열 거리·유사도 파이썬 라이브러리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "edit-threshold-setting",
+   "label": "무수정 임계값 설정",
+   "parent": "normalized-edit-distance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화 거리 기준으로 사실상 무수정을 정의하는 법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "indel-distance",
+   "label": "Indel 거리",
+   "parent": "normalized-edit-distance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "치환을 삭제+삽입 2회로 치는 편집 거리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "normalization-metric-property",
+   "label": "정규화와 거리 공리",
+   "parent": "normalized-edit-distance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화 방식이 삼각부등식에 미치는 영향.",
    "added": "2026-11-18",
    "related": []
   }
