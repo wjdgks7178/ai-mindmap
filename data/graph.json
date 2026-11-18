@@ -37677,11 +37677,14 @@
    "label": "알고리즘적 대안 제시",
    "parent": "inference-data-development",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "결정을 바꾸려면 무엇을 바꿔야 하는지.",
+   "summary": "거절 결정을 바꾸려면 실행 가능한 변경이 무엇인지 알려 줌. 반사실 설명과 recourse 정의.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "explanation-request-trend"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "robustness-testing",
@@ -38824,6 +38827,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공변량·라벨·개념 변화 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "actionable-features",
+   "label": "실행 가능한 특징",
+   "parent": "algorithmic-recourse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "바꿀 수 있는 변수와 불가한 변수 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "recourse-audit-integer-programming",
+   "label": "recourse 점검(정수 계획법)",
+   "parent": "algorithmic-recourse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선형 분류기의 대안 제공 여부 감사.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "recourse-cost-and-time",
+   "label": "대안의 비용·시간",
+   "parent": "algorithmic-recourse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경에 드는 노력·기간 고려.",
    "added": "2026-11-18",
    "related": []
   }
