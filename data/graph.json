@@ -19581,11 +19581,14 @@
    "label": "다중공선성",
    "parent": "wrong-sign-diagnostic",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변수 간 상관이 계수를 흔드는 문제.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "woe-binning"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "sign-check-table",
@@ -33116,6 +33119,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가정이 확실한 변수에만 제약 적용.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "vif",
+   "label": "VIF(분산팽창계수)",
+   "parent": "multicollinearity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공선성 정도를 보는 지표와 해석 기준.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ridge-stabilization",
+   "label": "Ridge 규제와 계수 안정화",
+   "parent": "multicollinearity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규제 강도가 상관 변수 계수를 안정시키는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "coefficient-cv-stability",
+   "label": "교차검증 계수 안정성",
+   "parent": "multicollinearity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RepeatedKFold로 계수 분포 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "feature-combination",
+   "label": "상관 변수 결합",
+   "parent": "multicollinearity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비율·사용률 같은 파생 변수로 합치기.",
    "added": "2026-11-18",
    "related": []
   }
