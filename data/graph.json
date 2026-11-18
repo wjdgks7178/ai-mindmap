@@ -37706,11 +37706,14 @@
    "label": "데이터 가치 평가",
    "parent": "data-maintenance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 샘플이 성능에 기여하는 정도.",
+   "summary": "샘플별 성능 기여도 점수. Data Shapley와 영향 함수로 오염·가치 있는 데이터 찾기.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "label-error-detection"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-versioning",
@@ -38908,6 +38911,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "변형 전후 답이 같은 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "shapley-value",
+   "label": "Shapley 값",
+   "parent": "data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "협력 게임의 공정한 기여도 분배.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "influence-functions",
+   "label": "영향 함수",
+   "parent": "data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측을 책임 큰 학습 샘플로 추적.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "leave-one-out-valuation",
+   "label": "Leave-one-out 가치",
+   "parent": "data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 샘플을 빼서 변화 측정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-compensation-markets",
+   "label": "데이터 보상·거래 논의",
+   "parent": "data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 제공자에게 보상하는 문제.",
    "added": "2026-11-18",
    "related": []
   }
