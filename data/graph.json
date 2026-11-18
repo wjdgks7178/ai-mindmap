@@ -20256,11 +20256,15 @@
    "label": "다국어 감정 분석",
    "parent": "sentiment-trigger",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "언어별 별도 시험이 필요한 이유.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "sarcasm-detection",
+    "sentiment-threshold-calibration"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "rlhf-overconfidence",
@@ -35000,6 +35004,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "버전이 바뀔 때 보정 곡선을 다시 그리는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "zero-shot-cross-lingual-transfer",
+   "label": "제로샷 교차 언어 전이",
+   "parent": "multilingual-sentiment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 언어 예시 없이 다른 언어로 모델을 옮기는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "small-multilingual-models",
+   "label": "소형 다국어 모델(SMLM)",
+   "parent": "multilingual-sentiment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "mT5·XLM-R 같은 다국어 사전학습 모델.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "per-language-evaluation",
+   "label": "언어별 평가 표본",
+   "parent": "multilingual-sentiment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어마다 자사 데이터로 따로 평가하는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "translated-eval-data-risk",
+   "label": "번역 평가 데이터의 위험",
+   "parent": "multilingual-sentiment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기계번역으로 만든 평가셋이 실제와 다를 수 있음.",
    "added": "2026-11-18",
    "related": []
   }
