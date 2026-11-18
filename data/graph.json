@@ -19702,11 +19702,14 @@
    "label": "보호 속성 추정",
    "parent": "proxy-variable",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이름·지역으로 인종·성별을 추정하는 방법과 오차.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "proxy-detection-model"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "proxy-detection-model",
@@ -33508,6 +33511,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "인구통계 동등성·균등 오류율 등 정의 간 충돌.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "bisg",
+   "label": "BISG",
+   "parent": "protected-attribute-inference",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성씨와 지역으로 인종 확률을 추정하는 CFPB 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "geocoding-precision",
+   "label": "지오코딩 정밀도",
+   "parent": "protected-attribute-inference",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주소 정밀도가 지역 인구 통계 정밀도를 정함.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "threshold-misclassification",
+   "label": "확률의 임계값 변환 오류",
+   "parent": "protected-attribute-inference",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률을 범주로 바꿀 때 생기는 오차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "korea-surname-limit",
+   "label": "한국에서의 성씨 기반 추정 한계",
+   "parent": "protected-attribute-inference",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성씨 분포가 달라 BISG 적용이 어려운 이유.",
    "added": "2026-11-18",
    "related": []
   }
