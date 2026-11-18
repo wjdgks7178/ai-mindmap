@@ -19746,11 +19746,15 @@
    "label": "HUD 차별 영향 규정",
    "parent": "fair-housing-act",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "2013·2023 규정과 2026 폐지 제안.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "inclusive-communities",
+    "less-discriminatory-alternative"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "loper-bright",
@@ -33699,6 +33703,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 책임 이론의 차이.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "burden-shifting-framework",
+   "label": "3단계 부담 이전 틀",
+   "parent": "hud-disparate-impact-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원고·피고·원고 순으로 입증책임이 옮겨가는 구조.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "eo-14281",
+   "label": "행정명령 14281",
+   "parent": "hud-disparate-impact-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차별 영향 책임을 최대한 없애려는 2025년 행정명령.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "state-fair-housing-laws",
+   "label": "주 공정주택법",
+   "parent": "hud-disparate-impact-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연방 규정과 별개로 차별 영향을 인정하는 주 법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "algorithmic-housing-discrimination",
+   "label": "주택 분야 알고리즘 차별",
+   "parent": "hud-disparate-impact-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "광고·심사 알고리즘과 FHA 책임.",
    "added": "2026-11-18",
    "related": []
   }
