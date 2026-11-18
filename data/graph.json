@@ -19388,22 +19388,28 @@
    "label": "결과 재산출 요구",
    "parent": "credit-info-act-36-2",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정정·삭제 후 평가를 다시 산출.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "human-reprocessing"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "refusal-grounds",
    "label": "요구 거부 사유",
    "parent": "credit-info-act-36-2",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "법령·거래 곤란 등.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "human-reprocessing"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "fully-automated",
@@ -32869,6 +32875,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "결정을 바꿀 권한이 있는 사람의 요건.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-correction-first",
+   "label": "정정 우선 원칙",
+   "parent": "recalculation-request",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 입력을 먼저 고치는 순서.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "recalculation-deadline",
+   "label": "재산출 처리 기한",
+   "parent": "recalculation-request",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시행령이 정한 처리 기간 확인 필요.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "repeated-request-limit",
+   "label": "반복 요구 제한",
+   "parent": "refusal-grounds",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 거래에 3회 이상 반복 시 거절 안내.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "refusal-notice-duty",
+   "label": "거절 통지 의무",
+   "parent": "refusal-grounds",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절 시 사유를 알려야 하는 절차.",
    "added": "2026-11-18",
    "related": []
   }
