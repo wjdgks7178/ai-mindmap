@@ -20212,11 +20212,14 @@
    "label": "빈정거림 탐지",
    "parent": "sentiment-trigger",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "감정 분석이 약한 대표 사례.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "quiet-churn-signal"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "quiet-churn-signal",
@@ -34832,6 +34835,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "승인된 사람만 관측될 때 부호가 뒤집히는 현상.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "context-incongruity",
+   "label": "맥락 불일치 이론",
+   "parent": "sarcasm-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "글자 감정과 상황의 불일치로 빈정거림을 설명.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "sarcasmbench",
+   "label": "SarcasmBench",
+   "parent": "sarcasm-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM의 빈정거림 이해를 평가한 벤치마크.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "behavioral-escalation-signals",
+   "label": "행동 기반 이관 신호",
+   "parent": "sarcasm-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재문의·상담원 요청 등 감정 점수 대신 쓰는 신호.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "multimodal-sarcasm",
+   "label": "멀티모달 빈정거림",
+   "parent": "sarcasm-detection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "억양·표정·텍스트를 함께 보는 탐지.",
    "added": "2026-11-18",
    "related": []
   }
