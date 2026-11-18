@@ -19817,11 +19817,16 @@
    "label": "요약 검수 시간",
    "parent": "after-call-work",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 요약 후 사람이 검토하는 시간.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "after-call-work",
+    "acw-measurement",
+    "blind-approval-signal"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "acw-measurement",
@@ -35863,6 +35868,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "숫자·이름·누락·환각별로 오류를 나눠 센다.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "net-time-saving",
+   "label": "순 절감 시간",
+   "parent": "summary-review-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직접 작성 시간에서 초안과 검수 시간을 뺀 효과.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ambient-scribe-trial",
+   "label": "앰비언트 스크라이브 무작위 시험",
+   "parent": "summary-review-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NEJM AI 시험으로 본 AI 기록 도구 효과.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "control-group-time-drift",
+   "label": "대조군에서도 줄어드는 시간",
+   "parent": "summary-review-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도입과 무관한 시간 감소가 전후 비교를 부풀림.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "review-event-instrumentation",
+   "label": "검수 이벤트 계측",
+   "parent": "summary-review-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약 열람부터 승인까지를 로그로 측정.",
    "added": "2026-11-18",
    "related": []
   }
