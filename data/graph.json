@@ -19940,11 +19940,15 @@
    "label": "오류 삽입 감사",
    "parent": "accept-without-edit-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의도적 오류로 검수 주의 측정.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "seeded-error-testing",
+    "blind-approval-signal"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "acceptance-quality-link",
@@ -35672,6 +35676,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "삭제 대신 보관해 추적성과 복원 가능성 유지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "remaining-error-estimation",
+   "label": "남은 오류 추정",
+   "parent": "audit-seeded-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삽입 오류 발견 비율로 전체 실제 오류 수를 추정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "capture-recapture",
+   "label": "포획-재포획 추정",
+   "parent": "audit-seeded-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 검수자의 중복 발견으로 총 오류 수를 추정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "seeded-error-realism",
+   "label": "삽입 오류의 현실성",
+   "parent": "audit-seeded-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삽입 오류가 실제 오류를 얼마나 닮았는지의 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "detection-rate-by-reviewer",
+   "label": "검수자별 검출률",
+   "parent": "audit-seeded-errors",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수자·시간대·업무별 검출률 비교.",
    "added": "2026-11-18",
    "related": []
   }
