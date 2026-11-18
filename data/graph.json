@@ -20728,22 +20728,24 @@
    "label": "과잉 이관",
    "parent": "transfer-success-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "AI가 가진 정보로 풀리는 이관.",
+   "summary": "AI 정보로 풀렸을 불필요한 이관(오탐). 임계값 예시는 근거 없음.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "late-escalation-false-negative",
    "label": "과소 이관",
    "parent": "transfer-success-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "늦은 이관이 만드는 불만.",
+   "summary": "필요한데 안 하거나 늦은 이관(미탐). 불만 누적 뒤 드러남.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "trigger-attribution",
@@ -36994,6 +36996,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 집단 지표를 나란히 보고.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalation-trigger-attribution",
+   "label": "이관 트리거 귀속",
+   "parent": "over-escalation-false-positive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신도·감정·규칙 중 무엇이 이관을 일으켰나.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confidence-threshold-tuning",
+   "label": "확신도 임계값 조정",
+   "parent": "over-escalation-false-positive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기 높게 두고 데이터로 조정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "sentiment-threshold-tuning",
+   "label": "감정 임계값 조정",
+   "parent": "over-escalation-false-positive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직설 표현을 불만으로 오인 방지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalation-sample-review",
+   "label": "이관 표본 검토",
+   "parent": "over-escalation-false-positive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 건을 읽어 과잉 비율 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "loop-detection-trigger",
+   "label": "반복 루프 감지 트리거",
+   "parent": "late-escalation-false-negative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 질문 반복 시 이관.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "post-ai-complaint-rate",
+   "label": "AI 처리 후 불만율",
+   "parent": "late-escalation-false-negative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미탐을 보는 간접 지표.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "early-escalation-claim",
+   "label": "조기 이관 효과 주장",
+   "parent": "late-escalation-false-negative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Forrester 링크의 정성적 주장 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "escalation-precision-recall",
+   "label": "이관 정밀도·재현율",
+   "parent": "late-escalation-false-negative",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오탐·미탐을 수치로 정리하는 틀.",
    "added": "2026-11-18",
    "related": []
   }
