@@ -20245,11 +20245,15 @@
    "label": "감정 임계값 보정",
    "parent": "sentiment-trigger",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과거 티켓으로 기준 정하기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "sentiment-trigger",
+    "escalation-recall"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "multilingual-sentiment",
@@ -35096,6 +35100,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "범위 밖 질의를 검색 전에 거르는 단계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "target-recall-first",
+   "label": "목표 재현율 우선 설정",
+   "parent": "sentiment-threshold-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "먼저 재현율 목표를 정하고 임계값을 고르는 순서.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "handoff-workload-tradeoff",
+   "label": "이관 업무량 균형",
+   "parent": "sentiment-threshold-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현율 상승에 따른 이관 비율 증가와 인력.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "biased-handoff-labels",
+   "label": "이관 라벨 편향",
+   "parent": "sentiment-threshold-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 이관된 건만 정답으로 삼는 라벨 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "threshold-recalibration-cadence",
+   "label": "임계값 재보정 주기",
+   "parent": "sentiment-threshold-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델·언어 변경과 시간에 따른 재보정.",
    "added": "2026-11-18",
    "related": []
   }
