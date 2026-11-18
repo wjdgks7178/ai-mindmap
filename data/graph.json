@@ -37785,11 +37785,15 @@
    "label": "학습-서빙 편향",
    "parent": "data-validation-tools",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습과 서빙 분포가 다른 문제.",
+   "summary": "학습 대 서빙 성능·특징의 차이. 원인 셋과 Rules of ML의 #29·#31·#37.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-drift",
+    "data-leakage"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "schema-inference",
@@ -39289,6 +39293,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "선언적 품질 규칙 표기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "log-serving-features",
+   "label": "서빙 특징 로깅",
+   "parent": "training-serving-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서빙 시점 특징을 저장해 학습에 재사용.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "table-join-snapshot",
+   "label": "조인 테이블 스냅샷",
+   "parent": "training-serving-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변하는 테이블을 주기적으로 고정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "feedback-loop-ml",
+   "label": "모델 피드백 고리",
+   "parent": "training-serving-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 출력이 미래 입력에 영향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "skew-measurement-stages",
+   "label": "편향 측정 3단계",
+   "parent": "training-serving-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·보류·다음 날·실시간 비교.",
    "added": "2026-11-18",
    "related": []
   }
