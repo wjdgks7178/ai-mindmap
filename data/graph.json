@@ -20109,11 +20109,15 @@
    "label": "이탈과 해결 구분",
    "parent": "deflection-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "고객이 포기한 것을 성공으로 세지 않기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "containment-rate",
+    "resolution-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "intent-promotion-criteria",
@@ -35960,6 +35964,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "채팅·요약·문서의 검토 주기에 맞춘 창.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "abandonment-signal-design",
+   "label": "이탈 판정 신호 설계",
+   "parent": "abandonment-vs-resolution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무반응·반복 질문·도중 종료로 이탈을 식별.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "resolution-confirmation-prompt",
+   "label": "해결 확인 질문 설계",
+   "parent": "abandonment-vs-resolution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결 여부를 묻는 문구와 응답 수집.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "response-bias-confirmation",
+   "label": "확인 응답 편향",
+   "parent": "abandonment-vs-resolution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확인 질문의 낮은 응답률과 편향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "per-intent-reporting",
+   "label": "의도별 보고",
+   "parent": "abandonment-vs-resolution",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집계 지표가 가리는 의도별 편차.",
    "added": "2026-11-18",
    "related": []
   }
