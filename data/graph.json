@@ -37600,11 +37600,12 @@
    "label": "Data Provenance Explorer",
    "parent": "data-licensing-provenance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터셋 출처·라이선스 탐색 도구.",
+   "summary": "데이터셋 출처·라이선스 조회 도구. 같은 팀의 Consent in Crisis 감사(14,000 도메인).",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "license-inheritance-derived-data",
@@ -38615,6 +38616,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "과소 대표 집단 비중 보정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "consent-in-crisis",
+   "label": "Consent in Crisis",
+   "parent": "data-provenance-explorer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웹 크롤링 동의 변화 감사 논문.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "robots-txt-vs-tos",
+   "label": "robots.txt와 이용약관 불일치",
+   "parent": "data-provenance-explorer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤링 제한 표현의 한계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ai-crawler-blocking",
+   "label": "AI 크롤러 차단",
+   "parent": "data-provenance-explorer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사이트가 AI 봇을 막는 방법과 확산.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "dataset-license-checklist",
+   "label": "데이터셋 라이선스 체크리스트",
+   "parent": "data-provenance-explorer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용 전 확인할 항목.",
    "added": "2026-11-18",
    "related": []
   }
