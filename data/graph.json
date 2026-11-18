@@ -37487,11 +37487,14 @@
    "label": "지시·선호 데이터",
    "parent": "training-data-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "후학습에 쓰는 질문-답, 우열 데이터.",
+   "summary": "후학습용 질문-모범답(지시)과 chosen/rejected(선호) 데이터. InstructGPT·hh-rlhf 예.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-labeling"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "label-studio",
@@ -37523,17 +37526,6 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨링 함수로 대량 자동 라벨링.",
-   "added": "2026-11-18",
-   "related": []
-  },
-  {
-   "id": "labeling-guideline-writing",
-   "label": "라벨링 지침서 쓰기",
-   "parent": "data-labeling",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "애매한 경계 사례를 예시로 문서화.",
    "added": "2026-11-18",
    "related": []
   },
@@ -38304,6 +38296,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "영어 기준 규칙을 다른 언어에 맞추기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "sft-supervised-finetuning",
+   "label": "SFT(지도 미세조정)",
+   "parent": "instruction-preference-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시범 답안으로 모델을 미세조정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "red-teaming-data",
+   "label": "레드팀 데이터",
+   "parent": "instruction-preference-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "취약점을 찾는 공격 대화 기록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "synthetic-preference-data",
+   "label": "합성 선호 데이터",
+   "parent": "instruction-preference-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 만든 선호 쌍과 그 한계.",
    "added": "2026-11-18",
    "related": []
   }
