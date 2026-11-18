@@ -37585,11 +37585,15 @@
    "label": "분포 편향 점검",
    "parent": "data-quality-for-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집단·시기별 과소·과대 대표 확인.",
+   "summary": "속성별 구성 쏠림을 세고 집단별 성능을 평가. Gender Shades 사례(최대 34.7% vs 0.8%).",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "ai-safety",
+    "data-slicing"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-provenance-explorer",
@@ -38567,6 +38571,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "트리 계열 모델의 결측 처리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gender-shades",
+   "label": "Gender Shades",
+   "parent": "data-distribution-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단별 오류율 격차를 보인 연구.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "dataset-composition-table",
+   "label": "데이터 구성 표",
+   "parent": "data-distribution-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속성별 개수·비율 표 만들기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "proxy-variables",
+   "label": "대리 변수",
+   "parent": "data-distribution-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감 속성을 지워도 상관 특징이 남는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "reweighting-oversampling",
+   "label": "재가중·오버샘플링",
+   "parent": "data-distribution-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과소 대표 집단 비중 보정.",
    "added": "2026-11-18",
    "related": []
   }
