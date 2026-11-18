@@ -20201,11 +20201,14 @@
    "label": "단계별 최소 표본",
    "parent": "rollout-gates",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "게이트 판단에 필요한 문의 건수 정하기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "intent-promotion-criteria"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "sarcasm-detection",
@@ -34879,6 +34882,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "억양·표정·텍스트를 함께 보는 탐지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "margin-of-error-sample-size",
+   "label": "오차 범위 기반 표본 수",
+   "parent": "minimum-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신뢰구간 반폭으로 필요한 n을 구하는 법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stratified-sampling-gate",
+   "label": "층화 표본 추출",
+   "parent": "minimum-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유형·위험등급별로 나눠 표본을 뽑는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "effective-sample-size",
+   "label": "유효 표본 크기",
+   "parent": "minimum-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 고객 등 독립이 아닌 표본의 보정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "sample-collection-duration",
+   "label": "표본 수집 기간 환산",
+   "parent": "minimum-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "건수를 유입량으로 나눠 일정에 반영.",
    "added": "2026-11-18",
    "related": []
   }
