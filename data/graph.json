@@ -19879,11 +19879,14 @@
    "label": "에스컬레이션 재현율",
    "parent": "call-disposition-classification",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "중요 건을 놓치지 않는 지표.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "disposition-code-design"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "code-distribution-monitoring",
@@ -33982,6 +33985,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 기능을 함께 쓰지 못하는 이유와 우회.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "fbeta-score",
+   "label": "F-beta 점수",
+   "parent": "escalation-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현율을 더 중시하는 가중 조화 평균.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "precision-recall-curve",
+   "label": "정밀도-재현율 곡선",
+   "parent": "escalation-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값별 정밀도와 재현율 변화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "missed-escalation-review",
+   "label": "놓친 에스컬레이션 검토",
+   "parent": "escalation-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "fn 건의 사유를 모아 개선하는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "alert-fatigue",
+   "label": "경보 피로",
+   "parent": "escalation-recall",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오탐이 많아 사람이 경보를 무시하는 현상.",
    "added": "2026-11-18",
    "related": []
   }
