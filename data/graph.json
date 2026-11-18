@@ -20319,11 +20319,15 @@
    "label": "지식 공백 이관",
    "parent": "escalation-rate-target",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문서에 답이 없어서 넘어가는 경우.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "retrieval-score-handoff",
+    "escalation-reason-taxonomy"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "intentional-vs-failure-escalation",
@@ -35192,6 +35196,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "90일 건강한 이용 후에 방어로 세기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "zero-result-search-log",
+   "label": "결과 없는 검색 기록",
+   "parent": "knowledge-gap-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도움말 검색에서 결과가 없던 질의 모음.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "gap-severity-score",
+   "label": "공백 심각도 점수",
+   "parent": "knowledge-gap-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "볼륨과 추세로 공백의 우선순위를 매기는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "revise-vs-create-article",
+   "label": "수정 대 신규 작성",
+   "parent": "knowledge-gap-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공백의 원인이 낡은 문서인지 없는 문서인지 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "knowledge-capture-by-agents",
+   "label": "상담사 지식 캡처",
+   "parent": "knowledge-gap-escalation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상담사가 즉시 공백을 표시해 문서화하는 흐름.",
    "added": "2026-11-18",
    "related": []
   }
