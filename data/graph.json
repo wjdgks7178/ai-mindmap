@@ -20266,11 +20266,14 @@
    "label": "RLHF 과신",
    "parent": "confidence-calibration-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보상 모델 편향이 만드는 과도한 확신.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "confidence-calibration-handoff"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "retrieval-score-handoff",
@@ -34974,6 +34977,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "정의 변경 시 두 수치를 함께 공개.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "calibration-curve",
+   "label": "보정 곡선(신뢰도 다이어그램)",
+   "parent": "rlhf-overconfidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신 구간별 실제 정확도를 그린 그림.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "recalibration-on-model-change",
+   "label": "모델 변경 후 재보정",
+   "parent": "rlhf-overconfidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버전이 바뀔 때 보정 곡선을 다시 그리는 절차.",
    "added": "2026-11-18",
    "related": []
   }
