@@ -20693,11 +20693,12 @@
    "label": "반복 접촉 창",
    "parent": "containment-rate-trap",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "재접촉을 세는 기간 정의.",
+   "summary": "재접촉을 세는 기간. 짧으면 과소, 길면 과대 집계. 근본 원인 해결 시간에 맞춤.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "post-escalation-recontact",
@@ -36915,6 +36916,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "창이 안 닫힌 수치를 잠정으로 표시.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "lifecycle-based-window",
+   "label": "생애주기 기반 창",
+   "parent": "repeat-contact-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마일스톤 기준으로 재접촉 창 정의.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "root-cause-resolution-time",
+   "label": "근본 원인 해결 시간",
+   "parent": "repeat-contact-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창 길이를 정하는 기준.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "industry-window-defaults",
+   "label": "업종별 창 기본값",
+   "parent": "repeat-contact-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SaaS·핀테크·물류·통신 제안.",
    "added": "2026-11-18",
    "related": []
   }
