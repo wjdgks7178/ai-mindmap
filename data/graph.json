@@ -37537,11 +37537,12 @@
    "label": "크라우드소싱 라벨링",
    "parent": "data-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "저비용 대량, 품질 관리 필요.",
+   "summary": "불특정 다수에게 맡겨 싸고 빠르게. 항목당 여러 명 + 작업자 편향 보정(2008 연구).",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "iso-iec-25012",
@@ -38475,6 +38476,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI에 회의적인 검수자의 오류 포착 우위.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "dawid-skene-aggregation",
+   "label": "Dawid-Skene 집계",
+   "parent": "crowdsourcing-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업자 편향을 추정해 라벨을 합치는 EM 모델.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "worker-quality-gold-questions",
+   "label": "작업자 품질 골드 문항",
+   "parent": "crowdsourcing-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 확실한 문항으로 작업자 정확도 추적.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "redundant-annotation-count",
+   "label": "항목당 라벨 수 정하기",
+   "parent": "crowdsourcing-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4개 안팎에서 전문가 수준(2008 연구).",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "managed-workforce-labeling",
+   "label": "관리형 인력 라벨링",
+   "parent": "crowdsourcing-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "훈련된 팀, 비용·품질 트레이드오프.",
    "added": "2026-11-18",
    "related": []
   }
