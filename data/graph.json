@@ -20550,11 +20550,15 @@
    "label": "근거 출처 태그",
    "parent": "handoff-schema",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "각 사실에 출처와 시각 붙이기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "source-linked-summary",
+    "authorization-scope"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "authorization-scope",
@@ -36380,6 +36384,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "프롬프트 주입으로 권한 필드가 조작돼도 하위에서 거부.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "source-type-taxonomy",
+   "label": "출처 유형 분류",
+   "parent": "evidence-provenance-tags",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객 발언·상담사 입력·시스템 조회·AI 추정 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "observed-at-timestamp",
+   "label": "관측 시각 기록",
+   "parent": "evidence-provenance-tags",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변하는 값의 조회 시각을 남기는 이유.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "unverified-flag",
+   "label": "미확인 표시",
+   "parent": "evidence-provenance-tags",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확인되지 않은 사실을 눈에 띄게 표시.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-lineage",
+   "label": "데이터 계보",
+   "parent": "evidence-provenance-tags",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터가 거쳐 온 경로를 추적.",
    "added": "2026-11-18",
    "related": []
   }
