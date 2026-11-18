@@ -19490,11 +19490,12 @@
    "label": "공식 통계 출처",
    "parent": "explanation-request-trend",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "금감원·신정원·개인정보위 자료.",
+   "summary": "이 권리만 집계한 공식 통계는 미확인. 확인 경로와 출처 신뢰도 순서.",
    "added": "2026-11-15",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "information-value",
@@ -36476,6 +36477,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "순환 사례로 범위 정의의 틈을 찾기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "statistics-absence-meaning",
+   "label": "통계 부재의 의미",
+   "parent": "automated-decision-stats-source",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집계 체계 없음과 이용 없음은 다르다.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "primary-source-hierarchy",
+   "label": "출처 신뢰도 순서",
+   "parent": "automated-decision-stats-source",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "법령·기관 자료 > 기사 > 블로그.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "law-effective-date-check",
+   "label": "법 시행일 교차 확인",
+   "parent": "automated-decision-stats-source",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "국가법령정보센터로 시행일 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pipc-annual-report",
+   "label": "개인정보위 연차보고서",
+   "parent": "automated-decision-stats-source",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인정보 관련 공식 통계의 주요 출처.",
    "added": "2026-11-18",
    "related": []
   }
