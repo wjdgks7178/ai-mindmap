@@ -20717,11 +20717,12 @@
    "label": "이관 건 CSAT 격차",
    "parent": "transfer-success-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이관 건과 비이관 건의 만족도 차이.",
+   "summary": "이관 건과 비이관 건의 만족도 차이. 복잡도·응답 편향·설문 시점을 통제해 비교.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "over-escalation-false-positive",
@@ -37084,6 +37085,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "오탐·미탐을 수치로 정리하는 틀.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ticket-complexity-tiers",
+   "label": "문의 복잡도 단계",
+   "parent": "handoff-csat-gap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복잡도 3~4단계로 나눠 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "survey-response-bias",
+   "label": "설문 응답 편향",
+   "parent": "handoff-csat-gap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양극단 고객이 더 많이 응답.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "csat-survey-timing",
+   "label": "CSAT 설문 시점",
+   "parent": "handoff-csat-gap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 건은 전체 해결 후 설문.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "csat-question-framing",
+   "label": "CSAT 질문 문구 통일",
+   "parent": "handoff-csat-gap",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경로별 동일 문구로 틀 편향 방지.",
    "added": "2026-11-18",
    "related": []
   }
