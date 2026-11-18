@@ -20089,11 +20089,15 @@
    "label": "강등 트리거",
    "parent": "risk-tiered-intents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오답 증가·사고 시 단계를 내리는 조건.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "intent-promotion-criteria",
+    "rollback-plan"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "draft-acceptance-rate",
@@ -34555,6 +34559,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정답 라벨의 오류가 평가에 미치는 영향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "p-chart",
+   "label": "p 관리도",
+   "parent": "intent-demotion-triggers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불량률(오답률)을 시간 순으로 관리 한계와 비교.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "western-electric-rules",
+   "label": "Western Electric 규칙",
+   "parent": "intent-demotion-triggers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관리도의 연속 점 이상 신호 규칙.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "immediate-vs-observed-demotion",
+   "label": "즉시 강등과 관찰 후 강등",
+   "parent": "intent-demotion-triggers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사고 유형별로 강등 속도를 달리하는 설계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "post-change-revalidation",
+   "label": "변경 후 재검증",
+   "parent": "intent-demotion-triggers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델·문서 변경 직후 표본을 다시 평가하는 절차.",
    "added": "2026-11-18",
    "related": []
   }
