@@ -20580,11 +20580,15 @@
    "label": "순환 이관",
    "parent": "handoff-schema",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "에이전트끼리 돌려 막는 실패와 감지.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "repeat-explanation-rate",
+    "handoff-boundary-validation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "scoped-tool-interface",
@@ -36428,6 +36432,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터가 거쳐 온 경로를 추적.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "hop-count-limit",
+   "label": "이관 횟수 한도",
+   "parent": "circular-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화당 이관 횟수 상한과 초과 시 사람 확정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "visited-agents-record",
+   "label": "방문 에이전트 기록",
+   "parent": "circular-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미 거친 에이전트 목록으로 재방문 감지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "fallback-owner",
+   "label": "기본 담당자(소유 없는 문의)",
+   "parent": "circular-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 에이전트도 소유하지 않는 문의를 받는 담당.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "routing-rule-gap-analysis",
+   "label": "라우팅 규칙 빈틈 분석",
+   "parent": "circular-handoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순환 사례로 범위 정의의 틈을 찾기.",
    "added": "2026-11-18",
    "related": []
   }
