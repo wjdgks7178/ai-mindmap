@@ -20765,11 +20765,12 @@
    "label": "단기 이탈 기준",
    "parent": "queue-abandonment",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "몇 초 안에 끊은 호를 제외하는 기준.",
+   "summary": "N초 내 종료 호를 이탈에서 빼는 기준. 표준 없음, 고정·공개가 원칙.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "abandon-rate-denominator",
@@ -37152,6 +37153,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "건수가 아니라 소요 시간으로 개선 순위.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "false-abandon",
+   "label": "가짜 이탈(잘못 건 호)",
+   "parent": "short-abandon-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오라우팅·잘못 건 번호로 인한 짧은 호.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "threshold-change-recalculation",
+   "label": "기준 변경 시 재계산",
+   "parent": "short-abandon-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준을 바꾸면 과거 수치도 새 기준으로.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "service-announcement-cutoff",
+   "label": "서비스 공지 컷오프",
+   "parent": "short-abandon-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장애 안내 방송 때 기준을 30초로 올리는 경우.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "handoff-call-short-abandon",
+   "label": "이관 호의 단기 이탈",
+   "parent": "short-abandon-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 이후 넘어온 호에 같은 기준을 쓸지.",
    "added": "2026-11-18",
    "related": []
   }
