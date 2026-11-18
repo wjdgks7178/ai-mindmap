@@ -19941,11 +19941,14 @@
    "label": "레벤슈타인 거리",
    "parent": "edit-distance-metric",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "삽입·삭제·치환 최소 횟수.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "accept-without-edit-rate"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "semantic-similarity-edit",
@@ -34066,6 +34069,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "높지만 완벽하지 않은 신뢰도에서 안주가 커지는 현상.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "wagner-fischer",
+   "label": "Wagner–Fischer 알고리즘",
+   "parent": "levenshtein",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "편집 거리를 표로 채워 계산하는 동적 계획법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "damerau-levenshtein",
+   "label": "Damerau–Levenshtein 거리",
+   "parent": "levenshtein",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인접 글자 교환을 1회 편집으로 치는 변형.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "hamming-distance",
+   "label": "해밍 거리",
+   "parent": "levenshtein",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 길이 문자열에서 다른 위치의 수.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "korean-jamo-edit-unit",
+   "label": "한국어 편집 단위(음절 vs 자모)",
+   "parent": "levenshtein",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단위에 따라 거리가 달라지는 문제.",
    "added": "2026-11-18",
    "related": []
   }
