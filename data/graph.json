@@ -37232,11 +37232,14 @@
    "label": "데이터 라벨링",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람·모델이 정답을 붙이는 과정과 품질 관리.",
+   "summary": "정답을 붙이는 일. 자체·크라우드·외주·모델 보조 방식 비교와 Label Studio.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-labeling-qa"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-quality-for-ai",
@@ -37471,6 +37474,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "후학습에 쓰는 질문-답, 우열 데이터.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-studio",
+   "label": "Label Studio",
+   "parent": "data-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오픈소스 라벨링 도구.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "model-assisted-prelabeling",
+   "label": "모델 보조 사전 라벨링",
+   "parent": "data-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 먼저 붙이고 사람이 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "programmatic-labeling-snorkel",
+   "label": "데이터 프로그래밍(Snorkel)",
+   "parent": "data-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨링 함수로 대량 자동 라벨링.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "labeling-guideline-writing",
+   "label": "라벨링 지침서 쓰기",
+   "parent": "data-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "애매한 경계 사례를 예시로 문서화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "crowdsourcing-labeling",
+   "label": "크라우드소싱 라벨링",
+   "parent": "data-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저비용 대량, 품질 관리 필요.",
    "added": "2026-11-18",
    "related": []
   }
