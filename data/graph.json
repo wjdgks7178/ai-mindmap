@@ -37351,11 +37351,12 @@
    "label": "그룹 단위 분할",
    "parent": "train-validation-test-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 사용자·문서가 양쪽에 걸치지 않게.",
+   "summary": "같은 환자·문서 샘플이 학습·시험에 갈리지 않게 그룹 단위로 분할.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "split-ratio-conventions",
@@ -37794,6 +37795,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "5·10 관행과 비용·분산 트레이드오프.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "leave-one-group-out",
+   "label": "Leave-One-Group-Out",
+   "parent": "group-wise-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹 하나씩 통째로 시험용으로.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "document-level-split",
+   "label": "문서 단위 분할",
+   "parent": "group-wise-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 문서에서 만든 QA를 같은 쪽에.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "group-definition",
+   "label": "그룹 정의하기",
+   "parent": "group-wise-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무엇을 같은 그룹으로 볼지 결정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "augmentation-group-leak",
+   "label": "증강본 그룹 누수",
+   "parent": "group-wise-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 원본의 증강본이 양쪽에 걸침.",
    "added": "2026-11-18",
    "related": []
   }
