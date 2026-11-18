@@ -20491,11 +20491,15 @@
    "label": "요약 완전성",
    "parent": "handoff-summary-quality",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "요청·행동·약속의 커버리지.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "summary-omission",
+    "summary-faithfulness-score"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "rouge-bleu-limits",
@@ -36189,6 +36193,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "없는 것은 눈에 띄지 않아 원문 대조가 필요.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "element-coverage",
+   "label": "요소별 커버리지",
+   "parent": "summary-completeness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청·약속·위험 정보 등 요소마다 포함률을 측정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "conciseness-completeness-balance",
+   "label": "간결성과 완전성의 균형",
+   "parent": "summary-completeness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "길이를 늘리지 않고 핵심을 덮는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "hidden-eval-set",
+   "label": "비공개 평가셋",
+   "parent": "summary-completeness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 체크리스트에 맞추는 것을 막는 별도 평가 데이터.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "annotator-agreement-checklist",
+   "label": "체크리스트 평가자 일치도",
+   "parent": "summary-completeness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 명 독립 라벨링의 일치 확인.",
    "added": "2026-11-18",
    "related": []
   }
