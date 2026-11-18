@@ -37299,22 +37299,26 @@
    "label": "추론 데이터 개발",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "예측 시 입력 데이터를 다듬는 일.",
+   "summary": "분포 안·밖 평가와 프롬프트 설계로 모델을 세밀히 평가·활용.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "data-maintenance",
    "label": "데이터 유지·관리",
    "parent": "ai-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "드리프트·버전·갱신을 챙기는 일.",
+   "summary": "데이터 이해·품질 보증·저장 조회로 변하는 데이터를 믿을 만하게 유지.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "data-validation-tools",
@@ -37610,6 +37614,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 용도·한계·학습 데이터를 문서화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-slicing",
+   "label": "데이터 슬라이싱",
+   "parent": "inference-data-development",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "취약한 하위 집단을 찾는 평가.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "ood-evaluation",
+   "label": "분포 밖 평가",
+   "parent": "inference-data-development",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 분포 밖 입력에 대한 견고성.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "algorithmic-recourse",
+   "label": "알고리즘적 대안 제시",
+   "parent": "inference-data-development",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정을 바꾸려면 무엇을 바꿔야 하는지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "robustness-testing",
+   "label": "견고성 테스트",
+   "parent": "inference-data-development",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력 변형에 대한 안정성.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-valuation",
+   "label": "데이터 가치 평가",
+   "parent": "data-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 샘플이 성능에 기여하는 정도.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-versioning",
+   "label": "데이터 버전 관리",
+   "parent": "data-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 변경 이력과 재현성.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stale-document-cleanup",
+   "label": "낡은 문서 정리",
+   "parent": "data-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RAG에서 구버전·폐기 문서 관리.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "query-acceleration",
+   "label": "질의 가속",
+   "parent": "data-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필요한 데이터를 빠르게 공급.",
    "added": "2026-11-18",
    "related": []
   }
