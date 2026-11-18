@@ -20129,11 +20129,15 @@
    "label": "초안 수락률",
    "parent": "risk-tiered-intents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Tier 1의 지표, 수정 없이 보낸 비율.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "accept-without-edit-rate",
+    "acceptance-quality-link"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "read-only-vs-action-intents",
@@ -35432,6 +35436,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "스타일 수정이 많을 때 개선할 곳.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "suggestion-event-instrumentation",
+   "label": "제안 이벤트 계측",
+   "parent": "draft-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "shown·accepted·sent 이벤트를 공통 ID로 묶는 설계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "light-edit-threshold",
+   "label": "가벼운 수정 기준",
+   "parent": "draft-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수락으로 인정할 수정 비율 기준(40% 등).",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "suppressed-suggestion-exclusion",
+   "label": "억제·만료 제안 제외",
+   "parent": "draft-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상담사가 볼 수 없었던 제안을 분모에서 빼기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "acceptance-csat-pairing",
+   "label": "수락률과 CSAT 병행",
+   "parent": "draft-acceptance-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수락률 상승과 만족도 하락 동시 감시.",
    "added": "2026-11-18",
    "related": []
   }
