@@ -20657,11 +20657,12 @@
    "label": "무응답 세션 제외",
    "parent": "containment-rate-trap",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "분모 정의에 따라 율이 바뀜.",
+   "summary": "분모에서 말 없던 세션을 뺄지 정하는 규칙. 정의에 따라 50~75%로 변동.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "silent-abandonment",
@@ -36791,6 +36792,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터에 목적·삭제일 태그 부착.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "eligible-conversation-definition",
+   "label": "자격 있는 대화 정의",
+   "parent": "silent-session-exclusion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분모에 들어갈 대화의 조건 문서화.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confirmed-resolution-rate",
+   "label": "확인 해결률",
+   "parent": "silent-session-exclusion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객이 해결을 명시 확인한 비율.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "assumed-resolution",
+   "label": "해결 가정",
+   "parent": "silent-session-exclusion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답 후 재문의 없으면 해결로 보는 가정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "metric-definition-change-log",
+   "label": "지표 정의 변경 이력",
+   "parent": "silent-session-exclusion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집계 규칙 변경으로 인한 수치 변동 추적.",
    "added": "2026-11-18",
    "related": []
   }
