@@ -37818,11 +37818,12 @@
    "label": "층화 k-겹",
    "parent": "k-fold-cross-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "클래스 비율을 유지하는 분할.",
+   "summary": "각 조각이 전체와 같은 클래스 비율. 직접 실행: KFold [0,0,0,0,5] vs 층화 [1,1,1,1,1].",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "leave-one-out-cv",
@@ -39152,6 +39153,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "과소 슬라이스 보강 후 분포 왜곡.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stratified-group-kfold",
+   "label": "StratifiedGroupKFold",
+   "parent": "stratified-k-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹 유지 + 클래스 비율 유지.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "n-splits-vs-rare-class",
+   "label": "조각 수와 희귀 클래스 수",
+   "parent": "stratified-k-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조각 수가 희귀 클래스보다 크면 층화 불가.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stratify-regression-binning",
+   "label": "회귀 층화(구간화)",
+   "parent": "stratified-k-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연속값을 구간으로 나눠 층화하는 방법.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stratification-vs-leakage",
+   "label": "층화와 누수의 차이",
+   "parent": "stratified-k-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화는 누수를 막지 못함.",
    "added": "2026-11-18",
    "related": []
   }
