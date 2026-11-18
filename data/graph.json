@@ -20162,11 +20162,15 @@
    "label": "출처 문서 소유자",
    "parent": "risk-tiered-intents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모든 답변이 승인·날짜·담당자 있는 문서에 매핑.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "knowledge-gap-escalation",
+    "read-only-vs-action-intents"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "shadow-mode",
@@ -35624,6 +35628,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정책 이관과 실패 신호 사이의 모호한 사례.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "kcs-article-states",
+   "label": "KCS 문서 상태",
+   "parent": "source-article-ownership",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "WIP·검증 안 됨·검증됨·보관의 신뢰 수준 체계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "answer-source-logging",
+   "label": "답변 근거 로깅",
+   "parent": "source-article-ownership",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답변마다 근거 문서 ID·버전을 기록.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "review-cadence-by-volatility",
+   "label": "변동성별 검토 주기",
+   "parent": "source-article-ownership",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책·가격 문서는 짧게, 안정 문서는 길게.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "archive-vs-delete",
+   "label": "보관과 삭제",
+   "parent": "source-article-ownership",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 대신 보관해 추적성과 복원 가능성 유지.",
    "added": "2026-11-18",
    "related": []
   }
