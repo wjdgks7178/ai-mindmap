@@ -19731,11 +19731,15 @@
    "label": "성능-공정성 균형",
    "parent": "proxy-variable",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변수 제거 시 성능 하락 기록.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "constraint-performance-tradeoff",
+    "model-multiplicity"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "hud-disparate-impact-rule",
@@ -33603,6 +33607,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "80% 규칙과 시험 사용을 다룬 미국 판례.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "partial-repair",
+   "label": "부분 수리(λ)",
+   "parent": "performance-fairness-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 분포를 부분만 이동시켜 절충하는 방식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "pareto-frontier-fairness",
+   "label": "정확도-공정성 파레토 곡선",
+   "parent": "performance-fairness-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선택 가능한 절충점의 경계.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "label-bias",
+   "label": "라벨 편향",
+   "parent": "performance-fairness-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 결정이 라벨에 담은 편향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "tradeoff-decision-record",
+   "label": "절충 결정 기록",
+   "parent": "performance-fairness-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수·기법별 성능과 격차를 남기는 양식.",
    "added": "2026-11-18",
    "related": []
   }
