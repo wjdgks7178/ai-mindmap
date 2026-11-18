@@ -37403,11 +37403,14 @@
    "label": "표적 데이터 수집",
    "parent": "data-centric-ai",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "오류 분석 후 약한 곳에 데이터 추가.",
+   "summary": "슬라이스별 오류 분석으로 약한 곳을 찾아 그 부분에만 데이터를 더함.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-slicing"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "near-duplicate-removal",
@@ -37989,6 +37992,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차 검증 중심.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "slice-discovery",
+   "label": "슬라이스 발견",
+   "parent": "targeted-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메타데이터 없이 약한 하위집단 찾기.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "error-cause-triage",
+   "label": "오류 원인 분류",
+   "parent": "targeted-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨·이상치·모델 부적합 등 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "data-influence-shapley",
+   "label": "데이터 영향도(Shapley)",
+   "parent": "targeted-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 샘플이 성능에 미치는 영향.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "collection-benefit-extrapolation",
+   "label": "추가 수집 효과 외삽",
+   "parent": "targeted-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하위표본 재학습으로 이득 추정.",
    "added": "2026-11-18",
    "related": []
   }
