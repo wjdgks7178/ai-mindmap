@@ -33185,11 +33185,15 @@
    "label": "뉴욕시 LL144 편향 감사",
    "parent": "adverse-impact-ratio",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 채용 도구 연 1회 독립 감사와 결과 공개.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "pipa-automated-decision",
+    "four-fifths-rule"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "intersectional-categories",
@@ -33210,6 +33214,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 2% 미만 범주 제외와 사유 공개.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "independent-auditor",
+   "label": "독립 감사인",
+   "parent": "nyc-ll144-bias-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AEDT 개발·사용과 이해관계가 없는 감사인의 요건.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "historical-vs-test-data",
+   "label": "과거 데이터와 테스트 데이터",
+   "parent": "nyc-ll144-bias-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감사에 쓸 수 있는 데이터 종류와 조건.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "aedt-notice-10days",
+   "label": "AEDT 사전 통지 10영업일",
+   "parent": "nyc-ll144-bias-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지원자에게 도구 사용을 알리는 방법과 기한.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "eu-ai-act-hiring",
+   "label": "EU AI Act와 채용 AI",
+   "parent": "nyc-ll144-bias-audit",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "채용 AI를 고위험으로 분류하는 EU 규제.",
    "added": "2026-11-18",
    "related": []
   }
