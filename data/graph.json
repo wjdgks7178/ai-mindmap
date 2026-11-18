@@ -37339,11 +37339,12 @@
    "label": "k-겹 교차 검증",
    "parent": "train-validation-test-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 세트를 k조각으로 돌려 검증.",
+   "summary": "학습 세트를 k조각으로 돌려 검증하고 평균. 불균형은 StratifiedKFold.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "group-wise-split",
@@ -37760,6 +37761,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Spark 기반 데이터 품질 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "stratified-k-fold",
+   "label": "층화 k-겹",
+   "parent": "k-fold-cross-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스 비율을 유지하는 분할.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "leave-one-out-cv",
+   "label": "Leave-One-Out 검증",
+   "parent": "k-fold-cross-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플 하나씩 빼는 극단적 교차 검증.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "cv-fold-count-choice",
+   "label": "k 값 선택",
+   "parent": "k-fold-cross-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5·10 관행과 비용·분산 트레이드오프.",
    "added": "2026-11-18",
    "related": []
   }
