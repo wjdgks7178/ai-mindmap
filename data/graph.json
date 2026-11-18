@@ -19556,11 +19556,15 @@
    "label": "LightGBM 제약 방식",
    "parent": "monotone-constraints",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "basic·intermediate·advanced 차이.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "constraint-performance-tradeoff",
+    "partial-dependence-check"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "constraint-performance-tradeoff",
@@ -34699,6 +34703,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "분류가 어려울 때 기타로 몰리는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "monotone-penalty",
+   "label": "monotone_penalty",
+   "parent": "lightgbm-mc-method",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트리 앞쪽 단조 분할을 억제하는 LightGBM 파라미터.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "monotonicity-violation-count",
+   "label": "단조성 위반 횟수 측정",
+   "parent": "lightgbm-mc-method",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "격자 예측의 감소 구간을 세는 점검.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "synthetic-constraint-experiment",
+   "label": "제약 효과 합성 데이터 실험",
+   "parent": "lightgbm-mc-method",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진짜 관계가 비단조일 때 제약의 비용.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "categorical-monotone-limit",
+   "label": "범주형 변수 단조 제약 한계",
+   "parent": "lightgbm-mc-method",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주형에는 단조 제약을 걸 수 없는 이유와 우회.",
    "added": "2026-11-18",
    "related": []
   }
