@@ -20036,11 +20036,15 @@
    "label": "사후 관찰 기간",
    "parent": "post-acceptance-edit-rate",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수락 후 몇 분·며칠을 볼지.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "persistence-metric",
+    "measurement-window"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "fix-vs-style-edit",
@@ -35912,6 +35916,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "요약 열람부터 승인까지를 로그로 측정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "multi-window-reporting",
+   "label": "다중 창 병행 보고",
+   "parent": "post-acceptance-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧음·중간·긴 창의 결과를 함께 보고.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "auto-format-change-exclusion",
+   "label": "자동 변경 제외",
+   "parent": "post-acceptance-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "포맷터·린트가 만든 수정은 사후 수정에서 뺀다.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "confounding-later-edits",
+   "label": "이후 편집의 교란",
+   "parent": "post-acceptance-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창이 길수록 다른 변경이 섞이는 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "window-by-task-cycle",
+   "label": "업무 주기별 창 선택",
+   "parent": "post-acceptance-window",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "채팅·요약·문서의 검토 주기에 맞춘 창.",
    "added": "2026-11-18",
    "related": []
   }
