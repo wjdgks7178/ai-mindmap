@@ -20498,11 +20498,15 @@
    "label": "ROUGE·BLEU의 한계",
    "parent": "handoff-summary-quality",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "단어 겹침 지표가 요약 품질을 못 재는 이유.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "summary-faithfulness-score",
+    "semantic-similarity-edit"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "schema-versioning",
@@ -36093,6 +36097,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "LLM 판정자를 쓰기 전 사람 표본과 상관 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "rouge-variants",
+   "label": "ROUGE 변형",
+   "parent": "rouge-bleu-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ROUGE-1·2·L 등 겹침 단위별 변형.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "summeval",
+   "label": "SummEval",
+   "parent": "rouge-bleu-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약 평가 지표를 사람 주석과 재평가한 연구.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "lexical-overlap-metric-gaming",
+   "label": "겹침 지표 게이밍",
+   "parent": "rouge-bleu-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표면 겹침만 높이는 최적화의 문제.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "number-aware-metric",
+   "label": "숫자 인식 지표",
+   "parent": "rouge-bleu-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자·이름 일치를 따로 보는 보조 지표.",
    "added": "2026-11-18",
    "related": []
   }
