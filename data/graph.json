@@ -20597,11 +20597,12 @@
    "label": "범위 제한 도구 인터페이스",
    "parent": "pii-minimization-handoff",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "작업별 허용 필드만 반환.",
+   "summary": "도구 권한과 응답 필드를 작업별로 좁혀 모델에 과한 데이터가 가지 않게.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-18"
   },
   {
    "id": "pii-redaction-types",
@@ -36656,6 +36657,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "우선순위별 해결 기한 설정.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "tool-allowlist-per-agent",
+   "label": "에이전트별 도구 허용 목록",
+   "parent": "scoped-tool-interface",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버 제공 도구와 호출 허용 도구를 구분.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "short-lived-task-token",
+   "label": "단기 작업 토큰",
+   "parent": "scoped-tool-interface",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험한 도구에만 짧게 쓰는 토큰.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "response-policy-layer",
+   "label": "응답 정책 계층",
+   "parent": "scoped-tool-interface",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구 결과를 모델 전에 걸러내는 계층.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "mcp-server-auth-state",
+   "label": "MCP 서버 인증 실태",
+   "parent": "scoped-tool-interface",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장기 비밀키 위주라는 분석과 한계.",
    "added": "2026-11-18",
    "related": []
   }
