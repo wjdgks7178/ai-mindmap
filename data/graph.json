@@ -19843,11 +19843,14 @@
    "label": "원문 링크형 요약",
    "parent": "stt-error-propagation",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "요약 문장에 전사 구간 연결.",
    "added": "2026-11-15",
-   "related": []
+   "related": [
+    "number-entity-errors"
+   ],
+   "done": "2026-11-18"
   },
   {
    "id": "error-layer-audit",
@@ -33935,6 +33938,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상담사가 숫자를 고객에게 되읽어 확인하는 절차.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "claude-citations-api",
+   "label": "Claude Citations API",
+   "parent": "source-linked-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서에 근거한 인용을 API 응답에 구조화해 주는 기능.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "custom-content-document",
+   "label": "커스텀 콘텐츠 문서",
+   "parent": "source-linked-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목록·전사를 블록 단위로 인용하는 문서 형식.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "citation-verification-sampling",
+   "label": "인용 검증 표본 검수",
+   "parent": "source-linked-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "링크가 실제로 문장을 뒷받침하는지 샘플로 확인.",
+   "added": "2026-11-18",
+   "related": []
+  },
+  {
+   "id": "citations-vs-structured-output",
+   "label": "인용과 구조화 출력의 충돌",
+   "parent": "source-linked-summary",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 기능을 함께 쓰지 못하는 이유와 우회.",
    "added": "2026-11-18",
    "related": []
   }
