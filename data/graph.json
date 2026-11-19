@@ -39683,11 +39683,14 @@
       "label": "회의적 검수자 효과",
       "parent": "model-assisted-prelabeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "AI에 회의적인 검수자의 오류 포착 우위.",
+      "summary": "2,784명 실험: AI 태도가 성과의 가장 강한 예측 변수, 회의적인 사람이 오류를 더 잘 잡고 호의적인 사람은 과신. 오류 수정 강제는 오히려 틀린 수용 증가.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "model-assisted-prelabeling"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "dawid-skene-aggregation",
@@ -43381,6 +43384,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "두 보정 방법의 차이와 선택.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "trap-suggestions",
+      "label": "함정 제안(일부러 틀린 AI 제안)",
+      "parent": "skeptical-reviewer-effect",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "경계심 측정·유지를 위한 장치.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "reviewer-selection-ai-attitude",
+      "label": "검수자 선발과 AI 태도 측정",
+      "parent": "skeptical-reviewer-effect",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "태도 측정으로 구성 다양화.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "forced-correction-backfire",
+      "label": "오류 수정 강제의 역효과",
+      "parent": "skeptical-reviewer-effect",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "참여 감소와 틀린 수용 증가.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "overreliance-on-ai",
+      "label": "AI 과신(overreliance)",
+      "parent": "skeptical-reviewer-effect",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자동화에 호의적인 사람의 과신.",
       "added": "2026-11-19",
       "related": []
     }
