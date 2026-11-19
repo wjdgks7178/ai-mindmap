@@ -39516,11 +39516,14 @@
       "label": "Label Studio 설정 태그",
       "parent": "label-studio",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "Object·Control·Visual 태그로 화면 정의.",
+      "summary": "XML 설정: Object(데이터)·Control(라벨 입력)·Visual(화면). toName은 Object name과 일치. 예시 XML 3개 직접 파싱 검증.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "label-consistency-guideline"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "label-studio-ml-backend",
@@ -42991,6 +42994,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "사람 라벨 소량으로 합친 라벨 점검.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "label-studio-text-ner-config",
+      "label": "텍스트 개체명 설정",
+      "parent": "label-studio-config-tags",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Text+Labels 조합으로 NER 화면.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "label-studio-choices-attributes",
+      "label": "Choices 속성",
+      "parent": "label-studio-config-tags",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "choice single/multiple 등 속성.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "label-studio-task-json",
+      "label": "작업(task) JSON과 $필드",
+      "parent": "label-studio-config-tags",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "value=$필드로 데이터 연결.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "label-studio-config-validation",
+      "label": "설정 XML 검증",
+      "parent": "label-studio-config-tags",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "toName 매칭 등 사전 점검.",
       "added": "2026-11-19",
       "related": []
     }
