@@ -40035,11 +40035,12 @@
    "label": "일관된 슬라이스",
    "parent": "data-slicing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사람이 이해할 개념으로 묶이는 저성능 집단.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "slice-sample-size-caution",
@@ -44617,6 +44618,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "병원 간 조직 이미지 분포 변화.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "precision-at-k-slice",
+   "label": "슬라이스 precision-at-k",
+   "parent": "coherent-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "발견한 상위 k개 슬라이스가 정답과 맞는 비율.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "slice-naming",
+   "label": "슬라이스 이름 붙이기",
+   "parent": "coherent-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공유 개념을 말로 설명하는 단계.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "hidden-stratification",
+   "label": "숨은 계층화",
+   "parent": "coherent-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨에 없는 하위 집단에서의 성능 저하.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "slice-driven-data-collection",
+   "label": "슬라이스 기반 데이터 보강",
+   "parent": "coherent-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약점 슬라이스에 맞춰 데이터를 추가 수집.",
    "related": [],
    "added": "2026-11-19"
   }
