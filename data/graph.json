@@ -38327,11 +38327,14 @@
       "label": "WARC·WAT·WET 형식",
       "parent": "common-crawl",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "원본·메타데이터·텍스트 파일 형식.",
+      "summary": "WARC 원본·WAT 메타데이터 JSON·WET 추출 텍스트. CC-MAIN-2024-10 첫 파일: WARC 1.13GB, WAT 268MB, WET 107MB, WET 경로 9만 개(직접 확인).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "datatrove"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "ccbot-opt-out",
@@ -41105,6 +41108,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "변형 결과를 표본 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cc-paths-files",
+      "label": "Common Crawl 경로 파일",
+      "parent": "warc-wat-wet",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "wet.paths.gz 등으로 파일 목록 얻기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "http-range-sampling",
+      "label": "범위 요청으로 샘플링",
+      "parent": "warc-wat-wet",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "파일 앞부분만 받아 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "text-extraction-warc",
+      "label": "WARC에서 본문 추출",
+      "parent": "warc-wat-wet",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "trafilatura 등 추출기의 품질 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cc-s3-access",
+      "label": "Common Crawl 접근 방법",
+      "parent": "warc-wat-wet",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "S3·HTTPS·Hugging Face 미러.",
       "added": "2026-11-19",
       "related": []
     }
