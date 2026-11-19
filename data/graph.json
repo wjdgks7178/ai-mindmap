@@ -39646,11 +39646,17 @@
       "label": "주석 자동화 편향",
       "parent": "model-assisted-prelabeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "틀린 모델 제안을 그대로 수용하는 경향.",
+      "summary": "자동 제안에 과의존. 고찰(74편): 조언이 틀릴 때 따를 위험비 1.26(95% CI 1.11~1.44), 부정적 상담 6~11%. 완화: 내적 책임감·확신도 표시·정보 제공.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "model-assisted-prelabeling",
+        "skeptical-reviewer-effect",
+        "commission-omission-errors",
+        "automation-complacency"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "confidence-routed-review",
@@ -43428,6 +43434,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "자동화에 호의적인 사람의 과신.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "trust-miscalibration",
+      "label": "신뢰 보정 불량",
+      "parent": "automation-bias-annotation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시스템 신뢰도와 실제 정확도의 불일치.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "internal-accountability",
+      "label": "내적 책임감",
+      "parent": "automation-bias-annotation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "외부 강제보다 편향을 줄이는 요인.",
       "added": "2026-11-19",
       "related": []
     }
