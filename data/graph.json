@@ -40287,11 +40287,12 @@
    "label": "좀비 문서",
    "parent": "stale-document-cleanup",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원본에서 지웠는데 색인에 남은 문서.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "silent-version-drift",
@@ -45440,6 +45441,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "바뀐 청크만 재임베딩하는 증분 색인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tombstone-deletion",
+   "label": "Tombstone 삭제",
+   "parent": "zombie-documents",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "논리 삭제 표시와 정리 시점의 간극.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "sidecar-chunk-mapping",
+   "label": "사이드카 청크 매핑",
+   "parent": "zombie-documents",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서ID→청크ID 표로 정확히 삭제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "change-data-capture-sync",
+   "label": "CDC 동기화",
+   "parent": "zombie-documents",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경 이벤트로 색인을 실시간 맞추기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "deletion-audit-sampling",
+   "label": "삭제 감사 표본",
+   "parent": "zombie-documents",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지난주 삭제 문서의 청크가 검색에 나오는지 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "canary-document-probe",
+   "label": "카나리 문서 프로브",
+   "parent": "zombie-documents",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제한 가짜 문서가 응답에 나오는지 경보.",
    "related": [],
    "added": "2026-11-19"
   }
