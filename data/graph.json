@@ -39482,11 +39482,15 @@
       "label": "레드팀 데이터",
       "parent": "instruction-preference-data",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "취약점을 찾는 공격 대화 기록.",
+      "summary": "Anthropic 레드팀 공격 38,961건 공개(2.7B·13B·52B, RLHF만 규모에 따라 어려워짐). hh-rlhf의 red-team-attempts는 대화+무해성 점수, 선호 데이터와 구분, 위험 콘텐츠 경고.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "instruction-preference-data",
+        "sft-supervised-finetuning"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "synthetic-preference-data",
@@ -42733,6 +42737,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "SFT 데이터 프롬프트를 얻는 방식.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "red-team-attack-types",
+      "label": "레드팀 공격 유형",
+      "parent": "red-teaming-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모욕적 언어부터 비폭력적 비윤리까지.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "harmlessness-score",
+      "label": "무해성 점수",
+      "parent": "red-teaming-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "선호 모델이 매긴 값, 낮을수록 해로움.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "red-team-scaling-rlhf",
+      "label": "RLHF와 레드팀 난이도",
+      "parent": "red-teaming-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "RLHF만 규모에 따라 공격이 어려워짐.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "red-team-data-handling",
+      "label": "위험 데이터 취급",
+      "parent": "red-teaming-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "콘텐츠 경고와 연구 목적 제한.",
       "added": "2026-11-19",
       "related": []
     }
