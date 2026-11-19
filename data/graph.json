@@ -35720,17 +35720,6 @@
    "related": []
   },
   {
-   "id": "jensen-shannon-divergence",
-   "label": "Jensen–Shannon 발산",
-   "parent": "code-distribution-monitoring",
-   "domain": "ai-applications",
-   "status": "planned",
-   "priority": 3,
-   "summary": "대칭 분포 거리, 드리프트 검정에 사용.",
-   "added": "2026-11-18",
-   "related": []
-  },
-  {
    "id": "chi-square-goodness-drift",
    "label": "카이제곱 분포 검정",
    "parent": "code-distribution-monitoring",
@@ -40407,11 +40396,12 @@
    "label": "L-무한대·젠슨-섀넌 거리",
    "parent": "tfdv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "드리프트를 재는 거리 척도.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "facets-data-visualization",
@@ -45890,6 +45880,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "자동 추론 스키마를 도메인 지식으로 보완.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "drift-threshold-tuning",
+   "label": "드리프트 임계값 정하기",
+   "parent": "l-infinity-js-divergence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 크기와 비즈니스 영향에 맞춘 임계값.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "binning-numeric-features",
+   "label": "숫자 특징 구간화",
+   "parent": "l-infinity-js-divergence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자를 구간으로 나눠 분포를 비교.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "jensen-shannon-distance",
+   "label": "JS 거리",
+   "parent": "l-infinity-js-divergence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "JS 발산의 제곱근, 거리 척도.",
    "related": [],
    "added": "2026-11-19"
   }
