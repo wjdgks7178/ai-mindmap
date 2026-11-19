@@ -38036,11 +38036,12 @@
       "label": "경계 사례 기록",
       "parent": "label-consistency-guideline",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "새로 발견된 애매한 사례를 규칙서에 누적.",
+      "summary": "본 작업 중 발견한 애매 사례와 결정을 누적해 규칙서에 반영. 위키는 규칙서 내 갱신을 권하며 표 관리는 제안.",
       "added": "2026-11-18",
-      "related": []
+      "related": [],
+      "done": "2026-11-19"
     },
     {
       "id": "llm-labeler-guideline-prompt",
@@ -40107,6 +40108,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "공통 문항 비율과 간격을 정하는 법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "edge-case-log-template",
+      "label": "경계 사례 로그 양식",
+      "parent": "guideline-edge-case-log",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "ID·결정·이유·재검토 여부 항목.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "guideline-versioning",
+      "label": "규칙서 버전 관리",
+      "parent": "guideline-edge-case-log",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "규칙 변경 시 라벨 데이터 버전 구분.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "relabel-after-rule-change",
+      "label": "규칙 변경 후 재라벨링",
+      "parent": "guideline-edge-case-log",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "영향 범위를 정해 다시 라벨링.",
       "added": "2026-11-19",
       "related": []
     }
