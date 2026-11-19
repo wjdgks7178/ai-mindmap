@@ -40239,11 +40239,12 @@
    "label": "DVC",
    "parent": "data-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Git과 함께 쓰는 데이터 버전 관리 도구.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "experiment-reproducibility",
@@ -45260,6 +45261,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 퍼블리셔가 묶어 협상하는 방식.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dvc-remote-storage",
+   "label": "DVC 원격 저장소",
+   "parent": "dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "S3·NAS 등 데이터 실제 저장 위치 설정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dvc-pipelines",
+   "label": "DVC 파이프라인",
+   "parent": "dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "dvc.yaml로 변경된 단계만 재실행.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dvc-pointer-files",
+   "label": "DVC 포인터 파일",
+   "parent": "dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MD5 해시로 데이터 버전을 가리키는 .dvc.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "content-addressable-storage",
+   "label": "내용 주소 저장소",
+   "parent": "dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해시로 파일을 저장·중복 제거하는 구조.",
    "related": [],
    "added": "2026-11-19"
   }
