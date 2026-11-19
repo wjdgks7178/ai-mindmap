@@ -39841,11 +39841,15 @@
       "label": "데이터 구성 표",
       "parent": "data-distribution-bias",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "속성별 개수·비율 표 만들기.",
+      "summary": "속성별 건수·비율 교차표. Gender Shades: IJB-A 밝은 피부 79.6%·어두운 여성 4.4%, Adience 86.2%·어두운 남성 6.4%. pandas crosstab으로 직접 작성.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "gender-shades",
+        "internal-data-card"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "proxy-variables",
@@ -43927,6 +43931,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "외부에서 제품을 평가해 격차를 공개.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "crosstab-small-cell-flag",
+      "label": "작은 칸 표시",
+      "parent": "dataset-composition-table",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "건수가 적은 칸의 신뢰도 경고.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "split-composition-check",
+      "label": "세트별 구성 비교",
+      "parent": "dataset-composition-table",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습·검증·시험의 속성 분포 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "reference-population-comparison",
+      "label": "기준 집단 비율과 비교",
+      "parent": "dataset-composition-table",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "실제 사용 대상과의 비율 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "sensitive-attribute-collection",
+      "label": "민감 속성 수집의 한계",
+      "parent": "dataset-composition-table",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "속성 없이 구성을 점검하는 어려움.",
       "added": "2026-11-19",
       "related": []
     }
