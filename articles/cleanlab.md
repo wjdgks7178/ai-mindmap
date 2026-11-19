@@ -16,7 +16,7 @@ cl = cleanlab.classification.CleanLearning(sklearn.YourFavoriteClassifier())
 label_issues = cl.find_label_issues(data, labels)
 ```
 - 결과는 샘플별 "이슈 여부·점수" 표다. 높은 순으로 사람이 확인한다. 자동 삭제는 권하지 않는다(제안: 오탐이 있고 라벨 오류가 진짜 어려운 샘플일 수도 있음).
-- 근거 이론은 [Confident Learning](#confident-learning), 필요한 입력은 [표본 외 예측 확률](#out-of-sample-predictions).
+- 근거 이론은 [Confident Learning](#confident-learning), 필요한 입력은 [표본 외 예측 확률](#out-of-sample-pred-probs).
 
 ## 그림으로 보기
 ```mermaid

@@ -37981,11 +37981,15 @@
       "label": "표본 밖 예측 확률",
       "parent": "label-error-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "교차 검증으로 얻는 예측 확률.",
+      "summary": "교차 검증으로 얻는 그 샘플 없이 학습한 모델의 확률. cross_val_predict(method=predict_proba)로 cleanlab 입력 생성.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "cleanlab",
+        "k-fold-cross-validation"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "annotation-pilot-round",
@@ -39825,17 +39829,6 @@
       "related": []
     },
     {
-      "id": "out-of-sample-predictions",
-      "label": "표본 외 예측 확률",
-      "parent": "confident-learning",
-      "domain": "ai-data",
-      "status": "planned",
-      "priority": 3,
-      "summary": "교차 검증으로 얻어야 하는 이유.",
-      "added": "2026-11-19",
-      "related": []
-    },
-    {
       "id": "class-conditional-noise",
       "label": "클래스 조건부 노이즈",
       "parent": "confident-learning",
@@ -39953,6 +39946,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "노이즈 많은 데이터에서 작은 모델이 유리할 수 있다는 관찰.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cross-val-predict",
+      "label": "cross_val_predict",
+      "parent": "out-of-sample-pred-probs",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "scikit-learn 교차 검증 예측 함수 사용법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "in-sample-overconfidence",
+      "label": "표본 안 예측 과신",
+      "parent": "out-of-sample-pred-probs",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습한 샘플은 틀린 라벨도 외우는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "find-label-issues-filter-by",
+      "label": "find_label_issues 필터 방식",
+      "parent": "out-of-sample-pred-probs",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "prune_by_noise_rate·both 등 옵션 비교.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "pred-probs-calibration",
+      "label": "예측 확률 보정",
+      "parent": "out-of-sample-pred-probs",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "확률이 실제 확률과 맞도록 보정.",
       "added": "2026-11-19",
       "related": []
     }
