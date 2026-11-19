@@ -40395,11 +40395,12 @@
    "label": "TFDV 스키마 환경",
    "parent": "tfdv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습·서빙에서 필요한 특징이 다를 때.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "l-infinity-js-divergence",
@@ -45856,6 +45857,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "프로파일러·노트북·외부 저장소 지원 등.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tfdv-skew-comparator",
+   "label": "TFDV skew 비교기",
+   "parent": "tfdv-schema-environments",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습과 서빙 분포 차이를 임계값으로 감지.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tfdv-drift-comparator",
+   "label": "TFDV drift 비교기",
+   "parent": "tfdv-schema-environments",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "날짜 간 학습 데이터 분포 변화 감지.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tfdv-infer-schema-review",
+   "label": "추론 스키마 검토",
+   "parent": "tfdv-schema-environments",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 추론 스키마를 도메인 지식으로 보완.",
    "related": [],
    "added": "2026-11-19"
   }
