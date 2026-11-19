@@ -39915,11 +39915,12 @@
    "label": "AI 크롤러 차단",
    "parent": "data-provenance-explorer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사이트가 AI 봇을 막는 방법과 확산.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "dataset-license-checklist",
@@ -44199,6 +44200,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "robots.txt 같은 요청과 약관 계약의 구분.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "bot-score-detection",
+   "label": "Bot Score 탐지",
+   "parent": "ai-crawler-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "user agent를 무시하는 ML 기반 봇 판별.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "training-vs-search-bots",
+   "label": "학습용·검색용 봇 구분",
+   "parent": "ai-crawler-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GPTBot과 검색용 봇을 따로 다루기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "declared-vs-enforced-blocking",
+   "label": "선언과 집행의 간극",
+   "parent": "ai-crawler-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "robots.txt 선언과 실제 응답의 불일치.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "llms-txt",
+   "label": "llms.txt",
+   "parent": "ai-crawler-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI에게 사이트 구조를 안내하는 제안 파일.",
    "related": [],
    "added": "2026-11-19"
   }
