@@ -39871,11 +39871,16 @@
       "label": "재가중·오버샘플링",
       "parent": "data-distribution-bias",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "과소 대표 집단 비중 보정.",
+      "summary": "소수 샘플 가중치↑ 또는 복제·합성. 직접 실험(양성 3%): 보정 없음 재현율 0, class_weight·오버샘플링 재현율 0.675·정밀도 0.07. SMOTE는 합성+언더샘플링으로 ROC 개선 주장.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation",
+        "proxy-variables",
+        "smote"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "consent-in-crisis",
@@ -44023,6 +44028,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "편향된 정답을 따르면 정확하다고 측정됨.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "class-weight-balanced",
+      "label": "class_weight=balanced",
+      "parent": "reweighting-oversampling",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "클래스 빈도 역수로 가중.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "recall-precision-tradeoff-resampling",
+      "label": "재현율-정밀도 거래",
+      "parent": "reweighting-oversampling",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "보정 후 정밀도 하락과 임계값 조정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "resample-after-split",
+      "label": "분할 후 리샘플링",
+      "parent": "reweighting-oversampling",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "복제본이 시험에 들어가는 누수 방지.",
       "added": "2026-11-19",
       "related": []
     }
