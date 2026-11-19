@@ -40119,11 +40119,12 @@
    "label": "recourse 점검(정수 계획법)",
    "parent": "algorithmic-recourse",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "선형 분류기의 대안 제공 여부 감사.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "recourse-cost-and-time",
@@ -44843,6 +44844,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "개인별 가능한 변화 범위를 형식화.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "flipset",
+   "label": "플립셋",
+   "parent": "recourse-audit-integer-programming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정을 뒤집는 대안 목록을 통지서로.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "recourse-vs-regularization",
+   "label": "recourse와 정규화",
+   "parent": "recourse-audit-integer-programming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 개발 선택이 대안 유무를 바꿈.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "mutable-variant-feature",
+   "label": "가변 변형 특징",
+   "parent": "recourse-audit-integer-programming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 연체를 최근 연체로 바꾸는 설계.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "certified-infeasibility",
+   "label": "불가능 증명",
+   "parent": "recourse-audit-integer-programming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대안이 없음을 수학적으로 인증.",
    "related": [],
    "added": "2026-11-19"
   }
