@@ -40708,11 +40708,12 @@
    "label": "5259-2 데이터 품질 측정",
    "parent": "iso-iec-5259",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정확성·완전성·대표성 등 측정 지표.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "iso-5259-part5-governance",
@@ -46422,6 +46423,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 공급 계약에 점검표를 붙이기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-balance-characteristic",
+   "label": "데이터 균형 특성",
+   "parent": "iso-5259-part2-measures",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스·집단 분포가 쏠리지 않은 정도.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-diversity-characteristic",
+   "label": "데이터 다양성 특성",
+   "parent": "iso-5259-part2-measures",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다양한 상황·집단을 포함하는 정도.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-identifiability",
+   "label": "데이터 식별 가능성",
+   "parent": "iso-5259-part2-measures",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인을 식별할 수 있는 정도.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-quality-reporting-framework",
+   "label": "데이터 품질 보고 틀",
+   "parent": "iso-5259-part2-measures",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정 정보를 조직에 보고하는 구조.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "iso-5259-annex-e-comparison",
+   "label": "25012와 5259-2 특성 비교",
+   "parent": "iso-5259-part2-measures",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 표준의 특성 차이.",
    "related": [],
    "added": "2026-11-19"
   }
