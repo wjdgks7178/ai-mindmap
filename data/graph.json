@@ -44306,28 +44306,6 @@
    "added": "2026-11-19"
   },
   {
-   "id": "tdm-exception",
-   "label": "텍스트·데이터 마이닝 예외",
-   "parent": "cc-sharealike",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "학습이 라이선스보다 예외로 허용되는 경우.",
-   "related": [],
-   "added": "2026-11-19"
-  },
-  {
-   "id": "model-weights-adaptation",
-   "label": "모델 가중치는 개작물인가",
-   "parent": "cc-sharealike",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "SA·ND 적용의 미해결 쟁점.",
-   "related": [],
-   "added": "2026-11-19"
-  },
-  {
    "id": "copyleft-open-data",
    "label": "카피레프트 오픈 데이터",
    "parent": "cc-sharealike",
