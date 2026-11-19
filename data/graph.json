@@ -40790,11 +40790,12 @@
    "label": "Z-order 클러스터링",
    "parent": "query-acceleration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 컬럼 필터를 위한 다차원 정렬.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "materialized-view",
@@ -46647,6 +46648,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가지치기가 동작했는지 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "liquid-clustering",
+   "label": "Liquid clustering",
+   "parent": "z-order-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Databricks가 새 테이블에 권장하는 클러스터링.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-skipping-statistics",
+   "label": "데이터 스킵 통계",
+   "parent": "z-order-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일별 min/max로 건너뛰기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "bit-interleaving",
+   "label": "비트 인터리빙",
+   "parent": "z-order-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 열 값의 비트를 번갈아 배치.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "zorder-column-limit",
+   "label": "Z-order 열 수 한계",
+   "parent": "z-order-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열이 늘수록 효과가 떨어짐.",
    "related": [],
    "added": "2026-11-19"
   }
