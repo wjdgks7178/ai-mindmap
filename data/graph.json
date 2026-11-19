@@ -38075,11 +38075,14 @@
       "label": "희귀 클래스 기준 시험 크기",
       "parent": "split-ratio-conventions",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "시험 세트에 희귀 샘플이 충분한지.",
+      "summary": "불균형에서는 양성 수가 관건. 재현율 80%일 때 양성 10개면 구간 0.49~0.94, 100개면 0.71~0.87(윌슨, 직접 계산). AISTATS 2023은 과표집 기반 구간 제시.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "stratified-train-test-split"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "random-state-reproducibility",
@@ -40317,6 +40320,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "의미 없는 라벨에서 높은 점수가 나오면 누수 의심.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "wilson-interval",
+      "label": "윌슨 신뢰구간",
+      "parent": "test-set-size-rare-class",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "작은 표본의 비율 신뢰구간 계산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "oversampling-for-evaluation",
+      "label": "평가용 과표집",
+      "parent": "test-set-size-rare-class",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "예측 양성을 더 뽑아 라벨링 비용 줄이기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "test-prior-mismatch",
+      "label": "시험 세트 비율 불일치",
+      "parent": "test-set-size-rare-class",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "덜 불균형한 시험 세트가 정밀도를 낙관적으로 만듦.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "classifier-monitoring-sampling",
+      "label": "운영 분류기 감시 표본 추출",
+      "parent": "test-set-size-rare-class",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "주기적 샘플링으로 정밀도·재현율 추적.",
       "added": "2026-11-19",
       "related": []
     }
