@@ -40023,11 +40023,12 @@
    "label": "CheckList 행동 테스트",
    "parent": "data-slicing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "NLP 모델의 능력별 테스트 매트릭스.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "coherent-slice",
@@ -44549,6 +44550,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "자동 설명이 틀릴 때의 확인 절차.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "minimum-functionality-test",
+   "label": "최소 기능 테스트 MFT",
+   "parent": "checklist-behavioral-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단순 예시가 항상 맞는지 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "llm-behavioral-testing",
+   "label": "LLM 행동 테스트",
+   "parent": "checklist-behavioral-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성형 모델에 행동 테스트를 적용하는 법.",
    "related": [],
    "added": "2026-11-19"
   }
