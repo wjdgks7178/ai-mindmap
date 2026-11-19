@@ -40083,11 +40083,12 @@
    "label": "도메인 통째로 떼기",
    "parent": "ood-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "병원·지역·기간을 통째로 시험용으로.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "distribution-shift-types",
@@ -44719,6 +44720,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값 전체에서 탐지 성능을 보는 곡선.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "ood-validation-set",
+   "label": "OOD 검증 세트",
+   "parent": "held-out-domain-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 선택에 쓰는 시험과 비슷한 분포 변화 세트.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-leakage-patient-level",
+   "label": "환자 단위 누수",
+   "parent": "held-out-domain-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사람 데이터가 학습·시험에 섞이는 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "few-domain-variance",
+   "label": "도메인 수가 적을 때의 변동",
+   "parent": "held-out-domain-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 도메인을 떼느냐에 따른 결과 차이.",
    "related": [],
    "added": "2026-11-19"
   }
