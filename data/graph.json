@@ -37894,11 +37894,15 @@
       "label": "문서 단위 분할",
       "parent": "group-wise-split",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "한 문서에서 만든 QA를 같은 쪽에.",
+      "summary": "문서를 분할 최소 단위로. 금융 규제 QA 논문은 문서 40개를 80/15/5로 다시 나누고 다문서 질문 989쌍을 폐기.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "rag-evaluation",
+        "data-leakage"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "group-definition",
@@ -39668,6 +39672,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "샘플 하나씩 시험. LOGO와의 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "near-duplicate-detection",
+      "label": "근접 중복 탐지",
+      "parent": "document-level-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "복사본·개정판처럼 거의 같은 문단 찾기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "multi-passage-question-handling",
+      "label": "다문단 질문 처리",
+      "parent": "document-level-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "여러 문단을 걸친 질문을 분할에서 다루는 법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "split-leakage-audit",
+      "label": "분할 후 누수 점검",
+      "parent": "document-level-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정확·퍼지·임베딩 유사도로 겹침 점검.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "small-test-set-variance",
+      "label": "작은 시험셋의 변동",
+      "parent": "document-level-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서가 적을 때 점수가 흔들리는 문제.",
       "added": "2026-11-19",
       "related": []
     }
