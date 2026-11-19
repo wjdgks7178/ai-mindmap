@@ -39712,11 +39712,14 @@
       "label": "항목당 라벨 수 정하기",
       "parent": "crowdsourcing-labeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "4개 안팎에서 전문가 수준(2008 연구).",
+      "summary": "Snow 등 2008: 감정 과제에서 비전문가 평균 4명이 전문가 1명 수준 ITA, 최대 9명 이내. 직접 계산: 정확도 0.7이면 3명 0.784·5명 0.837·9명 0.901.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "double-annotation-adjudication"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "managed-workforce-labeling",
@@ -43172,6 +43175,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "개인정보 가린 뒤 업로드.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "adaptive-redundancy",
+      "label": "적응형 중복 라벨링",
+      "parent": "redundant-annotation-count",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "불일치 항목에만 추가 라벨러 배정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "majority-vote-accuracy-curve",
+      "label": "다수결 정확도 곡선",
+      "parent": "redundant-annotation-count",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "인원 수에 따른 정확도와 수확 체감.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "annotator-independence-assumption",
+      "label": "라벨러 독립 가정",
+      "parent": "redundant-annotation-count",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "상관이 있으면 이득이 줄어듦.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mturk-annotation-2008",
+      "label": "MTurk 비전문가 라벨링 연구",
+      "parent": "redundant-annotation-count",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "5개 과제·편향 보정.",
       "added": "2026-11-19",
       "related": []
     }
