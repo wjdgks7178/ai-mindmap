@@ -39374,11 +39374,14 @@
       "label": "ODC-By 라이선스",
       "parent": "fineweb",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "공개 데이터베이스 이용 조건.",
+      "summary": "데이터베이스를 출처 표시만으로 자유 이용(상업 포함). 개별 콘텐츠 권리는 별도. FineWeb은 ODC-By 1.0 + Common Crawl 이용약관, 개인정보 잔존 가능.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-licensing-provenance"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "gopher-massivetext",
@@ -42350,6 +42353,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "FineWeb ablation에 쓰인 학습·평가 라이브러리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "database-right-sui-generis",
+      "label": "데이터베이스권(sui generis)",
+      "parent": "odc-by-license",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "저작권 없이도 DB 추출·재사용을 제한하는 EU 권리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "odc-by-vs-cc-by-odbl",
+      "label": "ODC-By vs CC BY vs ODbL",
+      "parent": "odc-by-license",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "출처 표시·share-alike 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "produced-works-notice",
+      "label": "산출물 고지 의무",
+      "parent": "odc-by-license",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "공개 사용 시 출처 고지 문구.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "fineweb-pii-removal",
+      "label": "FineWeb 개인정보 익명화",
+      "parent": "odc-by-license",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "이메일·공개 IP 정규식 익명화와 삭제 요청.",
       "added": "2026-11-19",
       "related": []
     }
