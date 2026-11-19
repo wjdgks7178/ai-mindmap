@@ -40267,9 +40267,56 @@
       "label": "전처리 누수와 Pipeline",
       "parent": "random-state-reproducibility",
       "domain": "ai-data",
+      "status": "done",
+      "priority": 3,
+      "summary": "분할 전 특징 선택은 무작위 데이터에서도 0.76~0.82를 만든다(문서·직접 재현). 분할 후 fit 또는 Pipeline 사용.",
+      "added": "2026-11-19",
+      "related": [
+        "data-leakage"
+      ],
+      "done": "2026-11-19"
+    },
+    {
+      "id": "scaler-leakage",
+      "label": "스케일러 누수",
+      "parent": "preprocessing-leakage-pipeline",
+      "domain": "ai-data",
       "status": "planned",
       "priority": 3,
-      "summary": "분할 전 SelectKBest 사용 시 0.76 vs 0.5.",
+      "summary": "전체 평균·분산으로 표준화하는 누수.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "imputation-leakage",
+      "label": "결측 대치 누수",
+      "parent": "preprocessing-leakage-pipeline",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "전체 통계로 결측을 채우는 누수.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "target-encoding-leakage",
+      "label": "타깃 인코딩 누수",
+      "parent": "preprocessing-leakage-pipeline",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "타깃 평균 인코딩이 만드는 누수와 교차 적합.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "random-label-sanity-check",
+      "label": "무작위 라벨 점검",
+      "parent": "preprocessing-leakage-pipeline",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "의미 없는 라벨에서 높은 점수가 나오면 누수 의심.",
       "added": "2026-11-19",
       "related": []
     }
