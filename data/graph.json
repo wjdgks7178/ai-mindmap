@@ -39597,11 +39597,14 @@
       "label": "LF 커버리지와 충돌",
       "parent": "programmatic-labeling-snorkel",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "규칙이 라벨을 붙인 비율과 서로 어긋난 비율.",
+      "summary": "커버리지·겹침·충돌 정의(LFAnalysis). 4개 LF 시뮬레이션에서 다수결은 76.6%에 라벨을 붙이고 정확도 69.3%.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "labeling-function"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "llm-as-labeling-function",
@@ -42848,6 +42851,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "소량 정답으로 LF 정확도 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "lf-summary-table",
+      "label": "lf_summary 표 읽기",
+      "parent": "lf-coverage-conflict",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LF별 통계표를 해석하는 법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "uncovered-data",
+      "label": "라벨 못 붙인 데이터",
+      "parent": "lf-coverage-conflict",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "어떤 LF도 말하지 않은 샘플의 처리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "correlated-lf-risk",
+      "label": "상관된 LF의 위험",
+      "parent": "lf-coverage-conflict",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 방식으로 틀리는 LF들.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "lf-pruning",
+      "label": "약한 LF 제거",
+      "parent": "lf-coverage-conflict",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정확도 0.5 근처 LF 정리.",
       "added": "2026-11-19",
       "related": []
     }
