@@ -40592,11 +40592,12 @@
    "label": "모델 피드백 고리",
    "parent": "training-serving-skew",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 출력이 미래 입력에 영향.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "skew-measurement-stages",
@@ -46174,6 +46175,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "등급·주소처럼 가끔 바뀌는 기준 테이블.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "direct-feedback-loop",
+   "label": "직접 피드백 고리",
+   "parent": "feedback-loop-ml",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 자기 학습 데이터 선택에 영향.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "hidden-feedback-loop",
+   "label": "숨은 피드백 고리",
+   "parent": "feedback-loop-ml",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시스템끼리 세상을 통해 간접 영향.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "exploration-randomization",
+   "label": "탐색용 무작위화",
+   "parent": "feedback-loop-ml",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 트래픽을 모델과 무관하게 노출.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "ml-analysis-debt",
+   "label": "ML 분석 부채",
+   "parent": "feedback-loop-ml",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출시 전 행동을 예측하기 어려운 부채.",
    "related": [],
    "added": "2026-11-19"
   }
