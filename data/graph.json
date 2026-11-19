@@ -37909,11 +37909,15 @@
       "label": "그룹 정의하기",
       "parent": "group-wise-split",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "무엇을 같은 그룹으로 볼지 결정.",
+      "summary": "학습·시험 양쪽에 나오면 안 되는 개체를 그룹으로. 가장 세분된 단위가 아니라 누수 위험의 식별자(환자·사용자).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "group-kfold",
+        "near-duplicate-detection"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "augmentation-group-leak",
@@ -39764,6 +39768,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "LLM이 바꿔 쓴 데이터가 양쪽에 걸치는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "multi-axis-grouping",
+      "label": "다축 그룹(환자+기관)",
+      "parent": "group-definition",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "두 식별자가 모두 유사성을 만들 때 묶는 법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "group-overlap-check",
+      "label": "그룹 겹침 검증",
+      "parent": "group-definition",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "폴드 간 겹치는 그룹이 0개인지 코드로 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "missing-group-ids",
+      "label": "그룹 ID 누락 문제",
+      "parent": "group-definition",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "ID 누락·불일치가 누수를 되살림.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "longitudinal-data-split",
+      "label": "종단 데이터 분할",
+      "parent": "group-definition",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 사람의 여러 방문 데이터를 나누는 법.",
       "added": "2026-11-19",
       "related": []
     }
