@@ -40408,11 +40408,12 @@
    "label": "Facets 데이터 시각화",
    "parent": "tfdv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분포를 눈으로 보고 버그를 발견.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "biased-sampling-reweighting",
@@ -45913,6 +45914,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "JS 발산의 제곱근, 거리 척도.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "facets-overview",
+   "label": "Facets Overview",
+   "parent": "facets-data-visualization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징별 분포를 데이터셋 간 비교.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "facets-dive",
+   "label": "Facets Dive",
+   "parent": "facets-data-visualization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 점을 면으로 나눠 탐색.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "label-format-mismatch",
+   "label": "라벨 표기 불일치",
+   "parent": "facets-data-visualization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·시험 라벨의 사소한 표기 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "archived-tool-risk",
+   "label": "아카이브된 도구 사용 위험",
+   "parent": "facets-data-visualization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유지보수 중단 오픈소스를 쓸 때 점검할 것.",
    "related": [],
    "added": "2026-11-19"
   }
