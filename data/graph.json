@@ -40580,11 +40580,12 @@
    "label": "조인 테이블 스냅샷",
    "parent": "training-serving-skew",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변하는 테이블을 주기적으로 고정.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "feedback-loop-ml",
@@ -46140,6 +46141,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 특징 정의를 두 경로에서 재사용.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "point-in-time-join",
+   "label": "시점 기준 조인",
+   "parent": "table-join-snapshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이벤트 시각 이전 값만 붙여 누수를 막음.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "feature-ttl",
+   "label": "특징 TTL",
+   "parent": "table-join-snapshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 값을 쓸 수 있는 최대 과거 범위.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "slowly-changing-dimension",
+   "label": "느리게 바뀌는 차원",
+   "parent": "table-join-snapshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "등급·주소처럼 가끔 바뀌는 기준 테이블.",
    "related": [],
    "added": "2026-11-19"
   }
