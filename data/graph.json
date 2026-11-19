@@ -37996,11 +37996,14 @@
       "label": "시범 라벨링 라운드",
       "parent": "label-consistency-guideline",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "본 작업 전 소수로 연습하고 일치도 확인.",
+      "summary": "본 작업 전 소수 샘플을 독립 라벨링해 일치도를 보고 규칙서를 고치는 반복 단계. 100~200개 규모 권장(실무 가이드).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-labeling"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "double-annotation-adjudication",
@@ -39990,6 +39993,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "확률이 실제 확률과 맞도록 보정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "target-agreement-setting",
+      "label": "목표 일치도 정하기",
+      "parent": "annotation-pilot-round",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "kappa 목표를 시범 전에 정하는 방법과 경험칙.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "low-agreement-diagnosis",
+      "label": "낮은 일치도 진단",
+      "parent": "annotation-pilot-round",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "라벨별로 모호한 정의를 찾는 법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "guideline-draft-iteration",
+      "label": "규칙서 반복 개발",
+      "parent": "annotation-pilot-round",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "초안-라벨링-토론-수정 순환.",
       "added": "2026-11-19",
       "related": []
     }
