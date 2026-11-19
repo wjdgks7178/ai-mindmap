@@ -40057,11 +40057,12 @@
    "label": "WILDS 벤치마크",
    "parent": "ood-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 분포 변화 10개 데이터셋 모음.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "ood-detection-softmax",
@@ -44572,6 +44573,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "생성형 모델에 행동 테스트를 적용하는 법.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "domain-generalization",
+   "label": "도메인 일반화",
+   "parent": "wilds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새로운 도메인에서도 성능을 유지하는 학습.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "subpopulation-shift",
+   "label": "소집단 변화",
+   "parent": "wilds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 비율이 달라질 때 최악 집단 성능.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "worst-group-accuracy",
+   "label": "최악 집단 정확도",
+   "parent": "wilds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균이 아니라 가장 못한 집단을 본다.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "camelyon17",
+   "label": "Camelyon17",
+   "parent": "wilds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "병원 간 조직 이미지 분포 변화.",
    "related": [],
    "added": "2026-11-19"
   }
