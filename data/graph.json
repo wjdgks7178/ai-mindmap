@@ -39392,11 +39392,15 @@
       "label": "Gopher·MassiveText",
       "parent": "pretraining-data-filtering",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "DeepMind의 데이터 파이프라인 사례.",
+      "summary": "MassiveText 23.5억 문서·10.5TB, Gopher는 3,000억 토큰. 콘텐츠·품질·반복·중복(13-gram MinHash 0.8)·시험 세트 필터링. 분류기 기반 품질 필터는 편향 우려로 미사용.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "c4-dataset",
+        "fineweb"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "safesearch-vs-wordlist",
@@ -42456,6 +42460,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "도메인·언어·오염을 기록해 공개.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "gopher-quality-heuristics",
+      "label": "Gopher 품질 휴리스틱",
+      "parent": "gopher-massivetext",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "단어 수·평균 길이·불용어 규칙.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "massiveweb-text-extraction",
+      "label": "MassiveWeb HTML 구조 추출",
+      "parent": "gopher-massivetext",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "태그 구조로 본문 블록을 뽑는 방식.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "test-set-filtering-13gram",
+      "label": "13-그램 시험 세트 필터링",
+      "parent": "gopher-massivetext",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시험 문서와 자카드 0.8 초과 학습 문서 제거.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "sampling-proportion-tuning",
+      "label": "하위 집합 표집 비율 튜닝",
+      "parent": "gopher-massivetext",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "웹·도서·코드 비율을 성능으로 조정.",
       "added": "2026-11-19",
       "related": []
     }
