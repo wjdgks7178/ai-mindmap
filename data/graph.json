@@ -38234,11 +38234,15 @@
       "label": "스냅샷별 vs 전역 중복 제거",
       "parent": "near-duplicate-removal",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "FineWeb이 스냅샷별을 택한 이유.",
+      "summary": "FineWeb: 96개 스냅샷 전역 MinHash는 오래된 스냅샷 최대 90% 제거에도 품질이 낮았고 스냅샷별 제거가 RefinedWeb 수준(20조 토큰). MinHash 112개를 14버킷×8로.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "minhash-lsh",
+        "datatrove"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "mixup-cutmix",
@@ -40748,6 +40752,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "필터가 버린 문서를 따로 남겨 점검.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "fineweb-dataset",
+      "label": "FineWeb",
+      "parent": "per-snapshot-vs-global-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "96개 Common Crawl에서 만든 15조 토큰 데이터셋.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "fineweb-edu",
+      "label": "FineWeb-Edu",
+      "parent": "per-snapshot-vs-global-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "교육적 텍스트 1.3조 토큰.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "duplicate-cluster-size",
+      "label": "중복 군집 크기와 효과",
+      "parent": "per-snapshot-vs-global-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "거대 군집 제거가 핵심이라는 가설.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "dedup-quality-check",
+      "label": "중복 제거 후 품질 점검",
+      "parent": "per-snapshot-vs-global-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "남은 데이터와 제거된 데이터를 비교.",
       "added": "2026-11-19",
       "related": []
     }
