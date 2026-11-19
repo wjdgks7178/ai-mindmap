@@ -39560,11 +39560,15 @@
       "label": "약한 지도(weak supervision)",
       "parent": "programmatic-labeling-snorkel",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "불완전한 라벨 소스를 결합해 학습.",
+      "summary": "불완전한 라벨 출처를 합쳐 학습 라벨 생성(PWS). Snorkel: 전문가 2.8배 빠름, WRENCH는 22개 데이터셋·120개 이상 변형 비교.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "labeling-function",
+        "label-model-denoising"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "labeling-function",
@@ -42943,6 +42947,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "임계값 대신 확률을 학습에 사용.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "pws-pipeline",
+      "label": "PWS 파이프라인",
+      "parent": "weak-supervision",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "라벨 출처→라벨 모델→최종 모델.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "wrench-benchmark",
+      "label": "WRENCH 벤치마크",
+      "parent": "weak-supervision",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "약한 지도 표준 평가.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "semi-vs-weak-vs-self-supervised",
+      "label": "준·약·자기지도 학습 비교",
+      "parent": "weak-supervision",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "세 학습 방식의 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "weak-supervision-validation-set",
+      "label": "약한 지도의 검증 세트",
+      "parent": "weak-supervision",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람 라벨 소량으로 합친 라벨 점검.",
       "added": "2026-11-19",
       "related": []
     }
