@@ -38194,11 +38194,14 @@
       "label": "정확 부분 문자열 제거",
       "parent": "near-duplicate-removal",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "긴 반복 구간을 suffix array로 제거.",
+      "summary": "접미사 배열로 50토큰 이상 동일 구간 제거. C4 토큰 7.18%, RealNews 19.4% 제거. 암기 방출 1.926%→0.138%.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "minhash-lsh"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "datatrove",
@@ -40653,6 +40656,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "단어가 다르고 뜻이 같은 문장은 못 잡음.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "suffix-array",
+      "label": "접미사 배열",
+      "parent": "exact-substring-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모든 접미사를 정렬한 색인 구조.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "dedup-threshold-50-tokens",
+      "label": "중복 임계 길이(50토큰)",
+      "parent": "exact-substring-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "짧은 일치는 흔해 임계값을 두는 이유.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "memorization-from-duplicates",
+      "label": "중복과 암기",
+      "parent": "exact-substring-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "중복 학습이 그대로 외워 출력하는 현상.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "train-test-overlap",
+      "label": "학습-시험 겹침",
+      "parent": "exact-substring-dedup",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "검증 세트 4% 이상이 학습과 겹친 사례.",
       "added": "2026-11-19",
       "related": []
     }
