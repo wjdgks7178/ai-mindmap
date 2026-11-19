@@ -39939,11 +39939,12 @@
    "label": "CC ShareAlike",
    "parent": "license-inheritance-derived-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개작을 같은 라이선스로.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "cc-noderivatives",
@@ -44289,6 +44290,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모음집 속 하위 데이터셋별 조건 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "cc-license-compatibility",
+   "label": "CC 라이선스 호환성",
+   "parent": "cc-sharealike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SA끼리 섞을 때 호환 여부.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tdm-exception",
+   "label": "텍스트·데이터 마이닝 예외",
+   "parent": "cc-sharealike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습이 라이선스보다 예외로 허용되는 경우.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "model-weights-adaptation",
+   "label": "모델 가중치는 개작물인가",
+   "parent": "cc-sharealike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SA·ND 적용의 미해결 쟁점.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "copyleft-open-data",
+   "label": "카피레프트 오픈 데이터",
+   "parent": "cc-sharealike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SA 계열 공개 데이터의 장단점.",
    "related": [],
    "added": "2026-11-19"
   }
