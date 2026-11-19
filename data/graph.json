@@ -40556,11 +40556,12 @@
    "label": "DQDL(데이터 품질 정의 언어)",
    "parent": "amazon-deequ",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "선언적 품질 규칙 표기.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "log-serving-features",
@@ -46050,6 +46051,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "일회성 대량 적재를 평균에서 빼기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dqdl-composite-row-evaluation",
+   "label": "DQDL 복합 규칙 행 단위 평가",
+   "parent": "dqdl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컬럼 단위 vs 행 단위 평가 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dqdl-where-clause",
+   "label": "DQDL where 절",
+   "parent": "dqdl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조건에 맞는 행에만 규칙 적용.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dqdl-labels",
+   "label": "DQDL 라벨",
+   "parent": "dqdl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙을 팀·중요도로 분류해 보고.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dqdl-threshold-expression",
+   "label": "DQDL with threshold",
+   "parent": "dqdl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙을 만족하는 값의 비율로 판정.",
    "related": [],
    "added": "2026-11-19"
   }
