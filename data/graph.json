@@ -40071,11 +40071,12 @@
    "label": "분포 밖 탐지(최대 소프트맥스)",
    "parent": "ood-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "낯선 입력을 확률로 알아채는 기준선.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "held-out-domain-split",
@@ -44685,6 +44686,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "벤치마크 점수에 표준오차를 붙이는 법.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "odin-ood-detection",
+   "label": "ODIN",
+   "parent": "ood-detection-softmax",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "온도 스케일링과 입력 섭동으로 OOD 탐지 향상.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "overconfidence-neural-nets",
+   "label": "신경망의 과신",
+   "parent": "ood-detection-softmax",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 밖 입력에도 높은 확률을 내는 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "auroc-ood",
+   "label": "OOD 탐지 AUROC",
+   "parent": "ood-detection-softmax",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값 전체에서 탐지 성능을 보는 곡선.",
    "related": [],
    "added": "2026-11-19"
   }
