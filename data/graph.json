@@ -40251,11 +40251,12 @@
    "label": "실험 재현성",
    "parent": "data-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "코드 버전 + 데이터 버전 + 설정 기록.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "rag-index-versioning",
@@ -45350,6 +45351,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "객체 저장소 위에서 Git식 브랜치·커밋.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "ml-reproducibility-checklist",
+   "label": "ML 재현성 체크리스트",
+   "parent": "experiment-reproducibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Pineau 체크리스트의 다섯 묶음.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "random-seed-protocol",
+   "label": "랜덤 시드 기록",
+   "parent": "experiment-reproducibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드와 실행 횟수를 결과에 명시.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "nondeterministic-gpu-training",
+   "label": "GPU 학습의 비결정성",
+   "parent": "experiment-reproducibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드만으로 통제되지 않는 변동.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "environment-pinning",
+   "label": "환경 고정",
+   "parent": "experiment-reproducibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의존성 파일·컨테이너로 실행 환경 재현.",
    "related": [],
    "added": "2026-11-19"
   }
