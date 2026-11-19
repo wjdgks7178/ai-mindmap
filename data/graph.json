@@ -37630,11 +37630,16 @@
       "label": "사내 데이터 카드",
       "parent": "data-licensing-provenance",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "출처·허용 용도·삭제 기한을 한 장에.",
+      "summary": "데이터 세트마다 출처·허용/금지 용도·삭제 기한을 한 장에. 원형은 Gebru 등의 Datasheets for Datasets.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "datasheets-for-datasets",
+        "model-card",
+        "data-retention-policy"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "model-cards",
@@ -39476,6 +39481,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "데이터 책임 역할 분담.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "allowed-use-policy-data",
+      "label": "데이터 허용 용도 정책",
+      "parent": "internal-data-card",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터별 쓸 수 있는 용도·금지 용도 규칙.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "internal-data-card-adoption",
+      "label": "데이터 카드 도입 규칙",
+      "parent": "internal-data-card",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "카드 없는 데이터는 학습 금지 등 운영 규칙.",
       "added": "2026-11-19",
       "related": []
     }
