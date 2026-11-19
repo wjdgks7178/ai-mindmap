@@ -39470,9 +39470,10 @@
       "summary": "모범 답안 쌍으로 미세조정. InstructGPT SFT 약 13k 프롬프트·16에폭·라벨러 40명, 1.3B가 175B GPT-3보다 선호. LIMA는 1,000쌍으로 GPT-4와 동등/선호 43%.",
       "added": "2026-11-18",
       "related": [
-        "rlhf",
         "label-consistency-guideline",
-        "lima-less-is-more"
+        "lima-less-is-more",
+        "rlhf",
+        "sft"
       ],
       "done": "2026-11-19"
     },
