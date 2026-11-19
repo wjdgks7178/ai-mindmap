@@ -38341,11 +38341,15 @@
       "label": "CCBot과 옵트아웃",
       "parent": "common-crawl",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "크롤러 식별과 사이트 운영자 거부 방법.",
+      "summary": "CCBot/2.0은 robots.txt로 차단. Common Crawl은 헤더·메타 기반 옵트아웃을 지원하나 ai.txt·tdmrep.json 등 파일 기반은 아직 탐지 못 함.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "warc-wat-wet",
+        "ai-crawler-user-agents"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "c4-dataset",
@@ -41152,6 +41156,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "S3·HTTPS·Hugging Face 미러.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "robots-txt-basics",
+      "label": "robots.txt 기본",
+      "parent": "ccbot-opt-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "User-agent·Disallow 규칙과 파서 동작.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "tdm-reservation-protocol",
+      "label": "TDM Reservation Protocol",
+      "parent": "ccbot-opt-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "텍스트·데이터 마이닝 권리 유보 신호.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "crawler-ip-verification",
+      "label": "크롤러 IP 검증",
+      "parent": "ccbot-opt-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "역방향·정방향 DNS로 사칭 거르기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "opt-out-limits-existing-data",
+      "label": "옵트아웃의 한계",
+      "parent": "ccbot-opt-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "이미 수집된 데이터에는 소급되지 않음.",
       "added": "2026-11-19",
       "related": []
     }
