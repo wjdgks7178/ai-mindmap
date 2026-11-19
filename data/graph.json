@@ -39856,11 +39856,15 @@
       "label": "대리 변수",
       "parent": "data-distribution-bias",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "민감 속성을 지워도 상관 특징이 남는 문제.",
+      "summary": "민감 속성을 지워도 상관 특징(중복 부호화)이 대신함. 시뮬레이션: 속성 제거 후에도 합격률 집단0 0.433 vs 집단1 0.329, 속성+대리 0.496 vs 0.198.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-distribution-bias",
+        "gender-shades"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "reweighting-oversampling",
@@ -43975,6 +43979,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "속성 없이 구성을 점검하는 어려움.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "redundant-encoding",
+      "label": "중복 부호화(redundant encoding)",
+      "parent": "proxy-variables",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "다른 특징에서 민감 속성이 복원되는 현상.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "fairness-through-unawareness",
+      "label": "Fairness through unawareness",
+      "parent": "proxy-variables",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "속성 제거로 공정성을 얻으려는 접근과 한계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "proxy-detection-test",
+      "label": "대리 변수 점검 테스트",
+      "parent": "proxy-variables",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "다른 특징으로 민감 속성을 예측해 보기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "biased-label-accuracy-trap",
+      "label": "편향 라벨 정확도의 함정",
+      "parent": "proxy-variables",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "편향된 정답을 따르면 정확하다고 측정됨.",
       "added": "2026-11-19",
       "related": []
     }
