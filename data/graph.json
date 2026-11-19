@@ -38396,11 +38396,15 @@
       "label": "교육 품질 분류기",
       "parent": "fineweb",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "LLM 점수를 학습한 회귀 분류기로 데이터 선별.",
+      "summary": "Llama-3-70B가 46만 페이지에 0~5점 주석 → 임베딩+선형 회귀 분류기(F1 82%, 임계 3) → 15조 토큰 필터로 FineWeb-Edu 1.3조. MMLU 33→37%, ARC 46→57%.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "fineweb",
+        "llm-as-data-annotator"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "llm-as-data-annotator",
@@ -41295,6 +41299,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "색인으로 특정 도메인 페이지만 선별.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "additive-scoring-prompt",
+      "label": "가산식 점수 프롬프트",
+      "parent": "educational-quality-classifier",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "기준 충족마다 1점씩 더하는 평가 설계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "classifier-threshold-tradeoff",
+      "label": "분류기 임계값 균형",
+      "parent": "educational-quality-classifier",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임계 3이 지식·일반 벤치 균형점.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "frozen-embedding-regression",
+      "label": "동결 임베딩+선형 회귀",
+      "parent": "educational-quality-classifier",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임베딩 위에 얹는 가벼운 점수 모델.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "classifier-inference-cost",
+      "label": "대규모 분류기 추론 비용",
+      "parent": "educational-quality-classifier",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "15조 토큰에 H100 6,000시간.",
       "added": "2026-11-19",
       "related": []
     }
