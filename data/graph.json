@@ -39343,11 +39343,16 @@
       "label": "LLM을 데이터 주석자로",
       "parent": "fineweb",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "LLM이 대량 데이터에 점수를 매기는 방식.",
+      "summary": "LLM이 대량 데이터에 라벨·점수. FineWeb-Edu는 Llama-3-70B 46만 건 주석. ChatGPT는 트윗 과제에서 크라우드워커보다 4/5 과제 정확도 높고 건당 0.003달러 미만(2023 초록).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "llm-as-judge",
+        "llm-labeler-guideline-prompt",
+        "educational-quality-classifier"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "ablation-data-studies",
@@ -42253,6 +42258,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "15조 토큰에 H100 6,000시간.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "annotate-then-distill",
+      "label": "주석 후 증류 패턴",
+      "parent": "llm-as-data-annotator",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM 주석으로 작은 분류기를 학습해 비용 절감.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "llm-annotation-bias",
+      "label": "LLM 주석 편향",
+      "parent": "llm-as-data-annotator",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자기 선호·프롬프트 민감성.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "consistent-but-wrong",
+      "label": "일관되지만 틀린 주석",
+      "parent": "llm-as-data-annotator",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "일치도와 정확도의 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "annotation-cost-comparison",
+      "label": "주석 비용 비교",
+      "parent": "llm-as-data-annotator",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람·크라우드·LLM의 건당 비용.",
       "added": "2026-11-19",
       "related": []
     }
