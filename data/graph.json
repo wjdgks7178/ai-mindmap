@@ -40873,11 +40873,16 @@
       "label": "작은 시험셋의 변동",
       "parent": "document-level-split",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "문서가 적을 때 점수가 흔들리는 문제.",
+      "summary": "표준오차 √(p(1-p)/n): p=0.85에서 n=100이면 0.036. 진짜 2%p 차이 두 모델이 독립 시험셋에서 순위 뒤집힐 확률은 n=100 0.388, n=1000 0.124(직접 시뮬레이션).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "wilson-interval",
+        "small-data-validation-strategy",
+        "effective-sample-size"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "perceptual-hash",
@@ -43552,6 +43557,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "같은 그룹 샘플은 독립이 아님.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "paired-test-same-items",
+      "label": "같은 문항 쌍 비교",
+      "parent": "small-test-set-variance",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "독립 비교보다 검정력이 높은 설계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "eval-set-size-planning",
+      "label": "평가셋 크기 계획",
+      "parent": "small-test-set-variance",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "탐지하려는 차이로 문항 수 계산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "model-choice-beyond-small-gaps",
+      "label": "작은 차이를 넘는 모델 선택",
+      "parent": "small-test-set-variance",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "비용·지연 등 다른 기준 병행.",
       "added": "2026-11-19",
       "related": []
     }
