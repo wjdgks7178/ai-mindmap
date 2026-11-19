@@ -40273,11 +40273,12 @@
    "label": "Git LFS와 DVC 비교",
    "parent": "data-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대용량 파일 관리 방식 차이.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "zombie-documents",
@@ -45305,6 +45306,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "해시로 파일을 저장·중복 제거하는 구조.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "git-lfs-pointer-file",
+   "label": "Git LFS 포인터 파일",
+   "parent": "git-lfs-vs-dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "oid·size로 실제 파일을 가리키는 텍스트.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "git-lfs-migrate",
+   "label": "git lfs migrate",
+   "parent": "git-lfs-vs-dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미 기록된 큰 파일을 LFS로 옮기기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "huggingface-hub-versioning",
+   "label": "Hugging Face Hub 버전 관리",
+   "parent": "git-lfs-vs-dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델·데이터셋을 Git 기반으로 버전 관리.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "lakefs-data-versioning",
+   "label": "lakeFS 데이터 버전 관리",
+   "parent": "git-lfs-vs-dvc",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "객체 저장소 위에서 Git식 브랜치·커밋.",
    "related": [],
    "added": "2026-11-19"
   }
