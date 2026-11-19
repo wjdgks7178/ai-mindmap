@@ -40420,11 +40420,12 @@
    "label": "편향 샘플링과 가중치 복원",
    "parent": "tfdv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과소 슬라이스 보강 후 분포 왜곡.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "stratified-group-kfold",
@@ -45958,6 +45959,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "유지보수 중단 오픈소스를 쓸 때 점검할 것.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "inverse-probability-weighting",
+   "label": "역확률 가중",
+   "parent": "biased-sampling-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표집 확률의 역수로 가중해 모집단 통계 복원.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "horvitz-thompson-estimator",
+   "label": "Horvitz–Thompson 추정량",
+   "parent": "biased-sampling-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률을 아는 표집의 가중 평균.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "extreme-weight-instability",
+   "label": "극단 가중치 불안정",
+   "parent": "biased-sampling-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률이 매우 작을 때 가중치가 추정을 지배.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "doubly-robust-estimator",
+   "label": "이중 강건 추정량",
+   "parent": "biased-sampling-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모델 중 하나만 맞아도 일관된 추정.",
    "related": [],
    "added": "2026-11-19"
   }
