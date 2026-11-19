@@ -38223,11 +38223,15 @@
       "label": "LLM 암기",
       "parent": "near-duplicate-removal",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "학습 텍스트를 그대로 재현하는 현상.",
+      "summary": "모델이 학습 텍스트를 그대로 재현. 모델 크기·반복 횟수·문맥 길이에 로그-선형 증가(Carlini 2022). GPT-2에서 수백 개 시퀀스 추출(2020).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "exact-substring-dedup",
+        "benchmark-contamination"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "per-snapshot-vs-global-dedup",
@@ -40796,6 +40800,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "남은 데이터와 제거된 데이터를 비교.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "training-data-extraction-attack",
+      "label": "학습 데이터 추출 공격",
+      "parent": "memorization-in-llms",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "질의로 학습 원문을 복원하는 공격.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "memorization-three-factors",
+      "label": "암기의 세 요인",
+      "parent": "memorization-in-llms",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "용량·반복·문맥 길이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "membership-inference-attack",
+      "label": "멤버십 추론 공격",
+      "parent": "memorization-in-llms",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "특정 샘플이 학습에 쓰였는지 추정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "memorization-mitigation",
+      "label": "암기 완화 방법",
+      "parent": "memorization-in-llms",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "중복 제거·차등 프라이버시·출력 필터.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "pii-in-training-data",
+      "label": "학습 데이터 속 개인정보",
+      "parent": "memorization-in-llms",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "이름·전화·이메일 마스킹.",
       "added": "2026-11-19",
       "related": []
     }
