@@ -40311,11 +40311,12 @@
    "label": "임베딩 모델 불일치",
    "parent": "stale-document-cleanup",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 교체 후 재색인 없음.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "freshness-prefilter-vs-decay",
@@ -45552,6 +45553,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "최근 문서에 가중치를 주는 검색 점수.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "embedding-dimensions-parameter",
+   "label": "임베딩 dimensions 파라미터",
+   "parent": "embedding-model-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벡터를 잘라 줄이는 옵션과 재정규화.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "embedding-normalization",
+   "label": "임베딩 정규화",
+   "parent": "embedding-model-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "길이 1로 맞춰 코사인과 내적을 같게.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "mteb-benchmark",
+   "label": "MTEB 벤치마크",
+   "parent": "embedding-model-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩 모델 성능을 비교하는 모음.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "model-version-startup-check",
+   "label": "모델 버전 시작 시 검사",
+   "parent": "embedding-model-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질의 경로와 색인의 모델이 같은지 확인.",
    "related": [],
    "added": "2026-11-19"
   }
