@@ -40323,11 +40323,12 @@
    "label": "신선도 사전 필터 vs 감쇠",
    "parent": "stale-document-cleanup",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제거할지 순위만 낮출지.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "rag-reconciliation-job",
@@ -45597,6 +45598,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "질의 경로와 색인의 모델이 같은지 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "as-of-date-filter",
+   "label": "as-of 날짜 필터",
+   "parent": "freshness-prefilter-vs-decay",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지정한 날짜 이전 문서만 근거로 사용.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "half-life-recency-prior",
+   "label": "반감기 최신성 가중",
+   "parent": "freshness-prefilter-vs-decay",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간이 지날수록 점수가 절반씩 감소.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "azure-freshness-policy",
+   "label": "Azure 신선도 정책",
+   "parent": "freshness-prefilter-vs-decay",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "boostingDuration으로 최신 문서 순위 가중.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "query-aware-recency-gate",
+   "label": "질의 인식 최신성 게이트",
+   "parent": "freshness-prefilter-vs-decay",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문에 따라 최신성 적용 여부를 학습으로 결정.",
    "related": [],
    "added": "2026-11-19"
   }
