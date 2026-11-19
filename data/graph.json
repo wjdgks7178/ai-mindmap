@@ -40107,11 +40107,12 @@
    "label": "실행 가능한 특징",
    "parent": "algorithmic-recourse",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "바꿀 수 있는 변수와 불가한 변수 구분.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "recourse-audit-integer-programming",
@@ -44798,6 +44799,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "수법 진화로 관계가 바뀌는 경우.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "conditionally-immutable-features",
+   "label": "조건부 immutable 특징",
+   "parent": "actionable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 방향으로만 바뀌는 특징(학위).",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "recourse-feasibility-bounds",
+   "label": "recourse 가능성과 값의 범위",
+   "parent": "actionable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징이 유한할 때 대안이 없는 사람이 생김.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "recourse-out-of-sample",
+   "label": "배포 후 recourse 변화",
+   "parent": "actionable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 누락·분포 변화로 대안이 사라짐.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "action-set-definition",
+   "label": "행동 집합 정의",
+   "parent": "actionable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인별 가능한 변화 범위를 형식화.",
    "related": [],
    "added": "2026-11-19"
   }
