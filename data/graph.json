@@ -38298,11 +38298,15 @@
       "label": "라벨 보존 변환",
       "parent": "data-augmentation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "정답이 바뀌지 않는 변형만 사용.",
+      "summary": "정답이 바뀌지 않는 변형만 증강에 사용. 직접 실험: 180도 회전한 6의 87%가 9로 예측, 원라벨로 섞어 학습하면 정확도 0.961→0.887.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation",
+        "mixup-cutmix"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "augmentation-for-detection",
@@ -41057,6 +41061,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "문서와 설치 버전의 인자명이 다른 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "augmentation-allowlist",
+      "label": "증강 허용 목록",
+      "parent": "label-preserving-transform",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터 종류별 안전한 변환 목록 관리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "medical-flip-hazard",
+      "label": "의료 영상 뒤집기 위험",
+      "parent": "label-preserving-transform",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "좌우 뒤집기가 해부학을 바꾸는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "self-supervised-label-augmentation",
+      "label": "자기지도 라벨 증강",
+      "parent": "label-preserving-transform",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "변환 종류를 추가 라벨로 학습.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "augmentation-sample-review",
+      "label": "증강 샘플 사람 점검",
+      "parent": "label-preserving-transform",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "변형 결과를 표본 확인.",
       "added": "2026-11-19",
       "related": []
     }
