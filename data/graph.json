@@ -39690,11 +39690,15 @@
       "label": "Dawid-Skene 집계",
       "parent": "crowdsourcing-labeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "작업자 편향을 추정해 라벨을 합치는 EM 모델.",
+      "summary": "EM으로 라벨러 혼동 행렬과 참 라벨을 동시 추정. 직접 시뮬레이션: 후한 라벨러 2명이 섞인 5명에서 다수결 0.912 vs Dawid-Skene 0.932.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "label-model-denoising",
+        "redundant-annotation-count"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "worker-quality-gold-questions",
@@ -43219,6 +43223,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "5개 과제·편향 보정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "confusion-matrix-annotator",
+      "label": "라벨러 혼동 행렬",
+      "parent": "dawid-skene-aggregation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "참 라벨별 답변 확률.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "em-initialization",
+      "label": "EM 초기화(다수결)",
+      "parent": "dawid-skene-aggregation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "초기값 민감성과 다수결 초기화.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "annotator-quality-score",
+      "label": "라벨러 품질 점수",
+      "parent": "dawid-skene-aggregation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "EM 부산물로 얻는 신뢰도.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "correlated-annotators",
+      "label": "상관된 라벨러 문제",
+      "parent": "dawid-skene-aggregation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 방식으로 틀리면 과신.",
       "added": "2026-11-19",
       "related": []
     }
