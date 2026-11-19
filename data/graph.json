@@ -39465,11 +39465,16 @@
       "label": "SFT(지도 미세조정)",
       "parent": "instruction-preference-data",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "시범 답안으로 모델을 미세조정.",
+      "summary": "모범 답안 쌍으로 미세조정. InstructGPT SFT 약 13k 프롬프트·16에폭·라벨러 40명, 1.3B가 175B GPT-3보다 선호. LIMA는 1,000쌍으로 GPT-4와 동등/선호 43%.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "rlhf",
+        "label-consistency-guideline",
+        "lima-less-is-more"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "red-teaming-data",
@@ -42694,6 +42699,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "어절·글자 수 기준과 종결 부호 처리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "instructgpt-three-stage",
+      "label": "InstructGPT 3단계",
+      "parent": "sft-supervised-finetuning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SFT → 보상 모델 → PPO.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "sft-epochs-overfitting",
+      "label": "SFT 에폭과 과적합",
+      "parent": "sft-supervised-finetuning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "InstructGPT는 16에폭이 도움이 됨.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "labeler-prompt-sources",
+      "label": "프롬프트 출처(라벨러 작성 vs API)",
+      "parent": "sft-supervised-finetuning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SFT 데이터 프롬프트를 얻는 방식.",
       "added": "2026-11-19",
       "related": []
     }
