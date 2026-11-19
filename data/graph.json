@@ -39407,11 +39407,15 @@
       "label": "SafeSearch vs 금지어 목록",
       "parent": "pretraining-data-filtering",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "수동 금지어가 소수 집단 콘텐츠를 과도 제거.",
+      "summary": "C4 금지어 필터는 성적 지향 언급 문서를 가장 많이 지우고(비성적 22~36%), Gopher는 이를 피하려 SafeSearch를 사용.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "gopher-massivetext",
+        "web-crawl-quality-issues"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "repetition-thresholds",
@@ -42551,6 +42555,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "샘플링 중 반복과 반복적 학습 데이터의 관계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "filter-removal-audit",
+      "label": "필터 제거율 감사",
+      "parent": "safesearch-vs-wordlist",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정체성·주제별 제거율 비교 방법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "pmi-identity-removal",
+      "label": "PMI로 본 정체성별 제거",
+      "parent": "safesearch-vs-wordlist",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "점별 상호정보로 필터 편향 측정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "open-safety-classifiers",
+      "label": "공개 안전 분류기 대안",
+      "parent": "safesearch-vs-wordlist",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "외부 서비스 의존을 줄이는 방법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "doc-vs-line-level-removal",
+      "label": "문서 단위 vs 줄 단위 제거",
+      "parent": "safesearch-vs-wordlist",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "통째 제거 대신 줄만 제거.",
       "added": "2026-11-19",
       "related": []
     }
