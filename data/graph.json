@@ -38048,11 +38048,12 @@
       "label": "LLM 라벨러 프롬프트",
       "parent": "label-consistency-guideline",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "규칙서를 LLM 라벨링 프롬프트로 옮기기.",
+      "summary": "규칙서를 구조화 프롬프트로 바꿔 LLM이 라벨링. 생의학 NER 연구 2건에서 규칙서 통합이 도움, 사람 부분집합 검증 필요.",
       "added": "2026-11-18",
-      "related": []
+      "related": [],
+      "done": "2026-11-19"
     },
     {
       "id": "stratified-train-test-split",
@@ -40141,6 +40142,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "영향 범위를 정해 다시 라벨링.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "llm-labeler-validation-subset",
+      "label": "LLM 라벨러 검증용 부분집합",
+      "parent": "llm-labeler-guideline-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람 라벨 일부로 일치도 확인 후 확대 적용.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "llm-unknown-option",
+      "label": "unknown 허용 출력",
+      "parent": "llm-labeler-guideline-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "불확실할 때 라벨을 거부하게 하는 설계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "moderation-guideline-refinement",
+      "label": "중재 기반 규칙서 정제",
+      "parent": "llm-labeler-guideline-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM과 반복하며 규칙서를 다듬는 방식.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "llm-annotation-domain-generalization",
+      "label": "LLM 라벨링 일반화 한계",
+      "parent": "llm-labeler-guideline-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "연구가 생의학에 치우쳐 있다는 점.",
       "added": "2026-11-19",
       "related": []
     }
