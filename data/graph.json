@@ -39497,11 +39497,19 @@
       "label": "합성 선호 데이터",
       "parent": "instruction-preference-data",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "모델이 만든 선호 쌍과 그 한계.",
+      "summary": "AI가 만든 선호 쌍. Constitutional AI(원칙 목록·RLAIF), Lee 등은 RLHF와 비슷한 성능, UltraFeedback은 GPT-4 피드백 100만 건+. 판정 AI 편향이 전파.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "rlhf",
+        "dpo",
+        "synthetic-data",
+        "rlaif",
+        "constitutional-ai",
+        "direct-rlaif"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "label-studio-config-tags",
@@ -42781,6 +42789,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "콘텐츠 경고와 연구 목적 제한.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "ai-judge-position-bias",
+      "label": "AI 판정의 위치·길이 편향",
+      "parent": "synthetic-preference-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "응답 순서·길이에 끌리는 편향과 완화.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "ultrafeedback",
+      "label": "UltraFeedback",
+      "parent": "synthetic-preference-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "GPT-4 피드백 100만 건 이상의 공개 데이터셋.",
       "added": "2026-11-19",
       "related": []
     }
