@@ -40532,11 +40532,12 @@
    "label": "제약 자동 제안",
    "parent": "amazon-deequ",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터에서 검증 규칙을 제안.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "data-quality-metrics-repository",
@@ -45971,6 +45972,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Deequ·PyDeequ 버전과 Spark 버전 호환.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "wilson-completeness-bound",
+   "label": "Wilson 구간 기반 완전성 하한",
+   "parent": "constraint-suggestion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관측 비율에 신뢰구간을 적용해 하한을 정함.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "suggestion-human-review",
+   "label": "자동 제안 사람 검토",
+   "parent": "constraint-suggestion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오염된 데이터 기준 제안을 걸러내는 절차.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "column-profile",
+   "label": "컬럼 프로파일",
+   "parent": "constraint-suggestion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컬럼별 통계 요약.",
    "related": [],
    "added": "2026-11-19"
   }
