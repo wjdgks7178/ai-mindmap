@@ -40299,11 +40299,12 @@
    "label": "조용한 버전 드리프트",
    "parent": "stale-document-cleanup",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "갱신본이 옛 버전과 나란히 추가됨.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "embedding-model-mismatch",
@@ -45496,6 +45497,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "삭제한 가짜 문서가 응답에 나오는지 경보.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "inconsistency-window",
+   "label": "불일치 창",
+   "parent": "silent-version-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 변경과 검색 가능 시점 사이의 간격.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "rag-freshness-sla",
+   "label": "RAG 신선도 SLA",
+   "parent": "silent-version-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코퍼스 종류별 허용 지연을 정하고 경보.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "freshness-metadata",
+   "label": "신선도 메타데이터",
+   "parent": "silent-version-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "indexed_at·ttl_days·content_hash 기록.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "rag-consistency-models",
+   "label": "RAG 일관성 수준",
+   "parent": "silent-version-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최종·제한적 낡음·자기 쓰기·강한 일관성.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "temporal-decay-scoring",
+   "label": "시간 감쇠 점수",
+   "parent": "silent-version-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최근 문서에 가중치를 주는 검색 점수.",
    "related": [],
    "added": "2026-11-19"
   }
