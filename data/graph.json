@@ -40263,11 +40263,12 @@
    "label": "RAG 인덱스 버전",
    "parent": "data-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어떤 문서 시점의 인덱스인지 기록.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "git-lfs-vs-dvc",
@@ -45395,6 +45396,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "의존성 파일·컨테이너로 실행 환경 재현.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "blue-green-reindex",
+   "label": "블루-그린 재색인",
+   "parent": "rag-index-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 인덱스를 서비스하며 새 인덱스를 만들어 전환.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "golden-query-set",
+   "label": "골든 질의 세트",
+   "parent": "rag-index-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 문서를 아는 50~200개 질의로 검색 회귀 감지.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "embedding-model-churn",
+   "label": "임베딩 모델 교체 위험",
+   "parent": "rag-index-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제공자가 모델을 바꿔 조용히 무효화되는 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "chunk-content-hash",
+   "label": "청크 내용 해시",
+   "parent": "rag-index-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "바뀐 청크만 재임베딩하는 증분 색인.",
    "related": [],
    "added": "2026-11-19"
   }
