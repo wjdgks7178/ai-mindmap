@@ -40191,11 +40191,12 @@
    "label": "Shapley 값",
    "parent": "data-valuation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "협력 게임의 공정한 기여도 분배.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "influence-functions",
@@ -45113,6 +45114,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "변형이 같은 뜻인지 확인하는 절차.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tmc-shapley-approximation",
+   "label": "Shapley 근사 계산",
+   "parent": "shapley-value",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "몬테카를로로 지수적 계산 비용 줄이기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "shap-feature-attribution",
+   "label": "SHAP 특징 기여도",
+   "parent": "shapley-value",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 아이디어를 입력 특징에 적용.",
    "related": [],
    "added": "2026-11-19"
   }
