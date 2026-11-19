@@ -39963,11 +39963,12 @@
    "label": "텍스트·데이터 마이닝 예외",
    "parent": "license-inheritance-derived-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "저작권 허락이 필요 없는 이용.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "model-weights-derivative-question",
@@ -44346,6 +44347,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "비영리 조건의 해석 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tdm-opt-out-signals",
+   "label": "옵트아웃 신호 종류",
+   "parent": "text-data-mining-exception",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "robots.txt·메타데이터·약관 중 무엇이 인정되나.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "third-party-scraping-gap",
+   "label": "제3자 스크래핑 공백",
+   "parent": "text-data-mining-exception",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집자와 학습자가 다를 때 의무의 빈틈.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "fair-use-ai-training",
+   "label": "미국 공정이용과 AI 학습",
+   "parent": "text-data-mining-exception",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사안별 판단의 구조.",
    "related": [],
    "added": "2026-11-19"
   }
