@@ -39359,11 +39359,15 @@
       "label": "데이터 ablation 실험",
       "parent": "fineweb",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "데이터만 바꾸고 작은 모델로 효과 비교.",
+      "summary": "데이터만 바꿔 1.71B 모델을 280억 토큰으로 비교(70개 이상·H100 8만 시간), 시드 2벌, 신호 좋은 벤치마크 선택. 중복 제거는 3,500억에서 재확인.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "per-snapshot-vs-global-dedup",
+        "datatrove"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "odc-by-license",
@@ -42302,6 +42306,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "사람·크라우드·LLM의 건당 비용.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "benchmark-selection-small-scale",
+      "label": "소규모 ablation 벤치마크 선택",
+      "parent": "ablation-data-studies",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "변동 작고 단조 증가하고 무작위 이상인 벤치마크.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "two-seed-averaging",
+      "label": "두 시드 평균",
+      "parent": "ablation-data-studies",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "무작위 표본·초기화 잡음 줄이기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "scale-transfer-of-ablations",
+      "label": "작은 규모 결과의 큰 규모 전이",
+      "parent": "ablation-data-studies",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "280억 결과가 3,500억에서도 유지되는지 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "nanotron-lighteval",
+      "label": "nanotron·lighteval",
+      "parent": "ablation-data-studies",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "FineWeb ablation에 쓰인 학습·평가 라이브러리.",
       "added": "2026-11-19",
       "related": []
     }
