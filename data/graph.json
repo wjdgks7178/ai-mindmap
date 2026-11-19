@@ -39987,11 +39987,12 @@
    "label": "시스템 카드",
    "parent": "model-cards",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델과 주변 시스템을 설명하는 문서.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "subgroup-performance-report",
@@ -44425,6 +44426,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어디서 학습했는지가 법 적용을 가른다.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "evaluation-report",
+   "label": "평가 보고서",
+   "parent": "system-cards",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특정 주장의 증거를 재현 가능하게 기록.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "card-versioning",
+   "label": "카드와 버전 관리",
+   "parent": "system-cards",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 바뀌면 문서도 다시 평가.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "self-reported-vs-independent-eval",
+   "label": "자기 보고 vs 독립 평가",
+   "parent": "system-cards",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시스템 카드의 신뢰 한계.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "safeguards-on-off-eval",
+   "label": "안전장치 ON/OFF 평가",
+   "parent": "system-cards",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 때 장치 적용 여부가 결과를 바꾼다.",
    "related": [],
    "added": "2026-11-19"
   }
