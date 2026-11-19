@@ -39975,11 +39975,12 @@
    "label": "모델 가중치는 개작인가",
    "parent": "license-inheritance-derived-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "미해결 법적 쟁점.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "system-cards",
@@ -44380,6 +44381,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사안별 판단의 구조.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "memorization-output-risk",
+   "label": "암기와 출력 침해",
+   "parent": "model-weights-derivative-question",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 학습 문장을 그대로 재현하는 위험.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "getty-v-stability",
+   "label": "Getty v. Stability AI",
+   "parent": "model-weights-derivative-question",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영국·미국 병행 소송의 쟁점.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "kadrey-v-meta",
+   "label": "Kadrey v. Meta",
+   "parent": "model-weights-derivative-question",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공정이용 판단과 그 한계.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "territorial-training-location",
+   "label": "학습 장소와 관할",
+   "parent": "model-weights-derivative-question",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어디서 학습했는지가 법 적용을 가른다.",
    "related": [],
    "added": "2026-11-19"
   }
