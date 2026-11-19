@@ -39571,11 +39571,15 @@
       "label": "라벨링 함수",
       "parent": "programmatic-labeling-snorkel",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "데이터에 노이즈 라벨을 붙이는 규칙 코드.",
+      "summary": "라벨 또는 기권(-1)을 내는 규칙 코드. 불완전해도 합쳐서 쓴다. 직접 시뮬레이션: 정확도 낮은 LF일수록 커버리지가 큼(0.894/0.226 ↔ 0.547/0.887).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-leakage",
+        "llm-as-labeling-function"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "label-model-denoising",
@@ -42811,6 +42815,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "GPT-4 피드백 100만 건 이상의 공개 데이터셋.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "lf-abstain",
+      "label": "기권(ABSTAIN)",
+      "parent": "labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "확신 없을 때 라벨을 붙이지 않는 설계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "lf-types",
+      "label": "LF 종류(패턴·메타·외부지식)",
+      "parent": "labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "규칙의 근거 유형별 정리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "lf-dev-set-accuracy",
+      "label": "LF 정확도 점검(개발 세트)",
+      "parent": "labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소량 정답으로 LF 정확도 확인.",
       "added": "2026-11-19",
       "related": []
     }
