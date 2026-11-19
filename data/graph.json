@@ -38118,11 +38118,16 @@
       "label": "슬라이스 발견",
       "parent": "targeted-data-collection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "메타데이터 없이 약한 하위집단 찾기.",
+      "summary": "메타데이터 없이 약한 하위집단을 찾는 기법. Domino는 1,235개 설정 중 36%를 정확히 찾고 기존보다 12%p 높음.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "label-error-detection",
+        "domino-slice-discovery",
+        "coherent-slice"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "error-cause-triage",
@@ -40412,6 +40417,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "복잡도를 낮추고 전이학습을 쓰는 이유.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "attributionscanner",
+      "label": "AttributionScanner",
+      "parent": "slice-discovery",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "메타데이터 없는 시각 분석 슬라이스 탐색.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "predefined-slice-evaluation",
+      "label": "사전 정의 슬라이스 평가",
+      "parent": "slice-discovery",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "알려진 속성별 성능 비교.",
       "added": "2026-11-19",
       "related": []
     }
