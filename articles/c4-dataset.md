@@ -55,7 +55,7 @@ def keep_line(l):
 | 개념 | 차이 |
 |---|---|
 | C4 | Common Crawl 2019-04 + 휴리스틱 필터, 영어 약 750GB |
-| [FineWeb](#fineweb-dataset) | 96개 스냅샷, WARC에서 직접 추출, 더 많은 필터·스냅샷별 중복 제거 |
+| [FineWeb](#fineweb) | 96개 스냅샷, WARC에서 직접 추출, 더 많은 필터·스냅샷별 중복 제거 |
 | Common Crawl | 원본 웹 크롤 자체 |
 | [근접 중복 제거](#near-duplicate-removal) | C4의 3문장 규칙보다 정교한 중복 제거 |
 
