@@ -38164,11 +38164,16 @@
       "label": "추가 수집 효과 외삽",
       "parent": "targeted-data-collection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "하위표본 재학습으로 이득 추정.",
+      "summary": "하위표본 학습 곡선을 멱법칙으로 외삽해 추가 수집 이득을 추정. 직접 실험에서 외삽이 실제보다 낙관적(480개 0.041 vs 0.048).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "small-data-validation-strategy",
+        "slice-discovery",
+        "learning-curve"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "minhash-lsh",
@@ -40546,6 +40551,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "한 샘플만 뺀 성능 차이의 한계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "inverse-power-law-fit",
+      "label": "역멱법칙 맞춤",
+      "parent": "collection-benefit-extrapolation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "a+b·n^(-c) 형태로 오류 곡선 근사.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "extrapolation-optimism",
+      "label": "외삽의 낙관 편향",
+      "parent": "collection-benefit-extrapolation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "먼 구간 예측이 낙관적인 이유와 완화.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bad-learning-curves",
+      "label": "나쁜 학습 곡선",
+      "parent": "collection-benefit-extrapolation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터를 늘려도 성능이 안 오르는 경우.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "per-slice-learning-curve",
+      "label": "슬라이스별 학습 곡선",
+      "parent": "collection-benefit-extrapolation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "약한 하위집단의 수집 효과를 따로 추정.",
       "added": "2026-11-19",
       "related": []
     }
