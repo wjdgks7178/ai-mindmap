@@ -38134,11 +38134,15 @@
       "label": "오류 원인 분류",
       "parent": "targeted-data-collection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "라벨·이상치·모델 부적합 등 구분.",
+      "summary": "틀린 사례 약 100개를 원인별로 세기. 범주 비율이 수정 이득의 상한. 라벨 오류 0.5%는 오류 10%에선 무시, 2%에선 25%라 고칠 가치(Ng).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "slice-discovery",
+        "label-error-detection"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "data-influence-shapley",
@@ -40439,6 +40443,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "알려진 속성별 성능 비교.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "error-category-ceiling",
+      "label": "범주별 개선 상한",
+      "parent": "error-cause-triage",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "범주 비율이 줄일 수 있는 오류의 상한.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mislabeled-dev-set-threshold",
+      "label": "개발 세트 라벨 오류 수정 기준",
+      "parent": "error-cause-triage",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "전체 오류에서 라벨 오류가 차지하는 비중으로 판단.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "error-analysis-spreadsheet",
+      "label": "오류 분석 스프레드시트",
+      "parent": "error-cause-triage",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사례×범주 표로 비교하는 방법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "human-benchmark-error",
+      "label": "사람 기준 오류율",
+      "parent": "error-cause-triage",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람이라면 맞혔을지로 개선 여지 판단.",
       "added": "2026-11-19",
       "related": []
     }
