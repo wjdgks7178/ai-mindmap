@@ -40359,11 +40359,12 @@
    "label": "결측과 범위 검사의 차이",
    "parent": "great-expectations",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "범위 검사는 결측을 무시.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "gx-data-docs",
@@ -45732,6 +45733,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "검증 결과의 상세 정도 설정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-mostly",
+   "label": "GX mostly 파라미터",
+   "parent": "gx-null-vs-range",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 위반을 허용하는 비율 설정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "missing-percent-monitoring",
+   "label": "결측 비율 모니터링",
+   "parent": "gx-null-vs-range",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "missing_percent를 지표로 추적.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "required-column-rules",
+   "label": "필수 컬럼 규칙 조합",
+   "parent": "gx-null-vs-range",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NotNull과 값 검사를 함께 두는 설계.",
    "related": [],
    "added": "2026-11-19"
   }
