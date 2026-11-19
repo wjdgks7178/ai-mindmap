@@ -37967,11 +37967,14 @@
       "label": "벤치마크 라벨 노이즈",
       "parent": "label-error-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "시험 세트 오류가 모델 순위를 바꾸는 문제.",
+      "summary": "시험 세트 라벨 오류 평균 3.3% 이상, ImageNet 검증 6% 이상. 오류 비율이 조금 늘면 모델 순위가 뒤집힘.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "confident-learning"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "out-of-sample-pred-probs",
@@ -39906,6 +39909,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "의심 샘플을 자동 제거할 때의 오탐 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "corrected-test-labels",
+      "label": "수정된 시험 라벨 세트",
+      "parent": "label-noise-benchmarks",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "크라우드소싱으로 바로잡은 시험 세트 활용.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "leaderboard-small-gap",
+      "label": "리더보드 작은 점수 차",
+      "parent": "label-noise-benchmarks",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "1~2%p 차이를 믿으면 안 되는 이유.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "crowdsourced-label-validation",
+      "label": "크라우드 라벨 검증",
+      "parent": "label-noise-benchmarks",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "의심 후보를 사람이 확인하는 절차.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "model-capacity-vs-noise",
+      "label": "모델 용량과 노이즈",
+      "parent": "label-noise-benchmarks",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "노이즈 많은 데이터에서 작은 모델이 유리할 수 있다는 관찰.",
       "added": "2026-11-19",
       "related": []
     }
