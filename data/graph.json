@@ -40672,11 +40672,12 @@
    "label": "시스템 의존 데이터 품질 특성",
    "parent": "iso-iec-25012",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가용성·이식성·복구성과 인프라 연결.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "data-quality-checklist-template",
@@ -46298,6 +46299,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "각 특성을 검사 가능한 규칙으로 바꾸기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "backup-restore-testing",
+   "label": "백업 복원 테스트",
+   "parent": "iso-25012-system-dependent-characteristics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복원이 실제로 되는지 주기적으로 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "pilot-light-vs-warm-standby",
+   "label": "파일럿 라이트 vs 웜 스탠바이",
+   "parent": "iso-25012-system-dependent-characteristics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "꺼 둔 사본과 축소 가동 사본의 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-portability-migration",
+   "label": "데이터 이식과 이전",
+   "parent": "iso-25012-system-dependent-characteristics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "포맷·스키마 변환을 포함한 이전 절차.",
    "related": [],
    "added": "2026-11-19"
   }
