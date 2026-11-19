@@ -40720,11 +40720,12 @@
    "label": "5259-5 데이터 품질 거버넌스",
    "parent": "iso-iec-5259",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "역할·책임·감독 구조.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "data-representativeness",
@@ -46478,6 +46479,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 표준의 특성 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-quality-governing-body",
+   "label": "거버넌스 기구의 책임",
+   "parent": "iso-5259-part5-governance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전략·정책·감독을 정하는 최고 기구의 역할.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-quality-accountabilities",
+   "label": "DQ 책임 체계",
+   "parent": "iso-5259-part5-governance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 품질 책임을 누가 지는지 정의.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "ambiguous-data-responsibility",
+   "label": "책임이 모호한 데이터",
+   "parent": "iso-5259-part5-governance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주인 없는 데이터가 만드는 위험.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-creator-role",
+   "label": "데이터 생성자 역할",
+   "parent": "iso-5259-part5-governance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 만들고 수집·큐레이션하는 역할.",
    "related": [],
    "added": "2026-11-19"
   }
