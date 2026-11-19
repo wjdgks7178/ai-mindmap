@@ -38180,11 +38180,14 @@
       "label": "MinHash·LSH",
       "parent": "near-duplicate-removal",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "집합 유사도를 근사하는 지문 기법.",
+      "summary": "MinHash 서명+LSH 구간 해시로 근접 중복 후보만 비교. 후보 확률 1-(1-s^r)^b, num_perm=128·thr 0.5면 (25,5). 직접 실행 추정 0.836 vs 실제 0.846.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "near-duplicate-detection"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "exact-substring-dedup",
@@ -40595,6 +40598,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "약한 하위집단의 수집 효과를 따로 추정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "jaccard-similarity",
+      "label": "자카드 유사도",
+      "parent": "minhash-lsh",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "집합 교집합/합집합.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "shingling-ngrams",
+      "label": "섀글링(n-그램 집합)",
+      "parent": "minhash-lsh",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서를 n-그램 집합으로 바꾸는 단계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "lsh-banding-curve",
+      "label": "LSH 밴딩 S자 곡선",
+      "parent": "minhash-lsh",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "b와 r로 임계값을 조절.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "minhash-lsh-forest",
+      "label": "MinHash LSH Forest",
+      "parent": "minhash-lsh",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "top-k 검색용 변형.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "paraphrase-dedup-limit",
+      "label": "패러프레이즈 중복의 한계",
+      "parent": "minhash-lsh",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "단어가 다르고 뜻이 같은 문장은 못 잡음.",
       "added": "2026-11-19",
       "related": []
     }
