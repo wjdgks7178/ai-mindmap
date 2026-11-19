@@ -46008,28 +46008,6 @@
    "added": "2026-11-19"
   },
   {
-   "id": "deequ-constraint-suggestion",
-   "label": "Deequ 제약 자동 제안",
-   "parent": "pydeequ",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "데이터 프로파일로 검증 규칙을 제안.",
-   "related": [],
-   "added": "2026-11-19"
-  },
-  {
-   "id": "deequ-metrics-repository",
-   "label": "Deequ 메트릭 저장소",
-   "parent": "pydeequ",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "시간별 품질 지표를 저장해 이상 탐지.",
-   "related": [],
-   "added": "2026-11-19"
-  },
-  {
    "id": "spark-version-matching",
    "label": "Spark 버전 맞추기",
    "parent": "pydeequ",
@@ -46037,17 +46015,6 @@
    "status": "planned",
    "priority": 3,
    "summary": "Deequ·PyDeequ 버전과 Spark 버전 호환.",
-   "related": [],
-   "added": "2026-11-19"
-  },
-  {
-   "id": "dqdl-rules",
-   "label": "DQDL 규칙 언어",
-   "parent": "pydeequ",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "AWS Glue의 선언형 데이터 품질 규칙.",
    "related": [],
    "added": "2026-11-19"
   }
