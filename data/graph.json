@@ -40815,11 +40815,12 @@
    "label": "Parquet 열 기반 포맷",
    "parent": "query-acceleration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "필요한 열만 읽고 조건 pushdown.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "small-files-problem",
@@ -46816,6 +46817,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "너무 작거나 크지 않은 파일 크기 선택.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "column-pruning",
+   "label": "열 가지치기",
+   "parent": "parquet-columnar-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필요한 열만 읽어 I/O 줄이기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "row-group-statistics",
+   "label": "행 그룹 통계",
+   "parent": "parquet-columnar-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행 그룹별 min/max로 건너뛰기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dremel-nested-encoding",
+   "label": "Dremel 중첩 인코딩",
+   "parent": "parquet-columnar-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중첩 구조를 열 형식으로 저장하는 방식.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "csv-vs-parquet-experiment",
+   "label": "CSV vs Parquet 실험",
+   "parent": "parquet-columnar-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크기와 읽기 시간을 직접 비교.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "parquet-compression-codecs",
+   "label": "Parquet 압축 코덱",
+   "parent": "parquet-columnar-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열별 압축 방식 선택.",
    "related": [],
    "added": "2026-11-19"
   }
