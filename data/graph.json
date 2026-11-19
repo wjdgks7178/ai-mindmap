@@ -38208,11 +38208,15 @@
       "label": "datatrove",
       "parent": "near-duplicate-removal",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "Hugging Face 대규모 텍스트 처리 라이브러리.",
+      "summary": "Hugging Face 대규모 텍스트 파이프라인(리더·필터·MinHash 등 중복 제거·라이터). Local·Slurm·Ray 실행, 완료 작업 기록. Apache-2.0, Python 3.11+.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "minhash-lsh",
+        "exact-substring-dedup"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "memorization-in-llms",
@@ -40700,6 +40704,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "검증 세트 4% 이상이 학습과 겹친 사례.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "datatrove-fineweb-example",
+      "label": "datatrove FineWeb 재현 예제",
+      "parent": "datatrove",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "fineweb.py로 보는 실제 파이프라인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "pipeline-executor-types",
+      "label": "파이프라인 실행기 종류",
+      "parent": "datatrove",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Local·Slurm·Ray·Jobs의 선택 기준.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "resumable-data-pipelines",
+      "label": "재시작 가능한 데이터 파이프라인",
+      "parent": "datatrove",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "완료 작업 기록으로 이어 돌리기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "exclusion-writer",
+      "label": "제외 문서 저장",
+      "parent": "datatrove",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "필터가 버린 문서를 따로 남겨 점검.",
       "added": "2026-11-19",
       "related": []
     }
