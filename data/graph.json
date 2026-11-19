@@ -39766,11 +39766,15 @@
       "label": "MCAR·MAR·MNAR",
       "parent": "data-missing-values",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "결측 메커니즘 세 분류.",
+      "summary": "결측 유형 3분류(Rubin). 시뮬레이션(진짜 평균 2200): MCAR 제외 2200.4, MAR 제외 2132.7→회귀 대체 2200.9, MNAR 제외 2085.6→2138.3.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "multiple-imputation",
+        "missing-indicator-feature"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "multiple-imputation",
@@ -43687,6 +43691,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "호출 비용·시간 관리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "sensitivity-analysis-mnar",
+      "label": "MNAR 민감도 분석",
+      "parent": "mcar-mar-mnar",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "what-if 시나리오로 결론의 안정성 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "complete-case-bias",
+      "label": "완전 사례 분석의 편향",
+      "parent": "mcar-mar-mnar",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "MCAR이 아니면 결측 제외가 편향.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mechanism-diagnosis",
+      "label": "결측 메커니즘 진단",
+      "parent": "mcar-mar-mnar",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터만으로 구분 어렵다는 한계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "regression-imputation-limits",
+      "label": "회귀 대체의 한계",
+      "parent": "mcar-mar-mnar",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "분산 과소 추정과 다중 대체의 필요.",
       "added": "2026-11-19",
       "related": []
     }
