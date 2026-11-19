@@ -38010,11 +38010,14 @@
       "label": "이중 라벨링과 판정",
       "parent": "label-consistency-guideline",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "독립 두 명 라벨링 후 조정.",
+      "summary": "독립 두 명 이상이 라벨링하고 불일치는 합의·제3자 판정으로 골드 라벨 확정. 판정 결과를 규칙서에 환류.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "cohens-kappa"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "calibration-items",
@@ -40026,6 +40029,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "초안-라벨링-토론-수정 순환.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "adjudicator-role",
+      "label": "판정자 역할",
+      "parent": "double-annotation-adjudication",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "제3 전문가가 불일치를 정리하는 방식.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "majority-voting-labels",
+      "label": "라벨 다수결",
+      "parent": "double-annotation-adjudication",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "3명 이상 라벨을 다수결로 합치기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "hybrid-annotation-split",
+      "label": "하이브리드 분담 라벨링",
+      "parent": "double-annotation-adjudication",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "일치도 높아지면 문서를 나눠 맡기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "sampled-double-annotation",
+      "label": "일부 표본만 이중 라벨링",
+      "parent": "double-annotation-adjudication",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "비용을 줄이는 설계.",
       "added": "2026-11-19",
       "related": []
     }
