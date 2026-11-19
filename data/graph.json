@@ -39705,11 +39705,15 @@
       "label": "작업자 품질 골드 문항",
       "parent": "crowdsourcing-labeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "정답 확실한 문항으로 작업자 정확도 추적.",
+      "summary": "정답이 확실한 골드 문항을 섞어 라벨러 정확도를 추적. Snow 2008은 소량 전문가 라벨로 편향 재보정. 시뮬레이션: 골드 5개면 오탐 3.3명, 50개면 0.5명.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "calibration-items",
+        "dawid-skene-aggregation"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "redundant-annotation-count",
@@ -43267,6 +43271,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "같은 방식으로 틀리면 과신.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "gold-question-ratio",
+      "label": "골드 문항 비율과 난이도",
+      "parent": "worker-quality-gold-questions",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "전체 5~10%와 변별력 있는 문항 구성.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "gold-question-leak",
+      "label": "골드 문항 노출과 교체",
+      "parent": "worker-quality-gold-questions",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "외우기 방지를 위한 주기적 교체.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "worker-bias-recalibration",
+      "label": "작업자 편향 재보정",
+      "parent": "worker-quality-gold-questions",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "골드로 응답을 전문가 기준에 맞춤.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "high-volume-low-quality-workers",
+      "label": "고물량·저품질 작업자",
+      "parent": "worker-quality-gold-questions",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소수가 대부분을 하는 문제.",
       "added": "2026-11-19",
       "related": []
     }
