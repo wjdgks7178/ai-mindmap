@@ -40684,11 +40684,12 @@
    "label": "데이터 품질 점검표 만들기",
    "parent": "iso-iec-25012",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특성별 항목·측정·합격선을 한 표로.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "data-traceability",
@@ -46377,6 +46378,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "수작업 단계에서 추적이 끊기는 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dq-checklist-owner-column",
+   "label": "점검표 담당자 열",
+   "parent": "data-quality-checklist-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패 시 누가 조치하는지 표에 적기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dq-threshold-setting",
+   "label": "합격선 정하기",
+   "parent": "data-quality-checklist-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 확인 후 위험에 맞춰 조정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dq-data-freshness-rule",
+   "label": "DataFreshness 규칙",
+   "parent": "data-quality-checklist-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 갱신 시각으로 최신성 점검.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "supplier-quality-annex",
+   "label": "공급사 계약 품질 부속서",
+   "parent": "data-quality-checklist-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 공급 계약에 점검표를 붙이기.",
    "related": [],
    "added": "2026-11-19"
   }
