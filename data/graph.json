@@ -40568,11 +40568,12 @@
    "label": "서빙 특징 로깅",
    "parent": "training-serving-skew",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서빙 시점 특징을 저장해 학습에 재사용.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "table-join-snapshot",
@@ -46095,6 +46096,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙을 만족하는 값의 비율로 판정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "serving-log-sampling",
+   "label": "서빙 로그 샘플링",
+   "parent": "log-serving-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장 비용 때문에 일부만 기록하고 가중치 보관.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "feature-log-privacy-retention",
+   "label": "특징 로그 개인정보·보관",
+   "parent": "log-serving-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로그에 개인정보가 들어갈 때의 보관·권한.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "feature-consistency-check",
+   "label": "학습-서빙 특징 일관성 점검",
+   "parent": "log-serving-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 예시의 두 경로 값을 대조.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "online-offline-feature-parity",
+   "label": "온라인·오프라인 특징 동등성",
+   "parent": "log-serving-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 특징 정의를 두 경로에서 재사용.",
    "related": [],
    "added": "2026-11-19"
   }
