@@ -37939,11 +37939,14 @@
       "label": "Confident Learning",
       "parent": "label-error-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "노이즈 라벨을 추정하는 방법.",
+      "summary": "Prune·Count·Rank로 라벨 오류 탐지. 클래스 조건부 노이즈 가정, Northcutt 등 JAIR 2021.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "label-error-detection"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "cleanlab",
@@ -39812,6 +39815,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "한 사람의 여러 방문 데이터를 나누는 법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "out-of-sample-predictions",
+      "label": "표본 외 예측 확률",
+      "parent": "confident-learning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "교차 검증으로 얻어야 하는 이유.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "class-conditional-noise",
+      "label": "클래스 조건부 노이즈",
+      "parent": "confident-learning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "노이즈가 클래스 쌍에만 의존한다는 가정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "noise-transition-matrix",
+      "label": "노이즈 전이 행렬",
+      "parent": "confident-learning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "주어진 라벨과 참 라벨의 결합 분포.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "human-relabel-triage",
+      "label": "의심 샘플 재검수 순서",
+      "parent": "confident-learning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자신도 순위로 사람 검수 비용 줄이기.",
       "added": "2026-11-19",
       "related": []
     }
