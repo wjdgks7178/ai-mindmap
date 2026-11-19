@@ -39951,11 +39951,12 @@
    "label": "CC NoDerivatives",
    "parent": "license-inheritance-derived-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개작 공유 금지.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "text-data-mining-exception",
@@ -44334,6 +44335,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "SA 계열 공개 데이터의 장단점.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "private-adaptation-gap",
+   "label": "비공개 개작의 회색지대",
+   "parent": "cc-noderivatives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ND 데이터를 내부에서만 가공할 때.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "annotation-as-derivative",
+   "label": "주석·라벨은 개작인가",
+   "parent": "cc-noderivatives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본을 안 건드린 라벨 파일의 지위.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "cc-nc-research-release",
+   "label": "NC와 연구용 공개",
+   "parent": "cc-noderivatives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비영리 조건의 해석 문제.",
    "related": [],
    "added": "2026-11-19"
   }
