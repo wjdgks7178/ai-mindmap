@@ -40347,11 +40347,12 @@
    "label": "GX Checkpoint와 Action",
    "parent": "great-expectations",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "운영 검증 실행과 알림.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "gx-null-vs-range",
@@ -45687,6 +45688,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "원본 조회 실패 시 전체 삭제를 막는 가드.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-notify-on",
+   "label": "GX notify_on 조건",
+   "parent": "gx-checkpoint-actions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패 심각도에 따라 알림 실행 여부 결정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-validation-definition",
+   "label": "GX Validation Definition",
+   "parent": "gx-checkpoint-actions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터와 Expectation Suite를 연결.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-custom-action",
+   "label": "GX 사용자 정의 Action",
+   "parent": "gx-checkpoint-actions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 결과에 따른 맞춤 후속 작업.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-result-format",
+   "label": "GX result_format",
+   "parent": "gx-checkpoint-actions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 결과의 상세 정도 설정.",
    "related": [],
    "added": "2026-11-19"
   }
