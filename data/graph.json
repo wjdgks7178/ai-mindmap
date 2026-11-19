@@ -40095,11 +40095,12 @@
    "label": "분포 변화의 종류",
    "parent": "ood-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "공변량·라벨·개념 변화 구분.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "actionable-features",
@@ -44753,6 +44754,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어느 도메인을 떼느냐에 따른 결과 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "covariate-shift-reweighting",
+   "label": "공변량 변화와 재가중",
+   "parent": "distribution-shift-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중요도 가중치로 분포 차이를 보정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "label-shift-estimation",
+   "label": "라벨 변화 추정",
+   "parent": "distribution-shift-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "블랙박스 방식으로 새 클래스 비율 추정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "drift-detectors-ks-mmd",
+   "label": "드리프트 탐지기 KS·MMD",
+   "parent": "distribution-shift-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계 검정으로 분포 변화를 감지.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "concept-drift-fraud",
+   "label": "개념 변화 사례: 사기 탐지",
+   "parent": "distribution-shift-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수법 진화로 관계가 바뀌는 경우.",
    "related": [],
    "added": "2026-11-19"
   }
