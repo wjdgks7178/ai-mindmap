@@ -38268,11 +38268,15 @@
       "label": "RandAugment·AutoAugment",
       "parent": "data-augmentation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "무작위·학습된 증강 정책.",
+      "summary": "AutoAugment는 탐색으로 정책 학습(CIFAR-10 1.5%, ImageNet 83.5%), RandAugment는 num_ops·magnitude 두 값만(ImageNet 85.0%).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation",
+        "mixup-cutmix"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "back-translation",
@@ -40903,6 +40907,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "임베딩 공간 MixUp 등 변형.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "augmentation-policy-search",
+      "label": "증강 정책 탐색",
+      "parent": "randaugment-autoaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "하위 정책을 검증 정확도로 탐색.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "randaugment-magnitude-tuning",
+      "label": "RandAugment 강도 튜닝",
+      "parent": "randaugment-autoaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "num_ops·magnitude 조절 요령.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "trivialaugment",
+      "label": "TrivialAugment",
+      "parent": "randaugment-autoaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "튜닝이 거의 필요 없는 간단 증강.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "augmentation-transfer",
+      "label": "증강 정책 전이",
+      "parent": "randaugment-autoaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 데이터에서 찾은 정책을 다른 데이터에 쓰기.",
       "added": "2026-11-19",
       "related": []
     }
