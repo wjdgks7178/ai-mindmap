@@ -38103,11 +38103,15 @@
       "label": "소규모 데이터 검증 전략",
       "parent": "split-ratio-conventions",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "교차 검증 중심.",
+      "summary": "소표본은 교차 검증·반복·구간 보고. Varoquaux 2017: 100개일 때 오차 약 ±10%, 폴드 간 표준오차는 과소평가(주장).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "nested-cross-validation",
+        "repeated-cross-validation"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "slice-discovery",
@@ -40364,6 +40368,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "주기적 샘플링으로 정밀도·재현율 추적.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cv-error-bar-underestimation",
+      "label": "교차 검증 오차 막대 과소평가",
+      "parent": "small-data-validation-strategy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "폴드 간 표준오차가 낙관적인 이유.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bootstrap-confidence-interval",
+      "label": "부트스트랩 신뢰구간",
+      "parent": "small-data-validation-strategy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소표본 점수의 구간 추정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "stratification-shrinks-variance",
+      "label": "층화가 변동을 줄이는 효과",
+      "parent": "small-data-validation-strategy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "폴드 균질화로 표준편차가 작아 보이는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "simple-model-small-data",
+      "label": "소표본엔 단순 모델",
+      "parent": "small-data-validation-strategy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "복잡도를 낮추고 전이학습을 쓰는 이유.",
       "added": "2026-11-19",
       "related": []
     }
