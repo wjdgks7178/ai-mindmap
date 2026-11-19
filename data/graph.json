@@ -38086,11 +38086,14 @@
       "label": "random_state와 재현성",
       "parent": "split-ratio-conventions",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "분할을 고정해 재현.",
+      "summary": "정수=매번 동일, None/RandomState=호출마다 다름. 분할기엔 정수, 모델엔 인스턴스/None 권장(sklearn 문서). random_state=0이면 [2 8 4] 직접 확인.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "stratified-train-test-split"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "small-data-validation-strategy",
@@ -40223,6 +40226,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "둘을 동시에 만족시키는 도구 선택.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "seed-sweep-reporting",
+      "label": "여러 시드 평균 보고",
+      "parent": "random-state-reproducibility",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시드 바꿔 평균·표준편차로 보고.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "seed-cherry-picking",
+      "label": "시드 골라잡기",
+      "parent": "random-state-reproducibility",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "좋은 점수 시드만 고르는 과적합.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "clone-random-state-sharing",
+      "label": "clone과 난수 공유",
+      "parent": "random-state-reproducibility",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "GridSearchCV 등에서 인스턴스 공유 주의.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "preprocessing-leakage-pipeline",
+      "label": "전처리 누수와 Pipeline",
+      "parent": "random-state-reproducibility",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "분할 전 SelectKBest 사용 시 0.76 vs 0.5.",
       "added": "2026-11-19",
       "related": []
     }
