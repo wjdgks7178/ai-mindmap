@@ -40744,11 +40744,12 @@
    "label": "데이터 오너와 스튜어드",
    "parent": "iso-iec-5259",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 책임 역할 분담.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "allowed-use-policy-data",
@@ -46557,6 +46558,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모집단/표본 비율로 가중치 계산.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "raci-data-responsibility",
+   "label": "데이터 책임 RACI",
+   "parent": "data-owner-steward",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "책임·승인·협의·통보를 표로 정리.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "steward-types",
+   "label": "스튜어드 유형",
+   "parent": "data-owner-steward",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "객체·업무·프로세스·시스템 스튜어드.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-custodian",
+   "label": "데이터 보관 책임자",
+   "parent": "data-owner-steward",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장·보호 운영을 맡는 역할.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "chief-data-officer",
+   "label": "최고데이터책임자",
+   "parent": "data-owner-steward",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조직 데이터 거버넌스를 이끄는 역할.",
    "related": [],
    "added": "2026-11-19"
   }
