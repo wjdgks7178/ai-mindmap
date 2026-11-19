@@ -40335,11 +40335,12 @@
    "label": "RAG 대조 작업",
    "parent": "stale-document-cleanup",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원본과 색인 ID를 비교해 정리.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "gx-checkpoint-actions",
@@ -45642,6 +45643,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "질문에 따라 최신성 적용 여부를 학습으로 결정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "record-manager",
+   "label": "레코드 매니저",
+   "parent": "rag-reconciliation-job",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 해시·소스 ID를 기록해 중복·정리를 관리.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "index-cleanup-modes",
+   "label": "색인 정리 모드",
+   "parent": "rag-reconciliation-job",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "None·incremental·full·scoped_full 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "source-id-key",
+   "label": "소스 ID 키",
+   "parent": "rag-reconciliation-job",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서의 원본 출처를 식별해 범위 정리.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "empty-list-deletion-guard",
+   "label": "빈 목록 삭제 방지",
+   "parent": "rag-reconciliation-job",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 조회 실패 시 전체 삭제를 막는 가드.",
    "related": [],
    "added": "2026-11-19"
   }
