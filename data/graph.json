@@ -40131,11 +40131,12 @@
    "label": "대안의 비용·시간",
    "parent": "algorithmic-recourse",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경에 드는 노력·기간 고려.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "imagenet-c-p",
@@ -44888,6 +44889,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "대안이 없음을 수학적으로 인증.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "percentile-shift-cost",
+   "label": "백분위 이동 비용",
+   "parent": "recourse-cost-and-time",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스케일에 무관하게 변경 난이도를 재는 비용.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "recourse-time-horizon",
+   "label": "대안의 소요 기간",
+   "parent": "recourse-cost-and-time",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간이 지나야 바뀌는 특징과 안내 방식.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "recourse-model-update-invalidation",
+   "label": "모델 갱신과 대안 무효화",
+   "parent": "recourse-cost-and-time",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 바뀌면 안내한 대안이 틀어짐.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "difficulty-weights-expert",
+   "label": "도메인 전문가 난이도 가중치",
+   "parent": "recourse-cost-and-time",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징별 상대 난이도를 전문가가 지정.",
    "related": [],
    "added": "2026-11-19"
   }
