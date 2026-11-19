@@ -39561,11 +39561,15 @@
       "label": "자체 호스팅 라벨링과 개인정보",
       "parent": "label-studio",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "사내 데이터를 밖에 내보내지 않는 구성.",
+      "summary": "Label Studio 자체 호스팅: SQLite 3.35+/PostgreSQL 14+, 포트 8080. 설정 코드상 COLLECT_ANALYTICS 기본 True라 민감 환경에선 false 명시·외부 통신 점검.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "internal-data-card",
+        "label-studio-ml-backend"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "weak-supervision",
@@ -43124,6 +43128,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "불확실한 샘플만 모이는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "collect-analytics-setting",
+      "label": "COLLECT_ANALYTICS 설정",
+      "parent": "self-hosted-labeling-privacy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "통계 전송 기본값과 끄는 방법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "labeling-tool-network-isolation",
+      "label": "라벨링 도구 네트워크 격리",
+      "parent": "self-hosted-labeling-privacy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사내망·방화벽으로 외부 통신 차단.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "external-labeler-confidentiality",
+      "label": "외부 라벨러 비밀 유지",
+      "parent": "self-hosted-labeling-privacy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "계약·접근 범위 제한.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mask-before-labeling",
+      "label": "라벨링 전 마스킹",
+      "parent": "self-hosted-labeling-privacy",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "개인정보 가린 뒤 업로드.",
       "added": "2026-11-19",
       "related": []
     }
