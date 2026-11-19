@@ -37953,11 +37953,14 @@
       "label": "cleanlab",
       "parent": "label-error-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "라벨 오류·데이터 문제 탐지 오픈소스.",
+      "summary": "라벨 오류·이상치·중복을 모델 예측으로 찾는 Apache-2.0 파이썬 라이브러리. Python 3.10+, find_label_issues.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "confident-learning"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "label-noise-benchmarks",
@@ -39859,6 +39862,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "자신도 순위로 사람 검수 비용 줄이기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cleanlab-label-quality-score",
+      "label": "라벨 품질 점수",
+      "parent": "cleanlab",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "샘플별 라벨 신뢰 점수와 순위.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cleanlab-outlier-detection",
+      "label": "cleanlab 이상치 탐지",
+      "parent": "cleanlab",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "이상치 점수 계산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cleanlab-multiannotator",
+      "label": "다중 주석자 합의",
+      "parent": "cleanlab",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "여러 사람이 단 라벨 합치기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "auto-delete-risk",
+      "label": "자동 삭제의 위험",
+      "parent": "cleanlab",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "의심 샘플을 자동 제거할 때의 오탐 문제.",
       "added": "2026-11-19",
       "related": []
     }
