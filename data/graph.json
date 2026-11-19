@@ -41455,11 +41455,15 @@
       "label": "윌슨 신뢰구간",
       "parent": "test-set-size-rare-class",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "작은 표본의 비율 신뢰구간 계산.",
+      "summary": "비율의 윌슨 점수 구간. 7/9는 0.453~0.937(정규 0.506~1.0), 0/20은 0~0.161로 정규의 폭 0보다 현실적(statsmodels 직접 계산).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "test-set-size-rare-class",
+        "small-data-validation-strategy"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "oversampling-for-evaluation",
@@ -43504,6 +43508,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "월간 노출/비노출 비교 보고.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "clopper-pearson-interval",
+      "label": "Clopper-Pearson 구간",
+      "parent": "wilson-interval",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정확하지만 보수적인 구간.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "wald-interval-failure",
+      "label": "정규 근사(Wald) 구간의 실패",
+      "parent": "wilson-interval",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "작은 n·극단 비율에서 폭 0.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bootstrap-ci-vs-wilson",
+      "label": "부트스트랩 vs 윌슨",
+      "parent": "wilson-interval",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "비율 외 지표에는 부트스트랩.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "clustered-samples-ci",
+      "label": "군집 표본의 신뢰구간",
+      "parent": "wilson-interval",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 그룹 샘플은 독립이 아님.",
       "added": "2026-11-19",
       "related": []
     }
