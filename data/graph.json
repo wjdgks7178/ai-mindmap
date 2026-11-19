@@ -40778,11 +40778,12 @@
    "label": "파티셔닝과 가지치기",
    "parent": "query-acceleration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "굵은 기준으로 나눠 불필요한 구획을 건너뜀.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "z-order-clustering",
@@ -46602,6 +46603,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "조직 데이터 거버넌스를 이끄는 역할.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "hive-style-partitioning",
+   "label": "Hive식 파티셔닝",
+   "parent": "data-partitioning-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "key=value 폴더로 파티션 열을 표현.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "too-many-small-files",
+   "label": "작은 파일 폭증 문제",
+   "parent": "data-partitioning-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파티션을 너무 잘게 나눌 때의 비용.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "partition-key-selection",
+   "label": "파티션 키 고르기",
+   "parent": "data-partitioning-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카디널리티와 질의 필터를 기준으로.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "explain-analyze-scan-files",
+   "label": "EXPLAIN ANALYZE로 읽은 파일 수 보기",
+   "parent": "data-partitioning-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가지치기가 동작했는지 확인.",
    "related": [],
    "added": "2026-11-19"
   }
