@@ -39418,11 +39418,14 @@
       "label": "반복 제거 임계값",
       "parent": "pretraining-data-filtering",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "줄·문단·n-gram 중복 비율 한계.",
+      "summary": "Gopher 표 A1: 중복 줄·문단 0.30, 문자 0.20, 상위 2/3/4-그램 0.20/0.18/0.16, 중복 5~10-그램 0.15→0.10. 직접 구현으로 스팸 줄 중복 0.8.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "gopher-massivetext"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "model-likelihood-filtering",
@@ -42504,6 +42507,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "웹·도서·코드 비율을 성능으로 조정.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "top-ngram-fraction",
+      "label": "상위 n-그램 문자 비율",
+      "parent": "repetition-thresholds",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "가장 자주 나온 n-그램이 차지하는 비율.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "duplicate-ngram-fraction",
+      "label": "중복 n-그램 문자 비율",
+      "parent": "repetition-thresholds",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "겹침을 한 번만 세는 중복 n-그램 비율.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "repetition-false-positives",
+      "label": "반복 필터 오탐",
+      "parent": "repetition-thresholds",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시·표·법률 조항 등 구조적 반복 문서.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "model-repetition-failure",
+      "label": "모델의 자기 반복 실패",
+      "parent": "repetition-thresholds",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "샘플링 중 반복과 반복적 학습 데이터의 관계.",
       "added": "2026-11-19",
       "related": []
     }
