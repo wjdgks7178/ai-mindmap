@@ -39586,11 +39586,15 @@
       "label": "라벨 모델(노이즈 정리)",
       "parent": "programmatic-labeling-snorkel",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "규칙들의 정확도·상관을 추정해 합치기.",
+      "summary": "정답 없이 LF의 정확도·상관을 추정해 확률 라벨로 합침. TAC-KBP에서 LSTM +약 6 F1. 직접 구현 EM은 추정 정확도 0.814·0.693·0.610·0.591, 합친 정확도 0.702 vs 다수결 0.693.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "lf-coverage-conflict",
+        "weak-supervision"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "lf-coverage-conflict",
@@ -42895,6 +42899,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "정확도 0.5 근처 LF 정리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "noise-aware-loss",
+      "label": "노이즈 인지 손실",
+      "parent": "label-model-denoising",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "확률 라벨로 학습하는 손실 변형.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "dawid-skene",
+      "label": "Dawid-Skene 모델",
+      "parent": "label-model-denoising",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "관찰자 정확도를 EM으로 추정하는 고전 모델.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "label-model-validation",
+      "label": "합친 라벨 검증",
+      "parent": "label-model-denoising",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람 라벨 개발 세트로 점검.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "soft-labels-from-label-model",
+      "label": "확률 라벨을 소프트 라벨로",
+      "parent": "label-model-denoising",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임계값 대신 확률을 학습에 사용.",
       "added": "2026-11-19",
       "related": []
     }
