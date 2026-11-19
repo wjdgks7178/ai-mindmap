@@ -39678,11 +39678,15 @@
       "label": "제안 비노출 대조 표본",
       "parent": "model-assisted-prelabeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "일부는 제안 없이 독립 라벨링.",
+      "summary": "일부 항목을 제안 없이 독립 라벨링해 편향을 측정. 시뮬레이션: 틀린 제안 수용률 노출군 0.441 vs 비노출군 0.088.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "automation-bias-annotation",
+        "calibration-items"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "skeptical-reviewer-effect",
@@ -43456,6 +43460,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "외부 강제보다 편향을 줄이는 요인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "hidden-control-randomization",
+      "label": "비노출군 무작위 배정",
+      "parent": "suggestion-hidden-control-sample",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람이 고르지 않게 무작위로.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "wrong-suggestion-acceptance-rate",
+      "label": "틀린 제안 수용률",
+      "parent": "suggestion-hidden-control-sample",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자동화 편향의 핵심 지표.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "labeler-blind-assignment",
+      "label": "노출 여부 비공개 배정",
+      "parent": "suggestion-hidden-control-sample",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "노출 여부를 알리지 않는 운영.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bias-dashboard",
+      "label": "편향 대시보드",
+      "parent": "suggestion-hidden-control-sample",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "월간 노출/비노출 비교 보고.",
       "added": "2026-11-19",
       "related": []
     }
