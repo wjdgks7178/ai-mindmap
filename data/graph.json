@@ -39811,11 +39811,15 @@
       "label": "NaN 직접 처리 모델",
       "parent": "data-missing-values",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "트리 계열 모델의 결측 처리.",
+      "summary": "HistGradientBoosting 등은 NaN을 입력으로 받아 이득에 따라 결측 샘플의 분할 방향을 학습. 직접 실험: NaN 직접 0.784 vs 평균 대체 0.778 vs +지시자 0.777.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "missing-indicator-feature",
+        "multiple-imputation"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "gender-shades",
@@ -43831,6 +43835,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "서빙에서 결측 패턴이 달라지는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "hist-gradient-boosting-nan",
+      "label": "HistGradientBoosting의 NaN 규칙",
+      "parent": "native-nan-models",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습 방향·미관측 시 최다 샘플 자식.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "nan-support-model-list",
+      "label": "NaN 지원 모델 목록",
+      "parent": "native-nan-models",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "트리 계열과 선형 모델의 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "nan-baseline-first",
+      "label": "NaN 직접 처리로 기준선 만들기",
+      "parent": "native-nan-models",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "대체 없이 빠른 기준선.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "nan-interpretability",
+      "label": "결측 분기의 해석",
+      "parent": "native-nan-models",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "결측 때문에 간 방향을 확인하는 어려움.",
       "added": "2026-11-19",
       "related": []
     }
