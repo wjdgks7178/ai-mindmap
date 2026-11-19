@@ -40011,11 +40011,12 @@
    "label": "Domino 슬라이스 발견",
    "parent": "data-slicing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "교차 모달 임베딩으로 저성능 슬라이스 설명.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "checklist-behavioral-testing",
@@ -44504,6 +44505,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차 조합에서 표본이 줄 때 신뢰구간.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "slice-discovery-methods",
+   "label": "슬라이스 발견 방법",
+   "parent": "domino-slice-discovery",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 없는 저성능 부분집합 찾기 방법군.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "error-aware-mixture-model",
+   "label": "오류 인식 혼합 모델",
+   "parent": "domino-slice-discovery",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 오류를 반영해 군집을 찾는 모델.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "clip-embeddings",
+   "label": "CLIP 임베딩",
+   "parent": "domino-slice-discovery",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지·텍스트를 같은 공간에 두는 모델.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "slice-name-verification",
+   "label": "슬라이스 이름 사람 검증",
+   "parent": "domino-slice-discovery",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 설명이 틀릴 때의 확인 절차.",
    "related": [],
    "added": "2026-11-19"
   }
