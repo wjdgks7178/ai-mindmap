@@ -38060,11 +38060,15 @@
       "label": "층화 train_test_split",
       "parent": "split-ratio-conventions",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "stratify 인자로 클래스 비율 유지.",
+      "summary": "stratify=y로 클래스 비율 유지. 95:5 데이터에서 층화 없이는 시험 속 희귀 샘플 0~3개로 흔들리고 층화하면 항상 1개(직접 실행).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "stratified-k-fold",
+        "stratify-regression-binning"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "test-set-size-rare-class",
@@ -40186,6 +40190,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "연구가 생의학에 치우쳐 있다는 점.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "stratify-min-class-error",
+      "label": "stratify 최소 클래스 오류",
+      "parent": "stratified-train-test-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "클래스가 1개뿐일 때 ValueError와 대처.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "stratify-multi-label-columns",
+      "label": "여러 컬럼 기준 층화",
+      "parent": "stratified-train-test-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "라벨과 속성을 합친 키로 층화.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "stratify-vs-group",
+      "label": "층화와 그룹의 충돌",
+      "parent": "stratified-train-test-split",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "둘을 동시에 만족시키는 도구 선택.",
       "added": "2026-11-19",
       "related": []
     }
