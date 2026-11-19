@@ -37920,11 +37920,15 @@
       "label": "증강본 그룹 누수",
       "parent": "group-wise-split",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "같은 원본의 증강본이 양쪽에 걸침.",
+      "summary": "증강을 분할 전에 하면 같은 원본의 증강본이 양쪽에 걸쳐 누수. 원본 단위 분할 후 학습분만 증강.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation",
+        "data-leakage"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "confident-learning",
@@ -39716,6 +39720,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "문서가 적을 때 점수가 흔들리는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "perceptual-hash",
+      "label": "지각 해시",
+      "parent": "augmentation-group-leak",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "비슷하게 보이는 이미지가 비슷한 해시를 갖게 하는 기법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "late-split-error",
+      "label": "늦은 분할 오류",
+      "parent": "augmentation-group-leak",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "전처리·증강을 분할 전에 하는 실수.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "test-set-no-augmentation",
+      "label": "시험셋 무증강 원칙",
+      "parent": "augmentation-group-leak",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "검증·시험에는 증강을 쓰지 않는 이유.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "synthetic-data-split-leak",
+      "label": "합성 데이터 분할 누수",
+      "parent": "augmentation-group-leak",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM이 바꿔 쓴 데이터가 양쪽에 걸치는 문제.",
       "added": "2026-11-19",
       "related": []
     }
