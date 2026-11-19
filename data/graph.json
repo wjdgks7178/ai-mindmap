@@ -40155,11 +40155,12 @@
    "label": "적대적 사례",
    "parent": "robustness-testing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일부러 만든 최악 사례 입력.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "perturbation-severity-levels",
@@ -44978,6 +44979,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 견고성의 목표와 평가 차이.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "fgsm",
+   "label": "FGSM",
+   "parent": "adversarial-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기울기 부호 한 걸음으로 적대적 사례 생성.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "adversarial-transferability",
+   "label": "적대적 이전성",
+   "parent": "adversarial-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 모델용 섭동이 다른 모델도 속임.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "adversarial-training",
+   "label": "적대적 학습",
+   "parent": "adversarial-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적대적 사례를 학습에 섞는 방어.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "linearity-hypothesis",
+   "label": "선형성 가설",
+   "parent": "adversarial-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "취약성의 원인을 신경망의 선형성으로 설명.",
    "related": [],
    "added": "2026-11-19"
   }
