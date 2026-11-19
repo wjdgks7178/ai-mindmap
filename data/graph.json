@@ -39530,11 +39530,15 @@
       "label": "Label Studio ML 백엔드",
       "parent": "label-studio",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "모델 예측을 사전 라벨로 연결.",
+      "summary": "label-studio-ml로 모델을 웹 서버로 감싸 predict()로 사전 주석, fit()으로 재학습. Apache-2.0, 예제 yolo·gliner·SAM 등. 능동 학습 루프는 Enterprise.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "active-learning-labeling",
+        "label-studio-config-tags"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "active-learning-labeling",
@@ -43038,6 +43042,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "toName 매칭 등 사전 점검.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "ml-backend-predict-fit",
+      "label": "predict·fit 구현",
+      "parent": "label-studio-ml-backend",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "model.py에서 예측과 학습 구현.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "automation-bias-prelabel",
+      "label": "사전 라벨 자동화 편향",
+      "parent": "label-studio-ml-backend",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "예측을 그대로 승인하는 위험.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "smart-tools-interactive-labeling",
+      "label": "스마트 도구(대화형 라벨링)",
+      "parent": "label-studio-ml-backend",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SAM 등으로 영역을 클릭 한 번에.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "docker-host-networking-ls",
+      "label": "Docker 네트워킹과 host.docker.internal",
+      "parent": "label-studio-ml-backend",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "컨테이너에서 localhost 문제.",
       "added": "2026-11-19",
       "related": []
     }
