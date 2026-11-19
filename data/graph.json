@@ -37757,11 +37757,14 @@
       "label": "질의 가속",
       "parent": "data-maintenance",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "필요한 데이터를 빠르게 공급.",
+      "summary": "파티셔닝·클러스터링·인덱스·캐시·구체화 뷰로 덜 읽어 빠르게. 파일 약 120MB 권장.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "vector-db"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "great-expectations",
@@ -39503,6 +39506,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "카드 없는 데이터는 학습 금지 등 운영 규칙.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "data-partitioning-pruning",
+      "label": "파티셔닝과 가지치기",
+      "parent": "query-acceleration",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "굵은 기준으로 나눠 불필요한 구획을 건너뜀.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "z-order-clustering",
+      "label": "Z-order 클러스터링",
+      "parent": "query-acceleration",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "여러 컬럼 필터를 위한 다차원 정렬.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "materialized-view",
+      "label": "구체화 뷰",
+      "parent": "query-acceleration",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "계산 결과를 미리 저장, 갱신 비용 트레이드오프.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "parquet-columnar-format",
+      "label": "Parquet 열 기반 포맷",
+      "parent": "query-acceleration",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "필요한 열만 읽고 조건 pushdown.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "small-files-problem",
+      "label": "작은 파일 문제",
+      "parent": "query-acceleration",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "작은 파일 다수가 I/O를 키우는 현상과 병합.",
       "added": "2026-11-19",
       "related": []
     }
