@@ -39436,11 +39436,15 @@
       "label": "모델 우도 필터링",
       "parent": "pretraining-data-filtering",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "모델 확률로 문서를 거르는 방식과 한계.",
+      "summary": "CCNet: 위키 5-gram KenLM 퍼플렉서티로 head/middle/tail 3등분, 삭제 대신 보존. Gopher는 반복문 고우도·비용·편향 때문에 미사용. 필터는 성능-독성 트레이드오프.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "gopher-massivetext",
+        "educational-quality-classifier"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "multilingual-filter-adaptation",
@@ -42599,6 +42603,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "통째 제거 대신 줄만 제거.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "perplexity-basics",
+      "label": "퍼플렉서티",
+      "parent": "model-likelihood-filtering",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "언어 모델이 문서에 느끼는 낯섦의 척도.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "kenlm",
+      "label": "KenLM",
+      "parent": "model-likelihood-filtering",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "N-그램 언어 모델 라이브러리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "ccnet",
+      "label": "CCNet",
+      "parent": "model-likelihood-filtering",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Common Crawl 언어 판별·중복·퍼플렉서티 파이프라인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "filtering-tradeoff-no-silver-bullet",
+      "label": "필터링에 만능 해법 없음",
+      "parent": "model-likelihood-filtering",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Longpre 등 28개 모델 실험의 결론.",
       "added": "2026-11-19",
       "related": []
     }
