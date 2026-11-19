@@ -40383,11 +40383,12 @@
    "label": "GX 0.x와 1.x API 차이",
    "parent": "great-expectations",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "옛 튜토리얼과 맞지 않는 점.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "tfdv-schema-environments",
@@ -45811,6 +45812,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "저장 없이 메모리에서만 실행하는 모드.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-batch-definition",
+   "label": "GX Batch Definition",
+   "parent": "gx-api-version-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 배치로 나누는 정의.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-suite-parameters",
+   "label": "GX Suite 파라미터",
+   "parent": "gx-api-version-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "런타임에 값을 넘기는 suite_parameters.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tutorial-version-check",
+   "label": "튜토리얼 버전 확인 습관",
+   "parent": "gx-api-version-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자료가 설치 버전과 맞는지 먼저 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-removed-features-1x",
+   "label": "GX 1.x에서 사라진 기능",
+   "parent": "gx-api-version-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프로파일러·노트북·외부 저장소 지원 등.",
    "related": [],
    "added": "2026-11-19"
   }
