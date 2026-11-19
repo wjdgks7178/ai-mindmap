@@ -40167,11 +40167,12 @@
    "label": "변형 강도 단계",
    "parent": "robustness-testing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "약함→강함 단계별 성능 곡선.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "prediction-consistency-metric",
@@ -45023,6 +45024,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "취약성의 원인을 신경망의 선형성으로 설명.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "robustness-curve",
+   "label": "견고성 곡선",
+   "parent": "perturbation-severity-levels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "강도별 성능을 그려 임계점을 찾는 그래프.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "worst-case-over-perturbations",
+   "label": "섭동 최악 사례 정확도",
+   "parent": "perturbation-severity-levels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 변형 중 가장 나쁜 결과를 점수로.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "held-out-corruptions",
+   "label": "검증용 변형 분리",
+   "parent": "perturbation-severity-levels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜닝 과적합을 막는 변형 분리.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "text-typo-perturbation",
+   "label": "텍스트 오타 변형",
+   "parent": "perturbation-severity-levels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어 모델 견고성 테스트의 기본 변형.",
    "related": [],
    "added": "2026-11-19"
   }
