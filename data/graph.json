@@ -40227,11 +40227,12 @@
    "label": "데이터 보상·거래 논의",
    "parent": "data-valuation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 제공자에게 보상하는 문제.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "dvc",
@@ -45215,6 +45216,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률적 학습이 작은 효과를 가리는 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "bartz-v-anthropic",
+   "label": "Bartz v. Anthropic 합의",
+   "parent": "data-compensation-markets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불법 사본 도서 학습 관련 집단 합의.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "ai-content-licensing-deals",
+   "label": "AI 콘텐츠 라이선스 계약",
+   "parent": "data-compensation-markets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언론·플랫폼과 AI 기업 간 계약 구조.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "usage-based-ai-licensing",
+   "label": "사용량 기반 라이선스",
+   "parent": "data-compensation-markets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤·추론 단위 과금 모델.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "collective-licensing-rsl",
+   "label": "집단 라이선스(RSL)",
+   "parent": "data-compensation-markets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 퍼블리셔가 묶어 협상하는 방식.",
    "related": [],
    "added": "2026-11-19"
   }
