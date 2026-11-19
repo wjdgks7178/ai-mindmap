@@ -38283,11 +38283,15 @@
       "label": "번역 왕복(back-translation)",
       "parent": "data-augmentation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "텍스트 증강: 번역 후 되돌려 번역.",
+      "summary": "왕복 번역으로 패러프레이즈 증강. 기원은 NMT 단일 언어 데이터 활용(WMT15 +2.8~3.7 BLEU), UDA는 IMDb 라벨 20개로 오류 4.20.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation",
+        "synthetic-data"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "label-preserving-transform",
@@ -40951,6 +40955,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "한 데이터에서 찾은 정책을 다른 데이터에 쓰기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "uda-consistency-training",
+      "label": "UDA 일관성 학습",
+      "parent": "back-translation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "증강 전후 예측이 같도록 학습.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "llm-paraphrase-augmentation",
+      "label": "LLM 패러프레이즈 증강",
+      "parent": "back-translation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM에게 다시 쓰기를 시켜 증강.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "intermediate-language-choice",
+      "label": "중간 언어 선택",
+      "parent": "back-translation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "번역 왕복에 쓰는 언어 고르기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "text-augmentation-label-check",
+      "label": "텍스트 증강 라벨 점검",
+      "parent": "back-translation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "의미·라벨 유지 표본 검사.",
       "added": "2026-11-19",
       "related": []
     }
