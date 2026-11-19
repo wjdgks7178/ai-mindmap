@@ -38254,11 +38254,14 @@
       "label": "MixUp·CutMix",
       "parent": "data-augmentation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "배치 샘플을 섞어 만드는 증강.",
+      "summary": "두 샘플과 라벨을 섞는 증강. MixUp은 볼록 결합, CutMix는 패치 교체+면적 비례 라벨. 직접 실행에서 잘림 후 λ 재계산 필요(0.713→0.822).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "randaugment-autoaugment",
@@ -40845,6 +40848,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "이름·전화·이메일 마스킹.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mixup-beta-alpha",
+      "label": "MixUp의 Beta(α,α) 혼합 비율",
+      "parent": "mixup-cutmix",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "α가 작으면 한쪽에 치우친 혼합.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cutout",
+      "label": "Cutout",
+      "parent": "mixup-cutmix",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "조각을 지우는 영역 드롭아웃.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "soft-label-loss",
+      "label": "소프트 라벨 손실",
+      "parent": "mixup-cutmix",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "섞인 라벨을 쓰는 교차 엔트로피.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cutmix-label-area",
+      "label": "CutMix 면적 기반 라벨 보정",
+      "parent": "mixup-cutmix",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "경계 잘림을 반영해 λ 재계산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mixup-for-text",
+      "label": "텍스트에서의 혼합 증강",
+      "parent": "mixup-cutmix",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임베딩 공간 MixUp 등 변형.",
       "added": "2026-11-19",
       "related": []
     }
