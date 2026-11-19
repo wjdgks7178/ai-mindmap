@@ -38149,11 +38149,15 @@
       "label": "데이터 영향도(Shapley)",
       "parent": "targeted-data-collection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "각 샘플이 성능에 미치는 영향.",
+      "summary": "샤플리 값으로 샘플별 기여도 평가. 낮은 값은 오염 후보, 높은 값은 수집 방향. OpenDataVal은 11개 방법 비교: 단일 최고는 없음.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "targeted-data-collection",
+        "confident-learning"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "collection-benefit-extrapolation",
@@ -40487,6 +40491,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "사람이라면 맞혔을지로 개선 여지 판단.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "tmc-shapley",
+      "label": "TMC-Shapley",
+      "parent": "data-influence-shapley",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "몬테카를로 절단으로 샤플리 근사.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "beta-shapley",
+      "label": "Beta Shapley",
+      "parent": "data-influence-shapley",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "효율성 공리를 완화해 노이즈 줄인 변형.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "knn-shapley",
+      "label": "KNN-Shapley",
+      "parent": "data-influence-shapley",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "KNN에서 닫힌 형태로 빠르게 계산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "opendataval",
+      "label": "OpenDataVal",
+      "parent": "data-influence-shapley",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터 가치 평가 오픈소스 벤치마크.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "leave-one-out-value",
+      "label": "Leave-one-out 데이터 가치",
+      "parent": "data-influence-shapley",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 샘플만 뺀 성능 차이의 한계.",
       "added": "2026-11-19",
       "related": []
     }
