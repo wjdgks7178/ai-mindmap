@@ -39657,11 +39657,15 @@
       "label": "확신도 기반 검수 분배",
       "parent": "model-assisted-prelabeling",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "낮은 확신도만 전수 검토.",
+      "summary": "확신도 낮은 항목만 사람 검수. digits 직접 실험: θ=0.95에서 10%만 검수해 정확도 0.958→0.990(사람 0.98 가정). 선택적 분류는 ImageNet top-5 2% 보장·60% 응답.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "model-assisted-prelabeling",
+        "active-learning-labeling"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "suggestion-hidden-control-sample",
@@ -43315,6 +43319,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "소수가 대부분을 하는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "selective-classification",
+      "label": "선택적 분류",
+      "parent": "confidence-routed-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "확신이 낮으면 기권하는 분류기와 위험-커버리지.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "threshold-curve-selection",
+      "label": "임계값 곡선으로 고르기",
+      "parent": "confidence-routed-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자동 통과 정확도와 검수 비율 곡선.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "overconfidence-routing-failure",
+      "label": "과신 모델의 분배 실패",
+      "parent": "confidence-routed-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "보정되지 않은 확신도의 위험.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "auto-pass-sampling",
+      "label": "자동 통과분 표본 점검",
+      "parent": "confidence-routed-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자동 통과도 일부는 사람 확인.",
       "added": "2026-11-19",
       "related": []
     }
