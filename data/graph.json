@@ -38229,7 +38229,8 @@
       "added": "2026-11-18",
       "related": [
         "exact-substring-dedup",
-        "benchmark-contamination"
+        "benchmark-contamination",
+        "membership-inference"
       ],
       "done": "2026-11-19"
     },
@@ -40822,17 +40823,6 @@
       "status": "planned",
       "priority": 3,
       "summary": "용량·반복·문맥 길이.",
-      "added": "2026-11-19",
-      "related": []
-    },
-    {
-      "id": "membership-inference-attack",
-      "label": "멤버십 추론 공격",
-      "parent": "memorization-in-llms",
-      "domain": "ai-data",
-      "status": "planned",
-      "priority": 3,
-      "summary": "특정 샘플이 학습에 쓰였는지 추정.",
       "added": "2026-11-19",
       "related": []
     },
