@@ -40732,11 +40732,12 @@
    "label": "데이터 대표성",
    "parent": "iso-iec-5259",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 데이터가 실제 대상 집단을 얼마나 반영하는가.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "data-owner-steward",
@@ -46523,6 +46524,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터를 만들고 수집·큐레이션하는 역할.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "intersectional-coverage",
+   "label": "교차 조합 커버리지",
+   "parent": "data-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속성 조합별로 데이터가 있는지 점검.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "target-population-definition",
+   "label": "대상 집단 정의",
+   "parent": "data-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누가 모델의 사용 대상인지 정하기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "post-stratification-weights",
+   "label": "사후 층화 가중",
+   "parent": "data-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모집단/표본 비율로 가중치 계산.",
    "related": [],
    "added": "2026-11-19"
   }
