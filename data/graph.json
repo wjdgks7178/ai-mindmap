@@ -41113,11 +41113,18 @@
       "label": "예측 확률 보정",
       "parent": "out-of-sample-pred-probs",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "확률이 실제 확률과 맞도록 보정.",
+      "summary": "확률을 실제 빈도에 맞추는 후처리. 현대 신경망은 보정이 나쁘고 온도 스케일링이 잘 통함(Guo 2017). 직접 실험: NB의 ECE 0.048→isotonic 0.010.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "out-of-sample-pred-probs",
+        "confidence-routed-review",
+        "temperature-scaling",
+        "ece-metric",
+        "reliability-diagram"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "target-agreement-setting",
@@ -43363,6 +43370,17 @@
       "status": "planned",
       "priority": 3,
       "summary": "자동 통과도 일부는 사람 확인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "isotonic-vs-sigmoid-calibration",
+      "label": "isotonic vs sigmoid 보정",
+      "parent": "pred-probs-calibration",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "두 보정 방법의 차이와 선택.",
       "added": "2026-11-19",
       "related": []
     }
