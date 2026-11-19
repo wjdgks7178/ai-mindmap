@@ -40371,11 +40371,12 @@
    "label": "GX Data Docs",
    "parent": "great-expectations",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검증 결과를 사람이 읽는 페이지로.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "gx-api-version-differences",
@@ -45766,6 +45767,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "NotNull과 값 검사를 함께 두는 설계.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-file-data-context",
+   "label": "GX 파일 데이터 컨텍스트",
+   "parent": "gx-data-docs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프로젝트 설정을 폴더에 저장하는 방식.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-uncommitted-folder",
+   "label": "GX uncommitted 폴더",
+   "parent": "gx-data-docs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과·문서를 버전 관리에서 제외.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-docs-access-control",
+   "label": "Data Docs 접근 제어",
+   "parent": "gx-data-docs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 페이지에 데이터 값이 노출될 위험.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "gx-ephemeral-context",
+   "label": "GX 임시 컨텍스트",
+   "parent": "gx-data-docs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장 없이 메모리에서만 실행하는 모드.",
    "related": [],
    "added": "2026-11-19"
   }
