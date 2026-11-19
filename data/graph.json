@@ -40756,11 +40756,12 @@
    "label": "데이터 허용 용도 정책",
    "parent": "internal-data-card",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터별 쓸 수 있는 용도·금지 용도 규칙.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "internal-data-card-adoption",
@@ -46692,6 +46693,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "열이 늘수록 효과가 떨어짐.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "use-exception-approval",
+   "label": "용도 예외 승인 절차",
+   "parent": "allowed-use-policy-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책 밖 용도의 승인자와 기록.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "use-definition-examples",
+   "label": "용도 정의 예시",
+   "parent": "allowed-use-policy-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "'분석'과 '학습'처럼 모호한 용어에 예시 붙이기.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "consent-scope-limit",
+   "label": "동의 범위와 용도 제한",
+   "parent": "allowed-use-policy-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 때 받은 동의가 허용하는 용도.",
    "related": [],
    "added": "2026-11-19"
   }
