@@ -41065,11 +41065,16 @@
       "label": "리더보드 작은 점수 차",
       "parent": "label-noise-benchmarks",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "1~2%p 차이를 믿으면 안 되는 이유.",
+      "summary": "리더보드 1~2점 차이는 표본 변동·시험 라벨 오류(3.3%+)·선택적 공개(27개 비공개 변형)·데이터 불균형에 가려질 수 있음.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "label-noise-benchmarks",
+        "small-test-set-variance",
+        "benchmark-contamination"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "crowdsourced-label-validation",
@@ -43590,6 +43595,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "비용·지연 등 다른 기준 병행.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "statistically-indistinguishable-groups",
+      "label": "통계적으로 구분 안 되는 그룹",
+      "parent": "leaderboard-small-gap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "순위 대신 겹치는 구간 그룹으로 해석.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "selective-score-disclosure",
+      "label": "선택적 점수 공개",
+      "parent": "leaderboard-small-gap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "여러 변형을 테스트하고 좋은 점수만 공개.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "arena-data-access-asymmetry",
+      "label": "Arena 데이터 접근 불균형",
+      "parent": "leaderboard-small-gap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "제공자별 샘플링 비중 차이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "own-data-evaluation",
+      "label": "자사 데이터로 직접 평가",
+      "parent": "leaderboard-small-gap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "업무 질문 100~300개로 모델 비교.",
       "added": "2026-11-19",
       "related": []
     }
