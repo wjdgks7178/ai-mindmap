@@ -39887,11 +39887,15 @@
       "label": "Consent in Crisis",
       "parent": "data-provenance-explorer",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "웹 크롤링 동의 변화 감사 논문.",
+      "summary": "약 14,000개 도메인 감사: C4 토큰의 5%+ 완전 금지(핵심 출처 28%+), ToS까지 45%, robots.txt와 ToS가 자주 불일치(초록).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "ccbot-opt-out",
+        "data-licensing-provenance"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "robots-txt-vs-tos",
@@ -44061,6 +44065,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "복제본이 시험에 들어가는 누수 방지.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "tos-vs-robots-txt",
+      "label": "이용약관 vs robots.txt 불일치",
+      "parent": "consent-in-crisis",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 사이트가 서로 다른 허용 의사를 표시.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "ai-data-commons",
+      "label": "AI 데이터 커먼즈",
+      "parent": "consent-in-crisis",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "공개 웹 데이터 접근성의 쇠퇴.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "domain-consent-registry",
+      "label": "도메인별 허용 의사 기록",
+      "parent": "consent-in-crisis",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "출처별 robots·ToS를 표로 정리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "retroactive-opt-out-gap",
+      "label": "소급 불가 옵트아웃",
+      "parent": "consent-in-crisis",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "이미 수집된 데이터에는 효과 없음.",
       "added": "2026-11-19",
       "related": []
     }
