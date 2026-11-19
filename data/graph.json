@@ -38371,11 +38371,14 @@
       "label": "URL 색인(CDX)",
       "parent": "common-crawl",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "크롤된 URL을 검색하는 색인.",
+      "summary": "URL→WARC 파일·offset·length를 알려 주는 월별 CDXJ 색인(3,000줄 블록 gzip). collinfo.json은 129개 크롤. SURT 변환 직접 재현, 서버 조회는 시간 초과.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "warc-wat-wet"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "web-crawl-quality-issues",
@@ -41248,6 +41251,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "종결 부호·언어 판별을 한국어에 맞추기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "surt-key",
+      "label": "SURT 키",
+      "parent": "url-index-cdx",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "호스트를 뒤집어 정렬 가능하게 만든 URL 표현.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cdx-toolkit",
+      "label": "cdx-toolkit",
+      "parent": "url-index-cdx",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "cdxt로 색인 조회·WARC 레코드 내려받기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "columnar-index-parquet",
+      "label": "열 기반(Parquet) 색인",
+      "parent": "url-index-cdx",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Athena 등 SQL로 조회하는 색인.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "domain-specific-corpus-cc",
+      "label": "도메인 특화 코퍼스 만들기",
+      "parent": "url-index-cdx",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "색인으로 특정 도메인 페이지만 선별.",
       "added": "2026-11-19",
       "related": []
     }
