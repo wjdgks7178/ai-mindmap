@@ -40544,11 +40544,12 @@
    "label": "품질 지표 저장소",
    "parent": "amazon-deequ",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "품질 지표를 쌓아 시간 변화 추적.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "dqdl",
@@ -46005,6 +46006,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "컬럼별 통계 요약.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "result-key-tags",
+   "label": "ResultKey와 태그",
+   "parent": "data-quality-metrics-repository",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표를 날짜·태그로 색인하는 키.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "dynamic-rules-last",
+   "label": "동적 규칙 last()",
+   "parent": "data-quality-metrics-repository",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 지표와 비교해 통과 여부를 정함.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "data-quality-analyzers",
+   "label": "품질 Analyzer",
+   "parent": "data-quality-metrics-repository",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판정 없이 통계만 수집하는 블록.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "exclude-statistics-baseline",
+   "label": "기준선에서 이상 통계 제외",
+   "parent": "data-quality-metrics-repository",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일회성 대량 적재를 평균에서 빼기.",
    "related": [],
    "added": "2026-11-19"
   }
