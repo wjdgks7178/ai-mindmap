@@ -39635,11 +39635,15 @@
       "label": "LLM을 라벨링 함수로",
       "parent": "programmatic-labeling-snorkel",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "프롬프트 기반 규칙으로 라벨링.",
+      "summary": "프롬프트마다 LF로 보고 약한 지도로 합침. AMA는 few-shot 대비 평균 10.2% 향상, GPT-J-6B가 20개 중 15개에서 GPT-3 175B와 동등 이상.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "labeling-function",
+        "label-model-denoising"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "automation-bias-annotation",
@@ -43639,6 +43643,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "업무 질문 100~300개로 모델 비교.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "ama-prompt-aggregation",
+      "label": "AMA 프롬프트 결합",
+      "parent": "llm-as-labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "개방형 QA 변환 후 약한 지도로 합치기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "prompt-diversity-for-lf",
+      "label": "LF용 프롬프트 다양화",
+      "parent": "llm-as-labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정의·예시·QA 등 서로 다른 관점.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "correlated-llm-errors",
+      "label": "같은 LLM의 상관된 오류",
+      "parent": "llm-as-labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모든 프롬프트가 같은 방향으로 틀림.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "llm-lf-cost-latency",
+      "label": "LLM LF 비용과 지연",
+      "parent": "llm-as-labeling-function",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "호출 비용·시간 관리.",
       "added": "2026-11-19",
       "related": []
     }
