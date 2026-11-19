@@ -40215,11 +40215,12 @@
    "label": "Leave-one-out 가치",
    "parent": "data-valuation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 샘플을 빼서 변화 측정.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "data-compensation-markets",
@@ -45181,6 +45182,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "눈에 안 띄는 변조로 모델을 조종하는 공격.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "duplicate-data-valuation",
+   "label": "중복 데이터와 가치 평가",
+   "parent": "leave-one-out-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 데이터가 둘이면 개별 가치가 낮게 나오는 문제.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "mislabel-detection-by-value",
+   "label": "가치로 오라벨 찾기",
+   "parent": "leave-one-out-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 가치 순으로 검사해 잘못된 라벨 발견.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "training-noise-in-valuation",
+   "label": "학습 노이즈와 가치 추정",
+   "parent": "leave-one-out-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률적 학습이 작은 효과를 가리는 문제.",
    "related": [],
    "added": "2026-11-19"
   }
