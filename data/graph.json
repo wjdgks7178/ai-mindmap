@@ -39999,11 +39999,12 @@
    "label": "집단별 성능 보고",
    "parent": "model-cards",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "인구·교차 집단별 벤치마크.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "domino-slice-discovery",
@@ -44470,6 +44471,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가 때 장치 적용 여부가 결과를 바꾼다.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "equality-of-opportunity",
+   "label": "Equality of Opportunity",
+   "parent": "subgroup-performance-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 간 FNR 동등 기준.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "equalized-odds",
+   "label": "Equalized Odds",
+   "parent": "subgroup-performance-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 간 FPR·FNR 동등 기준.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "small-subgroup-uncertainty",
+   "label": "작은 집단의 불확실성",
+   "parent": "subgroup-performance-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차 조합에서 표본이 줄 때 신뢰구간.",
    "related": [],
    "added": "2026-11-19"
   }
