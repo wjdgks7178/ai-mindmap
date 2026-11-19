@@ -39903,11 +39903,12 @@
    "label": "robots.txt와 이용약관 불일치",
    "parent": "data-provenance-explorer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "크롤링 제한 표현의 한계.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "ai-crawler-blocking",
@@ -44154,6 +44155,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "벤더 후원 비교 연구를 읽는 법.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "browsewrap-clickwrap",
+   "label": "browsewrap와 clickwrap",
+   "parent": "robots-txt-vs-tos",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약관 동의 방식에 따라 효력이 달라짐.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "tos-review-step",
+   "label": "수집 전 약관 확인 단계",
+   "parent": "robots-txt-vs-tos",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤러가 못 보는 약관을 사람이 확인.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "cfaa-public-data",
+   "label": "CFAA와 공개 데이터",
+   "parent": "robots-txt-vs-tos",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "hiQ 판결이 말한 것과 말하지 않은 것.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "rep-vs-contract",
+   "label": "요청과 계약의 차이",
+   "parent": "robots-txt-vs-tos",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "robots.txt 같은 요청과 약관 계약의 구분.",
    "related": [],
    "added": "2026-11-19"
   }
