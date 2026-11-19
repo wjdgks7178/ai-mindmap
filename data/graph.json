@@ -38356,11 +38356,15 @@
       "label": "C4 데이터셋",
       "parent": "common-crawl",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "Common Crawl 기반 휴리스틱 필터 코퍼스.",
+      "summary": "Common Crawl 2019-04를 종결 부호·5단어·금칙어·중괄호·3문장 중복·영어 0.99 규칙으로 거른 약 750GB 영어 코퍼스(T5 논문).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "warc-wat-wet",
+        "fineweb-dataset"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "url-index-cdx",
@@ -41200,6 +41204,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "이미 수집된 데이터에는 소급되지 않음.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "c4-filter-rules",
+      "label": "C4 필터 규칙 10가지",
+      "parent": "c4-dataset",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "줄·페이지·중복·언어 단계 규칙 정리.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bad-words-list-filter",
+      "label": "금칙어 목록 필터의 부작용",
+      "parent": "c4-dataset",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "무고한 페이지가 제거되는 문제.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "langdetect-threshold",
+      "label": "언어 감지 임계값",
+      "parent": "c4-dataset",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "영어 확률 0.99 기준과 한계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "heuristic-filter-korean",
+      "label": "한국어 코퍼스 휴리스틱",
+      "parent": "c4-dataset",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "종결 부호·언어 판별을 한국어에 맞추기.",
       "added": "2026-11-19",
       "related": []
     }
