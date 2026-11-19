@@ -39451,11 +39451,14 @@
       "label": "다국어 필터 조정",
       "parent": "pretraining-data-filtering",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "영어 기준 규칙을 다른 언어에 맞추기.",
+      "summary": "mC4: cld3 70% 판별, 종결 부호 대신 200자 이상 줄 3개 이상 규칙, 71개월 전부 사용, 107 언어. 직접 실행: C4 종결 부호 규칙이 일본어·중국어·힌디어·태국어를 탈락시킴.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "c4-dataset"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "sft-supervised-finetuning",
@@ -42647,6 +42650,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "Longpre 등 28개 모델 실험의 결론.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "cld3-language-id",
+      "label": "cld3 언어 판별",
+      "parent": "multilingual-filter-adaptation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "mC4가 쓴 언어 식별기와 신뢰도 임계값.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "line-length-filter",
+      "label": "줄 길이 필터",
+      "parent": "multilingual-filter-adaptation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "종결 부호 대신 줄 길이로 본문 판별.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "language-sampling-exponent",
+      "label": "언어 표집 지수 α",
+      "parent": "multilingual-filter-adaptation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "고자원 언어 편중을 줄이는 샘플링.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "korean-text-filter-design",
+      "label": "한국어 텍스트 필터 설계",
+      "parent": "multilingual-filter-adaptation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "어절·글자 수 기준과 종결 부호 처리.",
       "added": "2026-11-19",
       "related": []
     }
