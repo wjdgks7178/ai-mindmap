@@ -40695,11 +40695,12 @@
    "label": "데이터 추적성",
    "parent": "iso-iec-25012",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "출처·변환 이력을 따라갈 수 있는 정도.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "iso-5259-part2-measures",
@@ -46332,6 +46333,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "포맷·스키마 변환을 포함한 이전 절차.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "openlineage",
+   "label": "OpenLineage",
+   "parent": "data-traceability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 계보를 수집하는 오픈 규격.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "w3c-prov",
+   "label": "W3C PROV",
+   "parent": "data-traceability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처 정보를 표현하는 W3C 표준.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "lineage-graph-debugging",
+   "label": "계보 그래프로 원인 찾기",
+   "parent": "data-traceability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상 숫자의 상류 변화를 추적.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "lineage-gaps-manual-steps",
+   "label": "계보의 끊김",
+   "parent": "data-traceability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수작업 단계에서 추적이 끊기는 문제.",
    "related": [],
    "added": "2026-11-19"
   }
