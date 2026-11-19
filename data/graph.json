@@ -37879,11 +37879,15 @@
       "label": "Leave-One-Group-Out",
       "parent": "group-wise-split",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "그룹 하나씩 통째로 시험용으로.",
+      "summary": "그룹 하나를 통째로 시험에 쓰며 그룹 수만큼 반복. LeavePGroupsOut(1)·GroupKFold(n=그룹 수)와 동치.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "k-fold-cross-validation",
+        "group-kfold"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "document-level-split",
@@ -39620,6 +39624,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "자동 초안을 사람이 고치는 체크 포인트.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "leave-p-groups-out",
+      "label": "Leave-P-Groups-Out",
+      "parent": "leave-one-group-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "그룹 P개씩 조합으로 시험에 빼는 방식. 조합 폭증.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "group-shuffle-split",
+      "label": "GroupShuffleSplit",
+      "parent": "leave-one-group-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "그룹 일부를 무작위로 시험에 뺌. 조합 열거 없이.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "per-group-score-analysis",
+      "label": "그룹별 점수 분석",
+      "parent": "leave-one-group-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "그룹마다 점수 편차를 확인하는 방법.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "leave-one-out",
+      "label": "Leave-One-Out 교차 검증",
+      "parent": "leave-one-group-out",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "샘플 하나씩 시험. LOGO와의 차이.",
       "added": "2026-11-19",
       "related": []
     }
