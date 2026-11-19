@@ -38024,11 +38024,12 @@
       "label": "보정 문항",
       "parent": "label-consistency-guideline",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "공통 문서를 주기적으로 독립 라벨링.",
+      "summary": "본 작업 중 공통 문서 소수를 주기적으로 독립 라벨링해 라벨러 간 일관성을 점검.",
       "added": "2026-11-18",
-      "related": []
+      "related": [],
+      "done": "2026-11-19"
     },
     {
       "id": "guideline-edge-case-log",
@@ -40073,6 +40074,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "비용을 줄이는 설계.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "golden-items",
+      "label": "골든 문항",
+      "parent": "calibration-items",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정답이 확정된 문항을 섞어 라벨러 정확도를 잼.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "labeler-drift",
+      "label": "라벨러 기준 드리프트",
+      "parent": "calibration-items",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시간·피로·규칙 변경으로 기준이 벌어지는 현상.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "calibration-frequency",
+      "label": "보정 주기와 비율",
+      "parent": "calibration-items",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "공통 문항 비율과 간격을 정하는 법.",
       "added": "2026-11-19",
       "related": []
     }
