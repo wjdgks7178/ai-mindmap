@@ -38309,11 +38309,14 @@
       "label": "탐지용 증강(박스 동시 변환)",
       "parent": "data-augmentation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "박스·마스크를 이미지와 같이 변환.",
+      "summary": "박스·마스크를 이미지와 같이 변환. 좌표 형식 5가지, min_visibility로 잘린 박스 제거. 직접 실행: 2.0.8은 format 인자(coord_format은 오류).",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "data-augmentation"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "warc-wat-wet",
@@ -40999,6 +41002,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "의미·라벨 유지 표본 검사.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bbox-coordinate-formats",
+      "label": "박스 좌표 형식",
+      "parent": "augmentation-for-detection",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "pascal_voc·coco·yolo 등 5형식과 혼동 주의.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "min-visibility-filter",
+      "label": "min_visibility 필터",
+      "parent": "augmentation-for-detection",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "잘린 박스를 면적 비율로 제거.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "bbox-safe-crop",
+      "label": "박스 안전 자르기",
+      "parent": "augmentation-for-detection",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모든 박스를 지키는 무작위 자르기.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "mask-augmentation-nearest",
+      "label": "마스크 증강과 최근접 보간",
+      "parent": "augmentation-for-detection",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "세분화 마스크를 변환할 때 보간 선택.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "library-version-api-drift",
+      "label": "라이브러리 버전별 API 차이",
+      "parent": "augmentation-for-detection",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서와 설치 버전의 인자명이 다른 문제.",
       "added": "2026-11-19",
       "related": []
     }
