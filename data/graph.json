@@ -39781,11 +39781,15 @@
       "label": "다중 대체",
       "parent": "data-missing-values",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "불확실성을 반영한 여러 번의 대체.",
+      "summary": "여러 번 대체→분석→Rubin 규칙. 직접 실험(MAR): 결측 제외 2125.4 vs 다중 대체 2192.9(진짜 2190.9), 표준오차 10.16 대 단일 대체 8.96.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "mcar-mar-mnar",
+        "missing-indicator-feature"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "missing-indicator-feature",
@@ -43735,6 +43739,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "분산 과소 추정과 다중 대체의 필요.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "rubin-rules",
+      "label": "Rubin의 합치기 규칙",
+      "parent": "multiple-imputation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "대체 내·간 분산으로 합친 분산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "iterative-imputer",
+      "label": "IterativeImputer",
+      "parent": "multiple-imputation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "scikit-learn의 연쇄 방정식 대체.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "single-imputation-underestimates",
+      "label": "단일 대체의 불확실성 과소평가",
+      "parent": "multiple-imputation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한 값으로 채우면 표준오차가 작아짐.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "imputation-for-prediction",
+      "label": "예측 목적의 결측 처리",
+      "parent": "multiple-imputation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "단일 대체+결측 표시로 충분한 경우.",
       "added": "2026-11-19",
       "related": []
     }
