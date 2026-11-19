@@ -37814,11 +37814,15 @@
       "label": "스키마 자동 추론",
       "parent": "data-validation-tools",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "통계에서 초기 스키마를 만들고 사람이 검토.",
+      "summary": "통계에서 스키마 초안을 자동 생성(tfdv.infer_schema)하고 사람이 검토. 환경·skew/drift 비교기 포함.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "tfdv",
+        "schema-evolution"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "amazon-deequ",
@@ -39561,6 +39565,61 @@
       "status": "planned",
       "priority": 3,
       "summary": "작은 파일 다수가 I/O를 키우는 현상과 병합.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "tfdv-anomaly-types",
+      "label": "TFDV 이상 유형",
+      "parent": "schema-inference",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "도메인 밖 값·누락·타입 불일치 등 anomaly 종류.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "schema-environments",
+      "label": "스키마 환경",
+      "parent": "schema-inference",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "TRAINING/SERVING 환경별 피처 요구 구분.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "skew-drift-comparator",
+      "label": "skew·drift 비교기",
+      "parent": "schema-inference",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "L∞·젠슨-섀넌 임계값으로 분포 차이 감시.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "data-statistics-slicing",
+      "label": "슬라이스별 통계",
+      "parent": "schema-inference",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "국가 등 값별로 나눠 통계를 계산.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "schema-human-review",
+      "label": "추론 스키마 검토 요령",
+      "parent": "schema-inference",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자동 초안을 사람이 고치는 체크 포인트.",
       "added": "2026-11-19",
       "related": []
     }
