@@ -40604,11 +40604,12 @@
    "label": "편향 측정 3단계",
    "parent": "training-serving-skew",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습·보류·다음 날·실시간 비교.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "repeated-cross-validation",
@@ -46219,6 +46220,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "출시 전 행동을 예측하기 어려운 부채.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "holdout-vs-next-day",
+   "label": "보류 vs 다음 날 비교",
+   "parent": "skew-measurement-stages",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간 민감 특징의 열화를 보는 단계.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "acceptable-skew-threshold",
+   "label": "허용 편향 기준 정하기",
+   "parent": "skew-measurement-stages",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "격차 크기를 서비스 위험에 맞춰 정함.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "time-based-split-rule",
+   "label": "시간 기반 분할 규칙",
+   "parent": "skew-measurement-stages",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거로 학습하고 이후 데이터로 시험.",
    "related": [],
    "added": "2026-11-19"
   }
