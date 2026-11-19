@@ -37563,11 +37563,14 @@
       "label": "ISO/IEC 5259",
       "parent": "data-quality-for-ai",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "분석·ML용 데이터 품질 표준 시리즈.",
+      "summary": "분석·ML 데이터 품질 5부작 표준. 1부는 2024년 7월 발행, 2~5부는 측정·관리·프로세스·거버넌스.",
       "added": "2026-11-18",
-      "related": []
+      "related": [
+        "iso-iec-25012"
+      ],
+      "done": "2026-11-19"
     },
     {
       "id": "data-missing-values",
@@ -39429,6 +39432,50 @@
       "status": "planned",
       "priority": 3,
       "summary": "출처·변환 이력을 따라갈 수 있는 정도.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "iso-5259-part2-measures",
+      "label": "5259-2 데이터 품질 측정",
+      "parent": "iso-iec-5259",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정확성·완전성·대표성 등 측정 지표.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "iso-5259-part5-governance",
+      "label": "5259-5 데이터 품질 거버넌스",
+      "parent": "iso-iec-5259",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "역할·책임·감독 구조.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "data-representativeness",
+      "label": "데이터 대표성",
+      "parent": "iso-iec-5259",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습 데이터가 실제 대상 집단을 얼마나 반영하는가.",
+      "added": "2026-11-19",
+      "related": []
+    },
+    {
+      "id": "data-owner-steward",
+      "label": "데이터 오너와 스튜어드",
+      "parent": "iso-iec-5259",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터 책임 역할 분담.",
       "added": "2026-11-19",
       "related": []
     }
