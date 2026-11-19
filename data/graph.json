@@ -40143,11 +40143,12 @@
    "label": "ImageNet-C·ImageNet-P",
    "parent": "robustness-testing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일반 손상·섭동 견고성 벤치마크.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-19"
   },
   {
    "id": "adversarial-examples",
@@ -44933,6 +44934,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "특징별 상대 난이도를 전문가가 지정.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "mean-corruption-error",
+   "label": "mCE(평균 손상 오류)",
+   "parent": "imagenet-c-p",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AlexNet 대비 손상 오류의 상대 비율.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "flip-rate",
+   "label": "Flip Rate",
+   "parent": "imagenet-c-p",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섭동 시퀀스에서 예측이 뒤집히는 비율.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "augmix",
+   "label": "AugMix",
+   "parent": "imagenet-c-p",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 증강으로 손상 견고성을 높이는 방법.",
+   "related": [],
+   "added": "2026-11-19"
+  },
+  {
+   "id": "common-vs-adversarial-robustness",
+   "label": "흔한 손상 vs 적대적 견고성",
+   "parent": "imagenet-c-p",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 견고성의 목표와 평가 차이.",
    "related": [],
    "added": "2026-11-19"
   }
