@@ -42118,11 +42118,12 @@
       "label": "LSH 밴딩 S자 곡선",
       "parent": "minhash-lsh",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "b와 r로 임계값을 조절.",
+      "summary": "b개 밴드×r행에서 후보 확률 1-(1-s^r)^b, 임계값≈(1/b)^(1/r). 25×5는 0.6에서 0.868, 10×10은 0.059. datasketch는 128·0.5에서 25×5 선택.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "minhash-lsh-forest",
@@ -50657,6 +50658,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "띄어쓰기 변동에 강한 글자 단위 조각.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "lsh-weights-fp-fn",
+      "label": "LSH 오탐·미탐 가중치",
+      "parent": "lsh-banding-curve",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "곡선을 좌우로 옮기는 weights 설정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "lsh-signature-length",
+      "label": "서명 길이와 곡선 기울기",
+      "parent": "lsh-banding-curve",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "num_perm을 늘리면 곡선이 가팔라진다.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "lsh-post-verify",
+      "label": "LSH 후보 재검증",
+      "parent": "lsh-banding-curve",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "후보에 실제 자카드를 다시 계산.",
       "added": "2026-11-20",
       "related": []
     }
