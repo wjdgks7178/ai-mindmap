@@ -42767,11 +42767,14 @@
       "label": "C4 필터 규칙 10가지",
       "parent": "c4-dataset",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "줄·페이지·중복·언어 단계 규칙 정리.",
+      "summary": "T5 논문의 C4 규칙: 줄 5종(종결부호·5단어·Javascript·정책문구·인용표지), 페이지 4종(3문장·금칙어·lorem ipsum·중괄호), 3문장 중복 제거, langdetect 0.99. 약 750GB. 간이 재구현으로 동작 확인.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "c4-dataset"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "bad-words-list-filter",
@@ -52263,6 +52266,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "학습된 모델에서 영향 줄이기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "c4-line-filters",
+      "label": "C4 줄 단계 필터",
+      "parent": "c4-filter-rules",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "종결부호·5단어·정책 문구.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "c4-page-filters",
+      "label": "C4 페이지 단계 필터",
+      "parent": "c4-filter-rules",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "3문장·금칙어·중괄호.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "c4-side-effects",
+      "label": "C4 규칙의 부작용",
+      "parent": "c4-filter-rules",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "코드·시·비영어 오삭제.",
       "added": "2026-11-20",
       "related": []
     }
