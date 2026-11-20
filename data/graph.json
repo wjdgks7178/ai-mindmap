@@ -42388,11 +42388,14 @@
       "label": "CutMix 면적 기반 라벨 보정",
       "parent": "mixup-cutmix",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "경계 잘림을 반영해 λ 재계산.",
+      "summary": "박스가 경계에서 잘리면 면적이 달라져 λ를 1-(x2-x1)(y2-y1)/(WH)로 재계산(논문 부록 A). 직접 시뮬레이션: 명목 λ 평균 0.50 vs 보정 0.70.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "soft-label-loss"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "mixup-for-text",
@@ -51356,6 +51359,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "교사 모델 확률을 타깃으로 쓰는 경우.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cutmix-box-sampling",
+      "label": "CutMix 박스 샘플링",
+      "parent": "cutmix-label-area",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "√(1−λ) 크기와 중심 균등 추출.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cutmix-variants",
+      "label": "CutMix 변형들",
+      "parent": "cutmix-label-area",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Center Gaussian·Fixed-size·Scheduled.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "boundary-clipping-effect",
+      "label": "경계 클리핑의 영향",
+      "parent": "cutmix-label-area",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "가장자리 중심일 때 면적 손실.",
       "added": "2026-11-20",
       "related": []
     }
