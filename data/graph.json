@@ -41659,11 +41659,14 @@
    "label": "여러 시드 평균 보고",
    "parent": "random-state-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시드 바꿔 평균·표준편차로 보고.",
+   "summary": "시드를 여러 개 돌려 평균±표준편차로 보고. 실험: 분할 시드 sd 0.030 vs 모델 시드 sd 0.010. 시드 3개면 sd 추정 0.008~0.052로 불안정, 10개 이상 권장.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "repeated-cross-validation"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "seed-cherry-picking",
@@ -49438,6 +49441,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가 결과를 보며 반복 선택해 평가셋에 과적합.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "split-seed-vs-model-seed",
+   "label": "분할 시드 vs 모델 시드",
+   "parent": "seed-sweep-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 시드가 변동을 더 만드는지 분해.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "standard-error-of-mean-score",
+   "label": "점수 평균의 표준오차",
+   "parent": "seed-sweep-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드 수가 늘면 평균 추정이 안정되는 정도.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "paired-seed-comparison",
+   "label": "시드별 짝지은 비교",
+   "parent": "seed-sweep-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 시드 세트에서 두 모델을 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "reporting-uncertainty",
+   "label": "불확실성 보고 형식",
+   "parent": "seed-sweep-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균±sd, n, 시드 목록, 범위 표기법.",
    "related": [],
    "added": "2026-11-20"
   }
