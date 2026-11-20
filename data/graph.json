@@ -41873,11 +41873,14 @@
    "label": "AttributionScanner",
    "parent": "slice-discovery",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "메타데이터 없는 시각 분석 슬라이스 탐색.",
+   "summary": "GradCAM 가중 특징→UMAP→K-Means로 메타데이터 없이 슬라이스를 찾고 사람이 core/spurious 표시하는 시각 분석. CelebA·Waterbirds 사례(논문 보고). CNN 가정 등 한계.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "predefined-slice-evaluation"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "predefined-slice-evaluation",
@@ -49983,6 +49986,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 부족·라벨 오류·분포 차이 구분.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "spurious-correlation",
+   "label": "가짜 상관",
+   "parent": "attributionscanner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답과 상관은 있으나 인과가 아닌 단서(배경 등).",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "gradcam",
+   "label": "GradCAM",
+   "parent": "attributionscanner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CNN이 주목한 영역을 히트맵으로 보여 주는 기법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "core-risk-minimization",
+   "label": "Core Risk Minimization",
+   "parent": "attributionscanner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가짜 영역에 노이즈를 넣어 core 특징 위주로 재학습.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "waterbirds-benchmark",
+   "label": "Waterbirds 벤치마크",
+   "parent": "attributionscanner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배경 편향을 측정하는 새 분류 데이터셋.",
    "related": [],
    "added": "2026-11-20"
   }
