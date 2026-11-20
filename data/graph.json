@@ -43006,11 +43006,14 @@
       "label": "작은 규모 결과의 큰 규모 전이",
       "parent": "ablation-data-studies",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "280억 결과가 3,500억에서도 유지되는지 확인.",
+      "summary": "FineWeb: 필터 ablation 28B, 재확인 350B. 중복 제거 효과는 작은 표본에서 안 보임. 계산(100 스냅샷 완전 사본 가정): 문서가 유일할 확률 1B 99.5%·350B 17.4%·1T 0.6%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "two-seed-averaging"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "nanotron-lighteval",
@@ -52744,6 +52747,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "시드별 점수 분산 측정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dedup-visibility-sample-size",
+      "label": "중복 가시성과 표본 크기",
+      "parent": "scale-transfer-of-ablations",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "표본이 클수록 중복이 드러나는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "staged-validation",
+      "label": "단계별 규모 검증",
+      "parent": "scale-transfer-of-ablations",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "작은 규모 선별 후 큰 규모 재확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "chinchilla-optimal-ablation",
+      "label": "Chinchilla 최적 학습량 ablation",
+      "parent": "scale-transfer-of-ablations",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "모델 크기에 맞는 토큰 수.",
       "added": "2026-11-20",
       "related": []
     }
