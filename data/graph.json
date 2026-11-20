@@ -42376,11 +42376,12 @@
       "label": "소프트 라벨 손실",
       "parent": "mixup-cutmix",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "섞인 라벨을 쓰는 교차 엔트로피.",
+      "summary": "확률 분포 타깃의 교차 엔트로피. PyTorch는 float 타깃 합 1을 검사하지 않음. 계산: 소프트 [0.7,0.3,0] 손실 0.691 = 두 하드 라벨 손실의 가중합, MixUp이 라벨 손실 혼합과 같은 이유.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "cutmix-label-area",
@@ -51333,6 +51334,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "무작위 화소 vs 연속 영역.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "kl-divergence-vs-ce",
+      "label": "KL 발산과 교차 엔트로피",
+      "parent": "soft-label-loss",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소프트 타깃에서 손실 최솟값이 0이 아닌 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "knowledge-distillation-soft-targets",
+      "label": "지식 증류의 소프트 타깃",
+      "parent": "soft-label-loss",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "교사 모델 확률을 타깃으로 쓰는 경우.",
       "added": "2026-11-20",
       "related": []
     }
