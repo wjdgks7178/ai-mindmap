@@ -41396,11 +41396,14 @@
    "label": "낮은 일치도 진단",
    "parent": "annotation-pilot-round",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨별로 모호한 정의를 찾는 법.",
+   "summary": "kappa가 낮으면 혼동 행렬·클래스별 일치도로 모호한 클래스 쌍을 찾는다. 시뮬: kappa 0.615여도 결제↔환불 32건 혼동, 결제 클래스 일치 0.62로 최저.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "target-agreement-setting"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "guideline-draft-iteration",
@@ -48622,6 +48625,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "알고리즘 정밀도가 사람 비용에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "annotator-confusion-matrix",
+   "label": "라벨러 간 혼동 행렬",
+   "parent": "low-agreement-diagnosis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 라벨러 라벨을 교차표로 만들어 혼동 쌍 찾기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "specific-agreement",
+   "label": "클래스별 일치도(specific agreement)",
+   "parent": "low-agreement-diagnosis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스마다 두 사람이 같은 샘플을 골랐는지 재는 지표.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cannot-decide-option",
+   "label": "판단 불가 선택지",
+   "parent": "low-agreement-diagnosis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모호한 샘플을 오류와 구분하는 선택지.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "disagreement-discussion",
+   "label": "불일치 샘플 토론",
+   "parent": "low-agreement-diagnosis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치 20~30개 사유를 모아 가이드에 반영.",
    "related": [],
    "added": "2026-11-20"
   }
