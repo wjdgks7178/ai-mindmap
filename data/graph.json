@@ -41262,11 +41262,15 @@
    "label": "수정된 시험 라벨 세트",
    "parent": "label-noise-benchmarks",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "크라우드소싱으로 바로잡은 시험 세트 활용.",
+   "summary": "10개 벤치마크 시험 세트에 평균 3.3%+ 라벨 오류(ImageNet 6%+). 후보를 크라우드로 검증해 수정본 공개. 오라벨 6%만 늘어도 ResNet-18이 ResNet-50을 앞선다.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "auto-delete-risk",
+    "benchmark-contamination"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "leaderboard-small-gap",
@@ -48346,6 +48350,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모두가 같은 방향으로 틀릴 때 합의도 틀리는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "test-set-label-error-rate",
+   "label": "시험 세트 라벨 오류율",
+   "parent": "corrected-test-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벤치마크 시험 세트의 라벨 오류 비율.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "benchmark-ranking-instability",
+   "label": "벤치마크 순위 불안정",
+   "parent": "corrected-test-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 오류가 모델 순위를 뒤집는 현상.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "labelerrors-site",
+   "label": "labelerrors.com 수정 세트",
+   "parent": "corrected-test-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수정된 시험 세트와 오류 갤러리 사용법.",
    "related": [],
    "added": "2026-11-20"
   }
