@@ -41565,11 +41565,15 @@
    "label": "LLM 라벨러 검증용 부분집합",
    "parent": "llm-labeler-guideline-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람 라벨 일부로 일치도 확인 후 확대 적용.",
+   "summary": "LLM 대량 라벨링 전 사람 라벨 부분집합으로 일치도 검증. 신뢰구간 하한≥목표 규칙은 검증 수백 개 필요(0.88 일치율: 200개 24%, 800개 69% 통과). Gilardi 2023 근거.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "golden-items",
+    "target-agreement-setting"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "llm-unknown-option",
@@ -49176,6 +49180,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "오류 가능성 순으로 예산 배분.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "holdout-set-for-prompt-tuning",
+   "label": "프롬프트 튜닝용 보류 세트",
+   "parent": "llm-labeler-validation-subset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 개발과 최종 검증을 분리해 과적합 방지.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "llm-self-consistency",
+   "label": "LLM 자기 일관성",
+   "parent": "llm-labeler-validation-subset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 항목을 여러 번 라벨시켜 일치도를 보는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "llm-labeler-recheck-schedule",
+   "label": "LLM 라벨 사후 점검 주기",
+   "parent": "llm-labeler-validation-subset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적용 후 주기적 표본 검수와 재검증.",
    "related": [],
    "added": "2026-11-20"
   }
