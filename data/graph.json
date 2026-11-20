@@ -41293,11 +41293,14 @@
    "label": "크라우드 라벨 검증",
    "parent": "label-noise-benchmarks",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "의심 후보를 사람이 확인하는 절차.",
+   "summary": "후보를 작업자 5명이 판정, 3명 미만이 주어진 라벨이라 하면 오류 확정. 14,700개 검증에 1,623달러, 평균 51% 확정(Northcutt 2021).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "corrected-test-labels"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "model-capacity-vs-noise",
@@ -48575,6 +48578,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "일치율은 높은데 kappa는 낮은 이유.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "majority-vote-threshold",
+   "label": "과반 판정 임계값(3-of-5)",
+   "parent": "crowdsourced-label-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "몇 명 이상이 동의해야 확정할지 정하는 규칙.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "worker-quality-control",
+   "label": "작업자 품질 관리",
+   "parent": "crowdsourced-label-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자격 검사·정답 문항으로 크라우드 품질 유지.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "validation-ui-design",
+   "label": "검증 화면 설계",
+   "parent": "crowdsourced-label-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선택지·예시 이미지로 판정 정확도 높이기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "candidate-precision-cost",
+   "label": "후보 정밀도와 검증 비용",
+   "parent": "crowdsourced-label-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "알고리즘 정밀도가 사람 비용에 미치는 영향.",
    "related": [],
    "added": "2026-11-20"
   }
