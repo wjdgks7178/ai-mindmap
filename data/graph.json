@@ -41318,11 +41318,14 @@
    "label": "cross_val_predict",
    "parent": "out-of-sample-pred-probs",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "scikit-learn 교차 검증 예측 함수 사용법.",
+   "summary": "교차검증으로 샘플마다 폴드 밖 예측을 한 번씩 얻는 함수. predict_proba는 cleanlab 입력. 파티션 분할기만 가능, 클래스 누락 경고, 일반화 지표 용도는 주의.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "out-of-sample-probabilities"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "in-sample-overconfidence",
@@ -48430,6 +48433,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨 오류의 영향을 줄이는 손실 함수.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cross-val-score-vs-predict",
+   "label": "cross_val_score vs cross_val_predict",
+   "parent": "cross-val-predict",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드별 점수와 샘플별 예측의 차이.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "missing-class-in-fold",
+   "label": "폴드에 클래스가 빠질 때",
+   "parent": "cross-val-predict",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 폴드에 클래스가 없을 때의 경고와 대응.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "stratified-folds-for-pred-probs",
+   "label": "pred_probs용 층화 폴드",
+   "parent": "cross-val-predict",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 추정 시 층화·셔플 분할 설정.",
    "related": [],
    "added": "2026-11-20"
   }
