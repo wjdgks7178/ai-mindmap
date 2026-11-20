@@ -40628,11 +40628,14 @@
    "label": "반복 교차 검증",
    "parent": "cv-fold-count-choice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시드를 바꿔 여러 번 평균.",
+   "summary": "K-폴드를 시드만 바꿔 반복해 평균. digits 실험에서 추정 표준편차 0.0193→0.0083, 평균은 비슷. 편향은 못 줄임.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "repeated-kfold"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "pessimistic-bias-small-k",
@@ -47365,6 +47368,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "H×k×r 곱셈으로 총 학습 횟수 산정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "model-comparison-cv",
+   "label": "교차검증으로 모델 비교",
+   "parent": "repeated-cross-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모델 점수 차가 우연인지 판단하는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "score-non-independence",
+   "label": "점수 비독립성",
+   "parent": "repeated-cross-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 폴드끼리 학습 데이터가 겹쳐 표준오차가 낙관적.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "bootstrap-resampling",
+   "label": "부트스트랩",
+   "parent": "repeated-cross-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복원추출 표본을 반복해 성능 변동을 추정.",
    "related": [],
    "added": "2026-11-20"
   }
