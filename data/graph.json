@@ -42339,11 +42339,15 @@
       "label": "학습 데이터 속 개인정보",
       "parent": "memorization-in-llms",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "이름·전화·이메일 마스킹.",
+      "summary": "datatrove PIIFormatter는 이메일·공인 IP만 정규식 치환. 직접 실행: 이메일 2개·공인 IP 치환, 사설 IP·전화·이름·주민번호는 그대로 남음 → NER·추가 규칙 필요.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "privacy-copyright",
+        "training-data-extraction-attack"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "mixup-beta-alpha",
@@ -51463,6 +51467,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "PBA·Fast AutoAugment 등 비용 절감.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "pii-regex-vs-ner",
+      "label": "정규식 vs NER",
+      "parent": "pii-in-training-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "형식 기반과 모델 기반 PII 탐지 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "pii-recall-audit",
+      "label": "PII 재현율 감사",
+      "parent": "pii-in-training-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정답 세트로 남은 PII 측정.",
       "added": "2026-11-20",
       "related": []
     }
