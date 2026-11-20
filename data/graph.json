@@ -42586,11 +42586,15 @@
       "label": "증강 허용 목록",
       "parent": "label-preserving-transform",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "데이터 종류별 안전한 변환 목록 관리.",
+      "summary": "도메인별 안전 증강만 허용 목록으로 두고 목록 밖 변환은 파이프라인 생성 때 차단. 직접 실행: xray_chest·street_signs의 HorizontalFlip 차단, natural_photo 통과. 강도는 별도 제한 필요.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "label-preserving-transform",
+        "medical-flip-hazard"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "medical-flip-hazard",
@@ -51945,6 +51949,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "1000회 실행으로 분포 요약.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "augmentation-strength-limits",
+      "label": "증강 강도 제한",
+      "parent": "augmentation-allowlist",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "각도·밝기 범위를 도메인별로.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "allowlist-approval-process",
+      "label": "허용 목록 승인 절차",
+      "parent": "augmentation-allowlist",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "샘플 점검·실험으로 변환 승인.",
       "added": "2026-11-20",
       "related": []
     }
