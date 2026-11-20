@@ -41048,11 +41048,14 @@
    "label": "지각 해시",
    "parent": "augmentation-group-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "비슷하게 보이는 이미지가 비슷한 해시를 갖게 하는 기법.",
+   "summary": "비슷한 이미지가 비슷한 64비트 해시를 갖게 하는 기법. 해밍 거리로 비교. 직접 실험: 리사이즈 0·밝기 2는 잡지만 회전 30도는 28로 못 잡음.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "near-duplicate-detection"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "late-split-error",
@@ -47692,6 +47695,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "13-gram 등 기준의 원리와 한계.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "image-embedding-similarity",
+   "label": "이미지 임베딩 유사도",
+   "parent": "perceptual-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CLIP 등으로 의미적으로 비슷한 이미지를 찾는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "crop-resistant-hash",
+   "label": "크롭 내성 해시",
+   "parent": "perceptual-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부가 잘린 이미지도 매칭하는 해시.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "hash-threshold-calibration",
+   "label": "해시 임계값 보정",
+   "parent": "perceptual-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터에 맞게 해밍 거리 임계를 정하는 법.",
    "related": [],
    "added": "2026-11-20"
   }
