@@ -42658,11 +42658,15 @@
       "label": "WARC에서 본문 추출",
       "parent": "warc-wat-wet",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "trafilatura 등 추출기의 품질 차이.",
+      "summary": "Wikipedia 한 페이지로 비교: 태그만 제거 약 10,900자는 메뉴 문구 포함, trafilatura 기본 약 8,400자는 메뉴·푸터 문구 제거. FineWeb은 favour_precision=True 사용. 한 페이지 관찰.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "duplicate-cluster-size",
+        "warc-wat-wet"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "cc-s3-access",
@@ -51835,6 +51839,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "범위와 전체 크기 읽기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "trafilatura-options",
+      "label": "trafilatura 옵션",
+      "parent": "text-extraction-warc",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "favor_precision·recall·tables.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "extractor-comparison",
+      "label": "추출기 비교",
+      "parent": "text-extraction-warc",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "trafilatura·readability 등 규모 평가.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "boilerplate-removal-effect",
+      "label": "보일러플레이트 제거 효과",
+      "parent": "text-extraction-warc",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "추출 단계가 중복 군집에 미치는 영향.",
       "added": "2026-11-20",
       "related": []
     }
