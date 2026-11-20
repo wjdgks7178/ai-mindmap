@@ -42622,11 +42622,15 @@
       "label": "증강 샘플 사람 점검",
       "parent": "label-preserving-transform",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "변형 결과를 표본 확인.",
+      "summary": "증강 전 샘플을 눈과 통계로 점검. 직접 실험 1000회: min_visibility 0.6이면 박스 0개 샘플이 14.6%, 0.3은 1.9%, 0은 0%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "label-preserving-transform",
+        "min-visibility-filter"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "cc-paths-files",
@@ -51908,6 +51912,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "허용 목록 작성 절차.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "empty-sample-rate",
+      "label": "빈 샘플 비율",
+      "parent": "augmentation-sample-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정답 없는 학습 샘플 비율 점검.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "seeded-augmentation-debug",
+      "label": "시드 고정 증강 디버깅",
+      "parent": "augmentation-sample-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 샘플로 수정 전후 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "augmentation-stats-script",
+      "label": "증강 통계 스크립트",
+      "parent": "augmentation-sample-review",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "1000회 실행으로 분포 요약.",
       "added": "2026-11-20",
       "related": []
     }
