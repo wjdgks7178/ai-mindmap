@@ -41774,11 +41774,14 @@
    "label": "평가용 과표집",
    "parent": "test-set-size-rare-class",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "예측 양성을 더 뽑아 라벨링 비용 줄이기.",
+   "summary": "예측 양성을 과표집하고 표집 확률의 역수로 가중해 정밀도·재현율 추정. 시뮬: 정밀도 sd 0.095→0.015, 재현율은 개선 작음(예측 음성 표집 필요).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "test-prior-mismatch"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "test-prior-mismatch",
@@ -49579,6 +49582,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "비율이 낮으면 FPR이 작아도 거짓 양성이 폭증.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "stratified-evaluation-sampling",
+   "label": "층화 평가 표집",
+   "parent": "oversampling-for-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 양성/음성 층별로 표본을 뽑는 설계.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "false-negative-sampling",
+   "label": "거짓 음성 표집",
+   "parent": "oversampling-for-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 음성에서 누락 양성을 찾는 표집.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "weighted-confidence-interval",
+   "label": "가중 추정의 신뢰구간",
+   "parent": "oversampling-for-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화 표집·부트스트랩으로 불확실성 계산.",
    "related": [],
    "added": "2026-11-20"
   }
