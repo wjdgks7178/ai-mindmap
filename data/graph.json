@@ -41594,11 +41594,15 @@
    "label": "중재 기반 규칙서 정제",
    "parent": "llm-labeler-guideline-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "LLM과 반복하며 규칙서를 다듬는 방식.",
+   "summary": "LLM이 10문서를 라벨링→오류 분석→규칙서 개정을 F1 0.9까지 반복(arXiv 2605.20809). 규칙서 포함이 큰 이득(NCBI 0.46→0.73), 중재 추가 이득은 +0.01~0.03.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "guideline-draft-iteration",
+    "llm-labeler-validation-subset"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "llm-annotation-domain-generalization",
@@ -50030,6 +50034,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "배경 편향을 측정하는 새 분류 데이터셋.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "discrepancy-categories-ner",
+   "label": "NER 불일치 4유형",
+   "parent": "moderation-guideline-refinement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨·경계 불일치와 거짓 음성·양성 분류.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "strict-span-type-f1",
+   "label": "엄격 구간·유형 F1",
+   "parent": "moderation-guideline-refinement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간과 유형이 모두 맞아야 정답으로 치는 F1.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "guideline-quality-assurance",
+   "label": "규칙서 품질 보증",
+   "parent": "moderation-guideline-refinement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙서 자체의 품질을 점검하는 표준 부재와 대안.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "moderator-llm-cost",
+   "label": "중재 LLM 비용",
+   "parent": "moderation-guideline-refinement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복당 비용과 모델 선택 균형.",
    "related": [],
    "added": "2026-11-20"
   }
