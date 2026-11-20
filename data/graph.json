@@ -41909,11 +41909,15 @@
    "label": "개발 세트 라벨 오류 수정 기준",
    "parent": "error-cause-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전체 오류에서 라벨 오류가 차지하는 비중으로 판단.",
+   "summary": "무작위 라벨 오류는 모델 차이 방향을 거의 유지하지만 오류 분석을 왜곡(η 5%면 관측 오류의 33%, 10%면 50%가 라벨 오류). 비중을 재고 다른 범주 상한과 비교해 수정 여부 결정.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "error-category-ceiling",
+    "corrected-test-labels"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "error-analysis-spreadsheet",
@@ -49887,6 +49891,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 예시가 여러 범주에 속할 때의 비율 해석.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "label-error-share-of-errors",
+   "label": "오류 중 라벨 오류 비중",
+   "parent": "mislabeled-dev-set-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 예시 중 라벨이 틀린 비율 계산.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "systematic-vs-random-label-errors",
+   "label": "체계적 vs 무작위 라벨 오류",
+   "parent": "mislabeled-dev-set-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위를 뒤집을 수 있는 체계적 오류 구분.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "dev-set-size-for-small-differences",
+   "label": "작은 차이를 가를 개발 세트 크기",
+   "parent": "mislabeled-dev-set-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1%p 차이를 가르는 데 필요한 표본 수.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "dev-test-label-fix-consistency",
+   "label": "개발·시험 라벨 수정 일관성",
+   "parent": "mislabeled-dev-set-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 세트에 같은 규칙으로 수정해 분포 차이 방지.",
    "related": [],
    "added": "2026-11-20"
   }
