@@ -42145,11 +42145,14 @@
       "label": "패러프레이즈 중복의 한계",
       "parent": "minhash-lsh",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "단어가 다르고 뜻이 같은 문장은 못 잡음.",
+      "summary": "글자 3-그램 자카드는 같은 뜻 다른 단어 0.23·한국어 0.10, 뜻 반대 0.71. 표면 중복 제거는 의미 중복을 못 잡아 임베딩 군집(SemDeDup 등)이 필요.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "text-embedding"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "suffix-array",
@@ -50761,6 +50764,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "유사 문서 top-k로 벤치마크 누출 점검.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "semdedup",
+      "label": "SemDeDup",
+      "parent": "paraphrase-dedup-limit",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임베딩 군집으로 의미 중복 제거.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dedup-pipeline-order",
+      "label": "중복 제거 단계 순서",
+      "parent": "paraphrase-dedup-limit",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정확 일치 → 표면 근접 → 의미 순서.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dedup-diversity-tradeoff",
+      "label": "중복 제거와 다양성",
+      "parent": "paraphrase-dedup-limit",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "표현 다양성을 해치지 않는 비율.",
       "added": "2026-11-20",
       "related": []
     }
