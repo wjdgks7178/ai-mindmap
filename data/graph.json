@@ -42809,11 +42809,15 @@
       "label": "한국어 코퍼스 휴리스틱",
       "parent": "c4-dataset",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "종결 부호·언어 판별을 한국어에 맞추기.",
+      "summary": "C4 규칙(종결부호·5단어)을 한국어 7줄에 적용: 마침표 없는 후기 문장 삭제, 2어절 감탄 삭제, '|' 구분자가 어절로 셈. 구어 종결·글자 수·기호 비율 조정 제안.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "c4-filter-rules",
+        "langdetect-threshold"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "surt-key",
@@ -52371,6 +52375,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "langdetect 대안과 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "korean-sentence-endings",
+      "label": "한국어 종결 표현",
+      "parent": "heuristic-filter-korean",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "다·요·죠·~ 등 구어 종결 처리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "char-count-vs-word-count",
+      "label": "글자 수 vs 어절 수",
+      "parent": "heuristic-filter-korean",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한국어 최소 길이 기준.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "symbol-ratio-filter",
+      "label": "기호 비율 필터",
+      "parent": "heuristic-filter-korean",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "메뉴·구분자 줄 제거.",
       "added": "2026-11-20",
       "related": []
     }
