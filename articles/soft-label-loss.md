@@ -38,7 +38,7 @@ loss = torch.nn.CrossEntropyLoss()(logits, soft_targets)  # soft_targets: float,
 |---|---|
 | 하드 라벨 | 정답 하나(원-핫) |
 | 소프트 라벨 | 확률 분포 타깃 |
-| 라벨 스무딩 | 원-핫을 균등분포와 섞는 특수한 소프트 라벨 |
+| [라벨 스무딩](#label-smoothing) | 원-핫을 균등분포와 섞는 특수한 소프트 라벨 |
 | [MixUp·CutMix](#mixup-cutmix) | 이미지와 함께 라벨도 섞어 소프트 라벨을 만든다 |
 
 ## 더 읽을거리
