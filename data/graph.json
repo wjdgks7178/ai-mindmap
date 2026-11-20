@@ -42530,11 +42530,14 @@
       "label": "min_visibility 필터",
       "parent": "augmentation-for-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "잘린 박스를 면적 비율로 제거.",
+      "summary": "변환 후 박스의 남은 면적 비율이 min_visibility 미만이면 제거. Albumentations 직접 실행: 크롭 후 가시 0.5 박스 3개, 기준 0.3은 4개 유지, 0.6은 1개만 유지.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "bbox-coordinate-formats"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "bbox-safe-crop",
@@ -51630,6 +51633,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "오류 없이 성능을 깎는 입력 오류.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "min-area-filter",
+      "label": "min_area 필터",
+      "parent": "min-visibility-filter",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "남은 픽셀 면적으로 작은 조각 제거.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "bbox-clipping",
+      "label": "박스 클리핑",
+      "parent": "min-visibility-filter",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "경계 밖 좌표를 이미지 안으로 맞추기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "crop-label-consistency",
+      "label": "크롭과 라벨 일치",
+      "parent": "min-visibility-filter",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "증강 후 이미지·라벨 대응 검수.",
       "added": "2026-11-20",
       "related": []
     }
