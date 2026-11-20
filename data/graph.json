@@ -41974,11 +41974,14 @@
    "label": "Beta Shapley",
    "parent": "data-influence-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "효율성 공리를 완화해 노이즈 줄인 변형.",
+   "summary": "효율성 공리를 완화하고 작은 부분집합에 가중하는 Beta(α,β) 세미밸류(샤플리=Beta(1,1)). 직접 계산: 샤플리 합 0.274 유지, Beta는 합이 깨짐, 12개 소규모에서는 우위 미확인.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "tmc-shapley"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "knn-shapley",
@@ -50172,6 +50175,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "검증 정확도·손실 등 효용 정의가 값에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "semivalue",
+   "label": "세미밸류",
+   "parent": "beta-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대칭·선형·널 공리만 두고 효율성을 완화한 가치 개념.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shapley-axioms",
+   "label": "샤플리 공리",
+   "parent": "beta-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "효율성·대칭성·널 플레이어·가법성.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "beta-weight-tuning",
+   "label": "Beta 가중치 선택",
+   "parent": "beta-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "α, β를 검증 데이터로 정하는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "data-valuation-for-label-noise",
+   "label": "노이즈 라벨 탐지용 데이터 가치 평가",
+   "parent": "beta-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 가치 점을 오라벨 후보로 검토.",
    "related": [],
    "added": "2026-11-20"
   }
