@@ -42738,11 +42738,14 @@
       "label": "크롤러 IP 검증",
       "parent": "ccbot-opt-out",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "역방향·정방향 DNS로 사칭 거르기.",
+      "summary": "CCBot 공개 IP 대역 5개(ccbot.json, 2026-08-11)로 사칭 검증. 직접 실행: 18.97.9.170 포함, 18.97.9.200·8.8.8.8 불포함. FCrDNS 병행 권장(샌드박스에서 역DNS 실패로 미시험).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "ccbot-opt-out"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "opt-out-limits-existing-data",
@@ -52190,6 +52193,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "robots·TDMRep·메타 태그 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "fcrdns",
+      "label": "FCrDNS",
+      "parent": "crawler-ip-verification",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "역방향 후 정방향 DNS 일치 확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "spoofed-user-agent",
+      "label": "User-Agent 사칭",
+      "parent": "crawler-ip-verification",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "헤더만으로 신원을 믿으면 안 되는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "ip-range-list-refresh",
+      "label": "IP 대역 목록 갱신",
+      "parent": "crawler-ip-verification",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "synctoken으로 변경 추적.",
       "added": "2026-11-20",
       "related": []
     }
