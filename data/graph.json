@@ -42615,11 +42615,14 @@
       "label": "자기지도 라벨 증강",
       "parent": "label-preserving-transform",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "변환 종류를 추가 라벨로 학습.",
+      "summary": "원래 라벨×회전 라벨을 결합(CIFAR-10 10×4=40)해 학습, 불변 강제 없음, 변환별 예측 합치기+자기 증류. 논문 주장: CIFAR-100 상대 8.60% 향상.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "label-preserving-transform"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "augmentation-sample-review",
@@ -51971,6 +51974,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "샘플 점검·실험으로 변환 승인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "joint-label-distribution",
+      "label": "결합 라벨 분포",
+      "parent": "self-supervised-label-augmentation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "원래 라벨과 변환 라벨을 곱한 라벨 공간.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "aggregated-inference",
+      "label": "집계 추론",
+      "parent": "self-supervised-label-augmentation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "변환별 예측을 합쳐 앙상블 효과.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "self-distillation-sla",
+      "label": "SLA 자기 증류",
+      "parent": "self-supervised-label-augmentation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "집계 예측을 단일 추론으로 옮기기.",
       "added": "2026-11-20",
       "related": []
     }
