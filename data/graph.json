@@ -40979,11 +40979,14 @@
    "label": "Leave-One-Out 교차 검증",
    "parent": "leave-one-group-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "샘플 하나씩 시험. LOGO와의 차이.",
+   "summary": "샘플 하나씩 시험(n번 학습). 같은 그룹 샘플이 학습에 남아 그룹 데이터엔 부적합 — LOGO는 그룹 통째로 뺀다(직접 확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "leave-one-out-cv"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "near-duplicate-detection",
@@ -47573,6 +47576,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "샘플이 적은 그룹 점수 해석 주의.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "loo-closed-form",
+   "label": "LOO 닫힌 형태 계산",
+   "parent": "leave-one-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선형 모델에서 재학습 없이 LOO 오차를 구하는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "sample-vs-group-split",
+   "label": "샘플 단위 vs 그룹 단위 분할",
+   "parent": "leave-one-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립성 가정에 따른 분할 단위 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "small-data-validation",
+   "label": "아주 작은 데이터의 검증",
+   "parent": "leave-one-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플 수십 개일 때 LOO·반복 CV 선택.",
    "related": [],
    "added": "2026-11-20"
   }
