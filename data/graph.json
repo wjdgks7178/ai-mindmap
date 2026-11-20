@@ -42406,11 +42406,12 @@
       "label": "텍스트에서의 혼합 증강",
       "parent": "mixup-cutmix",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "임베딩 공간 MixUp 등 변형.",
+      "summary": "wordMixup은 단어 임베딩 행렬, senMixup은 문장 임베딩을 λ로 섞고 라벨도 혼합(Guo 2019). CNN·LSTM 5개 데이터셋 대체로 개선, SST-2는 미미. 섞인 표본은 사람이 읽을 수 없음.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "augmentation-policy-search",
@@ -51562,6 +51563,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "정보량 낮은 단어를 바꾸는 증강.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "wordmixup",
+      "label": "wordMixup",
+      "parent": "mixup-for-text",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "단어 위치별 임베딩 혼합.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "senmixup",
+      "label": "senMixup",
+      "parent": "mixup-for-text",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문장 벡터 혼합.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "embedding-space-augmentation",
+      "label": "임베딩 공간 증강",
+      "parent": "mixup-for-text",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "입력 대신 표현을 변형하는 방법들.",
       "added": "2026-11-20",
       "related": []
     }
