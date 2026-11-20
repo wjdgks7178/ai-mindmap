@@ -41816,11 +41816,14 @@
    "label": "교차 검증 오차 막대 과소평가",
    "parent": "small-data-validation-strategy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드 간 표준오차가 낙관적인 이유.",
+   "summary": "폴드 sd/√K는 폴드 점수가 독립이 아니라 과소평가. 시뮬: naive SE가 실제 변동의 75~85%, 95% 구간의 실제 포함률 80~85%. Bengio&Grandvalet: 불편 추정량 없음.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cv-score-difference-vs-noise"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "bootstrap-confidence-interval",
@@ -49662,6 +49665,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "입력 분포·개념·라벨 기준 변화를 구분.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "nadeau-bengio-corrected-ttest",
+   "label": "보정 재표집 t-검정",
+   "parent": "cv-error-bar-underestimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 간 겹침을 보정한 모델 비교 검정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "fold-correlation",
+   "label": "폴드 간 상관",
+   "parent": "cv-error-bar-underestimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터 겹침이 만드는 점수 상관.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "bootstrap-ci-for-cv",
+   "label": "교차검증 점수의 부트스트랩 신뢰구간",
+   "parent": "cv-error-bar-underestimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재표집으로 불확실성 추정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "independent-test-ci",
+   "label": "독립 시험 세트 신뢰구간",
+   "parent": "cv-error-bar-underestimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "홀드아웃 점수의 이항 신뢰구간.",
    "related": [],
    "added": "2026-11-20"
   }
