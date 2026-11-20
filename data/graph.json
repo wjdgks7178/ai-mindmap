@@ -41077,11 +41077,14 @@
    "label": "시험셋 무증강 원칙",
    "parent": "augmentation-group-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "검증·시험에는 증강을 쓰지 않는 이유.",
+   "summary": "증강은 학습에만, 테스트는 원본으로. digits 실험: 원본 0.961 vs 노이즈 증강 테스트 0.860. 견고성은 별도 평가셋으로.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "late-split-error"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "synthetic-data-split-leak",
@@ -47776,6 +47779,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "전체 데이터로 특성을 고르는 누수.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "robustness-eval-set",
+   "label": "견고성 평가셋",
+   "parent": "test-set-no-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈·오타·회전 변형을 별도 평가셋으로 구성.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "test-time-augmentation",
+   "label": "테스트 시 증강(TTA)",
+   "parent": "test-set-no-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 단계에서 변형본을 모아 투표하는 기법.",
    "related": [],
    "added": "2026-11-20"
   }
