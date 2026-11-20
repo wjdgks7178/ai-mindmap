@@ -40432,11 +40432,12 @@
    "label": "StratifiedGroupKFold",
    "parent": "stratified-k-fold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "그룹 유지 + 클래스 비율 유지.",
+   "summary": "그룹은 한 폴드에만, 클래스 비율은 최선 노력으로 유지하는 sklearn 교차검증. 그룹 수≥n_splits.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-20"
   },
   {
    "id": "n-splits-vs-rare-class",
@@ -47122,6 +47123,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "infer_feature_shape 옵션과 가변 길이 피처.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "group-leakage-prevention",
+   "label": "그룹 누수 방지",
+   "parent": "stratified-group-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 환자·사용자 샘플이 학습/검증에 갈라지는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "best-effort-stratification",
+   "label": "최선 노력 층화",
+   "parent": "stratified-group-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 그룹 때문에 정확한 층화가 불가능한 경우의 대응.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cv-splitter-selection",
+   "label": "교차검증 분할기 고르기",
+   "parent": "stratified-group-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KFold·Stratified·Group·시계열 분할기 선택 기준.",
    "related": [],
    "added": "2026-11-20"
   }
