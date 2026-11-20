@@ -42913,11 +42913,14 @@
       "label": "대규모 분류기 추론 비용",
       "parent": "educational-quality-classifier",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "15조 토큰에 H100 6,000시간.",
+      "summary": "FineWeb-Edu 분류기는 15조 토큰에 H100 6,000시간. 계산: 시간당 25억 토큰≈초당 69만. 전체 FineWeb 소거 실험은 H100 80,000시간 서술.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "educational-quality-classifier"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "annotate-then-distill",
@@ -52552,6 +52555,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "품질 분류기용 임베딩 고르기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "throughput-extrapolation",
+      "label": "처리량 외삽",
+      "parent": "classifier-inference-cost",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소규모 측정으로 전체 비용 추정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "truncate-input-tokens",
+      "label": "입력 토큰 제한",
+      "parent": "classifier-inference-cost",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서 앞부분만 분류해 비용 절감.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "filter-order-cost",
+      "label": "필터 순서와 비용",
+      "parent": "classifier-inference-cost",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "싼 필터를 먼저 적용.",
       "added": "2026-11-20",
       "related": []
     }
