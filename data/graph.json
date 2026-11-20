@@ -42795,11 +42795,14 @@
       "label": "언어 감지 임계값",
       "parent": "c4-dataset",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "영어 확률 0.99 기준과 한계.",
+      "summary": "C4는 langdetect 영어 확률 0.99 이상만 유지. 직접 실행: 구어체 영어 0.71 탈락, 레시피 짧은 영어는 아프리칸스어 1.0, 코드는 웨일스어 1.0, 한영 혼합은 en 1.0 통과.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "c4-filter-rules"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "heuristic-filter-korean",
@@ -52335,6 +52338,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "일정 비율 이상일 때만 제거.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "language-id-short-text",
+      "label": "짧은 글 언어 식별",
+      "parent": "langdetect-threshold",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "짧은 영어가 오판되는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "paragraph-level-langid",
+      "label": "문단 단위 언어 판정",
+      "parent": "langdetect-threshold",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "혼합 언어 문서 처리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "fasttext-langid",
+      "label": "fastText 언어 식별",
+      "parent": "langdetect-threshold",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "langdetect 대안과 비교.",
       "added": "2026-11-20",
       "related": []
     }
