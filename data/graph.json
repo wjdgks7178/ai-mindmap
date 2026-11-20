@@ -41220,11 +41220,14 @@
    "label": "cleanlab 이상치 탐지",
    "parent": "cleanlab",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이상치 점수 계산.",
+   "summary": "샘플별 전형성 점수 0~1(0=이상치), 이웃 거리 또는 예측 확률 기반. 실험: 뭉친 이상치 20개는 기본 코사인에서 AUROC 0.244, 유클리드로 0.988.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cleanlab-label-quality-score"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "cleanlab-multiannotator",
@@ -48205,6 +48208,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "낮은 점수의 원인이 모호함인지 오류인지 구분.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cosine-vs-euclidean-distance",
+   "label": "코사인 vs 유클리드 거리",
+   "parent": "cleanlab-outlier-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방향만 보는 지표와 크기까지 보는 지표의 차이.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "knn-outlier-score",
+   "label": "kNN 이상치 점수",
+   "parent": "cleanlab-outlier-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K개 이웃까지 평균 거리로 이상치 점수 매기기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "out-of-distribution-detection",
+   "label": "OOD 탐지",
+   "parent": "cleanlab-outlier-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 분포 밖 입력을 서비스 중에 감지하는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "embedding-for-outlier",
+   "label": "이상치 탐지용 임베딩",
+   "parent": "cleanlab-outlier-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지·텍스트를 벡터로 바꿔 거리 계산하기.",
    "related": [],
    "added": "2026-11-20"
   }
