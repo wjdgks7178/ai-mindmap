@@ -42500,11 +42500,14 @@
       "label": "중간 언어 선택",
       "parent": "back-translation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "번역 왕복에 쓰는 언어 고르기.",
+      "summary": "Ciolino 2021: 영어 트윗 1000개를 108개 언어로 왕복, BERT 거리 최근접 덴마크어 2.08·최원 타타르어 5.30. 번역 품질 나쁜 언어가 임베딩을 더 움직임, 분류 성능은 미확인.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "back-translation"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "text-augmentation-label-check",
@@ -52044,6 +52047,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "라이브러리의 AutoAugment 정책 활용.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "pivot-language-distance",
+      "label": "중간 언어 거리",
+      "parent": "intermediate-language-choice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "원문과 돌아온 문장의 임베딩 거리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "multi-pivot-mixing",
+      "label": "여러 중간 언어 혼합",
+      "parent": "intermediate-language-choice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "의미 위험을 분산하는 방법.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "translation-quality-diversity-tradeoff",
+      "label": "번역 품질과 다양성 맞교환",
+      "parent": "intermediate-language-choice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "서툰 번역이 만드는 변형.",
       "added": "2026-11-20",
       "related": []
     }
