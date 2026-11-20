@@ -42980,11 +42980,14 @@
       "label": "소규모 ablation 벤치마크 선택",
       "parent": "ablation-data-studies",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "변동 작고 단조 증가하고 무작위 이상인 벤치마크.",
+      "summary": "FineWeb: 시드 간 변동 작음·학습 중 단조 증가·무작위 기준선 이상인 벤치마크만 채택(CSQA·HellaSwag·OBQA·PIQA·SIQA·WinoGrande·ARC·MMLU, 1000샘플 절단).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "two-seed-averaging"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "two-seed-averaging",
@@ -52708,6 +52711,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "부분집합 선택이 점수에 미치는 영향.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "random-baseline-check",
+      "label": "무작위 기준선 점검",
+      "parent": "benchmark-selection-small-scale",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "점수가 우연 수준인지 확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "benchmark-truncation",
+      "label": "벤치마크 1000샘플 절단",
+      "parent": "benchmark-selection-small-scale",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습 중 평가 비용 줄이기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "benchmark-variance-check",
+      "label": "벤치마크 변동 측정",
+      "parent": "benchmark-selection-small-scale",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "시드별 점수 분산 측정.",
       "added": "2026-11-20",
       "related": []
     }
