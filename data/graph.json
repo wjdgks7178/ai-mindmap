@@ -40937,11 +40937,14 @@
    "label": "Leave-P-Groups-Out",
    "parent": "leave-one-group-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "그룹 P개씩 조합으로 시험에 빼는 방식. 조합 폭증.",
+   "summary": "그룹 P개씩 통째로 빼는 모든 조합 C(G,P). 그룹 누수는 막지만 그룹이 많으면 폭증(그룹 50, P=3 → 19,600쌍).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "stratified-group-kfold"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "group-shuffle-split",
@@ -47487,6 +47490,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 번 보면 검증 세트가 되어 낙관적.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "group-size-imbalance",
+   "label": "그룹 크기 불균형",
+   "parent": "leave-p-groups-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹 크기 차로 테스트 크기가 들쭉날쭉해지는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "time-as-group",
+   "label": "시간을 그룹으로 쓰기",
+   "parent": "leave-p-groups-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연도를 그룹으로 삼아 시간 기반 검증.",
    "related": [],
    "added": "2026-11-20"
   }
