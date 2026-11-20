@@ -42698,11 +42698,14 @@
       "label": "Common Crawl 접근 방법",
       "parent": "warc-wat-wet",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "S3·HTTPS·Hugging Face 미러.",
+      "summary": "s3://commoncrawl(us-east-1), https://data.commoncrawl.org(AWS 밖 필수 주소), aws --no-sign-request 익명 접근. AWS 안은 같은 리전 필수 권장, 요금 주의. HTTPS는 직접 내려받아 확인.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "warc-wat-wet"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "robots-txt-basics",
@@ -52988,6 +52991,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "공공 콘텐츠의 약관·개인정보 확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "s3a-hadoop-protocol",
+      "label": "s3a 프로토콜",
+      "parent": "cc-s3-access",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "하둡·Spark에서 S3 접근.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cross-region-transfer-fees",
+      "label": "리전 간 전송 요금",
+      "parent": "cc-s3-access",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "같은 리전 처리의 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cloudfront-mirror",
+      "label": "CloudFront 주소",
+      "parent": "cc-s3-access",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "ds5q9o….cloudfront.net 형식.",
       "added": "2026-11-20",
       "related": []
     }
