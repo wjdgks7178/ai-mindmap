@@ -41332,11 +41332,15 @@
    "label": "표본 안 예측 과신",
    "parent": "out-of-sample-pred-probs",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습한 샘플은 틀린 라벨도 외우는 문제.",
+   "summary": "학습한 샘플에 낸 예측은 틀린 라벨도 외워 과신. 포레스트 실험: 표본 안 의심 0/247, 표본 밖 216/247 발견. 로지스틱은 차이 작음. 폴드 밖 확률을 써라.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cross-val-predict",
+    "memorization-of-noisy-labels"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "find-label-issues-filter-by",
@@ -48466,6 +48470,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률 추정 시 층화·셔플 분할 설정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "calibration-overestimate",
+   "label": "학습 데이터 보정 과대평가",
+   "parent": "in-sample-overconfidence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터로 잰 정확도·보정이 낙관적인 이유.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "model-capacity-in-sample",
+   "label": "용량에 따른 표본 안 예측 차이",
+   "parent": "in-sample-overconfidence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 용량이 클수록 표본 안 예측이 더 위험.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "oof-predictions-workflow",
+   "label": "표본 외 예측 작업 절차",
+   "parent": "in-sample-overconfidence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 분할→예측→오류 탐지 순서 정리.",
    "related": [],
    "added": "2026-11-20"
   }
