@@ -42871,11 +42871,14 @@
       "label": "가산식 점수 프롬프트",
       "parent": "educational-quality-classifier",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "기준 충족마다 1점씩 더하는 평가 설계.",
+      "summary": "FineWeb-Edu: Llama-3-70B-Instruct가 웹페이지 46만 개를 5개 가산 기준(+1씩)으로 0~5점 채점, 100단어 근거+Educational score 형식. 논문은 가산 척도가 단일 등급보다 잘 작동했다고 보고.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "educational-quality-classifier"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "classifier-threshold-tradeoff",
@@ -52444,6 +52447,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "co.uk 같은 등록 도메인 경계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "rubric-to-prompt",
+      "label": "루브릭을 프롬프트로",
+      "parent": "additive-scoring-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "평가 기준표를 LLM 지시로 옮기기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "llm-score-consistency",
+      "label": "LLM 채점 일관성",
+      "parent": "additive-scoring-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "프롬프트 민감도와 사람 보정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "grade-level-focus-instruction",
+      "label": "수준 지정 지시",
+      "parent": "additive-scoring-prompt",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "기술적 페이지 과대평가 방지.",
       "added": "2026-11-20",
       "related": []
     }
