@@ -42216,11 +42216,14 @@
       "label": "datatrove FineWeb 재현 예제",
       "parent": "datatrove",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "fineweb.py로 보는 실제 파이프라인.",
+      "summary": "fineweb.py: WARC→URL·본문추출·언어·품질 필터 4종 후 MinHash 4단계(14밴드×8행 sha1 64비트 5-그램). 임계값 약 0.72, 자카드 0.8 후보 확률 0.924(계산). 기본처리 8000 task.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "lsh-banding-curve"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "pipeline-executor-types",
@@ -50976,6 +50979,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "프로세스 기동 비용 vs 병렬 이득.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "fineweb-quality-filters",
+      "label": "FineWeb 품질 필터들",
+      "parent": "datatrove-fineweb-example",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Gopher·C4·FineWeb 필터의 역할 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "trafilatura-extraction",
+      "label": "Trafilatura 본문 추출",
+      "parent": "datatrove-fineweb-example",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "HTML에서 본문만 뽑는 단계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "pii-formatter",
+      "label": "PIIFormatter 개인정보 치환",
+      "parent": "datatrove-fineweb-example",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "이메일·IP를 가리는 후처리.",
       "added": "2026-11-20",
       "related": []
     }
