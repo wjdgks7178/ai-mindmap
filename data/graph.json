@@ -41687,11 +41687,14 @@
    "label": "clone과 난수 공유",
    "parent": "random-state-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "GridSearchCV 등에서 인스턴스 공유 주의.",
+   "summary": "RandomState 인스턴스는 호출마다 소모·공유되어 실행 순서에 결과가 의존. 직접 확인: 인스턴스 fit 두 번은 다른 모델, KFold split 호출마다 다른 폴드, clone은 복제 시점 상태를 복사.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "seed-sweep-reporting"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "preprocessing-leakage-pipeline",
@@ -49485,6 +49488,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "평균±sd, n, 시드 목록, 범위 표기법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "randomstate-instance-vs-int",
+   "label": "RandomState 인스턴스 vs 정수",
+   "parent": "clone-random-state-sharing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현성과 견고성 목적에 따른 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cv-splitter-seed-policy",
+   "label": "CV 분할기 시드 정책",
+   "parent": "clone-random-state-sharing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할기는 정수로 고정해 모델 간 같은 폴드 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "notebook-run-order-randomness",
+   "label": "노트북 실행 순서와 난수",
+   "parent": "clone-random-state-sharing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "셀 실행 순서에 따라 결과가 달라지는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "gridsearch-clone-behavior",
+   "label": "GridSearchCV와 clone",
+   "parent": "clone-random-state-sharing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보마다 추정기를 clone할 때의 난수 처리.",
    "related": [],
    "added": "2026-11-20"
   }
