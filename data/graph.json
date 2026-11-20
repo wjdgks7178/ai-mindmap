@@ -41234,11 +41234,14 @@
    "label": "다중 주석자 합의",
    "parent": "cleanlab",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "여러 사람이 단 라벨 합치기.",
+   "summary": "여러 주석자 라벨을 합의 라벨·품질 점수·주석자 신뢰도로 합침(CROWDLAB). 합성 실험: 합의 정확도 0.961 vs 순진한 다수결 0.798, 약한 주석자 0.54 식별.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cleanlab-label-quality-score"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "auto-delete-risk",
@@ -48299,6 +48302,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정리 효과를 깨끗한 평가셋으로 비교하기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "crowdlab",
+   "label": "CROWDLAB",
+   "parent": "cleanlab-multiannotator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자 라벨과 모델 예측을 가중 앙상블해 합의 라벨을 만드는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "annotator-quality-stats",
+   "label": "주석자 품질 통계",
+   "parent": "cleanlab-multiannotator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자별 신뢰도·worst_class로 교육·교체 결정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "inter-annotator-agreement",
+   "label": "평가자 간 일치도",
+   "parent": "cleanlab-multiannotator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자끼리 얼마나 일치하는지 재는 통계량.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shared-annotator-bias",
+   "label": "주석자 공통 편향",
+   "parent": "cleanlab-multiannotator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모두가 같은 방향으로 틀릴 때 합의도 틀리는 문제.",
    "related": [],
    "added": "2026-11-20"
   }
