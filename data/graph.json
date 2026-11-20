@@ -41858,11 +41858,15 @@
    "label": "소표본엔 단순 모델",
    "parent": "small-data-validation-strategy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "복잡도를 낮추고 전이학습을 쓰는 이유.",
+   "summary": "소표본에선 규제된 단순 모델이 유리. 실험: n=40 로지스틱 0.762 vs 포레스트 0.687, n=300 이후 포레스트 역전, n=5000 MLP·포레스트 0.92. 전이학습·규제·반복 CV.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "learning-curve",
+    "model-capacity-vs-noise"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "attributionscanner",
@@ -49803,6 +49807,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴드 외 방법으로 점수 불확실성을 따로 추정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "regularization-small-data",
+   "label": "소표본 규제",
+   "parent": "simple-model-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "L2·깊이 제한·조기 종료로 용량을 제한.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "transfer-learning-small-data",
+   "label": "소표본 전이학습",
+   "parent": "simple-model-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전학습 모델로 데이터 부족을 보완.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "baseline-first",
+   "label": "단순 기준선 먼저",
+   "parent": "simple-model-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복잡 모델 전에 선형·나이브 베이즈 기준선을 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "model-crossover-point",
+   "label": "모델 교차점",
+   "parent": "simple-model-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 양에 따라 단순·복잡 모델 순위가 바뀌는 지점.",
    "related": [],
    "added": "2026-11-20"
   }
