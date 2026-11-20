@@ -42941,11 +42941,14 @@
       "label": "LLM 주석 편향",
       "parent": "llm-as-data-annotator",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "자기 선호·프롬프트 민감성.",
+      "summary": "Zheng 2023: LLM 심판은 위치 편향(대부분 첫 번째 선호, 일관성 60%+는 GPT-4뿐), 장황함 편향(repetitive list 공격에 모두 취약), 자기 선호는 확정 불가. 순서 교환으로 완화.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "annotate-then-distill"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "consistent-but-wrong",
@@ -52624,6 +52627,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "LLM 대비 일치율·F1 측정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "position-swap-judging",
+      "label": "순서 교환 채점",
+      "parent": "llm-annotation-bias",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "두 순서에서 일치할 때만 승리 인정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "length-score-correlation",
+      "label": "길이와 점수 상관",
+      "parent": "llm-annotation-bias",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "장황함 편향 점검.",
       "added": "2026-11-20",
       "related": []
     }
