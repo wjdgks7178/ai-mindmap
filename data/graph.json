@@ -42849,11 +42849,14 @@
       "label": "열 기반(Parquet) 색인",
       "parent": "url-index-cdx",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "Athena 등 SQL로 조회하는 색인.",
+      "summary": "CC-MAIN-2024-10 Parquet 색인 900파일(warc·robotstxt·crawldiagnostics 각 300), warc 파일 1개 1.32GB 15.3M행. warc_filename·offset·length 열로 레코드 위치 직접 조회. 첫 행 그룹 kor 171행(구간 한정).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "url-index-cdx"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "domain-specific-corpus-cc",
@@ -52926,6 +52929,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "학습 데이터 수집의 법적 쟁점.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "athena-cc-index-query",
+      "label": "Athena로 Common Crawl 색인 조회",
+      "parent": "columnar-index-parquet",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SQL로 언어·도메인 조건 선별.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "record-fetch-by-offset",
+      "label": "오프셋으로 레코드 받기",
+      "parent": "columnar-index-parquet",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "warc 위치 열과 Range 요청 결합.",
       "added": "2026-11-20",
       "related": []
     }
