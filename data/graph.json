@@ -43042,11 +43042,14 @@
       "label": "ODC-By vs CC BY vs ODbL",
       "parent": "odc-by-license",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "출처 표시·share-alike 차이.",
+      "summary": "ODC-By·ODbL·CC BY 4.0 비교: 셋 다 출처 표시, share-alike는 ODbL만. CC BY 4.0은 sui generis DB 권리 포함 명시. FineWeb은 ODC-By 1.0+Common Crawl 약관(법률 자문 아님).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "odc-by-license"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "produced-works-notice",
@@ -52817,6 +52820,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "한국 번호·주민번호 규칙 덧붙이기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "share-alike",
+      "label": "Share-alike",
+      "parent": "odc-by-vs-cc-by-odbl",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "파생물도 같은 조건.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "license-summary-vs-legal-text",
+      "label": "라이선스 요약과 전문",
+      "parent": "odc-by-vs-cc-by-odbl",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "요약은 법적 효력 없음.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dataset-card-license-check",
+      "label": "데이터셋 카드 라이선스 확인",
+      "parent": "odc-by-vs-cc-by-odbl",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "함께 적용되는 약관 읽기.",
       "added": "2026-11-20",
       "related": []
     }
