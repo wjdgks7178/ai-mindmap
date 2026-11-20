@@ -42709,11 +42709,14 @@
       "label": "robots.txt 기본",
       "parent": "ccbot-opt-out",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "User-agent·Disallow 규칙과 파서 동작.",
+      "summary": "RFC 9309: 대소문자 무시 그룹 매칭, 가장 긴 일치 규칙 우선, 동률은 Allow, 4xx면 전체 허용, 파싱 500KiB. 직접 실행: 파이썬 robotparser는 Allow가 더 구체적이어도 먼저 나온 Disallow 적용, 파서별 해석 차이.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "ccbot-opt-out"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "tdm-reservation-protocol",
@@ -52117,6 +52120,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "원 모델로 증강 문장을 분류해 확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "robots-longest-match",
+      "label": "가장 긴 일치 규칙",
+      "parent": "robots-txt-basics",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Allow·Disallow 충돌 해소.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "robots-parser-differences",
+      "label": "robots 파서 해석 차이",
+      "parent": "robots-txt-basics",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "파이썬 robotparser와 RFC 차이.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "robots-unavailable-status",
+      "label": "robots.txt 상태별 동작",
+      "parent": "robots-txt-basics",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "4xx·5xx·리다이렉트 처리.",
       "added": "2026-11-20",
       "related": []
     }
