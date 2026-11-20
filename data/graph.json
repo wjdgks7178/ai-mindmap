@@ -40494,11 +40494,14 @@
    "label": "교차 검증의 편향-분산 균형",
    "parent": "leave-one-out-cv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "k가 클수록 편향↓·분산↑ 경향.",
+   "summary": "k가 작으면 학습량이 적어 오차 과대추정(편향), k가 크면 폴드가 비슷해 추정 분산↑. 가이드는 5·10-폴드 권장.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "learning-curve"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "learning-curve",
@@ -47272,6 +47275,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모든 조합 vs 무작위 일부 분할 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "repeated-kfold",
+   "label": "RepeatedKFold",
+   "parent": "cv-variance-bias-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K-폴드를 분할만 바꿔 반복해 추정 분산을 줄인다.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "holdout-vs-cv",
+   "label": "홀드아웃 vs 교차검증",
+   "parent": "cv-variance-bias-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 크기별 분할 방식 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cv-score-reporting",
+   "label": "교차검증 점수 보고법",
+   "parent": "cv-variance-bias-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균±표준편차와 폴드별 점수를 함께 쓰는 이유.",
    "related": [],
    "added": "2026-11-20"
   }
