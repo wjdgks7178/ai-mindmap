@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "nodes": [
   {
    "id": "ai",
@@ -40804,11 +40804,14 @@
    "label": "구체화 뷰",
    "parent": "query-acceleration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "계산 결과를 미리 저장, 갱신 비용 트레이드오프.",
+   "summary": "쿼리 결과를 미리 저장해 반복 질의를 가속. Snowflake·BigQuery는 자동 갱신(증분), 대신 저장·갱신 비용과 최신성 지연.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "vector-db"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "parquet-columnar-format",
@@ -46874,6 +46877,50 @@
    "summary": "열별 압축 방식 선택.",
    "related": [],
    "added": "2026-11-19"
+  },
+  {
+   "id": "incremental-refresh",
+   "label": "증분 갱신",
+   "parent": "materialized-view",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경분만 반영해 뷰를 갱신. 전체 재계산과 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "max-staleness",
+   "label": "허용 최신성 지연(max_staleness)",
+   "parent": "materialized-view",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뷰가 얼마나 뒤처져도 되는지 정하는 설정. 30분~3일(BigQuery).",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "smart-tuning",
+   "label": "smart tuning(쿼리 자동 재작성)",
+   "parent": "materialized-view",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 테이블 쿼리를 뷰로 자동 대체하는 옵티마이저 기능.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "view-vs-materialized-view",
+   "label": "일반 뷰 vs 구체화 뷰",
+   "parent": "materialized-view",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장 여부·비용·최신성 기준으로 고르는 법.",
+   "related": [],
+   "added": "2026-11-20"
   }
  ]
 }
