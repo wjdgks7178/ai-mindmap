@@ -41424,11 +41424,14 @@
    "label": "판정자 역할",
    "parent": "double-annotation-adjudication",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "제3 전문가가 불일치를 정리하는 방식.",
+   "summary": "불일치 항목만 제3 전문가가 판정해 골드 라벨 생성. 시뮬: 불일치 25.9%, 골드 정확도 0.970(남은 오류 중 17개는 둘 다 같게 틀린 항목). 도구와 사유 기록이 핵심.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "double-annotation-review"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "majority-voting-labels",
@@ -48705,6 +48708,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "목표 달성·개정 폭 감소 등 종료 기준.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "gold-standard-creation",
+   "label": "골드 스탠더드 만들기",
+   "parent": "adjudicator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 주석을 병합해 최종 정답 세트를 만드는 절차.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "adjudication-interface",
+   "label": "판정 인터페이스",
+   "parent": "adjudicator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치를 색으로 보여 주고 병합을 돕는 도구(MAI·WebAnno).",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "agreed-but-wrong-sampling",
+   "label": "일치했지만 틀린 항목 표본 검수",
+   "parent": "adjudicator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치 항목 일부를 추가 점검해 공통 오류 찾기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "adjudication-rationale-log",
+   "label": "판정 사유 기록",
+   "parent": "adjudicator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판정 이유를 남겨 가이드 개정에 연결.",
    "related": [],
    "added": "2026-11-20"
   }
