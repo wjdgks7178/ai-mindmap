@@ -42781,11 +42781,14 @@
       "label": "금칙어 목록 필터의 부작용",
       "parent": "c4-dataset",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "무고한 페이지가 제거되는 문제.",
+      "summary": "Dodge 2021: C4 금칙어 필터 제외 표본 10만 중 성적 군집 31%뿐, 과학·의학·법률 등 포함. 방언별 제거율 AAE 42%·히스패닉 정렬 32% vs 백인 정렬 6.2%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "c4-filter-rules"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "langdetect-threshold",
@@ -52299,6 +52302,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "코드·시·비영어 오삭제.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "blocklist-precision-recall",
+      "label": "금칙어 필터 정밀도와 재현율",
+      "parent": "bad-words-list-filter",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "키워드 차단의 오탐 구조.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dialect-filtering-bias",
+      "label": "방언별 필터링 편향",
+      "parent": "bad-words-list-filter",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소수 방언 글이 더 지워지는 문제.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "ratio-based-profanity-filter",
+      "label": "비율 기반 비속어 필터",
+      "parent": "bad-words-list-filter",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "일정 비율 이상일 때만 제거.",
       "added": "2026-11-20",
       "related": []
     }
