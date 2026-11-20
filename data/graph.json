@@ -41347,11 +41347,14 @@
    "label": "find_label_issues 필터 방식",
    "parent": "out-of-sample-pred-probs",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "prune_by_noise_rate·both 등 옵션 비교.",
+   "summary": "filter_by 5종 비교(합성): both F1 0.789, 기본 0.785, confident_learning 정밀도 0.761, predicted_neq_given 재현율 0.942. 목적별 선택.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cleanlab-label-quality-score"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "pred-probs-calibration",
@@ -48503,6 +48506,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴드 분할→예측→오류 탐지 순서 정리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "prune-by-noise-rate",
+   "label": "prune_by_noise_rate",
+   "parent": "find-label-issues-filter-by",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "confident joint 비대각선 기준으로 오류 확률이 높은 샘플 표시.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "min-examples-per-class",
+   "label": "클래스별 최소 보존(min_examples_per_class)",
+   "parent": "find-label-issues-filter-by",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 클래스가 과도하게 제거되지 않게 막는 옵션.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "precision-recall-tradeoff-cleaning",
+   "label": "정리의 정밀도·재현율 균형",
+   "parent": "find-label-issues-filter-by",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수 비용과 오류 놓침 사이 선택.",
    "related": [],
    "added": "2026-11-20"
   }
