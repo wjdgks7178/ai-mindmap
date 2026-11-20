@@ -42460,11 +42460,15 @@
       "label": "증강 정책 전이",
       "parent": "randaugment-autoaugment",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "한 데이터에서 찾은 정책을 다른 데이터에 쓰기.",
+      "summary": "AutoAugment ImageNet 정책이 Flowers·Pets·Cars·Aircraft 등에 전이, Cars·Aircraft 오류 1.2·1.8%p 감소. 뒤집기는 CIFAR-10엔 효과적이나 MNIST엔 아님(대칭성 차이).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "augmentation-allowlist",
+        "augmentation-policy-search"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "uda-consistency-training",
@@ -52007,6 +52011,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "집계 예측을 단일 추론으로 옮기기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "policy-transfer-vs-weight-transfer",
+      "label": "정책 전이 vs 가중치 전이",
+      "parent": "augmentation-transfer",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "증강 정책 재사용과 사전학습 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "symmetry-dependent-augmentation",
+      "label": "대칭성에 의존하는 증강",
+      "parent": "augmentation-transfer",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "뒤집기가 MNIST에 안 맞는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "public-augmentation-policies",
+      "label": "공개 증강 정책 쓰기",
+      "parent": "augmentation-transfer",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "라이브러리의 AutoAugment 정책 활용.",
       "added": "2026-11-20",
       "related": []
     }
