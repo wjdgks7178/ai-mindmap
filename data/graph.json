@@ -41203,11 +41203,14 @@
    "label": "라벨 품질 점수",
    "parent": "cleanlab",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "샘플별 라벨 신뢰 점수와 순위.",
+   "summary": "샘플별 라벨 신뢰 점수(0~1, 낮을수록 오류 의심). 합성 실험: 하위 100개 중 오류 97%(무작위 12%). self_confidence·normalized_margin·entropy 3종.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "noise-transition-matrix"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "cleanlab-outlier-detection",
@@ -48111,6 +48114,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "미래에 알게 된 값을 과거 예측 특성에 쓰는 누수.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "self-confidence-score",
+   "label": "self_confidence 점수",
+   "parent": "cleanlab-label-quality-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주어진 라벨의 예측 확률을 점수로 쓰는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "normalized-margin-score",
+   "label": "normalized margin 점수",
+   "parent": "cleanlab-label-quality-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주어진 라벨 확률과 최대 다른 확률의 차.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "adjust-pred-probs",
+   "label": "클래스 불균형 보정(adjust_pred_probs)",
+   "parent": "cleanlab-label-quality-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스별 임계값을 빼 불균형을 보정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "precision-at-k-review",
+   "label": "precision@k 검수 효율",
+   "parent": "cleanlab-label-quality-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수 상위 k개 중 진짜 오류 비율.",
    "related": [],
    "added": "2026-11-20"
   }
