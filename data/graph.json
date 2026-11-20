@@ -42518,11 +42518,12 @@
       "label": "박스 좌표 형식",
       "parent": "augmentation-for-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "pascal_voc·coco·yolo 등 5형식과 혼동 주의.",
+      "summary": "pascal_voc·coco·yolo·albumentations·cxcywh 형식 표. 같은 박스가 형식별로 달라 coco 값을 voc로 잘못 읽으면 IoU 0.375로 오류 없이 어긋남(Albumentations 2.0.8 직접 실행).",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "min-visibility-filter",
@@ -51596,6 +51597,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "입력 대신 표현을 변형하는 방법들.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "bbox-format-conversion",
+      "label": "박스 형식 변환",
+      "parent": "bbox-coordinate-formats",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "내부 정규화 표현으로 오가는 방법.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "draw-bbox-sanity-check",
+      "label": "박스 그려 보기 점검",
+      "parent": "bbox-coordinate-formats",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "증강 전후 박스를 시각화해 확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "silent-data-bugs",
+      "label": "조용한 데이터 버그",
+      "parent": "bbox-coordinate-formats",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "오류 없이 성능을 깎는 입력 오류.",
       "added": "2026-11-20",
       "related": []
     }
