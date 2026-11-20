@@ -42752,11 +42752,15 @@
       "label": "옵트아웃의 한계",
       "parent": "ccbot-opt-out",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "이미 수집된 데이터에는 소급되지 않음.",
+      "summary": "Common Crawl 색인 129개(2008-2009 ARC ~ CC-MAIN-2026-43). 옵트아웃은 이후 크롤에만 작용, 과거 스냅샷·파생 데이터셋·모델에는 소급 안 됨.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "ccbot-opt-out",
+        "tdm-reservation-protocol"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "c4-filter-rules",
@@ -52226,6 +52230,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "synctoken으로 변경 추적.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "data-lineage-record",
+      "label": "데이터 계보 기록",
+      "parent": "opt-out-limits-existing-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "수집 시점·소스·제외 규칙 기록.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dataset-removal-request",
+      "label": "데이터셋 삭제 요청",
+      "parent": "opt-out-limits-existing-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "운영자별 제외 절차.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "machine-unlearning",
+      "label": "머신 언러닝",
+      "parent": "opt-out-limits-existing-data",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습된 모델에서 영향 줄이기.",
       "added": "2026-11-20",
       "related": []
     }
