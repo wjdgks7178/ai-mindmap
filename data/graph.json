@@ -43064,11 +43064,15 @@
       "label": "FineWeb 개인정보 익명화",
       "parent": "odc-by-license",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "이메일·공개 IP 정규식 익명화와 삭제 요청.",
+      "summary": "FineWeb 공개본은 이메일·공인 IP를 정규식으로 익명화(데이터 카드 서술), 이름·전화 등은 처리 서술 없음. ODC-By v1.0+Common Crawl 약관 적용.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "datatrove-fineweb-example",
+        "pii-in-training-data"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "c4-audit-dodge",
@@ -52780,6 +52784,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "모델 크기에 맞는 토큰 수.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "data-card-reading",
+      "label": "데이터 카드 읽기",
+      "parent": "fineweb-pii-removal",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "무엇을 했고 안 했는지 확인.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "fineweb-license-terms",
+      "label": "FineWeb 이용 조건",
+      "parent": "fineweb-pii-removal",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "ODC-By와 Common Crawl 약관.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "extra-pii-pass",
+      "label": "추가 PII 단계",
+      "parent": "fineweb-pii-removal",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한국 번호·주민번호 규칙 덧붙이기.",
       "added": "2026-11-20",
       "related": []
     }
