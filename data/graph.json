@@ -41161,11 +41161,14 @@
    "label": "클래스 조건부 노이즈",
    "parent": "confident-learning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "노이즈가 클래스 쌍에만 의존한다는 가정.",
+   "summary": "오라벨 확률이 진짜 클래스에만 의존한다는 가정(Confident learning). cleanlab 실험: 0→1 30%·2→1 10% 비대칭 노이즈를 confident joint가 포착.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "noise-transition-matrix"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "noise-transition-matrix",
@@ -48003,6 +48006,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "답의 근거 문장을 표시하는 주석 방식.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "feature-dependent-noise",
+   "label": "특징 의존 노이즈",
+   "parent": "class-conditional-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플이 어려워서 생기는 오라벨 — 클래스 조건부 가정 위반.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "symmetric-label-noise",
+   "label": "대칭 라벨 노이즈",
+   "parent": "class-conditional-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 클래스로 같은 확률로 틀리는 단순 가정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "confusion-pair-guideline",
+   "label": "혼동 쌍 중심 라벨 가이드",
+   "parent": "class-conditional-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈가 큰 클래스 쌍을 라벨링 가이드에 반영.",
    "related": [],
    "added": "2026-11-20"
   }
