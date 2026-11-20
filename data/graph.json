@@ -40951,11 +40951,14 @@
    "label": "GroupShuffleSplit",
    "parent": "leave-one-group-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "그룹 일부를 무작위로 시험에 뺌. 조합 열거 없이.",
+   "summary": "그룹 단위로 무작위 학습/테스트 분할을 n회. test_size는 그룹 비율. 분할 간 겹침 가능, 샘플 수는 그룹 크기에 따라 변동.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "stratified-group-kfold"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "per-group-score-analysis",
@@ -47512,6 +47515,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "연도를 그룹으로 삼아 시간 기반 검증.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shuffle-split-vs-kfold",
+   "label": "ShuffleSplit vs KFold",
+   "parent": "group-shuffle-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 횟수 자유도와 겹침 차이.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "reproducible-splits",
+   "label": "재현 가능한 분할",
+   "parent": "group-shuffle-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "random_state 고정과 분할 저장.",
    "related": [],
    "added": "2026-11-20"
   }
