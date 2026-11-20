@@ -41895,11 +41895,14 @@
    "label": "범주별 개선 상한",
    "parent": "error-cause-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "범주 비율이 줄일 수 있는 오류의 상한.",
+   "summary": "범주가 오류에서 차지하는 비율이 그 범주만 고쳐 줄일 수 있는 오류의 상한. 예: 개 8%면 0.8%p, 흐림 61%면 6.1%p. 오류 100개 검토로 비슷한 범주 순위는 41%만 안정.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "error-cause-triage"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "mislabeled-dev-set-threshold",
@@ -49851,6 +49854,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 양에 따라 단순·복잡 모델 순위가 바뀌는 지점.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "category-share-confidence-interval",
+   "label": "범주 비율 신뢰구간",
+   "parent": "error-category-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토 샘플 수에 따른 범주 비율의 불확실성.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "improvement-efficiency-vs-ceiling",
+   "label": "상한 vs 실제 효율",
+   "parent": "error-category-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상한에 해결 가능성을 곱해 기대 효과 추정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "overlapping-error-categories",
+   "label": "중복 오류 범주",
+   "parent": "error-category-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 예시가 여러 범주에 속할 때의 비율 해석.",
    "related": [],
    "added": "2026-11-20"
   }
