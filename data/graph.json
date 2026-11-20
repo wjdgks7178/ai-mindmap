@@ -41494,11 +41494,15 @@
    "label": "라벨러 기준 드리프트",
    "parent": "calibration-items",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시간·피로·규칙 변경으로 기준이 벌어지는 현상.",
+   "summary": "시간·피로·규칙 변경으로 라벨러 기준이 벌어지는 현상. 시뮬: B 양성 비율 0.47→0.24, kappa 0.714→0.387. 클래스 비율·표본 kappa·골든으로 추세 감시.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-drift",
+    "concept-drift"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "calibration-frequency",
@@ -48940,6 +48944,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가이드 개정을 모든 라벨러에 동시에 알리는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "anchoring-in-labeling",
+   "label": "라벨링 앵커링",
+   "parent": "labeler-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "앞서 본 항목이 다음 판정에 영향을 주는 편향.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "self-consistency-check",
+   "label": "자기 일관성 점검",
+   "parent": "labeler-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 항목을 다시 줘서 과거 라벨과 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "annotation-metadata-tracking",
+   "label": "라벨 메타데이터 기록",
+   "parent": "labeler-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러 ID·날짜·가이드 버전을 함께 저장.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "control-chart-for-labeling",
+   "label": "라벨링 관리도",
+   "parent": "labeler-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준선 대비 이탈을 경보하는 차트.",
    "related": [],
    "added": "2026-11-20"
   }
