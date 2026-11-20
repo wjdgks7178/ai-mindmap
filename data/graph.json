@@ -41670,11 +41670,14 @@
    "label": "시드 골라잡기",
    "parent": "random-state-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "좋은 점수 시드만 고르는 과적합.",
+   "summary": "좋은 점수 시드만 고르면 우연의 최댓값. 실험: 시드 30개 테스트 0.680~0.793(평균 0.738), 최고 시드는 새 데이터 0.741로 낙관 0.052. k가 클수록 낙관 증가.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "test-set-reuse-risk"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "clone-random-state-sharing",
@@ -49391,6 +49394,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "그룹 수가 적을 때 반복 분할·폴드 수 축소.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "winners-curse",
+   "label": "승자의 저주",
+   "parent": "seed-cherry-picking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 후보 중 최고를 고르면 점수가 위로 치우침.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "multiple-comparisons-in-ml",
+   "label": "머신러닝의 다중 비교",
+   "parent": "seed-cherry-picking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시도 횟수가 늘수록 우연한 좋은 결과 증가.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "preregistered-seed",
+   "label": "사전에 정한 시드",
+   "parent": "seed-cherry-picking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과를 보기 전에 시드를 정해 두는 습관.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "adaptive-overfitting",
+   "label": "적응적 과적합",
+   "parent": "seed-cherry-picking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 결과를 보며 반복 선택해 평가셋에 과적합.",
    "related": [],
    "added": "2026-11-20"
   }
