@@ -40642,11 +40642,14 @@
    "label": "작은 k의 비관적 편향",
    "parent": "cv-fold-count-choice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 데이터가 적어 점수가 낮게 나옴.",
+   "summary": "k가 작으면 학습 크기 (k-1)n/k가 줄어 점수가 낮게 나옴. digits 실험: k=2 0.948 vs 홀드아웃 0.961, k≥3은 근접.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "learning-curve"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "cv-score-difference-vs-noise",
@@ -47401,6 +47404,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "복원추출 표본을 반복해 성능 변동을 추정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "steep-learning-curve-risk",
+   "label": "가파른 학습 곡선 위험",
+   "parent": "pessimistic-bias-small-k",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터가 적을 때 편향이 커지는 구간.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "fixed-k-for-comparison",
+   "label": "비교용 k 고정",
+   "parent": "pessimistic-bias-small-k",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 비교 시 같은 k·같은 분할을 쓰는 이유.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "final-test-set-confirmation",
+   "label": "최종 테스트 세트 확인",
+   "parent": "pessimistic-bias-small-k",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보고용 점수는 CV가 아니라 별도 세트로 검증.",
    "related": [],
    "added": "2026-11-20"
   }
