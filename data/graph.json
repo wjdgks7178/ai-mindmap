@@ -41609,11 +41609,14 @@
    "label": "LLM 라벨링 일반화 한계",
    "parent": "llm-labeler-guideline-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "연구가 생의학에 치우쳐 있다는 점.",
+   "summary": "LLM 라벨링 연구는 과제·언어·모델·시점이 한정된 결과(트윗 5과제, CSS 25벤치마크, 생의학 NER 3개). 내 도메인에서는 검증 부분집합으로 직접 확인.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-labeler-validation-subset"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "stratify-min-class-error",
@@ -50078,6 +50081,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "반복당 비용과 모델 선택 균형.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "zero-shot-vs-finetuned-annotation",
+   "label": "제로샷 LLM vs 미세조정 모델",
+   "parent": "llm-annotation-domain-generalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류 과제에서 LLM과 미세조정 모델 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "korean-domain-llm-annotation",
+   "label": "한국어 도메인 LLM 라벨링",
+   "parent": "llm-annotation-domain-generalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한국어·사내 용어 데이터에서의 검증 필요성.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "model-version-revalidation",
+   "label": "모델 버전 변경 시 재검증",
+   "parent": "llm-annotation-domain-generalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 바뀌면 라벨 품질을 다시 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "citing-ai-research-scope",
+   "label": "연구 인용 시 범위 명시",
+   "parent": "llm-annotation-domain-generalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과제·데이터·모델 조건을 함께 밝히는 습관.",
    "related": [],
    "added": "2026-11-20"
   }
