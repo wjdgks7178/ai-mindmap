@@ -40842,11 +40842,14 @@
    "label": "TFDV 이상 유형",
    "parent": "schema-inference",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "도메인 밖 값·누락·타입 불일치 등 anomaly 종류.",
+   "summary": "TFDV가 스키마 대조로 찾는 이상 약 85종: 존재·도메인·타입·NaN·비교기 등. 예상된 변화면 스키마 수정, 오류면 데이터 수정.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-drift"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "schema-environments",
@@ -46919,6 +46922,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "저장 여부·비용·최신성 기준으로 고르는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "anomaly-example-level-validation",
+   "label": "예제 단위 검증",
+   "parent": "tfdv-anomaly-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "validate_examples_in_tfrecord로 이상 예제만 모아 통계 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "schema-vs-data-fix-decision",
+   "label": "스키마 고칠까 데이터 고칠까",
+   "parent": "tfdv-anomaly-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상 발견 시 스키마 갱신 vs 원본 수정 판단 기준.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "nan-inf-checks",
+   "label": "NaN·Inf 검사",
+   "parent": "tfdv-anomaly-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수치 피처의 NaN·무한대 값 탐지와 처리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "schema-new-column-anomaly",
+   "label": "새 열 이상(SCHEMA_NEW_COLUMN)",
+   "parent": "tfdv-anomaly-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마에 없는 열이 들어올 때의 의미와 대응.",
    "related": [],
    "added": "2026-11-20"
   }
