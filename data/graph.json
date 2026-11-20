@@ -42444,11 +42444,15 @@
       "label": "TrivialAugment",
       "parent": "randaugment-autoaugment",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "튜닝이 거의 필요 없는 간단 증강.",
+      "summary": "이미지마다 변환 1개 균등 선택, 강도 0~30 균등 샘플, 파라미터 없음. RandAugment의 특수 경우가 아님(강도를 이미지마다 새로 뽑음). 논문 주장: 복잡한 방법과 동등 이상.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "augmentation-policy-search",
+        "randaugment-magnitude-tuning"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "augmentation-transfer",
@@ -51489,6 +51493,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "정답 세트로 남은 PII 측정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "trivialaugment-vs-randaugment",
+      "label": "TrivialAugment vs RandAugment",
+      "parent": "trivialaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "변환 수·강도 처리·튜닝 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "augmentation-baseline-practice",
+      "label": "증강 기준선 관행",
+      "parent": "trivialaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "새 증강은 단순 기준선과 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "average-of-augmentation-distributions",
+      "label": "증강 분포의 평균 해석",
+      "parent": "trivialaugment",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "변환별 분포를 평균낸 데이터 분포.",
       "added": "2026-11-20",
       "related": []
     }
