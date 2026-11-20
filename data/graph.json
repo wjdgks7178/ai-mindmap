@@ -41245,11 +41245,14 @@
    "label": "자동 삭제의 위험",
    "parent": "cleanlab",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "의심 샘플을 자동 제거할 때의 오탐 문제.",
+   "summary": "의심 샘플 자동 삭제는 어려운 데이터에서 오탐이 많다. 합성 실험: 쉬운 데이터 오탐 6/314, 어려운 데이터 469/701(67%). 의심은 검토 대상.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "human-relabel-triage"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "corrected-test-labels",
@@ -48252,6 +48255,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미지·텍스트를 벡터로 바꿔 거리 계산하기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "false-positive-label-issues",
+   "label": "라벨 오류 오탐",
+   "parent": "auto-delete-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "멀쩡한 라벨이 오류로 표시되는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "hard-sample-removal",
+   "label": "하드 샘플 제거의 부작용",
+   "parent": "auto-delete-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 사례를 지우면 일반화가 약해지는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "quarantine-instead-of-delete",
+   "label": "삭제 대신 보류",
+   "parent": "auto-delete-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의심 샘플을 지우지 않고 학습에서만 제외.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cleaning-before-after-eval",
+   "label": "정리 전후 비교 평가",
+   "parent": "auto-delete-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정리 효과를 깨끗한 평가셋으로 비교하기.",
    "related": [],
    "added": "2026-11-20"
   }
