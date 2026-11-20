@@ -42362,11 +42362,14 @@
       "label": "Cutout",
       "parent": "mixup-cutmix",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "조각을 지우는 영역 드롭아웃.",
+      "summary": "입력 이미지의 무작위 정사각 영역을 0으로 가림. 마스크가 경계 밖으로 나가도 되게 해야 성능 좋음(저자). 계산: 32x32에서 16 마스크 평균 19% 가림. CIFAR-10 2.56% 오류(2017, shake-shake 결합).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "mixup-cutmix"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "soft-label-loss",
@@ -51297,6 +51300,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "α를 키워 암기를 어렵게 하는 가설.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cutout-patch-size",
+      "label": "Cutout 패치 크기",
+      "parent": "cutout",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터셋별 최적 크기를 찾는 법.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cutout-boundary-rule",
+      "label": "Cutout 경계 규칙",
+      "parent": "cutout",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "경계 밖 허용 vs 50% 적용.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "input-dropout-vs-cutout",
+      "label": "입력 드롭아웃과 Cutout",
+      "parent": "cutout",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "무작위 화소 vs 연속 영역.",
       "added": "2026-11-20",
       "related": []
     }
