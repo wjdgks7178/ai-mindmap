@@ -41616,11 +41616,14 @@
    "label": "stratify 최소 클래스 오류",
    "parent": "stratified-train-test-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "클래스가 1개뿐일 때 ValueError와 대처.",
+   "summary": "stratify에서 클래스가 1개뿐이거나 test_size<클래스 수이면 ValueError(직접 확인). 통과해도 희귀 클래스가 테스트에 없을 수 있음. 병합·학습 전용·수집으로 대응.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "n-splits-vs-rare-class"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "stratify-multi-label-columns",
@@ -49249,6 +49252,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "너무 높거나 낮은 보류 비율의 의미.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "merge-rare-classes",
+   "label": "희귀 클래스 병합",
+   "parent": "stratify-min-class-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미를 유지하는 범위에서 희귀 클래스를 합치는 기준.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "train-only-rare-class",
+   "label": "희귀 클래스 학습 전용 처리",
+   "parent": "stratify-min-class-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테스트에 못 넣는 클래스를 학습에만 두는 방법과 한계.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rare-class-collection",
+   "label": "희귀 클래스 추가 수집",
+   "parent": "stratify-min-class-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 클래스를 더 모아 층화가 가능하게 만들기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "stratify-test-size-rule",
+   "label": "test_size와 클래스 수 규칙",
+   "parent": "stratify-min-class-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "test_size가 클래스 수 이상이어야 하는 조건.",
    "related": [],
    "added": "2026-11-20"
   }
