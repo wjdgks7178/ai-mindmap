@@ -41007,11 +41007,14 @@
    "label": "다문단 질문 처리",
    "parent": "document-level-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "여러 문단을 걸친 질문을 분할에서 다루는 법.",
+   "summary": "멀티홉 질문의 분할: 질문 단위는 문단 누수(시뮬 24/24), 문단 단위는 누수 0이지만 걸친 질문 53/120 폐기. HotpotQA·MuSiQue 배경.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "multi-axis-grouping"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "split-leakage-audit",
@@ -47956,6 +47959,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "새 병원에서의 성능을 별도로 재는 설계.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "multi-hop-qa",
+   "label": "멀티홉 질문 응답",
+   "parent": "multi-passage-question-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 문서를 조합해 답하는 QA 과제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "hotpotqa",
+   "label": "HotpotQA",
+   "parent": "multi-passage-question-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "11.3만 개 위키 기반 멀티홉 QA 데이터셋.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "musique",
+   "label": "MuSiQue",
+   "parent": "multi-passage-question-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단일 홉 질문을 합성해 만든 2~4홉 데이터셋.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "supporting-fact-annotation",
+   "label": "근거 문장 주석",
+   "parent": "multi-passage-question-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답의 근거 문장을 표시하는 주석 방식.",
    "related": [],
    "added": "2026-11-20"
   }
