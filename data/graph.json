@@ -42268,11 +42268,12 @@
       "label": "중복 군집 크기와 효과",
       "parent": "per-snapshot-vs-global-dedup",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "거대 군집 제거가 핵심이라는 가설.",
+      "summary": "FineWeb 가설: 중복 제거 이득은 수십만 문서 거대 군집 제거에서 나오고 약 100개 미만 소군집 제거는 해로울 수 있음. 전역 제거 4조 토큰은 이득 미미, 스냅샷별 20조 토큰은 RefinedWeb 수준.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "dedup-quality-check",
@@ -51193,6 +51194,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "추출 공격으로 배포 전 점검.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "transitive-clustering",
+      "label": "전이적 군집화",
+      "parent": "duplicate-cluster-size",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "A–C, B–C면 A·B·C를 한 군집으로.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "boilerplate-duplicates",
+      "label": "보일러플레이트 중복",
+      "parent": "duplicate-cluster-size",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "약관·쿠키 안내 같은 반복 문구.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cluster-size-histogram",
+      "label": "군집 크기 분포 그리기",
+      "parent": "duplicate-cluster-size",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "중복 제거 전 군집 히스토그램 점검.",
       "added": "2026-11-20",
       "related": []
     }
