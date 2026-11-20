@@ -40456,11 +40456,12 @@
    "label": "회귀 층화(구간화)",
    "parent": "stratified-k-fold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "연속값을 구간으로 나눠 층화하는 방법.",
+   "summary": "연속 타깃을 분위수로 구간화해 StratifiedKFold에 넣는 실무 요령. 모델은 원래 y로 학습. sklearn 1.9.1에서 직접 확인.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-20"
   },
   {
    "id": "stratification-vs-leakage",
@@ -47190,6 +47191,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "극소수 클래스를 별도 지표로 평가하는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "quantile-binning",
+   "label": "분위수 구간화",
+   "parent": "stratify-regression-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "np.quantile·digitize로 같은 개수씩 구간 나누기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "bin-count-choice",
+   "label": "구간 수 고르기",
+   "parent": "stratify-regression-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간이 너무 많으면 희귀 클래스, 적으면 층화 효과 감소.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "stratification-metric-spread",
+   "label": "층화와 지표 퍼짐",
+   "parent": "stratify-regression-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화가 폴드 간 지표 편차를 인위적으로 줄이는 효과.",
    "related": [],
    "added": "2026-11-20"
   }
