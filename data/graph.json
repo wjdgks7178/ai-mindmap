@@ -40444,11 +40444,12 @@
    "label": "조각 수와 희귀 클래스 수",
    "parent": "stratified-k-fold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "조각 수가 희귀 클래스보다 크면 층화 불가.",
+   "summary": "n_splits가 최소 클래스 수보다 크면 일부 폴드에 클래스가 없다(경고, 전부 초과면 ValueError). sklearn 1.9.1에서 직접 확인.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-20"
   },
   {
    "id": "stratify-regression-binning",
@@ -47156,6 +47157,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "KFold·Stratified·Group·시계열 분할기 선택 기준.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "repeated-stratified-kfold",
+   "label": "RepeatedStratifiedKFold",
+   "parent": "n-splits-vs-rare-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화 K-폴드를 무작위를 바꿔 여러 번 반복해 지표 변동을 평균.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "metric-undefined-missing-class",
+   "label": "클래스 누락 시 지표 미정의",
+   "parent": "n-splits-vs-rare-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드에 양성이 없으면 AUC·재현율을 못 구한다.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rare-class-evaluation",
+   "label": "희귀 클래스 평가법",
+   "parent": "n-splits-vs-rare-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극소수 클래스를 별도 지표로 평가하는 방법.",
    "related": [],
    "added": "2026-11-20"
   }
