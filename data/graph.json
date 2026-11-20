@@ -42572,11 +42572,14 @@
       "label": "라이브러리 버전별 API 차이",
       "parent": "augmentation-for-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "문서와 설치 버전의 인자명이 다른 문제.",
+      "summary": "Albumentations 2.0.8: Rotate(value=)·CoarseDropout(max_holes=)·GaussNoise(var_limit=)는 오류 없이 경고만 내고 무시, RandomCrop(size=)는 오류. 버전 고정·경고→오류·샘플 확인.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "bbox-coordinate-formats"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "augmentation-allowlist",
@@ -51738,6 +51741,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "범주 경계를 안전하게 다루는 대안.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "pin-dependency-versions",
+      "label": "의존성 버전 고정",
+      "parent": "library-version-api-drift",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "requirements로 버전 기록.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "deprecation-notices",
+      "label": "사용 중단 경고 읽기",
+      "parent": "library-version-api-drift",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "ShiftScaleRotate→Affine 같은 예고.",
       "added": "2026-11-20",
       "related": []
     }
