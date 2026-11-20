@@ -41630,11 +41630,14 @@
    "label": "여러 컬럼 기준 층화",
    "parent": "stratified-train-test-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨과 속성을 합친 키로 층화.",
+   "summary": "라벨+속성을 이은 조합 키로 층화. 실험: EU 비율 편차 0.0107→0.0020. 컬럼이 늘면 조합 58개·최소 칸 1로 ValueError.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "stratify-min-class-error"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "stratify-vs-group",
@@ -49296,6 +49299,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "test_size가 클래스 수 이상이어야 하는 조건.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "combined-stratification-key",
+   "label": "조합 키 만들기",
+   "parent": "stratify-multi-label-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 컬럼을 이어 붙여 stratify 키를 만드는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "bin-high-cardinality-columns",
+   "label": "값이 많은 컬럼 묶기",
+   "parent": "stratify-multi-label-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간화·기타 묶음으로 칸 수 줄이기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "iterative-stratification",
+   "label": "Iterative stratification",
+   "parent": "stratify-multi-label-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "멀티라벨 데이터의 전용 층화 알고리즘.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "post-split-distribution-check",
+   "label": "분할 후 분포 점검",
+   "parent": "stratify-multi-label-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "crosstab으로 속성 분포가 유지됐는지 확인.",
    "related": [],
    "added": "2026-11-20"
   }
