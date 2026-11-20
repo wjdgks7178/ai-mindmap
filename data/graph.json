@@ -40870,11 +40870,15 @@
    "label": "skew·drift 비교기",
    "parent": "schema-inference",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "L∞·젠슨-섀넌 임계값으로 분포 차이 감시.",
+   "summary": "피처별 임계값으로 skew(학습 vs 서빙)·drift(전날 vs 오늘) 감시. L∞는 범주형만, JS 발산은 범주·수치형 모두.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-drift",
+    "training-serving-skew"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "data-statistics-slicing",
@@ -47002,6 +47006,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "schema.proto 필드: presence·value_count·domain 구조.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "l-infinity-norm-categorical",
+   "label": "L∞ 거리(범주형)",
+   "parent": "skew-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주 비율 최대 차이로 분포 변화를 재는 지표.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "jensen-shannon-divergence",
+   "label": "젠슨-섀넌 발산",
+   "parent": "skew-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 분포의 대칭적 차이. 0~1 범위, 수치형에도 적용.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "comparator-threshold-tuning",
+   "label": "비교기 임계값 정하기",
+   "parent": "skew-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 변동폭을 관찰해 오탐·미탐 균형 맞추기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "span-based-validation",
+   "label": "스팬 기반 검증",
+   "parent": "skew-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "날짜 단위 데이터 조각을 이전 스팬과 비교하는 구조.",
    "related": [],
    "added": "2026-11-20"
   }
