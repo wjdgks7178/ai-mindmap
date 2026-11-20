@@ -41551,11 +41551,14 @@
    "label": "규칙 변경 후 재라벨링",
    "parent": "guideline-edge-case-log",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "영향 범위를 정해 다시 라벨링.",
+   "summary": "규칙 변경 후 영향 범위만 재라벨해 비용을 줄인다. 시뮬: 범위 2,774건으로 오류의 96% 수정(비용 45% 절감), 10% 표본으로 재라벨 여부 판단.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "guideline-versioning"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "llm-labeler-validation-subset",
@@ -49129,6 +49132,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "날짜·변경 내용·이유·영향 클래스 기록.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "impact-analysis-for-rule-change",
+   "label": "규칙 변경 영향 분석",
+   "parent": "relabel-after-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 클래스·경계가 영향을 받는지 정의.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "relabel-sample-test",
+   "label": "재라벨 표본 시험",
+   "parent": "relabel-after-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "10% 표본으로 오류율을 추정해 재라벨 여부 결정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "dataset-version-after-relabel",
+   "label": "재라벨 후 데이터셋 버전",
+   "parent": "relabel-after-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재라벨 결과를 새 버전으로 저장·비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "relabel-prioritization",
+   "label": "재라벨 우선순위",
+   "parent": "relabel-after-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류 가능성 순으로 예산 배분.",
    "related": [],
    "added": "2026-11-20"
   }
