@@ -41192,11 +41192,14 @@
    "label": "의심 샘플 재검수 순서",
    "parent": "confident-learning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자신도 순위로 사람 검수 비용 줄이기.",
+   "summary": "점수 낮은 순으로 사람 검수. 합성 실험: 100개 검수로 오류 97/247(무작위 12), 500개로 95% 회수. 수확 체감을 보고 정지 규칙을 정한다.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cleanlab-label-quality-score"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "cleanlab-label-quality-score",
@@ -48158,6 +48161,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "검수 상위 k개 중 진짜 오류 비율.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "review-stopping-rule",
+   "label": "검수 정지 규칙",
+   "parent": "human-relabel-triage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류율·예산·성능 개선으로 검수를 멈출 기준.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "double-annotation-review",
+   "label": "이중 검수",
+   "parent": "human-relabel-triage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 검수자 불일치를 전문가가 판정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "relabel-retrain-rounds",
+   "label": "정리→재학습 라운드",
+   "parent": "human-relabel-triage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수 후 재학습해 점수를 다시 매기는 반복.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "ambiguous-vs-wrong-label",
+   "label": "모호한 샘플 vs 오류 라벨",
+   "parent": "human-relabel-triage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 점수의 원인이 모호함인지 오류인지 구분.",
    "related": [],
    "added": "2026-11-20"
   }
