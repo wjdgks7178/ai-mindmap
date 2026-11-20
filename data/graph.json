@@ -42885,11 +42885,14 @@
       "label": "분류기 임계값 균형",
       "parent": "educational-quality-classifier",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "임계 3이 지식·일반 벤치 균형점.",
+      "summary": "FineWeb-Edu는 교육 점수 3 이상(1.3T 토큰), 임계값 3이 지식·추론과 HellaSwag 등 균형 최상, F1 82%. 1.71B·350B 토큰에서 MMLU 33→37%, ARC 46→57%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "educational-quality-classifier"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "frozen-embedding-regression",
@@ -52480,6 +52483,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "기술적 페이지 과대평가 방지.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "threshold-sweep-small-model",
+      "label": "소형 모델 임계값 스윕",
+      "parent": "classifier-threshold-tradeoff",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임계값마다 작은 모델로 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "specialization-vs-general",
+      "label": "특화와 일반 성능 균형",
+      "parent": "classifier-threshold-tradeoff",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "교육 점수 필터의 벤치마크 영향.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "data-quantity-vs-quality",
+      "label": "데이터 양 대 품질",
+      "parent": "classifier-threshold-tradeoff",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "임계값과 토큰 수의 관계.",
       "added": "2026-11-20",
       "related": []
     }
