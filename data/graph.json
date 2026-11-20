@@ -43056,11 +43056,15 @@
       "label": "산출물 고지 의무",
       "parent": "odc-by-license",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "공개 사용 시 출처 고지 문구.",
+      "summary": "ODC-By 1.0: 산출물(Produced Work)을 공개적으로 쓸 때 4.3항 고지 필요(예: Contains information from DATABASE NAME ... ODC Attribution License), 제작·내부 사용은 불필요. 법률 자문 아님.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "odc-by-license",
+        "odc-by-vs-cc-by-odbl"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "fineweb-pii-removal",
@@ -52853,6 +52857,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "함께 적용되는 약관 읽기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "produced-work-definition",
+      "label": "산출물 정의",
+      "parent": "produced-works-notice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "DB 내용 질의로 만든 작업물.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "publicly-definition",
+      "label": "공개적으로의 의미",
+      "parent": "produced-works-notice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "통제 하 사람 제외 기준.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "model-card-data-attribution",
+      "label": "모델 카드의 데이터 출처 표시",
+      "parent": "produced-works-notice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습 데이터 라이선스 고지 관행.",
       "added": "2026-11-20",
       "related": []
     }
