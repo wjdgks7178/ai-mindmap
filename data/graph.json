@@ -40856,11 +40856,14 @@
    "label": "스키마 환경",
    "parent": "schema-inference",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "TRAINING/SERVING 환경별 피처 요구 구분.",
+   "summary": "스키마 하나에서 TRAINING/SERVING별 요구 피처를 구분(default_environment·not_in_environment). 라벨 열의 서빙 오탐 제거.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "training-serving-skew"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "skew-drift-comparator",
@@ -46966,6 +46969,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "스키마에 없는 열이 들어올 때의 의미와 대응.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "label-column-handling",
+   "label": "라벨 열 처리",
+   "parent": "schema-environments",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 전용 라벨을 서빙 검증에서 제외하는 패턴.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "environment-exception-hygiene",
+   "label": "환경 예외 관리",
+   "parent": "schema-environments",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외가 쌓여 진짜 누락을 가리지 않게 하는 규칙.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "tfx-schema-proto",
+   "label": "Schema 프로토콜 버퍼",
+   "parent": "schema-environments",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "schema.proto 필드: presence·value_count·domain 구조.",
    "related": [],
    "added": "2026-11-20"
   }
