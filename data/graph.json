@@ -42824,11 +42824,14 @@
       "label": "SURT 키",
       "parent": "url-index-cdx",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "호스트를 뒤집어 정렬 가능하게 만든 URL 표현.",
+      "summary": "SURT는 호스트 역순+정규화(소문자·www·스킴·쿼리 정렬·fragment 제거). surt 0.3.1 실행: http와 https 변형이 같은 키 com,example)/path/page.html?a=1&b=2. 정렬하면 도메인이 모여 접두사 조회.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "url-index-cdx"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "cdx-toolkit",
@@ -52408,6 +52411,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "메뉴·구분자 줄 제거.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "url-normalization",
+      "label": "URL 정규화",
+      "parent": "surt-key",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소문자·쿼리 정렬 등 같은 페이지 판정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "prefix-range-query",
+      "label": "접두사 범위 조회",
+      "parent": "surt-key",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정렬 키로 도메인 전체 찾기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "public-suffix-list",
+      "label": "공개 접미사 목록",
+      "parent": "surt-key",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "co.uk 같은 등록 도메인 경계.",
       "added": "2026-11-20",
       "related": []
     }
