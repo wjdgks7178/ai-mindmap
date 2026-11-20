@@ -42049,11 +42049,14 @@
    "label": "외삽의 낙관 편향",
    "parent": "collection-benefit-extrapolation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "먼 구간 예측이 낙관적인 이유와 완화.",
+   "summary": "먼 구간 외삽은 매우 불안정. 시뮬(맞춤 형태 정확 가정): 평균 편향≈0이지만 sd 0.03~0.10, 잡음 0.01~0.02·4점이면 40%가 0.02+ 낙관 예측. 반복 평균·점 늘리기·범위 보고.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "inverse-power-law-fit"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "bad-learning-curves",
@@ -50445,6 +50448,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "맞춤에 쓴 점 수에 따라 결론이 흔들리는지 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "extrapolation-distance-limit",
+   "label": "외삽 거리 제한",
+   "parent": "extrapolation-optimism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정 구간의 2~4배 이내만 신뢰.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "curve-fit-uncertainty-bootstrap",
+   "label": "곡선 맞춤 불확실성 부트스트랩",
+   "parent": "extrapolation-optimism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 번 맞춰 예측 범위를 제시.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "model-misspecification-extrapolation",
+   "label": "맞춤 형태 오지정",
+   "parent": "extrapolation-optimism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "곡선 형태가 틀릴 때 생기는 체계적 편향.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "follow-up-measurement",
+   "label": "후속 실측 검증",
+   "parent": "extrapolation-optimism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외삽이 가리킨 구간의 일부를 실제로 측정.",
    "related": [],
    "added": "2026-11-20"
   }
