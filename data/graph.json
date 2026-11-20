@@ -41509,11 +41509,14 @@
    "label": "보정 주기와 비율",
    "parent": "calibration-items",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "공통 문항 비율과 간격을 정하는 법.",
+   "summary": "보정 문항 수가 적으면 경보가 빠르지만 헛경보가 잦다(20개: 99%, 400개: 10%). 한 주 값 대신 추세로 판단, 비용·지연·헛경보를 같이 본다.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "labeler-drift"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "edge-case-log-template",
@@ -48988,6 +48991,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기준선 대비 이탈을 경보하는 차트.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "false-alarm-rate",
+   "label": "헛경보율",
+   "parent": "calibration-frequency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "드리프트가 없는데 경보가 울리는 비율.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "moving-average-kappa",
+   "label": "이동 평균 kappa",
+   "parent": "calibration-frequency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 주를 합쳐 추세로 보는 kappa.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cusum-for-agreement",
+   "label": "누적합(CUSUM) 감시",
+   "parent": "calibration-frequency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 변화를 누적해 탐지하는 관리도 기법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "detection-delay-tradeoff",
+   "label": "탐지 지연과 비용",
+   "parent": "calibration-frequency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공통 문항 수에 따른 지연·비용 균형.",
    "related": [],
    "added": "2026-11-20"
   }
