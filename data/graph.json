@@ -40468,11 +40468,14 @@
    "label": "층화와 누수의 차이",
    "parent": "stratified-k-fold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "층화는 누수를 막지 못함.",
+   "summary": "층화는 클래스 비율, 누수 방지는 개체 분리. StratifiedKFold는 groups를 무시해 그룹이 학습·검증에 걸친다(직접 실험).",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "data-leakage"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "leave-p-out",
@@ -47224,6 +47227,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "층화가 폴드 간 지표 편차를 인위적으로 줄이는 효과.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "optimistic-validation-score",
+   "label": "낙관적 검증 점수",
+   "parent": "stratification-vs-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누수로 검증 점수가 부풀려지는 현상과 의심 신호.",
    "related": [],
    "added": "2026-11-20"
   }
