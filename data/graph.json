@@ -42305,11 +42305,15 @@
       "label": "암기의 세 요인",
       "parent": "memorization-in-llms",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "용량·반복·문맥 길이.",
+      "summary": "Carlini 2023: 암기는 모델 크기(10배당 약 19%p, R² 99.8%)·반복 횟수·문맥 길이(6B: 50토큰 33% → 450토큰 65%)에 로그 선형. 중복 제거로도 유출 완전 차단 불가.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "memorization-from-duplicates",
+        "training-data-extraction-attack"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "memorization-mitigation",
@@ -51119,6 +51123,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "한 문서에만 나온 문장의 암기 정의.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "extractable-memorization-definition",
+      "label": "추출 가능 암기 정의",
+      "parent": "memorization-three-factors",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "k토큰 문맥·그리디 디코딩 기준 정의.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "discoverability-phenomenon",
+      "label": "발견 가능성 현상",
+      "parent": "memorization-three-factors",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "긴 문맥에서만 드러나는 암기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "memorization-scaling-caveat",
+      "label": "모델 계열별 암기 차이",
+      "parent": "memorization-three-factors",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "계열을 바꾸면 스케일 규칙이 복잡해지는 이유.",
       "added": "2026-11-20",
       "related": []
     }
