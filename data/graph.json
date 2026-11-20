@@ -41116,11 +41116,14 @@
    "label": "그룹 겹침 검증",
    "parent": "group-definition",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드 간 겹치는 그룹이 0개인지 코드로 확인.",
+   "summary": "폴드마다 set(groups[train])&set(groups[test])가 0인지 assert. KFold는 groups를 무시해 20개 겹침. ID가 틀리면 검사도 무력.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "split-leakage-audit"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "missing-group-ids",
@@ -47848,6 +47851,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 PR마다 학습-평가 겹침을 재계산해 차단.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "split-assertion-test",
+   "label": "분할 단위 테스트",
+   "parent": "group-overlap-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "겹침 0·크기 균형을 파이프라인 assert로 자동화.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "warnings-as-errors",
+   "label": "경고를 오류로 승격",
+   "parent": "group-overlap-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "groups 무시 같은 경고를 실패로 만들기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "split-report-logging",
+   "label": "분할 기록 남기기",
+   "parent": "group-overlap-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹 겹침 0 확인을 실험 기록에 남겨 재현성 확보.",
    "related": [],
    "added": "2026-11-20"
   }
