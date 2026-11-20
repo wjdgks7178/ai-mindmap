@@ -43150,11 +43150,15 @@
       "label": "코퍼스 문서화 관행",
       "parent": "web-crawl-quality-issues",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "도메인·언어·오염을 기록해 공개.",
+      "summary": "Dodge 2021 제안: 메타데이터·포함된 데이터·제외된 데이터 3층 문서화. 금칙어 필터가 소수 집단 글을 더 지운 것을 제외 데이터 문서화의 이유로 제시.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "c4-audit-dodge",
+        "exclusion-writer"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "gopher-quality-heuristics",
@@ -53097,6 +53101,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "IP 호스팅 국가로 추정하는 한계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "datasheet-for-datasets",
+      "label": "데이터시트",
+      "parent": "corpus-documentation-practice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터셋 문서화 선행 제안.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "excluded-data-report",
+      "label": "제외 데이터 보고",
+      "parent": "corpus-documentation-practice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "필터별 제거 비율·표본 기록.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "documentation-maintenance",
+      "label": "문서화 갱신",
+      "parent": "corpus-documentation-practice",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "데이터 갱신 시 카드도 갱신.",
       "added": "2026-11-20",
       "related": []
     }
