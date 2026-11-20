@@ -42320,11 +42320,15 @@
       "label": "암기 완화 방법",
       "parent": "memorization-in-llms",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "중복 제거·차등 프라이버시·출력 필터.",
+      "summary": "정제·출처 선별, 중복 제거, DP-SGD, 출력 필터, 감사의 다층 방어. Carlini 2021: GPT-2 XL은 한 문서에 33번 삽입된 URL 전부 암기, 모든 방법이 불완전.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "memorization-three-factors",
+        "training-data-extraction-attack"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "pii-in-training-data",
@@ -51156,6 +51160,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "계열을 바꾸면 스케일 규칙이 복잡해지는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dp-sgd",
+      "label": "DP-SGD",
+      "parent": "memorization-mitigation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "개별 기록 영향을 제한하는 학습 알고리즘.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "output-memorization-filter",
+      "label": "출력 암기 필터",
+      "parent": "memorization-mitigation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "생성 결과에서 학습 원문 일치를 걸러 내기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "memorization-audit",
+      "label": "암기 감사",
+      "parent": "memorization-mitigation",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "추출 공격으로 배포 전 점검.",
       "added": "2026-11-20",
       "related": []
     }
