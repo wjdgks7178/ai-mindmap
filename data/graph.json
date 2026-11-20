@@ -40965,11 +40965,14 @@
    "label": "그룹별 점수 분석",
    "parent": "leave-one-group-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "그룹마다 점수 편차를 확인하는 방법.",
+   "summary": "LOGO의 그룹별 점수를 펼쳐 최저·퍼짐·크기를 본다. 합성 실험: 그룹 5만 0.45로 무너졌으나 평균 0.72·무작위 KFold 0.74에선 가려짐.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-statistics-slicing"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "leave-one-out",
@@ -47537,6 +47540,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "random_state 고정과 분할 저장.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "worst-group-performance",
+   "label": "최악 그룹 성능",
+   "parent": "per-group-score-analysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균이 아니라 최저 그룹·하위 분위수로 보는 지표.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "distribution-shift-between-groups",
+   "label": "그룹 간 분포 이동",
+   "parent": "per-group-score-analysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "나쁜 그룹의 입력 분포를 학습 그룹과 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "small-group-noise",
+   "label": "작은 그룹의 점수 노이즈",
+   "parent": "per-group-score-analysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플이 적은 그룹 점수 해석 주의.",
    "related": [],
    "added": "2026-11-20"
   }
