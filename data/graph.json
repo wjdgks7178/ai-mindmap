@@ -42863,11 +42863,15 @@
       "label": "도메인 특화 코퍼스 만들기",
       "parent": "url-index-cdx",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "색인으로 특정 도메인 페이지만 선별.",
+      "summary": "Parquet 색인 한 행 그룹(165만 행)에서 wa.gov+text/html 57,801행 선별, 첫 행의 warc 오프셋·길이로 18,075바이트만 받아 100,494바이트 WARC 응답 레코드 복원(직접 실행).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "columnar-index-parquet",
+        "http-range-sampling"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "additive-scoring-prompt",
@@ -52951,6 +52955,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "warc 위치 열과 Range 요청 결합.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "domain-list-selection",
+      "label": "도메인 목록 정하기",
+      "parent": "domain-specific-corpus-cc",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "분야별 대상 도메인 선정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "index-language-accuracy",
+      "label": "색인 언어 판정 정확도",
+      "parent": "domain-specific-corpus-cc",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "content_languages의 오류 가능성.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "domain-corpus-licensing",
+      "label": "도메인 코퍼스 이용 조건",
+      "parent": "domain-specific-corpus-cc",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "공공 콘텐츠의 약관·개인정보 확인.",
       "added": "2026-11-20",
       "related": []
     }
