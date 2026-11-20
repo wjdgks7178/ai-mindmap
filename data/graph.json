@@ -41537,11 +41537,14 @@
    "label": "규칙서 버전 관리",
    "parent": "guideline-edge-case-log",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "규칙 변경 시 라벨 데이터 버전 구분.",
+   "summary": "규칙서에 버전을 매기고 라벨 레코드에 사용 버전을 저장해 규칙 변경 후 재검토 범위를 정한다. 장난감 예: 166건 → 106건(35%)으로 축소.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "edge-case-log-template"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "relabel-after-rule-change",
@@ -49082,6 +49085,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사례 원문에서 개인정보를 가리는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "semantic-vs-patch-version",
+   "label": "의미 변경 vs 표현 보강 버전",
+   "parent": "guideline-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마이너 이상 vs 패치로 재라벨링 필요 여부 표시.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "guideline-in-git",
+   "label": "규칙서를 git으로 관리",
+   "parent": "guideline-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경 이력과 diff를 그대로 얻는 방식.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "version-filtered-training",
+   "label": "버전 기준 학습 데이터 필터",
+   "parent": "guideline-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최신 버전 라벨만 학습·평가에 쓰기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "change-summary-template",
+   "label": "규칙 변경 요약 양식",
+   "parent": "guideline-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "날짜·변경 내용·이유·영향 클래스 기록.",
    "related": [],
    "added": "2026-11-20"
   }
