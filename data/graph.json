@@ -42927,11 +42927,14 @@
       "label": "주석 후 증류 패턴",
       "parent": "llm-as-data-annotator",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "LLM 주석으로 작은 분류기를 학습해 비용 절감.",
+      "summary": "FineWeb-Edu: Llama-3-70B가 46만 건 주석, 41만 건으로 선형 분류기 학습·5만 검증 F1 82%, 15조 토큰에 적용해 1.3T 토큰. 큰 모델은 소량, 작은 모델은 대량.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "llm-as-data-annotator"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "llm-annotation-bias",
@@ -52588,6 +52591,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "싼 필터를 먼저 적용.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "annotation-sample-representativeness",
+      "label": "주석 표본 대표성",
+      "parent": "annotate-then-distill",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "소량 표본이 전체를 대표해야 하는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "gold-set-check",
+      "label": "사람 정답 세트 점검",
+      "parent": "annotate-then-distill",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM 주석을 소량 사람 라벨로 검증.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "distilled-classifier-eval",
+      "label": "증류 분류기 평가",
+      "parent": "annotate-then-distill",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM 대비 일치율·F1 측정.",
       "added": "2026-11-20",
       "related": []
     }
