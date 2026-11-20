@@ -42242,11 +42242,14 @@
       "label": "재시작 가능한 데이터 파이프라인",
       "parent": "datatrove",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "완료 작업 기록으로 이어 돌리기.",
+      "summary": "datatrove는 completions/rank 파일로 완료 조각을 기록해 재실행 시 건너뜀. 직접 실험: 4조각 중 00002 삭제 후 재실행하니 3개 건너뛰고 rank=2만 처리.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "pipeline-executor-types"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "exclusion-writer",
@@ -51012,6 +51015,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "이메일·IP를 가리는 후처리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "idempotent-pipeline-step",
+      "label": "멱등 처리 단계",
+      "parent": "resumable-data-pipelines",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "재실행해도 결과가 중복되지 않는 설계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "stale-completion-marker",
+      "label": "낡은 완료 표시 문제",
+      "parent": "resumable-data-pipelines",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "설정 변경 후에도 건너뛰는 위험.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "pipeline-depends",
+      "label": "실행기 의존 관계",
+      "parent": "resumable-data-pipelines",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "단계 간 depends와 대기.",
       "added": "2026-11-20",
       "related": []
     }
