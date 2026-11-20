@@ -41463,11 +41463,14 @@
    "label": "일부 표본만 이중 라벨링",
    "parent": "double-annotation-adjudication",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "비용을 줄이는 설계.",
+   "summary": "일부만 이중 라벨해 일치도 감시. 시뮬: 10%(1,000개)면 kappa 범위 0.62~0.68, 비용 1.1배. 2%는 폭 0.17로 불안정. 표본은 무작위.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "target-agreement-setting"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "golden-items",
@@ -48799,6 +48802,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨러 편향을 보정해 합의 품질을 올리는 기법(Snow 2008).",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "quality-sampling-plan",
+   "label": "품질 표본 추출 계획",
+   "parent": "sampled-double-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위·층화 표본으로 이중 라벨 대상 정하기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "weekly-agreement-dashboard",
+   "label": "주간 일치도 대시보드",
+   "parent": "sampled-double-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주차별 kappa로 라벨 품질 드리프트 감시.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "error-rate-from-disagreement",
+   "label": "불일치율로 오류율 추정",
+   "parent": "sampled-double-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립·동일 정확도 가정으로 개인 오류율 근사.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "new-annotator-onboarding-ratio",
+   "label": "신규 라벨러 투입 시 이중 비율",
+   "parent": "sampled-double-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기에 이중 비율을 높여 빨리 보정.",
    "related": [],
    "added": "2026-11-20"
   }
