@@ -42016,11 +42016,15 @@
    "label": "Leave-one-out 데이터 가치",
    "parent": "data-influence-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 샘플만 뺀 성능 차이의 한계.",
+   "summary": "한 점을 뺀 성능 차이로 데이터 가치를 잰다. 복제본이 서로 대체해 과소평가. 실험(10개): LOO 합 0.076 vs 샤플리 합 0.442(효율성), 복제 3·4는 LOO 0.002.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "tmc-shapley",
+    "beta-shapley"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "inverse-power-law-fit",
@@ -50313,6 +50317,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨 자체가 모호해 정확도를 제한하는 경우.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "duplicate-data-substitution",
+   "label": "중복 데이터의 대체 효과",
+   "parent": "leave-one-out-value",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복제본이 서로의 기여를 가려 LOO가 작아지는 현상.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "influence-function-valuation",
+   "label": "영향 함수 기반 가치 평가",
+   "parent": "leave-one-out-value",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기울기로 한 점의 영향을 근사하는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "loo-noise-sensitivity",
+   "label": "LOO의 잡음 민감성",
+   "parent": "leave-one-out-value",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 데이터에서 변화가 학습 잡음에 묻히는 문제.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "valuation-vs-deletion",
+   "label": "가치 평가 결과로 삭제하지 않기",
+   "parent": "leave-one-out-value",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 값은 검토 후보일 뿐이라는 원칙.",
    "related": [],
    "added": "2026-11-20"
   }
