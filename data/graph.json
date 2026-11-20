@@ -41938,11 +41938,14 @@
    "label": "오류 분석 스프레드시트",
    "parent": "error-cause-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사례×범주 표로 비교하는 방법.",
+   "summary": "틀린 예시×범주 체크 표. 비율 합은 중복으로 100% 초과 가능(장난감 140%), 상한은 열의 합집합으로 계산(Dog+Blurry 70% vs 단순합 80%).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "error-category-ceiling"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "human-benchmark-error",
@@ -50219,6 +50222,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "낮은 가치 점을 오라벨 후보로 검토.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "category-definition-one-liner",
+   "label": "범주 정의 한 줄",
+   "parent": "error-analysis-spreadsheet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "체크 기준을 통일하는 한 줄 정의.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "union-ceiling-calculation",
+   "label": "합집합 상한 계산",
+   "parent": "error-analysis-spreadsheet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주 열의 합집합으로 실제 상한 계산.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "memo-first-categorization",
+   "label": "메모 먼저 범주화",
+   "parent": "error-analysis-spreadsheet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사유 메모에서 반복 패턴을 범주로 만드는 순서.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "error-analysis-reanalysis",
+   "label": "오류 분석 재분석",
+   "parent": "error-analysis-spreadsheet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개선 후 같은 예시 ID로 다시 분석.",
    "related": [],
    "added": "2026-11-20"
   }
