@@ -42035,11 +42035,14 @@
    "label": "역멱법칙 맞춤",
    "parent": "collection-benefit-extrapolation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "a+b·n^(-c) 형태로 오류 곡선 근사.",
+   "summary": "오류≈a+b·n^(-c)로 학습 곡선 외삽. 실험: n≤800 맞춤이 n=25,600 오류 0.283을 정확히 예측했으나 맞춤 점 수에 따라 점근값이 0.271~0.282로 변동. 안정성 점검 필요.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "learning-curve"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "extrapolation-optimism",
@@ -50409,6 +50412,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "거리 가중 KNN으로의 확장.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "asymptotic-error",
+   "label": "점근 오류",
+   "parent": "inverse-power-law-fit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 무한히 늘려도 남는 오류 a의 의미.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "log-spaced-sample-sizes",
+   "label": "로그 간격 표본 크기",
+   "parent": "inverse-power-law-fit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1×·2×·4×로 데이터 양을 늘려 곡선 측정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "fit-range-stability",
+   "label": "맞춤 범위 안정성",
+   "parent": "inverse-power-law-fit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞춤에 쓴 점 수에 따라 결론이 흔들리는지 확인.",
    "related": [],
    "added": "2026-11-20"
   }
