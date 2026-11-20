@@ -42630,11 +42630,14 @@
       "label": "Common Crawl 경로 파일",
       "parent": "warc-wat-wet",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "wet.paths.gz 등으로 파일 목록 얻기.",
+      "summary": "CC-MAIN-2024-10의 warc·wat·wet.paths.gz는 각 90,000줄(줄=파일 경로, 약 180KB). 첫 WET 파일 약 107MB. Range 요청으로 앞부분만 열어 warcinfo와 conversion 레코드 확인.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "warc-wat-wet"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "http-range-sampling",
@@ -51763,6 +51766,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "ShiftScaleRotate→Affine 같은 예고.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "http-range-request",
+      "label": "HTTP Range 요청",
+      "parent": "cc-paths-files",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "파일 일부만 받는 방법.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cc-crawl-ids",
+      "label": "크롤 ID 읽기",
+      "parent": "cc-paths-files",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "CC-MAIN-연도-주차 형식.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "sample-wet-files",
+      "label": "WET 파일 샘플링",
+      "parent": "cc-paths-files",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "몇 개 파일로 정제 파이프라인 시험.",
       "added": "2026-11-20",
       "related": []
     }
