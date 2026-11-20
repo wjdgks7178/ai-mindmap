@@ -43099,11 +43099,15 @@
       "label": "C4 감사(Dodge 등)",
       "parent": "web-crawl-quality-issues",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "도메인·지리·오염·블록리스트 분석.",
+      "summary": "Dodge 2021 C4.EN 감사: 최다 사이트 patents.google.com, .mil 3,387만 토큰, 92% 2011~2019, 51.3% 미국 호스팅(인도 3.4%), 기계 생성·벤치마크 오염, 블록리스트 편향.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "bad-words-list-filter",
+        "c4-filter-rules"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "blocklist-filter-bias",
@@ -53060,6 +53064,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "겹침 예제 빼고 점수 병기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "web-source-distribution",
+      "label": "웹 출처 분포 분석",
+      "parent": "c4-audit-dodge",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "상위 도메인·TLD 분포표 만들기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "utterance-date-proxy",
+      "label": "작성 시기 대리 지표",
+      "parent": "c4-audit-dodge",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "인터넷 아카이브 최초 색인일.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "geolocation-proxy",
+      "label": "지리 대리 지표",
+      "parent": "c4-audit-dodge",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "IP 호스팅 국가로 추정하는 한계.",
       "added": "2026-11-20",
       "related": []
     }
