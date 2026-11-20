@@ -41018,11 +41018,14 @@
    "label": "분할 후 누수 점검",
    "parent": "document-level-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정확·퍼지·임베딩 유사도로 겹침 점검.",
+   "summary": "정확 일치→n-gram/MinHash→임베딩→LLM 순으로 분할 간 겹침 점검. 직접 실험: 의역은 5-gram Jaccard 0.00. 의역 오염 논문(arXiv 2311.04850).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-leakage"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "small-test-set-variance",
@@ -47656,6 +47659,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "LLM 학습·평가 오염을 줄이는 중복 제거.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rephrased-sample-contamination",
+   "label": "의역 샘플 오염",
+   "parent": "split-leakage-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의역·번역 변형이 필터를 통과하는 오염.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "llm-decontaminator",
+   "label": "LLM decontaminator",
+   "parent": "split-leakage-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM으로 의미적 겹침을 판정하는 도구.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "ngram-overlap-test",
+   "label": "n-gram 겹침 검사",
+   "parent": "split-leakage-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "13-gram 등 기준의 원리와 한계.",
    "related": [],
    "added": "2026-11-20"
   }
