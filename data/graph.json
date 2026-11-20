@@ -41960,11 +41960,14 @@
    "label": "TMC-Shapley",
    "parent": "data-influence-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "몬테카를로 절단으로 샤플리 근사.",
+   "summary": "무작위 순열+성능 포화 시 절단으로 샤플리를 근사. 직접 검증: n=8에서 정확값과 순위 상관 T=50 0.98, 오차 ~0.01 잔존(절단 편향), 효율성 공리 합=0.047 확인.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cleanlab-label-quality-score"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "beta-shapley",
@@ -50125,6 +50128,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "과제·데이터·모델 조건을 함께 밝히는 습관.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shapley-efficiency-axiom",
+   "label": "샤플리 효율성 공리",
+   "parent": "tmc-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기여 합이 전체 효용과 같다는 성질.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "truncation-tolerance",
+   "label": "절단 허용오차",
+   "parent": "tmc-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용오차가 편향·계산량에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shapley-convergence-check",
+   "label": "샤플리 수렴 점검",
+   "parent": "tmc-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순열 수를 늘려 순위가 안정되는지 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "utility-function-choice",
+   "label": "효용 함수 선택",
+   "parent": "tmc-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 정확도·손실 등 효용 정의가 값에 미치는 영향.",
    "related": [],
    "added": "2026-11-20"
   }
