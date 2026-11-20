@@ -42227,11 +42227,12 @@
       "label": "파이프라인 실행기 종류",
       "parent": "datatrove",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "Local·Slurm·Ray·Jobs의 선택 기준.",
+      "summary": "datatrove 0.10.1 실행기: Local·Slurm·Ray·Jobs(experimental). tasks=조각 수, workers=동시 수, 재실행 시 완료 조각 건너뜀. 직접 실행: 작은 데이터에선 4프로세스 0.53초가 1프로세스 0.15초보다 느림.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "resumable-data-pipelines",
@@ -50942,6 +50943,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "오염 예제를 뺀 점수 병기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "datatrove-skip-completed",
+      "label": "skip_completed와 재개",
+      "parent": "pipeline-executor-types",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "완료 표시로 중단 후 이어 돌리기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "slurm-array-jobs",
+      "label": "Slurm 배열 작업",
+      "parent": "pipeline-executor-types",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "max_array_size와 작업 분할.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "parallel-overhead-small-data",
+      "label": "작은 데이터의 병렬 오버헤드",
+      "parent": "pipeline-executor-types",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "프로세스 기동 비용 vs 병렬 이득.",
       "added": "2026-11-20",
       "related": []
     }
