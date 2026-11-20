@@ -42280,11 +42280,14 @@
       "label": "중복 제거 후 품질 점검",
       "parent": "per-snapshot-vs-global-dedup",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "남은 데이터와 제거된 데이터를 비교.",
+      "summary": "FineWeb 2013-48: 전역 중복 제거로 남은 10%가 제거된 90%보다 품질이 나쁨(광고·키워드 나열 많음). 지운 데이터를 보관해 남은/제거 두 집합으로 모델 학습·비교.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "exclusion-writer"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "training-data-extraction-attack",
@@ -51227,6 +51230,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "중복 제거 전 군집 히스토그램 점검.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "removed-vs-kept-comparison",
+      "label": "제거·보존 집합 비교 실험",
+      "parent": "dedup-quality-check",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "두 집합으로 소형 모델 학습해 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "blind-quality-review",
+      "label": "이름표 가린 품질 검수",
+      "parent": "dedup-quality-check",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람이 섞어 읽고 맞히기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dedup-scope-choice",
+      "label": "중복 제거 범위 선택",
+      "parent": "dedup-quality-check",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "전역 vs 스냅샷별 결정 기준.",
       "added": "2026-11-20",
       "related": []
     }
