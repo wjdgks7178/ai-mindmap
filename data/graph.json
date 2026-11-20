@@ -40508,11 +40508,12 @@
    "label": "학습 곡선",
    "parent": "leave-one-out-cv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 크기에 따른 성능 변화.",
+   "summary": "학습 크기별 학습·검증 점수 그래프. 수렴·간극으로 편향/분산과 데이터 추가 효과 진단. digits 실험으로 모델별 차이 확인.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-20"
   },
   {
    "id": "cv-compute-cost",
@@ -47308,6 +47309,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "평균±표준편차와 폴드별 점수를 함께 쓰는 이유.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "validation-curve",
+   "label": "검증 곡선",
+   "parent": "learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하이퍼파라미터 값에 따른 학습·검증 점수로 과적합 구간 찾기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "data-more-worth",
+   "label": "데이터를 더 모을 가치 판단",
+   "parent": "learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 점수 추세로 라벨링 투자 결정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "learning-curve-display",
+   "label": "LearningCurveDisplay",
+   "parent": "learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 곡선을 바로 그리는 sklearn 도구.",
    "related": [],
    "added": "2026-11-20"
   }
