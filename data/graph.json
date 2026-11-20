@@ -41844,11 +41844,14 @@
    "label": "층화가 변동을 줄이는 효과",
    "parent": "small-data-validation-strategy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드 균질화로 표준편차가 작아 보이는 문제.",
+   "summary": "층화 폴드는 폴드 간 sd를 줄이지만(0.0526→0.0291) 진짜 불확실성(0.027)은 그대로라 naive SE가 진짜의 47%로 낙관적. 공정 평가엔 부트스트랩·독립 시험 필요.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cv-error-bar-underestimation"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "simple-model-small-data",
@@ -49756,6 +49759,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "전부 맞힌 작은 시험의 구간 해석.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "precision-vs-accuracy-of-estimate",
+   "label": "추정의 정밀함 vs 정확함",
+   "parent": "stratification-shrinks-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오차 막대가 작은 것과 불확실성이 작은 것의 차이.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "stratified-metric-undefined-fix",
+   "label": "층화로 지표 미정의 막기",
+   "parent": "stratification-shrinks-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드에 클래스가 없어 지표가 정의되지 않는 문제 해결.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "report-split-method",
+   "label": "분할 방식 명시 보고",
+   "parent": "stratification-shrinks-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화·셔플·시드 등 분할 조건을 함께 기록.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "independent-uncertainty-estimate",
+   "label": "독립적 불확실성 추정",
+   "parent": "stratification-shrinks-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 외 방법으로 점수 불확실성을 따로 추정.",
    "related": [],
    "added": "2026-11-20"
   }
