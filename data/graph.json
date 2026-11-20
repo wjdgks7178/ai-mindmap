@@ -42256,11 +42256,12 @@
       "label": "제외 문서 저장",
       "parent": "datatrove",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "필터가 버린 문서를 따로 남겨 점검.",
+      "summary": "필터에 exclusion_writer를 달면 탈락 문서를 별도 저장하고 이유는 metadata.filter_reason, 통계는 dropped_이유. 직접 실행: 100개 중 70 통과 30 제외 파일 저장.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "duplicate-cluster-size",
@@ -51048,6 +51049,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "단계 간 depends와 대기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "filter-reason-stats",
+      "label": "필터 이유별 통계",
+      "parent": "exclusion-writer",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "dropped_* 카운터로 규칙 영향 파악.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "false-removal-audit",
+      "label": "오삭제 표본 감사",
+      "parent": "exclusion-writer",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "제외 파일에서 무작위 점검.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "filter-threshold-tuning",
+      "label": "필터 임계값 조정 루프",
+      "parent": "exclusion-writer",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "제외 파일 비교로 기준 조정.",
       "added": "2026-11-20",
       "related": []
     }
