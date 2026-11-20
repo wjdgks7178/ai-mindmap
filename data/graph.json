@@ -42067,11 +42067,14 @@
    "label": "나쁜 학습 곡선",
    "parent": "collection-benefit-extrapolation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터를 늘려도 성능이 안 오르는 경우.",
+   "summary": "데이터를 늘려도 검증 점수가 안 오르는 곡선. 실험: 라벨 30% 노이즈 0.67 수렴, 무작위 특징 0.5, 선형 모델+XOR 0.43 하락. 노이즈·특징·모델 구조·분포·버그부터 점검.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "learning-curve"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "per-slice-learning-curve",
@@ -50540,6 +50543,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "전체 최고가 아니라 과제별 최고를 보는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "high-bias-learning-curve",
+   "label": "높은 편향 학습 곡선",
+   "parent": "bad-learning-curves",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·검증 점수가 모두 낮게 수렴하는 패턴.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "noisy-label-plateau",
+   "label": "라벨 노이즈 정체",
+   "parent": "bad-learning-curves",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈 때문에 곡선이 낮게 정체하는 현상.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "uninformative-features-curve",
+   "label": "정보 없는 특징의 곡선",
+   "parent": "bad-learning-curves",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증이 우연 수준에서 평평한 경우.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "pre-collection-checklist",
+   "label": "데이터 수집 전 점검표",
+   "parent": "bad-learning-curves",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추가 수집 전에 원인을 소거하는 체크리스트.",
    "related": [],
    "added": "2026-11-20"
   }
