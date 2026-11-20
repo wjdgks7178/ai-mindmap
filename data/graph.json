@@ -40520,11 +40520,12 @@
    "label": "교차 검증 계산 비용",
    "parent": "leave-one-out-cv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델 수와 학습 시간.",
+   "summary": "비용=모델 수×학습 시간. digits 실험: 5-폴드 0.07초, LOO 5.96초로 85배 차이인데 정확도는 비슷. 병렬·폴드 축소·홀드아웃으로 절감.",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-20"
   },
   {
    "id": "pydeequ",
@@ -47342,6 +47343,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 곡선을 바로 그리는 sklearn 도구.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "n-jobs-parallel-cv",
+   "label": "n_jobs 병렬 교차검증",
+   "parent": "cv-compute-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드를 CPU 코어에 나눠 실행하기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cv-budget-planning",
+   "label": "교차검증 예산 계획",
+   "parent": "cv-compute-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "H×k×r 곱셈으로 총 학습 횟수 산정.",
    "related": [],
    "added": "2026-11-20"
   }
