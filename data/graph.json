@@ -41644,11 +41644,15 @@
    "label": "층화와 그룹의 충돌",
    "parent": "stratified-train-test-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "둘을 동시에 만족시키는 도구 선택.",
+   "summary": "층화는 비율, 그룹은 누수 방지. 실험: StratifiedKFold 환자 겹침 82~88, GroupKFold 양성 비율 0.111~0.187, StratifiedGroupKFold는 겹침 0·비율 0.146~0.155.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "stratified-group-kfold",
+    "group-overlap-check"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "seed-sweep-reporting",
@@ -49343,6 +49347,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "crosstab으로 속성 분포가 유지됐는지 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "group-size-skew",
+   "label": "그룹 크기 편차",
+   "parent": "stratify-vs-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹마다 샘플 수가 달라 층화가 깨지는 원인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "within-group-label-mixing",
+   "label": "그룹 내 라벨 혼재",
+   "parent": "stratify-vs-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 그룹에 양성·음성이 섞인 경우의 층화.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "fold-balance-table",
+   "label": "폴드 균형 표",
+   "parent": "stratify-vs-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드별 크기·양성 비율·겹침을 한눈에 점검.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "few-groups-strategy",
+   "label": "그룹이 적을 때 전략",
+   "parent": "stratify-vs-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹 수가 적을 때 반복 분할·폴드 수 축소.",
    "related": [],
    "added": "2026-11-20"
   }
