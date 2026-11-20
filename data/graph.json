@@ -40885,11 +40885,14 @@
    "label": "슬라이스별 통계",
    "parent": "schema-inference",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "국가 등 값별로 나눠 통계를 계산.",
+   "summary": "피처 값별(국가·교차·지정값)로 통계를 따로 계산해 전체 평균에 묻힌 집단 문제를 발견. 전체 통계도 함께 생성.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-slicing"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "schema-human-review",
@@ -47050,6 +47053,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "날짜 단위 데이터 조각을 이전 스팬과 비교하는 구조.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "slice-cardinality-cost",
+   "label": "슬라이스 개수와 비용",
+   "parent": "data-statistics-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "값 종류가 많은 피처로 자를 때 폭증하는 조각 수 관리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cross-feature-slicing",
+   "label": "교차 슬라이싱",
+   "parent": "data-statistics-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 피처 조합(국가×주)으로 자르는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "slice-based-fairness-check",
+   "label": "슬라이스 기반 공정성 점검",
+   "parent": "data-statistics-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단별 통계 차이로 편향 단서 찾기.",
    "related": [],
    "added": "2026-11-20"
   }
