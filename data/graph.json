@@ -41105,11 +41105,14 @@
    "label": "다축 그룹(환자+기관)",
    "parent": "group-definition",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "두 식별자가 모두 유사성을 만들 때 묶는 법.",
+   "summary": "환자+병원처럼 식별자가 둘이면 연결 성분으로 묶는다. 이동 샘플 3%면 덩어리 2개, 10%면 1개로 붕괴해 GroupKFold(5) 불가(합성 실험).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "group-overlap-check"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "group-overlap-check",
@@ -47920,6 +47923,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할 전 누락률을 수치로 보고하는 습관.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "connected-components-grouping",
+   "label": "연결 성분 그룹핑",
+   "parent": "multi-axis-grouping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "union-find로 두 축이 연결된 샘플을 한 덩어리로.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "bridge-sample-handling",
+   "label": "다리 샘플 처리",
+   "parent": "multi-axis-grouping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 덩어리를 연결하는 소수 샘플을 제외·격리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "site-generalization-test",
+   "label": "기관 일반화 평가",
+   "parent": "multi-axis-grouping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 병원에서의 성능을 별도로 재는 설계.",
    "related": [],
    "added": "2026-11-20"
   }
