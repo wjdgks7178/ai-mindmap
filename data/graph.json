@@ -41304,11 +41304,14 @@
    "label": "모델 용량과 노이즈",
    "parent": "label-noise-benchmarks",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "노이즈 많은 데이터에서 작은 모델이 유리할 수 있다는 관찰.",
+   "summary": "노이즈 30%에서 제한 없는 트리는 0.882→0.638로 급락(암기), 단순 모델은 완만, 포레스트는 0.858로 오히려 최고. 문제는 용량보다 규제 없는 암기.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "corrected-test-labels"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "cross-val-predict",
@@ -48383,6 +48386,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "수정된 시험 세트와 오류 갤러리 사용법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "memorization-of-noisy-labels",
+   "label": "노이즈 라벨 암기",
+   "parent": "model-capacity-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 틀린 라벨까지 맞추는 과적합.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "early-stopping-noise",
+   "label": "조기 종료와 노이즈",
+   "parent": "model-capacity-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "암기 시점 전에 멈춰 노이즈 영향을 줄이는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "ensemble-noise-robustness",
+   "label": "앙상블의 노이즈 내성",
+   "parent": "model-capacity-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균이 개별 모델의 암기를 상쇄하는 효과.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "noise-robust-loss",
+   "label": "노이즈에 강한 손실",
+   "parent": "model-capacity-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 오류의 영향을 줄이는 손실 함수.",
    "related": [],
    "added": "2026-11-20"
   }
