@@ -41062,11 +41062,15 @@
    "label": "늦은 분할 오류",
    "parent": "augmentation-group-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전처리·증강을 분할 전에 하는 실수.",
+   "summary": "전처리·증강을 분할보다 먼저 하는 실수. 공식 실험 0.76 vs 0.5, 직접 실험 증강 후 분할 0.98 vs 분할 후 증강 0.50. Pipeline으로 방지.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "data-leakage",
+    "preprocessing-leakage"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "test-set-no-augmentation",
@@ -47728,6 +47732,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터에 맞게 해밍 거리 임계를 정하는 법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "sklearn-pipeline-leakage-guard",
+   "label": "Pipeline으로 누수 막기",
+   "parent": "late-split-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전처리와 모델을 묶어 폴드마다 fit 범위를 제한.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shuffled-label-sanity-check",
+   "label": "정답 섞기 점검",
+   "parent": "late-split-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "레이블을 섞어 파이프라인 점수가 0.5 근처인지 확인.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "oversampling-before-split",
+   "label": "분할 전 오버샘플링",
+   "parent": "late-split-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SMOTE 등을 분할 전에 하면 생기는 누수.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "feature-selection-leakage",
+   "label": "특성 선택 누수",
+   "parent": "late-split-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 데이터로 특성을 고르는 누수.",
    "related": [],
    "added": "2026-11-20"
   }
