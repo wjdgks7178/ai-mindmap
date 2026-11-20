@@ -42955,11 +42955,14 @@
       "label": "일관되지만 틀린 주석",
       "parent": "llm-as-data-annotator",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "일치도와 정확도의 차이.",
+      "summary": "시뮬레이션: 공유 편향 주석자 둘은 일치 76.9%·카파 0.54인데 정확도 61%, 독립 잡음 주석자는 카파 0.35인데 정확도 80%. 일치도는 정확도가 아님.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "llm-annotation-bias"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "annotation-cost-comparison",
@@ -52649,6 +52652,28 @@
       "status": "planned",
       "priority": 3,
       "summary": "장황함 편향 점검.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "reliability-vs-validity",
+      "label": "신뢰성과 타당성",
+      "parent": "consistent-but-wrong",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "반복 일치 대 정답 일치.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "cross-model-annotation",
+      "label": "교차 모델 채점",
+      "parent": "consistent-but-wrong",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "서로 다른 모델·프롬프트로 검증.",
       "added": "2026-11-20",
       "related": []
     }
