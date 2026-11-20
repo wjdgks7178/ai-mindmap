@@ -41580,11 +41580,14 @@
    "label": "unknown 허용 출력",
    "parent": "llm-labeler-guideline-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "불확실할 때 라벨을 거부하게 하는 설계.",
+   "summary": "LLM 라벨러에 unknown(보류)을 허용해 불확실 항목을 사람에게 넘김. 분류기 시뮬: 임계 0.7이면 커버 0.42·정확도 0.81, 사람이 0.95로 처리 시 최종 0.891.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cannot-decide-option"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "moderation-guideline-refinement",
@@ -49213,6 +49216,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "적용 후 주기적 표본 검수와 재검증.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "risk-coverage-tradeoff",
+   "label": "위험-커버리지 트레이드오프",
+   "parent": "llm-unknown-option",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절을 늘리면 정확도↑·커버리지↓.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "llm-confidence-calibration",
+   "label": "LLM 확신도 보정",
+   "parent": "llm-unknown-option",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 말하는 확신과 실제 정확도의 차이.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "unknown-rate-monitoring",
+   "label": "unknown 비율 모니터링",
+   "parent": "llm-unknown-option",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "너무 높거나 낮은 보류 비율의 의미.",
    "related": [],
    "added": "2026-11-20"
   }
