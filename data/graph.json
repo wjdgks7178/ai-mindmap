@@ -42899,11 +42899,14 @@
       "label": "동결 임베딩+선형 회귀",
       "parent": "educational-quality-classifier",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "임베딩 위에 얹는 가벼운 점수 모델.",
+      "summary": "FineWeb-Edu 분류기: Snowflake-arctic-embed-m 동결 + 선형 회귀, 41만 주석 20에폭 lr 3e-4, 5만 검증 F1 선택. 장난감 실험: Ridge 학습 0.6초.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "educational-quality-classifier"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "classifier-inference-cost",
@@ -52516,6 +52519,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "임계값과 토큰 수의 관계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "linear-probe",
+      "label": "선형 프로브",
+      "parent": "frozen-embedding-regression",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "동결 표현 위에 선형 헤드만 학습.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "teacher-bias-inheritance",
+      "label": "스승 편향 상속",
+      "parent": "frozen-embedding-regression",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "LLM 주석의 편향이 분류기에 전이.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "embedding-model-choice",
+      "label": "임베딩 모델 선택",
+      "parent": "frozen-embedding-regression",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "품질 분류기용 임베딩 고르기.",
       "added": "2026-11-20",
       "related": []
     }
