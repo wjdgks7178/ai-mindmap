@@ -40482,11 +40482,12 @@
    "label": "Leave-P-Out",
    "parent": "leave-one-out-cv",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "p개씩 빼는 모든 조합 C(n,p).",
+   "summary": "p개씩 빼는 모든 조합 C(n,p)를 시험하는 교차검증. p>1이면 테스트가 겹치고 계산량이 폭발(C(100,5)=75,287,520).",
    "added": "2026-11-18",
-   "related": []
+   "related": [],
+   "done": "2026-11-20"
   },
   {
    "id": "cv-variance-bias-tradeoff",
@@ -47238,6 +47239,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "누수로 검증 점수가 부풀려지는 현상과 의심 신호.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "shuffle-split",
+   "label": "ShuffleSplit",
+   "parent": "leave-p-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위로 여러 번 학습/테스트를 나누는 분할기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "combinatorial-cost-cv",
+   "label": "교차검증의 조합 폭발",
+   "parent": "leave-p-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "C(n,p) 증가와 현실적인 분할 수 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "exhaustive-vs-sampled-cv",
+   "label": "전수 vs 표본 교차검증",
+   "parent": "leave-p-out",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 조합 vs 무작위 일부 분할 비교.",
    "related": [],
    "added": "2026-11-20"
   }
