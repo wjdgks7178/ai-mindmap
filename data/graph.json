@@ -41994,11 +41994,15 @@
    "label": "KNN-Shapley",
    "parent": "data-influence-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "KNN에서 닫힌 형태로 빠르게 계산.",
+   "summary": "KNN 효용에서는 거리순 정렬+점화식으로 샤플리를 O(N log N) 정확 계산(Jia 2019). 직접 구현이 열거 정확값과 일치(차 6e-16)·합=U(전체), N=10만에서 0.05초.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "tmc-shapley",
+    "leave-one-out-value"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "opendataval",
@@ -50361,6 +50365,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "낮은 값은 검토 후보일 뿐이라는 원칙.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "knn-utility",
+   "label": "KNN 효용 함수",
+   "parent": "knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가까운 K개 중 정답 일치 비율로 효용을 정의.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "embedding-space-valuation",
+   "label": "임베딩 공간에서의 가치 평가",
+   "parent": "knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KNN을 대리 모델로 대규모 데이터 가치 계산.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "lsh-approximate-knn-shapley",
+   "label": "LSH 근사 KNN-Shapley",
+   "parent": "knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부선형 시간으로 근사하는 방법.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "weighted-knn-shapley",
+   "label": "가중 KNN 샤플리",
+   "parent": "knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거리 가중 KNN으로의 확장.",
    "related": [],
    "added": "2026-11-20"
   }
