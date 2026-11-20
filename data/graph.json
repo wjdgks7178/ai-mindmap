@@ -42133,11 +42133,12 @@
       "label": "MinHash LSH Forest",
       "parent": "minhash-lsh",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "top-k 검색용 변형.",
+      "summary": "임계값 대신 top-k를 찾는 MinHash LSH 변형. l=8 접두사 트리, index() 필수. 직접 실행: 상위 5개에 가까운 3개 포함, 정렬은 보장 안 돼 재정렬 필요.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "paraphrase-dedup-limit",
@@ -50727,6 +50728,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "전체와 집단의 결론이 달라지는 현상.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "lsh-forest-prefix-trees",
+      "label": "접두사 트리 l 값",
+      "parent": "minhash-lsh-forest",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "트리 수와 깊이의 정확도 트레이드오프.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "ann-vs-lsh",
+      "label": "LSH와 근사 최근접 탐색",
+      "parent": "minhash-lsh-forest",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "HNSW 같은 벡터 ANN과 비교.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "train-test-contamination-lsh",
+      "label": "학습-평가 오염 탐지",
+      "parent": "minhash-lsh-forest",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "유사 문서 top-k로 벤치마크 누출 점검.",
       "added": "2026-11-20",
       "related": []
     }
