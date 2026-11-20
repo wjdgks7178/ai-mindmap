@@ -41438,11 +41438,14 @@
    "label": "라벨 다수결",
    "parent": "double-annotation-adjudication",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "3명 이상 라벨을 다수결로 합치기.",
+   "summary": "라벨 다수결: 오류가 독립이고 p>0.5면 사람이 많을수록 정확(p=0.7, 9명 0.90). Snow 2008: 비전문가 4명≈전문가 1명. 공통 오류·스패머에 약함(시뮬).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "cleanlab-multiannotator"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "hybrid-annotation-split",
@@ -48752,6 +48755,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "판정 이유를 남겨 가이드 개정에 연결.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "condorcet-jury-theorem",
+   "label": "Condorcet 배심 정리",
+   "parent": "majority-voting-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인 정확도 50% 초과·독립이면 다수결이 정확해지는 정리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "tie-breaking-rule",
+   "label": "다수결 동률 처리",
+   "parent": "majority-voting-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동률을 전문가·모델·신뢰도로 정하는 규칙.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "redundancy-per-item",
+   "label": "샘플당 라벨 중복 수",
+   "parent": "majority-voting-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플당 몇 명에게 라벨시킬지 비용·품질 균형.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "labeler-bias-correction",
+   "label": "라벨러 편향 보정",
+   "parent": "majority-voting-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러 편향을 보정해 합의 품질을 올리는 기법(Snow 2008).",
    "related": [],
    "added": "2026-11-20"
   }
