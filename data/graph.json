@@ -42202,11 +42202,14 @@
       "label": "학습-시험 겹침",
       "parent": "exact-substring-dedup",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "검증 세트 4% 이상이 학습과 겹친 사례.",
+      "summary": "Lee 2021: C4 검증 4.6%·RealNews 14.4%가 학습과 근사 중복. 중복 제거 모델은 겹친 예제에서 퍼플렉서티가 높아 부풀림이 사라짐, 겹침 없는 예제는 비슷.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "data-leakage"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "datatrove-fineweb-example",
@@ -50906,6 +50909,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "등장 횟수와 재현율의 관계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "benchmark-contamination-check",
+      "label": "벤치마크 오염 점검",
+      "parent": "train-test-overlap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "학습 코퍼스에서 벤치마크 문자열 검색.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "group-split-after-dedup",
+      "label": "중복 제거 후 그룹 분할",
+      "parent": "train-test-overlap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "중복 그룹을 같은 분할에 두기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "clean-subset-reporting",
+      "label": "겹침 제외 점수 따로 보고",
+      "parent": "train-test-overlap",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "오염 예제를 뺀 점수 병기.",
       "added": "2026-11-20",
       "related": []
     }
