@@ -42106,11 +42106,12 @@
       "label": "섀글링(n-그램 집합)",
       "parent": "minhash-lsh",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "문서를 n-그램 집합으로 바꾸는 단계.",
+      "summary": "문서를 길이 k의 연속 조각 집합으로 바꾸는 단계. 직접 실행: 단어 하나 수정 시 글자 k=2·3·5·9 자카드 0.84·0.78·0.70·0.52. k 작으면 오탐 크면 미탐.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "lsh-banding-curve",
@@ -50623,6 +50624,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "중복 판정 기준을 데이터로 조정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "shingle-size-choice",
+      "label": "섀글 크기 k 고르기",
+      "parent": "shingling-ngrams",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "문서 길이·언어별 k 경험칙과 확인법.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "shingle-hashing",
+      "label": "섀글 해시",
+      "parent": "shingling-ngrams",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "조각을 정수로 줄여 메모리 절감.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "korean-shingling",
+      "label": "한국어 섀글링",
+      "parent": "shingling-ngrams",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "띄어쓰기 변동에 강한 글자 단위 조각.",
       "added": "2026-11-20",
       "related": []
     }
