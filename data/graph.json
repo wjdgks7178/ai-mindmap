@@ -43121,11 +43121,14 @@
       "label": "코퍼스 내 벤치마크 정답",
       "parent": "web-crawl-quality-issues",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "시험 정답 텍스트가 학습 코퍼스에 존재.",
+      "summary": "Dodge 2021: C4.EN에 생성 과제 목표 텍스트 1.87~24.88%, LAMA T-REx 4.6%·Google-RE 5.7%, GLUE 입력 2%미만~50%넘게(정확 일치 측정).",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "train-test-overlap"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "machine-generated-web-text",
@@ -53024,6 +53027,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "ds5q9o….cloudfront.net 형식.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "exact-match-contamination",
+      "label": "정확 일치 오염 측정",
+      "parent": "benchmark-contamination-in-corpus",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정규화 후 정확 일치로 겹침 세기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "ngram-overlap-contamination",
+      "label": "n-그램 겹침 오염 측정",
+      "parent": "benchmark-contamination-in-corpus",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "Brown 외 8~13그램 방식.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "clean-score-reporting",
+      "label": "오염 제외 점수 보고",
+      "parent": "benchmark-contamination-in-corpus",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "겹침 예제 빼고 점수 병기.",
       "added": "2026-11-20",
       "related": []
     }
