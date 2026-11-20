@@ -41452,11 +41452,14 @@
    "label": "하이브리드 분담 라벨링",
    "parent": "double-annotation-adjudication",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "일치도 높아지면 문서를 나눠 맡기.",
+   "summary": "초기엔 이중 라벨로 보정, 일치도 달성 후 분담+표본 감시. 시뮬: 비용 38% 절감, 라벨러 정확도 하락 시 표본 kappa 0.710→0.463으로 감지.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "sampled-double-annotation"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "sampled-double-annotation",
@@ -48893,6 +48896,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "틀린 골든에 정답·이유를 알려 교육 효과 얻기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "recalibration-trigger",
+   "label": "재보정 조건",
+   "parent": "hybrid-annotation-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "kappa 하락 시 이중 라벨로 복귀하는 기준.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "random-assignment-of-items",
+   "label": "항목 무작위 배정",
+   "parent": "hybrid-annotation-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 사람이 쉬운 문서만 갖지 않게 배정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "annotation-cost-model",
+   "label": "라벨링 비용 모델",
+   "parent": "hybrid-annotation-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이중·분담·표본의 비용 단위 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rule-change-propagation",
+   "label": "규칙 변경 전파",
+   "parent": "hybrid-annotation-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가이드 개정을 모든 라벨러에 동시에 알리는 법.",
    "related": [],
    "added": "2026-11-20"
   }
