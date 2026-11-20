@@ -42009,11 +42009,15 @@
    "label": "OpenDataVal",
    "parent": "data-influence-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 가치 평가 오픈소스 벤치마크.",
+   "summary": "데이터 가치 평가 11개 알고리즘·여러 데이터셋·4개 하위 과제·리더보드를 갖춘 오픈소스 벤치마크(NeurIPS 2023). 단일 최고 알고리즘은 없음. 설치·실행은 미검증.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "knn-shapley",
+    "tmc-shapley"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "leave-one-out-value",
@@ -50492,6 +50496,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "외삽이 가리킨 구간의 일부를 실제로 측정.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "data-valuation-downstream-tasks",
+   "label": "데이터 가치 평가 하위 과제",
+   "parent": "opendataval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오라벨 탐지 등 평가 과제 정의와 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "algorithm-selection-by-task",
+   "label": "과제별 알고리즘 선택",
+   "parent": "opendataval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단일 최고 알고리즘이 없을 때의 선택 절차.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "valuation-ranking-stability",
+   "label": "가치 순위 안정성",
+   "parent": "opendataval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드별 순위 변동 점검.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "benchmark-leaderboard-reading",
+   "label": "벤치마크 리더보드 읽는 법",
+   "parent": "opendataval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 최고가 아니라 과제별 최고를 보는 법.",
    "related": [],
    "added": "2026-11-20"
   }
