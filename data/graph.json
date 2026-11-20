@@ -42424,11 +42424,12 @@
       "label": "RandAugment 강도 튜닝",
       "parent": "randaugment-autoaugment",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "num_ops·magnitude 조절 요령.",
+      "summary": "K=14 변환 중 N개를 균등 선택해 강도 M으로 적용(정책 수 K^N). 큰 모델·큰 데이터일수록 최적 M 증가, 격자 탐색으로 충분. ImageNet EfficientNet-B7 기준 +1.0%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "trivialaugment",
@@ -51392,6 +51393,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "가장자리 중심일 때 면적 손실.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "randaugment-grid-search",
+      "label": "RandAugment 격자 탐색",
+      "parent": "randaugment-magnitude-tuning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "N·M 후보 몇 개를 비교하는 절차.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "proxy-task-pitfall",
+      "label": "대리 과제 함정",
+      "parent": "randaugment-magnitude-tuning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "작은 데이터에서 찾은 증강이 큰 모델에 안 맞는 이유.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "torchvision-randaugment",
+      "label": "torchvision RandAugment 사용법",
+      "parent": "randaugment-magnitude-tuning",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "num_ops·magnitude 인자.",
       "added": "2026-11-20",
       "related": []
     }
