@@ -41884,11 +41884,15 @@
    "label": "사전 정의 슬라이스 평가",
    "parent": "slice-discovery",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "알려진 속성별 성능 비교.",
+   "summary": "미리 정한 속성별로 성능을 따로 재는 평가. 합성 실험: 전체 0.832지만 EU 0.678, BR 0.189(n=95, 구간 0.12~0.28). 슬라이스 n·신뢰구간과 사전 정의가 핵심.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "per-group-score-analysis",
+    "data-statistics-slicing"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "error-category-ceiling",
@@ -49935,6 +49939,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 세트에 같은 규칙으로 수정해 분포 차이 방지.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "slice-confidence-interval-table",
+   "label": "슬라이스 신뢰구간 표",
+   "parent": "predefined-slice-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스별 n·정확도·구간을 표로 보고.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "slice-definition-before-looking",
+   "label": "데이터 보기 전 슬라이스 정의",
+   "parent": "predefined-slice-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사후 슬라이스 만들기의 다중 비교 위험.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "average-masking-weak-groups",
+   "label": "평균이 약한 집단을 가리는 문제",
+   "parent": "predefined-slice-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 점수에 소수 집단 실패가 묻히는 현상.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "slice-gap-root-cause",
+   "label": "슬라이스 격차 원인 점검",
+   "parent": "predefined-slice-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 부족·라벨 오류·분포 차이 구분.",
    "related": [],
    "added": "2026-11-20"
   }
