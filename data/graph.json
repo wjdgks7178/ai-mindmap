@@ -42558,11 +42558,14 @@
       "label": "마스크 증강과 최근접 보간",
       "parent": "augmentation-for-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "세분화 마스크를 변환할 때 보간 선택.",
+      "summary": "세분화 마스크는 클래스 번호라 회전·확대에 최근접 보간 필요. 직접 실행: 선형 보간 시 클래스 1·3 마스크에 가짜 클래스 2가 78픽셀 생김, 최근접은 [0,1,3] 유지.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "bbox-coordinate-formats"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "library-version-api-drift",
@@ -51702,6 +51705,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "보존과 크롭 크기의 균형.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "mask-unique-unit-test",
+      "label": "마스크 값 집합 테스트",
+      "parent": "mask-augmentation-nearest",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "증강 후 np.unique로 클래스 검증.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "image-vs-mask-interpolation",
+      "label": "이미지·마스크 보간 분리",
+      "parent": "mask-augmentation-nearest",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "interpolation과 mask_interpolation.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "soft-mask-argmax",
+      "label": "확률 마스크 보간 후 argmax",
+      "parent": "mask-augmentation-nearest",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "범주 경계를 안전하게 다루는 대안.",
       "added": "2026-11-20",
       "related": []
     }
