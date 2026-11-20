@@ -42991,11 +42991,12 @@
       "label": "두 시드 평균",
       "parent": "ablation-data-studies",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "무작위 표본·초기화 잡음 줄이기.",
+      "summary": "FineWeb ablation은 버전마다 다른 무작위 표본·시드로 모델 2개 학습 후 평균(1.71B, 28B 토큰, 70개+ 모델 H100 80,000시간). 시뮬레이션: 시드 1·2·4개에서 오판 28.6·21.2·13.0%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [],
+      "done": "2026-11-20"
     },
     {
       "id": "scale-transfer-of-ablations",
@@ -52674,6 +52675,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "서로 다른 모델·프롬프트로 검증.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "seed-noise-vs-effect",
+      "label": "시드 잡음 대 효과 크기",
+      "parent": "two-seed-averaging",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "차이가 잡음보다 큰지 판단.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "ablation-compute-budget",
+      "label": "ablation 연산 예산",
+      "parent": "two-seed-averaging",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "70개 모델 80,000 H100시간 사례.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "data-subset-noise",
+      "label": "데이터 표본 잡음",
+      "parent": "two-seed-averaging",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "부분집합 선택이 점수에 미치는 영향.",
       "added": "2026-11-20",
       "related": []
     }
