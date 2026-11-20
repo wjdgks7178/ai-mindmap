@@ -42081,11 +42081,14 @@
       "label": "슬라이스별 학습 곡선",
       "parent": "collection-benefit-extrapolation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "약한 하위집단의 수집 효과를 따로 추정.",
+      "summary": "집단별로 학습 곡선을 따로 그려 수집 효과 추정. 실험: 다수 A 0.88 평평, 소수 B 10개 0.49 → 50개 0.78 → 1500개 0.86, 전체 평균은 가림.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "bad-learning-curves"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "jaccard-similarity",
@@ -50691,6 +50694,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "후보에 실제 자카드를 다시 계산.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "slice-validation-size",
+      "label": "슬라이스 검증 표본 크기",
+      "parent": "per-slice-learning-curve",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "집단 곡선의 신뢰구간과 반복 측정.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "collection-budget-allocation",
+      "label": "집단별 수집 예산 배분",
+      "parent": "per-slice-learning-curve",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "기울기 기준으로 라벨 예산 나누기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "simpson-paradox-data",
+      "label": "평균의 함정(심프슨 역설)",
+      "parent": "per-slice-learning-curve",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "전체와 집단의 결론이 달라지는 현상.",
       "added": "2026-11-20",
       "related": []
     }
