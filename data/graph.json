@@ -40670,11 +40670,14 @@
    "label": "홀드아웃과 CV 추정 비교",
    "parent": "cv-fold-count-choice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "별도 시험 세트와 CV 점수의 차이.",
+   "summary": "홀드아웃은 분할 운에 크게 흔들림(digits 30회: std 0.0426, 0.70~0.88), 5-폴드 CV는 std 0.0170. 최종 보고는 별도 테스트 세트.",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "holdout-vs-cv"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "iso-25012-inherent-characteristics",
@@ -47473,6 +47476,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "소수점 차이에 매달리다 검증셋에 과적합.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "test-set-reuse-risk",
+   "label": "테스트 세트 재사용 위험",
+   "parent": "holdout-vs-cv-estimates",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 번 보면 검증 세트가 되어 낙관적.",
    "related": [],
    "added": "2026-11-20"
   }
