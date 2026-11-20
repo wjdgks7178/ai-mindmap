@@ -42723,11 +42723,15 @@
       "label": "TDM Reservation Protocol",
       "parent": "ccbot-opt-out",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "텍스트·데이터 마이닝 권리 유보 신호.",
+      "summary": "W3C TDMRep: tdm-reservation(0/1)과 tdm-policy(URL). /.well-known/tdmrep.json 배열·HTTP 헤더(권장)·HTML meta로 선언, 에이전트는 TDM 파일 확인 MUST. 법적 효력 아닌 의사 표시.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "ccbot-opt-out",
+        "robots-txt-basics"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "crawler-ip-verification",
@@ -52153,6 +52157,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "4xx·5xx·리다이렉트 처리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "tdmrep-json-file",
+      "label": "tdmrep.json 파일",
+      "parent": "tdm-reservation-protocol",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "location·tdm-reservation 규칙 배열.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "tdm-policy-document",
+      "label": "TDM 정책 문서",
+      "parent": "tdm-reservation-protocol",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "사람용·기계용 정책 형식.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "opt-out-signal-landscape",
+      "label": "옵트아웃 신호 지형",
+      "parent": "tdm-reservation-protocol",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "robots·TDMRep·메타 태그 비교.",
       "added": "2026-11-20",
       "related": []
     }
