@@ -41523,11 +41523,14 @@
    "label": "경계 사례 로그 양식",
    "parent": "guideline-edge-case-log",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "ID·결정·이유·재검토 여부 항목.",
+   "summary": "경계 사례 로그의 CSV 열 양식(ID·결정·이유·반영 여부·재검토 쿼리·상태). 샘플로 미반영 결정·재검토 대상을 점검 스크립트로 추출(제안 양식).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "guideline-versioning"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "guideline-versioning",
@@ -49035,6 +49038,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "공통 문항 수에 따른 지연·비용 균형.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "log-weekly-review-script",
+   "label": "경계 사례 로그 주간 점검",
+   "parent": "edge-case-log-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미반영·재검토 대기 항목을 자동으로 뽑는 점검.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "relabel-query",
+   "label": "재검토 검색식",
+   "parent": "edge-case-log-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정 변경의 영향을 받는 기존 라벨을 찾는 쿼리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "case-to-fewshot",
+   "label": "경계 사례 → few-shot 예시",
+   "parent": "edge-case-log-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로그 사례를 LLM 라벨러 예시로 승격.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "pii-masking-in-logs",
+   "label": "로그의 개인정보 마스킹",
+   "parent": "edge-case-log-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사례 원문에서 개인정보를 가리는 방법.",
    "related": [],
    "added": "2026-11-20"
   }
