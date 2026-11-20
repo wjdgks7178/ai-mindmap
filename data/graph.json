@@ -42188,11 +42188,14 @@
       "label": "중복과 암기",
       "parent": "exact-substring-dedup",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "중복 학습이 그대로 외워 출력하는 현상.",
+      "summary": "Lee 2021: 원본 학습 모델은 무프롬프트 생성 토큰의 1%+가 50토큰 암기 구간, 중복 제거 모델은 약 10배 적음. 중복 프롬프트에선 40%+ 재현. 개인정보 해결책은 아님.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "memorization-in-llms"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "train-test-overlap",
@@ -50870,6 +50873,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "자카드 후보를 확정하는 2차 검증.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "memorization-measurement-50token",
+      "label": "암기 측정 방식",
+      "parent": "memorization-from-duplicates",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "50토큰 정확 일치로 암기를 세는 법.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "attribution-loss-dedup",
+      "label": "중복 제거와 출처 표기 손실",
+      "parent": "memorization-from-duplicates",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "반복되는 출처 문구가 지워지는 부작용.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "duplicate-count-vs-memorization",
+      "label": "중복 횟수와 암기 확률",
+      "parent": "memorization-from-duplicates",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "등장 횟수와 재현율의 관계.",
       "added": "2026-11-20",
       "related": []
     }
