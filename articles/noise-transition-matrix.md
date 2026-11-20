@@ -42,8 +42,8 @@ py, noise_matrix, inv_noise_matrix = estimate_py_and_noise_matrices_from_probabi
 ## 헷갈리는 것과 비교
 | 개념 | 차이 |
 |---|---|
-| 노이즈 행렬 | p(주어진 | 진짜) |
-| 역 노이즈 행렬 | p(진짜 | 주어진) |
+| 노이즈 행렬 | p(주어진 ∣ 진짜) |
+| 역 노이즈 행렬 | p(진짜 ∣ 주어진) |
 | confident joint | 쌍별 *개수* 추정 |
 | 혼동 행렬(confusion matrix) | 모델 예측 vs 라벨, 라벨 노이즈와 다름 |
 

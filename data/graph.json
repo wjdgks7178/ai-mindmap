@@ -41150,11 +41150,14 @@
    "label": "종단 데이터 분할",
    "parent": "group-definition",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 사람의 여러 방문 데이터를 나누는 법.",
+   "summary": "반복 방문 데이터는 새 사람 일반화면 사람 단위, 미래 예측이면 시간 단위로 분할. 합성 실험: 무작위 KFold 0.738 vs GroupKFold 0.502.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "time-series-split"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "class-conditional-noise",
@@ -48075,6 +48078,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차검증으로 자기 샘플을 보지 않은 예측 확률 얻기.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "autocorrelation",
+   "label": "자기상관",
+   "parent": "longitudinal-data-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인접 관측이 서로 상관돼 i.i.d. 가정이 깨지는 현상.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "subject-level-vs-time-split",
+   "label": "사람 단위 vs 시간 단위 분할",
+   "parent": "longitudinal-data-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문(일반화 vs 예측)에 따른 분할 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "future-information-leakage",
+   "label": "미래 정보 누수",
+   "parent": "longitudinal-data-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미래에 알게 된 값을 과거 예측 특성에 쓰는 누수.",
    "related": [],
    "added": "2026-11-20"
   }
