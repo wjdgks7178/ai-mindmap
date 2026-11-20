@@ -42544,11 +42544,14 @@
       "label": "박스 안전 자르기",
       "parent": "augmentation-for-detection",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "모든 박스를 지키는 무작위 자르기.",
+      "summary": "BBoxSafeRandomCrop은 모든 박스 보존, AtLeastOne은 최소 1개. 직접 실행 300회: Safe는 3개 항상 보존하나 평균 크롭 85%, RandomCrop·AtLeastOne은 25%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "min-visibility-filter"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "mask-augmentation-nearest",
@@ -51666,6 +51669,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "증강 후 이미지·라벨 대응 검수.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "erosion-rate-bbox-crop",
+      "label": "erosion_rate 설정",
+      "parent": "bbox-safe-crop",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "박스 합집합을 줄여 크롭 자유도 높이기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "random-sized-bbox-safe-crop",
+      "label": "RandomSizedBBoxSafeCrop",
+      "parent": "bbox-safe-crop",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "크롭 후 크기를 다시 맞추는 변형.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "small-object-crop-tradeoff",
+      "label": "작은 물체와 크롭 트레이드오프",
+      "parent": "bbox-safe-crop",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "보존과 크롭 크기의 균형.",
       "added": "2026-11-20",
       "related": []
     }
