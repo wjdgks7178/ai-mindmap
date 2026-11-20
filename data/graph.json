@@ -42173,11 +42173,15 @@
       "label": "중복 임계 길이(50토큰)",
       "parent": "exact-substring-dedup",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "짧은 일치는 흔해 임계값을 두는 이유.",
+      "summary": "Lee 2021은 부분문자열 일치 최소 길이를 50 BPE 토큰으로 선택. C4 토큰 7.18% 제거, LM1B는 문서 90%가 50토큰 미만이라 NearDup의 1/8. NearDup은 b=20 r=450.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "minhash-lsh",
+        "suffix-array"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "memorization-from-duplicates",
@@ -50833,6 +50837,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "암기 10배 감소와 4% 평가 겹침 결과 정리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "bpe-token-length-language",
+      "label": "언어별 토큰 길이와 임계값",
+      "parent": "dedup-threshold-50-tokens",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "한국어·코드에서 50토큰의 의미가 다름.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "exactsubstr-vs-neardup",
+      "label": "ExactSubstr vs NearDup",
+      "parent": "dedup-threshold-50-tokens",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "구간 삭제와 문서 삭제의 차이와 겹침 77%.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "edit-similarity",
+      "label": "편집 유사도",
+      "parent": "dedup-threshold-50-tokens",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "자카드 후보를 확정하는 2차 검증.",
       "added": "2026-11-20",
       "related": []
     }
