@@ -41830,11 +41830,14 @@
    "label": "부트스트랩 신뢰구간",
    "parent": "small-data-validation-strategy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "소표본 점수의 구간 추정.",
+   "summary": "시험 항목을 복원추출해 점수 구간 추정. 정확도는 Wilson과 거의 동일(포함률 95~96%), 이점은 F1·AUC·모델 차이. 만점 데이터에서 BCa는 NaN.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "wilson-interval"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "stratification-shrinks-variance",
@@ -49709,6 +49712,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "홀드아웃 점수의 이항 신뢰구간.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "bca-bootstrap",
+   "label": "BCa 부트스트랩",
+   "parent": "bootstrap-confidence-interval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "편향·왜도를 보정한 부트스트랩 구간.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "paired-bootstrap-model-comparison",
+   "label": "짝지은 부트스트랩 모델 비교",
+   "parent": "bootstrap-confidence-interval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문제 인덱스로 두 모델 차이의 구간을 구함.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "cluster-bootstrap",
+   "label": "군집(그룹) 부트스트랩",
+   "parent": "bootstrap-confidence-interval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "환자·문서 단위로 복원추출하는 부트스트랩.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "perfect-score-uncertainty",
+   "label": "만점일 때의 불확실성",
+   "parent": "bootstrap-confidence-interval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전부 맞힌 작은 시험의 구간 해석.",
    "related": [],
    "added": "2026-11-20"
   }
