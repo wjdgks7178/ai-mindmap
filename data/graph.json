@@ -42514,11 +42514,15 @@
       "label": "텍스트 증강 라벨 점검",
       "parent": "back-translation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "의미·라벨 유지 표본 검사.",
+      "summary": "EDA 논문: 증강 문장이 t-SNE에서 원문 둘레에 모여 대체로 라벨 유지, α 크면 성능 하락. 직접 시뮬레이션: 8단어 부정 문장에서 핵심어 손실 확률 p 0.05→9.8%, 0.5→74.9%.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "back-translation",
+        "label-preserving-transform"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "bbox-coordinate-formats",
@@ -52080,6 +52084,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "서툰 번역이 만드는 변형.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "eda-four-operations",
+      "label": "EDA 네 가지 연산",
+      "parent": "text-augmentation-label-check",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "SR·RI·RS·RD와 α 의미.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "protected-keywords",
+      "label": "보호 단어 목록",
+      "parent": "text-augmentation-label-check",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "부정어·수치를 증강에서 제외.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "label-agreement-rate",
+      "label": "라벨 일치율",
+      "parent": "text-augmentation-label-check",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "원 모델로 증강 문장을 분류해 확인.",
       "added": "2026-11-20",
       "related": []
     }
