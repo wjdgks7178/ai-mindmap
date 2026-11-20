@@ -42597,11 +42597,14 @@
       "label": "의료 영상 뒤집기 위험",
       "parent": "label-preserving-transform",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "좌우 뒤집기가 해부학을 바꾸는 문제.",
+      "summary": "COVID X선 체크리스트 논문: 촬영이 표준화돼 뒤집기·회전은 현실에 없는 영상을 만들 수 있음. 우심증·엽성 병변은 좌우 의미, 모든 증강은 영상의학 전문가와 상의 권고.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "label-preserving-transform"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "self-supervised-label-augmentation",
@@ -51872,6 +51875,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "추출 단계가 중복 군집에 미치는 영향.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "dextrocardia-augmentation",
+      "label": "우심증과 증강",
+      "parent": "medical-flip-hazard",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "좌우 구조가 라벨인 경우 처리.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "laterality-label-flip",
+      "label": "좌우 라벨 동반 반전",
+      "parent": "medical-flip-hazard",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "뒤집을 때 L/R 라벨도 교체.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "domain-expert-augmentation-review",
+      "label": "도메인 전문가 증강 검토",
+      "parent": "medical-flip-hazard",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "허용 목록 작성 절차.",
       "added": "2026-11-20",
       "related": []
     }
