@@ -41379,11 +41379,14 @@
    "label": "목표 일치도 정하기",
    "parent": "annotation-pilot-round",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "kappa 목표를 시범 전에 정하는 방법과 경험칙.",
+   "summary": "시범 라운드 전 kappa·일치율 목표를 정한다. McHugh: 0.60 미만 부적절. 시뮬: 각자 정확도 0.9여야 kappa 0.64, 시범 30개면 kappa 범위 0.21~0.73.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "inter-annotator-agreement"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "low-agreement-diagnosis",
@@ -48539,6 +48542,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "검수 비용과 오류 놓침 사이 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "kappa-interpretation-scales",
+   "label": "kappa 해석표 비교",
+   "parent": "target-agreement-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Cohen 표와 McHugh 엄격 표의 차이.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "pilot-size-for-kappa",
+   "label": "kappa용 시범 크기",
+   "parent": "target-agreement-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시범 샘플 수에 따른 kappa 불확실성.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "kappa-class-imbalance",
+   "label": "kappa와 클래스 불균형",
+   "parent": "target-agreement-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치율은 높은데 kappa는 낮은 이유.",
    "related": [],
    "added": "2026-11-20"
   }
