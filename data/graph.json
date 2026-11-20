@@ -42470,11 +42470,14 @@
       "label": "UDA 일관성 학습",
       "parent": "back-translation",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "증강 전후 예측이 같도록 학습.",
+      "summary": "라벨 없는 데이터의 원본·증강본 예측이 같도록 학습. 역번역·RandAugment로 증강 품질 강조. 논문 주장: IMDb 라벨 20개 오류 4.20, CIFAR-10 250개 5.43. 신뢰도 마스킹 β 0.8.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "back-translation"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "llm-paraphrase-augmentation",
@@ -51526,6 +51529,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "변환별 분포를 평균낸 데이터 분포.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "confidence-masking",
+      "label": "신뢰도 마스킹",
+      "parent": "uda-consistency-training",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "확신 낮은 예제의 일관성 손실 제외.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "semi-supervised-learning",
+      "label": "준지도 학습",
+      "parent": "uda-consistency-training",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "라벨 적고 라벨 없는 데이터 많을 때.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "tfidf-word-replacement",
+      "label": "TF-IDF 단어 치환",
+      "parent": "uda-consistency-training",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "정보량 낮은 단어를 바꾸는 증강.",
       "added": "2026-11-20",
       "related": []
     }
