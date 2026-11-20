@@ -40656,11 +40656,14 @@
    "label": "점수 차이와 노이즈",
    "parent": "cv-fold-count-choice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "차이가 시드 간 편차보다 작으면 우열 불가.",
+   "summary": "평균 차이가 분할 간 표준편차보다 작으면 우열 불가. digits 실험: A-B 차 -0.0002(2/20), A-C 차 0.1845(20/20).",
    "added": "2026-11-18",
-   "related": []
+   "related": [
+    "model-comparison-cv"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "holdout-vs-cv-estimates",
@@ -47437,6 +47440,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "보고용 점수는 CV가 아니라 별도 세트로 검증.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "paired-score-comparison",
+   "label": "짝지은 점수 비교",
+   "parent": "cv-score-difference-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 분할에서 모델 점수 차이를 쌍으로 비교.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "tie-break-criteria",
+   "label": "동률일 때 고르는 기준",
+   "parent": "cv-score-difference-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속도·해석성·비용으로 모델 선택.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "leaderboard-overfitting",
+   "label": "리더보드 과적합",
+   "parent": "cv-score-difference-vs-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수점 차이에 매달리다 검증셋에 과적합.",
    "related": [],
    "added": "2026-11-20"
   }
