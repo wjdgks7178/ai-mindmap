@@ -41785,11 +41785,14 @@
    "label": "시험 세트 비율 불일치",
    "parent": "test-set-size-rare-class",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "덜 불균형한 시험 세트가 정밀도를 낙관적으로 만듦.",
+   "summary": "시험 세트 양성 비율이 운영보다 높으면 정밀도가 낙관적. TPR 0.9·FPR 0.05 고정 시 50% 0.947 → 1% 0.154. 재현율은 불변. Saito 2015: PRC만 비율을 반영.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "benchmark-ranking-instability"
+   ],
+   "done": "2026-11-20"
   },
   {
    "id": "classifier-monitoring-sampling",
@@ -49532,6 +49535,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "후보마다 추정기를 clone할 때의 난수 처리.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "prevalence-adjusted-precision",
+   "label": "유병률 보정 정밀도",
+   "parent": "test-prior-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TPR·FPR로 운영 비율에 맞춰 정밀도를 환산.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "pr-curve-vs-roc-imbalance",
+   "label": "PR 곡선 vs ROC(불균형)",
+   "parent": "test-prior-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불균형에서 PR이 정보량이 큰 이유.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "base-rate-fallacy",
+   "label": "기저율 오류",
+   "parent": "test-prior-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양성 판정의 확률이 기저율에 달려 있다는 베이즈 사고.",
+   "related": [],
+   "added": "2026-11-20"
+  },
+  {
+   "id": "false-positive-volume",
+   "label": "거짓 양성 규모",
+   "parent": "test-prior-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비율이 낮으면 FPR이 작아도 거짓 양성이 폭증.",
    "related": [],
    "added": "2026-11-20"
   }
