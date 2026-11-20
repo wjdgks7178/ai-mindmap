@@ -42413,11 +42413,15 @@
       "label": "증강 정책 탐색",
       "parent": "randaugment-autoaugment",
       "domain": "ai-data",
-      "status": "planned",
+      "status": "done",
       "priority": 3,
-      "summary": "하위 정책을 검증 정확도로 탐색.",
+      "summary": "AutoAugment: 5 하위정책×2연산(16종·강도10·확률11) 공간 약 2.9e32, LSTM 컨트롤러+PPO, 검증 정확도가 보상, 약 15000 정책 샘플, reduced CIFAR-10 4000개로 탐색 후 이식.",
       "added": "2026-11-19",
-      "related": []
+      "related": [
+        "cutout",
+        "randaugment-magnitude-tuning"
+      ],
+      "done": "2026-11-20"
     },
     {
       "id": "randaugment-magnitude-tuning",
@@ -51426,6 +51430,39 @@
       "status": "planned",
       "priority": 3,
       "summary": "num_ops·magnitude 인자.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "autoaugment-search-space",
+      "label": "AutoAugment 탐색 공간",
+      "parent": "augmentation-policy-search",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "16연산·강도 10단계·확률 11단계.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "policy-transfer",
+      "label": "정책 이식",
+      "parent": "augmentation-policy-search",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "reduced CIFAR-10에서 찾은 정책을 다른 데이터에 쓰기.",
+      "added": "2026-11-20",
+      "related": []
+    },
+    {
+      "id": "efficient-augmentation-search",
+      "label": "효율적 증강 탐색",
+      "parent": "augmentation-policy-search",
+      "domain": "ai-data",
+      "status": "planned",
+      "priority": 3,
+      "summary": "PBA·Fast AutoAugment 등 비용 절감.",
       "added": "2026-11-20",
       "related": []
     }
