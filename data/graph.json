@@ -45430,11 +45430,14 @@
    "label": "Camelyon17",
    "parent": "wilds-benchmark",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "병원 간 조직 이미지 분포 변화.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "WILDS Camelyon17: 5개 병원, 학습 병원 1–3(302,436 패치). ERM ID 93.2 vs 시험 병원 OOD 70.3(−22.9%p). 대상 병원 슬라이드 1장 추가 시 71.0→82.9.",
+   "related": [
+    "wilds-benchmark"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "precision-at-k-slice",
@@ -55056,6 +55059,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "equalized odds가 가능한 영역.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "stain-augmentation",
+   "label": "염색 증강",
+   "parent": "camelyon17",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "병원 간 염색 차이를 줄이는 증강.",
    "added": "2026-11-21",
    "related": []
   }
