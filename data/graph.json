@@ -43599,11 +43599,14 @@
    "label": "LF 종류(패턴·메타·외부지식)",
    "parent": "labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "규칙의 근거 유형별 정리.",
+   "summary": "키워드·정규식·제3자 모델(TextBlob)·원거리 지도·크라우드 라벨을 모두 LF로 감쌈. Preprocessor로 계산 캐시(Snorkel 튜토리얼).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "labeling-function"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "lf-dev-set-accuracy",
@@ -54113,6 +54116,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "LF 규칙을 넓히고 좁히는 판단.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "snorkel-preprocessor",
+   "label": "Snorkel Preprocessor",
+   "parent": "lf-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LF들이 공유하는 전처리와 캐시.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "third-party-model-lf",
+   "label": "제3자 모델 LF",
+   "parent": "lf-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 과제 모델을 약한 신호로 활용.",
    "added": "2026-11-21",
    "related": []
   }
