@@ -44285,11 +44285,15 @@
    "label": "틀린 제안 수용률",
    "parent": "suggestion-hidden-control-sample",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자동화 편향의 핵심 지표.",
+   "summary": "틀린 AI 제안 수용 비율. Buçinca: 단순 설명 0.64 vs 인지 강제 0.48. Bansal: 설명은 정오와 무관하게 수용을 높임(명시 수치는 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "suggestion-hidden-control-sample",
+    "automation-bias-annotation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "labeler-blind-assignment",
@@ -54640,6 +54644,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "프롬프트 출력을 LF로 쓰는 약한 지도.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "pre-label-anchoring",
+   "label": "사전 라벨 앵커링",
+   "parent": "wrong-suggestion-acceptance-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제안에 판단이 끌려가는 효과.",
    "added": "2026-11-21",
    "related": []
   }
