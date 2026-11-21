@@ -45027,11 +45027,14 @@
    "label": "요청과 계약의 차이",
    "parent": "robots-txt-vs-tos",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "robots.txt 같은 요청과 약관 계약의 구분.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "RFC 9309: robots.txt 규칙은 접근 권한이 아님, 5xx는 전체 금지로 간주(MUST), 4xx는 접근 가능, 접근 통제는 응용 계층에서.",
+   "related": [
+    "robots-txt-vs-tos"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "bot-score-detection",
@@ -55000,6 +55003,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 URL에 .md 버전 제공.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "robots-txt-status-codes",
+   "label": "robots.txt 응답 코드 처리",
+   "parent": "rep-vs-contract",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4xx 허용·5xx 전체 금지 규칙.",
    "added": "2026-11-21",
    "related": []
   }
