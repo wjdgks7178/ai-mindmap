@@ -45148,11 +45148,14 @@
    "label": "합성 데이터와 모델 약관",
    "parent": "dataset-license-checklist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델 출력으로 만든 데이터의 사용 제한.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "OpenAI 약관(2026-01-01)·Anthropic 상업약관 D.4(2025-06-17)가 경쟁 모델 학습용 출력 사용을 제한(요약 경유 인용, 원문 대조 필요). DPI: 약 12% 데이터셋이 OpenAI 주석.",
+   "related": [
+    "dataset-license-checklist"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "data-card-license-record",
@@ -55361,6 +55364,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "모음집 전체에 최엄격 조건 취급.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "competing-model-clause",
+   "label": "경쟁 모델 조항",
+   "parent": "synthetic-data-terms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력으로 경쟁 모델 학습을 제한하는 약관.",
    "added": "2026-11-21",
    "related": []
   }
