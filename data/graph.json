@@ -44550,11 +44550,14 @@
    "label": "결측 메커니즘 진단",
    "parent": "mcar-mar-mnar",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터만으로 구분 어렵다는 한계.",
+   "summary": "FIMD 2.2.4: MCAR 대 MAR 검정은 있으나 실용 가치 불분명, MAR 대 MNAR는 불가능. 시뮬레이션 n=300·상관 0.5(Little 1988·Rubin 1976 원문 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "mcar-mar-mnar"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "regression-imputation-limits",
@@ -55235,6 +55238,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "합친 데이터의 배포 조건 정리.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "littles-mcar-test",
+   "label": "Little의 MCAR 검정",
+   "parent": "mechanism-diagnosis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MCAR 여부를 검정(원문 미확인).",
    "added": "2026-11-21",
    "related": []
   }
