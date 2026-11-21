@@ -43184,11 +43184,15 @@
    "label": "Gopher 품질 휴리스틱",
    "parent": "gopher-massivetext",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단어 수·평균 길이·불용어 규칙.",
+   "summary": "Gopher MassiveWeb 품질 필터: 단어 50~10만, 평균 길이 3~10, 불용어 2개 이상, 반복 임계값 13개. 모델 점수 대신 단순 규칙.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "blocklist-filter-bias",
+    "near-duplicate-removal"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "massiveweb-text-extraction",
@@ -53362,6 +53366,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "필터가 지운 표본을 사람이 검토.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "stop-word-filter",
+   "label": "불용어 필터",
+   "parent": "gopher-quality-heuristics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "the·of 등 2개 이상 포함 여부로 비문장 제거.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "heuristic-vs-model-filter",
+   "label": "규칙 필터 vs 모델 필터",
+   "parent": "gopher-quality-heuristics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명 가능성과 편향 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "non-english-heuristic-adaptation",
+   "label": "비영어 휴리스틱 조정",
+   "parent": "gopher-quality-heuristics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한국어 등에 규칙을 맞추기.",
    "added": "2026-11-21",
    "related": []
   }
