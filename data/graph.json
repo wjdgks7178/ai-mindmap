@@ -43856,11 +43856,15 @@
    "label": "스마트 도구(대화형 라벨링)",
    "parent": "label-studio-ml-backend",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "SAM 등으로 영역을 클릭 한 번에.",
+   "summary": "Label Studio SAM 대화형 라벨링: 클릭→마스크, Alt=배경 점, SAM_CHOICE 기본 MobileSAM, 로컬 스토리지만 지원.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-ml-backend",
+    "multimodal"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "docker-host-networking-ls",
@@ -54465,6 +54469,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "소스 코드 기준 전송 필드.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "sam-vs-mobilesam",
+   "label": "SAM vs MobileSAM",
+   "parent": "smart-tools-interactive-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도·속도 선택.",
    "added": "2026-11-21",
    "related": []
   }
