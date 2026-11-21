@@ -45253,11 +45253,14 @@
    "label": "Kadrey v. Meta",
    "parent": "model-weights-derivative-question",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "공정이용 판단과 그 한계.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "2025-06-25 Chhabria 판사: Meta의 Llama 학습을 이 사안에서 공정 이용으로 인정(매우 변형적·시장 피해 증거 부족). 시장 희석 이론 방론. 판결문 원문·남은 청구 미확인.",
+   "related": [
+    "model-weights-derivative-question"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "territorial-training-location",
@@ -55187,6 +55190,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "동의 성립 판단의 핵심 요소.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "market-dilution-theory",
+   "label": "시장 희석 이론",
+   "parent": "kadrey-v-meta",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 산출물이 원본 시장을 희석하는 주장.",
    "added": "2026-11-21",
    "related": []
   }
