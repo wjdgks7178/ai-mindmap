@@ -43731,11 +43731,14 @@
    "label": "PWS 파이프라인",
    "parent": "weak-supervision",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨 출처→라벨 모델→최종 모델.",
+   "summary": "PWS=LF→라벨 모델→최종 모델. Snorkel: 전문가 모델 제작 2.8배 빠름·성능 +45.5%, 수작업 대비 평균 3.6% 이내. 멀티태스크는 지도학습 +20.2점.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "programmatic-labeling-snorkel"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "wrench-benchmark",
@@ -54271,6 +54274,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "스패머 비율에 따른 차이.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "snorkel-user-study",
+   "label": "Snorkel 사용자 연구",
+   "parent": "pws-pipeline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "7시간 손 라벨 대비 2.8배 속도.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "multi-task-weak-supervision",
+   "label": "멀티태스크 약한 지도",
+   "parent": "pws-pipeline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관련 과제 소스를 행렬 완성식으로 결합.",
    "added": "2026-11-21",
    "related": []
   }
