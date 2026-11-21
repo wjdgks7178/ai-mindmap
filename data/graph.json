@@ -46365,11 +46365,14 @@
    "label": "환경 고정",
    "parent": "experiment-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "의존성 파일·컨테이너로 실행 환경 재현.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "pip 해시 검사 모드: --hash 또는 --require-hashes, 모든 요구 사항 ==고정+의존성까지 해시, sha256 권장(md5·sha1·sha224 제외). 파이썬 패키지만 고정하므로 CUDA·OS도 기록 필요.",
+   "related": [
+    "experiment-reproducibility"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "blue-green-reindex",
@@ -55991,6 +55994,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드·버전·하드웨어를 함께 기록.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "container-environment-pinning",
+   "label": "컨테이너로 환경 고정",
+   "parent": "environment-pinning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "OS·시스템 라이브러리까지 고정.",
    "added": "2026-11-21",
    "related": []
   }
