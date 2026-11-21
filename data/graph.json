@@ -45212,11 +45212,14 @@
    "label": "옵트아웃 신호 종류",
    "parent": "text-data-mining-exception",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "robots.txt·메타데이터·약관 중 무엇이 인정되나.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "DSM 지침 4조(3): 기계 판독 가능한 방식 등으로 권리가 명시 유보되면 TDM 예외 불가, 전문 18은 메타데이터·약관 예시. 3조 연구기관은 옵트아웃 없음. GPAI 강령 부분은 2차 요약.",
+   "related": [
+    "text-data-mining-exception"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "third-party-scraping-gap",
