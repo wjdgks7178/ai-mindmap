@@ -43889,11 +43889,14 @@
    "label": "풀 기반 샘플링",
    "parent": "active-learning-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨 없는 큰 풀에서 고르는 시나리오.",
+   "summary": "능동 학습 3시나리오: 멤버십 질의 합성·스트림 기반·풀 기반(Lewis&Gale 1994, 전체 풀 순위 후 선택). 풀 기반이 응용에서 가장 흔함.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "active-learning-labeling"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "sampling-bias-active-learning",
@@ -54337,6 +54340,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "이상치 선택을 피하는 보정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "stream-based-selective-sampling",
+   "label": "스트림 기반 선택 샘플링",
+   "parent": "pool-based-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하나씩 질의 여부 결정.",
    "added": "2026-11-21",
    "related": []
   }
