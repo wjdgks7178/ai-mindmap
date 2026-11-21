@@ -45435,11 +45435,14 @@
    "label": "슬라이스 이름 사람 검증",
    "parent": "domino-slice-discovery",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자동 설명이 틀릴 때의 확인 절차.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Domino 이름 생성: (슬라이스−클래스 원형)과 후보 문장 내적. 정답 이름이 Top-1에 34.7~41.0%, Top-10에 48.7~57.4%. 사람 검증은 별도 확인 필요.",
+   "related": [
+    "domino-slice-discovery"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "minimum-functionality-test",
@@ -55418,6 +55421,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "슬라이스 성격을 조절하는 계수.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "slice-prototype",
+   "label": "슬라이스 원형",
+   "parent": "slice-name-verification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스 임베딩 가중 평균.",
    "added": "2026-11-21",
    "related": []
   }
