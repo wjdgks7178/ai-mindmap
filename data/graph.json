@@ -43556,11 +43556,15 @@
    "label": "AI 판정의 위치·길이 편향",
    "parent": "synthetic-preference-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "응답 순서·길이에 끌리는 편향과 완화.",
+   "summary": "LLM 판정자는 첫 위치 선호(GPT-4만 60%+ 일관), 장황함 공격에 GPT-3.5·Claude-v1 91.3% 실패. 순서 교환 2회 판정으로 완화(MT-Bench 논문).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "synthetic-preference-data",
+    "judge-bias"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "ultrafeedback",
@@ -54073,6 +54077,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "근거를 먼저 쓰게 해 채점 안정화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "swap-and-agree-judging",
+   "label": "순서 교환 합의 판정",
+   "parent": "ai-judge-position-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 순서에서 모두 이길 때만 승리.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "repetitive-list-attack",
+   "label": "반복 목록 공격",
+   "parent": "ai-judge-position-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내용 없이 길이만 늘린 답으로 판정을 속임.",
    "added": "2026-11-21",
    "related": []
   }
