@@ -43903,11 +43903,14 @@
    "label": "능동 학습의 선택 편향",
    "parent": "active-learning-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "불확실한 샘플만 모이는 문제.",
+   "summary": "능동 학습 라벨 세트는 모델에 묶인 편향 분포. 무작위보다 못한 사례 있고 이상치·배치 중복은 밀도·다양성으로 완화(Settles 서베이).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "active-learning-labeling"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "collect-analytics-setting",
@@ -54351,6 +54354,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "하나씩 질의 여부 결정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "random-baseline-in-active-learning",
+   "label": "능동 학습의 무작위 기준선",
+   "parent": "sampling-bias-active-learning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "항상 무작위 샘플과 비교하기.",
    "added": "2026-11-21",
    "related": []
   }
