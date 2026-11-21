@@ -46684,11 +46684,14 @@
    "label": "GX 사용자 정의 Action",
    "parent": "gx-checkpoint-actions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "검증 결과에 따른 맞춤 후속 작업.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "GX 1.25.0: ValidationAction(type·name, run(checkpoint_result, action_context))을 상속해 사용자 정의. Slack(notify_on 기본 all)·UpdateDataDocs 기본 액션. 문서 사이트는 미확인.",
+   "related": [
+    "gx-checkpoint-actions"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "gx-result-format",
@@ -55887,6 +55890,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "COMPLETE에서만 전체 인덱스.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "gx-action-secrets",
+   "label": "GX 액션의 비밀 관리",
+   "parent": "gx-custom-action",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웹훅 URL을 환경 변수로.",
    "added": "2026-11-21",
    "related": []
   }
