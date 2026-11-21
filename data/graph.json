@@ -44807,11 +44807,14 @@
    "label": "중복 부호화(redundant encoding)",
    "parent": "proxy-variables",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "다른 특징에서 민감 속성이 복원되는 현상.",
+   "summary": "속성 정보가 다른 특징에 겹쳐 담겨 복원 가능. Dwork는 레드라이닝을 사례로 듦(우편번호는 광고 예시만, Hardt 2016은 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "proxy-variables"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "fairness-through-unawareness",
@@ -54940,6 +54943,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "유사 개인에 유사 처우 원칙.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "proxy-prediction-test",
+   "label": "속성 예측 테스트",
+   "parent": "redundant-encoding",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "남은 특징으로 민감 속성을 예측해 보기.",
    "added": "2026-11-21",
    "related": []
   }
