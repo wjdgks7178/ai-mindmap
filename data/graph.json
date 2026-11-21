@@ -46695,11 +46695,14 @@
    "label": "GX result_format",
    "parent": "gx-checkpoint-actions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "검증 결과의 상세 정도 설정.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "GX ResultFormat: BOOLEAN_ONLY·BASIC·SUMMARY(기본)·COMPLETE. 기본 partial_unexpected_count=20, include_unexpected_rows=False(1.25.0 소스, 키별 표 미확인).",
+   "related": [
+    "gx-checkpoint-actions"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "gx-mostly",
@@ -55873,6 +55876,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "결과의 unexpected_percent.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "gx-unexpected-index-list",
+   "label": "unexpected_index_list",
+   "parent": "gx-result-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "COMPLETE에서만 전체 인덱스.",
    "added": "2026-11-21",
    "related": []
   }
