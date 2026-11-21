@@ -45041,11 +45041,14 @@
    "label": "Bot Score 탐지",
    "parent": "ai-crawler-blocking",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "user agent를 무시하는 ML 기반 봇 판별.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Cloudflare 봇 점수 1~99(0=미평가), 엔진: Heuristics·ML·JS Detections 등. 세분 점수는 엔터프라이즈만.",
+   "related": [
+    "ai-crawler-blocking"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "training-vs-search-bots",
@@ -55014,6 +55017,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "4xx 허용·5xx 전체 금지 규칙.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "verified-bots",
+   "label": "검증된 봇",
+   "parent": "bot-score-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색엔진 등 신원이 확인된 자동화.",
    "added": "2026-11-21",
    "related": []
   }
