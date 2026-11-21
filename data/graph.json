@@ -43040,11 +43040,14 @@
    "label": "nanotron·lighteval",
    "parent": "ablation-data-studies",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "FineWeb ablation에 쓰인 학습·평가 라이브러리.",
+   "summary": "nanotron은 3D 병렬 사전학습, lighteval은 다중 백엔드 평가. 같은 설정으로 데이터만 바꾸는 ablation의 학습·평가 짝.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "ablation-data-studies"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "database-right-sui-generis",
@@ -53290,6 +53293,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "외부 API 전송 시 개인정보 위험.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "nanotron-3d-parallelism",
+   "label": "nanotron의 3D 병렬",
+   "parent": "nanotron-lighteval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터·텐서·파이프라인 병렬 조합.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "lighteval-backends",
+   "label": "lighteval 백엔드 선택",
+   "parent": "nanotron-lighteval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "eval·vllm·accelerate 등 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ablation-experiment-design",
+   "label": "ablation 실험 설계",
+   "parent": "nanotron-lighteval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번에 하나만 바꿔 비교.",
    "added": "2026-11-21",
    "related": []
   }
