@@ -43424,11 +43424,14 @@
    "label": "언어 표집 지수 α",
    "parent": "multilingual-filter-adaptation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "고자원 언어 편중을 줄이는 샘플링.",
+   "summary": "p(L)∝|L|^α. mT5는 α=0.7(mBERT)·0.3(XLM-R)·0.2 중 0.3 채택. α↑는 고자원 유리, α↓는 저자원 유리.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "sampling-proportion-tuning"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "korean-text-filter-design",
@@ -53773,6 +53776,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "대조 범위를 넓힐수록 더 지워지는 문제.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "alpha-ablation-results",
+   "label": "α ablation 결과",
+   "parent": "language-sampling-exponent",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "α별 고·저자원 언어 성능 변화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "korean-share-under-alpha",
+   "label": "α에 따른 한국어 비중",
+   "parent": "language-sampling-exponent",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중간 자원 언어의 비중 계산.",
    "added": "2026-11-21",
    "related": []
   }
