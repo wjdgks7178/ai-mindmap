@@ -44567,11 +44567,14 @@
    "label": "회귀 대체의 한계",
    "parent": "mcar-mar-mnar",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "분산 과소 추정과 다중 대체의 필요.",
+   "summary": "결정적 회귀 대체: 변동 과소·상관 0.35→0.39 과대('가장 위험'). 확률적 회귀(norm.nob)는 계수·상관 회복하나 표준오차는 과소(FIMD).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "mcar-mar-mnar"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "rubin-rules",
@@ -55263,6 +55266,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "대체값에 상수를 더하는 MNAR 시나리오.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "stochastic-regression-imputation",
+   "label": "확률적 회귀 대체",
+   "parent": "regression-imputation-limits",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잔차를 더해 변동 복원.",
    "added": "2026-11-21",
    "related": []
   }
