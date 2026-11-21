@@ -53764,11 +53764,14 @@
    "label": "CC 컬럼형 색인",
    "parent": "cdx-toolkit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Parquet 기반으로 넓은 기간을 빠르게 조회.",
+   "summary": "CC 컬럼형 색인: Parquet, 스키마 url_surtkey·url·fetch_status·content_mime_type·warc_filename·offset·length, crawl·subset 파티션, Athena·Spark로 조회, s3://commoncrawl/cc-index/table/cc-main/warc/ (us-east-1).",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "cdx-toolkit"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "wayback-cdx-api",
@@ -56089,6 +56092,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "인접 중복 캡처 합치기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "athena-ccindex-query",
+   "label": "Athena로 CC 색인 조회",
+   "parent": "cc-columnar-index",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SQL로 WARC 위치 추출.",
    "added": "2026-11-21",
    "related": []
   }
