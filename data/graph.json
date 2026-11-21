@@ -44613,11 +44613,14 @@
    "label": "MissingIndicator 사용법",
    "parent": "missing-indicator-feature",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "features=missing-only·all와 FeatureUnion.",
+   "summary": "MissingIndicator: features 기본 missing-only(fit에서 NaN 있던 열), 불리언 출력, error_on_new. SimpleImputer(add_indicator=True)로 결합.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "missing-indicator-feature"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "missingness-fairness-check",
@@ -54811,6 +54814,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "열마다 회귀로 반복 대체.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "missing-indicator-serving-shape",
+   "label": "서빙 시 지표 열 차원",
+   "parent": "missing-indicator-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 결측 패턴이 차원을 바꾸는 문제.",
    "added": "2026-11-21",
    "related": []
   }
