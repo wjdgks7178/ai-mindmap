@@ -43920,11 +43920,14 @@
    "label": "COLLECT_ANALYTICS 설정",
    "parent": "self-hosted-labeling-privacy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "통계 전송 기본값과 끄는 방법.",
+   "summary": "COLLECT_ANALYTICS 기본 True. 켜져 있으면 user_id·email·URL·IP·요청/응답 본문을 tele.labelstud.io로 POST(소스 기준). false로 끄기.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "self-hosted-labeling-privacy"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "labeling-tool-network-isolation",
@@ -54451,6 +54454,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "기본 payload에 주석 본문이 없는 점.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "contextlog-payload",
+   "label": "contextlog 전송 항목",
+   "parent": "collect-analytics-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소스 코드 기준 전송 필드.",
    "added": "2026-11-21",
    "related": []
   }
