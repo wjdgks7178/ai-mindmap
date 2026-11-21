@@ -44812,11 +44812,14 @@
    "label": "세트별 구성 비교",
    "parent": "dataset-composition-table",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습·검증·시험의 속성 분포 확인.",
+   "summary": "Datasheets §3.2: 추천 분할과 이유, 표본 대표성 검증을 묻는다. Data Cards는 분할별 기술 통계 보고를 요청(필드 라벨 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dataset-composition-table"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "reference-population-comparison",
@@ -55502,6 +55505,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가 조건에 따른 위험 해석.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "split-rationale-record",
+   "label": "분할 이유 기록",
+   "parent": "split-composition-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "왜 이렇게 나눴는지 문서화.",
    "added": "2026-11-21",
    "related": []
   }
