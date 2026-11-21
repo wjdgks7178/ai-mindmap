@@ -46284,11 +46284,14 @@
    "label": "git lfs migrate",
    "parent": "git-lfs-vs-dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이미 기록된 큰 파일을 LFS로 옮기기.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "git lfs migrate import --include=...: 과거 기록의 큰 파일을 LFS로(새 SHA, 강제 푸시 필요). --everything·--above·--no-rewrite·export(역변환).",
+   "related": [
+    "git-lfs-vs-dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "huggingface-hub-versioning",
@@ -55845,6 +55848,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "추적 패턴과 필터 설정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "lfs-history-rewrite-risk",
+   "label": "기록 재작성 위험",
+   "parent": "git-lfs-migrate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "팀 협업 영향.",
    "added": "2026-11-21",
    "related": []
   }
