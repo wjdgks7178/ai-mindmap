@@ -44134,11 +44134,15 @@
    "label": "작업자 편향 재보정",
    "parent": "worker-quality-gold-questions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "골드로 응답을 전문가 기준에 맞춤.",
+   "summary": "Raykar: 민감도·특이도 EM, 소프트 라벨, AUC 다수결 대비 +3.5%(시뮬)·약 +6%(유방 MRI). 항상 반대로 답하는 작업자는 비용 0, 스패머는 0.5(Wang & Ipeirotis).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "worker-quality-gold-questions",
+    "dawid-skene"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "high-volume-low-quality-workers",
@@ -55130,6 +55134,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "스패밍 지시자와 EM·VB 학습.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "soft-label-expected-cost",
+   "label": "소프트 라벨 기대 비용",
+   "parent": "worker-bias-recalibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 라벨로 작업자 가치 평가.",
    "added": "2026-11-21",
    "related": []
   }
