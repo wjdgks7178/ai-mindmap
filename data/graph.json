@@ -43449,11 +43449,14 @@
    "label": "InstructGPT 3단계",
    "parent": "sft-supervised-finetuning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "SFT → 보상 모델 → PPO.",
+   "summary": "InstructGPT: SFT(13k)→보상모델(33k)→PPO(31k). 1.3B가 175B GPT-3보다 선호, 175B는 GPT-3 대비 85%.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-basics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "sft-epochs-overfitting",
@@ -53798,6 +53801,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "중간 자원 언어의 비중 계산.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "reward-model-training",
+   "label": "보상 모델 학습",
+   "parent": "instructgpt-three-stage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위 비교 데이터로 선호를 예측.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ppo-policy-optimization",
+   "label": "PPO 정책 최적화",
+   "parent": "instructgpt-three-stage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보상 점수를 올리는 강화학습.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "labeler-population-bias",
+   "label": "라벨러 집단 편향",
+   "parent": "instructgpt-three-stage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "40명 선호에 맞춰지는 문제.",
    "added": "2026-11-21",
    "related": []
   }
