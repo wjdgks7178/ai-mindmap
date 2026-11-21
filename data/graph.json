@@ -45417,11 +45417,15 @@
    "label": "CLIP 임베딩",
    "parent": "domino-slice-discovery",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이미지·텍스트를 같은 공간에 두는 모델.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "CLIP: WIT 4억 쌍 대칭 대조 학습, 배치 32,768. ViT-L/14@336px ImageNet 제로샷 76.2%(Visual N-Grams 11.5%), top-5 95%.",
+   "related": [
+    "domino-slice-discovery",
+    "multimodal"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "slice-name-verification",
@@ -55389,6 +55393,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습과 분리해 평가에만 쓰는 설계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "contrastive-loss-symmetric",
+   "label": "대칭 대조 손실",
+   "parent": "clip-embeddings",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지→텍스트·텍스트→이미지 양방향.",
    "added": "2026-11-21",
    "related": []
   }
