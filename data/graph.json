@@ -43950,11 +43950,15 @@
    "label": "라벨링 전 마스킹",
    "parent": "self-hosted-labeling-privacy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "개인정보 가린 뒤 업로드.",
+   "summary": "Presidio: Analyzer(NER·정규식·체크섬)+Anonymizer(replace·redact·hash·mask·encrypt 등). 모든 PII 탐지는 보장 안 됨.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "self-hosted-labeling-privacy",
+    "ai-safety"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "adaptive-redundancy",
@@ -54411,6 +54415,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "양·음 라벨 수로 확실성 측정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "presidio-operators",
+   "label": "Presidio 연산자",
+   "parent": "mask-before-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "replace·mask·hash·encrypt 선택.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "korean-pii-recognizers",
+   "label": "한국어 PII 인식기",
+   "parent": "mask-before-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한국어 개인정보 패턴 추가.",
    "added": "2026-11-21",
    "related": []
   }
