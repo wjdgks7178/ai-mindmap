@@ -43324,11 +43324,15 @@
    "label": "공개 안전 분류기 대안",
    "parent": "safesearch-vs-wordlist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "외부 서비스 의존을 줄이는 방법.",
+   "summary": "공개 분류기: Llama Guard(입출력, Llama2-7b, 분류 체계 조정 가능), Detoxify(모델 3종, 7개 언어 multilingual, 욕설 오탐 편향 경고).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "safesearch-vs-wordlist",
+    "ai-safety"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "doc-vs-line-level-removal",
@@ -54713,6 +54717,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포 이동 시 θ 재설정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "llama-guard-taxonomy",
+   "label": "Llama Guard 분류 체계",
+   "parent": "open-safety-classifiers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트·응답 위험 분류 항목.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "detoxify-models",
+   "label": "Detoxify 모델 3종",
+   "parent": "open-safety-classifiers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "original·unbiased·multilingual.",
    "added": "2026-11-21",
    "related": []
   }
