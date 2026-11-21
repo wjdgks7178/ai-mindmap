@@ -46139,11 +46139,14 @@
    "label": "가치로 오라벨 찾기",
    "parent": "leave-one-out-valuation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "낮은 가치 순으로 검사해 잘못된 라벨 발견.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Data Shapley: 오라벨이 낮은 가치로 몰려 일찍 발견. LOO는 로지스틱 회귀 외 2개 모델에서 거의 무작위(정확한 비율 미확인).",
+   "related": [
+    "leave-one-out-valuation"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "training-noise-in-valuation",
