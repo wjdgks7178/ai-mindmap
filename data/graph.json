@@ -43994,11 +43994,15 @@
    "label": "MTurk 비전문가 라벨링 연구",
    "parent": "redundant-annotation-count",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "5개 과제·편향 보정.",
+   "summary": "MTurk 비전문가 라벨로 5개 NLP 과제 전문가 수준 근접. 21,690라벨 25.82달러, 감정 인식은 비전문가 4명≈전문가 1명, 편향 보정 +3~4%(Snow 2008).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "redundant-annotation-count",
+    "dawid-skene"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "confusion-matrix-annotator",
@@ -54365,6 +54369,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "항상 무작위 샘플과 비교하기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "crowd-label-bias-correction",
+   "label": "크라우드 라벨 편향 보정",
+   "parent": "mturk-annotation-2008",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소량 골드로 작업자 혼동 행렬 추정.",
    "added": "2026-11-21",
    "related": []
   }
