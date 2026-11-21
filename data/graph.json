@@ -45904,11 +45904,14 @@
    "label": "FGSM",
    "parent": "adversarial-examples",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "기울기 부호 한 걸음으로 적대적 사례 생성.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "FGSM: η=ε·sign(∇ₓJ). 판다 57.7%→긴팔원숭이 99.3%(ε=.007), MNIST ε=.25 얕은 softmax 오류 99.9%·maxout 89.4%, 적대적 학습으로 maxout 89.4→17.9%.",
+   "related": [
+    "adversarial-examples"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "adversarial-transferability",
@@ -55586,6 +55589,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "경로·URL 변경에도 유지되는 ID.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "pgd-attack",
+   "label": "PGD 공격",
+   "parent": "fgsm",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 걸음 반복 적대적 공격.",
    "added": "2026-11-21",
    "related": []
   }
