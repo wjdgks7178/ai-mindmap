@@ -43506,11 +43506,14 @@
    "label": "무해성 점수",
    "parent": "red-teaming-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "선호 모델이 매긴 값, 낮을수록 해로움.",
+   "summary": "무해성 선호 모델의 출력(낮을수록 해로움). 최소 점수로 공격 성공 측정, 16개 중 2개만 제시하는 거부 샘플링·RLHF 보상에 사용.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "red-team-attack-types"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "red-team-scaling-rlhf",
@@ -53910,6 +53913,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "3%만 태그된 분포의 해석 주의.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "rejection-sampling-safety",
+   "label": "거부 샘플링",
+   "parent": "harmlessness-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 응답 중 덜 해로운 것만 선택.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "helpful-harmless-tension",
+   "label": "도움됨-무해성 긴장",
+   "parent": "harmlessness-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절만 하면 무해해지는 문제.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "reward-hacking-safety-score",
+   "label": "점수 보상 해킹",
+   "parent": "harmlessness-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수만 높이는 응답이 나오는 위험.",
    "added": "2026-11-21",
    "related": []
   }
