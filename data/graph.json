@@ -43760,11 +43760,16 @@
    "label": "준·약·자기지도 학습 비교",
    "parent": "weak-supervision",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "세 학습 방식의 차이.",
+   "summary": "Zhou: 약한 지도=불완전(능동·준지도)·부정확(다중 인스턴스)·오류(노이즈·크라우드). 자기지도는 데이터 자체에서 과제 생성.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "weak-supervision",
+    "semi-supervised-learning",
+    "self-supervised"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "weak-supervision-validation-set",
@@ -54296,6 +54301,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "관련 과제 소스를 행렬 완성식으로 결합.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "multi-instance-learning",
+   "label": "다중 인스턴스 학습",
+   "parent": "semi-vs-weak-vs-self-supervised",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가방 단위 라벨에서 개별 인스턴스를 추정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "label-noise-handling",
+   "label": "라벨 노이즈 처리",
+   "parent": "semi-vs-weak-vs-self-supervised",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의심 샘플 제거·재라벨.",
    "added": "2026-11-21",
    "related": []
   }
