@@ -45860,11 +45860,14 @@
    "label": "mCE(평균 손상 오류)",
    "parent": "imagenet-c-p",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "AlexNet 대비 손상 오류의 상대 비율.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "ImageNet-C 15손상×5심각도, mCE=AlexNet 대비 오류비 평균. AlexNet 100, VGG-19 88.9, ResNet-50 76.7, ResNeXt-101 62.2. 상대 mCE는 거의 불변.",
+   "related": [
+    "imagenet-c-p"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "flip-rate",
@@ -55617,6 +55620,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 변화의 합산 효과.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "relative-mce",
+   "label": "상대 mCE",
+   "parent": "mean-corruption-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "깨끗한 오류를 뺀 손상 견고성.",
    "added": "2026-11-21",
    "related": []
   }
