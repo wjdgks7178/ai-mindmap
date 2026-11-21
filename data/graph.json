@@ -43396,11 +43396,14 @@
    "label": "cld3 언어 판별",
    "parent": "multilingual-filter-adaptation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "mC4가 쓴 언어 식별기와 신뢰도 임계값.",
+   "summary": "mC4는 cld3 신뢰도 70% 미만 페이지를 제거, 페이지 1만 이상 언어만 포함. C4는 langdetect 영어 99%였음.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "ccnet"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "line-length-filter",
@@ -53684,6 +53687,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "점수·안전·다양성을 함께 측정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "code-switching-filter-loss",
+   "label": "코드 스위칭 글 손실",
+   "parent": "cld3-language-id",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "혼용 문서가 판별기 임계값에 잘리는 문제.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "low-resource-language-coverage",
+   "label": "저자원 언어 확보",
+   "parent": "cld3-language-id",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "71개 월간 스크랩 전부 사용한 이유.",
    "added": "2026-11-21",
    "related": []
   }
