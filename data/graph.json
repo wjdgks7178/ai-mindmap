@@ -44134,11 +44134,14 @@
    "label": "고물량·저품질 작업자",
    "parent": "worker-quality-gold-questions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "소수가 대부분을 하는 문제.",
+   "summary": "Snow 2008: 소수 작업자가 큰 몫을 처리하고 편차 큼. 고물량·저품질 식별·편향 보정 필요(수치 상관은 논문에 없음).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "worker-quality-gold-questions"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "selective-classification",
@@ -54669,6 +54672,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "정답률 기준으로 접근 제한.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "worker-share-cap",
+   "label": "작업자 비중 상한",
+   "parent": "high-volume-low-quality-workers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 사람이 지배하지 않게 제한.",
    "added": "2026-11-21",
    "related": []
   }
