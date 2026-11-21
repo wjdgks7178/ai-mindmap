@@ -43972,11 +43972,14 @@
    "label": "다수결 정확도 곡선",
    "parent": "redundant-annotation-count",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "인원 수에 따른 정확도와 수확 체감.",
+   "summary": "독립·동일 p=0.7 다수결: 1명 0.700, 3명 0.784, 5명 0.837, 7명 0.874, 21명 0.974. p≤0.5면 무의미, 증가폭 체감.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "redundant-annotation-count"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "annotator-independence-assumption",
