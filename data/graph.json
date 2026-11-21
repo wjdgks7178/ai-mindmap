@@ -45419,11 +45419,14 @@
    "label": "최악 집단 정확도",
    "parent": "wilds-benchmark",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "평균이 아니라 가장 못한 집단을 본다.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "WILDS: 집단 정확도의 최솟값. CivilComments 평균 92.2 vs 최악 56.0. Group DRO+강한 정규화로 최악 집단 10~40%p 향상(Sagawa 2020).",
+   "related": [
+    "wilds-benchmark"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "camelyon17",
@@ -55070,6 +55073,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "병원 간 염색 차이를 줄이는 증강.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "group-dro",
+   "label": "Group DRO",
+   "parent": "worst-group-accuracy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단별 손실의 최댓값 최소화.",
    "added": "2026-11-21",
    "related": []
   }
