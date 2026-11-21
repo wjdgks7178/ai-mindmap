@@ -43680,11 +43680,14 @@
    "label": "노이즈 인지 손실",
    "parent": "label-model-denoising",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "확률 라벨로 학습하는 손실 변형.",
+   "summary": "Data Programming은 LF 노이즈를 생성모델로 제거하고 노이즈 인지 판별 손실로 학습(TAC-KBP LSTM F1 약 6점 향상). 하드 라벨 변환은 신뢰도 손실.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-model-denoising"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "dawid-skene",
@@ -54205,6 +54208,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙을 개발 세트에 맞춰 과하게 고치는 위험.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "probs-to-preds",
+   "label": "확률을 하드 라벨로",
+   "parent": "noise-aware-loss",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "argmax 변환과 정보 손실.",
    "added": "2026-11-21",
    "related": []
   }
