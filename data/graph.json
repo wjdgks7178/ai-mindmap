@@ -43831,11 +43831,14 @@
    "label": "predict·fit 구현",
    "parent": "label-studio-ml-backend",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "model.py에서 예측과 학습 구현.",
+   "summary": "model.py에서 LabelStudioMLBase 상속: predict(tasks, context)로 사전 주석, fit(event, data)는 웹훅(LS 1.4.1+ 자동 생성)으로 학습. 포트 9090.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-ml-backend"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "automation-bias-prelabel",
@@ -54437,6 +54440,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "한국어 개인정보 패턴 추가.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ls-webhook-annotation-payload",
+   "label": "주석 웹훅 payload",
+   "parent": "ml-backend-predict-fit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 payload에 주석 본문이 없는 점.",
    "added": "2026-11-21",
    "related": []
   }
