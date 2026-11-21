@@ -44884,11 +44884,14 @@
    "label": "이용약관 vs robots.txt 불일치",
    "parent": "consent-in-crisis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 사이트가 서로 다른 허용 의사를 표시.",
+   "summary": "약관 제한 토큰 C4 43.2%·RefinedWeb 52.8%·Dolma 52.3% vs robots.txt 5.0·6.6·5.6%(Longpre 2024). 두 신호 불일치와 크롤러 이름 나열 허점.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "consent-in-crisis"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "ai-data-commons",
@@ -54881,6 +54884,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "SD와 상관이 변하는 이유.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "crawler-user-agent-gaps",
+   "label": "크롤러 User-Agent 허점",
+   "parent": "tos-vs-robots-txt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미등록 에이전트만 차단하는 문제.",
    "added": "2026-11-21",
    "related": []
   }
