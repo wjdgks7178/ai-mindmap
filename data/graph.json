@@ -43531,11 +43531,15 @@
    "label": "위험 데이터 취급",
    "parent": "red-teaming-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "콘텐츠 경고와 연구 목적 제한.",
+   "summary": "레드팀 데이터 취급: 사전 경고·주제 선택권·건너뛰기·시간당 20달러 이상 보수·Slack 지원·웰빙 설문, 공개 데이터시트 경고(2022).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "red-teaming-data",
+    "ai-safety"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "ai-judge-position-bias",
@@ -53946,6 +53950,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "점수만 높이는 응답이 나오는 위험.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "content-moderation-wellbeing",
+   "label": "콘텐츠 모더레이터 웰빙",
+   "parent": "red-team-data-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해로운 콘텐츠 노출의 정신적 부담 완화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "dataset-datasheet-warning",
+   "label": "데이터시트 경고 문구",
+   "parent": "red-team-data-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불쾌 데이터 공개 시 안내.",
    "added": "2026-11-21",
    "related": []
   }
