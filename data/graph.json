@@ -44834,11 +44834,14 @@
    "label": "민감 속성 수집의 한계",
    "parent": "dataset-composition-table",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "속성 없이 구성을 점검하는 어려움.",
+   "summary": "Datasheets §3.2: 인종·성적 지향·종교·건강·생체·범죄 이력 등 민감 정보와 식별 가능성 질문, §3.3 동의·철회. Data Cards: Sensitivity of Dataset·Human and Other Sensitive Attributes 구역(항목 라벨 일부 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dataset-composition-table"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "redundant-encoding",
@@ -55375,6 +55378,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "출력으로 경쟁 모델 학습을 제한하는 약관.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "evaluation-only-attribute-storage",
+   "label": "평가 전용 속성 보관",
+   "parent": "sensitive-attribute-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습과 분리해 평가에만 쓰는 설계.",
    "added": "2026-11-21",
    "related": []
   }
