@@ -44713,11 +44713,14 @@
    "label": "Pilot Parliaments Benchmark",
    "parent": "gender-shades",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "국회의원 1,270명 균형 데이터셋.",
+   "summary": "PPB: 6개국 국회의원 1,270명, 어두운 피부 46.4%. 집단비율 DF 21.3·DM 25.0·LF 23.3·LM 30.3%. IJB-A 79.6%·Adience 86.2%가 밝은 피부.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gender-shades"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "algorithmic-audit",
@@ -54754,6 +54757,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차 집단 표본이 작을 때의 불확실성.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "benchmark-representativeness",
+   "label": "벤치마크 대표성",
+   "parent": "pilot-parliaments-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 데이터 구성이 결과를 바꾸는 이유.",
    "added": "2026-11-21",
    "related": []
   }
