@@ -44818,11 +44818,14 @@
    "label": "Fairness through unawareness",
    "parent": "proxy-variables",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "속성 제거로 공정성을 얻으려는 접근과 한계.",
+   "summary": "Dwork: 중복 부호화는 blindness에 대한 공격(성별·관심 항목을 지워도 성적 지향 숨겨지지 않음). fairmlbook: 효과 없거나 해로울 수 있음.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "proxy-variables"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "proxy-detection-test",
@@ -54926,6 +54929,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "트리별 부트스트랩 기준 가중치.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "fairness-through-awareness",
+   "label": "Fairness through awareness",
+   "parent": "fairness-through-unawareness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유사 개인에 유사 처우 원칙.",
    "added": "2026-11-21",
    "related": []
   }
