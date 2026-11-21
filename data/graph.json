@@ -44142,11 +44142,14 @@
    "label": "선택적 분류",
    "parent": "confidence-routed-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "확신이 낮으면 기권하는 분류기와 위험-커버리지.",
+   "summary": "(f,g) 정의, 커버리지·선택적 위험. SR 임계값으로 보장: ImageNet top-5 δ=0.001 r*=0.02 → 커버리지 0.535, CIFAR-10 r*=0.01 → 0.786(Geifman 2017).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "confidence-routed-review"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "threshold-curve-selection",
@@ -54579,6 +54582,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "이진에서 혼동 행렬의 두 숫자.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "risk-coverage-curve",
+   "label": "위험-커버리지 곡선",
+   "parent": "selective-classification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "커버리지별 위험을 그린 곡선.",
    "added": "2026-11-21",
    "related": []
   }
