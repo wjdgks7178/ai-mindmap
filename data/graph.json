@@ -54067,11 +54067,14 @@
    "label": "ARPA 형식",
    "parent": "kenlm",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "N-그램 LM의 텍스트 저장 형식.",
+   "summary": "KenLM lmplz: 말뭉치 stdin→ARPA stdout, 수정 Kneser-Ney·가지치기 없음, -o 차수·-S 메모리·-T 임시, UTF-8 사전 토큰화, build_binary로 이진 변환.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "kenlm"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "ngram-lm-vs-neural-lm",
@@ -56103,6 +56106,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "SQL로 WARC 위치 추출.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "lmplz-input-preprocessing",
+   "label": "lmplz 입력 전처리",
+   "parent": "arpa-format",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토큰화·BOM 제거 규칙.",
    "added": "2026-11-21",
    "related": []
   }
