@@ -43281,11 +43281,14 @@
    "label": "모델의 자기 반복 실패",
    "parent": "repetition-thresholds",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "샘플링 중 반복과 반복적 학습 데이터의 관계.",
+   "summary": "가능도 최대화 디코딩이 반복을 낳고 nucleus 샘플링이 완화(Holtzman 2019). 반복 많은 학습 데이터는 부분적 원인 추정.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-basics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "filter-removal-audit",
@@ -53525,6 +53528,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 단계의 역할 차이.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "nucleus-sampling",
+   "label": "nucleus(top-p) 샘플링",
+   "parent": "model-repetition-failure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 꼬리를 잘라 샘플링.",
    "added": "2026-11-21",
    "related": []
   }
