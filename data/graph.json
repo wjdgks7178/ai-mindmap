@@ -45242,11 +45242,14 @@
    "label": "Getty v. Stability AI",
    "parent": "model-weights-derivative-question",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "영국·미국 병행 소송의 쟁점.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "영국 고등법원 2025.11.4 대부분 Stability 승(가중치는 사본 아님, 2차 침해 부정), Getty는 좁은 상표만 승. 2025.12.17 항소 허가, 미국 N.D. Cal. 진행 중. 판결문 원문 미확인.",
+   "related": [
+    "model-weights-derivative-question"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "kadrey-v-meta",
@@ -55201,6 +55204,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI 산출물이 원본 시장을 희석하는 주장.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "model-weights-not-copies",
+   "label": "가중치는 사본인가",
+   "parent": "getty-v-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영국 법원의 핵심 판단과 한계.",
    "added": "2026-11-21",
    "related": []
   }
