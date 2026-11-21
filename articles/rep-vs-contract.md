@@ -23,7 +23,7 @@ flowchart LR
 ```mermaid
 flowchart TD
   X["robots.txt 응답"] --> a["2xx: 규칙 따름"]
-  X --> b["4xx: 접근 허용(권한 아님이 아니라 허가됨)"]
+  X --> b["4xx: 접근해도 됨"]
   X --> c["5xx: 전체 금지로 간주"]
 ```
 
