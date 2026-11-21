@@ -43624,11 +43624,14 @@
    "label": "lf_summary 표 읽기",
    "parent": "lf-coverage-conflict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "LF별 통계표를 해석하는 법.",
+   "summary": "LFAnalysis.lf_summary: 극성·커버리지·중복·충돌·(정답 있을 때) 정확도. 기권한 건은 정확도 계산에서 제외(Snorkel 튜토리얼).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "lf-coverage-conflict"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "uncovered-data",
@@ -54138,6 +54141,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "다른 과제 모델을 약한 신호로 활용.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "label-matrix",
+   "label": "라벨 행렬 L",
+   "parent": "lf-summary-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행=데이터·열=LF, 기권은 -1.",
    "added": "2026-11-21",
    "related": []
   }
