@@ -46236,11 +46236,14 @@
    "label": "DVC 포인터 파일",
    "parent": "dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "MD5 해시로 데이터 버전을 가리키는 .dvc.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "DVC .dvc 파일: YAML, outs에 path·md5·size(nfiles·isexec 등), dvc add가 .gitignore에 자동 추가. Git에는 포인터만, 데이터는 캐시·원격.",
+   "related": [
+    "dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "content-addressable-storage",
@@ -55775,6 +55778,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "허용 오차 내에서 스캔 중단.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "dvc-autostage",
+   "label": "DVC 자동 스테이징",
+   "parent": "dvc-pointer-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "core.autostage 설정.",
    "added": "2026-11-21",
    "related": []
   }
