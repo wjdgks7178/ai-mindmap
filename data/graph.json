@@ -45323,11 +45323,14 @@
    "label": "평가 보고서",
    "parent": "system-cards",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "특정 주장의 증거를 재현 가능하게 기록.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "모델 카드 9항목(Intended Use·Metrics·Quantitative Analyses 등). Opus 4.1 시스템 카드 부록(2025.8)은 자동 감사 1,160개 기록·시드 290개·기준 8개, ASL-3.",
+   "related": [
+    "system-cards"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "card-versioning",
@@ -55446,6 +55449,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨 보존 변형에 예측 불변 확인.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "evaluation-conditions-record",
+   "label": "평가 조건 기록",
+   "parent": "evaluation-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "안전장치·프롬프트·버전을 함께 적기.",
    "added": "2026-11-21",
    "related": []
   }
