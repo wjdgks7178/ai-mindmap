@@ -45397,11 +45397,14 @@
    "label": "도메인 일반화",
    "parent": "wilds-benchmark",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "새로운 도메인에서도 성능을 유지하는 학습.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "WILDS 10개 데이터셋, 학습·시험 도메인 서로소. ERM ID→OOD: iWildCam 47.0→31.0, Camelyon17 93.2→70.3, RxRx1 39.8→29.9.",
+   "related": [
+    "wilds-benchmark"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "subpopulation-shift",
@@ -55087,6 +55090,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "집단별 손실의 최댓값 최소화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "domain-adaptation-vs-generalization",
+   "label": "도메인 적응 vs 일반화",
+   "parent": "domain-generalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대상 도메인 데이터 사용 여부.",
    "added": "2026-11-21",
    "related": []
   }
