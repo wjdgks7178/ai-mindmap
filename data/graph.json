@@ -46153,11 +46153,14 @@
    "label": "학습 노이즈와 가치 추정",
    "parent": "leave-one-out-valuation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "확률적 학습이 작은 효과를 가리는 문제.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Data Shapley: 잡음 0.1/0.3/0.5 이미지 10%의 가치가 잡음이 클수록 낮아짐. TMC-Shapley vs 정확한 Shapley 상관 98.4~99.5%, 25% 절단 순위 상관 약 0.8.",
+   "related": [
+    "leave-one-out-valuation"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "bartz-v-anthropic",
@@ -55761,6 +55764,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "가중 선형 회귀로 SHAP 근사.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "tmc-shapley-truncation",
+   "label": "TMC 절단",
+   "parent": "training-noise-in-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 오차 내에서 스캔 중단.",
    "added": "2026-11-21",
    "related": []
   }
