@@ -45026,11 +45026,14 @@
    "label": "CFAA와 공개 데이터",
    "parent": "robots-txt-vs-tos",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "hiQ 판결이 말한 것과 말하지 않은 것.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "hiQ v. LinkedIn(9th Cir. 2019, 2022 재확인)과 Van Buren(2021): CFAA gates-up-or-down. 2022.12 합의 판결 50만 달러(계약 위반). 판결문 원문 일부 미확인.",
+   "related": [
+    "robots-txt-vs-tos"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "rep-vs-contract",
@@ -55159,6 +55162,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "상관된 오류를 할인하는 결합.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "van-buren-gates-up-or-down",
+   "label": "Van Buren: 문 열림/닫힘 기준",
+   "parent": "cfaa-public-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "exceeds authorized access 해석.",
    "added": "2026-11-21",
    "related": []
   }
