@@ -42986,11 +42986,14 @@
    "label": "주석 비용 비교",
    "parent": "llm-as-data-annotator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람·크라우드·LLM의 건당 비용.",
+   "summary": "전문가·크라우드·LLM 라벨 비용·품질 비교. ChatGPT zero-shot은 건당 0.003달러 미만, MTurk의 약 20배 저렴(2023 기준).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-as-data-annotator"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "benchmark-selection-small-scale",
@@ -53243,6 +53246,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "Internet Archive의 CDX 조회 인터페이스.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "total-labeling-cost",
+   "label": "라벨링 총비용 계산",
+   "parent": "annotation-cost-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단가·검수·재작업·골드 셋 합산.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "llm-annotator-confidence-routing",
+   "label": "확신도 기반 사람 검수 분기",
+   "parent": "annotation-cost-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불확실한 건만 사람에게 보내기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "annotator-agreement-metrics",
+   "label": "주석자 일치도 지표",
+   "parent": "annotation-cost-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코헨 카파 등 일치도 측정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "data-privacy-in-annotation",
+   "label": "라벨링 중 개인정보 문제",
+   "parent": "annotation-cost-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 API 전송 시 개인정보 위험.",
    "added": "2026-11-21",
    "related": []
   }
