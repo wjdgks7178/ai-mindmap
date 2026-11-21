@@ -44687,11 +44687,15 @@
    "label": "교차(intersectional) 평가",
    "parent": "gender-shades",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "성별×피부색처럼 속성 조합별 평가.",
+   "summary": "Gender Shades: 어두운 피부 여성 오류 20.8~34.7% vs 밝은 피부 남성 0.0~0.8%, 최대 격차 34.4%p. 전체 정확도 87.9~93.7%에 가려짐.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gender-shades",
+    "ai-bias-ethics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "fitzpatrick-skin-type",
@@ -54739,6 +54743,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "original·unbiased·multilingual.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "small-cell-confidence-interval",
+   "label": "작은 칸의 신뢰구간",
+   "parent": "intersectional-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차 집단 표본이 작을 때의 불확실성.",
    "added": "2026-11-21",
    "related": []
   }
