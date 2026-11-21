@@ -45004,11 +45004,14 @@
    "label": "browsewrap와 clickwrap",
    "parent": "robots-txt-vs-tos",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "약관 동의 방식에 따라 효력이 달라짐.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "clickwrap(동의 버튼) vs browsewrap(링크 고지). Specht(2d Cir. 2002) 동의 부재, Nguyen(9th Cir. 2014) 링크만으론 부족(스니펫, 원문 미확인).",
+   "related": [
+    "robots-txt-vs-tos"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "tos-review-step",
@@ -55173,6 +55176,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "exceeds authorized access 해석.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "conspicuous-notice-test",
+   "label": "눈에 띄는 고지 기준",
+   "parent": "browsewrap-clickwrap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동의 성립 판단의 핵심 요소.",
    "added": "2026-11-21",
    "related": []
   }
