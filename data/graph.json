@@ -44730,11 +44730,15 @@
    "label": "알고리즘 감사",
    "parent": "gender-shades",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "외부에서 제품을 평가해 격차를 공개.",
+   "summary": "Gender Shades는 사전 통보 후 공개한 블랙박스 감사. 후속 감사에서 세 업체 어두운 여성 오류 17.7~30.4%p 감소, 비대상 Amazon 31.37%·Kairos 22.50%.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gender-shades",
+    "ai-safety"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "crosstab-small-cell-flag",
@@ -54782,6 +54786,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "사진·대면 라벨과 대안 척도.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "responsible-disclosure-audit",
+   "label": "사전 통보형 감사",
+   "parent": "algorithmic-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과를 먼저 업체에 알리는 절차.",
    "added": "2026-11-21",
    "related": []
   }
