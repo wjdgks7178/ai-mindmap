@@ -43228,11 +43228,14 @@
    "label": "하위 집합 표집 비율 튜닝",
    "parent": "gopher-massivetext",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "웹·도서·코드 비율을 성능으로 조정.",
+   "summary": "Gopher: MassiveWeb 48%·Books 27%·C4 10%·News 10%·GitHub 3%·Wikipedia 2%로 300B 토큰 표집. 크기와 비율이 다름.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "nanotron-lighteval"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "top-ngram-fraction",
@@ -53461,6 +53464,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 후 새 시험 세트로 점검.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "data-mixture-ablation",
+   "label": "데이터 혼합 비율 ablation",
+   "parent": "sampling-proportion-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 비율을 작은 모델로 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "books-share-effect",
+   "label": "책 비중 효과",
+   "parent": "sampling-proportion-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "책 비율이 장문 언어 모델링에 미치는 영향.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "epochs-vs-subset-sampling",
+   "label": "에폭 vs 부분 표집",
+   "parent": "sampling-proportion-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 토큰이 전체의 일부일 때의 선택.",
    "added": "2026-11-21",
    "related": []
   }
