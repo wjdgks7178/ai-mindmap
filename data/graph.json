@@ -45406,11 +45406,14 @@
    "label": "오류 인식 혼합 모델",
    "parent": "domino-slice-discovery",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "예측 오류를 반영해 군집을 찾는 모델.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Domino: 임베딩·라벨·예측을 함께 모델링하는 혼합 모델, EM·혼동 행렬 초기화. 1,235 설정 중 36% 정확 식별, 희소·노이즈 precision-at-10 0.639, 상관 슬라이스는 ConfusionSDM이 우세.",
+   "related": [
+    "domino-slice-discovery"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "clip-embeddings",
@@ -55404,6 +55407,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미지→텍스트·텍스트→이미지 양방향.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "gamma-coherence-tradeoff",
+   "label": "γ: 일관성-저성능 균형",
+   "parent": "error-aware-mixture-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스 성격을 조절하는 계수.",
    "added": "2026-11-21",
    "related": []
   }
