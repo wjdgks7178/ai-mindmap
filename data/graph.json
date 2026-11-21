@@ -46270,11 +46270,14 @@
    "label": "Git LFS 포인터 파일",
    "parent": "git-lfs-vs-dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "oid·size로 실제 파일을 가리키는 텍스트.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "LFS 포인터: 1024바이트 미만 텍스트(version https://git-lfs.github.com/spec/v1, oid sha256:<64hex>, size). git lfs track으로 패턴 기록(.gitattributes 문구는 미확인).",
+   "related": [
+    "git-lfs-vs-dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "git-lfs-migrate",
@@ -55831,6 +55834,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "해시 알고리즘 선택.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "gitattributes-lfs-filter",
+   "label": "LFS용 .gitattributes",
+   "parent": "git-lfs-pointer-file",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추적 패턴과 필터 설정.",
    "added": "2026-11-21",
    "related": []
   }
