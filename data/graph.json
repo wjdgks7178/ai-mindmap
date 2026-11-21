@@ -43652,11 +43652,14 @@
    "label": "상관된 LF의 위험",
    "parent": "lf-coverage-conflict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 방식으로 틀리는 LF들.",
+   "summary": "상관된 LF는 다수결에서 한 신호가 과대 대표됨. LabelModel은 일치·불일치로 정확도·상관을 추정해 재가중(Snorkel).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "lf-coverage-conflict"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "lf-pruning",
@@ -54166,6 +54169,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "미커버를 읽어 새 LF를 만드는 방법.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "data-programming-paper",
+   "label": "Data Programming 논문",
+   "parent": "correlated-lf-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LabelModel 이론의 원천.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "lf-diversification",
+   "label": "LF 다양화",
+   "parent": "correlated-lf-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서로 다른 근거로 규칙을 만들기.",
    "added": "2026-11-21",
    "related": []
   }
