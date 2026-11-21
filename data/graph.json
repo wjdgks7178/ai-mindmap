@@ -45170,11 +45170,14 @@
    "label": "데이터 모음집 풀어보기",
    "parent": "dataset-license-checklist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모음집 속 하위 데이터셋별 조건 확인.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "모음집은 출처 계보. 라이선스의 85%가 저작자 표시, 30%가 share-alike 요구(그림 캡션은 73%·33%로 불일치). 비상업·학술 전용의 45.5%가 합성 데이터.",
+   "related": [
+    "dataset-license-checklist"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "cc-license-compatibility",
@@ -55347,6 +55350,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "GitHub 라이선스를 데이터에 잘못 적용.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "license-strictest-condition",
+   "label": "가장 엄격한 조건 적용",
+   "parent": "collection-unpacking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모음집 전체에 최엄격 조건 취급.",
    "added": "2026-11-21",
    "related": []
   }
