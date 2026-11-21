@@ -45874,11 +45874,14 @@
    "label": "Flip Rate",
    "parent": "imagenet-c-p",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "섭동 시퀀스에서 예측이 뒤집히는 비율.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "ImageNet-P(10섭동·30프레임+)에서 인접 프레임 예측 뒤집힘 비율 FP, FR=FP/AlexNet. mFR ResNet-50 58.0, DenseNet-161 46.9, ResNeXt-101 43.2.",
+   "related": [
+    "imagenet-c-p"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "augmix",
@@ -55631,6 +55634,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "깨끗한 오류를 뺀 손상 견고성.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "top5-distance",
+   "label": "T5D",
+   "parent": "flip-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위 기반 예측 안정성.",
    "added": "2026-11-21",
    "related": []
   }
