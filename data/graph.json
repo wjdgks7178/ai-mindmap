@@ -43871,11 +43871,15 @@
    "label": "Docker 네트워킹과 host.docker.internal",
    "parent": "label-studio-ml-backend",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "컨테이너에서 localhost 문제.",
+   "summary": "컨테이너 안 localhost는 자기 자신. LS 문서는 host.docker.internal:9090, SAM README는 호스트 IP 사용 안내. 리눅스 host-gateway는 미확인.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-ml-backend",
+    "ai-infra"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "uncertainty-sampling-types",
@@ -54480,6 +54484,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "정확도·속도 선택.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "docker-extra-hosts-linux",
+   "label": "리눅스 extra_hosts",
+   "parent": "docker-host-networking-ls",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "host-gateway 설정(미확인).",
    "added": "2026-11-21",
    "related": []
   }
