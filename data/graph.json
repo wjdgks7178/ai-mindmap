@@ -43492,11 +43492,14 @@
    "label": "레드팀 공격 유형",
    "parent": "red-teaming-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모욕적 언어부터 비폭력적 비윤리까지.",
+   "summary": "Anthropic 레드팀 38,961건: 상위 유형은 차별·혐오·폭력·비폭력 비윤리·괴롭힘. 비폭력 비윤리가 상대적으로 성공률 높음(태그는 약 3%만).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "red-teaming-data"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "harmlessness-score",
@@ -53885,6 +53888,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "긴 접두사가 같은 프롬프트 제거.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "subtle-harm-detection",
+   "label": "미묘한 해악 탐지",
+   "parent": "red-team-attack-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비폭력 비윤리 출력이 더 찾기 어려운 이유.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "attack-tag-sampling-limit",
+   "label": "태그 표본 한계",
+   "parent": "red-team-attack-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "3%만 태그된 분포의 해석 주의.",
    "added": "2026-11-21",
    "related": []
   }
