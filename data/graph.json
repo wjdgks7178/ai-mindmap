@@ -43798,11 +43798,14 @@
    "label": "Choices 속성",
    "parent": "label-studio-config-tags",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "choice single/multiple 등 속성.",
+   "summary": "Choices: choice(single·single-radio·multiple), layout, required, perRegion, randomize(위치 편향 완화), 동적 value·중첩. 결과는 value 또는 alias.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-config-tags"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "label-studio-task-json",
@@ -54495,6 +54498,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "host-gateway 설정(미확인).",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "choices-randomize-position-bias",
+   "label": "선택지 섞기와 위치 편향",
+   "parent": "label-studio-choices-attributes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "randomize로 순서 효과 줄이기.",
    "added": "2026-11-21",
    "related": []
   }
