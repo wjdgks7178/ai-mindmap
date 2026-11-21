@@ -45303,11 +45303,14 @@
    "label": "Equality of Opportunity",
    "parent": "subgroup-performance-report",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집단 간 FNR 동등 기준.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Y=1인 사람의 TPR을 집단 간 동일하게(Hardt 2016). FICO 최대 이익 대비 인종무시 99.3%, 기회균등 92.8%, equalized odds 80.2%, 인구통계 동등 69.8%.",
+   "related": [
+    "subgroup-performance-report"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "equalized-odds",
@@ -55028,6 +55031,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "검색엔진 등 신원이 확인된 자동화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "post-processing-fairness",
+   "label": "후처리 공정성 조정",
+   "parent": "equality-of-opportunity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 후 집단별 임계값 조정.",
    "added": "2026-11-21",
    "related": []
   }
