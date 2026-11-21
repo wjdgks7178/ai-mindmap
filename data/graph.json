@@ -44702,11 +44702,14 @@
    "label": "Fitzpatrick 피부 유형",
    "parent": "gender-shades",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "피부 반응 기반 6단계 분류.",
+   "summary": "UV 반응 기반 6단계 피부 분류. Gender Shades는 I–III 밝음·IV–VI 어두움으로 묶고 피부과 의사가 PPB 최종 라벨 부여(원 논문은 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gender-shades"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "pilot-parliaments-benchmark",
@@ -54768,6 +54771,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가 데이터 구성이 결과를 바꾸는 이유.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "skin-tone-measurement",
+   "label": "피부색 측정 방식",
+   "parent": "fitzpatrick-skin-type",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사진·대면 라벨과 대안 척도.",
    "added": "2026-11-21",
    "related": []
   }
