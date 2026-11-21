@@ -44098,11 +44098,14 @@
    "label": "상관된 라벨러 문제",
    "parent": "dawid-skene-aggregation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 방식으로 틀리면 과신.",
+   "summary": "BCC: 독립 가정은 다수결 쪽 편향, EBCC·DBCC·EDBCC가 의존 모델링. 다수결 대비 이득 작고 ML 분류기 실험(Kim 2012). Moreno 2015는 라벨러 군집화.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dawid-skene-aggregation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "gold-question-ratio",
@@ -55145,6 +55148,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률 라벨로 작업자 가치 평가.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "classifier-combination-dependence",
+   "label": "분류기 결합과 의존성",
+   "parent": "correlated-annotators",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상관된 오류를 할인하는 결합.",
    "added": "2026-11-21",
    "related": []
   }
