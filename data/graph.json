@@ -46348,11 +46348,14 @@
    "label": "GPU 학습의 비결정성",
    "parent": "experiment-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시드만으로 통제되지 않는 변동.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "PyTorch: 릴리스·커밋·플랫폼 간 완전 재현 비보장, cudnn.benchmark=False·deterministic·use_deterministic_algorithms(True) 옵션(느림). CUBLAS_WORKSPACE_CONFIG는 이 문서에 없음.",
+   "related": [
+    "experiment-reproducibility"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "environment-pinning",
@@ -55963,6 +55966,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "청크 기반 중복 제거 저장.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "multi-seed-reporting",
+   "label": "다중 시드 보고",
+   "parent": "nondeterministic-gpu-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 시드의 평균·분산 보고.",
    "added": "2026-11-21",
    "related": []
   }
