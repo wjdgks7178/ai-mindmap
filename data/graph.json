@@ -46510,11 +46510,14 @@
    "label": "시간 감쇠 점수",
    "parent": "silent-version-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "최근 문서에 가중치를 주는 검색 점수.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Elasticsearch decay(gauss·exp·linear): origin·scale·offset·decay(기본 0.5). 예: offset 5d·scale 10d에서 15일 거리 0.5. 필드 없는 문서는 점수 1.",
+   "related": [
+    "silent-version-drift"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "embedding-dimensions-parameter",
@@ -55921,6 +55924,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "이전성을 이용한 공격.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "decay-missing-date-pitfall",
+   "label": "날짜 누락 감쇠 함정",
+   "parent": "temporal-decay-scoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "날짜 없는 문서는 감쇠 안 됨.",
    "added": "2026-11-21",
    "related": []
   }
