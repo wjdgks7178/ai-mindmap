@@ -43382,11 +43382,14 @@
    "label": "필터링에 만능 해법 없음",
    "parent": "model-likelihood-filtering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Longpre 등 28개 모델 실험의 결론.",
+   "summary": "28개 1.5B 모델 실험: 품질·독성 필터는 벤치마크는 올리나 독성 위험이 커질 수 있고 만능 설정 없음(Longpre 2023).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "model-likelihood-filtering"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "cld3-language-id",
@@ -53648,6 +53651,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "head·middle·tail로 나눠 쓰기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "data-age-temporal-shift",
+   "label": "데이터 나이와 시점 이동",
+   "parent": "filtering-tradeoff-no-silver-bullet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가가 학습보다 뒤일 때 성능 하락.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "domain-mix-diversity",
+   "label": "도메인 혼합 다양성",
+   "parent": "filtering-tradeoff-no-silver-bullet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "책·웹 등 섞기의 이점.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "filter-goal-specific-eval",
+   "label": "목표별 필터 평가",
+   "parent": "filtering-tradeoff-no-silver-bullet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수·안전·다양성을 함께 측정.",
    "added": "2026-11-21",
    "related": []
   }
