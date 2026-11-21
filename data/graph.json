@@ -43295,11 +43295,15 @@
    "label": "필터 제거율 감사",
    "parent": "safesearch-vs-wordlist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정체성·주제별 제거율 비교 방법.",
+   "summary": "제외 문서 표본→군집→정체성 PMI→방언별 제거율→수동 점검 순서의 감사 절차(Dodge 2021 방법 정리).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "safesearch-vs-wordlist",
+    "ai-bias-ethics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "pmi-identity-removal",
@@ -54022,6 +54026,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "AAE·히스패닉 영어 제거율 측정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "excluded-sample-review",
+   "label": "제외 표본 열람",
+   "parent": "filter-removal-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지운 문서를 직접 읽는 감사 단계.",
    "added": "2026-11-21",
    "related": []
   }
