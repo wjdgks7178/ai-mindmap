@@ -45888,11 +45888,14 @@
    "label": "AugMix",
    "parent": "imagenet-c-p",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 증강으로 손상 견고성을 높이는 방법.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "AugMix: 증강 사슬 3개 혼합+JS 일관성 손실. CIFAR-10-C 29.0→12.5%, ImageNet-C mCE 80.6→68.4, ImageNet-P mFR 57.2→37.4(λ는 미확인).",
+   "related": [
+    "imagenet-c-p"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "common-vs-adversarial-robustness",
@@ -55645,6 +55648,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "순위 기반 예측 안정성.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "jensen-shannon-consistency",
+   "label": "JS 일관성 손실",
+   "parent": "augmix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본·증강 예측 분포를 일치시키는 손실.",
    "added": "2026-11-21",
    "related": []
   }
