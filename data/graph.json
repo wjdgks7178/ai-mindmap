@@ -44167,11 +44167,15 @@
    "label": "과신 모델의 분배 실패",
    "parent": "confidence-routed-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "보정되지 않은 확신도의 위험.",
+   "summary": "ResNet-110 CIFAR-100 ECE 16.53%→온도 스케일링 후 1.26%(Guo 2017). 과신하면 확신도 기반 분배에서 틀린 건이 새는 것은 추정.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "confidence-routed-review",
+    "ai-evaluation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "auto-pass-sampling",
