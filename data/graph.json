@@ -43986,11 +43986,14 @@
    "label": "라벨러 독립 가정",
    "parent": "redundant-annotation-count",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "상관이 있으면 이득이 줄어듦.",
+   "summary": "라벨러 오류가 상관되면 다수결 이득이 한계에 막힘(Kaniovski–Zaigraev 예시는 3명이 1명보다 나쁨). 독립 가정은 Sheng 외가 명시.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "redundant-annotation-count"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "mturk-annotation-2008",
@@ -54383,6 +54386,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "소량 골드로 작업자 혼동 행렬 추정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "common-cause-bias-annotation",
+   "label": "공통 원인 편향",
+   "parent": "annotator-independence-assumption",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 지침·배경이 낳는 동시 오류.",
    "added": "2026-11-21",
    "related": []
   }
