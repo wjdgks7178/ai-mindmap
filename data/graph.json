@@ -43787,11 +43787,14 @@
    "label": "텍스트 개체명 설정",
    "parent": "label-studio-config-tags",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Text+Labels 조합으로 NER 화면.",
+   "summary": "Text+Labels 조합으로 NER 설정: toName=Text name, value=, Labels 속성(choice·maxUsages·opacity). hotkey는 문서에서 미확인.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-config-tags"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "label-studio-choices-attributes",
@@ -54509,6 +54512,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "randomize로 순서 효과 줄이기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "label-studio-relations-tag",
+   "label": "Relations 태그",
+   "parent": "label-studio-text-ner-config",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간 사이 관계 라벨링.",
    "added": "2026-11-21",
    "related": []
   }
