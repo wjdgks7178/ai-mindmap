@@ -45902,11 +45902,15 @@
    "label": "흔한 손상 vs 적대적 견고성",
    "parent": "imagenet-c-p",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "두 견고성의 목표와 평가 차이.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "손상 견고성=평균 사례, 적대적=최악 사례. CIFAR-10-C 오류: 표준 29.0, 적대적 학습 27.2, AugMix 12.5. ALP는 Tiny ImageNet-P mFP 41% 감소.",
+   "related": [
+    "imagenet-c-p",
+    "adversarial-examples"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "fgsm",
@@ -55659,6 +55663,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "원본·증강 예측 분포를 일치시키는 손실.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "threat-model-first",
+   "label": "위협 모델 먼저",
+   "parent": "common-vs-adversarial-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 목표에 맞는 견고성 선택.",
    "added": "2026-11-21",
    "related": []
   }
