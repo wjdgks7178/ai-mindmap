@@ -43961,11 +43961,14 @@
    "label": "적응형 중복 라벨링",
    "parent": "redundant-annotation-count",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "불일치 항목에만 추가 라벨러 배정.",
+   "summary": "불확실 항목에만 라벨 추가: p=0.6, 12개 데이터셋 평균 GRR 73.65 < LU 76.35 < MU 78.77 < LMU 79.46(Sheng 2008).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "redundant-annotation-count"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "majority-vote-accuracy-curve",
@@ -54397,6 +54400,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 지침·배경이 낳는 동시 오류.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "label-uncertainty-beta",
+   "label": "라벨 불확실성(Beta 사후)",
+   "parent": "adaptive-redundancy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양·음 라벨 수로 확실성 측정.",
    "added": "2026-11-21",
    "related": []
   }
