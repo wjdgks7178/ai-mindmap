@@ -44059,11 +44059,14 @@
    "label": "EM 초기화(다수결)",
    "parent": "dawid-skene-aggregation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "초기값 민감성과 다수결 초기화.",
+   "summary": "Dawid-Skene EM의 초기화: 다수결 초기+EM 1회는 스펙트럴 초기보다 오차가 크지만 10회 반복 시 같은 오차로 수렴(JMLR 2016).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dawid-skene-aggregation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "annotator-quality-score",
@@ -54551,6 +54554,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "toName·data 키·name 중복 점검.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "spectral-initialization-ds",
+   "label": "스펙트럴 초기화",
+   "parent": "em-initialization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "세 그룹 모멘트로 혼동 행렬 초기 추정.",
    "added": "2026-11-21",
    "related": []
   }
