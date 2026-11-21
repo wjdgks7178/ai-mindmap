@@ -43815,11 +43815,14 @@
    "label": "작업(task) JSON과 $필드",
    "parent": "label-studio-config-tags",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "value=$필드로 데이터 연결.",
+   "summary": "작업은 {data:{...}}. 설정의 value=$필드가 data 키와 매핑, 중첩 $texts[2]. annotations·predictions(score)는 선택. CSV는 열=키, TXT는 줄=작업.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-config-tags"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "label-studio-config-validation",
@@ -54523,6 +54526,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "구간 사이 관계 라벨링.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "task-import-formats",
+   "label": "작업 가져오기 형식",
+   "parent": "label-studio-task-json",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "JSON·CSV·TXT·미디어 URL.",
    "added": "2026-11-21",
    "related": []
   }
