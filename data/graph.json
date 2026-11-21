@@ -44048,11 +44048,14 @@
    "label": "라벨러 혼동 행렬",
    "parent": "dawid-skene-aggregation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "참 라벨별 답변 확률.",
+   "summary": "라벨러 i의 k×k 행렬: (l,c)칸=진짜 l을 c로 라벨할 확률(Dawid-Skene 가정, 항목과 무관한 상수).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dawid-skene-aggregation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "em-initialization",
@@ -54565,6 +54568,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "세 그룹 모멘트로 혼동 행렬 초기 추정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "annotator-sensitivity-specificity",
+   "label": "민감도·특이도(이진)",
+   "parent": "confusion-matrix-annotator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이진에서 혼동 행렬의 두 숫자.",
    "added": "2026-11-21",
    "related": []
   }
