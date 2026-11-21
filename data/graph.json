@@ -45337,11 +45337,14 @@
    "label": "카드와 버전 관리",
    "parent": "system-cards",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델이 바뀌면 문서도 다시 평가.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Model Cards의 Model version 항목은 이전 버전과의 차이·버그 연결을 위함. Opus 4.1 부록(2025.8)에 2025-09-15 변경 기록 존재.",
+   "related": [
+    "system-cards"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "self-reported-vs-independent-eval",
@@ -55460,6 +55463,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "안전장치·프롬프트·버전을 함께 적기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "model-registry-card-link",
+   "label": "모델 레지스트리와 카드 연결",
+   "parent": "card-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 해시와 카드 버전 연결.",
    "added": "2026-11-21",
    "related": []
   }
