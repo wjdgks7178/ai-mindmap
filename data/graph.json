@@ -54966,9 +54966,23 @@
    "label": "C4 정제 규칙",
    "parent": "doc-vs-line-level-removal",
    "domain": "ai-data",
+   "status": "done",
+   "priority": 3,
+   "summary": "C4 9규칙: 종결부호·5단어·Javascript·약관 줄 제거, 3문장 미만·나쁜 단어·lorem ipsum·{ 페이지 제거, 3문장 중복 제거, langdetect 0.99.",
+   "added": "2026-11-21",
+   "related": [
+    "gopher-quality-heuristics"
+   ],
+   "done": "2026-11-21"
+  },
+  {
+   "id": "terminal-punctuation-rule",
+   "label": "종결 부호 규칙",
+   "parent": "c4-cleaning-rules",
+   "domain": "ai-data",
    "status": "planned",
    "priority": 3,
-   "summary": "T5 논문의 9가지 휴리스틱.",
+   "summary": "다국어에 부적합한 영어식 줄 필터.",
    "added": "2026-11-21",
    "related": []
   }
