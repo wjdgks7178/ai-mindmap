@@ -44237,11 +44237,15 @@
    "label": "AI 과신(overreliance)",
    "parent": "skeptical-reviewer-effect",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자동화에 호의적인 사람의 과신.",
+   "summary": "Buçinca 2021(N=199): 인지 강제 장치가 틀린 AI 수용 0.64→0.48 감소(p=.003)하나 사용자 평가는 가장 낮음. 시뮬레이션 AI 75%.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "skeptical-reviewer-effect",
+    "automation-bias-annotation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "trust-miscalibration",
@@ -54597,6 +54601,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "커버리지별 위험을 그린 곡선.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "cognitive-forcing-functions",
+   "label": "인지 강제 장치",
+   "parent": "overreliance-on-ai",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생각을 유도하는 UI 설계.",
    "added": "2026-11-21",
    "related": []
   }
