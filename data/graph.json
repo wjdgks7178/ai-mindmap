@@ -46337,11 +46337,14 @@
    "label": "랜덤 시드 기록",
    "parent": "experiment-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시드와 실행 횟수를 결과에 명시.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "torch.manual_seed는 CPU·CUDA 시드, NumPy Generator 사용 라이브러리는 별도 시드, DataLoader는 worker_init_fn+generator. 시드만으론 GPU 비결정성 해결 안 됨.",
+   "related": [
+    "experiment-reproducibility"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "nondeterministic-gpu-training",
@@ -55977,6 +55980,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 시드의 평균·분산 보고.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "seed-logging-template",
+   "label": "시드 기록 양식",
+   "parent": "random-seed-protocol",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드·버전·하드웨어를 함께 기록.",
    "added": "2026-11-21",
    "related": []
   }
