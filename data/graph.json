@@ -43339,11 +43339,15 @@
    "label": "퍼플렉서티",
    "parent": "model-likelihood-filtering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "언어 모델이 문서에 느끼는 낯섦의 척도.",
+   "summary": "PPL = 평균 음의 로그우도의 지수(교차 엔트로피의 지수). 낮을수록 예측 잘함. 슬라이딩 윈도로 계산, 낮다고 좋은 글은 아님.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "model-likelihood-filtering",
+    "llm-basics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "kenlm",
@@ -53575,6 +53579,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 필터링 용도의 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "sliding-window-perplexity",
+   "label": "슬라이딩 윈도 퍼플렉서티",
+   "parent": "perplexity-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문맥 한계에서 stride로 계산.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "perplexity-filter-thresholds",
+   "label": "퍼플렉서티 필터 임계값",
+   "parent": "perplexity-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상·하위를 모두 걸러야 하는 이유.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "cross-entropy-loss",
+   "label": "교차 엔트로피 손실",
+   "parent": "perplexity-basics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "퍼플렉서티와의 관계.",
    "added": "2026-11-21",
    "related": []
   }
