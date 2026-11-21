@@ -45071,11 +45071,14 @@
    "label": "llms.txt",
    "parent": "ai-crawler-blocking",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "AI에게 사이트 구조를 안내하는 제안 파일.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "llms.txt: 루트에 둔 마크다운 안내 파일(H1 필수, 요약, H2 링크 목록, Optional). Jeremy Howard 2024-09-03 제안, 학습 차단용이 아님.",
+   "related": [
+    "ai-crawler-blocking"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "source-level-restrictions",
@@ -54983,6 +54986,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "다국어에 부적합한 영어식 줄 필터.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "markdown-alternate-pages",
+   "label": "마크다운 대체 페이지",
+   "parent": "llms-txt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 URL에 .md 버전 제공.",
    "added": "2026-11-21",
    "related": []
   }
