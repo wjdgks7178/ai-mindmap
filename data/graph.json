@@ -44453,11 +44453,14 @@
    "label": "LF용 프롬프트 다양화",
    "parent": "llm-as-labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정의·예시·QA 등 서로 다른 관점.",
+   "summary": "여러 휴리스틱 프롬프트가 단일 직접 프롬프트보다 평균 20.2%p 높음, WRENCH 평균 오류 19.5% 감소(Smith 2022, T0++ 중심).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-as-labeling-function"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "correlated-llm-errors",
@@ -54626,6 +54629,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "진술을 질문으로 바꿔 답하는 체인.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "prompted-weak-supervision",
+   "label": "프롬프트 약한 지도",
+   "parent": "prompt-diversity-for-lf",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 출력을 LF로 쓰는 약한 지도.",
    "added": "2026-11-21",
    "related": []
   }
