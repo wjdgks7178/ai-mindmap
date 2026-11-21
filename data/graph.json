@@ -43306,11 +43306,14 @@
    "label": "PMI로 본 정체성별 제거",
    "parent": "safesearch-vs-wordlist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "점별 상호정보로 필터 편향 측정.",
+   "summary": "22개 정체성 정규식 언급과 블록리스트 제거 사이 PMI 계산. 성적 지향 언급이 가장 높고 lesbian·gay 표본 22%·36%가 무해(Dodge 2021).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "blocklist-filter-bias"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "open-safety-classifiers",
@@ -53997,6 +54000,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "프롬프트 효과가 다르게 나온 이유.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "pmi-basics",
+   "label": "점별 상호정보(PMI)",
+   "parent": "pmi-identity-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "함께 나타나는 정도를 우연과 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "dialect-removal-rate",
+   "label": "방언별 제거율 비교",
+   "parent": "pmi-identity-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AAE·히스패닉 영어 제거율 측정.",
    "added": "2026-11-21",
    "related": []
   }
