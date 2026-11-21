@@ -43567,11 +43567,14 @@
    "label": "UltraFeedback",
    "parent": "synthetic-preference-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "GPT-4 피드백 100만 건 이상의 공개 데이터셋.",
+   "summary": "6만+ 지시문×17개 모델, GPT-4가 4관점 점수+비평(100만+ 피드백). 분해·기준·동시 채점·근거로 편향 완화, UltraRM·UltraCM 파생.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "synthetic-preference-data"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "lf-abstain",
@@ -54037,6 +54040,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "지운 문서를 직접 읽는 감사 단계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ultrarm",
+   "label": "UltraRM",
+   "parent": "ultrafeedback",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "UltraFeedback으로 학습한 보상 모델.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "four-aspect-annotation",
+   "label": "4관점 주석",
+   "parent": "ultrafeedback",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지시·진실·정직·도움됨으로 분해해 채점.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ai-feedback-critique-first",
+   "label": "비평 먼저, 점수 나중",
+   "parent": "ultrafeedback",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근거를 먼저 쓰게 해 채점 안정화.",
    "added": "2026-11-21",
    "related": []
   }
