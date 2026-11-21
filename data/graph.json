@@ -43585,11 +43585,14 @@
    "label": "기권(ABSTAIN)",
    "parent": "labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "확신 없을 때 라벨을 붙이지 않는 설계.",
+   "summary": "LF는 확신이 없으면 ABSTAIN(-1)을 반환. check vs check out vs regex 사례로 커버리지·정확도 절충 설명(Snorkel 튜토리얼).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "labeling-function"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "lf-types",
@@ -54099,6 +54102,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "내용 없이 길이만 늘린 답으로 판정을 속임.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "lf-precision-coverage-tradeoff",
+   "label": "정밀도·커버리지 절충",
+   "parent": "lf-abstain",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LF 규칙을 넓히고 좁히는 판단.",
    "added": "2026-11-21",
    "related": []
   }
