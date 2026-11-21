@@ -45449,11 +45449,14 @@
    "label": "최소 기능 테스트 MFT",
    "parent": "checklist-behavioral-testing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단순 예시가 항상 맞는지 확인.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "CheckList MFT: 템플릿 단위 테스트(예: I {NEGATION} {POS_VERB} the {THING} 실패율 76.4%). INV 20.8%·DIR 34.6% 예. 부정이 문장 끝이면 상용 모델 실패 거의 100%.",
+   "related": [
+    "checklist-behavioral-testing"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "llm-behavioral-testing",
@@ -55432,6 +55435,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "슬라이스 임베딩 가중 평균.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "invariance-test-inv",
+   "label": "INV 불변성 테스트",
+   "parent": "minimum-functionality-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 보존 변형에 예측 불변 확인.",
    "added": "2026-11-21",
    "related": []
   }
