@@ -44663,11 +44663,14 @@
    "label": "NaN 지원 모델 목록",
    "parent": "native-nan-models",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "트리 계열과 선형 모델의 차이.",
+   "summary": "sklearn 1.9.1: 트리·앙상블·HistGB·HDBSCAN과 여러 변환기가 NaN 지원, 선형·SVM·KNN은 대체 필요(요약 도구 경유, Stacking/Voting은 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "native-nan-models"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "nan-baseline-first",
@@ -54839,6 +54842,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할마다 학습되는 결측 경로.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "sklearn-version-nan-support",
+   "label": "버전별 NaN 지원 변화",
+   "parent": "nan-support-model-list",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서의 지원 목록을 버전과 함께 확인.",
    "added": "2026-11-21",
    "related": []
   }
