@@ -46559,11 +46559,14 @@
    "label": "색인 정리 모드",
    "parent": "rag-reconciliation-job",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "None·incremental·full·scoped_full 차이.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "LangChain index() cleanup: None·incremental(본 소스 ID 옛 문서, 색인 중 정리)·full(이번에 안 나온 전부, 전체 반환 필수)·scoped_full(0.3.25+, 본 소스 ID 범위). incremental은 source_id_key 필수.",
+   "related": [
+    "rag-reconciliation-job"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "source-id-key",
@@ -55558,6 +55561,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "저장소 최대 차원에 맞춰 축소.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "indexing-batch-size-redundancy",
+   "label": "배치 크기와 중복 작업",
+   "parent": "index-cleanup-modes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 소스 ID가 여러 배치에 걸릴 때.",
    "added": "2026-11-21",
    "related": []
   }
