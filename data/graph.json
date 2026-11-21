@@ -46214,11 +46214,14 @@
    "label": "DVC 원격 저장소",
    "parent": "dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "S3·NAS 등 데이터 실제 저장 위치 설정.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "dvc remote add [-d] <name> <url>, 백엔드 S3·Azure·GCS·SSH·HTTP·로컬 등. dvc push는 캐시를 원격에 업로드, 원격 선택 순서 파일 remote→-r→core.remote.",
+   "related": [
+    "dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "dvc-pipelines",
@@ -55789,6 +55792,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "core.autostage 설정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "dvc-local-config",
+   "label": "DVC 로컬 설정",
+   "parent": "dvc-remote-storage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비밀 키를 커밋하지 않는 --local.",
    "added": "2026-11-21",
    "related": []
   }
