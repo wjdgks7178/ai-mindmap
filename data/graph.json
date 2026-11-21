@@ -43410,11 +43410,14 @@
    "label": "줄 길이 필터",
    "parent": "multilingual-filter-adaptation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "종결 부호 대신 줄 길이로 본문 판별.",
+   "summary": "mC4는 200자 이상 줄이 3개 이상이어야 통과(영어 종결 부호 규칙 대체). mT5 ablation에서 제거 시 XNLI 79.1 vs 81.1.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gopher-quality-heuristics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "language-sampling-exponent",
@@ -53709,6 +53712,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "71개 월간 스크랩 전부 사용한 이유.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "language-aware-length-threshold",
+   "label": "언어별 길이 임계값",
+   "parent": "line-length-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자 체계에 맞춘 줄 길이 기준.",
    "added": "2026-11-21",
    "related": []
   }
