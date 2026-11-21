@@ -46228,11 +46228,14 @@
    "label": "DVC 파이프라인",
    "parent": "dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "dvc.yaml로 변경된 단계만 재실행.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "dvc.yaml stages{cmd,deps,outs,params}, dvc.lock이 해시 기록, dvc repro는 바뀐 단계만 실행(didn't change, skipping). -s/--dry/-f/--downstream/--pull 등.",
+   "related": [
+    "dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "dvc-pointer-files",
@@ -55803,6 +55806,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "비밀 키를 커밋하지 않는 --local.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "dvc-params-yaml",
+   "label": "DVC params",
+   "parent": "dvc-pipelines",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "매개변수 변화로 단계 재실행.",
    "added": "2026-11-21",
    "related": []
   }
