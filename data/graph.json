@@ -44623,11 +44623,14 @@
    "label": "예측 목적의 결측 처리",
    "parent": "multiple-imputation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단일 대체+결측 표시로 충분한 경우.",
+   "summary": "Josse: 테스트 시 다중 대체 일관(정리 2), MAR에서 같은 상수 대체+만능 학습기 일관(정리 3). 평균 대체만으로는 불충분, 정보성 결측엔 마스크. 트리는 MIA 권장.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "multiple-imputation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "informative-missingness",
@@ -55291,6 +55294,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "추론 목적에서의 위험.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "mia-missing-incorporated-attributes",
+   "label": "MIA",
+   "parent": "imputation-for-prediction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트리 분기에 결측을 포함하는 방식.",
    "added": "2026-11-21",
    "related": []
   }
