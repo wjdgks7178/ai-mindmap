@@ -44291,11 +44291,14 @@
    "label": "내적 책임감",
    "parent": "automation-bias-annotation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "외부 강제보다 편향을 줄이는 요인.",
+   "summary": "Skitka 외 책임감 연구(2000): 초보자에게 약한 효과·전문가에겐 무효, 내면화된 책임감에서 효과라는 요약이 충돌. 전문 미확인, 조건부 주장.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "automation-bias-annotation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "hidden-control-randomization",
@@ -55305,6 +55308,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "트리 분기에 결측을 포함하는 방식.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "automation-bias-commission-omission",
+   "label": "commission·omission 오류",
+   "parent": "internal-accountability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동화 편향의 두 오류 유형.",
    "added": "2026-11-21",
    "related": []
   }
