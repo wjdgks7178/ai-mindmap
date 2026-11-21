@@ -43638,11 +43638,14 @@
    "label": "라벨 못 붙인 데이터",
    "parent": "lf-coverage-conflict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "어떤 LF도 말하지 않은 샘플의 처리.",
+   "summary": "모든 LF가 기권한 데이터는 지도 신호가 없어 filter_unlabeled_dataframe로 제거. 분류기는 LF 밖 데이터도 일반화(Snorkel 튜토리얼).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "lf-coverage-conflict"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "correlated-lf-risk",
@@ -54152,6 +54155,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "행=데이터·열=LF, 기권은 -1.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "uncovered-sample-review",
+   "label": "미커버 표본 열람",
+   "parent": "uncovered-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미커버를 읽어 새 LF를 만드는 방법.",
    "added": "2026-11-21",
    "related": []
   }
