@@ -43520,11 +43520,14 @@
    "label": "RLHF와 레드팀 난이도",
    "parent": "red-teaming-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "RLHF만 규모에 따라 공격이 어려워짐.",
+   "summary": "2.7·13·52B × 4유형: RLHF만 크기가 클수록 레드팀하기 어려워지고 나머지는 평평. RS는 회피로 무해(Anthropic 2022).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "red-teaming-data"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "red-team-data-handling",
@@ -53972,6 +53975,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "불쾌 데이터 공개 시 안내.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "evasive-refusal-safety",
+   "label": "회피형 안전",
+   "parent": "red-team-scaling-rlhf",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절·회피로 무해해지는 한계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "static-vs-red-team-eval",
+   "label": "정적 평가 vs 레드팀 평가",
+   "parent": "red-team-scaling-rlhf",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 효과가 다르게 나온 이유.",
    "added": "2026-11-21",
    "related": []
   }
