@@ -43829,11 +43829,14 @@
    "label": "설정 XML 검증",
    "parent": "label-studio-config-tags",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "toName 매칭 등 사전 점검.",
+   "summary": "설정 XML: View 안 Object·Control·Visual 태그, toName=name 연결(문서 예시). 코드 보기 자동 완성, 진행 중 주석이 있으면 라벨 삭제 제한.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-studio-config-tags"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "ml-backend-predict-fit",
@@ -54537,6 +54540,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "JSON·CSV·TXT·미디어 URL.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "labeling-config-checklist",
+   "label": "설정 점검 체크리스트",
+   "parent": "label-studio-config-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "toName·data 키·name 중복 점검.",
    "added": "2026-11-21",
    "related": []
   }
