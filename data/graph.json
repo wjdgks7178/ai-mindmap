@@ -43613,11 +43613,14 @@
    "label": "LF 정확도 점검(개발 세트)",
    "parent": "labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "소량 정답으로 LF 정확도 확인.",
+   "summary": "소량 골드 개발 세트로 LF 정확도 점검. 학습(무정답)·개발·검증·테스트 분리, 테스트는 최종 평가 전용(Snorkel 튜토리얼).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "labeling-function"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "lf-summary-table",
@@ -54191,6 +54194,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "서로 다른 근거로 규칙을 만들기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "dev-set-overfitting-lf",
+   "label": "개발 세트 과적합",
+   "parent": "lf-dev-set-accuracy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙을 개발 세트에 맞춰 과하게 고치는 위험.",
    "added": "2026-11-21",
    "related": []
   }
