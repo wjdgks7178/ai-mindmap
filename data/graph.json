@@ -46058,11 +46058,14 @@
    "label": "SHAP 특징 기여도",
    "parent": "shapley-value",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 아이디어를 입력 특징에 적용.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "SHAP: 가법 모델 g=φ₀+Σφᵢz'ᵢ, 지역 정확성·결측성·일관성을 만족하는 유일한 해=샤플리 값(정리 1). Kernel SHAP은 가중 선형 회귀(정리 2), MTurk 연구 30·52명.",
+   "related": [
+    "shapley-value"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "ek-fac",
@@ -55744,6 +55747,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "영향 분포로 구분하는 방법.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "kernel-shap",
+   "label": "Kernel SHAP",
+   "parent": "shap-feature-attribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중 선형 회귀로 SHAP 근사.",
    "added": "2026-11-21",
    "related": []
   }
