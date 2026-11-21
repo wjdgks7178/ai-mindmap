@@ -45365,11 +45365,14 @@
    "label": "안전장치 ON/OFF 평가",
    "parent": "system-cards",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "평가 때 장치 적용 여부가 결과를 바꾼다.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "RSP 평가는 안전장치 없이 모델 단독 측정이라는 서술, 일부 모델은 ON/OFF 견고성 비교(허브 요약). Opus 4 인젝션 수치는 검색 스니펫만이라 미확인.",
+   "related": [
+    "system-cards"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "equality-of-opportunity",
@@ -55488,6 +55491,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "자기·후원 평가의 한계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "model-only-vs-product-risk",
+   "label": "모델 단독 vs 제품 위험",
+   "parent": "safeguards-on-off-eval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 조건에 따른 위험 해석.",
    "added": "2026-11-21",
    "related": []
   }
