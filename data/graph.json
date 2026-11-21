@@ -45317,11 +45317,14 @@
    "label": "Equalized Odds",
    "parent": "subgroup-performance-report",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집단 간 FPR·FNR 동등 기준.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Ŷ⊥A|Y: TPR·FPR 집단 간 동일. 후처리는 집단 ROC 볼록 껍질 교집합에서 4변수 LP. FICO 최대 이익 대비 80.2%.",
+   "related": [
+    "subgroup-performance-report"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "small-subgroup-uncertainty",
@@ -55042,6 +55045,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 후 집단별 임계값 조정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "roc-convex-hull-intersection",
+   "label": "ROC 볼록 껍질 교집합",
+   "parent": "equalized-odds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "equalized odds가 가능한 영역.",
    "added": "2026-11-21",
    "related": []
   }
