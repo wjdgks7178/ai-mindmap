@@ -45049,11 +45049,14 @@
    "label": "학습용·검색용 봇 구분",
    "parent": "ai-crawler-blocking",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "GPTBot과 검색용 봇을 따로 다루기.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "OpenAI: OAI-SearchBot(검색)·GPTBot(학습)·ChatGPT-User(사용자 요청, robots.txt 미적용 가능). 설정은 독립, 변경 반영 약 24시간.",
+   "related": [
+    "ai-crawler-blocking"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "declared-vs-enforced-blocking",
