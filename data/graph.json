@@ -43350,11 +43350,14 @@
    "label": "KenLM",
    "parent": "model-likelihood-filtering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "N-그램 언어 모델 라이브러리.",
+   "summary": "N-그램 LM 학습(lmplz, 수정 Kneser-Ney)·조회 C++ 라이브러리. probing/trie 구조, Python score(). 퍼플렉서티 기반 필터에 쓰임.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "model-likelihood-filtering"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "ccnet",
@@ -53539,6 +53542,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률 꼬리를 잘라 샘플링.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "kneser-ney-smoothing",
+   "label": "Kneser-Ney 스무딩",
+   "parent": "kenlm",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "N-그램에서 본 적 없는 조합의 확률을 보정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "arpa-format",
+   "label": "ARPA 형식",
+   "parent": "kenlm",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "N-그램 LM의 텍스트 저장 형식.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ngram-lm-vs-neural-lm",
+   "label": "N-그램 LM vs 신경망 LM",
+   "parent": "kenlm",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 필터링 용도의 비교.",
    "added": "2026-11-21",
    "related": []
   }
