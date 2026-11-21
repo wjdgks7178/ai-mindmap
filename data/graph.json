@@ -46326,11 +46326,14 @@
    "label": "ML 재현성 체크리스트",
    "parent": "experiment-reproducibility",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Pineau 체크리스트의 다섯 묶음.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "NeurIPS 2019: 코드 제출 정책·재현성 챌린지·체크리스트(v1.2, 초기 제출 2019.5·카메라 레디 2019.10). 97% 수학 설정 설명, 89% 실험 방법, 36%가 오차 막대 해당 없음 답변, 심사자 34% 유용.",
+   "related": [
+    "experiment-reproducibility"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "random-seed-protocol",
@@ -56005,6 +56008,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "OS·시스템 라이브러리까지 고정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "error-bars-not-applicable",
+   "label": "오차 막대 해당 없음 답변",
+   "parent": "ml-reproducibility-checklist",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "36%가 해당 없음이라 답한 의문.",
    "added": "2026-11-21",
    "related": []
   }
