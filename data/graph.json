@@ -44098,11 +44098,14 @@
    "label": "골드 문항 비율과 난이도",
    "parent": "worker-quality-gold-questions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전체 5~10%와 변별력 있는 문항 구성.",
+   "summary": "골드(컨트롤) 문항으로 작업자 숙련도 측정. Toloka 규칙 예: 응답 3개 이상 정답률 60% 미만 박탈. 단일 권장 비율은 없음(Appen 수치는 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "worker-quality-gold-questions"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "gold-question-leak",
@@ -54655,6 +54658,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "제안에 판단이 끌려가는 효과.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "control-task-rules-toloka",
+   "label": "Toloka 컨트롤 과제 규칙",
+   "parent": "gold-question-ratio",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답률 기준으로 접근 제한.",
    "added": "2026-11-21",
    "related": []
   }
