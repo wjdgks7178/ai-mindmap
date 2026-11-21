@@ -43127,11 +43127,14 @@
    "label": "블록리스트 필터 편향",
    "parent": "web-crawl-quality-issues",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "금칙어 필터가 소수자 관련 글을 더 지우는 문제.",
+   "summary": "C4 블록리스트 필터는 제외 문서 중 성적 군집이 31%뿐이고 AAE 42%·히스패닉 영어 32%를 제거(Dodge 외 2021).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "ai-bias-ethics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "benchmark-contamination-in-corpus",
@@ -53326,6 +53329,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 번에 하나만 바꿔 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "c4-corpus-audit",
+   "label": "C4 코퍼스 감사",
+   "parent": "blocklist-filter-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "C4 내용·출처·오염을 문서화한 연구.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "classifier-toxicity-filter",
+   "label": "분류기 기반 독성 필터",
+   "parent": "blocklist-filter-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문맥을 보는 필터와 그 편향.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "excluded-document-audit",
+   "label": "제외 문서 감사",
+   "parent": "blocklist-filter-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터가 지운 표본을 사람이 검토.",
    "added": "2026-11-21",
    "related": []
   }
