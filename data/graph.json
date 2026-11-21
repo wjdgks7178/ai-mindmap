@@ -43199,11 +43199,14 @@
    "label": "MassiveWeb HTML 구조 추출",
    "parent": "gopher-massivetext",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "태그 구조로 본문 블록을 뽑는 방식.",
+   "summary": "MassiveWeb은 HTML 트리의 같은 층 시맨틱 태그 묶음을 본문으로 보고 서식 보존 텍스트로 변환(Gopher 부록, MassiveWeb 전용).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gopher-quality-heuristics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "test-set-filtering-13gram",
@@ -53399,6 +53402,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한국어 등에 규칙을 맞추기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "trafilatura-extractor",
+   "label": "trafilatura 본문 추출기",
+   "parent": "massiveweb-text-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오픈소스 웹 본문 추출 라이브러리.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "format-preserving-extraction",
+   "label": "서식 보존 추출",
+   "parent": "massiveweb-text-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "들여쓰기·글머리표 유지의 효과.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "boilerplate-removal",
+   "label": "보일러플레이트 제거",
+   "parent": "massiveweb-text-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메뉴·광고·푸터 걷어내기.",
    "added": "2026-11-21",
    "related": []
   }
