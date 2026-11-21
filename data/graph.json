@@ -44634,11 +44634,14 @@
    "label": "정보성 결측",
    "parent": "missing-indicator-feature",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "결측 자체가 정답과 관련 있는 경우.",
+   "summary": "결측이 목표와 관련되면 어떤 대체도 지시자 없이는 실패(Josse Example 3: 평균 대체 1/2 vs 최적 3/2). 지시자 방법은 MCAR에서도 편향 가능(FIMD).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "missing-indicator-feature"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "missing-indicator-class",
@@ -55277,6 +55280,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "잔차를 더해 변동 복원.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "indicator-method-bias",
+   "label": "지시자 방법의 편향",
+   "parent": "informative-missingness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추론 목적에서의 위험.",
    "added": "2026-11-21",
    "related": []
   }
