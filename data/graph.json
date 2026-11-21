@@ -44084,11 +44084,14 @@
    "label": "라벨러 품질 점수",
    "parent": "dawid-skene-aggregation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "EM 부산물로 얻는 신뢰도.",
+   "summary": "MACE θ_j=라벨러가 스패밍하지 않을 확률. 실제 역량과의 상관이 κ·일치율보다 높음. MACE-VB@75 정확도 0.98/0.98/1.0 vs 다수결 0.90/0.93/0.99(Snow 데이터).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dawid-skene-aggregation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "correlated-annotators",
@@ -55116,6 +55119,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "흉관 같은 치료 흔적이 라벨을 대신함.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "mace-model",
+   "label": "MACE 모델",
+   "parent": "annotator-quality-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스패밍 지시자와 EM·VB 학습.",
    "added": "2026-11-21",
    "related": []
   }
