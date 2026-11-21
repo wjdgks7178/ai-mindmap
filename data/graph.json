@@ -53775,11 +53775,14 @@
    "label": "Wayback CDX API",
    "parent": "cdx-toolkit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Internet Archive의 CDX 조회 인터페이스.",
+   "summary": "Wayback CDX API: web.archive.org/cdx/search/cdx, matchType·from/to(1~14자리)·limit(음수=마지막 N)·filter·collapse·resumeKey 페이지 나누기. 기본 필드 7종(베타).",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "cdx-toolkit"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "total-labeling-cost",
@@ -56075,6 +56078,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "정규화 여부에 따른 순위 차이.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "cdx-collapse-dedup",
+   "label": "collapse 중복 제거",
+   "parent": "wayback-cdx-api",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인접 중복 캡처 합치기.",
    "added": "2026-11-21",
    "related": []
   }
