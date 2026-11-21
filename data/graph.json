@@ -44477,11 +44477,15 @@
    "label": "같은 LLM의 상관된 오류",
    "parent": "llm-as-labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모든 프롬프트가 같은 방향으로 틀림.",
+   "summary": "AMA: 프롬프트 체인 오류의 자카드가 독립 대비 69% 높음. 약한 지도로 다수결 대비 최대 +8.7점. 관점이 다른 프롬프트가 상보적이라는 주장(Smith).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-as-labeling-function",
+    "correlated-lf-risk"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "llm-lf-cost-latency",
@@ -54683,6 +54687,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 사람이 지배하지 않게 제한.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "error-overlap-matrix",
+   "label": "오류 겹침 행렬",
+   "parent": "correlated-llm-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LF 쌍별 오류 일치도 점검.",
    "added": "2026-11-21",
    "related": []
   }
