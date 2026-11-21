@@ -44898,11 +44898,14 @@
    "label": "AI 데이터 커먼즈",
    "parent": "consent-in-crisis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "공개 웹 데이터 접근성의 쇠퇴.",
+   "summary": "Longpre 2024: 14,000 도메인 감사. robots.txt 제한 전체 1%→5~7%, 상위 도메인 <3%→20~33%, 뉴스 3%→약 45%. 2025.4까지 추가 2~4%p 예측.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "consent-in-crisis"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "domain-consent-registry",
@@ -54895,6 +54898,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "미등록 에이전트만 차단하는 문제.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "head-domain-restriction",
+   "label": "상위 도메인 제한 비율",
+   "parent": "ai-data-commons",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "핵심 출처의 접근 제한 증가.",
    "added": "2026-11-21",
    "related": []
   }
