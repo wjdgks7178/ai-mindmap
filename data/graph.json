@@ -45931,11 +45931,14 @@
    "label": "적대적 이전성",
    "parent": "adversarial-examples",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 모델용 섭동이 다른 모델도 속임.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Szegedy 2014: 적대적 사례는 모델 간·학습 세트 간 이전. FC10(1)용 사례가 다른 모델에서 71.9·76.2% 오류, 서로소 학습 세트 26.2%(증폭 시 98%·43%), 가우시안 잡음 2~3%(Papernot 2016 미확인).",
+   "related": [
+    "adversarial-examples"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "adversarial-training",
@@ -55901,6 +55904,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "웹훅 URL을 환경 변수로.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "black-box-surrogate-attack",
+   "label": "대리 모델 블랙박스 공격",
+   "parent": "adversarial-transferability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이전성을 이용한 공격.",
    "added": "2026-11-21",
    "related": []
   }
