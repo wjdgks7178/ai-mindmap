@@ -43368,11 +43368,14 @@
    "label": "CCNet",
    "parent": "model-likelihood-filtering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Common Crawl 언어 판별·중복·퍼플렉서티 파이프라인.",
+   "summary": "CC에서 문단 해시 중복 제거(중복 70%)→fastText 언어 식별(0.5 초과)→위키 KenLM 퍼플렉서티로 head·middle·tail 3등분.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "gopher-quality-heuristics"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "filtering-tradeoff-no-silver-bullet",
@@ -53612,6 +53615,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "퍼플렉서티와의 관계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "fasttext-language-id",
+   "label": "fastText 언어 식별",
+   "parent": "ccnet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자 n-gram 기반 176개 언어 분류기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "paragraph-hash-dedup",
+   "label": "문단 해시 중복 제거",
+   "parent": "ccnet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화 후 SHA-1 해시 비교.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "perplexity-terciles",
+   "label": "퍼플렉서티 3분위",
+   "parent": "ccnet",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "head·middle·tail로 나눠 쓰기.",
    "added": "2026-11-21",
    "related": []
   }
