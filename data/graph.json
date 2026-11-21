@@ -46069,11 +46069,14 @@
    "label": "EK-FAC",
    "parent": "influence-functions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "헤시안을 크로네커 곱으로 근사해 LLM에 적용.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "EK-FAC: 감쇠 가우스-뉴턴 헤시안의 K-FAC에 고유값 보정. LiSSA와 비슷한 정확도로 훨씬 빠름, TF-IDF 필터 상위 10,000·질의 랭크 32 압축(Grosse 2023).",
+   "related": [
+    "influence-functions"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "hessian-vector-product",
@@ -55716,6 +55719,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "훈련 데이터 조작 공격.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "gauss-newton-hessian",
+   "label": "가우스-뉴턴 헤시안",
+   "parent": "ek-fac",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손실 헤시안의 양의 준정부호 근사.",
    "added": "2026-11-21",
    "related": []
   }
