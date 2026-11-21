@@ -44525,11 +44525,14 @@
    "label": "MNAR 민감도 분석",
    "parent": "mcar-mar-mnar",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "what-if 시나리오로 결론의 안정성 확인.",
+   "summary": "FIMD 9.2: 수축기 혈압 대체값에 δ=0~−20 mmHg 이동(실현 평균차 −8.2~−31.5), 위험비 1.76→1.89로 거의 불변.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "mcar-mar-mnar"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "complete-case-bias",
@@ -55249,6 +55252,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "MCAR 여부를 검정(원문 미확인).",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "delta-adjustment",
+   "label": "델타 조정",
+   "parent": "sensitivity-analysis-mnar",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대체값에 상수를 더하는 MNAR 시나리오.",
    "added": "2026-11-21",
    "related": []
   }
