@@ -46256,11 +46256,14 @@
    "label": "내용 주소 저장소",
    "parent": "dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "해시로 파일을 저장·중복 제거하는 구조.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "DVC 캐시: .dvc/cache/files/md5/<2글자>/<30글자>, 같은 내용은 1번 저장, 디렉터리는 <해시>.dir JSON, 실행 캐시 .dvc/cache/runs.",
+   "related": [
+    "dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "git-lfs-pointer-file",
@@ -55817,6 +55820,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "매개변수 변화로 단계 재실행.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "hash-collision-md5",
+   "label": "MD5 충돌 고려",
+   "parent": "content-addressable-storage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해시 알고리즘 선택.",
    "added": "2026-11-21",
    "related": []
   }
