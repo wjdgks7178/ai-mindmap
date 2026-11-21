@@ -44566,11 +44566,14 @@
    "label": "IterativeImputer",
    "parent": "multiple-imputation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "scikit-learn의 연쇄 방정식 대체.",
+   "summary": "sklearn IterativeImputer: 실험적, 기본 BayesianRidge·max_iter=10·ascending 순서, 기본은 단일 대체, sample_posterior+여러 seed로 다중 대체 흉내.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "multiple-imputation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "single-imputation-underestimates",
@@ -54797,6 +54800,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "결과를 먼저 업체에 알리는 절차.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "chained-equations-mice",
+   "label": "연쇄 방정식(MICE)",
+   "parent": "iterative-imputer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열마다 회귀로 반복 대체.",
    "added": "2026-11-21",
    "related": []
   }
