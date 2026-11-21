@@ -44876,11 +44876,14 @@
    "label": "분할 후 리샘플링",
    "parent": "reweighting-oversampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "복제본이 시험에 들어가는 누수 방지.",
+   "summary": "sklearn: 항상 먼저 분할. imblearn Pipeline은 fit 때만 샘플링. 복제본이 시험에 섞이는 누수는 추론.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "reweighting-oversampling"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "tos-vs-robots-txt",
