@@ -44649,11 +44649,14 @@
    "label": "HistGradientBoosting의 NaN 규칙",
    "parent": "native-nan-models",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 방향·미관측 시 최다 샘플 자식.",
+   "summary": "학습 때 분할마다 NaN을 좌/우 자식 중 gain 큰 쪽으로 배정. 학습에 NaN이 없던 특징은 예측 시 샘플 많은 자식으로.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "native-nan-models"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "nan-support-model-list",
@@ -54825,6 +54828,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "새 결측 패턴이 차원을 바꾸는 문제.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "nan-split-direction",
+   "label": "NaN 분기 방향",
+   "parent": "hist-gradient-boosting-nan",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할마다 학습되는 결측 경로.",
    "added": "2026-11-21",
    "related": []
   }
