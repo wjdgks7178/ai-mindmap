@@ -46301,11 +46301,14 @@
    "label": "Hugging Face Hub 버전 관리",
    "parent": "git-lfs-vs-dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델·데이터셋을 Git 기반으로 버전 관리.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "HF Hub는 Git 기반: revision에 태그·브랜치·refs/pr/N·전체 커밋 해시 지정, 캐시는 snapshots/<해시>. 10MB+는 git-xet, hf_xet 전송.",
+   "related": [
+    "git-lfs-vs-dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "lakefs-data-versioning",
@@ -55949,6 +55952,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "시간 민감 문서군만 신선도 적용.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "hf-xet-storage",
+   "label": "HF Xet 저장소",
+   "parent": "huggingface-hub-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "청크 기반 중복 제거 저장.",
    "added": "2026-11-21",
    "related": []
   }
