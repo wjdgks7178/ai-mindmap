@@ -46679,11 +46679,14 @@
    "label": "GX Validation Definition",
    "parent": "gx-checkpoint-actions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터와 Expectation Suite를 연결.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "GX 1.25.0: ValidationDefinition(name, data=BatchDefinition, suite), .run(result_format=SUMMARY). Checkpoint(name, validation_definitions, actions, result_format)가 여러 정의를 실행.",
+   "related": [
+    "gx-checkpoint-actions"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "gx-custom-action",
