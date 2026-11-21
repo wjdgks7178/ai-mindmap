@@ -43339,11 +43339,15 @@
    "label": "문서 단위 vs 줄 단위 제거",
    "parent": "safesearch-vs-wordlist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "통째 제거 대신 줄만 제거.",
+   "summary": "C4: 종결부호·5단어·Javascript·약관 문구는 줄 단위, 3문장 미만·나쁜 단어·lorem ipsum·{는 페이지 단위로 제거(T5 논문).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "safesearch-vs-wordlist",
+    "blocklist-filter-bias"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "perplexity-basics",
@@ -54954,6 +54958,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "남은 특징으로 민감 속성을 예측해 보기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "c4-cleaning-rules",
+   "label": "C4 정제 규칙",
+   "parent": "doc-vs-line-level-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "T5 논문의 9가지 휴리스틱.",
    "added": "2026-11-21",
    "related": []
   }
