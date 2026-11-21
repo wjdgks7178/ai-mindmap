@@ -46706,11 +46706,14 @@
    "label": "GX mostly 파라미터",
    "parent": "gx-null-vs-range",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "일부 위반을 허용하는 비율 설정.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "GX mostly: 0~1(기본 1), (고려 행−예상 밖 행)/고려 행 ≥ mostly면 성공. ExpectColumnValuesToNotBeNull(mostly=0.95) 예(1.25.0 소스 기준).",
+   "related": [
+    "gx-null-vs-range"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "missing-percent-monitoring",
@@ -55859,6 +55862,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "팀 협업 영향.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "gx-unexpected-percent",
+   "label": "GX 예상 밖 비율",
+   "parent": "gx-mostly",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과의 unexpected_percent.",
    "added": "2026-11-21",
    "related": []
   }
