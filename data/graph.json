@@ -44439,11 +44439,14 @@
    "label": "AMA 프롬프트 결합",
    "parent": "llm-as-labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "개방형 QA 변환 후 약한 지도로 합치기.",
+   "summary": "AMA: question→answer 체인 여러 개를 약한 지도로 결합. GPT-J-6B가 20개 중 15개에서 few-shot GPT-3 175B와 대등, 다수결 대비 최대 +8.7점(Arora 2022).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "llm-as-labeling-function"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "prompt-diversity-for-lf",
@@ -54612,6 +54615,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "생각을 유도하는 UI 설계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "prompt-chain-question-answer",
+   "label": "question→answer 프롬프트 체인",
+   "parent": "ama-prompt-aggregation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진술을 질문으로 바꿔 답하는 체인.",
    "added": "2026-11-21",
    "related": []
   }
