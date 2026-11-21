@@ -45475,11 +45475,15 @@
    "label": "숨은 계층화",
    "parent": "coherent-slice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨에 없는 하위 집단에서의 성능 저하.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "라벨 안의 미표시 하위 집단이 평균 지표를 가림. CXR14 기흉 AUC 전체 0.87, 흉관 있음 0.94·없음 0.77, 하위 집단 격차 최대 20%(Oakden-Rayner 2019).",
+   "related": [
+    "coherent-slice",
+    "ai-evaluation"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "slice-driven-data-collection",
@@ -55101,6 +55105,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "대상 도메인 데이터 사용 여부.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "spurious-correlate-medical",
+   "label": "의료 영상의 허위 상관",
+   "parent": "hidden-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "흉관 같은 치료 흔적이 라벨을 대신함.",
    "added": "2026-11-21",
    "related": []
   }
