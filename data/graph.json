@@ -46315,11 +46315,14 @@
    "label": "lakeFS 데이터 버전 관리",
    "parent": "git-lfs-vs-dvc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "객체 저장소 위에서 Git식 브랜치·커밋.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "lakeFS: 객체 저장소(S3·Azure·GCS)를 Git 같은 저장소로, S3 API 호환. 용도: ETL 테스트·재현성·Write-Audit-Publish·롤백. BUSL 1.1(출시 4년 뒤 Apache 2.0).",
+   "related": [
+    "git-lfs-vs-dvc"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "ml-reproducibility-checklist",
@@ -56019,6 +56022,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "36%가 해당 없음이라 답한 의문.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "write-audit-publish",
+   "label": "Write-Audit-Publish",
+   "parent": "lakefs-data-versioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 통과 데이터만 운영 반영.",
    "added": "2026-11-21",
    "related": []
   }
