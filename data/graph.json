@@ -46454,11 +46454,14 @@
    "label": "임베딩 dimensions 파라미터",
    "parent": "embedding-model-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "벡터를 잘라 줄이는 옵션과 재정규화.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "text-embedding-3: small 1536·large 3072, dimensions로 축소 가능(수동 자르면 L2 정규화 필요). 256차원 large가 1536차원 ada-002보다 MTEB에서 낫다는 공식 설명.",
+   "related": [
+    "embedding-model-mismatch"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "embedding-normalization",
@@ -55544,6 +55547,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "내 데이터로 재평가하는 방법.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "vector-db-dimension-limit",
+   "label": "벡터 DB 차원 제한",
+   "parent": "embedding-dimensions-parameter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장소 최대 차원에 맞춰 축소.",
    "added": "2026-11-21",
    "related": []
   }
