@@ -43694,11 +43694,15 @@
    "label": "Dawid-Skene 모델",
    "parent": "label-model-denoising",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "관찰자 정확도를 EM으로 추정하는 고전 모델.",
+   "summary": "작업자별 k×k 혼동 행렬과 진짜 라벨을 EM으로 공동 추정(1979). 비볼록이라 국소 최적 위험, 다수결 초기화가 흔한 완화책.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "label-model-denoising",
+    "weak-supervision"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "label-model-validation",
@@ -54245,6 +54249,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "비교가 어려운 이유와 표준화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "em-algorithm-basics",
+   "label": "EM 알고리즘 기초",
+   "parent": "dawid-skene",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숨은 변수가 있을 때의 반복 추정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "majority-vote-vs-dawid-skene",
+   "label": "다수결 vs Dawid-Skene",
+   "parent": "dawid-skene",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스패머 비율에 따른 차이.",
    "added": "2026-11-21",
    "related": []
   }
