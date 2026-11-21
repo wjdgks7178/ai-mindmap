@@ -43242,11 +43242,14 @@
    "label": "상위 n-그램 문자 비율",
    "parent": "repetition-thresholds",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "가장 자주 나온 n-그램이 차지하는 비율.",
+   "summary": "가장 흔한 2·3·4-gram의 글자 점유율. Gopher 한도 0.20·0.18·0.16 초과 시 문서 제거.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "repetition-thresholds"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "duplicate-ngram-fraction",
@@ -53497,6 +53500,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 토큰이 전체의 일부일 때의 선택.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ngram-counter-lab",
+   "label": "n-그램 세기 실습",
+   "parent": "top-ngram-fraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Counter로 반복 점유율 직접 측정.",
    "added": "2026-11-21",
    "related": []
   }
