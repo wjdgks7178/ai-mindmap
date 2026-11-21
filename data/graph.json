@@ -45001,11 +45001,14 @@
    "label": "라벨링 총비용 계산",
    "parent": "managed-workforce-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단가+QA+재작업+관리 인건비.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Labelbox LBU: Annotate 데이터 행당 1(영상 150프레임당 1, 실시간 LLM 20), Model 5행당 1, 무료 월 500. 서비스 가격은 페이지에 없고 비용 구성은 미확인(제안).",
+   "related": [
+    "managed-workforce-labeling"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "labeling-calibration-session",
@@ -55516,6 +55519,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "왜 이렇게 나눴는지 문서화.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "labeling-pilot-measurement",
+   "label": "라벨링 시범 측정",
+   "parent": "labeling-total-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시범 100건으로 재작업률 추정.",
    "added": "2026-11-21",
    "related": []
   }
