@@ -46665,11 +46665,14 @@
    "label": "GX notify_on 조건",
    "parent": "gx-checkpoint-actions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "실패 심각도에 따라 알림 실행 여부 결정.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "GX 1.25.0 SlackNotificationAction.notify_on 기본 all, 허용값 all·success·failure·info·warning·critical(뒤 셋은 심각도). 문서 사이트 설명은 미확인.",
+   "related": [
+    "gx-checkpoint-actions"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "gx-validation-definition",
