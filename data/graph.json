@@ -45929,11 +45929,14 @@
    "label": "적대적 학습",
    "parent": "adversarial-examples",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "적대적 사례를 학습에 섞는 방어.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Madry: min_θ E[max_δ L] + PGD. MNIST ε=0.3 PGD-100 89.3%, CIFAR-10 ε=8 자연 87.3%·PGD-20 45.8%. 용량이 클수록 효과적.",
+   "related": [
+    "adversarial-examples"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "linearity-hypothesis",
