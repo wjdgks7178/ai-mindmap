@@ -53646,11 +53646,14 @@
    "label": "문단 해시 중복 제거",
    "parent": "ccnet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정규화 후 SHA-1 해시 비교.",
+   "summary": "CCNet은 문단 정규화 후 SHA-1 64비트 해시로 중복 제거. 중복 문단이 70%, 100샤드 대조 시 28% 잔존.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "near-duplicate-removal"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "perplexity-terciles",
@@ -53748,6 +53751,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "언어 혼용·짧은 문장에서의 한계.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "sha1-hash-fingerprint",
+   "label": "SHA-1 지문",
+   "parent": "paragraph-hash-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해시로 내용 지문 만들기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "shard-count-memory-tradeoff",
+   "label": "샤드 수와 메모리 절충",
+   "parent": "paragraph-hash-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대조 범위를 넓힐수록 더 지워지는 문제.",
    "added": "2026-11-21",
    "related": []
   }
