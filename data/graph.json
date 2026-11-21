@@ -45940,11 +45940,14 @@
    "label": "선형성 가설",
    "parent": "adversarial-examples",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "취약성의 원인을 신경망의 선형성으로 설명.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "적대적 취약성의 원인=고차원 선형성: η=sign(w)면 활성 ε·‖w‖₁ 증가. 얕은 RBF ε=.25 오류 55.4%지만 확신도 1.2%.",
+   "related": [
+    "adversarial-examples"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "robustness-curve",
@@ -55600,6 +55603,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 걸음 반복 적대적 공격.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "accidental-steganography",
+   "label": "우연한 스테가노그래피",
+   "parent": "linearity-hypothesis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 변화의 합산 효과.",
    "added": "2026-11-21",
    "related": []
   }
