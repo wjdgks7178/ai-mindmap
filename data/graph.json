@@ -43463,11 +43463,14 @@
    "label": "SFT 에폭과 과적합",
    "parent": "sft-supervised-finetuning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "InstructGPT는 16에폭이 도움이 됨.",
+   "summary": "InstructGPT SFT는 16에폭. 1에폭 후 검증손실 과적합이지만 RM 점수·사람 선호는 개선. RM은 1에폭만.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "instructgpt-three-stage"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "labeler-prompt-sources",
@@ -53834,6 +53837,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "40명 선호에 맞춰지는 문제.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "validation-loss-vs-preference",
+   "label": "검증 손실 vs 사람 선호",
+   "parent": "sft-epochs-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표가 어긋나는 경우.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "model-selection-by-reward",
+   "label": "보상 점수로 모델 고르기",
+   "parent": "sft-epochs-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 RM 점수로 체크포인트 선택.",
    "added": "2026-11-21",
    "related": []
   }
