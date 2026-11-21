@@ -44232,11 +44232,14 @@
    "label": "함정 제안(일부러 틀린 AI 제안)",
    "parent": "skeptical-reviewer-effect",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "경계심 측정·유지를 위한 장치.",
+   "summary": "일부러 틀린 제안은 Buçinca 실험에서 측정 도구(AI 정확도 75%)로 사용됨. 경계심 유지 중재로서의 효과는 직접 증거 미확인. Green & Chen: 의존도 보정 실패.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "skeptical-reviewer-effect"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "reviewer-selection-ai-attitude",
@@ -55319,6 +55322,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "자동화 편향의 두 오류 유형.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "empty-cycle-of-oversight",
+   "label": "빈 감독 순환",
+   "parent": "trap-suggestions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 AI를 실질 감독하지 못하는 위험.",
    "added": "2026-11-21",
    "related": []
   }
