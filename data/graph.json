@@ -45134,11 +45134,14 @@
    "label": "출처 단위 제한",
    "parent": "dataset-license-checklist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터셋 라이선스와 별개로 원 출처의 약관을 추적.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "DPI 감사: 44개 모음집·1,858 데이터셋. 호스팅 사이트 미지정 69~72% vs 실제 약 30%, 너무 관대 GitHub 29%·HF 27%·PwC 16%, HF 66%는 다른 이용 범주.",
+   "related": [
+    "dataset-license-checklist"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "synthetic-data-terms",
@@ -55333,6 +55336,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "사람이 AI를 실질 감독하지 못하는 위험.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "code-vs-data-license-confusion",
+   "label": "코드 라이선스와 데이터 라이선스 혼동",
+   "parent": "source-level-restrictions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GitHub 라이선스를 데이터에 잘못 적용.",
    "added": "2026-11-21",
    "related": []
   }
