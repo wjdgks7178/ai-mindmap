@@ -46559,11 +46559,14 @@
    "label": "임베딩 정규화",
    "parent": "embedding-model-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "길이 1로 맞춰 코사인과 내적을 같게.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "sentence-transformers: normalize_embeddings는 길이 1 정규화, similarity_fn_name 기본 cosine. OpenAI: 수동 축소 시 L2 정규화 필요. 내적=코사인은 길이 1일 때의 일반 사실(문서 미명시).",
+   "related": [
+    "embedding-model-mismatch"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "mteb-benchmark",
@@ -56061,6 +56064,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "검색 순위 평가 지표.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "inner-product-vs-cosine",
+   "label": "내적 vs 코사인",
+   "parent": "embedding-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화 여부에 따른 순위 차이.",
    "added": "2026-11-21",
    "related": []
   }
