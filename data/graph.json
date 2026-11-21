@@ -42845,11 +42845,14 @@
    "label": "cdx-toolkit",
    "parent": "url-index-cdx",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "cdxt로 색인 조회·WARC 레코드 내려받기.",
+   "summary": "CC·IA의 CDX 색인을 조회해 WARC로 내려받는 cdxt 도구. 기본 1000건·최근 1년, limit은 오래된 순.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "url-index-cdx"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "columnar-index-parquet",
@@ -53207,6 +53210,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "말투·길이·난이도를 지정하는 프롬프트.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "cdx-server-load-etiquette",
+   "label": "CDX 서버 부하 예절",
+   "parent": "cdx-toolkit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 필터·대량 조회가 서버에 주는 부하와 예의.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "cc-columnar-index",
+   "label": "CC 컬럼형 색인",
+   "parent": "cdx-toolkit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Parquet 기반으로 넓은 기간을 빠르게 조회.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "wayback-cdx-api",
+   "label": "Wayback CDX API",
+   "parent": "cdx-toolkit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Internet Archive의 CDX 조회 인터페이스.",
    "added": "2026-11-21",
    "related": []
   }
