@@ -46603,11 +46603,14 @@
    "label": "반감기 최신성 가중",
    "parent": "freshness-prefilter-vs-decay",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시간이 지날수록 점수가 절반씩 감소.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "ES 지수 감쇠 S=exp(λd), λ=ln(decay)/scale. decay=0.5이면 scale이 반감기(2배 거리에서 0.25). offset 안은 감쇠 없음(반감기 해석은 풀이).",
+   "related": [
+    "freshness-prefilter-vs-decay"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "azure-freshness-policy",
@@ -56033,6 +56036,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "검증 통과 데이터만 운영 반영.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "half-life-tuning",
+   "label": "반감기 튜닝",
+   "parent": "half-life-recency-prior",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골든 질의로 반감기 선택.",
    "added": "2026-11-21",
    "related": []
   }
