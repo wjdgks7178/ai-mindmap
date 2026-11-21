@@ -44583,11 +44583,14 @@
    "label": "단일 대체의 불확실성 과소평가",
    "parent": "multiple-imputation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 값으로 채우면 표준오차가 작아짐.",
+   "summary": "FIMD: 평균 대체는 SD 28.7(관측 33)·상관 0.35→0.30, 회귀 대체는 상관 0.35→0.39로 과대. 단일 대체 후 표준오차가 너무 작음.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "multiple-imputation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "imputation-for-prediction",
@@ -54867,6 +54870,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 표본에서의 자유도 보정.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "mean-imputation-variance-shrink",
+   "label": "평균 대체의 분산 축소",
+   "parent": "single-imputation-underestimates",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SD와 상관이 변하는 이유.",
    "added": "2026-11-21",
    "related": []
   }
