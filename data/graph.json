@@ -44555,11 +44555,14 @@
    "label": "Rubin의 합치기 규칙",
    "parent": "multiple-imputation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "대체 내·간 분산으로 합친 분산.",
+   "summary": "합친 Q̄, T=Ū+(1+1/m)B, λ=(B+B/m)/T, Barnard–Rubin 자유도. nhanes m=10: T≈5.01, ν≈12.4(FIMD, 원문 인쇄 오타 여부 미확인).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "multiple-imputation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "iterative-imputer",
@@ -54853,6 +54856,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "문서의 지원 목록을 버전과 함께 확인.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "barnard-rubin-df",
+   "label": "Barnard–Rubin 자유도",
+   "parent": "rubin-rules",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 표본에서의 자유도 보정.",
    "added": "2026-11-21",
    "related": []
   }
