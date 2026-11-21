@@ -46573,11 +46573,14 @@
    "label": "소스 ID 키",
    "parent": "rag-reconciliation-job",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "문서의 원본 출처를 식별해 범위 정리.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "source_id_key는 str(메타데이터 키)·callable·None. incremental/scoped_full에서 필수(없으면 ValueError). 같은 소스의 옛 청크를 찾아 삭제.",
+   "related": [
+    "rag-reconciliation-job"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "empty-list-deletion-guard",
@@ -55572,6 +55575,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 소스 ID가 여러 배치에 걸릴 때.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "stable-source-id-design",
+   "label": "안정적인 소스 ID 설계",
+   "parent": "source-id-key",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경로·URL 변경에도 유지되는 ID.",
    "added": "2026-11-21",
    "related": []
   }
