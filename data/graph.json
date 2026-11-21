@@ -44851,11 +44851,14 @@
    "label": "class_weight=balanced",
    "parent": "reweighting-oversampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "클래스 빈도 역수로 가중.",
+   "summary": "class_weight='balanced' = n_samples/(n_classes·bincount). y=[1,1,1,1,0,0] → [1.5, 0.75]. 데이터 복제 없이 손실 가중.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "reweighting-oversampling"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "recall-precision-tradeoff-resampling",
@@ -54909,6 +54912,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "핵심 출처의 접근 제한 증가.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "balanced-subsample",
+   "label": "balanced_subsample",
+   "parent": "class-weight-balanced",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트리별 부트스트랩 기준 가중치.",
    "added": "2026-11-21",
    "related": []
   }
