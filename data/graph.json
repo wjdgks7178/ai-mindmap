@@ -43213,11 +43213,15 @@
    "label": "13-그램 시험 세트 필터링",
    "parent": "gopher-massivetext",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시험 문서와 자카드 0.8 초과 학습 문서 제거.",
+   "summary": "시험 문서와 13-gram 자카드 0.8 초과인 학습 문서 제거(Gopher). 이후 공개된 시험 세트는 못 막는 한계.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "near-duplicate-removal",
+    "ai-evaluation"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "sampling-proportion-tuning",
@@ -53435,6 +53439,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "메뉴·광고·푸터 걷어내기.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "paraphrase-leak",
+   "label": "패러프레이즈 유출",
+   "parent": "test-set-filtering-13gram",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표현만 바뀐 시험 유출은 n-gram으로 못 잡음.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "post-hoc-contamination-check",
+   "label": "사후 오염 검사",
+   "parent": "test-set-filtering-13gram",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 후 새 시험 세트로 점검.",
    "added": "2026-11-21",
    "related": []
   }
