@@ -43738,11 +43738,15 @@
    "label": "WRENCH 벤치마크",
    "parent": "weak-supervision",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "약한 지도 표준 평가.",
+   "summary": "WRENCH: 22개 실제 데이터셋·분류/시퀀스 태깅·120+ 방법 변형을 같은 조건에서 비교하는 약한 지도 벤치마크(NeurIPS 2021 D&B).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "weak-supervision",
+    "programmatic-labeling-snorkel"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "semi-vs-weak-vs-self-supervised",
@@ -54219,6 +54223,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "argmax 변환과 정보 손실.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "wrench-datasets-tasks",
+   "label": "WRENCH 데이터셋·과제",
+   "parent": "wrench-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "22개 데이터셋과 소스 종류.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "ws-reproducibility",
+   "label": "약한 지도 재현성",
+   "parent": "wrench-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비교가 어려운 이유와 표준화.",
    "added": "2026-11-21",
    "related": []
   }
