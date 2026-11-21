@@ -45351,11 +45351,14 @@
    "label": "자기 보고 vs 독립 평가",
    "parent": "system-cards",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시스템 카드의 신뢰 한계.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "시스템 카드는 대부분 자기 보고. Anthropic 허브: 자사는 안전장치 없이, 타사는 공개 엔드포인트로 평가해 조건이 다를 수 있음. Opus 4.1 부록은 내부 팀 평가(독립 재실행 미확인).",
+   "related": [
+    "system-cards"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "safeguards-on-off-eval",
@@ -55474,6 +55477,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 해시와 카드 버전 연결.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "evaluation-conflict-of-interest",
+   "label": "평가 이해충돌",
+   "parent": "self-reported-vs-independent-eval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자기·후원 평가의 한계.",
    "added": "2026-11-21",
    "related": []
   }
