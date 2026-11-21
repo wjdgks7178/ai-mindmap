@@ -46396,11 +46396,14 @@
    "label": "골든 질의 세트",
    "parent": "rag-index-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정답 문서를 아는 50~200개 질의로 검색 회귀 감지.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "골든 질의 세트: 변경 전후 RAG 검색 비교용 고정 평가 세트. Ragas Context Recall=지원된 reference 주장/전체 reference 주장, 변형 Non-LLM·ID 기반(세트 운영 방식은 제안).",
+   "related": [
+    "rag-index-versioning"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "embedding-model-churn",
@@ -56047,6 +56050,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "골든 질의로 반감기 선택.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "recall-at-k-mrr",
+   "label": "Recall@k와 MRR",
+   "parent": "golden-query-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 순위 평가 지표.",
    "added": "2026-11-21",
    "related": []
   }
