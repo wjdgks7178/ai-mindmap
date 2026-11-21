@@ -46596,11 +46596,14 @@
    "label": "Azure 신선도 정책",
    "parent": "freshness-prefilter-vs-decay",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "boostingDuration으로 최신 문서 순위 가중.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "Azure AI Search freshness: boostingDuration(P365D 형식)·interpolation(linear 기본·constant·quadratic·logarithmic). 날짜 필드 기반 최근 문서 가산.",
+   "related": [
+    "freshness-prefilter-vs-decay"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "query-aware-recency-gate",
@@ -55935,6 +55938,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "날짜 없는 문서는 감쇠 안 됨.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "scoring-profile-per-corpus",
+   "label": "코퍼스별 스코어링 프로필",
+   "parent": "azure-freshness-policy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간 민감 문서군만 신선도 적용.",
    "added": "2026-11-21",
    "related": []
   }
