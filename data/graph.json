@@ -45408,11 +45408,14 @@
    "label": "소집단 변화",
    "parent": "wilds-benchmark",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집단 비율이 달라질 때 최악 집단 성능.",
-   "related": [],
-   "added": "2026-11-19"
+   "summary": "WILDS: D_test⊆D_train이나 도메인 비율 변화, 최악 집단 오류로 평가. CivilComments 16도메인·약 448,000건, Amazon 2,586 사용자.",
+   "related": [
+    "wilds-benchmark"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-21"
   },
   {
    "id": "worst-group-accuracy",
