@@ -43875,11 +43875,14 @@
    "label": "불확실성 샘플링 3종",
    "parent": "active-learning-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "least confident·margin·entropy 비교.",
+   "summary": "least confident·margin·entropy 3종(Settles 서베이). 이진은 동일, 다중 클래스에서 달라지며 결과는 응용별로 엇갈림.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "active-learning-labeling"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "pool-based-sampling",
@@ -54323,6 +54326,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "의심 샘플 제거·재라벨.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "density-weighted-sampling",
+   "label": "밀도 가중 샘플링",
+   "parent": "uncertainty-sampling-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상치 선택을 피하는 보정.",
    "added": "2026-11-21",
    "related": []
   }
