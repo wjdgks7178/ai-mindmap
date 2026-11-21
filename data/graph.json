@@ -44162,11 +44162,15 @@
    "label": "임계값 곡선으로 고르기",
    "parent": "confidence-routed-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자동 통과 정확도와 검수 비율 곡선.",
+   "summary": "허용 위험 r*에 따른 커버리지: CIFAR-10 r*=0.01→0.786, CIFAR-100 r*=0.10→0.595, ImageNet top-5 r*=0.02→0.535(Geifman 2017, δ=0.001).",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "confidence-routed-review",
+    "selective-classification"
+   ],
+   "done": "2026-11-21"
   },
   {
    "id": "overconfidence-routing-failure",
@@ -54698,6 +54702,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "LF 쌍별 오류 일치도 점검.",
+   "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "deployment-threshold-recheck",
+   "label": "배포 후 임계값 재점검",
+   "parent": "threshold-curve-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 이동 시 θ 재설정.",
    "added": "2026-11-21",
    "related": []
   }
