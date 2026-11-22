@@ -46064,11 +46064,12 @@
    "label": "섭동 최악 사례 정확도",
    "parent": "perturbation-severity-levels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 변형 중 가장 나쁜 결과를 점수로.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "held-out-corruptions",
@@ -58708,6 +58709,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "연속 프레임의 예측 뒤집힘 확률로 안정성을 재는 벤치마크.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "invariance-vs-equivariance",
+   "label": "불변과 등변 평가",
+   "parent": "worst-case-over-perturbations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미 보존 변형은 불변, 의미 변경 변형은 등변으로 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "contrast-sets",
+   "label": "대조 세트",
+   "parent": "worst-case-over-perturbations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미를 살짝 바꾼 최소 쌍으로 모델이 단서를 제대로 쓰는지 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "counterfactual-fairness-metric",
+   "label": "반사실 공정성 지표",
+   "parent": "worst-case-over-perturbations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 관련 변형(방언)에서 집단별·최악 정확도를 비교.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "nl-augmenter",
+   "label": "NL-Augmenter",
+   "parent": "worst-case-over-perturbations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어 변형(오타 등)을 모은 공개 라이브러리.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "local-robustness-scope",
+   "label": "국소 견고성",
+   "parent": "worst-case-over-perturbations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 입력 주변의 변형에 대한 견고성만 재는 범위.",
    "related": [],
    "added": "2026-11-22"
   }
