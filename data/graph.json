@@ -47028,11 +47028,12 @@
    "label": "드리프트 임계값 정하기",
    "parent": "l-infinity-js-divergence",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "표본 크기와 비즈니스 영향에 맞춘 임계값.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "binning-numeric-features",
@@ -60076,6 +60077,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "필수·도메인·범위·환경을 점검하는 목록.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "null-distribution-threshold",
+   "label": "정상 분포 기반 임계값",
+   "parent": "drift-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 기간을 쪼개 우연 거리의 95~99백분위를 임계값으로.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "sample-size-false-alarms",
+   "label": "표본 크기와 가짜 경보",
+   "parent": "drift-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 표본일수록 우연 거리가 커 가짜 경보가 늘어남.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "alert-action-mapping",
+   "label": "경보와 조치 매핑",
+   "parent": "drift-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값별로 조사·재학습·무시를 정하는 운영 규칙.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "statistical-test-vs-distance-threshold",
+   "label": "통계 검정 대 거리 임계값",
+   "parent": "drift-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유의성 검정과 거리 임계값의 장단점.",
    "related": [],
    "added": "2026-11-22"
   }
