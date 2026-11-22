@@ -43875,11 +43875,12 @@
    "label": "사전 라벨 자동화 편향",
    "parent": "label-studio-ml-backend",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측을 그대로 승인하는 위험.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "smart-tools-interactive-labeling",
@@ -56339,6 +56340,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "약한 라벨 학습 뒤 같은 소량 정답 라벨로 추가 미세 조정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "blind-sample-prelabel-audit",
+   "label": "사전 라벨 맹검 대조",
+   "parent": "automation-bias-prelabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 표본은 예측을 가리고 라벨링해 검토자 끌림을 측정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "seeded-error-detection-rate",
+   "label": "심은 오류 검출률",
+   "parent": "automation-bias-prelabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부러 틀린 사전 라벨을 섞어 검토자가 잡는 비율 측정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "correction-friction-ui",
+   "label": "정정 마찰과 UI 설계",
+   "parent": "automation-bias-prelabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정정이 번거롭거나 필수일 때 검토 행동이 달라지는 현상.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "annotator-ai-attitude",
+   "label": "검토자의 AI 태도",
+   "parent": "automation-bias-prelabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI에 회의적일수록 오류를 더 잘 잡는다는 연구 결과.",
    "added": "2026-11-22",
    "related": []
   }
