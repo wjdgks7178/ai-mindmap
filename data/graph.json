@@ -44921,11 +44921,12 @@
    "label": "편향 라벨 정확도의 함정",
    "parent": "proxy-variables",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "편향된 정답을 따르면 정확하다고 측정됨.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "class-weight-balanced",
@@ -57020,6 +57021,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Feldman 등이 제안한 정보 누출 기반 차별적 영향 인증 아이디어.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "proxy-label-problem-formulation",
+   "label": "대리 라벨과 문제 정의",
+   "parent": "biased-label-accuracy-trap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용·클릭처럼 쉬운 값을 라벨로 쓰면 목표와 어긋나는 문제 정의 오류.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "same-score-outcome-comparison",
+   "label": "같은 점수의 결과 비교",
+   "parent": "biased-label-accuracy-trap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수가 같은 집단별 실제 결과를 비교해 편향을 찾는 Obermeyer식 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "independent-ground-truth-audit",
+   "label": "독립 기준 감사",
+   "parent": "biased-label-accuracy-trap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임상 지표처럼 라벨과 독립된 기준으로 집단별 재현율을 비교.",
    "added": "2026-11-22",
    "related": []
   }
