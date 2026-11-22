@@ -45709,11 +45709,12 @@
    "label": "OOD 검증 세트",
    "parent": "held-out-domain-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 선택에 쓰는 시험과 비슷한 분포 변화 세트.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "data-leakage-patient-level",
@@ -58005,6 +58006,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "논문·모델 카드에 분할 단위(환자/영상)와 중복 검사를 적는 관행.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "leave-one-domain-out-cv",
+   "label": "도메인 하나 빼기 교차 검증",
+   "parent": "ood-validation-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 도메인을 하나씩 빼고 빼놓은 도메인으로 평가해 모델을 고르는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "oracle-model-selection",
+   "label": "오라클 모델 선택",
+   "parent": "ood-validation-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 도메인에서 하이퍼파라미터를 고르는 상한 참고용 방법과 보고 규칙.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "model-selection-as-learning-problem",
+   "label": "모델 선택은 학습 문제",
+   "parent": "ood-validation-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선택 방법에 시험이 학습과 어떻게 관련되는지에 대한 가정이 필요하다는 관점.",
    "added": "2026-11-22",
    "related": []
   }
