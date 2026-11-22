@@ -45089,11 +45089,12 @@
    "label": "수집 전 약관 확인 단계",
    "parent": "robots-txt-vs-tos",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "크롤러가 못 보는 약관을 사람이 확인.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "cfaa-public-data",
@@ -57280,6 +57281,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "0.4% 같은 낮은 오류율은 표본이 작으면 구간이 넓다는 계산.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "tos-snapshot-storage",
+   "label": "약관 스냅샷 보관",
+   "parent": "tos-review-step",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정 당시의 약관 본문을 저장·해시해 나중에 증명.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "keyword-scan-false-negative",
+   "label": "키워드 검색의 놓침",
+   "parent": "tos-review-step",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본문을 못 받거나 다른 문서를 편입한 약관에서 0건이 오해되는 경우.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "incorporated-policy-documents",
+   "label": "약관에 편입된 정책 문서",
+   "parent": "tos-review-step",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "API 정책·콘텐츠 정책 등 약관이 참조해 포함하는 별도 문서 확인.",
    "added": "2026-11-22",
    "related": []
   }
