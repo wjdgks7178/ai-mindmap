@@ -46553,11 +46553,12 @@
    "label": "CDC 동기화",
    "parent": "zombie-documents",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경 이벤트로 색인을 실시간 맞추기.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "deletion-audit-sampling",
@@ -59398,6 +59399,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "GDPR 제17조를 벡터 색인에 적용할 때의 쟁점.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "wal-logical-decoding",
+   "label": "WAL 논리 디코딩",
+   "parent": "change-data-capture-sync",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DB 로그를 행 단위 변경 이벤트로 읽는 PostgreSQL 기능.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "replica-identity-full",
+   "label": "REPLICA IDENTITY FULL",
+   "parent": "change-data-capture-sync",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 이벤트에 이전 행 전체를 담게 하는 설정.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "kafka-log-compaction-tombstone",
+   "label": "Kafka 로그 컴팩션과 tombstone",
+   "parent": "change-data-capture-sync",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "null 값 메시지로 키의 이전 기록을 지우는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "cdc-at-least-once-idempotency",
+   "label": "CDC 최소 1회 전달과 멱등성",
+   "parent": "change-data-capture-sync",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복 이벤트가 와도 결과가 같게 처리.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "initial-snapshot-modes",
+   "label": "스냅샷 모드",
+   "parent": "change-data-capture-sync",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기 전체 적재와 변경 스트리밍의 연결 방식.",
    "related": [],
    "added": "2026-11-22"
   }
