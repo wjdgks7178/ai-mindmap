@@ -44759,11 +44759,12 @@
    "label": "결측 분기의 해석",
    "parent": "native-nan-models",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결측 때문에 간 방향을 확인하는 어려움.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "intersectional-evaluation",
@@ -56873,6 +56874,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "결측이 많은 행과 적은 행의 성능을 나눠 보는 평가.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "permutation-importance-missing-mask",
+   "label": "결측 마스크 순열 중요도",
+   "parent": "nan-interpretability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "값만 섞기와 결측 위치까지 섞기를 나눠 중요도의 원천을 구분.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "missing-go-to-left-inspection",
+   "label": "결측 방향 확인(missing_go_to_left)",
+   "parent": "nan-interpretability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트리 텍스트에 안 나오는 결측 분기 방향을 속성으로 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "model-card-missingness-note",
+   "label": "모델 카드의 결측 서술",
+   "parent": "nan-interpretability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측 방향 학습 사용 여부와 변수별 결측률을 문서화.",
    "added": "2026-11-22",
    "related": []
   }
