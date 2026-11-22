@@ -47259,11 +47259,12 @@
    "label": "DQDL where 절",
    "parent": "dqdl",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "조건에 맞는 행에만 규칙 적용.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "dqdl-labels",
@@ -60923,6 +60924,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "COLUMN과 ROW 평가 방식을 고르는 옵션.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "where-filtered-row-label",
+   "label": "where로 걸러진 행의 라벨",
+   "parent": "dqdl-where-clause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 Passed와 SKIPPED 옵션의 차이.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "glue-4-where-support",
+   "label": "Glue 4.0 where 지원",
+   "parent": "dqdl-where-clause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "where 절이 Glue 4.0에서만 지원된다는 제약.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "conditional-rule-design",
+   "label": "조건부 규칙 설계",
+   "parent": "dqdl-where-clause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특정 조건의 행에만 필수 규칙을 두는 방법.",
    "related": [],
    "added": "2026-11-22"
   }
