@@ -47108,11 +47108,12 @@
    "label": "Horvitz–Thompson 추정량",
    "parent": "biased-sampling-reweighting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확률을 아는 표집의 가중 평균.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "extreme-weight-instability",
@@ -60279,6 +60280,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "둘 다 틀리면 이중 강건도 편향이 남는다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "poisson-sampling",
+   "label": "포아송 표집",
+   "parent": "horvitz-thompson-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단위마다 독립적으로 포함 여부를 정하는 표집 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ht-variance-formula",
+   "label": "HT 분산식",
+   "parent": "horvitz-thompson-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "포아송 표집에서 합계 추정의 분산을 구하는 공식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ratio-estimator-small-sample-bias",
+   "label": "비율 추정의 소표본 편향",
+   "parent": "horvitz-thompson-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화 추정이 작은 표본에서 편향될 수 있는 이유.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "sampling-probability-logging",
+   "label": "표집 확률 기록",
+   "parent": "horvitz-thompson-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로그·라벨링 때 포함 확률을 함께 저장하는 습관.",
    "related": [],
    "added": "2026-11-22"
   }
