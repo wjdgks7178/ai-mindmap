@@ -46885,11 +46885,12 @@
    "label": "필수 컬럼 규칙 조합",
    "parent": "gx-null-vs-range",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "NotNull과 값 검사를 함께 두는 설계.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "gx-file-data-context",
@@ -59691,6 +59692,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "평소 대비 급증을 감지하는 기준 설정.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "mostly-parameter",
+   "label": "mostly 파라미터",
+   "parent": "required-column-rules",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통과 비율 허용치. 느슨하면 위반도 성공이 된다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "sql-null-handling-validation",
+   "label": "SQL 백엔드의 NULL 처리",
+   "parent": "required-column-rules",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "pandas와 SQL에서 검증 결과가 다를 수 있는지 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "expectation-suite-design",
+   "label": "Expectation 스위트 설계",
+   "parent": "required-column-rules",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙을 컬럼 단위로 묶고 필수·값 규칙을 짝짓는 법.",
    "related": [],
    "added": "2026-11-22"
   }
