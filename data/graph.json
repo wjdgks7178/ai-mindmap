@@ -47164,11 +47164,12 @@
    "label": "Wilson 구간 기반 완전성 하한",
    "parent": "constraint-suggestion",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "관측 비율에 신뢰구간을 적용해 하한을 정함.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "suggestion-human-review",
@@ -60707,6 +60708,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "철회·수정된 프리프린트의 주장을 다루는 법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "wald-interval-limits",
+   "label": "Wald 구간의 한계",
+   "parent": "wilson-completeness-bound",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소표본·극단 비율에서 [0,1]을 벗어나고 coverage가 낮은 이유.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "deequ-default-interval-strategy",
+   "label": "Deequ 기본 구간 전략 확인",
+   "parent": "wilson-completeness-bound",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권장(Wilson)과 기본값이 다를 수 있어 버전별로 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "retain-completeness-rule",
+   "label": "RetainCompletenessRule",
+   "parent": "wilson-completeness-bound",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관측 완전성이 0.2 초과 1.0 미만일 때 하한을 제안하는 규칙.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "small-sample-suggestion-risk",
+   "label": "소표본 제안의 위험",
+   "parent": "wilson-completeness-bound",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 작을 때 자동 제안 기준이 정상 데이터에서 실패.",
    "related": [],
    "added": "2026-11-22"
   }
