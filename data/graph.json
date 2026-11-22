@@ -45685,11 +45685,12 @@
    "label": "신경망의 과신",
    "parent": "ood-detection-softmax",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 밖 입력에도 높은 확률을 내는 문제.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "auroc-ood",
@@ -57914,6 +57915,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "점수 임계값을 서비스 비용(오검출·놓침)에 맞춰 정하는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "fooling-images",
+   "label": "눈속임 이미지",
+   "parent": "overconfidence-neural-nets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 못 알아보는 이미지를 CNN이 99.99% 확신으로 분류하게 만드는 실험.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "temperature-scaling-calibration",
+   "label": "온도 스케일링 보정",
+   "parent": "overconfidence-neural-nets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 개의 온도 파라미터로 분포 안 확신도를 정답률에 맞추는 후처리.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "reject-option-classification",
+   "label": "모름(기권) 옵션",
+   "parent": "overconfidence-neural-nets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류 모델에 기권 경로를 두고 낮은 확신·OOD 입력은 사람에게 넘기기.",
    "added": "2026-11-22",
    "related": []
   }
