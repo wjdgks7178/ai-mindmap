@@ -45658,11 +45658,12 @@
    "label": "평가 오차 막대",
    "parent": "slice-sample-size-caution",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "벤치마크 점수에 표준오차를 붙이는 법.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "odin-ood-detection",
@@ -57733,6 +57734,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사전 가설 슬라이스와 탐색 중 발견한 슬라이스를 구분해 해석.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "paired-difference-eval",
+   "label": "짝지은 차이 분석",
+   "parent": "eval-error-bars",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문항에서 두 모델의 점수 차이를 문항 단위로 분석해 정밀도 높이기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "clustered-standard-error-eval",
+   "label": "군집 표준오차",
+   "parent": "eval-error-bars",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 지문의 문항처럼 묶인 평가에서 유효 표본이 줄어드는 문제와 보정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "eval-power-analysis",
+   "label": "평가 검정력 분석",
+   "parent": "eval-error-bars",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 정도 차이를 검출하려면 문항이 몇 개 필요한지 계산.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "resampling-to-reduce-eval-variance",
+   "label": "재표집으로 평가 분산 줄이기",
+   "parent": "eval-error-bars",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문항별로 답안을 여러 번 뽑아 평균해 샘플링 변동을 줄이는 방법.",
    "added": "2026-11-22",
    "related": []
   }
