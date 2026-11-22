@@ -45879,11 +45879,12 @@
    "label": "불가능 증명",
    "parent": "recourse-audit-integer-programming",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대안이 없음을 수학적으로 인증.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "percentile-shift-cost",
@@ -58482,6 +58483,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "과거 연체 기록을 일정 기간 후 지우는 규정과 모델.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-nonlinear-extension",
+   "label": "비선형 모델의 recourse",
+   "parent": "certified-infeasibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "국소 선형 근사로는 불가능 증명을 못 준다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-flexibility-measure",
+   "label": "recourse 유연성 측정",
+   "parent": "certified-infeasibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최소 비용 행동의 개수로 대안의 폭을 잰다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-bound-sensitivity",
+   "label": "범위 설정 민감도",
+   "parent": "certified-infeasibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동 가능 특징 상한이 불가능 판정에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ip-solver-cplex",
+   "label": "정수 계획법 풀이기",
+   "parent": "certified-infeasibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CPLEX 등이 최적해 또는 불가능 증명을 내는 원리.",
    "related": [],
    "added": "2026-11-22"
   }
