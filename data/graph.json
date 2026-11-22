@@ -44367,11 +44367,12 @@
    "label": "편향 대시보드",
    "parent": "suggestion-hidden-control-sample",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "월간 노출/비노출 비교 보고.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "clopper-pearson-interval",
@@ -56681,6 +56682,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "일반 정책은 알리고 개별 항목은 숨기는 선, 기만 회피.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "alert-threshold-prespecification",
+   "label": "경보 임계값 사전 정의",
+   "parent": "bias-dashboard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조사 착수 기준을 미리 정해 사후 해석 편향을 막기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "pooled-control-analysis",
+   "label": "비노출군 누적 분석",
+   "parent": "bias-dashboard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "몇 달치 비노출군을 합쳐 구간 폭을 줄이는 방법.",
    "added": "2026-11-22",
    "related": []
   }
