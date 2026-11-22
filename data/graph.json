@@ -46218,11 +46218,12 @@
    "label": "중복 데이터와 가치 평가",
    "parent": "leave-one-out-valuation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 데이터가 둘이면 개별 가치가 낮게 나오는 문제.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "mislabel-detection-by-value",
@@ -59034,6 +59035,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "5점 척도는 민감도를 키우고 이진은 불안정을 가릴 수 있다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "shapley-symmetry-axiom",
+   "label": "Shapley 대칭 공리",
+   "parent": "duplicate-data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기여가 같은 두 데이터에 같은 가치를 주는 규칙.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "duplicate-submission-gaming",
+   "label": "복제 제출 전략",
+   "parent": "duplicate-data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 자료를 여러 번 올려 보상을 노리는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "data-valuation-label-noise-detection",
+   "label": "가치 기반 오라벨 탐지",
+   "parent": "duplicate-data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가치가 낮은 데이터부터 점검해 오류를 찾는 활용.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "banzhaf-data-valuation",
+   "label": "Banzhaf 데이터 가치",
+   "parent": "duplicate-data-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복·잡음에 덜 민감하다고 제안된 대안 평가.",
    "related": [],
    "added": "2026-11-22"
   }
