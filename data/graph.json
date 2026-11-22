@@ -46136,11 +46136,12 @@
    "label": "말바꿈의 의미 보존 검증",
    "parent": "prediction-consistency-metric",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변형이 같은 뜻인지 확인하는 절차.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "shap-feature-attribution",
@@ -58989,6 +58990,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "잘못된 파라미터가 천장을 낮춰 효과를 가린 사례.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "polarity-inversion-pitfall",
+   "label": "극성 반전 함정",
+   "parent": "paraphrase-validity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문이 뒤집혀 답이 달라지는 말바꿈 쌍이 일치도를 부풀림.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "structural-template-audit",
+   "label": "템플릿 구조 감사",
+   "parent": "paraphrase-validity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답 집합·극성·개념·중복을 자동으로 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "circular-validation-model",
+   "label": "모델 기반 검증의 순환성",
+   "parent": "paraphrase-validity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 대상 모델로 동등성을 확인하는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "answer-scale-width-effect",
+   "label": "답 척도 폭의 영향",
+   "parent": "paraphrase-validity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5점 척도는 민감도를 키우고 이진은 불안정을 가릴 수 있다.",
    "related": [],
    "added": "2026-11-22"
   }
