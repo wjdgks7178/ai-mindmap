@@ -44228,7 +44228,9 @@
    "priority": 3,
    "summary": "자동 통과도 일부는 사람 확인.",
    "added": "2026-11-19",
-   "related": [],
+   "related": [
+    "rule-of-three"
+   ],
    "done": "2026-11-22"
   },
   {
@@ -44261,11 +44263,12 @@
    "label": "검수자 선발과 AI 태도 측정",
    "parent": "skeptical-reviewer-effect",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "태도 측정으로 구성 다양화.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "forced-correction-backfire",
@@ -56520,6 +56523,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "오류율 상한이 목표를 넘을 때 임계값 상향·중단하는 규칙.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "overcorrection-vs-undercorrection",
+   "label": "과교정 vs 과소교정",
+   "parent": "reviewer-selection-ai-attitude",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞는 것을 고치는 오류와 틀린 것을 못 고치는 오류를 나눠 추적.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "disagreement-as-difficulty-signal",
+   "label": "불일치는 난이도 신호",
+   "parent": "reviewer-selection-ai-attitude",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수자 간 불일치를 노이즈 대신 모호성·난이도 신호로 읽기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "reviewer-diversity-design",
+   "label": "검수자 구성 다양화",
+   "parent": "reviewer-selection-ai-attitude",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인구통계·태도가 다른 검수자를 섞어 편향을 상쇄.",
    "added": "2026-11-22",
    "related": []
   }
