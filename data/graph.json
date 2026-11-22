@@ -47088,11 +47088,12 @@
    "label": "아카이브된 도구 사용 위험",
    "parent": "facets-data-visualization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "유지보수 중단 오픈소스를 쓸 때 점검할 것.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "inverse-probability-weighting",
@@ -60459,6 +60460,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 데이터셋에서 가장 다른 특징을 위로 올리는 정렬.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dependency-smoke-test",
+   "label": "의존성 스모크 테스트",
+   "parent": "archived-tool-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구를 도입하기 전 현재 버전에서 작은 호출을 돌려 보기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "deprecated-api-removal",
+   "label": "폐기된 API의 제거",
+   "parent": "archived-tool-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경고로 예고된 함수가 다음 메이저 버전에서 사라지는 흐름.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "oss-health-checklist",
+   "label": "오픈소스 건강 점검표",
+   "parent": "archived-tool-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "아카이브·마지막 릴리스·이슈 응답·포크를 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pin-upper-bound-dependency",
+   "label": "의존성 상한 고정",
+   "parent": "archived-tool-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "pandas<3처럼 상한을 고정해 깨짐을 피하기.",
    "related": [],
    "added": "2026-11-22"
   }
