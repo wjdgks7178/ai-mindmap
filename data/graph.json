@@ -47016,11 +47016,12 @@
    "label": "추론 스키마 검토",
    "parent": "tfdv-schema-environments",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자동 추론 스키마를 도메인 지식으로 보완.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "drift-threshold-tuning",
@@ -60042,6 +60043,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "drift 경보 시 학습을 멈추는 단계.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "schema-presence-min-fraction",
+   "label": "스키마 presence 최소 비율",
+   "parent": "tfdv-infer-schema-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징이 채워져야 하는 예시 비율을 지정.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "schema-domain-update",
+   "label": "스키마 도메인 갱신",
+   "parent": "tfdv-infer-schema-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기대된 새 값을 도메인에 추가하는 절차.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "schema-review-checklist",
+   "label": "스키마 검토 체크리스트",
+   "parent": "tfdv-infer-schema-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필수·도메인·범위·환경을 점검하는 목록.",
    "related": [],
    "added": "2026-11-22"
   }
