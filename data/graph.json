@@ -45769,11 +45769,12 @@
    "label": "드리프트 탐지기 KS·MMD",
    "parent": "distribution-shift-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "통계 검정으로 분포 변화를 감지.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "concept-drift-fraud",
@@ -58152,6 +58153,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "검증 표본이 작으면 혼동행렬이 흔들려 BBSE 추정이 불안정해지는 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "bbsds-softmax-shift-detection",
+   "label": "BBSDs: softmax 출력으로 이동 검출",
+   "parent": "drift-detectors-ks-mmd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류기의 softmax 출력을 차원 축소로 써서 일변량 검정으로 이동 검출.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "drift-significance-vs-effect-size",
+   "label": "유의성 vs 효과 크기",
+   "parent": "drift-detectors-ks-mmd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 크면 작은 이동도 유의해지므로 효과 크기와 성능 영향을 함께 본다.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "multiple-univariate-test-correction",
+   "label": "다중 일변량 검정 보정",
+   "parent": "drift-detectors-ks-mmd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징별 KS 검정을 합칠 때 Bonferroni·BH로 오탐을 통제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "shift-malignancy-assessment",
+   "label": "이동의 악성도 평가",
+   "parent": "drift-detectors-ks-mmd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검출된 이동이 모델 성능에 실제로 해로운지 정량화.",
    "added": "2026-11-22",
    "related": []
   }
