@@ -47131,11 +47131,12 @@
    "label": "이중 강건 추정량",
    "parent": "biased-sampling-reweighting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 모델 중 하나만 맞아도 일관된 추정.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "spark-version-matching",
@@ -60234,6 +60235,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "최대 가중치·유효 표본 크기를 함께 보고.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "aipw-estimator",
+   "label": "AIPW 추정량",
+   "parent": "doubly-robust-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 모델 평균에 가중 잔차를 더한 이중 강건 추정.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "propensity-score-model",
+   "label": "성향 점수 모델",
+   "parent": "doubly-robust-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관측될 확률을 예측하는 모델.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "outcome-regression-model",
+   "label": "결과 회귀 모델",
+   "parent": "doubly-robust-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관측된 데이터로 결과를 예측해 평균을 내는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "model-misspecification-risk",
+   "label": "모델 오설정 위험",
+   "parent": "doubly-robust-estimator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "둘 다 틀리면 이중 강건도 편향이 남는다.",
    "related": [],
    "added": "2026-11-22"
   }
