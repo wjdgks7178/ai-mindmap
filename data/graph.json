@@ -44224,11 +44224,12 @@
    "label": "자동 통과분 표본 점검",
    "parent": "confidence-routed-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자동 통과도 일부는 사람 확인.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "isotonic-vs-sigmoid-calibration",
@@ -56497,6 +56498,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "정답률 급상승·처리 시간 단축으로 골드 유출을 탐지.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "stratified-confidence-audit",
+   "label": "확신도 구간별 층화 점검",
+   "parent": "auto-pass-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신도 구간마다 표본을 뽑아 구간별 오류율을 추정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "auto-pass-pause-rule",
+   "label": "자동 통과 중단 기준",
+   "parent": "auto-pass-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류율 상한이 목표를 넘을 때 임계값 상향·중단하는 규칙.",
    "added": "2026-11-22",
    "related": []
   }
