@@ -46506,11 +46506,12 @@
    "label": "임베딩 모델 교체 위험",
    "parent": "rag-index-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제공자가 모델을 바꿔 조용히 무효화되는 문제.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "chunk-content-hash",
@@ -59252,6 +59253,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "전환 전 고정 질의 세트로 검색 품질 악화를 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "embedding-vector-model-tagging",
+   "label": "벡터에 모델 버전 기록",
+   "parent": "embedding-model-churn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "model_id를 함께 저장해 혼합 색인을 식별.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "drift-adapter",
+   "label": "Drift-Adapter",
+   "parent": "embedding-model-churn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 질의 임베딩을 옛 공간으로 사상하는 학습 변환.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "retrieval-eval-suite-small",
+   "label": "소형 검색 평가 세트",
+   "parent": "embedding-model-churn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약 200개 질의-문서 쌍으로 정기 recall@K 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "matryoshka-truncation",
+   "label": "Matryoshka 절단",
+   "parent": "embedding-model-churn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩 차원을 줄여 저장을 절감하는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "embedding-corpus-drift",
+   "label": "코퍼스 드리프트",
+   "parent": "embedding-model-churn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 같아도 문서·용어 변화로 품질이 떨어지는 현상.",
    "related": [],
    "added": "2026-11-22"
   }
