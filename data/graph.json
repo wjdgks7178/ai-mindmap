@@ -45646,11 +45646,12 @@
    "label": "슬라이스 다중 비교",
    "parent": "slice-sample-size-caution",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "많이 쪼갤수록 우연히 나쁜 슬라이스가 생김.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "eval-error-bars",
@@ -57699,6 +57700,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "자유 서술 채점에 쓰는 LLM 판정자를 사람 라벨로 검증.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "benjamini-hochberg-slices",
+   "label": "슬라이스에 BH 보정",
+   "parent": "multiple-comparisons-slices",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "p값 정렬로 거짓 발견 비율(FDR)을 통제해 약점 슬라이스 목록 거르기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "slice-count-denominator-logging",
+   "label": "검사한 슬라이스 수 기록",
+   "parent": "multiple-comparisons-slices",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탐색에서 검사한 슬라이스 총수를 기록해 보정의 분모로 사용.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "confirmatory-vs-exploratory-slices",
+   "label": "확인적 vs 탐색적 슬라이스",
+   "parent": "multiple-comparisons-slices",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전 가설 슬라이스와 탐색 중 발견한 슬라이스를 구분해 해석.",
    "added": "2026-11-22",
    "related": []
   }
