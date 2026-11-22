@@ -45263,11 +45263,12 @@
    "label": "비공개 개작의 회색지대",
    "parent": "cc-noderivatives",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "ND 데이터를 내부에서만 가공할 때.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "annotation-as-derivative",
@@ -57416,6 +57417,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습된 모델이 개작물인지 여부는 확정되지 않은 영역.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "internal-use-access-control-nd",
+   "label": "ND 데이터 내부 접근 통제",
+   "parent": "private-adaptation-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내부 가공본이 외부로 공유되지 않도록 접근을 제한하는 운영.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "technical-modification-exception",
+   "label": "기술적 수정 예외(2(a)(4))",
+   "parent": "private-adaptation-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식 변환 같은 기술적 수정은 개작물을 만들지 않는다는 조항.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "model-output-derivative-question",
+   "label": "모델 출력과 개작물 여부",
+   "parent": "private-adaptation-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습된 모델의 출력이 원본의 개작물인지 확정되지 않은 문제.",
    "added": "2026-11-22",
    "related": []
   }
