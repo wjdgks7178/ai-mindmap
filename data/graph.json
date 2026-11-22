@@ -45013,11 +45013,12 @@
    "label": "소급 불가 옵트아웃",
    "parent": "consent-in-crisis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이미 수집된 데이터에는 효과 없음.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "vendor-labeling-sla",
@@ -57133,6 +57134,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "GPTBot·CCBot·ClaudeBot·Google-Extended 등 AI 관련 봇 토큰 관리.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "opt-out-registry-commoncrawl",
+   "label": "Common Crawl 옵트아웃 등록부",
+   "parent": "retroactive-opt-out-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CCBot 차단과 옵트아웃 등록부가 이미 수집된 데이터에 주는 효과(미확인 부분 정리).",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "corpus-deletion-request-policy",
+   "label": "말뭉치 삭제 요청 대응 정책",
+   "parent": "retroactive-opt-out-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옵트아웃·삭제 요청에 대한 보유본 삭제와 재학습 제외 정책.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "training-data-manifest",
+   "label": "학습 데이터 목록(매니페스트)",
+   "parent": "retroactive-opt-out-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습에 쓴 출처·날짜 목록을 남겨 삭제 요청에 대응.",
    "added": "2026-11-22",
    "related": []
   }
