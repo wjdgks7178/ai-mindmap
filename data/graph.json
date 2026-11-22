@@ -44855,11 +44855,12 @@
    "label": "기준 집단 비율과 비교",
    "parent": "dataset-composition-table",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실제 사용 대상과의 비율 차이.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "sensitive-attribute-collection",
@@ -56941,6 +56942,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "칸이 많을수록 우연한 격차가 나오기 쉬운 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "poststratification-weights",
+   "label": "사후층화 가중치",
+   "parent": "reference-population-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 비율÷데이터 비율로 집단별 가중치를 두는 보정과 극단 가중치 위험.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "kish-effective-sample-size",
+   "label": "Kish 유효 표본 크기",
+   "parent": "reference-population-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치가 불균등하면 n_eff=(Σw)²/Σw²로 표본의 값어치가 줄어듦.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "weighted-vs-unweighted-metrics",
+   "label": "가중 vs 비가중 지표",
+   "parent": "reference-population-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 비율 가중 정확도와 실제 사용 비율 가중 정확도의 차이.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "reference-population-source",
+   "label": "기준 집단 정하기",
+   "parent": "reference-population-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공식 통계·고객 데이터 중 무엇을 기준 집단으로 삼을지 정하는 법.",
    "added": "2026-11-22",
    "related": []
   }
