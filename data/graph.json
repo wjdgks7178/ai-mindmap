@@ -45051,11 +45051,12 @@
    "label": "라벨러 보정 세션",
    "parent": "managed-workforce-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "규칙서 예시로 기준 맞추기.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "sponsored-research-bias",
@@ -57212,6 +57213,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "종료 후 삭제 기한과 파기 증명서를 계약에 넣기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "fresh-sample-remeasurement",
+   "label": "새 표본으로 재측정",
+   "parent": "labeling-calibration-session",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 표본을 재사용하지 않고 새 표본으로 보정 효과를 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "gwet-ac1",
+   "label": "Gwet의 AC1",
+   "parent": "labeling-calibration-session",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스가 치우칠 때 카파의 대안으로 쓰는 우연 보정 일치 지표.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "periodic-recalibration",
+   "label": "정기 재보정",
+   "parent": "labeling-calibration-session",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간이 지나며 흐르는 라벨러 기준을 주기적으로 다시 맞추기.",
    "added": "2026-11-22",
    "related": []
   }
