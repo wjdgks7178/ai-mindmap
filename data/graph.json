@@ -45745,11 +45745,12 @@
    "label": "공변량 변화와 재가중",
    "parent": "distribution-shift-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "중요도 가중치로 분포 차이를 보정.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "label-shift-estimation",
@@ -58073,6 +58074,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "도메인 수가 곧 표본 수라는 관점과 결론 한정 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "domain-classifier-weights",
+   "label": "도메인 분류기로 가중치 추정",
+   "parent": "covariate-shift-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·시험 입력을 구별하는 분류기 확률로 밀도비를 추정하는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "effective-sample-size-weights",
+   "label": "가중 후 유효 표본 크기",
+   "parent": "covariate-shift-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 쏠림으로 실질 표본이 줄어드는 정도를 Kish ESS로 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "weight-clipping-flattening",
+   "label": "가중치 클리핑과 완화",
+   "parent": "covariate-shift-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 상한·거듭제곱 λ로 불안정성을 줄이는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "common-support-condition",
+   "label": "공통 지지 조건",
+   "parent": "covariate-shift-reweighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 입력이 학습 분포에서 나올 수 있어야 가중치가 유한하다는 조건.",
    "added": "2026-11-22",
    "related": []
   }
