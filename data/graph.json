@@ -46112,11 +46112,12 @@
    "label": "최악 프롬프트 성능",
    "parent": "prediction-consistency-metric",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "말바꿈 중 가장 낮은 점수로 하한을 본다.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "repeat-ceiling",
@@ -58899,6 +58900,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "통계 유의가 아니라 쓸 만한 크기의 효과인지 판단하는 기준.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "robustalpacaeval",
+   "label": "RobustAlpacaEval",
+   "parent": "worst-prompt-performance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미가 같은 사례 수준 질의로 이뤄진 프롬프트 견고성 벤치마크.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "case-level-vs-task-level-prompt",
+   "label": "사례 수준과 작업 수준 프롬프트",
+   "parent": "worst-prompt-performance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개별 질의 표현 변화와 지시문 전체의 변화를 구분.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "worst-prompt-identification-difficulty",
+   "label": "최악 프롬프트 탐지의 어려움",
+   "parent": "worst-prompt-performance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 무관·의존 어느 쪽으로도 쉽게 찾을 수 없다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "prompt-engineering-limit-worst-case",
+   "label": "프롬프트 엔지니어링의 하한 개선 한계",
+   "parent": "worst-prompt-performance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기존 기법은 최악 성능 개선 효과가 제한적.",
    "related": [],
    "added": "2026-11-22"
   }
