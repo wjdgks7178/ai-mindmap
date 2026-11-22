@@ -47040,11 +47040,12 @@
    "label": "숫자 특징 구간화",
    "parent": "l-infinity-js-divergence",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "숫자를 구간으로 나눠 분포를 비교.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "facets-overview",
@@ -60121,6 +60122,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "유의성 검정과 거리 임계값의 장단점.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "fixed-bin-edges",
+   "label": "고정 구간 경계",
+   "parent": "binning-numeric-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터로 경계를 한 번 정해 이후 비교에 재사용.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "bin-count-sensitivity",
+   "label": "구간 수 민감성",
+   "parent": "binning-numeric-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "L∞는 구간이 늘수록 작아지고 JS는 커지는 경향.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "domain-meaningful-bins",
+   "label": "도메인 의미 구간",
+   "parent": "binning-numeric-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연령대처럼 업무 의미가 있는 경계로 나누기.",
    "related": [],
    "added": "2026-11-22"
   }
