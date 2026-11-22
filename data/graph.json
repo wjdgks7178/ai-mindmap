@@ -46611,11 +46611,12 @@
    "label": "신선도 메타데이터",
    "parent": "silent-version-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "indexed_at·ttl_days·content_hash 기록.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "rag-consistency-models",
@@ -59544,6 +59545,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "답변 생성 중 원본을 바꿔 보는 평가.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ttl-by-content-type",
+   "label": "콘텐츠 유형별 TTL",
+   "parent": "freshness-metadata",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가격·API·정책 등 변하는 속도에 맞춘 유효 기간.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "retrieved-chunk-age-percentiles",
+   "label": "검색 청크 나이 백분위",
+   "parent": "freshness-metadata",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25·50·75 백분위 나이로 낡음 추세를 감시.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "freshness-regression-slice",
+   "label": "신선도 회귀 슬라이스",
+   "parent": "freshness-metadata",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CI에 신선도 평가 조각을 넣는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "time-decay-scoring-formula",
+   "label": "시간 감쇠 점수 공식",
+   "parent": "freshness-metadata",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유사도와 반감기 가중 최신성을 섞는 방식.",
    "related": [],
    "added": "2026-11-22"
   }
