@@ -47189,11 +47189,12 @@
    "label": "컬럼 프로파일",
    "parent": "constraint-suggestion",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "컬럼별 통계 요약.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "result-key-tags",
@@ -61092,6 +61093,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기존 결함을 정상 기준으로 굳히는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "string-typed-type-inference",
+   "label": "문자열 입력의 타입 추론",
+   "parent": "column-profile",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열로 저장된 숫자·불리언을 감지하는 기능.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "low-cardinality-histogram",
+   "label": "저카디널리티 히스토그램",
+   "parent": "column-profile",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고유값이 적은 컬럼의 전체 분포 표시.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "profiling-three-passes",
+   "label": "프로파일링의 세 번 훑기",
+   "parent": "column-profile",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "셔플 없이 세 번 읽어 대용량에 확장하는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "numeric-column-profile",
+   "label": "NumericColumnProfile",
+   "parent": "column-profile",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자 컬럼의 최소·최대·평균·표준편차 읽기.",
    "related": [],
    "added": "2026-11-22"
   }
