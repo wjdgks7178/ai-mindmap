@@ -45461,11 +45461,12 @@
    "label": "작은 집단의 불확실성",
    "parent": "subgroup-performance-report",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "교차 조합에서 표본이 줄 때 신뢰구간.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "error-aware-mixture-model",
@@ -57620,6 +57621,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 용량·중복·문맥 길이에 따라 암기가 커지는 관계.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "hierarchical-subgroup-reporting",
+   "label": "계층적 집단 보고",
+   "parent": "small-subgroup-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단일→2속성→3속성 순으로 내려가며 건수가 충분한 곳까지만 단정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "shrinkage-subgroup-estimate",
+   "label": "작은 칸 수축 추정",
+   "parent": "small-subgroup-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 칸의 추정을 전체 평균 쪽으로 당겨 오차를 줄이는 방법과 부작용.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "worst-group-selection-bias",
+   "label": "최악 집단 선정 편향",
+   "parent": "small-subgroup-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 칸 중 우연히 낮게 나온 것이 최악 집단으로 뽑히는 문제.",
    "added": "2026-11-22",
    "related": []
   }
