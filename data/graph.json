@@ -45817,11 +45817,12 @@
    "label": "배포 후 recourse 변화",
    "parent": "actionable-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특징 누락·분포 변화로 대안이 사라짐.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "action-set-definition",
@@ -58299,6 +58300,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값을 엄격하게 하면 recourse가 사라지는 경우.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "roar-robust-recourse",
+   "label": "ROAR: 강건 recourse",
+   "parent": "recourse-out-of-sample",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적대적 학습으로 모델 이동에도 유효한 recourse를 만드는 틀.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "recourse-validity-rate-monitoring",
+   "label": "recourse 유효 비율 모니터링",
+   "parent": "recourse-out-of-sample",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 갱신 전후로 이미 안내한 recourse의 유효 비율을 측정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "recourse-safety-margin",
+   "label": "recourse 안전 마진",
+   "parent": "recourse-out-of-sample",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정 경계에 딱 맞추지 않고 여유를 두는 방식과 비용 trade-off.",
    "added": "2026-11-22",
    "related": []
   }
