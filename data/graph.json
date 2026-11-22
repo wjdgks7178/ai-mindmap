@@ -45530,11 +45530,12 @@
    "label": "LLM 행동 테스트",
    "parent": "checklist-behavioral-testing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "생성형 모델에 행동 테스트를 적용하는 법.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "domain-generalization",
@@ -57654,6 +57655,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 칸 중 우연히 낮게 나온 것이 최악 집단으로 뽑히는 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "metamorphic-testing-llm",
+   "label": "LLM 변형(메타모픽) 테스트",
+   "parent": "llm-behavioral-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력을 변형하고 출력 관계(불변·방향성)를 점검하는 정답 없는 테스트.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "decoding-fixed-repeat-testing",
+   "label": "디코딩 고정과 반복 호출",
+   "parent": "llm-behavioral-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플링 비결정성을 다루기 위해 설정을 고정하고 통과 비율로 판정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "prompt-regression-suite",
+   "label": "프롬프트 회귀 테스트",
+   "parent": "llm-behavioral-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트·모델 버전별 행동 테스트 결과를 저장해 회귀를 탐지.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "llm-judge-validation",
+   "label": "판정 LLM 검증",
+   "parent": "llm-behavioral-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자유 서술 채점에 쓰는 LLM 판정자를 사람 라벨로 검증.",
    "added": "2026-11-22",
    "related": []
   }
