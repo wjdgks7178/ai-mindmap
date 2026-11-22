@@ -45757,11 +45757,12 @@
    "label": "라벨 변화 추정",
    "parent": "distribution-shift-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "블랙박스 방식으로 새 클래스 비율 추정.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "drift-detectors-ks-mmd",
@@ -58118,6 +58119,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시험 입력이 학습 분포에서 나올 수 있어야 가중치가 유한하다는 조건.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "bbse-confusion-matrix-inversion",
+   "label": "BBSE: 혼동행렬 역행렬",
+   "parent": "label-shift-estimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "w=C⁻¹μ로 시험 클래스 비율을 추정하는 식과 가역 조건.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "label-shift-detection-test",
+   "label": "라벨 변화 검출 검정",
+   "parent": "label-shift-estimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "BBSE를 이용해 라벨 변화가 있는지 통계적으로 검정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "confusion-matrix-estimation-noise",
+   "label": "혼동행렬 추정의 불확실성",
+   "parent": "label-shift-estimation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 표본이 작으면 혼동행렬이 흔들려 BBSE 추정이 불안정해지는 문제.",
    "added": "2026-11-22",
    "related": []
   }
