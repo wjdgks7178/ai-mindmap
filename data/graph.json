@@ -45598,11 +45598,12 @@
    "label": "슬라이스 precision-at-k",
    "parent": "coherent-slice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "발견한 상위 k개 슬라이스가 정답과 맞는 비율.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "slice-naming",
@@ -57778,6 +57779,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "문항별로 답안을 여러 번 뽑아 평균해 샘플링 변동을 줄이는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "slice-discovery-setting",
+   "label": "슬라이스 발견 평가 설정",
+   "parent": "precision-at-k-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스·메타데이터로 정답 슬라이스를 만들어 발견 방법을 채점하는 틀.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "slice-recall-at-k",
+   "label": "슬라이스 재현율",
+   "parent": "precision-at-k-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 슬라이스 중 발견된 비율과 precision-at-k를 함께 보는 이유.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "random-ranking-baseline",
+   "label": "무작위 순위 기준선",
+   "parent": "precision-at-k-slice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스 비율만큼의 우연 precision을 기준선으로 비교.",
    "added": "2026-11-22",
    "related": []
   }
