@@ -45793,11 +45793,12 @@
    "label": "조건부 immutable 특징",
    "parent": "actionable-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 방향으로만 바뀌는 특징(학위).",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "recourse-feasibility-bounds",
@@ -58231,6 +58232,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "조사관의 주 관심사인 경보 정밀도를 주 단위로 추적해 성능 저하 감지.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "flipset-adverse-action-notice",
+   "label": "flipset과 불리한 처분 통지",
+   "parent": "conditionally-immutable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동 가능한 변경 목록을 거절 통지서에 넣는 아이디어.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "feature-direction-cost-spec",
+   "label": "특징별 방향·범위·비용 명세",
+   "parent": "conditionally-immutable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징마다 변경 방향·허용 범위·비용을 정해 두는 recourse 설계.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "unconstrained-counterfactual-pitfall",
+   "label": "제약 없는 반사실의 함정",
+   "parent": "conditionally-immutable-features",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동 가능성을 무시한 설명이 실행 불가능한 조언을 낳는 문제.",
    "added": "2026-11-22",
    "related": []
   }
