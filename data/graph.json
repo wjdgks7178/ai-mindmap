@@ -46978,11 +46978,12 @@
    "label": "GX 1.x에서 사라진 기능",
    "parent": "gx-api-version-differences",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프로파일러·노트북·외부 저장소 지원 등.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "tfdv-skew-comparator",
@@ -59850,6 +59851,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "개발·운영에서 같은 규칙에 다른 기준을 쓰는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-checkpoints-collection",
+   "label": "GX checkpoints 컬렉션",
+   "parent": "gx-removed-features-1x",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "체크포인트를 컨텍스트 메서드가 아닌 컬렉션 객체로 다룸.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-validator-legacy",
+   "label": "GX Validator 옛 스타일",
+   "parent": "gx-removed-features-1x",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "get_validator로 남아 있는 옛 방식의 사용 범위.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-migration-guide-check",
+   "label": "GX 마이그레이션 가이드 확인",
+   "parent": "gx-removed-features-1x",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공식 마이그레이션 문서로 제거·대체 기능을 확인.",
    "related": [],
    "added": "2026-11-22"
   }
