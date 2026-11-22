@@ -46897,11 +46897,12 @@
    "label": "GX 파일 데이터 컨텍스트",
    "parent": "gx-data-docs",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프로젝트 설정을 폴더에 저장하는 방식.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "gx-uncommitted-folder",
@@ -59725,6 +59726,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙을 컬럼 단위로 묶고 필수·값 규칙을 짝짓는 법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-config-variables",
+   "label": "GX config_variables",
+   "parent": "gx-file-data-context",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비밀값을 설정 파일 밖으로 빼서 치환하는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-ci-run",
+   "label": "CI에서 GX 실행",
+   "parent": "gx-file-data-context",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장소의 gx/ 설정으로 파이프라인에서 검증.",
    "related": [],
    "added": "2026-11-22"
   }
