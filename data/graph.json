@@ -46792,11 +46792,12 @@
    "label": "빈 목록 삭제 방지",
    "parent": "rag-reconciliation-job",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원본 조회 실패 시 전체 삭제를 막는 가드.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "gx-notify-on",
@@ -60538,6 +60539,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "임시 모드에서 결과 이력을 직접 저장하는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "deletion-count-ratio-alert",
+   "label": "삭제 건수·비율 경보",
+   "parent": "empty-list-deletion-guard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번에 지우는 양이 평소보다 크면 멈추고 알림.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "loader-success-vs-empty",
+   "label": "조회 성공과 빈 결과의 구분",
+   "parent": "empty-list-deletion-guard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HTTP 상태·행 수로 '없음'과 '못 가져옴'을 구분.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pre-cleanup-snapshot",
+   "label": "정리 전 스냅샷",
+   "parent": "empty-list-deletion-guard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 전에 색인·장부를 백업해 복구 여지를 둠.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "human-approval-for-bulk-delete",
+   "label": "대량 삭제 승인 단계",
+   "parent": "empty-list-deletion-guard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값을 넘는 삭제는 사람이 확인.",
    "related": [],
    "added": "2026-11-22"
   }
