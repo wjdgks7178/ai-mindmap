@@ -47199,11 +47199,12 @@
    "label": "ResultKey와 태그",
    "parent": "data-quality-metrics-repository",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지표를 날짜·태그로 색인하는 키.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "dynamic-rules-last",
@@ -60797,6 +60798,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "Spark 3.1~3.4에서 쓰는 마지막 릴리스.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "filesystem-metrics-repository",
+   "label": "FileSystemMetricsRepository",
+   "parent": "result-key-tags",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표를 JSON으로 디스크·HDFS·S3에 저장하는 저장소.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "in-memory-metrics-repository",
+   "label": "InMemoryMetricsRepository",
+   "parent": "result-key-tags",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메모리에 지표를 보관하는 실험·예제용 저장소.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "with-tag-values-filter",
+   "label": "withTagValues 필터",
+   "parent": "result-key-tags",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "태그로 저장된 지표를 골라 DataFrame으로 조회.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "deequ-anomaly-check",
+   "label": "Deequ 이상 탐지 검사",
+   "parent": "result-key-tags",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "addAnomalyCheck로 이전 지표 대비 급변을 감지.",
    "related": [],
    "added": "2026-11-22"
   }
