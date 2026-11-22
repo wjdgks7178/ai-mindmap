@@ -46955,11 +46955,12 @@
    "label": "GX Suite 파라미터",
    "parent": "gx-api-version-differences",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "런타임에 값을 넘기는 suite_parameters.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "tutorial-version-check",
@@ -59816,6 +59817,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "결과 파일을 언제까지 두고 언제 지울지 정하는 정책.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "expectation-parameters-naming",
+   "label": "expectation_parameters 이름 변경",
+   "parent": "gx-suite-parameters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "suite_parameters가 1.25.0에서는 이 이름으로 보임.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dollar-parameter-syntax",
+   "label": "$PARAMETER 표기",
+   "parent": "gx-suite-parameters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙 값 자리에 변수를 넣는 딕셔너리 문법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "environment-specific-thresholds",
+   "label": "환경별 임계값 주입",
+   "parent": "gx-suite-parameters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개발·운영에서 같은 규칙에 다른 기준을 쓰는 방법.",
    "related": [],
    "added": "2026-11-22"
   }
