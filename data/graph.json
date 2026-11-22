@@ -47283,11 +47283,12 @@
    "label": "DQDL with threshold",
    "parent": "dqdl",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "규칙을 만족하는 값의 비율로 판정.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "serving-log-sampling",
@@ -61002,6 +61003,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "팀·중요도별로 규칙 결과를 집계.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-expression-operators",
+   "label": "DQDL 표현식 연산자",
+   "parent": "dqdl-threshold-expression",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비교·between·in·matches·now() 등 지원 표현식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-null-empty-whitespace",
+   "label": "DQDL NULL·EMPTY·WHITESPACES_ONLY",
+   "parent": "dqdl-threshold-expression",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열 컬럼의 빈 값 키워드.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "between-boundary-ambiguity",
+   "label": "between 경계 포함 여부",
+   "parent": "dqdl-threshold-expression",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 서술이 엇갈려 직접 시험해야 하는 경계.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "tolerance-ratio-design",
+   "label": "허용 비율 설계",
+   "parent": "dqdl-threshold-expression",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "threshold를 얼마로 둘지 근거를 남기는 방법.",
    "related": [],
    "added": "2026-11-22"
   }
