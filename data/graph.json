@@ -47119,11 +47119,12 @@
    "label": "극단 가중치 불안정",
    "parent": "biased-sampling-reweighting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확률이 매우 작을 때 가중치가 추정을 지배.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "doubly-robust-estimator",
@@ -60189,6 +60190,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모든 단위의 뽑힐 확률이 0보다 커야 한다는 조건.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "weight-truncation",
+   "label": "가중치 절단",
+   "parent": "extreme-weight-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 가중치를 상한으로 잘라 분산을 줄이는 대신 편향을 감수.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "bias-variance-weight-tradeoff",
+   "label": "가중치 절단의 편향-분산 맞교환",
+   "parent": "extreme-weight-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "절단이 강할수록 분산↓ 편향↑.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "design-stage-oversampling",
+   "label": "설계 단계 과표집",
+   "parent": "extreme-weight-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률이 작은 집단을 처음부터 더 뽑아 가중치 폭발을 예방.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "weight-diagnostics-report",
+   "label": "가중치 진단 보고",
+   "parent": "extreme-weight-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최대 가중치·유효 표본 크기를 함께 보고.",
    "related": [],
    "added": "2026-11-22"
   }
