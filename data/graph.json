@@ -44909,11 +44909,12 @@
    "label": "대리 변수 점검 테스트",
    "parent": "proxy-variables",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "다른 특징으로 민감 속성을 예측해 보기.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "biased-label-accuracy-trap",
@@ -56986,6 +56987,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공식 통계·고객 데이터 중 무엇을 기준 집단으로 삼을지 정하는 법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "null-baseline-shuffle-test",
+   "label": "라벨 섞기 널 기준선",
+   "parent": "proxy-detection-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감 속성 열을 섞어 우연 수준 AUC를 재는 기준선 시험.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "proxy-feature-removal-tradeoff",
+   "label": "대리 변수 제거와 성능 손실",
+   "parent": "proxy-detection-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누출이 큰 변수를 뺄 때 모델 성능이 얼마나 줄어드는지 균형.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "information-leakage-disparate-impact",
+   "label": "정보 누출과 차별적 영향",
+   "parent": "proxy-detection-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Feldman 등이 제안한 정보 누출 기반 차별적 영향 인증 아이디어.",
    "added": "2026-11-22",
    "related": []
   }
