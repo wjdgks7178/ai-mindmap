@@ -47239,11 +47239,12 @@
    "label": "기준선에서 이상 통계 제외",
    "parent": "data-quality-metrics-repository",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일회성 대량 적재를 평균에서 빼기.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "dqdl-composite-row-evaluation",
@@ -61182,6 +61183,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "지표를 쌓은 뒤 분포를 보고 규칙 기준을 정하는 흐름.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "baseline-contamination",
+   "label": "기준선 오염",
+   "parent": "exclude-statistics-baseline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상 값이 평균에 섞여 이후 판정이 왜곡되는 현상.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "median-vs-mean-baseline",
+   "label": "중앙값 대 평균 기준선",
+   "parent": "exclude-statistics-baseline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상 값에 덜 민감한 집계 선택.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "exclusion-audit-log",
+   "label": "통계 제외 감사 기록",
+   "parent": "exclude-statistics-baseline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제외 사유·담당자·날짜를 남기는 절차.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "one-off-event-flagging",
+   "label": "일회성 이벤트 표시",
+   "parent": "exclude-statistics-baseline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마이그레이션·백필 실행을 즉시 표시하는 습관.",
    "related": [],
    "added": "2026-11-22"
   }
