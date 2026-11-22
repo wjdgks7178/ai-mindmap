@@ -45841,11 +45841,14 @@
    "label": "플립셋",
    "parent": "recourse-audit-integer-programming",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결정을 뒤집는 대안 목록을 통지서로.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "percentile-shift-cost"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "recourse-vs-regularization",
@@ -58369,6 +58372,39 @@
    "summary": "법무·도메인 전문가·영향받는 사람과 행동 집합·비용을 정해 문서화.",
    "added": "2026-11-22",
    "related": []
+  },
+  {
+   "id": "flipset-robust-actions",
+   "label": "robust 플립셋",
+   "parent": "flipset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여유(buffer)를 둔 행동으로 미공개 특징 변화에도 유지.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "flipset-model-extraction-risk",
+   "label": "플립셋과 모델 탈취",
+   "parent": "flipset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "플립셋이 쌓이면 모델을 역공학할 위험.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "flipset-true-outcome-filter",
+   "label": "실제 결과를 고려한 플립셋",
+   "parent": "flipset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측과 실제 상환 능력을 함께 바꾸는 행동만 선별.",
+   "related": [],
+   "added": "2026-11-22"
   }
  ]
 }
