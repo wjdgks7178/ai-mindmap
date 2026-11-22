@@ -46691,11 +46691,12 @@
    "label": "모델 버전 시작 시 검사",
    "parent": "embedding-model-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "질의 경로와 색인의 모델이 같은지 확인.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "as-of-date-filter",
@@ -60583,6 +60584,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값을 넘는 삭제는 사람이 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "index-metadata-record",
+   "label": "색인 메타데이터 기록",
+   "parent": "model-version-startup-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩 모델·버전·차원을 색인과 함께 저장.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "silent-provider-model-swap",
+   "label": "제공자의 조용한 모델 교체",
+   "parent": "model-version-startup-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 이름 뒤에서 모델이 바뀌는 경우의 탐지 한계.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "healthcheck-model-gate",
+   "label": "헬스체크의 모델 게이트",
+   "parent": "model-version-startup-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치면 트래픽을 받지 않게 하는 배포 장치.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "same-dimension-silent-failure",
+   "label": "같은 차원의 조용한 실패",
+   "parent": "model-version-startup-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차원이 같아 에러 없이 검색이 우연 수준이 되는 현상.",
    "related": [],
    "added": "2026-11-22"
   }
