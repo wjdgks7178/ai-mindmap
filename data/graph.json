@@ -47096,11 +47096,12 @@
    "label": "역확률 가중",
    "parent": "biased-sampling-reweighting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "표집 확률의 역수로 가중해 모집단 통계 복원.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "horvitz-thompson-estimator",
@@ -60155,6 +60156,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "연령대처럼 업무 의미가 있는 경계로 나누기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "hajek-normalized-estimator",
+   "label": "Hájek 정규화 추정량",
+   "parent": "inverse-probability-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 합으로 나눠 모집단 크기를 몰라도 되는 가중 평균.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "known-vs-estimated-inclusion-prob",
+   "label": "포함 확률: 알려진 경우와 추정하는 경우",
+   "parent": "inverse-probability-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률을 아는 표집과 모델로 추정해야 하는 관측 데이터의 차이.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "positivity-assumption",
+   "label": "양의 확률 가정",
+   "parent": "inverse-probability-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 단위의 뽑힐 확률이 0보다 커야 한다는 조건.",
    "related": [],
    "added": "2026-11-22"
   }
