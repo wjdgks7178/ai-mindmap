@@ -47271,11 +47271,12 @@
    "label": "DQDL 라벨",
    "parent": "dqdl",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "규칙을 팀·중요도로 분류해 보고.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "dqdl-threshold-expression",
@@ -60957,6 +60958,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "특정 조건의 행에만 필수 규칙을 두는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-default-labels",
+   "label": "DQDL 기본 라벨",
+   "parent": "dqdl-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙셋 전체에 자동 적용되는 라벨.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "label-constraints",
+   "label": "라벨 제약",
+   "parent": "dqdl-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙당 10개·키 128자·값 256자 등 제한.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "labels-row-level-results",
+   "label": "행 수준 결과의 라벨",
+   "parent": "dqdl-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 꺼짐. ruleWithLabels 옵션으로 켬.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "label-based-reporting",
+   "label": "라벨 기반 보고",
+   "parent": "dqdl-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "팀·중요도별로 규칙 결과를 집계.",
    "related": [],
    "added": "2026-11-22"
   }
