@@ -46921,11 +46921,12 @@
    "label": "Data Docs 접근 제어",
    "parent": "gx-data-docs",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결과 페이지에 데이터 값이 노출될 위험.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "gx-ephemeral-context",
@@ -59782,6 +59783,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "로컬 HTML을 팀이 볼 수 있게 호스팅하는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "validation-results-pii",
+   "label": "검증 결과의 개인정보",
+   "parent": "data-docs-access-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위반 값 샘플이 결과 파일에 남는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "mask-before-validate",
+   "label": "마스킹 후 검증",
+   "parent": "data-docs-access-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감 값을 해시·마스킹한 뒤 규칙을 적용.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "results-retention-policy",
+   "label": "검증 결과 보존 기간",
+   "parent": "data-docs-access-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 파일을 언제까지 두고 언제 지울지 정하는 정책.",
    "related": [],
    "added": "2026-11-22"
   }
