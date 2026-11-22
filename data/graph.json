@@ -47227,11 +47227,12 @@
    "label": "품질 Analyzer",
    "parent": "data-quality-metrics-repository",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "판정 없이 통계만 수집하는 블록.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "exclude-statistics-baseline",
@@ -61137,6 +61138,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "숫자 컬럼의 최소·최대·평균·표준편차 읽기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "distribution-analyzer-frozen-edges",
+   "label": "Distribution 분석기의 고정 경계",
+   "parent": "data-quality-analyzers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "첫 실행 구간 경계를 이후 실행에 재사용.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "distribution-overflow-observation",
+   "label": "구간 초과 관찰",
+   "parent": "data-quality-analyzers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 밖 값이 2%·5%를 넘을 때 생기는 관찰.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "auto-rebinning-rule",
+   "label": "자동 재구간화",
+   "parent": "data-quality-analyzers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "3회 연속 5% 초과 시 새 경계로 갱신.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "analyzer-then-rule-workflow",
+   "label": "분석기 먼저, 규칙은 나중에",
+   "parent": "data-quality-analyzers",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표를 쌓은 뒤 분포를 보고 규칙 기준을 정하는 흐름.",
    "related": [],
    "added": "2026-11-22"
   }
