@@ -45325,11 +45325,12 @@
    "label": "암기와 출력 침해",
    "parent": "model-weights-derivative-question",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 학습 문장을 그대로 재현하는 위험.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "getty-v-stability",
@@ -57586,6 +57587,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "외국에서 학습한 모델을 들여오는 것이 침해인지의 쟁점.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "memorization-audit-prefix-test",
+   "label": "암기 감사: 접두사 이어쓰기",
+   "parent": "memorization-output-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터 접두사를 프롬프트로 주고 이어지는 출력이 원문과 같은지 측정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "output-verbatim-match-filter",
+   "label": "출력 원문 일치 필터",
+   "parent": "memorization-output-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력에 학습 원문과 긴 일치가 있으면 차단하거나 표시하는 방어.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "memorization-scale-law",
+   "label": "암기의 로그-선형 법칙",
+   "parent": "memorization-output-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 용량·중복·문맥 길이에 따라 암기가 커지는 관계.",
    "added": "2026-11-22",
    "related": []
   }
