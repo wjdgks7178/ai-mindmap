@@ -45313,11 +45313,12 @@
    "label": "제3자 스크래핑 공백",
    "parent": "text-data-mining-exception",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수집자와 학습자가 다를 때 의무의 빈틈.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "memorization-output-risk",
@@ -57518,6 +57519,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "2009년 CC 설문·인터뷰 연구가 보여 준 NC 인식과 경계 사례.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "dataset-recipient-due-diligence",
+   "label": "데이터 수령자 실사",
+   "parent": "third-party-scraping-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "받은 데이터의 수집 이력·유보 처리 문서를 요구하는 점검표.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "lawful-access-requirement",
+   "label": "적법한 접근 요건",
+   "parent": "third-party-scraping-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TDM 예외가 적법하게 접근한 저작물에만 적용된다는 조건.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "reservation-after-collection",
+   "label": "수집 후 생긴 유보 신호",
+   "parent": "third-party-scraping-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 이후 도메인이 유보를 선언한 경우의 처리(재수집·제외).",
    "added": "2026-11-22",
    "related": []
   }
