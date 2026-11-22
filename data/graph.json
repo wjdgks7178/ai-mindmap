@@ -45720,11 +45720,12 @@
    "label": "환자 단위 누수",
    "parent": "held-out-domain-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 사람 데이터가 학습·시험에 섞이는 문제.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "few-domain-variance",
@@ -57982,6 +57983,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포 안과 비슷한 OOD와 전혀 다른 OOD를 구분해 평가하는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "augment-after-split",
+   "label": "분할 후 증강",
+   "parent": "data-leakage-patient-level",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강·크롭을 분할 전에 하면 파생본이 양쪽에 들어가는 누수.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "split-unit-reporting",
+   "label": "분할 단위 명시 보고",
+   "parent": "data-leakage-patient-level",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "논문·모델 카드에 분할 단위(환자/영상)와 중복 검사를 적는 관행.",
    "added": "2026-11-22",
    "related": []
   }
