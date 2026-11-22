@@ -44543,11 +44543,12 @@
    "label": "LLM LF 비용과 지연",
    "parent": "llm-as-labeling-function",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "호출 비용·시간 관리.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "sensitivity-analysis-mnar",
@@ -56704,6 +56705,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "몇 달치 비노출군을 합쳐 구간 폭을 줄이는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "cascade-small-then-large-labeling",
+   "label": "작은 모델 먼저, 큰 모델 재판정",
+   "parent": "llm-lf-cost-latency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "싼 모델로 전체를 라벨링하고 불확실한 것만 큰 모델로 재판정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "prompt-cache-ordering",
+   "label": "프롬프트 캐시와 앞쪽 배치",
+   "parent": "llm-lf-cost-latency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공통 지시문을 앞에 두어 캐시 읽기 할인을 받는 구성.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "batch-vs-realtime-labeling",
+   "label": "배치 vs 실시간 라벨링",
+   "parent": "llm-lf-cost-latency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오프라인 대량은 배치, 대화형 사전 라벨링은 실시간으로 나누는 기준.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "labeling-cost-pilot-run",
+   "label": "라벨링 비용 시험 실행",
+   "parent": "llm-lf-cost-latency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소규모 시험 실행으로 토큰 수·단가를 먼저 측정해 총액을 예측.",
    "added": "2026-11-22",
    "related": []
   }
