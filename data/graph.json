@@ -44275,11 +44275,12 @@
    "label": "오류 수정 강제의 역효과",
    "parent": "skeptical-reviewer-effect",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "참여 감소와 틀린 수용 증가.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "overreliance-on-ai",
@@ -56556,6 +56557,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "인구통계·태도가 다른 검수자를 섞어 편향을 상쇄.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "decoupled-judge-and-correct",
+   "label": "판정과 정정 분리",
+   "parent": "forced-correction-backfire",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞는지 판정하는 집단과 정정하는 집단을 나눠 수고 편향을 줄임.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "effort-avoidance-misreporting",
+   "label": "수고 회피와 허위 응답",
+   "parent": "forced-correction-backfire",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추가 수고가 붙은 응답을 피하려는 설문·주석의 일반 현상.",
    "added": "2026-11-22",
    "related": []
   }
