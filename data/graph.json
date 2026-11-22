@@ -45891,11 +45891,12 @@
    "label": "백분위 이동 비용",
    "parent": "recourse-cost-and-time",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "스케일에 무관하게 변경 난이도를 재는 비용.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "recourse-time-horizon",
@@ -58527,6 +58528,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "CPLEX 등이 최적해 또는 불가능 증명을 내는 원리.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "max-percentile-shift",
+   "label": "최대 백분위 이동",
+   "parent": "percentile-shift-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 중 가장 큰 순위 이동량을 비용으로 삼는 감사용 함수.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "log-percentile-shift",
+   "label": "총 로그 백분위 이동",
+   "parent": "percentile-shift-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "높은 백분위일수록 비용이 지수적으로 커지는 함수.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "percentile-population-dependence",
+   "label": "백분위의 모집단 의존",
+   "parent": "percentile-shift-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모집단·집단이 바뀌면 같은 행동의 비용이 변함.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "loose-bound-single-audit",
+   "label": "느슨한 범위 단일 감사",
+   "parent": "percentile-shift-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "99 백분위 상한으로 한 번 돌려 여러 범위를 비교.",
    "related": [],
    "added": "2026-11-22"
   }
