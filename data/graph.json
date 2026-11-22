@@ -45287,11 +45287,12 @@
    "label": "NC와 연구용 공개",
    "parent": "cc-noderivatives",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비영리 조건의 해석 문제.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "tdm-opt-out-signals",
@@ -57484,6 +57485,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Open Images처럼 주석과 원본에 다른 라이선스를 명시하는 관행.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "nc-productization-boundary",
+   "label": "NC 연구와 제품화의 경계",
+   "parent": "cc-nc-research-release",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연구용으로 받은 데이터가 제품화 단계에서 상업 이용이 되는 시점.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "commercial-license-request",
+   "label": "별도 상업 라이선스 요청",
+   "parent": "cc-nc-research-release",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NC 데이터를 상업적으로 쓰려고 권리자에게 허락·계약을 요청하는 절차.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "nc-defining-noncommercial-report",
+   "label": "CC의 NC 정의 보고서",
+   "parent": "cc-nc-research-release",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2009년 CC 설문·인터뷰 연구가 보여 준 NC 인식과 경계 사례.",
    "added": "2026-11-22",
    "related": []
   }
