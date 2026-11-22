@@ -46272,11 +46272,12 @@
    "label": "AI 콘텐츠 라이선스 계약",
    "parent": "data-compensation-markets",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "언론·플랫폼과 AI 기업 간 계약 구조.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "usage-based-ai-licensing",
@@ -59079,6 +59080,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "중복·잡음에 덜 민감하다고 제안된 대안 평가.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "licensing-payment-structure",
+   "label": "라이선스 지급 구조",
+   "parent": "ai-content-licensing-deals",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선지급·최소 보장과 사용량 연동의 조합.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "licensing-non-exclusivity",
+   "label": "비독점과 first-mover 조항",
+   "parent": "ai-content-licensing-deals",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 AI 기업에 공급 가능, 타사 조건에 맞춘 재협상 조항.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "display-rights-attribution",
+   "label": "표시 권리와 출처 표기",
+   "parent": "ai-content-licensing-deals",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약·인용·링크를 보이게 허용하는 조건.",
    "related": [],
    "added": "2026-11-22"
   }
