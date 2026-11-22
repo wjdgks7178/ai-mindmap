@@ -46752,11 +46752,12 @@
    "label": "레코드 매니저",
    "parent": "rag-reconciliation-job",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문서 해시·소스 ID를 기록해 중복·정리를 관리.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "index-cleanup-modes",
@@ -59634,6 +59635,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "최종 일관성이 얼마나 빨리 수렴하는지 확률로 재는 지표.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "hash-encoder-choice",
+   "label": "해시 인코더 선택",
+   "parent": "record-manager",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SHA-1 한계와 sha256·blake2b 선택, 변경 시 재구축.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "force-update-reindex",
+   "label": "force_update 재색인",
+   "parent": "record-manager",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미 있는 문서도 임베딩 재생성을 위해 다시 색인.",
    "related": [],
    "added": "2026-11-22"
   }
