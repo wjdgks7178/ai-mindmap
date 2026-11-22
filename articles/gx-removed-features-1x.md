@@ -1,6 +1,6 @@
 # GX 1.x에서 사라진 기능
 
-> Great Expectations는 0.x에서 1.x로 오면서 API 구조가 크게 바뀌었다. **옛 튜토리얼의 코드가 최신 버전에서 import 오류가 나는 이유**를 이 변화로 설명할 수 있다. 이 노드는 설치한 1.25.0에서 **실제로 확인한 것만** 적는다.
+> Great Expectations는 0.x에서 1.x로 오면서 API 구조가 크게 바뀌었다. **옛 튜토리얼의 코드가 최신 버전에서 import 오류가 나는 이유**를 이 변화로 설명할 수 있다. 이 노드는 설치한 1.25.0과 0.18.22에서 **실제로 확인한 것만** 적는다.
 
 ## 쉽게 말하면
 스마트폰 OS를 크게 바꾸면 옛 앱이 안 열릴 수 있다. 옛 GX 자료의 코드는 옛 OS용 앱이라, 새 버전에서는 일부가 "찾을 수 없음"으로 실패한다.
@@ -20,6 +20,7 @@
   | `data_sources`, `suites`, `validation_definitions`, `checkpoints` | 있음(새 구조) |
   | `run_checkpoint`, `add_checkpoint` | **없음** |
   | `sources` | 없음 |
+- **0.18.22와 직접 비교(실행 결과, 별도 가상환경)**: 같은 시험을 great_expectations **0.18.22**에서 돌리면 `great_expectations.profile.user_configurable_profiler`와 `great_expectations.dataset`이 **import 성공**하고, 컨텍스트에 `run_checkpoint`·`add_checkpoint`·`sources`가 **있었다**. 반대로 `data_sources`·`suites`·`validation_definitions`는 **없었다**. 즉 위의 "없음"은 1.x에서 바뀐 것을 실제로 대비해 확인한 결과다.
 - **해석**: 옛 방식의 **프로파일러**와 **`Dataset` 래퍼**는 이 버전에 없고, 체크포인트는 `ctx.run_checkpoint(...)` 같은 컨텍스트 메서드가 아니라 `ctx.checkpoints` 컬렉션과 객체로 다루는 구조로 보인다. 다만 `get_validator`는 남아 있어 **Validator 기반 옛 스타일 일부는 동작**한다(`Validator`에 `expect_column_values_to_not_be_null` 메서드가 있음을 확인).
 - **새 구조의 중심(실행 결과)**: 데이터 소스 → asset → **batch definition**, 규칙 묶음 **스위트**, 이를 묶는 **validation definition**, 그리고 실행. → [GX 파일 데이터 컨텍스트](#gx-file-data-context)
 - **이름 변화(별도 확인)**: 실행 시 파라미터가 `expectation_parameters`로 보인다. → [GX Suite 파라미터](#gx-suite-parameters)

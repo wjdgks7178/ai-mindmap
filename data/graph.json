@@ -46968,11 +46968,12 @@
    "label": "튜토리얼 버전 확인 습관",
    "parent": "gx-api-version-differences",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자료가 설치 버전과 맞는지 먼저 확인.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "gx-removed-features-1x",
@@ -59929,6 +59930,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴더의 파일을 asset으로 연결하는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pin-library-version-venv",
+   "label": "가상환경에서 버전 고정",
+   "parent": "tutorial-version-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 자료를 따라 하려면 해당 버전만 별도 환경에 설치.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ai-generated-code-version-drift",
+   "label": "AI 생성 코드의 버전 드리프트",
+   "parent": "tutorial-version-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 학습 시점 이후 바뀐 API 때문에 틀리는 코드.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "first-line-import-test",
+   "label": "첫 줄 import 시험",
+   "parent": "tutorial-version-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜토리얼 맨 위 import만 먼저 실행해 불일치를 조기 발견.",
    "related": [],
    "added": "2026-11-22"
   }
