@@ -45903,22 +45903,24 @@
    "label": "대안의 소요 기간",
    "parent": "recourse-cost-and-time",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시간이 지나야 바뀌는 특징과 안내 방식.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "recourse-model-update-invalidation",
    "label": "모델 갱신과 대안 무효화",
    "parent": "recourse-cost-and-time",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 바뀌면 안내한 대안이 틀어짐.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "difficulty-weights-expert",
@@ -58572,6 +58574,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "99 백분위 상한으로 한 번 돌려 여러 범위를 비교.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "temporal-recourse-algorithm",
+   "label": "시간 모델링 recourse",
+   "parent": "recourse-time-horizon",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간 과정을 추정해 견고한 대안을 만드는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-time-estimate-notice",
+   "label": "안내문의 유효 기간 표기",
+   "parent": "recourse-time-horizon",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소요 기간과 기준 날짜를 통지서에 쓰는 법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-invalidation-tradeoff",
+   "label": "무효화 확률과 비용의 상충",
+   "parent": "recourse-model-update-invalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계에 가까운 싼 대안일수록 갱신에 취약.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "model-shift-robust-recourse",
+   "label": "모델 이동에 견고한 recourse",
+   "parent": "recourse-model-update-invalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적대적 학습 등으로 갱신에도 유효한 대안 생성.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-validity-monitoring",
+   "label": "recourse 유효율 모니터링",
+   "parent": "recourse-model-update-invalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 갱신 때 기존 안내의 유효 비율 점검.",
    "related": [],
    "added": "2026-11-22"
   }
