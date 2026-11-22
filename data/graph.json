@@ -45637,11 +45637,12 @@
    "label": "슬라이스 기반 데이터 보강",
    "parent": "coherent-slice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "약점 슬라이스에 맞춰 데이터를 추가 수집.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "multiple-comparisons-slices",
@@ -57846,6 +57847,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "일관성 없는 슬라이스가 라벨 오류·이상치인지 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "targeted-vs-random-data-addition",
+   "label": "표적 vs 무작위 데이터 추가",
+   "parent": "slice-driven-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 양을 더해도 약점 슬라이스에 몰아 추가했을 때 효과가 큰 이유.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "synthetic-data-for-weak-slice",
+   "label": "약점 슬라이스용 합성 데이터",
+   "parent": "slice-driven-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집이 어려운 슬라이스를 합성·증강으로 보강할 때의 검증 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "slice-regression-guard",
+   "label": "슬라이스 회귀 방지",
+   "parent": "slice-driven-data-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 슬라이스 보강이 다른 슬라이스를 악화시키지 않는지 점검.",
    "added": "2026-11-22",
    "related": []
   }
