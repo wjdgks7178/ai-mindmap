@@ -46052,11 +46052,12 @@
    "label": "견고성 곡선",
    "parent": "perturbation-severity-levels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "강도별 성능을 그려 임계점을 찾는 그래프.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "worst-case-over-perturbations",
@@ -58674,6 +58675,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모두 같은 비용이면 일부에게 과도한 계획이 나옴.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "mce-metric",
+   "label": "mCE 지표",
+   "parent": "robustness-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손상별 오류를 AlexNet 대비 정규화해 평균한 견고성 점수.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "robustness-vs-accuracy-gap",
+   "label": "견고성과 정확도의 분리",
+   "parent": "robustness-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도가 오르면 mCE도 오르지만 견고성 자체는 그대로일 수 있다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "imagenet-p-perturbation",
+   "label": "ImageNet-P 섭동 시퀀스",
+   "parent": "robustness-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연속 프레임의 예측 뒤집힘 확률로 안정성을 재는 벤치마크.",
    "related": [],
    "added": "2026-11-22"
   }
