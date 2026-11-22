@@ -45063,11 +45063,12 @@
    "label": "후원 연구 편향",
    "parent": "managed-workforce-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "벤더 후원 비교 연구를 읽는 법.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "browsewrap-clickwrap",
@@ -57246,6 +57247,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시간이 지나며 흐르는 라벨러 기준을 주기적으로 다시 맞추기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "vendor-claim-checklist",
+   "label": "벤더 주장 점검표",
+   "parent": "sponsored-research-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후원·소속·표본·지표·비교 공정성을 따지는 6문항 체크리스트.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "own-pilot-verification",
+   "label": "자체 파일럿으로 검증",
+   "parent": "sponsored-research-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벤더 주장을 우리 데이터와 지침으로 직접 시험해 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "proportion-ci-small-error",
+   "label": "작은 오류율의 신뢰 구간",
+   "parent": "sponsored-research-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0.4% 같은 낮은 오류율은 표본이 작으면 구간이 넓다는 계산.",
    "added": "2026-11-22",
    "related": []
   }
