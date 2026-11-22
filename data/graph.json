@@ -45805,11 +45805,12 @@
    "label": "recourse 가능성과 값의 범위",
    "parent": "actionable-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특징이 유한할 때 대안이 없는 사람이 생김.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "recourse-out-of-sample",
@@ -58265,6 +58266,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "행동 가능성을 무시한 설명이 실행 불가능한 조언을 낳는 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "recourse-no-recourse-share",
+   "label": "recourse 없는 사람의 비율",
+   "parent": "recourse-feasibility-bounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대상 집단에서 대안이 없는 사람의 비율과 필요 변화량 분포를 보고.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "drastic-change-requirement",
+   "label": "과도한 변화 요구",
+   "parent": "recourse-feasibility-bounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모두에게 recourse를 줘도 일부에게 비현실적 변화를 요구하는 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "threshold-effect-on-recourse",
+   "label": "운영 임계값과 recourse",
+   "parent": "recourse-feasibility-bounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값을 엄격하게 하면 recourse가 사라지는 경우.",
    "added": "2026-11-22",
    "related": []
   }
