@@ -47177,11 +47177,12 @@
    "label": "자동 제안 사람 검토",
    "parent": "constraint-suggestion",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오염된 데이터 기준 제안을 걸러내는 절차.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "column-profile",
@@ -61047,6 +61048,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "threshold를 얼마로 둘지 근거를 남기는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "suggestion-train-test-split",
+   "label": "제안의 train/test 분할 평가",
+   "parent": "suggestion-human-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "90%로 제안하고 10%로 통과 여부를 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "closed-set-value-assumption",
+   "label": "관측 값 목록의 닫힌 집합 가정",
+   "parent": "suggestion-human-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본에 나온 값만 허용값으로 굳히는 위험.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "approval-record-for-rules",
+   "label": "규칙 승인 기록",
+   "parent": "suggestion-human-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누가·언제·근거로 규칙을 승인했는지 남기기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "defect-normalization-risk",
+   "label": "결함의 정상화 위험",
+   "parent": "suggestion-human-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기존 결함을 정상 기준으로 굳히는 문제.",
    "related": [],
    "added": "2026-11-22"
   }
