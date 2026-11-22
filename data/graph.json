@@ -44139,11 +44139,12 @@
    "label": "골드 문항 노출과 교체",
    "parent": "worker-quality-gold-questions",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "외우기 방지를 위한 주기적 교체.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "worker-bias-recalibration",
@@ -56463,6 +56464,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "종료 후 계정 비활성화와 데이터 삭제 확인 절차.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "programmatic-gold-generation",
+   "label": "프로그램 생성 골드 문항",
+   "parent": "gold-question-leak",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "매번 다른 골드를 자동 생성하고 simhash 거리로 유사도를 관리.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "worker-retention-quality",
+   "label": "작업자 유지율과 품질",
+   "parent": "gold-question-leak",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장기 작업자는 서로 다른 골드를 보며 학습 효과로 품질도 오른다.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "gold-anomaly-monitoring",
+   "label": "골드 정답률 이상 징후 감시",
+   "parent": "gold-question-leak",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답률 급상승·처리 시간 단축으로 골드 유출을 탐지.",
    "added": "2026-11-22",
    "related": []
   }
