@@ -46530,11 +46530,12 @@
    "label": "Tombstone 삭제",
    "parent": "zombie-documents",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "논리 삭제 표시와 정리 시점의 간극.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "sidecar-chunk-mapping",
@@ -59353,6 +59354,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "point ID·해시·모델을 외부 DB에 기록.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "vec2text-inversion",
+   "label": "Vec2Text 역변환",
+   "parent": "tombstone-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩에서 원문 텍스트를 복원하려는 공격 기법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "epoch-key-rotation",
+   "label": "Epoch Key Rotation",
+   "parent": "tombstone-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벡터를 암호화하고 삭제 때 키를 폐기하는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "vector-db-compaction",
+   "label": "벡터 DB 컴팩션",
+   "parent": "tombstone-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 표시된 벡터를 정리하고 공간을 회수하는 작업.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "right-to-erasure-vectors",
+   "label": "삭제권과 벡터 색인",
+   "parent": "tombstone-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GDPR 제17조를 벡터 색인에 적용할 때의 쟁점.",
    "related": [],
    "added": "2026-11-22"
   }
