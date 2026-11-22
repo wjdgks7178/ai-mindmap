@@ -46992,11 +46992,12 @@
    "label": "TFDV skew 비교기",
    "parent": "tfdv-schema-environments",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습과 서빙 분포 차이를 임계값으로 감지.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "tfdv-drift-comparator",
@@ -59963,6 +59964,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "튜토리얼 맨 위 import만 먼저 실행해 불일치를 조기 발견.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "serving-statistics-argument",
+   "label": "serving_statistics 인자",
+   "parent": "tfdv-skew-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "validate_statistics에 서빙 통계를 비교 대상으로 전달.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "max-difference-value-report",
+   "label": "최대 차이 값 보고",
+   "parent": "tfdv-skew-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "skew가 가장 큰 범주 값을 이상 메시지로 알려 줌.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "skew-vs-schema-anomaly",
+   "label": "skew와 스키마 이상의 구분",
+   "parent": "tfdv-skew-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 차이와 타입·도메인 위반은 다른 검사.",
    "related": [],
    "added": "2026-11-22"
   }
