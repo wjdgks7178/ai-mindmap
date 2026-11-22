@@ -45927,11 +45927,12 @@
    "label": "도메인 전문가 난이도 가중치",
    "parent": "recourse-cost-and-time",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특징별 상대 난이도를 전문가가 지정.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "mean-corruption-error",
@@ -58629,6 +58630,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 갱신 때 기존 안내의 유효 비율 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pear-preference-elicitation",
+   "label": "PEAR 선호 추출",
+   "parent": "difficulty-weights-expert",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선택지 질의로 개인별 행동 비용을 베이즈 추정하는 recourse.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pairwise-cost-learning",
+   "label": "쌍 비교 비용 학습",
+   "parent": "difficulty-weights-expert",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 대안 중 쉬운 것을 골라 비용 행렬을 학습.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "difficulty-weight-documentation",
+   "label": "난이도 가중치 문서화",
+   "parent": "difficulty-weights-expert",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 특징·값·근거를 감사 기록에 남기는 법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "uniform-cost-unfairness",
+   "label": "균일 비용 가정의 불공정",
+   "parent": "difficulty-weights-expert",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모두 같은 비용이면 일부에게 과도한 계획이 나옴.",
    "related": [],
    "added": "2026-11-22"
   }
