@@ -45157,11 +45157,12 @@
    "label": "선언과 집행의 간극",
    "parent": "ai-crawler-blocking",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "robots.txt 선언과 실제 응답의 불일치.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "llms-txt",
@@ -57314,6 +57315,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "API 정책·콘텐츠 정책 등 약관이 참조해 포함하는 별도 문서 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "waf-bot-score-blocking",
+   "label": "WAF 봇 점수 기반 차단",
+   "parent": "declared-vs-enforced-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 에이전트 대신 행동·네트워크 신호로 봇을 탐지해 차단.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "crawler-identity-transparency",
+   "label": "크롤러 신원 투명성",
+   "parent": "declared-vs-enforced-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자사 크롤러의 사용자 에이전트·IP 대역 공개와 차단 시 중단.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "declared-vs-actual-response-audit",
+   "label": "선언과 실제 응답 점검",
+   "parent": "declared-vs-enforced-blocking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "robots.txt 선언과 서버 응답이 일치하는지 정기 감사.",
    "added": "2026-11-22",
    "related": []
   }
