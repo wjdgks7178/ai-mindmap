@@ -44302,11 +44302,12 @@
    "label": "신뢰 보정 불량",
    "parent": "automation-bias-annotation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템 신뢰도와 실제 정확도의 불일치.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "internal-accountability",
@@ -56579,6 +56580,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "추가 수고가 붙은 응답을 피하려는 설문·주석의 일반 현상.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "trust-resolution-specificity",
+   "label": "신뢰의 분해능·특정성",
+   "parent": "trust-miscalibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 성능 변화에 맞춰 신뢰가 변하는지, 기능별로 구분되는지.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "explainability-heuristic",
+   "label": "설명 휴리스틱",
+   "parent": "trust-miscalibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명이 있으면 유능하다고 느끼는 편향이 과신을 부름.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "class-wise-accuracy-disclosure",
+   "label": "클래스별 정확도 공개",
+   "parent": "trust-miscalibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수자에게 영역별 AI 정확도를 보여 신뢰를 보정.",
    "added": "2026-11-22",
    "related": []
   }
