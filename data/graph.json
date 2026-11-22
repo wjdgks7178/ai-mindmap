@@ -43791,11 +43791,14 @@
    "label": "약한 지도의 검증 세트",
    "parent": "weak-supervision",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사람 라벨 소량으로 합친 라벨 점검.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "dev-set-contamination"
+   ],
+   "done": "2026-11-22"
   },
   {
    "id": "label-studio-text-ner-config",
@@ -56303,6 +56306,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률이 임계값 이상인 것만 남겨 하드 라벨로 쓰는 방식.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "ws-vs-few-label-finetune",
+   "label": "약한 지도 vs 소량 라벨 미세 조정",
+   "parent": "weak-supervision-validation-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "깨끗한 라벨 약 50개 미세 조정이 약한 지도와 맞먹는다는 논쟁.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "stratified-validation-sampling",
+   "label": "검증 세트 층화 추출",
+   "parent": "weak-supervision-validation-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 클래스가 빠지지 않게 클래스 비율을 지켜 표본 뽑기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "continuous-fine-tuning-ws",
+   "label": "약한 지도 후 연속 미세 조정",
+   "parent": "weak-supervision-validation-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약한 라벨 학습 뒤 같은 소량 정답 라벨로 추가 미세 조정.",
    "added": "2026-11-22",
    "related": []
   }
