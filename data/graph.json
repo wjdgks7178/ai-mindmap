@@ -44355,11 +44355,12 @@
    "label": "노출 여부 비공개 배정",
    "parent": "suggestion-hidden-control-sample",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노출 여부를 알리지 않는 운영.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "bias-dashboard",
@@ -56647,6 +56648,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "클래스·난이도별로 같은 비율의 비노출군을 보장.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "unblinding-check-survey",
+   "label": "눈가림 해제 점검 설문",
+   "parent": "labeler-blind-assignment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러가 대조군 항목을 구분할 수 있는지 사후에 묻는 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "blinded-analysis-plan",
+   "label": "분석가 눈가림과 사전 분석 계획",
+   "parent": "labeler-blind-assignment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "군 이름을 숨기고 분석 방법을 미리 고정해 확증 편향 방지.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "monitoring-transparency-ethics",
+   "label": "모니터링 투명성과 윤리",
+   "parent": "labeler-blind-assignment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일반 정책은 알리고 개별 항목은 숨기는 선, 기만 회피.",
    "added": "2026-11-22",
    "related": []
   }
