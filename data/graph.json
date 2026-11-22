@@ -46100,11 +46100,12 @@
    "label": "Judge Sensitivity Score",
    "parent": "prediction-consistency-metric",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM 심사위원의 말바꿈 일치도.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "worst-prompt-performance",
@@ -58854,6 +58855,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "오타 확률을 0~30%로 바꿔 가며 견고성 곡선을 그린다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ordinal-judge-instability",
+   "label": "서수 과제의 심사 불안정",
+   "parent": "judge-sensitivity-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1~5점 같은 서수 판정이 말바꿈에 가장 취약.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "judge-harness-vs-api",
+   "label": "하네스와 API의 심사 차이",
+   "parent": "judge-sensitivity-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에이전트 하네스 안 심사위원의 추정치가 더 작게 나옴.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "judge-size-vs-stability",
+   "label": "모델 크기와 심사 안정성",
+   "parent": "judge-sensitivity-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 계열 안에서 파라미터 수가 안정성을 예측하지 못함.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "practical-significance-threshold",
+   "label": "실질적 유의 기준",
+   "parent": "judge-sensitivity-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계 유의가 아니라 쓸 만한 크기의 효과인지 판단하는 기준.",
    "related": [],
    "added": "2026-11-22"
   }
