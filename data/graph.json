@@ -45829,11 +45829,12 @@
    "label": "행동 집합 정의",
    "parent": "actionable-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개인별 가능한 변화 범위를 형식화.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "flipset",
@@ -58333,6 +58334,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "결정 경계에 딱 맞추지 않고 여유를 두는 방식과 비용 trade-off.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "cost-function-properties",
+   "label": "recourse 비용 함수의 성질",
+   "parent": "action-set-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동이 없으면 비용 0, 행동이 커지면 비용이 같거나 커지는 단조성 가정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "infeasibility-certificate",
+   "label": "불가능 인증",
+   "parent": "action-set-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최적화가 불가능일 때 어떤 행동으로도 결정을 못 바꾼다는 증명으로 쓰기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "action-set-stakeholder-agreement",
+   "label": "행동 집합의 이해관계자 합의",
+   "parent": "action-set-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "법무·도메인 전문가·영향받는 사람과 행동 집합·비용을 정해 문서화.",
    "added": "2026-11-22",
    "related": []
   }
