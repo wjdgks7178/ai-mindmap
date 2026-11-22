@@ -47211,11 +47211,14 @@
    "label": "동적 규칙 last()",
    "parent": "data-quality-metrics-repository",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과거 지표와 비교해 통과 여부를 정함.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "result-key-tags"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "data-quality-analyzers",
@@ -60842,6 +60845,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "addAnomalyCheck로 이전 지표 대비 급변을 감지.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-last-aggregation-functions",
+   "label": "DQDL 집계 함수",
+   "parent": "dynamic-rules-last",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "avg·median·max·min·sum·std·abs·index로 과거 값 줄이기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-analyzers-block",
+   "label": "DQDL Analyzers 블록",
+   "parent": "dynamic-rules-last",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조건 없이 통계만 쌓아 이상 탐지에 쓰는 분석기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-exclude-statistics",
+   "label": "동적 규칙 통계 제외",
+   "parent": "dynamic-rules-last",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일괄 적재 등 왜곡 값을 평균 계산에서 빼는 기능.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dqdl-first-run-baseline",
+   "label": "첫 실행 기준선 문제",
+   "parent": "dynamic-rules-last",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이력이 없을 때 last()가 0.0이라 규칙이 무의미한 문제.",
    "related": [],
    "added": "2026-11-22"
   }
