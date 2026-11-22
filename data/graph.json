@@ -46480,11 +46480,12 @@
    "label": "블루-그린 재색인",
    "parent": "rag-index-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "옛 인덱스를 서비스하며 새 인덱스를 만들어 전환.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "golden-query-set",
@@ -59207,6 +59208,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "문서별 가치 차이를 못 담는 가격 정책의 한계.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "index-alias-swap",
+   "label": "별칭 원자 교체",
+   "parent": "blue-green-reindex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "별칭 하나를 새 색인으로 한 번에 바꾸는 전환 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dual-write-pattern",
+   "label": "이중 쓰기 패턴",
+   "parent": "blue-green-reindex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전환 기간 동안 두 색인에 동시에 쓰는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "named-vectors-migration",
+   "label": "named vectors 마이그레이션",
+   "parent": "blue-green-reindex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 컬렉션에 새 벡터 이름을 추가해 점진 전환.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "golden-query-regression",
+   "label": "골든 쿼리 회귀 점검",
+   "parent": "blue-green-reindex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전환 전 고정 질의 세트로 검색 품질 악화를 확인.",
    "related": [],
    "added": "2026-11-22"
   }
