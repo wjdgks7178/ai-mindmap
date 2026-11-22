@@ -43973,11 +43973,12 @@
    "label": "라벨링 도구 네트워크 격리",
    "parent": "self-hosted-labeling-privacy",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사내망·방화벽으로 외부 통신 차단.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "external-labeler-confidentiality",
@@ -56384,6 +56385,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI에 회의적일수록 오류를 더 잘 잡는다는 연구 결과.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "egress-default-deny",
+   "label": "외부 송신 기본 차단",
+   "parent": "labeling-tool-network-isolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서버의 나가는 통신을 기본 차단하고 필요한 주소만 허용하는 방화벽 원칙.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "ssrf-protection-labeling",
+   "label": "URL 임포트와 SSRF",
+   "parent": "labeling-tool-network-isolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨링 도구가 URL을 읽는 기능을 악용한 내부망 접근과 방어 설정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "docker-internal-network",
+   "label": "도커 내부 네트워크",
+   "parent": "labeling-tool-network-isolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "--internal 네트워크로 컨테이너의 외부 통신을 막는 구성과 게이트웨이 예외.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "browser-side-telemetry-check",
+   "label": "브라우저 측 외부 요청 점검",
+   "parent": "labeling-tool-network-isolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러 브라우저가 외부 분석·오류 수집 주소로 보내는 요청 확인법.",
    "added": "2026-11-22",
    "related": []
   }
