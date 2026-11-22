@@ -16,7 +16,7 @@
   | `incremental` | **이번 실행에서 본 소스 ID** 중 갱신되지 않은 문서를 삭제. 색인 도중 계속 정리해 중복 노출이 줄어듦 |
   | `full` | 로더가 이번에 반환하지 않은 **모든** 문서 삭제. 색인이 끝난 뒤 정리하므로 잠시 중복이 보일 수 있음 |
   | `scoped_full` | full과 같되 이번에 본 소스 ID 범위만 삭제(`langchain-core` 0.3.25에서 추가) |
-- **`source_id_key`(문서)**: 각 문서의 원본 소스를 식별. incremental·scoped_full 정리는 소스 ID에 의존한다. (생략 시 동작은 이 페이지에 명시되지 않았다.)
+- **`source_id_key`(문서)**: 각 문서의 원본 소스를 식별. incremental·scoped_full 정리는 소스 ID에 의존한다. (생략 시 동작은 이 페이지에 명시되지 않았다. 기존 노드 [RAG 재조정 작업](#rag-reconciliation-job)은 소스 코드 docstring에서 incremental·scoped_full에 필수이며 없으면 ValueError라고 확인했다.)
 - **안전장치·경고(문서)**: `full` 모드는 **로더가 전체 데이터셋을 반환해야** 한다. 아니면 지우면 안 되는 문서까지 지운다. incremental에서 한 소스 ID가 여러 배치에 걸치면 작업이 일부 반복(결과는 정확, 큰 배치가 효율적). scoped_full은 소스 ID를 메모리에 두며 약 1천만 문서 이상이면 병렬화가 필요할 수 있다. `cleanup_batch_size` 기본 1000. `force_update`는 이미 있는 문서도 다시 색인(임베딩 재생성에 유용).
 - **한계(해석)**: 레코드 매니저는 **벡터 저장소 밖의 장부**라서 둘의 상태가 어긋나면(수동 삭제 등) 장부와 색인이 불일치할 수 있다.
 
