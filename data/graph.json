@@ -46600,11 +46600,12 @@
    "label": "RAG 신선도 SLA",
    "parent": "silent-version-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "코퍼스 종류별 허용 지연을 정하고 경보.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "freshness-metadata",
@@ -61227,6 +61228,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "마이그레이션·백필 실행을 즉시 표시하는 습관.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "embedding-lag-slo",
+   "label": "임베딩 지연 SLO",
+   "parent": "rag-freshness-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경→임베딩→색인 반영 지연을 목표와 경보로 관리.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "indexing-latency-p95",
+   "label": "색인 반영 지연 백분위",
+   "parent": "rag-freshness-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "source_last_modified와 indexed_at 차의 p95 추적.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "sla-by-corpus-risk",
+   "label": "코퍼스 위험도별 SLA",
+   "parent": "rag-freshness-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오답 비용이 큰 문서일수록 짧은 허용 지연.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "stale-citation-rate",
+   "label": "오래된 인용 비율",
+   "parent": "rag-freshness-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답변이 낡은·삭제된 청크를 인용한 비율 지표.",
    "related": [],
    "added": "2026-11-22"
   }
