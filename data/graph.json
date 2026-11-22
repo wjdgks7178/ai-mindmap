@@ -46295,11 +46295,14 @@
    "label": "집단 라이선스(RSL)",
    "parent": "data-compensation-markets",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 퍼블리셔가 묶어 협상하는 방식.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "ai-content-licensing-deals"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "dvc-remote-storage",
@@ -59113,6 +59116,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "요약·인용·링크를 보이게 허용하는 조건.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "rsl-xml-elements",
+   "label": "RSL XML 요소",
+   "parent": "collective-licensing-rsl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "content·license·permits·prohibits·payment 구조.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "rsl-discovery-methods",
+   "label": "RSL 발견 방법",
+   "parent": "collective-licensing-rsl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "robots.txt·HTTP 헤더·HTML·RSS로 라이선스를 알리는 법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "rsl-enforcement-gap",
+   "label": "RSL 집행의 한계",
+   "parent": "collective-licensing-rsl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선언만으로는 크롤러를 막지 못해 준수에 의존.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "rsl-license-server-olp",
+   "label": "RSL 라이선스 서버(OLP)",
+   "parent": "collective-licensing-rsl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인증·과금을 처리하는 선택 확장.",
    "related": [],
    "added": "2026-11-22"
   }
