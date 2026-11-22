@@ -43679,11 +43679,12 @@
    "label": "약한 LF 제거",
    "parent": "lf-coverage-conflict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정확도 0.5 근처 LF 정리.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "noise-aware-loss",
@@ -56210,6 +56211,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "configs/{언어}_{문자}.yml의 필터 항목과 읽는 법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "lf-accuracy-threshold-multiclass",
+   "label": "다중 클래스의 랜덤 기준",
+   "parent": "lf-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스가 K개면 찍기 수준은 1/K — 제거 기준 계산.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "lf-leave-one-out",
+   "label": "LF 하나씩 빼 보기",
+   "parent": "lf-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LF를 하나씩 제외하며 합친 라벨 정확도 변화를 측정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "lf-correlation-pruning",
+   "label": "상관된 LF 정리",
+   "parent": "lf-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 방식으로 틀리는 LF가 중복 투표로 편향을 키우는 문제.",
    "added": "2026-11-22",
    "related": []
   }
