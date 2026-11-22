@@ -46124,11 +46124,12 @@
    "label": "반복 상한",
    "parent": "prediction-consistency-metric",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 프롬프트 재실행 일치도로 노이즈 분리.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "paraphrase-validity-check",
@@ -58944,6 +58945,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기존 기법은 최악 성능 개선 효과가 제한적.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "delta-jss",
+   "label": "Δ JSS",
+   "parent": "repeat-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "말바꿈 일치도에서 반복 상한을 뺀 주 지표.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "decoding-temperature-zero-eval",
+   "label": "temperature 0 평가 설정",
+   "parent": "repeat-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정적 디코딩으로 평가 노이즈를 줄이는 관행과 한계.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "unreadable-cell-rule",
+   "label": "해석 불가 칸 규칙",
+   "parent": "repeat-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상한이 낮으면 보고만 하고 해석하지 않는 원칙.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "evaluation-pilot-misconfig",
+   "label": "디코딩 설정 오류 사례",
+   "parent": "repeat-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잘못된 파라미터가 천장을 낮춰 효과를 가린 사례.",
    "related": [],
    "added": "2026-11-22"
   }
