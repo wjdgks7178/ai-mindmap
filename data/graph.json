@@ -45610,11 +45610,12 @@
    "label": "슬라이스 이름 붙이기",
    "parent": "coherent-slice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "공유 개념을 말로 설명하는 단계.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "hidden-stratification",
@@ -57812,6 +57813,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "슬라이스 비율만큼의 우연 precision을 기준선으로 비교.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "slice-description-phrase-corpus",
+   "label": "슬라이스 설명용 문구 말뭉치",
+   "parent": "slice-naming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 이름 후보를 만들 때 도메인에 맞는 후보 문구 목록을 준비하는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "slice-definition-rules",
+   "label": "슬라이스 정의 규칙 문서화",
+   "parent": "slice-naming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확정된 이름과 함께 포함·제외 기준을 문서로 남기기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "incoherent-slice-diagnosis",
+   "label": "이름 안 붙는 슬라이스 진단",
+   "parent": "slice-naming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일관성 없는 슬라이스가 라벨 오류·이상치인지 점검.",
    "added": "2026-11-22",
    "related": []
   }
