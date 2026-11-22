@@ -47076,11 +47076,12 @@
    "label": "라벨 표기 불일치",
    "parent": "facets-data-visualization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습·시험 라벨의 사소한 표기 차이.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "archived-tool-risk",
@@ -60414,6 +60415,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학력과 소득 관계를 Dive로 보는 대표 예제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "label-vocabulary-check",
+   "label": "라벨 어휘 비교",
+   "parent": "label-format-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·시험 라벨의 고유값 집합이 같은지 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "label-normalization-mapping",
+   "label": "라벨 정규화 매핑",
+   "parent": "label-format-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열거형·정수로 라벨을 한 곳에서 정의.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "exact-match-metric-pitfall",
+   "label": "정확 일치 지표의 함정",
+   "parent": "label-format-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표기 차이가 지표를 0으로 만드는 경우.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "distribution-distance-sort",
+   "label": "Distribution distance 정렬",
+   "parent": "label-format-mismatch",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 데이터셋에서 가장 다른 특징을 위로 올리는 정렬.",
    "related": [],
    "added": "2026-11-22"
   }
