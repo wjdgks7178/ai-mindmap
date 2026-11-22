@@ -46623,11 +46623,12 @@
    "label": "RAG 일관성 수준",
    "parent": "silent-version-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "최종·제한적 낡음·자기 쓰기·강한 일관성.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "temporal-decay-scoring",
@@ -59589,6 +59590,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "유사도와 반감기 가중 최신성을 섞는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "bounded-staleness",
+   "label": "제한적 낡음",
+   "parent": "rag-consistency-models",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지연을 K 버전 또는 T 시간 이내로 제한하는 일관성.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "read-your-writes",
+   "label": "Read-your-writes",
+   "parent": "rag-consistency-models",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내가 쓴 것은 내 읽기에 바로 보이는 보장.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pacelc-theorem",
+   "label": "PACELC 정리",
+   "parent": "rag-consistency-models",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 시 일관성·가용성, 평상시 지연·일관성의 트레이드오프.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "probabilistically-bounded-staleness",
+   "label": "확률적 제한 낡음(PBS)",
+   "parent": "rag-consistency-models",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최종 일관성이 얼마나 빨리 수렴하는지 확률로 재는 지표.",
    "related": [],
    "added": "2026-11-22"
   }
