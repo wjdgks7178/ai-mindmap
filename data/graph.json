@@ -46588,11 +46588,12 @@
    "label": "불일치 창",
    "parent": "silent-version-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원본 변경과 검색 가능 시점 사이의 간격.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "rag-freshness-sla",
@@ -59499,6 +59500,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "벡터 ID만 지우면 다른 검색 경로에 남는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "revalidate-before-cite",
+   "label": "인용 전 재검증",
+   "parent": "inconsistency-window",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "존재·해시·권한을 확인한 뒤 출력.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "stale-permission-leak",
+   "label": "오래된 권한 유출",
+   "parent": "inconsistency-window",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "철회된 접근 권한이 색인 메타데이터에 남는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "snapshot-isolation-rag",
+   "label": "RAG 스냅샷 격리",
+   "parent": "inconsistency-window",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "청크에 버전을 두고 모델이 본 리비전을 인용.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "mutate-during-request-test",
+   "label": "요청 중 변경 테스트",
+   "parent": "inconsistency-window",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답변 생성 중 원본을 바꿔 보는 평가.",
    "related": [],
    "added": "2026-11-22"
   }
