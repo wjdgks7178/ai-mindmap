@@ -45275,11 +45275,12 @@
    "label": "주석·라벨은 개작인가",
    "parent": "cc-noderivatives",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원본을 안 건드린 라벨 파일의 지위.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "cc-nc-research-release",
@@ -57450,6 +57451,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습된 모델의 출력이 원본의 개작물인지 확정되지 않은 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "stand-off-annotation",
+   "label": "스탠드오프 주석",
+   "parent": "annotation-as-derivative",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본을 복제하지 않고 ID·오프셋으로 라벨만 분리해 저장하는 형식.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "id-only-distribution",
+   "label": "ID 목록만 배포",
+   "parent": "annotation-as-derivative",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 대신 식별자 목록을 배포해 사용자가 원 출처에서 받게 하는 방식.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "separate-license-for-annotations",
+   "label": "주석에 별도 라이선스",
+   "parent": "annotation-as-derivative",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Open Images처럼 주석과 원본에 다른 라이선스를 명시하는 관행.",
    "added": "2026-11-22",
    "related": []
   }
