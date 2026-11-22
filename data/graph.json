@@ -46873,11 +46873,12 @@
    "label": "결측 비율 모니터링",
    "parent": "gx-null-vs-range",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "missing_percent를 지표로 추적.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "required-column-rules",
@@ -59657,6 +59658,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미 있는 문서도 임베딩 재생성을 위해 다시 색인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "validation-metrics-store",
+   "label": "검증 지표 저장소",
+   "parent": "missing-percent-monitoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 결과 필드를 시계열로 쌓아 추세를 보는 구조.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "missing-vs-unexpected-fields",
+   "label": "missing과 unexpected 필드의 차이",
+   "parent": "missing-percent-monitoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Expectation마다 결측이 보고되는 필드가 다름.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "data-quality-alert-thresholds",
+   "label": "데이터 품질 경보 임계값",
+   "parent": "missing-percent-monitoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평소 대비 급증을 감지하는 기준 설정.",
    "related": [],
    "added": "2026-11-22"
   }
