@@ -45673,11 +45673,12 @@
    "label": "ODIN",
    "parent": "ood-detection-softmax",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "온도 스케일링과 입력 섭동으로 OOD 탐지 향상.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "overconfidence-neural-nets",
@@ -57880,6 +57881,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 슬라이스 보강이 다른 슬라이스를 악화시키지 않는지 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "input-perturbation-for-ood",
+   "label": "OOD 탐지용 입력 섭동",
+   "parent": "odin-ood-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 점수를 키우는 방향의 작은 섭동이 분포 안 입력에 더 크게 작용한다는 아이디어.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "ood-validation-for-hyperparameters",
+   "label": "OOD 검증 데이터로 하이퍼파라미터 선택",
+   "parent": "odin-ood-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ODIN의 T·ε를 별도 OOD 검증 세트에서 고르고 다른 OOD로 시험하는 절차.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "ood-threshold-selection",
+   "label": "OOD 임계값 정하기",
+   "parent": "odin-ood-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수 임계값을 서비스 비용(오검출·놓침)에 맞춰 정하는 방법.",
    "added": "2026-11-22",
    "related": []
   }
