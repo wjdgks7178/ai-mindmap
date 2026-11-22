@@ -46743,11 +46743,12 @@
    "label": "질의 인식 최신성 게이트",
    "parent": "freshness-prefilter-vs-decay",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "질문에 따라 최신성 적용 여부를 학습으로 결정.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "record-manager",
@@ -60673,6 +60674,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "필터 후 빈 결과일 때 근거 없음으로 답하는 규칙.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "temporal-intent-classification",
+   "label": "시간 의도 분류",
+   "parent": "query-aware-recency-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문이 최신·과거·무관 중 무엇을 원하는지 판별.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "implicit-temporal-intent",
+   "label": "암시적 시간 의도",
+   "parent": "query-aware-recency-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "키워드 없이도 최신을 원하는 질문.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "withdrawn-paper-caution",
+   "label": "철회된 논문 인용 주의",
+   "parent": "query-aware-recency-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "철회·수정된 프리프린트의 주장을 다루는 법.",
    "related": [],
    "added": "2026-11-22"
   }
