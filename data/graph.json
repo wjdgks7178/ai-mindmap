@@ -43454,11 +43454,12 @@
    "label": "한국어 텍스트 필터 설계",
    "parent": "multilingual-filter-adaptation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어절·글자 수 기준과 종결 부호 처리.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "instructgpt-three-stage",
@@ -56165,6 +56166,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "제거된 문서 표본을 사람이 읽어 오탐 비율을 재는 절차.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "eojeol-vs-morpheme-length",
+   "label": "어절 vs 형태소 길이 기준",
+   "parent": "korean-text-filter-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터의 단어 길이를 공백 어절로 셀지 형태소로 셀지 비교.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "domain-specific-korean-thresholds",
+   "label": "출처 도메인별 한국어 한도",
+   "parent": "korean-text-filter-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "블로그·위키·뉴스마다 필터 한도를 따로 잡는 이유.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "korean-colloquial-terminal-forms",
+   "label": "구어체 종결 표현 처리",
+   "parent": "korean-text-filter-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "…, ~, ㅋㅋ, 개조식 문장이 종결 부호 규칙에 미치는 영향.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "fineweb2-per-language-config",
+   "label": "FineWeb2 언어별 설정 파일",
+   "parent": "korean-text-filter-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "configs/{언어}_{문자}.yml의 필터 항목과 읽는 법.",
    "added": "2026-11-22",
    "related": []
   }
