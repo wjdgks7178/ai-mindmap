@@ -46944,11 +46944,12 @@
    "label": "GX Batch Definition",
    "parent": "gx-api-version-differences",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터를 배치로 나누는 정의.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "gx-suite-parameters",
@@ -59884,6 +59885,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "공식 마이그레이션 문서로 제거·대체 기능을 확인.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-monthly-yearly-batch",
+   "label": "GX 월·연 배치 정의",
+   "parent": "gx-batch-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규식 그룹으로 파일을 골라 월·연 단위로 검증.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-latest-batch-default",
+   "label": "GX 최신 배치 기본값",
+   "parent": "gx-batch-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파라미터를 생략하면 가장 최근 배치를 읽음.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-yearly-no-merge",
+   "label": "GX 연 단위 배치의 비합산",
+   "parent": "gx-batch-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연 정의가 여러 파일을 합치지 않고 하나만 고른 관찰.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gx-filesystem-datasource",
+   "label": "GX 파일시스템 데이터 소스",
+   "parent": "gx-batch-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴더의 파일을 asset으로 연결하는 방식.",
    "related": [],
    "added": "2026-11-22"
   }
