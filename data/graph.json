@@ -45855,11 +45855,12 @@
    "label": "recourse와 정규화",
    "parent": "recourse-audit-integer-programming",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 개발 선택이 대안 유무를 바꿈.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "mutable-variant-feature",
@@ -58403,6 +58404,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "예측과 실제 상환 능력을 함께 바꾸는 행동만 선별.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-in-model-selection",
+   "label": "모델 선택 표에 recourse 열 추가",
+   "parent": "recourse-vs-regularization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도와 함께 recourse 가능 비율·중앙 비용을 비교.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "l1-regularization",
+   "label": "ℓ1 정규화",
+   "parent": "recourse-vs-regularization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 절댓값 합을 벌점으로 주어 특징을 줄이는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recourse-feasibility-rate",
+   "label": "recourse 가능 비율",
+   "parent": "recourse-vs-regularization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불리한 예측을 받은 사람 중 대안이 있는 비율.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "median-recourse-cost",
+   "label": "recourse 중앙 비용",
+   "parent": "recourse-vs-regularization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중앙값 사람이 움직여야 하는 백분위 폭.",
    "related": [],
    "added": "2026-11-22"
   }
