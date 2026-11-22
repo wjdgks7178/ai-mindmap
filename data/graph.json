@@ -46088,11 +46088,12 @@
    "label": "텍스트 오타 변형",
    "parent": "perturbation-severity-levels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "언어 모델 견고성 테스트의 기본 변형.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "judge-sensitivity-score",
@@ -58809,6 +58810,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 이미지용 손상 벤치마크로 빠른 실험에 쓴다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "composite-perturbation-recipe",
+   "label": "합성 변형 레시피",
+   "parent": "text-typo-perturbation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 변형을 이어 한 번의 평가로 커버하는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "korean-typo-perturbation",
+   "label": "한국어 오타 변형",
+   "parent": "text-typo-perturbation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자모·맞춤법·띄어쓰기 오류를 반영한 변형 규칙.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "common-misspellings-dictionary",
+   "label": "흔한 오탈자 사전",
+   "parent": "text-typo-perturbation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오탈자→정답 목록을 뒤집어 변형에 쓰는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "typo-rate-sweep",
+   "label": "오타 비율 스윕",
+   "parent": "text-typo-perturbation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오타 확률을 0~30%로 바꿔 가며 견고성 곡선을 그린다.",
    "related": [],
    "added": "2026-11-22"
   }
