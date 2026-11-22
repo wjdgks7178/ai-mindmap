@@ -46518,11 +46518,12 @@
    "label": "청크 내용 해시",
    "parent": "rag-index-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "바뀐 청크만 재임베딩하는 증분 색인.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "tombstone-deletion",
@@ -59308,6 +59309,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델이 같아도 문서·용어 변화로 품질이 떨어지는 현상.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "text-normalization-before-hash",
+   "label": "해시 전 텍스트 정규화",
+   "parent": "chunk-content-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공백·줄바꿈 차이로 해시가 달라지지 않게 정리.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "idempotent-upsert",
+   "label": "멱등 upsert",
+   "parent": "chunk-content-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 ID로 덮어써 중복 전달에도 결과가 같게.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "stable-chunking-algorithm",
+   "label": "안정적 청킹 알고리즘",
+   "parent": "chunk-content-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서→청크 ID 매핑이 바뀌지 않게 유지.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "external-metadata-store-vectors",
+   "label": "벡터 메타 저장소",
+   "parent": "chunk-content-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "point ID·해시·모델을 외부 DB에 기록.",
    "related": [],
    "added": "2026-11-22"
   }
