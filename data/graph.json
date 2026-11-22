@@ -44695,11 +44695,12 @@
    "label": "결측률의 공정성 점검",
    "parent": "missing-indicator-feature",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "집단별 결측률 차이와 지시자 사용 주의.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "missing-pattern-drift",
@@ -56749,6 +56750,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소규모 시험 실행으로 토큰 수·단가를 먼저 측정해 총액을 예측.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "group-wise-missing-rate-table",
+   "label": "집단별 결측률 표",
+   "parent": "missingness-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수·집단별 결측률을 한 표로 만들어 차이가 큰 곳을 찾기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "missing-mechanism-mcar-mar-mnar",
+   "label": "결측 메커니즘 MCAR·MAR·MNAR",
+   "parent": "missingness-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측이 무작위인지 다른 변수·자기 값에 따라 생기는지 구분.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "listwise-deletion-tradeoff",
+   "label": "목록 삭제의 득과 실",
+   "parent": "missingness-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측 행을 지우면 공정성이 높게 나온 사례와 표본 손실 trade-off.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "collection-fix-before-imputation",
+   "label": "대체보다 수집 개선",
+   "parent": "missingness-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측률 격차는 입력 폼·접근성 등 수집 과정에서 먼저 줄이기.",
    "added": "2026-11-22",
    "related": []
   }
