@@ -44707,11 +44707,12 @@
    "label": "결측 패턴 드리프트",
    "parent": "missing-indicator-feature",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "서빙에서 결측 패턴이 달라지는 문제.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "hist-gradient-boosting-nan",
@@ -56794,6 +56795,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "결측률 격차는 입력 폼·접근성 등 수집 과정에서 먼저 줄이기.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "serving-missing-rate-monitoring",
+   "label": "서빙 결측률 모니터링",
+   "parent": "missing-pattern-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 대비 서빙의 변수별 결측률을 일·주 단위로 비교·경보.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "tfdv-skew-drift-comparators",
+   "label": "TFDV 치우침·드리프트 비교기",
+   "parent": "missing-pattern-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "L-무한대 거리·젠슨-섀넌 발산 임계값으로 학습·서빙 분포를 비교.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "informative-vs-random-missingness",
+   "label": "정보성 결측 vs 무작위 결측",
+   "parent": "missing-pattern-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측이 정답과 연관된 경우와 아닌 경우를 구분하는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "indicator-free-fallback-model",
+   "label": "표시 열 없는 대체 모델",
+   "parent": "missing-pattern-drift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측 패턴 변화에 안정적인 백업 모델 준비.",
    "added": "2026-11-22",
    "related": []
   }
