@@ -45733,11 +45733,12 @@
    "label": "도메인 수가 적을 때의 변동",
    "parent": "held-out-domain-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어느 도메인을 떼느냐에 따른 결과 차이.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "covariate-shift-reweighting",
@@ -58039,6 +58040,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "선택 방법에 시험이 학습과 어떻게 관련되는지에 대한 가정이 필요하다는 관점.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "report-all-leave-one-out",
+   "label": "leave-one-out 결과 전체 공개",
+   "parent": "few-domain-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인별 시험 결과를 평균만이 아니라 표 전체로 보고.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "worst-domain-reporting",
+   "label": "최악 도메인 보고",
+   "parent": "few-domain-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균 대신 최저 도메인·범위·표준편차를 함께 보고.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "domain-as-sample-unit",
+   "label": "도메인이 표본 단위",
+   "parent": "few-domain-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인 수가 곧 표본 수라는 관점과 결론 한정 방법.",
    "added": "2026-11-22",
    "related": []
   }
