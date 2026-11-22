@@ -45001,11 +45001,12 @@
    "label": "도메인별 허용 의사 기록",
    "parent": "consent-in-crisis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "출처별 robots·ToS를 표로 정리.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "retroactive-opt-out-gap",
@@ -57088,6 +57089,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사람이 검토할 수 있는 건수에 맞춰 예측 양성 수를 제한하는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "robots-txt-snapshot-hashing",
+   "label": "robots.txt 스냅샷과 해시",
+   "parent": "domain-consent-registry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 시점의 robots.txt 원문·해시·조회 시각·HTTP 상태를 보관.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "rfc9309-4xx-5xx-handling",
+   "label": "RFC 9309의 4xx·5xx 처리",
+   "parent": "domain-consent-registry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일 없음(4xx)은 접근 가능, 서버 오류(5xx)는 전체 금지로 가정하는 규칙.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "tos-ai-clause-review",
+   "label": "이용약관의 AI 조항 검토",
+   "parent": "domain-consent-registry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약관의 AI 학습·스크래핑 관련 조항을 사람이 읽고 기록하는 절차.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "ai-bot-user-agent-list",
+   "label": "AI 크롤러 사용자 에이전트 목록",
+   "parent": "domain-consent-registry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GPTBot·CCBot·ClaudeBot·Google-Extended 등 AI 관련 봇 토큰 관리.",
    "added": "2026-11-22",
    "related": []
   }
