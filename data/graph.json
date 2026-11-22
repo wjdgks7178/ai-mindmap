@@ -45364,11 +45364,12 @@
    "label": "학습 장소와 관할",
    "parent": "model-weights-derivative-question",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어디서 학습했는지가 법 적용을 가른다.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "evaluation-report",
@@ -57552,6 +57553,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "수집 이후 도메인이 유보를 선언한 경우의 처리(재수집·제외).",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "training-location-logging",
+   "label": "학습 위치 기록",
+   "parent": "territorial-training-location",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습한 국가·클라우드 지역과 데이터 처리 경로를 기록해 두는 관행.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "market-by-market-compliance",
+   "label": "시장별 규정 점검",
+   "parent": "territorial-training-location",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델을 제공할 시장(EU·미국 등)마다 요구 사항을 따로 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "secondary-infringement-import",
+   "label": "수입에 의한 2차 침해",
+   "parent": "territorial-training-location",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외국에서 학습한 모델을 들여오는 것이 침해인지의 쟁점.",
    "added": "2026-11-22",
    "related": []
   }
