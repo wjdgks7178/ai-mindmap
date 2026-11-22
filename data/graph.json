@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "nodes": [
   {
    "id": "ai",
@@ -43270,11 +43270,12 @@
    "label": "반복 필터 오탐",
    "parent": "repetition-thresholds",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시·표·법률 조항 등 구조적 반복 문서.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "model-repetition-failure",
@@ -56132,6 +56133,39 @@
    "priority": 3,
    "summary": "캐시·간격·식별 UA.",
    "added": "2026-11-21",
+   "related": []
+  },
+  {
+   "id": "doc-type-specific-thresholds",
+   "label": "문서 유형별 반복 한도",
+   "parent": "repetition-false-positives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시·표·법률·코드를 분류해 서로 다른 반복 한도를 쓰는 방법.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "repetition-trim-instead-of-drop",
+   "label": "반복 구간만 잘라내기",
+   "parent": "repetition-false-positives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서를 버리지 않고 반복 구간만 제거해 살리는 대안.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "filter-false-positive-audit",
+   "label": "필터 오탐 표본 점검",
+   "parent": "repetition-false-positives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제거된 문서 표본을 사람이 읽어 오탐 비율을 재는 절차.",
+   "added": "2026-11-22",
    "related": []
   }
  ]
