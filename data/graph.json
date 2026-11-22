@@ -46542,11 +46542,12 @@
    "label": "사이드카 청크 매핑",
    "parent": "zombie-documents",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "문서ID→청크ID 표로 정확히 삭제.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "change-data-capture-sync",
@@ -59454,6 +59455,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "초기 전체 적재와 변경 스트리밍의 연결 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "ghost-embedding-audit",
+   "label": "유령 임베딩 감사",
+   "parent": "sidecar-chunk-mapping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 문서 표본이 검색 상위에 나오는지 점검.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "retrieval-time-source-verification",
+   "label": "검색 시점 원본 확인",
+   "parent": "sidecar-chunk-mapping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델에 넘기기 전 청크의 문서 ID를 원본에 대조.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "last-verified-at-filter",
+   "label": "last_verified_at 필터",
+   "parent": "sidecar-chunk-mapping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오래 검증 안 된 청크를 검색에서 제외.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "cache-and-keyword-index-deletion",
+   "label": "캐시·키워드 색인 삭제",
+   "parent": "sidecar-chunk-mapping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벡터 ID만 지우면 다른 검색 경로에 남는 문제.",
    "related": [],
    "added": "2026-11-22"
   }
