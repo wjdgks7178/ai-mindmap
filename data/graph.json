@@ -44747,11 +44747,12 @@
    "label": "NaN 직접 처리로 기준선 만들기",
    "parent": "native-nan-models",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대체 없이 빠른 기준선.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "nan-interpretability",
@@ -56839,6 +56840,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "결측 패턴 변화에 안정적인 백업 모델 준비.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "baseline-before-complex-imputation",
+   "label": "복잡한 대체 전에 기준선",
+   "parent": "nan-baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 대체 등 복잡한 전처리는 기준선보다 유의하게 나을 때만 채택.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "hgb-categorical-missing-category",
+   "label": "범주형 결측 범주 처리",
+   "parent": "nan-baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HGB가 결측을 하나의 범주로 다루고 미지 범주를 결측으로 취급하는 방식.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "missing-rate-bucket-evaluation",
+   "label": "결측률 구간별 성능 평가",
+   "parent": "nan-baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측이 많은 행과 적은 행의 성능을 나눠 보는 평가.",
    "added": "2026-11-22",
    "related": []
   }
