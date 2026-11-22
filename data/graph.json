@@ -47064,11 +47064,12 @@
    "label": "Facets Dive",
    "parent": "facets-data-visualization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 점을 면으로 나눠 탐색.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "label-format-mismatch",
@@ -60369,6 +60370,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 데이터셋의 특징 통계를 나란히 놓는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "faceting-bucketing",
+   "label": "면 나누기와 구간화",
+   "parent": "facets-dive",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 값으로 점을 행·열에 배치하는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dive-error-analysis",
+   "label": "Dive로 오류 분석",
+   "parent": "facets-dive",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류 오류가 몰린 구간을 색으로 찾기.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "jupyter-iopub-rate-limit",
+   "label": "Jupyter IOPub 데이터 한도",
+   "parent": "facets-dive",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 시각화를 위해 서버 데이터 전송 한도를 올리는 설정.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "census-income-example",
+   "label": "Census Income 예시",
+   "parent": "facets-dive",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학력과 소득 관계를 Dive로 보는 대표 예제.",
    "related": [],
    "added": "2026-11-22"
   }
