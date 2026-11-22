@@ -47004,11 +47004,12 @@
    "label": "TFDV drift 비교기",
    "parent": "tfdv-schema-environments",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "날짜 간 학습 데이터 분포 변화 감지.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "tfdv-infer-schema-review",
@@ -59997,6 +59998,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포 차이와 타입·도메인 위반은 다른 검사.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "previous-statistics-argument",
+   "label": "previous_statistics 인자",
+   "parent": "tfdv-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이전 날짜 통계를 비교 대상으로 전달.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "gradual-drift-blind-spot",
+   "label": "점진적 드리프트의 사각지대",
+   "parent": "tfdv-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전날과만 비교하면 서서히 쌓이는 변화를 놓침.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "baseline-vs-rolling-comparison",
+   "label": "고정 기준 대 직전 비교",
+   "parent": "tfdv-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 시점 고정과 직전 날짜 비교의 병행.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pipeline-drift-gate",
+   "label": "파이프라인 드리프트 게이트",
+   "parent": "tfdv-drift-comparator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "drift 경보 시 학습을 멈추는 단계.",
    "related": [],
    "added": "2026-11-22"
   }
