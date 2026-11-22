@@ -46076,11 +46076,12 @@
    "label": "검증용 변형 분리",
    "parent": "perturbation-severity-levels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "튜닝 과적합을 막는 변형 분리.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "text-typo-perturbation",
@@ -58764,6 +58765,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "각 입력 주변의 변형에 대한 견고성만 재는 범위.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "speckle-noise",
+   "label": "스페클 노이즈",
+   "parent": "held-out-corruptions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "밝은 픽셀일수록 노이즈가 큰 가산 노이즈. ImageNet-C 검증용.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "robustness-benchmark-contamination",
+   "label": "견고성 벤치마크 오염",
+   "parent": "held-out-corruptions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테스트 변형에 직접 맞추면 견고성이 과대평가되는 문제.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "corruption-training-disclosure",
+   "label": "변형 학습 여부 명시",
+   "parent": "held-out-corruptions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테스트 손상으로 학습했는지 보고하는 평가 규약.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "cifar-10-c",
+   "label": "CIFAR-10-C",
+   "parent": "held-out-corruptions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 이미지용 손상 벤치마크로 빠른 실험에 쓴다.",
    "related": [],
    "added": "2026-11-22"
   }
