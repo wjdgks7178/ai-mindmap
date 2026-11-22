@@ -44328,11 +44328,12 @@
    "label": "비노출군 무작위 배정",
    "parent": "suggestion-hidden-control-sample",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사람이 고르지 않게 무작위로.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "wrong-suggestion-acceptance-rate",
@@ -56613,6 +56614,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "검수자에게 영역별 AI 정확도를 보여 신뢰를 보정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "hash-salt-assignment",
+   "label": "솔트와 해시 배정",
+   "parent": "hidden-control-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "항목 ID와 프로젝트 솔트를 해시해 재현 가능한 무작위 배정.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "assignment-ratio-check",
+   "label": "배정 비율 점검",
+   "parent": "hidden-control-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배정률이 목표와 어긋나면 규칙 오류를 의심하는 표본 비율 점검.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "stratified-hidden-control",
+   "label": "층화 비노출 배정",
+   "parent": "hidden-control-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스·난이도별로 같은 비율의 비노출군을 보장.",
    "added": "2026-11-22",
    "related": []
   }
