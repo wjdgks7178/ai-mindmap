@@ -45251,11 +45251,12 @@
    "label": "카피레프트 오픈 데이터",
    "parent": "cc-sharealike",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "SA 계열 공개 데이터의 장단점.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "private-adaptation-gap",
@@ -57382,6 +57383,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "파생 데이터셋의 원 출처를 카드에 연결해 라이선스 상속을 추적.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "sa-compatible-license-check",
+   "label": "SA 호환 라이선스 점검",
+   "parent": "copyleft-open-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개작물에 쓸 수 있는 BY-SA 호환 라이선스와 섞기 가능 여부 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "database-right-adapted-material",
+   "label": "데이터베이스 권리와 개작물",
+   "parent": "copyleft-open-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상당 부분을 포함한 데이터베이스 자체가 개작물이 되는 조항(원문 4항).",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "model-weights-sharealike-question",
+   "label": "모델 가중치와 SA 해석",
+   "parent": "copyleft-open-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습된 모델이 개작물인지 여부는 확정되지 않은 영역.",
    "added": "2026-11-22",
    "related": []
   }
