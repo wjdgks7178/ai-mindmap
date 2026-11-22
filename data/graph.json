@@ -43732,11 +43732,14 @@
    "label": "확률 라벨을 소프트 라벨로",
    "parent": "label-model-denoising",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "임계값 대신 확률을 학습에 사용.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "noise-aware-loss"
+   ],
+   "done": "2026-11-22"
   },
   {
    "id": "pws-pipeline",
@@ -56278,6 +56281,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "개발 세트를 보고 LF를 고치면 최종 평가가 부풀려지는 문제.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "label-model-calibration",
+   "label": "라벨 모델 확률 보정",
+   "parent": "soft-labels-from-label-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 모델 확률이 실제 정답률과 맞는지(보정) 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "confidence-threshold-hard-labels",
+   "label": "확신 높은 것만 하드 라벨",
+   "parent": "soft-labels-from-label-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률이 임계값 이상인 것만 남겨 하드 라벨로 쓰는 방식.",
    "added": "2026-11-22",
    "related": []
   }
