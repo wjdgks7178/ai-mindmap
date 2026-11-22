@@ -45025,11 +45025,12 @@
    "label": "라벨링 벤더 SLA",
    "parent": "managed-workforce-labeling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정확도·납기·재작업 조건을 계약에 넣기.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "labeling-total-cost",
@@ -57167,6 +57168,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습에 쓴 출처·날짜 목록을 남겨 삭제 요청에 대응.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "kappa-vs-percent-agreement",
+   "label": "카파 vs 단순 일치율",
+   "parent": "vendor-labeling-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스 불균형에서 같은 일치율이 낮은 카파가 되는 이유.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "acceptance-sampling-aql",
+   "label": "표본 검사와 AQL",
+   "parent": "vendor-labeling-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배치 합격 판정을 표본으로 할 때 오판 확률과 허용 오차.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "vendor-pilot-surge-test",
+   "label": "벤더 파일럿과 급증 시험",
+   "parent": "vendor-labeling-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일럿 마지막 날 물량 2배로 SLA 준수 능력을 확인.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "vendor-data-destruction-clause",
+   "label": "데이터 파기 조항",
+   "parent": "vendor-labeling-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "종료 후 삭제 기한과 파기 증명서를 계약에 넣기.",
    "added": "2026-11-22",
    "related": []
   }
