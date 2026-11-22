@@ -45867,11 +45867,12 @@
    "label": "가변 변형 특징",
    "parent": "recourse-audit-integer-programming",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과거 연체를 최근 연체로 바꾸는 설계.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "certified-infeasibility",
@@ -58448,6 +58449,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "중앙값 사람이 움직여야 하는 백분위 폭.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "feature-mutability-ablation-audit",
+   "label": "변경 가능성 비교 감사",
+   "parent": "mutable-variant-feature",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징을 immutable/actionable로 바꿔 두 번 감사해 기여를 잰다.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "recency-window-choice",
+   "label": "최근성 구간 선택",
+   "parent": "mutable-variant-feature",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최근 N개월 기준을 정할 때의 공정성·성능 균형.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "forgetting-policy-credit",
+   "label": "신용 정보 망각 정책",
+   "parent": "mutable-variant-feature",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 연체 기록을 일정 기간 후 지우는 규정과 모델.",
    "related": [],
    "added": "2026-11-22"
   }
