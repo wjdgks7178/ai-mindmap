@@ -44829,11 +44829,12 @@
    "label": "작은 칸 표시",
    "parent": "dataset-composition-table",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "건수가 적은 칸의 신뢰도 경고.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-22"
   },
   {
    "id": "split-composition-check",
@@ -56907,6 +56908,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "결측 방향 학습 사용 여부와 변수별 결측률을 문서화.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "cell-merge-for-sample-size",
+   "label": "칸 병합으로 표본 늘리기",
+   "parent": "crosstab-small-cell-flag",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연령대·지역 등을 합쳐 작은 칸의 건수를 늘리는 방법과 정보 손실.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "statistical-disclosure-control-10-5",
+   "label": "10-5 규칙과 섭동",
+   "parent": "crosstab-small-cell-flag",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공표 시 10 미만 숨김·5 단위 반올림과 노이즈 섭동 방식의 비교.",
+   "added": "2026-11-22",
+   "related": []
+  },
+  {
+   "id": "multiple-comparison-groups",
+   "label": "집단 간 다중 비교",
+   "parent": "crosstab-small-cell-flag",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "칸이 많을수록 우연한 격차가 나오기 쉬운 문제.",
    "added": "2026-11-22",
    "related": []
   }
