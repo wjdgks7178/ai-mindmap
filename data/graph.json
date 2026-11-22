@@ -47052,11 +47052,12 @@
    "label": "Facets Overview",
    "parent": "facets-data-visualization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특징별 분포를 데이터셋 간 비교.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "facets-dive",
@@ -60324,6 +60325,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "로그·라벨링 때 포함 확률을 함께 저장하는 습관.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "facets-overview-python-package",
+   "label": "facets-overview 파이썬 패키지",
+   "parent": "facets-overview",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "pip로 설치하고 protobuf 3.20.0 이상이 필요한 통계 생성부.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "webcomponents-polyfill-notebook",
+   "label": "webcomponents 폴리필과 노트북",
+   "parent": "facets-overview",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HTML import 방식 시각화가 노트북에서 로드되는 조건.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "train-test-distribution-eyeball",
+   "label": "학습-시험 분포 눈으로 점검",
+   "parent": "facets-overview",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드 전에 분포 비교 화면으로 이상을 훑는 습관.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "dataset-comparison-views",
+   "label": "데이터셋 비교 뷰",
+   "parent": "facets-overview",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 데이터셋의 특징 통계를 나란히 놓는 방식.",
    "related": [],
    "added": "2026-11-22"
   }
