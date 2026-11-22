@@ -46284,11 +46284,14 @@
    "label": "사용량 기반 라이선스",
    "parent": "data-compensation-markets",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "크롤·추론 단위 과금 모델.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "collective-licensing-rsl"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "collective-licensing-rsl",
@@ -59160,6 +59163,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "인증·과금을 처리하는 선택 확장.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "http-402-payment-required",
+   "label": "HTTP 402 Payment Required",
+   "parent": "usage-based-ai-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오래 방치된 상태 코드를 크롤 과금에 쓰는 방식.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "http-message-signatures",
+   "label": "HTTP Message Signatures",
+   "parent": "usage-based-ai-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청에 서명해 크롤러 신원을 검증하는 RFC 9421.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "merchant-of-record-crawl",
+   "label": "Merchant of Record 정산",
+   "parent": "usage-based-ai-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중개자가 청구·분배를 대행하는 구조.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "flat-per-request-pricing",
+   "label": "요청당 단일 가격",
+   "parent": "usage-based-ai-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서별 가치 차이를 못 담는 가격 정책의 한계.",
    "related": [],
    "added": "2026-11-22"
   }
