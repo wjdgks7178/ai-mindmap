@@ -47153,11 +47153,12 @@
    "label": "Spark 버전 맞추기",
    "parent": "pydeequ",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Deequ·PyDeequ 버전과 Spark 버전 호환.",
    "related": [],
-   "added": "2026-11-19"
+   "added": "2026-11-19",
+   "done": "2026-11-22"
   },
   {
    "id": "wilson-completeness-bound",
@@ -60752,6 +60753,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본이 작을 때 자동 제안 기준이 정상 데이터에서 실패.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "spark-version-env-var",
+   "label": "SPARK_VERSION 환경 변수",
+   "parent": "spark-version-matching",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "import 전에 Spark 버전에 맞는 Deequ 빌드를 고르는 설정.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "deequ-maven-coordinate",
+   "label": "Deequ Maven 좌표",
+   "parent": "spark-version-matching",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "spark.jars.packages에 jar를 지정하는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "managed-spark-jar-install",
+   "label": "관리형 Spark의 jar 설치",
+   "parent": "spark-version-matching",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Databricks 등에서 세션 대신 클러스터에 jar를 올리는 방법.",
+   "related": [],
+   "added": "2026-11-22"
+  },
+  {
+   "id": "pydeequ-1-6-legacy-spark",
+   "label": "PyDeequ 1.6.0과 구 Spark",
+   "parent": "spark-version-matching",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Spark 3.1~3.4에서 쓰는 마지막 릴리스.",
    "related": [],
    "added": "2026-11-22"
   }
