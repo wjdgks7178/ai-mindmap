@@ -47540,11 +47540,14 @@
    "label": "데이터 신뢰성",
    "parent": "iso-25012-inherent-characteristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이해관계자가 믿고 쓸 수 있는 정도.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-accuracy-syntactic-semantic"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "quality-rule-per-characteristic",
@@ -62183,6 +62186,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델이 학습 이후 사건을 모르는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-authenticity",
+   "label": "데이터 진정성",
+   "parent": "data-credibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처와 귀속이 진짜인지 확인하는 성질.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "authoritative-source-allowlist",
+   "label": "권위 출처 허용 목록",
+   "parent": "data-credibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "믿을 수 있는 출처를 목록으로 관리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "provenance-metadata-coverage",
+   "label": "출처 메타데이터 보유율",
+   "parent": "data-credibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처·수집 방법·담당자 기록이 있는 비율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "citation-for-credibility",
+   "label": "인용으로 신뢰성 확보",
+   "parent": "data-credibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 답변에 출처를 달아 검증 가능하게.",
    "related": [],
    "added": "2026-11-23"
   }
