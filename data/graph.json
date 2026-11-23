@@ -48321,11 +48321,15 @@
    "label": "허용 최신성 지연(max_staleness)",
    "parent": "materialized-view",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "뷰가 얼마나 뒤처져도 되는지 정하는 설정. 30분~3일(BigQuery).",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "incremental-refresh",
+    "smart-tuning"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "smart-tuning",
@@ -64960,6 +64964,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "중첩 데이터를 열 형식으로 질의하는 Google 시스템.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "refresh-interval-minutes",
+   "label": "refresh_interval_minutes",
+   "parent": "max-staleness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구체화 뷰 자동 갱신 주기 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-three-day-refresh-rule",
+   "label": "3일 갱신 규칙",
+   "parent": "max-staleness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "3일 넘게 갱신 안 되면 쿼리가 실패할 수 있다는 운영 제약.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cdc-staleness-twice-rule",
+   "label": "CDC 기본 테이블의 두 배 규칙",
+   "parent": "max-staleness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "max_staleness를 기본 테이블 값의 두 배 이상으로.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "staleness-cost-latency-tradeoff",
+   "label": "최신성 vs 비용·지연",
+   "parent": "max-staleness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "간격을 늘리면 싸고 빠르지만 덜 최신.",
    "related": [],
    "added": "2026-11-23"
   }
