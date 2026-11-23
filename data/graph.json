@@ -48385,11 +48385,15 @@
    "label": "스키마 고칠까 데이터 고칠까",
    "parent": "tfdv-anomaly-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이상 발견 시 스키마 갱신 vs 원본 수정 판단 기준.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "anomaly-example-level-validation",
+    "supplier-quality-annex"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "nan-inf-checks",
@@ -65189,6 +65193,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "예제마다 검사하는 만큼 큰 데이터에서 비용이 큼.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-erosion",
+   "label": "스키마 침식",
+   "parent": "schema-vs-data-fix-decision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경보가 귀찮아 스키마를 계속 넓혀 검증이 무의미해지는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "new-category-model-encoding",
+   "label": "새 범주와 모델 인코딩",
+   "parent": "schema-vs-data-fix-decision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마에 새 값을 추가할 때 모델 입력 처리도 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fix-at-source",
+   "label": "원천에서 고치기",
+   "parent": "schema-vs-data-fix-decision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수신 측 땜질 대신 생산자에서 수정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-version-log",
+   "label": "스키마 변경 이력",
+   "parent": "schema-vs-data-fix-decision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마 변경을 버전 관리하고 사유 기록.",
    "related": [],
    "added": "2026-11-23"
   }
