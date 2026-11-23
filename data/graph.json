@@ -48055,11 +48055,15 @@
    "label": "Z-order 열 수 한계",
    "parent": "z-order-clustering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "열이 늘수록 효과가 떨어짐.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "liquid-clustering",
+    "bit-interleaving"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "use-exception-approval",
@@ -64045,6 +64049,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가까운 점이 블록 경계에서 멀어지는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "zorder-column-selection",
+   "label": "Z-order 열 선택",
+   "parent": "zorder-column-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터에 자주 쓰는 고카디널리티 열을 고르는 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "colocation-effect",
+   "label": "colocation 효과",
+   "parent": "zorder-column-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비슷한 값이 같은 파일에 모이는 정도.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "compaction-vs-zorder",
+   "label": "컴팩션 vs Z-order",
+   "parent": "zorder-column-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일 합치기와 값 모으기의 효과 차이.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "multi-column-skipping-tradeoff",
+   "label": "다열 스킵의 절충",
+   "parent": "zorder-column-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열을 더할 때 단일 열 질의가 느려질 수 있는 문제.",
    "related": [],
    "added": "2026-11-23"
   }
