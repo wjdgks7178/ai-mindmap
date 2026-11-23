@@ -47481,11 +47481,15 @@
    "label": "허용 편향 기준 정하기",
    "parent": "skew-measurement-stages",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "격차 크기를 서비스 위험에 맞춰 정함.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "skew-threshold-tuning",
+    "feature-consistency-check"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "time-based-split-rule",
@@ -62040,6 +62044,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "구글의 ML 실무 규칙 43개 모음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "skew-vs-drift",
+   "label": "skew vs drift",
+   "parent": "acceptable-skew-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 대 서빙의 차이와 시간에 따른 변화 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "psi-ks-thresholds",
+   "label": "PSI·KS 임계 관행",
+   "parent": "acceptable-skew-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 변화 지표 PSI와 KS의 흔한 경고 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "baseline-skew-from-good-period",
+   "label": "정상 기간 기준선",
+   "parent": "acceptable-skew-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 트래픽에서 skew를 먼저 재어 기준 잡기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "alert-fatigue-thresholds",
+   "label": "경보 피로와 임계값",
+   "parent": "acceptable-skew-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "너무 엄격한 기준이 만드는 무시되는 경보.",
    "related": [],
    "added": "2026-11-23"
   }
