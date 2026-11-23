@@ -47819,11 +47819,15 @@
    "label": "DQ 책임 체계",
    "parent": "iso-5259-part5-governance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 품질 책임을 누가 지는지 정의.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-quality-governing-body",
+    "dq-checklist-owner-column"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "ambiguous-data-responsibility",
@@ -63210,6 +63214,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정하고 감독하는 쪽과 이행하는 쪽의 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raci-data-quality",
+   "label": "데이터 품질 RACI",
+   "parent": "data-quality-accountabilities",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "A·R·C·I로 역할별 책임을 표로 정리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "governance-council-escalation",
+   "label": "거버넌스 위원회 에스컬레이션",
+   "parent": "data-quality-accountabilities",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인 간 영향 사안을 위원회가 정리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-consumer-feedback",
+   "label": "소비자 피드백을 조기 경보로",
+   "parent": "data-quality-accountabilities",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소비자 보고를 품질 문제 신호로 쓰기.",
    "related": [],
    "added": "2026-11-23"
   }
