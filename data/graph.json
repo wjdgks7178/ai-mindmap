@@ -47862,11 +47862,15 @@
    "label": "교차 조합 커버리지",
    "parent": "data-representativeness",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "속성 조합별로 데이터가 있는지 점검.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-balance-characteristic",
+    "post-stratification-weights"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "target-population-definition",
@@ -63547,6 +63551,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "가중 모델에서 작은 범주를 합쳐 극단 가중치 줄이기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "subgroup-performance-reporting",
+   "label": "하위 집단별 성능 보고",
+   "parent": "intersectional-coverage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단·조합별 오류율을 따로 보고.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "combinatorial-explosion-attributes",
+   "label": "속성 조합 폭발",
+   "parent": "intersectional-coverage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속성이 늘수록 칸 수가 지수적으로 증가.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "benchmark-demographic-skew",
+   "label": "벤치마크의 인구 구성 쏠림",
+   "parent": "intersectional-coverage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IJB-A·Adience처럼 한 집단에 편중된 벤치마크.",
    "related": [],
    "added": "2026-11-23"
   }
