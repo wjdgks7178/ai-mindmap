@@ -48010,11 +48010,15 @@
    "label": "Liquid clustering",
    "parent": "z-order-clustering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Databricks가 새 테이블에 권장하는 클러스터링.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-skipping-statistics",
+    "data-partitioning-pruning"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-skipping-statistics",
@@ -63868,6 +63872,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "EXPLAIN으로 불필요한 WHERE 조건을 찾기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cluster-by-auto",
+   "label": "CLUSTER BY AUTO",
+   "parent": "liquid-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클러스터링 키를 자동으로 고르는 기능.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "optimize-full-recluster",
+   "label": "OPTIMIZE FULL",
+   "parent": "liquid-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기존 데이터를 새 키로 다시 클러스터링.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "predictive-optimization",
+   "label": "예측 최적화",
+   "parent": "liquid-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "OPTIMIZE 같은 유지보수를 자동으로 실행.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "clustering-key-limit-four",
+   "label": "클러스터링 키 4개 한계",
+   "parent": "liquid-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "키가 많을수록 단일 열 필터가 느려질 수 있음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "migrate-partition-to-clustering",
+   "label": "파티션에서 클러스터링으로 이전",
+   "parent": "liquid-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파티션 열·ZORDER 열을 키로 옮기는 방법.",
    "related": [],
    "added": "2026-11-23"
   }
