@@ -22077,33 +22077,45 @@
    "label": "확신 점수 표시",
    "parent": "trust-calibration",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측마다 확신을 보여 주는 UI.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "trust-calibration",
+    "local-explanation-limits"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "human-complementary-knowledge",
    "label": "사람의 보완 지식",
    "parent": "trust-calibration",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 오류를 바로잡을 고유 지식.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "trust-calibration",
+    "confidence-score-display"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "local-explanation-limits",
    "label": "국소 설명의 한계",
    "parent": "trust-calibration",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측별 설명이 보정에 도움 안 될 수 있음.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "trust-calibration",
+    "confidence-score-display"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "prospect-theory-calibration",
@@ -67245,6 +67257,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "고르게 할 때 호감이 약해짐.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "confidence-calibration-requirement",
+   "label": "확신도 보정 요건",
+   "parent": "confidence-score-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신도가 실제 정확도와 맞아야 의미가 있음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "switch-percentage-metric",
+   "label": "switch 비율 지표",
+   "parent": "confidence-score-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI를 따라 답을 바꾸는 비율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "human-ai-uncertainty-correlation",
+   "label": "사람-AI 불확실성 상관",
+   "parent": "confidence-score-display",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 어려워하는 사례를 사람도 어려워함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "shapley-attribution-chart",
+   "label": "Shapley 속성 기여도 그림",
+   "parent": "local-explanation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속성별 기여도를 막대로 표시.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "explanation-accepts-wrong-predictions",
+   "label": "설명이 틀린 예측 수용을 높이는 문제",
+   "parent": "local-explanation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답·오답 사례를 나눠 수용률 측정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-outperforms-human-confound",
+   "label": "AI가 크게 우세한 실험의 교란",
+   "parent": "local-explanation-limits",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 우세 때문에 신뢰가 올랐을 가능성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-assisted-decision-making",
+   "label": "AI 보조 의사결정",
+   "parent": "human-complementary-knowledge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람과 AI의 강점을 결합.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "blind-delegation",
+   "label": "블라인드 위임",
+   "parent": "human-complementary-knowledge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 예측을 보지 않고 위임.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "unique-human-information",
+   "label": "사람 고유 정보 정의",
+   "parent": "human-complementary-knowledge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 입력에 없는 정보가 무엇인지.",
    "related": [],
    "added": "2026-11-23"
   }
