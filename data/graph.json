@@ -22025,22 +22025,30 @@
    "label": "알고리즘 회피",
    "parent": "undertrust-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "알고리즘이 틀리는 걸 본 뒤 버리는 경향.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "undertrust-ai",
+    "algorithm-appreciation"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "algorithm-appreciation",
    "label": "알고리즘 호감",
    "parent": "undertrust-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "알고리즘 조언을 더 무겁게 보는 경향.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "undertrust-ai",
+    "algorithm-aversion"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "second-opinion-effect",
@@ -67171,6 +67179,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "판정자는 경고, 코드 평가자는 차단.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "confidence-loss-asymmetry",
+   "label": "확신 하락의 비대칭",
+   "parent": "algorithm-aversion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "알고리즘이 사람보다 빨리 신뢰를 잃는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "incentivized-choice-experiment",
+   "label": "보너스 연동 선택 실험",
+   "parent": "algorithm-aversion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 결과에 보수를 연동해 선택을 측정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "algorithm-error-expectation-setting",
+   "label": "오류 기대치 사전 안내",
+   "parent": "algorithm-aversion",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도와 오류 빈도를 미리 알림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "expertise-and-advice-taking",
+   "label": "전문성과 조언 수용",
+   "parent": "algorithm-appreciation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가가 알고리즘 조언을 덜 따르는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "advice-source-labeling",
+   "label": "조언 출처 표기 효과",
+   "parent": "algorithm-appreciation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 조언도 출처에 따라 다르게 반응.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "own-vs-algorithm-choice",
+   "label": "자기 추정 vs 알고리즘 선택",
+   "parent": "algorithm-appreciation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고르게 할 때 호감이 약해짐.",
    "related": [],
    "added": "2026-11-23"
   }
