@@ -22868,33 +22868,45 @@
    "label": "골드 문제",
    "parent": "data-labeling-qa",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답이 확실한 문제를 섞어 평가자 점검.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-labeling-qa",
+    "inter-labeler-reliability"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "adjudication",
    "label": "판정 adjudication",
    "parent": "data-labeling-qa",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불일치를 선임이 결정·기록.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-labeling-qa",
+    "labeling-guideline-design"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "labeling-guideline-design",
    "label": "라벨링 지침 설계",
    "parent": "data-labeling-qa",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "판단 절차·근접 오답 예시·우선 규칙.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-labeling-qa",
+    "adjudication"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "oracle-document",
@@ -69064,6 +69076,127 @@
    "status": "planned",
    "priority": 3,
    "summary": "HotpotQA 등에서의 향상폭.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gold-injection-rate",
+   "label": "골드 삽입 비율",
+   "parent": "gold-tasks",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "3~10%를 섞는 이유.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rolling-window-accuracy",
+   "label": "이동 창 정확도",
+   "parent": "gold-tasks",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평생 평균 대신 최근 정확도.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gold-rotation",
+   "label": "골드 교체",
+   "parent": "gold-tasks",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정적 골드가 새는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "stratified-audit-ambiguous",
+   "label": "모호 항목 층화 감사",
+   "parent": "gold-tasks",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드가 못 보는 모호한 항목 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "label-distribution-storage",
+   "label": "라벨 분포 저장",
+   "parent": "adjudication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주관 과제의 전체 분포 보관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "disagreement-as-signal",
+   "label": "불일치는 신호",
+   "parent": "adjudication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CrowdTruth의 관점.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "error-vs-ambiguity",
+   "label": "오류 vs 모호성",
+   "parent": "adjudication",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교육 문제인지 항목 모호성인지 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "near-miss-examples",
+   "label": "근접 오답 예시",
+   "parent": "labeling-guideline-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해당할 것 같지만 아닌 사례.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "tie-break-rule",
+   "label": "동점 규칙",
+   "parent": "labeling-guideline-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 라벨에 맞는 항목의 규칙.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "krippendorff-alpha-thresholds",
+   "label": "Krippendorff α 기준",
+   "parent": "labeling-guideline-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0.8·0.667 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "newcomer-hardest-ten-test",
+   "label": "어려운 10개 신입 시험",
+   "parent": "labeling-guideline-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 이해 점검.",
    "related": [],
    "added": "2026-11-23"
   }
