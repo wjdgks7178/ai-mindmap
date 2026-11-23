@@ -22607,44 +22607,59 @@
    "label": "Needle in a Haystack",
    "parent": "long-context-limits",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "장문 검색 시험과 그 한계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "long-context-limits",
+    "context-quality-vs-faithfulness"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "golden-reference-set",
    "label": "골든 레퍼런스 세트",
    "parent": "eval-set-first",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "질문과 정답 기준을 짝지어 고정한 세트.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "eval-set-first",
+    "golden-dataset-versioning"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "one-variable-at-a-time",
    "label": "한 번에 한 변수",
    "parent": "eval-set-first",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "원인 분리를 위한 실험 원칙.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "eval-set-first"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "retrieval-vs-generation-eval",
    "label": "검색 평가 vs 생성 평가",
    "parent": "eval-set-first",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "RAG의 두 구성요소를 따로 재기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "eval-set-first",
+    "context-quality-vs-faithfulness"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "held-out-eval-set",
@@ -68391,6 +68406,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "본문과 다른 스타일.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "nolima-benchmark",
+   "label": "NoLiMa",
+   "parent": "needle-in-a-haystack",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어휘 겹침 없는 장문 검색 시험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "shuffled-haystack-finding",
+   "label": "섞인 haystack이 더 쉬운 현상",
+   "parent": "needle-in-a-haystack",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일관된 문서가 오히려 불리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "focused-vs-full-input",
+   "label": "집중 입력 vs 전체 입력",
+   "parent": "needle-in-a-haystack",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관련 부분만 넣을 때 정확도가 높음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reference-free-metrics",
+   "label": "레퍼런스 없는 지표",
+   "parent": "golden-reference-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 없이 계산하는 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rouge-bleu-metrics",
+   "label": "ROUGE·BLEU",
+   "parent": "golden-reference-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "계산 기반 비교 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "chunk-size-experiment",
+   "label": "청크 크기 실험",
+   "parent": "one-variable-at-a-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "400·600·1200자 비교.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "variable-interaction-limit",
+   "label": "변수 상호작용 한계",
+   "parent": "one-variable-at-a-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 변수씩으로 안 보이는 조합 효과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "freeze-config-after-plateau",
+   "label": "개선 정체 시 설정 고정",
+   "parent": "one-variable-at-a-time",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "더 안 오르면 고정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "generation-metrics-groundedness-verbosity",
+   "label": "생성 지표 묶음",
+   "parent": "retrieval-vs-generation-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "근거성·장황함·지시 준수·품질.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "retrieval-metric-selection",
+   "label": "검색 지표 선택",
+   "parent": "retrieval-vs-generation-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도 지표는 직접 고름.",
    "related": [],
    "added": "2026-11-23"
   }
