@@ -48542,11 +48542,15 @@
    "label": "교차 슬라이싱",
    "parent": "data-statistics-slicing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 피처 조합(국가×주)으로 자르는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "slice-cardinality-cost",
+    "intersectional-coverage"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "slice-based-fairness-check",
@@ -65632,6 +65636,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "장기 기준 분포와 직전 스팬 비교를 병행.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "average-hides-subgroup",
+   "label": "평균에 묻히는 하위 집단",
+   "parent": "cross-feature-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체·단일 평균이 특정 조합의 문제를 가림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "slice-simulation-example",
+   "label": "슬라이스 시뮬레이션 실습",
+   "parent": "cross-feature-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가상 데이터로 단일·교차 슬라이스 비교.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "slice-min-sample-floor",
+   "label": "슬라이스 최소 표본 하한",
+   "parent": "cross-feature-slicing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 칸은 통계가 불안정해 보고하지 않음.",
    "related": [],
    "added": "2026-11-23"
   }
