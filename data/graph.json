@@ -47684,11 +47684,15 @@
    "label": "합격선 정하기",
    "parent": "data-quality-checklist-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분포 확인 후 위험에 맞춰 조정.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "acceptable-skew-threshold",
+    "quality-rule-per-characteristic"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "dq-data-freshness-rule",
@@ -62738,6 +62742,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "마지막 갱신 여부와 행 단위 나이의 차이.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "threshold-overfitting-to-sample",
+   "label": "합격선의 표본 과적합",
+   "parent": "dq-threshold-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 표본에 맞춘 임계값이 운영에서 틀리는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "suggestion-holdout-validation",
+   "label": "제안 규칙의 홀드아웃 검증",
+   "parent": "dq-threshold-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 데이터로 제안하고 나머지로 시험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "risk-based-threshold",
+   "label": "위험 기반 합격선",
+   "parent": "dq-threshold-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류 비용에 맞춰 엄격도를 조절.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "threshold-review-cycle",
+   "label": "합격선 재검토 주기",
+   "parent": "dq-threshold-setting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영 결과를 보고 기준을 갱신하는 주기.",
    "related": [],
    "added": "2026-11-23"
   }
