@@ -48400,11 +48400,15 @@
    "label": "NaN·Inf 검사",
    "parent": "tfdv-anomaly-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수치 피처의 NaN·무한대 값 탐지와 처리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "feature-consistency-check",
+    "schema-vs-data-fix-decision"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "schema-new-column-anomaly",
@@ -65237,6 +65241,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "스키마 변경을 버전 관리하고 사유 기록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "nan-vs-null",
+   "label": "NaN vs null",
+   "parent": "nan-inf-checks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정의되지 않은 수와 값 없음의 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "nan-self-inequality",
+   "label": "NaN의 자기 불일치",
+   "parent": "nan-inf-checks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NaN은 자기 자신과도 같지 않아 ==로 찾을 수 없음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "overflow-to-inf",
+   "label": "오버플로와 Inf",
+   "parent": "nan-inf-checks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범위를 넘은 계산이 무한대가 되는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "division-by-zero-handling",
+   "label": "0 나눗셈 처리",
+   "parent": "nan-inf-checks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어·엔진마다 NaN·null·오류로 달라지는 처리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "numeric-cleaning-rule-parity",
+   "label": "수치 정리 규칙의 학습·서빙 일치",
+   "parent": "nan-inf-checks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제거·대체 방식을 양쪽에서 똑같이 적용.",
    "related": [],
    "added": "2026-11-23"
   }
