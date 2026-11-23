@@ -48310,11 +48310,15 @@
    "label": "증분 갱신",
    "parent": "materialized-view",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경분만 반영해 뷰를 갱신. 전체 재계산과 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "max-staleness",
+    "smart-tuning"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "max-staleness",
@@ -65008,6 +65012,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "간격을 늘리면 싸고 빠르지만 덜 최신.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "allow-non-incremental-definition",
+   "label": "allow_non_incremental_definition",
+   "parent": "incremental-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비증분 구체화 뷰를 만들기 위한 옵션.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-supported-sql-limits",
+   "label": "구체화 뷰 SQL 제약",
+   "parent": "incremental-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지원 문법·집계 함수와 중첩·외부 테이블 제한.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-aggregate-sketch-storage",
+   "label": "집계 스케치 저장",
+   "parent": "incremental-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AVG 등이 내부 BYTES 스케치로 저장되는 이유.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-base-table-change-invalidation",
+   "label": "기본 테이블 변경과 뷰 무효화",
+   "parent": "incremental-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경이 뷰를 무효화하면 기본 테이블을 직접 읽음.",
    "related": [],
    "added": "2026-11-23"
   }
