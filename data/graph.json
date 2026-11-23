@@ -47334,11 +47334,14 @@
    "label": "학습-서빙 특징 일관성 점검",
    "parent": "log-serving-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 예시의 두 경로 값을 대조.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "online-offline-feature-parity"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "online-offline-feature-parity",
@@ -61471,6 +61474,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "페이로드와 메타데이터의 보관 기한을 분리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "skew-join-identifier-design",
+   "label": "skew 비교용 식별자 설계",
+   "parent": "feature-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 경로를 짝지을 사용자·시점 키를 정하는 법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "float-rounding-tolerance",
+   "label": "부동소수 허용 오차",
+   "parent": "feature-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반올림 자릿수로 가짜 불일치를 줄이기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "js-divergence-vs-linf",
+   "label": "Jensen-Shannon 발산 vs L-infinity 거리",
+   "parent": "feature-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 차이를 재는 두 지표의 차이.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "skew-threshold-tuning",
+   "label": "skew 임계값 조정",
+   "parent": "feature-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본값 0.3을 특징별 영향에 맞게 바꾸기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "point-in-time-leakage",
+   "label": "시점 누수",
+   "parent": "feature-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 특징에 미래 정보가 섞이는 문제.",
    "related": [],
    "added": "2026-11-23"
   }
