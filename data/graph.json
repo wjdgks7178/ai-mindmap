@@ -47635,11 +47635,15 @@
    "label": "계보 그래프로 원인 찾기",
    "parent": "data-traceability",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이상 숫자의 상류 변화를 추적.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "openlineage",
+    "lineage-gaps-manual-steps"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "lineage-gaps-manual-steps",
@@ -62454,6 +62458,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 데이터의 출처·가공 이력을 문서화.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "change-ledger",
+   "label": "변경 장부",
+   "parent": "lineage-graph-debugging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 정상과 첫 불량 사이의 변경을 시간순으로 나열.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "column-level-lineage",
+   "label": "열 단위 계보",
+   "parent": "lineage-graph-debugging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필드 하나가 어떤 열에서 왔는지 추적.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lineage-impact-analysis",
+   "label": "계보 영향 분석",
+   "parent": "lineage-graph-debugging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하류로 어떤 자산이 깨지는지 열거.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "first-broken-boundary",
+   "label": "첫 깨진 경계",
+   "parent": "lineage-graph-debugging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상류는 맞고 하류가 처음 틀린 지점.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "as-of-lineage-view",
+   "label": "사고 시점 기준 계보 보기",
+   "parent": "lineage-graph-debugging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사고 당시의 구조·상태로 계보를 본다.",
    "related": [],
    "added": "2026-11-23"
   }
