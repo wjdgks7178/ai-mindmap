@@ -48268,11 +48268,15 @@
    "label": "CSV vs Parquet 실험",
    "parent": "parquet-columnar-format",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "크기와 읽기 시간을 직접 비교.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "column-pruning",
+    "parquet-compression-codecs"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "parquet-compression-codecs",
@@ -64698,6 +64702,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "승인된 예외가 실제 용도와 일치하는지 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "synthetic-benchmark-limits",
+   "label": "합성 벤치마크의 한계",
+   "parent": "csv-vs-parquet-experiment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 데이터는 실제 압축률·속도를 대표하지 못함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "csv-single-column-read-cost",
+   "label": "CSV 한 열 읽기 비용",
+   "parent": "csv-vs-parquet-experiment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CSV는 한 열만 필요해도 모든 행을 파싱.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "pyarrow-multithreaded-csv-reader",
+   "label": "pyarrow 다중 스레드 CSV 리더",
+   "parent": "csv-vs-parquet-experiment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CSV 전체 읽기가 빠른 이유.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "parquet-gzip-write-cost",
+   "label": "Parquet gzip 쓰기 비용",
+   "parent": "csv-vs-parquet-experiment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "gzip 압축 쓰기가 느린 이유와 수준 설정.",
    "related": [],
    "added": "2026-11-23"
   }
