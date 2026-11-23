@@ -46580,11 +46580,14 @@
    "label": "카나리 문서 프로브",
    "parent": "zombie-documents",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "삭제한 가짜 문서가 응답에 나오는지 경보.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "deletion-audit-sampling"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "inconsistency-window",
@@ -61308,6 +61311,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "접근 차단까지와 실제 제거까지를 따로 재는 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "canary-fixture-design",
+   "label": "카나리 문서 설계",
+   "parent": "canary-document-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고유 사실을 담은 합성 문서를 만들고 삭제 전 검색 가능을 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "delete-propagation-grace-window",
+   "label": "삭제 전파 허용 지연",
+   "parent": "canary-document-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복제 지연을 고려해 경보 전 기다리는 시간과 재시도.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reingestion-race-after-delete",
+   "label": "삭제 후 재수집 경합",
+   "parent": "canary-document-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진행 중이던 수집 작업이 삭제 뒤 문서를 되살리는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-and-memory-residue",
+   "label": "캐시·대화 기억 잔류",
+   "parent": "canary-document-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "색인을 지워도 캐시 답변과 기억에 옛 내용이 남는 문제.",
    "related": [],
    "added": "2026-11-23"
   }
