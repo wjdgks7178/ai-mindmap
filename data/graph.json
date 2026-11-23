@@ -47598,11 +47598,15 @@
    "label": "데이터 이식과 이전",
    "parent": "iso-25012-system-dependent-characteristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "포맷·스키마 변환을 포함한 이전 절차.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "backup-restore-testing",
+    "pilot-light-vs-warm-standby"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "openlineage",
@@ -62631,6 +62635,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "Deequ·dbt·GX·Soda·MobyDQ·Griffin의 특징.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "row-hash-reconciliation",
+   "label": "행 해시 대조",
+   "parent": "data-portability-migration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 표를 행 단위 해시로 비교해 다른 행만 찾기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "strangler-fig-migration",
+   "label": "Strangler Fig 점진 이전",
+   "parent": "data-portability-migration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 시스템 기능을 조금씩 새 시스템으로 대체.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "migration-rollback-plan",
+   "label": "이전 롤백 계획",
+   "parent": "data-portability-migration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전환 전 되돌리기 절차를 시험해 두기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-mapping-document",
+   "label": "스키마 매핑 문서",
+   "parent": "data-portability-migration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필드 대응·변환 규칙·기본값을 문서화.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "open-format-export",
+   "label": "개방 포맷 내보내기",
+   "parent": "data-portability-migration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Parquet·CSV 등 표준 포맷으로 옮길 수 있게 하기.",
    "related": [],
    "added": "2026-11-23"
   }
