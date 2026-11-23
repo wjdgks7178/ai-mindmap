@@ -21793,22 +21793,28 @@
    "label": "힌트 요청 패널티",
    "parent": "hint-escalation-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "힌트를 오답처럼 기록하는 설계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-escalation-rule"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "hint-timing-context",
    "label": "힌트 시점과 맥락",
    "parent": "hint-escalation-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사전지식·마감에 따라 효과가 다름.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-escalation-rule"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "gaming-the-system",
@@ -66587,6 +66593,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "버튼이 항상 보이는 것이 주는 신호.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "self-regulated-learning",
+   "label": "자기조절 학습",
+   "parent": "hint-request-penalty",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스스로 계획·점검하며 배우는 능력.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bottom-out-penalty-only",
+   "label": "바텀아웃만 감점",
+   "parent": "hint-request-penalty",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 보기만 오답으로 기록하는 설계.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hint-use-chilling-effect",
+   "label": "힌트 위축 효과",
+   "parent": "hint-request-penalty",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패널티가 필요한 학생의 요청을 막는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hints-early-vs-late",
+   "label": "초기 힌트 허용 vs 지연",
+   "parent": "hint-timing-context",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처음 몇 문제의 힌트 허용 여부 비교.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "winsorization",
+   "label": "윈저화",
+   "parent": "hint-timing-context",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극단값을 경계값으로 대체하는 보정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hint-policy-ab-test",
+   "label": "힌트 정책 A/B 테스트",
+   "parent": "hint-timing-context",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습자 집단별로 정책을 시험.",
    "related": [],
    "added": "2026-11-23"
   }
