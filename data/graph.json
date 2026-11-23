@@ -48040,11 +48040,15 @@
    "label": "비트 인터리빙",
    "parent": "z-order-clustering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 열 값의 비트를 번갈아 배치.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "z-order-clustering",
+    "zorder-column-limit"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "zorder-column-limit",
@@ -63986,6 +63990,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "컬럼형 파일 메타데이터의 페이지별 범위.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "morton-code",
+   "label": "Morton 코드",
+   "parent": "bit-interleaving",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비트 인터리빙으로 만든 Z-순서 값.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bigmin-litmax",
+   "label": "BIGMIN·LITMAX",
+   "parent": "bit-interleaving",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Z-순서에서 질의 범위의 다음·이전 값을 계산해 건너뛰기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hilbert-curve",
+   "label": "Hilbert 곡선",
+   "parent": "bit-interleaving",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Z-순서보다 지역성이 좋은 공간 채움 곡선.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ub-tree",
+   "label": "UB-트리",
+   "parent": "bit-interleaving",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Z-순서로 다차원 데이터를 B-트리에 넣는 구조.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "z-order-jump-boundary",
+   "label": "Z-순서 경계 점프",
+   "parent": "bit-interleaving",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가까운 점이 블록 경계에서 멀어지는 현상.",
    "related": [],
    "added": "2026-11-23"
   }
