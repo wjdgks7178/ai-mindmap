@@ -23360,22 +23360,30 @@
    "label": "불확실성 샘플링",
    "parent": "active-learning-review",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가장 불확실한 건을 먼저 라벨링.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "active-learning-review",
+    "query-by-committee"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "query-by-committee",
    "label": "위원회 질의",
    "parent": "active-learning-review",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 모델이 불일치하는 건 선택.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "active-learning-review",
+    "uncertainty-sampling"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "al-cold-start",
@@ -23393,22 +23401,30 @@
    "label": "능동 학습 종료 기준",
    "parent": "active-learning-review",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측 안정화로 멈출 때 판단.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "active-learning-review",
+    "annotation-cost-sensitive"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "annotation-cost-sensitive",
    "label": "비용 민감 라벨링",
    "parent": "active-learning-review",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "건별 라벨링 시간을 반영한 선택.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "active-learning-review",
+    "al-stopping-criteria"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "one-way-sensitivity",
@@ -69848,6 +69864,160 @@
    "status": "planned",
    "priority": 3,
    "summary": "하나만 올리면 다른 지표가 깨짐.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "least-confident-sampling",
+   "label": "least confident 샘플링",
+   "parent": "uncertainty-sampling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최상위 확률이 가장 낮은 샘플.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "margin-sampling",
+   "label": "margin 샘플링",
+   "parent": "uncertainty-sampling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1위와 2위 확률 차이가 작은 샘플.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "entropy-sampling",
+   "label": "엔트로피 샘플링",
+   "parent": "uncertainty-sampling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 분포의 불확실성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "binary-equivalence-0-5",
+   "label": "이진에서 0.5 근처 동치",
+   "parent": "uncertainty-sampling",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "세 방식이 같아지는 경우.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "version-space",
+   "label": "version space",
+   "parent": "query-by-committee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "현재 라벨과 일관된 가설 집합.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "vote-entropy",
+   "label": "vote entropy",
+   "parent": "query-by-committee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위원 투표의 엔트로피.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "query-by-bagging",
+   "label": "query-by-bagging/boosting",
+   "parent": "query-by-committee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "앙상블로 위원회를 구성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "committee-size-small",
+   "label": "작은 위원회",
+   "parent": "query-by-committee",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2~3개로도 잘 작동.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "performance-plateau-stop",
+   "label": "정체 기반 종료",
+   "parent": "al-stopping-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도가 평평해지면 중단.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "economic-stopping",
+   "label": "경제적 종료",
+   "parent": "al-stopping-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용이 이득을 넘으면 중단.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "prediction-stability-stop",
+   "label": "예측 안정화 종료",
+   "parent": "al-stopping-criteria",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 예측 변화가 줄면 종료.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "decision-theoretic-query",
+   "label": "결정이론적 질의",
+   "parent": "annotation-cost-sensitive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 비용 + 오분류 비용.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cost-regression-model",
+   "label": "비용 회귀 모델",
+   "parent": "annotation-cost-sensitive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메타 특징으로 라벨 비용 예측.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "variable-annotation-cost",
+   "label": "가변 라벨링 비용",
+   "parent": "annotation-cost-sensitive",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플별 비용이 다름.",
    "related": [],
    "added": "2026-11-23"
   }
