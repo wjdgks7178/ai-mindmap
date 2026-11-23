@@ -47451,11 +47451,15 @@
    "label": "ML 분석 부채",
    "parent": "feedback-loop-ml",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "출시 전 행동을 예측하기 어려운 부채.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "hidden-feedback-loop",
+    "direct-feedback-loop"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "holdout-vs-next-day",
@@ -61885,6 +61889,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "새 항목의 데이터를 얻기 위한 탐색.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cace-principle",
+   "label": "CACE 원칙",
+   "parent": "ml-analysis-debt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하나를 바꾸면 모든 것이 바뀐다는 ML 얽힘 원칙.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "prediction-bias-monitoring",
+   "label": "예측 편향 모니터링",
+   "parent": "ml-analysis-debt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 라벨 분포와 관측 분포를 비교하는 진단.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-dependency-debt",
+   "label": "데이터 의존성 부채",
+   "parent": "ml-analysis-debt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불안정한 입력과 미사용 특징이 만드는 부채.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "configuration-debt",
+   "label": "설정 부채",
+   "parent": "ml-analysis-debt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ML 시스템 설정 관리 부실에서 오는 부채.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ml-debt-measurement-questions",
+   "label": "ML 부채 점검 질문",
+   "parent": "ml-analysis-debt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "논문이 제시한 부채 정도를 가늠하는 질문 목록.",
    "related": [],
    "added": "2026-11-23"
   }
