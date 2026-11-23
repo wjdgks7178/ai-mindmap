@@ -48456,11 +48456,15 @@
    "label": "Schema 프로토콜 버퍼",
    "parent": "schema-environments",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "schema.proto 필드: presence·value_count·domain 구조.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-new-column-anomaly",
+    "label-column-handling"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "l-infinity-norm-categorical",
@@ -65536,6 +65540,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "스키마엔 등록하되 모델 입력에서는 뺌.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-presence-constraint",
+   "label": "특징 존재 규칙(presence)",
+   "parent": "tfx-schema-proto",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "min_fraction·min_count로 특징 존재 비율을 규정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "value-count-constraint",
+   "label": "값 개수 규칙(value_count)",
+   "parent": "tfx-schema-proto",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예제당 값 개수의 min·max.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-lifecycle-stage",
+   "label": "특징 수명주기 단계",
+   "parent": "tfx-schema-proto",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "BETA·PRODUCTION·DISABLED 등 단계별 검증 여부.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "semantic-domains",
+   "label": "의미 도메인",
+   "parent": "tfx-schema-proto",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자연어·이미지·URL 같은 의미 정보를 가진 도메인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "shared-string-domain",
+   "label": "공유 문자열 도메인",
+   "parent": "tfx-schema-proto",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 특징이 이름으로 참조하는 최상위 문자열 도메인.",
    "related": [],
    "added": "2026-11-23"
   }
