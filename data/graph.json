@@ -47884,11 +47884,14 @@
    "label": "사후 층화 가중",
    "parent": "data-representativeness",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모집단/표본 비율로 가중치 계산.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "inverse-probability-weighting-logs"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "raci-data-responsibility",
@@ -63308,6 +63311,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "소유자가 떠난 자산의 소유 이전.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raking-iterative-proportional-fitting",
+   "label": "래킹(반복 비례 적합)",
+   "parent": "post-stratification-weights",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주변 분포만으로 가중치를 반복해 맞추는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "kish-design-effect",
+   "label": "Kish 설계 효과",
+   "parent": "post-stratification-weights",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 편차로 늘어나는 분산과 유효 표본 크기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "weight-trimming",
+   "label": "가중치 트리밍",
+   "parent": "post-stratification-weights",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극단적으로 큰 가중치를 잘라 분산을 줄이기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "inverse-propensity-score-weighting",
+   "label": "역성향점수 가중(IPW)",
+   "parent": "post-stratification-weights",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답 확률의 역수로 가중하는 일반적 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "balance-python-package",
+   "label": "balance 패키지",
+   "parent": "post-stratification-weights",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "편향된 표본을 가중해 균형 맞추는 Python 도구.",
    "related": [],
    "added": "2026-11-23"
   }
