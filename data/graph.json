@@ -22532,55 +22532,75 @@
    "label": "호버 카드 인용",
    "parent": "citation-ui",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "마우스를 올려 출처를 미리보기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "citation-ui",
+    "source-label-design"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "aligned-sidebar-citation",
    "label": "정렬 사이드바 인용",
    "parent": "citation-ui",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "본문과 정렬된 출처 사이드바.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "citation-ui",
+    "citation-density"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "citation-density",
    "label": "인용 밀도",
    "parent": "citation-ui",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "인용이 많을 때 UI별 효과가 달라짐.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "citation-ui",
+    "aligned-sidebar-citation"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "fabricated-citation",
    "label": "가짜 인용",
    "parent": "citation-ui",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "존재하지 않는 출처를 만드는 문제.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "citation-ui",
+    "citation-recall-precision"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "source-label-design",
    "label": "출처 라벨 설계",
    "parent": "citation-ui",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "설명적 제목 vs 모호한 라벨.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "citation-ui",
+    "hover-card-citation"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "needle-in-a-haystack",
@@ -68250,6 +68270,127 @@
    "status": "planned",
    "priority": 3,
    "summary": "가져온 문맥이 좋은지 평가.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cite-to-write-transition",
+   "label": "인용→글쓰기 전이",
+   "parent": "hover-card-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용 후 바로 글쓰기로 이어지는 확률.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hover-workload-tradeoff",
+   "label": "호버의 작업 부담",
+   "parent": "hover-card-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "밀도가 높을수록 부담이 커짐.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sidebar-low-density-penalty",
+   "label": "사이드바 저밀도 불이익",
+   "parent": "aligned-sidebar-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용이 적을 때 효과 부정적.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "adaptive-citation-interface",
+   "label": "적응형 인용 인터페이스",
+   "parent": "aligned-sidebar-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "밀도에 맞춰 UI를 바꿈.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "density-as-continuous-predictor",
+   "label": "밀도를 연속 변수로 분석",
+   "parent": "citation-density",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상호작용 효과 검정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "critical-thinking-scores-llm",
+   "label": "LLM 기반 비판적 사고 채점",
+   "parent": "citation-density",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "에세이를 하위 기술로 채점.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "citation-trust-without-checking",
+   "label": "확인 없는 인용 신뢰",
+   "parent": "fabricated-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용이 있으면 확신이 올라가는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "citation-url-validation",
+   "label": "인용 URL 자동 검증",
+   "parent": "fabricated-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "링크 존재·내용 일치 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "link-to-relevant-passage",
+   "label": "관련 구절 링크",
+   "parent": "fabricated-citation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처의 해당 부분으로 연결.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "descriptive-link-labels",
+   "label": "서술적 링크 라벨",
+   "parent": "source-label-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "매체·글 제목을 라벨로.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "citation-visual-distinction",
+   "label": "인용의 시각적 구별",
+   "parent": "source-label-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본문과 다른 스타일.",
    "related": [],
    "added": "2026-11-23"
   }
