@@ -47790,11 +47790,15 @@
    "label": "25012와 5259-2 특성 비교",
    "parent": "iso-5259-part2-measures",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 표준의 특성 차이.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "iso-25012-inherent-characteristics",
+    "data-balance-characteristic"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-quality-governing-body",
@@ -63093,6 +63097,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "조직 목적에 맞게 품질 모델을 확장·수정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "confidentiality-in-25012",
+   "label": "기밀성(25012)",
+   "parent": "iso-5259-annex-e-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "25012에는 있으나 5259-2 목차에서 안 보이는 특성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iso-5259-annex-c-overview",
+   "label": "5259-2 부속서 C 특성 개요",
+   "parent": "iso-5259-annex-e-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특성들을 한눈에 정리한 부속서.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iso-5259-annex-d-alternative-groups",
+   "label": "5259-2 부속서 D 대체 묶음",
+   "parent": "iso-5259-annex-e-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특성을 다른 방식으로 묶는 안.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "auditability-characteristic",
+   "label": "감사 가능성 특성",
+   "parent": "iso-5259-annex-e-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5259-2 추가 특성의 하나.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "effectiveness-characteristic",
+   "label": "효과성 특성",
+   "parent": "iso-5259-annex-e-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5259-2 추가 특성의 하나.",
    "related": [],
    "added": "2026-11-23"
   }
