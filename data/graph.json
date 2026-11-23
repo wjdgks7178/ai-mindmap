@@ -48200,11 +48200,15 @@
    "label": "목표 파일 크기",
    "parent": "small-files-problem",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "너무 작거나 크지 않은 파일 크기 선택.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "optimized-write",
+    "auto-compaction"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "column-pruning",
@@ -64355,6 +64359,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 파일을 막을지 합칠지의 설계 선택.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "delta-target-file-size-property",
+   "label": "delta.targetFileSize",
+   "parent": "target-file-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테이블 속성으로 목표 파일 크기를 수동 지정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "file-size-autotune",
+   "label": "파일 크기 자동 조정",
+   "parent": "target-file-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테이블 크기에 따라 256MB~1GB를 고르는 기능.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "parquet-row-group-size",
+   "label": "Parquet row group 크기",
+   "parent": "target-file-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번에 읽히는 단위, 512MB~1GB 권장.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "parquet-data-page-size",
+   "label": "Parquet 데이터 페이지 크기",
+   "parent": "target-file-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "8KB 권장, 세밀한 읽기와 헤더 오버헤드의 절충.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "disk-size-vs-memory-size-target",
+   "label": "디스크 크기 vs 메모리 크기 목표",
+   "parent": "target-file-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 크기 숫자가 가리키는 대상 구분.",
    "related": [],
    "added": "2026-11-23"
   }
