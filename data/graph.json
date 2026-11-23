@@ -48092,11 +48092,15 @@
    "label": "동의 범위와 용도 제한",
    "parent": "allowed-use-policy-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수집 때 받은 동의가 허용하는 용도.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "allowed-use-policy-data",
+    "data-identifiability"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "card-required-gate",
@@ -64093,6 +64097,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "열을 더할 때 단일 열 질의가 느려질 수 있는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "compatibility-assessment-factors",
+   "label": "양립성 판단 5요소",
+   "parent": "consent-scope-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연관성·맥락·데이터 성격·결과·보호 장치로 새 용도를 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "function-creep",
+   "label": "기능 이탈(function creep)",
+   "parent": "consent-scope-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 목적을 슬그머니 넘어 다른 용도로 확장되는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "records-of-processing-art30",
+   "label": "처리 활동 기록(30조)",
+   "parent": "consent-scope-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목적을 문서로 남기는 기록 의무.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "special-category-reuse",
+   "label": "특수 범주 데이터 재사용",
+   "parent": "consent-scope-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감 정보를 새 용도로 쓸 때의 추가 조건.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-training-purpose-compatibility",
+   "label": "AI 학습 용도의 양립성",
+   "parent": "consent-scope-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서비스 데이터를 모델 학습에 쓸 때의 목적 점검.",
    "related": [],
    "added": "2026-11-23"
   }
