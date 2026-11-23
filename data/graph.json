@@ -47320,11 +47320,14 @@
    "label": "특징 로그 개인정보·보관",
    "parent": "log-serving-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로그에 개인정보가 들어갈 때의 보관·권한.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "serving-log-sampling"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "feature-consistency-check",
@@ -61413,6 +61416,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "결과가 늦게 와도 예측 로그와 붙이는 시간 창.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "log-field-allowlist-pseudonymization",
+   "label": "로그 필드 허용 목록·가명화",
+   "parent": "feature-log-privacy-retention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "남길 필드를 제한하고 식별자를 해시·가명 처리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "audit-log-keys-not-values",
+   "label": "값 없이 키만 남기는 감사 로그",
+   "parent": "feature-log-privacy-retention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접근 사실은 기록하되 개인 값은 빼는 설계.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-act-record-keeping",
+   "label": "AI Act 기록 보존 의무",
+   "parent": "feature-log-privacy-retention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Art. 12·19·26이 요구하는 자동 로그.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gdpr-erasure-in-logs",
+   "label": "로그 속 삭제권 처리",
+   "parent": "feature-log-privacy-retention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 요청 시 로그·특징 사본을 찾아 지우기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "log-retention-ttl-design",
+   "label": "로그 보관 기한(TTL) 설계",
+   "parent": "feature-log-privacy-retention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "페이로드와 메타데이터의 보관 기한을 분리.",
    "related": [],
    "added": "2026-11-23"
   }
