@@ -47853,11 +47853,14 @@
    "label": "데이터 생성자 역할",
    "parent": "iso-5259-part5-governance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터를 만들고 수집·큐레이션하는 역할.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-owner-steward"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "intersectional-coverage",
@@ -66099,6 +66102,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "KL을 평균 추가 비트로 해석.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "metadata-by-creator",
+   "label": "생성 시점 메타데이터 기록",
+   "parent": "data-creator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 사전·생성 경위를 만들 때 함께 남김.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-quality-feedback-loop",
+   "label": "데이터 품질 피드백 루프",
+   "parent": "data-creator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스튜어드가 품질 문제를 생성자에게 돌려보내는 순환.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "collection-consent-record",
+   "label": "수집 동의 기록",
+   "parent": "data-creator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 시점에 동의 여부·범위를 남기는 일.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-supplier-agreement",
+   "label": "데이터 공급 합의",
+   "parent": "data-creator-role",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성자와 소비자 사이의 형식·품질 약속.",
    "related": [],
    "added": "2026-11-23"
   }
