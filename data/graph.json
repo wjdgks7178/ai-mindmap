@@ -47911,11 +47911,14 @@
    "label": "데이터 책임 RACI",
    "parent": "data-owner-steward",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "책임·승인·협의·통보를 표로 정리.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-creator-role"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "steward-types",
@@ -66146,6 +66149,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "생성자와 소비자 사이의 형식·품질 약속.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "one-accountable-rule",
+   "label": "업무당 A 한 명 원칙",
+   "parent": "raci-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "승인 책임자를 한 명으로 두는 관례.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rasci-support-role",
+   "label": "RASCI와 지원 역할",
+   "parent": "raci-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Support를 더한 변형.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "daci-decision-model",
+   "label": "DACI 의사결정 모델",
+   "parent": "raci-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Driver·Approver·Contributor·Informed.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raci-gap-check",
+   "label": "RACI 공백·중복 점검",
+   "parent": "raci-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "R·A 누락과 중복을 찾는 점검.",
    "related": [],
    "added": "2026-11-23"
   }
