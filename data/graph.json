@@ -48235,11 +48235,15 @@
    "label": "열 가지치기",
    "parent": "parquet-columnar-format",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "필요한 열만 읽어 I/O 줄이기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "row-group-statistics",
+    "csv-vs-parquet-experiment"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "row-group-statistics",
@@ -64805,6 +64809,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표현 방식과 바이트 압축의 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "select-star-cost",
+   "label": "SELECT * 의 비용",
+   "parent": "column-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 큰 열까지 읽게 만드는 습관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "wide-table-pruning-effect",
+   "label": "넓은 테이블의 가지치기 효과",
+   "parent": "column-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열이 많을수록 열 가지치기의 이득이 커짐.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "column-chunk-layout",
+   "label": "컬럼 청크 저장 구조",
+   "parent": "column-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열별로 따로 저장되는 Parquet 구조.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "view-column-exposure",
+   "label": "뷰의 열 노출과 가지치기",
+   "parent": "column-pruning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뷰가 불필요한 열을 포함하면 생기는 낭비.",
    "related": [],
    "added": "2026-11-23"
   }
