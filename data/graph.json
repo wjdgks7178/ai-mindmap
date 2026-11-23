@@ -23085,55 +23085,75 @@
    "label": "JSONL 학습 형식",
    "parent": "examples-to-training-data",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 줄에 완결된 JSON 하나.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "examples-to-training-data",
+    "lima-less-is-more"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "lima-less-is-more",
    "label": "LIMA 적은 데이터",
    "parent": "examples-to-training-data",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정제한 약 1,000개로 정렬.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "examples-to-training-data",
+    "jsonl-training-format"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "finetune-checkpoints",
    "label": "미세조정 체크포인트",
    "parent": "examples-to-training-data",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "에폭별 저장과 과적합 대응.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "examples-to-training-data",
+    "lima-less-is-more"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "when-not-to-finetune",
    "label": "미세조정하지 말아야 할 때",
    "parent": "examples-to-training-data",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프롬프트·평가가 먼저.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "examples-to-training-data",
+    "finetune-checkpoints"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "log-to-dataset",
    "label": "로그를 데이터셋으로",
    "parent": "examples-to-training-data",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실사용 로그에서 학습 예시 만들기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "examples-to-training-data",
+    "jsonl-training-format"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "isotonic-regression-calibration",
@@ -69441,6 +69461,171 @@
    "status": "planned",
    "priority": 3,
    "summary": "청구 전 가격표 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "messages-format",
+   "label": "messages 형식",
+   "parent": "jsonl-training-format",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문·응답을 messages 배열로.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "min-examples-10-50",
+   "label": "최소 10개·시작 50개",
+   "parent": "jsonl-training-format",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권장 시작 규모.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "holdout-set-diversity",
+   "label": "보류 세트 다양성",
+   "parent": "jsonl-training-format",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습과 비슷한 다양성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "prompt-diversity-vs-quantity",
+   "label": "프롬프트 다양성 vs 양",
+   "parent": "lima-less-is-more",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양만 늘리면 수확 체감.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "response-quality-filtering",
+   "label": "응답 품질 필터링",
+   "parent": "lima-less-is-more",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터 유무로 0.5점 차이.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "multi-turn-30-dialogues",
+   "label": "대화 30개로 다중 턴 개선",
+   "parent": "lima-less-is-more",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화 예시 소량의 효과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "per-epoch-checkpoint",
+   "label": "에폭별 체크포인트",
+   "parent": "finetune-checkpoints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 3개 저장.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "perplexity-vs-generation-quality",
+   "label": "perplexity와 생성 품질의 불일치",
+   "parent": "finetune-checkpoints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손실이 품질과 다를 수 있음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "checkpoint-selection-dev-set",
+   "label": "개발 세트로 체크포인트 선택",
+   "parent": "finetune-checkpoints",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수동 선택.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "evals-before-finetune",
+   "label": "미세조정 전 평가 설정",
+   "parent": "when-not-to-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "효과 확인용 evals 먼저.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fifty-examples-no-impact",
+   "label": "50개로 효과 없으면",
+   "parent": "when-not-to-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과제·프롬프트 재검토.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "finetune-decision-questions",
+   "label": "미세조정 판단 질문",
+   "parent": "when-not-to-finetune",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대안·평가·전문가·재학습 여력.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "distillation-from-larger-model",
+   "label": "큰 모델 증류",
+   "parent": "log-to-dataset",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답을 캡처해 작은 모델 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "log-privacy-consent",
+   "label": "로그의 개인정보·동의",
+   "parent": "log-to-dataset",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "익명화와 사용 동의.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "responses-30-day-storage",
+   "label": "응답 30일 저장",
+   "parent": "log-to-dataset",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Responses API 기본 보관.",
    "related": [],
    "added": "2026-11-23"
   }
