@@ -21714,11 +21714,14 @@
    "label": "이탈률 분모",
    "parent": "queue-abandonment",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분모 정의에 따라 4.5%가 9%가 됨.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "callback-option"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "interval-level-reporting",
@@ -21736,11 +21739,14 @@
    "label": "콜백 옵션",
    "parent": "queue-abandonment",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대기 대신 전화를 받는 설계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "queue-abandonment"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "transferred-call-abandonment",
@@ -66431,6 +66437,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "커밋 메시지에 경보와 승인자 남김.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "adjusted-abandonment-rate",
+   "label": "조정 이탈률",
+   "parent": "abandon-rate-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단기 이탈을 뺀 이탈률.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "long-abandon-rate",
+   "label": "긴 이탈률",
+   "parent": "abandon-rate-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큐에서 일정 시간 기다린 뒤의 이탈만 계산.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "abandon-location-split",
+   "label": "이탈 위치 분해",
+   "parent": "abandon-rate-denominator",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IVR·큐·대기·음성사서함별로 나눔.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "virtual-queuing",
+   "label": "가상 대기열",
+   "parent": "callback-option",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "줄을 서지 않고 순번만 유지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "callback-no-show",
+   "label": "콜백 불발",
+   "parent": "callback-option",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연결 시도에 고객이 받지 않는 경우.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "callback-window-alignment",
+   "label": "콜백 시간대 맞춤",
+   "parent": "callback-option",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객이 원하는 시간에 걸기.",
    "related": [],
    "added": "2026-11-23"
   }
