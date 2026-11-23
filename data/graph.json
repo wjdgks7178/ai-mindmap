@@ -23040,33 +23040,45 @@
    "label": "정적 앞부분 설계",
    "parent": "prompt-token-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "캐시가 잘 맞도록 고정 내용을 앞에 두기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "prompt-token-cost",
+    "cache-hit-monitoring"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "cache-hit-monitoring",
    "label": "캐시 적중 모니터링",
    "parent": "prompt-token-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "응답 필드로 적중 토큰 확인.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "prompt-token-cost",
+    "static-prefix-design"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "input-vs-output-token-price",
    "label": "입력·출력 토큰 단가",
    "parent": "prompt-token-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력과 출력이 다르게 과금되는 구조.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "prompt-token-cost",
+    "cache-hit-monitoring"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "jsonl-training-format",
@@ -69319,6 +69331,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "RAFT는 retriever와 무관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-prefix-order",
+   "label": "캐시 접두사 순서",
+   "parent": "static-prefix-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "tools→system→messages.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-breakpoint-placement",
+   "label": "브레이크포인트 위치",
+   "parent": "static-prefix-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 불변 블록에 둠.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-invalidators",
+   "label": "캐시 무효화 요인",
+   "parent": "static-prefix-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구·시스템·이미지·thinking 변경.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-ttl-5m-1h",
+   "label": "캐시 TTL 5분·1시간",
+   "parent": "static-prefix-design",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "갱신과 쓰기 단가.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "usage-fields-cache",
+   "label": "캐시 사용량 필드",
+   "parent": "cache-hit-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "creation·read·input 토큰.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-hit-rate-formula",
+   "label": "캐시 적중률 계산",
+   "parent": "cache-hit-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "읽기÷전체 입력.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-diagnostics",
+   "label": "캐시 진단 기능",
+   "parent": "cache-hit-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "prefix가 달라진 이유 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-write-read-multipliers",
+   "label": "캐시 쓰기·읽기 배수",
+   "parent": "input-vs-output-token-price",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1.25·2·0.1 등.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cache-breakeven",
+   "label": "캐시 손익분기",
+   "parent": "input-vs-output-token-price",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "읽기 횟수가 쓰기 추가비용을 넘는 지점.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "pricing-changes-recheck",
+   "label": "가격 변동 재확인",
+   "parent": "input-vs-output-token-price",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "청구 전 가격표 확인.",
    "related": [],
    "added": "2026-11-23"
   }
