@@ -48445,11 +48445,15 @@
    "label": "환경 예외 관리",
    "parent": "schema-environments",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예외가 쌓여 진짜 누락을 가리지 않게 하는 규칙.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "label-column-handling",
+    "schema-erosion"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "tfx-schema-proto",
@@ -65776,6 +65780,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정상 기간 거리의 95번째 백분위 등으로 정하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exception-reason-owner-record",
+   "label": "예외 사유·담당자 기록",
+   "parent": "environment-exception-hygiene",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외마다 이유와 담당자·승인일을 남기기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exception-quarterly-audit",
+   "label": "예외 분기 감사",
+   "parent": "environment-exception-hygiene",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제외된 특징 목록을 정기 재검토.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "allowed-exception-categories",
+   "label": "허용 예외 범주",
+   "parent": "environment-exception-hygiene",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨·학습 전용·디버그 열로 한정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "environment-disjoint-rule",
+   "label": "in/not_in 서로소 규칙",
+   "parent": "environment-exception-hygiene",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 환경 목록이 겹치면 안 되는 규칙.",
    "related": [],
    "added": "2026-11-23"
   }
