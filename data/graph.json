@@ -47488,11 +47488,15 @@
    "label": "시간 기반 분할 규칙",
    "parent": "skew-measurement-stages",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과거로 학습하고 이후 데이터로 시험.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "point-in-time-join",
+    "point-in-time-leakage"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-accuracy-syntactic-semantic",
@@ -61944,6 +61948,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "논문이 제시한 부채 정도를 가늠하는 질문 목록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "split-gap-buffer",
+   "label": "분할 gap 완충 구간",
+   "parent": "time-based-split-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·시험 사이를 비워 지연 특징 누수를 막는다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lag-feature-shift",
+   "label": "지연 특징과 shift",
+   "parent": "time-based-split-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이동평균·lag가 현재 값을 포함하지 않게 하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "walk-forward-validation",
+   "label": "워크포워드 검증",
+   "parent": "time-based-split-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기간을 밀며 반복 학습·시험하는 검증.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "random-split-leakage",
+   "label": "무작위 분할 누수",
+   "parent": "time-based-split-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섞어서 나눌 때 미래가 학습에 섞이는 문제.",
    "related": [],
    "added": "2026-11-23"
   }
