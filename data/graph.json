@@ -23586,11 +23586,15 @@
    "label": "LLM 평가자 편향",
    "parent": "hybrid-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM이 채점할 때의 편향과 사람 검증.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hybrid-eval",
+    "judge-prompt-versioning"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "cumulative-effect-check",
@@ -70140,6 +70144,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "현재 사건 과제의 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "verbosity-bias-judge",
+   "label": "판정자 장황함 편향",
+   "parent": "llm-evaluator-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴 답을 선호.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "swap-position-judging",
+   "label": "순서 교환 판정",
+   "parent": "llm-evaluator-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 순서에서 모두 이길 때만 승리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "llm-human-agreement-85",
+   "label": "LLM-사람 일치 85%",
+   "parent": "llm-evaluator-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MT-bench에서 GPT-4와 사람의 일치.",
    "related": [],
    "added": "2026-11-23"
   }
