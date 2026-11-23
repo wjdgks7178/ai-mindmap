@@ -47965,11 +47965,15 @@
    "label": "작은 파일 폭증 문제",
    "parent": "data-partitioning-pruning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "파티션을 너무 잘게 나눌 때의 비용.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "hive-style-partitioning",
+    "partition-key-selection"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "partition-key-selection",
@@ -63691,6 +63695,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "파티션이 매우 많을 때 카탈로그 조회를 빠르게.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "s3-slowdown-error",
+   "label": "S3 SlowDown 오류",
+   "parent": "too-many-small-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청 한도 초과 시 나는 오류와 대응.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "file-compaction",
+   "label": "파일 컴팩션",
+   "parent": "too-many-small-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 파일을 합쳐 큰 파일로 만드는 작업.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "write-side-buffering",
+   "label": "쓰기 쪽 버퍼링",
+   "parent": "too-many-small-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "더 오래 모아 한 번에 큰 파일로 쓰기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "flat-partition-layout",
+   "label": "파티션 내 평평한 구조",
+   "parent": "too-many-small-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파티션 아래 추가 디렉터리를 두지 않기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sort-instead-of-partition",
+   "label": "시간 파티션 대신 정렬",
+   "parent": "too-many-small-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "타임스탬프 정렬로 좁은 구간 질의를 처리.",
    "related": [],
    "added": "2026-11-23"
   }
