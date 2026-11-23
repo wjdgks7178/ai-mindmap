@@ -47421,11 +47421,15 @@
    "label": "숨은 피드백 고리",
    "parent": "feedback-loop-ml",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템끼리 세상을 통해 간접 영향.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "ml-analysis-debt",
+    "direct-feedback-loop"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "exploration-randomization",
@@ -61778,6 +61782,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "일부 데이터를 모델 선택과 분리해 보관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "shared-surface-coupling",
+   "label": "같은 화면 공유 결합",
+   "parent": "hidden-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 화면의 여러 모델이 사용자 반응을 통해 서로 영향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cross-system-metric-monitoring",
+   "label": "이웃 시스템 지표 모니터링",
+   "parent": "hidden-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 모델 변경 때 이웃 모델의 입력·지표를 함께 본다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "undeclared-consumers",
+   "label": "선언되지 않은 소비자",
+   "parent": "hidden-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 출력을 몰래 쓰는 다른 시스템이 만드는 결합.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "algorithmic-price-feedback",
+   "label": "알고리즘 가격 피드백",
+   "parent": "hidden-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가격 결정 AI끼리 서로 반응하는 순환.",
    "related": [],
    "added": "2026-11-23"
   }
