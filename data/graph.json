@@ -47824,7 +47824,9 @@
    "summary": "데이터 품질 책임을 누가 지는지 정의.",
    "related": [
     "data-quality-governing-body",
-    "dq-checklist-owner-column"
+    "dq-checklist-owner-column",
+    "data-custodian",
+    "data-creator-role"
    ],
    "added": "2026-11-19",
    "done": "2026-11-23"
