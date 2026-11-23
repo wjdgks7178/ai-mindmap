@@ -48340,11 +48340,15 @@
    "label": "smart tuning(쿼리 자동 재작성)",
    "parent": "materialized-view",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기본 테이블 쿼리를 뷰로 자동 대체하는 옵티마이저 기능.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "max-staleness",
+    "incremental-refresh"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "view-vs-materialized-view",
@@ -65056,6 +65060,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "변경이 뷰를 무효화하면 기본 테이블을 직접 읽음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-rewrite-conditions",
+   "label": "재작성 조건(열·행 포함)",
+   "parent": "smart-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뷰가 쿼리의 모든 열·행을 포함해야 재작성됨.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "materialized-view-statistics",
+   "label": "materialized_view_statistics",
+   "parent": "smart-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업 통계로 뷰 사용 여부와 거부 이유를 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-rejected-reason-cost",
+   "label": "rejected_reason COST",
+   "parent": "smart-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "더 효율적인 원본이 있어 뷰를 쓰지 않은 경우.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "tables-get-permission-for-tuning",
+   "label": "smart tuning에 필요한 권한",
+   "parent": "smart-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "tables.get·getData 권한이 있어야 혜택을 받음.",
    "related": [],
    "added": "2026-11-23"
   }
