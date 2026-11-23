@@ -62230,11 +62230,15 @@
    "label": "분할 gap 완충 구간",
    "parent": "time-based-split-rule",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습·시험 사이를 비워 지연 특징 누수를 막는다.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "time-based-split-rule",
+    "lag-feature-shift"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "lag-feature-shift",
@@ -65824,6 +65828,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 환경 목록이 겹치면 안 되는 규칙.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gap-equals-max-lag",
+   "label": "gap과 최대 lag",
+   "parent": "split-gap-buffer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "gap을 특징이 참조하는 최대 lag 이상으로 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gap-training-data-cost",
+   "label": "gap의 학습 데이터 비용",
+   "parent": "split-gap-buffer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "완충으로 버려지는 학습 샘플.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "equally-spaced-samples-condition",
+   "label": "등간격 표본 조건",
+   "parent": "split-gap-buffer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 지표를 비교하려면 샘플 간격이 같아야 함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reimplement-to-verify-doc",
+   "label": "문서 예 재구현 검증",
+   "parent": "split-gap-buffer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 출력과 같은지 직접 구현해 확인하기.",
    "related": [],
    "added": "2026-11-23"
   }
