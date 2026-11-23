@@ -21950,55 +21950,75 @@
    "label": "골든 데이터셋 버전 관리",
    "parent": "tutor-regression-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경마다 버전·변경 이력 남기기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "tutor-regression-eval",
+    "bypass-prompt-set"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "slice-level-gating",
    "label": "조각별 게이트",
    "parent": "tutor-regression-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "약한 조각이 평균에 가려지지 않게.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "tutor-regression-eval",
+    "golden-dataset-versioning"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "shadow-eval",
    "label": "섀도 평가",
    "parent": "tutor-regression-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "운영 샘플을 비동기로 채점해 드리프트 감시.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "tutor-regression-eval",
+    "eval-baseline-rebaselining"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "eval-baseline-rebaselining",
    "label": "기준선 재설정",
    "parent": "tutor-regression-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자동 재설정이 위험한 이유.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "tutor-regression-eval",
+    "shadow-eval"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "judge-prompt-versioning",
    "label": "판정 프롬프트 버전 관리",
    "parent": "tutor-regression-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "판정 프롬프트가 곧 측정 도구.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "tutor-regression-eval",
+    "llm-judge-leakage"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "algorithm-aversion",
@@ -66997,6 +67017,160 @@
    "status": "planned",
    "priority": 3,
    "summary": "서술형·코드 답의 누출 판정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "regression-cases-never-deleted",
+   "label": "회귀 케이스 영구 보존",
+   "parent": "golden-dataset-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고친 실패를 모두 케이스로 남김.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dataset-version-pinning",
+   "label": "데이터셋 버전 고정",
+   "parent": "golden-dataset-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "타임스탬프로 실행을 재현.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "golden-set-size-for-pr-gate",
+   "label": "PR 게이트 세트 크기",
+   "parent": "golden-dataset-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수십~수백 개, 20개 미만은 잡음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "slice-tagging",
+   "label": "조각 태그 붙이기",
+   "parent": "slice-level-gating",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "케이스를 운영 속성으로 분류.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "overall-vs-slice-threshold",
+   "label": "전체 vs 조각 합격선",
+   "parent": "slice-level-gating",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균이 약한 조각을 숨기는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "deterministic-hash-sampling",
+   "label": "결정적 해시 표본",
+   "parent": "shadow-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현 가능한 표본 추출.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "shadow-to-golden-pipeline",
+   "label": "섀도→골든 승격 흐름",
+   "parent": "shadow-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패 결정을 골든 후보로 올림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "drift-trend-monitoring",
+   "label": "드리프트 추세 감시",
+   "parent": "shadow-eval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2주 하락 같은 추세를 본다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "baseline-capture-policy",
+   "label": "기준선 기록 정책",
+   "parent": "eval-baseline-rebaselining",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증된 릴리스에서만 기록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "min-effect-size-drift",
+   "label": "지표별 최소 효과 크기",
+   "parent": "eval-baseline-rebaselining",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 변동과 드리프트를 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "threshold-margin-below-baseline",
+   "label": "기준선 아래 여유 임계값",
+   "parent": "eval-baseline-rebaselining",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 변동을 흡수하는 합격선.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "binary-rubric-judge",
+   "label": "이진 루브릭 판정",
+   "parent": "judge-prompt-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "척도 대신 pass/fail과 명시 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "judge-human-label-validation",
+   "label": "판정자-사람 라벨 검증",
+   "parent": "judge-prompt-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치도를 확인한 뒤 신뢰.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "warn-vs-block-gate",
+   "label": "경고용과 차단용 평가자",
+   "parent": "judge-prompt-versioning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판정자는 경고, 코드 평가자는 차단.",
    "related": [],
    "added": "2026-11-23"
   }
