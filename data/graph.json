@@ -47775,11 +47775,15 @@
    "label": "데이터 품질 보고 틀",
    "parent": "iso-5259-part2-measures",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "측정 정보를 조직에 보고하는 구조.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-quality-checklist-template",
+    "quality-rule-per-characteristic"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "iso-5259-annex-e-comparison",
@@ -63045,6 +63049,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "공개 데이터와 결합해 개인을 되찾는 공격.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-measurement-function-documentation",
+   "label": "측정 함수 문서화",
+   "parent": "data-quality-reporting-framework",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정값을 계산하는 방법을 정해 문서로 남기기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iso-25024-data-quality-measurement",
+   "label": "ISO/IEC 25024",
+   "parent": "data-quality-reporting-framework",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 품질 측정을 다루는 SQuaRE 규격.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-report-audience",
+   "label": "품질 보고 대상별 구성",
+   "parent": "data-quality-reporting-framework",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경영진·실무자별로 보고 수준을 달리하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-model-extension",
+   "label": "품질 모델 확장",
+   "parent": "data-quality-reporting-framework",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조직 목적에 맞게 품질 모델을 확장·수정.",
    "related": [],
    "added": "2026-11-23"
   }
