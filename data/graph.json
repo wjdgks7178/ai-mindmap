@@ -47980,11 +47980,15 @@
    "label": "파티션 키 고르기",
    "parent": "data-partitioning-pruning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "카디널리티와 질의 필터를 기준으로.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "too-many-small-files",
+    "hive-style-partitioning"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "explain-analyze-scan-files",
@@ -63750,6 +63754,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "타임스탬프 정렬로 좁은 구간 질의를 처리.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "partition-key-string-type",
+   "label": "파티션 키는 STRING",
+   "parent": "partition-key-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Athena에서 푸시다운을 위해 STRING 타입을 쓰는 규칙.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "equality-predicate-on-all-keys",
+   "label": "모든 파티션 키에 등호 조건",
+   "parent": "partition-key-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "등호 조건이 있으면 파티션 메타데이터를 바로 로드.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bucketing-high-cardinality",
+   "label": "버킷팅(높은 카디널리티)",
+   "parent": "partition-key-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 ID처럼 값이 많은 키의 단건 조회 최적화.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "remove-old-empty-partitions",
+   "label": "오래된·빈 파티션 정리",
+   "parent": "partition-key-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쓰지 않는 파티션 메타데이터를 제거해 계획 시간을 줄임.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "optimize-for-common-queries",
+   "label": "흔한 질의 기준 설계",
+   "parent": "partition-key-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "드문 질의가 아니라 대표 질의에 맞춰 설계.",
    "related": [],
    "added": "2026-11-23"
   }
