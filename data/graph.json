@@ -21836,11 +21836,15 @@
    "label": "도움 회피",
    "parent": "hint-abuse-detection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "필요한데 도움을 안 쓰는 패턴.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-abuse-detection",
+    "gaming-the-system"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "systematic-guessing",
@@ -66744,6 +66748,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "gaming은 줄이나 다른 학생이 불편.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "help-seeking-model",
+   "label": "도움 구하기 모델",
+   "parent": "help-avoidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숙달 추정으로 도움 필요 여부를 판정하는 모델.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "knowledge-threshold-help-need",
+   "label": "도움 필요 임계값",
+   "parent": "help-avoidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 숙달 수준부터 도움이 필요하다고 볼지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "help-tutor-metacognitive",
+   "label": "Help Tutor 메타인지 코칭",
+   "parent": "help-avoidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도움 사용법을 피드백하는 튜터 모듈.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "robust-learning-measures",
+   "label": "견고한 학습 측정",
+   "parent": "help-avoidance",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "retention·PFL·transfer 검사.",
    "related": [],
    "added": "2026-11-23"
   }
