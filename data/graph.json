@@ -63319,11 +63319,15 @@
    "label": "래킹(반복 비례 적합)",
    "parent": "post-stratification-weights",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주변 분포만으로 가중치를 반복해 맞추는 방법.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "post-stratification-weights",
+    "kish-design-effect"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "kish-design-effect",
@@ -63403,6 +63407,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "합이 표본 크기가 되도록 맞춘 가중치.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raking-convergence-criteria",
+   "label": "래킹 정지 조건",
+   "parent": "raking-iterative-proportional-fitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 횟수·비율 차이·가중치 변화로 멈추는 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raking-order-sensitivity",
+   "label": "래킹의 순서 민감성",
+   "parent": "raking-iterative-proportional-fitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수 조정 순서에 따라 보정이 달라지는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "subgroup-inference-weighting",
+   "label": "하위 집단 추론과 가중",
+   "parent": "raking-iterative-proportional-fitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결합 분포가 틀릴 때 하위 집단 추정의 위험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mrp-vs-raking",
+   "label": "MRP vs 래킹",
+   "parent": "raking-iterative-proportional-fitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모형 기반 보정과 래킹의 비교.",
    "related": [],
    "added": "2026-11-23"
   }
