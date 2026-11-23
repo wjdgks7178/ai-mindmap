@@ -21821,11 +21821,15 @@
    "label": "시스템 속이기 gaming",
    "parent": "hint-abuse-detection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 환경을 오용해 배우지 않고 넘기기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-abuse-detection",
+    "bottom-out-hint"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "help-avoidance",
@@ -21843,11 +21847,15 @@
    "label": "체계적 추측",
    "parent": "hint-abuse-detection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "답을 대입해 가며 맞히기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-abuse-detection",
+    "gaming-the-system"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "time-on-task-noise",
@@ -66659,6 +66667,83 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습자 집단별로 정책을 시험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gamed-hurt-vs-not-hurt",
+   "label": "해로운 gaming과 무해한 gaming",
+   "parent": "gaming-the-system",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 손해 여부로 나눈 두 부류.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "latent-response-model",
+   "label": "잠재 반응 모델",
+   "parent": "gaming-the-system",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로그로 gaming 행동을 추정하는 모델.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gaming-and-boredom",
+   "label": "지루함·혼란과 gaming",
+   "parent": "gaming-the-system",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정서 상태가 gaming을 시작하게 하는 연관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "roc-auc-detector-eval",
+   "label": "ROC·A′로 탐지기 평가",
+   "parent": "gaming-the-system",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "hit와 오탐 비율로 탐지기를 평가.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "quick-retry-feature",
+   "label": "빠른 재시도 특징",
+   "parent": "systematic-guessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오답 직후 짧은 시간 안 재시도.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "post-error-reflection-prompt",
+   "label": "오답 후 성찰 질문",
+   "parent": "systematic-guessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오답 직후 왜 틀렸는지 묻기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "delayed-help-tradeoff",
+   "label": "도움 지연의 득실",
+   "parent": "systematic-guessing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "gaming은 줄이나 다른 학생이 불편.",
    "related": [],
    "added": "2026-11-23"
   }
