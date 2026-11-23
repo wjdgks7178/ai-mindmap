@@ -48170,11 +48170,15 @@
    "label": "Auto compaction",
    "parent": "small-files-problem",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "쓰기 후 자동으로 작은 파일 압축.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "delta-optimize-compaction",
+    "optimized-write"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "optimized-write",
@@ -64259,6 +64263,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "repartition(1)을 써 작은 파일 압축 성능을 높이는 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "autocompact-min-num-files",
+   "label": "autoCompact.minNumFiles",
+   "parent": "auto-compaction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "압축을 시작하는 최소 작은 파일 수 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "autocompact-max-file-size",
+   "label": "autoCompact.maxFileSize",
+   "parent": "auto-compaction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 압축의 출력 파일 크기 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "synchronous-compaction-write-latency",
+   "label": "동기 압축과 쓰기 지연",
+   "parent": "auto-compaction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쓰기 직후 압축이 쓰기 시간을 늘리는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "streaming-small-file-accumulation",
+   "label": "스트리밍의 작은 파일 누적",
+   "parent": "auto-compaction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잦은 소량 쓰기가 만드는 파일 폭증.",
    "related": [],
    "added": "2026-11-23"
   }
