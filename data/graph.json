@@ -48459,11 +48459,15 @@
    "label": "L∞ 거리(범주형)",
    "parent": "skew-drift-comparator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "범주 비율 최대 차이로 분포 변화를 재는 지표.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "jensen-shannon-divergence",
+    "acceptable-skew-threshold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "jensen-shannon-divergence",
@@ -65296,6 +65300,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "제거·대체 방식을 양쪽에서 똑같이 적용.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "l1-distance-categorical",
+   "label": "L1 거리(범주형)",
+   "parent": "l-infinity-norm-categorical",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주별 비율 차이의 합으로 분포 변화를 재기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "max-diff-category-report",
+   "label": "최대 차이 범주 보고",
+   "parent": "l-infinity-norm-categorical",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 범주가 가장 크게 달라졌는지 함께 알려 주기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "linf-blind-spot-diffuse-change",
+   "label": "L∞의 사각지대",
+   "parent": "l-infinity-norm-categorical",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 변화가 여러 범주에 흩어지면 놓침.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "metric-scale-threshold-mismatch",
+   "label": "지표별 스케일과 임계값",
+   "parent": "l-infinity-norm-categorical",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표가 다르면 같은 임계값을 쓸 수 없음.",
    "related": [],
    "added": "2026-11-23"
   }
