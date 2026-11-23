@@ -48122,11 +48122,15 @@
    "label": "카드 필수 칸 자동 점검",
    "parent": "internal-data-card-adoption",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "빈 칸이면 CI가 실패하도록.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "card-quarterly-audit",
+    "considerations-section-gap"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "considerations-section-gap",
@@ -64521,6 +64525,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "카드에 적힌 스키마·분포가 실제와 맞는지 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "card-yaml-front-matter",
+   "label": "카드 YAML 메타데이터",
+   "parent": "card-field-lint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "README 맨 위의 YAML 블록이 담는 필드.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lint-false-positive-length-heuristic",
+   "label": "길이 기준 린트의 오탐",
+   "parent": "card-field-lint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧지만 충실한 내용이 걸리는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "placeholder-text-detection",
+   "label": "자리표시자 탐지",
+   "parent": "card-field-lint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TODO·TBD·N/A 같은 채우지 않은 칸 찾기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ci-exit-code-gate",
+   "label": "CI 종료 코드 게이트",
+   "parent": "card-field-lint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0이 아닌 종료 코드로 파이프라인을 막기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "metadata-schema-validation",
+   "label": "메타데이터 스키마 검증",
+   "parent": "card-field-lint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필드 값의 형식·허용 값까지 검사.",
    "related": [],
    "added": "2026-11-23"
   }
