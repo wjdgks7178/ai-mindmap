@@ -21920,11 +21920,15 @@
    "label": "다중 턴 교육적 해악",
    "parent": "bypass-prompt-set",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "대화가 길수록 나빠지는 튜터 행동.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "bypass-prompt-set",
+    "answer-leakage-rate"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "llm-judge-leakage",
@@ -66901,6 +66905,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "응답 전 계획을 JSON 필드로 쓰게 함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "safetutors-11-dimensions",
+   "label": "SafeTutors 11개 해악 차원",
+   "parent": "multi-turn-pedagogical-harm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인지·메타인지·관계 등 11개 분류.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "crescendo-escalation",
+   "label": "크레센도 압박 방식",
+   "parent": "multi-turn-pedagogical-harm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화를 점차 압박하며 확대하는 생성 방식.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "metacognitive-harm",
+   "label": "메타인지 해악",
+   "parent": "multi-turn-pedagogical-harm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "계획·점검 능력을 약화시키는 해악.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "over-trust-dependence",
+   "label": "AI 과신과 의존",
+   "parent": "multi-turn-pedagogical-harm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교육적 관계에서 생기는 의존.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "multi-judge-majority-vote",
+   "label": "다중 LLM 판정 다수결",
+   "parent": "multi-turn-pedagogical-harm",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 판정자를 합의로 채점.",
    "related": [],
    "added": "2026-11-23"
   }
