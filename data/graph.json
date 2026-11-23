@@ -48185,11 +48185,15 @@
    "label": "Optimized Write",
    "parent": "small-files-problem",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "쓰기 시점에 작은 파일 생성을 줄이기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "auto-compaction",
+    "delta-optimize-compaction"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "target-file-size",
@@ -64307,6 +64311,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "잦은 소량 쓰기가 만드는 파일 폭증.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "optimize-write-bin-size",
+   "label": "optimizeWrite.binSize",
+   "parent": "optimized-write",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력 파일당 메모리상 목표 크기 설정(기본 512MiB).",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "optimize-write-shuffle-limits",
+   "label": "optimizeWrite 셔플 한도",
+   "parent": "optimized-write",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최대 셔플 블록·reducer 수 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "config-precedence-table-session-writer",
+   "label": "설정 우선순위(테이블·세션·옵션)",
+   "parent": "optimized-write",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테이블 속성<SQL 설정<DataFrameWriter 옵션.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "write-time-vs-post-write-compaction",
+   "label": "쓰기 시점 vs 쓰기 후 압축",
+   "parent": "optimized-write",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 파일을 막을지 합칠지의 설계 선택.",
    "related": [],
    "added": "2026-11-23"
   }
