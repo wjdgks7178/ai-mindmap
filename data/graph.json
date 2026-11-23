@@ -47306,11 +47306,14 @@
    "label": "서빙 로그 샘플링",
    "parent": "log-serving-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "저장 비용 때문에 일부만 기록하고 가중치 보관.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "feature-log-privacy-retention"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "feature-log-privacy-retention",
@@ -61355,6 +61358,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "색인을 지워도 캐시 답변과 기억에 옛 내용이 남는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-allow-list-logging",
+   "label": "특징 허용 목록 로깅",
+   "parent": "serving-log-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 쓰는 특징만 기록해 페이로드를 줄이는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "impression-filtered-logging",
+   "label": "노출 기반 로그 필터",
+   "parent": "serving-log-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자에게 보인 예측만 학습 로그로 남기는 방식.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "inverse-probability-weighting-logs",
+   "label": "역확률 가중 보정",
+   "parent": "serving-log-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플링 확률의 역수로 학습·평가를 보정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "logging-selection-bias",
+   "label": "로그 선택 편향",
+   "parent": "serving-log-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기록된 것만 학습할 때 생기는 편향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "delayed-label-join-window",
+   "label": "지연 정답 조인 창",
+   "parent": "serving-log-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과가 늦게 와도 예측 로그와 붙이는 시간 창.",
    "related": [],
    "added": "2026-11-23"
   }
