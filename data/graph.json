@@ -47877,11 +47877,15 @@
    "label": "대상 집단 정의",
    "parent": "data-representativeness",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "누가 모델의 사용 대상인지 정하기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "intersectional-coverage",
+    "post-stratification-weights"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "post-stratification-weights",
@@ -63584,6 +63588,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "IJB-A·Adience처럼 한 집단에 편중된 벤치마크.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gmlp-principles",
+   "label": "GMLP 지침 10원칙",
+   "parent": "target-population-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FDA·Health Canada·MHRA의 의료기기 ML 우수 실무 지침.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exclusion-criteria-ai-use",
+   "label": "AI 사용 제외 조건",
+   "parent": "target-population-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용하면 안 되는 대상·상황을 명시.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "human-ai-team-performance",
+   "label": "인간-AI 팀 성능",
+   "parent": "target-population-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 단독이 아닌 사람과 함께한 성능 평가.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-gap-disclosure",
+   "label": "데이터 격차 공개",
+   "parent": "target-population-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터에서 대표성이 낮은 집단을 알리기.",
    "related": [],
    "added": "2026-11-23"
   }
