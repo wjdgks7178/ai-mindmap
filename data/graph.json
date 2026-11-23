@@ -47565,11 +47565,14 @@
    "label": "백업 복원 테스트",
    "parent": "iso-25012-system-dependent-characteristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "복원이 실제로 되는지 주기적으로 확인.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "pilot-light-vs-warm-standby"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "pilot-light-vs-warm-standby",
@@ -62230,6 +62233,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI 답변에 출처를 달아 검증 가능하게.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rto-rpo",
+   "label": "RTO·RPO",
+   "parent": "backup-restore-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복구 목표 시간과 복구 시점 목표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "restore-validation-checks",
+   "label": "복원 검증 항목",
+   "parent": "backup-restore-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행 수·체크섬·핵심 질의로 복원 결과 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "random-recovery-point-selection",
+   "label": "무작위 복구 지점 선택",
+   "parent": "backup-restore-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오래된 백업도 정상인지 보려고 무작위로 복원.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "control-plane-vs-data-plane-recovery",
+   "label": "control plane vs data plane 복구",
+   "parent": "backup-restore-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복구 때 어느 계층 작업에 의존할지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-index-snapshot-restore",
+   "label": "AI 색인 스냅샷 복원",
+   "parent": "backup-restore-testing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벡터 색인·모델 설정 백업을 복원해 검색 품질 확인.",
    "related": [],
    "added": "2026-11-23"
   }
