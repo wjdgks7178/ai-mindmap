@@ -47436,11 +47436,15 @@
    "label": "탐색용 무작위화",
    "parent": "feedback-loop-ml",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일부 트래픽을 모델과 무관하게 노출.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "contextual-bandit",
+    "direct-feedback-loop"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "ml-analysis-debt",
@@ -61826,6 +61830,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "가격 결정 AI끼리 서로 반응하는 순환.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "epsilon-greedy",
+   "label": "엡실론 그리디",
+   "parent": "exploration-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 ε로 무작위, 나머지는 최선을 고르는 탐색 전략.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "explore-then-commit",
+   "label": "탐색 후 확정(ETC)",
+   "parent": "exploration-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기에 무작위로 탐색한 뒤 개인화로 전환.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "propensity-logging",
+   "label": "선택 확률(propensity) 로깅",
+   "parent": "exploration-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 노출 때 선택 확률을 기록해 평가에 쓰기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exploration-rate-schedule",
+   "label": "탐색 비율 일정",
+   "parent": "exploration-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간에 따라 ε를 어떻게 줄일지 정하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cold-start-exploration",
+   "label": "콜드스타트와 탐색",
+   "parent": "exploration-randomization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 항목의 데이터를 얻기 위한 탐색.",
    "related": [],
    "added": "2026-11-23"
   }
