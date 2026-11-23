@@ -48370,11 +48370,15 @@
    "label": "예제 단위 검증",
    "parent": "tfdv-anomaly-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "validate_examples_in_tfrecord로 이상 예제만 모아 통계 확인.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-vs-data-fix-decision",
+    "acceptable-skew-threshold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "schema-vs-data-fix-decision",
@@ -65152,6 +65156,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "자동 갱신 여부로 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "tfdv-stats-options",
+   "label": "tfdv.StatsOptions",
+   "parent": "anomaly-example-level-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계 생성 옵션(스키마 지정, 의미 도메인 통계 등).",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "anomalous-example-stats",
+   "label": "이상 예제 통계",
+   "parent": "anomaly-example-level-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상별로 예제 집합의 통계를 모은 결과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "example-validation-cost",
+   "label": "예제 단위 검증의 비용",
+   "parent": "anomaly-example-level-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예제마다 검사하는 만큼 큰 데이터에서 비용이 큼.",
    "related": [],
    "added": "2026-11-23"
   }
