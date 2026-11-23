@@ -47695,11 +47695,15 @@
    "label": "DataFreshness 규칙",
    "parent": "data-quality-checklist-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "마지막 갱신 시각으로 최신성 점검.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-currentness",
+    "feature-ttl"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "supplier-quality-annex",
@@ -62690,6 +62694,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "Parquet·CSV 등 표준 포맷으로 옮길 수 있게 하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dqdl-null-handling",
+   "label": "DQDL NULL 처리",
+   "parent": "dq-data-freshness-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NULL 행이 실패하는 규칙과 허용하는 복합 규칙.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dqdl-composite-rule-evaluation",
+   "label": "DQDL 복합 규칙 평가 방식",
+   "parent": "dq-data-freshness-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열 단위 vs 행 단위(ROW) 평가 차이.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "s3-file-freshness-check",
+   "label": "S3 파일 최신성 검사",
+   "parent": "dq-data-freshness-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일 수정 시각을 열로 만들어 최신성 검사.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "table-level-freshness-vs-row-level",
+   "label": "테이블 최신성 vs 행 최신성",
+   "parent": "dq-data-freshness-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 갱신 여부와 행 단위 나이의 차이.",
    "related": [],
    "added": "2026-11-23"
   }
