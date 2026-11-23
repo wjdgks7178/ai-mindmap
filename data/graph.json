@@ -21778,11 +21778,15 @@
    "label": "요청 시 힌트",
    "parent": "hint-escalation-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학생이 눌러야 다음 힌트가 나오는 방식.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-escalation-rule",
+    "bottom-out-hint"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "hint-request-penalty",
@@ -66550,6 +66554,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "힌트를 읽지 않고 눌러 답만 얻는 행동.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hint-before-attempt",
+   "label": "시도 전 힌트 요청",
+   "parent": "hints-on-demand",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문제의 첫 행동이 힌트인 비율 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "superficial-hint-reading",
+   "label": "힌트 대충 읽기",
+   "parent": "hints-on-demand",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "앞 단계를 건너뛰고 바텀아웃으로 직행.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hint-button-affordance",
+   "label": "힌트 버튼 어포던스",
+   "parent": "hints-on-demand",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버튼이 항상 보이는 것이 주는 신호.",
    "related": [],
    "added": "2026-11-23"
   }
