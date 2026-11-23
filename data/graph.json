@@ -48511,11 +48511,15 @@
    "label": "슬라이스 개수와 비용",
    "parent": "data-statistics-slicing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "값 종류가 많은 피처로 자를 때 폭증하는 조각 수 관리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "intersectional-coverage",
+    "data-statistics-slicing"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "cross-feature-slicing",
@@ -65392,6 +65396,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한쪽이 0인 칸에서 KL이 무한·미정의가 되는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "top-n-values-other-bucket",
+   "label": "상위 N개 값과 기타 묶기",
+   "parent": "slice-cardinality-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카디널리티가 높은 특징을 상위 값 + 기타로 줄이기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "min-slice-sample-size",
+   "label": "조각별 최소 표본 수",
+   "parent": "slice-cardinality-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 작은 조각은 보고하지 않는 하한.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "specified-value-slicer",
+   "label": "지정 값 슬라이서",
+   "parent": "slice-cardinality-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관심 값만 골라 조각 수를 고정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "slice-stats-storage-cost",
+   "label": "조각 통계 저장 비용",
+   "parent": "slice-cardinality-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조각 수에 비례해 늘어나는 통계 저장량.",
    "related": [],
    "added": "2026-11-23"
   }
