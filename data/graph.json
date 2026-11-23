@@ -47746,11 +47746,15 @@
    "label": "데이터 다양성 특성",
    "parent": "iso-5259-part2-measures",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "다양한 상황·집단을 포함하는 정도.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-balance-characteristic",
+    "data-representativeness"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-identifiability",
@@ -62939,6 +62943,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "감사 가능성부터 적시성까지 AI용 추가 특성 목록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "coverage-bias",
+   "label": "커버리지 편향",
+   "parent": "data-diversity-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 일부 집단을 빠뜨리는 선택 편향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "non-response-bias",
+   "label": "무응답 편향",
+   "parent": "data-diversity-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "참여율 차이로 대표성이 깨지는 편향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sampling-bias",
+   "label": "표집 편향",
+   "parent": "data-diversity-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 표집을 하지 않아 생기는 편향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reporting-bias",
+   "label": "보고 편향",
+   "parent": "data-diversity-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극단적 사건만 기록돼 빈도가 왜곡되는 편향.",
    "related": [],
    "added": "2026-11-23"
   }
