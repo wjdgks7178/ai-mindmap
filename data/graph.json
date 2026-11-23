@@ -22296,88 +22296,120 @@
    "label": "수동 대안",
    "parent": "controls-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자동이 안 될 때의 비자동 완료 방법.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "controls-audit",
+    "graceful-failure-paths"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "ai-opt-out",
    "label": "AI 옵트아웃",
    "parent": "controls-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "쓰지 않을 권리와 나중에 켜기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "controls-audit",
+    "manual-fallback"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "personalization-reset",
    "label": "개인화 초기화",
    "parent": "controls-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기본 모델로 되돌리기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "controls-audit",
+    "ai-opt-out"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "control-vs-stakes",
    "label": "통제와 위험의 관계",
    "parent": "controls-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위험이 클수록 통제 욕구가 커짐.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "controls-audit",
+    "usability-vs-overreliance-tradeoff"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "data-cascade",
    "label": "데이터 연쇄",
    "parent": "data-headlines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "초기 데이터 문제가 하류로 연쇄되는 현상.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-headlines",
+    "representativeness-check"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "representativeness-check",
    "label": "대표성 점검",
    "parent": "data-headlines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용자 분포와 학습 데이터 분포 비교.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-headlines",
+    "data-cascade"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "inter-labeler-reliability",
    "label": "라벨러 간 신뢰도",
    "parent": "data-headlines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "라벨러 일치도 점검.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-headlines",
+    "llm-judge-leakage"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "secondary-effects-testing",
    "label": "부차적 효과 시험",
    "parent": "data-headlines",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가가 놓치기 쉬운 부작용.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "data-headlines",
+    "data-cascade"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "claim-decomposition",
@@ -67739,6 +67771,226 @@
    "status": "planned",
    "priority": 3,
    "summary": "범위·도달·삭제를 안내.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "task-completion-without-ai",
+   "label": "AI 없이 과제 완료",
+   "parent": "manual-fallback",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동이 아닌 평소 방식으로 끝내는 경로.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fallback-discoverability",
+   "label": "수동 경로 발견성",
+   "parent": "manual-fallback",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수동 대안이 숨겨지지 않는지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "opt-out-explain-benefits-first",
+   "label": "이점 설명 후 선택 존중",
+   "parent": "ai-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명한 뒤 거부를 존중.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "in-context-data-settings",
+   "label": "맥락 내 데이터 설정",
+   "parent": "ai-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설정 변경 위치를 맥락 안에서 안내.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "per-feature-opt-out",
+   "label": "기능별 옵트아웃",
+   "parent": "ai-opt-out",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로깅 등 일부만 끄기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reset-impact-preview",
+   "label": "초기화 영향 미리보기",
+   "parent": "personalization-reset",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지워질 것을 실행 전에 보여 줌.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "erase-past-selections",
+   "label": "과거 선택 삭제",
+   "parent": "personalization-reset",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선호 변화에 맞게 기록 지우기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "stakes-types",
+   "label": "위험의 종류(신체·정서·금전)",
+   "parent": "control-vs-stakes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통제 욕구를 키우는 위험 유형.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "delegating-unpleasant-tasks",
+   "label": "불쾌한 일은 맡기기",
+   "parent": "control-vs-stakes",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "못 하거나 위험한 일은 통제를 넘김.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "plant-app-region-mismatch",
+   "label": "식물 식별 앱 지역 불일치 사례",
+   "parent": "data-cascade",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "북미 학습, 남미 사용자 오류.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-documentation-gap",
+   "label": "데이터 문서화 부족",
+   "parent": "data-cascade",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연쇄의 흔한 원인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-work-undervalued",
+   "label": "데이터 작업 저평가",
+   "parent": "data-cascade",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연쇄의 흔한 원인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rebalancing-vs-real-proportions",
+   "label": "재균형 vs 현실 비율",
+   "parent": "representativeness-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비원어민 50% 예시.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "labeler-pool-check",
+   "label": "라벨러 풀 점검",
+   "parent": "representativeness-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자와 최종 사용자의 유사성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "noisy-input-realism",
+   "label": "현실적 노이즈 입력",
+   "parent": "representativeness-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "깨끗한 데이터만 쓰지 않기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "labeler-disagreement-as-signal",
+   "label": "라벨러 불일치의 신호 활용",
+   "parent": "inter-labeler-reliability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모호성을 모델에 반영.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "annotation-guideline-redesign",
+   "label": "주석 지침 재설계",
+   "parent": "inter-labeler-reliability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치도가 낮을 때 지침을 고침.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reward-function-side-effects",
+   "label": "보상 함수의 부작용",
+   "parent": "secondary-effects-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 정의 시 예상 밖 효과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "running-app-quit-case",
+   "label": "달리기 앱 중도 포기 사례",
+   "parent": "secondary-effects-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "칼로리 조언이 이탈을 늘림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "secondary-metrics",
+   "label": "부차 지표 추적",
+   "parent": "secondary-effects-testing",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이탈·불만 같은 보조 지표.",
    "related": [],
    "added": "2026-11-23"
   }
