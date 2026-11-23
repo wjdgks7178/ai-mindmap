@@ -47836,11 +47836,15 @@
    "label": "책임이 모호한 데이터",
    "parent": "iso-5259-part5-governance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주인 없는 데이터가 만드는 위험.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-quality-accountabilities",
+    "zombie-documents"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-creator-role",
@@ -63249,6 +63253,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "소비자 보고를 품질 문제 신호로 쓰기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "shadow-it-data",
+   "label": "그림자 IT 데이터",
+   "parent": "ambiguous-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IT 통제 밖에서 생기는 비승인 데이터.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ownership-coverage-metric",
+   "label": "소유자 지정률 지표",
+   "parent": "ambiguous-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카탈로그 자산 중 소유자가 채워진 비율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dark-data",
+   "label": "다크 데이터",
+   "parent": "ambiguous-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집만 하고 쓰지 않는 데이터.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sandbox-dataset-expiry",
+   "label": "샌드박스 데이터 만료일",
+   "parent": "ambiguous-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임시 데이터셋에 소유자와 만료일을 두기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "departed-owner-reassignment",
+   "label": "퇴사·이동 소유자 재지정",
+   "parent": "ambiguous-data-responsibility",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소유자가 떠난 자산의 소유 이전.",
    "related": [],
    "added": "2026-11-23"
   }
