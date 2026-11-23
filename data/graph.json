@@ -62245,11 +62245,15 @@
    "label": "지연 특징과 shift",
    "parent": "time-based-split-rule",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이동평균·lag가 현재 값을 포함하지 않게 하기.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "split-gap-buffer",
+    "point-in-time-leakage"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "walk-forward-validation",
@@ -65872,6 +65876,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "문서 출력과 같은지 직접 구현해 확인하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rolling-window-definition",
+   "label": "rolling 창 정의",
+   "parent": "lag-feature-shift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창이 현재 행을 포함하는지 확인하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "aggregate-then-shift-order",
+   "label": "집계 후 shift 순서",
+   "parent": "lag-feature-shift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집계와 shift의 순서가 결과에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "suspicious-high-single-feature-corr",
+   "label": "과도하게 높은 단일 특징 상관",
+   "parent": "lag-feature-shift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누수의 단서가 되는 비정상적으로 높은 상관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "offline-online-performance-gap-leakage",
+   "label": "오프라인-운영 성능 격차와 누수",
+   "parent": "lag-feature-shift",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오프라인이 훨씬 좋을 때 누수를 의심.",
    "related": [],
    "added": "2026-11-23"
   }
