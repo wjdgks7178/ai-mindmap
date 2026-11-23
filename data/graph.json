@@ -47407,11 +47407,14 @@
    "label": "직접 피드백 고리",
    "parent": "feedback-loop-ml",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 자기 학습 데이터 선택에 영향.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "exploration-randomization"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "hidden-feedback-loop",
@@ -61731,6 +61734,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "현재 상태 테이블을 과거 사건에 붙이는 실수.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "contextual-bandit",
+   "label": "컨텍스추얼 밴딧",
+   "parent": "direct-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상황 정보를 보고 행동을 고르며 탐색·활용을 균형 잡는 알고리즘.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "popularity-bias-loop",
+   "label": "인기 편향 고리",
+   "parent": "direct-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인기 항목이 더 노출돼 더 인기가 되는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "holdout-group-no-model",
+   "label": "모델 비영향 홀드아웃",
+   "parent": "direct-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 영향을 받지 않는 비교 그룹 유지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-isolation-from-model",
+   "label": "모델 영향 데이터 격리",
+   "parent": "direct-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 데이터를 모델 선택과 분리해 보관.",
    "related": [],
    "added": "2026-11-23"
   }
