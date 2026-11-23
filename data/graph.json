@@ -47732,11 +47732,14 @@
    "label": "데이터 균형 특성",
    "parent": "iso-5259-part2-measures",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "클래스·집단 분포가 쏠리지 않은 정도.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-diversity-characteristic"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-diversity-characteristic",
@@ -62903,6 +62906,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "통지·시정·감액 같은 위반 조치 조항.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "downsampling-upweighting",
+   "label": "다운샘플링과 업웨이팅",
+   "parent": "data-balance-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다수 클래스를 줄이고 그만큼 손실 가중치를 올리는 기법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "accuracy-paradox-imbalance",
+   "label": "불균형에서의 정확도 함정",
+   "parent": "data-balance-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다수 클래스만 맞춰도 정확도가 높아 보이는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iso-5259-2-additional-characteristics",
+   "label": "5259-2 추가 특성 9개",
+   "parent": "data-balance-characteristic",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감사 가능성부터 적시성까지 AI용 추가 특성 목록.",
    "related": [],
    "added": "2026-11-23"
   }
