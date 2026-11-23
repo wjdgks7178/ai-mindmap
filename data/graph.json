@@ -48512,11 +48512,15 @@
    "label": "스팬 기반 검증",
    "parent": "skew-drift-comparator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "날짜 단위 데이터 조각을 이전 스팬과 비교하는 구조.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "skew-vs-drift",
+    "acceptable-skew-threshold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "slice-cardinality-cost",
@@ -65595,6 +65599,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 특징이 이름으로 참조하는 최상위 문자열 도메인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "no-data-in-span",
+   "label": "NO_DATA_IN_SPAN 이상",
+   "parent": "span-based-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스팬에 예제가 없을 때 보고되는 이상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "same-weekday-comparison",
+   "label": "같은 요일끼리 비교",
+   "parent": "span-based-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주기성이 있을 때 비교 대상을 같은 요일로.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fixed-baseline-vs-previous-span",
+   "label": "고정 기준 vs 직전 스팬",
+   "parent": "span-based-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장기 기준 분포와 직전 스팬 비교를 병행.",
    "related": [],
    "added": "2026-11-23"
   }
