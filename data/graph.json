@@ -48426,11 +48426,15 @@
    "label": "라벨 열 처리",
    "parent": "schema-environments",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 전용 라벨을 서빙 검증에서 제외하는 패턴.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-environments",
+    "environment-exception-hygiene"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "environment-exception-hygiene",
@@ -65440,6 +65444,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "조각 수에 비례해 늘어나는 통계 저장량.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "label-leakage-in-serving",
+   "label": "서빙 데이터의 라벨 유입",
+   "parent": "label-column-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서빙 요청에 라벨이 섞이면 누수 신호일 수 있음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "not-in-environment",
+   "label": "not_in_environment",
+   "parent": "label-column-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징을 특정 환경에서 제외하는 스키마 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "default-environment",
+   "label": "default_environment",
+   "parent": "label-column-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 특징이 기본으로 속하는 환경 집합.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "single-schema-multiple-environments",
+   "label": "스키마 하나·환경 여럿",
+   "parent": "label-column-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마를 두 벌 만들지 않고 환경으로 구분.",
    "related": [],
    "added": "2026-11-23"
   }
