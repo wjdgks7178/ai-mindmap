@@ -47995,11 +47995,15 @@
    "label": "EXPLAIN ANALYZE로 읽은 파일 수 보기",
    "parent": "data-partitioning-pruning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가지치기가 동작했는지 확인.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "hive-style-partitioning",
+    "partition-key-selection"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "liquid-clustering",
@@ -63809,6 +63813,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "드문 질의가 아니라 대표 질의에 맞춰 설계.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "explain-type-io",
+   "label": "EXPLAIN (TYPE IO)",
+   "parent": "explain-analyze-scan-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질의가 읽는 테이블·스키마 정보를 보는 옵션.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "explain-fragment-types",
+   "label": "EXPLAIN 조각 유형",
+   "parent": "explain-analyze-scan-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SINGLE·HASH·BROADCAST·SOURCE 조각의 의미.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "broadcast-join-memory",
+   "label": "BROADCAST 조인과 메모리",
+   "parent": "explain-analyze-scan-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복제되는 테이블이 크면 메모리 오류가 나는 이유.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "query-stats-bytes-scanned",
+   "label": "쿼리 통계의 스캔 바이트",
+   "parent": "explain-analyze-scan-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제로 읽은 데이터 양으로 비용을 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ineffective-predicate-removal",
+   "label": "효과 없는 조건 제거",
+   "parent": "explain-analyze-scan-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "EXPLAIN으로 불필요한 WHERE 조건을 찾기.",
    "related": [],
    "added": "2026-11-23"
   }
