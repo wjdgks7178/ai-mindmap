@@ -63360,11 +63360,15 @@
    "label": "역성향점수 가중(IPW)",
    "parent": "post-stratification-weights",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "응답 확률의 역수로 가중하는 일반적 방법.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "inverse-probability-weighting-logs",
+    "post-stratification-weights"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "balance-python-package",
@@ -63451,6 +63455,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모형 기반 보정과 래킹의 비교.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "strong-ignorability",
+   "label": "강한 무시 가능성",
+   "parent": "inverse-propensity-score-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성향점수 방법이 성립하기 위한 두 가정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cbps",
+   "label": "CBPS(공변량 균형 성향점수)",
+   "parent": "inverse-propensity-score-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성향점수 모델 의존을 줄이는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lasso-propensity-model",
+   "label": "LASSO 성향점수 모델",
+   "parent": "inverse-propensity-score-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화로 가중치 분산을 줄이는 로지스틱 회귀.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bootstrap-variance-weighted-mean",
+   "label": "가중 평균의 부트스트랩 분산",
+   "parent": "inverse-propensity-score-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 추정 변동까지 반영한 분산 추정.",
    "related": [],
    "added": "2026-11-23"
   }
