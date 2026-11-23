@@ -47953,11 +47953,14 @@
    "label": "최고데이터책임자",
    "parent": "data-owner-steward",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "조직 데이터 거버넌스를 이끄는 역할.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-custodian"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "hive-style-partitioning",
@@ -66265,6 +66268,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "조직에서 스튜어드를 정하는 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cdo-vs-cio-caio",
+   "label": "CDO·CIO·CAIO 역할 경계",
+   "parent": "chief-data-officer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권한이 겹치는 세 임원직 비교.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cdo-reporting-line",
+   "label": "CDO 보고 라인",
+   "parent": "chief-data-officer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CEO·COO·CFO 등 조직별 보고 구조.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-driven-culture-initiative",
+   "label": "데이터 중심 문화 이니셔티브",
+   "parent": "chief-data-officer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CDO 주요 어려움인 조직 변화 과제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-monetization",
+   "label": "데이터 수익화",
+   "parent": "chief-data-officer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 수익원으로 만드는 일.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sarbanes-oxley-data-origin",
+   "label": "사베인스-옥슬리와 CDO의 기원",
+   "parent": "chief-data-officer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규제 대응에서 시작된 역할.",
    "related": [],
    "added": "2026-11-23"
   }
