@@ -47805,11 +47805,14 @@
    "label": "거버넌스 기구의 책임",
    "parent": "iso-5259-part5-governance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전략·정책·감독을 정하는 최고 기구의 역할.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "data-quality-accountabilities"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-quality-accountabilities",
@@ -63152,6 +63155,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "5259-2 추가 특성의 하나.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-oversight-mechanisms",
+   "label": "데이터 품질 감독 메커니즘",
+   "parent": "data-quality-governing-body",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "governing body가 이행을 확인하는 장치.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-risk-management-capability",
+   "label": "데이터 품질 위험 관리 역량",
+   "parent": "data-quality-governing-body",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 품질 위험을 식별·관리하는 조직 능력.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iso-38505-data-governance",
+   "label": "ISO/IEC 38505-1 데이터 거버넌스",
+   "parent": "data-quality-governing-body",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 거버넌스를 다루는 IT 거버넌스 규격.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iso-38507-ai-governance",
+   "label": "ISO/IEC 38507 AI 거버넌스",
+   "parent": "data-quality-governing-body",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 사용에 따른 거버넌스 시사점.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "governing-body-vs-management",
+   "label": "Governing body vs 경영진",
+   "parent": "data-quality-governing-body",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정하고 감독하는 쪽과 이행하는 쪽의 구분.",
    "related": [],
    "added": "2026-11-23"
   }
