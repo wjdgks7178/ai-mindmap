@@ -47579,11 +47579,15 @@
    "label": "파일럿 라이트 vs 웜 스탠바이",
    "parent": "iso-25012-system-dependent-characteristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "꺼 둔 사본과 축소 가동 사본의 차이.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "backup-restore-testing",
+    "rto-rpo"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-portability-migration",
@@ -62288,6 +62292,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "벡터 색인·모델 설정 백업을 복원해 검색 품질 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hot-standby",
+   "label": "핫 스탠바이",
+   "parent": "pilot-light-vs-warm-standby",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복구 리전이 전체 부하를 감당하도록 미리 용량을 둔 구성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "multi-site-active-active",
+   "label": "멀티 사이트 액티브/액티브",
+   "parent": "pilot-light-vs-warm-standby",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 리전이 동시에 트래픽을 처리하는 DR 전략.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "failover-automation-button",
+   "label": "장애 조치 자동화(버튼 한 번)",
+   "parent": "pilot-light-vs-warm-standby",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수동 개시라도 단계는 자동화.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "service-quota-dr-region",
+   "label": "DR 리전 서비스 할당량",
+   "parent": "pilot-light-vs-warm-standby",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확장을 막지 않도록 복구 리전 한도를 미리 올림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iac-for-dr",
+   "label": "DR을 위한 IaC",
+   "parent": "pilot-light-vs-warm-standby",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인프라를 코드로 정의해 리전 간 일관 배포.",
    "related": [],
    "added": "2026-11-23"
   }
