@@ -48111,11 +48111,15 @@
    "label": "카드 없으면 사용 불가 게이트",
    "parent": "internal-data-card-adoption",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사용 신청 단계에서 카드 존재를 확인.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "card-field-lint",
+    "use-exception-approval"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "card-field-lint",
@@ -64580,6 +64584,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "필드 값의 형식·허용 값까지 검사.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hf-gated-datasets",
+   "label": "Hugging Face gated datasets",
+   "parent": "card-required-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접근 요청·승인으로 데이터 접근을 통제하는 기능.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "access-request-states",
+   "label": "접근 요청 상태 모델",
+   "parent": "card-required-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "pending·accepted·rejected·reset의 의미.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "access-report-audit-trail",
+   "label": "접근 보고서와 감사 기록",
+   "parent": "card-required-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청·검토 시각이 남는 JSON 보고서.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gate-friction-tradeoff",
+   "label": "게이트의 마찰 비용",
+   "parent": "card-required-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엄격한 관문이 개발 속도와 카드 품질에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "re-review-on-card-change",
+   "label": "카드 변경 시 승인 재검토",
+   "parent": "card-required-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카드 폐기·갱신 때 기존 승인을 다시 확인.",
    "related": [],
    "added": "2026-11-23"
   }
