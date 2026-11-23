@@ -48133,11 +48133,15 @@
    "label": "사용 시 고려사항 칸이 비는 문제",
    "parent": "internal-data-card-adoption",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가장 필요한 칸이 가장 적게 채워짐.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "card-quarterly-audit",
+    "datasheets-for-datasets"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "card-quarterly-audit",
@@ -64414,6 +64418,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 크기 숫자가 가리키는 대상 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-cards-playbook",
+   "label": "Data Cards Playbook",
+   "parent": "considerations-section-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구글이 정리한 데이터 카드 작성·감사 툴킷(Ask·Inspect·Answer·Audit).",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "card-question-prompts",
+   "label": "카드 칸의 질문 예시",
+   "parent": "considerations-section-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빈 칸을 줄이려고 칸마다 질문 예시를 넣는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "card-maintenance-status",
+   "label": "카드 유지보수 상태",
+   "parent": "considerations-section-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정기 갱신·적극 유지·제한적 유지·폐기 같은 상태 표기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "card-completeness-popularity",
+   "label": "카드 완성도와 인기",
+   "parent": "considerations-section-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카드가 충실할수록 인기가 높은 상관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "limitations-topic-modeling",
+   "label": "한계 서술의 토픽 분석",
+   "parent": "considerations-section-gap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한계·영향 칸의 내용을 주제별로 분류.",
    "related": [],
    "added": "2026-11-23"
   }
