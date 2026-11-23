@@ -47717,11 +47717,15 @@
    "label": "공급사 계약 품질 부속서",
    "parent": "data-quality-checklist-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 공급 계약에 점검표를 붙이기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "dq-checklist-owner-column",
+    "data-quality-checklist-template"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-balance-characteristic",
@@ -62844,6 +62848,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "해결 진행과 업무 영향을 지표로 추적.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-contract",
+   "label": "데이터 계약",
+   "parent": "supplier-quality-annex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공급자가 보장하는 내용을 기계가 읽게 적은 명세.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "odcs",
+   "label": "Open Data Contract Standard",
+   "parent": "supplier-quality-annex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "YAML 기반 데이터 계약 표준(Bitol).",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "breaking-change-semver",
+   "label": "깨지는 변경과 SemVer",
+   "parent": "supplier-quality-annex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열 삭제 등 호환 깨짐은 메이저 버전으로 알린다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "contract-ci-testing",
+   "label": "계약 CI 테스트",
+   "parent": "supplier-quality-annex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CI/CD에서 계약 대비 데이터를 자동 시험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "supplier-sla-penalty",
+   "label": "공급사 SLA 위반 조치",
+   "parent": "supplier-quality-annex",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통지·시정·감액 같은 위반 조치 조항.",
    "related": [],
    "added": "2026-11-23"
   }
