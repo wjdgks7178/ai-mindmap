@@ -21764,11 +21764,14 @@
    "label": "바텀아웃 힌트",
    "parent": "hint-escalation-rule",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답을 직접 주는 마지막 단계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hint-escalation-rule"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "hints-on-demand",
@@ -66503,6 +66506,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "고객이 원하는 시간에 걸기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "hint-response-time-indicator",
+   "label": "힌트 응답시간 지표",
+   "parent": "bottom-out-hint",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "힌트 읽은 시간 K+R로 학습을 추정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "worked-example-effect",
+   "label": "풀이 예시 효과",
+   "parent": "bottom-out-hint",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "완성된 풀이를 보며 배우는 효과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "self-explanation-effect",
+   "label": "자기설명 효과",
+   "parent": "bottom-out-hint",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스스로 이유를 설명하며 배우는 효과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "help-abuse-gaming",
+   "label": "도움 남용(게이밍)",
+   "parent": "bottom-out-hint",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "힌트를 읽지 않고 눌러 답만 얻는 행동.",
    "related": [],
    "added": "2026-11-23"
   }
