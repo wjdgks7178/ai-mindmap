@@ -48081,11 +48081,15 @@
    "label": "용도 정의 예시",
    "parent": "allowed-use-policy-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "'분석'과 '학습'처럼 모호한 용어에 예시 붙이기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "consent-scope-limit",
+    "use-exception-approval"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "consent-scope-limit",
@@ -64152,6 +64156,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "서비스 데이터를 모델 학습에 쓸 때의 목적 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ga4gh-duo",
+   "label": "GA4GH Data Use Ontology",
+   "parent": "use-definition-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 사용 제한을 코드로 태그하는 온톨로지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "use-code-stable-ids",
+   "label": "용도 코드의 안정 ID",
+   "parent": "use-definition-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "용어가 바뀌어도 옛 ID를 유지하고 새 ID를 발급.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "use-modifier-prohibitions",
+   "label": "용도 수식어(금지·한정)",
+   "parent": "use-definition-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상업 금지·집단 한정 같은 제한 표현.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "machine-readable-use-matching",
+   "label": "기계 판독 용도 일치",
+   "parent": "use-definition-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연구 목적과 데이터셋 용도를 자동으로 대조.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "conservative-interpretation-rule",
+   "label": "모호하면 보수적 해석 규칙",
+   "parent": "use-definition-examples",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불명확한 용도는 허용하지 않는 쪽으로 해석.",
    "related": [],
    "added": "2026-11-23"
   }
