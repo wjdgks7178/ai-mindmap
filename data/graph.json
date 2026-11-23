@@ -22176,55 +22176,75 @@
    "label": "컨텍스트 오류",
    "parent": "errors-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시스템은 맞게 작동했지만 사용자가 오류로 느끼는 것.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "errors-audit",
+    "happy-accident"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "background-error",
    "label": "백그라운드 오류",
    "parent": "errors-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "아무도 모르는 틀림, 전용 QA 필요.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "errors-audit",
+    "context-error"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "happy-accident",
    "label": "행운의 사고",
    "parent": "errors-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오류로 표시됐지만 유용한 결과.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "errors-audit",
+    "context-error"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "graceful-failure-paths",
    "label": "우아한 실패 경로",
    "parent": "errors-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한계 설명·대안·통제권 반환.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "errors-audit",
+    "context-error"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "error-channel-monitoring",
    "label": "오류 채널 모니터링",
    "parent": "errors-audit",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "고객센터·SNS·지표로 새 오류 찾기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "errors-audit",
+    "background-error"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "partial-explanation",
@@ -67443,6 +67463,160 @@
    "status": "planned",
    "priority": 3,
    "summary": "인지 욕구가 높은 사람이 더 이득.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "error-onboarding-fix",
+   "label": "온보딩으로 오류 인식 바꾸기",
+   "parent": "context-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동을 예상 가능하게 안내.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "error-priority-frequency-severity",
+   "label": "오류 우선순위(빈도·심각도)",
+   "parent": "context-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빈도와 심각도로 대응 순서 결정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mental-model-mismatch",
+   "label": "멘탈 모델 불일치",
+   "parent": "context-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자의 기대와 시스템 행동이 어긋남.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "unknown-unknowns-qa",
+   "label": "unknown unknowns 발굴 QA",
+   "parent": "background-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스트레스 테스트로 모르는 오류 찾기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "error-rate-measurement-distortion",
+   "label": "오류율 측정 왜곡",
+   "parent": "background-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "백그라운드 오류가 지표를 왜곡.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sample-audit-output-vs-source",
+   "label": "원문 대조 표본 점검",
+   "parent": "background-error",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력을 원문과 정기 대조.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "unintended-use-signals",
+   "label": "비의도 사용 신호",
+   "parent": "happy-accident",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자가 반기는 비의도 사용 파악.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "error-taxonomy-tagging",
+   "label": "오류 분류 태깅",
+   "parent": "happy-accident",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행운의 사고를 별도 태그로 기록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "alternative-path-offer",
+   "label": "대안 경로 제시",
+   "parent": "graceful-failure-paths",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "안전한 대안을 제안.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "return-control-to-user",
+   "label": "통제권 반환",
+   "parent": "graceful-failure-paths",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패 시 사용자가 넘겨받게 함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "assume-subversive-use",
+   "label": "악의적 사용 가정",
+   "parent": "graceful-failure-paths",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "취약점 과다 설명 피하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "in-product-feedback-prompt",
+   "label": "제품 내 피드백 요청",
+   "parent": "error-channel-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 거부 시 기대를 묻기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feedback-to-data-fix",
+   "label": "피드백으로 데이터 개선",
+   "parent": "error-channel-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 수정·빠진 데이터 발견.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "diary-study",
+   "label": "일기 연구",
+   "parent": "error-channel-monitoring",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자 경험을 기록해 오류 발견.",
    "related": [],
    "added": "2026-11-23"
   }
