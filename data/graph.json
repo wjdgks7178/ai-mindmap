@@ -47605,11 +47605,15 @@
    "label": "OpenLineage",
    "parent": "data-traceability",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 계보를 수집하는 오픈 규격.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "w3c-prov",
+    "lineage-graph-debugging"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "w3c-prov",
@@ -62347,6 +62351,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "인프라를 코드로 정의해 리전 간 일관 배포.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "openlineage-facets",
+   "label": "OpenLineage facet",
+   "parent": "openlineage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엔티티에 붙이는 확장 가능한 메타데이터 조각.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "marquez",
+   "label": "Marquez",
+   "parent": "openlineage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "OpenLineage의 참조 구현 계보 저장·조회 서비스.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "openlineage-run-event",
+   "label": "OpenLineage RunEvent",
+   "parent": "openlineage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실행 시작·종료 시점에 보내는 이벤트.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lineage-naming-conventions",
+   "label": "계보 이름 규칙",
+   "parent": "openlineage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터셋 이름을 물리적 위치에서 고유하게 만드는 규칙.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lineage-integration-airflow-spark-dbt",
+   "label": "Airflow·Spark·dbt 계보 연동",
+   "parent": "openlineage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스케줄러·엔진이 계보 이벤트를 자동 발행.",
    "related": [],
    "added": "2026-11-23"
   }
