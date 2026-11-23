@@ -63349,11 +63349,15 @@
    "label": "가중치 트리밍",
    "parent": "post-stratification-weights",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "극단적으로 큰 가중치를 잘라 분산을 줄이기.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "kish-design-effect",
+    "inverse-propensity-score-weighting"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "inverse-propensity-score-weighting",
@@ -63499,6 +63503,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가중치 추정 변동까지 반영한 분산 추정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "trimming-bias-variance-tradeoff",
+   "label": "트리밍의 편향-분산 절충",
+   "parent": "weight-trimming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상한을 낮추면 분산은 줄고 편향은 커진다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "weight-rescaling-after-trim",
+   "label": "트리밍 후 재스케일",
+   "parent": "weight-trimming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합·평균을 유지하도록 가중치를 다시 맞춤.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "empirical-mse-trimming-selection",
+   "label": "경험적 MSE로 트리밍 상한 고르기",
+   "parent": "weight-trimming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 상한 후보 중 MSE로 선택하는 아이디어.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "merge-sparse-categories-for-weighting",
+   "label": "희소 범주 묶기",
+   "parent": "weight-trimming",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중 모델에서 작은 범주를 합쳐 극단 가중치 줄이기.",
    "related": [],
    "added": "2026-11-23"
   }
