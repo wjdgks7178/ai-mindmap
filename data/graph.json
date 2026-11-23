@@ -47673,11 +47673,14 @@
    "label": "점검표 담당자 열",
    "parent": "data-quality-checklist-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "실패 시 누가 조치하는지 표에 적기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "supplier-quality-annex"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "dq-threshold-setting",
@@ -62786,6 +62789,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "운영 결과를 보고 기준을 갱신하는 주기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-steward-vs-owner",
+   "label": "데이터 소유자 vs 스튜어드",
+   "parent": "dq-checklist-owner-column",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "책임을 지는 사람과 일상 운영을 하는 사람의 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "five-whys-data-quality",
+   "label": "데이터 품질 Five Whys",
+   "parent": "dq-checklist-owner-column",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "왜를 반복해 근본 원인을 찾는 기법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "risk-acceptance-data-issue",
+   "label": "데이터 이슈 위험 수용",
+   "parent": "dq-checklist-owner-column",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용 대비 영향이 작을 때 고치지 않기로 결정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-issue-triage",
+   "label": "데이터 품질 이슈 분류(triage)",
+   "parent": "dq-checklist-owner-column",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신고된 이슈를 누가 다룰지 가려 배정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dq-scorecard",
+   "label": "데이터 품질 스코어카드",
+   "parent": "dq-checklist-owner-column",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결 진행과 업무 영향을 지표로 추적.",
    "related": [],
    "added": "2026-11-23"
   }
