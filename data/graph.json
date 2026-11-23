@@ -22901,44 +22901,60 @@
    "label": "정답 문서 oracle",
    "parent": "raft",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "질문에 답이 들어 있는 문서.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "raft",
+    "verbatim-quote-cot"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "verbatim-quote-cot",
    "label": "인용구 포함 사고 연쇄",
    "parent": "raft",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "근거 문장을 그대로 인용하며 추론.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "raft",
+    "oracle-document"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "open-book-domain-qa",
    "label": "도메인 오픈북 QA",
    "parent": "raft",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "도메인이 정해진 검색 기반 질의응답.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "raft",
+    "dsf-domain-specific-finetuning"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "dsf-domain-specific-finetuning",
    "label": "도메인 특화 미세조정 DSF",
    "parent": "raft",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검색 없이 도메인 지식만 주입.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "raft",
+    "open-book-domain-qa"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "raft-data-construction",
@@ -68916,6 +68932,138 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 특징이 95%를 차지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "golden-vs-distractor-docs",
+   "label": "golden 문서 vs 방해 문서",
+   "parent": "oracle-document",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답이 있는 문서와 없는 문서.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "golden-proportion-p",
+   "label": "golden 비율 P",
+   "parent": "oracle-document",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 중 golden을 넣는 비율, 40~100%.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "memorize-vs-derive",
+   "label": "기억 vs 도출",
+   "parent": "oracle-document",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "golden이 없을 때 모델이 답을 기억하도록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "begin-quote-format",
+   "label": "begin_quote 형식",
+   "parent": "verbatim-quote-cot",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용 구간을 표시하는 토큰.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cot-prevents-overfitting",
+   "label": "CoT와 과적합 방지",
+   "parent": "verbatim-quote-cot",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "간결한 답에 대한 과적합을 줄임.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gpt4-generated-cot-data",
+   "label": "GPT-4로 CoT 학습 데이터 생성",
+   "parent": "verbatim-quote-cot",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추론 사슬을 모델로 합성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "closed-vs-open-book-llm",
+   "label": "closed-book vs open-book LLM",
+   "parent": "open-book-domain-qa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 없이 vs 검색 문서로.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raft-benchmarks",
+   "label": "RAFT 평가 데이터",
+   "parent": "open-book-domain-qa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PubMed·HotpotQA·APIBench.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "top-k-rag-distractors",
+   "label": "top-k RAG와 방해 문서",
+   "parent": "open-book-domain-qa",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 문서 수에 강건하게.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dsf-plus-rag",
+   "label": "DSF + RAG",
+   "parent": "dsf-domain-specific-finetuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미세조정 모델에 검색을 붙임.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "answer-style-alignment",
+   "label": "답변 스타일 정렬",
+   "parent": "dsf-domain-specific-finetuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 형식에 맞추는 미세조정 효과.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raft-gain-numbers",
+   "label": "RAFT 향상 수치",
+   "parent": "dsf-domain-specific-finetuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HotpotQA 등에서의 향상폭.",
    "related": [],
    "added": "2026-11-23"
   }
