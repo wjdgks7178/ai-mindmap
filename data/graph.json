@@ -47466,11 +47466,15 @@
    "label": "보류 vs 다음 날 비교",
    "parent": "skew-measurement-stages",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시간 민감 특징의 열화를 보는 단계.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "feature-consistency-check",
+    "time-based-split-rule"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "acceptable-skew-threshold",
@@ -61992,6 +61996,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "섞어서 나눌 때 미래가 학습에 섞이는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "time-sensitive-feature-audit",
+   "label": "시간 민감 특징 점검",
+   "parent": "holdout-vs-next-day",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간이 지나며 낡는 특징을 찾아내는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "next-day-regularization-tuning",
+   "label": "다음 날 성능 기준 정규화 튜닝",
+   "parent": "holdout-vs-next-day",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보류가 아닌 다음 날 성능을 최대화하도록 조정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "retraining-frequency",
+   "label": "재학습 주기",
+   "parent": "holdout-vs-next-day",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 낡음 속도에 맞춰 재학습 간격을 정하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rules-of-ml",
+   "label": "Rules of Machine Learning",
+   "parent": "holdout-vs-next-day",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구글의 ML 실무 규칙 43개 모음.",
    "related": [],
    "added": "2026-11-23"
   }
