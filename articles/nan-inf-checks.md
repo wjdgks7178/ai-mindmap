@@ -13,7 +13,7 @@
 - **NaN의 기묘한 성질(직접 실행)**: `NaN == NaN`은 **False**, `NaN != NaN`은 **True**다. 그래서 `x == NaN`으로는 NaN을 찾을 수 없고 `isnan` 계열 함수를 써야 한다. 또 `inf - inf`는 NaN이 되고, `1e308 * 10`은 inf로 넘친다.
 - **언어마다 다르다(직접 실행)**: 순수 Python에서 `0.0 / 0.0`은 `ZeroDivisionError`를 내지만 `float('nan')`을 직접 만들거나 `inf - inf`를 계산하면 NaN이 생긴다. 다른 언어·SQL 엔진은 `0/0`을 NaN 또는 null 또는 오류로 처리할 수 있다.
 - **검사 설계(일반 원칙, 제안)**: ① 수치 열마다 NaN 개수·Inf 개수·null 개수를 따로 센다 ② 허용치를 정한다(대개 0) ③ 발견 시 원인(0 나눗셈, 로그 0, 오버플로, 센서 오류)을 찾아 업스트림에서 고친다 ④ 정리 방식(제거·대체·표시 열 추가)을 문서화하고 학습·서빙에서 똑같이 적용한다. 결측 처리의 불일치는 [학습-서빙 일관성](#feature-consistency-check) 문제가 된다.
-- **TFDV와의 관계(앞서 읽은 문서)**: TFDV의 스키마·이상 탐지는 값 도메인과 존재 비율 같은 것을 점검하지만, 읽은 시작 가이드 페이지에는 NaN·Inf 검사 방법이 따로 적혀 있지 않았다.
+- **TFDV의 이상 유형(anomalies.proto, 직접 읽음)**: TFDV의 `AnomalyInfo.Type` 열거형에 **`FLOAT_TYPE_HAS_NAN`(53, "Contains NaN values")** 과 **`FLOAT_TYPE_HAS_INF`(62, "Contains Inf or -Inf values")** 가 있다. 즉 TFDV는 NaN·Inf를 별도 이상 유형으로 보고한다. (시작 가이드 페이지에는 이 검사 설정 방법이 없어 설정 방식은 확인하지 못했다.)
 
 ## 그림으로 보기
 ```mermaid
@@ -50,4 +50,5 @@ clean = pc.filter(x, pc.and_(pc.is_valid(x), pc.is_finite(x)))
 | 유한한 값 | 정상 수 | `is_finite` |
 
 ## 더 읽을거리
-- [Get started with TensorFlow Data Validation](https://www.tensorflow.org/tfx/data_validation/get_started) — 스키마 기반 이상 탐지의 틀(NaN 전용 설명은 없음).
+- [anomalies.proto (TensorFlow Metadata)](https://raw.githubusercontent.com/tensorflow/metadata/master/tensorflow_metadata/proto/v0/anomalies.proto) — FLOAT_TYPE_HAS_NAN·HAS_INF 이상 유형(직접 읽음).
+- [Get started with TensorFlow Data Validation](https://www.tensorflow.org/tfx/data_validation/get_started) — 스키마 기반 이상 탐지의 틀.

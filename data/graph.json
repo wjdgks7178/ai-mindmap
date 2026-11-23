@@ -48415,11 +48415,15 @@
    "label": "새 열 이상(SCHEMA_NEW_COLUMN)",
    "parent": "tfdv-anomaly-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "스키마에 없는 열이 들어올 때의 의미와 대응.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-vs-data-fix-decision",
+    "label-column-handling"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "label-column-handling",
@@ -65488,6 +65492,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "스키마를 두 벌 만들지 않고 환경으로 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-missing-column",
+   "label": "누락 열 이상(SCHEMA_MISSING_COLUMN)",
+   "parent": "schema-new-column-anomaly",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마에 있으나 데이터 통계가 없는 열.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "column-rename-pair-signal",
+   "label": "열 이름 변경의 쌍 신호",
+   "parent": "schema-new-column-anomaly",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 이름 누락과 새 이름 새 열이 동시에 나타남.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "anomalies-proto-type-list",
+   "label": "anomalies.proto 이상 유형 목록",
+   "parent": "schema-new-column-anomaly",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TFDV가 보고하는 이상 유형 전체 목록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exclude-unused-column-from-model-input",
+   "label": "모델이 안 쓸 열 제외",
+   "parent": "schema-new-column-anomaly",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스키마엔 등록하되 모델 입력에서는 뺌.",
    "related": [],
    "added": "2026-11-23"
   }
