@@ -48501,11 +48501,15 @@
    "label": "비교기 임계값 정하기",
    "parent": "skew-drift-comparator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정상 변동폭을 관찰해 오탐·미탐 균형 맞추기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "acceptable-skew-threshold",
+    "l-infinity-norm-categorical"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "span-based-validation",
@@ -65728,6 +65732,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "격차와 한계를 데이터 카드에 남기기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sampling-noise-distance",
+   "label": "표본 잡음과 거리 지표",
+   "parent": "comparator-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진짜 분포가 같아도 표본 크기에 따라 거리가 흔들림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "false-alarm-vs-miss-tradeoff",
+   "label": "오탐 vs 미탐 거래",
+   "parent": "comparator-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값을 올리면 오탐은 줄고 미탐이 늘어남.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "threshold-per-sample-size",
+   "label": "표본 크기별 임계값",
+   "parent": "comparator-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하루 표본 수가 다르면 임계값도 다르게.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "percentile-based-threshold",
+   "label": "백분위 기반 임계값",
+   "parent": "comparator-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 기간 거리의 95번째 백분위 등으로 정하기.",
    "related": [],
    "added": "2026-11-23"
   }
