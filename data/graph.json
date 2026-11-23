@@ -22732,44 +22732,60 @@
    "label": "LoRA 랭크 r",
    "parent": "lora-adapters",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "작을수록 학습 파라미터가 줄어드는 설정.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "lora-adapters",
+    "lora-merge"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "lora-merge",
    "label": "LoRA 병합",
    "parent": "lora-adapters",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어댑터를 기본 모델에 합쳐 추론 지연 제거.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "lora-adapters",
+    "multi-adapter-serving"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "multi-adapter-serving",
    "label": "다중 어댑터 서빙",
    "parent": "lora-adapters",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기본 모델 하나에 어댑터 여러 개.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "lora-adapters",
+    "lora-merge"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "peft-library",
    "label": "PEFT 라이브러리",
    "parent": "lora-adapters",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "파라미터 효율 미세조정 도구.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "lora-adapters",
+    "lora-rank"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "group-aware-split",
@@ -68516,6 +68532,127 @@
    "status": "planned",
    "priority": 3,
    "summary": "정확도 지표는 직접 고름.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lora-alpha-scaling",
+   "label": "lora_alpha 스케일",
+   "parent": "lora-rank",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "α/r 스케일과 RSLoRA의 α/√r.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lora-target-modules",
+   "label": "LoRA 적용 모듈",
+   "parent": "lora-rank",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Wq·Wv 등 어느 행렬에 붙일지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "intrinsic-rank-hypothesis",
+   "label": "내재 랭크 가설",
+   "parent": "lora-rank",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적응 중 가중치 변화가 낮은 랭크라는 가설.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "merge-and-unload-api",
+   "label": "merge_and_unload API",
+   "parent": "lora-merge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "병합 후 독립 모델 반환.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "merge-vs-swap-tradeoff",
+   "label": "병합 vs 교체 거래",
+   "parent": "lora-merge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지연 없음과 과제 전환 유연성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lora-batching-limit",
+   "label": "LoRA 배치 한계",
+   "parent": "lora-merge",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 과제를 한 배치에 섞기 어려움.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "adapter-swap-cost",
+   "label": "어댑터 교체 비용",
+   "parent": "multi-adapter-serving",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "35MB 수준 어댑터 교체.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "per-customer-adapter",
+   "label": "고객별 어댑터",
+   "parent": "multi-adapter-serving",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고객사마다 맞춤 어댑터.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "loraconfig-parameters",
+   "label": "LoraConfig 인자",
+   "parent": "peft-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "r·alpha·target_modules 등.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "modules-to-save",
+   "label": "modules_to_save",
+   "parent": "peft-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 분류 헤드를 함께 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "qlora-loftq-init",
+   "label": "QLoRA·LoftQ 초기화",
+   "parent": "peft-library",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양자화 기본 모델용 초기화.",
    "related": [],
    "added": "2026-11-23"
   }
