@@ -47650,11 +47650,15 @@
    "label": "계보의 끊김",
    "parent": "data-traceability",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수작업 단계에서 추적이 끊기는 문제.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "lineage-graph-debugging",
+    "openlineage"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "dq-checklist-owner-column",
@@ -62513,6 +62517,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "사고 당시의 구조·상태로 계보를 본다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "placeholder-lineage-node",
+   "label": "플레이스홀더 계보 노드",
+   "parent": "lineage-gaps-manual-steps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가가 없을 때 임시 노드로 추적을 잇는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "spreadsheet-as-lineage-object",
+   "label": "스프레드시트를 계보 객체로 등록",
+   "parent": "lineage-gaps-manual-steps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엑셀을 카탈로그 객체로 만들어 열 매핑.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "application-register",
+   "label": "애플리케이션 레지스터",
+   "parent": "lineage-gaps-manual-steps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "커넥터 없는 시스템을 기록하는 목록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "black-box-transform-lineage",
+   "label": "블랙박스 변환의 계보",
+   "parent": "lineage-gaps-manual-steps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드 내부를 알 수 없는 변환을 계보에서 다루기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "manual-lineage-staleness",
+   "label": "수작업 계보의 낡음",
+   "parent": "lineage-gaps-manual-steps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손으로 그린 계보도가 금방 틀려지는 문제.",
    "related": [],
    "added": "2026-11-23"
   }
