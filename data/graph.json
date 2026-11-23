@@ -22133,33 +22133,43 @@
    "label": "진단 타임아웃",
    "parent": "friction-by-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결정 전 대안을 점검하는 멈춤.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "friction-by-design"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "usability-vs-overreliance-tradeoff",
    "label": "사용성과 과의존의 거래",
    "parent": "friction-by-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "마찰이 클수록 만족도 하락.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "friction-by-design"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "decide-before-reveal",
    "label": "먼저 결정 후 공개",
    "parent": "friction-by-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI 추천 전에 사용자 판단을 받는 설계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "friction-by-design",
+    "trust-calibration"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "context-error",
@@ -67356,6 +67366,83 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI 입력에 없는 정보가 무엇인지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "update-condition-design",
+   "label": "Update 조건 설계",
+   "parent": "decide-before-reveal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기 결정 뒤 AI 제안으로 수정 허용.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dual-process-theory-ai",
+   "label": "이중 과정 이론과 AI 의존",
+   "parent": "decide-before-reveal",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직관 사고와 분석 사고의 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "educational-strategies-debiasing",
+   "label": "교육 전략과 편향 해소",
+   "parent": "diagnostic-timeout",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전 교육으로 편향 인식 높이기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "wait-condition-30s",
+   "label": "30초 대기 조건",
+   "parent": "diagnostic-timeout",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI 제안 전에 대기시켜 가설 형성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "selective-friction",
+   "label": "선택적 마찰",
+   "parent": "usability-vs-overreliance-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위험도에 따라 마찰을 켜는 설계.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "subjective-rating-vs-performance",
+   "label": "주관 평가와 성과의 불일치",
+   "parent": "usability-vs-overreliance-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "호감 높은 시스템이 틀린 예측에 취약.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "nfc-unequal-benefit",
+   "label": "NFC에 따른 이득 불균등",
+   "parent": "usability-vs-overreliance-tradeoff",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인지 욕구가 높은 사람이 더 이득.",
    "related": [],
    "added": "2026-11-23"
   }
