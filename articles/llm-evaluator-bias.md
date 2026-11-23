@@ -36,7 +36,7 @@ flowchart TD
 | 위치 | 첫 번째/특정 위치 선호 | 순서 교환 |
 | 장황함 | 긴 답 선호 | 길이 통제, 강한 판정자 |
 | 자기 선호 | 자기 모델 선호 | 다른 모델·사람 표본 |
-| [판정 프롬프트 버전](#judge-prompt-versioning) | 판정 도구 관리 |
+| 판정 도구 관리 | 판정 프롬프트·모델 고정 | [판정 프롬프트 버전](#judge-prompt-versioning) |
 
 ## 더 읽을거리
 - [Zheng et al. (2023) — Judging LLM-as-a-Judge](https://arxiv.org/abs/2306.05685) — 직접 읽음.
