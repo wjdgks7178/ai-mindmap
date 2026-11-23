@@ -47348,11 +47348,14 @@
    "label": "온라인·오프라인 특징 동등성",
    "parent": "log-serving-features",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 특징 정의를 두 경로에서 재사용.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "feature-consistency-check"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "point-in-time-join",
@@ -61529,6 +61532,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 특징에 미래 정보가 섞이는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-view-definition",
+   "label": "feature view 정의",
+   "parent": "online-offline-feature-parity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엔티티·특징·데이터 소스를 코드로 한 번 정의.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-materialization",
+   "label": "특징 materialization",
+   "parent": "online-offline-feature-parity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배치 특징을 온라인 저장소에 적재하는 과정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-registry",
+   "label": "특징 레지스트리",
+   "parent": "online-offline-feature-parity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 정의를 버전 관리하며 공유하는 목록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "streaming-feature-push",
+   "label": "스트리밍 특징 push",
+   "parent": "online-offline-feature-parity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실시간 특징을 오프라인·온라인에 동시 반영.",
    "related": [],
    "added": "2026-11-23"
   }
