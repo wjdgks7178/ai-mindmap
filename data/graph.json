@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "nodes": [
   {
    "id": "ai",
@@ -46566,11 +46566,14 @@
    "label": "삭제 감사 표본",
    "parent": "zombie-documents",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "지난주 삭제 문서의 청크가 검색에 나오는지 확인.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "canary-document-probe"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "canary-document-probe",
@@ -61274,6 +61277,39 @@
    "summary": "답변이 낡은·삭제된 청크를 인용한 비율 지표.",
    "related": [],
    "added": "2026-11-22"
+  },
+  {
+   "id": "audit-query-generation",
+   "label": "감사용 질의 만들기",
+   "parent": "deletion-audit-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 문서에서 예상 질의를 뽑는 방법(제목·핵심어·LLM 생성).",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "leak-rate-threshold",
+   "label": "누수 비율 합격선",
+   "parent": "deletion-audit-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 감사에서 몇 %까지 허용할지 정하는 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "time-to-denial-vs-purge",
+   "label": "논리 삭제 vs 물리 삭제 시간",
+   "parent": "deletion-audit-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접근 차단까지와 실제 제거까지를 따로 재는 지표.",
+   "related": [],
+   "added": "2026-11-23"
   }
  ]
 }
