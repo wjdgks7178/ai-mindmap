@@ -63330,11 +63330,15 @@
    "label": "Kish 설계 효과",
    "parent": "post-stratification-weights",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가중치 편차로 늘어나는 분산과 유효 표본 크기.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "post-stratification-weights",
+    "weight-trimming"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "weight-trimming",
@@ -63366,6 +63370,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "편향된 표본을 가중해 균형 맞추는 Python 도구.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "weight-distribution-diagnostics",
+   "label": "가중치 분포 진단",
+   "parent": "kish-design-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사분위·극단값 비율로 가중치 문제를 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "haphazard-weights-assumption",
+   "label": "haphazard 가중치 가정",
+   "parent": "kish-design-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치와 결과 변수의 무상관 가정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "normalized-weights",
+   "label": "정규화 가중치",
+   "parent": "kish-design-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합이 표본 크기가 되도록 맞춘 가중치.",
    "related": [],
    "added": "2026-11-23"
   }
