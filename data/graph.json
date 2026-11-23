@@ -21877,33 +21877,43 @@
    "label": "정답 누출률",
    "parent": "bypass-prompt-set",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "튜터가 정답을 말해 버린 비율.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "bypass-prompt-set",
+    "bottom-out-hint"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "adversarial-student-agent",
    "label": "적대적 학생 에이전트",
    "parent": "bypass-prompt-set",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정답을 끌어내도록 학습된 시뮬레이션 학생.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "bypass-prompt-set"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "reasoning-tutor-defense",
    "label": "추론형 튜터 방어",
    "parent": "bypass-prompt-set",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "답하기 전에 이유를 쓰게 하는 방어.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "bypass-prompt-set"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "multi-turn-pedagogical-harm",
@@ -66792,6 +66802,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "retention·PFL·transfer 검사.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "leakage-judge-llm",
+   "label": "누출 판정 LLM",
+   "parent": "answer-leakage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 판정자와 사람 일치도(κ)로 검증.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "turns-to-leakage",
+   "label": "누출까지 평균 턴",
+   "parent": "answer-leakage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누출 대화에서만 계산하는 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "over-informative-hint",
+   "label": "과도하게 구체적인 힌트",
+   "parent": "answer-leakage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누출은 아니지만 답 직전까지 알려 주는 힌트.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sft-attacker-training",
+   "label": "공격자 SFT 학습",
+   "parent": "adversarial-student-agent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "6가지 기법을 섞은 대화로 미세조정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lora-fine-tuning-basics",
+   "label": "LoRA 미세조정",
+   "parent": "adversarial-student-agent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저랭크 어댑터로 적은 비용으로 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "simulated-student-eval",
+   "label": "시뮬레이션 학생 평가",
+   "parent": "adversarial-student-agent",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가짜 학생으로 튜터를 대량 시험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "multi-agent-leakage-refiner",
+   "label": "누출 판정·리파이너 구조",
+   "parent": "reasoning-tutor-defense",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초안 검사 후 수정하는 멀티에이전트.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "small-model-defense-limit",
+   "label": "소형 모델 방어 한계",
+   "parent": "reasoning-tutor-defense",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "7B에서 방어 효과가 제한적인 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reason-field-json-prompt",
+   "label": "reason 필드 JSON 프롬프트",
+   "parent": "reasoning-tutor-defense",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답 전 계획을 JSON 필드로 쓰게 함.",
    "related": [],
    "added": "2026-11-23"
   }
