@@ -22973,22 +22973,30 @@
    "label": "RAFT 학습 데이터 구성",
    "parent": "raft",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "P 비율로 정답 문서 포함·제외 섞기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "raft",
+    "oracle-document"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "power-of-noise",
    "label": "무작위 문서의 역설",
    "parent": "distractor-documents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무관한 문서가 정확도를 올린다는 보고.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "distractor-documents",
+    "retrieval-top-k"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "reranking-for-rag",
@@ -23006,11 +23014,15 @@
    "label": "검색 개수 top-k",
    "parent": "distractor-documents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "넣는 문서 수와 방해의 관계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "distractor-documents",
+    "power-of-noise"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "abstain-when-no-evidence",
@@ -69197,6 +69209,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "지침 이해 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gold-position-near-query",
+   "label": "관련 문서의 위치",
+   "parent": "power-of-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문 가까이에 둬야 함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "distracting-vs-random-docs",
+   "label": "방해 vs 무작위 문서",
+   "parent": "power-of-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미적 근접성이 해로움.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "noise-open-question",
+   "label": "무작위 문서 이득의 원인 미해명",
+   "parent": "power-of-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이론이 아직 없음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "retrieve-few-then-fill",
+   "label": "적게 가져온 뒤 채우기",
+   "parent": "power-of-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최소 검색 + 무작위로 채움.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "top-k-accuracy-metric",
+   "label": "top-k 정확도",
+   "parent": "retrieval-top-k",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상위 k개에 정답이 있는 비율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bm25-vs-contriever",
+   "label": "BM25 vs Contriever",
+   "parent": "retrieval-top-k",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희소·밀집 검색기 비교.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "too-many-docs-decline",
+   "label": "문서가 너무 많을 때의 급락",
+   "parent": "retrieval-top-k",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방해 문서가 늘어 성능 하락.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "p-fraction-tuning",
+   "label": "P 비율 튜닝",
+   "parent": "raft-data-construction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "40·60·80·100% 중 선택.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "distractor-count-training",
+   "label": "학습용 방해 문서 수",
+   "parent": "raft-data-construction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "golden 1 + 방해 4.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "raft-retriever-independence",
+   "label": "retriever 독립성",
+   "parent": "raft-data-construction",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RAFT는 retriever와 무관.",
    "related": [],
    "added": "2026-11-23"
   }
