@@ -22677,44 +22677,60 @@
    "label": "kNN 예시 검색",
    "parent": "example-selection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "유사도로 가까운 예시를 뽑는 방식.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "example-selection",
+    "skill-knn"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "mmr-diversity",
    "label": "MMR 다양성 선택",
    "parent": "example-selection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "관련성과 상호 보완을 함께 고려.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "example-selection",
+    "knn-example-retrieval"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "example-order-sensitivity",
    "label": "예시 순서 민감성",
    "parent": "example-selection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "순서가 결과를 바꾸는 현상.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "example-selection",
+    "knn-example-retrieval"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "skill-knn",
    "label": "Skill-KNN",
    "parent": "example-selection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력을 기술 설명으로 바꿔 임베딩.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "example-selection",
+    "knn-example-retrieval"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "edge-case-examples",
@@ -68653,6 +68669,149 @@
    "status": "planned",
    "priority": 3,
    "summary": "양자화 기본 모델용 초기화.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rewrite-then-retrieve",
+   "label": "재작성 후 검색",
+   "parent": "skill-knn",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력을 먼저 재작성해 임베딩.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "skill-consistency-distinctiveness",
+   "label": "일관성·변별성 변형",
+   "parent": "skill-knn",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 설명을 고르는 두 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "training-free-selection",
+   "label": "학습이 필요 없는 선택",
+   "parent": "skill-knn",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩 모델을 미세조정하지 않음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "target-knn-oracle",
+   "label": "Target-KNN 오라클",
+   "parent": "skill-knn",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답을 알고 고르는 상한.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "surface-feature-bias",
+   "label": "표면 특징 편향",
+   "parent": "knn-example-retrieval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 개체만 찾는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "embedding-finetune-selection",
+   "label": "임베딩 미세조정 선택",
+   "parent": "knn-example-retrieval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과제별로 임베딩 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dynamic-example-bank",
+   "label": "동적 예시 은행",
+   "parent": "knn-example-retrieval",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자주 바뀌는 예시 모음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "probing-set-entropy",
+   "label": "probing 집합·엔트로피 선택",
+   "parent": "example-order-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "레이블 없는 집합으로 순열을 고름.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "order-non-transferability",
+   "label": "순서의 비전이성",
+   "parent": "example-order-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 모델의 좋은 순서가 다른 모델에 안 통함.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "permutation-sweep-eval",
+   "label": "순열 훑기 평가",
+   "parent": "example-order-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 순서로 평균·분산 보고.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "complementary-exemplars",
+   "label": "보완적 예시",
+   "parent": "mmr-diversity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서로 다른 추론 기술을 보여 줌.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "explanation-computation-trace",
+   "label": "설명의 계산 흔적",
+   "parent": "mmr-diversity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "풀이 분해가 효과에 기여.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mmr-lambda",
+   "label": "MMR의 λ 가중",
+   "parent": "mmr-diversity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관련성과 다양성의 비중.",
    "related": [],
    "added": "2026-11-23"
   }
