@@ -65188,11 +65188,15 @@
    "label": "구체화 뷰 비용-효익 계산",
    "parent": "view-vs-materialized-view",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "조회 절감분과 저장·갱신 비용을 비교.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "view-vs-materialized-view",
+    "incremental-refresh"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "logical-view-definition-only",
@@ -66016,6 +66020,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "운영 재학습 방식과 검증 창을 맞추기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-break-even-queries",
+   "label": "구체화 뷰 손익분기 조회 횟수",
+   "parent": "mv-cost-benefit-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "갱신량÷(기본 쿼리량−뷰 쿼리량)로 계산.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "measure-real-bytes-processed",
+   "label": "실제 처리 바이트 측정",
+   "parent": "mv-cost-benefit-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가정이 아닌 쿼리·갱신 통계로 계산하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "slot-based-mv-cost",
+   "label": "슬롯 기반 구체화 뷰 비용",
+   "parent": "mv-cost-benefit-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "용량 과금에서 조회·갱신이 슬롯을 쓰는 방식.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mv-refresh-project-billing",
+   "label": "갱신 비용 청구 프로젝트",
+   "parent": "mv-cost-benefit-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 갱신은 뷰의 프로젝트, 수동 갱신은 실행 프로젝트.",
    "related": [],
    "added": "2026-11-23"
   }
