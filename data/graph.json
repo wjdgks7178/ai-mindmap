@@ -22460,22 +22460,30 @@
    "label": "ALCE 벤치마크",
    "parent": "claim-level-attribution",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM 인용 품질을 자동 평가하는 벤치마크.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "claim-level-attribution",
+    "citation-recall-precision"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "citation-recall-precision",
    "label": "인용 재현·정밀",
    "parent": "claim-level-attribution",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "인용이 주장을 충분히·필요하게 지지하는가.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "claim-level-attribution",
+    "nli-entailment-check"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "supporting-quote-grounding",
@@ -22493,11 +22501,15 @@
    "label": "NLI 함의 검사",
    "parent": "claim-level-attribution",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자료가 문장을 함의하는지 판정.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "claim-level-attribution",
+    "citation-recall-precision"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "hover-card-citation",
@@ -67991,6 +68003,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "이탈·불만 같은 보조 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "asqa-qampari-eli5",
+   "label": "ASQA·QAMPARI·ELI5 데이터셋",
+   "parent": "alce-benchmark",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ALCE가 쓰는 세 질의응답 데이터셋.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mauve-fluency",
+   "label": "MAUVE 유창성 지표",
+   "parent": "alce-benchmark",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성문의 유창성을 재는 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "closed-book-post-hoc-citing",
+   "label": "폐쇄형 후 인용",
+   "parent": "alce-benchmark",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색 없이 답한 뒤 사후에 인용.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ais-framework",
+   "label": "AIS 프레임워크",
+   "parent": "alce-benchmark",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용 가능한 출처로 귀속되는지 기준.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "irrelevant-citation-detection",
+   "label": "무관 인용 탐지",
+   "parent": "citation-recall-precision",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빼도 영향이 없는 인용을 찾음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "minimal-citation-set-not-required",
+   "label": "최소 인용 집합 비요구",
+   "parent": "citation-recall-precision",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복 인용을 허용하는 이유.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "citation-recall-priority",
+   "label": "재현율 우선 원칙",
+   "parent": "citation-recall-precision",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "진실한 답 보장을 우선.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "true-nli-model",
+   "label": "TRUE NLI 모델",
+   "parent": "nli-entailment-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "T5-11B 기반 사실 일관성 판정 모델.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "claim-recall-eli5",
+   "label": "ELI5 claim recall",
+   "parent": "nli-entailment-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하위 주장 3개의 함의로 정확성 측정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "multi-source-synthesis-limit",
+   "label": "다중 출처 종합 한계",
+   "parent": "nli-entailment-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 문서를 합쳐야 하는 문장 판정의 어려움.",
    "related": [],
    "added": "2026-11-23"
   }
