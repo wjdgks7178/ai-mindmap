@@ -47392,11 +47392,15 @@
    "label": "느리게 바뀌는 차원",
    "parent": "table-join-snapshot",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "등급·주소처럼 가끔 바뀌는 기준 테이블.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "point-in-time-join",
+    "point-in-time-leakage"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "direct-feedback-loop",
@@ -61683,6 +61687,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "온라인 저장소에서 값이 자동 삭제되는 TTL.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "scd-type2-valid-range-join",
+   "label": "Type 2 유효 구간 조인",
+   "parent": "slowly-changing-dimension",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "valid_from·valid_to 범위로 사건 시점 값을 붙이는 SQL.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "surrogate-key",
+   "label": "대리 키",
+   "parent": "slowly-changing-dimension",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자연 키 대신 행마다 붙이는 인공 키.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "daily-snapshot-table",
+   "label": "일별 스냅샷 테이블",
+   "parent": "slowly-changing-dimension",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "매일 전체를 찍어 두는 이력 보관 방식.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "current-value-leakage",
+   "label": "현재 값 조인 누수",
+   "parent": "slowly-changing-dimension",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "현재 상태 테이블을 과거 사건에 붙이는 실수.",
    "related": [],
    "added": "2026-11-23"
   }
