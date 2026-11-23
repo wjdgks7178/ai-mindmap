@@ -48070,11 +48070,15 @@
    "label": "용도 예외 승인 절차",
    "parent": "allowed-use-policy-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "정책 밖 용도의 승인자와 기록.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "use-definition-examples",
+    "card-required-gate"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "use-definition-examples",
@@ -64639,6 +64643,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "카드 폐기·갱신 때 기존 승인을 다시 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exception-expiry-reapproval",
+   "label": "예외 만료와 재승인",
+   "parent": "use-exception-approval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "승인된 예외에 만료일을 두고 재심사.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "exception-log-analysis",
+   "label": "예외 로그 분석",
+   "parent": "use-exception-approval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복되는 예외를 정책 개정 신호로 읽기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "conditional-approval",
+   "label": "조건부 승인",
+   "parent": "use-exception-approval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가명화·기간 제한 같은 조건을 달고 승인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-access-committee",
+   "label": "데이터 접근 위원회(DAC)",
+   "parent": "use-exception-approval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 접근 신청을 심사하는 위원회.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "post-approval-use-audit",
+   "label": "승인 후 사용 감사",
+   "parent": "use-exception-approval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "승인된 예외가 실제 용도와 일치하는지 점검.",
    "related": [],
    "added": "2026-11-23"
   }
