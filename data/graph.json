@@ -48250,11 +48250,15 @@
    "label": "행 그룹 통계",
    "parent": "parquet-columnar-format",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "행 그룹별 min/max로 건너뛰기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "column-pruning",
+    "data-skipping-statistics"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "dremel-nested-encoding",
@@ -64853,6 +64857,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "뷰가 불필요한 열을 포함하면 생기는 낭비.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "predicate-pushdown",
+   "label": "조건 푸시다운",
+   "parent": "row-group-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터 조건을 읽기 단계로 내려 보내 불필요한 읽기를 줄이기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sorted-data-for-skipping",
+   "label": "건너뛰기를 위한 정렬",
+   "parent": "row-group-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정렬해야 행 그룹 min/max가 겹치지 않는다.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "row-group-size-tradeoff",
+   "label": "행 그룹 크기의 절충",
+   "parent": "row-group-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작으면 촘촘하지만 오버헤드, 크면 반대.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "minmax-limits",
+   "label": "min/max 통계의 한계",
+   "parent": "row-group-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범위 안에 값이 있는지는 알 수 없음.",
    "related": [],
    "added": "2026-11-23"
   }
