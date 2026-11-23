@@ -48025,11 +48025,15 @@
    "label": "데이터 스킵 통계",
    "parent": "z-order-clustering",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "파일별 min/max로 건너뛰기.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "liquid-clustering",
+    "data-partitioning-pruning"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "bit-interleaving",
@@ -63927,6 +63931,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "파티션 열·ZORDER 열을 키로 옮기는 방법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "delta-data-skipping-num-indexed-cols",
+   "label": "dataSkippingNumIndexedCols",
+   "parent": "data-skipping-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계를 모을 열 수를 정하는 Delta 속성.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "analyze-compute-delta-statistics",
+   "label": "ANALYZE TABLE COMPUTE DELTA STATISTICS",
+   "parent": "data-skipping-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기존 데이터의 스킵 통계를 다시 계산.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "min-max-range-overlap",
+   "label": "min/max 범위 겹침",
+   "parent": "data-skipping-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범위가 겹칠수록 스킵이 줄어드는 이유.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "long-string-stats-truncation",
+   "label": "긴 문자열 통계 잘림",
+   "parent": "data-skipping-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴 문자열 열은 통계에서 제외를 고려.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "parquet-page-min-max",
+   "label": "Parquet 페이지 min/max",
+   "parent": "data-skipping-statistics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컬럼형 파일 메타데이터의 페이지별 범위.",
    "related": [],
    "added": "2026-11-23"
   }
