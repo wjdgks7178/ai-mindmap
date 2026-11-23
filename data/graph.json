@@ -47377,11 +47377,15 @@
    "label": "특징 TTL",
    "parent": "table-join-snapshot",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "특징 값을 쓸 수 있는 최대 과거 범위.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "point-in-time-join",
+    "online-offline-feature-parity"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "slowly-changing-dimension",
@@ -61635,6 +61639,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "나중에 정정·채운 값이 학습에 새는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ttl-null-rate-parity",
+   "label": "TTL로 인한 null 비율 일치",
+   "parent": "feature-ttl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습과 서빙의 결측 비율이 같은지 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-freshness-sla",
+   "label": "특징 신선도 SLA",
+   "parent": "feature-ttl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서빙에서 허용하는 값의 최대 나이 약속.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ttl-choice-by-update-cycle",
+   "label": "갱신 주기별 TTL 선택",
+   "parent": "feature-ttl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 갱신 주기와 의미 수명에 맞춘 기간 정하기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "online-store-ttl-expiry",
+   "label": "온라인 저장소 만료",
+   "parent": "feature-ttl",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "온라인 저장소에서 값이 자동 삭제되는 TTL.",
    "related": [],
    "added": "2026-11-23"
   }
