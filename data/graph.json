@@ -62271,11 +62271,15 @@
    "label": "무작위 분할 누수",
    "parent": "time-based-split-rule",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "섞어서 나눌 때 미래가 학습에 섞이는 문제.",
-   "related": [],
-   "added": "2026-11-23"
+   "related": [
+    "time-based-split-rule",
+    "split-gap-buffer"
+   ],
+   "added": "2026-11-23",
+   "done": "2026-11-23"
   },
   {
    "id": "time-sensitive-feature-audit",
@@ -65920,6 +65924,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "오프라인이 훨씬 좋을 때 누수를 의심.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "interpolation-vs-extrapolation-evaluation",
+   "label": "보간 vs 외삽 평가",
+   "parent": "random-split-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 분할은 보간, 시간순 분할은 외삽에 가까움.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "group-leakage",
+   "label": "그룹 누수",
+   "parent": "random-split-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사용자·문서가 학습과 시험에 중복되는 누수.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "trend-amplifies-split-gap",
+   "label": "추세가 키우는 분할 격차",
+   "parent": "random-split-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추세가 있으면 분할 방식에 따른 평가 격차가 커짐.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "simulate-split-comparison",
+   "label": "분할 방식 비교 시뮬레이션",
+   "parent": "random-split-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 모델로 두 분할 점수를 직접 비교.",
    "related": [],
    "added": "2026-11-23"
   }
