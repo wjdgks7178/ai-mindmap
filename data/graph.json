@@ -47525,11 +47525,15 @@
    "label": "데이터 최신성",
    "parent": "iso-25012-inherent-characteristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "목적에 비해 충분히 최신인 정도.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "feature-ttl",
+    "silent-version-drift"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-credibility",
@@ -62135,6 +62139,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 라벨 오류를 의미 오류로 보기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-age-metric",
+   "label": "데이터 나이 지표",
+   "parent": "data-currentness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사건 시각과 사용 시각의 차이를 재는 지표.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "freshness-sla",
+   "label": "최신성 SLA",
+   "parent": "data-currentness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목적별로 허용하는 최대 지연을 약속.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "batch-latency-staleness",
+   "label": "배치 지연과 낡음",
+   "parent": "data-currentness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하루 한 번 배치가 만드는 묵은 데이터.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "knowledge-cutoff-currentness",
+   "label": "지식 컷오프와 최신성",
+   "parent": "data-currentness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 학습 이후 사건을 모르는 문제.",
    "related": [],
    "added": "2026-11-23"
   }
