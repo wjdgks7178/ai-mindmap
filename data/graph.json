@@ -23160,33 +23160,45 @@
    "label": "아이소토닉 보정",
    "parent": "ece-metric",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비모수 단조 함수로 보정.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "ece-metric",
+    "reject-option"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "abstain-vs-escalate",
    "label": "거부 vs 이관",
    "parent": "double-threshold-policy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "답하지 않기와 사람에게 넘기기를 분리.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "double-threshold-policy",
+    "reject-option"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "reviewer-capacity",
    "label": "검토자 용량",
    "parent": "double-threshold-policy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이관 비율이 검토 큐 처리량에 묶이는 한계.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "double-threshold-policy",
+    "policy-owner"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "diminishing-returns-review",
@@ -23215,33 +23227,45 @@
    "label": "정책 단일 책임자",
    "parent": "double-threshold-policy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "연동된 지표를 한 명이 소유.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "double-threshold-policy",
+    "reviewer-capacity"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "reject-option",
    "label": "reject option",
    "parent": "learning-to-defer",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확신이 낮으면 판단을 거부하는 분류.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "learning-to-defer",
+    "double-threshold-policy"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "rejector-model",
    "label": "위임기(rejector)",
    "parent": "learning-to-defer",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "넘길지 말지를 정하는 모델.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "learning-to-defer",
+    "reject-option"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "surrogate-loss-defer",
@@ -69626,6 +69650,204 @@
    "status": "planned",
    "priority": 3,
    "summary": "Responses API 기본 보관.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "platt-sigmoid-calibration",
+   "label": "Platt(시그모이드) 보정",
+   "parent": "isotonic-regression-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2 매개변수 보정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "calibrated-classifier-cv",
+   "label": "CalibratedClassifierCV",
+   "parent": "isotonic-regression-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "cv와 ensemble 옵션.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "isotonic-auc-ties",
+   "label": "아이소토닉의 동점과 AUC",
+   "parent": "isotonic-regression-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위가 바뀔 수 있음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "temperature-scaling-multiclass",
+   "label": "온도 스케일링",
+   "parent": "isotonic-regression-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다중 클래스 대안.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rejection-learning",
+   "label": "rejection learning",
+   "parent": "reject-option",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 Pass를 선택하도록 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "two-stage-system",
+   "label": "2단계 시스템",
+   "parent": "reject-option",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 모델 + 외부 결정자.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "consistent-surrogate-loss",
+   "label": "일관성 있는 대리 손실",
+   "parent": "rejector-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원하는 위험을 최소화하는 보장.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cost-sensitive-learning-reduction",
+   "label": "비용 민감 학습 환원",
+   "parent": "rejector-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문제를 비용 민감 학습으로 바꿈.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "expert-decision-samples",
+   "label": "전문가 결정 표본",
+   "parent": "rejector-model",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위임기 학습에 필요한 기록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "escalation-yield",
+   "label": "escalation yield",
+   "parent": "abstain-vs-escalate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토가 초안보다 나은 비율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "recovery-rate",
+   "label": "회수율",
+   "parent": "abstain-vs-escalate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관으로 맞는 답을 되찾은 비율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "verbalized-confidence-overconfidence",
+   "label": "말로 표현한 신뢰도의 과신",
+   "parent": "abstain-vs-escalate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "90~100%에 몰림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sample-agreement-signal",
+   "label": "샘플 일치도 신호",
+   "parent": "abstain-vs-escalate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 번 샘플링해 일치도 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "capacity-back-calculation",
+   "label": "용량 역산",
+   "parent": "reviewer-capacity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토자 수에서 최대 이관율 계산.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "escalation-rate-norms",
+   "label": "이관율 관행",
+   "parent": "reviewer-capacity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소비자 기능 8~15%.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "traffic-spike-headroom",
+   "label": "급증 여유",
+   "parent": "reviewer-capacity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큐 넘침 방지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "coupled-metrics-four",
+   "label": "연동 지표 4가지",
+   "parent": "policy-owner",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답/거부율·이관율·큐 깊이·회수율.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "single-metric-optimization-risk",
+   "label": "단일 지표 최적화 위험",
+   "parent": "policy-owner",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하나만 올리면 다른 지표가 깨짐.",
    "related": [],
    "added": "2026-11-23"
   }
