@@ -48597,33 +48597,42 @@
    "label": "스키마 버전 관리",
    "parent": "schema-human-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "스키마 변경을 git으로 추적하고 사유를 남기는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-human-review"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "schema-false-positive-tuning",
    "label": "스키마 오탐 줄이기",
    "parent": "schema-human-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 날짜 데이터로 시험해 너무 엄격한 규칙 완화.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-environments"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "infer-feature-shape",
    "label": "피처 shape 추론",
    "parent": "schema-human-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "infer_feature_shape 옵션과 가변 길이 피처.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "schema-inference"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "group-leakage-prevention",
@@ -66323,6 +66332,105 @@
    "status": "planned",
    "priority": 3,
    "summary": "규제 대응에서 시작된 역할.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feature-value-count",
+   "label": "피처 값 개수(value_count)",
+   "parent": "infer-feature-shape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예제당 값 개수 min·max 필드.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "variable-length-feature",
+   "label": "가변 길이 피처",
+   "parent": "infer-feature-shape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "값 개수가 예제마다 다른 피처.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "required-feature-presence",
+   "label": "필수 피처 존재 비율",
+   "parent": "infer-feature-shape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "presence min_fraction·min_count.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "domain-extension",
+   "label": "범주 도메인 확장",
+   "parent": "schema-false-positive-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정상 신규 값을 스키마에 추가.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "presence-min-fraction",
+   "label": "존재 비율 완화",
+   "parent": "schema-false-positive-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "min_fraction 조정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "alert-fatigue-data",
+   "label": "경보 피로",
+   "parent": "schema-false-positive-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오탐이 쌓여 경보를 무시하게 되는 현상.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-protobuf-format",
+   "label": "스키마 protobuf 형식",
+   "parent": "schema-version-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Schema protocol buffer로 저장.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-change-pr-review",
+   "label": "스키마 변경 PR 리뷰",
+   "parent": "schema-version-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경을 코드 리뷰처럼 승인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schema-change-reason-log",
+   "label": "스키마 변경 사유 기록",
+   "parent": "schema-version-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "커밋 메시지에 경보와 승인자 남김.",
    "related": [],
    "added": "2026-11-23"
   }
