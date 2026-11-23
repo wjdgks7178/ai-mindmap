@@ -48283,11 +48283,15 @@
    "label": "Parquet 압축 코덱",
    "parent": "parquet-columnar-format",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "열별 압축 방식 선택.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "csv-vs-parquet-experiment",
+    "column-pruning"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "incremental-refresh",
@@ -64746,6 +64750,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "gzip 압축 쓰기가 느린 이유와 수준 설정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "lz4-raw-vs-lz4",
+   "label": "LZ4_RAW vs LZ4",
+   "parent": "parquet-compression-codecs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폐기된 LZ4와 권장 대체 LZ4_RAW의 차이.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "zstd-compression-level",
+   "label": "zstd 압축 수준",
+   "parent": "parquet-compression-codecs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수준이 높을수록 크기는 줄고 쓰기가 느려짐.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "per-column-compression",
+   "label": "열별 압축 설정",
+   "parent": "parquet-compression-codecs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열 성격에 맞춰 다른 코덱을 지정.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "parquet-dictionary-encoding",
+   "label": "Parquet 딕셔너리 인코딩",
+   "parent": "parquet-compression-codecs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 값이 많은 열을 사전으로 줄이는 인코딩.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "compression-vs-encoding",
+   "label": "압축 vs 인코딩",
+   "parent": "parquet-compression-codecs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표현 방식과 바이트 압축의 구분.",
    "related": [],
    "added": "2026-11-23"
   }
