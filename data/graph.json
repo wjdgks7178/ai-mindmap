@@ -48557,11 +48557,15 @@
    "label": "슬라이스 기반 공정성 점검",
    "parent": "data-statistics-slicing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "집단별 통계 차이로 편향 단서 찾기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cross-feature-slicing",
+    "intersectional-coverage"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-23"
   },
   {
    "id": "schema-version-control",
@@ -65669,6 +65673,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 칸은 통계가 불안정해 보고하지 않음.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fairness-metric-definitions",
+   "label": "공정성 지표 정의",
+   "parent": "slice-based-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동등 오류율·동등 선택률 등 서로 다른 정의.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "false-negative-rate-by-group",
+   "label": "집단별 미탐률",
+   "parent": "slice-based-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단별 위음성률로 격차 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "protected-attribute-collection-limits",
+   "label": "보호 속성 수집의 제약",
+   "parent": "slice-based-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속성 수집·사용 자체의 법적·윤리적 제약.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "subgroup-sample-confidence-interval",
+   "label": "집단 표본의 신뢰구간",
+   "parent": "slice-based-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 집단의 격차가 우연일 가능성 확인.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fairness-finding-documentation",
+   "label": "공정성 점검 결과 기록",
+   "parent": "slice-based-fairness-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "격차와 한계를 데이터 카드에 남기기.",
    "related": [],
    "added": "2026-11-23"
   }
