@@ -47925,22 +47925,28 @@
    "label": "스튜어드 유형",
    "parent": "data-owner-steward",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "객체·업무·프로세스·시스템 스튜어드.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "raci-data-responsibility"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-custodian",
    "label": "데이터 보관 책임자",
    "parent": "data-owner-steward",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "저장·보호 운영을 맡는 역할.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "raci-data-responsibility"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "chief-data-officer",
@@ -66193,6 +66199,72 @@
    "status": "planned",
    "priority": 3,
    "summary": "R·A 누락과 중복을 찾는 점검.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "custodian-term-ambiguity",
+   "label": "custodian 용어의 기관별 차이",
+   "parent": "data-custodian",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 이름이 승인자·기술 운영자로 갈림.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "de-identification-implementation",
+   "label": "비식별화 구현 책임",
+   "parent": "data-custodian",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스튜어드 결정을 시스템에 반영하는 일.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-asset-catalog-register",
+   "label": "데이터 자산 카탈로그 등록",
+   "parent": "data-custodian",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자산을 등록·문서화하고 보안 등급을 매김.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "steward-responsibility-areas",
+   "label": "스튜어드 책임 영역",
+   "parent": "steward-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접근·품질·보호로 나눈 틀.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "data-gatekeeper-role",
+   "label": "데이터 게이트키퍼",
+   "parent": "steward-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접근 요청을 승인하는 관문 역할.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "steward-assignment-method",
+   "label": "스튜어드 지정 방법",
+   "parent": "steward-types",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조직에서 스튜어드를 정하는 기준.",
    "related": [],
    "added": "2026-11-23"
   }
