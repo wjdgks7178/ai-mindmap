@@ -23541,33 +23541,45 @@
    "label": "2×2 어블레이션",
    "parent": "hybrid-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기본/RAG/미세조정/결합 네 칸 비교.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hybrid-eval",
+    "knowledge-injection"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "knowledge-injection",
    "label": "지식 주입",
    "parent": "hybrid-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델에 새 지식을 넣는 방법들.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hybrid-eval",
+    "raft"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "fact-paraphrase-training",
    "label": "같은 사실의 다양한 표현 학습",
    "parent": "hybrid-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "미세조정이 새 사실을 배우게 돕는 방법.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hybrid-eval",
+    "knowledge-injection"
+   ],
+   "done": "2026-11-23"
   },
   {
    "id": "llm-evaluator-bias",
@@ -70018,6 +70030,116 @@
    "status": "planned",
    "priority": 3,
    "summary": "샘플별 비용이 다름.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ft-reg-vs-ft-par",
+   "label": "FT-reg vs FT-par",
+   "parent": "two-by-two-ablation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 vs 바꿔 쓰기 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rag-chunk-count-k",
+   "label": "RAG 청크 수 K",
+   "parent": "two-by-two-ablation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0~5개 그리드.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ft-plus-rag-not-always-better",
+   "label": "FT+RAG가 항상 낫지는 않음",
+   "parent": "two-by-two-ablation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RAG만이 더 높은 경우.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "post-cutoff-eval",
+   "label": "컷오프 이후 지식 평가",
+   "parent": "two-by-two-ablation",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 못 본 사건으로 시험.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "unsupervised-finetuning-knowledge",
+   "label": "비지도 미세조정",
+   "parent": "knowledge-injection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 없는 텍스트로 계속 학습.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "static-knowledge-limit",
+   "label": "모델 지식의 정적 한계",
+   "parent": "knowledge-injection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 이후 지식이 갱신 안 됨.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "three-students-analogy",
+   "label": "세 학생 비유",
+   "parent": "knowledge-injection",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공부 없이·외워서·참고서.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gpt4-paraphrase-generation",
+   "label": "GPT-4로 바꿔 쓰기 생성",
+   "parent": "fact-paraphrase-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보를 유지한 변형.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "paraphrase-fidelity-check",
+   "label": "바꿔 쓰기 충실도 검증",
+   "parent": "fact-paraphrase-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사실이 틀리게 바뀌지 않았는지.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "paraphrase-count-10",
+   "label": "변형 10개",
+   "parent": "fact-paraphrase-training",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "현재 사건 과제의 설정.",
    "related": [],
    "added": "2026-11-23"
   }
