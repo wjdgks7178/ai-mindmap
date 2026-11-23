@@ -47950,11 +47950,15 @@
    "label": "Hive식 파티셔닝",
    "parent": "data-partitioning-pruning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "key=value 폴더로 파티션 열을 표현.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "too-many-small-files",
+    "partition-key-selection"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "too-many-small-files",
@@ -63632,6 +63636,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 데이터에서 대표성이 낮은 집단을 알리기.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "msck-repair-table",
+   "label": "MSCK REPAIR TABLE",
+   "parent": "hive-style-partitioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Hive 스타일 폴더에서 파티션을 자동 등록하는 명령.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "non-hive-partition-add",
+   "label": "비 Hive 파티션 수동 등록",
+   "parent": "hive-style-partitioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ALTER TABLE ADD PARTITION으로 경로를 하나씩 등록.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "partition-projection",
+   "label": "파티션 프로젝션",
+   "parent": "hive-style-partitioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메타데이터 조회 대신 설정으로 파티션 값을 계산.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "partition-path-case-rule",
+   "label": "파티션 경로 소문자 규칙",
+   "parent": "hive-style-partitioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "카멜 케이스 경로가 파티션 등록을 막는 문제.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "partition-index",
+   "label": "파티션 인덱스",
+   "parent": "hive-style-partitioning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파티션이 매우 많을 때 카탈로그 조회를 빠르게.",
    "related": [],
    "added": "2026-11-23"
   }
