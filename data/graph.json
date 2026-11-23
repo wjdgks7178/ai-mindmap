@@ -47761,11 +47761,14 @@
    "label": "데이터 식별 가능성",
    "parent": "iso-5259-part2-measures",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개인을 식별할 수 있는 정도.",
-   "related": [],
-   "added": "2026-11-19"
+   "related": [
+    "feature-log-privacy-retention"
+   ],
+   "added": "2026-11-19",
+   "done": "2026-11-23"
   },
   {
    "id": "data-quality-reporting-framework",
@@ -62987,6 +62990,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "극단적 사건만 기록돼 빈도가 왜곡되는 편향.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "quasi-identifier",
+   "label": "준식별자",
+   "parent": "data-identifiability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조합하면 개인을 특정하게 되는 속성(우편번호·성별·생년월일).",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "k-anonymity",
+   "label": "k-익명성",
+   "parent": "data-identifiability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 준식별자 조합을 가진 사람이 최소 k명이 되게 하는 기법.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "pseudonymisation-vs-anonymisation",
+   "label": "가명화 vs 익명화",
+   "parent": "data-identifiability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연결 가능 여부로 개인정보 여부가 갈리는 구분.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gdpr-reasonably-likely-test",
+   "label": "GDPR 합리적 가능성 기준",
+   "parent": "data-identifiability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "식별 수단의 비용·시간·기술로 식별 가능성을 판단.",
+   "related": [],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "reidentification-attack",
+   "label": "재식별 공격",
+   "parent": "data-identifiability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 데이터와 결합해 개인을 되찾는 공격.",
    "related": [],
    "added": "2026-11-23"
   }
