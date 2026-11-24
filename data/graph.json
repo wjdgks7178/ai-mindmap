@@ -49430,11 +49430,12 @@
    "label": "검증 곡선",
    "parent": "learning-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "하이퍼파라미터 값에 따른 학습·검증 점수로 과적합 구간 찾기.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "data-more-worth",
@@ -73569,6 +73570,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "지표·설정·시드·누수 점검을 한 장에 기록.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "validation-curve-display",
+   "label": "ValidationCurveDisplay",
+   "parent": "validation-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 곡선을 한 줄로 그리는 sklearn 도구.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "underfit-overfit-reading",
+   "label": "과소·과적합 곡선 읽기",
+   "parent": "validation-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 점수의 간격과 높이로 진단하는 규칙.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "log-scale-param-range",
+   "label": "로그 눈금 파라미터 범위",
+   "parent": "validation-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "gamma·C처럼 자릿수로 변하는 값을 탐색하는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "max-depth-validation-practice",
+   "label": "나무 깊이 검증 곡선 실습",
+   "parent": "validation-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "max_depth로 과적합 지점을 찾는 교육용 실습.",
    "related": [],
    "added": "2026-11-24"
   }
