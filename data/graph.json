@@ -42276,11 +42276,14 @@
    "label": "무작위 라벨 점검",
    "parent": "preprocessing-leakage-pipeline",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의미 없는 라벨에서 높은 점수가 나오면 누수 의심.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "target-encoding-leakage"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "wilson-interval",
@@ -72351,6 +72354,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "타깃 인코더에서는 두 결과가 다름.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "permutation-test-score",
+   "label": "순열 검정 점수",
+   "parent": "random-label-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨을 섞어 만든 귀무분포로 점수의 우연 확률을 구함.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "memorization-random-labels",
+   "label": "무작위 라벨 암기",
+   "parent": "random-label-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신경망이 무작위 라벨을 훈련 데이터로 외우는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "train-test-duplicate-leakage",
+   "label": "학습·시험 중복 누수",
+   "parent": "random-label-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 표본이 양쪽에 있는 누수.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "null-distribution-baseline",
+   "label": "귀무분포 기준선",
+   "parent": "random-label-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관계가 없을 때의 점수 분포.",
    "added": "2026-11-24",
    "related": []
   }
