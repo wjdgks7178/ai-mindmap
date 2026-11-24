@@ -50057,11 +50057,14 @@
    "label": "경고를 오류로 승격",
    "parent": "group-overlap-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "groups 무시 같은 경고를 실패로 만들기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "split-assertion-test"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "split-report-logging",
@@ -75054,6 +75057,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할을 지켜도 특성이 정답을 담고 있는 경우.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "narrow-warning-filter",
+   "label": "좁은 범위의 경고 필터",
+   "parent": "warnings-as-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메시지·범주·모듈로 한정해 필요한 경고만 오류로.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "groups-ignored-warning",
+   "label": "groups 무시 경고",
+   "parent": "warnings-as-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일반 분할기에 groups를 넘기면 나는 경고와 대처.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "filter-order-registry",
+   "label": "경고 필터 순서와 레지스트리",
+   "parent": "warnings-as-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "once·default 규칙에서 필터를 먼저 설정해야 하는 이유.",
    "related": [],
    "added": "2026-11-24"
   }
