@@ -49738,11 +49738,14 @@
    "label": "샘플 단위 vs 그룹 단위 분할",
    "parent": "leave-one-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "독립성 가정에 따른 분할 단위 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "time-as-group"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "small-data-validation",
@@ -74339,6 +74342,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공식이 없는 모델에서 LOO가 n번 재학습인 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "group-id-column-habit",
+   "label": "그룹 열 남기기",
+   "parent": "sample-vs-group-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "환자·사용자·문서 ID를 데이터 표에 항상 보관하는 습관.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fingerprint-leak-demo",
+   "label": "지문 누수 시연",
+   "parent": "sample-vs-group-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람마다 고유한 특징으로 신호 없이 0.97을 얻는 합성 실험.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "frame-level-split-trap",
+   "label": "프레임 단위 분할 함정",
+   "parent": "sample-vs-group-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상·문서를 조각내 무작위 분할하면 누수가 생기는 경우.",
    "related": [],
    "added": "2026-11-24"
   }
