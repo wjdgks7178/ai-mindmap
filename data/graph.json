@@ -49574,11 +49574,14 @@
    "label": "짝지은 점수 비교",
    "parent": "cv-score-difference-vs-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 분할에서 모델 점수 차이를 쌍으로 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "fixed-k-for-comparison"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "tie-break-criteria",
@@ -73966,6 +73969,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "refit 단계와 시험 평가 순서.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "win-tie-loss-count",
+   "label": "승·무·패 세기",
+   "parent": "paired-score-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드(문제)별로 어느 모델이 앞섰는지 세는 간단한 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "paired-vs-unpaired-noise",
+   "label": "짝지음과 잡음 감소",
+   "parent": "paired-score-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 점수 상관이 높을수록 짝지은 차이의 변동이 줄어드는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "prompt-ab-paired-eval",
+   "label": "프롬프트 A/B 짝 평가",
+   "parent": "paired-score-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문제 세트에서 두 프롬프트를 문제별로 비교.",
    "related": [],
    "added": "2026-11-24"
   }
