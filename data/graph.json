@@ -23510,11 +23510,14 @@
    "label": "이원 민감도 분석",
    "parent": "tornado-chart",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 입력의 조합 효과.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "monte-carlo-roi"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "scenario-analysis-roi",
@@ -71191,6 +71194,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "근거 없는 범위를 가정으로 명시.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "sensitivity-heatmap",
+   "label": "민감도 히트맵",
+   "parent": "two-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "격자 결과를 색으로 표시해 경계 보기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "breakeven-line",
+   "label": "손익분기선",
+   "parent": "two-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과가 0이 되는 입력 조합의 선.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "correlated-inputs-sensitivity",
+   "label": "상관 입력의 민감도",
+   "parent": "two-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "함께 움직이는 변수는 따로 흔들면 오해.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "grid-explosion",
+   "label": "격자 폭증",
+   "parent": "two-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수가 늘면 조합 수가 기하급수로 증가.",
    "added": "2026-11-24",
    "related": []
   }
