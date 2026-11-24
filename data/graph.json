@@ -50180,11 +50180,14 @@
    "label": "HotpotQA",
    "parent": "multi-passage-question-handling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "11.3만 개 위키 기반 멀티홉 QA 데이터셋.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "multi-hop-qa"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "musique",
@@ -75342,6 +75345,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가에서 읽은 사례가 학습에 들어갔는지 ID로 점검.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hotpotqa-distractor-vs-fullwiki",
+   "label": "distractor vs fullwiki",
+   "parent": "hotpotqa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "10개 문단 제공 설정과 전체 위키 검색 설정의 난이도 차이.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hotpotqa-joint-metric",
+   "label": "HotpotQA 결합 지표",
+   "parent": "hotpotqa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답과 근거를 함께 맞혀야 점수가 나오는 Joint EM·F1.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "bridge-vs-comparison-questions",
+   "label": "다리형 vs 비교형 질문",
+   "parent": "hotpotqa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HotpotQA의 두 질문 유형과 추론 방식.",
    "related": [],
    "added": "2026-11-24"
   }
