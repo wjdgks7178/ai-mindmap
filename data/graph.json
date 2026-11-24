@@ -49504,11 +49504,14 @@
    "label": "점수 비독립성",
    "parent": "repeated-cross-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "반복 폴드끼리 학습 데이터가 겹쳐 표준오차가 낙관적.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "model-comparison-cv"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "bootstrap-resampling",
@@ -73797,6 +73800,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "점수 차가 우연 범위면 비용 낮은 모델을 고르는 규칙.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fold-train-overlap",
+   "label": "폴드 학습 겹침 비율",
+   "parent": "score-non-independence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K겹에서 (K-2)/(K-1)이 겹치는 이유와 계산.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "naive-se-underestimate",
+   "label": "순진한 표준오차의 과소추정",
+   "parent": "score-non-independence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "sd/√K가 실제 변동보다 작은 정도를 시뮬레이션으로 보기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fresh-test-set-check",
+   "label": "새 시험 세트로 확인",
+   "parent": "score-non-independence",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차검증 밖의 새 데이터로 불확실성 검증.",
    "related": [],
    "added": "2026-11-24"
   }
