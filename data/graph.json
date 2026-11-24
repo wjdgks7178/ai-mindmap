@@ -50135,11 +50135,14 @@
    "label": "다리 샘플 처리",
    "parent": "multi-axis-grouping",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 덩어리를 연결하는 소수 샘플을 제외·격리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "connected-components-grouping"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "site-generalization-test",
@@ -75198,6 +75201,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할 후 사용자·기기 양쪽 교집합이 0인지 확인.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "articulation-point-detection",
+   "label": "절단점 찾기",
+   "parent": "bridge-sample-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그래프에서 제거하면 성분이 갈라지는 샘플을 찾는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "exclusion-bias-report",
+   "label": "제외 샘플 편향 보고",
+   "parent": "bridge-sample-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다리로 제외한 샘플의 특성과 비율을 기록.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "minimal-edge-cut-search",
+   "label": "최소 제거량 탐색",
+   "parent": "bridge-sample-handling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 희귀한 연결부터 끊어 최대 성분을 줄이는 절차.",
    "related": [],
    "added": "2026-11-24"
   }
