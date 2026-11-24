@@ -49808,11 +49808,14 @@
    "label": "학습 데이터 중복 제거",
    "parent": "near-duplicate-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM 학습·평가 오염을 줄이는 중복 제거.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "semantic-deduplication"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "rephrased-sample-contamination",
@@ -74497,6 +74500,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "희귀 표현이 지워질 위험과 사람 확인.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "exact-dedup-hashing",
+   "label": "정확 중복 해시 제거",
+   "parent": "training-data-deduplication",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서·문장 해시로 완전히 같은 텍스트를 먼저 제거.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "dedup-order-pipeline",
+   "label": "중복 제거 파이프라인 순서",
+   "parent": "training-data-deduplication",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "싼 방식부터 비싼 방식 순으로 적용하는 설계.",
    "related": [],
    "added": "2026-11-24"
   }
