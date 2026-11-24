@@ -23023,11 +23023,15 @@
    "label": "RAG 재순위",
    "parent": "distractor-documents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검색 결과를 다시 정렬해 방해 줄이기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "reranking",
+    "rerank-latency-cost"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "retrieval-top-k",
@@ -70560,6 +70564,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "자주 틀린 입력·사람 번복 건에서 사례 고르기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "candidate-pool-size",
+   "label": "후보 풀 크기",
+   "parent": "reranking-for-rag",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재순위 전 몇 개를 가져올지의 비용·재현율 균형.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rerank-score-threshold",
+   "label": "재순위 점수 기준선",
+   "parent": "reranking-for-rag",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수가 낮으면 제외하거나 거부 응답.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rerank-structured-data",
+   "label": "반정형 문서 재순위",
+   "parent": "reranking-for-rag",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "JSON·표를 YAML 문자열로 넘기는 방식.",
    "added": "2026-11-24",
    "related": []
   }
