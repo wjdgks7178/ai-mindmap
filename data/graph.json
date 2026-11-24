@@ -42262,11 +42262,14 @@
    "label": "타깃 인코딩 누수",
    "parent": "preprocessing-leakage-pipeline",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "타깃 평균 인코딩이 만드는 누수와 교차 적합.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "random-label-sanity-check"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "random-label-sanity-check",
@@ -72304,6 +72307,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "결측 여부를 이진 열로 보존.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cross-fitting",
+   "label": "교차 적합",
+   "parent": "target-encoding-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 폴드를 나머지 폴드에서 배운 값으로 변환.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "target-encoding-smoothing",
+   "label": "타깃 인코딩 평활화",
+   "parent": "target-encoding-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 적은 범주를 전체 평균 쪽으로 당김.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "high-cardinality-categories",
+   "label": "고카디널리티 범주",
+   "parent": "target-encoding-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주 수가 매우 많은 특성의 처리.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "fit-transform-vs-fit-then-transform",
+   "label": "fit_transform과 fit 후 transform의 차이",
+   "parent": "target-encoding-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "타깃 인코더에서는 두 결과가 다름.",
    "added": "2026-11-24",
    "related": []
   }
