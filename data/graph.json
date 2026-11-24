@@ -49911,11 +49911,14 @@
    "label": "정답 섞기 점검",
    "parent": "late-split-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "레이블을 섞어 파이프라인 점수가 0.5 근처인지 확인.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sklearn-pipeline-leakage-guard"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "oversampling-before-split",
@@ -74655,6 +74658,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "시험 데이터에는 transform만 호출하는 규칙.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "majority-class-baseline",
+   "label": "다수 클래스 기준선",
+   "parent": "shuffled-label-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불균형 데이터에서 찍기 수준이 0.5가 아니라 다수 클래스 비율인 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "leak-detection-checklist",
+   "label": "누수 점검 목록",
+   "parent": "shuffled-label-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섞기 점검·특성 중요도·분할 점검을 묶은 체크리스트.",
    "related": [],
    "added": "2026-11-24"
   }
