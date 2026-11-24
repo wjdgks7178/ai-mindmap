@@ -50240,11 +50240,14 @@
    "label": "대칭 라벨 노이즈",
    "parent": "class-conditional-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모든 클래스로 같은 확률로 틀리는 단순 가정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "class-conditional-noise"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "confusion-pair-guideline",
@@ -75523,6 +75526,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "소량의 신규 기관 데이터로 모델을 보정하는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "noise-rate-model-sensitivity",
+   "label": "모델별 노이즈 민감도",
+   "parent": "symmetric-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 오류율에서 모델마다 정확도 하락폭이 다른 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "majority-vote-recovery",
+   "label": "다수결 복원",
+   "parent": "symmetric-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈가 퍼지면 정답 클래스가 여전히 가장 많아 복원되는 조건.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "noise-simulation-recipe",
+   "label": "노이즈 시뮬레이션 방법",
+   "parent": "symmetric-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 라벨에만 노이즈를 주고 깨끗한 시험으로 평가.",
    "related": [],
    "added": "2026-11-24"
   }
