@@ -50272,11 +50272,14 @@
    "label": "Confident Joint",
    "parent": "noise-transition-matrix",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "(진짜, 주어진) 쌍별 개수 추정 행렬.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "out-of-sample-probabilities"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "loss-correction",
@@ -75668,6 +75671,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "오픈소스 도구로 라벨 오류 후보를 찾는 흐름.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "per-class-threshold",
+   "label": "클래스별 임계값",
+   "parent": "confident-joint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주어진 라벨 k의 평균 자기 확신도를 클래스 임계값으로 쓰는 방식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "joint-calibration",
+   "label": "결합 행렬 보정",
+   "parent": "confident-joint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "센 개수를 행 합에 맞춰 보정해 분포로 만드는 단계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "noise-rate-estimation",
+   "label": "노이즈율 추정",
+   "parent": "confident-joint",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대각선 밖 비율로 라벨 오류율을 어림하는 방법.",
    "related": [],
    "added": "2026-11-24"
   }
