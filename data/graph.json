@@ -22519,11 +22519,14 @@
    "label": "근거 인용구 접지",
    "parent": "claim-level-attribution",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "답을 구체적 인용구에 묶는 훈련.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "alce-benchmark"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "nli-entailment-check",
@@ -70432,6 +70435,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "표시 숫자를 바꿀 때의 설명 의무.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "quote-string-verification",
+   "label": "인용 문자열 대조",
+   "parent": "supporting-quote-grounding",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 낸 인용구가 원문에 있는지 코드로 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "citations-api-chunking",
+   "label": "인용용 문서 청킹",
+   "parent": "supporting-quote-grounding",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 단위 분할 vs 직접 청크 지정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "interpretation-vs-grounding",
+   "label": "접지와 해석 오류",
+   "parent": "supporting-quote-grounding",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인용구가 맞아도 해석이 틀릴 수 있음.",
    "added": "2026-11-24",
    "related": []
   }
