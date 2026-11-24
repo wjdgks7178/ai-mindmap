@@ -23564,11 +23564,12 @@
    "label": "입력 간 상관",
    "parent": "monte-carlo-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "독립 가정이 폭을 왜곡하는 문제.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "breakeven-probability",
@@ -71388,6 +71389,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "최빈값을 모를 때 쓰는 가장 단순한 분포.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "iman-conover",
+   "label": "Iman-Conover 방법",
+   "parent": "input-correlation-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 순서를 재배열해 목표 순위 상관을 만듦.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "gaussian-copula",
+   "label": "가우시안 코퓰러",
+   "parent": "input-correlation-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규 변수의 상관을 이용해 임의 분포에 종속성 부여.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "covariance-term-variance",
+   "label": "공분산 항",
+   "parent": "input-correlation-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합의 분산에 더해지는 2·Cov 항.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "correlation-assumption-labeling",
+   "label": "상관 가정 표시",
+   "parent": "input-correlation-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상관값을 가정으로 표시하고 민감도로 확인.",
    "added": "2026-11-24",
    "related": []
   }
