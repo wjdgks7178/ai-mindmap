@@ -49219,11 +49219,14 @@
    "label": "최선 노력 층화",
    "parent": "stratified-group-kfold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "큰 그룹 때문에 정확한 층화가 불가능한 경우의 대응.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "group-leakage-prevention"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "cv-splitter-selection",
@@ -72907,6 +72910,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "환자·사용자·문서 같은 종속 단위를 식별.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "fold-class-ratio-check",
+   "label": "폴드별 비율 점검",
+   "parent": "best-effort-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드마다 크기와 클래스 비율을 출력해 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "large-group-sensitivity",
+   "label": "큰 그룹 민감도",
+   "parent": "best-effort-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 큰 그룹을 뺀 점수도 함께 보고.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "repeated-group-splits",
+   "label": "반복 그룹 분할",
+   "parent": "best-effort-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드를 바꿔 여러 번 분할해 변동 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "greedy-fold-assignment",
+   "label": "탐욕적 폴드 배정",
+   "parent": "best-effort-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 그룹부터 폴드에 넣는 휴리스틱과 한계.",
    "added": "2026-11-24",
    "related": []
   }
