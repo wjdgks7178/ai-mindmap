@@ -50071,11 +50071,14 @@
    "label": "분할 기록 남기기",
    "parent": "group-overlap-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "그룹 겹침 0 확인을 실험 기록에 남겨 재현성 확보.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "reproducible-splits"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "id-normalization",
@@ -75090,6 +75093,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "once·default 규칙에서 필터를 먼저 설정해야 하는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "split-fingerprint-hash",
+   "label": "분할 지문 해시",
+   "parent": "split-report-logging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 ID를 정렬해 해시해 같은 분할인지 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "experiment-tracker-split-artifact",
+   "label": "실험 추적기에 분할 첨부",
+   "parent": "split-report-logging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MLflow 등에 분할 보고서를 아티팩트로 저장.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "id-hashing-privacy",
+   "label": "ID 해시와 개인정보",
+   "parent": "split-report-logging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인 ID 원문 대신 해시를 기록하는 이유.",
    "related": [],
    "added": "2026-11-24"
   }
