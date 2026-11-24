@@ -23053,11 +23053,15 @@
    "label": "근거 없으면 거부",
    "parent": "distractor-documents",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모르면 모른다고 답하게 하기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "supporting-quote-grounding",
+    "sufficient-context-classifier"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "static-prefix-design",
@@ -70597,6 +70601,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "JSON·표를 YAML 문자열로 넘기는 방식.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "over-refusal-rag",
+   "label": "RAG 과다 거부",
+   "parent": "abstain-when-no-evidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답할 수 있는데도 거부하는 실패.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "claim-retraction-pass",
+   "label": "주장 철회 검증 단계",
+   "parent": "abstain-when-no-evidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답 작성 뒤 인용 못 찾는 주장을 삭제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "unanswerable-test-set",
+   "label": "답 없는 질문 시험지",
+   "parent": "abstain-when-no-evidence",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거부 능력을 재는 의도적 무답 질문.",
    "added": "2026-11-24",
    "related": []
   }
