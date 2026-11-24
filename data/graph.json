@@ -49418,11 +49418,12 @@
    "label": "교차검증 점수 보고법",
    "parent": "cv-variance-bias-tradeoff",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평균±표준편차와 폴드별 점수를 함께 쓰는 이유.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "validation-curve",
@@ -73524,6 +73525,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "튜닝과 평가를 분리해 낙관 편향 줄이기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fold-score-spread",
+   "label": "폴드별 점수 퍼짐",
+   "parent": "cv-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 간 편차가 큰 원인(표본 수·이상치·클래스 비율).",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "cv-seed-sensitivity",
+   "label": "분할 시드 민감도",
+   "parent": "cv-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섞는 시드만 바꿨을 때 평균이 얼마나 변하는지 재 보기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "cross-validate-multi-metric",
+   "label": "cross_validate 다중 지표",
+   "parent": "cv-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도·F1·시간을 한 번에 얻어 표로 정리.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "eval-report-template",
+   "label": "평가 보고 템플릿",
+   "parent": "cv-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표·설정·시드·누수 점검을 한 장에 기록.",
    "related": [],
    "added": "2026-11-24"
   }
