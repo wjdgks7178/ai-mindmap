@@ -24028,11 +24028,14 @@
    "label": "파일럿 중단 규칙",
    "parent": "stop-criteria",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "경고선과 연속 기간으로 정하는 약속.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "breakeven-point"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "optimism-bias",
@@ -72100,6 +72103,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정의에 따라 손익분기가 바뀜.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "progression-criteria",
+   "label": "진행 기준",
+   "parent": "pilot-stop-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일럿에서 본 시험으로 넘어갈지 정하는 사전 합의 목표.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "traffic-light-stop-amend-go",
+   "label": "신호등 정지·수정·진행",
+   "parent": "pilot-stop-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적·황·녹 세 구간 의사결정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "worst-criterion-rule",
+   "label": "최악 지표 규칙",
+   "parent": "pilot-stop-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 기준 중 가장 나쁜 것이 전체 신호.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "consecutive-period-rule",
+   "label": "연속 기간 조건",
+   "parent": "pilot-stop-rule",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번이 아니라 N주 연속으로 판단.",
    "added": "2026-11-24",
    "related": []
   }
