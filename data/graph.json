@@ -49925,11 +49925,14 @@
    "label": "분할 전 오버샘플링",
    "parent": "late-split-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "SMOTE 등을 분할 전에 하면 생기는 누수.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sklearn-pipeline-leakage-guard"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "feature-selection-leakage",
@@ -74680,6 +74683,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "섞기 점검·특성 중요도·분할 점검을 묶은 체크리스트.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "smote-leakage-risk",
+   "label": "SMOTE 누수 위험",
+   "parent": "oversampling-before-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합성 표본이 이웃 표본 정보를 섞는 과정에서 생기는 누수.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "imbalanced-eval-metrics",
+   "label": "불균형 데이터 평가 지표",
+   "parent": "oversampling-before-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "균형 정확도·재현율·PR-AUC와 시험 분포 유지.",
    "related": [],
    "added": "2026-11-24"
   }
