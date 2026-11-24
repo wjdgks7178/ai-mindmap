@@ -49560,11 +49560,14 @@
    "label": "최종 테스트 세트 확인",
    "parent": "pessimistic-bias-small-k",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "보고용 점수는 CV가 아니라 별도 세트로 검증.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "bootstrap-resampling"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "paired-score-comparison",
@@ -73930,6 +73933,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "K·시드·지표·전처리를 표 아래에 고정 기록.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "selection-optimism-demo",
+   "label": "선택 낙관 시연",
+   "parent": "final-test-set-confirmation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신호 없는 데이터로 최고 CV 점수의 허상을 보이는 실습.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "one-shot-test-rule",
+   "label": "시험 세트는 한 번만",
+   "parent": "final-test-set-confirmation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 번 보면 시험 세트가 검증 세트가 되는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "retrain-on-full-train",
+   "label": "선택 후 전체 학습 세트로 재학습",
+   "parent": "final-test-set-confirmation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "refit 단계와 시험 평가 순서.",
    "related": [],
    "added": "2026-11-24"
   }
