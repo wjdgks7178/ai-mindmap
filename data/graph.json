@@ -50339,11 +50339,14 @@
    "label": "미래 정보 누수",
    "parent": "longitudinal-data-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "미래에 알게 된 값을 과거 예측 특성에 쓰는 누수.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "autocorrelation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "self-confidence-score",
@@ -75776,6 +75779,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 사람·기기의 반복 측정을 그룹으로 묶기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "feature-availability-table",
+   "label": "특성 생성 시각 표",
+   "parent": "future-information-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특성마다 생성 시각과 예측 시각을 적어 미래 정보 점검.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "centered-vs-trailing-window",
+   "label": "가운데 창 vs 과거 창",
+   "parent": "future-information-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이동평균에서 미래를 포함하는 설정과 막는 설정의 차이.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "post-outcome-features",
+   "label": "사건 이후 특성",
+   "parent": "future-information-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 이후에 생기는 사건으로 만든 특성이 누수가 되는 경우.",
    "related": [],
    "added": "2026-11-24"
   }
