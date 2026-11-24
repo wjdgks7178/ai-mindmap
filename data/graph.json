@@ -49333,11 +49333,14 @@
    "label": "낙관적 검증 점수",
    "parent": "stratification-vs-leakage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "누수로 검증 점수가 부풀려지는 현상과 의심 신호.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "random-label-sanity-check"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "shuffle-split",
@@ -73357,6 +73360,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "일부 분할만 쓸 때의 정확성과 비용.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "leakage-checklist",
+   "label": "누수 체크리스트",
+   "parent": "optimistic-validation-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수가 너무 좋을 때 훑는 점검 항목.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "post-hoc-feature-leakage",
+   "label": "사후 정보 특성",
+   "parent": "optimistic-validation-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답이 정해진 뒤에 생기는 정보가 특성에 들어간 경우.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "validation-vs-production-gap",
+   "label": "검증과 운영의 격차",
+   "parent": "optimistic-validation-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출시 후 성능이 검증보다 크게 낮은 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "evaluation-protocol-reporting",
+   "label": "평가 절차 보고",
+   "parent": "optimistic-validation-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할·전처리 순서·시험 횟수·시드 기록.",
    "added": "2026-11-24",
    "related": []
   }
