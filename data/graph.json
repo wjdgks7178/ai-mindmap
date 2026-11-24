@@ -49466,11 +49466,12 @@
    "label": "n_jobs 병렬 교차검증",
    "parent": "cv-compute-cost",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "폴드를 CPU 코어에 나눠 실행하기.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "cv-budget-planning",
@@ -73682,6 +73683,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "ax_, lines_, fill_between_ 로 그림 다듬기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "nested-parallelism-trap",
+   "label": "이중 병렬화 함정",
+   "parent": "n-jobs-parallel-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교차검증 n_jobs와 모델 n_jobs를 함께 켤 때의 코어 경쟁.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "pre-dispatch-memory",
+   "label": "pre_dispatch와 메모리",
+   "parent": "n-jobs-parallel-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미리 보낼 작업 수가 메모리에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "parallel-speedup-limit",
+   "label": "병렬 가속의 한계",
+   "parent": "n-jobs-parallel-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 수와 코어 수로 정해지는 시간 단축 상한.",
    "related": [],
    "added": "2026-11-24"
   }
