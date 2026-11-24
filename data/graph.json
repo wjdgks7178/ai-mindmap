@@ -49897,11 +49897,14 @@
    "label": "Pipeline으로 누수 막기",
    "parent": "late-split-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전처리와 모델을 묶어 폴드마다 fit 범위를 제한.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sample-vs-group-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "shuffled-label-sanity-check",
@@ -74630,6 +74633,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "n-gram으로 먼저 거르고 남은 후보만 LLM에 맡기는 방식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "gridsearch-with-pipeline",
+   "label": "Pipeline과 GridSearchCV",
+   "parent": "sklearn-pipeline-leakage-guard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "step이름__파라미터 형식으로 파이프라인 전체를 튜닝.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fit-transform-discipline",
+   "label": "fit·transform 규율",
+   "parent": "sklearn-pipeline-leakage-guard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 데이터에는 transform만 호출하는 규칙.",
    "related": [],
    "added": "2026-11-24"
   }
