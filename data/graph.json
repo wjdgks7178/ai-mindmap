@@ -49794,11 +49794,14 @@
    "label": "의미적 중복 제거",
    "parent": "near-duplicate-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "임베딩으로 의역까지 묶는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "minhash"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "training-data-deduplication",
@@ -74461,6 +74464,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "LSH 후보를 정확한 유사도로 다시 확인하는 단계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "cluster-then-dedup",
+   "label": "클러스터 후 중복 제거",
+   "parent": "semantic-deduplication",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 쌍 비교를 피하려 클러스터 안에서만 가까운 쌍을 찾기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "dedup-threshold-tradeoff",
+   "label": "중복 제거 임계값 절충",
+   "parent": "semantic-deduplication",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값이 낮으면 다양성 손실, 높으면 중복 잔존.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "dedup-diversity-loss",
+   "label": "중복 제거와 다양성 손실",
+   "parent": "semantic-deduplication",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 표현이 지워질 위험과 사람 확인.",
    "related": [],
    "added": "2026-11-24"
   }
