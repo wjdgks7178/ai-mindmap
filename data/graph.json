@@ -23987,11 +23987,15 @@
    "label": "재작업 시간 실측",
    "parent": "handling-time-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이관·재접촉에 걸리는 시간 측정.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "recontact-rate",
+    "net-time-saving"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "npsv",
@@ -71971,6 +71975,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 문제로 다시 연락하는 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "work-sampling",
+   "label": "업무 샘플링",
+   "parent": "rework-time-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 시각 관찰로 활동 비율을 추정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "time-diary-method",
+   "label": "시간 일기법",
+   "parent": "rework-time-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하루 활동을 기록해 시간을 측정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "self-report-time-bias",
+   "label": "시간 자기 보고 편향",
+   "parent": "rework-time-measurement",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설문 응답이 실제 시간과 어긋나는 현상.",
    "added": "2026-11-24",
    "related": []
   }
