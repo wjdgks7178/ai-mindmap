@@ -23939,11 +23939,12 @@
    "label": "완전 부담 시간당 비용",
    "parent": "handling-time-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "복리후생·교육을 더해 생산 시간으로 나눔.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "shrinkage-rate",
@@ -71791,6 +71792,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 때와 운영 때 기저율이 다를 때 확률 보정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "productive-hours-denominator",
+   "label": "생산 시간 분모",
+   "parent": "fully-loaded-hourly-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유급 시간이 아니라 일한 시간으로 나누는 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "burden-multiplier",
+   "label": "부담 배수",
+   "parent": "fully-loaded-hourly-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임금에 곱해 총 노동비를 구하는 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "time-saved-to-cash",
+   "label": "절감 시간의 현금화",
+   "parent": "fully-loaded-hourly-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "아낀 시간이 현금 효익이 되는 조건.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "labor-cost-definition-consistency",
+   "label": "노동비 정의 일관성",
+   "parent": "fully-loaded-hourly-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직접 요율과 완전 부담 요율을 섞지 않기.",
    "added": "2026-11-24",
    "related": []
   }
