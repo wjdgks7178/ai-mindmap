@@ -24042,11 +24042,14 @@
    "label": "낙관 편향 조정",
    "parent": "stop-criteria",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비용·기간 추정을 체계적으로 올려 잡기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "stop-criteria"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "trial-and-error-solve",
@@ -72147,6 +72150,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 번이 아니라 N주 연속으로 판단.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "reference-class-forecasting",
+   "label": "참조 집단 예측",
+   "parent": "optimism-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유사 사업의 실적 분포로 추정을 보정하는 3단계 방법.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "planning-fallacy",
+   "label": "계획 오류",
+   "parent": "optimism-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용·기간을 과소, 효과를 과대 추정하는 경향.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "outside-view",
+   "label": "바깥 시선",
+   "parent": "optimism-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내부 사정 대신 비슷한 사례의 기록을 보는 관점.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "overrun-risk-tolerance",
+   "label": "초과 위험 허용도와 상향",
+   "parent": "optimism-bias",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 위험이 낮을수록 상향이 커지는 관계.",
    "added": "2026-11-24",
    "related": []
   }
