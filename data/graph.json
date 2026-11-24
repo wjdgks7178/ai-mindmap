@@ -22058,11 +22058,14 @@
    "label": "제2 의견 효과",
    "parent": "undertrust-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "과의존은 줄고 과소의존은 늘 수 있음.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "cognitive-forcing-functions"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "appropriate-reliance-metrics",
@@ -70323,6 +70326,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "방법·임계값을 밝히고 민감도 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "on-demand-advice",
+   "label": "요청형 조언 노출",
+   "parent": "second-opinion-effect",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사용자가 원할 때만 추가 의견을 보여 주는 설계.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "advice-agreement-level",
+   "label": "의견 일치도 효과",
+   "parent": "second-opinion-effect",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처보다 AI와의 일치 정도가 의존에 더 영향.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "over-vs-under-reliance-tradeoff",
+   "label": "과의존·과소의존 맞교환",
+   "parent": "second-opinion-effect",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한쪽을 줄이면 다른 쪽이 느는 현상.",
    "added": "2026-11-24",
    "related": []
   }
