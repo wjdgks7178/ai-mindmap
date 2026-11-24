@@ -22754,11 +22754,14 @@
    "label": "경계 사례 예시",
    "parent": "example-selection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "헷갈리는 사례를 일부 포함.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "held-out-eval-set"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "lora-rank",
@@ -70513,6 +70516,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본이 적으면 프롬프트 차이를 못 가른다.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "example-tags-structure",
+   "label": "예시 태그 구조화",
+   "parent": "edge-case-examples",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "example 태그로 예시와 지시를 구분.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "example-rationale-line",
+   "label": "예시 판단 근거 한 줄",
+   "parent": "edge-case-examples",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예시마다 왜 그 답인지 적어 일관성 확보.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "example-order-last-weight",
+   "label": "마지막 예시 가중",
+   "parent": "edge-case-examples",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 예시가 영향이 크다는 주장과 검증법.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "mining-edge-cases-from-logs",
+   "label": "로그에서 경계 사례 찾기",
+   "parent": "edge-case-examples",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자주 틀린 입력·사람 번복 건에서 사례 고르기.",
    "added": "2026-11-24",
    "related": []
   }
