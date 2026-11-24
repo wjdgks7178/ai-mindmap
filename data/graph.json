@@ -24002,11 +24002,14 @@
    "label": "순현재사회가치 NPSV",
    "parent": "stop-criteria",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "편익−비용의 현재가치.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "stop-criteria"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "breakeven-point",
@@ -72008,6 +72011,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "설문 응답이 실제 시간과 어긋나는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "social-discount-rate",
+   "label": "사회적 할인율",
+   "parent": "npsv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "미래 사회 편익을 현재가치로 바꾸는 비율과 2026 변경.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "present-value-discounting",
+   "label": "현재가치 할인",
+   "parent": "npsv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PV = 미래값 ÷ (1+r)^t 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "declining-discount-rate",
+   "label": "체감 할인율",
+   "parent": "npsv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "먼 미래일수록 할인율을 낮추는 구조.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "real-vs-nominal-prices",
+   "label": "실질·명목 가격",
+   "parent": "npsv",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "물가 영향을 제거한 실질 값으로 평가.",
    "added": "2026-11-24",
    "related": []
   }
