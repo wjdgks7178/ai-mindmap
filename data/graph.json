@@ -49319,11 +49319,14 @@
    "label": "층화와 지표 퍼짐",
    "parent": "stratify-regression-binning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "층화가 폴드 간 지표 편차를 인위적으로 줄이는 효과.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-stratified-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "optimistic-validation-score",
@@ -73216,6 +73219,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본이 작을 때 3~5구간에서 시작하는 관행.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "fold-sd-not-confidence-interval",
+   "label": "폴드 표준편차는 신뢰구간이 아님",
+   "parent": "stratification-metric-spread",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 간 퍼짐을 불확실성으로 오해하는 문제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pooled-cv-predictions-metric",
+   "label": "교차검증 예측 모아서 지표 구하기",
+   "parent": "stratification-metric-spread",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 폴드 예측을 합쳐 한 번에 지표 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "few-positives-discrete-metric",
+   "label": "양성 적을 때 이산적 지표",
+   "parent": "stratification-metric-spread",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드당 양성이 적으면 지표가 몇 개 값뿐.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "stratification-benefit-limits",
+   "label": "층화의 이득과 한계",
+   "parent": "stratification-metric-spread",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표 정의 보장 vs 불확실성 은폐.",
    "added": "2026-11-24",
    "related": []
   }
