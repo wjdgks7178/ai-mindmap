@@ -49233,11 +49233,16 @@
    "label": "교차검증 분할기 고르기",
    "parent": "stratified-group-kfold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "KFold·Stratified·Group·시계열 분할기 선택 기준.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "group-leakage-prevention",
+    "time-series-split",
+    "random-state-reproducibility"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "repeated-stratified-kfold",
@@ -72954,6 +72959,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "큰 그룹부터 폴드에 넣는 휴리스틱과 한계.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "stratified-kfold-rare-class",
+   "label": "희귀 클래스와 층화 K겹",
+   "parent": "cv-splitter-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드에 소수 클래스가 빠지는 문제와 층화.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "splitter-must-match-deployment",
+   "label": "분할이 운영 상황과 맞아야 함",
+   "parent": "cv-splitter-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 환자·미래 데이터처럼 운영 조건을 흉내 내는 분할.",
    "added": "2026-11-24",
    "related": []
   }
