@@ -23318,11 +23318,12 @@
    "label": "전문가 판단 이력",
    "parent": "learning-to-defer",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "위임 학습의 입력 데이터.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "defer-fairness",
@@ -70762,6 +70763,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "전문가 정확도를 고려하는 차이.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "partial-expert-labels",
+   "label": "일부만 있는 전문가 라벨",
+   "parent": "expert-decision-history",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가 판단이 일부에만 있을 때 채워 쓰는 방법.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "expert-error-prediction",
+   "label": "전문가 오류 예측 모델",
+   "parent": "expert-decision-history",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가가 어떤 입력에서 틀리는지 예측.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "decision-logging-design",
+   "label": "판단 기록 설계",
+   "parent": "expert-decision-history",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결정·이유·결정자·시각을 남기는 형식.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "simulated-expert",
+   "label": "모의 전문가 실험",
+   "parent": "expert-decision-history",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 사람 대신 분포로 표집한 전문가의 한계.",
    "added": "2026-11-24",
    "related": []
   }
