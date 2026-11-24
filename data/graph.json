@@ -50412,11 +50412,14 @@
    "label": "검수 정지 규칙",
    "parent": "human-relabel-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오류율·예산·성능 개선으로 검수를 멈출 기준.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "precision-at-k-review"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "double-annotation-review",
@@ -75992,6 +75995,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "무작위 검수 기대값과 비교해 점수 효율을 배수로 표현.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "consecutive-batch-rule",
+   "label": "연속 구간 정지 규칙",
+   "parent": "review-stopping-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연속 구간이 모두 기준 미만일 때만 멈추는 규칙.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "unreviewed-sample-audit",
+   "label": "미검수 구간 표본 점검",
+   "parent": "review-stopping-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수하지 않은 뒷부분에서 무작위로 뽑아 놓친 비율 추정.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "performance-based-stopping",
+   "label": "성능 기반 정지",
+   "parent": "review-stopping-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정제 후 깨끗한 검증 점수 향상이 멈추면 중단.",
    "related": [],
    "added": "2026-11-24"
   }
