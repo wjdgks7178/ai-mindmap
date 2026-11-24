@@ -23524,11 +23524,14 @@
    "label": "시나리오 분석",
    "parent": "tornado-chart",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "입력을 함께 움직이는 시나리오.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "two-way-sensitivity"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "probabilistic-sensitivity-analysis",
@@ -71238,6 +71241,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "변수가 늘면 조합 수가 기하급수로 증가.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "scenario-assumption-table",
+   "label": "시나리오 가정표",
+   "parent": "scenario-analysis-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시나리오별 가정 묶음을 표로 기록.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "scenario-switch-model",
+   "label": "시나리오 전환 모델",
+   "parent": "scenario-analysis-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CHOOSE 등으로 시나리오를 바꿔 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "scenario-narrative",
+   "label": "시나리오 이야기 붙이기",
+   "parent": "scenario-analysis-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자 묶음에 이름과 서사를 부여.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "scenario-probability-difficulty",
+   "label": "시나리오 확률 부여의 어려움",
+   "parent": "scenario-analysis-roi",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 시나리오 확률을 매기기 어려운 이유.",
    "added": "2026-11-24",
    "related": []
   }
