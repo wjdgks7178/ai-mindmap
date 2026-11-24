@@ -44952,11 +44952,16 @@
    "label": "군집 표본의 신뢰구간",
    "parent": "wilson-interval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 그룹 샘플은 독립이 아님.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "bootstrap-ci-vs-wilson",
+    "effective-sample-size",
+    "cluster-bootstrap"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "paired-test-same-items",
@@ -72546,6 +72551,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "재표본 횟수·방식·시드를 명시.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "design-effect",
+   "label": "설계효과",
+   "parent": "clustered-samples-ci",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설계가 분산을 단순 무작위 대비 키우는 배수.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "intraclass-correlation",
+   "label": "군집 내 상관 ICC",
+   "parent": "clustered-samples-ci",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "군집 안 단위가 닮은 정도.",
    "added": "2026-11-24",
    "related": []
   }
