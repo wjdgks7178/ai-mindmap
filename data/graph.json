@@ -49844,11 +49844,14 @@
    "label": "n-gram 겹침 검사",
    "parent": "split-leakage-audit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "13-gram 등 기준의 원리와 한계.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "training-data-deduplication"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "image-embedding-similarity",
@@ -74522,6 +74525,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "싼 방식부터 비싼 방식 순으로 적용하는 설계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "ngram-size-tradeoff",
+   "label": "n 선택의 절충",
+   "parent": "ngram-overlap-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n이 작으면 오탐, 크면 놓침이 늘어나는 관계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "text-normalization-before-match",
+   "label": "비교 전 텍스트 정규화",
+   "parent": "ngram-overlap-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소문자·구두점·공백 정리가 검사 결과에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "contamination-report-format",
+   "label": "오염 검사 보고 형식",
+   "parent": "ngram-overlap-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n값·정규화·겹침 비율을 함께 적는 법.",
    "related": [],
    "added": "2026-11-24"
   }
