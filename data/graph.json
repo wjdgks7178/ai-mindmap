@@ -50099,11 +50099,14 @@
    "label": "엔티티 해소",
    "parent": "missing-group-ids",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 ID·기록이 같은 개체인지 판별하는 기법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "connected-components-grouping"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "missing-id-rate-report",
@@ -75234,6 +75237,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "가장 희귀한 연결부터 끊어 최대 성분을 줄이는 절차.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fellegi-sunter-model",
+   "label": "Fellegi-Sunter 모델",
+   "parent": "entity-resolution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "m·u 확률로 필드 일치의 증거 가중치를 더하는 연결 모델.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "blocking-keys",
+   "label": "블로킹 키",
+   "parent": "entity-resolution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비교 쌍을 줄이는 키와 놓침을 줄이는 다중 패스.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "resolution-error-direction",
+   "label": "해소 오류의 방향",
+   "parent": "entity-resolution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FN은 누수, FP는 그룹 비대화로 이어지는 이유.",
    "related": [],
    "added": "2026-11-24"
   }
