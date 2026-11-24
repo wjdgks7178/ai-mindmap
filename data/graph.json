@@ -50158,11 +50158,14 @@
    "label": "기관 일반화 평가",
    "parent": "multi-axis-grouping",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "새 병원에서의 성능을 별도로 재는 설계.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "external-validation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "multi-hop-qa",
@@ -75487,6 +75490,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "문장 단위 주석에서 주석자 간 불일치를 줄이는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "per-site-score-table",
+   "label": "기관별 점수 표",
+   "parent": "site-generalization-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기관별 정확도·표본 수·최저 기관을 표로 보고.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "site-normalization",
+   "label": "기관 정규화",
+   "parent": "site-generalization-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장비·절차 차이로 생긴 입력 이동을 줄이는 전처리.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "new-site-calibration",
+   "label": "신규 기관 보정",
+   "parent": "site-generalization-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소량의 신규 기관 데이터로 모델을 보정하는 방법.",
    "related": [],
    "added": "2026-11-24"
   }
