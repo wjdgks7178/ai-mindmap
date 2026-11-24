@@ -49684,11 +49684,14 @@
    "label": "최악 그룹 성능",
    "parent": "per-group-score-analysis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평균이 아니라 최저 그룹·하위 분위수로 보는 지표.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "group-size-imbalance"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "distribution-shift-between-groups",
@@ -74241,6 +74244,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "np.random.seed 대신 RandomState를 넘기는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "per-group-report-table",
+   "label": "그룹별 성능 표",
+   "parent": "worst-group-performance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도·표본 수·최저 그룹을 한 표에 정리하는 보고 형식.",
    "related": [],
    "added": "2026-11-24"
   }
