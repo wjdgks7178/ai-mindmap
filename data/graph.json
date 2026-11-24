@@ -23344,11 +23344,12 @@
    "label": "Little의 법칙",
    "parent": "review-queue-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "도착률이 처리율에 가까우면 큐가 무한히 늘어남.",
+   "summary": "건수=도착률×체류시간 관계. 포화 시 적체는 별도 결과.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "rubber-stamping",
@@ -70843,6 +70844,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소수 클래스가 더 자주 넘겨지는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "mm1-queue",
+   "label": "M/M/1 대기행렬",
+   "parent": "littles-law-queue",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 도착·지수 처리 단일 서버 모형.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "utilization-saturation",
+   "label": "이용률 포화",
+   "parent": "littles-law-queue",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ρ가 1에 가까울 때 대기가 폭증하는 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "review-capacity-planning",
+   "label": "검토 용량 산정",
+   "parent": "littles-law-queue",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도착률·처리율로 검토자 수 정하기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "queue-simulation",
+   "label": "큐 시뮬레이션",
+   "parent": "littles-law-queue",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "피크·난이도 차이가 있을 때 시뮬레이션으로 확인.",
    "added": "2026-11-24",
    "related": []
   }
