@@ -50029,11 +50029,14 @@
    "label": "CI 겹침 게이트",
    "parent": "synthetic-data-split-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 PR마다 학습-평가 겹침을 재계산해 차단.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "eval-set-quarantine"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "split-assertion-test",
@@ -74982,6 +74985,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "누가 언제 읽었는지 기록해 사고 추적.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "overlap-threshold-false-positive",
+   "label": "겹침 기준값과 오탐",
+   "parent": "ci-overlap-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준이 낮으면 개발이 막히고 높으면 누수가 샌다.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "gate-exception-allowlist",
+   "label": "게이트 예외 허용 목록",
+   "parent": "ci-overlap-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외 사유·승인자를 남기는 운영.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "tiered-contamination-checks",
+   "label": "단계별 오염 검사",
+   "parent": "ci-overlap-gate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "PR 게이트·야간 의미 검사·월간 새 문제 점검의 층.",
    "related": [],
    "added": "2026-11-24"
   }
