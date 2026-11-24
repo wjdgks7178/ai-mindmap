@@ -50169,11 +50169,15 @@
    "label": "멀티홉 질문 응답",
    "parent": "multi-passage-question-handling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 문서를 조합해 답하는 QA 과제.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "hotpotqa",
+    "musique"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "hotpotqa",
@@ -75414,6 +75418,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "2·3·4홉으로 나눠 추론 단계에 따른 성능 보기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "question-decomposition",
+   "label": "질문 분해",
+   "parent": "multi-hop-qa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복합 질문을 하위 질문으로 나눠 단계별로 검색.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "iterative-retrieval",
+   "label": "반복 검색",
+   "parent": "multi-hop-qa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중간 답을 다음 검색어로 쓰는 다단계 검색 구조.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "error-propagation-hops",
+   "label": "홉에 따른 오류 전파",
+   "parent": "multi-hop-qa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중간 단계 오류가 뒤로 퍼져 정확도가 급락하는 현상.",
    "related": [],
    "added": "2026-11-24"
   }
