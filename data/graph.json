@@ -49546,11 +49546,14 @@
    "label": "비교용 k 고정",
    "parent": "pessimistic-bias-small-k",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델 비교 시 같은 k·같은 분할을 쓰는 이유.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "model-comparison-cv"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "final-test-set-confirmation",
@@ -73894,6 +73897,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 K 평가가 데이터 많이 필요한 모델을 깎는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "seed-fixing-practice",
+   "label": "시드 고정 습관",
+   "parent": "fixed-k-for-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할기와 모델의 random_state를 함께 고정하는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "similar-model-comparison",
+   "label": "비슷한 모델끼리 비교",
+   "parent": "fixed-k-for-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수가 거의 같은 모델은 같은 분할로 차이를 본다.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "comparison-table-settings",
+   "label": "비교표에 적을 설정",
+   "parent": "fixed-k-for-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K·시드·지표·전처리를 표 아래에 고정 기록.",
    "related": [],
    "added": "2026-11-24"
   }
