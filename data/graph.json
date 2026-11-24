@@ -49766,11 +49766,14 @@
    "label": "MinHash",
    "parent": "near-duplicate-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "집합을 짧은 서명으로 줄여 Jaccard 유사도를 추정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "training-data-deduplication"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "lsh-band-row-tuning",
@@ -74389,6 +74392,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "점수에 n과 오차 범위를 붙이는 보고 형식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "shingling",
+   "label": "shingle 만들기",
+   "parent": "minhash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서를 연속 n단어 조각 집합으로 바꾸는 단계와 n 선택.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "minhash-error-vs-k",
+   "label": "MinHash 오차와 해시 수",
+   "parent": "minhash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "sd=√(J(1-J)/k)로 필요한 해시 수 정하기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "datasketch-practice",
+   "label": "datasketch 실습",
+   "parent": "minhash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MinHash·LSH 라이브러리 사용 흐름.",
    "related": [],
    "added": "2026-11-24"
   }
