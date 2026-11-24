@@ -23965,7 +23965,7 @@
    "domain": "ai-applications",
    "status": "done",
    "priority": 3,
-   "summary": "통화·후처리 시간 ÷ 로그인 시간.",
+   "summary": "점유율(로그인 중 응대 비율)과 활용률(근무 중 로그인 비율)의 구분.",
    "added": "2026-11-16",
    "related": [],
    "done": "2026-11-24"
