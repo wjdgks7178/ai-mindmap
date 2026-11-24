@@ -23538,11 +23538,14 @@
    "label": "확률적 민감도 분석 PSA",
    "parent": "tornado-chart",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분포를 두고 불확실성을 정량화.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "monte-carlo-roi"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "triangular-distribution",
@@ -71285,6 +71288,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "각 시나리오 확률을 매기기 어려운 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "beta-distribution-moments",
+   "label": "베타분포 적률법",
+   "parent": "probabilistic-sensitivity-analysis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균·표준오차로 베타 모수 α β 구하기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "gamma-cost-distribution",
+   "label": "비용용 감마분포",
+   "parent": "probabilistic-sensitivity-analysis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비음수·오른쪽 치우침을 가진 비용 모델링.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rule-of-four",
+   "label": "4의 법칙",
+   "parent": "probabilistic-sensitivity-analysis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범위만 있을 때 표준오차를 (상한-하한)/4로 근사.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "ceac",
+   "label": "비용효과 수용 곡선",
+   "parent": "probabilistic-sensitivity-analysis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지불 의사 금액별 비용효과일 확률을 그린 곡선.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "evpi",
+   "label": "완전정보의 기대가치",
+   "parent": "probabilistic-sensitivity-analysis",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불확실성을 모두 없앨 때의 기대 이득.",
    "added": "2026-11-24",
    "related": []
   }
