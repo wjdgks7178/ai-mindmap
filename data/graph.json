@@ -50085,11 +50085,14 @@
    "label": "ID 정규화",
    "parent": "missing-group-ids",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "표기 불일치(대소문자·접두사)를 정리해 같은 개체를 묶기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sample-vs-group-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "entity-resolution",
@@ -75126,6 +75129,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "개인 ID 원문 대신 해시를 기록하는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "id-over-merge-check",
+   "label": "과합침 점검",
+   "parent": "id-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서로 다른 대상이 같은 ID로 합쳐지는지 확인하는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "unicode-normalization-ids",
+   "label": "유니코드 정규화",
+   "parent": "id-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전각·반각, 조합형 문자로 ID가 갈리는 문제.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "name-vs-id-grouping",
+   "label": "이름 대신 ID로 묶기",
+   "parent": "id-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동명이인·철자 변형 때문에 이름 기반 그룹이 위험한 이유.",
    "related": [],
    "added": "2026-11-24"
   }
