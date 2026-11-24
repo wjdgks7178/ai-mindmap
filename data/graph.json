@@ -50113,11 +50113,14 @@
    "label": "ID 누락률 보고",
    "parent": "missing-group-ids",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분할 전 누락률을 수치로 보고하는 습관.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "entity-resolution"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "connected-components-grouping",
@@ -75270,6 +75273,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "FN은 누수, FP는 그룹 비대화로 이어지는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "missing-policy-sensitivity",
+   "label": "누락 처리 민감도",
+   "parent": "missing-id-rate-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처리 방식별 점수 변화를 함께 보고하는 습관.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "group-column-dtype-trap",
+   "label": "그룹 열 자료형 함정",
+   "parent": "missing-id-rate-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정수·문자열 혼합이 분할기를 멈추는 문제.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "missing-concentration-check",
+   "label": "누락 집중 구간 점검",
+   "parent": "missing-id-rate-report",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소스·날짜·클래스별 누락률로 편향 찾기.",
    "related": [],
    "added": "2026-11-24"
   }
