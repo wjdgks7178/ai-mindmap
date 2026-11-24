@@ -45009,11 +45009,15 @@
    "label": "통계적으로 구분 안 되는 그룹",
    "parent": "leaderboard-small-gap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "순위 대신 겹치는 구간 그룹으로 해석.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "model-choice-beyond-small-gaps",
+    "bradley-terry-model"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "selective-score-disclosure",
@@ -72702,6 +72706,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "저비용 모델이 대부분을 처리하고 어려운 판단만 고급 모델에.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rank-spread",
+   "label": "순위 범위",
+   "parent": "statistically-indistinguishable-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신뢰구간으로 본 가능한 최선·최악 순위 구간.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "raw-rank",
+   "label": "원순위",
+   "parent": "statistically-indistinguishable-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수 위치로 매긴 고유 순위.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "interval-overlap-vs-test",
+   "label": "구간 겹침과 검정",
+   "parent": "statistically-indistinguishable-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간 겹침만으로 차이 없다고 단정하면 안 되는 이유.",
    "added": "2026-11-24",
    "related": []
   }
