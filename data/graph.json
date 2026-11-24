@@ -24016,11 +24016,12 @@
    "label": "손익분기점",
    "parent": "stop-criteria",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "순효과가 0이 되는 지점.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "pilot-stop-rule",
@@ -72055,6 +72056,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "물가 영향을 제거한 실질 값으로 평가.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "contribution-margin",
+   "label": "공헌이익",
+   "parent": "breakeven-point",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단가에서 변동비를 뺀 고정비 충당분.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "margin-of-safety",
+   "label": "안전 한계",
+   "parent": "breakeven-point",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판매가 얼마나 떨어져도 손실이 안 나는지.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "payback-period",
+   "label": "회수 기간",
+   "parent": "breakeven-point",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "투자금 회수에 걸리는 시간과 그 한계.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "active-user-definition",
+   "label": "활성 사용자 정의",
+   "parent": "breakeven-point",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정의에 따라 손익분기가 바뀜.",
    "added": "2026-11-24",
    "related": []
   }
