@@ -50398,11 +50398,14 @@
    "label": "precision@k 검수 효율",
    "parent": "cleanlab-label-quality-score",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검수 상위 k개 중 진짜 오류 비율.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "self-confidence-score"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "review-stopping-rule",
@@ -75956,6 +75959,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "소수 클래스 정상 샘플이 의심 목록에 몰리는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "recall-at-k",
+   "label": "recall@k",
+   "parent": "precision-at-k-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 오류 중 상위 k개 검수가 잡은 비율.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "review-precision-curve",
+   "label": "검수 정밀도 곡선",
+   "parent": "precision-at-k-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간별 오라벨 비율로 정지 지점을 찾는 곡선.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "random-review-baseline",
+   "label": "무작위 검수 기준선",
+   "parent": "precision-at-k-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 검수 기대값과 비교해 점수 효율을 배수로 표현.",
    "related": [],
    "added": "2026-11-24"
   }
