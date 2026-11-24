@@ -49973,11 +49973,14 @@
    "label": "테스트 시 증강(TTA)",
    "parent": "test-set-no-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "예측 단계에서 변형본을 모아 투표하는 기법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "robustness-eval-set"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "failure-triage-leakage",
@@ -74849,6 +74852,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "방법·k·선택에 쓴 데이터 범위를 함께 적는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "tta-aggregation-weights",
+   "label": "TTA 집계 가중치",
+   "parent": "test-time-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단순 평균 대신 변형별 가중치를 학습하는 접근.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "tta-vs-train-augmentation",
+   "label": "TTA와 학습 증강의 관계",
+   "parent": "test-time-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 때 증강하면 TTA 이득이 줄어드는지 보기.",
    "related": [],
    "added": "2026-11-24"
   }
