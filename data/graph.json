@@ -49822,11 +49822,14 @@
    "label": "의역 샘플 오염",
    "parent": "split-leakage-audit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의역·번역 변형이 필터를 통과하는 오염.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "ngram-overlap-test"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "llm-decontaminator",
@@ -74558,6 +74561,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "n값·정규화·겹침 비율을 함께 적는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "synthetic-data-contamination",
+   "label": "합성 데이터 속 오염",
+   "parent": "rephrased-sample-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 문제가 시드가 된 합성 데이터가 오염을 퍼뜨리는 경로.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fresh-one-time-exam",
+   "label": "일회성 새 시험",
+   "parent": "rephrased-sample-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개되지 않은 새 문제로 평가해 오염을 피하는 방식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "translation-contamination",
+   "label": "번역 오염",
+   "parent": "rephrased-sample-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 언어로 번역된 시험 문제가 필터를 통과하는 경우.",
    "related": [],
    "added": "2026-11-24"
   }
