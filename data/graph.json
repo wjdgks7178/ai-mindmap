@@ -49752,11 +49752,14 @@
    "label": "아주 작은 데이터의 검증",
    "parent": "leave-one-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "샘플 수십 개일 때 LOO·반복 CV 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "minhash",
@@ -74375,6 +74378,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "영상·문서를 조각내 무작위 분할하면 누수가 생기는 경우.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "report-uncertainty-n",
+   "label": "표본 수와 함께 보고",
+   "parent": "small-data-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수에 n과 오차 범위를 붙이는 보고 형식.",
    "related": [],
    "added": "2026-11-24"
   }
