@@ -50328,11 +50328,14 @@
    "label": "사람 단위 vs 시간 단위 분할",
    "parent": "longitudinal-data-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "질문(일반화 vs 예측)에 따른 분할 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sample-vs-group-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "future-information-leakage",
@@ -75812,6 +75815,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "예측 이후에 생기는 사건으로 만든 특성이 누수가 되는 경우.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "new-patient-vs-future-visit",
+   "label": "신규 환자 vs 미래 방문",
+   "parent": "subject-level-vs-time-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 일반화 질문을 구분해 분할을 정하는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "split-choice-reporting",
+   "label": "분할 선택 이유 보고",
+   "parent": "subject-level-vs-time-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 분할을 왜 썼는지 결과와 함께 기록.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "combined-subject-time-split",
+   "label": "사람+시간 결합 분할",
+   "parent": "subject-level-vs-time-split",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신규 환자의 최신 방문처럼 두 축을 함께 지키는 분할.",
    "related": [],
    "added": "2026-11-24"
   }
