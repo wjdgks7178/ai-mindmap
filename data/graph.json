@@ -23924,11 +23924,15 @@
    "label": "클래스 불균형과 임계값",
    "parent": "cost-matrix",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "0.5가 부적절한 이유.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "false-positive-vs-false-negative-cost",
+    "downsampling-upweighting"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "fully-loaded-hourly-cost",
@@ -71754,6 +71758,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "거래 금액처럼 건마다 다른 비용 반영.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "accuracy-paradox",
+   "label": "정확도 역설",
+   "parent": "class-imbalance-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "항상 다수 클래스를 답해도 정확도가 높게 나옴.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pr-curve",
+   "label": "PR 곡선",
+   "parent": "class-imbalance-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정밀도-재현율 곡선으로 불균형 데이터 평가.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "prior-shift-correction",
+   "label": "사전확률 변화 보정",
+   "parent": "class-imbalance-threshold",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 때와 운영 때 기저율이 다를 때 확률 보정.",
    "added": "2026-11-24",
    "related": []
   }
