@@ -22072,11 +22072,15 @@
    "label": "적절한 의존 지표",
    "parent": "undertrust-ai",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "객관 지표 합의 논쟁.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "second-opinion-effect",
+    "complementary-team-performance"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "confidence-score-display",
@@ -70359,6 +70363,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한쪽을 줄이면 다른 쪽이 느는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rair-rsr",
+   "label": "RAIR·RSR 지표",
+   "parent": "appropriate-reliance-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞는 조언 따름 비율과 틀린 조언 거부 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "trust-vs-reliance-measure",
+   "label": "신뢰와 의존의 측정 차이",
+   "parent": "appropriate-reliance-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설문 신뢰와 행동 의존이 어긋나는 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "decision-theoretic-reliance",
+   "label": "결정이론적 의존 정의",
+   "parent": "appropriate-reliance-metrics",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이분법 정의를 비판하는 대안 접근.",
    "added": "2026-11-24",
    "related": []
   }
