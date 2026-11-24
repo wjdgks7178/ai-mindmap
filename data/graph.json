@@ -42232,11 +42232,14 @@
    "label": "스케일러 누수",
    "parent": "preprocessing-leakage-pipeline",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전체 평균·분산으로 표준화하는 누수.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "fit-on-train-only"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "imputation-leakage",
@@ -72241,6 +72244,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "식으로 바로 구하기와 반복 계산의 선택.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pipeline-cross-validation",
+   "label": "파이프라인과 교차검증",
+   "parent": "scaler-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드마다 전처리를 다시 학습.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "time-series-split-leakage",
+   "label": "시계열 분할과 누수",
+   "parent": "scaler-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거 데이터로만 통계를 구하는 시간 순서 분할.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "distribution-shift-masking",
+   "label": "분포 이동 가림",
+   "parent": "scaler-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누수가 시험 데이터의 이동을 덜 보이게 함.",
    "added": "2026-11-24",
    "related": []
   }
