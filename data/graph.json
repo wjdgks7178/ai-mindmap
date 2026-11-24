@@ -22682,11 +22682,12 @@
    "label": "보류 평가 세트",
    "parent": "eval-set-first",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "튜닝에 안 쓴 최종 보고용 세트.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "knn-example-retrieval",
@@ -70468,6 +70469,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "인용구가 맞아도 해석이 틀릴 수 있음.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "eval-set-access-control",
+   "label": "평가 세트 접근 통제",
+   "parent": "held-out-eval-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보류 세트가 튜닝에 쓰이지 않게 막는 절차.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "eval-set-staleness",
+   "label": "평가 세트 낡음",
+   "parent": "held-out-eval-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영 입력이 변하면 보류 세트도 갱신해야 함.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "validation-test-gap",
+   "label": "검증-테스트 격차",
+   "parent": "held-out-eval-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜닝 세트 점수 향상이 테스트에서 줄어드는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "small-dev-set-risk",
+   "label": "작은 개발 세트의 위험",
+   "parent": "held-out-eval-set",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 적으면 프롬프트 차이를 못 가른다.",
    "added": "2026-11-24",
    "related": []
   }
