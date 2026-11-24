@@ -23440,11 +23440,12 @@
    "label": "능동 학습 콜드 스타트",
    "parent": "active-learning-review",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "초기 시드 선택 문제.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "al-stopping-criteria",
@@ -71052,6 +71053,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기간별 오류율을 비교해 드리프트 탐지.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "typiclust",
+   "label": "TypiClust",
+   "parent": "al-cold-start",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "군집별 가장 전형적인 점을 뽑는 저예산 능동 학습.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "typicality-score",
+   "label": "전형도 점수",
+   "parent": "al-cold-start",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이웃 거리의 역수로 밀도가 높은 점을 찾기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "budget-regime-phase-transition",
+   "label": "예산에 따른 전략 전환",
+   "parent": "al-cold-start",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저예산은 전형적, 고예산은 어려운 예시.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "seed-selection-imbalanced-data",
+   "label": "불균형 데이터의 시드 선택",
+   "parent": "al-cold-start",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 시드가 양성을 놓치는 문제.",
    "added": "2026-11-24",
    "related": []
   }
