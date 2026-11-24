@@ -49358,11 +49358,14 @@
    "label": "교차검증의 조합 폭발",
    "parent": "leave-p-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "C(n,p) 증가와 현실적인 분할 수 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "shuffle-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "exhaustive-vs-sampled-cv",
@@ -73310,6 +73313,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 데이터 재사용으로 신뢰구간이 아님.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "binomial-coefficient",
+   "label": "조합 수 C(n,p)",
+   "parent": "combinatorial-cost-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n개 중 p개를 고르는 경우의 수.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "leave-one-out-cost",
+   "label": "Leave-One-Out 비용",
+   "parent": "combinatorial-cost-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n번 학습이 필요해 큰 데이터에서 느림.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cv-total-time-estimate",
+   "label": "교차검증 총 소요 시간 추정",
+   "parent": "combinatorial-cost-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 수 × 학습 시간으로 계획.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "sampled-splits-tradeoff",
+   "label": "분할 샘플링의 절충",
+   "parent": "combinatorial-cost-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 분할만 쓸 때의 정확성과 비용.",
    "added": "2026-11-24",
    "related": []
   }
