@@ -44924,11 +44924,14 @@
    "label": "정규 근사(Wald) 구간의 실패",
    "parent": "wilson-interval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "작은 n·극단 비율에서 폭 0.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "clopper-pearson-interval"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "bootstrap-ci-vs-wilson",
@@ -72452,6 +72455,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사용한 신뢰구간 방법을 보고서에 적기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "coverage-probability",
+   "label": "포함 확률",
+   "parent": "wald-interval-failure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신뢰구간이 참값을 담는 실제 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "zero-width-interval",
+   "label": "폭 0 구간",
+   "parent": "wald-interval-failure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관찰 0건일 때 Wald가 보이는 거짓 확신.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "standard-error-from-phat",
+   "label": "관찰 비율로 계산한 표준오차",
+   "parent": "wald-interval-failure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "p̂을 쓰면 극단에서 불확실성이 0으로 추정됨.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "library-default-interval",
+   "label": "라이브러리 기본 구간 방법",
+   "parent": "wald-interval-failure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도구가 어떤 신뢰구간을 쓰는지 확인.",
    "added": "2026-11-24",
    "related": []
   }
