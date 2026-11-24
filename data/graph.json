@@ -23247,11 +23247,14 @@
    "label": "확신 분포 모양",
    "parent": "double-threshold-policy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평평·쌍봉 분포가 뜻하는 것.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "diminishing-returns-review"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "policy-owner",
@@ -70670,6 +70673,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "AI가 숨긴 건에서 사람이 더 놓치는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "confidence-histogram-monitoring",
+   "label": "확신 히스토그램 모니터링",
+   "parent": "confidence-distribution-shape",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주간 분포를 기록해 변화를 감지.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "flat-tail-review-workload",
+   "label": "가운데 꼬리와 검토 업무량",
+   "parent": "confidence-distribution-shape",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가운데 구간 건수로 검토 인력 산정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "bimodal-label-quality",
+   "label": "쌍봉과 라벨 품질",
+   "parent": "confidence-distribution-shape",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쌍봉이 임계값이 아닌 라벨 문제인 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "threshold-tighten-on-drift",
+   "label": "드리프트 시 기준 조임",
+   "parent": "confidence-distribution-shape",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포 평평화 때 취할 조치.",
    "added": "2026-11-24",
    "related": []
   }
