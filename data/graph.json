@@ -22132,11 +22132,14 @@
    "label": "전망이론 기반 보정",
    "parent": "trust-calibration",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확률 인식 왜곡을 보정하는 접근.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "isotonic-regression-calibration"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "diagnostic-timeout",
@@ -70396,6 +70399,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "이분법 정의를 비판하는 대안 접근.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "probability-weighting-function",
+   "label": "확률 가중 함수",
+   "parent": "prospect-theory-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람의 확률 왜곡을 나타내는 w(p) 곡선.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "decision-prediction-correlation",
+   "label": "결정-예측 상관",
+   "parent": "prospect-theory-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람의 결정이 모델 예측과 맞는 정도를 보는 지표.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "probability-display-ethics",
+   "label": "변환 확률 표시의 투명성",
+   "parent": "prospect-theory-calibration",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표시 숫자를 바꿀 때의 설명 의무.",
    "added": "2026-11-24",
    "related": []
   }
