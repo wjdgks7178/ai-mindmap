@@ -23678,11 +23678,12 @@
    "label": "효과 누적성 확인",
    "parent": "hybrid-eval",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결합 효과가 합보다 큰지 작은지.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "proportionate-dissuasive-fines",
@@ -71574,6 +71575,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "과신·앵커링·집단사고 등 판단 편향.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "factorial-interaction",
+   "label": "요인 설계 상호작용",
+   "parent": "cumulative-effect-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 요인의 효과가 다른 요인 수준에 따라 달라지는 정도.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "synergy-vs-redundancy",
+   "label": "시너지와 중복",
+   "parent": "cumulative-effect-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합이 더 크거나 작은 경우의 해석.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "ceiling-effect-metrics",
+   "label": "천장 효과",
+   "parent": "cumulative-effect-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도가 높을 때 개선 폭이 줄어 보이는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "ablation-study",
+   "label": "절제 연구",
+   "parent": "cumulative-effect-check",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구성 요소를 하나씩 빼서 기여도를 보는 실험.",
    "added": "2026-11-24",
    "related": []
   }
