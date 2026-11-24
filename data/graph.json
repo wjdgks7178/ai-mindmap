@@ -50286,11 +50286,14 @@
    "label": "손실 보정(forward/backward)",
    "parent": "noise-transition-matrix",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전이 행렬로 손실을 고쳐 노이즈에 강하게 학습.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "confident-joint"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "out-of-sample-probabilities",
@@ -75704,6 +75707,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "대각선 밖 비율로 라벨 오류율을 어림하는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "forward-loss-correction",
+   "label": "forward 손실 보정",
+   "parent": "loss-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 확률에 T를 곱해 노이즈 라벨 확률로 손실을 계산하는 방식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "backward-loss-correction",
+   "label": "backward 손실 보정",
+   "parent": "loss-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "T의 역행렬을 손실에 적용하는 방식과 조건.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "estimated-vs-true-T",
+   "label": "추정 T와 실제 T",
+   "parent": "loss-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전이 행렬 추정 오차가 보정 효과에 미치는 영향.",
    "related": [],
    "added": "2026-11-24"
   }
