@@ -49990,11 +49990,14 @@
    "label": "실패 사례 분류 누수",
    "parent": "synthetic-data-split-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가 실패를 학습에 넣어 평가 변별력이 사라지는 문제.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "test-set-reuse-risk"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "eval-set-quarantine",
@@ -75306,6 +75309,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "소스·날짜·클래스별 누락률로 편향 찾기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "dev-vs-test-split",
+   "label": "개발 세트와 시험 세트 분리",
+   "parent": "failure-triage-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패 분석용 세트와 보고용 세트를 따로 두는 규칙.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fresh-case-generation",
+   "label": "새 사례 생성으로 보강",
+   "parent": "failure-triage-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 오답 대신 같은 유형의 새 사례를 만들어 학습에 추가.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "eval-case-id-tracking",
+   "label": "평가 사례 ID 추적",
+   "parent": "failure-triage-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가에서 읽은 사례가 학습에 들어갔는지 ID로 점검.",
    "related": [],
    "added": "2026-11-24"
   }
