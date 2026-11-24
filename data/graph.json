@@ -49390,11 +49390,14 @@
    "label": "RepeatedKFold",
    "parent": "cv-variance-bias-tradeoff",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "K-폴드를 분할만 바꿔 반복해 추정 분산을 줄인다.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-stratified-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "holdout-vs-cv",
@@ -73441,6 +73444,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할 수를 두 배로 해도 결과가 같은지 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "repeat-count-choice",
+   "label": "반복 횟수 선택",
+   "parent": "repeated-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 변동과 계산 비용의 균형으로 정하는 반복 수.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "split-variance-reduction",
+   "label": "분할 변동 감소",
+   "parent": "repeated-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 평균으로 분할 운의 영향을 줄임.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "paired-cv-model-comparison",
+   "label": "같은 분할로 모델 비교",
+   "parent": "repeated-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모델을 같은 분할에서 쌍으로 비교.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "data-reuse-uncertainty",
+   "label": "데이터 재사용과 불확실성",
+   "parent": "repeated-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복해도 표본 크기의 한계는 남음.",
    "added": "2026-11-24",
    "related": []
   }
