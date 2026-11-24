@@ -21754,11 +21754,12 @@
    "label": "이관 호 이탈",
    "parent": "queue-abandonment",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "AI를 거쳐 온 고객의 이탈 패턴.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "bottom-out-hint",
@@ -70222,6 +70223,61 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 날 겹쳐 같은 시간대 반복을 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pre-handoff-vs-post-handoff-abandon",
+   "label": "이관 전·후 이탈 구분",
+   "parent": "transferred-call-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "봇 안 이탈과 대기 중 이탈을 나눠 세기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "handoff-context-transfer",
+   "label": "이관 시 맥락 전달",
+   "parent": "transferred-call-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대화 요약·고객 정보를 상담원에게 넘겨 재설명 줄이기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "chatbot-loop",
+   "label": "챗봇 루프",
+   "parent": "transferred-call-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 연결 요청에도 질문만 반복하는 실패 패턴.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "containment-rate-limits",
+   "label": "컨테인먼트율의 한계",
+   "parent": "transferred-call-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "봇 해결률이 포기와 해결을 구분하지 못함.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "repeat-contact-rate",
+   "label": "재문의율",
+   "parent": "transferred-call-abandonment",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이관 후에도 같은 문제로 다시 연락하는 비율.",
    "added": "2026-11-24",
    "related": []
   }
