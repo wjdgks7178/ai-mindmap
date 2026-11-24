@@ -23394,11 +23394,16 @@
    "label": "자동 승인 표본 감사",
    "parent": "review-queue-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사후 무작위 표본으로 드리프트 감시.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "seeded-error-test",
+    "rule-of-three",
+    "wilson-interval"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "uncertainty-sampling",
@@ -71025,6 +71030,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "규칙·경량 분류기·LLM·사람으로 비용 분산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "stratified-audit-sampling",
+   "label": "층화 감사 표본",
+   "parent": "audit-sampling-auto-approved",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수대·유형별로 나눠 표본 추출.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rolling-window-error-monitor",
+   "label": "롤링 창 오류율 감시",
+   "parent": "audit-sampling-auto-approved",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기간별 오류율을 비교해 드리프트 탐지.",
    "added": "2026-11-24",
    "related": []
   }
