@@ -49630,11 +49630,12 @@
    "label": "그룹 크기 불균형",
    "parent": "leave-p-groups-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "그룹 크기 차로 테스트 크기가 들쭉날쭉해지는 문제.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "time-as-group",
@@ -74110,6 +74111,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "전처리 누수와 시험 세트 반복 확인의 차이.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "weighted-fold-average",
+   "label": "폴드 점수 가중 평균",
+   "parent": "group-size-imbalance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 표본 수로 가중해 작은 그룹의 과대 대표를 막기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "pooled-predictions-metric",
+   "label": "예측 풀링 지표",
+   "parent": "group-size-imbalance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 시험 예측을 모아 한 번에 지표를 계산하는 방법.",
    "related": [],
    "added": "2026-11-24"
   }
