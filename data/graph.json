@@ -50426,11 +50426,14 @@
    "label": "이중 검수",
    "parent": "human-relabel-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 검수자 불일치를 전문가가 판정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "review-stopping-rule"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "relabel-retrain-rounds",
@@ -76028,6 +76031,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정제 후 깨끗한 검증 점수 향상이 멈추면 중단.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "agreed-wrong-labels",
+   "label": "합의된 오답",
+   "parent": "double-annotation-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 검수자가 같은 오답에 합의해 아무도 다시 보지 않는 오류.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "reviewer-independence",
+   "label": "검수자 독립성",
+   "parent": "double-annotation-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서로 답을 못 보게 하고 같은 방향 오류를 줄이는 운영.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "majority-vote-three-reviewers",
+   "label": "3인 다수결",
+   "parent": "double-annotation-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "세 명 중 다수 의견을 채택하는 검수 방식과 비용.",
    "related": [],
    "added": "2026-11-24"
   }
