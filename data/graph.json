@@ -50384,11 +50384,14 @@
    "label": "클래스 불균형 보정(adjust_pred_probs)",
    "parent": "cleanlab-label-quality-score",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "클래스별 임계값을 빼 불균형을 보정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "self-confidence-score"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "precision-at-k-review",
@@ -75920,6 +75923,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률이 퍼지는 데이터에서 self_confidence와 마진 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "imbalanced-label-error-skew",
+   "label": "불균형 데이터의 오류 쏠림",
+   "parent": "adjust-pred-probs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 오류가 소수 라벨에 몰릴 때 보정이 신호를 지우는 경우.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "same-k-review-comparison",
+   "label": "같은 k개 검수 비교",
+   "parent": "adjust-pred-probs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보정 전후 상위 후보를 같은 개수 검수해 정밀도 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "minority-false-alarm",
+   "label": "소수 클래스 오탐",
+   "parent": "adjust-pred-probs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 클래스 정상 샘플이 의심 목록에 몰리는 현상.",
    "related": [],
    "added": "2026-11-24"
   }
