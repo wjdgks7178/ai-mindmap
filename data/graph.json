@@ -23888,11 +23888,12 @@
    "label": "결정 임계값 튜닝",
    "parent": "cost-matrix",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비용·효용을 최대화하는 기준 찾기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "false-positive-vs-false-negative-cost",
@@ -71619,6 +71620,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "구성 요소를 하나씩 빼서 기여도를 보는 실험.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "tuned-threshold-classifier-cv",
+   "label": "TunedThresholdClassifierCV",
+   "parent": "decision-threshold-tuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 후 교차검증으로 임계값을 고르는 scikit-learn 도구.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "threshold-overfitting",
+   "label": "임계값 과적합",
+   "parent": "decision-threshold-tuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터로 임계값을 맞출 때의 위험.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "review-capacity-constraint-threshold",
+   "label": "검토 용량 제약 임계값",
+   "parent": "decision-threshold-tuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최적값이 인력 용량을 넘을 때 타협.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "threshold-grid-resolution",
+   "label": "임계값 격자 해상도",
+   "parent": "decision-threshold-tuning",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탐색 간격이 거칠면 최적을 놓침.",
    "added": "2026-11-24",
    "related": []
   }
