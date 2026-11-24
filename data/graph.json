@@ -50294,11 +50294,14 @@
    "label": "표본 외 예측 확률",
    "parent": "noise-transition-matrix",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "교차검증으로 자기 샘플을 보지 않은 예측 확률 얻기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "confident-joint"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "autocorrelation",
@@ -75632,6 +75635,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "애매한 샘플에 억지 라벨 대신 불확실 표시를 허용.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "self-confidence-threshold",
+   "label": "자기 확신도 임계값",
+   "parent": "out-of-sample-probabilities",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주어진 라벨의 확률이 임계값 미만이면 오라벨 후보로 표시.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "memorization-hides-label-errors",
+   "label": "암기가 가리는 라벨 오류",
+   "parent": "out-of-sample-probabilities",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 내 확률에서 모델이 틀린 라벨까지 외우는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "cleanlab-practice",
+   "label": "cleanlab 실습",
+   "parent": "out-of-sample-probabilities",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오픈소스 도구로 라벨 오류 후보를 찾는 흐름.",
    "related": [],
    "added": "2026-11-24"
   }
