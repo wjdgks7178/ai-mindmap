@@ -45052,11 +45052,14 @@
    "label": "자사 데이터로 직접 평가",
    "parent": "leaderboard-small-gap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "업무 질문 100~300개로 모델 비교.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "eval-set-size-planning"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "ama-prompt-aggregation",
@@ -72833,6 +72836,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 벤치마크의 향상이 다른 곳으로 이어지지 않는 사례.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "success-criteria-definition",
+   "label": "성공 기준 정의",
+   "parent": "own-data-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구체적·측정 가능·달성 가능·관련성 있는 기준.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "llm-as-judge-different-model",
+   "label": "다른 모델로 채점",
+   "parent": "own-data-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답을 만든 모델과 다른 모델로 LLM 채점.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "eval-from-production-logs",
+   "label": "운영 로그로 평가셋 만들기",
+   "parent": "own-data-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 질문에서 무작위 표본 추출.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "multidimensional-evaluation",
+   "label": "다차원 평가",
+   "parent": "own-data-evaluation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도·지연·가격·어조 등을 함께 봄.",
    "added": "2026-11-24",
    "related": []
   }
