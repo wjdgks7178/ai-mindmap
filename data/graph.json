@@ -23590,11 +23590,14 @@
    "label": "시뮬레이션 표본 수",
    "parent": "monte-carlo-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "표본 4배면 오차 절반.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "breakeven-probability"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "distribution-evidence-log",
@@ -71480,6 +71483,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "√(p(1-p)/N)로 오차 가늠하기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pilot-run-variance",
+   "label": "시험 실행으로 분산 추정",
+   "parent": "simulation-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 시험 실행에서 필요한 표본 수 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "random-seed-reproducibility",
+   "label": "난수 시드 고정",
+   "parent": "simulation-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시뮬레이션 결과를 재현 가능하게.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "variance-reduction",
+   "label": "분산 감소 기법",
+   "parent": "simulation-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 표본 수에서 오차를 줄이는 방법.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "hoeffding-bound",
+   "label": "Hoeffding 한계",
+   "parent": "simulation-sample-size",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 범위가 알려졌을 때의 표본 수 하한.",
    "added": "2026-11-24",
    "related": []
   }
