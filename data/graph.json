@@ -42246,11 +42246,16 @@
    "label": "결측 대치 누수",
    "parent": "preprocessing-leakage-pipeline",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전체 통계로 결측을 채우는 누수.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "scaler-leakage",
+    "iterative-imputer",
+    "native-nan-models"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "target-encoding-leakage",
@@ -72277,6 +72282,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "누수가 시험 데이터의 이동을 덜 보이게 함.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "simple-imputer",
+   "label": "SimpleImputer",
+   "parent": "imputation-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균·중앙값·최빈값·상수로 단순 대치.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "missing-indicator",
+   "label": "결측 표식",
+   "parent": "imputation-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결측 여부를 이진 열로 보존.",
    "added": "2026-11-24",
    "related": []
   }
