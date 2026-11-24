@@ -49698,11 +49698,14 @@
    "label": "그룹 간 분포 이동",
    "parent": "per-group-score-analysis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "나쁜 그룹의 입력 분포를 학습 그룹과 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "time-as-group"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "small-group-noise",
@@ -74280,6 +74283,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "그룹이 많으면 하나는 우연히 아주 낮게 나오는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "ks-two-sample-test",
+   "label": "KS 두 표본 검정",
+   "parent": "distribution-shift-between-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징별 분포 차이를 최대 누적분포 차이로 보는 검정.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "covariate-vs-label-shift",
+   "label": "공변량 이동 vs 라벨 이동",
+   "parent": "distribution-shift-between-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력이 달라진 것과 정답 기준이 달라진 것의 구분.",
    "related": [],
    "added": "2026-11-24"
   }
