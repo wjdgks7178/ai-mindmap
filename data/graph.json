@@ -23963,11 +23963,12 @@
    "label": "상담사 활용률",
    "parent": "handling-time-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "통화·후처리 시간 ÷ 로그인 시간.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "cost-per-contact",
@@ -71881,6 +71882,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "교육·장애 등 새로 생기는 시간.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "occupancy-vs-utilization-terms",
+   "label": "점유율·활용률 용어 혼선",
+   "parent": "agent-utilization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처마다 두 용어를 다르게 쓰는 점.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "erlang-staffing",
+   "label": "Erlang 인력 산정",
+   "parent": "agent-utilization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도착과 처리로 필요한 상담사 수를 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "boredom-burnout-balance",
+   "label": "지루함과 소진의 균형",
+   "parent": "agent-utilization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점유율이 너무 낮거나 높을 때의 문제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "in-between-call-work",
+   "label": "콜 사이 업무",
+   "parent": "agent-utilization",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유휴 시간으로 오해되는 짧은 업무.",
    "added": "2026-11-24",
    "related": []
   }
