@@ -45024,11 +45024,14 @@
    "label": "선택적 점수 공개",
    "parent": "leaderboard-small-gap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 변형을 테스트하고 좋은 점수만 공개.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "held-out-eval-set"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "arena-data-access-asymmetry",
@@ -72739,6 +72742,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "구간 겹침만으로 차이 없다고 단정하면 안 되는 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "best-of-n-bias",
+   "label": "최고점 선택 편향",
+   "parent": "selective-score-disclosure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "N개 중 최고를 공개하면 점수가 실력보다 부풀려짐.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "score-retraction",
+   "label": "점수 철회",
+   "parent": "selective-score-disclosure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불리한 점수를 공개 목록에서 내리는 관행과 금지 권고.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "private-variant-cap",
+   "label": "비공개 변형 상한",
+   "parent": "selective-score-disclosure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제공자당 동시에 시험할 수 있는 변형 수 제한.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "multiple-comparisons-testing",
+   "label": "다중 비교 문제",
+   "parent": "selective-score-disclosure",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 번 시험하면 우연한 좋은 결과가 늘어나는 현상.",
    "added": "2026-11-24",
    "related": []
   }
