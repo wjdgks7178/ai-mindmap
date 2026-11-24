@@ -49642,11 +49642,14 @@
    "label": "시간을 그룹으로 쓰기",
    "parent": "leave-p-groups-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "연도를 그룹으로 삼아 시간 기반 검증.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "group-size-imbalance"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "shuffle-split-vs-kfold",
@@ -74133,6 +74136,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모든 시험 예측을 모아 한 번에 지표를 계산하는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "concept-drift-validation",
+   "label": "개념 이동과 검증",
+   "parent": "time-as-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙이 바뀌는 데이터에서 검증 점수가 낙관적인 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "retrain-cadence",
+   "label": "재학습 주기 정하기",
+   "parent": "time-as-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해마다 점수 하락 속도로 재학습 간격 결정.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "time-series-split-direction",
+   "label": "TimeSeriesSplit 방향",
+   "parent": "time-as-group",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과거→미래만 쓰는 분할과 연도 그룹의 차이.",
    "related": [],
    "added": "2026-11-24"
   }
