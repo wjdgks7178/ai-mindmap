@@ -50121,11 +50121,14 @@
    "label": "연결 성분 그룹핑",
    "parent": "multi-axis-grouping",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "union-find로 두 축이 연결된 샘플을 한 덩어리로.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "id-normalization"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "bridge-sample-handling",
@@ -75162,6 +75165,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "동명이인·철자 변형 때문에 이름 기반 그룹이 위험한 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "union-find-grouping",
+   "label": "union-find로 묶기",
+   "parent": "connected-components-grouping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 데이터에서 효율적으로 연결 성분을 구하는 자료구조.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "giant-component-problem",
+   "label": "거대 성분 문제",
+   "parent": "connected-components-grouping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 연결 샘플이 데이터 대부분을 한 덩어리로 만드는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "two-axis-leak-check",
+   "label": "두 축 누수 점검",
+   "parent": "connected-components-grouping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 후 사용자·기기 양쪽 교집합이 0인지 확인.",
    "related": [],
    "added": "2026-11-24"
   }
