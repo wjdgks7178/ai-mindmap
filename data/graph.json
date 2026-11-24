@@ -44938,11 +44938,14 @@
    "label": "부트스트랩 vs 윌슨",
    "parent": "wilson-interval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비율 외 지표에는 부트스트랩.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "wald-interval-failure"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "clustered-samples-ci",
@@ -72499,6 +72502,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "도구가 어떤 신뢰구간을 쓰는지 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "percentile-bootstrap",
+   "label": "백분위 부트스트랩",
+   "parent": "bootstrap-ci-vs-wilson",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재표본 통계량의 2.5·97.5 백분위를 구간으로 사용.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "block-bootstrap",
+   "label": "블록 부트스트랩",
+   "parent": "bootstrap-ci-vs-wilson",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "종속 자료에서 블록 단위로 재표본.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "bootstrap-small-sample-failure",
+   "label": "부트스트랩의 작은 표본 실패",
+   "parent": "bootstrap-ci-vs-wilson",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 적을 때 구간이 좁아지는 문제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "bootstrap-reporting",
+   "label": "부트스트랩 보고 항목",
+   "parent": "bootstrap-ci-vs-wilson",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재표본 횟수·방식·시드를 명시.",
    "added": "2026-11-24",
    "related": []
   }
