@@ -49780,11 +49780,14 @@
    "label": "LSH 밴드·행 조정",
    "parent": "near-duplicate-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "b와 r로 S-곡선 임계를 맞추는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "minhash"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "semantic-deduplication",
@@ -74425,6 +74428,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "MinHash·LSH 라이브러리 사용 흐름.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "and-or-amplification",
+   "label": "AND·OR 증폭",
+   "parent": "lsh-band-row-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AND는 s^r, OR는 1-(1-p)^b로 확률을 가르는 구성.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "lsh-threshold-choice",
+   "label": "LSH 문턱 정하기",
+   "parent": "lsh-band-row-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원하는 유사도에서 b와 r을 거꾸로 정하는 절차.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "candidate-verification",
+   "label": "후보 쌍 재검증",
+   "parent": "lsh-band-row-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LSH 후보를 정확한 유사도로 다시 확인하는 단계.",
    "related": [],
    "added": "2026-11-24"
   }
