@@ -23951,11 +23951,12 @@
    "label": "비생산 시간 비율 shrinkage",
    "parent": "handling-time-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "휴식·회의·결근이 생산 시간을 줄임.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "agent-utilization",
@@ -71836,6 +71837,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "직접 요율과 완전 부담 요율을 섞지 않기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "planned-vs-unplanned-shrinkage",
+   "label": "계획·비계획 슈링키지",
+   "parent": "shrinkage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "휴식·교육과 결근을 나눠 관리.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "staffing-gross-up",
+   "label": "인원 환산",
+   "parent": "shrinkage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필요 인원을 (1−슈링키지)로 나눠 스케줄 인원 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "shrinkage-benchmark-definition",
+   "label": "슈링키지 벤치마크 정의",
+   "parent": "shrinkage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업체마다 포함 항목이 달라 비교 주의.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "ai-induced-nonproductive-time",
+   "label": "AI 도입으로 생기는 비생산 시간",
+   "parent": "shrinkage-rate",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교육·장애 등 새로 생기는 시간.",
    "added": "2026-11-24",
    "related": []
   }
