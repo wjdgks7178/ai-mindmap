@@ -24056,11 +24056,14 @@
    "label": "시행착오로 구하기",
    "parent": "stop-criteria",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "스프레드시트로 0이 될 때까지 조정.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "breakeven-point"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "ai-disclosure-chatbot",
@@ -72194,6 +72197,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "허용 위험이 낮을수록 상향이 커지는 관계.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "goal-seek",
+   "label": "목표값 찾기",
+   "parent": "trial-and-error-solve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엑셀에서 입력 하나를 조정해 결과를 목표에 맞추는 기능.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "bisection-method",
+   "label": "이분법",
+   "parent": "trial-and-error-solve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간을 반씩 줄이며 해를 찾는 방법.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "excel-solver",
+   "label": "해 찾기 Solver",
+   "parent": "trial-and-error-solve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 입력과 제약을 다루는 엑셀 추가 기능.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "closed-form-vs-numerical-solve",
+   "label": "닫힌 해와 수치 해",
+   "parent": "trial-and-error-solve",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "식으로 바로 구하기와 반복 계산의 선택.",
    "added": "2026-11-24",
    "related": []
   }
