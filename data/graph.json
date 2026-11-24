@@ -50001,11 +50001,14 @@
    "label": "평가셋 격리",
    "parent": "synthetic-data-split-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 작업이 평가셋을 읽지 못하게 접근 권한 분리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "canary-string"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "canary-string",
@@ -74946,6 +74949,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "변형·발췌에 무력하고 제작자 협조에 의존.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "service-account-separation",
+   "label": "서비스 계정 분리",
+   "parent": "eval-set-quarantine",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 작업 계정에서 평가셋 읽기 권한 제거.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "answer-key-separation",
+   "label": "정답 분리 보관",
+   "parent": "eval-set-quarantine",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 입력과 정답을 따로 두고 채점 서비스만 정답 접근.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "eval-access-audit-log",
+   "label": "평가셋 접근 감사 로그",
+   "parent": "eval-set-quarantine",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누가 언제 읽었는지 기록해 사고 추적.",
    "related": [],
    "added": "2026-11-24"
   }
