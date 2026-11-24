@@ -50356,11 +50356,14 @@
    "label": "self_confidence 점수",
    "parent": "cleanlab-label-quality-score",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주어진 라벨의 예측 확률을 점수로 쓰는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "out-of-sample-probabilities"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "normalized-margin-score",
@@ -75848,6 +75851,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "신규 환자의 최신 방문처럼 두 축을 함께 지키는 분할.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "review-order-precision-at-k",
+   "label": "검수 순서와 precision@k",
+   "parent": "self-confidence-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 점수 상위 k개의 실제 오라벨 비율로 검수 효율 재기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "label-quality-score-alternatives",
+   "label": "다른 라벨 품질 점수",
+   "parent": "self-confidence-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마진·엔트로피 기반 점수와 self_confidence 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "probability-calibration-effect",
+   "label": "확률 보정의 영향",
+   "parent": "self-confidence-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "캘리브레이션 상태가 확신도 점수에 미치는 영향.",
    "related": [],
    "added": "2026-11-24"
   }
