@@ -49726,11 +49726,12 @@
    "label": "LOO 닫힌 형태 계산",
    "parent": "leave-one-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "선형 모델에서 재학습 없이 LOO 오차를 구하는 방법.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "sample-vs-group-split",
@@ -74305,6 +74306,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "입력이 달라진 것과 정답 기준이 달라진 것의 구분.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hat-matrix-leverage",
+   "label": "모자 행렬과 레버리지",
+   "parent": "loo-closed-form",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "h_ii가 한 표본이 자기 예측에 미치는 영향임을 보기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "ridgecv-efficient-loo",
+   "label": "RidgeCV 효율적 LOO",
+   "parent": "loo-closed-form",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "cv=None에서 알파를 빠르게 고르는 방법과 cv_results_.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "loo-nonlinear-cost",
+   "label": "비선형 모델의 LOO 비용",
+   "parent": "loo-closed-form",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공식이 없는 모델에서 LOO가 n번 재학습인 이유.",
    "related": [],
    "added": "2026-11-24"
   }
