@@ -75733,7 +75733,7 @@
    "added": "2026-11-24"
   },
   {
-   "id": "estimated-vs-true-T",
+   "id": "estimated-vs-true-matrix",
    "label": "추정 T와 실제 T",
    "parent": "loss-correction",
    "domain": "ai-data",
