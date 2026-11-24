@@ -50370,11 +50370,14 @@
    "label": "normalized margin 점수",
    "parent": "cleanlab-label-quality-score",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주어진 라벨 확률과 최대 다른 확률의 차.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "self-confidence-score"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "adjust-pred-probs",
@@ -75884,6 +75887,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "캘리브레이션 상태가 확신도 점수에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "entropy-label-agnostic",
+   "label": "라벨 무관 불확실성의 한계",
+   "parent": "normalized-margin-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엔트로피만으로는 오라벨을 못 찾는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "competing-class-margin",
+   "label": "경쟁 클래스 마진",
+   "parent": "normalized-margin-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 강한 경쟁 클래스와의 차이로 라벨을 평가.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "score-comparison-on-hard-data",
+   "label": "어려운 데이터에서 점수 비교",
+   "parent": "normalized-margin-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률이 퍼지는 데이터에서 self_confidence와 마진 비교.",
    "related": [],
    "added": "2026-11-24"
   }
