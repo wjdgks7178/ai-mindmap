@@ -49886,11 +49886,14 @@
    "label": "해시 임계값 보정",
    "parent": "perceptual-hash",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터에 맞게 해밍 거리 임계를 정하는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "image-embedding-similarity"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "sklearn-pipeline-leakage-guard",
@@ -74705,6 +74708,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "균형 정확도·재현율·PR-AUC와 시험 분포 유지.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hamming-distance-ratio",
+   "label": "해밍 거리 비율 기록",
+   "parent": "hash-threshold-calibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거리를 비트 수로 나눠 해시 크기와 무관하게 기록.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "same-vs-different-pair-distribution",
+   "label": "같음·다름 쌍 거리 분포",
+   "parent": "hash-threshold-calibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 분포의 겹침으로 임계값 가능 여부 판단.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hash-vs-transform-robustness",
+   "label": "변형별 해시 강건성",
+   "parent": "hash-threshold-calibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "축소·압축은 강하고 크롭·회전은 약한 이유.",
    "related": [],
    "added": "2026-11-24"
   }
