@@ -49305,11 +49305,14 @@
    "label": "구간 수 고르기",
    "parent": "stratify-regression-binning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "구간이 너무 많으면 희귀 클래스, 적으면 층화 효과 감소.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "quantile-binning"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "stratification-metric-spread",
@@ -73169,6 +73172,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 값이 많아 경계가 겹치는 문제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "samples-per-bin-per-fold",
+   "label": "구간·폴드당 표본 수",
+   "parent": "bin-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n/(폴드 수×구간 수)로 따져 보는 최소 표본.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "heavy-tail-top-bin",
+   "label": "긴 꼬리와 상위 구간",
+   "parent": "bin-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극단값이 최상위 구간 하나에 몰리는 문제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "bin-count-sensitivity-check",
+   "label": "구간 수 민감도 확인",
+   "parent": "bin-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간 수를 바꿔 폴드별 분포와 점수 변동 비교.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "small-sample-bin-rule",
+   "label": "작은 표본의 구간 수 경험칙",
+   "parent": "bin-count-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 작을 때 3~5구간에서 시작하는 관행.",
    "added": "2026-11-24",
    "related": []
   }
