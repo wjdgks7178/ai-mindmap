@@ -49875,11 +49875,14 @@
    "label": "크롭 내성 해시",
    "parent": "perceptual-hash",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일부가 잘린 이미지도 매칭하는 해시.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "hash-threshold-calibration"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "hash-threshold-calibration",
@@ -74741,6 +74744,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "축소·압축은 강하고 크롭·회전은 약한 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "multihash-segment-matching",
+   "label": "세그먼트 매칭 판정",
+   "parent": "crop-resistant-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞는 세그먼트 수와 평균 거리를 함께 보는 판정 규칙.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "bit-error-rate-setting",
+   "label": "bit_error_rate 설정",
+   "parent": "crop-resistant-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "세그먼트 일치 기준을 엄격하게 조정하는 방법과 오탐.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "flat-image-segmentation-limit",
+   "label": "밋밋한 이미지의 한계",
+   "parent": "crop-resistant-hash",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "세그먼트가 적게 나오는 이미지에서 해시가 약한 이유.",
    "related": [],
    "added": "2026-11-24"
   }
