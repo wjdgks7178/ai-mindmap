@@ -49532,11 +49532,14 @@
    "label": "가파른 학습 곡선 위험",
    "parent": "pessimistic-bias-small-k",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터가 적을 때 편향이 커지는 구간.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "data-more-worth"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "fixed-k-for-comparison",
@@ -73858,6 +73861,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시험 표본이 커질수록 구간이 좁아지는 관계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "k-choice-small-data",
+   "label": "작은 데이터의 K 선택",
+   "parent": "steep-learning-curve-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5~20겹 사이에서 비관적 편향과 계산량을 맞추는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "cv-underestimates-final-model",
+   "label": "교차검증은 최종 모델을 과소평가",
+   "parent": "steep-learning-curve-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 데이터 모델보다 적은 데이터로 학습한 점수라는 점.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "complex-model-penalty",
+   "label": "복잡한 모델의 불리함",
+   "parent": "steep-learning-curve-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 K 평가가 데이터 많이 필요한 모델을 깎는 현상.",
    "related": [],
    "added": "2026-11-24"
   }
