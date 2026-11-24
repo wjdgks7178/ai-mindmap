@@ -23604,11 +23604,14 @@
    "label": "분포 근거 기록",
    "parent": "monte-carlo-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분포 가정의 근거를 적어 두기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "triangular-distribution"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "two-by-two-ablation",
@@ -71527,6 +71530,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "결과 범위가 알려졌을 때의 표본 수 하한.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "structured-expert-elicitation",
+   "label": "구조화된 전문가 도출",
+   "parent": "distribution-evidence-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가 판단을 확률분포로 바꾸는 사전 정의 절차.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "shelf-protocol",
+   "label": "SHELF 프로토콜",
+   "parent": "distribution-evidence-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Sheffield 도출 프레임워크의 문서·양식.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "evidence-level-label",
+   "label": "근거 수준 표시",
+   "parent": "distribution-evidence-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서·실측·전문가 의견·가정으로 구분.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "elicitation-biases",
+   "label": "도출 편향",
+   "parent": "distribution-evidence-log",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과신·앵커링·집단사고 등 판단 편향.",
    "added": "2026-11-24",
    "related": []
   }
