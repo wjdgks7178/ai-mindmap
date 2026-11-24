@@ -49291,11 +49291,14 @@
    "label": "분위수 구간화",
    "parent": "stratify-regression-binning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "np.quantile·digitize로 같은 개수씩 구간 나누기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "bin-count-choice"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "bin-count-choice",
@@ -73122,6 +73125,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "처리 가능한 알림 수로 정밀도·임계값 정하기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pandas-qcut",
+   "label": "pandas.qcut",
+   "parent": "quantile-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분위수 기준 구간화와 duplicates 옵션.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "numpy-digitize",
+   "label": "numpy.digitize",
+   "parent": "quantile-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계에 값을 배정하는 함수와 right 옵션.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "zero-inflated-binning",
+   "label": "0이 많은 변수의 구간화",
+   "parent": "quantile-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0을 별도 구간으로 떼고 나머지를 분위수로 나눔.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "bin-edge-ties",
+   "label": "구간 경계 동점",
+   "parent": "quantile-binning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 값이 많아 경계가 겹치는 문제.",
    "added": "2026-11-24",
    "related": []
   }
