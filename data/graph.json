@@ -23900,11 +23900,12 @@
    "label": "오탐 vs 미탐 비용",
    "parent": "cost-matrix",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 오류의 가격 차이.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "custom-scorer",
@@ -71664,6 +71665,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "탐색 간격이 거칠면 최적을 놓침.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cost-vs-benefit-baseline",
+   "label": "비용 대 이득 기준선",
+   "parent": "false-positive-vs-false-negative-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "행동 전 상태를 기준으로 이득으로 적기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "example-dependent-cost",
+   "label": "예시 의존 비용",
+   "parent": "false-positive-vs-false-negative-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "건마다 비용이 다를 때(거래 금액 등).",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "optimal-threshold-formula",
+   "label": "최적 임계값 공식",
+   "parent": "false-positive-vs-false-negative-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "p* = c_FP/(c_FP + c_FN)의 유도.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "scale-invariance-cost",
+   "label": "비용 크기 불변성",
+   "parent": "false-positive-vs-false-negative-cost",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용에 양수를 곱해도 최적 결정이 같음.",
    "added": "2026-11-24",
    "related": []
   }
