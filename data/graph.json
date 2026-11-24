@@ -44968,11 +44968,12 @@
    "label": "같은 문항 쌍 비교",
    "parent": "small-test-set-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "독립 비교보다 검정력이 높은 설계.",
    "added": "2026-11-19",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "eval-set-size-planning",
@@ -72573,6 +72574,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "군집 안 단위가 닮은 정도.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "mcnemar-test",
+   "label": "McNemar 검정",
+   "parent": "paired-test-same-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짝 이진 결과의 불일치로 두 모델의 정확도 차이를 검정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "discordant-pairs",
+   "label": "불일치 쌍",
+   "parent": "paired-test-same-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 모델만 맞힌 문항 b와 c.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "exact-binomial-mcnemar",
+   "label": "정확 이항 McNemar",
+   "parent": "paired-test-same-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치가 25 미만일 때 쓰는 정확 검정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "multiple-model-comparison",
+   "label": "다중 모델 비교 보정",
+   "parent": "paired-test-same-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 셋 이상일 때의 검정과 보정.",
    "added": "2026-11-24",
    "related": []
   }
