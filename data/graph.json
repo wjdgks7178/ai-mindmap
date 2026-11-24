@@ -50043,11 +50043,14 @@
    "label": "분할 단위 테스트",
    "parent": "group-overlap-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "겹침 0·크기 균형을 파이프라인 assert로 자동화.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sample-vs-group-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "warnings-as-errors",
@@ -75018,6 +75021,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "PR 게이트·야간 의미 검사·월간 새 문제 점검의 층.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "split-failure-message",
+   "label": "분할 실패 메시지 설계",
+   "parent": "split-assertion-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 폴드·어느 그룹이 샌 건지 적어 원인 찾기를 빠르게.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "pytest-data-pipeline",
+   "label": "데이터 파이프라인 pytest",
+   "parent": "split-assertion-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 검사 함수를 단위 테스트와 시작 단계에 넣기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "target-derived-feature-leak",
+   "label": "타깃 파생 특성 누수",
+   "parent": "split-assertion-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할을 지켜도 특성이 정답을 담고 있는 경우.",
    "related": [],
    "added": "2026-11-24"
   }
