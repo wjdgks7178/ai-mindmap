@@ -49203,11 +49203,16 @@
    "label": "그룹 누수 방지",
    "parent": "stratified-group-kfold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 환자·사용자 샘플이 학습/검증에 갈라지는 문제.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "random-label-sanity-check",
+    "leave-one-group-out",
+    "group-shuffle-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "best-effort-stratification",
@@ -72880,6 +72885,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "정확도·지연·가격·어조 등을 함께 봄.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "group-k-fold",
+   "label": "GroupKFold",
+   "parent": "group-leakage-prevention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 그룹이 학습·시험에 동시에 없게 하는 K겹.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "group-column-identification",
+   "label": "그룹 열 찾기",
+   "parent": "group-leakage-prevention",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "환자·사용자·문서 같은 종속 단위를 식별.",
    "added": "2026-11-24",
    "related": []
   }
