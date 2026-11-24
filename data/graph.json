@@ -23382,11 +23382,12 @@
    "label": "2단계 분류",
    "parent": "review-queue-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자동 1차로 안전·위험·애매 나누기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "audit-sampling-auto-approved",
@@ -70980,6 +70981,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "빨리 본 것과 정확히 본 것을 따로 측정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "prefilter-recall-tradeoff",
+   "label": "사전 필터 재현율 절충",
+   "parent": "two-stage-triage",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현율을 올릴수록 사람이 봐야 할 양이 늘어남.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "shadow-mode-pilot",
+   "label": "그림자 모드 시범",
+   "parent": "two-stage-triage",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 결정은 사람이 하고 AI는 병행 기록만.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "llm-human-disagreement-signal",
+   "label": "LLM-사람 불일치 신호",
+   "parent": "two-stage-triage",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치를 어려운 건의 지표로 사용.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "tiered-cascade-moderation",
+   "label": "계단식 조정 구조",
+   "parent": "two-stage-triage",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙·경량 분류기·LLM·사람으로 비용 분산.",
    "added": "2026-11-24",
    "related": []
   }
