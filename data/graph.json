@@ -50212,11 +50212,14 @@
    "label": "근거 문장 주석",
    "parent": "multi-passage-question-handling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "답의 근거 문장을 표시하는 주석 방식.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "hotpotqa"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "feature-dependent-noise",
@@ -75451,6 +75454,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "중간 단계 오류가 뒤로 퍼져 정확도가 급락하는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "supporting-fact-f1",
+   "label": "근거 F1",
+   "parent": "supporting-fact-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "(문서, 문장 번호) 쌍으로 근거의 정밀도·재현율·F1을 계산.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "alternative-evidence-policy",
+   "label": "대체 근거 허용",
+   "parent": "supporting-fact-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 답을 내는 다른 근거를 정답으로 볼지 정하는 기준.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "annotator-agreement-evidence",
+   "label": "근거 주석자 일치도",
+   "parent": "supporting-fact-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 단위 주석에서 주석자 간 불일치를 줄이는 방법.",
    "related": [],
    "added": "2026-11-24"
   }
