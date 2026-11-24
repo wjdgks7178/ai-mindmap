@@ -49670,11 +49670,14 @@
    "label": "재현 가능한 분할",
    "parent": "group-shuffle-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "random_state 고정과 분할 저장.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "fixed-k-for-comparison"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "worst-group-performance",
@@ -74205,6 +74208,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시험 세트가 겹치면 분할 점수가 비슷해지는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "save-split-indices",
+   "label": "분할 인덱스 저장",
+   "parent": "reproducible-splits",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "train/test 인덱스를 파일로 남겨 버전과 무관하게 재사용.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "estimator-vs-splitter-seed",
+   "label": "모델 시드 vs 분할기 시드",
+   "parent": "reproducible-splits",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 난수는 변화시키고 분할은 고정하는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "global-seed-pitfall",
+   "label": "전역 시드 함정",
+   "parent": "reproducible-splits",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "np.random.seed 대신 RandomState를 넘기는 이유.",
    "related": [],
    "added": "2026-11-24"
   }
