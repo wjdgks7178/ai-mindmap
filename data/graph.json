@@ -44762,11 +44762,18 @@
    "label": "isotonic vs sigmoid 보정",
    "parent": "pred-probs-calibration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 보정 방법의 차이와 선택.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "isotonic-regression-calibration",
+    "platt-scaling",
+    "temperature-scaling",
+    "calibration-curve",
+    "brier-score"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "trap-suggestions",
