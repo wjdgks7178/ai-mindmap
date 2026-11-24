@@ -23356,11 +23356,14 @@
    "label": "고무도장 검토",
    "parent": "review-queue-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검토자가 확신 점수를 따라 승인만 하는 현상.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "undertrust-ai"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "review-sla-tiers",
@@ -70888,6 +70891,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "피크·난이도 차이가 있을 때 시뮬레이션으로 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "seeded-error-test",
+   "label": "오류 심기 시험",
+   "parent": "rubber-stamping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "알려진 틀린 출력을 큐에 넣어 잡아내는 비율 측정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "override-precision-recall",
+   "label": "번복 정밀도·재현율",
+   "parent": "rubber-stamping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토자 번복이 맞은 비율과 진짜 오류를 잡은 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "reviewer-first-judgment",
+   "label": "검토자 선판단 기록",
+   "parent": "rubber-stamping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 답을 보기 전에 판단을 먼저 기록.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "override-effort-parity",
+   "label": "동의·번복 노력 균등",
+   "parent": "rubber-stamping",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동의와 번복에 드는 노력을 비슷하게 만들기.",
    "added": "2026-11-24",
    "related": []
   }
