@@ -21868,11 +21868,12 @@
    "label": "체류 시간의 노이즈",
    "parent": "hint-abuse-detection",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "윈저화 등 보정이 필요한 이유.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "answer-leakage-rate",
@@ -70278,6 +70279,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "이관 후에도 같은 문제로 다시 연락하는 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "winsorizing",
+   "label": "윈저화",
+   "parent": "time-on-task-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극단값을 한계값으로 눌러 표본 수를 유지.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "trimming-outliers",
+   "label": "이상치 자름",
+   "parent": "time-on-task-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "극단값을 제거하는 처리와 그 대가.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "idle-time-detection",
+   "label": "유휴 시간 판별",
+   "parent": "time-on-task-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "화면 열림과 실제 풀이 시간을 구분하기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "outlier-reporting-norm",
+   "label": "이상치 처리 명시",
+   "parent": "time-on-task-noise",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방법·임계값을 밝히고 민감도 확인.",
    "added": "2026-11-24",
    "related": []
   }
