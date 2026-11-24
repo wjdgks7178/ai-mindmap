@@ -49404,11 +49404,14 @@
    "label": "홀드아웃 vs 교차검증",
    "parent": "cv-variance-bias-tradeoff",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "데이터 크기별 분할 방식 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "cv-score-reporting",
@@ -73490,6 +73493,39 @@
    "summary": "반복해도 표본 크기의 한계는 남음.",
    "added": "2026-11-24",
    "related": []
+  },
+  {
+   "id": "small-data-eval-choice",
+   "label": "작은 데이터의 평가 선택",
+   "parent": "holdout-vs-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수백 개 이하 데이터에서 분할 방식과 보고 방식 고르기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "holdout-split-ratio",
+   "label": "홀드아웃 분할 비율",
+   "parent": "holdout-vs-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트를 얼마나 남길지와 표본 수의 관계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "nested-cv-intro",
+   "label": "중첩 교차검증",
+   "parent": "holdout-vs-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "튜닝과 평가를 분리해 낙관 편향 줄이기.",
+   "related": [],
+   "added": "2026-11-24"
   }
  ]
 }
