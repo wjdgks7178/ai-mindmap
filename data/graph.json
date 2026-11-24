@@ -49249,11 +49249,14 @@
    "label": "RepeatedStratifiedKFold",
    "parent": "n-splits-vs-rare-class",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "층화 K-폴드를 무작위를 바꿔 여러 번 반복해 지표 변동을 평균.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cv-splitter-selection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "metric-undefined-missing-class",
@@ -72981,6 +72984,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "새 환자·미래 데이터처럼 운영 조건을 흉내 내는 분할.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "split-luck-variance",
+   "label": "분할 운에 의한 변동",
+   "parent": "repeated-stratified-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번의 분할이 점수를 좌우하는 정도.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "repeated-cv-reporting",
+   "label": "반복 교차검증 보고",
+   "parent": "repeated-stratified-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 전체 점수의 평균·분포를 보고.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "nonindependent-cv-scores",
+   "label": "교차검증 점수의 비독립성",
+   "parent": "repeated-stratified-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 점수의 표준편차를 신뢰구간처럼 쓰면 안 되는 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "few-positives-fold-instability",
+   "label": "양성 1개 폴드의 불안정",
+   "parent": "repeated-stratified-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드에 양성이 1개일 때 AUC가 크게 흔들림.",
    "added": "2026-11-24",
    "related": []
   }
