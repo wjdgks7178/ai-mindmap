@@ -50257,11 +50257,15 @@
    "label": "혼동 쌍 중심 라벨 가이드",
    "parent": "class-conditional-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노이즈가 큰 클래스 쌍을 라벨링 가이드에 반영.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "class-conditional-noise",
+    "feature-dependent-noise"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "confident-joint",
@@ -75595,6 +75599,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "경계 사례를 여러 라벨러 합의로 다시 정하기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "pairwise-annotator-disagreement",
+   "label": "쌍별 라벨러 불일치",
+   "parent": "confusion-pair-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러 두 명의 같은 샘플 라벨을 비교해 쌍별 불일치율 측정.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "boundary-example-bank",
+   "label": "경계 사례 예시집",
+   "parent": "confusion-pair-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "헷갈리는 쌍의 경계 사례와 정답을 모은 가이드 부록.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "uncertain-label-option",
+   "label": "불확실 라벨 선택지",
+   "parent": "confusion-pair-guideline",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "애매한 샘플에 억지 라벨 대신 불확실 표시를 허용.",
    "related": [],
    "added": "2026-11-24"
   }
