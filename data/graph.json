@@ -23975,11 +23975,12 @@
    "label": "건당 연락 비용",
    "parent": "handling-time-cost",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "총 운영비 ÷ 처리 건수.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "rework-time-measurement",
@@ -71926,6 +71927,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "유휴 시간으로 오해되는 짧은 업무.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cost-per-contact-denominator",
+   "label": "건당 비용의 분모 정의",
+   "parent": "cost-per-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 건수·사람 처리 건수·포기 호 제외의 차이.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cost-per-resolution",
+   "label": "해결당 비용",
+   "parent": "cost-per-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결된 건수로 나눠 재접촉을 반영.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "channel-cost-mix",
+   "label": "채널 구성과 비용",
+   "parent": "cost-per-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "음성·채팅·이메일의 비용 차이와 구성 효과.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "recontact-rate",
+   "label": "재접촉률",
+   "parent": "cost-per-contact",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문제로 다시 연락하는 비율.",
    "added": "2026-11-24",
    "related": []
   }
