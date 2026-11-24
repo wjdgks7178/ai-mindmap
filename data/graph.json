@@ -49518,11 +49518,14 @@
    "label": "부트스트랩",
    "parent": "repeated-cross-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "복원추출 표본을 반복해 성능 변동을 추정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "score-non-independence"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "steep-learning-curve-risk",
@@ -73833,6 +73836,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "교차검증 밖의 새 데이터로 불확실성 검증.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "out-of-bag-evaluation",
+   "label": "OOB 평가",
+   "parent": "bootstrap-resampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복원추출에서 안 뽑힌 약 37%로 평가하는 방식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "test-set-size-ci-width",
+   "label": "시험 세트 크기와 구간 폭",
+   "parent": "bootstrap-resampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 표본이 커질수록 구간이 좁아지는 관계.",
    "related": [],
    "added": "2026-11-24"
   }
