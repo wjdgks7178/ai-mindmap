@@ -23370,11 +23370,12 @@
    "label": "검토 SLA 등급",
    "parent": "review-queue-design",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "P0·P1·P2 첫 검토 시간.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "two-stage-triage",
@@ -70935,6 +70936,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "동의와 번복에 드는 노력을 비슷하게 만들기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "severity-vs-priority",
+   "label": "심각도와 우선순위",
+   "parent": "review-sla-tiers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영향의 크기와 처리 긴급도를 나누는 두 축.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "sla-expiry-escalation",
+   "label": "SLA 만료 시 처리",
+   "parent": "review-sla-tiers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간 초과 시 상위 에스컬레이션이나 안전한 기본 동작.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "tier-count-tradeoff",
+   "label": "등급 수 선택",
+   "parent": "review-sla-tiers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "등급이 많아도 행동이 같으면 분류 비용만 늘어남.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "latency-accuracy-sla-split",
+   "label": "지연·정확도 SLA 분리",
+   "parent": "review-sla-tiers",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빨리 본 것과 정확히 본 것을 따로 측정.",
    "added": "2026-11-24",
    "related": []
   }
