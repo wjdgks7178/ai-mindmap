@@ -49490,11 +49490,14 @@
    "label": "교차검증으로 모델 비교",
    "parent": "repeated-cross-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 모델 점수 차가 우연인지 판단하는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "score-non-independence",
@@ -73750,6 +73753,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 표본으로 1회 학습 시간을 재 전체를 추정.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "corrected-resampled-ttest",
+   "label": "보정 재표집 t-검정",
+   "parent": "model-comparison-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1/J + n_test/n_train 보정으로 분산 과소추정을 막는 검정.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rope-practical-equivalence",
+   "label": "ROPE 실질적 동등",
+   "parent": "model-comparison-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무시해도 되는 점수 차 구간으로 같다고 말하는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "pairwise-bonferroni-models",
+   "label": "쌍별 비교 다중 검정 보정",
+   "parent": "model-comparison-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쌍별 비교의 다중 검정 보정(Bonferroni).",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "simple-model-tiebreak",
+   "label": "동점이면 단순한 모델",
+   "parent": "model-comparison-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수 차가 우연 범위면 비용 낮은 모델을 고르는 규칙.",
    "related": [],
    "added": "2026-11-24"
   }
