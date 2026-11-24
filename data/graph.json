@@ -50194,11 +50194,14 @@
    "label": "MuSiQue",
    "parent": "multi-passage-question-handling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "단일 홉 질문을 합성해 만든 2~4홉 데이터셋.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "hotpotqa"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "supporting-fact-annotation",
@@ -75378,6 +75381,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "HotpotQA의 두 질문 유형과 추론 방식.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "connected-reasoning-shortcut",
+   "label": "연결 추론 지름길",
+   "parent": "musique",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 문서나 단어 겹침으로 멀티홉 질문을 맞히는 지름길.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "musique-full-unanswerable",
+   "label": "MuSiQue-Full 답 없는 질문",
+   "parent": "musique",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답할 수 없는 대조 질문으로 엄격하게 평가.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hop-count-evaluation",
+   "label": "홉 수별 평가",
+   "parent": "musique",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2·3·4홉으로 나눠 추론 단계에 따른 성능 보기.",
    "related": [],
    "added": "2026-11-24"
   }
