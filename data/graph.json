@@ -49836,11 +49836,14 @@
    "label": "LLM decontaminator",
    "parent": "split-leakage-audit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM으로 의미적 겹침을 판정하는 도구.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "rephrased-sample-contamination"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "ngram-overlap-test",
@@ -74594,6 +74597,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "다른 언어로 번역된 시험 문제가 필터를 통과하는 경우.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "retrieve-then-judge",
+   "label": "검색 후 판정 구조",
+   "parent": "llm-decontaminator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩으로 후보를 줄이고 LLM이 최종 판정하는 2단계 설계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "contamination-rate-by-dataset",
+   "label": "데이터셋별 오염 비율",
+   "parent": "llm-decontaminator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드·수학 데이터가 MMLU 관련보다 오염이 많은 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "llm-judge-cost-control",
+   "label": "LLM 판정 비용 관리",
+   "parent": "llm-decontaminator",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n-gram으로 먼저 거르고 남은 후보만 LLM에 맡기는 방식.",
    "related": [],
    "added": "2026-11-24"
   }
