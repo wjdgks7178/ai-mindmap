@@ -49454,11 +49454,12 @@
    "label": "LearningCurveDisplay",
    "parent": "learning-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 곡선을 바로 그리는 sklearn 도구.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "n-jobs-parallel-cv",
@@ -73648,6 +73649,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "둘 다 낮은 점수일 때 원인을 가르는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "shuffle-before-curve",
+   "label": "곡선 전에 섞기",
+   "parent": "learning-curve-display",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정렬된 데이터에서 섞기 없는 분할이 곡선을 왜곡하는 경우.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "negate-score-loss",
+   "label": "손실 지표 부호 뒤집기",
+   "parent": "learning-curve-display",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "neg_ 접두 지표를 negate_score로 읽기 좋게.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "curve-display-customize",
+   "label": "곡선 그림 꾸미기",
+   "parent": "learning-curve-display",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ax_, lines_, fill_between_ 로 그림 다듬기.",
    "related": [],
    "added": "2026-11-24"
   }
