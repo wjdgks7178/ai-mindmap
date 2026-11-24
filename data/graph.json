@@ -23233,11 +23233,14 @@
    "label": "검토의 수확 체감",
    "parent": "double-threshold-policy",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "추가 검토 이득이 작아지는 구간.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "selective-prediction"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "confidence-distribution-shape",
@@ -70634,6 +70637,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "거부 능력을 재는 의도적 무답 질문.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "review-budget-curve",
+   "label": "검토 예산 곡선",
+   "parent": "diminishing-returns-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토 비율 대비 정확도 곡선 그리기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "fallible-reviewer-effect",
+   "label": "검토자 오류 효과",
+   "parent": "diminishing-returns-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검토자가 완벽하지 않을 때 곡선이 바뀜.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "abstention-human-behavior",
+   "label": "기권 시 인간 행동 변화",
+   "parent": "diminishing-returns-review",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AI가 숨긴 건에서 사람이 더 놓치는 현상.",
    "added": "2026-11-24",
    "related": []
   }
