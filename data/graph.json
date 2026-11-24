@@ -50314,11 +50314,14 @@
    "label": "자기상관",
    "parent": "longitudinal-data-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "인접 관측이 서로 상관돼 i.i.d. 가정이 깨지는 현상.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "time-as-group"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "subject-level-vs-time-split",
@@ -75740,6 +75743,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "전이 행렬 추정 오차가 보정 효과에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "split-gap",
+   "label": "학습·시험 사이 공백",
+   "parent": "autocorrelation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이웃 표본이 양쪽에 걸치지 않도록 gap을 두는 분할.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "lag-correlation-measurement",
+   "label": "래그별 자기상관 측정",
+   "parent": "autocorrelation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "래그별 상관으로 필요한 공백 길이를 정하는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "repeated-measures-grouping",
+   "label": "반복 측정 그룹 분할",
+   "parent": "autocorrelation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사람·기기의 반복 측정을 그룹으로 묶기.",
    "related": [],
    "added": "2026-11-24"
   }
