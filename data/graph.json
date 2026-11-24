@@ -44980,11 +44980,15 @@
    "label": "평가셋 크기 계획",
    "parent": "small-test-set-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "탐지하려는 차이로 문항 수 계산.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "paired-test-same-items",
+    "statistical-power"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "model-choice-beyond-small-gaps",
@@ -72618,6 +72622,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델이 셋 이상일 때의 검정과 보정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "minimum-detectable-difference",
+   "label": "탐지 가능한 최소 차이",
+   "parent": "eval-set-size-planning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 크기로 가려낼 수 있는 가장 작은 차이.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "discordance-rate",
+   "label": "불일치율",
+   "parent": "eval-set-size-planning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모델이 다르게 답하는 문항 비율.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pilot-estimates-for-planning",
+   "label": "계획용 파일럿 추정",
+   "parent": "eval-set-size-planning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 정확도·불일치율을 작은 시험으로 추정.",
    "added": "2026-11-24",
    "related": []
   }
