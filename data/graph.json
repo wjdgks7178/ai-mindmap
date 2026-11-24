@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "nodes": [
   {
    "id": "ai",
@@ -21728,11 +21728,12 @@
    "label": "구간별 보고",
    "parent": "queue-abandonment",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "30분 단위로 피크 손실 보기.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "callback-option",
@@ -70179,6 +70180,50 @@
    "summary": "MT-bench에서 GPT-4와 사람의 일치.",
    "related": [],
    "added": "2026-11-23"
+  },
+  {
+   "id": "interval-size-tradeoff",
+   "label": "구간 크기 선택",
+   "parent": "interval-level-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "15·30·60분 중 건수와 해상도의 균형.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "small-sample-ratio-noise",
+   "label": "소표본 비율 출렁임",
+   "parent": "interval-level-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간 건수가 적을 때 비율을 믿기 어려운 이유.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "abandon-definition-variance",
+   "label": "이탈 정의 차이",
+   "parent": "interval-level-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧은 이탈 제외 여부 등 도구별 정의.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "peak-recurrence-check",
+   "label": "피크 반복성 확인",
+   "parent": "interval-level-reporting",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 날 겹쳐 같은 시간대 반복을 확인.",
+   "added": "2026-11-24",
+   "related": []
   }
  ]
 }
