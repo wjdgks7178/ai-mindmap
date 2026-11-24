@@ -50229,11 +50229,14 @@
    "label": "특징 의존 노이즈",
    "parent": "class-conditional-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "샘플이 어려워서 생기는 오라벨 — 클래스 조건부 가정 위반.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "symmetric-label-noise"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "symmetric-label-noise",
@@ -75559,6 +75562,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 라벨에만 노이즈를 주고 깨끗한 시험으로 평가.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "boundary-concentrated-noise",
+   "label": "경계에 몰린 오라벨",
+   "parent": "feature-dependent-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어려운 샘플에 오류가 몰릴 때 유연한 모델이 더 크게 무너지는 현상.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "confidence-label-mismatch",
+   "label": "확신도와 라벨 불일치",
+   "parent": "feature-dependent-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 확신도와 라벨이 어긋나는 샘플로 오라벨 후보 찾기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hard-case-multi-labeling",
+   "label": "어려운 사례 다중 라벨링",
+   "parent": "feature-dependent-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 사례를 여러 라벨러 합의로 다시 정하기.",
    "related": [],
    "added": "2026-11-24"
   }
