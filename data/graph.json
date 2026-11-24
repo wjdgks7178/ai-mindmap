@@ -49962,11 +49962,14 @@
    "label": "견고성 평가셋",
    "parent": "test-set-no-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "노이즈·오타·회전 변형을 별도 평가셋으로 구성.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "test-time-augmentation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "test-time-augmentation",
@@ -74874,6 +74877,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 때 증강하면 TTA 이득이 줄어드는지 보기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "corruption-severity-levels",
+   "label": "변형 강도 단계",
+   "parent": "robustness-eval-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "강도 단계별 점수 곡선으로 무너지는 지점 찾기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "perturbation-not-in-training",
+   "label": "학습에 쓰지 않은 변형",
+   "parent": "robustness-eval-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 증강과 겹치지 않는 변형으로 견고성 평가.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "llm-typo-paraphrase-eval",
+   "label": "언어 모델 오타·의역 평가",
+   "parent": "robustness-eval-set",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오타·어순·표현 바꾸기 평가셋 구성.",
    "related": [],
    "added": "2026-11-24"
   }
