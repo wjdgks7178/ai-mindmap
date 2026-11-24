@@ -49375,11 +49375,15 @@
    "label": "전수 vs 표본 교차검증",
    "parent": "leave-p-out",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모든 조합 vs 무작위 일부 분할 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "combinatorial-cost-cv",
+    "leave-one-out-cv"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "repeated-kfold",
@@ -73404,6 +73408,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할·전처리 순서·시험 횟수·시드 기록.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "split-count-vs-precision",
+   "label": "분할 수와 정밀도",
+   "parent": "exhaustive-vs-sampled-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 수 B가 늘면 추정 흔들림이 1/√B로 줄어듦.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "unbiased-sampled-estimate",
+   "label": "표본 추정의 불편성",
+   "parent": "exhaustive-vs-sampled-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 분할 평균이 전수 평균 주변에 모임.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cv-seed-doubling-check",
+   "label": "B 두 배 재확인",
+   "parent": "exhaustive-vs-sampled-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 수를 두 배로 해도 결과가 같은지 확인.",
    "added": "2026-11-24",
    "related": []
   }
