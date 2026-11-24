@@ -50012,11 +50012,14 @@
    "label": "카나리 문자열",
    "parent": "synthetic-data-split-leak",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평가 문서에 심어 모델이 재현하면 유출을 알리는 표식.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "ngram-overlap-test"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "ci-overlap-gate",
@@ -74910,6 +74913,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "오타·어순·표현 바꾸기 평가셋 구성.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "canary-reproduction-test",
+   "label": "카나리 재현 테스트",
+   "parent": "canary-string",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델에 GUID 앞부분을 주고 이어 쓰게 해 유출을 확인.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "crawler-exclusion-list",
+   "label": "크롤러 제외 목록",
+   "parent": "canary-string",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가셋 GUID를 수집 제외 규칙에 등록하는 운영.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "canary-limits",
+   "label": "카나리의 한계",
+   "parent": "canary-string",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변형·발췌에 무력하고 제작자 협조에 의존.",
    "related": [],
    "added": "2026-11-24"
   }
