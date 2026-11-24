@@ -23912,11 +23912,12 @@
    "label": "사용자 정의 스코어러",
    "parent": "cost-matrix",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비즈니스 이득을 점수 함수로 구현.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "class-imbalance-threshold",
@@ -71709,6 +71710,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "비용에 양수를 곱해도 최적 결정이 같음.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "make-scorer",
+   "label": "make_scorer",
+   "parent": "custom-scorer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표 함수를 스코어러로 감싸는 scikit-learn 함수.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "greater-is-better-convention",
+   "label": "높을수록 좋은 관례",
+   "parent": "custom-scorer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손실은 음수로 바꿔 항상 높을수록 좋게.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "multi-metric-scoring",
+   "label": "다중 지표 평가",
+   "parent": "custom-scorer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스코어러가 딕셔너리로 여러 값을 반환.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "sample-weighted-cost",
+   "label": "건별 가중 비용",
+   "parent": "custom-scorer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거래 금액처럼 건마다 다른 비용 반영.",
    "added": "2026-11-24",
    "related": []
   }
