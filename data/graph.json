@@ -23482,11 +23482,14 @@
    "label": "일원 민감도 분석",
    "parent": "tornado-chart",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 번에 한 입력만 변경.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "monte-carlo-roi"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "sensitivity-range-selection",
@@ -71097,6 +71100,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "무작위 시드가 양성을 놓치는 문제.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "morris-screening",
+   "label": "Morris 선별법",
+   "parent": "one-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공간 전체를 덮는 OAT형 선별 설계.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "variance-based-sensitivity",
+   "label": "분산 기반 민감도",
+   "parent": "one-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 분산에 각 입력이 기여하는 몫을 계산.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "input-interaction-effects",
+   "label": "입력 간 상호작용",
+   "parent": "one-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변수를 함께 바꿀 때만 생기는 효과.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "input-space-exploration",
+   "label": "입력 공간 탐색",
+   "parent": "one-way-sensitivity",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "OAT가 공간 대부분을 보지 못하는 이유.",
    "added": "2026-11-24",
    "related": []
   }
