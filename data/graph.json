@@ -49948,11 +49948,14 @@
    "label": "특성 선택 누수",
    "parent": "late-split-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "전체 데이터로 특성을 고르는 누수.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "oversampling-before-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "robustness-eval-set",
@@ -74813,6 +74816,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "큰 벡터 집합에서 비슷한 이미지를 빠르게 찾는 색인.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "p-much-greater-than-n",
+   "label": "특성이 표본보다 많은 데이터",
+   "parent": "feature-selection-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유전자·텍스트처럼 p≫n일 때 누수 영향이 커지는 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "label-blind-selection",
+   "label": "정답을 보지 않는 선택",
+   "parent": "feature-selection-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분산 0 제거처럼 누수가 작은 특성 선택의 범위.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "selection-method-reporting",
+   "label": "특성 선택 보고",
+   "parent": "feature-selection-leakage",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방법·k·선택에 쓴 데이터 범위를 함께 적는 법.",
    "related": [],
    "added": "2026-11-24"
   }
