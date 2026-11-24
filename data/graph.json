@@ -49864,11 +49864,14 @@
    "label": "이미지 임베딩 유사도",
    "parent": "perceptual-hash",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "CLIP 등으로 의미적으로 비슷한 이미지를 찾는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "semantic-deduplication"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "crop-resistant-hash",
@@ -74777,6 +74780,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "세그먼트가 적게 나오는 이미지에서 해시가 약한 이유.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "clip-contrastive-training",
+   "label": "CLIP 대조 학습",
+   "parent": "image-embedding-similarity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지-캡션 쌍 맞히기로 임베딩 공간을 만드는 방법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "hash-then-embedding-pipeline",
+   "label": "해시 후 임베딩 파이프라인",
+   "parent": "image-embedding-similarity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "싼 해시로 먼저 거르고 임베딩으로 의미 중복을 찾는 순서.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "ann-index-for-embeddings",
+   "label": "임베딩 근사 최근접 검색",
+   "parent": "image-embedding-similarity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 벡터 집합에서 비슷한 이미지를 빠르게 찾는 색인.",
    "related": [],
    "added": "2026-11-24"
   }
