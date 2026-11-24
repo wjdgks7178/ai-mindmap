@@ -23330,11 +23330,14 @@
    "label": "위임과 공정성",
    "parent": "learning-to-defer",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "외부 의사결정자의 편향을 고려.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "equalized-odds"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "littles-law-queue",
@@ -70807,6 +70810,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "실제 사람 대신 분포로 표집한 전문가의 한계.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "biased-decision-maker",
+   "label": "편향된 의사결정자 가정",
+   "parent": "defer-fairness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하류 사람의 편향을 학습에 반영.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "defer-rate-by-group",
+   "label": "집단별 위임율 점검",
+   "parent": "defer-fairness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단마다 위임 비율을 나눠 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "deferred-distribution-skew",
+   "label": "위임 분포 쏠림",
+   "parent": "defer-fairness",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 클래스가 더 자주 넘겨지는 현상.",
    "added": "2026-11-24",
    "related": []
   }
