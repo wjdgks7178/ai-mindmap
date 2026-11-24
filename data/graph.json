@@ -49602,11 +49602,14 @@
    "label": "리더보드 과적합",
    "parent": "cv-score-difference-vs-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "소수점 차이에 매달리다 검증셋에 과적합.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "final-test-set-confirmation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "test-set-reuse-risk",
@@ -74038,6 +74041,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습·추론 속도, 크기, 유지보수로 모델 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "public-private-split",
+   "label": "공개·비공개 분할",
+   "parent": "leaderboard-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대회가 평가 세트를 둘로 나누는 이유와 읽는 법.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "random-submissions-demo",
+   "label": "무작위 제출 시연",
+   "parent": "leaderboard-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실력 없는 예측 200개로 최고 점수가 오르는 모습 보이기.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "eval-set-size-vs-noise",
+   "label": "평가 세트 크기와 우연 점수",
+   "parent": "leaderboard-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 클수록 최고 점수의 우연이 줄어드는 관계.",
    "related": [],
    "added": "2026-11-24"
   }
