@@ -23576,11 +23576,14 @@
    "label": "손익분기 미달 확률",
    "parent": "monte-carlo-roi",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "ROI가 기준 아래일 확률.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "input-correlation-roi"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "simulation-sample-size",
@@ -71433,6 +71436,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상관값을 가정으로 표시하고 민감도로 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "risk-tolerance-threshold",
+   "label": "위험 허용 수준",
+   "parent": "breakeven-probability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손실 확률 상한을 사전에 정해 두기.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "rare-event-simulation",
+   "label": "희귀 사건 시뮬레이션",
+   "parent": "breakeven-probability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 확률을 추정할 때의 표본 부족과 중요도 샘플링.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "importance-sampling",
+   "label": "중요도 샘플링",
+   "parent": "breakeven-probability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "드문 영역을 더 자주 뽑아 분산을 줄이는 기법.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "probability-standard-error",
+   "label": "확률 추정의 표준오차",
+   "parent": "breakeven-probability",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "√(p(1-p)/N)로 오차 가늠하기.",
    "added": "2026-11-24",
    "related": []
   }
