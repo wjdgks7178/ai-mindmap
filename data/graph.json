@@ -23306,11 +23306,12 @@
    "label": "위임용 대리 손실",
    "parent": "learning-to-defer",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일치성 있는 대리 손실 함수.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-24"
   },
   {
    "id": "expert-decision-history",
@@ -70717,6 +70718,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "분포 평평화 때 취할 조치.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "consistent-loss",
+   "label": "일치성 있는 손실",
+   "parent": "surrogate-loss-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "충분한 학습 시 최적 결정으로 수렴함을 보증.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "defer-class-augmentation",
+   "label": "위임 클래스 추가",
+   "parent": "surrogate-loss-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K개 클래스에 위임 선택지를 더한 K+1 출력.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "cost-sensitive-learning",
+   "label": "비용 민감 학습",
+   "parent": "surrogate-loss-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선택지마다 다른 비용을 두고 학습.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "defer-vs-confidence-baseline",
+   "label": "위임 학습 대 확신 임계값",
+   "parent": "surrogate-loss-defer",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가 정확도를 고려하는 차이.",
    "added": "2026-11-24",
    "related": []
   }
