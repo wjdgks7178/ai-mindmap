@@ -49616,11 +49616,14 @@
    "label": "테스트 세트 재사용 위험",
    "parent": "holdout-vs-cv-estimates",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 번 보면 검증 세트가 되어 낙관적.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "leaderboard-overfitting"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "group-size-imbalance",
@@ -74074,6 +74077,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본이 클수록 최고 점수의 우연이 줄어드는 관계.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "peek-count-log",
+   "label": "본 횟수 기록",
+   "parent": "test-set-reuse-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트를 몇 번 봤는지 남겨 낙관 정도를 가늠.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "fresh-eval-set-refresh",
+   "label": "새 평가 세트로 갱신",
+   "parent": "test-set-reuse-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미 많이 본 세트를 버리고 새 문항으로 재평가.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "data-leakage-vs-reuse",
+   "label": "누수 vs 재사용",
+   "parent": "test-set-reuse-risk",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전처리 누수와 시험 세트 반복 확인의 차이.",
    "related": [],
    "added": "2026-11-24"
   }
