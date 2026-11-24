@@ -45038,11 +45038,14 @@
    "label": "Arena 데이터 접근 불균형",
    "parent": "leaderboard-small-gap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "제공자별 샘플링 비중 차이.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "selective-score-disclosure"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "own-data-evaluation",
@@ -72786,6 +72789,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 번 시험하면 우연한 좋은 결과가 늘어나는 현상.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "sampling-rate-asymmetry",
+   "label": "표본 추출률 불균형",
+   "parent": "arena-data-access-asymmetry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제공자별로 전투에 뽑히는 비율이 다름.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "arena-overfitting",
+   "label": "Arena 과적합",
+   "parent": "arena-data-access-asymmetry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위표 분포에 맞춘 최적화가 일반 품질과 따로 놀 수 있음.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "model-deprecation-criteria",
+   "label": "모델 퇴출 기준",
+   "parent": "arena-data-access-asymmetry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위표에서 모델을 내리는 기준의 공개와 공정성.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "arena-hard-vs-mmlu-gap",
+   "label": "ArenaHard와 MMLU의 괴리",
+   "parent": "arena-data-access-asymmetry",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 벤치마크의 향상이 다른 곳으로 이어지지 않는 사례.",
    "added": "2026-11-24",
    "related": []
   }
