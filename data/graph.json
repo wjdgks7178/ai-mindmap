@@ -49478,11 +49478,12 @@
    "label": "교차검증 예산 계획",
    "parent": "cv-compute-cost",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "H×k×r 곱셈으로 총 학습 횟수 산정.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "model-comparison-cv",
@@ -73716,6 +73717,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴드 수와 코어 수로 정해지는 시간 단축 상한.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "coarse-to-fine-search",
+   "label": "거친 탐색 후 정밀 탐색",
+   "parent": "cv-budget-planning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "넓은 로그 격자로 먼저 찾고 좁혀서 다시 탐색.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "randomized-search-budget",
+   "label": "무작위 탐색 예산",
+   "parent": "cv-budget-planning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n_iter로 조합 수를 고정하는 RandomizedSearchCV.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "time-estimation-subsample",
+   "label": "부분 표본 시간 어림",
+   "parent": "cv-budget-planning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 표본으로 1회 학습 시간을 재 전체를 추정.",
    "related": [],
    "added": "2026-11-24"
   }
