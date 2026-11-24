@@ -49656,11 +49656,14 @@
    "label": "ShuffleSplit vs KFold",
    "parent": "group-shuffle-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "분할 횟수 자유도와 겹침 차이.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "reproducible-splits",
@@ -74169,6 +74172,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "과거→미래만 쓰는 분할과 연도 그룹의 차이.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "test-usage-count",
+   "label": "표본별 시험 사용 횟수",
+   "parent": "shuffle-split-vs-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 표본이 시험에 몇 번 쓰였는지 세어 분할기 비교.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "test-size-freedom",
+   "label": "시험 비율 자유도",
+   "parent": "shuffle-split-vs-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "test_size와 n_splits를 독립적으로 정하는 이점.",
+   "related": [],
+   "added": "2026-11-24"
+  },
+  {
+   "id": "split-correlation-overlap",
+   "label": "분할 간 상관과 시험 겹침",
+   "parent": "shuffle-split-vs-kfold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트가 겹치면 분할 점수가 비슷해지는 현상.",
    "related": [],
    "added": "2026-11-24"
   }
