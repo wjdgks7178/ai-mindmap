@@ -49263,11 +49263,14 @@
    "label": "클래스 누락 시 지표 미정의",
    "parent": "n-splits-vs-rare-class",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "폴드에 양성이 없으면 AUC·재현율을 못 구한다.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "repeated-stratified-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-24"
   },
   {
    "id": "rare-class-evaluation",
@@ -73028,6 +73031,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴드에 양성이 1개일 때 AUC가 크게 흔들림.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "zero-division-parameter",
+   "label": "zero_division 매개변수",
+   "parent": "metric-undefined-missing-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0으로 나눌 때 반환할 값을 정하는 옵션.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "auc-needs-both-classes",
+   "label": "AUC는 두 클래스가 필요",
+   "parent": "metric-undefined-missing-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한쪽 클래스가 없으면 쌍이 없어 정의되지 않음.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "fold-metric-listing",
+   "label": "폴드별 지표 목록 점검",
+   "parent": "metric-undefined-missing-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균 전에 폴드별 값에서 NaN을 확인.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "fold-count-vs-positive-count",
+   "label": "폴드 수와 양성 개수",
+   "parent": "metric-undefined-missing-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양성 수에 맞춰 폴드 수를 줄이기.",
    "added": "2026-11-24",
    "related": []
   }
