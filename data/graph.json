@@ -44995,11 +44995,14 @@
    "label": "작은 차이를 넘는 모델 선택",
    "parent": "small-test-set-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "비용·지연 등 다른 기준 병행.",
    "added": "2026-11-19",
-   "related": []
+   "related": [
+    "eval-set-size-planning"
+   ],
+   "done": "2026-11-24"
   },
   {
    "id": "statistically-indistinguishable-groups",
@@ -72655,6 +72658,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "기준 정확도·불일치율을 작은 시험으로 추정.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "pareto-frontier-models",
+   "label": "비용-정확도 파레토 후보",
+   "parent": "model-choice-beyond-small-gaps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 후보보다 모든 면에서 나쁜 모델을 제외.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "effort-parameter-tuning",
+   "label": "노력 매개변수 조절",
+   "parent": "model-choice-beyond-small-gaps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델을 바꾸기 전에 한 모델 안에서 지능·비용을 조절.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "efficiency-first-vs-capability-first",
+   "label": "효율 우선 대 능력 우선",
+   "parent": "model-choice-beyond-small-gaps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시작 방식 두 가지와 최적화 순서.",
+   "added": "2026-11-24",
+   "related": []
+  },
+  {
+   "id": "model-mixing-strategy",
+   "label": "모델 혼합 전략",
+   "parent": "model-choice-beyond-small-gaps",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저비용 모델이 대부분을 처리하고 어려운 판단만 고급 모델에.",
    "added": "2026-11-24",
    "related": []
   }
