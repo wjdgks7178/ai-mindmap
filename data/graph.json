@@ -12008,11 +12008,14 @@
    "label": "토크나이저 fertility",
    "parent": "perplexity-tokenizer-dependence",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "단어당 토큰 수가 언어마다 다른 현상.",
+   "summary": "단어당 토큰 수. 측정(tiktoken): 영어 약 1.15, 한국어 cl100k 3.7 → o200k 2.5.",
    "added": "2026-11-10",
-   "related": []
+   "related": [
+    "token-cost-language"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "cross-entropy-loss-lm",
@@ -81161,6 +81164,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "학습에 저작물을 쓰는 것의 적법성 논쟁.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "chars-per-token",
+   "label": "토큰당 글자 수",
+   "parent": "tokenizer-fertility",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "띄어쓰기 없는 언어에서 쓰는 효율 지표.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "tokenizer-training-corpus",
+   "label": "토크나이저 학습 말뭉치",
+   "parent": "tokenizer-fertility",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어휘가 말뭉치 언어 비율에 따라 정해지는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multilingual-tokenizer-choice",
+   "label": "다국어 토크나이저 고르기",
+   "parent": "tokenizer-fertility",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "내 언어에 맞는 모델·토크나이저 비교.",
    "related": [],
    "added": "2026-11-25"
   }
