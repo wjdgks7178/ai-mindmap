@@ -4125,11 +4125,14 @@
    "label": "모델 헌법",
    "parent": "constitutional-ai",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델 행동의 기준이 되는 공개 원칙 문서.",
+   "summary": "가치·우선순위를 문서로 명시해 학습에 사용. Anthropic 2026-01-21 새 헌법: 안전>윤리>지침>도움을 종합 저울질, 하드 제약 별도.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rlaif"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "critique-revision",
@@ -80790,6 +80793,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "여러 사실을 동시에 찾아야 하는 평가.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "hard-constraints",
+   "label": "하드 제약",
+   "parent": "ai-constitution",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어떤 지시에도 넘지 않는 절대 한계 목록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rules-vs-judgment",
+   "label": "규칙 vs 판단",
+   "parent": "ai-constitution",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "규칙과 판단력 중심 설계의 장단점.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "model-spec",
+   "label": "모델 스펙(OpenAI)",
+   "parent": "ai-constitution",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "OpenAI가 공개하는 모델 행동 규범 문서.",
    "related": [],
    "added": "2026-11-25"
   }
