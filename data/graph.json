@@ -4048,11 +4048,16 @@
    "label": "건초더미 속 바늘 테스트",
    "parent": "long-context-vs-rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "긴 입력 속에 숨긴 사실을 찾는지 재는 평가.",
+   "summary": "긴 글에 숨긴 사실을 찾는 평가. RULER(17개 모델): 기본 테스트는 만점이어도 32K에서 만족스러운 모델은 절반.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "lost-in-the-middle",
+    "context-rot",
+    "context-window"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "jailbreak",
@@ -80752,6 +80757,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "긴 결과를 단계로 쪼개 생성하는 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ruler-benchmark",
+   "label": "RULER 벤치마크",
+   "parent": "needle-in-haystack",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "다중 바늘·추적·집계로 확장한 장문 평가.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "effective-context-length",
+   "label": "유효 컨텍스트 길이",
+   "parent": "needle-in-haystack",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "광고된 길이와 실제 유지되는 성능 길이의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-needle-retrieval",
+   "label": "다중 바늘 검색",
+   "parent": "needle-in-haystack",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 사실을 동시에 찾아야 하는 평가.",
    "related": [],
    "added": "2026-11-25"
   }
