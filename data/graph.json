@@ -3310,11 +3310,15 @@
    "label": "멱등성",
    "parent": "human-in-the-loop",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "같은 작업을 두 번 해도 결과가 같게 만들기.",
+   "summary": "같은 요청을 여러 번 보내도 결과가 같게 하는 성질. 멱등 키로 첫 결과 재사용(Stripe). 시뮬레이션: 키 없이 3회 재시도 3,000 청구, 키 있으면 1,000.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "webhook",
+    "time-travel"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "edit-state-resume",
@@ -83006,6 +83010,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "부모 상속 vs 자체 이력.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "idempotency-key-design",
+   "label": "멱등 키 만들기",
+   "parent": "idempotency",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "UUID 사용·보관 기간·내용 불일치 오류 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "concurrent-same-key",
+   "label": "동시에 같은 키가 올 때",
+   "parent": "idempotency",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "잠금·충돌 응답 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "agent-tool-idempotency",
+   "label": "에이전트 도구의 멱등 설계",
+   "parent": "idempotency",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "재시도·리플레이에도 안전한 도구.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "exactly-once-myth",
+   "label": "정확히 한 번 처리의 신화",
+   "parent": "idempotency",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실제로는 최소 한 번+멱등으로 구현.",
    "related": [],
    "added": "2026-11-25"
   }
