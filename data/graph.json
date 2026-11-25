@@ -51954,11 +51954,12 @@
    "label": "불확실성 보고 형식",
    "parent": "seed-sweep-reporting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "평균±sd, n, 시드 목록, 범위 표기법.",
+   "summary": "평균·SD/SE·n·시드·구간을 함께 보고. 예: 0.856 ± 0.011 (SD, n=10), 95% CI 0.848~0.864.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "randomstate-instance-vs-int",
@@ -80355,6 +80356,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정렬된 데이터에서 셔플 없는 분할의 위험.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "report-table-template",
+   "label": "시드 결과 보고 표 틀",
+   "parent": "reporting-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델·평균·SD·n·CI 열을 고정한 표 양식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "significant-digits-reporting",
+   "label": "유효숫자와 소수 자릿수",
+   "parent": "reporting-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SE 크기에 맞춰 자릿수를 정하는 규칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "worst-case-reporting",
+   "label": "최악 시드 보고",
+   "parent": "reporting-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균과 함께 최저 시드 점수를 보고.",
    "related": [],
    "added": "2026-11-25"
   }
