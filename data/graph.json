@@ -52099,11 +52099,12 @@
    "label": "감시 표본 크기 산정",
    "parent": "classifier-monitoring-sampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "탐지할 하락 폭·허용 지연으로 표본 수 역산.",
+   "summary": "정밀도 하락을 잡는 표본 수 역산. 계산: 기준 0.90에서 −5%p는 253, −10%p는 69, −20%p는 20 필요(검정력 80%).",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "recall-monitoring-via-negatives",
@@ -80630,6 +80631,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "시뮬레이션으로 신뢰구간이 명목 수준을 지키는지 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rolling-window-monitoring",
+   "label": "이동 창 감시",
+   "parent": "monitoring-sample-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주기별 표본을 누적해 작은 하락을 늦게라도 탐지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-budget-per-week",
+   "label": "주간 라벨링 예산",
+   "parent": "monitoring-sample-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감시용 라벨 수를 정하는 방법.",
    "related": [],
    "added": "2026-11-25"
   }
