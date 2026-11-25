@@ -51929,11 +51929,12 @@
    "label": "점수 평균의 표준오차",
    "parent": "seed-sweep-reporting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시드 수가 늘면 평균 추정이 안정되는 정도.",
+   "summary": "시드 평균의 표준오차 SE=s/√n. 실험: s=0.02일 때 n=10 SE 0.0063, n=100 SE 0.0020.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "paired-seed-comparison",
@@ -80196,6 +80197,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "테스트 샘플 수에 따른 점수 흔들림.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "t-interval-small-n",
+   "label": "소표본 t 신뢰구간",
+   "parent": "standard-error-of-mean-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드 3~5개일 때 t분포로 구간 구하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "required-seeds",
+   "label": "필요한 시드 수 계산",
+   "parent": "standard-error-of-mean-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 정밀도에서 n을 거꾸로 구하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "se-vs-sd-reporting",
+   "label": "SD와 SE 혼동 보고",
+   "parent": "standard-error-of-mean-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보고서에서 둘을 구분해 표기.",
    "related": [],
    "added": "2026-11-25"
   }
