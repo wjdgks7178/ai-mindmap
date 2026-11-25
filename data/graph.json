@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "nodes": [
   {
    "id": "ai",
@@ -50440,11 +50440,14 @@
    "label": "정리→재학습 라운드",
    "parent": "human-relabel-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검수 후 재학습해 점수를 다시 매기는 반복.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "review-stopping-rule"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "ambiguous-vs-wrong-label",
@@ -76066,6 +76069,50 @@
    "summary": "세 명 중 다수 의견을 채택하는 검수 방식과 비용.",
    "related": [],
    "added": "2026-11-24"
+  },
+  {
+   "id": "round-hit-rate-log",
+   "label": "라운드별 적중률 기록",
+   "parent": "relabel-retrain-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라운드마다 후보 중 실제 오류였던 비율을 기록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fixed-clean-test-set",
+   "label": "고정 정제 테스트셋",
+   "parent": "relabel-retrain-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라운드 간 비교를 위한 변하지 않는 신뢰 테스트셋.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "model-diversity-cross-check",
+   "label": "모델 다양화 교차 확인",
+   "parent": "relabel-retrain-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 구조·시드 모델로 후보를 교차 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "clean-learning-sample-weight",
+   "label": "CleanLearning 가중치 0 학습",
+   "parent": "relabel-retrain-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의심 샘플을 가중치 0으로 두고 학습.",
+   "related": [],
+   "added": "2026-11-25"
   }
  ]
 }
