@@ -846,11 +846,14 @@
    "label": "초기화·코딩 에이전트 패턴",
    "parent": "harness",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "첫 세션이 환경을 세팅하고 이후 세션이 기능 하나씩 만드는 장기 작업 패턴.",
+   "summary": "첫 세션이 init.sh·진행 로그·JSON 기능 목록을 만들고 이후 세션이 기능 1개씩 구현·기록(Anthropic). passes만 수정 가능.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "subagents"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "progress-files",
@@ -81271,6 +81274,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "채팅·로그에 키가 남는 위험.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "feature-list-json",
+   "label": "기능 목록 JSON",
+   "parent": "initializer-coding-agent",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "passes 필드만 바꾸게 하는 기능 체크리스트.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "session-startup-routine",
+   "label": "세션 시작 루틴",
+   "parent": "initializer-coding-agent",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기억 없는 세션이 노트를 읽고 상태를 확인하는 순서.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "browser-e2e-for-agents",
+   "label": "에이전트용 브라우저 E2E 검증",
+   "parent": "initializer-coding-agent",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람처럼 조작해 완료 판정 신뢰도 높이기.",
    "related": [],
    "added": "2026-11-25"
   }
