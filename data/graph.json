@@ -51182,11 +51182,14 @@
    "label": "불일치율로 오류율 추정",
    "parent": "sampled-double-annotation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "독립·동일 정확도 가정으로 개인 오류율 근사.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "dawid-skene-model"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "new-annotator-onboarding-ratio",
@@ -78041,6 +78044,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "어려운 샘플에 라벨을 더 배정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "independent-equal-accuracy-assumption",
+   "label": "독립·동일 정확도 가정",
+   "parent": "error-rate-from-disagreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치율 공식이 의존하는 가정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "uniform-wrong-label-assumption",
+   "label": "균등 오답 가정",
+   "parent": "error-rate-from-disagreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오답이 나머지 클래스에 고르게 퍼진다는 가정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "accuracy-upper-bound-estimate",
+   "label": "정확도 상한 근사",
+   "parent": "error-rate-from-disagreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공통 편향이 있으면 추정이 낙관적이라는 해석.",
    "related": [],
    "added": "2026-11-25"
   }
