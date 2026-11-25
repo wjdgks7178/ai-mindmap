@@ -50819,11 +50819,14 @@
    "label": "prune_by_noise_rate",
    "parent": "find-label-issues-filter-by",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "confident joint 비대각선 기준으로 오류 확률이 높은 샘플 표시.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "filter-by-options"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "min-examples-per-class",
@@ -77147,6 +77150,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨순 정렬 데이터를 섞지 않고 분할하는 위험.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "confident-joint-matrix",
+   "label": "confident joint 행렬",
+   "parent": "prune-by-noise-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주어진 라벨과 추정 참 라벨의 개수 행렬.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "estimated-noise-count",
+   "label": "추정 오류 개수",
+   "parent": "prune-by-noise-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "칸별로 추정한 오류 개수로 후보 수 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "frac-noise-effect-measured",
+   "label": "frac_noise 효과 측정",
+   "parent": "prune-by-noise-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부만 받을 때 정밀도·재현율 변화.",
    "related": [],
    "added": "2026-11-25"
   }
