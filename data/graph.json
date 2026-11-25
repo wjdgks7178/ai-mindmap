@@ -3975,11 +3975,15 @@
    "label": "토큰 예산",
    "parent": "context-window",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "작업별로 쓸 토큰 총량을 정해 관리하는 방식.",
+   "summary": "입력·출력 토큰을 칸별로 배분·관리. 호출 전 토큰 수 세기, 초과 시 요약·자르기, 출력 여유 확보.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "output-token-limit",
+    "token-cost-language"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "output-token-limit",
@@ -81197,6 +81201,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "내 언어에 맞는 모델·토크나이저 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "history-summarization",
+   "label": "대화 이력 요약",
+   "parent": "token-budget",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오래된 턴을 요약해 토큰 절약.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "retrieval-topk-limit",
+   "label": "검색 결과 상위 K 제한",
+   "parent": "token-budget",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "참고 문서 칸의 상한 두기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "token-usage-logging",
+   "label": "토큰 사용량 로깅",
+   "parent": "token-budget",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "칸별 사용량 기록으로 낭비 찾기.",
    "related": [],
    "added": "2026-11-25"
   }
