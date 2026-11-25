@@ -1698,12 +1698,15 @@
    "label": "학습과 추론",
    "parent": "ml-fundamentals",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델을 만드는 단계와 쓰는 단계의 차이.",
+   "summary": "학습은 파라미터를 조정, 추론은 고정 모델로 예측. 측정: 랜덤 포레스트 학습 23초 vs 1,000건 추론 0.02초, 대화는 가중치를 바꾸지 않음.",
    "aka": [],
-   "related": [],
-   "added": "2026-10-29"
+   "related": [
+    "token-pricing"
+   ],
+   "added": "2026-10-29",
+   "done": "2026-11-25"
   },
   {
    "id": "token-tokenization",
@@ -82150,6 +82153,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "이미지 한 장이 차지하는 토큰 수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "overfitting-basics",
+   "label": "과적합",
+   "parent": "training-inference",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 데이터에만 잘 맞고 새 데이터에는 약한 현상.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "inference-latency-throughput",
+   "label": "추론 지연과 처리량",
+   "parent": "training-inference",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "응답 속도와 단위 시간당 처리 건수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "online-learning",
+   "label": "온라인 학습",
+   "parent": "training-inference",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서비스 중에도 계속 학습하는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "model-file-size",
+   "label": "모델 크기와 파라미터 수",
+   "parent": "training-inference",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "파라미터 개수와 저장 크기의 관계.",
    "related": [],
    "added": "2026-11-25"
   }
