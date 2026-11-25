@@ -51143,11 +51143,14 @@
    "label": "라벨러 편향 보정",
    "parent": "majority-voting-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "라벨러 편향을 보정해 합의 품질을 올리는 기법(Snow 2008).",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "dawid-skene-model"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "quality-sampling-plan",
@@ -77922,6 +77925,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "동률이 풀릴 때까지 추가 질의.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "log-likelihood-ratio-vote",
+   "label": "로그 우도비 투표",
+   "parent": "labeler-bias-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업자 표를 log(acc/(1-acc))로 가중.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gold-subset-for-calibration",
+   "label": "보정용 소량 골드",
+   "parent": "labeler-bias-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업자 성향 추정에 필요한 골드 크기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "anticorrelated-worker",
+   "label": "역상관 작업자",
+   "parent": "labeler-bias-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답과 반대로 움직여 음의 표를 갖는 작업자.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "laplace-smoothing-worker-model",
+   "label": "작업자 모델의 라플라스 평활화",
+   "parent": "labeler-bias-correction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본이 적을 때 추정 안정화.",
    "related": [],
    "added": "2026-11-25"
   }
