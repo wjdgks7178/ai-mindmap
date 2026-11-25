@@ -50581,11 +50581,14 @@
    "label": "CROWDLAB",
    "parent": "cleanlab-multiannotator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주석자 라벨과 모델 예측을 가중 앙상블해 합의 라벨을 만드는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "double-annotation-review"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "annotator-quality-stats",
@@ -76513,6 +76516,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정리 데이터와 평가 데이터가 겹치는 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "consensus-quality-score",
+   "label": "합의 품질 점수",
+   "parent": "crowdlab",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합의 라벨이 맞을 확신도로 재검수 우선순위 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "majority-vote-weakness-few-labels",
+   "label": "다수결의 약점",
+   "parent": "crowdlab",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 수가 적은 샘플에서 다수결이 흔들리는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dawid-skene-model",
+   "label": "Dawid-Skene 모델",
+   "parent": "crowdlab",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자별 혼동행렬로 합의를 추정하는 고전 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "detailed-label-quality",
+   "label": "주석자 라벨별 품질 점수",
+   "parent": "crowdlab",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자 라벨 하나마다 점수를 매기기.",
    "related": [],
    "added": "2026-11-25"
   }
