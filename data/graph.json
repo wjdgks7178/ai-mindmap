@@ -51990,11 +51990,12 @@
    "label": "노트북 실행 순서와 난수",
    "parent": "clone-random-state-sharing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "셀 실행 순서에 따라 결과가 달라지는 문제.",
+   "summary": "공유 rng는 셀 실행 순서에 따라 난수가 바뀜. 실험: A→B와 B→A에서 두 셀의 값이 맞바뀜, SeedSequence.spawn으로 해결.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "gridsearch-clone-behavior",
@@ -80389,6 +80390,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "평균과 함께 최저 시드 점수를 보고.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "seedsequence-spawn",
+   "label": "SeedSequence.spawn",
+   "parent": "notebook-run-order-randomness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부모 시드에서 독립 자식 스트림 만들기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "restart-run-all",
+   "label": "Restart & Run All 검증",
+   "parent": "notebook-run-order-randomness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노트북 재현성 점검 습관.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-library-seeding",
+   "label": "라이브러리별 시드 설정",
+   "parent": "notebook-run-order-randomness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "numpy·random·torch 시드를 각각 설정.",
    "related": [],
    "added": "2026-11-25"
   }
