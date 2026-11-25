@@ -50942,11 +50942,14 @@
    "label": "후보 정밀도와 검증 비용",
    "parent": "crowdsourced-label-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "알고리즘 정밀도가 사람 비용에 미치는 영향.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "precision-recall-tradeoff-cleaning"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "annotator-confusion-matrix",
@@ -77435,6 +77438,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 번의 실수로 거절하지 않는 평가 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "reviews-per-true-error",
+   "label": "오류 1건당 확인 횟수",
+   "parent": "candidate-precision-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "1/정밀도로 비용 구조 읽기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "marginal-review-cost",
+   "label": "한계 검수 비용",
+   "parent": "candidate-precision-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보를 넓힐 때 추가 오류당 확인 횟수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "verifier-count-vs-precision",
+   "label": "검증자 수와 정밀도",
+   "parent": "candidate-precision-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정밀도가 낮을수록 검증 설계가 중요해지는 이유.",
    "related": [],
    "added": "2026-11-25"
   }
