@@ -4303,11 +4303,15 @@
    "label": "에이전트 최소 권한",
    "parent": "prompt-injection",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "에이전트에게 필요한 도구·권한만 주는 설계.",
+   "summary": "에이전트에 필요한 기능·권한·자율성만 부여. OWASP LLM06:2025: 과도한 기능·권한·자율성이 원인, 권한 검사는 하위 시스템에서 강제.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "lethal-trifecta",
+    "human-gates"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "ai-act-risk-tiers",
@@ -82242,6 +82246,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "연결한 도구가 세 요소를 만족하는지 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "granular-tools-vs-open",
+   "label": "세분화된 도구 vs 개방형 도구",
+   "parent": "least-privilege-agents",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "임의 셸·URL 접근 대신 좁은 도구.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "agent-permission-policy",
+   "label": "에이전트 권한 정책 문서",
+   "parent": "least-privilege-agents",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "허용 도구·네트워크·승인 목록 만들기.",
    "related": [],
    "added": "2026-11-25"
   }
