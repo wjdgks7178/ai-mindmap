@@ -50494,11 +50494,14 @@
    "label": "OOD 탐지",
    "parent": "cleanlab-outlier-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 분포 밖 입력을 서비스 중에 감지하는 문제.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "knn-outlier-score"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "embedding-for-outlier",
@@ -76195,6 +76198,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "진짜 거리가 갖춰야 할 조건.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ood-threshold-percentile",
+   "label": "OOD 임계값(백분위)",
+   "parent": "out-of-distribution-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 점수 분포의 하위 백분위로 기준선 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ood-reject-option",
+   "label": "OOD 시 답 보류",
+   "parent": "out-of-distribution-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "OOD 표시 입력을 거절하거나 사람에게 넘기는 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "data-drift-detection",
+   "label": "데이터 드리프트 탐지",
+   "parent": "out-of-distribution-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간이 지나며 입력 분포가 변하는 것 감지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "overconfident-wrong-prediction",
+   "label": "자신 있게 틀리는 예측",
+   "parent": "out-of-distribution-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "OOD 입력에서 높은 확률로 오답을 내는 현상.",
    "related": [],
    "added": "2026-11-25"
   }
