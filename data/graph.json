@@ -51715,11 +51715,14 @@
    "label": "희귀 클래스 학습 전용 처리",
    "parent": "stratify-min-class-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "테스트에 못 넣는 클래스를 학습에만 두는 방법과 한계.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "rare-class-collection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "rare-class-collection",
@@ -79757,6 +79760,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "목표 오차별 필요한 클래스 샘플 수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unmeasured-class-report",
+   "label": "미측정 클래스 명시",
+   "parent": "train-only-rare-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성능을 못 잰 클래스를 보고서에 표시.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "human-review-for-unmeasured",
+   "label": "미측정 클래스는 사람 검토",
+   "parent": "train-only-rare-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 자동 확정 금지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "move-to-eval-when-collected",
+   "label": "수집 후 평가 세트로 이동",
+   "parent": "train-only-rare-class",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "충분히 모이면 평가용으로 전환.",
    "related": [],
    "added": "2026-11-25"
   }
