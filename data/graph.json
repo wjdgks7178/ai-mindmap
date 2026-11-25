@@ -50454,11 +50454,14 @@
    "label": "모호한 샘플 vs 오류 라벨",
    "parent": "human-relabel-triage",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "낮은 점수의 원인이 모호함인지 오류인지 구분.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "double-annotation-review"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "cosine-vs-euclidean-distance",
@@ -76242,6 +76245,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "OOD 입력에서 높은 확률로 오답을 내는 현상.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "filter-by-options",
+   "label": "filter_by 옵션 비교",
+   "parent": "ambiguous-vs-wrong-label",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 규칙으로 라벨 이슈를 표시하는지 선택.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "borderline-probability-split",
+   "label": "확률 반반 샘플",
+   "parent": "ambiguous-vs-wrong-label",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 클래스에 확률이 갈리는 샘플의 해석.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-label-for-ambiguity",
+   "label": "모호함을 위한 다중 라벨",
+   "parent": "ambiguous-vs-wrong-label",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답이 둘일 때 다중 라벨로 두는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-guideline-rule-addition",
+   "label": "가이드 판정 규칙 추가",
+   "parent": "ambiguous-vs-wrong-label",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모호 샘플에서 얻은 규칙을 라벨 가이드에 반영.",
    "related": [],
    "added": "2026-11-25"
   }
