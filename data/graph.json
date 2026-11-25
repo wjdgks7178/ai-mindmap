@@ -76657,11 +76657,14 @@
    "label": "Dawid-Skene 모델",
    "parent": "crowdlab",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주석자별 혼동행렬로 합의를 추정하는 고전 방법.",
-   "related": [],
-   "added": "2026-11-25"
+   "related": [
+    "crowdlab"
+   ],
+   "added": "2026-11-25",
+   "done": "2026-11-25"
   },
   {
    "id": "detailed-label-quality",
@@ -77969,6 +77972,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본이 적을 때 추정 안정화.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "conditional-independence-assumption",
+   "label": "조건부 독립 가정",
+   "parent": "dawid-skene-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "참 라벨이 주어지면 주석자 응답이 독립이라는 가정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "em-local-optimum",
+   "label": "EM의 지역해 문제",
+   "parent": "dawid-skene-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기값에 따라 나쁜 해에 빠지는 위험.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "worker-accuracy-recovery",
+   "label": "주석자 정확도 복원",
+   "parent": "dawid-skene-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 없이 주석자 품질을 추정하는 효과.",
    "related": [],
    "added": "2026-11-25"
   }
