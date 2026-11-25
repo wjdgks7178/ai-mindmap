@@ -50732,11 +50732,14 @@
    "label": "cross_val_score vs cross_val_predict",
    "parent": "cross-val-predict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "폴드별 점수와 샘플별 예측의 차이.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "missing-class-in-fold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "missing-class-in-fold",
@@ -76917,6 +76920,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "강건할수록 어려운 샘플 학습이 느려짐.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cross-validate-function",
+   "label": "cross_validate",
+   "parent": "cross-val-score-vs-predict",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 지표와 시간을 한 번에 얻는 함수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "stacking-from-cv-predict",
+   "label": "스태킹과 CV 예측",
+   "parent": "cross-val-score-vs-predict",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CV 예측을 두 번째 모델 입력으로 쓰기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "classes-order-columns",
+   "label": "classes_ 순서와 열",
+   "parent": "cross-val-score-vs-predict",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "predict_proba 열이 classes_ 순서를 따름.",
    "related": [],
    "added": "2026-11-25"
   }
