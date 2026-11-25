@@ -51905,11 +51905,12 @@
    "label": "적응적 과적합",
    "parent": "seed-cherry-picking",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "평가 결과를 보며 반복 선택해 평가셋에 과적합.",
+   "summary": "평가셋을 보며 반복 수정하면 점수가 부풀음. 실험: 무작위 신호에서 K=5000 선택 시 홀드아웃 0.968, 실제 Kaggle 분석은 증거 약함.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "split-seed-vs-model-seed",
@@ -80139,6 +80140,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "몇 번 시도했는지 남겨 다중 비교를 투명하게.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ladder-mechanism",
+   "label": "Ladder 방식 리더보드",
+   "parent": "adaptive-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수 공개를 제한해 적응적 과적합을 막는 기법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "holdout-reuse-budget",
+   "label": "홀드아웃 재사용 예산",
+   "parent": "adaptive-overfitting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가셋을 몇 번 볼지 미리 정하기.",
    "related": [],
    "added": "2026-11-25"
   }
