@@ -50956,11 +50956,14 @@
    "label": "라벨러 간 혼동 행렬",
    "parent": "low-agreement-diagnosis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "두 라벨러 라벨을 교차표로 만들어 혼동 쌍 찾기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "inter-annotator-agreement"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "specific-agreement",
@@ -77471,6 +77474,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정밀도가 낮을수록 검증 설계가 중요해지는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "confusion-pair-ranking",
+   "label": "혼동 쌍 순위",
+   "parent": "annotator-confusion-matrix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비대각선 큰 칸부터 정렬해 우선 개선.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "asymmetric-confusion",
+   "label": "비대칭 혼동",
+   "parent": "annotator-confusion-matrix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "A→B와 B→A가 다르면 한쪽 치우침.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "normalize-by-row",
+   "label": "행 기준 정규화",
+   "parent": "annotator-confusion-matrix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "normalize=true로 비율 읽기.",
    "related": [],
    "added": "2026-11-25"
   }
