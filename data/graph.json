@@ -50648,11 +50648,14 @@
    "label": "벤치마크 순위 불안정",
    "parent": "corrected-test-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "라벨 오류가 모델 순위를 뒤집는 현상.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "test-set-label-error-rate"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "labelerrors-site",
@@ -76657,6 +76660,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "주기적으로 후보를 뽑아 평가셋 오류 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "score-gap-vs-error-rate",
+   "label": "점수 차이 vs 오류율",
+   "parent": "benchmark-ranking-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 간 점수 차이를 평가셋 오류율과 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "small-model-advantage-noisy",
+   "label": "노이즈 환경의 작은 모델",
+   "parent": "benchmark-ranking-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류가 많은 데이터에서 작은 모델이 유리할 수 있음.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-benchmark-ranking",
+   "label": "여러 평가셋으로 순위 확인",
+   "parent": "benchmark-ranking-instability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 평가셋에 의존하지 않기.",
    "related": [],
    "added": "2026-11-25"
   }
