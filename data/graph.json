@@ -51401,11 +51401,14 @@
    "label": "이동 평균 kappa",
    "parent": "calibration-frequency",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 주를 합쳐 추세로 보는 kappa.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cusum-for-agreement"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "cusum-for-agreement",
@@ -78791,6 +78794,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "상승·하락을 따로 감시.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pooled-vs-averaged-kappa",
+   "label": "합산 kappa vs 평균 kappa",
+   "parent": "moving-average-kappa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 합쳐 계산하는 것과 값을 평균하는 것의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "window-length-choice",
+   "label": "창 길이 선택",
+   "parent": "moving-average-kappa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "창이 길수록 안정되지만 반응이 늦음.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "window-reset-on-change",
+   "label": "변경 시 창 재시작",
+   "parent": "moving-average-kappa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 개정·교체 후 창을 새로 시작.",
    "related": [],
    "added": "2026-11-25"
   }
