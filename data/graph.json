@@ -1521,11 +1521,14 @@
    "label": "리듀서(reducer)",
    "parent": "langgraph-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "키마다 업데이트를 덮어쓸지 누적할지 정하는 합치기 규칙.",
+   "summary": "상태 키를 갱신할 때 합치는 규칙. 기본은 덮어쓰기, Annotated+operator.add는 이어 붙이기. 실행: 병렬 노드가 같은 키를 바꾸면 리듀서 없이는 InvalidUpdateError.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "messages-state"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "messages-state",
@@ -81824,6 +81827,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "라이브러리 설치와 실행 명령 읽기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "custom-reducer-function",
+   "label": "사용자 정의 리듀서",
+   "parent": "langgraph-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 값을 받아 합치는 함수를 직접 만들기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "parallel-branch-state",
+   "label": "병렬 분기와 상태 충돌",
+   "parent": "langgraph-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 단계에서 같은 키를 갱신할 때의 규칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "partial-state-update",
+   "label": "부분 상태 갱신",
+   "parent": "langgraph-reducer",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "노드가 바꾼 키만 반환하는 방식.",
    "related": [],
    "added": "2026-11-25"
   }
