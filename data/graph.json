@@ -2994,11 +2994,14 @@
    "label": "결과 종합 단계",
    "parent": "orchestrator-workers",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "워커 출력의 충돌·누락을 합치는 방법.",
+   "summary": "워커 결과의 충돌·누락·출처 점검 후 추가 조사. Anthropic: 외부 저장소 참조로 전화 게임 방지, CitationAgent, LLM 심사 5개 기준.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "worker-context-isolation"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "delegation-prompt",
@@ -82603,6 +82606,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "성능과 15배 토큰 사이의 교환.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "citation-agent",
+   "label": "CitationAgent(출처 연결 에이전트)",
+   "parent": "result-synthesis",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보고서 주장에 출처를 붙이는 전용 에이전트.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "artifact-reference-passing",
+   "label": "산출물 참조 전달",
+   "parent": "result-synthesis",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "저장소에 저장하고 참조만 넘겨 전화 게임 방지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "llm-judge-rubric",
+   "label": "LLM 심사 루브릭",
+   "parent": "result-synthesis",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사실·인용·완전성·출처·효율 기준 채점.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "conflict-resolution-rules",
+   "label": "충돌 해소 규칙",
+   "parent": "result-synthesis",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "1차 출처 우선 등 충돌한 주장 정리.",
    "related": [],
    "added": "2026-11-25"
   }
