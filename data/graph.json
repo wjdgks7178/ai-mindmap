@@ -51799,11 +51799,14 @@
    "label": "분할 후 분포 점검",
    "parent": "stratify-multi-label-columns",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "crosstab으로 속성 분포가 유지됐는지 확인.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "combined-stratification-key"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "group-size-skew",
@@ -79901,6 +79904,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할 후 라벨·라벨 쌍별 개수 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "crosstab-empty-cell-check",
+   "label": "crosstab 빈 칸 점검",
+   "parent": "post-split-distribution-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨×속성 표에서 0개 칸 찾기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "distribution-tolerance",
+   "label": "허용 편차 기준",
+   "parent": "post-split-distribution-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 비율과 ±몇 %p까지 허용할지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-seed-split-range",
+   "label": "여러 시드로 분할 편차 범위",
+   "parent": "post-split-distribution-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드를 바꿔 비율 차이의 범위 보기.",
    "related": [],
    "added": "2026-11-25"
   }
