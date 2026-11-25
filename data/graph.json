@@ -51267,11 +51267,14 @@
    "label": "작업자 피드백 루프",
    "parent": "golden-items",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "틀린 골든에 정답·이유를 알려 교육 효과 얻기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "golden-leak-rotation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "recalibration-trigger",
@@ -78564,6 +78567,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "조금 부족한 신규는 오래 지켜봐야 함.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "peer-comparison-feedback",
+   "label": "동료 답 비교 피드백",
+   "parent": "worker-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 작업자 답 분포와 비교해 학습.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "expert-feedback-cost",
+   "label": "전문가 피드백의 비용",
+   "parent": "worker-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "효과는 크지만 확장이 어려움.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "feedback-ab-test",
+   "label": "피드백 A/B 시험",
+   "parent": "worker-feedback-loop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "피드백 유무로 효과 확인.",
    "related": [],
    "added": "2026-11-25"
   }
