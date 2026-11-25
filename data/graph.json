@@ -786,11 +786,14 @@
    "label": "JSON",
    "parent": "web-app-basics",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "API가 데이터를 주고받는 가장 흔한 텍스트 형식.",
+   "summary": "키-값·배열로 데이터를 적는 엄격한 텍스트 형식. 실습: 작은따옴표·마지막 쉼표·주석·None은 파싱 오류, 한글은 ensure_ascii=False.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "http-basics"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "web-frameworks",
@@ -81693,6 +81696,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "브라우저에서 다른 도메인 호출이 막히는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "json-schema-validation",
+   "label": "JSON 스키마 검증",
+   "parent": "json-format",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 준 JSON이 약속한 모양인지 자동 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "structured-output-api",
+   "label": "구조화 출력",
+   "parent": "json-format",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "API가 스키마에 맞는 JSON을 강제하는 기능.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "yaml-toml-vs-json",
+   "label": "YAML·TOML vs JSON",
+   "parent": "json-format",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "설정 파일 형식 비교.",
    "related": [],
    "added": "2026-11-25"
   }
