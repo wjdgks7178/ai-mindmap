@@ -51617,11 +51617,14 @@
    "label": "프롬프트 튜닝용 보류 세트",
    "parent": "llm-labeler-validation-subset",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "프롬프트 개발과 최종 검증을 분리해 과적합 방지.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "case-to-fewshot"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "llm-self-consistency",
@@ -79411,6 +79414,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "추정 변경률과 실제 변경 건수를 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "prompt-trial-count-record",
+   "label": "시도한 프롬프트 수 기록",
+   "parent": "holdout-set-for-prompt-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시도 수가 많을수록 부풀림이 커짐.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dev-holdout-split-ratio",
+   "label": "개발·보류 분할 비율",
+   "parent": "holdout-set-for-prompt-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드를 어떻게 나눌지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fewshot-sample-exclusion",
+   "label": "few-shot 예시 샘플 제외",
+   "parent": "holdout-set-for-prompt-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예시로 쓴 샘플을 평가 세트에서 빼기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "one-shot-final-eval",
+   "label": "최종 평가는 한 번만",
+   "parent": "holdout-set-for-prompt-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보류 세트를 보고 더 고치지 않기.",
    "related": [],
    "added": "2026-11-25"
   }
