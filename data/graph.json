@@ -51222,11 +51222,14 @@
    "label": "스패머 탐지",
    "parent": "golden-items",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무작위로 답하는 작업자를 걸러 내는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "worker-quality-control"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "golden-item-selection",
@@ -78279,6 +78282,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "늘어나는 유형을 월별로 집계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "spammer-pass-rate",
+   "label": "스패머 통과율 계산",
+   "parent": "spammer-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골든 수·합격선에 따른 통과 확률.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "response-time-signal",
+   "label": "응답 시간 신호",
+   "parent": "spammer-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지나치게 짧은 응답 시간으로 스패머 의심.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fixed-pattern-spam",
+   "label": "고정 패턴 스패머",
+   "parent": "spammer-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "항상 같은 선택지를 고르는 패턴.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "honest-worker-rejection",
+   "label": "성실한 작업자 탈락",
+   "parent": "spammer-detection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합격선이 높을 때 생기는 오탈락.",
    "related": [],
    "added": "2026-11-25"
   }
