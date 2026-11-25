@@ -50802,11 +50802,14 @@
    "label": "표본 외 예측 작업 절차",
    "parent": "in-sample-overconfidence",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "폴드 분할→예측→오류 탐지 순서 정리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cross-val-score-vs-predict"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "prune-by-noise-rate",
@@ -77086,6 +77089,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델이 확신을 과대/과소 표현하는 경우.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "near-duplicate-fold-grouping",
+   "label": "중복 샘플을 한 폴드로 묶기",
+   "parent": "oof-predictions-workflow",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거의 같은 샘플이 학습·테스트로 갈리는 누수 방지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-seed-candidate-stability",
+   "label": "여러 시드 후보 안정성",
+   "parent": "oof-predictions-workflow",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드를 바꿔도 같은 후보가 나오는지 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "k-choice-for-oof",
+   "label": "K 고르기",
+   "parent": "oof-predictions-workflow",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 수를 정할 때의 고려점.",
    "related": [],
    "added": "2026-11-25"
   }
