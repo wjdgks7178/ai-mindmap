@@ -3975,11 +3975,14 @@
    "label": "활성화 함수",
    "parent": "neural-network-basics",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "sigmoid·tanh·ReLU와 비선형의 역할.",
+   "summary": "뉴런 출력에 적용하는 비선형 함수. 없으면 층을 쌓아도 선형 모델. 실행: XOR에서 항등 0.53, ReLU·tanh 1.00, sigmoid 기울기 0.25를 10층 곱하면 약 1e-6.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "training-inference"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "backpropagation",
@@ -82733,6 +82736,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "최선을 알았다면 얻었을 보상과의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "relu-gelu-swish",
+   "label": "ReLU·GELU 계열",
+   "parent": "activation-functions",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "현대 모델에서 쓰는 활성화 함수 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "softmax-output",
+   "label": "softmax 출력층",
+   "parent": "activation-functions",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 클래스 점수를 확률로 바꾸는 함수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "universal-approximation",
+   "label": "보편 근사 정리",
+   "parent": "activation-functions",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비선형 활성화를 가진 신경망의 표현력.",
    "related": [],
    "added": "2026-11-25"
   }
