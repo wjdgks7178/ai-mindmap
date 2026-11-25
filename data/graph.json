@@ -2525,11 +2525,15 @@
    "label": "규칙 기반 AI와 전문가 시스템",
    "parent": "ai-ml-dl-relation",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "데이터가 아닌 사람이 쓴 규칙으로 판단하는 고전 AI.",
+   "summary": "IF-THEN 규칙과 추론 엔진으로 결론을 도출하는 초기 AI. 설명 가능하지만 지식 획득이 어려움(MYCIN·XCON). 20줄 전방 연쇄 엔진 시연.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "training-inference",
+    "mechanical-constraints"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "foundation-model",
@@ -82814,6 +82818,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "관성 감소가 꺾이는 지점으로 K 고르기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "forward-backward-chaining",
+   "label": "전방·후방 연쇄",
+   "parent": "rule-based-ai",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "규칙 추론의 두 방향.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "knowledge-acquisition-bottleneck",
+   "label": "지식 획득 병목",
+   "parent": "rule-based-ai",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전문가 지식을 규칙으로 뽑아내기 어려운 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "mycin-xcon",
+   "label": "MYCIN과 XCON",
+   "parent": "rule-based-ai",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대표적 전문가 시스템 사례.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "hybrid-rules-llm",
+   "label": "규칙과 LLM의 결합",
+   "parent": "rule-based-ai",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "결정적 규칙과 LLM 판단을 섞는 설계.",
    "related": [],
    "added": "2026-11-25"
   }
