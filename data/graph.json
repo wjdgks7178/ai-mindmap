@@ -3030,11 +3030,14 @@
    "label": "Self-Refine",
    "parent": "evaluator-optimizer",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델이 스스로 비평하고 고치는 연구 기법.",
+   "summary": "한 LLM이 생성→피드백→수정을 반복(2023). 7개 과제에서 평균 약 20%p 향상 보고. 외부 검증이 없으면 오류를 못 잡는 한계.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "critique-revision"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "deterministic-feedback",
@@ -82459,6 +82462,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "SDK 버전과 API 버전의 관계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "stop-condition-refine",
+   "label": "수정 반복의 종료 조건",
+   "parent": "self-refine",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "피드백 없음·횟수 상한·점수 기준.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "external-feedback-refine",
+   "label": "외부 피드백 섞기",
+   "parent": "self-refine",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "테스트·검색·규칙 검사 결과로 피드백 보강.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "self-critique-failure",
+   "label": "자기 비평의 실패 사례",
+   "parent": "self-refine",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 자기 오류를 못 알아채는 경우.",
    "related": [],
    "added": "2026-11-25"
   }
