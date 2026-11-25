@@ -51600,11 +51600,14 @@
    "label": "재라벨 우선순위",
    "parent": "relabel-after-rule-change",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "오류 가능성 순으로 예산 배분.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "impact-analysis-for-rule-change"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "holdout-set-for-prompt-tuning",
@@ -79339,6 +79342,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "변경 없는 클래스를 재라벨에서 제외.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "priority-score-calibration",
+   "label": "우선순위 점수 보정",
+   "parent": "relabel-prioritization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수와 실제 변경률을 비교해 보정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "batch-relabel-stop",
+   "label": "배치 재라벨과 중지",
+   "parent": "relabel-prioritization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배치별 변경률로 중지 시점 결정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "low-risk-sample-check",
+   "label": "저위험 구간 표본 점검",
+   "parent": "relabel-prioritization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "안 보는 구간도 소량 무작위 점검.",
    "related": [],
    "added": "2026-11-25"
   }
