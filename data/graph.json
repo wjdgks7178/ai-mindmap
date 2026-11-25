@@ -51572,11 +51572,14 @@
    "label": "재라벨 표본 시험",
    "parent": "relabel-after-rule-change",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "10% 표본으로 오류율을 추정해 재라벨 여부 결정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "impact-analysis-for-rule-change"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "dataset-version-after-relabel",
@@ -79278,6 +79281,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "어떤 버전 조건으로 학습했는지 남기기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "threshold-near-sample-size",
+   "label": "문턱 근처의 표본 크기",
+   "parent": "relabel-sample-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문턱에 가까울수록 표본이 많이 필요.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "out-of-scope-miss-check",
+   "label": "범위 밖 미탐 점검",
+   "parent": "relabel-sample-test",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색식이 놓친 영향 라벨을 범위 밖 표본으로 확인.",
    "related": [],
    "added": "2026-11-25"
   }
