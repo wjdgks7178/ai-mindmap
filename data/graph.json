@@ -51174,11 +51174,14 @@
    "label": "주간 일치도 대시보드",
    "parent": "sampled-double-annotation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주차별 kappa로 라벨 품질 드리프트 감시.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "quality-sampling-plan"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "error-rate-from-disagreement",
@@ -78124,6 +78127,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "목적에 따라 표본 설계가 달라짐.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "control-limit-two-sd",
+   "label": "평균−2표준편차 한계선",
+   "parent": "weekly-agreement-dashboard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 기간으로 만드는 단순 관리 한계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "consecutive-breach-rule",
+   "label": "연속 하회 경보 규칙",
+   "parent": "weekly-agreement-dashboard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2주 연속 하회처럼 오경보를 줄이는 규칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "event-annotation-on-chart",
+   "label": "이벤트 주석 표시",
+   "parent": "weekly-agreement-dashboard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 변경·인력 교체를 그래프에 표시.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "weekly-sample-size",
+   "label": "주간 표본 크기",
+   "parent": "weekly-agreement-dashboard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "kappa 그래프의 흔들림을 줄이는 표본 수.",
    "related": [],
    "added": "2026-11-25"
   }
