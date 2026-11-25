@@ -50662,11 +50662,14 @@
    "label": "labelerrors.com 수정 세트",
    "parent": "corrected-test-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "수정된 시험 세트와 오류 갤러리 사용법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "test-set-label-error-rate"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "memorization-of-noisy-labels",
@@ -76693,6 +76696,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 평가셋에 의존하지 않기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-error-type-taxonomy",
+   "label": "라벨 오류 유형 분류",
+   "parent": "labelerrors-site",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잘못된 클래스·다중 정답·규칙 모호 등으로 나누기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-errors-repo-reproduce",
+   "label": "label-errors 저장소 재현",
+   "parent": "labelerrors-site",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "논문 오류를 코드로 재현하는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dataset-gallery-teaching",
+   "label": "오류 갤러리 교육 활용",
+   "parent": "labelerrors-site",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유명 데이터셋 오류로 하는 워크숍.",
    "related": [],
    "added": "2026-11-25"
   }
