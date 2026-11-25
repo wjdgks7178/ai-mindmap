@@ -51460,11 +51460,14 @@
    "label": "재검토 검색식",
    "parent": "edge-case-log-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "결정 변경의 영향을 받는 기존 라벨을 찾는 쿼리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "rule-change-propagation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "case-to-fewshot",
@@ -78946,6 +78949,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "잦은 개정을 모아 정해진 주기로 배포.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "version-numeric-columns",
+   "label": "버전 숫자 열 저장",
+   "parent": "relabel-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문자열 비교 오류를 피하려 major/minor 열 사용.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "relabel-change-rate",
+   "label": "재검토 변경률",
+   "parent": "relabel-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검색식 정밀도를 변경률로 평가.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "keyword-plus-model-filter",
+   "label": "키워드+모델 조건 결합",
+   "parent": "relabel-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내용 조건과 모델 의심도를 함께 사용.",
    "related": [],
    "added": "2026-11-25"
   }
