@@ -50984,11 +50984,14 @@
    "label": "판단 불가 선택지",
    "parent": "low-agreement-diagnosis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모호한 샘플을 오류와 구분하는 선택지.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "ambiguous-vs-wrong-label"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "disagreement-discussion",
@@ -77543,6 +77546,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "다중 클래스를 해당 클래스 대 나머지로 나눠 재기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unsure-rate-monitoring",
+   "label": "판단 불가 비율 모니터링",
+   "parent": "cannot-decide-option",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비율이 지나치게 높거나 낮을 때의 신호.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unsure-payment-design",
+   "label": "판단 불가 보수 설계",
+   "parent": "cannot-decide-option",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판단 불가도 보수를 줘야 찍기를 막음.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unsure-reason-subtypes",
+   "label": "판단 불가 사유 세분화",
+   "parent": "cannot-decide-option",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보 부족·두 클래스 가능 등으로 나누기.",
    "related": [],
    "added": "2026-11-25"
   }
