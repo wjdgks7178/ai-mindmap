@@ -52014,11 +52014,12 @@
    "label": "유병률 보정 정밀도",
    "parent": "test-prior-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "TPR·FPR로 운영 비율에 맞춰 정밀도를 환산.",
+   "summary": "정밀도는 양성 비율에 의존, TPR·FPR로 환산. 계산: TPR 0.90·FPR 0.05에서 p=1%면 정밀도 0.154.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "pr-curve-vs-roc-imbalance",
@@ -80457,6 +80458,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "단계마다 시드를 고정하는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "alert-volume-planning",
+   "label": "경보 대응량 추정",
+   "parent": "prevalence-adjusted-precision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양성 비율로 하루 경보 수와 대응 인력을 계산.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "threshold-vs-prevalence",
+   "label": "임계값과 유병률",
+   "parent": "prevalence-adjusted-precision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양성 비율에 맞춰 임계값을 다시 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "field-precision-check",
+   "label": "운영 정밀도 실측",
+   "parent": "prevalence-adjusted-precision",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영에서 일부 라벨을 확보해 정밀도 확인.",
    "related": [],
    "added": "2026-11-25"
   }
