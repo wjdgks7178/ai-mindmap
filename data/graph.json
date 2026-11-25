@@ -51412,11 +51412,14 @@
    "label": "누적합(CUSUM) 감시",
    "parent": "calibration-frequency",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "작은 변화를 누적해 탐지하는 관리도 기법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "control-chart-for-labeling"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "detection-delay-tradeoff",
@@ -78755,6 +78758,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "개인정보 보호와 권한 제한.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "average-run-length",
+   "label": "평균 런 길이(ARL)",
+   "parent": "cusum-for-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경보까지 평균 기간으로 오경보·지연 표현.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cusum-threshold-tuning",
+   "label": "CUSUM 문턱값 조정",
+   "parent": "cusum-for-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원하는 오경보 간격에 맞춰 h 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "two-sided-cusum",
+   "label": "양방향 CUSUM",
+   "parent": "cusum-for-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상승·하락을 따로 감시.",
    "related": [],
    "added": "2026-11-25"
   }
