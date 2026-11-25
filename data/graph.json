@@ -4291,8 +4291,10 @@
    "summary": "비공개 데이터 접근·신뢰 불가 콘텐츠·외부 통신이 모두 있으면 데이터 유출 가능(Willison 2025-06). 하나를 끊는 것이 유일하게 믿을 만한 방어.",
    "added": "2026-11-01",
    "related": [
-    "least-privilege-agents",
-    "jailbreak"
+    "data-exfiltration-markdown",
+    "indirect-prompt-injection",
+    "jailbreak",
+    "least-privilege-agents"
    ],
    "done": "2026-11-25"
   },
@@ -82207,17 +82209,6 @@
    "status": "planned",
    "priority": 4,
    "summary": "부정행위가 다른 비행으로 번지지 않게 맥락을 알려 주는 기법.",
-   "related": [],
-   "added": "2026-11-25"
-  },
-  {
-   "id": "prompt-injection-basics",
-   "label": "프롬프트 주입 기초",
-   "parent": "lethal-trifecta",
-   "domain": "ai-safety",
-   "status": "planned",
-   "priority": 4,
-   "summary": "콘텐츠에 숨은 지시로 모델을 조종하는 공격.",
    "related": [],
    "added": "2026-11-25"
   },
