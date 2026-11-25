@@ -51894,11 +51894,12 @@
    "label": "사전에 정한 시드",
    "parent": "seed-cherry-picking",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "결과를 보기 전에 시드를 정해 두는 습관.",
+   "summary": "결과를 보기 전에 시드를 고정. 실험: 10개 시도 후 최고값 보고 0.908 vs 전체 평균 0.884.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "adaptive-overfitting",
@@ -80253,6 +80254,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "질문·샘플 단위로 두 모델 차이를 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "seed-config-commit",
+   "label": "시드 설정 커밋",
+   "parent": "preregistered-seed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드 목록을 코드·설정에 고정해 커밋.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "experiment-tracking-tools",
+   "label": "실험 추적 도구",
+   "parent": "preregistered-seed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드·설정·결과를 자동 기록하는 도구.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "seed-deviation-note",
+   "label": "시드 변경 사유 기록",
+   "parent": "preregistered-seed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사후에 시드를 바꿨다면 이유와 이전 결과를 남김.",
    "related": [],
    "added": "2026-11-25"
   }
