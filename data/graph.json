@@ -885,11 +885,14 @@
    "label": "하네스 부품의 유통기한",
    "parent": "harness",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델이 좋아지면 불필요해지는 스캐폴딩을 덜어내는 관점.",
+   "summary": "하네스 부품은 모델의 약점을 가정하므로 모델이 좋아지면 낡음. Anthropic: Opus 4.5에서 컨텍스트 리셋, 4.6에서 스프린트 제거, 평가자는 난이도별.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "mechanical-constraints"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "sdd-constitution",
@@ -81343,6 +81346,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "로깅·이름·파일 크기 같은 스타일 규칙의 자동화.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "context-anxiety",
+   "label": "컨텍스트 불안",
+   "parent": "harness-decay",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한계 근처에서 모델이 서둘러 마무리하는 경향.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ablate-harness-component",
+   "label": "하네스 부품 제거 시험",
+   "parent": "harness-decay",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 번에 하나씩 제거해 영향 보기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "context-reset-vs-compaction",
+   "label": "컨텍스트 리셋 vs 컴팩션",
+   "parent": "harness-decay",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 에이전트로 갈아 끼우기와 제자리 요약의 차이.",
    "related": [],
    "added": "2026-11-25"
   }
