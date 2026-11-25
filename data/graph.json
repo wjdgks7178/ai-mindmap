@@ -2087,11 +2087,14 @@
    "label": "GraphRAG",
    "parent": "knowledge-retrieval",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "문서 속 개체·관계를 그래프로 만들어 연결된 질문에 답하는 RAG 변형.",
+   "summary": "개체·관계 그래프와 커뮤니티 요약으로 전역 질문에 답하는 RAG(Microsoft, 2024). 일반 RAG보다 포괄성은 높지만 인덱싱 비용이 큼.",
    "added": "2026-10-30",
-   "related": []
+   "related": [
+    "long-context-vs-rag"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "red-teaming",
@@ -80826,6 +80829,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "OpenAI가 공개하는 모델 행동 규범 문서.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "knowledge-graph",
+   "label": "지식 그래프",
+   "parent": "graph-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개체와 관계를 점·선으로 저장한 구조.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "community-detection-leiden",
+   "label": "커뮤니티 탐지(Leiden)",
+   "parent": "graph-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "그래프에서 촘촘히 연결된 묶음을 찾는 알고리즘.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "graphrag-local-vs-global",
+   "label": "GraphRAG 로컬 vs 글로벌 검색",
+   "parent": "graph-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질문 유형별 검색 모드 선택.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "graphrag-indexing-cost",
+   "label": "GraphRAG 인덱싱 비용",
+   "parent": "graph-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추출·요약에 드는 LLM 호출 비용 가늠.",
    "related": [],
    "added": "2026-11-25"
   }
