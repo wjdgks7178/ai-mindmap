@@ -51841,11 +51841,14 @@
    "label": "폴드 균형 표",
    "parent": "stratify-vs-group",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드별 크기·양성 비율·겹침을 한눈에 점검.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "분할 직후 폴드별 크기·양성 비율·그룹 수·겹침을 표로 점검. 실험: 비율 0.133~0.152, 겹침 0.",
+   "related": [
+    "group-overlap-check"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "few-groups-strategy",
@@ -80009,6 +80012,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "샘플 예측을 환자 단위로 합쳐 평가.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "split-assertions",
+   "label": "분할 단언 검사",
+   "parent": "fold-balance-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "겹침 0·비율 한도를 assert로 자동 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fold-weighted-average",
+   "label": "폴드 가중 평균",
+   "parent": "fold-balance-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 크기가 다를 때 점수 평균 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "split-report-logging",
+   "label": "분할 보고서 기록",
+   "parent": "fold-balance-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 표를 실험 로그에 저장해 재현.",
    "related": [],
    "added": "2026-11-25"
   }
