@@ -51785,11 +51785,14 @@
    "label": "Iterative stratification",
    "parent": "stratify-multi-label-columns",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "멀티라벨 데이터의 전용 층화 알고리즘.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "combined-stratification-key"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "post-split-distribution-check",
@@ -79865,6 +79868,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "원래 값은 보존하고 층화 키에만 적용.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rarest-label-first",
+   "label": "가장 드문 라벨부터",
+   "parent": "iterative-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "드문 라벨부터 분배하는 욕심 절차.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-pair-distribution",
+   "label": "라벨 쌍 분포",
+   "parent": "iterative-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 쌍이 폴드에 고르게 있는지 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multilabel-split-audit",
+   "label": "멀티라벨 분할 점검",
+   "parent": "iterative-stratification",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 후 라벨·라벨 쌍별 개수 확인.",
    "related": [],
    "added": "2026-11-25"
   }
