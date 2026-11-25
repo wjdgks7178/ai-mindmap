@@ -49,4 +49,4 @@ flowchart LR
 | [재검토 검색식](#relabel-query) | 영향받는 라벨 찾기 |
 
 ## 더 읽을거리
-- [scikit-learn 사용자 가이드: LogisticRegression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression) — 실험에 사용한 모델
+- [Semantic Versioning 2.0.0](https://semver.org/) — 버전 규칙의 원형(MAJOR·MINOR·PATCH)
