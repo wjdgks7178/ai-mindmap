@@ -925,11 +925,14 @@
    "label": "작업 분해",
    "parent": "sdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "계획을 AI가 한 번에 끝낼 작은 작업으로 쪼개는 기술.",
+   "summary": "계획을 AI가 한 번에 끝낼 작은 작업으로 분해. Spec Kit tasks 단계는 tasks.md에 독립 작업에 [P] 병렬 표시.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "subagents"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "red-green-refactor",
@@ -80980,6 +80983,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "입력만 맞춘 코드를 찾아내는 리뷰.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "task-completion-criteria",
+   "label": "작업 완료 기준",
+   "parent": "tasks-breakdown",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작업마다 통과 조건을 적는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "parallel-task-marking",
+   "label": "병렬 작업 표시",
+   "parent": "tasks-breakdown",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서로 독립인 작업을 동시에 맡기기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "task-size-rule",
+   "label": "적정 작업 크기",
+   "parent": "tasks-breakdown",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 한 번에 끝낼 크기를 정하는 감각.",
    "related": [],
    "added": "2026-11-25"
   }
