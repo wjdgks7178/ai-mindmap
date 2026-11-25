@@ -701,11 +701,14 @@
    "label": "융합 아키텍처",
    "parent": "multimodal",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "초기·중간 융합과 공동 임베딩의 구조 차이.",
+   "summary": "이미지와 텍스트를 한 모델에 연결하는 구조. LLaVA: CLIP ViT-L/14 → 선형 투영 W → Vicuna, Flamingo: 교차 어텐션, BLIP-2: Q-Former.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "token-tokenization"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "tool-use",
@@ -82103,6 +82106,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "노드가 다음 이동과 상태 갱신을 함께 지정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "llava-projection",
+   "label": "LLaVA의 선형 투영",
+   "parent": "fusion-architectures",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지 특징을 단어 임베딩 차원의 토큰으로 바꾸는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cross-attention-fusion",
+   "label": "교차 어텐션 융합",
+   "parent": "fusion-architectures",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "LLM 중간에 시각 정보를 참조하는 층 삽입.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "q-former",
+   "label": "Q-Former(BLIP-2)",
+   "parent": "fusion-architectures",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 가능한 질의로 이미지 요점을 추출.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "image-token-cost",
+   "label": "이미지 토큰 비용",
+   "parent": "fusion-architectures",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지 한 장이 차지하는 토큰 수.",
    "related": [],
    "added": "2026-11-25"
   }
