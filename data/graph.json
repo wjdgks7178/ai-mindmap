@@ -50917,11 +50917,14 @@
    "label": "작업자 품질 관리",
    "parent": "crowdsourced-label-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "자격 검사·정답 문항으로 크라우드 품질 유지.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "annotator-quality-stats"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "validation-ui-design",
@@ -77388,6 +77391,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "샘플당 라벨 수에 따른 비용 곡선.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gold-question-design",
+   "label": "정답 문항 설계",
+   "parent": "worker-quality-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업 중 섞는 정답 문항의 구성과 비용.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "attention-check-weakness",
+   "label": "주의력 확인의 약점",
+   "parent": "worker-quality-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구분하기 쉬워 실제 품질을 못 가리는 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "early-worker-screening",
+   "label": "초반 성적으로 작업자 선별",
+   "parent": "worker-quality-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "첫 몇 개 작업이 장기 품질을 예측.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rolling-score-filter",
+   "label": "이동 평균 필터",
+   "parent": "worker-quality-control",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 번의 실수로 거절하지 않는 평가 방식.",
    "related": [],
    "added": "2026-11-25"
   }
