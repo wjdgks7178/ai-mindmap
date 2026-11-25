@@ -51059,11 +51059,14 @@
    "label": "판정 인터페이스",
    "parent": "adjudicator-role",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불일치를 색으로 보여 주고 병합을 돕는 도구(MAI·WebAnno).",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "gold-standard-creation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "agreed-but-wrong-sampling",
@@ -77673,6 +77676,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델은 괜찮고 지침이 모자랄 때의 작은 순환.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "mai-adjudication-tool",
+   "label": "MAI 판정 도구",
+   "parent": "adjudication-interface",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치를 색으로 보여 주는 경량 판정 도구.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "webanno-tool",
+   "label": "WebAnno",
+   "parent": "adjudication-interface",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웹 기반 주석·판정 도구.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "adjudication-audit-log",
+   "label": "판정 감사 기록",
+   "parent": "adjudication-interface",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판정 결과와 사유를 남기는 기록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "blind-adjudication",
+   "label": "판정자의 주석자 비공개",
+   "parent": "adjudication-interface",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누가 단 라벨인지 가리고 판정.",
    "related": [],
    "added": "2026-11-25"
   }
