@@ -1580,11 +1580,15 @@
    "label": "상태와 장기 메모리",
    "parent": "langgraph-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "한 실행 안의 상태와 대화·세션을 넘는 메모리(store)의 차이.",
+   "summary": "상태(체크포인터)는 스레드 안 단기 기억, 스토어는 스레드를 넘는 장기 메모리. 실행: 같은 thread는 상태 이어짐, 새 thread도 스토어 선호는 보임.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "messages-state",
+    "rag"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "ml-fundamentals",
@@ -81971,6 +81975,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "팀 간 합의로서 입출력 스키마.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "checkpointer-savers",
+   "label": "체크포인터 저장소 종류",
+   "parent": "state-vs-memory",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "InMemory·Sqlite·Postgres 선택 기준.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "store-namespaces",
+   "label": "스토어 네임스페이스",
+   "parent": "state-vs-memory",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "장기 메모리의 키 구조 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "memory-privacy-retention",
+   "label": "메모리 개인정보·보관 정책",
+   "parent": "state-vs-memory",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "장기 메모리에 쌓이는 데이터 관리.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "time-travel-checkpoints",
+   "label": "체크포인트 되감기",
+   "parent": "state-vs-memory",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과거 상태로 돌아가 다시 실행.",
    "related": [],
    "added": "2026-11-25"
   }
