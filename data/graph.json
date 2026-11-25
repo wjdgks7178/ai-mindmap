@@ -50634,11 +50634,14 @@
    "label": "시험 세트 라벨 오류율",
    "parent": "corrected-test-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "벤치마크 시험 세트의 라벨 오류 비율.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cleaning-before-after-eval"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "benchmark-ranking-instability",
@@ -76621,6 +76624,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨이 한쪽에 쏠리면 카파가 낮게 나오는 현상.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "lower-bound-error-estimate",
+   "label": "\"최소\" 오류율의 의미",
+   "parent": "test-set-label-error-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 못 찾은 오류는 빠져 하한만 추정됨.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "benchmark-accuracy-ceiling",
+   "label": "벤치마크 정확도 상한",
+   "parent": "test-set-label-error-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 오류가 달성 가능한 최대 점수를 낮춤.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "own-eval-set-audit",
+   "label": "자체 평가셋 점검",
+   "parent": "test-set-label-error-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주기적으로 후보를 뽑아 평가셋 오류 확인.",
    "related": [],
    "added": "2026-11-25"
   }
