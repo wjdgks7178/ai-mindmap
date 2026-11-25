@@ -4389,11 +4389,15 @@
    "label": "AI 리터러시 의무",
    "parent": "eu-ai-act",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "2025-02부터 조직이 직원의 AI 이해를 갖추게 하는 규정.",
+   "summary": "AI Act 제4조: 조직이 직원 등의 AI 리터러시를 높이는 조치를 해야 함. 2025-02-02 적용, 국가 집행 2026-08-02. 교육 형식·인증 의무 없음, 옴니버스로 sufficient 요구 삭제.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "ai-act-risk-tiers",
+    "literacy"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "gdpr-ai",
@@ -82911,6 +82915,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "같은 기술도 용도에 따라 등급이 달라짐.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "role-based-ai-training",
+   "label": "역할별 AI 교육 설계",
+   "parent": "ai-literacy-obligation",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "직무·위험에 맞춘 교육 내용 구성.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "training-records",
+   "label": "AI 교육 기록 남기기",
+   "parent": "ai-literacy-obligation",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일시·대상·내용 기록 양식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "human-oversight-training",
+   "label": "사람 감독 훈련",
+   "parent": "ai-literacy-obligation",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고위험 시스템 사용자의 별도 훈련.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "literacy-practices-repository",
+   "label": "AI 리터러시 실천 사례 저장소",
+   "parent": "ai-literacy-obligation",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "집행위가 운영하는 사례 모음.",
    "related": [],
    "added": "2026-11-25"
   }
