@@ -50511,11 +50511,14 @@
    "label": "이상치 탐지용 임베딩",
    "parent": "cleanlab-outlier-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이미지·텍스트를 벡터로 바꿔 거리 계산하기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "out-of-distribution-detection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "false-positive-label-issues",
@@ -76289,6 +76292,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모호 샘플에서 얻은 규칙을 라벨 가이드에 반영.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "embedding-model-versioning",
+   "label": "임베딩 모델 버전 관리",
+   "parent": "embedding-for-outlier",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 바뀌면 점수 기준선을 다시 계산해야 하는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "remove-classification-head",
+   "label": "분류 헤드 제거",
+   "parent": "embedding-for-outlier",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전학습 모델에서 특징 벡터만 꺼내는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "domain-specific-embedding",
+   "label": "도메인 특화 임베딩",
+   "parent": "embedding-for-outlier",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의료·법률처럼 일반 모델이 못 구분하는 분야용 임베딩.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "batch-inference-no-grad",
+   "label": "배치 추론과 no_grad",
+   "parent": "embedding-for-outlier",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대량 데이터를 메모리 안에서 임베딩하는 방법.",
    "related": [],
    "added": "2026-11-25"
   }
