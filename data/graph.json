@@ -51757,11 +51757,14 @@
    "label": "조합 키 만들기",
    "parent": "stratify-multi-label-columns",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 컬럼을 이어 붙여 stratify 키를 만드는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "stratify-test-size-rule"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "bin-high-cardinality-columns",
@@ -79793,6 +79796,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "충분히 모이면 평가용으로 전환.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cell-count-check",
+   "label": "칸별 개수 확인",
+   "parent": "combined-stratification-key",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "value_counts로 조합 키의 칸 크기 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "other-bucket-for-small-cells",
+   "label": "작은 칸은 기타로",
+   "parent": "combined-stratification-key",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "칸이 작으면 기타로 묶기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cell-explosion",
+   "label": "칸 수 폭발",
+   "parent": "combined-stratification-key",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "컬럼이 늘수록 칸 수가 곱으로 늘어남.",
    "related": [],
    "added": "2026-11-25"
   }
