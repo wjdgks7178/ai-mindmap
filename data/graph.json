@@ -51429,11 +51429,14 @@
    "label": "탐지 지연과 비용",
    "parent": "calibration-frequency",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "공통 문항 수에 따른 지연·비용 균형.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cusum-for-agreement"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "log-weekly-review-script",
@@ -78827,6 +78830,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "지침 개정·교체 후 창을 새로 시작.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "contaminated-label-estimate",
+   "label": "오염 라벨 추정",
+   "parent": "detection-delay-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탐지 지연 동안 쌓인 잠재 오염 라벨 수 추정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "min-detectable-shift",
+   "label": "최소 탐지 악화 크기",
+   "parent": "detection-delay-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반드시 잡아야 할 최소 악화 폭 정의.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "monitoring-cost-vs-relabel-cost",
+   "label": "감시 비용 vs 재라벨 비용",
+   "parent": "detection-delay-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감시 투자가 재라벨 비용을 줄이는지 비교.",
    "related": [],
    "added": "2026-11-25"
   }
