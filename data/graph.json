@@ -50903,11 +50903,14 @@
    "label": "과반 판정 임계값(3-of-5)",
    "parent": "crowdsourced-label-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "몇 명 이상이 동의해야 확정할지 정하는 규칙.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "majority-vote-three-reviewers"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "worker-quality-control",
@@ -77352,6 +77355,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "구간이 합격선에 걸치면 샘플 추가.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unresolved-sample-routing",
+   "label": "불확정 샘플 처리",
+   "parent": "majority-vote-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값 미달 샘플을 전문가로 넘기는 흐름.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "independence-assumption-vote",
+   "label": "다수결의 독립 가정",
+   "parent": "majority-vote-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업자 독립 가정이 깨지면 오류가 커짐.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-count-vs-cost",
+   "label": "라벨 수와 비용",
+   "parent": "majority-vote-threshold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플당 라벨 수에 따른 비용 곡선.",
    "related": [],
    "added": "2026-11-25"
   }
