@@ -990,11 +990,14 @@
    "label": "서브에이전트",
    "parent": "tdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "역할별로 컨텍스트를 분리한 보조 에이전트.",
+   "summary": "별도 컨텍스트 창을 가진 보조 에이전트, 요약만 반환. Claude Code는 .claude/agents/의 Markdown+YAML로 정의.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "orchestrator-workers"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "factory-roles",
@@ -80873,6 +80876,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "추출·요약에 드는 LLM 호출 비용 가늠.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "subagent-definition-file",
+   "label": "서브에이전트 정의 파일",
+   "parent": "subagents",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "머리말 필드와 본문 시스템 프롬프트 작성법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "delegation-prompt-context",
+   "label": "위임 프롬프트에 맥락 담기",
+   "parent": "subagents",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서브에이전트는 대화를 모르므로 배경을 적는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "subagent-tool-allowlist",
+   "label": "서브에이전트 도구 제한",
+   "parent": "subagents",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "tools·disallowedTools로 권한 줄이기.",
    "related": [],
    "added": "2026-11-25"
   }
