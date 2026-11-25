@@ -3260,11 +3260,14 @@
    "label": "타임 트래블",
    "parent": "langgraph-checkpoint",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "과거 체크포인트로 돌아가 다른 경로 시도.",
+   "summary": "과거 체크포인트로 리플레이하거나 상태를 고쳐 포크. 실행: a 직후에서 value=5로 포크하면 b만 재실행되어 50, 원래 이력 보존.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "state-vs-memory"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "checkpointer-backends",
@@ -82959,6 +82962,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "집행위가 운영하는 사례 모음.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "replay-vs-fork",
+   "label": "리플레이 vs 포크",
+   "parent": "time-travel",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 지점에서 다시 실행과 값 수정 실행의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "side-effects-on-replay",
+   "label": "리플레이의 부작용 주의",
+   "parent": "time-travel",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이메일·결제 노드가 다시 실행되는 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "get-state-history",
+   "label": "get_state_history",
+   "parent": "time-travel",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "체크포인트 이력 조회.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "subgraph-checkpointer",
+   "label": "서브그래프 체크포인터",
+   "parent": "time-travel",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "부모 상속 vs 자체 이력.",
    "related": [],
    "added": "2026-11-25"
   }
