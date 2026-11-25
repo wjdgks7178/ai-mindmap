@@ -860,11 +860,14 @@
    "label": "진행 로그와 기능 목록",
    "parent": "harness",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "세션 사이 기억을 파일과 git으로 넘기는 법.",
+   "summary": "세션 사이 인수인계 파일: 진행 로그와 JSON 기능 목록(passes만 수정). Anthropic·OpenAI 사례.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "feature-list-json"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "mechanical-constraints",
@@ -81610,6 +81613,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "부채를 매일 조금씩 자동 상환하는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "exec-plans",
+   "label": "실행 계획 문서",
+   "parent": "progress-files",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "진행·결정 로그가 있는 계획을 저장소에 커밋.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "progress-log-style",
+   "label": "좋은 진행 로그 쓰기",
+   "parent": "progress-files",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "날짜·시도·실패 이유·다음 할 일 형식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "repo-as-memory",
+   "label": "저장소가 곧 기억",
+   "parent": "progress-files",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대화가 아닌 파일로 지식을 남기는 원칙.",
    "related": [],
    "added": "2026-11-25"
   }
