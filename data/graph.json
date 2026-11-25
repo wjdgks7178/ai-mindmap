@@ -51001,11 +51001,14 @@
    "label": "불일치 샘플 토론",
    "parent": "low-agreement-diagnosis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "불일치 20~30개 사유를 모아 가이드에 반영.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "annotator-confusion-matrix"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "matter-mama-cycle",
@@ -78171,6 +78174,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "kappa 그래프의 흔들림을 줄이는 표본 수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "disagreement-cause-taxonomy",
+   "label": "불일치 사유 분류",
+   "parent": "disagreement-discussion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 없음·문구 모호·실수·샘플 모호.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "guideline-example-addition",
+   "label": "지침에 예시 추가",
+   "parent": "disagreement-discussion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토론 결론을 예시로 지침에 넣기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "meeting-not-blame",
+   "label": "토론의 원칙",
+   "parent": "disagreement-discussion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누가 맞나가 아니라 기준을 어떻게 하나.",
    "related": [],
    "added": "2026-11-25"
   }
