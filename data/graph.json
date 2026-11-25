@@ -51250,11 +51250,14 @@
    "label": "골든 유출과 교체",
    "parent": "golden-items",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "골든이 암기되지 않게 풀을 주기적으로 교체.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "golden-item-selection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "worker-feedback-loop",
@@ -78492,6 +78495,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "발동 시 이중 라벨을 일시적으로 늘리기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "golden-pool-size",
+   "label": "골든 풀 크기",
+   "parent": "golden-leak-rotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 노출을 줄이는 풀 크기 결정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "per-worker-random-subset",
+   "label": "작업자별 무작위 부분집합",
+   "parent": "golden-leak-rotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작업자마다 다른 골든을 보여 주기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rising-accuracy-leak-signal",
+   "label": "정답률 상승 유출 신호",
+   "parent": "golden-leak-rotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시간이 갈수록 오르는 문항은 유출 의심.",
    "related": [],
    "added": "2026-11-25"
   }
