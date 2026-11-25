@@ -50704,11 +50704,14 @@
    "label": "앙상블의 노이즈 내성",
    "parent": "model-capacity-vs-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "평균이 개별 모델의 암기를 상쇄하는 효과.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "model-diversity-cross-check"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "noise-robust-loss",
@@ -76823,6 +76826,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "조기 종료 이론이 의존하는 데이터 가정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "epoch-wise-ensemble",
+   "label": "에폭 앙상블",
+   "parent": "ensemble-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 중간 에폭 모델을 묶어 과적합을 피하는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "prediction-disagreement-signal",
+   "label": "예측 불일치 신호",
+   "parent": "ensemble-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 간 불일치를 노이즈·어려움 신호로 쓰기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ensemble-power-distillation",
+   "label": "앙상블 파워 증류",
+   "parent": "ensemble-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧게 학습한 앙상블 합의로 라벨을 정제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "late-learning-of-noisy-samples",
+   "label": "노이즈 샘플의 늦은 학습",
+   "parent": "ensemble-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈 샘플이 학습 후반에 학습되는 관찰.",
    "related": [],
    "added": "2026-11-25"
   }
