@@ -51519,11 +51519,14 @@
    "label": "규칙서를 git으로 관리",
    "parent": "guideline-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "변경 이력과 diff를 그대로 얻는 방식.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "change-summary-template"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "version-filtered-training",
@@ -79184,6 +79187,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨러가 읽기 쉬운 변경 이력.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "annotated-tag-guideline",
+   "label": "주석 태그로 버전 표시",
+   "parent": "guideline-in-git",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙서 배포 시점마다 주석 태그.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "commit-message-with-case-id",
+   "label": "커밋 메시지에 사례 ID",
+   "parent": "guideline-in-git",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경 이유와 근거 사례를 커밋에 남기기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "git-diff-limits",
+   "label": "git diff의 한계",
+   "parent": "guideline-in-git",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "줄 단위 차이만 보여 의미 변경은 사람이 판단.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "no-pii-in-git",
+   "label": "git에 개인정보 금지",
+   "parent": "guideline-in-git",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사례 원문의 개인정보를 저장소에 넣지 않기.",
    "related": [],
    "added": "2026-11-25"
   }
