@@ -1703,6 +1703,8 @@
    "summary": "학습은 파라미터를 조정, 추론은 고정 모델로 예측. 측정: 랜덤 포레스트 학습 23초 vs 1,000건 추론 0.02초, 대화는 가중치를 바꾸지 않음.",
    "aka": [],
    "related": [
+    "overfitting",
+    "pretraining",
     "token-pricing"
    ],
    "added": "2026-10-29",
@@ -82153,17 +82155,6 @@
    "status": "planned",
    "priority": 4,
    "summary": "이미지 한 장이 차지하는 토큰 수.",
-   "related": [],
-   "added": "2026-11-25"
-  },
-  {
-   "id": "overfitting-basics",
-   "label": "과적합",
-   "parent": "training-inference",
-   "domain": "ml-fundamentals",
-   "status": "planned",
-   "priority": 4,
-   "summary": "학습 데이터에만 잘 맞고 새 데이터에는 약한 현상.",
    "related": [],
    "added": "2026-11-25"
   },
