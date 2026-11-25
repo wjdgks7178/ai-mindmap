@@ -52026,11 +52026,12 @@
    "label": "PR 곡선 vs ROC(불균형)",
    "parent": "test-prior-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "불균형에서 PR이 정보량이 큰 이유.",
+   "summary": "같은 모델에서 ROC-AUC는 약 0.855로 일정, AP는 양성 비율 50%→1%에서 0.854→0.114.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "base-rate-fallacy",
@@ -80491,6 +80492,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "운영에서 일부 라벨을 확보해 정밀도 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ap-baseline-reading",
+   "label": "AP 기준선 읽기",
+   "parent": "pr-curve-vs-roc-imbalance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AP를 양성 비율(무작위 기준선)과 비교해 읽기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "precision-at-k",
+   "label": "상위 K 정밀도",
+   "parent": "pr-curve-vs-roc-imbalance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경보 K건 중 진짜 양성 비율.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "roc-vs-pr-debate",
+   "label": "ROC vs PR 논쟁",
+   "parent": "pr-curve-vs-roc-imbalance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어느 지표가 언제 적절한지에 대한 논의.",
    "related": [],
    "added": "2026-11-25"
   }
