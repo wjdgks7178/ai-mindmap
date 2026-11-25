@@ -811,11 +811,14 @@
    "label": "Git과 GitHub",
    "parent": "web-app-basics",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "코드 변경 이력을 저장·되돌리고 공유하는 도구. AI 코딩의 안전망.",
+   "summary": "Git은 변경 이력·되돌리기 도구, GitHub는 이를 호스팅·협업하는 서비스. 실습: 브랜치·병합·revert로 이력을 보존한 채 되돌림.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "env-secrets"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "env-secrets",
@@ -81729,6 +81732,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "설정 파일 형식 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "git-branching",
+   "label": "브랜치와 병합",
+   "parent": "git-github",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기능별로 가지를 만들어 실험하고 합치기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "git-revert-vs-reset",
+   "label": "revert vs reset",
+   "parent": "git-github",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "안전한 되돌림과 위험한 되돌림의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pull-request-basics",
+   "label": "풀 리퀘스트 기초",
+   "parent": "git-github",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "변경을 제안하고 리뷰·병합하는 흐름.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "commit-before-ai",
+   "label": "AI 작업 전 커밋 습관",
+   "parent": "git-github",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "되돌릴 지점을 만들어 두는 안전 습관.",
    "related": [],
    "added": "2026-11-25"
   }
