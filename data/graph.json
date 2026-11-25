@@ -51048,11 +51048,14 @@
    "label": "골드 스탠더드 만들기",
    "parent": "adjudicator-role",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "여러 주석을 병합해 최종 정답 세트를 만드는 절차.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "adjudication-interface"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "adjudication-interface",
@@ -77720,6 +77723,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "누가 단 라벨인지 가리고 판정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gold-version-freeze",
+   "label": "골드 스탠더드 버전 고정",
+   "parent": "gold-standard-creation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버전을 붙여 고정하고 변경 이력 관리.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gold-as-check-questions",
+   "label": "골드를 점검 문항으로",
+   "parent": "gold-standard-creation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드 일부로 작업자 품질을 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gold-audit-cycle",
+   "label": "골드 정기 감사",
+   "parent": "gold-standard-creation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드에도 오류가 남으므로 주기적으로 점검.",
    "related": [],
    "added": "2026-11-25"
   }
