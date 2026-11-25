@@ -914,11 +914,15 @@
    "label": "명세-코드 수렴 검사",
    "parent": "sdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "구현이 명세와 일치할 때까지 반복해 확인하는 단계.",
+   "summary": "구현이 명세와 일치할 때까지 대조·수정을 반복. Spec Kit는 converge 명령이 Converged를 보고할 때까지 implement와 반복.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "test-tampering",
+    "tasks-breakdown"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "tasks-breakdown",
@@ -81016,6 +81020,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "AI가 한 번에 끝낼 크기를 정하는 감각.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "requirements-traceability",
+   "label": "요구사항 추적성",
+   "parent": "spec-convergence",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "명세 항목과 코드·테스트를 연결해 누락 찾기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "spec-drift",
+   "label": "명세 표류",
+   "parent": "spec-convergence",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시간이 지나며 명세와 코드가 어긋나는 현상.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "iteration-cap",
+   "label": "반복 횟수 상한",
+   "parent": "spec-convergence",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "수렴 반복이 끝없이 돌지 않게 막기.",
    "related": [],
    "added": "2026-11-25"
   }
