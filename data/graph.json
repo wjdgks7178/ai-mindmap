@@ -1051,11 +1051,15 @@
    "label": "검증 병목",
    "parent": "ai-factory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "코드 생성은 빨라졌는데 리뷰·검증이 느려지는 문제.",
+   "summary": "AI로 생성이 빨라지면 병목은 검증으로 이동. METR RCT: 숙련 개발자 AI 사용 시 19% 느림(본인은 20% 빨라졌다고 믿음). Faros·DORA 보고는 2차 정리.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "test-tampering",
+    "mechanical-constraints"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "dark-factory",
@@ -81379,6 +81383,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "새 에이전트로 갈아 끼우기와 제자리 요약의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "plan-review-first",
+   "label": "계획 먼저 리뷰",
+   "parent": "verification-bottleneck",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구현 전에 계획을 검토해 큰 PR 리뷰를 줄이기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pr-size-limit",
+   "label": "PR 크기 상한",
+   "parent": "verification-bottleneck",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI가 만든 변경을 작게 유지하는 규칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "productivity-paradox",
+   "label": "AI 생산성 역설",
+   "parent": "verification-bottleneck",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개인 생산은 늘어도 조직 성과가 안 오르는 현상.",
    "related": [],
    "added": "2026-11-25"
   }
