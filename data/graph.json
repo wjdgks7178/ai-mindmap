@@ -51561,11 +51561,14 @@
    "label": "규칙 변경 영향 분석",
    "parent": "relabel-after-rule-change",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "어떤 클래스·경계가 영향을 받는지 정의.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "relabel-sample-test"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "relabel-sample-test",
@@ -79303,6 +79306,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "검색식이 놓친 영향 라벨을 범위 밖 표본으로 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "change-matrix",
+   "label": "변경 행렬",
+   "parent": "impact-analysis-for-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 라벨과 새 라벨의 교차표.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "impact-count-estimate",
+   "label": "영향 건수 추정",
+   "parent": "impact-analysis-for-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스별 변경률 × 건수로 추정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unaffected-class-exclusion",
+   "label": "영향 없는 클래스 제외",
+   "parent": "impact-analysis-for-rule-change",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변경 없는 클래스를 재라벨에서 제외.",
    "related": [],
    "added": "2026-11-25"
   }
