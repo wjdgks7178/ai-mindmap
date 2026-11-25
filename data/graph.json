@@ -816,11 +816,15 @@
    "label": "환경 변수와 API 키",
    "parent": "web-app-basics",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "비밀번호·키를 코드 밖에 두는 법. 유출 사고를 막는 기본기.",
+   "summary": "키는 코드가 아니라 환경 변수로. 바이브코딩에서 AI가 키를 하드코딩·프론트에 넣는 실수 점검, 유출 시 즉시 키 교체.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "secrets-env",
+    "secret-leak-response"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "harness-components",
@@ -81234,6 +81238,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "칸별 사용량 기록으로 낭비 찾기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "frontend-secret-exposure",
+   "label": "프론트엔드 비밀 노출",
+   "parent": "env-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "브라우저 코드에 들어간 키가 보이는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "env-example-file",
+   "label": ".env.example 만들기",
+   "parent": "env-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "값 없는 예시 파일로 설정 항목 공유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "prompt-no-secrets",
+   "label": "AI에게 키 붙여 넣지 않기",
+   "parent": "env-secrets",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "채팅·로그에 키가 남는 위험.",
    "related": [],
    "added": "2026-11-25"
   }
