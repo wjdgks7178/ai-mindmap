@@ -51348,11 +51348,14 @@
    "label": "자기 일관성 점검",
    "parent": "labeler-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 항목을 다시 줘서 과거 라벨과 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "anchoring-in-labeling"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "annotation-metadata-tracking",
@@ -78636,6 +78639,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "경고만으로는 앵커링이 사라지지 않음.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "intra-annotator-agreement",
+   "label": "라벨러 내 일치도",
+   "parent": "self-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사람의 두 번 라벨 간 일치.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "relabel-interval",
+   "label": "재라벨 간격",
+   "parent": "self-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이전 판정을 잊도록 시간 간격 두기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "independence-for-reproducibility",
+   "label": "재현성 측정의 독립성",
+   "parent": "self-consistency-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코더가 서로 논의하지 않아야 한다는 요건.",
    "related": [],
    "added": "2026-11-25"
   }
