@@ -51505,11 +51505,14 @@
    "label": "의미 변경 vs 표현 보강 버전",
    "parent": "guideline-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "마이너 이상 vs 패치로 재라벨링 필요 여부 표시.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "rule-change-propagation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "guideline-in-git",
@@ -79112,6 +79115,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "점검 결과 건수로 운영 부담 모니터링.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "guideline-semver-adaptation",
+   "label": "규칙서에 SemVer 적용",
+   "parent": "semantic-vs-patch-version",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소프트웨어 버전 규칙을 규칙서로 옮기는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ambiguous-change-minor-up",
+   "label": "애매하면 MINOR로",
+   "parent": "semantic-vs-patch-version",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답이 바뀔 가능성이 있으면 MINOR 이상.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pilot-0x-versions",
+   "label": "시범 단계 0.x 버전",
+   "parent": "semantic-vs-patch-version",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시범 중에는 0.x, 종료 후 1.0.0 고정.",
    "related": [],
    "added": "2026-11-25"
   }
