@@ -871,11 +871,14 @@
    "label": "기계적 제약 (린터·구조 테스트)",
    "parent": "harness",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "규칙을 말이 아니라 코드로 강제하는 하네스 기법.",
+   "summary": "규칙을 글이 아닌 린터·구조 테스트로 강제하고 오류 메시지에 수정 방법을 넣음(OpenAI 2026-02). 레이어 의존 방향 검사 예 직접 실행.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "test-tampering"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "harness-decay",
@@ -81307,6 +81310,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "사람처럼 조작해 완료 판정 신뢰도 높이기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "layered-architecture-invariant",
+   "label": "레이어 의존 불변식",
+   "parent": "mechanical-constraints",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Types→…→UI 앞방향 의존만 허용하는 규칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "lint-remediation-message",
+   "label": "수정 지침이 담긴 린트 메시지",
+   "parent": "mechanical-constraints",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오류 메시지에 해결법을 적어 에이전트에 주입.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "taste-invariants",
+   "label": "취향 불변식",
+   "parent": "mechanical-constraints",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로깅·이름·파일 크기 같은 스타일 규칙의 자동화.",
    "related": [],
    "added": "2026-11-25"
   }
