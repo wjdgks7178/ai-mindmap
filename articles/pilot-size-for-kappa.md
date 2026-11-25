@@ -47,4 +47,3 @@ flowchart TD
 
 ## 더 읽을거리
 - [Interrater reliability: the kappa statistic (McHugh, 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3900052/) — kappa 해석과 한계
-- [scikit-learn cohen_kappa_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html) — 계산 함수
