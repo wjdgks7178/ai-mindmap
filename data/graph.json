@@ -3411,11 +3411,16 @@
    "label": "정적 사이트 vs 서버 앱",
    "parent": "deploy-hosting",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "호스팅 방식이 갈리는 기준.",
+   "summary": "정적=파일 그대로, 동적=요청마다 DB로 생성. 로그인·저장·결제가 필요하면 서버 앱. 이 지도 사이트는 GitHub Pages의 정적 구조.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "domain-dns",
+    "web-frameworks",
+    "env-secrets"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "access-control",
@@ -82650,6 +82655,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "1차 출처 우선 등 충돌한 주장 정리.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "serverless-functions",
+   "label": "서버리스 함수",
+   "parent": "static-vs-server",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서버 관리 없이 함수 단위로 동적 기능 실행.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "github-pages-hosting",
+   "label": "GitHub Pages로 정적 배포",
+   "parent": "static-vs-server",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "저장소를 그대로 웹사이트로 공개.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "baas-backend-as-a-service",
+   "label": "BaaS(백엔드 서비스)",
+   "parent": "static-vs-server",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로그인·DB를 서비스로 빌려 쓰기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ssg-vs-ssr",
+   "label": "정적 생성 vs 서버 렌더링",
+   "parent": "static-vs-server",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프레임워크에서 둘을 섞는 방식.",
    "related": [],
    "added": "2026-11-25"
   }
