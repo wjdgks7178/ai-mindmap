@@ -51488,11 +51488,14 @@
    "label": "로그의 개인정보 마스킹",
    "parent": "edge-case-log-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "사례 원문에서 개인정보를 가리는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "case-to-fewshot"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "semantic-vs-patch-version",
@@ -79029,6 +79032,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "경계 쌍마다 대비되는 예시 한 쌍.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "regex-vs-ner-pii",
+   "label": "정규식 vs NER 탐지",
+   "parent": "pii-masking-in-logs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형식 있는 정보와 없는 정보의 탐지 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "consistent-pseudonym",
+   "label": "일관된 가명 대체",
+   "parent": "pii-masking-in-logs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사람은 같은 가명으로.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "raw-log-separation",
+   "label": "원문 보관소와 로그 분리",
+   "parent": "pii-masking-in-logs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원문은 분리해 권한 제한.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "masking-keeps-clues",
+   "label": "필요한 단서 보존",
+   "parent": "pii-masking-in-logs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마스킹이 판정 단서를 지우지 않게.",
    "related": [],
    "added": "2026-11-25"
   }
