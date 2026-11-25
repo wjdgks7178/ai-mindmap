@@ -51813,11 +51813,14 @@
    "label": "그룹 크기 편차",
    "parent": "stratify-vs-group",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "그룹마다 샘플 수가 달라 층화가 깨지는 원인.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "post-split-distribution-check"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "within-group-label-mixing",
@@ -79937,6 +79940,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드를 바꿔 비율 차이의 범위 보기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "leakage-by-group",
+   "label": "그룹 누수",
+   "parent": "group-size-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 그룹이 학습·테스트에 갈릴 때의 누수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "big-group-manual-assignment",
+   "label": "큰 그룹 수동 배정",
+   "parent": "group-size-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 그룹을 학습 전용·테스트 전용으로 배정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "per-fold-report",
+   "label": "폴드별 결과 보고",
+   "parent": "group-size-skew",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드 편차가 크면 평균만 믿지 않기.",
    "related": [],
    "added": "2026-11-25"
   }
