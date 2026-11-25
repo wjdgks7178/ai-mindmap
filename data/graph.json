@@ -51656,11 +51656,14 @@
    "label": "위험-커버리지 트레이드오프",
    "parent": "llm-unknown-option",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "거절을 늘리면 정확도↑·커버리지↓.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "llm-self-consistency"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "llm-confidence-calibration",
@@ -79505,6 +79508,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "호출 수와 정확도의 균형.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "target-risk-threshold",
+   "label": "목표 위험으로 기준 정하기",
+   "parent": "risk-coverage-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드 곡선에서 목표 오류율을 만족하는 기준 선택.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "human-cost-vs-auto-error-cost",
+   "label": "사람 비용 vs 자동 오류 비용",
+   "parent": "risk-coverage-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거절 기준을 정하는 비용 비교.",
    "related": [],
    "added": "2026-11-25"
   }
