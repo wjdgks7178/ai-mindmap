@@ -52002,11 +52002,12 @@
    "label": "GridSearchCV와 clone",
    "parent": "clone-random-state-sharing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "후보마다 추정기를 clone할 때의 난수 처리.",
+   "summary": "GridSearchCV는 후보×폴드마다 clone. 실험: 정수·RandomState 인스턴스 모두 재실행 시 점수 동일.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "prevalence-adjusted-precision",
@@ -80423,6 +80424,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "numpy·random·torch 시드를 각각 설정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "refit-best-estimator",
+   "label": "refit과 best_estimator_",
+   "parent": "gridsearch-clone-behavior",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최적 설정으로 전체 데이터 재학습.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cv-results-inspection",
+   "label": "cv_results_ 읽기",
+   "parent": "gridsearch-clone-behavior",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보별 평균·표준편차·순위 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pipeline-nested-seeds",
+   "label": "파이프라인 안의 시드",
+   "parent": "gridsearch-clone-behavior",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단계마다 시드를 고정하는 방법.",
    "related": [],
    "added": "2026-11-25"
   }
