@@ -51118,11 +51118,14 @@
    "label": "다수결 동률 처리",
    "parent": "majority-voting-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "동률을 전문가·모델·신뢰도로 정하는 규칙.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "condorcet-jury-theorem"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "redundancy-per-item",
@@ -77875,6 +77878,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본 결과와 신뢰구간을 함께 보고.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "odd-panel-design",
+   "label": "홀수 패널 설계",
+   "parent": "tie-breaking-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처음부터 동률이 없게 인원을 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "tie-random-flag",
+   "label": "무작위 결정 표시",
+   "parent": "tie-breaking-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동률을 무작위로 정했다는 표시와 평가셋 제외.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "bias-correcting-majority",
+   "label": "편향 보정 다수결",
+   "parent": "tie-breaking-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자 편향을 보정해 가중하는 다수결.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "tie-breaker-round-llm",
+   "label": "LLM 앙상블 tie breaker 라운드",
+   "parent": "tie-breaking-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동률이 풀릴 때까지 추가 질의.",
    "related": [],
    "added": "2026-11-25"
   }
