@@ -50623,11 +50623,14 @@
    "label": "주석자 공통 편향",
    "parent": "cleanlab-multiannotator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모두가 같은 방향으로 틀릴 때 합의도 틀리는 문제.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "inter-annotator-agreement"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "test-set-label-error-rate",
@@ -76989,6 +76992,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델이 모르는 클래스의 확률이 0이 되는 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "annotator-contribution-cap",
+   "label": "주석자 기여 상한",
+   "parent": "shared-annotator-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 명이 데이터의 큰 몫을 만들지 않게 제한.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "disjoint-annotator-test-set",
+   "label": "시험 세트 주석자 분리",
+   "parent": "shared-annotator-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습과 시험의 주석자를 겹치지 않게.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "annotator-id-classifier-probe",
+   "label": "주석자 ID 분류기 탐침",
+   "parent": "shared-annotator-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자를 맞추는 모델로 편향 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pre-label-anchoring-bias",
+   "label": "자동 미리 라벨의 닻 효과",
+   "parent": "shared-annotator-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 제안을 따라가는 편향.",
    "related": [],
    "added": "2026-11-25"
   }
