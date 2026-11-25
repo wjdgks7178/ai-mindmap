@@ -1029,11 +1029,15 @@
    "label": "팩토리의 에이전트 역할",
    "parent": "ai-factory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "Triage·구현·검증·릴리스·문서·감시로 나누는 이유.",
+   "summary": "Mastra: Triage·Code Gen·Validation·Release·Documentation·Monitoring+Orchestrator, 한 에이전트 한 일로 평가 가능. 수치는 벤더 주장.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "human-gates",
+    "subagents"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "human-gates",
@@ -81452,6 +81456,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "에이전트가 사람을 부를 조건 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "typed-handoff",
+   "label": "타입 있는 인계",
+   "parent": "factory-roles",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트 사이 데이터를 스키마로 검증해 경계에서 실패.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "monitoring-loop",
+   "label": "모니터링 루프",
+   "parent": "factory-roles",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "운영 이상이 자동으로 새 작업이 되는 순환.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "single-vs-multi-agent-factory",
+   "label": "범용 에이전트 vs 역할 분리",
+   "parent": "factory-roles",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단일 에이전트와 역할 분리의 장단점.",
    "related": [],
    "added": "2026-11-25"
   }
