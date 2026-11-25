@@ -772,11 +772,14 @@
    "label": "HTTP 요청과 상태 코드",
    "parent": "web-app-basics",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "GET·POST와 200·404 같은 코드로 읽는 브라우저-서버 대화.",
+   "summary": "요청(메서드·헤더·본문)과 응답 상태 코드 읽기. 로컬 서버 실습: 200·301·404·401·500·201·400. 401은 인증 안 됨, 403은 권한 없음.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "env-secrets"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "json-format",
@@ -81646,6 +81649,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "대화가 아닌 파일로 지식을 남기는 원칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "http-methods",
+   "label": "HTTP 메서드(GET·POST…)",
+   "parent": "http-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "읽기·생성·수정·삭제 메서드의 의미.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rate-limit-429",
+   "label": "속도 제한(429)과 재시도",
+   "parent": "http-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한도 초과 시 기다렸다 다시 요청하는 법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "curl-basics",
+   "label": "curl로 API 호출해 보기",
+   "parent": "http-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "터미널에서 요청과 응답 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cors-basics",
+   "label": "CORS 오류 이해",
+   "parent": "http-basics",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "브라우저에서 다른 도메인 호출이 막히는 이유.",
    "related": [],
    "added": "2026-11-25"
   }
