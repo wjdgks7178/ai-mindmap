@@ -544,11 +544,14 @@
    "label": "LangChain과 LangGraph",
    "parent": "langgraph",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "두 라이브러리의 역할 차이.",
+   "summary": "LangChain은 에이전트 프레임워크, LangGraph는 그 밑의 저수준 런타임(상태·내구성·사람 개입), Deep Agents는 배터리 포함 하네스.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "langgraph-state"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "context-engineering",
@@ -82019,6 +82022,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "과거 상태로 돌아가 다시 실행.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "deep-agents",
+   "label": "Deep Agents",
+   "parent": "langchain-vs-langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "계획·파일시스템·서브에이전트를 더한 LangGraph 기반 하네스.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "durable-execution",
+   "label": "내구성 있는 실행",
+   "parent": "langchain-vs-langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중간에 끊겨도 이어 가는 실행.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "framework-vs-runtime",
+   "label": "프레임워크 vs 런타임",
+   "parent": "langchain-vs-langgraph",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추상화 계층과 실행 기반의 구분.",
    "related": [],
    "added": "2026-11-25"
   }
