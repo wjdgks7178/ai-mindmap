@@ -1535,11 +1535,15 @@
    "label": "MessagesState와 add_messages",
    "parent": "langgraph-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "대화 기록용 프리빌트 상태. 메시지 ID로 교체·추가.",
+   "summary": "messages 키 하나에 add_messages가 붙은 기본 상태. 실행: 새 ID는 추가, 같은 ID는 갱신, 튜플 입력도 메시지로 변환.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "langgraph-reducer",
+    "token-budget"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "langgraph-multiple-schemas",
@@ -81860,6 +81864,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "노드가 바꾼 키만 반환하는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "message-ids-update",
+   "label": "메시지 ID로 갱신·삭제",
+   "parent": "messages-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 ID로 메시지를 고치거나 지우는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "messages-trimming",
+   "label": "메시지 자르기·요약",
+   "parent": "messages-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쌓이는 대화를 줄이는 전략.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "extend-messages-state",
+   "label": "MessagesState 확장",
+   "parent": "messages-state",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "필드를 더한 상태 클래스 만들기.",
    "related": [],
    "added": "2026-11-25"
   }
