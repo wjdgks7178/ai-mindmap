@@ -51160,11 +51160,14 @@
    "label": "품질 표본 추출 계획",
    "parent": "sampled-double-annotation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "무작위·층화 표본으로 이중 라벨 대상 정하기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "sampled-double-annotation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "weekly-agreement-dashboard",
@@ -78077,6 +78080,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "공통 편향이 있으면 추정이 낙관적이라는 해석.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "neyman-allocation",
+   "label": "Neyman 최적 배분",
+   "parent": "quality-sampling-plan",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층별 변동에 맞춰 표본을 배분.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "weighted-stratum-estimate",
+   "label": "층별 가중 추정",
+   "parent": "quality-sampling-plan",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화 표본에서 전체 오류율 계산.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "sample-list-record",
+   "label": "표본 목록 기록",
+   "parent": "quality-sampling-plan",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드와 표본 목록을 남겨 재현.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "estimate-vs-find-goal",
+   "label": "추정 목적 vs 발견 목적",
+   "parent": "quality-sampling-plan",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목적에 따라 표본 설계가 달라짐.",
    "related": [],
    "added": "2026-11-25"
   }
