@@ -51012,11 +51012,14 @@
    "label": "MATTER·MAMA 순환",
    "parent": "guideline-draft-iteration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주석 프로젝트 전체 순환과 초기 모델 다듬기 하위 순환.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "relabel-retrain-rounds"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "annotator-training-rounds",
@@ -77626,6 +77629,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소수 작업자로 화면 개선 효과 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "annotation-scheme-definition",
+   "label": "주석 체계 정의",
+   "parent": "matter-mama-cycle",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "현상을 범주로 나누는 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "leverage-stage",
+   "label": "Leverage 단계",
+   "parent": "matter-mama-cycle",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Train·Test를 목적에 맞게 일반화한 활용 단계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "idea-procure-distribute",
+   "label": "Idea·Procure·Distribute 단계",
+   "parent": "matter-mama-cycle",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MATTER에 더한 세 단계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "guideline-rewrite-minicycle",
+   "label": "지침 재작성 미니 순환",
+   "parent": "matter-mama-cycle",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델은 괜찮고 지침이 모자랄 때의 작은 순환.",
    "related": [],
    "added": "2026-11-25"
   }
