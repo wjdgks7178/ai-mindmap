@@ -51941,11 +51941,12 @@
    "label": "시드별 짝지은 비교",
    "parent": "seed-sweep-reporting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 시드 세트에서 두 모델을 비교.",
+   "summary": "같은 시드·분할로 두 모델 점수 차이를 분석. 실험: 우위 +0.01을 짝지은 검정 98.6% 검출, 독립 검정 2.4%.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "reporting-uncertainty",
@@ -80230,6 +80231,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "보고서에서 둘을 구분해 표기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "wilcoxon-signed-rank",
+   "label": "윌콕슨 부호순위 검정",
+   "parent": "paired-seed-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규성 가정 없이 짝지은 차이를 검정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "per-example-paired-diff",
+   "label": "예시별 짝지은 차이",
+   "parent": "paired-seed-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문·샘플 단위로 두 모델 차이를 비교.",
    "related": [],
    "added": "2026-11-25"
   }
