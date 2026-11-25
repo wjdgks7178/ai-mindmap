@@ -50476,11 +50476,14 @@
    "label": "kNN 이상치 점수",
    "parent": "cleanlab-outlier-detection",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "K개 이웃까지 평균 거리로 이상치 점수 매기기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "out-of-distribution-detection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "out-of-distribution-detection",
@@ -76111,6 +76114,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "의심 샘플을 가중치 0으로 두고 학습.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "choosing-k-for-knn-outlier",
+   "label": "이상치 점수의 K 고르기",
+   "parent": "knn-outlier-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K가 작을 때와 클 때 이상치 탐지가 달라지는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "outlier-score-temperature-t",
+   "label": "점수 변환 t",
+   "parent": "knn-outlier-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거리를 유사도로 바꿀 때 t로 분포를 펴는 법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pred-probs-outlier-score",
+   "label": "예측 확률 기반 이상치 점수",
+   "parent": "knn-outlier-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엔트로피·least confidence로 이상치 점수 매기기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "outlier-cluster-masking",
+   "label": "이상치 군집 가림 현상",
+   "parent": "knn-outlier-score",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이상치끼리 붙어 있으면 이웃 거리가 짧아져 가려지는 문제.",
    "related": [],
    "added": "2026-11-25"
   }
