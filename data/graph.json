@@ -2858,13 +2858,15 @@
    "label": "분류기 설계",
    "parent": "routing-pattern",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "라우터 분류 정확도를 높이는 방법.",
+   "summary": "라우터의 분류 부품 설계. 실험: 문의 10건 정확도 0.90, 확신도 0.5 이상만 자동 처리하면 6건 정확도 1.00. 기타 경로·평가 필수.",
    "added": "2026-10-31",
    "related": [
-    "eval-set"
-   ]
+    "prompt-chain-example",
+    "json-format"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "inference-memory-bound",
@@ -82532,6 +82534,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "호출 수 증가의 영향 계산.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "confusion-matrix-routing",
+   "label": "혼동 행렬로 라우터 점검",
+   "parent": "classifier-router",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어떤 카테고리를 어디로 오분류하는지 보기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "other-category-design",
+   "label": "기타 카테고리 설계",
+   "parent": "classifier-router",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "범위 밖 요청을 억지로 분류하지 않기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "router-cost-model-selection",
+   "label": "난이도별 모델 라우팅",
+   "parent": "classifier-router",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쉬운 질문은 작은 모델로 보내 비용 절감.",
    "related": [],
    "added": "2026-11-25"
   }
