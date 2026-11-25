@@ -4362,11 +4362,16 @@
    "label": "AI Act 위험 등급",
    "parent": "eu-ai-act",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "금지·고위험·투명성·최소 위험 4단계 분류.",
+   "summary": "EU AI Act의 4단계: 금지·고위험(채용·신용·채점 등)·제한적(챗봇·딥페이크 투명성)·최소. 용도가 기준, 고위험은 2027-12-02부터(Omnibus로 연기).",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "eu-ai-act-high-risk",
+    "ai-act-enforcement-timeline",
+    "eu-ai-act-gpai"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "gpai-obligations",
@@ -82862,6 +82867,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "결정적 규칙과 LLM 판단을 섞는 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ai-inventory",
+   "label": "사내 AI 사용 사례 인벤토리",
+   "parent": "ai-act-risk-tiers",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI 도구를 용도·등급별로 목록화.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "emotion-recognition-ban",
+   "label": "직장·교육 감정 인식 금지",
+   "parent": "ai-act-risk-tiers",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "금지 관행 중 교육 현장과 관련 깊은 항목.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "transparency-labelling",
+   "label": "투명성·딥페이크 표시 의무",
+   "parent": "ai-act-risk-tiers",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "챗봇 고지와 AI 생성물 표시.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "use-case-based-classification",
+   "label": "용도 기반 분류",
+   "parent": "ai-act-risk-tiers",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 기술도 용도에 따라 등급이 달라짐.",
    "related": [],
    "added": "2026-11-25"
   }
