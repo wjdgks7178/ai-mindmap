@@ -51701,11 +51701,14 @@
    "label": "희귀 클래스 병합",
    "parent": "stratify-min-class-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의미를 유지하는 범위에서 희귀 클래스를 합치는 기준.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "annotator-confusion-matrix"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "train-only-rare-class",
@@ -79649,6 +79652,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "비율이 낮아지면 과신 여부 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "merge-by-confusion-pair",
+   "label": "혼동 쌍 기준 병합",
+   "parent": "merge-rare-classes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "혼동 행렬에서 큰 쌍을 병합 후보로.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "no-merge-high-risk-rare",
+   "label": "위험한 희귀 클래스는 합치지 않기",
+   "parent": "merge-rare-classes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사기·안전처럼 중요한 희귀 클래스 유지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "hierarchical-labels",
+   "label": "계층 라벨",
+   "parent": "merge-rare-classes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상위·하위 라벨을 함께 두어 나중에 다시 나눔.",
    "related": [],
    "added": "2026-11-25"
   }
