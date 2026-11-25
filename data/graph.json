@@ -51283,11 +51283,14 @@
    "label": "항목 무작위 배정",
    "parent": "hybrid-annotation-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "한 사람이 쉬운 문서만 갖지 않게 배정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "assignment-fairness"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "annotation-cost-model",
@@ -78420,6 +78423,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨 단가 외에 드는 고정비.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "seeded-shuffle-assignment",
+   "label": "시드 고정 섞기 배정",
+   "parent": "random-assignment-of-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현 가능한 무작위 배정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "document-level-assignment",
+   "label": "문서 단위 배정",
+   "parent": "random-assignment-of-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맥락이 중요할 때 문서 단위로 무작위.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "stratified-assignment",
+   "label": "층화 배정",
+   "parent": "random-assignment-of-items",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스·난이도별 균형 배정.",
    "related": [],
    "added": "2026-11-25"
   }
