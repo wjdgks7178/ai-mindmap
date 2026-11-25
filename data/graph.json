@@ -50553,11 +50553,14 @@
    "label": "삭제 대신 보류",
    "parent": "auto-delete-risk",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "의심 샘플을 지우지 않고 학습에서만 제외.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "hard-sample-removal"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "cleaning-before-after-eval",
@@ -76419,6 +76422,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "자주 나오는 샘플과 드문 샘플에서 효과가 다름.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "sample-status-column",
+   "label": "샘플 상태 열 설계",
+   "parent": "quarantine-instead-of-delete",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "active·quarantined·fixed·removed 상태 관리.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "audit-trail-for-label-changes",
+   "label": "라벨 변경 감사 기록",
+   "parent": "quarantine-instead-of-delete",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누가 언제 왜 바꿨는지 남기기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "quarantine-ratio-alarm",
+   "label": "보류 비율 경보",
+   "parent": "quarantine-instead-of-delete",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보류 비율이 너무 높을 때 전략을 점검하는 신호.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "test-set-contamination-quarantine",
+   "label": "보류 샘플과 테스트셋 오염",
+   "parent": "quarantine-instead-of-delete",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보류 샘플을 평가셋에 섞지 않기.",
    "related": [],
    "added": "2026-11-25"
   }
