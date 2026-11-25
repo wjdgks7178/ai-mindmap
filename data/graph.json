@@ -1742,12 +1742,16 @@
    "label": "언어별 토큰 비용",
    "parent": "token-tokenization",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "같은 내용도 언어에 따라 토큰 수가 달라지는 이유.",
+   "summary": "같은 뜻이어도 한국어는 토큰이 더 많음. 측정: cl100k 2.35배, o200k 1.56배(영어 대비).",
    "aka": [],
-   "related": [],
-   "added": "2026-10-29"
+   "related": [
+    "token-pricing",
+    "context-window"
+   ],
+   "added": "2026-10-29",
+   "done": "2026-11-25"
   },
   {
    "id": "self-attention-qkv",
@@ -80678,6 +80682,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "매주 확인할 때 늘어나는 헛경보 보정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "count-tokens-before-call",
+   "label": "호출 전 토큰 세기",
+   "parent": "token-cost-language",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요약·번역 전에 토큰 수로 비용·한도 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "prompt-compression-ko",
+   "label": "한국어 프롬프트 줄이기",
+   "parent": "token-cost-language",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "불필요한 서식·중복을 줄여 토큰 절약.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "vocab-size-effect",
+   "label": "어휘 크기와 언어 효율",
+   "parent": "token-cost-language",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어휘가 커지면 비영어 효율이 좋아지는 이유.",
    "related": [],
    "added": "2026-11-25"
   }
