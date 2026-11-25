@@ -51362,11 +51362,14 @@
    "label": "라벨 메타데이터 기록",
    "parent": "labeler-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "라벨러 ID·날짜·가이드 버전을 함께 저장.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "control-chart-for-labeling"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "control-chart-for-labeling",
@@ -78719,6 +78722,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "3σ 이전에 알리는 경고선.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "guideline-version-in-label-row",
+   "label": "라벨 행의 지침 버전",
+   "parent": "annotation-metadata-tracking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 버전별로 품질을 집계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "labeling-time-signal",
+   "label": "소요 시간 신호",
+   "parent": "annotation-metadata-tracking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소요 시간으로 스패머·피로 감지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "annotator-id-pseudonymization",
+   "label": "라벨러 ID 가명 처리",
+   "parent": "annotation-metadata-tracking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개인정보 보호와 권한 제한.",
    "related": [],
    "added": "2026-11-25"
   }
