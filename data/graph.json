@@ -51079,11 +51079,14 @@
    "label": "일치했지만 틀린 항목 표본 검수",
    "parent": "adjudicator-role",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "일치 항목 일부를 추가 점검해 공통 오류 찾기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "agreed-wrong-labels"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "adjudication-rationale-log",
@@ -77839,6 +77842,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "인원을 홀수로 두는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "sample-size-for-hidden-error",
+   "label": "숨은 오류 발견용 표본 크기",
+   "parent": "agreed-but-wrong-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공통 오류율에 따라 필요한 표본 수 계산.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "model-guided-audit-sampling",
+   "label": "모델 유도 층화 점검",
+   "parent": "agreed-but-wrong-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 다르다고 강하게 예측하는 일치 항목 우선 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "agreed-error-rate-report",
+   "label": "일치 항목 오류율 보고",
+   "parent": "agreed-but-wrong-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 결과와 신뢰구간을 함께 보고.",
    "related": [],
    "added": "2026-11-25"
   }
