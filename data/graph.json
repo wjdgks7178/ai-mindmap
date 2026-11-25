@@ -51474,11 +51474,14 @@
    "label": "경계 사례 → few-shot 예시",
    "parent": "edge-case-log-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "로그 사례를 LLM 라벨러 예시로 승격.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "guideline-example-addition"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "pii-masking-in-logs",
@@ -78982,6 +78985,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "내용 조건과 모델 의심도를 함께 사용.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fewshot-selection-criteria",
+   "label": "few-shot 예시 선택 기준",
+   "parent": "case-to-fewshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확정·사유 명확·클래스 균형 기준.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fewshot-before-after-eval",
+   "label": "few-shot 전후 평가",
+   "parent": "case-to-fewshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드로 예시 추가 전후 정확도 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fewshot-staleness",
+   "label": "few-shot 예시의 노후화",
+   "parent": "case-to-fewshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 개정과 예시의 충돌 방지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "contrastive-example-pair",
+   "label": "대비 예시 쌍",
+   "parent": "case-to-fewshot",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 쌍마다 대비되는 예시 한 쌍.",
    "related": [],
    "added": "2026-11-25"
   }
