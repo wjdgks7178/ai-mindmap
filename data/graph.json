@@ -1561,11 +1561,15 @@
    "label": "TypedDict vs Pydantic",
    "parent": "langgraph-state",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "상태 스키마 선택: 속도 vs 재귀적 검증.",
+   "summary": "TypedDict는 힌트일 뿐, Pydantic은 입력을 검증. 실행: age=\"나이\" 입력 시 TypedDict는 노드 안 TypeError, Pydantic은 입구에서 ValidationError.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "langgraph-reducer",
+    "json-schema-validation"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "state-vs-memory",
@@ -81897,6 +81901,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "필드를 더한 상태 클래스 만들기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "state-validation-boundary",
+   "label": "입력 경계에서 검증하기",
+   "parent": "typeddict-vs-pydantic",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "외부 입력이 들어오는 첫 노드에서 검증하는 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dataclass-state",
+   "label": "dataclass 상태",
+   "parent": "typeddict-vs-pydantic",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검증 없는 간단한 상태 정의.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pydantic-validators",
+   "label": "Pydantic 검증기",
+   "parent": "typeddict-vs-pydantic",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 4,
+   "summary": "필드 값 규칙을 직접 추가하기.",
    "related": [],
    "added": "2026-11-25"
   }
