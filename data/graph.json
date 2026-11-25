@@ -50844,11 +50844,14 @@
    "label": "정리의 정밀도·재현율 균형",
    "parent": "find-label-issues-filter-by",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "검수 비용과 오류 놓침 사이 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "filter-by-options"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "kappa-interpretation-scales",
@@ -77183,6 +77186,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "일부만 받을 때 정밀도·재현율 변화.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "review-cost-vs-miss-cost",
+   "label": "검수 비용 vs 놓침 피해",
+   "parent": "precision-recall-tradeoff-cleaning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "균형점을 정하는 비용 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pilot-review-precision",
+   "label": "시범 검수로 정밀도 재기",
+   "parent": "precision-recall-tradeoff-cleaning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소량 검수로 옵션 선택 근거 마련.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "predicted-neq-given-widest",
+   "label": "predicted_neq_given의 넓은 그물",
+   "parent": "precision-recall-tradeoff-cleaning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 넓게 표시하는 옵션의 특성.",
    "related": [],
    "added": "2026-11-25"
   }
