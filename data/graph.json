@@ -51026,11 +51026,14 @@
    "label": "라벨러 훈련 라운드",
    "parent": "guideline-draft-iteration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "교육·시험 라벨링으로 일치도를 맞추는 과정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "matter-mama-cycle"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "round-stopping-criteria",
@@ -77756,6 +77759,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "골드에도 오류가 남으므로 주기적으로 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fresh-test-docs-each-round",
+   "label": "라운드마다 새 시험 문서",
+   "parent": "annotator-training-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문서를 재사용하면 외워 버림.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "targeted-feedback",
+   "label": "유형별 맞춤 피드백",
+   "parent": "annotator-training-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 유형별로 핵심 예시·지침 안내.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "guideline-version-tracking",
+   "label": "지침 버전 기록",
+   "parent": "annotator-training-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "훈련 중 지침 변경 기록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "training-manage-tool",
+   "label": "훈련 관리 기능",
+   "parent": "annotator-training-rounds",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 배정·골드 대비 일치도 측정 기능.",
    "related": [],
    "added": "2026-11-25"
   }
