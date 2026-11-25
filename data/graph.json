@@ -50774,11 +50774,14 @@
    "label": "학습 데이터 보정 과대평가",
    "parent": "in-sample-overconfidence",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 데이터로 잰 정확도·보정이 낙관적인 이유.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "model-capacity-in-sample"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "model-capacity-in-sample",
@@ -77072,6 +77075,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "가상 데이터로 표본 안·밖 격차 측정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "overconfident-vs-underconfident",
+   "label": "과신 vs 과소신",
+   "parent": "calibration-overestimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 확신을 과대/과소 표현하는 경우.",
    "related": [],
    "added": "2026-11-25"
   }
