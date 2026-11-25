@@ -50746,11 +50746,14 @@
    "label": "폴드에 클래스가 빠질 때",
    "parent": "cross-val-predict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "학습 폴드에 클래스가 없을 때의 경고와 대응.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "false-positive-label-issues"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "stratified-folds-for-pred-probs",
@@ -76953,6 +76956,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "predict_proba 열이 classes_ 순서를 따름.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "stratified-kfold",
+   "label": "StratifiedKFold",
+   "parent": "missing-class-in-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스 비율을 폴드마다 유지하는 분할.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rare-class-merge",
+   "label": "희귀 클래스 합치기",
+   "parent": "missing-class-in-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플이 너무 적은 클래스를 묶어 폴드 누락 방지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "zero-probability-column",
+   "label": "확률 0 열의 영향",
+   "parent": "missing-class-in-fold",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 모르는 클래스의 확률이 0이 되는 문제.",
    "related": [],
    "added": "2026-11-25"
   }
