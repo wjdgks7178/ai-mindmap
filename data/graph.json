@@ -52075,11 +52075,12 @@
    "label": "거짓 음성 표집",
    "parent": "oversampling-for-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "예측 음성에서 누락 양성을 찾는 표집.",
+   "summary": "음성 칸의 놓친 양성을 점수 구간 층화로 추정. 실험: 단순 무작위 재현율 sd 0.284, 상위 구간 집중 1,000개 sd 0.123.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "weighted-confidence-interval",
@@ -80595,6 +80596,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "목표 정밀도에 필요한 라벨 수 계산.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "user-report-sampling",
+   "label": "사용자 신고 기반 표집",
+   "parent": "false-negative-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신고 데이터를 거짓 음성 단서로 쓰기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "recall-estimation-cost",
+   "label": "재현율 추정 비용",
+   "parent": "false-negative-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재현율 확인에 라벨이 많이 드는 이유.",
    "related": [],
    "added": "2026-11-25"
   }
