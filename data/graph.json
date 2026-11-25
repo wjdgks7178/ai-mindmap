@@ -51670,11 +51670,14 @@
    "label": "LLM 확신도 보정",
    "parent": "llm-unknown-option",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "LLM이 말하는 확신과 실제 정확도의 차이.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "risk-coverage-tradeoff"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "unknown-rate-monitoring",
@@ -79530,6 +79533,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "거절 기준을 정하는 비용 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "p-ik-know-probability",
+   "label": "P(IK) 아는 확률",
+   "parent": "llm-confidence-calibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "답과 무관하게 이 질문을 아는지 예측.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "verbal-vs-token-confidence",
+   "label": "말로 한 확신 vs 토큰 확률",
+   "parent": "llm-confidence-calibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확신 신호 형식에 따른 보정 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "confidence-remap-table",
+   "label": "확신도 매핑 표",
+   "parent": "llm-confidence-calibration",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골드로 구간별 정확도를 잰 환산 표.",
    "related": [],
    "added": "2026-11-25"
   }
