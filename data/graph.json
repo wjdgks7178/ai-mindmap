@@ -50609,11 +50609,14 @@
    "label": "평가자 간 일치도",
    "parent": "cleanlab-multiannotator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주석자끼리 얼마나 일치하는지 재는 통계량.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "crowdlab"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "shared-annotator-bias",
@@ -76607,6 +76610,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "합의가 틀리면 맞은 사람이 낮게 평가됨.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "kappa-prevalence-paradox",
+   "label": "카파와 유병률 쏠림",
+   "parent": "inter-annotator-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨이 한쪽에 쏠리면 카파가 낮게 나오는 현상.",
    "related": [],
    "added": "2026-11-25"
   }
