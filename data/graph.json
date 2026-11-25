@@ -51323,11 +51323,14 @@
    "label": "규칙 변경 전파",
    "parent": "hybrid-annotation-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "가이드 개정을 모든 라벨러에 동시에 알리는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "annotation-metadata-tracking"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "anchoring-in-labeling",
@@ -78899,6 +78902,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "경보가 진짜였는지 기록해 규칙 조정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "simultaneous-rollout",
+   "label": "동시 배포",
+   "parent": "rule-change-propagation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시작 시각을 정해 모두에게 같은 버전 적용.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "comprehension-check-questions",
+   "label": "이해 확인 문항",
+   "parent": "rule-change-propagation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 규칙 관련 확인 문항으로 숙지 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "relabel-vs-bulk-update",
+   "label": "일괄 변경 vs 재판정",
+   "parent": "rule-change-propagation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이름만 바뀐 경우와 기준이 바뀐 경우 구분.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "batched-revision-schedule",
+   "label": "개정 주기 배포",
+   "parent": "rule-change-propagation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "잦은 개정을 모아 정해진 주기로 배포.",
    "related": [],
    "added": "2026-11-25"
   }
