@@ -2875,11 +2875,14 @@
    "label": "AI 저작자 문제",
    "parent": "privacy-copyright",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "사람의 창작 기여 기준과 등록 사례.",
+   "summary": "미국 저작권청 2025-01: 순수 AI 산출물은 비보호, 프롬프트만으로는 통제 불충분, 사람의 표현·선택·배열·수정은 보호.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "ai-image-copyright"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "worker-context-isolation",
@@ -81125,6 +81128,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "Adam 학습이 추론보다 메모리를 더 쓰는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "human-contribution-record",
+   "label": "창작 기여 기록 남기기",
+   "parent": "ai-authorship",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어떤 선택·수정을 했는지 증빙하는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "copyright-by-country",
+   "label": "나라별 AI 저작권 기준",
+   "parent": "ai-authorship",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "미국·EU·한국·중국 등 기준 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ai-training-copyright",
+   "label": "AI 학습과 저작권",
+   "parent": "ai-authorship",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습에 저작물을 쓰는 것의 적법성 논쟁.",
    "related": [],
    "added": "2026-11-25"
   }
