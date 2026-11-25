@@ -800,11 +800,15 @@
    "label": "웹 프레임워크 (React·Next.js)",
    "parent": "web-app-basics",
    "domain": "vibecoding",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "화면과 서버 코드를 정해진 틀로 빠르게 만들게 해 주는 도구.",
+   "summary": "React는 컴포넌트 UI 라이브러리, Next.js는 그 위의 풀스택 프레임워크(App Router·Pages Router). AI가 만든 앱 코드 읽는 요령 포함.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "http-basics",
+    "env-secrets"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "git-github",
@@ -81776,6 +81780,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "되돌릴 지점을 만들어 두는 안전 습관.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "react-components-props-state",
+   "label": "컴포넌트·props·state",
+   "parent": "web-frameworks",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "React의 세 기본 개념.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "app-router-vs-pages-router",
+   "label": "App Router vs Pages Router",
+   "parent": "web-frameworks",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Next.js 두 라우터의 차이.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "server-vs-client-components",
+   "label": "서버·클라이언트 컴포넌트",
+   "parent": "web-frameworks",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어디서 실행되는지에 따른 구분.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "npm-package-json",
+   "label": "npm과 package.json",
+   "parent": "web-frameworks",
+   "domain": "vibecoding",
+   "status": "planned",
+   "priority": 4,
+   "summary": "라이브러리 설치와 실행 명령 읽기.",
    "related": [],
    "added": "2026-11-25"
   }
