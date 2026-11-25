@@ -51541,11 +51541,14 @@
    "label": "규칙 변경 요약 양식",
    "parent": "guideline-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "날짜·변경 내용·이유·영향 클래스 기록.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "semantic-vs-patch-version"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "impact-analysis-for-rule-change",
@@ -79148,6 +79151,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시범 중에는 0.x, 종료 후 1.0.0 고정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unreleased-section",
+   "label": "Unreleased 구역",
+   "parent": "change-summary-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배포 전 변경을 모아 두는 구역.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "before-after-example-in-summary",
+   "label": "전/후 예시",
+   "parent": "change-summary-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요약에 바뀐 판정의 전후 예시 포함.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "changelog-for-humans",
+   "label": "사람을 위한 변경 이력",
+   "parent": "change-summary-template",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨러가 읽기 쉬운 변경 이력.",
    "related": [],
    "added": "2026-11-25"
   }
