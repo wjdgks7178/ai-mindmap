@@ -50861,11 +50861,14 @@
    "label": "kappa 해석표 비교",
    "parent": "target-agreement-setting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "Cohen 표와 McHugh 엄격 표의 차이.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "inter-annotator-agreement"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "pilot-size-for-kappa",
@@ -77255,6 +77258,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "May not flag all label issues 경고의 의미.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "agreement-threshold-by-risk",
+   "label": "위험도별 일치도 기준",
+   "parent": "kappa-interpretation-scales",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "용도 위험에 따라 합격선을 달리 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "percent-agreement-80",
+   "label": "일치율 80% 기준",
+   "parent": "kappa-interpretation-scales",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치율의 흔한 최소 기준과 한계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "reliable-data-percent",
+   "label": "신뢰 가능 데이터 비율",
+   "parent": "kappa-interpretation-scales",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "kappa 구간별 신뢰 가능 데이터 비율 해석.",
    "related": [],
    "added": "2026-11-25"
   }
