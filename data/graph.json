@@ -50690,11 +50690,14 @@
    "label": "조기 종료와 노이즈",
    "parent": "model-capacity-vs-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "암기 시점 전에 멈춰 노이즈 영향을 줄이는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "memorization-of-noisy-labels"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "ensemble-noise-robustness",
@@ -76776,6 +76779,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정규화가 노이즈 암기를 방해하는 효과.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "patience-checkpoint",
+   "label": "patience와 체크포인트",
+   "parent": "early-stopping-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개선 없는 에폭을 얼마나 기다릴지와 최고점 저장.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "learning-curve-reading",
+   "label": "학습 곡선 읽기",
+   "parent": "early-stopping-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습·검증 손실로 암기 시점 찾기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "validation-noise-stop-point",
+   "label": "검증셋 노이즈와 멈춤 시점",
+   "parent": "early-stopping-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 라벨 오류가 멈춤 시점을 흔드는 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rich-dataset-model",
+   "label": "rich dataset model 가정",
+   "parent": "early-stopping-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조기 종료 이론이 의존하는 데이터 가정.",
    "related": [],
    "added": "2026-11-25"
   }
