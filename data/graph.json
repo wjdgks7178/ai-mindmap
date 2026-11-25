@@ -51132,11 +51132,14 @@
    "label": "샘플당 라벨 중복 수",
    "parent": "majority-voting-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "샘플당 몇 명에게 라벨시킬지 비용·품질 균형.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "majority-vote-threshold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "labeler-bias-correction",
@@ -78005,6 +78008,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "정답 없이 주석자 품질을 추정하는 효과.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "adaptive-label-collection",
+   "label": "적응형 라벨 수집",
+   "parent": "redundancy-per-item",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치하면 확정, 갈리면 추가 라벨.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "marginal-gain-per-label",
+   "label": "라벨 추가의 한계 이득",
+   "parent": "redundancy-per-item",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추가 라벨당 정확도 증가폭.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "difficulty-aware-redundancy",
+   "label": "난이도별 중복 수",
+   "parent": "redundancy-per-item",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어려운 샘플에 라벨을 더 배정.",
    "related": [],
    "added": "2026-11-25"
   }
