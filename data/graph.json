@@ -51043,11 +51043,14 @@
    "label": "시범 라운드 종료 조건",
    "parent": "guideline-draft-iteration",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "목표 달성·개정 폭 감소 등 종료 기준.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "matter-mama-cycle"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "gold-standard-creation",
@@ -78207,6 +78210,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "누가 맞나가 아니라 기준을 어떻게 하나.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "consecutive-pass-rule",
+   "label": "연속 통과 규칙",
+   "parent": "round-stopping-criteria",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연속 두 라운드 합격선 통과로 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "revision-volume-tracking",
+   "label": "개정 폭 기록",
+   "parent": "round-stopping-criteria",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라운드별 지침 수정 건수 추적.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "resource-cap-risk-note",
+   "label": "자원 상한과 위험 기록",
+   "parent": "round-stopping-criteria",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상한 도달 시 낮은 일치도 클래스를 위험으로 기록.",
    "related": [],
    "added": "2026-11-25"
   }
