@@ -51236,11 +51236,14 @@
    "label": "골든 문항 선정",
    "parent": "golden-items",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "쉬운~중간 난이도, 모호하지 않은 문항 고르기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "spammer-detection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "golden-leak-rotation",
@@ -78326,6 +78329,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "합격선이 높을 때 생기는 오탈락.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "golden-ambiguity-check",
+   "label": "골든 모호성 검사",
+   "parent": "golden-item-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가 독립 판정으로 모호 항목 제외.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "golden-difficulty-mix",
+   "label": "골든 난이도 혼합",
+   "parent": "golden-item-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쉬움·중간·어려움 비율 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "golden-dispute-process",
+   "label": "골든 이의 제기 절차",
+   "parent": "golden-item-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "골든 정답 오류를 바로잡는 절차.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "golden-accuracy-monitor",
+   "label": "골든별 정답률 모니터링",
+   "parent": "golden-item-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거의 모두 틀리는 골든 교체.",
    "related": [],
    "added": "2026-11-25"
   }
