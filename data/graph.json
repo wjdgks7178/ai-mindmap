@@ -50539,11 +50539,14 @@
    "label": "하드 샘플 제거의 부작용",
    "parent": "auto-delete-risk",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "경계 사례를 지우면 일반화가 약해지는 문제.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "false-positive-label-issues"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "quarantine-instead-of-delete",
@@ -76383,6 +76386,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "후보 처리 원칙.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "subgroup-accuracy-comparison",
+   "label": "하위집단별 성능 비교",
+   "parent": "hard-sample-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정리 전후를 그룹별로 비교해 손해 집단 찾기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rare-sample-extra-labels",
+   "label": "드문 샘플 추가 라벨",
+   "parent": "hard-sample-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "드문 샘플은 라벨을 더 받아 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "frequency-dependent-noise-effect",
+   "label": "빈도에 따른 노이즈 영향",
+   "parent": "hard-sample-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자주 나오는 샘플과 드문 샘플에서 효과가 다름.",
    "related": [],
    "added": "2026-11-25"
   }
