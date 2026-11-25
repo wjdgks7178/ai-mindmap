@@ -3907,11 +3907,12 @@
    "label": "군집화",
    "parent": "supervised-unsupervised",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "레이블 없이 비슷한 데이터끼리 묶기.",
+   "summary": "라벨 없이 비슷한 것끼리 묶기. 실험: blobs에서 K=3 실루엣 최대 0.463, 초승달에서 K-means ARI 0.25 vs DBSCAN 1.0.",
    "added": "2026-11-01",
-   "related": []
+   "related": [],
+   "done": "2026-11-25"
   },
   {
    "id": "self-supervised",
@@ -82769,6 +82770,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "비선형 활성화를 가진 신경망의 표현력.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "k-means",
+   "label": "K-means",
+   "parent": "clustering",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중심을 반복 갱신하며 K개로 묶는 알고리즘.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dbscan",
+   "label": "DBSCAN",
+   "parent": "clustering",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "밀도로 군집과 잡음을 찾는 알고리즘.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "silhouette-score",
+   "label": "실루엣 점수",
+   "parent": "clustering",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "군집이 얼마나 잘 분리됐는지 재는 지표.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "elbow-method",
+   "label": "팔꿈치 방법",
+   "parent": "clustering",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 4,
+   "summary": "관성 감소가 꺾이는 지점으로 K 고르기.",
    "related": [],
    "added": "2026-11-25"
   }
