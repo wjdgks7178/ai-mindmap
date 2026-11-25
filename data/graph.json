@@ -51373,11 +51373,14 @@
    "label": "라벨링 관리도",
    "parent": "labeler-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "기준선 대비 이탈을 경보하는 차트.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "recalibration-trigger"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "false-alarm-rate",
@@ -78672,6 +78675,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "코더가 서로 논의하지 않아야 한다는 요건.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "p-chart-disagreement",
+   "label": "불일치율 p-관리도",
+   "parent": "control-chart-for-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주간 불일치율을 비율 관리도로 감시.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "run-rule-seven-points",
+   "label": "연속 7점 규칙",
+   "parent": "control-chart-for-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중심선 한쪽 연속 점으로 작은 이동 탐지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "baseline-reset-on-change",
+   "label": "기준선 재설정",
+   "parent": "control-chart-for-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지침 개정·인력 교체 후 기준선 새로 잡기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "warning-limit-two-sigma",
+   "label": "2σ 경고선",
+   "parent": "control-chart-for-labeling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "3σ 이전에 알리는 경고선.",
    "related": [],
    "added": "2026-11-25"
   }
