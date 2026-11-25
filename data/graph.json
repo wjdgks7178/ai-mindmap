@@ -2980,11 +2980,14 @@
    "label": "워커의 컨텍스트 분리",
    "parent": "orchestrator-workers",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "워커가 깨끗한 컨텍스트로 일하는 이점.",
+   "summary": "워커마다 별도 컨텍스트로 일하고 요약만 반환. Anthropic 연구 시스템: 단일 에이전트 대비 90.2% 향상, 토큰 약 15배, 구체적 위임 지시가 필수.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "subagents"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "result-synthesis",
@@ -82567,6 +82570,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "쉬운 질문은 작은 모델로 보내 비용 절감.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "delegation-brief-template",
+   "label": "위임 지시서 템플릿",
+   "parent": "worker-context-isolation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "목표·출력 형식·도구·경계를 담은 지시서.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "effort-scaling-rules",
+   "label": "노력 규모 규칙",
+   "parent": "worker-context-isolation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질의 난이도별 워커 수·호출 수 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multi-agent-token-cost",
+   "label": "멀티 에이전트의 토큰 비용",
+   "parent": "worker-context-isolation",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "성능과 15배 토큰 사이의 교환.",
    "related": [],
    "added": "2026-11-25"
   }
