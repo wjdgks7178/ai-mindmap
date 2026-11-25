@@ -50875,11 +50875,14 @@
    "label": "kappa용 시범 크기",
    "parent": "target-agreement-setting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "시범 샘플 수에 따른 kappa 불확실성.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "kappa-interpretation-scales"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "kappa-class-imbalance",
@@ -77316,6 +77319,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "소수 클래스를 더 뽑아 일치도 측정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "kappa-confidence-interval",
+   "label": "kappa 신뢰구간",
+   "parent": "pilot-size-for-kappa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부트스트랩으로 kappa 구간 추정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "bootstrap-agreement",
+   "label": "일치도 부트스트랩",
+   "parent": "pilot-size-for-kappa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본을 다시 뽑아 일치도 흔들림 측정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pilot-expand-rule",
+   "label": "시범 확대 규칙",
+   "parent": "pilot-size-for-kappa",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간이 합격선에 걸치면 샘플 추가.",
    "related": [],
    "added": "2026-11-25"
   }
