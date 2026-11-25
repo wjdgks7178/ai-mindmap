@@ -51855,11 +51855,15 @@
    "label": "그룹이 적을 때 전략",
    "parent": "stratify-vs-group",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "그룹 수가 적을 때 반복 분할·폴드 수 축소.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "그룹이 12개 정도면 폴드 수를 줄이고 반복 분할. 실험: SGKF 6폴드 비율 편차 0.118 vs 2폴드 0.009.",
+   "related": [
+    "group-size-skew",
+    "leave-one-group-out"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "winners-curse",
@@ -80045,6 +80049,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할 표를 실험 로그에 저장해 재현.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "repeated-group-split",
+   "label": "반복 그룹 분할",
+   "parent": "few-groups-strategy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GroupShuffleSplit을 여러 번 돌려 점수 범위 보고.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "per-group-score",
+   "label": "그룹별 점수 보고",
+   "parent": "few-groups-strategy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹마다 점수를 따로 보여 약한 그룹을 찾음.",
    "related": [],
    "added": "2026-11-25"
   }
