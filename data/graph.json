@@ -51589,11 +51589,14 @@
    "label": "재라벨 후 데이터셋 버전",
    "parent": "relabel-after-rule-change",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "재라벨 결과를 새 버전으로 저장·비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "version-filtered-training"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "relabel-prioritization",
@@ -79375,6 +79378,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "안 보는 구간도 소량 무작위 점검.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "change-list-file",
+   "label": "변경 행 목록 파일",
+   "parent": "dataset-version-after-relabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "id·옛 라벨·새 라벨·재라벨자·날짜를 함께 저장.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dataset-tag-pairing",
+   "label": "데이터셋·규칙서 버전 짝",
+   "parent": "dataset-version-after-relabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터셋 버전과 규칙서 버전을 같이 기록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "version-diff-crosscheck",
+   "label": "변경 건수 교차 점검",
+   "parent": "dataset-version-after-relabel",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추정 변경률과 실제 변경 건수를 비교.",
    "related": [],
    "added": "2026-11-25"
   }
