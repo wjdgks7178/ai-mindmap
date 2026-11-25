@@ -4098,11 +4098,14 @@
    "label": "자동 레드팀",
    "parent": "red-teaming",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "LLM이 공격 프롬프트를 대량 생성해 점검하는 방식.",
+   "summary": "LLM·스크립트가 공격 프롬프트를 대량 생성·채점하는 점검. PyRIT·garak 등, Microsoft: 사람 판단 대체 아닌 보강.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "jailbreak"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "model-card",
@@ -81053,6 +81056,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "수렴 반복이 끝없이 돌지 않게 막기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pyrit",
+   "label": "PyRIT",
+   "parent": "automated-red-teaming",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Microsoft의 오픈소스 AI 레드팀 자동화 프레임워크.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "garak-scanner",
+   "label": "garak 취약점 스캐너",
+   "parent": "automated-red-teaming",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "NVIDIA의 LLM 취약점 탐지 도구.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "attack-converters",
+   "label": "프롬프트 변환기",
+   "parent": "automated-red-teaming",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공격 문장을 인코딩·역할극으로 바꾸는 기법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "red-team-scorer-error",
+   "label": "채점기 오류와 한계",
+   "parent": "automated-red-teaming",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자동 채점의 오탐·미탐 문제.",
    "related": [],
    "added": "2026-11-25"
   }
