@@ -53,5 +53,4 @@ for name in ("cl100k_base", "o200k_base"):
 | [컨텍스트 윈도우](#context-window) | 토큰으로 재는 한도 |
 
 ## 더 읽을거리
-- [tiktoken (GitHub)](https://github.com/openai/tiktoken) — OpenAI 토크나이저 라이브러리.
-- [OpenAI Tokenizer](https://platform.openai.com/tokenizer) — 텍스트가 어떻게 토큰으로 나뉘는지 시각화(로그인 필요 가능).
+- [tiktoken (PyPI)](https://pypi.org/project/tiktoken/) — OpenAI 토크나이저 라이브러리.
