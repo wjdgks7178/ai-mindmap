@@ -1098,11 +1098,15 @@
    "label": "NVIDIA의 AI factory",
    "parent": "ai-factory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "토큰을 생산하는 데이터센터라는 같은 이름 다른 개념.",
+   "summary": "NVIDIA의 AI factory는 토큰을 생산하는 데이터센터 인프라(지표: 토큰 처리량·와트당 성능). 소프트웨어 팩토리와 이름만 같음.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "gpu-basics",
+    "gpu-cloud-vs-local"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "elenchus",
@@ -81536,6 +81540,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "에이전트가 못 보는 시험 시나리오.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "token-throughput",
+   "label": "토큰 처리량",
+   "parent": "nvidia-ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "초당 몇 토큰을 생성하는가의 인프라 지표.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "performance-per-watt",
+   "label": "와트당 성능",
+   "parent": "nvidia-ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전력 제약 하에서의 효율 지표.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "data-flywheel",
+   "label": "데이터 플라이휠",
+   "parent": "nvidia-ai-factory",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용 데이터가 모델을 계속 개선하는 순환.",
    "related": [],
    "added": "2026-11-25"
   }
