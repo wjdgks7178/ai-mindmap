@@ -51737,11 +51737,14 @@
    "label": "test_size와 클래스 수 규칙",
    "parent": "stratify-min-class-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "test_size가 클래스 수 이상이어야 하는 조건.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "merge-rare-classes"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "combined-stratification-key",
@@ -79685,6 +79688,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "상위·하위 라벨을 함께 두어 나중에 다시 나눔.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "class-count-in-test-report",
+   "label": "클래스별 테스트 샘플 수 보고",
+   "parent": "stratify-test-size-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가 지표와 함께 클래스당 샘플 수를 적기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "min-two-members-per-class",
+   "label": "클래스당 최소 2개",
+   "parent": "stratify-test-size-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층화 분할의 최소 조건.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "proportional-allocation-zero",
+   "label": "비례 배분과 0개 클래스",
+   "parent": "stratify-test-size-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비례 배분으로 작은 클래스가 0개가 되는 현상.",
    "related": [],
    "added": "2026-11-25"
   }
