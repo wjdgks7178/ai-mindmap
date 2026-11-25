@@ -51099,11 +51099,14 @@
    "label": "판정 사유 기록",
    "parent": "adjudicator-role",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "판정 이유를 남겨 가이드 개정에 연결.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "adjudication-interface"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "condorcet-jury-theorem",
@@ -78243,6 +78246,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "상한 도달 시 낮은 일치도 클래스를 위험으로 기록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rationale-category-scheme",
+   "label": "사유 분류 체계",
+   "parent": "adjudication-rationale-log",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "판정 사유를 몇 가지로 나눠 기록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "adjudicator-consistency-check",
+   "label": "판정자 일관성 점검",
+   "parent": "adjudication-rationale-log",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 판정자의 판정이 흔들리는지 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "monthly-rationale-rollup",
+   "label": "사유 월별 집계",
+   "parent": "adjudication-rationale-log",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "늘어나는 유형을 월별로 집계.",
    "related": [],
    "added": "2026-11-25"
   }
