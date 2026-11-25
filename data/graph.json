@@ -51917,11 +51917,12 @@
    "label": "분할 시드 vs 모델 시드",
    "parent": "seed-sweep-reporting",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "어느 시드가 변동을 더 만드는지 분해.",
+   "summary": "분할 시드와 모델 시드를 따로 바꿔 변동 원인 분해. 실험: 분할 std 0.0188 vs 모델 std 0.0064.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "standard-error-of-mean-score",
@@ -80162,6 +80163,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "평가셋을 몇 번 볼지 미리 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "paired-comparison-same-split",
+   "label": "같은 분할로 짝지은 비교",
+   "parent": "split-seed-vs-model-seed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모델을 같은 분할에서 비교해 분할 변동 상쇄.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "seed-ensembling",
+   "label": "시드 앙상블",
+   "parent": "split-seed-vs-model-seed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 시드 모델을 평균해 모델 무작위 변동 줄이기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "test-size-and-variance",
+   "label": "테스트셋 크기와 변동",
+   "parent": "split-seed-vs-model-seed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "테스트 샘플 수에 따른 점수 흔들림.",
    "related": [],
    "added": "2026-11-25"
   }
