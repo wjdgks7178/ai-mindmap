@@ -51211,11 +51211,14 @@
    "label": "신규 라벨러 투입 시 이중 비율",
    "parent": "sampled-double-annotation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "초기에 이중 비율을 높여 빨리 보정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "recalibration-trigger"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "spammer-detection",
@@ -78528,6 +78531,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시간이 갈수록 오르는 문항은 유출 의심.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "onboarding-sample-count",
+   "label": "온보딩 평가 샘플 수",
+   "parent": "new-annotator-onboarding-ratio",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신규 품질을 구별하는 데 필요한 이중 샘플 수.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gradual-ratio-reduction",
+   "label": "이중 비율 점진 하향",
+   "parent": "new-annotator-onboarding-ratio",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 통과 후 단계적으로 줄이기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "small-gap-detection-difficulty",
+   "label": "작은 격차 발견의 어려움",
+   "parent": "new-annotator-onboarding-ratio",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조금 부족한 신규는 오래 지켜봐야 함.",
    "related": [],
    "added": "2026-11-25"
   }
