@@ -980,11 +980,15 @@
    "label": "테스트 조작 방지",
    "parent": "tdd",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "AI가 통과하려고 테스트를 고치지 못하게 하는 규칙.",
+   "summary": "AI가 테스트를 고치거나 하드코딩해 통과하는 행동의 방지. EvilGenie 연구: 보류 테스트·LLM 판사·파일 편집 감지 비교.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "reward-hacking",
+    "sycophancy"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "subagents",
@@ -80943,6 +80947,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "같은 코드에서 결과가 바뀌는 테스트.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "held-out-tests",
+   "label": "보류 테스트",
+   "parent": "test-tampering",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "에이전트가 못 보는 테스트를 CI에서 따로 실행.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "readonly-tests-hook",
+   "label": "테스트 읽기 전용·훅",
+   "parent": "test-tampering",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "권한·훅으로 tests/ 변경을 막기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "special-casing-detection",
+   "label": "특별 처리(하드코딩) 탐지",
+   "parent": "test-tampering",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력만 맞춘 코드를 찾아내는 리뷰.",
    "related": [],
    "added": "2026-11-25"
   }
