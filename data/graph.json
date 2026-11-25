@@ -2827,11 +2827,15 @@
    "label": "체이닝 실습: 보고서 3단계",
    "parent": "prompt-chaining",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "추출→표→요약을 3단계로 묶는 실습.",
+   "summary": "개요→초안→다듬기 3단계 체인과 단계 간 게이트. Anthropic: 지연을 내주고 정확도를 얻음, 단순함 우선. 게이트 실패 시 중단하는 구조 시연.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "self-refine",
+    "json-format"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "model-routing",
@@ -82495,6 +82499,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델이 자기 오류를 못 알아채는 경우.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "chain-gate-design",
+   "label": "체인 게이트 설계",
+   "parent": "prompt-chain-example",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단계 사이 자동 점검 항목 정하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "structured-handoff-between-steps",
+   "label": "단계 간 구조화된 인계",
+   "parent": "prompt-chain-example",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "JSON·목록으로 넘겨 검사 쉽게.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "chain-latency-cost",
+   "label": "체인의 지연과 비용",
+   "parent": "prompt-chain-example",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "호출 수 증가의 영향 계산.",
    "related": [],
    "added": "2026-11-25"
   }
