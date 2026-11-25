@@ -1087,11 +1087,15 @@
    "label": "드리프트 감지 루프",
    "parent": "ai-factory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "코드와 문서가 어긋나는 것을 자동 발견하는 루프.",
+   "summary": "코드·문서가 어긋나는 것을 정기적으로 찾아 수정 PR로 만드는 순환. OpenAI doc-gardening·golden principles, Mastra 문서 표류 루프.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "mechanical-constraints",
+    "harness-decay"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "nvidia-ai-factory",
@@ -81573,6 +81577,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "사용 데이터가 모델을 계속 개선하는 순환.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "doc-gardening-agent",
+   "label": "doc-gardening 에이전트",
+   "parent": "drift-detection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "낡은 문서를 찾아 수정 PR을 여는 에이전트.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "golden-principles",
+   "label": "golden principles",
+   "parent": "drift-detection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "저장소에 적는 기계적 품질 원칙 목록.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "tech-debt-gc",
+   "label": "기술 부채 가비지 컬렉션",
+   "parent": "drift-detection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 4,
+   "summary": "부채를 매일 조금씩 자동 상환하는 방식.",
    "related": [],
    "added": "2026-11-25"
   }
