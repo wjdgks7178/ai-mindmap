@@ -51631,11 +51631,14 @@
    "label": "LLM 자기 일관성",
    "parent": "llm-labeler-validation-subset",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "같은 항목을 여러 번 라벨시켜 일치도를 보는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "self-consistency-check"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "llm-labeler-recheck-schedule",
@@ -79458,6 +79461,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "보류 세트를 보고 더 고치지 않기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "llm-temperature-for-sampling",
+   "label": "샘플링용 temperature",
+   "parent": "llm-self-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 항목을 다르게 답하게 만드는 무작위성 설정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "agreement-as-confidence",
+   "label": "일치도를 확신 신호로",
+   "parent": "llm-self-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전원 일치를 자동 확정의 신호로 사용.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "systematic-error-limit",
+   "label": "체계적 오류의 한계",
+   "parent": "llm-self-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 이유로 반복해 틀리면 다수결이 못 고침.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "sampling-cost-tradeoff",
+   "label": "시도 횟수와 비용",
+   "parent": "llm-self-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "호출 수와 정확도의 균형.",
    "related": [],
    "added": "2026-11-25"
   }
