@@ -50676,11 +50676,14 @@
    "label": "노이즈 라벨 암기",
    "parent": "model-capacity-vs-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "모델이 틀린 라벨까지 맞추는 과적합.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "early-stopping-noise"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "early-stopping-noise",
@@ -76729,6 +76732,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "유명 데이터셋 오류로 하는 워크숍.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "random-label-experiment",
+   "label": "무작위 라벨 실험",
+   "parent": "memorization-of-noisy-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨을 무작위로 섞어도 모델이 맞추는 실험.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "learn-simple-patterns-first",
+   "label": "단순 패턴 먼저 학습",
+   "parent": "memorization-of-noisy-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "네트워크가 쉬운 패턴부터 배우는 경향.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "out-of-sample-prediction-need",
+   "label": "out-of-sample 예측의 필요",
+   "parent": "memorization-of-noisy-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "암기된 학습 예측으로는 오류를 못 찾는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "dropout-vs-noise-fitting",
+   "label": "dropout과 노이즈 적합",
+   "parent": "memorization-of-noisy-labels",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화가 노이즈 암기를 방해하는 효과.",
    "related": [],
    "added": "2026-11-25"
   }
