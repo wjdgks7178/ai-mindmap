@@ -51390,11 +51390,14 @@
    "label": "헛경보율",
    "parent": "calibration-frequency",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "드리프트가 없는데 경보가 울리는 비율.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "detection-delay-tradeoff"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "moving-average-kappa",
@@ -78863,6 +78866,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "감시 투자가 재라벨 비용을 줄이는지 비교.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "multiple-metric-false-alarm",
+   "label": "다중 지표 헛경보",
+   "parent": "false-alarm-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지표를 늘릴수록 누적되는 헛경보 확률.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "alarm-recheck-step",
+   "label": "경보 후 재확인 단계",
+   "parent": "false-alarm-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경보를 소량 재측정으로 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "alarm-outcome-log",
+   "label": "경보 결과 기록",
+   "parent": "false-alarm-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경보가 진짜였는지 기록해 규칙 조정.",
    "related": [],
    "added": "2026-11-25"
   }
