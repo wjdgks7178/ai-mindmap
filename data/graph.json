@@ -51449,11 +51449,14 @@
    "label": "경계 사례 로그 주간 점검",
    "parent": "edge-case-log-template",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "미반영·재검토 대기 항목을 자동으로 뽑는 점검.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "edge-case-log-template"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "relabel-query",
@@ -79076,6 +79079,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "마스킹이 판정 단서를 지우지 않게.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "required-column-check",
+   "label": "필수 열 누락 점검",
+   "parent": "log-weekly-review-script",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 점검 전에 필수 열이 채워졌는지 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "open-case-aging",
+   "label": "오래 열린 사례 점검",
+   "parent": "log-weekly-review-script",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "열린 기간으로 지연 사례 찾기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "weekly-review-metrics",
+   "label": "주간 점검 건수 추세",
+   "parent": "log-weekly-review-script",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점검 결과 건수로 운영 부담 모니터링.",
    "related": [],
    "added": "2026-11-25"
   }
