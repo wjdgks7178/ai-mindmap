@@ -51294,11 +51294,14 @@
    "label": "라벨링 비용 모델",
    "parent": "hybrid-annotation-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "이중·분담·표본의 비용 단위 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "candidate-precision-cost"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "rule-change-propagation",
@@ -78373,6 +78376,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "거의 모두 틀리는 골든 교체.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "cost-per-item-formula",
+   "label": "샘플당 비용식",
+   "parent": "annotation-cost-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단가·이중 비율·불일치율로 샘플당 비용 계산.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "targeted-double-annotation",
+   "label": "의심 샘플 선택 이중 라벨",
+   "parent": "annotation-cost-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 의심도로 이중 라벨 대상을 고르기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "measure-vs-reduce-error",
+   "label": "측정용 vs 오류 감소용",
+   "parent": "annotation-cost-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 이중은 품질 측정, 의심 이중은 오류 감소.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "fixed-cost-training-qa",
+   "label": "교육·품질 관리 고정비",
+   "parent": "annotation-cost-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 단가 외에 드는 고정비.",
    "related": [],
    "added": "2026-11-25"
   }
