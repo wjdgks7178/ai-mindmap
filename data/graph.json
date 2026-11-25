@@ -51827,11 +51827,14 @@
    "label": "그룹 내 라벨 혼재",
    "parent": "stratify-vs-group",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 그룹에 양성·음성이 섞인 경우의 층화.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "샘플 라벨이 그룹 안에서 섞이면 층화는 근사. 실험: GroupKFold 양성 비율 0.123~0.250, StratifiedGroupKFold 0.186~0.213.",
+   "related": [
+    "group-size-skew"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "fold-balance-table",
@@ -79973,6 +79976,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴드 편차가 크면 평균만 믿지 않기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "patient-effect-variance",
+   "label": "환자 효과 분산",
+   "parent": "within-group-label-mixing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹별 기저 경향 차이가 폴드 점수를 흔듦.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "label-noise-within-group",
+   "label": "그룹 내 라벨 노이즈",
+   "parent": "within-group-label-mixing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섞임이 노이즈인지 실제 변화인지 구분.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "group-level-aggregation",
+   "label": "그룹 단위 집계 평가",
+   "parent": "within-group-label-mixing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플 예측을 환자 단위로 합쳐 평가.",
    "related": [],
    "added": "2026-11-25"
   }
