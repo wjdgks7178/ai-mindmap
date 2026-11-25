@@ -50595,11 +50595,14 @@
    "label": "주석자 품질 통계",
    "parent": "cleanlab-multiannotator",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "주석자별 신뢰도·worst_class로 교육·교체 결정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "crowdlab"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "inter-annotator-agreement",
@@ -76560,6 +76563,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "주석자 라벨 하나마다 점수를 매기기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "assignment-fairness",
+   "label": "주석자 배정 공정성",
+   "parent": "annotator-quality-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어려운 샘플이 한 명에게 몰리지 않게 배정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "worst-class-guideline",
+   "label": "worst_class로 가이드 보강",
+   "parent": "annotator-quality-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약한 클래스를 가이드·교육에 연결.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "annotator-retraining-loop",
+   "label": "주석자 재교육 루프",
+   "parent": "annotator-quality-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 신뢰도 → 교육 → 재측정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "consensus-dependency-bias",
+   "label": "합의 의존 편향",
+   "parent": "annotator-quality-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합의가 틀리면 맞은 사람이 낮게 평가됨.",
    "related": [],
    "added": "2026-11-25"
   }
