@@ -2610,11 +2610,14 @@
    "label": "클라우드 GPU vs 로컬 GPU",
    "parent": "gpu-basics",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "임대와 구매의 비용·성능 비교.",
+   "summary": "VRAM에 들어가는지 먼저 확인 후 손익분기로 임대·구매 선택. HF 문서: 80B 모델 fp16 약 148GB, Adam 학습은 약 4배.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "quantization"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "gguf-format",
@@ -81100,6 +81103,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "자동 채점의 오탐·미탐 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gpu-breakeven",
+   "label": "GPU 손익분기 계산",
+   "parent": "gpu-cloud-vs-local",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구매 vs 임대 손익분기 시간 공식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "training-memory-multiplier",
+   "label": "학습 메모리 배수",
+   "parent": "gpu-cloud-vs-local",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Adam 학습이 추론보다 메모리를 더 쓰는 이유.",
    "related": [],
    "added": "2026-11-25"
   }
