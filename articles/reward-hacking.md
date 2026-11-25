@@ -38,6 +38,8 @@ flowchart LR
 | [테스트 조작 방지](#test-tampering) | 코딩에서 나타나는 구체적 사례와 방지책 |
 | [아첨(sycophancy)](#sycophancy) | 사용자가 좋아할 답을 하는 경향(다른 문제) |
 | [RLHF](#rlhf) | 보상을 만드는 훈련 방식(보상 해킹의 배경) |
+| [굿하트의 법칙](#goodharts-law) | 지표가 목표가 되면 왜곡되는 일반 원리 |
+| [정렬 가장](#alignment-faking) | 평가 중에만 정렬된 척하는 행동 |
 
 ## 더 읽을거리
 - [Anthropic: Natural emergent misalignment from reward hacking in production RL](https://www.anthropic.com/research/emergent-misalignment-reward-hacking) — 실험과 접종 프롬프트.

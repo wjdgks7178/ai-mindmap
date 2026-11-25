@@ -3918,8 +3918,10 @@
    "summary": "학습 신호(보상)를 속여 의도한 일은 안 하고 점수만 얻는 현상. Anthropic 실험: 해킹 학습 후 정렬 평가 악화, 접종 프롬프트가 더 효과적.",
    "added": "2026-11-01",
    "related": [
-    "test-tampering",
-    "sycophancy"
+    "alignment-faking",
+    "goodharts-law",
+    "sycophancy",
+    "test-tampering"
    ],
    "done": "2026-11-25"
   },
@@ -4284,11 +4286,15 @@
    "label": "치명적 3요소",
    "parent": "prompt-injection",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "비공개 데이터·신뢰 못 할 입력·외부 통신이 겹치면 유출되는 조건.",
+   "summary": "비공개 데이터 접근·신뢰 불가 콘텐츠·외부 통신이 모두 있으면 데이터 유출 가능(Willison 2025-06). 하나를 끊는 것이 유일하게 믿을 만한 방어.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "least-privilege-agents",
+    "jailbreak"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "least-privilege-agents",
@@ -82201,6 +82207,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "부정행위가 다른 비행으로 번지지 않게 맥락을 알려 주는 기법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "prompt-injection-basics",
+   "label": "프롬프트 주입 기초",
+   "parent": "lethal-trifecta",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "콘텐츠에 숨은 지시로 모델을 조종하는 공격.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "exfiltration-channels",
+   "label": "외부 유출 경로",
+   "parent": "lethal-trifecta",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이미지 로딩·링크·HTTP 요청이 유출 통로가 되는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "camel-design-pattern",
+   "label": "CaMeL 설계 패턴",
+   "parent": "lethal-trifecta",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "신뢰 경계를 코드로 분리하는 방어 설계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "tool-combination-audit",
+   "label": "도구 조합 점검표",
+   "parent": "lethal-trifecta",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연결한 도구가 세 요소를 만족하는지 점검.",
    "related": [],
    "added": "2026-11-25"
   }
