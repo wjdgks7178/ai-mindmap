@@ -50718,11 +50718,14 @@
    "label": "노이즈에 강한 손실",
    "parent": "model-capacity-vs-noise",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "라벨 오류의 영향을 줄이는 손실 함수.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "memorization-of-noisy-labels"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "cross-val-score-vs-predict",
@@ -76870,6 +76873,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "노이즈 샘플이 학습 후반에 학습되는 관찰.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "mae-loss-robustness",
+   "label": "MAE 손실의 강건성",
+   "parent": "noise-robust-loss",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기울기가 상한이라 노이즈에 덜 흔들리는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "generalized-cross-entropy",
+   "label": "Generalized Cross Entropy",
+   "parent": "noise-robust-loss",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "MAE와 CE를 잇는 손실군.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "gradient-magnitude-of-loss",
+   "label": "손실의 기울기 크기",
+   "parent": "noise-robust-loss",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 라벨에서 손실별 기울기가 어떻게 달라지는지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "robust-loss-convergence-tradeoff",
+   "label": "강건 손실의 수렴 트레이드오프",
+   "parent": "noise-robust-loss",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "강건할수록 어려운 샘플 학습이 느려짐.",
    "related": [],
    "added": "2026-11-25"
   }
