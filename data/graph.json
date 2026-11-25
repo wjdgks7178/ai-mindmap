@@ -51533,11 +51533,14 @@
    "label": "버전 기준 학습 데이터 필터",
    "parent": "guideline-versioning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "최신 버전 라벨만 학습·평가에 쓰기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "guideline-in-git"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "change-summary-template",
@@ -79231,6 +79234,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사례 원문의 개인정보를 저장소에 넣지 않기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "mixed-version-labels-harm",
+   "label": "버전 혼합 라벨의 피해",
+   "parent": "version-filtered-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옛 기준 라벨 혼합이 정확도를 낮추는 실험.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "relabel-affected-region",
+   "label": "영향 범위만 재라벨",
+   "parent": "version-filtered-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부 경계만 바뀌면 그 부분만 재라벨.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "eval-set-version-lock",
+   "label": "평가셋 버전 고정",
+   "parent": "version-filtered-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평가셋도 같은 규칙서 버전으로 고정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "training-run-version-record",
+   "label": "학습 실행의 버전 조건 기록",
+   "parent": "version-filtered-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 버전 조건으로 학습했는지 남기기.",
    "related": [],
    "added": "2026-11-25"
   }
