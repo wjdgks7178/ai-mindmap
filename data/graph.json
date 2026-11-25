@@ -52063,11 +52063,12 @@
    "label": "층화 평가 표집",
    "parent": "oversampling-for-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "예측 양성/음성 층별로 표본을 뽑는 설계.",
+   "summary": "예측 층별로 표집하고 가중. 실험: 정밀도 추정 sd 0.159(무작위) vs 0.035(층화), 재현율은 음성 칸 표본 부족으로 불안정.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "false-negative-sampling",
@@ -80561,6 +80562,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "사전확률과 사후확률의 관계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "importance-weighting-labels",
+   "label": "중요도 가중 라벨링",
+   "parent": "stratified-evaluation-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표집 확률의 역수로 가중해 편향 없이 추정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "stratum-allocation",
+   "label": "층별 표본 배분",
+   "parent": "stratified-evaluation-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예산을 층에 나누는 방법(비례·네이만).",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "labeling-budget-planning",
+   "label": "라벨링 예산 계획",
+   "parent": "stratified-evaluation-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 정밀도에 필요한 라벨 수 계산.",
    "related": [],
    "added": "2026-11-25"
   }
