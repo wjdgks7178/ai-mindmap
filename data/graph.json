@@ -51977,11 +51977,12 @@
    "label": "CV 분할기 시드 정책",
    "parent": "clone-random-state-sharing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "분할기는 정수로 고정해 모델 간 같은 폴드 비교.",
+   "summary": "분할기 random_state를 정수로 고정해 모든 모델이 같은 폴드 사용. 실험: None이면 같은 모델 CV 0.838~0.845로 흔들림.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "notebook-run-order-randomness",
@@ -80321,6 +80322,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "버그 재현을 위해 시드 고정하는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "repeated-kfold-seed",
+   "label": "RepeatedKFold와 시드",
+   "parent": "cv-splitter-seed-policy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 CV 전체를 하나의 시드로 재현.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "shared-cv-object",
+   "label": "공유 cv 객체 전달",
+   "parent": "cv-splitter-seed-policy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 모델에 같은 cv 객체를 넘기는 패턴.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "shuffle-false-order-bias",
+   "label": "shuffle=False 순서 편향",
+   "parent": "cv-splitter-seed-policy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정렬된 데이터에서 셔플 없는 분할의 위험.",
    "related": [],
    "added": "2026-11-25"
   }
