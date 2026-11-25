@@ -51771,11 +51771,14 @@
    "label": "값이 많은 컬럼 묶기",
    "parent": "stratify-multi-label-columns",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "구간화·기타 묶음으로 칸 수 줄이기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "combined-stratification-key"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "iterative-stratification",
@@ -79829,6 +79832,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "컬럼이 늘수록 칸 수가 곱으로 늘어남.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pd-cut-binning",
+   "label": "pd.cut 구간화",
+   "parent": "bin-high-cardinality-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계를 직접 정해 구간을 만드는 방법.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rare-value-other-group",
+   "label": "희귀 값 기타 묶기",
+   "parent": "bin-high-cardinality-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 개수 미만의 값을 기타로.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "bin-only-for-key",
+   "label": "구간화는 키에만",
+   "parent": "bin-high-cardinality-columns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원래 값은 보존하고 층화 키에만 적용.",
    "related": [],
    "added": "2026-11-25"
   }
