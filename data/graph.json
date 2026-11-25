@@ -50763,11 +50763,14 @@
    "label": "pred_probs용 층화 폴드",
    "parent": "cross-val-predict",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "확률 추정 시 층화·셔플 분할 설정.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "oof-predictions-workflow"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "calibration-overestimate",
@@ -77122,6 +77125,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "폴드 수를 정할 때의 고려점.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "shuffle-and-seed-setting",
+   "label": "셔플과 시드 설정",
+   "parent": "stratified-folds-for-pred-probs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 재현성과 후보 안정성 확인.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "sorted-data-fold-pitfall",
+   "label": "정렬된 데이터의 폴드 함정",
+   "parent": "stratified-folds-for-pred-probs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨순 정렬 데이터를 섞지 않고 분할하는 위험.",
    "related": [],
    "added": "2026-11-25"
   }
