@@ -51272,11 +51272,14 @@
    "label": "재보정 조건",
    "parent": "hybrid-annotation-split",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "kappa 하락 시 이중 라벨로 복귀하는 기준.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "weekly-agreement-dashboard"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "random-assignment-of-items",
@@ -78456,6 +78459,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "클래스·난이도별 균형 배정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "return-criterion",
+   "label": "정상 복귀 기준",
+   "parent": "recalibration-trigger",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이중 비율을 되돌리는 조건.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "trigger-false-alarm-tradeoff",
+   "label": "발동 기준의 오경보 균형",
+   "parent": "recalibration-trigger",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 수와 기준선에 따른 오경보·감지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "temporary-double-ratio",
+   "label": "일시 이중 비율 상향",
+   "parent": "recalibration-trigger",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "발동 시 이중 라벨을 일시적으로 늘리기.",
    "related": [],
    "added": "2026-11-25"
   }
