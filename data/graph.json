@@ -50970,11 +50970,14 @@
    "label": "클래스별 일치도(specific agreement)",
    "parent": "low-agreement-diagnosis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "클래스마다 두 사람이 같은 샘플을 골랐는지 재는 지표.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "kappa-class-imbalance"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "cannot-decide-option",
@@ -77507,6 +77510,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "normalize=true로 비율 읽기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "positive-agreement-index",
+   "label": "양성 일치도",
+   "parent": "specific-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 평가자가 양성을 함께 고른 정도.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "negative-agreement-index",
+   "label": "음성 일치도",
+   "parent": "specific-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 평가자가 음성을 함께 고른 정도.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "one-vs-rest-agreement",
+   "label": "클래스별 one-vs-rest 일치도",
+   "parent": "specific-agreement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다중 클래스를 해당 클래스 대 나머지로 나눠 재기.",
    "related": [],
    "added": "2026-11-25"
   }
