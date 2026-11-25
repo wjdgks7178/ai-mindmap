@@ -51101,11 +51101,14 @@
    "label": "Condorcet 배심 정리",
    "parent": "majority-voting-labels",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "개인 정확도 50% 초과·독립이면 다수결이 정확해지는 정리.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "majority-vote-threshold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "tie-breaking-rule",
@@ -77803,6 +77806,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시험 배정·골드 대비 일치도 측정 기능.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "correlated-voters-ceiling",
+   "label": "상관된 투표자의 상한",
+   "parent": "condorcet-jury-theorem",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "투표자 상관이 있으면 인원을 늘려도 한계가 생김.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "competence-below-half",
+   "label": "능력이 50% 미만일 때",
+   "parent": "condorcet-jury-theorem",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "p<1/2인 투표자가 다수결을 해침.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "odd-voters-tie-avoid",
+   "label": "홀수 인원과 동률 회피",
+   "parent": "condorcet-jury-theorem",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인원을 홀수로 두는 이유.",
    "related": [],
    "added": "2026-11-25"
   }
