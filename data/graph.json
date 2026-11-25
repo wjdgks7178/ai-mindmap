@@ -50469,7 +50469,8 @@
    "priority": 3,
    "summary": "방향만 보는 지표와 크기까지 보는 지표의 차이.",
    "related": [
-    "knn-outlier-score"
+    "knn-outlier-score",
+    "dot-product-similarity"
    ],
    "added": "2026-11-20",
    "done": "2026-11-25"
@@ -76194,17 +76195,6 @@
    "status": "planned",
    "priority": 3,
    "summary": "진짜 거리가 갖춰야 할 조건.",
-   "related": [],
-   "added": "2026-11-25"
-  },
-  {
-   "id": "dot-product-similarity",
-   "label": "내적 유사도",
-   "parent": "cosine-vs-euclidean-distance",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "크기까지 반영하는 임베딩 유사도.",
    "related": [],
    "added": "2026-11-25"
   }
