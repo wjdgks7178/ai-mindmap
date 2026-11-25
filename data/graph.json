@@ -51645,11 +51645,14 @@
    "label": "LLM 라벨 사후 점검 주기",
    "parent": "llm-labeler-validation-subset",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "적용 후 주기적 표본 검수와 재검증.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "llm-labeler-validation-subset"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "risk-coverage-tradeoff",
@@ -79566,6 +79569,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "골드로 구간별 정확도를 잰 환산 표.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "event-triggered-revalidation",
+   "label": "이벤트 기반 재검증",
+   "parent": "llm-labeler-recheck-schedule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 버전·프롬프트 변경 시 즉시 재검증.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "initial-heavy-then-light-check",
+   "label": "초기 점검 강화 후 완화",
+   "parent": "llm-labeler-recheck-schedule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적용 직후 표본을 늘리고 안정되면 줄이기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pooled-monthly-check",
+   "label": "한 달치 모아 평가",
+   "parent": "llm-labeler-recheck-schedule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본을 모아 한 번에 크게 평가.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "check-sample-reuse-ban",
+   "label": "점검 표본 재사용 금지",
+   "parent": "llm-labeler-recheck-schedule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개발에 쓴 샘플을 점검에 재사용하지 않기.",
    "related": [],
    "added": "2026-11-25"
   }
