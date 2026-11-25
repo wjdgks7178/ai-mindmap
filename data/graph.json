@@ -3962,11 +3962,15 @@
    "label": "최대 출력 토큰",
    "parent": "context-window",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "한 번에 생성할 수 있는 출력 길이 한도와 max_tokens.",
+   "summary": "응답 하나의 생성 토큰 상한. 도달하면 stop_reason=max_tokens로 잘림, thinking 토큰도 포함(Anthropic 문서).",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "max-tokens",
+    "token-budget"
+   ],
+   "done": "2026-11-25"
   },
   {
    "id": "bm25",
@@ -80715,6 +80719,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "어휘가 커지면 비영어 효율이 좋아지는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "truncated-output-handling",
+   "label": "잘린 출력 처리",
+   "parent": "output-token-limit",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "max_tokens 도달 시 재시도·이어쓰기 패턴.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "thinking-tokens-budget",
+   "label": "생각 토큰 예산",
+   "parent": "output-token-limit",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론 토큰이 출력 한도를 나눠 쓰는 방식.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "chunked-generation",
+   "label": "나눠서 생성하기",
+   "parent": "output-token-limit",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 결과를 단계로 쪼개 생성하는 설계.",
    "related": [],
    "added": "2026-11-25"
   }
