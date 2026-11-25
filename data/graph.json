@@ -52038,11 +52038,14 @@
    "label": "기저율 오류",
    "parent": "test-prior-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "양성 판정의 확률이 기저율에 달려 있다는 베이즈 사고.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "양성 판정이 진짜일 확률은 기저율에 좌우. 계산: 1만 명·양성 1%·TPR 0.9·FPR 0.05에서 585건 중 진짜 90건(15%).",
+   "related": [
+    "prevalence-adjusted-precision"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "false-positive-volume",
@@ -80525,6 +80528,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "어느 지표가 언제 적절한지에 대한 논의.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "natural-frequency-explanation",
+   "label": "자연 빈도 설명법",
+   "parent": "base-rate-fallacy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 대신 \"1만 명 중 몇 명\"으로 설명하기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "ai-text-detector-base-rate",
+   "label": "AI 글 탐지기와 기저율",
+   "parent": "base-rate-fallacy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탐지기 경보 해석에서의 기저율 문제.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "bayes-theorem-basics",
+   "label": "베이즈 정리 기초",
+   "parent": "base-rate-fallacy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전확률과 사후확률의 관계.",
    "related": [],
    "added": "2026-11-25"
   }
