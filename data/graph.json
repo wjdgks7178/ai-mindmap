@@ -80038,7 +80038,7 @@
    "added": "2026-11-25"
   },
   {
-   "id": "split-report-logging",
+   "id": "fold-table-logging",
    "label": "분할 보고서 기록",
    "parent": "fold-balance-table",
    "domain": "ai-data",
