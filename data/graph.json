@@ -50931,11 +50931,14 @@
    "label": "검증 화면 설계",
    "parent": "crowdsourced-label-validation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "선택지·예시 이미지로 판정 정확도 높이기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "cannot-decide-option"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "candidate-precision-cost",
@@ -77579,6 +77582,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정보 부족·두 클래스 가능 등으로 나누기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "find-resolve-label",
+   "label": "FIND-RESOLVE-LABEL 워크플로",
+   "parent": "validation-ui-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모호 예시를 찾아 지침에 추가하는 3단계.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "hierarchy-label-ui",
+   "label": "계층 라벨 UI",
+   "parent": "validation-ui-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "계층 구조 노출이 어려운 문항 성능에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "pre-label-display-tradeoff",
+   "label": "후보 라벨 표시 트레이드오프",
+   "parent": "validation-ui-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보를 보여 주면 빠르지만 닻 효과.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "small-ab-test-ui",
+   "label": "UI 소규모 A/B",
+   "parent": "validation-ui-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소수 작업자로 화면 개선 효과 확인.",
    "related": [],
    "added": "2026-11-25"
   }
