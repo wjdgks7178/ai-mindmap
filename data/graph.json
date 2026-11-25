@@ -51965,11 +51965,12 @@
    "label": "RandomState 인스턴스 vs 정수",
    "parent": "clone-random-state-sharing",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "재현성과 견고성 목적에 따른 선택.",
+   "summary": "정수 random_state는 같은 결과, RandomState 인스턴스는 호출마다 상태 진행. 실험: 같은 추정기 refit 시 인스턴스만 예측 변함, CV는 clone으로 동일.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "cv-splitter-seed-policy",
@@ -80287,6 +80288,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "사후에 시드를 바꿨다면 이유와 이전 결과를 남김.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "global-numpy-seed-pitfall",
+   "label": "전역 np.random.seed 함정",
+   "parent": "randomstate-instance-vs-int",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전역 시드에 의존하면 재현성이 깨지는 이유.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "estimator-clone-state",
+   "label": "추정기 clone과 상태 복사",
+   "parent": "randomstate-instance-vs-int",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "clone이 난수 상태를 어떻게 다루는지.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "seed-for-debugging",
+   "label": "디버깅용 시드 고정",
+   "parent": "randomstate-instance-vs-int",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버그 재현을 위해 시드 고정하는 방법.",
    "related": [],
    "added": "2026-11-25"
   }
