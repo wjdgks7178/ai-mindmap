@@ -51726,11 +51726,14 @@
    "label": "희귀 클래스 추가 수집",
    "parent": "stratify-min-class-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "희귀 클래스를 더 모아 층화가 가능하게 만들기.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "merge-rare-classes"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "stratify-test-size-rule",
@@ -79721,6 +79724,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "비례 배분으로 작은 클래스가 0개가 되는 현상.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "targeted-rare-collection",
+   "label": "목적형 수집",
+   "parent": "rare-class-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보를 먼저 뽑아 희귀 샘플 모으기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "collection-bias-weighting",
+   "label": "수집 편향 가중 보정",
+   "parent": "rare-class-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의도적 수집 분포를 가중으로 보정.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "recall-sample-size-table",
+   "label": "재현율 추정 표본 수 표",
+   "parent": "rare-class-collection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 오차별 필요한 클래스 샘플 수.",
    "related": [],
    "added": "2026-11-25"
   }
