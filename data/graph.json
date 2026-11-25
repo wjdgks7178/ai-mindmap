@@ -51687,11 +51687,14 @@
    "label": "unknown 비율 모니터링",
    "parent": "llm-unknown-option",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
    "summary": "너무 높거나 낮은 보류 비율의 의미.",
-   "related": [],
-   "added": "2026-11-20"
+   "related": [
+    "risk-coverage-tradeoff"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-25"
   },
   {
    "id": "merge-rare-classes",
@@ -79613,6 +79616,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "개발에 쓴 샘플을 점검에 재사용하지 않기.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unknown-sample-analysis",
+   "label": "unknown 샘플 유형 분석",
+   "parent": "unknown-rate-monitoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보류된 샘플을 모아 공통 유형 파악.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unknown-rate-rise-causes",
+   "label": "unknown 상승 원인",
+   "parent": "unknown-rate-monitoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분포·프롬프트·모델 변경 등.",
+   "related": [],
+   "added": "2026-11-25"
+  },
+  {
+   "id": "unknown-rate-fall-overconfidence",
+   "label": "unknown 하락과 과신",
+   "parent": "unknown-rate-monitoring",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비율이 낮아지면 과신 여부 점검.",
    "related": [],
    "added": "2026-11-25"
   }
