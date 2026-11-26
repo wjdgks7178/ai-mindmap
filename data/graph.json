@@ -5612,11 +5612,12 @@
    "label": "아첨 점검",
    "parent": "discernment-skill",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "AI가 동의만 하는지 확인하는 법.",
+   "summary": "Sharma 2023: 5개 어시스턴트가 4개 과제에서 아첨, 동조 답이 더 선호될 수 있음. 점검: 의견 숨기고 비교·반대 근거 요구.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "verification-checklist",
@@ -10926,11 +10927,12 @@
    "label": "자기 일관성 투표",
    "parent": "chain-of-thought-prompting",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "여러 추론 결과를 다수결로 정하는 기법.",
+   "summary": "Wang 2022(ICLR 2023): 다양한 추론 경로 샘플링 후 가장 일관된 답 선택. GSM8K +17.9, SVAMP +11.0, AQuA +12.2, StrategyQA +6.4, ARC-c +3.9.",
    "added": "2026-11-09",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "faithful-reasoning",
@@ -27693,11 +27695,12 @@
    "label": "P(True) 자기 평가",
    "parent": "calibration",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델이 자기 답이 맞을 확률을 스스로 추정하는 방법.",
+   "summary": "Kadavath 2022: P(True)는 제안 답의 정답 확률 자기 평가(자기 샘플 고려 시 향상), P(IK)는 질문만 보고 아는지 예측, 새 과제 보정은 어려움.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "confidence-threshold-routing",
@@ -27759,11 +27762,12 @@
    "label": "AI 법률 서류 제재 사례",
    "parent": "citation-verification",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "가짜 인용으로 법원 제재를 받은 사례 흐름.",
+   "summary": "Mata v. Avianca(2023-06-22): ChatGPT 가짜 판례 인용, 변호사·로펌 5,000달러 제재(규칙 11조 주관적 악의), AI 금지가 아닌 기존 규칙 적용.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "edge-inference",
@@ -90662,6 +90666,105 @@
    "status": "planned",
    "priority": 5,
    "summary": "절감 효과 확인.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "opinion-blind-prompt",
+   "label": "의견 숨긴 질문",
+   "parent": "sycophancy-check",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "내 입장을 빼고 물어 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "devils-advocate-prompt",
+   "label": "반대 입장 프롬프트",
+   "parent": "sycophancy-check",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "약점·반박을 요구.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "majority-vote-llm",
+   "label": "LLM 다수결",
+   "parent": "self-consistency",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "여러 답 중 최빈값 선택.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sampling-temperature-diversity",
+   "label": "다양성용 temperature",
+   "parent": "self-consistency",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "경로 다양성 확보.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "self-consistency-cost",
+   "label": "자기 일관성 비용",
+   "parent": "self-consistency",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "N배 호출의 비용·지연.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "p-ik",
+   "label": "P(IK)",
+   "parent": "p-true-self-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "질문만 보고 아는지 예측.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "calibration-measurement",
+   "label": "보정 측정",
+   "parent": "p-true-self-evaluation",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "확률과 실제 정확도 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "rule-11-diligence",
+   "label": "규칙 11조와 확인 의무",
+   "parent": "ai-legal-filing-sanctions",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "서류 제출자의 합리적 조사 의무.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-court-rules",
+   "label": "법원의 AI 사용 규정",
+   "parent": "ai-legal-filing-sanctions",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 5,
+   "summary": "공개·검증 요구 동향.",
    "added": "2026-11-26",
    "related": []
   }
