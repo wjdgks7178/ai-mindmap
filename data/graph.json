@@ -88115,11 +88115,14 @@
    "label": "CoALA",
    "parent": "memory-types",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "언어 에이전트 인지 아키텍처 프레임워크.",
+   "summary": "언어 에이전트 틀: 작업·에피소드·의미·절차 기억, 내부(검색·추론·학습)/외부(접지) 행동, 계획-실행 결정 주기(Sumers 2023).",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "memory-types"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "episodic-memory-agent",
@@ -88842,11 +88845,14 @@
    "label": "레이트 인터랙션",
    "parent": "multimodal-rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "토큰 벡터별 매칭(ColBERT식).",
+   "summary": "ColBERT: 질의·문서 별도 인코딩 후 토큰 수준 가벼운 비교, 문서 사전 계산, BERT 랭커 대비 약 100배 빠름·FLOPs 약 1만 분의 1.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "multimodal-rag"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "vidore",
@@ -89685,6 +89691,61 @@
    "status": "planned",
    "priority": 5,
    "summary": "삽입 이력 점검.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "decision-cycle",
+   "label": "결정 주기",
+   "parent": "coala",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "계획→실행→관찰 반복.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "internal-vs-external-actions",
+   "label": "내부·외부 행동",
+   "parent": "coala",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "기억 접근 대 환경 접지.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "agent-taxonomy-coala",
+   "label": "CoALA로 에이전트 분류",
+   "parent": "coala",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "기존 에이전트를 틀 위에 배치.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "colbert",
+   "label": "ColBERT",
+   "parent": "late-interaction",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "레이트 인터랙션 검색 모델.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "multi-vector-index",
+   "label": "멀티벡터 인덱스",
+   "parent": "late-interaction",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "문서당 여러 벡터 저장.",
    "added": "2026-11-26",
    "related": []
   }
