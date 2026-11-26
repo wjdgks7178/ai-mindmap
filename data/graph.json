@@ -1885,24 +1885,30 @@
    "label": "위치 인코딩",
    "parent": "transformer-attention",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "어순 정보를 입력에 더하는 방법.",
+   "summary": "어텐션은 순서를 모르므로 위치 정보 주입. 트랜스포머 28.4/41.8 BLEU, RoPE는 절대 위치를 회전으로 넣어 상대 거리 반영, 거리 멀수록 의존성 약화.",
    "aka": [],
-   "related": [],
-   "added": "2026-10-29"
+   "related": [
+    "encoder-decoder-types"
+   ],
+   "added": "2026-10-29",
+   "done": "2026-11-26"
   },
   {
    "id": "encoder-decoder-types",
    "label": "인코더·디코더 모델 종류",
    "parent": "transformer-attention",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "BERT·GPT·T5 계열의 쓰임 차이.",
+   "summary": "인코더 전용(BERT: GLUE 80.5%, SQuAD 1.1 F1 93.2)·디코더 전용(GPT류)·인코더-디코더(번역·T5). 용도별 선택.",
    "aka": [],
-   "related": [],
-   "added": "2026-10-29"
+   "related": [
+    "positional-encoding"
+   ],
+   "added": "2026-10-29",
+   "done": "2026-11-26"
   },
   {
    "id": "ai-safety",
@@ -90099,6 +90105,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "자동 채점의 편향 점검.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "rope",
+   "label": "RoPE",
+   "parent": "positional-encoding",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "회전 위치 임베딩.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sinusoidal-position",
+   "label": "사인·코사인 위치 인코딩",
+   "parent": "positional-encoding",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "원 논문의 고정 방식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "context-extension-rope",
+   "label": "RoPE 기반 컨텍스트 확장",
+   "parent": "positional-encoding",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습 길이를 넘는 입력.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "decoder-only-llm",
+   "label": "디코더 전용 LLM",
+   "parent": "encoder-decoder-types",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "현재 챗봇 LLM의 구조.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "t5",
+   "label": "T5",
+   "parent": "encoder-decoder-types",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "텍스트를 텍스트로 바꾸는 인코더-디코더.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "causal-vs-bidirectional",
+   "label": "자기회귀 vs 양방향",
+   "parent": "encoder-decoder-types",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "볼 수 있는 문맥의 차이.",
    "added": "2026-11-26",
    "related": []
   }
