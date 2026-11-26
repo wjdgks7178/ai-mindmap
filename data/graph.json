@@ -53369,11 +53369,17 @@
    "label": "점근 오류",
    "parent": "inverse-power-law-fit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터를 무한히 늘려도 남는 오류 a의 의미.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "학습 곡선 ε=a·m^−β+γ에서 γ가 점근 오류. Hestness 2017: 실제 β가 −0.07~−0.35(이론 −0.5/−1), 모델 개선은 절편만 바꾸고 지수는 불변, 세 영역(best-guessing·멱법칙·환원 불가 오류). 직접 계산: γ를 빼고 맞추면 지수 −0.18로 10⁸에서 0.0261로 과소 예측(진짜 0.0532).",
+   "related": [
+    "inverse-power-law-fit",
+    "bayes-error",
+    "label-ambiguity-ceiling",
+    "fit-range-stability"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "log-spaced-sample-sizes",
@@ -85959,6 +85965,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본 복잡도 강화로 효율을 높인 근사.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "power-law-learning-curve",
+   "label": "멱법칙 학습 곡선",
+   "parent": "asymptotic-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류가 데이터 크기의 거듭제곱으로 줄어드는 곡선.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "irreducible-error-region",
+   "label": "환원 불가 오류 영역",
+   "parent": "asymptotic-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 늘려도 줄지 않는 바닥 구간.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "scaling-exponent",
+   "label": "스케일링 지수 β",
+   "parent": "asymptotic-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 곡선의 가파름.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "data-collection-decision-gamma",
+   "label": "데이터 수집 의사결정과 γ",
+   "parent": "asymptotic-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "γ가 가까우면 데이터보다 모델·라벨을 본다.",
    "related": [],
    "added": "2026-11-26"
   }
