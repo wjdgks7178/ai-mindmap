@@ -53235,11 +53235,17 @@
    "label": "중복 데이터의 대체 효과",
    "parent": "leave-one-out-value",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "복제본이 서로의 기여를 가려 LOO가 작아지는 현상.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "복제본은 서로의 기여를 가려 LOO가 0에 수렴. 가상 3점: A·A₂ 복제본 LOO 0.000·샤플리 0.125씩, B 0.150, 샤플리 합 0.40(U전체−U∅) vs LOO 합 0.15. LOO 0인 점 일괄 삭제는 복제본을 함께 지워 성능 −0.25.",
+   "related": [
+    "leave-one-out-value",
+    "semivalue",
+    "valuation-vs-deletion",
+    "near-duplicate-detection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "influence-function-valuation",
@@ -85594,6 +85600,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "측정 가능한 최대 정확도를 함께 보고.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cluster-level-valuation",
+   "label": "군집 단위 가치 평가",
+   "parent": "duplicate-data-substitution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복을 묶어 하나로 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "data-augmentation-duplicates",
+   "label": "증강으로 생기는 중복",
+   "parent": "duplicate-data-substitution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강 샘플이 가치 평가에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "substitute-complement-data",
+   "label": "대체·보완 데이터",
+   "parent": "duplicate-data-substitution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보가 겹치는/상보적인 데이터 관계.",
    "related": [],
    "added": "2026-11-26"
   }
