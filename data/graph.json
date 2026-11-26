@@ -53825,11 +53825,17 @@
    "label": "LSH와 근사 최근접 탐색",
    "parent": "minhash-lsh-forest",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "HNSW 같은 벡터 ANN과 비교.",
+   "summary": "HNSW(Malkov&Yashunin, 초록): 지수 감쇠 확률로 층을 정한 다층 근접 그래프, 상위 층에서 내려가는 검색, 로그 복잡도 확장 주장. LSH는 해시 버킷 충돌·P(s) 곡선. 집합 중복은 MinHash LSH, 임베딩 이웃은 벡터 ANN, 둘 다 재현율 샘플 측정·재검증.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "minhash-lsh-forest",
+    "lsh-signature-length",
+    "lsh-approximate-knn-shapley",
+    "semdedup"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "train-test-contamination-lsh",
@@ -87362,6 +87368,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "전체 처리 전 중복 비율 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "hnsw",
+   "label": "HNSW",
+   "parent": "ann-vs-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다층 근접 그래프 기반 근사 최근접 탐색.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "ann-recall-measurement",
+   "label": "ANN 재현율 측정",
+   "parent": "ann-vs-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확 탐색과 비교해 재현율 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "vector-index-selection",
+   "label": "벡터 인덱스 선택",
+   "parent": "ann-vs-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 규모·갱신 빈도에 따른 선택.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "skip-list-analogy",
+   "label": "건너뛰기 목록 비유",
+   "parent": "ann-vs-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층을 두어 빠르게 접근하는 구조.",
    "related": [],
    "added": "2026-11-26"
   }
