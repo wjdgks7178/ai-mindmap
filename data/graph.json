@@ -53418,11 +53418,16 @@
    "label": "외삽 거리 제한",
    "parent": "extrapolation-optimism",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "측정 구간의 2~4배 이내만 신뢰.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "직접 시뮬(맞춤 형태 정확, 7점, 잡음 2%): 6.4×10⁴ 기준 외삽 1.5배 평균 오차 2.5%, 4배 5.3%(90분위 13.2%), 10배 8.2%(21.2%), 100배 15.9%(43.8%). ±10% 목표면 2~4배, ±20%면 10배까지. 형태가 틀리면 더 나쁨. 배수와 구간을 함께 보고.",
+   "related": [
+    "extrapolation-optimism",
+    "fit-range-stability",
+    "asymptotic-error"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "curve-fit-uncertainty-bootstrap",
@@ -86107,6 +86112,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "best-guessing 영역 점을 빼고 맞춤.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "extrapolation-ratio-labeling",
+   "label": "외삽 배수 표기",
+   "parent": "extrapolation-distance-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측·주의·가능성 범위로 등급화.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "measure-one-more-point",
+   "label": "한 점 더 측정",
+   "parent": "extrapolation-distance-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최대 크기를 키워 외삽 배수 줄이기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "prediction-interval-curve",
+   "label": "곡선 예측 구간",
+   "parent": "extrapolation-distance-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞춤 잡음으로 인한 예측 범위.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "noise-level-vs-extrapolation",
+   "label": "시험 잡음과 외삽 정밀도",
+   "parent": "extrapolation-distance-limit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점의 정밀도가 외삽 오차에 미치는 영향.",
    "related": [],
    "added": "2026-11-26"
   }
