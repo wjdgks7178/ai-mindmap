@@ -5391,11 +5391,12 @@
    "label": "Ollama",
    "parent": "llama-cpp",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "로컬 모델 관리·실행 도구.",
+   "summary": "로컬 모델 실행 도구(MIT, llama.cpp 백엔드): 한 줄 설치·ollama run, REST 11434, Python·JS 클라이언트.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "vram-budgeting",
@@ -11826,22 +11827,24 @@
    "label": "vLLM",
    "parent": "paged-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "PagedAttention 기반 오픈소스 LLM 서빙 엔진.",
+   "summary": "PagedAttention 기반 서빙 엔진: KV 낭비 거의 없음, 같은 지연에서 처리량 2~4배 주장(SOSP 2023), OpenAI 호환 서버, 연속 배칭·양자화·병렬.",
    "added": "2026-11-09",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "continuous-batching",
    "label": "연속 배칭",
    "parent": "paged-attention",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "요청을 토큰 단위로 끼워 넣어 GPU를 놀리지 않는 스케줄링.",
+   "summary": "끝난 요청 자리에 새 요청을 토큰 단위로 투입해 GPU 유휴 감소. vLLM 문서 기능, 23배 수치는 외부 글 제목.",
    "added": "2026-11-09",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "kv-cache-sharing",
@@ -90503,6 +90506,94 @@
    "status": "planned",
    "priority": 5,
    "summary": "항상 로드되는 기억 파일.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "vllm-openai-server",
+   "label": "vLLM OpenAI 호환 서버",
+   "parent": "vllm",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "기존 SDK로 연결.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "prefix-caching",
+   "label": "프리픽스 캐싱",
+   "parent": "vllm",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "반복되는 앞부분 재사용.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ollama-modelfile",
+   "label": "Ollama Modelfile",
+   "parent": "ollama",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델 설정을 정의하는 파일.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ollama-api-usage",
+   "label": "Ollama API 사용",
+   "parent": "ollama",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 5,
+   "summary": "REST·클라이언트 호출.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "local-model-selection",
+   "label": "로컬 모델 고르기",
+   "parent": "ollama",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 5,
+   "summary": "하드웨어에 맞는 크기 선택.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "static-batching",
+   "label": "정적 배칭",
+   "parent": "continuous-batching",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "묶음 전체를 기다리는 방식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "chunked-prefill",
+   "label": "청크 프리필",
+   "parent": "continuous-batching",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "입력 처리를 쪼개 지연 안정.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "llm-throughput-vs-latency",
+   "label": "처리량과 지연의 균형",
+   "parent": "continuous-batching",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "서빙 최적화 지표.",
    "added": "2026-11-26",
    "related": []
   }
