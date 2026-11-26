@@ -52465,11 +52465,15 @@
    "label": "만점일 때의 불확실성",
    "parent": "bootstrap-confidence-interval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전부 맞힌 작은 시험의 구간 해석.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "n건 전부 정답이어도 95% 하한은 1−약 3/n(20건 83~86%, 100건 96~97%). 일반 부트스트랩은 구간 [100%,100%]을 내 부적절하므로 Wilson·정확 이항을 쓴다. 오류율<1% 증명엔 약 300건 무오류.",
+   "related": [
+    "rule-of-three",
+    "independent-test-ci"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "precision-vs-accuracy-of-estimate",
@@ -83449,6 +83453,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "군집 ROC의 분석적 분산 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "zero-failure-testing",
+   "label": "무결함 시험의 증거량",
+   "parent": "perfect-score-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n건 무오류가 말해 주는 최대 오류율.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "jeffreys-interval",
+   "label": "Jeffreys 구간",
+   "parent": "perfect-score-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "베이지안 관점의 비율 구간, 0·n 경계에서 안정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bootstrap-failure-cases",
+   "label": "부트스트랩이 실패하는 경우",
+   "parent": "perfect-score-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 지표·극단값·소표본에서의 한계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "regression-test-evidence",
+   "label": "회귀 테스트 통과의 증거 해석",
+   "parent": "perfect-score-uncertainty",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 테스트 N건 통과가 보장하는 것.",
    "related": [],
    "added": "2026-11-26"
   }
