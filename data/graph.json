@@ -2153,11 +2153,15 @@
    "label": "RAG 평가",
    "parent": "rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "검색 품질(recall)과 답변 충실도를 따로 재는 방법.",
+   "summary": "Ragas(2023): 정답 없이 검색·충실도·생성 품질 세 차원 평가. 검색과 생성을 분리해 원인 진단, 골든 질문 세트 회귀 테스트.",
    "added": "2026-10-30",
-   "related": []
+   "related": [
+    "mteb",
+    "independent-reviewer"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "semantic-vs-keyword-search",
@@ -5075,11 +5079,14 @@
    "label": "마트료시카 임베딩",
    "parent": "text-embedding",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "앞부분만 잘라 차원을 줄여도 쓸 수 있는 임베딩.",
+   "summary": "MRL: 굵은→세밀 순으로 담아 앞부분만 써도 유지. 추가 추론 비용 없음, 임베딩 최대 14배 축소·검색 속도 최대 14배.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "embedding-drift"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "embedding-drift",
@@ -10365,11 +10372,14 @@
    "label": "top-p(핵 샘플링)",
    "parent": "temperature-sampling",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "누적확률 p까지의 후보만 남기고 뽑는 방식.",
+   "summary": "Nucleus sampling(Holtzman 2019): 우도 최대화 디코딩의 퇴화를 막고 신뢰 없는 꼬리를 잘라 다양성과 일관성 유지. 후보 수는 분포에 따라 가변.",
    "added": "2026-11-08",
-   "related": []
+   "related": [
+    "top-k-sampling"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "top-k-sampling",
@@ -89990,6 +90000,105 @@
    "status": "planned",
    "priority": 5,
    "summary": "직접 상호작용이 약한 이유.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "mrl-two-stage-search",
+   "label": "2단계 검색",
+   "parent": "matryoshka-embedding",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "작은 차원 후보+전체 차원 재정렬.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "embedding-truncation",
+   "label": "임베딩 자르기",
+   "parent": "matryoshka-embedding",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "앞 차원만 쓰고 정규화.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "embedding-quantization",
+   "label": "임베딩 양자화",
+   "parent": "matryoshka-embedding",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "값 정밀도를 낮춰 저장 절감.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "top-p-vs-top-k",
+   "label": "top-p와 top-k",
+   "parent": "top-p-sampling",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "가변 후보 수 대 고정 후보 수.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sampling-params-practice",
+   "label": "샘플링 파라미터 실무 설정",
+   "parent": "top-p-sampling",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "용도별 temperature·top_p.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "text-degeneration",
+   "label": "텍스트 퇴화",
+   "parent": "top-p-sampling",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "반복·밋밋함이 생기는 이유.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "faithfulness-metric",
+   "label": "충실도 지표",
+   "parent": "rag-evaluation",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "답이 근거를 벗어나지 않는지.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "golden-question-set",
+   "label": "골든 질문 세트",
+   "parent": "rag-evaluation",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "정답 문서가 있는 평가 질문.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "llm-judge-rag",
+   "label": "RAG에서 LLM 심판",
+   "parent": "rag-evaluation",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "자동 채점의 편향 점검.",
    "added": "2026-11-26",
    "related": []
   }
