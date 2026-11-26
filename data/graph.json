@@ -53057,11 +53057,16 @@
    "label": "샤플리 공리",
    "parent": "beta-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "효율성·대칭성·널 플레이어·가법성.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "효율성·대칭성·선형성·널 플레이어 네 공리를 모두 만족하는 분배는 샤플리 값 하나. 장갑 게임(오른쪽 2·왼쪽 1)에서 φ=(1/6,1/6,2/3), 합 1. Data Shapley는 3공리+임의 상수, Beta Shapley는 효율성 제거.",
+   "related": [
+    "semivalue",
+    "shapley-efficiency-axiom",
+    "beta-shapley"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "beta-weight-tuning",
@@ -85053,6 +85058,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "낮은 값 하위 점을 오라벨 후보로 검수.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cooperative-game-theory",
+   "label": "협력 게임 이론",
+   "parent": "shapley-axioms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연합이 만든 가치를 나누는 게임 이론 분야.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shapley-permutation-form",
+   "label": "샤플리 순서 평균 형태",
+   "parent": "shapley-axioms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n! 순서의 한계 기여 평균.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "glove-game",
+   "label": "장갑 게임",
+   "parent": "shapley-axioms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샤플리 값을 설명하는 고전 예제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "lloyd-shapley-uniqueness",
+   "label": "샤플리 유일성 정리",
+   "parent": "shapley-axioms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "네 공리가 해를 하나로 정함.",
    "related": [],
    "added": "2026-11-26"
   }
