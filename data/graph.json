@@ -52635,11 +52635,16 @@
    "label": "중복 오류 범주",
    "parent": "error-category-ceiling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 예시가 여러 범주에 속할 때의 비율 해석.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng(MLY 15장): 한 예시가 여러 범주에 속해 비율 합이 100%를 넘을 수 있음(개 8%·큰 고양이 43%·흐림 61%). 두 범주 수정 효과는 합집합 A+B−A∩B이며 교집합을 모르면 61~100% 범위. 다중 체크 vs 주 원인 하나 선택.",
+   "related": [
+    "error-category-ceiling",
+    "improvement-efficiency-vs-ceiling",
+    "error-analysis-spreadsheet"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "label-error-share-of-errors",
@@ -83916,6 +83921,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "약 100/ε 규칙.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "union-of-error-categories",
+   "label": "오류 범주 합집합",
+   "parent": "overlapping-error-categories",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 범주를 모두 고칠 때의 상한 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "primary-cause-labeling",
+   "label": "주 원인 하나 지정",
+   "parent": "overlapping-error-categories",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합 100%로 맞추는 단일 원인 분류.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "new-category-discovery",
+   "label": "새 오류 범주 발견",
+   "parent": "overlapping-error-categories",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예시를 보다가 범주를 추가·재검토.",
    "related": [],
    "added": "2026-11-26"
   }
