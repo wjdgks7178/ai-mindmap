@@ -52816,11 +52816,16 @@
    "label": "Core Risk Minimization",
    "parent": "attributionscanner",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "가짜 영역에 노이즈를 넣어 core 특징 위주로 재학습.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "CoRM(Singla 2022): 가짜 영역 노이즈에도 정확하도록 학습, Salient ImageNet-1M 마스크 100만+, ERM 대비 core 정확도 약 +12%(저자 주장). AttributionScanner 재학습: Waterbirds clean 85.74→90.41, core 82.99→87.41, spurious 82.83→77.90.",
+   "related": [
+    "spurious-correlation",
+    "waterbirds-benchmark",
+    "attributionscanner"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "waterbirds-benchmark",
@@ -84483,6 +84488,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "경계·타입 규칙이 불명확하면 엄격 F1이 낮아지는 관계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "salient-imagenet",
+   "label": "Salient ImageNet",
+   "parent": "core-risk-minimization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ImageNet 클래스의 core·spurious 영역 마스크 데이터.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "relative-core-sensitivity",
+   "label": "상대 core 민감도(RCS)",
+   "parent": "core-risk-minimization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "core 영역 의존도를 가짜 영역과 비교하는 지표.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "spurious-mask-annotation",
+   "label": "가짜 영역 마스크 주석",
+   "parent": "core-risk-minimization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 core/spurious를 표시하는 비용과 방법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "clip-spurious-susceptibility",
+   "label": "CLIP의 가짜 특징 취약성",
+   "parent": "core-risk-minimization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제로샷 CLIP이 가짜 단서에 민감한 이유.",
    "related": [],
    "added": "2026-11-26"
   }
