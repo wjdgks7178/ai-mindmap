@@ -53619,11 +53619,17 @@
    "label": "자카드 vs 코사인 유사도",
    "parent": "jaccard-similarity",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집합 겹침 대 벡터 방향 비교.",
+   "summary": "자카드=|A∩B|/|A∪B|(거리는 metric), 0/1 집합의 코사인=|A∩B|/√(|A||B|). 10개⊂1,000개면 자카드 0.01·코사인 0.10·Dice 0.02, 비례 횟수 벡터는 코사인 1.0이나 가중 자카드 0.5. 집합 겹침은 자카드, 임베딩 방향은 코사인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "jaccard-similarity",
+    "valuation-ranking-stability",
+    "embedding-space-valuation",
+    "minhash"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "weighted-jaccard",
@@ -86682,6 +86688,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "대규모 라벨링 전에 소규모로 가설 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dice-coefficient",
+   "label": "Dice 계수",
+   "parent": "jaccard-vs-cosine",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "2|A∩B|/(|A|+|B|), 자카드와 J=S/(2−S) 관계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "weighted-jaccard-ruzicka",
+   "label": "가중 자카드(Ruzicka)",
+   "parent": "jaccard-vs-cosine",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최솟값 합/최댓값 합으로 횟수 벡터 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "set-size-imbalance-similarity",
+   "label": "집합 크기 불균형과 유사도",
+   "parent": "jaccard-vs-cosine",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크기 차이가 유사도 값에 미치는 영향.",
    "related": [],
    "added": "2026-11-26"
   }
