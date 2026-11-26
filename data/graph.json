@@ -82786,22 +82786,24 @@
    "label": "Deep Agents",
    "parent": "langchain-vs-langgraph",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "계획·파일시스템·서브에이전트를 더한 LangGraph 기반 하네스.",
+   "summary": "LangChain 에이전트 하네스: write_todos·가상 파일시스템·서브에이전트(task)·AGENTS.md 장기 메모리, LangGraph 런타임 사용.",
    "related": [],
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "durable-execution",
    "label": "내구성 있는 실행",
    "parent": "langchain-vs-langgraph",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "중간에 끊겨도 이어 가는 실행.",
+   "summary": "체크포인터+thread_id로 마지막 체크포인트에서 재개, 재시도는 at-least-once라 멱등 설계 필수(키는 상태에서 유도), durability 모드 exit/async/sync.",
    "related": [],
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "framework-vs-runtime",
@@ -90424,6 +90426,83 @@
    "status": "planned",
    "priority": 5,
    "summary": "학습 후 점검 질문 설계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "retry-policy",
+   "label": "재시도 정책",
+   "parent": "durable-execution",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "최대 횟수·타임아웃·오류 핸들러.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "durability-modes",
+   "label": "내구성 모드",
+   "parent": "durable-execution",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "exit·async·sync 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "langgraph-task-wrapping",
+   "label": "task로 부작용 감싸기",
+   "parent": "durable-execution",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "완료된 작업 건너뛰기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "write-todos",
+   "label": "write_todos 계획 도구",
+   "parent": "deep-agents",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "할 일 목록 상태 관리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "agent-virtual-filesystem",
+   "label": "에이전트 가상 파일시스템",
+   "parent": "deep-agents",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "컨텍스트를 파일로 오프로딩.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "async-subagents-deep",
+   "label": "비동기 서브에이전트",
+   "parent": "deep-agents",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "launch·check·cancel로 병렬.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "agents-md-memory",
+   "label": "AGENTS.md 장기 기억",
+   "parent": "deep-agents",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "항상 로드되는 기억 파일.",
    "added": "2026-11-26",
    "related": []
   }
