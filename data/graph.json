@@ -3822,11 +3822,15 @@
    "label": "독립 리뷰어 에이전트",
    "parent": "agent-verification",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "생성자와 맥락을 분리한 검토자를 쓰는 이유.",
+   "summary": "생성자와 맥락 분리한 검토자. LLM 심판 편향(위치·장황·자기선호), GPT-4급은 사람과 80%+ 일치(Zheng 2023). 루브릭·다른 모델·순서 교환.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "self-correction-limits",
+    "critique-revision"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "whisper",
@@ -87563,11 +87567,14 @@
    "label": "자기 수정의 한계",
    "parent": "critique-revision",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "외부 피드백 없는 자기 교정이 실패하는 경우.",
+   "summary": "Huang 2023(ICLR 2024): 외부 피드백 없는 내재적 자기 수정은 추론 과제에서 잘 안 되고 때로 악화. 외부 검증 신호 필요.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "independent-reviewer"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "ode-sampling",
@@ -88721,6 +88728,39 @@
    "status": "planned",
    "priority": 5,
    "summary": "기억에 신뢰 수준 표시.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "intrinsic-vs-extrinsic-correction",
+   "label": "내재 vs 외부 수정",
+   "parent": "self-correction-limits",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "피드백 출처에 따른 차이.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "verifier-loop",
+   "label": "검증기 루프",
+   "parent": "self-correction-limits",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "테스트·도구 결과로 수정.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "judge-rubric",
+   "label": "심판 루브릭",
+   "parent": "independent-reviewer",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "평가 기준표 설계.",
    "added": "2026-11-26",
    "related": []
   }
