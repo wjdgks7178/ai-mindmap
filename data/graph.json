@@ -52992,11 +52992,16 @@
    "label": "절단 허용오차",
    "parent": "tmc-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "허용오차가 편향·계산량에 미치는 영향.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "TMC-Shapley는 |V(D)−현재 성능|<허용오차이면 순열 내 남은 점의 한계 기여를 0으로 두고 중단. 허용오차는 시험 세트 부트스트랩 변동 기반. 논문: 합성 4~14점에서 진짜 값과 상관 98.4~99.5%, 절단 25%여도 순위 상관 약 0.8.",
+   "related": [
+    "tmc-shapley",
+    "shapley-convergence-check",
+    "shapley-efficiency-axiom"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "shapley-convergence-check",
@@ -84867,6 +84872,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "성능을 해치는 점(오염·이상치).",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bootstrap-tolerance-estimate",
+   "label": "부트스트랩 기반 허용오차 추정",
+   "parent": "truncation-tolerance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트 부트스트랩으로 성능 잡음 크기를 재는 법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "truncation-bias-order-effect",
+   "label": "절단과 순서 편향",
+   "parent": "truncation-tolerance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뒤쪽 점이 0으로 처리되어 생기는 편향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "g-shapley",
+   "label": "Gradient Shapley(G-Shapley)",
+   "parent": "truncation-tolerance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 에폭 기울기 근사로 계산을 줄이는 방법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shapley-rank-correlation-check",
+   "label": "샤플리 순위 상관 점검",
+   "parent": "truncation-tolerance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "절단 유무 결과의 순위 일치를 확인.",
    "related": [],
    "added": "2026-11-26"
   }
