@@ -1301,11 +1301,12 @@
    "label": "근접발달영역",
    "parent": "recursive-gap-filling",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "혼자는 못 하지만 도움받으면 할 수 있는 범위. 공백 채우기의 난이도 기준.",
+   "summary": "도움 받으면 가능한 범위. 비고츠키, 스캐폴딩(Bruner·Wood·Ross)은 도움을 점차 줄임. AI 튜터 힌트 단계화.",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "ai-learning-path-prompt",
@@ -27761,22 +27762,24 @@
    "label": "엣지 추론",
    "parent": "model-hosting-options",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "기기 안에서 소형 모델을 돌려 지연과 전송을 줄이는 방식.",
+   "summary": "기기 안 추론. llama.cpp(C/C++, MIT, 최소 설정·폭넓은 하드웨어), Ollama(llama.cpp 백엔드, 한 줄 실행·REST). 장단점과 혼합 구성.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "self-hosting-ops",
    "label": "셀프호스팅 운영",
    "parent": "model-hosting-options",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모니터링·업데이트·보안 등 직접 돌릴 때의 책임.",
+   "summary": "vLLM: PagedAttention·연속 배칭·프리픽스 캐싱·양자화·병렬, OpenAI 호환 API. 운영 책임(모니터링·업데이트·보안·용량).",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "hosting-decision-checklist",
@@ -90263,6 +90266,61 @@
    "status": "planned",
    "priority": 5,
    "summary": "계층 수준과 비용·철저함.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "scaffolding",
+   "label": "스캐폴딩",
+   "parent": "zone-of-proximal-development",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "도움을 주고 줄이는 교수법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "more-knowledgeable-other",
+   "label": "더 아는 타인",
+   "parent": "zone-of-proximal-development",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "교사·동료·AI의 역할.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-hint-ladder",
+   "label": "AI 힌트 사다리",
+   "parent": "zone-of-proximal-development",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "힌트를 단계적으로 공개.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "model-quantization-edge",
+   "label": "엣지용 양자화",
+   "parent": "edge-inference",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 5,
+   "summary": "작은 기기에 모델 맞추기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "llm-serving-monitoring",
+   "label": "LLM 서빙 모니터링",
+   "parent": "self-hosting-ops",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 5,
+   "summary": "지연·토큰/초·GPU 메모리.",
    "added": "2026-11-26",
    "related": []
   }
