@@ -4486,11 +4486,14 @@
    "label": "확장 가능한 감독",
    "parent": "ai-alignment",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "사람보다 똑똑한 AI를 어떻게 감독할지: 토론·재귀 보상 모델링 등.",
+   "summary": "초인적 AI를 사람이 감독하는 문제. 토론(Irving 2018): MNIST 59.4→88.9%, 복잡도 주장 PSPACE vs NP.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "critique-revision"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "interpretability",
@@ -4611,22 +4614,28 @@
    "label": "교차 로봇 학습",
    "parent": "vla-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "여러 종류 로봇 데이터를 합쳐 한 모델을 학습하는 접근.",
+   "summary": "다기종 로봇 데이터를 합쳐 학습. Open X-Embodiment: 22종 로봇·21기관·527스킬·160,266과제, RT-X 긍정적 전이.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "domain-randomization"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "domain-randomization",
    "label": "도메인 랜덤화",
    "parent": "sim-to-real",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "시뮬레이션 조건을 무작위로 바꿔 현실 일반화를 높이는 기법.",
+   "summary": "시뮬 질감·조명 등을 무작위화해 현실 전이. Tobin 2017: 실이미지 없이 시뮬만으로 약 1.5cm 위치 추정, 어수선한 장면 집기.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "cross-embodiment"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "system-identification",
@@ -87528,6 +87537,105 @@
    "status": "planned",
    "priority": 5,
    "summary": "웹 지식을 행동으로 옮긴 VLA.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sim-to-real-gap",
+   "label": "현실 격차",
+   "parent": "domain-randomization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "시뮬과 현실의 차이가 생기는 이유.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "physics-randomization",
+   "label": "물리 랜덤화",
+   "parent": "domain-randomization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "마찰·질량 등 물리 파라미터 변형.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "action-space-unification",
+   "label": "행동 공간 통일",
+   "parent": "cross-embodiment",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "기종별 행동 표현을 맞추는 법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "rt-x",
+   "label": "RT-X",
+   "parent": "cross-embodiment",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "Open X로 학습한 모델군.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "robot-dataset-standard",
+   "label": "로봇 데이터 표준 형식",
+   "parent": "cross-embodiment",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "RLDS 같은 공통 포맷.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-debate",
+   "label": "AI 토론",
+   "parent": "scalable-oversight",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "두 AI가 논쟁, 사람이 심판.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "recursive-reward-modeling",
+   "label": "재귀적 보상 모델링",
+   "parent": "scalable-oversight",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AI 보조로 평가자를 강화.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "weak-to-strong",
+   "label": "약한→강한 일반화",
+   "parent": "scalable-oversight",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "약한 감독으로 강한 모델 지도.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sandwiching",
+   "label": "샌드위치 평가",
+   "parent": "scalable-oversight",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "전문가와 비전문가 사이 감독 실험.",
    "added": "2026-11-26",
    "related": []
   }
