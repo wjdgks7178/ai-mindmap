@@ -52888,11 +52888,15 @@
    "label": "중재 LLM 비용",
    "parent": "moderation-guideline-refinement",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "반복당 비용과 모델 선택 균형.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "arXiv 2605.20809 표 3: 반복당 비용 GPT-5 $1.19~1.99, Gemini $0.09~0.25, DeepSeek $0.05~0.06(GPT-5는 DeepSeek의 22~41배). 총비용=반복 수×반복당($0.05~$3.98). DeepSeek은 지연 길고(BioRED 29.8분) 성능 낮음.",
+   "related": [
+    "moderation-guideline-refinement",
+    "guideline-quality-assurance"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "zero-shot-vs-finetuned-annotation",
@@ -84532,6 +84536,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "제로샷 CLIP이 가짜 단서에 민감한 이유.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-budget-cap",
+   "label": "LLM 호출 예산 상한",
+   "parent": "moderator-llm-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용·반복 상한을 두는 운영 규칙.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cheap-then-strong-pipeline",
+   "label": "저가→고성능 단계 사용",
+   "parent": "moderator-llm-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "초기 반복은 저가 모델, 최종 확인은 고성능.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "latency-vs-cost-tradeoff",
+   "label": "지연 vs 비용 균형",
+   "parent": "moderator-llm-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "값싼 모델의 긴 지연 문제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-vs-human-annotation-cost",
+   "label": "LLM vs 사람 라벨링 비용",
+   "parent": "moderator-llm-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "손익분기 계산.",
    "related": [],
    "added": "2026-11-26"
   }
