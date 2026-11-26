@@ -53128,11 +53128,15 @@
    "label": "메모 먼저 범주화",
    "parent": "error-analysis-spreadsheet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사유 메모에서 반복 패턴을 범주로 만드는 순서.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng MLY 15장: 예시를 보다 새 범주(Instagram)가 떠오르면 열을 추가하고 이미 본 예시를 다시 본다 — 반복 과정. 메모(Car noise·Restaurant noise·Coffeeshop)가 공통 범주 Loud background noise(75%)로 묶이는 예(26장). 처음 20~30개는 메모만, 범주 3~8개로 묶고 재체크.",
+   "related": [
+    "error-analysis-spreadsheet",
+    "overlapping-error-categories"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "error-analysis-reanalysis",
@@ -85201,6 +85205,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 오라벨 탐지 접근의 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "good-error-memo",
+   "label": "좋은 오류 메모 쓰기",
+   "parent": "memo-first-categorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관찰·모델 행동·추정 원인을 한 줄로.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-assisted-error-grouping",
+   "label": "LLM 보조 오류 묶기",
+   "parent": "memo-first-categorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM으로 범주 초안을 만들고 사람이 검증.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "other-category-limit",
+   "label": "기타 범주 비중 점검",
+   "parent": "memo-first-categorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기타가 커지면 메모를 다시 쪼갬.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "saturation-stopping-rule",
+   "label": "범주 포화 종료 규칙",
+   "parent": "memo-first-categorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 범주가 안 생기면 분석 종료.",
    "related": [],
    "added": "2026-11-26"
   }
