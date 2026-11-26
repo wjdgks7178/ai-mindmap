@@ -52683,11 +52683,17 @@
    "label": "작은 차이를 가를 개발 세트 크기",
    "parent": "mislabeled-dev-set-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "1%p 차이를 가르는 데 필요한 표본 수.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng: A 90.0 vs B 90.1은 100개로 불가, 10,000개면 0.1% 감지 가능성. 직접 계산(짝지은, 80% 검정력): 1%p는 불일치율 10%에서 약 7,800, 0.1%p는 약 78만, 불일치율 0.15~0.3%면 1.2만~2.4만. n∝1/d².",
+   "related": [
+    "mcnemar-test",
+    "paired-bootstrap-model-comparison",
+    "independent-test-ci",
+    "statistical-power"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "dev-test-label-fix-consistency",
@@ -84030,6 +84036,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 명이 라벨하고 불일치는 제3자가 결정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "disagreement-rate",
+   "label": "모델 불일치율",
+   "parent": "dev-set-size-for-small-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 모델이 다르게 맞히는 예시 비율.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "power-analysis-pilot",
+   "label": "검정력 분석 파일럿",
+   "parent": "dev-set-size-for-small-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치율을 파일럿으로 재 표본 크기 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "blackbox-dev-set",
+   "label": "블랙박스 개발 세트",
+   "parent": "dev-set-size-for-small-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직접 보지 않고 수치만 보는 개발 세트.",
    "related": [],
    "added": "2026-11-26"
   }
