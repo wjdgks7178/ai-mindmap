@@ -4091,11 +4091,14 @@
    "label": "토큰화",
    "parent": "llm-training-stages",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "글을 모델이 읽는 토큰 조각으로 나누는 일.",
+   "summary": "글을 토큰 ID열로 바꾸는 일. BPE는 가장 잦은 인접 쌍을 병합해 어휘를 만든다(hug 예: ug→un→hug). Sennrich 2015 서브워드로 WMT15 +1.1/+1.3 BLEU. 바이트 BPE는 미등록 토큰이 없다.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "context-window"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "lost-in-the-middle",
@@ -87414,6 +87417,28 @@
    "summary": "층을 두어 빠르게 접근하는 구조.",
    "related": [],
    "added": "2026-11-26"
+  },
+  {
+   "id": "bpe-algorithm",
+   "label": "BPE 병합 규칙",
+   "parent": "tokenization",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "병합 규칙을 손으로 따라 해 보기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "tokenizer-quirks",
+   "label": "토크나이저가 만드는 실수",
+   "parent": "tokenization",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "철자·숫자 계산이 약한 이유.",
+   "added": "2026-11-26",
+   "related": []
   }
  ]
 }
