@@ -52480,11 +52480,16 @@
    "label": "추정의 정밀함 vs 정확함",
    "parent": "stratification-shrinks-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "오차 막대가 작은 것과 불확실성이 작은 것의 차이.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "정밀함=무작위 오차(흩어짐), 정확함=평균과 참값의 거리(편향, ISO 5725). 표본을 늘려도 편향은 안 사라짐. 구간은 대개 표본 변동만 담으므로 시험 세트 편향·누수·라벨 오류는 별도 점검.",
+   "related": [
+    "test-prior-mismatch",
+    "stratification-shrinks-variance",
+    "measurement-validity"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "stratified-metric-undefined-fix",
@@ -83535,6 +83540,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "0/0 때 NaN·0·제외 중 무엇을 쓸지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "systematic-error-in-evaluation",
+   "label": "평가의 계통 오차",
+   "parent": "precision-vs-accuracy-of-estimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트 편향·누수·라벨 오류 같은 일관된 오차.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "repeatability-reproducibility",
+   "label": "반복성과 재현성",
+   "parent": "precision-vs-accuracy-of-estimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 조건/다른 조건에서 결과가 얼마나 같은가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "total-error-budget",
+   "label": "총 오차 예산",
+   "parent": "precision-vs-accuracy-of-estimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "편향+변동을 합쳐 점수의 불확실성을 보는 틀.",
    "related": [],
    "added": "2026-11-26"
   }
