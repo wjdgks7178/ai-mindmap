@@ -53775,11 +53775,17 @@
    "label": "집단별 수집 예산 배분",
    "parent": "per-slice-learning-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "기울기 기준으로 라벨 예산 나누기.",
+   "summary": "집단별 곡선 기울기×서비스 비중(÷비용)이 큰 집단부터 라벨 배정. 가상 3집단(일반 5만·사투리 2천·전문용어 1천 라벨, 3,000개 배분): 트래픽 비례 → 평균 오류 0.1443, 기울기 기준 탐욕(일반 0·사투리 1,300·전문용어 1,700) → 0.1366(기준 0.1484). 하한 제약·단계적 재측정 병행.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "per-slice-learning-curve",
+    "asymptotic-error",
+    "average-masking-weak-groups",
+    "follow-up-measurement"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "simpson-paradox-data",
@@ -87162,6 +87168,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "합칠지 나눌지는 도메인 판단.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "greedy-label-allocation",
+   "label": "탐욕적 라벨 배분",
+   "parent": "collection-budget-allocation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "100개 단위로 한계 이득 큰 집단에 배정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "worst-group-floor-constraint",
+   "label": "최악 집단 하한 제약",
+   "parent": "collection-budget-allocation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단별 목표 오류를 보장.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cost-aware-allocation",
+   "label": "비용 반영 배분",
+   "parent": "collection-budget-allocation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이득을 수집 비용으로 나눠 우선순위.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cross-slice-transfer",
+   "label": "집단 간 전이 효과",
+   "parent": "collection-budget-allocation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 집단 데이터가 다른 집단을 돕는 효과.",
    "related": [],
    "added": "2026-11-26"
   }
