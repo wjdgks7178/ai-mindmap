@@ -53636,11 +53636,16 @@
    "label": "가중 자카드",
    "parent": "jaccard-similarity",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "빈도를 반영한 min/max 확장.",
+   "summary": "가중 자카드(Ruzicka)=Σmin/Σmax, 0/1이면 일반 자카드. 예: x=(2,0,1), y=(1,3,1) → 1/3. 'the cat sat on the mat' vs 'the cat sat': 집합 자카드 0.6, 빈도 가중 0.5. 비례 벡터(3,0,1,0)/(6,0,2,0)은 코사인 1.0·가중 자카드 0.5. Tanimoto 벡터식은 일반 벡터에서 거리 공리 불성립.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "jaccard-similarity",
+    "jaccard-vs-cosine",
+    "weighted-jaccard-ruzicka"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "jaccard-threshold-tuning",
@@ -86721,6 +86726,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "크기 차이가 유사도 값에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "tf-idf-weighted-jaccard",
+   "label": "TF-IDF 가중 자카드",
+   "parent": "weighted-jaccard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 단어에 가중을 더 주는 변형.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "log-transform-counts",
+   "label": "빈도 로그 변환",
+   "parent": "weighted-jaccard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 빈도의 지배를 완화.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "histogram-similarity",
+   "label": "히스토그램 유사도",
+   "parent": "weighted-jaccard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빈도 분포를 가중 자카드로 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "tanimoto-caution",
+   "label": "Tanimoto 거리 주의",
+   "parent": "weighted-jaccard",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "벡터식 1−T가 삼각 부등식을 어길 수 있음.",
    "related": [],
    "added": "2026-11-26"
   }
