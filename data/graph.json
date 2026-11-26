@@ -52434,11 +52434,14 @@
    "label": "짝지은 부트스트랩 모델 비교",
    "parent": "bootstrap-confidence-interval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 문제 인덱스로 두 모델 차이의 구간을 구함.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "같은 인덱스로 두 모델 지표를 재계산해 차이 Δ의 분포·구간으로 판정. F1 등 복합 지표에 적합, 1,000~10,000회. 다중 비교 보정 필요, 학습 변동은 미반영.",
+   "related": [
+    "mcnemar-test"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "cluster-bootstrap",
@@ -83385,6 +83388,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "BCa의 z0만 쓰는 단순형.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "multiple-comparison-correction",
+   "label": "다중 비교 보정",
+   "parent": "paired-bootstrap-model-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 모델을 비교할 때 p값을 보정(Bonferroni·Holm).",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "leaderboard-gap-significance",
+   "label": "리더보드 격차의 유의성",
+   "parent": "paired-bootstrap-model-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순위 차이가 우연인지 판단.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-eval-confidence-interval",
+   "label": "LLM 평가 신뢰구간",
+   "parent": "paired-bootstrap-model-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문항 수가 적은 벤치마크의 불확실성 보고.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fixed-model-vs-training-variance",
+   "label": "고정 모델 비교 vs 학습 변동",
+   "parent": "paired-bootstrap-model-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드에 따른 변동을 별도로 보는 이유.",
    "related": [],
    "added": "2026-11-26"
   }
