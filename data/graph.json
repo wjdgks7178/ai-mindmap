@@ -53561,11 +53561,17 @@
    "label": "라벨 노이즈 정체",
    "parent": "bad-learning-curves",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "노이즈 때문에 곡선이 낮게 정체하는 현상.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "직접 시뮬(라벨 15% 무작위 뒤집기): 노이즈 검증 정확도는 n=640에서 0.848로 약 85%(=1−e)에 정체하는데 깨끗한 검증은 0.997까지 상승. 학습·검증이 붙어 높은 편향처럼 보이나 실제로는 라벨 천장. 깨끗한 소규모 검증 세트·확신 불일치 재검수로 진단.",
+   "related": [
+    "bad-learning-curves",
+    "label-ambiguity-ceiling",
+    "high-bias-learning-curve",
+    "systematic-vs-random-label-errors"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "uninformative-features-curve",
@@ -86503,6 +86509,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "불균형에서 클래스 비율을 맞춘 소표본.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "clean-validation-subset",
+   "label": "깨끗한 소규모 검증 세트",
+   "parent": "noisy-label-plateau",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문가가 재라벨한 검증 부분집합.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "label-noise-ceiling-diagnosis",
+   "label": "라벨 노이즈 천장 진단",
+   "parent": "noisy-label-plateau",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정체값과 (1−노이즈율)을 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "noisy-vs-clean-curve",
+   "label": "노이즈 vs 깨끗한 검증 곡선 비교",
+   "parent": "noisy-label-plateau",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 곡선 차이로 라벨 천장 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "small-sample-memorization",
+   "label": "소표본 노이즈 암기",
+   "parent": "noisy-label-plateau",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 데이터에서 노이즈까지 맞추는 과적합.",
    "related": [],
    "added": "2026-11-26"
   }
