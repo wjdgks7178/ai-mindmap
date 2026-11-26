@@ -52527,11 +52527,16 @@
    "label": "독립적 불확실성 추정",
    "parent": "stratification-shrinks-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드 외 방법으로 점수 불확실성을 따로 추정.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "폴드 sd는 층화·상관으로 성능 불확실성을 반영하지 못함(sklearn 명시). 시험 표본·분할 운·학습 시드·분포 이동을 출처별로 이항구간·부트스트랩·반복 분할·다중 시드로 따로 추정해 함께 보고.",
+   "related": [
+    "independent-test-ci",
+    "bootstrap-ci-for-cv",
+    "shuffle-split"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "regularization-small-data",
@@ -83621,6 +83626,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "여러 시드 결과의 평균과 퍼짐.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "learning-curve-cv-bias",
+   "label": "학습 곡선과 CV 편향",
+   "parent": "independent-uncertainty-estimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 곡선이 가파르면 k겹 CV가 과대평가하는 이유.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "held-out-final-test",
+   "label": "최종 시험 세트 한 번 평가",
+   "parent": "independent-uncertainty-estimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개발과 최종 보고를 분리.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "uncertainty-sources-taxonomy",
+   "label": "불확실성 출처 분류",
+   "parent": "independent-uncertainty-estimate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본·분할·시드·분포 이동 구분.",
    "related": [],
    "added": "2026-11-26"
   }
