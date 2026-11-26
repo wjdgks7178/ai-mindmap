@@ -52326,11 +52326,12 @@
    "label": "예측 음성 표본으로 재현율 감시",
    "parent": "classifier-monitoring-sampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "누락 양성을 찾는 별도 표집 설계.",
+   "summary": "음성 예측에서 표집해 누락률로 재현율 추정. ei-Recall: TP 4,000·음성 50만·표본 1,500에서 누락 3건 → 재현율 약 58~95%. 표본이 작으면 범위가 넓고 elusion만 쓰면 과대평가 가능.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "alert-rule-wilson-bound",
@@ -83126,6 +83127,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "저렴한 1차 + 정밀한 2차로 거짓 양성 줄이기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "elusion-rate",
+   "label": "누락률(elusion)",
+   "parent": "recall-monitoring-via-negatives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "음성 예측 집합 안의 양성 비율.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "exact-binomial-interval",
+   "label": "정확 이항 신뢰구간",
+   "parent": "recall-monitoring-via-negatives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 사건 비율의 구간 추정(Clopper-Pearson).",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "technology-assisted-review",
+   "label": "기술 지원 검토(TAR)",
+   "parent": "recall-monitoring-via-negatives",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "법률 문서 검토에서 분류기와 표집 검증을 결합.",
    "related": [],
    "added": "2026-11-26"
   }
