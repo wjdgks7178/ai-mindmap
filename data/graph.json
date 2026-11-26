@@ -52700,11 +52700,15 @@
    "label": "개발·시험 라벨 수정 일관성",
    "parent": "mislabeled-dev-set-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "두 세트에 같은 규칙으로 수정해 분포 차이 방지.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng MLY 6·16장: 개발·시험 분포가 같으면 격차는 과적합으로 진단되지만 다르면 원인이 셋(과적합·더 어려움·다름)으로 갈림. 라벨 수정은 두 세트에 같은 규칙으로, 틀린 예시만 고치면 편향이므로 맞힌 예시도 점검.",
+   "related": [
+    "label-error-share-of-errors",
+    "systematic-vs-random-label-errors"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "slice-confidence-interval-table",
@@ -84069,6 +84073,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "직접 보지 않고 수치만 보는 개발 세트.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "label-versioning",
+   "label": "라벨 버전 관리",
+   "parent": "dev-test-label-fix-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수정 전후 라벨을 버전으로 기록해 점수 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dev-test-distribution-match",
+   "label": "개발·시험 분포 일치",
+   "parent": "dev-test-label-fix-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 세트가 같은 분포에서 나와야 하는 이유.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "correct-examples-label-audit",
+   "label": "맞힌 예시 라벨 점검",
+   "parent": "dev-test-label-fix-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 예시만 고쳐 생기는 편향을 막는 점검.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "labeling-guideline-document",
+   "label": "라벨링 지침 문서화",
+   "parent": "dev-test-label-fix-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수정 규칙을 명문화해 일관성 확보.",
    "related": [],
    "added": "2026-11-26"
   }
