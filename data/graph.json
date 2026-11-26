@@ -53122,11 +53122,16 @@
    "label": "합집합 상한 계산",
    "parent": "error-analysis-spreadsheet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "범주 열의 합집합으로 실제 상한 계산.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "여러 범주를 고칠 때 상한=행 OR 평균(합집합), 열 합이 아님. 가상 20건: 열 합 115%, 큰 고양이∪흐림 80%, 세 범주 90%. 전체 오류 10%면 모두 완전 해결 시 1%까지. 교집합 불명이면 max(A,B)~min(100%,A+B).",
+   "related": [
+    "overlapping-error-categories",
+    "improvement-efficiency-vs-ceiling",
+    "error-analysis-spreadsheet"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "memo-first-categorization",
@@ -85298,6 +85303,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 줄 요약과 별도 가이드의 역할 분담.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "inclusion-exclusion-error-categories",
+   "label": "포함-배제와 오류 범주",
+   "parent": "union-ceiling-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 범주 합집합 = A + B − A∩B.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "uncategorized-errors-share",
+   "label": "범주 없는 오류 비중",
+   "parent": "union-ceiling-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 범주로도 설명 안 되는 오류의 크기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "post-fix-error-rate-bound",
+   "label": "수정 후 오류율 하한",
+   "parent": "union-ceiling-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 오류율 × (1 − 합집합).",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "row-or-aggregation",
+   "label": "행 OR 집계",
+   "parent": "union-ceiling-calculation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "pandas any(axis=1)로 합집합 계산.",
    "related": [],
    "added": "2026-11-26"
   }
