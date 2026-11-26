@@ -27211,11 +27211,15 @@
    "label": "AI 문서 추출",
    "parent": "rpa-vs-ai-automation",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "송장·계약서 같은 비정형 문서에서 항목을 뽑는 기술.",
+   "summary": "LayoutLMv3: 텍스트·이미지 통합 마스킹, 단어-패치 정렬. 양식·영수증·문서 VQA 등 최고 성능 보고. 스키마 지정 LLM 추출 추세, 사람 검수 경로.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "multimodal-rag",
+    "process-mining"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "gui-agent",
@@ -27362,11 +27366,14 @@
    "label": "멀티모달 RAG",
    "parent": "embedding-clip",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "이미지·표·도면을 텍스트와 함께 검색해 답에 쓰는 RAG.",
+   "summary": "ColPali(2024): 페이지 이미지를 멀티벡터 임베딩+레이트 인터랙션으로 검색, ViDoRe 벤치마크. 텍스트 추출 파이프라인의 시각 손실 해소.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "document-extraction-ai"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "zero-shot-image-classification",
@@ -88761,6 +88768,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "평가 기준표 설계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "late-interaction",
+   "label": "레이트 인터랙션",
+   "parent": "multimodal-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "토큰 벡터별 매칭(ColBERT식).",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "vidore",
+   "label": "ViDoRe 벤치마크",
+   "parent": "multimodal-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "시각 문서 검색 평가.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "page-image-embedding",
+   "label": "페이지 이미지 임베딩",
+   "parent": "multimodal-rag",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "OCR 없이 페이지를 벡터화.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "layoutlm",
+   "label": "LayoutLM 계열",
+   "parent": "document-extraction-ai",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "글자+위치+이미지 문서 모델.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "extraction-human-review",
+   "label": "추출 사람 검수",
+   "parent": "document-extraction-ai",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "신뢰도 낮은 건 분기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ocr-basics",
+   "label": "OCR 기초",
+   "parent": "document-extraction-ai",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이미지에서 글자 인식.",
    "added": "2026-11-26",
    "related": []
   }
