@@ -53684,11 +53684,16 @@
    "label": "섀글 해시",
    "parent": "shingling-ngrams",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "조각을 정수로 줄여 메모리 절감.",
+   "summary": "섀글을 정수 해시로 바꿔 메모리 절감, 충돌 기대 ≈ N(N−1)/2^(b+1). 실측(MD5 절단): 10만 조각 24비트 300건·32비트 1건·64비트 0건, 100만 조각 24비트 29,073건(≈3%)·32비트 120건·64비트 0건. N≥10⁶이면 64비트, 충돌은 교집합을 부풀려 자카드 상승.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "shingling-ngrams",
+    "jaccard-threshold-tuning",
+    "shingle-size-choice"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "korean-shingling",
@@ -86868,6 +86873,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "중복/비중복 분포 분리로 k 선택.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "hash-collision-birthday",
+   "label": "해시 충돌과 생일 역설",
+   "parent": "shingle-hashing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "N²/2^b로 충돌 기대치를 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "non-crypto-hash-for-dedup",
+   "label": "중복 탐지용 비암호 해시",
+   "parent": "shingle-hashing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "속도 위해 xxHash·Murmur 사용.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "hash-seed-reproducibility",
+   "label": "해시 시드·재현성",
+   "parent": "shingle-hashing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드·알고리즘을 기록하고 고정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "numpy-array-shingle-storage",
+   "label": "정수 배열 섀글 저장",
+   "parent": "shingle-hashing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "넘파이 배열로 메모리 절약.",
    "related": [],
    "added": "2026-11-26"
   }
