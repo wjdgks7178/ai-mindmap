@@ -82799,11 +82799,12 @@
    "label": "프레임워크 vs 런타임",
    "parent": "langchain-vs-langgraph",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "추상화 계층과 실행 기반의 구분.",
+   "summary": "LangGraph는 저수준 오케스트레이션 프레임워크이자 런타임. 영속성·사람 개입·메모리·스트리밍 제공, 아키텍처를 강제하지 않음.",
    "related": [],
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "supervisor-pattern",
