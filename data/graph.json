@@ -27452,11 +27452,12 @@
    "label": "모달리티 간극",
    "parent": "embedding-clip",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "이미지 벡터와 글 벡터가 한 공간에서도 서로 몰려 있는 현상.",
+   "summary": "Liang 2022: CLIP류 임베딩이 이미지·텍스트 두 무리로 분리. 원인은 초기화(좁은 원뿔)와 대조 학습(온도). 간극이 제로샷 성능·공정성에 영향.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "clip-limitations",
@@ -90158,11 +90159,12 @@
    "label": "T5",
    "parent": "encoder-decoder-types",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "텍스트를 텍스트로 바꾸는 인코더-디코더.",
+   "summary": "Raffel 2019: 모든 텍스트 과제를 text-to-text로 통일한 인코더-디코더. C4 코퍼스, 요약·QA·분류 SOTA 보고, 데이터·모델·코드 공개.",
    "added": "2026-11-26",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "causal-vs-bidirectional",
@@ -90172,6 +90174,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "볼 수 있는 문맥의 차이.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "contrastive-temperature",
+   "label": "대조 학습의 온도",
+   "parent": "modality-gap",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "온도가 거리에 주는 영향.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "embedding-cone-effect",
+   "label": "임베딩 원뿔 효과",
+   "parent": "modality-gap",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "표현이 좁은 영역에 갇힘.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "cross-modal-similarity-scale",
+   "label": "모달 간 유사도 스케일",
+   "parent": "modality-gap",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "임계값 설정 시 주의.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "c4-corpus",
+   "label": "C4 코퍼스",
+   "parent": "t5",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "웹을 정제한 대규모 학습 데이터.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "text-to-text-framing",
+   "label": "text-to-text 틀",
+   "parent": "t5",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "과제를 글→글로 통일.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "transfer-learning-nlp",
+   "label": "NLP 전이 학습",
+   "parent": "t5",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "사전학습 후 과제 적용.",
    "added": "2026-11-26",
    "related": []
   }
