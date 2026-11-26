@@ -3809,13 +3809,14 @@
    "label": "AI 이미지 저작권",
    "parent": "image-generation",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "학습 데이터와 생성물의 권리 쟁점.",
+   "summary": "저작물성과 학습 적법성 두 쟁점. 미국 저작권청: Part1 2024-07-31, Part2 2025-01-29, Part3 사전판 2025-05-09. Part 2 결론 미확인.",
    "added": "2026-11-01",
    "related": [
-    "ai-safety"
-   ]
+    "deepfake"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "independent-reviewer",
@@ -4707,11 +4708,15 @@
    "label": "로봇 물리 시뮬레이터",
    "parent": "sim-to-real",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "Isaac Sim·MuJoCo 등 로봇 학습용 시뮬레이터 비교.",
+   "summary": "MuJoCo(DeepMind 공개, MJCF, MJX·Warp GPU)와 Isaac Sim(Omniverse·OpenUSD, Apache 2.0, 합성 데이터·ROS). 현실 격차는 랜덤화로 보완.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "domain-randomization",
+    "system-identification"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "jepa",
@@ -88834,6 +88839,94 @@
    "status": "planned",
    "priority": 5,
    "summary": "이미지에서 글자 인식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "mujoco-quickstart",
+   "label": "MuJoCo 시작하기",
+   "parent": "physics-simulators",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "파이썬으로 모델 로드·스텝.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "isaac-lab",
+   "label": "Isaac Lab",
+   "parent": "physics-simulators",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "로봇 학습 프레임워크.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "urdf-mjcf",
+   "label": "URDF와 MJCF",
+   "parent": "physics-simulators",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "로봇 모델 기술 형식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "parallel-simulation",
+   "label": "병렬 시뮬레이션",
+   "parent": "physics-simulators",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "GPU로 수천 환경 동시 학습.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "copyrightability-human-authorship",
+   "label": "저작물성과 사람의 기여",
+   "parent": "ai-image-copyright",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "어느 정도 기여여야 보호되나.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "training-fair-use",
+   "label": "학습과 공정 이용",
+   "parent": "ai-image-copyright",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습 적법성 논쟁.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "image-generator-terms",
+   "label": "생성 서비스 약관",
+   "parent": "ai-image-copyright",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "상업 이용 권리 확인.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "digital-replica-law",
+   "label": "디지털 복제물 법",
+   "parent": "ai-image-copyright",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "목소리·초상 보호 입법.",
    "added": "2026-11-26",
    "related": []
   }
