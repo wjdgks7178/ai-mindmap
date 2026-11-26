@@ -53202,11 +53202,16 @@
    "label": "사람 수준 정의",
    "parent": "human-benchmark-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전문가·일반인·합의 중 어떤 사람을 기준으로 할지.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng MLY 34장: 일반인 15%·초보 의사 10%·숙련 의사 5%·의사 팀 합의 2%이면 2%를 사람 수준(최적 오류 추정 상한)으로. 5%·10%는 필연적으로 너무 높은 추정. 어려운 사례만 전문가에게 보내 비용 절충. 사람을 넘으면 사람이 더 잘하는 부분집합에서 기법 적용.",
+   "related": [
+    "bayes-error",
+    "avoidable-bias-vs-variance",
+    "human-benchmark-error"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "label-ambiguity-ceiling",
@@ -85495,6 +85500,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "개발−학습 격차가 분포 차이일 때의 오인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "expert-consensus-baseline",
+   "label": "전문가 합의 기준",
+   "parent": "human-level-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여럿이 토론해 낮춘 오류율을 기준으로.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "tiered-labeling-cost",
+   "label": "단계별 라벨링 비용 절충",
+   "parent": "human-level-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쉬운 건 저비용, 어려운 건 전문가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "surpassing-human-level",
+   "label": "사람 수준 초월 이후의 전략",
+   "parent": "human-level-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 더 잘하는 부분집합 찾기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "human-level-claims-check",
+   "label": "사람 수준 주장 점검",
+   "parent": "human-level-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비교한 사람 집단·조건 확인.",
    "related": [],
    "added": "2026-11-26"
   }
