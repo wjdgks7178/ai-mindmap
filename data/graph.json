@@ -52666,11 +52666,17 @@
    "label": "체계적 vs 무작위 라벨 오류",
    "parent": "mislabeled-dev-set-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "순위를 뒤집을 수 있는 체계적 오류 구분.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "무작위 라벨 오류는 점수 차이를 (1−2e)배로 줄일 뿐 순위 유지(92 vs 91, e=5% → 87.8 vs 86.9). 체계적 오류는 가상 예에서 A 92>B 91이 관측 A 88<B 95로 역전. Rolnick 2017: MNIST 무작위 라벨 100:1에도 90% 이상.",
+   "related": [
+    "label-error-share-of-errors",
+    "mislabeled-dev-set-threshold",
+    "inter-annotator-agreement",
+    "confident-learning"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "dev-set-size-for-small-differences",
@@ -84002,6 +84008,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨 오류가 만드는 측정 가능한 최소 오류율.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "label-sensitivity-analysis",
+   "label": "라벨 민감도 분석",
+   "parent": "systematic-vs-random-label-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 수정 전후 모델 순위 변화 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "double-labeling-adjudication",
+   "label": "이중 라벨링과 중재",
+   "parent": "systematic-vs-random-label-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 명이 라벨하고 불일치는 제3자가 결정.",
    "related": [],
    "added": "2026-11-26"
   }
