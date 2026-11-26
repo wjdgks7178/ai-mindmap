@@ -53073,11 +53073,16 @@
    "label": "Beta 가중치 선택",
    "parent": "beta-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "α, β를 검증 데이터로 정하는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Beta(α,β): (1,1)=데이터 샤플리, α≥β=1은 작은 크기 강조, α=1·β↑은 LOO로 접근. 15개 데이터셋 10% 라벨 뒤집기 탐지에서 Beta(16,1) 최고, 큰 크기 쪽·LOO-First는 열세, Northcutt 기법 평균 F1 0.42. 선택은 오염 심은 검증 데이터로(권장).",
+   "related": [
+    "beta-shapley",
+    "semivalue",
+    "data-valuation-for-label-noise"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "data-valuation-for-label-noise",
@@ -85102,6 +85107,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "네 공리가 해를 하나로 정함.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "kmeans-threshold-detection",
+   "label": "K-Means 기반 노이즈 판정",
+   "parent": "beta-weight-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "값을 두 군집으로 나눠 낮은 군집을 노이즈로.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "injected-noise-validation",
+   "label": "오염 주입 검증",
+   "parent": "beta-weight-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일부러 라벨을 뒤집어 탐지 성능을 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "loo-first-vs-loo-last",
+   "label": "LOO-First vs LOO-Last",
+   "parent": "beta-weight-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 작은/큰 부분집합만 보는 극단.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cifar100-label-errors",
+   "label": "CIFAR100 라벨 오류",
+   "parent": "beta-weight-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시험 세트 약 5.85%가 오라벨로 추정.",
    "related": [],
    "added": "2026-11-26"
   }
