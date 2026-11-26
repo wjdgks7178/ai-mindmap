@@ -53353,11 +53353,16 @@
    "label": "가중 KNN 샤플리",
    "parent": "knn-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "거리 가중 KNN으로의 확장.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "거리 가중 KNN 효용은 K개 이웃 조합별로 달라져 정확 샤플리가 O(N^K)(비가중은 O(N log N)). N=1000이면 K=2는 1e6, K=5는 1e15. 논문은 개선된 몬테카를로(O(N log²N/log²K)배 효율)와 판매자 단위 O(M^K)를 제시.",
+   "related": [
+    "knn-shapley",
+    "knn-utility",
+    "lsh-approximate-knn-shapley"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "asymptotic-error",
@@ -85910,6 +85915,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "중복·오라벨을 임베딩 이웃으로 찾기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "distance-weight-function",
+   "label": "거리 가중 함수",
+   "parent": "weighted-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "거리에 따른 이웃 가중치 설계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "knn-regression-shapley",
+   "label": "KNN 회귀 샤플리",
+   "parent": "weighted-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "음의 평균제곱오차 효용의 샤플리.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "seller-level-valuation",
+   "label": "판매자 단위 가치 평가",
+   "parent": "weighted-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 점을 낸 제공자에 대한 가치.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "improved-monte-carlo-knn",
+   "label": "개선된 몬테카를로 근사",
+   "parent": "weighted-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 복잡도 강화로 효율을 높인 근사.",
    "related": [],
    "added": "2026-11-26"
   }
