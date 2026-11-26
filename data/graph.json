@@ -53864,11 +53864,17 @@
    "label": "중복 제거 단계 순서",
    "parent": "paraphrase-dedup-limit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정확 일치 → 표면 근접 → 의미 순서.",
+   "summary": "중복 제거는 정확 일치→표면 근접(섀글·MinHash LSH+재검증)→의미(임베딩) 순서로 싼 것부터. 가상 1억 건(정확 20%, 표면 15%): 임베딩 단계 입력 1억→0.68억(32% 감소). 단계별 임계값·제거 목록·버전 기록, 학습-시험 근사 중복도 같은 파이프라인으로 점검.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "paraphrase-dedup-limit",
+    "semdedup",
+    "lsh-post-verify",
+    "shingle-hashing"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "dedup-diversity-tradeoff",
@@ -87312,6 +87318,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "제거 전후 집단별 성능 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "exact-dedup-normalization",
+   "label": "정확 일치 정규화",
+   "parent": "dedup-pipeline-order",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공백·대소문자·유니코드 통일 후 해시.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dedup-removal-log",
+   "label": "제거 목록 기록",
+   "parent": "dedup-pipeline-order",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단계별 제거 사유·버전·임계값 기록.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dedup-cost-model",
+   "label": "중복 제거 비용 모델",
+   "parent": "dedup-pipeline-order",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단계별 입력량과 비용으로 순서 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "sample-based-dup-estimate",
+   "label": "표본 기반 중복 규모 추정",
+   "parent": "dedup-pipeline-order",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 처리 전 중복 비율 추정.",
    "related": [],
    "added": "2026-11-26"
   }
