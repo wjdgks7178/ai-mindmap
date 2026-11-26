@@ -52857,11 +52857,15 @@
    "label": "엄격 구간·유형 F1",
    "parent": "moderation-guideline-refinement",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "구간과 유형이 모두 맞아야 정답으로 치는 F1.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "경계와 타입이 모두 정확히 일치해야 TP인 F1. 가상 예: 정확 7·경계 오류 1·타입 오류 1·헛 예측 1 → 엄격 F1 0.70, 위치만 보는 느슨한 F1 0.90. 논문은 소프트 매칭을 오류 범주화에만 사용, 종료 기준 0.9.",
+   "related": [
+    "discrepancy-categories-ner",
+    "moderation-guideline-refinement"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "guideline-quality-assurance",
@@ -84435,6 +84439,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "최다 오류 유형에 규칙을 추가하는 순서.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "lenient-f1",
+   "label": "느슨한 F1",
+   "parent": "strict-span-type-f1",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "겹침만 있으면 인정하는 NER F1.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "seqeval-library",
+   "label": "seqeval 라이브러리",
+   "parent": "strict-span-type-f1",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "엄격 개체 단위 NER F1을 계산하는 파이썬 도구.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bio-tagging-scheme",
+   "label": "BIO 태깅",
+   "parent": "strict-span-type-f1",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개체 경계를 B·I·O로 표시하는 방식.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "guideline-ambiguity-and-f1",
+   "label": "규칙서 모호성과 F1",
+   "parent": "strict-span-type-f1",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계·타입 규칙이 불명확하면 엄격 F1이 낮아지는 관계.",
    "related": [],
    "added": "2026-11-26"
   }
