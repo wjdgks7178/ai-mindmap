@@ -52491,11 +52491,16 @@
    "label": "층화로 지표 미정의 막기",
    "parent": "stratification-shrinks-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드에 클래스가 없어 지표가 정의되지 않는 문제 해결.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "무작위 5겹에서 양성이 적으면 양성 없는 폴드가 생김(n100·양성10 43%, 양성5 96%, 200·양성10·10겹 99.96%). StratifiedKFold로 방지, 양성 수≥폴드 수 필요, 안 되면 예측 풀링.",
+   "related": [
+    "stratification-shrinks-variance",
+    "out-of-fold-predictions",
+    "stratified-group-kfold"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "report-split-method",
@@ -83497,6 +83502,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "프롬프트 테스트 N건 통과가 보장하는 것.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "pooled-oof-metrics",
+   "label": "예측 풀링 지표",
+   "parent": "stratified-metric-undefined-fix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폴드별 평균 대신 전체 out-of-fold 예측으로 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "few-positives-cv",
+   "label": "양성이 극소수일 때의 CV",
+   "parent": "stratified-metric-undefined-fix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양성 수가 폴드 수보다 적은 경우의 설계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "undefined-metric-handling",
+   "label": "미정의 지표 처리",
+   "parent": "stratified-metric-undefined-fix",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0/0 때 NaN·0·제외 중 무엇을 쓸지.",
    "related": [],
    "added": "2026-11-26"
   }
