@@ -4585,24 +4585,26 @@
    "label": "플로 매칭",
    "parent": "vla-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "노이즈에서 연속 행동·이미지를 생성하는 확률 모델, 확산 모델의 친척.",
+   "summary": "노이즈→데이터 속도장을 회귀로 학습하는 생성법. Lipman 2022: 확산은 특수 경로, OT 경로가 더 빠르고 ImageNet에서 확산 앞섬 주장.",
    "added": "2026-11-02",
-   "related": [
-    "image-generation"
-   ]
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "openvla",
    "label": "OpenVLA",
    "parent": "vla-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "7B 오픈소스 VLA, 자기 로봇 데이터로 미세조정 가능.",
+   "summary": "Llama 2+DINOv2·SigLIP 7B 오픈 VLA, 97만 시연 학습, 29과제에서 55B RT-2-X보다 +16.5%p, LoRA·양자화로 소비자 GPU 미세조정.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "flow-matching"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "cross-embodiment",
@@ -87460,6 +87462,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "외부 피드백 없는 자기 교정이 실패하는 경우.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ode-sampling",
+   "label": "ODE 샘플링",
+   "parent": "flow-matching",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "속도장을 수치 적분해 샘플 생성.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "flow-policy-robot",
+   "label": "플로 기반 로봇 정책",
+   "parent": "flow-matching",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "행동 묶음을 플로로 생성.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "optimal-transport-path",
+   "label": "최적 수송 경로",
+   "parent": "flow-matching",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "OT 보간이 효율적인 이유.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "vla-fine-tuning",
+   "label": "VLA 미세조정",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "내 로봇 데이터로 LoRA 적응.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "dinov2-siglip",
+   "label": "DINOv2와 SigLIP",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "두 시각 인코더를 합치는 이유.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "rt-2",
+   "label": "RT-2",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "웹 지식을 행동으로 옮긴 VLA.",
    "added": "2026-11-26",
    "related": []
   }
