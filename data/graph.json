@@ -52732,11 +52732,16 @@
    "label": "데이터 보기 전 슬라이스 정의",
    "parent": "predefined-slice-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사후 슬라이스 만들기의 다중 비교 위험.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "슬라이스를 결과 보기 전에 고정. 독립 m개 슬라이스 5% 수준에서 우연히 하나 이상 유의할 확률 1−0.95^m(m=20이면 64.2%). 사후 슬라이스는 탐색적 표시 후 새 데이터로 확인, Bonferroni(α/m)·Holm 보정.",
+   "related": [
+    "multiple-comparison-correction",
+    "predefined-slice-evaluation",
+    "holm-bonferroni"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "average-masking-weak-groups",
@@ -84156,6 +84161,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "n·점수·구간·경고 열을 고정한 서식.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "p-hacking",
+   "label": "p-해킹",
+   "parent": "slice-definition-before-looking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "유의해질 때까지 분석을 바꾸는 행위.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "exploratory-vs-confirmatory",
+   "label": "탐색 vs 확인 분석",
+   "parent": "slice-definition-before-looking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가설 생성과 검증을 데이터로 분리.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "preregistration-evaluation",
+   "label": "평가 사전 등록",
+   "parent": "slice-definition-before-looking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스·지표를 실행 전에 문서로 고정.",
    "related": [],
    "added": "2026-11-26"
   }
