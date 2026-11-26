@@ -53434,11 +53434,17 @@
    "label": "곡선 맞춤 불확실성 부트스트랩",
    "parent": "extrapolation-optimism",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "여러 번 맞춰 예측 범위를 제시.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "잔차 부트스트랩으로 학습 곡선 예측 구간. 직접 실험(7점, 4배 외삽, 100 데이터셋): 점 추정 평균 오차 4.9%인데 명목 90% 구간의 실제 포함률은 66%(폭 15%), 잔차×1.32면 72%, ×2면 77%. 점이 적으면 부트스트랩 구간은 하한으로 읽고 확대·보조 점검.",
+   "related": [
+    "extrapolation-optimism",
+    "fit-range-stability",
+    "extrapolation-distance-limit",
+    "bootstrap-ci-for-cv"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "model-misspecification-extrapolation",
@@ -86156,6 +86162,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "점의 정밀도가 외삽 오차에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "residual-bootstrap",
+   "label": "잔차 부트스트랩",
+   "parent": "curve-fit-uncertainty-bootstrap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적합값에 잔차를 재표집해 더하는 부트스트랩.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "degrees-of-freedom-residual-shrinkage",
+   "label": "자유도와 잔차 축소",
+   "parent": "curve-fit-uncertainty-bootstrap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모수가 많을수록 잔차가 작아지는 문제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "interval-coverage-simulation",
+   "label": "구간 포함률 시뮬레이션",
+   "parent": "curve-fit-uncertainty-bootstrap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 포함 비율로 구간 방법을 점검.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bayesian-curve-fit-prior",
+   "label": "사전 범위가 있는 베이즈 곡선 맞춤",
+   "parent": "curve-fit-uncertainty-bootstrap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "γ에 사전분포를 두는 방법.",
    "related": [],
    "added": "2026-11-26"
   }
