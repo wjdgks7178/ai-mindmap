@@ -52715,11 +52715,17 @@
    "label": "슬라이스 신뢰구간 표",
    "parent": "predefined-slice-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "슬라이스별 n·정확도·구간을 표로 보고.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "슬라이스마다 n·점수·95% 구간을 표로 보고. 가상 예: 사투리 n=40 정확도 75%(59.8~85.8)는 전체 하한 90.0보다 낮아 실제 격차 가능, 점자 n=10(59.6~98.2)은 판단 불가. sliceval은 n<30 경고, Model Cards는 집단별 분리 평가 제안.",
+   "related": [
+    "predefined-slice-evaluation",
+    "category-share-confidence-interval",
+    "cluster-bootstrap",
+    "model-card"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "slice-definition-before-looking",
@@ -84117,6 +84123,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "수정 규칙을 명문화해 일관성 확보.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "small-subgroup-estimation",
+   "label": "작은 하위 집단 추정",
+   "parent": "slice-confidence-interval-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n<25~30 하위 집단의 구간·구조적 회귀.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "intersectional-slices",
+   "label": "교차 슬라이스",
+   "parent": "slice-confidence-interval-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연령×지역처럼 조합한 집단 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "slice-reporting-template",
+   "label": "슬라이스 보고 서식",
+   "parent": "slice-confidence-interval-table",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n·점수·구간·경고 열을 고정한 서식.",
    "related": [],
    "added": "2026-11-26"
   }
