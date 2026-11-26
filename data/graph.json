@@ -53153,11 +53153,17 @@
    "label": "오류 분석 재분석",
    "parent": "error-analysis-spreadsheet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "개선 후 같은 예시 ID로 다시 분석.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "개선 후 같은 예시 ID를 다시 채점해 범주별 해결·여전히·새로 틀림을 집계(가상: 흐림 61건 중 20건 해결=효율 33%, 새 오류 3건). Ng: 직접 보는 Eyeball 개발 세트(5,000 중 10%)는 과적합하므로 Blackbox(나머지)로 진짜 효과 판정.",
+   "related": [
+    "error-analysis-spreadsheet",
+    "blackbox-dev-set",
+    "improvement-efficiency-vs-ceiling",
+    "category-definition-one-liner"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "bayes-error",
@@ -85347,6 +85353,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "pandas any(axis=1)로 합집합 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "eyeball-dev-set",
+   "label": "Eyeball 개발 세트",
+   "parent": "error-analysis-reanalysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류 분석용으로 눈으로 보는 개발 세트.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "regression-new-errors",
+   "label": "새로 생긴 오류(퇴행)",
+   "parent": "error-analysis-reanalysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개선 후 새로 틀린 예시 추적.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "efficiency-estimate-from-reanalysis",
+   "label": "재분석으로 효율 추정",
+   "parent": "error-analysis-reanalysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해결된 비율을 다음 계획의 기대치로.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "masked-small-category-rise",
+   "label": "가려졌던 작은 범주의 부상",
+   "parent": "error-analysis-reanalysis",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 범주를 고치면 작은 범주 비중이 커짐.",
    "related": [],
    "added": "2026-11-26"
   }
