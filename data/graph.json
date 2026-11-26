@@ -3933,11 +3933,14 @@
    "label": "영상 프롬프트 쓰기",
    "parent": "video-ai",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "카메라 움직임·길이·장면 전환 지시법.",
+   "summary": "Veo 가이드: 피사체·동작·장면·카메라 앵글/움직임·렌즈·스타일·시간·소리 요소, 네거티브는 나열형, 짧은 클립은 미세 변화.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "spacetime-patches"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "classification-regression",
@@ -11013,11 +11016,15 @@
    "label": "오래된 메모리 문제",
    "parent": "agent-memory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "유효기간·망각·검증으로 낡은 기억을 다루는 법.",
+   "summary": "Mem0(2025): 추출·통합·검색, LOCOMO에서 OpenAI 대비 +26%, p95 지연 -91%, 토큰 90%+ 절감. 갱신/삭제 vs ADD-only, 유효기간·재확인 설계.",
    "added": "2026-11-09",
-   "related": []
+   "related": [
+    "memory-injection",
+    "memory-types"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "memory-types",
@@ -89014,6 +89021,94 @@
    "status": "planned",
    "priority": 5,
    "summary": "얼굴·저작권 이미지 관리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "camera-movement-glossary",
+   "label": "카메라 움직임 용어집",
+   "parent": "text-to-video-prompting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "돌리·팬·틸트·크레인 등.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "video-negative-prompt",
+   "label": "영상 네거티브 프롬프트",
+   "parent": "text-to-video-prompting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "빼고 싶은 요소 나열법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "video-audio-prompt",
+   "label": "영상 소리 지시",
+   "parent": "text-to-video-prompting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "효과음·대사를 별도 문장으로.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "storyboard-to-video",
+   "label": "콘티에서 영상으로",
+   "parent": "text-to-video-prompting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "장면별 프롬프트 설계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "mem0",
+   "label": "Mem0",
+   "parent": "memory-staleness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "장기 메모리 시스템.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "locomo-benchmark",
+   "label": "LOCOMO 벤치마크",
+   "parent": "memory-staleness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "장기 대화 메모리 평가.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "memory-conflict-resolution",
+   "label": "기억 충돌 해결",
+   "parent": "memory-staleness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모순 감지와 이력 관리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "memory-ttl",
+   "label": "메모리 유효기간",
+   "parent": "memory-staleness",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "TTL과 망각 정책.",
    "added": "2026-11-26",
    "related": []
   }
