@@ -28736,11 +28736,14 @@
    "label": "바이트 수준 BPE",
    "parent": "bpe-tokenizer",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "글자 대신 바이트에서 시작해 어떤 문자열도 표현하는 방식.",
+   "summary": "바이트 256개를 기본 어휘로 삼아 미등록 토큰 없음(GPT-2·RoBERTa). tiktoken: OpenAI용, 3~6배 빠르다고 주장, o200k_base·cl100k_base.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "bpe-algorithm"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "vocabulary-size-tradeoff",
@@ -87566,22 +87569,28 @@
    "label": "BPE 병합 규칙",
    "parent": "tokenization",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "병합 규칙을 손으로 따라 해 보기.",
+   "summary": "장난감 예제: u+g(20)→ug, u+n(16)→un, h+ug(15)→hug. 인코딩은 규칙을 학습 순서대로 적용, 순서가 결과를 바꿈.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "byte-level-bpe"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "tokenizer-quirks",
    "label": "토크나이저가 만드는 실수",
    "parent": "tokenization",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "철자·숫자 계산이 약한 이유.",
+   "summary": "글리치 토큰(어휘엔 있으나 학습 거의 없음, Land&Bartolo 2024)과 철자·숫자 실수. 코드 도구로 보완.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "token-cost-language"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "constitution-principles",
@@ -89178,6 +89187,116 @@
    "status": "planned",
    "priority": 5,
    "summary": "반복 입력 비용 절감.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "pre-tokenization",
+   "label": "사전 토큰화",
+   "parent": "bpe-algorithm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "병합 전에 단어 경계로 나누기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "vocab-size-choice",
+   "label": "어휘 크기 선택",
+   "parent": "bpe-algorithm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "크면 시퀀스 짧고 임베딩 큼.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "merge-order-matters",
+   "label": "병합 순서의 중요성",
+   "parent": "bpe-algorithm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "같은 규칙도 순서에 따라 달라짐.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "utf8-bytes",
+   "label": "UTF-8 바이트",
+   "parent": "byte-level-bpe",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "문자가 바이트로 인코딩되는 방식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "tiktoken-usage",
+   "label": "tiktoken 사용법",
+   "parent": "byte-level-bpe",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "토큰 수 세기·디코딩.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "o200k-vs-cl100k",
+   "label": "o200k_base와 cl100k_base",
+   "parent": "byte-level-bpe",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "인코딩 이름과 차이.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "glitch-tokens",
+   "label": "글리치 토큰",
+   "parent": "tokenizer-quirks",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "SolidGoldMagikarp 같은 학습 부족 토큰.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "magikarp-detection",
+   "label": "Magikarp 탐지",
+   "parent": "tokenizer-quirks",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "토크나이저·가중치·프롬프트 분석.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "character-counting-llm",
+   "label": "LLM의 글자 세기 한계",
+   "parent": "tokenizer-quirks",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "철자 질문이 어려운 이유.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "number-tokenization",
+   "label": "숫자 토큰화",
+   "parent": "tokenizer-quirks",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "자릿수 쪼개기와 계산 오류.",
    "added": "2026-11-26",
    "related": []
   }
