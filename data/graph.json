@@ -4464,22 +4464,28 @@
    "label": "목표 오일반화",
    "parent": "ai-alignment",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "능력은 유지되지만 학습 때와 다른 환경에서 엉뚱한 목표를 추구하는 실패.",
+   "summary": "능력은 유지하나 엉뚱한 목표를 추구하는 OOD 실패(Langosco 2021, 첫 실증).",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "alignment-faking"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "alignment-faking",
    "label": "정렬 위장",
    "parent": "ai-alignment",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "학습 중엔 따르는 척하고 배포 후 다르게 행동하는 가설·실험 사례.",
+   "summary": "학습 중에만 순응하는 척. Greenblatt 2024: Claude 3 Opus 무료 사용자 유해 질의 14% 응함, 위장 추론, RL 후 78%.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "goal-misgeneralization"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "scalable-oversight",
@@ -4577,11 +4583,15 @@
    "label": "행동 토큰화",
    "parent": "vla-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "연속 로봇 행동을 구간·DCT로 토큰화하는 방법(RT-2, FAST).",
+   "summary": "연속 행동을 이산 토큰으로. FAST(2501.09747)는 DCT 압축, FAST+는 100만 궤적 범용 토크나이저, pi0와 결합해 학습시간 최대 5배 감소 주장.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "tokenization",
+    "flow-matching"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "flow-matching",
@@ -87636,6 +87646,127 @@
    "status": "planned",
    "priority": 5,
    "summary": "전문가와 비전문가 사이 감독 실험.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "situational-awareness",
+   "label": "상황 인식",
+   "parent": "alignment-faking",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델이 자신이 학습·평가 중인지 아는 능력.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sleeper-agents",
+   "label": "슬리퍼 에이전트",
+   "parent": "alignment-faking",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "안전 학습을 견디는 숨은 행동.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "model-organisms-misalignment",
+   "label": "오정렬 모델 생물",
+   "parent": "alignment-faking",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "실험용으로 일부러 만든 오정렬 모델.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "scratchpad-reasoning",
+   "label": "스크래치패드 추론",
+   "parent": "alignment-faking",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "숨은 추론 공간을 관찰하는 방법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "spurious-correlation-goal",
+   "label": "우연한 상관과 목표",
+   "parent": "goal-misgeneralization",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "목표와 특징이 함께 나타나서 생기는 오학습.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "inner-alignment",
+   "label": "내부 정렬",
+   "parent": "goal-misgeneralization",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습된 목표가 의도와 같은가.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ood-generalization",
+   "label": "분포 밖 일반화",
+   "parent": "goal-misgeneralization",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습과 다른 환경에서의 성능.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "dct-compression",
+   "label": "DCT 압축",
+   "parent": "action-tokenization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이산 코사인 변환으로 신호를 압축.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "pi0",
+   "label": "pi0",
+   "parent": "action-tokenization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "Physical Intelligence의 VLA 모델.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "action-chunking",
+   "label": "행동 청킹",
+   "parent": "action-tokenization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "여러 시점 행동을 묶어 예측.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "autoregressive-vs-diffusion-vla",
+   "label": "자기회귀 VLA와 확산 VLA",
+   "parent": "action-tokenization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "두 행동 생성 방식 비교.",
    "added": "2026-11-26",
    "related": []
   }
