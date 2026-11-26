@@ -53402,11 +53402,16 @@
    "label": "맞춤 범위 안정성",
    "parent": "inverse-power-law-fit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "맞춤에 쓴 점 수에 따라 결론이 흔들리는지 확인.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "학습 곡선 멱법칙 맞춤은 사용한 구간에 민감. 직접 시뮬(진짜 γ0.05·β0.35): 앞 5점만이면 γ0.075·β0.463·10⁸ 예측 0.0758(진짜 0.0532, +42%), 9~11점이면 5% 이내. 끝점 제외·앞점 제외·구간별 β·부트스트랩으로 안정성 점검, 외삽은 보수적으로.",
+   "related": [
+    "inverse-power-law-fit",
+    "asymptotic-error",
+    "log-spaced-sample-sizes"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "extrapolation-distance-limit",
@@ -86058,6 +86063,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 크기마다 최적 모델 크기 탐색.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "extrapolation-limit-rule",
+   "label": "외삽 한계 규칙",
+   "parent": "fit-range-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맞춘 최대 크기의 약 10배 이내로 예측 제한(권장).",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "sectional-exponent-table",
+   "label": "구간별 지수 표",
+   "parent": "fit-range-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간마다 β를 계산해 일정한지 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "curve-fit-bootstrap",
+   "label": "학습 곡선 맞춤 부트스트랩",
+   "parent": "fit-range-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점을 재표집해 γ·β의 불확실성.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "small-size-region-exclusion",
+   "label": "작은 크기 구간 제외",
+   "parent": "fit-range-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "best-guessing 영역 점을 빼고 맞춤.",
    "related": [],
    "added": "2026-11-26"
   }
