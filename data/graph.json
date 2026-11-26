@@ -53668,11 +53668,16 @@
    "label": "섀글 크기 k 고르기",
    "parent": "shingling-ngrams",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "문서 길이·언어별 k 경험칙과 확인법.",
+   "summary": "직접 시뮬(단어 섀글): k=1이면 정형 문서(어휘 40개) 무관 쌍 자카드 0.983(오탐), k 증가 시 무관 쌍은 0이지만 5% 교체 근사 중복이 0.910(k=1)→0.748(k=3)→0.508(k=8)로 하락. k=2~3 균형. 사람 판정 쌍으로 분포 분리 최대 k 선택, 전처리·k 고정.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "shingling-ngrams",
+    "jaccard-threshold-tuning",
+    "jaccard-vs-cosine"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "shingle-hashing",
@@ -86819,6 +86824,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소문자·공백 정리가 자카드 값에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "character-ngram-korean",
+   "label": "한국어 글자 n-gram",
+   "parent": "shingle-size-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조사·어미 변화에 강한 글자 단위 섀글.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "template-heavy-corpus-dedup",
+   "label": "정형 문서 코퍼스의 중복 탐지",
+   "parent": "shingle-size-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "템플릿 때문에 무관 쌍도 유사해 보이는 문제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shingle-count-short-docs",
+   "label": "짧은 문서의 섀글 수",
+   "parent": "shingle-size-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "L−k+1개 조각의 불안정성.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "separation-based-k-selection",
+   "label": "분리도 기반 k 선택",
+   "parent": "shingle-size-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복/비중복 분포 분리로 k 선택.",
    "related": [],
    "added": "2026-11-26"
   }
