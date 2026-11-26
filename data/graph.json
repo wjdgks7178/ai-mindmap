@@ -3288,11 +3288,14 @@
    "label": "LangGraph 스토어",
    "parent": "langgraph-checkpoint",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "스레드 간 장기 메모리.",
+   "summary": "스레드 간 장기 메모리 저장소. 체크포인터(스레드 상태)와 함께 compile(checkpointer, store). 네임스페이스·검색은 미확인.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "memory-types"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "approval-policy",
@@ -3527,11 +3530,14 @@
    "label": "도구 노출 최소화",
    "parent": "context-engineering",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "도구 정의가 컨텍스트를 먹는 문제.",
+   "summary": "Anthropic 도구 설계 5원칙: 워크플로 단위 통합, 접두어, 읽을 수 있는 응답, 토큰 효율(Claude Code 25,000토큰 제한), 설명 프롬프트화.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "just-in-time-retrieval"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "docs-as-system-of-record",
@@ -11019,11 +11025,14 @@
    "label": "훈련·검증·테스트 분할",
    "parent": "overfitting",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "데이터를 나누는 이유와 누수 방지.",
+   "summary": "훈련=학습·검증=튜닝·테스트=최종 1회. 누수(전처리·시계열 섞기·그룹), k-겹 교차검증, TimeSeriesSplit.",
    "added": "2026-11-09",
-   "related": []
+   "related": [
+    "train-test-contamination-lsh"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "output-screening",
@@ -88117,6 +88126,61 @@
    "status": "planned",
    "priority": 5,
    "summary": "한국어 성능을 확인하는 법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "k-fold-cv",
+   "label": "k-겹 교차검증",
+   "parent": "train-val-test",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "데이터를 돌려 가며 검증.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "hyperparameter-tuning",
+   "label": "하이퍼파라미터 튜닝",
+   "parent": "train-val-test",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "검증 세트로 설정 고르기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "response-format-param",
+   "label": "응답 형식 파라미터",
+   "parent": "tool-selection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "concise/detailed로 토큰 절약.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "store-semantic-search",
+   "label": "스토어 의미 검색",
+   "parent": "langgraph-store",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "임베딩으로 기억 검색.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "long-term-memory-pattern",
+   "label": "장기 메모리 패턴",
+   "parent": "langgraph-store",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "선호·사실을 추출해 저장.",
    "added": "2026-11-26",
    "related": []
   }
