@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "nodes": [
   {
    "id": "ai",
@@ -52266,11 +52266,12 @@
    "label": "거짓 양성 규모",
    "parent": "test-prior-mismatch",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "비율이 낮으면 FPR이 작아도 거짓 양성이 폭증.",
+   "summary": "FP=FPR×N×(1−p). TPR 0.9·FPR 5%·100만 건에서 양성 0.1%면 FP 약 49,950 vs TP 900(경보 중 진짜 1.8%). FPR을 0.1% 이하로 눌러야 하고 처리 용량에서 임계값을 역산.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "stratified-evaluation-sampling",
@@ -83105,6 +83106,28 @@
    "summary": "예/아니오·수정 입력을 받는 승인 단계.",
    "related": [],
    "added": "2026-11-25"
+  },
+  {
+   "id": "threshold-from-capacity",
+   "label": "처리 용량 기반 임계값 설정",
+   "parent": "false-positive-volume",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "하루 처리 가능 경보 수에서 임계값을 역산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "two-stage-screening",
+   "label": "2단계 선별",
+   "parent": "false-positive-volume",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저렴한 1차 + 정밀한 2차로 거짓 양성 줄이기.",
+   "related": [],
+   "added": "2026-11-26"
   }
  ]
 }
