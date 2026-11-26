@@ -3277,11 +3277,14 @@
    "label": "체크포인터 저장소 선택",
    "parent": "langgraph-checkpoint",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "메모리·SQLite·Postgres 비교.",
+   "summary": "InMemorySaver는 개발용, 운영은 PostgresSaver(+최초 setup()), 기존 스택이면 MongoDB·Redis. SqliteSaver는 문서에 없음.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "langgraph-store"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "langgraph-store",
@@ -27385,22 +27388,29 @@
    "label": "제로샷 이미지 분류",
    "parent": "embedding-clip",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "학습 없이 후보 문장과의 유사도로 이미지 분류.",
+   "summary": "CLIP(4억 이미지-텍스트 쌍 대조 학습): 후보 문장 유사도로 제로샷 분류, ImageNet에서 ResNet-50 정확도에 필적.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "image-text-retrieval-vector-db",
+    "vlm-architecture"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "image-text-retrieval-vector-db",
    "label": "이미지 벡터 검색 구축",
    "parent": "embedding-clip",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "이미지 임베딩을 벡터 DB에 넣어 글로 찾는 파이프라인.",
+   "summary": "CLIP식 공동 임베딩으로 글·이미지 질의를 벡터 DB에서 검색. 파이프라인: 인코딩→인덱스→질의→top-k→재정렬.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "zero-shot-image-classification"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "modality-gap",
@@ -88927,6 +88937,83 @@
    "status": "planned",
    "priority": 5,
    "summary": "목소리·초상 보호 입법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "checkpoint-migration",
+   "label": "체크포인터 마이그레이션",
+   "parent": "checkpointer-backends",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "setup()을 배포 단계에서 실행.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "async-checkpointer",
+   "label": "비동기 체크포인터",
+   "parent": "checkpointer-backends",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AsyncPostgresSaver 사용.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "checkpoint-retention",
+   "label": "체크포인트 보존 정책",
+   "parent": "checkpointer-backends",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "오래된 스냅샷 정리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "prompt-template-clip",
+   "label": "CLIP 프롬프트 템플릿",
+   "parent": "zero-shot-image-classification",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "클래스 이름을 문장으로.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "zero-shot-limits",
+   "label": "제로샷의 한계",
+   "parent": "zero-shot-image-classification",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "세밀·특수 도메인 약점.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "image-embedding-reindex",
+   "label": "이미지 임베딩 재색인",
+   "parent": "image-text-retrieval-vector-db",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델 교체 시 전체 재색인.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "image-privacy-retrieval",
+   "label": "이미지 검색과 프라이버시",
+   "parent": "image-text-retrieval-vector-db",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "얼굴·저작권 이미지 관리.",
    "added": "2026-11-26",
    "related": []
   }
