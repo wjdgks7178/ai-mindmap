@@ -10530,11 +10530,12 @@
    "label": "GQA·MQA",
    "parent": "self-attention-qkv",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 6,
-   "summary": "K·V 헤드를 공유해 KV 캐시 메모리를 줄이는 변형.",
+   "summary": "GQA(Ainslie 2023): KV 헤드를 1과 질의 헤드 수 사이로 두어 MHA급 품질·MQA급 속도, 원래 사전학습 연산 5%로 업트레이닝.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "scaling-laws",
@@ -90525,11 +90526,12 @@
    "label": "프리픽스 캐싱",
    "parent": "vllm",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "반복되는 앞부분 재사용.",
+   "summary": "같은 앞부분의 KV를 재사용해 비용·지연 감소. 고정부를 앞, 가변부를 뒤에 두어야 적중. vLLM 지원 기능.",
    "added": "2026-11-26",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "ollama-modelfile",
@@ -90594,6 +90596,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "서빙 최적화 지표.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "multi-query-attention",
+   "label": "멀티쿼리 어텐션",
+   "parent": "grouped-query-attention",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "KV 헤드 1개 방식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "uptraining-attention",
+   "label": "어텐션 업트레이닝",
+   "parent": "grouped-query-attention",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "기존 체크포인트를 변환.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "kv-heads-config",
+   "label": "KV 헤드 설정 읽기",
+   "parent": "grouped-query-attention",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델 설정의 num_key_value_heads.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "prompt-caching-api",
+   "label": "API 프롬프트 캐싱",
+   "parent": "prefix-caching",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "제공사별 캐시 조건.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "prompt-layout-for-cache",
+   "label": "캐시 친화 프롬프트 구성",
+   "parent": "prefix-caching",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "고정·가변 순서.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "cache-hit-measure",
+   "label": "캐시 적중 측정",
+   "parent": "prefix-caching",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "절감 효과 확인.",
    "added": "2026-11-26",
    "related": []
   }
