@@ -52448,11 +52448,14 @@
    "label": "군집(그룹) 부트스트랩",
    "parent": "bootstrap-confidence-interval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "환자·문서 단위로 복원추출하는 부트스트랩.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "환자·사용자 같은 군집을 통째로 복원 추출. 돼지 ELISA 연구에서 일반 부트스트랩 95% 구간 포함률 55~82% vs 군집 약 94%. 개체 효과 크면 구간이 약 2배 넓어짐.",
+   "related": [
+    "grouped-bootstrap"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "perfect-score-uncertainty",
@@ -83432,6 +83435,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드에 따른 변동을 별도로 보는 이유.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "obuchowski-clustered-roc",
+   "label": "군집 ROC 분산법(Obuchowski)",
+   "parent": "cluster-bootstrap",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "군집 ROC의 분석적 분산 추정.",
    "related": [],
    "added": "2026-11-26"
   }
