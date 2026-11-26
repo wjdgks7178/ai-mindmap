@@ -53516,11 +53516,17 @@
    "label": "가치 순위 안정성",
    "parent": "opendataval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "시드별 순위 변동 점검.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "OpenDataVal은 50회 독립 실험·95% 구간으로 평가. 직접 실험(KNN-Shapley, 학습 400개 중 10% 오라벨, K=5): 검증 점 20/100/500개일 때 두 독립 실행 순위 Spearman 0.50/0.73/0.92, 하위 10% 자카드 0.33/0.51/0.72, 오라벨 정밀도 0.40/0.48/0.55. 공통 하위 점만 검수.",
+   "related": [
+    "opendataval",
+    "loo-noise-sensitivity",
+    "shapley-convergence-check",
+    "valuation-vs-deletion"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "benchmark-leaderboard-reading",
@@ -86403,6 +86409,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 필요 여부에 따른 비용 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "validation-set-size-for-valuation",
+   "label": "가치 평가용 검증 세트 크기",
+   "parent": "valuation-ranking-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 점 수가 순위 안정성에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "common-low-value-intersection",
+   "label": "공통 하위 가치 교집합",
+   "parent": "valuation-ranking-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 실행에서 공통으로 낮은 점만 검수.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rank-correlation-spearman",
+   "label": "순위 상관(Spearman)",
+   "parent": "valuation-ranking-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 순위의 일치 정도를 재는 지표.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "jaccard-overlap",
+   "label": "자카드 겹침",
+   "parent": "valuation-ranking-stability",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 집합의 교집합/합집합.",
    "related": [],
    "added": "2026-11-26"
   }
