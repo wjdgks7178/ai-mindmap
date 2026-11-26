@@ -53468,11 +53468,16 @@
    "label": "후속 실측 검증",
    "parent": "extrapolation-optimism",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "외삽이 가리킨 구간의 일부를 실제로 측정.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "외삽이 가리킨 구간의 일부를 실제 측정해 검증·재맞춤. 직접 시뮬(진짜 2.0m^−0.35+0.05): 기본 7점의 100배 외삽 오차 17.0%→+2배 점 10.5%→+2배·4배 두 점 6.4%. 다음 점 예측·구간을 사전 기록 후 측정.",
+   "related": [
+    "extrapolation-optimism",
+    "extrapolation-distance-limit",
+    "curve-fit-uncertainty-bootstrap"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "data-valuation-downstream-tasks",
@@ -86256,6 +86261,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "음수 오류 등 물리적으로 불가능한 예측.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "prediction-preregistration",
+   "label": "예측 사전 기록",
+   "parent": "follow-up-measurement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정 전에 예측과 구간을 적어 사후 합리화 방지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "staged-data-investment",
+   "label": "단계적 데이터 투자",
+   "parent": "follow-up-measurement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중간 측정 결과로 수집 규모 결정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "curve-refit-after-measurement",
+   "label": "측정 후 재맞춤",
+   "parent": "follow-up-measurement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "새 점으로 곡선과 예측을 갱신.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cross-domain-curve-comparison",
+   "label": "다른 도메인 곡선 비교",
+   "parent": "follow-up-measurement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비슷한 과제의 곡선과 비교해 형태 점검.",
    "related": [],
    "added": "2026-11-26"
   }
