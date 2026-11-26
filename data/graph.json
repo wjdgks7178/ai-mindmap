@@ -52406,11 +52406,14 @@
    "label": "독립 시험 세트 신뢰구간",
    "parent": "cv-error-bar-underestimation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "홀드아웃 점수의 이항 신뢰구간.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "분리된 시험 세트 정확도는 이항 구간으로. 9/10에서 Wald 71~109%(불가능)지만 Wilson 60~98%. 0/50 오류면 상한 약 6~7%(3의 법칙). 시험 재사용은 낙관적.",
+   "related": [
+    "mcnemar-test"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "bca-bootstrap",
@@ -83313,6 +83316,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "percentile·basic·BCa 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "test-set-reuse",
+   "label": "시험 세트 재사용 문제",
+   "parent": "independent-test-ci",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 선택이 시험 세트를 오염시키는 현상.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "sample-size-for-accuracy",
+   "label": "정확도 추정에 필요한 시험 크기",
+   "parent": "independent-test-ci",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원하는 오차 폭에서 n 계산.",
    "related": [],
    "added": "2026-11-26"
   }
