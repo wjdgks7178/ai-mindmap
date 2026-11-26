@@ -52908,11 +52908,15 @@
    "label": "제로샷 LLM vs 미세조정 모델",
    "parent": "llm-annotation-domain-generalization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "분류 과제에서 LLM과 미세조정 모델 비교.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Gilardi: 제로샷 ChatGPT가 5개 과제 중 4개에서 크라우드워커보다 정확, 주석당 $0.003 미만. Ziems: 25개 벤치마크에서 분류는 최고 미세조정 모델을 못 이겼으나 사람과 공정한 일치, 생성은 크라우드워커 기준보다 높게 평가. 기준이 다르면 결론이 다름.",
+   "related": [
+    "llm-annotation-domain-generalization",
+    "paired-bootstrap-model-comparison"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "korean-domain-llm-annotation",
@@ -84629,6 +84633,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "예시·온톨로지로 초기 규칙서를 만드는 연구 방향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-then-finetune-pipeline",
+   "label": "LLM 초벌 라벨→소형 모델 미세조정",
+   "parent": "zero-shot-vs-finetuned-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 라벨을 검수해 소형 모델을 학습하는 흐름.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-as-annotator-assistant",
+   "label": "LLM을 주석 보조자로 쓰기",
+   "parent": "zero-shot-vs-finetuned-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 팀에 제로샷 주석자를 더하는 방식.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "annotation-cost-per-label",
+   "label": "라벨당 비용 계산",
+   "parent": "zero-shot-vs-finetuned-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM·크라우드·전문가의 라벨당 비용 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fewshot-annotation-prompts",
+   "label": "퓨샷 주석 프롬프트",
+   "parent": "zero-shot-vs-finetuned-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예시를 넣어 라벨 일치도를 높이는 법.",
    "related": [],
    "added": "2026-11-26"
   }
