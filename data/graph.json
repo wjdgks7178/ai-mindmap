@@ -53716,11 +53716,16 @@
    "label": "LSH 오탐·미탐 가중치",
    "parent": "lsh-banding-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "곡선을 좌우로 옮기는 weights 설정.",
+   "summary": "오탐·미탐 면적을 가중해 (b,r)을 최적화하는 개념(직접 수치 적분, 서명 128). t=0.7: 가중(0.5,0.5)→14×9, 오탐 중시(0.9,0.1)→9×14(오탐 면적 0.0028·미탐 0.1229), 미탐 중시(0.1,0.9)→21×6(오탐 0.1464·미탐 0.0023). 재검증이 있으면 미탐을 줄이는 쪽이 유리. 라이브러리 파라미터는 미확인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "lsh-banding-curve",
+    "lsh-signature-length",
+    "lsh-post-verify"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "lsh-signature-length",
@@ -87064,6 +87069,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어휘가 다른 동의 문장을 못 잡는 한계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fp-fn-area-integration",
+   "label": "오탐·미탐 면적 적분",
+   "parent": "lsh-weights-fp-fn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "곡선 아래 면적으로 두 오류를 정량화.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "miss-vs-false-alarm-cost",
+   "label": "미탐 vs 오탐 비용",
+   "parent": "lsh-weights-fp-fn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "재검증 유무에 따른 오류 비용 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "similarity-distribution-aware-lsh",
+   "label": "유사도 분포 반영 LSH 설계",
+   "parent": "lsh-weights-fp-fn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 쌍 분포로 가중 최적화.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "lsh-parameter-search",
+   "label": "LSH 파라미터 탐색",
+   "parent": "lsh-weights-fp-fn",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "b×r ≤ num_perm 전수 탐색.",
    "related": [],
    "added": "2026-11-26"
   }
