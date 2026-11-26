@@ -52512,11 +52512,15 @@
    "label": "분할 방식 명시 보고",
    "parent": "stratification-shrinks-variance",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "층화·셔플·시드 등 분할 조건을 함께 기록.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "분할 종류·k·반복·셔플·시드·층화/그룹·전처리 위치를 점수와 함께 적는다. sklearn: cv=5는 시드 아님(폴드 수), 비교할 분할기엔 정수 random_state 권장, 전체 데이터 특징 선택은 무작위 라벨에서 정확도 0.76 누수.",
+   "related": [
+    "stratification-shrinks-variance",
+    "data-leakage"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "independent-uncertainty-estimate",
@@ -83573,6 +83577,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "편향+변동을 합쳐 점수의 불확실성을 보는 틀.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "experiment-reporting-checklist",
+   "label": "실험 보고 체크리스트",
+   "parent": "report-split-method",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할·시드·지표·구간을 빠짐없이 적는 서식.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "sklearn-random-state-pitfalls",
+   "label": "random_state 함정",
+   "parent": "report-split-method",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정수 vs RandomState vs None의 재현성 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "preprocessing-inside-folds",
+   "label": "폴드 내부 전처리",
+   "parent": "report-split-method",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Pipeline으로 누수 막기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "seed-variance-reporting",
+   "label": "시드 변동 보고",
+   "parent": "report-split-method",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 시드 결과의 평균과 퍼짐.",
    "related": [],
    "added": "2026-11-26"
   }
