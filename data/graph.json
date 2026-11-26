@@ -52877,11 +52877,16 @@
    "label": "규칙서 품질 보증",
    "parent": "moderation-guideline-refinement",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "규칙서 자체의 품질을 점검하는 표준 부재와 대안.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "논문(2605.20809): 규칙서 문서 자체를 평가하는 표준 QA 절차가 없고, 개정이 퇴행을 낳을 수 있음. 대안(권장): 구체성·모순 점검, 골든 회귀 세트, 개정 전후 정밀도로 과도한 규칙 탐지, 라벨러 일치도, 사람 승인과 버전 관리.",
+   "related": [
+    "moderation-guideline-refinement",
+    "moderator-llm-cost",
+    "guideline-versioning"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "moderator-llm-cost",
@@ -84580,6 +84585,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "손익분기 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "golden-regression-set",
+   "label": "골든 회귀 세트",
+   "parent": "guideline-quality-assurance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개정마다 정답 유지를 확인하는 고정 예시.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "guideline-consistency-check",
+   "label": "규칙서 일관성 검사",
+   "parent": "guideline-quality-assurance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙 쌍의 모순을 사례로 점검.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "overbroad-rule-detection",
+   "label": "지나치게 넓은 규칙 탐지",
+   "parent": "guideline-quality-assurance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개정 후 거짓 양성 증가로 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "guideline-generation-from-examples",
+   "label": "예시에서 규칙서 생성",
+   "parent": "guideline-quality-assurance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예시·온톨로지로 초기 규칙서를 만드는 연구 방향.",
    "related": [],
    "added": "2026-11-26"
   }
