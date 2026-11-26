@@ -3781,22 +3781,28 @@
    "label": "ControlNet·인페인팅",
    "parent": "image-generation",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "포즈·윤곽 조건 지정과 부분 수정.",
+   "summary": "ControlNet: 고정 확산 모델+제로 컨볼루션으로 엣지·깊이·포즈 조건 추가. 인페인팅은 일부 영역 재생성.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "lora-finetune"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "lora-finetune",
    "label": "LoRA 미세조정",
    "parent": "image-generation",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "작은 추가 가중치로 특정 화풍·인물을 학습.",
+   "summary": "LoRA: 가중치 고정+저랭크 행렬 학습, GPT-3 175B 기준 학습 파라미터 약 10,000배·GPU 메모리 약 3배 감소, 추론 지연 없음.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "controlnet-inpainting"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "ai-image-copyright",
@@ -3889,11 +3895,15 @@
    "label": "시공간 패치",
    "parent": "video-ai",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "영상을 토큰처럼 쪼개는 단위.",
+   "summary": "Sora: 영상을 시공간 잠재로 압축해 패치로 쪼개 트랜스포머 토큰으로. 확산 트랜스포머, 가변 길이·해상도·비율.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "image-patch-tokens",
+    "flow-matching"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "deepfake",
@@ -88305,6 +88315,83 @@
    "status": "planned",
    "priority": 5,
    "summary": "동기 병목 해소 과제.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "video-latent-compression",
+   "label": "영상 잠재 압축",
+   "parent": "spacetime-patches",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "시간·공간을 줄이는 인코더.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "diffusion-transformer",
+   "label": "확산 트랜스포머(DiT)",
+   "parent": "spacetime-patches",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "트랜스포머 기반 확산 모델.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "native-aspect-training",
+   "label": "원본 비율 학습",
+   "parent": "spacetime-patches",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "크롭 없이 학습하는 이점.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "zero-convolution",
+   "label": "제로 컨볼루션",
+   "parent": "controlnet-inpainting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "0 초기화 층으로 안정적 연결.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "image-conditions",
+   "label": "이미지 조건 종류",
+   "parent": "controlnet-inpainting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "엣지·깊이·분할·포즈.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "inpainting-workflow",
+   "label": "인페인팅 작업 흐름",
+   "parent": "controlnet-inpainting",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "마스크 지정부터 합성까지.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "adapter-merging",
+   "label": "어댑터 합치기",
+   "parent": "lora-finetune",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "여러 LoRA를 합성·병합.",
    "added": "2026-11-26",
    "related": []
   }
