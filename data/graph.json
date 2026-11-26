@@ -3859,13 +3859,14 @@
    "label": "음성 복제와 윤리",
    "parent": "speech-asr-tts",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "목소리 복제의 동의·사칭 문제.",
+   "summary": "음성 복제의 동의·사칭 위험과 체크리스트(서면 동의·표시·다른 채널 확인). FTC 사칭 규칙은 정부·기업 사칭 대상, 개인 확대는 제안 단계.",
    "added": "2026-11-01",
    "related": [
-    "ai-safety"
-   ]
+    "deepfake"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "wer",
@@ -3910,13 +3911,14 @@
    "label": "딥페이크와 합성물 표시",
    "parent": "video-ai",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "영상 합성의 악용과 워터마크·표기 대응.",
+   "summary": "딥페이크 대응: 탐지·표시·규제. C2PA Content Credentials는 출처·편집 이력 표준. FTC 사칭 규칙 2024-04-01 발효.",
    "added": "2026-11-01",
    "related": [
-    "ai-safety"
-   ]
+    "voice-cloning-ethics"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "text-to-video-prompting",
@@ -4723,13 +4725,15 @@
    "label": "생성형 월드 모델(Genie·Cosmos)",
    "parent": "world-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "영상으로 학습해 탐험 가능한 세계를 생성하는 모델.",
+   "summary": "Genie(2024-02): 11B, 라벨 없는 인터넷 영상으로 학습, 토크나이저·동역학·잠재 행동 모델 3부분, 행동 조작 가능한 세계 생성.",
    "added": "2026-11-02",
    "related": [
-    "image-generation"
-   ]
+    "jepa",
+    "compounding-error"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "model-predictive-control",
@@ -88392,6 +88396,116 @@
    "status": "planned",
    "priority": 5,
    "summary": "여러 LoRA를 합성·병합.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "latent-action-model",
+   "label": "잠재 행동 모델",
+   "parent": "genie-world-generation",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "영상에서 행동 공간을 스스로 학습.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "world-model-agent-training",
+   "label": "월드 모델로 에이전트 훈련",
+   "parent": "genie-world-generation",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "생성 환경에서 시뮬레이션 학습.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "cosmos-world-model",
+   "label": "Cosmos 월드 모델",
+   "parent": "genie-world-generation",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "물리 AI용 월드 파운데이션 모델.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "c2pa",
+   "label": "C2PA 콘텐츠 자격증명",
+   "parent": "deepfake",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "출처 이력 개방형 표준.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-watermarking",
+   "label": "AI 워터마크",
+   "parent": "deepfake",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "생성물에 심는 신호.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "deepfake-detection",
+   "label": "딥페이크 탐지",
+   "parent": "deepfake",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "사후 판별 방법과 한계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-labeling-law",
+   "label": "AI 생성물 표시 의무",
+   "parent": "deepfake",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "한국·EU 법제.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "voice-consent-contract",
+   "label": "음성 사용 동의서",
+   "parent": "voice-cloning-ethics",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "범위·기간·대가를 적는 법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "voice-scam-defense",
+   "label": "음성 사기 대응",
+   "parent": "voice-cloning-ethics",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "가족·임원 사칭 전화 대처.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "publicity-right-voice",
+   "label": "퍼블리시티권과 목소리",
+   "parent": "voice-cloning-ethics",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "목소리의 권리 보호.",
    "added": "2026-11-26",
    "related": []
   }
