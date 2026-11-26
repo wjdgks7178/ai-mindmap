@@ -52942,11 +52942,16 @@
    "label": "모델 버전 변경 시 재검증",
    "parent": "llm-annotation-domain-generalization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델이 바뀌면 라벨 품질을 다시 확인.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Chen·Zaharia·Zou(2307.09009): GPT-4 소수 판별 84%→51%(2023-03→06), 지시 따르기 하락·코드 형식 오류 증가. 고정 버전 사용, 골든 세트 재평가(구간·짝지은 비교), 파서 오류율 감시, 버전·프롬프트 로그.",
+   "related": [
+    "llm-annotation-domain-generalization",
+    "guideline-quality-assurance",
+    "performance-drop-root-cause"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "citing-ai-research-scope",
@@ -84729,6 +84734,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "어미·보조 용언 때문에 문법 형태로 의도를 못 정하는 문제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "pinned-model-snapshot",
+   "label": "모델 스냅샷 고정",
+   "parent": "model-version-revalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "날짜가 박힌 버전을 고정해 변화를 통제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "golden-validation-set",
+   "label": "골든 검증 세트",
+   "parent": "model-version-revalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람이 확정한 고정 평가 세트.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "parse-error-rate-monitoring",
+   "label": "파서 오류율 감시",
+   "parent": "model-version-revalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력 형식 변화를 별도 지표로 추적.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "llm-drift-monitoring",
+   "label": "LLM 드리프트 모니터링",
+   "parent": "model-version-revalidation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주기적 재평가와 알림 설계.",
    "related": [],
    "added": "2026-11-26"
   }
