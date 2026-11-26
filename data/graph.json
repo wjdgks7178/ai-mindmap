@@ -53738,11 +53738,16 @@
    "label": "LSH 후보 재검증",
    "parent": "lsh-banding-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "후보에 실제 자카드를 다시 계산.",
+   "summary": "LSH 후보는 싼 필터이므로 후보만 정확한 자카드로 재검증. 17×8 가상 분포(100만 쌍: s=0.1 90만·0.5 9만·0.8 1만): 후보 약 1.5만, 재검증 전 정밀도 62%→후속 ≈100%, 재현율 95.6%는 LSH가 결정(복구 불가). 전수 5×10¹¹ 쌍 대신 1.5만 쌍만 정밀 계산.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "lsh-banding-curve",
+    "lsh-signature-length",
+    "jaccard-threshold-tuning"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "slice-validation-size",
@@ -86966,6 +86971,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "s<t, s>t 구간의 확률로 허용 수준 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "two-stage-dedup",
+   "label": "2단계 중복 탐지",
+   "parent": "lsh-post-verify",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 생성 후 정밀 재검증.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "recall-first-lsh-setting",
+   "label": "재현율 우선 LSH 설정",
+   "parent": "lsh-post-verify",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보를 넉넉히 뽑고 재검증으로 정밀도 확보.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "verification-cost-estimate",
+   "label": "재검증 비용 추정",
+   "parent": "lsh-post-verify",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 수×쌍당 비교 비용.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "destructive-dedup-human-sample",
+   "label": "삭제 전 사람 표본 확인",
+   "parent": "lsh-post-verify",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "되돌리기 어려운 조치 전 샘플 검수.",
    "related": [],
    "added": "2026-11-26"
   }
