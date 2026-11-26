@@ -53089,11 +53089,17 @@
    "label": "노이즈 라벨 탐지용 데이터 가치 평가",
    "parent": "beta-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "낮은 가치 점을 오라벨 후보로 검토.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "가치가 낮은 점부터 검수하면 오라벨을 일찍 발견(Data Shapley: 세 모델 모두 오라벨이 최하위군, LOO는 두 모델에서 무작위 수준). 10% 오염 이미지는 소음이 클수록 가치 하락. Beta(16,1)은 15개 데이터셋 탐지 F1에서 Northcutt 기법(0.42)보다 우세. 낮은 값=오라벨 아님 주의.",
+   "related": [
+    "beta-weight-tuning",
+    "utility-function-choice",
+    "systematic-vs-random-label-errors",
+    "average-masking-weak-groups"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "category-definition-one-liner",
@@ -85151,6 +85157,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "시험 세트 약 5.85%가 오라벨로 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "review-precision-at-k",
+   "label": "하위 k% 검수 정밀도",
+   "parent": "data-valuation-for-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수한 점 중 실제 오라벨 비율.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "negative-value-removal-reweighting",
+   "label": "음수 가치 삭제·가중 학습",
+   "parent": "data-valuation-for-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가치로 데이터를 제거·가중해 성능을 개선.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "hard-but-correct-examples",
+   "label": "어려운 정상 예시 보존",
+   "parent": "data-valuation-for-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가치가 낮아도 지우면 안 되는 사례.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "confident-learning-comparison",
+   "label": "확신 학습과 가치 기반 비교",
+   "parent": "data-valuation-for-label-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 오라벨 탐지 접근의 차이.",
    "related": [],
    "added": "2026-11-26"
   }
