@@ -52380,11 +52380,14 @@
    "label": "폴드 간 상관",
    "parent": "cv-error-bar-underestimation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 데이터 겹침이 만드는 점수 상관.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "K겹 CV 폴드 오차는 학습 세트가 n(K−2)/K개 겹쳐 상관됨. 분산=σ²+ω(블록 내)+γ(블록 간) 세 성분이라 불편 추정량 없음(Bengio&Grandvalet 2004). 독립 가정 SE는 과소평가.",
+   "related": [
+    "data-leakage"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "bootstrap-ci-for-cv",
@@ -83232,6 +83235,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "독립·정규성·등분산이 모델 비교에서 깨지는 이유.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cv-variance-decomposition",
+   "label": "CV 분산의 세 성분",
+   "parent": "fold-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "σ²·ω·γ가 각각 무엇이고 어떻게 커지는지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "training-set-overlap",
+   "label": "학습 세트 겹침",
+   "parent": "fold-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K가 커질수록 폴드 간 학습 데이터 겹침 증가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "leave-one-out-variance",
+   "label": "LOO 교차 검증의 분산",
+   "parent": "fold-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "K=n일 때 편향은 작고 분산 문제는 어떤가.",
    "related": [],
    "added": "2026-11-26"
   }
