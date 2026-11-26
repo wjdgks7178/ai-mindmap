@@ -1222,33 +1222,43 @@
    "label": "설명 깊이의 착각",
    "parent": "feynman-technique",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "읽기만 하고 안다고 착각하다 설명하려 하면 무너지는 현상.",
+   "summary": "Rozenblit&Keil 2002: 작동 원리를 안다고 믿다가 설명해 보면 이해도 점수가 낮아짐. 설명 지식에서 특히 강함.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "curse-of-knowledge",
+    "feynman-technique"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "active-recall",
    "label": "능동적 인출",
    "parent": "feynman-technique",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "자료를 다시 읽지 않고 기억에서 꺼내 보는 학습법. 파인만 기법의 심리학적 근거.",
+   "summary": "떠올려 답하는 공부. Roediger&Karpicke 2006: 5분 뒤엔 재학습이 낫지만 1주 뒤엔 시험이 훨씬 우수, 자신감은 재학습이 더 높음. Dunlosky 2013 최고 효용.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "spaced-repetition"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "spaced-repetition",
    "label": "간격 반복",
    "parent": "feynman-technique",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "복습 간격을 점점 늘려 장기 기억으로 만드는 학습법.",
+   "summary": "분산 연습: Dunlosky 2013에서 연습 시험과 함께 최고 효용 등급, 형광펜·다시 읽기는 낮음. 간격 늘리기 일정과 AI 카드 활용.",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "active-recall"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "prerequisite-graph",
@@ -89746,6 +89756,94 @@
    "status": "planned",
    "priority": 5,
    "summary": "문서당 여러 벡터 저장.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "testing-effect",
+   "label": "시험 효과",
+   "parent": "active-recall",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "시험 자체가 기억을 강화.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "retrieval-practice-ai-quiz",
+   "label": "AI 퀴즈로 인출 연습",
+   "parent": "active-recall",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AI에게 문제 내게 하기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "spacing-effect",
+   "label": "간격 효과",
+   "parent": "spaced-repetition",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "몰아 공부 vs 나눠 공부.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "flashcard-ai-generation",
+   "label": "AI 카드 생성",
+   "parent": "spaced-repetition",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습 내용을 카드로 변환.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "forgetting-curve",
+   "label": "망각 곡선",
+   "parent": "spaced-repetition",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "시간에 따른 기억 감소.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "self-explanation-test",
+   "label": "설명해 보는 자기 시험",
+   "parent": "illusion-of-explanatory-depth",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AI 없이 설명해 빈틈 찾기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "fluency-illusion",
+   "label": "유창성의 착각",
+   "parent": "illusion-of-explanatory-depth",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "익숙함을 이해로 착각.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-answer-overtrust",
+   "label": "AI 답변 과신",
+   "parent": "illusion-of-explanatory-depth",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "읽고 이해했다는 느낌의 위험.",
    "added": "2026-11-26",
    "related": []
   }
