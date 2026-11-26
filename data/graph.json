@@ -52748,11 +52748,17 @@
    "label": "평균이 약한 집단을 가리는 문제",
    "parent": "predefined-slice-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전체 점수에 소수 집단 실패가 묻히는 현상.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "전체 오류=Σ비중×집단 오류. Gender Shades: 오류율 최대 34.7%(어두운 피부 여성) vs 0.8%(밝은 피부 남성), 기존 벤치마크 밝은 피부 79.6%·86.2%. 가상 혼합 86/14 비중이면 전체 오류 약 5.5%로 평균에 묻힘.",
+   "related": [
+    "predefined-slice-evaluation",
+    "slice-confidence-interval-table",
+    "worst-group-accuracy",
+    "gender-shades"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "slice-gap-root-cause",
@@ -84194,6 +84200,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "슬라이스·지표를 실행 전에 문서로 고정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "balanced-evaluation-set",
+   "label": "균형 평가 세트",
+   "parent": "average-masking-weak-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단을 균등하게 구성한 평가 데이터.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "macro-vs-micro-average",
+   "label": "매크로 vs 마이크로 평균",
+   "parent": "average-masking-weak-groups",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 비중 반영 여부에 따른 평균 차이.",
    "related": [],
    "added": "2026-11-26"
   }
