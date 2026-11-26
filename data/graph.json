@@ -4394,11 +4394,14 @@
    "label": "범용 AI 모델 의무",
    "parent": "eu-ai-act",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "GPAI 제공자에게 문서화·평가 등을 요구하는 규칙.",
+   "summary": "EU AI Act GPAI 의무: 2025-08-02 적용, 2026-08-02 집행 개시, 2027-08-02 기존 모델. 체계적 위험 모델 통지, 자발적 행동 강령.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "gdpr-ai"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "ai-literacy-obligation",
@@ -4420,33 +4423,42 @@
    "label": "GDPR과 AI",
    "parent": "eu-ai-act",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "개인정보 보호법이 AI 학습·서비스에 미치는 영향.",
+   "summary": "EDPB 의견 28/2024(2024-12-17): 모델 익명성은 사례별·높은 기준, 정당한 이익 3단계 테스트, 불법 데이터 모델의 시정 가능.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "gpai-obligations"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "rmf-genai-profile",
    "label": "생성형 AI 프로파일",
    "parent": "nist-ai-rmf",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "NIST-AI-600-1, 생성형 AI 고유 위험 대응 지침.",
+   "summary": "NIST AI 600-1(2024-07-26): AI RMF를 생성형 AI에 적용하는 자발적 프로파일. 위험 범주는 미확인.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "iso-42001"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "iso-42001",
    "label": "ISO/IEC 42001",
    "parent": "nist-ai-rmf",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "AI 경영시스템 인증 표준.",
+   "summary": "AI 경영시스템 최초 국제 표준(2023), PDCA·4~10절, 인증 가능. 2026판이 대체하되 기술 차이 없다는 BSI 공지.",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "rmf-genai-profile"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "ai-risk-register",
@@ -87767,6 +87779,105 @@
    "status": "planned",
    "priority": 5,
    "summary": "두 행동 생성 방식 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "systemic-risk-models",
+   "label": "체계적 위험 모델",
+   "parent": "gpai-obligations",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "통지 대상 최첨단 모델 기준.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "legitimate-interest-test",
+   "label": "정당한 이익 3단계 테스트",
+   "parent": "gdpr-ai",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이익·필요성·균형.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "model-anonymity",
+   "label": "모델 익명성",
+   "parent": "gdpr-ai",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습 데이터가 모델에서 추출되는지.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "data-subject-rights-ai",
+   "label": "AI와 정보주체 권리",
+   "parent": "gdpr-ai",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "삭제·접근 요구를 모델에 적용.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "korea-pipa-ai",
+   "label": "한국 개인정보보호법과 AI",
+   "parent": "gdpr-ai",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "국내 규정과 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "aims",
+   "label": "AI 경영시스템 AIMS",
+   "parent": "iso-42001",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "조직 차원 AI 관리체계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ai-impact-assessment",
+   "label": "AI 영향평가",
+   "parent": "iso-42001",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "시스템이 사람에 미치는 영향을 평가.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "iso-27001-integration",
+   "label": "ISO 27001과 통합",
+   "parent": "iso-42001",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "정보보안과 AI 관리 결합.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "confabulation-risk",
+   "label": "허위 생성 위험",
+   "parent": "rmf-genai-profile",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "환각을 위험 범주로 다루기.",
    "added": "2026-11-26",
    "related": []
   }
