@@ -52820,11 +52820,15 @@
    "label": "Waterbirds 벤치마크",
    "parent": "attributionscanner",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "배경 편향을 측정하는 새 분류 데이터셋.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "CUB 새+Places 배경 합성, 학습 4,795개·최소 그룹 56개. 최악 그룹 시험 정확도(ResNet50): 강한 L2에서 ERM 21.3%→DRO 84.6%, 조기 종료 6.7%→86.0%. 후속은 Animals·SUN, 8개 방법·5,000+ 모델 비교.",
+   "related": [
+    "spurious-correlation",
+    "average-masking-weak-groups"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "discrepancy-categories-ner",
@@ -84299,6 +84303,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "Grad-CAM·IG·SHAP 등 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "celeba-group-benchmark",
+   "label": "CelebA 그룹 벤치마크",
+   "parent": "waterbirds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "머리색×성별 그룹에서 최악 그룹을 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "multinli-negation-bias",
+   "label": "MultiNLI 부정어 편향",
+   "parent": "waterbirds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부정어가 모순 라벨의 지름길이 되는 사례.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "spuco-package",
+   "label": "SpuCo 패키지",
+   "parent": "waterbirds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가짜 상관 방법을 비교하는 오픈소스.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "generalization-gap-per-group",
+   "label": "그룹별 일반화 격차",
+   "parent": "waterbirds-benchmark",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그룹마다 학습·시험 정확도 차이.",
    "related": [],
    "added": "2026-11-26"
   }
