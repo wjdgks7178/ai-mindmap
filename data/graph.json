@@ -53106,11 +53106,16 @@
    "label": "범주 정의 한 줄",
    "parent": "error-analysis-spreadsheet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "체크 기준을 통일하는 한 줄 정의.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "범주 열마다 체크 기준을 한 줄(무엇이·조건·제외·예)로 적고 두 사람이 같은 20개를 독립 체크해 일치율 80%(권장) 미만이면 정의 수정. 정의 변경 시 재체크·버전 기록. Ng의 표 형식에 대한 이 글의 권장안.",
+   "related": [
+    "error-analysis-spreadsheet",
+    "memo-first-categorization",
+    "overlapping-error-categories"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "union-ceiling-calculation",
@@ -85249,6 +85254,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "새 범주가 안 생기면 분석 종료.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "category-definition-validation",
+   "label": "범주 정의 검증",
+   "parent": "category-definition-one-liner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 사람 독립 체크로 정의의 일치율을 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "category-versioning",
+   "label": "범주 버전 관리",
+   "parent": "category-definition-one-liner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정의 변경 시 재체크하고 v1·v2 기록.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "boundary-examples-in-definition",
+   "label": "경계 사례를 정의에 포함",
+   "parent": "category-definition-one-liner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 사례 3~5개를 예시 칸에 둠.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "checking-guideline-vs-summary",
+   "label": "표 머리 요약 vs 긴 지침",
+   "parent": "category-definition-one-liner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 줄 요약과 별도 가이드의 역할 분담.",
    "related": [],
    "added": "2026-11-26"
   }
