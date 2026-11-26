@@ -87677,11 +87677,15 @@
    "label": "RT-2",
    "parent": "openvla",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "웹 지식을 행동으로 옮긴 VLA.",
+   "summary": "웹 시각-언어+로봇 궤적 공동 학습, 행동을 텍스트 토큰으로. 6,000회 평가에서 새 물체 일반화, 기초 추론, 사고의 연쇄로 다단계 문제.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "openvla",
+    "pi0"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "sim-to-real-gap",
@@ -87875,11 +87879,14 @@
    "label": "pi0",
    "parent": "action-tokenization",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "Physical Intelligence의 VLA 모델.",
+   "summary": "플로 매칭+사전학습 VLM의 범용 로봇 정책. 단일팔·양팔·모바일 데이터, 제로샷·언어 지시·미세조정, 빨래 개기·상자 조립.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "rt-2"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "action-chunking",
@@ -88502,11 +88509,14 @@
    "label": "C2PA 콘텐츠 자격증명",
    "parent": "deepfake",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "출처 이력 개방형 표준.",
+   "summary": "C2PA Content Credentials: 콘텐츠 출처·편집 이력 개방형 표준, 운영위에 Adobe·Google·Meta·Microsoft·OpenAI 등, 사양 2.3. 한계는 페이지에 없음.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "deepfake"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "ai-watermarking",
@@ -88623,11 +88633,14 @@
    "label": "DAgger",
    "parent": "compounding-error",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "모델 분포에서 전문가 라벨을 보강.",
+   "summary": "자기 분포의 방문 상태에 전문가 라벨을 보태 재학습하는 무후회 온라인 학습 기반 모방 학습(Ross 2010).",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "compounding-error"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "distribution-shift",
@@ -89297,6 +89310,127 @@
    "status": "planned",
    "priority": 5,
    "summary": "자릿수 쪼개기와 계산 오류.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "co-fine-tuning",
+   "label": "공동 미세조정",
+   "parent": "rt-2",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "웹 데이터와 로봇 데이터 병행.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "robot-chain-of-thought",
+   "label": "로봇 사고의 연쇄",
+   "parent": "rt-2",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "행동 전에 추론 단계 생성.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "pi0-fast",
+   "label": "pi0-FAST",
+   "parent": "pi0",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "FAST 토크나이저를 쓴 자기회귀 변형.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "robot-foundation-model",
+   "label": "로봇 파운데이션 모델",
+   "parent": "pi0",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "범용 로봇 정책의 방향.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "long-horizon-manipulation",
+   "label": "장시간 조작 작업",
+   "parent": "pi0",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "빨래 개기 같은 다단계 과제.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "behavior-cloning",
+   "label": "행동 복제",
+   "parent": "dagger",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "전문가 시연을 지도학습으로 모방.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "no-regret-learning",
+   "label": "무후회 학습",
+   "parent": "dagger",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "온라인 학습의 보장 개념.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "expert-intervention",
+   "label": "전문가 개입 데이터",
+   "parent": "dagger",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "사람이 교정한 데이터 활용.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "content-credentials-icon",
+   "label": "콘텐츠 자격증명 표시",
+   "parent": "c2pa",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "플랫폼에서 이력을 보여 주는 방식.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "metadata-stripping",
+   "label": "메타데이터 제거 문제",
+   "parent": "c2pa",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "출처 정보가 지워지는 경우.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "provenance-vs-detection",
+   "label": "출처 증명 vs 탐지",
+   "parent": "c2pa",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "두 접근의 보완 관계.",
    "added": "2026-11-26",
    "related": []
   }
