@@ -4236,11 +4236,14 @@
    "label": "Self-Route",
    "parent": "long-context-vs-rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "쿼리별로 RAG와 긴 컨텍스트 경로를 고르는 라우팅.",
+   "summary": "질의별로 RAG vs 긴 컨텍스트를 모델 자기 성찰로 선택. LC가 성능은 높고 RAG가 저렴, Self-Route는 LC에 근접·비용 절감(Li 2024).",
    "added": "2026-11-01",
-   "related": []
+   "related": [
+    "just-in-time-retrieval"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "needle-in-haystack",
@@ -11024,11 +11027,15 @@
    "label": "메모리 오염과 주입",
    "parent": "agent-memory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "공유 메모리가 공격 경로가 되는 문제.",
+   "summary": "PoisonedRAG: 질문당 5개 악성 텍스트로 수백만 개 DB에서 약 90% 성공. 간접 프롬프트 주입(Greshake 2023). 쓰기 권한·출처·승인으로 방어.",
    "added": "2026-11-09",
-   "related": []
+   "related": [
+    "memory-staleness",
+    "memory-types"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "regularization",
@@ -88648,6 +88655,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "오픈소스와 상용 도구.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "rag-vs-long-context",
+   "label": "RAG와 긴 컨텍스트 비교",
+   "parent": "self-route",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "언제 무엇을 쓰나.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "query-routing",
+   "label": "질의 라우팅",
+   "parent": "self-route",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "질문 유형별 처리 경로 선택.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "self-reflection-confidence",
+   "label": "자기 성찰 신뢰도",
+   "parent": "self-route",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델이 답 가능 여부를 판단.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "poisoned-rag",
+   "label": "PoisonedRAG",
+   "parent": "memory-injection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "RAG 지식 오염 공격.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "memory-write-permission",
+   "label": "메모리 쓰기 권한",
+   "parent": "memory-injection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "누가 기억을 바꿀 수 있나.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "provenance-tagging",
+   "label": "출처 태깅",
+   "parent": "memory-injection",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "기억에 신뢰 수준 표시.",
    "added": "2026-11-26",
    "related": []
   }
