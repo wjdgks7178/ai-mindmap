@@ -52543,11 +52543,16 @@
    "label": "소표본 규제",
    "parent": "simple-model-small-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "L2·깊이 제한·조기 종료로 용량을 제한.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "L2 Ridge(‖Xw−y‖²+α‖w‖², 공선성에 견고)·L1 Lasso(계수 0, 특징 선택)·깊이 제한·조기 종료로 용량 제한. RidgeCV는 LOO로 α 선택. 규제 강도도 자유도이므로 중첩 CV로 평가.",
+   "related": [
+    "nested-cross-validation",
+    "independent-uncertainty-estimate",
+    "early-stopping"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "transfer-learning-small-data",
@@ -83659,6 +83664,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본·분할·시드·분포 이동 구분.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "ridge-regression",
+   "label": "릿지 회귀",
+   "parent": "regularization-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "L2 벌점으로 계수를 수축.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "lasso-regression",
+   "label": "라쏘 회귀",
+   "parent": "regularization-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "L1 벌점으로 계수를 0으로 만들어 특징 선택.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bias-variance-tradeoff",
+   "label": "편향-분산 상충",
+   "parent": "regularization-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규제 강도에 따른 과적합·과소적합.",
    "related": [],
    "added": "2026-11-26"
   }
