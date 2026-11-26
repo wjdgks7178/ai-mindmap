@@ -1211,11 +1211,14 @@
    "label": "지식의 저주",
    "parent": "feynman-technique",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "아는 사람이 모르는 사람의 눈높이를 잊어 설명이 어려워지는 현상.",
+   "summary": "알면 모르는 사람 입장을 상상하기 어려운 편향. Camerer·Loewenstein·Weber 1989 명명, Newton 1990 두드리기 실험(수치 미확인).",
    "added": "2026-10-28",
-   "related": []
+   "related": [
+    "illusion-of-explanatory-depth"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "illusion-of-explanatory-depth",
@@ -82791,33 +82794,44 @@
    "label": "감독자(supervisor) 패턴",
    "parent": "langgraph-multi-agent",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "중앙 에이전트가 하위 에이전트를 지휘.",
-   "related": [],
-   "added": "2026-11-25"
+   "summary": "메인 에이전트가 서브에이전트를 도구로 호출하는 중앙 통제 패턴(LangChain 문서의 Subagents). 단발 4호출, 무상태, 다중 도메인 5호출·약 9K 토큰.",
+   "related": [
+    "router-pattern",
+    "task-decomposition"
+   ],
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "handoff-pattern",
    "label": "핸드오프 패턴",
    "parent": "langgraph-multi-agent",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "에이전트끼리 제어권을 넘기는 방식.",
-   "related": [],
-   "added": "2026-11-25"
+   "summary": "도구 호출로 제어권 이전, 사용자와 직접 대화, 상태 유지(반복 요청 호출 40~50% 절감), 병렬 불가, 다중 도메인 7+호출·14K+토큰.",
+   "related": [
+    "router-pattern",
+    "supervisor-pattern"
+   ],
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "router-pattern",
    "label": "라우터 패턴",
    "parent": "langgraph-multi-agent",
    "domain": "langgraph",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "입력을 분류해 전문 에이전트로 보내기.",
-   "related": [],
-   "added": "2026-11-25"
+   "summary": "입력 분류 후 전문 에이전트로 분배·결합, 무상태·병렬 강함·multi-hop 불가, 다중 도메인 5호출·약 9K 토큰.",
+   "related": [
+    "handoff-pattern"
+   ],
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "command-goto-update",
@@ -89844,6 +89858,138 @@
    "status": "planned",
    "priority": 5,
    "summary": "읽고 이해했다는 느낌의 위험.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "tapper-listener-experiment",
+   "label": "두드리기 실험",
+   "parent": "curse-of-knowledge",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "아는 사람과 듣는 사람의 격차.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "learner-perspective-testing",
+   "label": "학습자 관점 시험",
+   "parent": "curse-of-knowledge",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "초보자에게 읽혀 막힌 곳 찾기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "expert-blind-spot",
+   "label": "전문가 사각지대",
+   "parent": "curse-of-knowledge",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "교육 설계에서의 생략 문제.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "transfer-tool",
+   "label": "전환 도구",
+   "parent": "handoff-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "제어권을 넘기는 도구 설계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "stateful-multi-agent",
+   "label": "상태 유지 멀티에이전트",
+   "parent": "handoff-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "핸드오프와 스킬의 특징.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "handoff-loop-risk",
+   "label": "핸드오프 루프 위험",
+   "parent": "handoff-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "서로 계속 넘기는 문제.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "router-classifier",
+   "label": "라우터 분류기",
+   "parent": "router-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "규칙·LLM·임베딩 기반 분류.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "parallel-agent-calls",
+   "label": "병렬 에이전트 호출",
+   "parent": "router-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "독립 도메인 동시 처리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "router-fallback",
+   "label": "라우터 실패 처리",
+   "parent": "router-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "분류 불가 시 기본 경로.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "subagent-as-tool",
+   "label": "도구로서의 서브에이전트",
+   "parent": "supervisor-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "서브에이전트를 도구 인터페이스로.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "central-control-tradeoff",
+   "label": "중앙 통제의 장단점",
+   "parent": "supervisor-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "통제 대 병목.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "subagent-user-interaction",
+   "label": "서브에이전트와 사용자 대화",
+   "parent": "supervisor-pattern",
+   "domain": "langgraph",
+   "status": "planned",
+   "priority": 5,
+   "summary": "직접 상호작용이 약한 이유.",
    "added": "2026-11-26",
    "related": []
   }
