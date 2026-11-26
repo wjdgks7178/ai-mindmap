@@ -53500,11 +53500,16 @@
    "label": "과제별 알고리즘 선택",
    "parent": "opendataval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단일 최고 알고리즘이 없을 때의 선택 절차.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "OpenDataVal 결론: 모든 과제에서 최고인 알고리즘은 없음. Data-OOB(라벨 탐지↑·점 제거↓), LAVA(특징 노이즈↑·빠름), AME(유익 점↑·노이즈 탐지↓), KNN-Shapley(빠름·KNN 한정), 샤플리류(균형·비쌈). 절차: 하위 과제→후보 2~3개→노이즈 주입 소규모 검증→사람 검수.",
+   "related": [
+    "opendataval",
+    "data-valuation-downstream-tasks",
+    "valuation-ranking-stability"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "valuation-ranking-stability",
@@ -86354,6 +86359,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가치 순으로 제거·추가하며 정확도 곡선 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "ame-valuation",
+   "label": "AME(근사 한계 효과)",
+   "parent": "algorithm-selection-by-task",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LASSO로 유익한 점을 찾는 가치 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "data-banzhaf",
+   "label": "Data Banzhaf",
+   "parent": "algorithm-selection-by-task",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샤플리와 다른 가중 방식의 가치 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dvrl",
+   "label": "DVRL",
+   "parent": "algorithm-selection-by-task",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "강화학습으로 데이터 가치를 학습.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "valuation-cost-time-comparison",
+   "label": "가치 평가 계산 시간 비교",
+   "parent": "algorithm-selection-by-task",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 필요 여부에 따른 비용 차이.",
    "related": [],
    "added": "2026-11-26"
   }
