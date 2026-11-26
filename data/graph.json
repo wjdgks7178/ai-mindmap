@@ -81711,11 +81711,12 @@
    "label": "GraphRAG 로컬 vs 글로벌 검색",
    "parent": "graph-rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "질문 유형별 검색 모드 선택.",
+   "summary": "로컬=개체 중심 그래프+청크 컨텍스트, 글로벌=커뮤니티 보고서 맵-리듀스(전체 주제, 비용 큼). 낮은 계층일수록 철저하나 비쌈.",
    "related": [],
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "done": "2026-11-26"
   },
   {
    "id": "graphrag-indexing-cost",
@@ -90240,6 +90241,28 @@
    "status": "planned",
    "priority": 5,
    "summary": "사전학습 후 과제 적용.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "graphrag-drift-search",
+   "label": "DRIFT 검색",
+   "parent": "graphrag-local-vs-global",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "로컬과 글로벌을 섞은 검색.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "community-level-choice",
+   "label": "커뮤니티 수준 선택",
+   "parent": "graphrag-local-vs-global",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "계층 수준과 비용·철저함.",
    "added": "2026-11-26",
    "related": []
   }
