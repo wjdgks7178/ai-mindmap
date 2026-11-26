@@ -53533,11 +53533,18 @@
    "label": "벤치마크 리더보드 읽는 법",
    "parent": "opendataval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전체 최고가 아니라 과제별 최고를 보는 법.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "리더보드 1위는 그 과제·데이터·평가의 1위. OpenDataVal 공개 리더보드는 알려지지 않은 라벨 노이즈를 찾는 노이즈 라벨 탐지 과제. 읽는 5질문: 과제·데이터/노이즈·95% 구간 겹침·비용·재현성. Data-OOB는 라벨 탐지 1위지만 점 제거에서 무작위 이하 가능.",
+   "related": [
+    "opendataval",
+    "algorithm-selection-by-task",
+    "valuation-ranking-stability",
+    "data-valuation-downstream-tasks",
+    "leaderboard-overfitting"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "high-bias-learning-curve",
@@ -86602,6 +86609,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습은 높고 검증은 우연인 간격.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "task-wise-ranking",
+   "label": "과제별 순위 읽기",
+   "parent": "benchmark-leaderboard-reading",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체 평균 대신 내 과제 순위를 본다.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "benchmark-reproducibility-checklist",
+   "label": "벤치마크 재현성 점검",
+   "parent": "benchmark-leaderboard-reading",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드·하이퍼파라미터·시드 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "noise-injected-private-validation",
+   "label": "노이즈 주입 비공개 검증",
+   "parent": "benchmark-leaderboard-reading",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내 데이터에 노이즈를 넣어 후보를 검증.",
    "related": [],
    "added": "2026-11-26"
   }
