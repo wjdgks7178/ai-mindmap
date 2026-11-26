@@ -53170,11 +53170,16 @@
    "label": "베이즈 오류",
    "parent": "human-benchmark-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "어떤 모델도 줄일 수 없는 본질적 오류.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng MLY 22장: 최적 오류율=베이즈 오류율. 음성 인식 14%가 사람도 못 알아들으면 최적도 약 14%. 개발 30%=최적 14%+피할 수 있는 편향 1%(학습15−14)+분산 15%. 분산은 큰 데이터로 0에 근접 가능, 피할 수 없는 분산은 없음. 사람 오류로 추정.",
+   "related": [
+    "human-benchmark-error",
+    "avoidable-bias-vs-variance",
+    "human-level-definition"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "avoidable-bias-vs-variance",
@@ -85397,6 +85402,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "큰 범주를 고치면 작은 범주 비중이 커짐.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "optimal-error-rate-estimation",
+   "label": "최적 오류율 추정",
+   "parent": "bayes-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 라벨 정확도로 베이즈 오류를 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "negative-avoidable-bias",
+   "label": "음수 피할 수 있는 편향",
+   "parent": "bayes-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 세트 과적합 신호.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "unavoidable-bias",
+   "label": "피할 수 없는 편향",
+   "parent": "bayes-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "베이즈 오류에 해당하는 편향 성분.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bayes-classifier",
+   "label": "베이즈 분류기",
+   "parent": "bayes-error",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사후확률이 최대인 클래스를 고르는 이론적 최적 분류기.",
    "related": [],
    "added": "2026-11-26"
   }
