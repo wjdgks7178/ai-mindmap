@@ -52958,11 +52958,17 @@
    "label": "연구 인용 시 범위 명시",
    "parent": "llm-annotation-domain-generalization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "과제·데이터·모델 조건을 함께 밝히는 습관.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "AI 결과를 인용할 때 과제·데이터·모델 버전·설정·비교 대상·지표·출처 확인 수준(초록/본문)을 함께 밝힌다. Kapoor&Narayanan: 17개 분야 329개 논문에서 데이터 누수, 모델 정보 시트 제안; 내전 예측에서 복잡한 모델의 우위가 누수 제거 후 사라짐.",
+   "related": [
+    "llm-annotation-domain-generalization",
+    "model-version-revalidation",
+    "report-split-method",
+    "data-leakage"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "shapley-efficiency-axiom",
@@ -84778,6 +84784,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "주기적 재평가와 알림 설계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "model-info-sheet",
+   "label": "모델 정보 시트",
+   "parent": "citing-ai-research-scope",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "누수를 막기 위한 ML 과학 보고 표준.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "leakage-taxonomy",
+   "label": "데이터 누수 8가지 유형",
+   "parent": "citing-ai-research-scope",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교과서적 실수부터 미해결 문제까지의 분류.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "claim-condition-table",
+   "label": "주장 조건표",
+   "parent": "citing-ai-research-scope",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과제·데이터·모델 등 7칸으로 인용 정리.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "abstract-only-reading-caution",
+   "label": "초록만 읽을 때의 주의",
+   "parent": "citing-ai-research-scope",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확인 수준 표기와 보류 기준.",
    "related": [],
    "added": "2026-11-26"
   }
