@@ -52587,11 +52587,17 @@
    "label": "모델 교차점",
    "parent": "simple-model-small-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 양에 따라 단순·복잡 모델 순위가 바뀌는 지점.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng&Jordan 2001: 판별 모델(로지스틱)은 점근 오차가 낮지만 나이브 베이즈가 더 빨리 수렴해 소표본에서 이김 — 두 영역. 학습 곡선으로 교차점을 찾아 데이터 양에 맞는 모델을 고른다. log n vs n 표본 복잡도는 미확인.",
+   "related": [
+    "baseline-first",
+    "independent-uncertainty-estimate",
+    "learning-curve",
+    "asymptotic-error"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "category-share-confidence-interval",
@@ -83791,6 +83797,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "개선이 불확실성 구간보다 큰지 판단.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "generative-vs-discriminative",
+   "label": "생성 모델 vs 판별 모델",
+   "parent": "model-crossover-point",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "P(x,y)를 모델링하는가 P(y|x)만 하는가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "naive-bayes",
+   "label": "나이브 베이즈",
+   "parent": "model-crossover-point",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징 독립 가정의 단순 확률 분류기.",
    "related": [],
    "added": "2026-11-26"
   }
