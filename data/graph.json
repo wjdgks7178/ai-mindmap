@@ -53722,11 +53722,16 @@
    "label": "서명 길이와 곡선 기울기",
    "parent": "lsh-banding-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "num_perm을 늘리면 곡선이 가팔라진다.",
+   "summary": "후보 확률 P(s)=1−(1−s^r)^b, 임계값≈(1/b)^(1/r), 길이=b·r. 임계값 0.7 고정 시 길이 16→136→4,800에서 s=0.5 후보 확률 0.228→0.064→0.005, s=0.8 0.878→0.956→1.000(가팔라짐). r 고정·b만 늘리면 곡선이 왼쪽 이동(임계값 0.707/0.648/0.595). 공식은 위키 LSH에 없어 표준 분석으로 표기.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "lsh-banding-curve",
+    "jaccard-threshold-tuning",
+    "shingle-hashing"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "lsh-post-verify",
@@ -86917,6 +86922,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "넘파이 배열로 메모리 절약.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "banding-threshold-approx",
+   "label": "밴딩 임계값 근사",
+   "parent": "lsh-signature-length",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "(1/b)^(1/r)로 곡선의 중심 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "signature-memory-cost",
+   "label": "서명 저장 비용",
+   "parent": "lsh-signature-length",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 수×길이×바이트로 메모리 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fixed-threshold-length-scaling",
+   "label": "임계값 고정 길이 확대",
+   "parent": "lsh-signature-length",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "b×r 조합을 재설계하며 길이 늘리기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "false-positive-negative-from-curve",
+   "label": "곡선에서 오탐·미탐 계산",
+   "parent": "lsh-signature-length",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "s<t, s>t 구간의 확률로 허용 수준 확인.",
    "related": [],
    "added": "2026-11-26"
   }
