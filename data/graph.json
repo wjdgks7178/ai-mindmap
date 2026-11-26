@@ -1844,14 +1844,13 @@
    "domain": "llm-basics",
    "status": "done",
    "priority": 5,
-   "summary": "같은 뜻이어도 한국어는 토큰이 더 많음. 측정: cl100k 2.35배, o200k 1.56배(영어 대비).",
+   "summary": "Petrov 2023: 같은 텍스트 토큰 수가 언어별로 최대 15배 차이, 비용·컨텍스트·지연 불균형. 내 언어로 직접 측정.",
    "aka": [],
    "related": [
-    "token-pricing",
-    "context-window"
+    "tokenizer-quirks"
    ],
    "added": "2026-10-29",
-   "done": "2026-11-25"
+   "done": "2026-11-26"
   },
   {
    "id": "self-attention-qkv",
@@ -28759,11 +28758,15 @@
    "label": "WordPiece와 Unigram",
    "parent": "bpe-tokenizer",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "BPE와 다른 하위 단어 어휘 학습 방식.",
+   "summary": "WordPiece: 쌍 빈도÷부분 빈도곱 점수, ##, 최장 일치, 미등록 시 단어 전체 [UNK]. Unigram: 큰 어휘 가지치기, 비터비, SentencePiece.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "bpe-algorithm",
+    "byte-level-bpe"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "merge-rules",
@@ -89109,6 +89112,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "TTL과 망각 정책.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "sentencepiece",
+   "label": "SentencePiece",
+   "parent": "wordpiece-unigram",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "공백 포함 원시 문자열 토크나이저.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "viterbi-segmentation",
+   "label": "비터비 분할",
+   "parent": "wordpiece-unigram",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "최고 확률 분할 찾기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "unk-token",
+   "label": "미등록 토큰 [UNK]",
+   "parent": "wordpiece-unigram",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "미등록 처리 방식 차이.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "token-counting-practice",
+   "label": "토큰 수 측정 실습",
+   "parent": "token-cost-language",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "tiktoken 등으로 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "multilingual-tokenizer-fairness",
+   "label": "다국어 토크나이저 공정성",
+   "parent": "token-cost-language",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "어휘 설계로 격차 줄이기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "prompt-caching-cost",
+   "label": "프롬프트 캐싱과 비용",
+   "parent": "token-cost-language",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 5,
+   "summary": "반복 입력 비용 절감.",
    "added": "2026-11-26",
    "related": []
   }
