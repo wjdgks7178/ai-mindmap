@@ -52975,11 +52975,17 @@
    "label": "샤플리 효율성 공리",
    "parent": "tmc-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "기여 합이 전체 효용과 같다는 성질.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "샤플리 값의 합 = U(전체) − U(∅). 가상 3점 예(0.50→0.82): φ_A 0.2183·φ_B 0.0833·φ_C 0.0183, 합 0.3199≈0.32. 데이터 샤플리(Ghorbani&Zou 2019)는 공정 평가 성질을 유일 만족한다고 주장, 근사는 합이 어긋나면 수렴 의심.",
+   "related": [
+    "tmc-shapley",
+    "utility-function-choice",
+    "shapley-convergence-check",
+    "leave-one-out-valuation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "truncation-tolerance",
@@ -84828,6 +84834,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확인 수준 표기와 보류 기준.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shapley-symmetry-null-axioms",
+   "label": "대칭성·널 플레이어 공리",
+   "parent": "shapley-efficiency-axiom",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 기여면 같은 값, 기여 없으면 0.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shapley-exact-computation-cost",
+   "label": "정확한 샤플리 계산 비용",
+   "parent": "shapley-efficiency-axiom",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n! 순열·2^n 부분집합 폭발.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "negative-data-value",
+   "label": "음수 데이터 가치",
+   "parent": "shapley-efficiency-axiom",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "성능을 해치는 점(오염·이상치).",
    "related": [],
    "added": "2026-11-26"
   }
