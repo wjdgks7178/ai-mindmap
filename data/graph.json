@@ -53786,11 +53786,16 @@
    "label": "평균의 함정(심프슨 역설)",
    "parent": "per-slice-learning-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전체와 집단의 결론이 달라지는 현상.",
+   "summary": "신장 결석: 작은 결석 A 93%>B 87%, 큰 결석 A 73%>B 69%인데 합치면 A 78%<B 83%(A의 작은 결석 비중 24.9% vs B 77.1%). 버클리 1973: 전체 남 44%·여 35%이나 학과별로 보면 반전. 집단 구성비 확인·같은 구성으로 비교·전체와 집단별 수치 병기.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "per-slice-learning-curve",
+    "average-masking-weak-groups",
+    "slice-confidence-interval-table"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "lsh-forest-prefix-trees",
@@ -87113,6 +87118,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "b×r ≤ num_perm 전수 탐색.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "confounding-variable",
+   "label": "교란 변수",
+   "parent": "simpson-paradox-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단 구성비 차이를 만드는 변수.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "standardization-reweighting",
+   "label": "표준화·가중 비교",
+   "parent": "simpson-paradox-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 구성비로 맞춰 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "evaluation-set-composition",
+   "label": "평가 세트 구성비 점검",
+   "parent": "simpson-paradox-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "난이도·집단 비중 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "causal-vs-statistical-grouping",
+   "label": "인과 vs 통계적 묶기",
+   "parent": "simpson-paradox-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합칠지 나눌지는 도메인 판단.",
    "related": [],
    "added": "2026-11-26"
   }
