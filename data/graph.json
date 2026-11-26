@@ -53700,11 +53700,16 @@
    "label": "한국어 섀글링",
    "parent": "shingling-ngrams",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "띄어쓰기 변동에 강한 글자 단위 조각.",
+   "summary": "직접 실험(한국어 문장 3개): 띄어쓰기만 다른 쌍의 자카드가 단어 2-섀글 0.167 vs 공백 제거 글자 3-gram 1.000(공백 유지 0.730), 한 단어 교체는 세 방식 0.72~0.78. NFC·공백 제거 전처리 후 글자 3~5-gram, k는 사람 판정 쌍으로 선택.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "shingling-ngrams",
+    "shingle-size-choice",
+    "korean-domain-llm-annotation"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "lsh-weights-fp-fn",
@@ -87015,6 +87020,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "되돌리기 어려운 조치 전 샘플 검수.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "unicode-nfc-normalization",
+   "label": "유니코드 NFC 정규화",
+   "parent": "korean-shingling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자모 결합 표기 차이를 통일.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "morpheme-ngram",
+   "label": "형태소 n-gram",
+   "parent": "korean-shingling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "형태소 분석기로 어간·품사만 사용.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "korean-copy-paste-duplicates",
+   "label": "한국어 복사·붙여넣기 중복",
+   "parent": "korean-shingling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "띄어쓰기·줄바꿈 차이만 있는 중복.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "synonym-blind-spot-ngram",
+   "label": "n-gram의 동의어 맹점",
+   "parent": "korean-shingling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어휘가 다른 동의 문장을 못 잡는 한계.",
    "related": [],
    "added": "2026-11-26"
   }
