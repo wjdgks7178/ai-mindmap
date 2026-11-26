@@ -53601,11 +53601,18 @@
    "label": "데이터 수집 전 점검표",
    "parent": "bad-learning-curves",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "추가 수집 전에 원인을 소거하는 체크리스트.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "수집 전 점검: 학습 곡선·학습 오류(목표보다 높으면 데이터 추가 무효)→편향/분산 분해→라벨 천장→특징 정보→분포 일치→오류 분석→외삽 예측→2배 후속 실측. 분산 크면 데이터·규제, 피할 수 있는 편향 크면 모델 확대(Ng).",
+   "related": [
+    "bad-learning-curves",
+    "high-bias-learning-curve",
+    "avoidable-bias-vs-variance",
+    "follow-up-measurement",
+    "targeted-data-collection"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "jaccard-vs-cosine",
@@ -86642,6 +86649,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "내 데이터에 노이즈를 넣어 후보를 검증.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "collect-or-hold-decision",
+   "label": "수집/보류 결정표",
+   "parent": "pre-collection-checklist",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점검 결과별 조치 매핑.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "cost-benefit-data-collection",
+   "label": "수집 비용-효과 계산",
+   "parent": "pre-collection-checklist",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 이득과 수집 비용 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "checklist-before-labeling-budget",
+   "label": "라벨링 예산 전 점검",
+   "parent": "pre-collection-checklist",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대규모 라벨링 전에 소규모로 가설 확인.",
    "related": [],
    "added": "2026-11-26"
   }
