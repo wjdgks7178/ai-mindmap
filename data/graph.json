@@ -53544,11 +53544,17 @@
    "label": "높은 편향 학습 곡선",
    "parent": "bad-learning-curves",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습·검증 점수가 모두 낮게 수렴하는 패턴.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng MLY: 학습 오류가 목표보다 높고 개발 오류와의 간격이 작으면 높은 편향. 학습 오류는 데이터가 늘수록 같거나 높아지므로 이미 목표보다 높다면 데이터 추가로는 목표에 닿지 못함. 처방은 모델 확대·특징 추가·규제 완화. 곡선 잡음은 3~10회 평균·클래스 균형 부분집합으로 완화.",
+   "related": [
+    "bad-learning-curves",
+    "avoidable-bias-vs-variance",
+    "asymptotic-error",
+    "log-spaced-sample-sizes"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "noisy-label-plateau",
@@ -86453,6 +86459,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "두 집합의 교집합/합집합.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "desired-error-rate-line",
+   "label": "목표 오류율 선",
+   "parent": "high-bias-learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 곡선에 원하는 오류를 선으로 더함.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "plateau-diagnosis",
+   "label": "정체 진단",
+   "parent": "high-bias-learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개발 오류 정체와 학습 오류로 외삽 신뢰도 높이기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "noisy-learning-curve-averaging",
+   "label": "잡음 많은 학습 곡선 평균",
+   "parent": "high-bias-learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소표본 곡선을 여러 번 추출해 평균.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "balanced-subset-curve",
+   "label": "클래스 균형 부분집합 곡선",
+   "parent": "high-bias-learning-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불균형에서 클래스 비율을 맞춘 소표본.",
    "related": [],
    "added": "2026-11-26"
   }
