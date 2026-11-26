@@ -52794,11 +52794,15 @@
    "label": "GradCAM",
    "parent": "attributionscanner",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "CNN이 주목한 영역을 히트맵으로 보여 주는 기법.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "마지막 합성곱 층으로 흐르는 목표 클래스 기울기로 중요 영역 히트맵 생성, 재학습·구조 변경 불필요(Selvaraju 2016). L=ReLU(Σα_k A^k). 데이터셋 편향 노출에 유용하나 거칠고 인과 증명은 아님.",
+   "related": [
+    "spurious-correlation",
+    "attributionscanner"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "core-risk-minimization",
@@ -84251,6 +84255,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "단서를 바꿔 예측 변화를 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "class-activation-mapping",
+   "label": "CAM(클래스 활성화 지도)",
+   "parent": "gradcam",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GAP 구조에서 클래스별 영역을 보여 주는 기법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "guided-gradcam",
+   "label": "Guided Grad-CAM",
+   "parent": "gradcam",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고해상도 시각화와 Grad-CAM 결합.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "saliency-map-sanity-checks",
+   "label": "설명 지도의 신뢰성 검증",
+   "parent": "gradcam",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가중치 무작위화 테스트 등으로 설명 신뢰도 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "xai-image-attribution",
+   "label": "이미지 어트리뷰션 기법 비교",
+   "parent": "gradcam",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Grad-CAM·IG·SHAP 등 비교.",
    "related": [],
    "added": "2026-11-26"
   }
