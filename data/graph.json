@@ -53847,11 +53847,17 @@
    "label": "SemDeDup",
    "parent": "paraphrase-dedup-limit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "임베딩 군집으로 의미 중복 제거.",
+   "summary": "사전학습 임베딩으로 의미는 비슷하나 글자는 다른 의미 중복을 제거(Abbas 외, 초록). LAION 부분집합에서 약 절반 제거에도 성능 손실이 작고 학습 시간 약 절반, OOD 성능 향상, C4에서 이전 방법보다 우수(저자 주장, 군집화는 본문 미확인). 정확→표면→의미 순서, 소수 집단·경계 사례 보존.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "paraphrase-dedup-limit",
+    "dedup-pipeline-order",
+    "embedding-space-valuation",
+    "valuation-vs-deletion"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "dedup-pipeline-order",
@@ -87262,6 +87268,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "허용 오차에서 필요 n을 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "semantic-duplicate",
+   "label": "의미 중복",
+   "parent": "semdedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미는 같지만 표면이 다른 데이터 쌍.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "embedding-similarity-threshold",
+   "label": "임베딩 유사도 임계값",
+   "parent": "semdedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미 중복 판정 기준 조정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rare-concept-protection",
+   "label": "희귀 개념 보호",
+   "parent": "semdedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미 중복 제거 시 소수 개념 유지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dedup-ablation-by-slice",
+   "label": "중복 제거 슬라이스별 점검",
+   "parent": "semdedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제거 전후 집단별 성능 비교.",
    "related": [],
    "added": "2026-11-26"
   }
