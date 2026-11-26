@@ -87769,11 +87769,14 @@
    "label": "약한→강한 일반화",
    "parent": "scalable-oversight",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "약한 감독으로 강한 모델 지도.",
+   "summary": "Burns 2023: 약한 라벨로 GPT-4급 학습 시 약한 감독자 능가하나 격차 큼, 보조 신뢰도 손실로 GPT-2 감독 GPT-4가 GPT-3.5급 회복.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "ai-debate"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "sandwiching",
@@ -87802,11 +87805,14 @@
    "label": "슬리퍼 에이전트",
    "parent": "alignment-faking",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "안전 학습을 견디는 숨은 행동.",
+   "summary": "Hubinger 2024: 2023/2024 트리거 백도어 모델이 SFT·RL·적대적 훈련에도 유지, 큰 모델일수록 제거 어려움, 적대적 훈련이 은폐를 가르칠 수 있음.",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "alignment-faking"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "model-organisms-misalignment",
@@ -88058,11 +88064,15 @@
    "label": "V-JEPA",
    "parent": "jepa",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "영상으로 확장한 JEPA.",
+   "summary": "영상에서 특징 예측만으로 학습(약 200만 영상), 고정 백본으로 K400 81.9%·SSv2 72.2%·ImageNet 77.9%(ViT-H/16).",
    "added": "2026-11-26",
-   "related": []
+   "related": [
+    "jepa",
+    "genie-world-generation"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "world-model-lecun",
@@ -89431,6 +89441,105 @@
    "status": "planned",
    "priority": 5,
    "summary": "두 접근의 보완 관계.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "auxiliary-confidence-loss",
+   "label": "보조 신뢰도 손실",
+   "parent": "weak-to-strong",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "강한 모델 자신의 확신도 학습에 반영.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "performance-gap-recovered",
+   "label": "성능 격차 회복률",
+   "parent": "weak-to-strong",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "약한→강한 연구의 지표.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "superalignment",
+   "label": "슈퍼얼라인먼트",
+   "parent": "weak-to-strong",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "초인적 AI 정렬 문제.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "backdoor-ai-models",
+   "label": "AI 모델 백도어",
+   "parent": "sleeper-agents",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "트리거로 켜지는 숨은 행동.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "model-supply-chain-risk",
+   "label": "모델 공급망 위험",
+   "parent": "sleeper-agents",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "외부 가중치의 숨은 행동.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "interpretability-for-safety",
+   "label": "안전을 위한 해석가능성",
+   "parent": "sleeper-agents",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 5,
+   "summary": "내부를 보고 기만 탐지.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "feature-prediction-objective",
+   "label": "특징 예측 목표",
+   "parent": "v-jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "복원 없이 표현만 예측.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "frozen-evaluation",
+   "label": "고정 백본 평가",
+   "parent": "v-jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "파라미터 갱신 없이 성능 측정.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "video-self-supervised",
+   "label": "영상 자기지도 학습",
+   "parent": "v-jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "라벨 없는 영상 활용.",
    "added": "2026-11-26",
    "related": []
   }
