@@ -53578,11 +53578,16 @@
    "label": "정보 없는 특징의 곡선",
    "parent": "bad-learning-curves",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "검증이 우연 수준에서 평평한 경우.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "직접 시뮬(KNN, 10개 가우시안 특징): 정보 없는 특징은 학습 크기 10→320에서 검증 0.48~0.50(우연)로 평평, 정보 있는 경우 0.728→0.892 상승. 학습 정확도가 우연보다 높은 건 암기(자기 이웃 포함). 라벨 섞기 기준선·단일 특징 성능·사람 수준·파이프라인 점검.",
+   "related": [
+    "bad-learning-curves",
+    "high-bias-learning-curve",
+    "noisy-label-plateau"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "pre-collection-checklist",
@@ -86553,6 +86558,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 데이터에서 노이즈까지 맞추는 과적합.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shuffled-label-baseline",
+   "label": "라벨 섞기 기준선",
+   "parent": "uninformative-features-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨을 무작위로 섞어 우연 수준 점수를 측정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "feature-label-mutual-information",
+   "label": "특징-라벨 상호정보",
+   "parent": "uninformative-features-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징이 라벨에 대한 정보를 가지는지 점수화.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "pipeline-alignment-bug",
+   "label": "특징-라벨 정렬 버그",
+   "parent": "uninformative-features-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서 섞임 등 파이프라인 오류.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "memorization-gap",
+   "label": "암기 격차",
+   "parent": "uninformative-features-curve",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습은 높고 검증은 우연인 간격.",
    "related": [],
    "added": "2026-11-26"
   }
