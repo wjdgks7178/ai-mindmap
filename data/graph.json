@@ -52559,11 +52559,14 @@
    "label": "소표본 전이학습",
    "parent": "simple-model-small-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사전학습 모델로 데이터 부족을 보완.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "사전학습 기반 동결→새 헤드 학습→낮은 학습률(1e-5)로 선택적 미세 조정. Keras 실험(9,305장): 헤드 2,049 파라미터로 검증 0.9705, 미세 조정 1에폭 후 시험 0.9413(가이드의 개선 주장은 1에폭 관측과 불일치).",
+   "related": [
+    "regularization-small-data"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "baseline-first",
@@ -83697,6 +83700,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "규제 강도에 따른 과적합·과소적합.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "feature-extraction-frozen-base",
+   "label": "특징 추출(동결 기반)",
+   "parent": "transfer-learning-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기반을 고정하고 헤드만 학습.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fine-tuning-learning-rate",
+   "label": "미세 조정 학습률",
+   "parent": "transfer-learning-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "왜 1e-5처럼 낮게 잡는가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "batchnorm-fine-tuning",
+   "label": "배치 정규화와 미세 조정",
+   "parent": "transfer-learning-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추론 모드 유지로 통계 보존.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "domain-gap-pretraining",
+   "label": "사전학습-목표 도메인 격차",
+   "parent": "transfer-learning-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인이 다를 때 효과가 줄어드는 이유.",
    "related": [],
    "added": "2026-11-26"
   }
