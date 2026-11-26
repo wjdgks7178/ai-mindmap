@@ -52776,11 +52776,18 @@
    "label": "가짜 상관",
    "parent": "attributionscanner",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정답과 상관은 있으나 인과가 아닌 단서(배경 등).",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "비인과 단서(배경 등)를 지름길로 배워 평균은 높고 비전형 집단에서 실패. Sagawa 2020: 그룹 DRO+강한 L2·조기 종료로 최악 집단 정확도 10~40%p 향상. 발견은 라벨×속성 집단 평가·반사실·어트리뷰션.",
+   "related": [
+    "average-masking-weak-groups",
+    "attributionscanner",
+    "systematic-vs-random-label-errors",
+    "group-dro",
+    "waterbirds-benchmark"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "gradcam",
@@ -84222,6 +84229,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "집단 비중 반영 여부에 따른 평균 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shortcut-learning",
+   "label": "지름길 학습",
+   "parent": "spurious-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쉬운 단서에 의존하는 학습 현상.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "counterfactual-test",
+   "label": "반사실 테스트",
+   "parent": "spurious-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단서를 바꿔 예측 변화를 확인.",
    "related": [],
    "added": "2026-11-26"
   }
