@@ -52765,11 +52765,18 @@
    "label": "슬라이스 격차 원인 점검",
    "parent": "predefined-slice-evaluation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 부족·라벨 오류·분포 차이 구분.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "슬라이스 격차는 표본 부족→라벨 오류→분포 차이→가짜 상관→모델 약점 순으로 점검. Domino(2203.14960): 1,235개 설정에서 슬라이스 36% 식별(+12%p), 35%에서 이름 정확 생성이라 주장.",
+   "related": [
+    "slice-confidence-interval-table",
+    "spurious-correlation",
+    "label-error-share-of-errors",
+    "performance-drop-root-cause",
+    "domino-slice-discovery"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "spurious-correlation",
@@ -84347,6 +84354,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "그룹마다 학습·시험 정확도 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "slice-coherence",
+   "label": "슬라이스 일관성",
+   "parent": "slice-gap-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "발견된 슬라이스가 하나의 의미로 설명되는 정도.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "training-coverage-check",
+   "label": "학습 데이터 커버리지 점검",
+   "parent": "slice-gap-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스가 학습에 얼마나 있었는지 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "root-cause-template",
+   "label": "원인 점검 템플릿",
+   "parent": "slice-gap-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "슬라이스·n·구간·라벨 오류·결론 표.",
    "related": [],
    "added": "2026-11-26"
   }
