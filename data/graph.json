@@ -53386,11 +53386,16 @@
    "label": "로그 간격 표본 크기",
    "parent": "inverse-power-law-fit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "1×·2×·4×로 데이터 양을 늘려 곡선 측정.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Hestness 2017 방법: 학습 세트를 무작위로 섞어 2~3자릿수를 약 2배 간격(0.1%·0.2%·0.4%…)으로 샤드, 모든 크기를 하나의 고정 검증 세트로 평가, 크기는 모델이 관측한 양으로 계산. 2배 간격 10점이 0.1~51.2%(약 2.7자릿수)를 덮음, 선형 간격은 작은 구간 점 부족.",
+   "related": [
+    "inverse-power-law-fit",
+    "asymptotic-error",
+    "fit-range-stability"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "fit-range-stability",
@@ -86009,6 +86014,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "γ가 가까우면 데이터보다 모델·라벨을 본다.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fixed-validation-set-curves",
+   "label": "고정 검증 세트로 곡선 측정",
+   "parent": "log-spaced-sample-sizes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 크기를 같은 검증 세트로 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "repeated-subsampling-curve",
+   "label": "크기별 반복 부분 표집",
+   "parent": "log-spaced-sample-sizes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "각 크기에서 여러 시드로 평균·분산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "effective-dataset-size",
+   "label": "관측된 데이터 크기",
+   "parent": "log-spaced-sample-sizes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 실제로 본 양으로 크기 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "model-retuning-per-size",
+   "label": "크기별 모델 재튜닝",
+   "parent": "log-spaced-sample-sizes",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 크기마다 최적 모델 크기 탐색.",
    "related": [],
    "added": "2026-11-26"
   }
