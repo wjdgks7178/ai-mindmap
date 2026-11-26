@@ -53024,11 +53024,16 @@
    "label": "효용 함수 선택",
    "parent": "tmc-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "검증 정확도·손실 등 효용 정의가 값에 미치는 영향.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Data Shapley: 가치는 데이터·학습 알고리즘·성능 지표의 함수라 보편적 가치가 아님(로지스틱에서 중요한 점이 신경망에선 아닐 수 있음). 합 구조 손실이면 φᵢ(V)=Σ_k φᵢ(V_k). 정확도 포화·미정의 지표 주의, 업무 지표·배포 모델에 맞춰 선택.",
+   "related": [
+    "tmc-shapley",
+    "shapley-efficiency-axiom",
+    "truncation-tolerance"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "semivalue",
@@ -84965,6 +84970,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 설정을 다른 시드로 돌린 결과 차이.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "per-test-point-valuation",
+   "label": "시험 점별 가치 분해",
+   "parent": "utility-function-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 점이 어떤 시험 점을 돕는지 분해.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "utility-saturation",
+   "label": "효용 포화",
+   "parent": "utility-function-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도가 천장이라 가치 차가 사라지는 문제.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "surrogate-model-valuation",
+   "label": "대리 모델로 가치 계산",
+   "parent": "utility-function-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 모델로 구한 가치의 이전 가능성.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "valuation-context-dependence",
+   "label": "가치의 맥락 의존성",
+   "parent": "utility-function-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "알고리즘·지표·다른 데이터에 따라 달라지는 가치.",
    "related": [],
    "added": "2026-11-26"
   }
