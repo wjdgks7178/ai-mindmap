@@ -52923,11 +52923,19 @@
    "label": "한국어 도메인 LLM 라벨링",
    "parent": "llm-annotation-domain-generalization",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한국어·사내 용어 데이터에서의 검증 필요성.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "한국어 SF 11편 주석(Jang&Jung 2024): 사람끼리 일치 평균 42.6%(문장)·53.3%(구간 퍼지), LLM-사람 구간 일치 Claude 64.8~69.1%·GPT-4o 42~47%, 구간 맞으면 라벨 일치 높음. 한국어 어미·보조 용언 때문에 의미 단위 주석. 직접 검증 체크리스트 제시.",
+   "related": [
+    "llm-annotation-domain-generalization",
+    "zero-shot-vs-finetuned-annotation",
+    "korean-annotation-pilot",
+    "korean-mixed-script-terms",
+    "span-fuzzy-agreement",
+    "korean-ending-semantics"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "model-version-revalidation",
@@ -84677,6 +84685,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "예시를 넣어 라벨 일치도를 높이는 법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "korean-annotation-pilot",
+   "label": "한국어 라벨링 파일럿 설계",
+   "parent": "korean-domain-llm-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "100~200건 표본으로 LLM·사람 일치를 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "korean-mixed-script-terms",
+   "label": "한영 혼합·사내 약어 처리",
+   "parent": "korean-domain-llm-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "혼합 표기와 약어가 라벨링에 미치는 영향.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "span-fuzzy-agreement",
+   "label": "구간 퍼지 일치",
+   "parent": "korean-domain-llm-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "완전·부분·불일치로 구간과 라벨을 함께 채점.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "korean-ending-semantics",
+   "label": "한국어 어미와 의미 단위",
+   "parent": "korean-domain-llm-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어미·보조 용언 때문에 문법 형태로 의도를 못 정하는 문제.",
    "related": [],
    "added": "2026-11-26"
   }
