@@ -53451,11 +53451,17 @@
    "label": "맞춤 형태 오지정",
    "parent": "extrapolation-optimism",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "곡선 형태가 틀릴 때 생기는 체계적 편향.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "직접 시뮬(진짜 2.0m^−0.35+0.05, 7점, 200회): 4배/16배/100배 평균 오차 — 로그 직선 −54%/−116%/−219%(음수 오류 예측), γ 없는 멱법칙 −14%/−27%/−45%, 올바른 형태 −3%/−6%/−10%. 구간 안에서는 구별 안 됨, 후속 측정·형태 비교로 점검.",
+   "related": [
+    "extrapolation-optimism",
+    "extrapolation-distance-limit",
+    "curve-fit-uncertainty-bootstrap",
+    "asymptotic-error"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "follow-up-measurement",
@@ -86206,6 +86212,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "γ에 사전분포를 두는 방법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "log-linear-curve",
+   "label": "로그 직선 학습 곡선",
+   "parent": "model-misspecification-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ε=a+b·ln m 형태와 한계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "curve-form-comparison",
+   "label": "곡선 형태 비교",
+   "parent": "model-misspecification-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 형태별 외삽 범위 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "residual-pattern-check",
+   "label": "잔차 패턴 점검",
+   "parent": "model-misspecification-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "체계적 휨으로 형태 오류 발견.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "impossible-extrapolation",
+   "label": "불가능한 외삽 결과",
+   "parent": "model-misspecification-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "음수 오류 등 물리적으로 불가능한 예측.",
    "related": [],
    "added": "2026-11-26"
   }
