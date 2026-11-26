@@ -1190,13 +1190,14 @@
    "label": "AI 소크라테스 튜터 프롬프트",
    "parent": "socratic-method",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "AI에게 답 대신 질문을 시켜 내 이해를 검증하는 프롬프트 설계.",
+   "summary": "OpenAI 스터디 모드(2025-07-29): 소크라테스 질문·힌트·구조화 응답·개인화·지식 확인, 시스템 지시문 기반이라 일관성 한계. 튜터 프롬프트 설계.",
    "added": "2026-10-28",
    "related": [
     "prompt-engineering"
-   ]
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "explain-to-ai-student",
@@ -90390,6 +90391,39 @@
    "status": "planned",
    "priority": 5,
    "summary": "충돌하는 믿음을 표로 정리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "study-mode",
+   "label": "ChatGPT 스터디 모드",
+   "parent": "ai-socratic-tutor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "OpenAI의 학습용 모드.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "tutor-prompt-template",
+   "label": "튜터 프롬프트 템플릿",
+   "parent": "ai-socratic-tutor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "역할·금지·순서·종료 조건.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "knowledge-check-quiz",
+   "label": "지식 확인 퀴즈",
+   "parent": "ai-socratic-tutor",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습 후 점검 질문 설계.",
    "added": "2026-11-26",
    "related": []
   }
