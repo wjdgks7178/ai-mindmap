@@ -53484,11 +53484,16 @@
    "label": "데이터 가치 평가 하위 과제",
    "parent": "opendataval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "오라벨 탐지 등 평가 과제 정의와 선택.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "OpenDataVal 4과제: 노이즈 라벨 탐지(K-Means 낮은 군집, F1), 노이즈 특징 탐지, 점 제거(높은 가치부터), 점 추가(낮은 가치부터). 라벨 탐지는 Data-OOB 최고(MiniBooNE 20%: 0.65 vs KNNShapley 0.53 vs 무작위 0.29), 특징 노이즈는 LAVA, 점 제거는 AME·샤플리류 우수.",
+   "related": [
+    "opendataval",
+    "data-valuation-for-label-noise",
+    "algorithm-selection-by-task"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "algorithm-selection-by-task",
@@ -86305,6 +86310,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "비슷한 과제의 곡선과 비교해 형태 점검.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "data-oob",
+   "label": "Data-OOB",
+   "parent": "data-valuation-downstream-tasks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배깅 아웃오브백 기반 데이터 가치(오라벨 탐지에 강함).",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "lava-valuation",
+   "label": "LAVA",
+   "parent": "data-valuation-downstream-tasks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 없이 최적 수송 비용으로 데이터 가치를 구함.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "noisy-feature-detection",
+   "label": "노이즈 특징 탐지",
+   "parent": "data-valuation-downstream-tasks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특징이 오염된 점을 가치로 찾기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "point-removal-addition-curves",
+   "label": "점 제거·추가 곡선",
+   "parent": "data-valuation-downstream-tasks",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가치 순으로 제거·추가하며 정확도 곡선 평가.",
    "related": [],
    "added": "2026-11-26"
   }
