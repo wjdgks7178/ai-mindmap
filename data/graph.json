@@ -52651,11 +52651,15 @@
    "label": "오류 중 라벨 오류 비중",
    "parent": "mislabeled-dev-set-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "틀린 예시 중 라벨이 틀린 비율 계산.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng MLY 16장: 오류 10%에서 라벨 오류 0.6%(비중 6%)는 무시 가능하나 오류 2%에서 같은 0.6%는 비중 30%라 정리 가치 발생. 비중=라벨 오류 수÷오류 수. 개발 세트를 고치면 시험 세트도 같이.",
+   "related": [
+    "mislabeled-dev-set-threshold",
+    "category-share-confidence-interval"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "systematic-vs-random-label-errors",
@@ -83954,6 +83958,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "예시를 보다가 범주를 추가·재검토.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dev-test-same-distribution-fix",
+   "label": "개발·시험 세트 동시 수정",
+   "parent": "label-error-share-of-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 수정 시 두 세트를 함께 고쳐 분포 일치 유지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "label-noise-tolerance-training",
+   "label": "학습 세트 라벨 노이즈 내성",
+   "parent": "label-error-share-of-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 라벨 오류에 대한 딥러닝의 견고함.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "ambiguous-example-handling",
+   "label": "모호한 예시 처리",
+   "parent": "label-error-share-of-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람도 판단이 갈리는 예시의 라벨링 규칙.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "error-rate-vs-label-noise-floor",
+   "label": "라벨 노이즈 하한",
+   "parent": "label-error-share-of-errors",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 오류가 만드는 측정 가능한 최소 오류율.",
    "related": [],
    "added": "2026-11-26"
   }
