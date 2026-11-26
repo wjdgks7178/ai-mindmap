@@ -52842,11 +52842,15 @@
    "label": "NER 불일치 4유형",
    "parent": "moderation-guideline-refinement",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨·경계 불일치와 거짓 음성·양성 분류.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "겹침(≥1글자) 기준 우선순위 4유형: 라벨 불일치(타입 다름)→경계 불일치(오프셋 다름)→거짓 음성(겹침 없는 gold)→거짓 양성. 유형별로 규칙서 처방이 다름. 논문 사례: FN 7→1, 라벨 불일치 5건 해소(10문서 단일 세트).",
+   "related": [
+    "moderation-guideline-refinement",
+    "strict-span-type-f1"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "strict-span-type-f1",
@@ -84387,6 +84391,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "슬라이스·n·구간·라벨 오류·결론 표.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "span-overlap-matching",
+   "label": "구간 겹침 매칭",
+   "parent": "discrepancy-categories-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 글자 이상 겹침으로 gold-예측 쌍을 만드는 규칙.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "nested-entities",
+   "label": "중첩 개체",
+   "parent": "discrepancy-categories-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 개체가 다른 개체 안에 포함된 경우의 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "annotation-boundary-rules",
+   "label": "주석 경계 규칙",
+   "parent": "discrepancy-categories-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수식어·관사를 개체에 포함할지 정하는 규칙.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "error-type-driven-guideline-fix",
+   "label": "오류 유형 기반 규칙서 수정",
+   "parent": "discrepancy-categories-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "최다 오류 유형에 규칙을 추가하는 순서.",
    "related": [],
    "added": "2026-11-26"
   }
