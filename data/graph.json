@@ -53287,11 +53287,17 @@
    "label": "가치 평가 결과로 삭제하지 않기",
    "parent": "leave-one-out-value",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "낮은 값은 검토 후보일 뿐이라는 원칙.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "낮은 가치는 검토 신호이지 삭제 명령이 아님. Data Shapley: 낮은 점 제거는 성능을 올리고 낮게 평가된 신규 환자 추가는 해칠 수 있으나, 대장암 예측에서 한 센터의 음수 가치는 결함이 아니라 분포 차이(나이 p=1.5e−6 vs 센터 p=0.14). 원인별 조치(수정·보존·분리·가중).",
+   "related": [
+    "leave-one-out-value",
+    "data-valuation-for-label-noise",
+    "duplicate-data-substitution",
+    "average-masking-weak-groups"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "knn-utility",
@@ -85712,6 +85718,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "성능 측정의 본래 변동 크기 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "distribution-shift-sources",
+   "label": "데이터 출처 간 분포 차이",
+   "parent": "valuation-vs-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "센터·시기·기기 간 분포 차이로 인한 음수 가치.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "source-level-valuation",
+   "label": "출처 단위 가치 평가",
+   "parent": "valuation-vs-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개별 점 대신 데이터 출처의 가치 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "weighted-retraining-by-value",
+   "label": "가치 가중 재학습",
+   "parent": "valuation-vs-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가치에 비례한 가중치로 재학습.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "deletion-audit-log",
+   "label": "삭제 사유 기록",
+   "parent": "valuation-vs-deletion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 보관·사유 기록으로 되돌릴 수 있게.",
    "related": [],
    "added": "2026-11-26"
   }
