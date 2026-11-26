@@ -5001,11 +5001,14 @@
    "label": "MTEB 리더보드 읽기",
    "parent": "text-embedding",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "임베딩 모델 비교표의 과제·점수를 읽는 법.",
+   "summary": "임베딩 벤치마크: 8과제·58데이터셋·112언어, 33모델 평가, 모든 과제 1등인 단일 방법 없음. 내 과제 열을 읽고 재검증.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "multimodal-rag"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "matryoshka-embedding",
@@ -11002,11 +11005,14 @@
    "label": "정규화·드롭아웃",
    "parent": "overfitting",
    "domain": "ml-fundamentals",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델을 단순하게 만들어 과적합을 줄이는 기법.",
+   "summary": "과적합 방지 기법. 드롭아웃(Hinton 2012): 학습 때 약 절반 뉴런을 무작위로 꺼 공동 적응을 막음. L2·조기종료·증강도 있음.",
    "added": "2026-11-09",
-   "related": []
+   "related": [
+    "train-val-test"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "train-val-test",
@@ -27161,11 +27167,14 @@
    "label": "GUI 에이전트",
    "parent": "rpa-vs-ai-automation",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "화면을 보고 클릭·입력하는 AI. RPA의 AI 버전.",
+   "summary": "화면을 보고 클릭·입력하는 AI. OSWorld(2024-04): 369과제, 사람 72.36% vs 최고 모델 12.24%, 약점은 GUI 접지.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hyperautomation"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "automation-roi",
@@ -88020,6 +88029,94 @@
    "status": "planned",
    "priority": 5,
    "summary": "사실·선호 저장.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "weight-decay",
+   "label": "가중치 감쇠",
+   "parent": "regularization",
+   "domain": "ml-fundamentals",
+   "status": "planned",
+   "priority": 5,
+   "summary": "L2 벌점으로 가중치를 작게 유지.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "gui-grounding",
+   "label": "GUI 접지",
+   "parent": "gui-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "화면 요소의 위치를 정확히 짚기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "computer-use-safety",
+   "label": "컴퓨터 조작 안전",
+   "parent": "gui-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "샌드박스·승인·프롬프트 주입 대응.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "osworld",
+   "label": "OSWorld",
+   "parent": "gui-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "컴퓨터 사용 에이전트 벤치마크.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "browser-agent",
+   "label": "브라우저 에이전트",
+   "parent": "gui-agent",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "웹 조작에 특화된 에이전트.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "retrieval-metrics-ndcg",
+   "label": "검색 지표 nDCG",
+   "parent": "mteb",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "순위 품질을 재는 지표.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "embedding-model-selection",
+   "label": "임베딩 모델 고르기",
+   "parent": "mteb",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "용도·언어·비용별 선택 기준.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "multilingual-embedding",
+   "label": "다국어 임베딩",
+   "parent": "mteb",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 5,
+   "summary": "한국어 성능을 확인하는 법.",
    "added": "2026-11-26",
    "related": []
   }
