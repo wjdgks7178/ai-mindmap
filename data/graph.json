@@ -53218,11 +53218,17 @@
    "label": "라벨 모호함의 상한",
    "parent": "human-benchmark-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨 자체가 모호해 정확도를 제한하는 경우.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Northcutt 2021: 10개 데이터셋 시험 세트 평균 최소 3.3% 라벨 오류, ImageNet 검증 최소 6%. 오라벨 +6%면 ResNet-18이 ResNet-50을 이기고 CIFAR-10은 +5%에서 VGG-11>VGG-19. 천장=1−e(e=6%면 측정 정확도 ≤94%), 원인은 오류·본질적 모호함·다중 정답·정의 변경.",
+   "related": [
+    "bayes-error",
+    "label-error-share-of-errors",
+    "systematic-vs-random-label-errors",
+    "human-benchmark-error"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "duplicate-data-substitution",
@@ -85544,6 +85550,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "비교한 사람 집단·조건 확인.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "soft-labels-ambiguous",
+   "label": "소프트 라벨",
+   "parent": "label-ambiguity-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모호 예시에 분포(확률) 라벨을 주는 방법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "confident-disagreement-review",
+   "label": "확신 불일치 재검수",
+   "parent": "label-ambiguity-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 높은 확신으로 라벨과 다를 때 우선 검수.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "benchmark-label-error-rate",
+   "label": "벤치마크 라벨 오류율",
+   "parent": "label-ambiguity-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 데이터셋 시험 세트의 라벨 오류 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "ceiling-aware-reporting",
+   "label": "천장을 고려한 보고",
+   "parent": "label-ambiguity-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "측정 가능한 최대 정확도를 함께 보고.",
    "related": [],
    "added": "2026-11-26"
   }
