@@ -53652,11 +53652,16 @@
    "label": "자카드 임계값 정하기",
    "parent": "jaccard-similarity",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "중복 판정 기준을 데이터로 조정.",
+   "summary": "직접 시뮬(3,000어휘·200단어·단어 3-섀글): 단어 p% 교체 시 평균 자카드 2%→0.897, 5%→0.754, 10%→0.580, 20%→0.344, 무관 쌍 0. 임계값 0.8이면 5% 변형도 26%만 탐지, 0.5는 10% 변형 91%. 합성 한계: 실제 템플릿 문서는 무관 쌍도 높음→사람 라벨 쌍 표본으로 정밀도·재현율 조정, 3구간 설계.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "jaccard-similarity",
+    "shingle-size-choice",
+    "jaccard-vs-cosine"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "shingle-size-choice",
@@ -86770,6 +86775,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "벡터식 1−T가 삼각 부등식을 어길 수 있음.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "labeled-pair-sample",
+   "label": "사람 판정 쌍 표본",
+   "parent": "jaccard-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복/비중복 쌍 라벨로 임계값 조정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "three-band-dedup",
+   "label": "3구간 중복 판정",
+   "parent": "jaccard-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 중복·사람 검수·유지로 나누기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "near-duplicate-train-test-leakage",
+   "label": "근사 중복과 학습-시험 누수",
+   "parent": "jaccard-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분리 시 근사 중복 점검.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "shingle-preprocessing-effects",
+   "label": "섀글 전처리 영향",
+   "parent": "jaccard-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소문자·공백 정리가 자카드 값에 미치는 영향.",
    "related": [],
    "added": "2026-11-26"
   }
