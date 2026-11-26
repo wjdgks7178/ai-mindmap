@@ -52573,11 +52573,14 @@
    "label": "단순 기준선 먼저",
    "parent": "simple-model-small-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "복잡 모델 전에 선형·나이브 베이즈 기준선을 확인.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "복잡 모델 전에 DummyClassifier(most_frequent·prior·stratified·uniform·constant)와 규칙·선형·나이브 베이즈 기준선을 잰다. 불균형에서 최빈 기준선은 정확도가 높아도 소수 클래스 재현율 0, 개선폭은 불확실성 구간과 비교.",
+   "related": [
+    "independent-test-ci"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "model-crossover-point",
@@ -83744,6 +83747,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "도메인이 다를 때 효과가 줄어드는 이유.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dummy-regressor",
+   "label": "DummyRegressor",
+   "parent": "baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균·중앙값을 예측하는 회귀 기준선.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "human-baseline",
+   "label": "사람 기준선",
+   "parent": "baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 평가자 성능과 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rule-based-baseline",
+   "label": "규칙 기반 기준선",
+   "parent": "baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기존 키워드·규칙 시스템과 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "improvement-vs-noise",
+   "label": "개선폭 vs 잡음",
+   "parent": "baseline-first",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개선이 불확실성 구간보다 큰지 판단.",
    "related": [],
    "added": "2026-11-26"
   }
