@@ -4740,22 +4740,28 @@
    "label": "모델 예측 제어(MPC)",
    "parent": "world-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "월드 모델로 여러 행동을 상상해 최선을 고르는 제어.",
+   "summary": "모델로 미래 예측·비용 최소 계획 선택·첫 행동만 실행하고 재계획(후퇴 구간 제어). 제약 처리, 1980년대 공정 제어서 사용.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "compounding-error"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "compounding-error",
    "label": "예측 오차 누적",
    "parent": "world-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "롤아웃이 길어질수록 작은 오차가 커지는 문제.",
+   "summary": "분포 이동으로 롤아웃이 길수록 오차가 커짐. Ross 2010: i.i.d. 위반, 무후회 반복 학습(DAgger). 월드 모델 꿈 훈련 위험.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "model-predictive-control"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "tool-description-design",
@@ -27179,11 +27185,15 @@
    "label": "프로세스 마이닝",
    "parent": "rpa-vs-ai-automation",
    "domain": "automation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "시스템 로그에서 실제 업무 흐름을 찾아 자동화 후보를 발굴.",
+   "summary": "이벤트 로그에서 실제 업무 흐름 발견·적합성 검사·향상(병목). 자동화 후보 발굴에 사용.",
    "added": "2026-11-16",
-   "related": []
+   "related": [
+    "hyperautomation",
+    "automation-roi"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "document-extraction-ai",
@@ -88506,6 +88516,138 @@
    "status": "planned",
    "priority": 5,
    "summary": "목소리의 권리 보호.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "receding-horizon",
+   "label": "후퇴 구간 제어",
+   "parent": "model-predictive-control",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "계획 창을 한 칸씩 밀어 재최적화.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "mpc-vs-pid",
+   "label": "MPC와 PID",
+   "parent": "model-predictive-control",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "예측형 대 반응형.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "world-model-planning",
+   "label": "월드 모델 기반 계획",
+   "parent": "model-predictive-control",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "상상한 행동열을 평가.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "cem-planner",
+   "label": "CEM 플래너",
+   "parent": "model-predictive-control",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "행동 샘플링으로 최적 계획 찾기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "dagger",
+   "label": "DAgger",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델 분포에서 전문가 라벨을 보강.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "distribution-shift",
+   "label": "분포 이동",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "학습과 실행 분포 차이.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "ha-world-models",
+   "label": "Ha·Schmidhuber 월드 모델",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "꿈 속에서 에이전트 훈련.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "uncertainty-estimation",
+   "label": "불확실성 추정",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "모델이 틀릴 때를 아는 법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "event-log",
+   "label": "이벤트 로그",
+   "parent": "process-mining",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "케이스·활동·타임스탬프 구조.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "conformance-checking",
+   "label": "적합성 검사",
+   "parent": "process-mining",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "설계와 실제 흐름 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "bottleneck-analysis",
+   "label": "병목 분석",
+   "parent": "process-mining",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "대기 시간이 긴 단계 찾기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "process-mining-tools",
+   "label": "프로세스 마이닝 도구",
+   "parent": "process-mining",
+   "domain": "automation",
+   "status": "planned",
+   "priority": 5,
+   "summary": "오픈소스와 상용 도구.",
    "added": "2026-11-26",
    "related": []
   }
