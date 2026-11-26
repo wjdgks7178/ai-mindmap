@@ -1143,22 +1143,24 @@
    "label": "엘렝코스(반박 검증)",
    "parent": "socratic-method",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "소크라테스식 대화의 핵심 절차: 주장→전제 모으기→모순 드러내기→수정.",
+   "summary": "소크라테스 방법의 핵심 기법인 반박 검증. Vlastos 5단계와 Frede의 반론(아포리아로 끝남).",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "aporia",
    "label": "아포리아",
    "parent": "socratic-method",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "정답 없이 \"모르겠다\"에서 끝나는 상태. 배움의 출발점으로 본다.",
+   "summary": "똑같이 그럴듯하나 모순되는 전제의 막다른 길. 수사학적 의심 선언의 뜻도 있음. 학습의 출발점으로 해석.",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "socratic-seminar",
@@ -1176,11 +1178,12 @@
    "label": "소크라테스식 질문 유형",
    "parent": "socratic-method",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "명료화·근거·가정·반례·결과 질문 등 질문을 고르는 틀.",
+   "summary": "여섯 유형: 명확화·가정 도전·증거·대안 관점·결과 탐색·질문에 대한 질문. 목적은 가정 드러내기, 아는 것과 모르는 것 구별.",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-26"
   },
   {
    "id": "ai-socratic-tutor",
@@ -90321,6 +90324,72 @@
    "status": "planned",
    "priority": 5,
    "summary": "지연·토큰/초·GPU 메모리.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "question-chaining",
+   "label": "질문 연쇄",
+   "parent": "socratic-questioning-types",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "한 주장을 여러 유형으로 이어 묻기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "assumption-challenge-prompt",
+   "label": "가정 도전 프롬프트",
+   "parent": "socratic-questioning-types",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "AI에게 가정을 캐묻게 하기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "vlastos-elenchus-steps",
+   "label": "Vlastos의 엘렝코스 5단계",
+   "parent": "elenchus",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "주장→전제→모순.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "refutation-vs-inquiry",
+   "label": "반박 대 탐구",
+   "parent": "elenchus",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이기기가 아니라 점검하기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "productive-confusion",
+   "label": "생산적 혼란",
+   "parent": "aporia",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "막힘이 학습을 깊게 하는 경우.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "premise-conflict-mapping",
+   "label": "전제 충돌 지도",
+   "parent": "aporia",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 5,
+   "summary": "충돌하는 믿음을 표로 정리.",
    "added": "2026-11-26",
    "related": []
   }
