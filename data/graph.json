@@ -53320,11 +53320,17 @@
    "label": "임베딩 공간에서의 가치 평가",
    "parent": "knn-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "KNN을 대리 모델로 대규모 데이터 가치 계산.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "사전학습 모델 임베딩 위에서 KNN을 대리 모델로 가치 계산. 논문: 딥 특징 KNN이 로지스틱과 비슷(CIFAR-10 5NN 80% vs 87%, ImageNet 84% vs 82%, Yahoo10m 98% vs 96%), 1,000만 개 규모 실험. 임베딩·거리·K 종속, 도메인 적합성 검증 필요.",
+   "related": [
+    "knn-utility",
+    "lsh-approximate-knn-shapley",
+    "data-valuation-for-label-noise",
+    "valuation-vs-deletion"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "lsh-approximate-knn-shapley",
@@ -85860,6 +85866,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정렬 없이 값을 누적 갱신.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "feature-extractor-choice",
+   "label": "특징 추출기 선택",
+   "parent": "embedding-space-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩 모델이 도메인에 맞는지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "embedding-bias-transfer",
+   "label": "임베딩 편향의 전이",
+   "parent": "embedding-space-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩의 편향이 가치에 반영됨.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "valuation-transferability-check",
+   "label": "가치 이전성 검증",
+   "parent": "embedding-space-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "KNN 값이 실제 모델에서도 유효한지.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "large-scale-dedup-via-embedding",
+   "label": "임베딩 기반 대규모 정제",
+   "parent": "embedding-space-valuation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복·오라벨을 임베딩 이웃으로 찾기.",
    "related": [],
    "added": "2026-11-26"
   }
