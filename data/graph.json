@@ -53186,11 +53186,16 @@
    "label": "피할 수 있는 편향 vs 분산",
    "parent": "human-benchmark-error",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습·검증 오류와 사람 기준으로 문제 유형 구분.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "Ng: 피할 수 있는 편향=학습 오류−최적 오류, 분산=개발−학습. 최적 14%에서 학습 15%·개발 30%는 편향 1%·분산 15%(분산 문제), 최적 0%였다면 같은 15%는 편향 문제. 편향엔 큰 모델·특징·규제 완화, 분산엔 데이터·규제·조기 종료.",
+   "related": [
+    "bayes-error",
+    "human-benchmark-error",
+    "regularization-small-data"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "human-level-definition",
@@ -85446,6 +85451,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "사후확률이 최대인 클래스를 고르는 이론적 최적 분류기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "underfitting-overfitting",
+   "label": "과소적합과 과적합",
+   "parent": "avoidable-bias-vs-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "높은 편향과 높은 분산의 일상적 표현.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "training-set-error-analysis",
+   "label": "학습 세트 오류 분석",
+   "parent": "avoidable-bias-vs-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 오류가 큰 ~100개로 범주 집계.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bias-variance-remedy-map",
+   "label": "편향·분산 처방 지도",
+   "parent": "avoidable-bias-vs-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문제 유형별 시도 목록.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "distribution-mismatch-vs-variance",
+   "label": "분포 불일치 vs 분산",
+   "parent": "avoidable-bias-vs-variance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "개발−학습 격차가 분포 차이일 때의 오인.",
    "related": [],
    "added": "2026-11-26"
   }
