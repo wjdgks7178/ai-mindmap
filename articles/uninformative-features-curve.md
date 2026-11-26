@@ -62,4 +62,4 @@ print(real - base)    # 거의 0이면 특징에 신호가 없음
 | 정상 | 데이터와 함께 상승 | 점차 감소 |
 
 ## 더 읽을거리
-- [scikit-learn: Learning curves](https://scikit-learn.org/stable/modules/learning_curve.html) — 학습 곡선 그리기·해석(URL만 제시, 이 글에서는 직접 열지 않음). 위 표는 이 글의 직접 시뮬레이션.
+- [scikit-learn: Learning curves](https://scikit-learn.org/stable/modules/learning_curve.html) — 학습 점수가 검증보다 훨씬 높으면 표본 추가가 일반화에 도움, 두 점수가 낮은 값으로 수렴하면 추가 데이터의 이득이 작다는 해석(열어 확인; 이 문서는 '정보 없음' 사례를 따로 다루지 않음). 위 표는 이 글의 직접 시뮬레이션.
