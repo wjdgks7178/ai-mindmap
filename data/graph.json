@@ -53331,11 +53331,16 @@
    "label": "LSH 근사 KNN-Shapley",
    "parent": "knn-shapley",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "부선형 시간으로 근사하는 방법.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "정리 2: 상위 K*=max{K,⌈1/ε⌉} 이웃만 정확 재귀, 나머지 0이면 (ε,0) 근사, 이웃 내부 순위·차이는 정확. 직접 검증(N=300): ε 0.1→K*=10, 최대 오차 0.069. 논문: LSH는 정확 대비 3~5배(Yahoo10m 203→44초), 엄격한 ε·회귀엔 불리.",
+   "related": [
+    "knn-shapley",
+    "knn-utility",
+    "embedding-space-valuation"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "weighted-knn-shapley",
@@ -85811,6 +85816,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "테스트 점별 값을 평균해 최종 가치.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "relative-contrast",
+   "label": "상대 대비(relative contrast)",
+   "parent": "lsh-approximate-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LSH 효율을 정하는 데이터 특성.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "approximate-nearest-neighbor",
+   "label": "근사 최근접 이웃 탐색",
+   "parent": "lsh-approximate-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LSH·k-d 트리 등으로 이웃을 빨리 찾기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "epsilon-delta-approximation",
+   "label": "(ε,δ) 근사",
+   "parent": "lsh-approximate-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오차 ε을 확률 1−δ로 보장하는 근사.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "streaming-test-points",
+   "label": "순차 도착 테스트 점의 가치 갱신",
+   "parent": "lsh-approximate-knn-shapley",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정렬 없이 값을 누적 갱신.",
    "related": [],
    "added": "2026-11-26"
   }
