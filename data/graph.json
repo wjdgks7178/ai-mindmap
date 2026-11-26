@@ -52352,11 +52352,14 @@
    "label": "성능 하락 원인 분류",
    "parent": "classifier-monitoring-sampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "입력 분포·개념·라벨 기준 변화를 구분.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "성능 하락은 p(x) 공변량·p(y) 라벨·p(y|x) 개념·검수 기준 변화로 나눠 진단. 순서: 입력 통계→클래스 비율→기준→개념. 처방은 중요도 가중·가중 손실·재라벨·재학습.",
+   "related": [
+    "test-prior-mismatch"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "nadeau-bengio-corrected-ttest",
@@ -83160,6 +83163,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "법률 문서 검토에서 분류기와 표집 검증을 결합.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "importance-weighting",
+   "label": "중요도 가중",
+   "parent": "performance-drop-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "운영 분포에 가까운 학습 샘플의 가중치를 높임.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "labeling-guideline-drift",
+   "label": "라벨링 지침 변화",
+   "parent": "performance-drop-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수 기준 개정이 성능 지표를 바꾸는 현상.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "label-shift-correction",
+   "label": "라벨 이동 보정",
+   "parent": "performance-drop-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예측 비율에서 실제 클래스 비율을 추정해 보정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "domain-adaptation",
+   "label": "도메인 적응",
+   "parent": "performance-drop-root-cause",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 도메인에 모델을 맞추는 기법.",
    "related": [],
    "added": "2026-11-26"
   }
