@@ -2614,11 +2614,14 @@
    "label": "VLM 구조: 인코더·프로젝터",
    "parent": "vision-models",
    "domain": "multimodal",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "이미지 패치가 LLM 입력이 되는 과정.",
+   "summary": "비전 인코더+프로젝터+LLM. LLaVA: GPT-4로 만든 지시 데이터, 상대 점수 85.1%, ScienceQA 92.53%.",
    "added": "2026-10-31",
-   "related": []
+   "related": [
+    "openvla"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "ocr-doc-ai",
@@ -4686,11 +4689,14 @@
    "label": "JEPA",
    "parent": "world-model",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "픽셀 대신 잠재 공간에서 미래를 예측하는 LeCun의 아키텍처.",
+   "summary": "잠재 공간에서 가려진 블록의 표현을 예측하는 비생성형 자기지도 구조. I-JEPA: 증강 없이 ViT-H/14를 A100 16장 72시간 미만 학습.",
    "added": "2026-11-02",
-   "related": []
+   "related": [
+    "flow-matching"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "genie-world-generation",
@@ -10970,11 +10976,15 @@
    "label": "메모리 종류(단기·장기·절차)",
    "parent": "agent-memory",
    "domain": "architecture",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "에피소드·의미·절차 기억의 구분.",
+   "summary": "에이전트 메모리를 작업·에피소드·의미·절차로 구분. CoALA: 모듈형 메모리+행동 공간+의사결정.",
    "added": "2026-11-09",
-   "related": []
+   "related": [
+    "memory-staleness",
+    "memory-injection"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "memory-injection",
@@ -87878,6 +87888,138 @@
    "status": "planned",
    "priority": 5,
    "summary": "환각을 위험 범주로 다루기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "llava-training-stages",
+   "label": "LLaVA 2단계 학습",
+   "parent": "vlm-architecture",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "정렬 학습 후 지시 튜닝.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "image-patch-tokens",
+   "label": "이미지 패치 토큰",
+   "parent": "vlm-architecture",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이미지를 토큰열로 바꾸는 법.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "clip-encoder",
+   "label": "CLIP 인코더",
+   "parent": "vlm-architecture",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "이미지·글 정렬 학습 인코더.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "visual-instruction-data",
+   "label": "시각 지시 데이터",
+   "parent": "vlm-architecture",
+   "domain": "multimodal",
+   "status": "planned",
+   "priority": 5,
+   "summary": "GPT-4로 만든 멀티모달 학습 데이터.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "v-jepa",
+   "label": "V-JEPA",
+   "parent": "jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "영상으로 확장한 JEPA.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "world-model-lecun",
+   "label": "르쿤의 월드 모델 구상",
+   "parent": "jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "JEPA가 놓이는 큰 그림.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "self-supervised-learning",
+   "label": "자기지도 학습",
+   "parent": "jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "라벨 없이 데이터 자체에서 학습.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "masked-autoencoder",
+   "label": "MAE",
+   "parent": "jepa",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 5,
+   "summary": "가려진 픽셀 복원 방식과 비교.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "coala",
+   "label": "CoALA",
+   "parent": "memory-types",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "언어 에이전트 인지 아키텍처 프레임워크.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "episodic-memory-agent",
+   "label": "에피소드 기억 구현",
+   "parent": "memory-types",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "경험 로그를 검색해 쓰기.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "procedural-memory-skills",
+   "label": "절차 기억과 스킬 파일",
+   "parent": "memory-types",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "방법을 문서로 저장.",
+   "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "semantic-memory-profile",
+   "label": "의미 기억과 사용자 프로필",
+   "parent": "memory-types",
+   "domain": "architecture",
+   "status": "planned",
+   "priority": 5,
+   "summary": "사실·선호 저장.",
    "added": "2026-11-26",
    "related": []
   }
