@@ -52620,11 +52620,15 @@
    "label": "상한 vs 실제 효율",
    "parent": "error-category-ceiling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "상한에 해결 가능성을 곱해 기대 효과 추정.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "기대 감소=오류율×범주 비중×해결 효율, 우선순위=기대 효과÷비용. 강의 노트: 오류 약 5%면 낮은 중요도, 50%면 중요, 최소 50~100개 오류와 개발 세트 약 100/ε 필요. 효율은 파일럿으로 추정.",
+   "related": [
+    "error-category-ceiling",
+    "category-share-confidence-interval"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "overlapping-error-categories",
@@ -83868,6 +83872,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "원하는 구간 폭에서 검토 수 계산.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "error-analysis-pilot",
+   "label": "오류 분석 파일럿",
+   "parent": "improvement-efficiency-vs-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "범주 예시 20개에 수정을 적용해 효율 추정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "priority-score-cost",
+   "label": "우선순위 점수(효과÷비용)",
+   "parent": "improvement-efficiency-vs-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기대 효과를 비용으로 나눠 순서 결정.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "fix-tradeoff-regression",
+   "label": "수정의 부작용",
+   "parent": "improvement-efficiency-vs-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 범주를 고치다 다른 오류가 늘어나는 경우.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "dev-set-size-for-error-analysis",
+   "label": "오류 분석에 필요한 개발 세트 크기",
+   "parent": "improvement-efficiency-vs-ceiling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약 100/ε 규칙.",
    "related": [],
    "added": "2026-11-26"
   }
