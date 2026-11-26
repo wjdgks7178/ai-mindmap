@@ -53764,11 +53764,17 @@
    "label": "슬라이스 검증 표본 크기",
    "parent": "per-slice-learning-curve",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집단 곡선의 신뢰구간과 반복 측정.",
+   "summary": "집단 정확도 80%의 Wilson 95% 구간 폭: n=20 33.5%p, 100 15.5%p, 400 7.8%p, 1,000 5.0%p. 필요 표본(정규 근사): ±10%p 약 62, ±5%p 약 246, ±3%p 약 683, ±2%p 약 1,537. 폭 절반=표본 4배, 부족하면 표적 수집·상위 집단·n 부족 표기.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "per-slice-learning-curve",
+    "slice-confidence-interval-table",
+    "independent-test-ci",
+    "dev-set-size-for-small-differences"
+   ],
+   "done": "2026-11-26"
   },
   {
    "id": "collection-budget-allocation",
@@ -87212,6 +87218,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 집단 데이터가 다른 집단을 돕는 효과.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "targeted-slice-collection",
+   "label": "슬라이스 표적 수집",
+   "parent": "slice-validation-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 집단의 검증 표본을 따로 모으기.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "effective-sample-size-clustering",
+   "label": "군집으로 줄어드는 유효 표본",
+   "parent": "slice-validation-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사용자 예시가 유효 표본을 줄임.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "merge-small-slices",
+   "label": "작은 슬라이스 묶기",
+   "parent": "slice-validation-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의미 있는 상위 집단으로 평가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "margin-of-error-planning",
+   "label": "오차 한계 기반 표본 계획",
+   "parent": "slice-validation-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 오차에서 필요 n을 계산.",
    "related": [],
    "added": "2026-11-26"
   }
