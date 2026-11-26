@@ -52366,11 +52366,14 @@
    "label": "보정 재표집 t-검정",
    "parent": "cv-error-bar-underestimation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "폴드 간 겹침을 보정한 모델 비교 검정.",
-   "related": [],
-   "added": "2026-11-20"
+   "summary": "분산에 n_test/n_train을 더하는 보정. sklearn 예시(10×10CV): 일반 t=2.611(p=0.005)이 보정 t=0.750(p=0.227)로 바뀌어 유의성이 사라짐. 분산 약 12배.",
+   "related": [
+    "cv-score-difference-vs-noise"
+   ],
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "fold-correlation",
@@ -83207,6 +83210,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "목표 도메인에 모델을 맞추는 기법.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bayesian-model-comparison",
+   "label": "베이즈 모델 비교(ROPE)",
+   "parent": "nadeau-bengio-corrected-ttest",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "A우세·B우세·실질적 동등 확률로 비교.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "paired-ttest-assumptions",
+   "label": "쌍체 t-검정의 가정",
+   "parent": "nadeau-bengio-corrected-ttest",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립·정규성·등분산이 모델 비교에서 깨지는 이유.",
    "related": [],
    "added": "2026-11-26"
   }
