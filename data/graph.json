@@ -52394,11 +52394,12 @@
    "label": "교차검증 점수의 부트스트랩 신뢰구간",
    "parent": "cv-error-bar-underestimation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "재표집으로 불확실성 추정.",
+   "summary": "시험 예측을 복원 추출해 지표 분포의 분위수로 구간 산출. scipy 기본 BCa·9,999회·95%. CV에선 폴드 점수가 아니라 out-of-fold 예제 단위로 뽑되 학습 변동은 반영 못 함.",
    "related": [],
-   "added": "2026-11-20"
+   "added": "2026-11-20",
+   "done": "2026-11-26"
   },
   {
    "id": "independent-test-ci",
@@ -83268,6 +83269,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "K=n일 때 편향은 작고 분산 문제는 어떤가.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "grouped-bootstrap",
+   "label": "그룹 단위 부트스트랩",
+   "parent": "bootstrap-ci-for-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사용자·문서 묶음을 단위로 재표집.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "stratified-bootstrap",
+   "label": "층화 부트스트랩",
+   "parent": "bootstrap-ci-for-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스 비율을 유지한 재표집.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "out-of-fold-predictions",
+   "label": "out-of-fold 예측",
+   "parent": "bootstrap-ci-for-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CV에서 각 예제를 시험 폴드일 때 예측한 결과 모음.",
+   "related": [],
+   "added": "2026-11-26"
+  },
+  {
+   "id": "bootstrap-percentile-methods",
+   "label": "부트스트랩 구간 방법 비교",
+   "parent": "bootstrap-ci-for-cv",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "percentile·basic·BCa 차이.",
    "related": [],
    "added": "2026-11-26"
   }
