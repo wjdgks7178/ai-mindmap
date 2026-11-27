@@ -55402,11 +55402,12 @@
    "label": "시드 고정 증강 디버깅",
    "parent": "augmentation-sample-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 샘플로 수정 전후 비교.",
+   "summary": "Compose(seed=7) 두 객체의 출력 순서 동일, set_random_seed(5)로 순서 재생 확인, save_applied_params=True로 applied_transforms 기록. 다중 워커는 미확인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "augmentation-stats-script",
@@ -94271,6 +94272,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "빈 결과면 다른 크롭으로 다시 뽑기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dataloader-worker-seed",
+   "label": "DataLoader 워커 시드",
+   "parent": "seeded-augmentation-debug",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다중 워커 난수 상태 관리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "applied-transforms-logging",
+   "label": "적용 변환 로깅",
+   "parent": "seeded-augmentation-debug",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 변환이 적용됐는지 기록.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "deterministic-training",
+   "label": "결정적 학습",
+   "parent": "seeded-augmentation-debug",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드·비결정 연산 통제.",
    "added": "2026-11-27",
    "related": []
   }
