@@ -55246,11 +55246,12 @@
    "label": "HTTP Range 요청",
    "parent": "cc-paths-files",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "파일 일부만 받는 방법.",
+   "summary": "Range 헤더로 일부만 받기. 실행: CC-MAIN-2024-10 WET 첫 파일 107,022,614B 중 앞 2MB만 받아 WARC 레코드 589개 확인, 응답 206·content-range·accept-ranges 확인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "cc-crawl-ids",
@@ -93851,6 +93852,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "인터넷 없이 의존성 묶음 설치.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "http-status-206-416",
+   "label": "206·416 상태 코드",
+   "parent": "http-range-request",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부분 응답과 범위 오류.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "resumable-download",
+   "label": "이어받기",
+   "parent": "http-range-request",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Range로 중단 지점부터 다운로드.",
    "added": "2026-11-27",
    "related": []
   }
