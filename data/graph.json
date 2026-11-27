@@ -54425,11 +54425,16 @@
    "label": "필터 임계값 조정 루프",
    "parent": "exclusion-writer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "제외 파일 비교로 기준 조정.",
+   "summary": "임계값 바꿔 제거 비율 보고 경계 구간을 직접 읽는 루프. 직접 실행(20newsgroups 11,014글): 최소 50단어는 29.8% 제거, 20단어는 8.0%. 30~49단어 구간에 유용한 질문 글 다수.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "exclusion-writer",
+    "false-removal-audit",
+    "fineweb-quality-filters"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "perplexity-ratio-metric",
@@ -91644,6 +91649,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "중복 제거 때 대표 하나에 사본 출처를 묶어 두는 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "domain-specific-threshold",
+   "label": "도메인별 임계값",
+   "parent": "filter-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "게시판·뉴스·코드마다 맞는 필터 기준이 다른 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "short-text-value",
+   "label": "짧은 글의 가치",
+   "parent": "filter-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질의응답·대화 학습에서 짧은 글을 남겨야 하는 경우.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "threshold-decision-log",
+   "label": "임계값 결정 기록",
+   "parent": "filter-threshold-tuning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값과 근거 표본을 문서화해 재현 가능하게 하는 관행.",
    "added": "2026-11-27",
    "related": []
   }
