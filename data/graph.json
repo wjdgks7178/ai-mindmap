@@ -54924,11 +54924,16 @@
    "label": "효율적 증강 탐색",
    "parent": "augmentation-policy-search",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "PBA·Fast AutoAugment 등 비용 절감.",
+   "summary": "AutoAugment 탐색 비용을 줄이는 후속: Fast AutoAugment(밀도 맞추기, 수 자릿수 빠름 주장), PBA(변하는 스케줄, 연산 세 자릿수 절감 주장·CIFAR-10 1.46%), RandAugment(공간 축소). 모두 초록의 저자 주장.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "augmentation-policy-search",
+    "autoaugment-search-space",
+    "policy-transfer"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "pii-regex-vs-ner",
@@ -92913,6 +92918,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "사전학습 모델과 처음부터 학습한 모델을 공정하게 비교하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "density-matching",
+   "label": "밀도 맞추기",
+   "parent": "efficient-augmentation-search",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 데이터와 증강 데이터의 분포를 맞추는 정책 탐색 아이디어.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "population-based-training",
+   "label": "집단 기반 학습",
+   "parent": "efficient-augmentation-search",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 모델을 동시에 학습하며 좋은 설정을 서로 복제하는 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "nonstationary-augmentation-schedule",
+   "label": "변하는 증강 스케줄",
+   "parent": "efficient-augmentation-search",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 단계에 따라 증강 강도를 바꾸는 접근.",
    "added": "2026-11-27",
    "related": []
   }
