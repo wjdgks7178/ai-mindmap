@@ -55474,11 +55474,12 @@
    "label": "SLA 자기 증류",
    "parent": "self-supervised-label-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "집계 예측을 단일 추론으로 옮기기.",
+   "summary": "집계 예측을 선생님으로 KL 증류해 추론 1번으로 집계에 근접. Table 3: CIFAR-100 SLA+SD 71.85 vs AG 74.14 vs 기준선 68.27, CUB200 62.54(+15.3%). 색상 순열은 CIFAR-10에서 −0.95%.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "policy-transfer-vs-weight-transfer",
@@ -94464,6 +94465,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "합치는 위치에 따른 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "knowledge-distillation-basics",
+   "label": "지식 증류 기초",
+   "parent": "self-distillation-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 모델의 분포로 작은 모델 학습.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "kl-divergence-intuition",
+   "label": "KL 발산 직관",
+   "parent": "self-distillation-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 확률분포의 차이 측정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "inference-cost-vs-accuracy",
+   "label": "추론 비용 vs 정확도",
+   "parent": "self-distillation-sla",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "M배 계산과 정확도 이득의 균형.",
    "added": "2026-11-27",
    "related": []
   }
