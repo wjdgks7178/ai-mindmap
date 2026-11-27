@@ -54376,11 +54376,16 @@
    "label": "실행기 의존 관계",
    "parent": "resumable-data-pipelines",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단계 간 depends와 대기.",
+   "summary": "depends=로 실행기 순서 선언. 직접 실행: 2단계에서만 run해도 1단계(4 task)가 먼저 돌고 2단계(2 task) 실행, 148→56문서. Slurm은 sbatch --dependency=afterok.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "resumable-data-pipelines",
+    "datatrove-skip-completed",
+    "datatrove-fineweb-example"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "filter-reason-stats",
@@ -91570,6 +91575,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "관찰 0건이어도 상한은 약 3/N이라는 간이 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "slurm-dependency-types",
+   "label": "Slurm 의존 유형",
+   "parent": "pipeline-depends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "afterok·afterany·afternotok의 차이와 선택.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "stage-io-path-contract",
+   "label": "단계 간 입출력 경로 약속",
+   "parent": "pipeline-depends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "앞 단계 출력 폴더와 뒤 단계 입력 폴더를 맞추는 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "partial-stage-restart",
+   "label": "단계별 부분 재시작",
+   "parent": "pipeline-depends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실패한 단계만 skip_completed로 다시 돌리는 절차.",
    "added": "2026-11-27",
    "related": []
   }
