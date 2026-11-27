@@ -93174,17 +93174,6 @@
    "summary": "낮은 온도로 확률분포를 뾰족하게.",
    "added": "2026-11-27",
    "related": []
-  },
-  {
-   "id": "confidence-threshold-tuning",
-   "label": "신뢰도 임계값 β 고르기",
-   "parent": "confidence-masking",
-   "domain": "ai-data",
-   "status": "planned",
-   "priority": 3,
-   "summary": "β가 높고 낮을 때 학습 신호 변화.",
-   "added": "2026-11-27",
-   "related": []
   }
  ]
 }
