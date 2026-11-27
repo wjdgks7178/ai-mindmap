@@ -55866,11 +55866,12 @@
    "label": "기호 비율 필터",
    "parent": "heuristic-filter-korean",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "메뉴·구분자 줄 제거.",
+   "summary": "영어 21,733줄: 기호 비율 >0.2 줄 10.5%, >0.5 1.2%. 날짜 목록 메뉴·구분선·코드 조각이 걸리고, C4를 통과한 125줄 중에도 코드 주석 조각이 있어 보완 효과.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "url-normalization",
@@ -95428,6 +95429,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한국어 단위 개념.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "digit-ratio-filter",
+   "label": "숫자 비율 필터",
+   "parent": "symbol-ratio-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목록·표·코드 줄 제거.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "uppercase-ratio-filter",
+   "label": "대문자 비율 필터",
+   "parent": "symbol-ratio-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제목·메뉴 줄 탐지.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "repetition-line-filter",
+   "label": "반복 줄 필터",
+   "parent": "symbol-ratio-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 줄이 반복되는 문서 제거.",
    "added": "2026-11-27",
    "related": []
   }
