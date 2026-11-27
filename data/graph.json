@@ -91082,6 +91082,19 @@
    "summary": "NFC·공백·대소문자 정규화가 유사도에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "edit-vs-jaccard-order",
+   "label": "순서 민감 vs 순서 무시 유사도",
+   "parent": "edit-similarity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문장 쌍에서 자카드와 편집 유사도가 갈리는 경우 모음.",
+   "added": "2026-11-27",
+   "related": [
+    "levenshtein-distance"
+   ]
   }
  ]
 }
