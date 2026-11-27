@@ -55438,11 +55438,12 @@
    "label": "허용 목록 승인 절차",
    "parent": "augmentation-allowlist",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "샘플 점검·실험으로 변환 승인.",
+   "summary": "후보 등록→라벨 보존 판정→표본 20~50장→1000회 통계→강도 상한→시드 반복 실험→승인 기록의 7단계. 라벨 불일치 1건이라도 보류.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "joint-label-distribution",
@@ -94373,6 +94374,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "강도를 단계적으로 올려 성능 변화 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "approval-record-template",
+   "label": "승인 기록 양식",
+   "parent": "allowlist-approval-process",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변환·범위·근거 기록 항목.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "post-deployment-augmentation-monitoring",
+   "label": "배포 후 증강 모니터링",
+   "parent": "allowlist-approval-process",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력 분포 변화 감시.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-review-checklist",
+   "label": "증강 검토 체크리스트",
+   "parent": "allowlist-approval-process",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 점검 항목 표.",
    "added": "2026-11-27",
    "related": []
   }
