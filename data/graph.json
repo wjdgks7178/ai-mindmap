@@ -55078,11 +55078,12 @@
    "label": "박스 형식 변환",
    "parent": "bbox-coordinate-formats",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "내부 정규화 표현으로 오가는 방법.",
+   "summary": "pascal_voc·coco·yolo를 0~1 정규화 내부 표현으로 바꿨다 되돌리는 구조. 640x480 예시 박스가 세 형식 모두 [0.156,0.104,0.469,0.521]로 수렴(Albumentations 2.0.8 실행).",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "draw-bbox-sanity-check",
@@ -93353,6 +93354,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "구문·의미 정보가 층마다 다른 분포.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bbox-roundtrip-precision",
+   "label": "박스 왕복 변환 오차",
+   "parent": "bbox-format-conversion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규화↔픽셀 왕복 시 부동소수점 오차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bbox-normalization",
+   "label": "박스 정규화",
+   "parent": "bbox-format-conversion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지 크기로 나눠 0~1 좌표 만들기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bbox-center-vs-corner",
+   "label": "중심형 vs 코너형 박스",
+   "parent": "bbox-format-conversion",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "yolo·cxcywh와 voc 코너 표기.",
    "added": "2026-11-27",
    "related": []
   }
