@@ -54141,11 +54141,15 @@
    "label": "언어별 토큰 길이와 임계값",
    "parent": "dedup-threshold-50-tokens",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한국어·코드에서 50토큰의 의미가 다름.",
+   "summary": "50토큰은 영어 약 295자, 한국어 gpt2 약 23자·o200k 약 92자. tiktoken 1문장 측정. 임계값은 토크나이저·언어별로 환산.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "tokenizer-fertility",
+    "multilingual-tokenizer-fairness"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "exactsubstr-vs-neardup",
@@ -90982,6 +90986,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "뉴스 13.63%, 위키 0.39%: 출처 성격에 따라 중복이 달라지는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "char-threshold-from-tokens",
+   "label": "글자 기준 임계값 환산",
+   "parent": "bpe-token-length-language",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 글자 수에서 토큰 임계값을 역산하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tokenizer-change-dedup-impact",
+   "label": "토크나이저 변경과 중복 제거",
+   "parent": "bpe-token-length-language",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토크나이저를 바꾸면 중복 판정이 어떻게 달라지나.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "utf8-bytes-korean",
+   "label": "한글의 UTF-8 바이트",
+   "parent": "bpe-token-length-language",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한글 3바이트가 바이트 단위 처리에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
   }
