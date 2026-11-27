@@ -54870,11 +54870,15 @@
    "label": "torchvision RandAugment 사용법",
    "parent": "randaugment-magnitude-tuning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "num_ops·magnitude 인자.",
+   "summary": "RandAugment(num_ops=2,magnitude=9): 14종 중 N개를 같은 강도 M(0~30)으로. 확인: M=9 Rotate 9도·Brightness 0.27, Posterize 7비트, Solarize 178.5. digits 200장 평균 픽셀 변화 M=0 9.3→M=30 72.1.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "randaugment-magnitude-tuning",
+    "autoaugment-search-space"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "autoaugment-search-space",
@@ -92727,6 +92731,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "그리디 외에 샘플링 생성으로 암기를 점검하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "magnitude-to-strength-mapping",
+   "label": "강도 눈금 매핑",
+   "parent": "torchvision-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "M을 연산별 실제 값으로 바꾸는 규칙(회전 도, 비트 수 등).",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "train-only-augmentation",
+   "label": "학습에만 증강 적용",
+   "parent": "torchvision-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증·시험에는 증강을 넣지 않는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "randaugment-uint8-requirement",
+   "label": "uint8 입력 요구",
+   "parent": "torchvision-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텐서 dtype과 증강 연산의 호환 문제.",
    "added": "2026-11-27",
    "related": []
   }
