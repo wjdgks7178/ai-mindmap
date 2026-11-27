@@ -54387,11 +54387,15 @@
    "label": "필터 이유별 통계",
    "parent": "exclusion-writer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "dropped_* 카운터로 규칙 영향 파악.",
+   "summary": "필터가 거절하면 dropped_<사유> 카운터 자동 증가, stats.json에 합산. 직접 실행: 20문서에서 Gopher가 short_doc 5·bullets 3·stop_words 2 제거. 사유는 처음 걸린 규칙만, 순서에 따라 달라짐.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "exclusion-writer",
+    "fineweb-quality-filters"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "false-removal-audit",
@@ -91496,6 +91500,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "난수·시각을 고정해 재실행 결과를 같게 하기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filter-order-effect",
+   "label": "필터 순서가 통계에 주는 영향",
+   "parent": "filter-reason-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문서가 앞 필터에 먼저 걸려 뒤 규칙 통계가 비는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "drop-rate-drift-alert",
+   "label": "제거율 변화 경보",
+   "parent": "filter-reason-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사유별 제거 비율이 갑자기 변하면 입력 소스 변화를 의심하는 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filter-runtime-profile",
+   "label": "필터별 실행 시간 프로파일",
+   "parent": "filter-reason-stats",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통계의 단계별 시간 비율로 병목 필터를 찾기.",
    "added": "2026-11-27",
    "related": []
   }
