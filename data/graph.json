@@ -55744,11 +55744,12 @@
    "label": "C4 페이지 단계 필터",
    "parent": "c4-filter-rules",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "3문장·금칙어·중괄호.",
+   "summary": "C4 페이지 규칙을 영어 210문서에 적용: 3문장 미만 36.7%, 금칙어 12.4%, 중괄호 4.3%, 통과 49.5%. 금칙어 필터의 오탐·편향 부작용 주의.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "c4-side-effects",
@@ -95031,6 +95032,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "버려진 줄을 표본으로 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "badword-filter-bias",
+   "label": "금칙어 필터의 편향",
+   "parent": "c4-page-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정당한 맥락의 문서까지 제거되는 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sentence-counting-methods",
+   "label": "문장 수 세기 방법",
+   "parent": "c4-page-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "종결 부호 기반 vs 문장 분리기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "code-detection-heuristics",
+   "label": "코드 탐지 휴리스틱",
+   "parent": "c4-page-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중괄호 외 코드 문서 판별법.",
    "added": "2026-11-27",
    "related": []
   }
