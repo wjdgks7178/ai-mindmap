@@ -55390,11 +55390,12 @@
    "label": "빈 샘플 비율",
    "parent": "augmentation-sample-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정답 없는 학습 샘플 비율 점검.",
+   "summary": "1000회 실행: 224 크롭에서 빈 샘플 28.2%, 320 크롭에서 0%. 구석의 작은 박스(클래스3)는 생존율 4~7%로 희귀 클래스가 더 사라짐.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "seeded-augmentation-debug",
@@ -94237,6 +94238,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "허용 목록·강도·승인 기록.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "background-sample-ratio",
+   "label": "배경 샘플 비율",
+   "parent": "empty-sample-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 없는 샘플을 의도적으로 포함하는 비율.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "class-survival-after-augmentation",
+   "label": "증강 후 클래스 생존율",
+   "parent": "empty-sample-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스별로 박스가 남는 비율.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "resample-on-empty",
+   "label": "빈 샘플 재시도",
+   "parent": "empty-sample-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빈 결과면 다른 크롭으로 다시 뽑기.",
    "added": "2026-11-27",
    "related": []
   }
