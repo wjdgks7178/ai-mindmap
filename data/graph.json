@@ -55831,11 +55831,12 @@
    "label": "fastText 언어 식별",
    "parent": "langdetect-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "langdetect 대안과 비교.",
+   "summary": "FineWeb은 fastText 영어 점수≥0.65로 필터(C4는 langdetect 0.99). lid.176.ftz 실행: 영어 13문장 중 0.65 이상 7개·0.9 이상 4개·0.99 이상 1개, py3langid보다 en 판정 빈도 높음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "korean-sentence-endings",
@@ -95757,6 +95758,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "필요 토큰·남은 토큰 계산.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "lid176-model-variants",
+   "label": "lid.176 모델 변형(ftz·bin)",
+   "parent": "fasttext-langid",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "압축 모델과 비압축 모델 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "langid-threshold-choice",
+   "label": "언어 식별 임계값 선택",
+   "parent": "fasttext-langid",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "0.65 vs 0.99 목적별.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "fasttext-input-newlines",
+   "label": "fastText 입력과 개행",
+   "parent": "fasttext-langid",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 줄 입력 요건.",
    "added": "2026-11-27",
    "related": []
   }
