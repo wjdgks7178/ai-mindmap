@@ -55006,11 +55006,12 @@
    "label": "신뢰도 마스킹",
    "parent": "uda-consistency-training",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "확신 낮은 예제의 일관성 손실 제외.",
+   "summary": "UDA에서 원본 예측 최고 확률이 β 초과인 예제만 일관성 손실에 포함. β는 CIFAR·SVHN 0.8, ImageNet 0.5. 샤프닝(τ=0.4)과 함께 사용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "semi-supervised-learning",
@@ -93149,6 +93150,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "강도를 균등·고정·점증으로 뽑는 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "training-signal-annealing",
+   "label": "훈련 신호 어닐링(TSA)",
+   "parent": "confidence-masking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 있는 쉬운 예제를 점차 풀어 과적합 방지.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "softmax-temperature-sharpening",
+   "label": "소프트맥스 온도와 샤프닝",
+   "parent": "confidence-masking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "낮은 온도로 확률분포를 뾰족하게.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "confidence-threshold-tuning",
+   "label": "신뢰도 임계값 β 고르기",
+   "parent": "confidence-masking",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "β가 높고 낮을 때 학습 신호 변화.",
    "added": "2026-11-27",
    "related": []
   }
