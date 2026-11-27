@@ -91561,6 +91561,17 @@
    "summary": "감사 판정이 사람마다 다를 때 일치도를 재는 지표.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "rule-of-three",
+   "label": "세 배 규칙(0건일 때 상한)",
+   "parent": "false-removal-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "관찰 0건이어도 상한은 약 3/N이라는 간이 규칙.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
