@@ -55902,11 +55902,12 @@
    "label": "공개 접미사 목록",
    "parent": "surt-key",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "co.uk 같은 등록 도메인 경계.",
+   "summary": "tldextract 5.4.0: co.uk는 공용 접미사, 민간 구역(blogspot.com·github.io)을 쓰면 하위 도메인이 별개 소유자. WET URL 587개: 등록 도메인 ICANN만 476, 민간 포함 503, 마지막 두 라벨 458.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "rubric-to-prompt",
@@ -95530,6 +95531,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "사이트별로 균등 추출.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "psl-private-section",
+   "label": "PSL 민간 구역",
+   "parent": "public-suffix-list",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서비스형 하위 도메인 분리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "registered-domain-sampling",
+   "label": "등록 도메인 단위 샘플링",
+   "parent": "public-suffix-list",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소유 단위로 균등 추출.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cookie-scope-public-suffix",
+   "label": "쿠키 범위와 공개 접미사",
+   "parent": "public-suffix-list",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "브라우저가 PSL을 쓰는 이유.",
    "added": "2026-11-27",
    "related": []
   }
