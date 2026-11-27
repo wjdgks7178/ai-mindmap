@@ -54358,11 +54358,14 @@
    "label": "낡은 완료 표시 문제",
    "parent": "resumable-data-pipelines",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "설정 변경 후에도 건너뛰는 위험.",
+   "summary": "완료 표시는 설정을 기록하지 않음. 직접 실행: 임계 60→150 변경 후 같은 logging_dir 재실행은 4 task 모두 건너뛰어 출력 0문서(오류 없음), 새 logging_dir은 56문서. 폴더에 버전 넣기.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "datatrove-skip-completed"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "pipeline-depends",
@@ -91423,6 +91426,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "샘플을 뽑아 정밀도·재현율을 재는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "run-dir-versioning",
+   "label": "실행 폴더 버전 관리",
+   "parent": "stale-completion-marker",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설정·코드 버전을 logging_dir 이름에 담는 관행.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "output-sanity-check",
+   "label": "출력 건수 검사",
+   "parent": "stale-completion-marker",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실행 끝에 문서 수가 0이거나 급감하면 경고하는 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cache-invalidation-basics",
+   "label": "캐시 무효화 기초",
+   "parent": "stale-completion-marker",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력·설정이 바뀌면 저장된 결과를 무효로 보는 원칙.",
    "added": "2026-11-27",
    "related": []
   }
