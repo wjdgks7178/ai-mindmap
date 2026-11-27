@@ -54478,11 +54478,16 @@
    "label": "추출 가능 암기 정의",
    "parent": "memorization-three-factors",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "k토큰 문맥·그리디 디코딩 기준 정의.",
+   "summary": "앞 k토큰 프롬프트+그리디로 뒤 s를 그대로 내면 추출 가능. 직접 실행(gpt2 124M): MIT 라이선스는 k=8도 100% 정확 추출, 새 문장·게티즈버그는 거의 0%. 정확 일치라 하한.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-three-factors",
+    "k-eidetic-memorization",
+    "memorization-measurement-50token"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "discoverability-phenomenon",
@@ -91719,6 +91724,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "접미사 배열로 문자열의 문서 빈도를 세는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "memorization-prefix-length-effect",
+   "label": "프롬프트 길이와 암기 발견",
+   "parent": "extractable-memorization-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문맥이 길어야 드러나는 암기와 짧아도 드러나는 암기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "boilerplate-memorization",
+   "label": "상용구 암기",
+   "parent": "extractable-memorization-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라이선스·약관 같은 대량 복제 문구가 쉽게 추출되는 이유.",
    "added": "2026-11-27",
    "related": []
   }
