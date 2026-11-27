@@ -55342,11 +55342,12 @@
    "label": "보일러플레이트 제거 효과",
    "parent": "text-extraction-warc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "추출 단계가 중복 군집에 미치는 영향.",
+   "summary": "같은 사이트 Wikipedia 2문서의 8단어 구절 겹침: 원문 10.2%, trafilatura 추출 후 0.1%. 메뉴·푸터가 중복 판정을 부풀림. 순서는 추출→정규화→중복 제거.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "dextrocardia-augmentation",
@@ -94112,6 +94113,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "본문 문단 없는 페이지를 학습에 쓸지 결정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "minhash-near-duplicate",
+   "label": "MinHash 근사 중복",
+   "parent": "boilerplate-removal-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구절 집합 유사도를 해시로 추정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "site-level-duplicate-patterns",
+   "label": "사이트 단위 중복 패턴",
+   "parent": "boilerplate-removal-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "템플릿 페이지가 만드는 군집.",
    "added": "2026-11-27",
    "related": []
   }
