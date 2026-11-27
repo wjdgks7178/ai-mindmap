@@ -55543,11 +55543,12 @@
    "label": "번역 품질과 다양성 맞교환",
    "parent": "intermediate-language-choice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "서툰 번역이 만드는 변형.",
+   "summary": "UDA 부록: 온도 0은 똑같은 문장, 1은 읽기 어려움, 0.7~0.9가 최고 성능. 빔 서치 대신 온도 샘플링. 다양성은 라벨 변경 위험과 맞교환.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "eda-four-operations",
@@ -94612,6 +94613,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "어미 활용을 고려한 단어 단위 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sampling-temperature-decoding",
+   "label": "디코딩 온도",
+   "parent": "translation-quality-diversity-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플링 온도와 탐욕·빔 서치 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "paraphrase-validity-review",
+   "label": "의역 타당성 검토",
+   "parent": "translation-quality-diversity-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변형 문장을 사람이 표시해 비율 측정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "wmt14-translation-models",
+   "label": "WMT'14 번역 모델",
+   "parent": "translation-quality-diversity-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "역번역에 쓰인 영어-프랑스어 모델.",
    "added": "2026-11-27",
    "related": []
   }
