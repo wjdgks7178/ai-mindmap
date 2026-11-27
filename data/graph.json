@@ -54127,11 +54127,14 @@
    "label": "Lee 외 2021 중복 제거 논문",
    "parent": "suffix-array",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "암기 10배 감소와 4% 평가 겹침 결과 정리.",
+   "summary": "C4 3.04%·RealNews 13.63% 근접 중복, 검증 겹침 4.60%, 암기 1.93%→0.14~0.19%(약 10배 감소), 성능 유지.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "training-data-deduplication"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "bpe-token-length-language",
@@ -90946,6 +90949,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "말뭉치 크기로 RAM·디스크를 미리 계산하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "memorization-rate-measure",
+   "label": "암기율 측정법",
+   "parent": "lee-2021-dedup-paper",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트 없이 생성해 학습 데이터 일치 토큰 비율을 재는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dedup-eval-overlap-effect",
+   "label": "평가 겹침이 퍼플렉서티에 미치는 영향",
+   "parent": "lee-2021-dedup-paper",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "겹친 검증 예제에서 점수가 부풀거나 꺼지는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dup-prevalence-by-corpus",
+   "label": "말뭉치별 중복 비율 차이",
+   "parent": "lee-2021-dedup-paper",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뉴스 13.63%, 위키 0.39%: 출처 성격에 따라 중복이 달라지는 이유.",
    "added": "2026-11-27",
    "related": []
   }
