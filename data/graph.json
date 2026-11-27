@@ -55174,11 +55174,12 @@
    "label": "작은 물체와 크롭 트레이드오프",
    "parent": "bbox-safe-crop",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "보존과 크롭 크기의 균형.",
+   "summary": "1024x1024에서 32px 박스를 224 무작위 크롭하면 94% 소실(남는 비율 0.06), 800 크롭이면 0.69. 박스 보존 크롭은 크롭이 커져 확대 효과가 줄어드는 트레이드오프.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "mask-unique-unit-test",
@@ -93738,6 +93739,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "회전·축소에서 보간이 하는 일.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "image-tiling-detection",
+   "label": "이미지 타일링",
+   "parent": "small-object-crop-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 이미지를 겹치게 잘라 작은 물체 학습.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "simulation-based-augmentation-check",
+   "label": "시뮬레이션으로 증강 점검",
+   "parent": "small-object-crop-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강이 라벨을 얼마나 잃는지 수치화.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "small-object-detection",
+   "label": "작은 물체 탐지",
+   "parent": "small-object-crop-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "해상도·앵커·타일링 전략.",
    "added": "2026-11-27",
    "related": []
   }
