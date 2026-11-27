@@ -55270,11 +55270,12 @@
    "label": "WET 파일 샘플링",
    "parent": "cc-paths-files",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "몇 개 파일로 정제 파이프라인 시험.",
+   "summary": "wet.paths.gz(90000줄, 180KB)에서 줄을 골라 파일 일부만 받아 정제 시험. WET 파일 1개 약 102MiB, 전체 약 9.6TB 추정. 앞 2MB로 레코드 589개 확인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "gzip-member-boundary",
@@ -93965,6 +93966,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "n=600에서 비율의 오차 범위.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "local-cache-downloads",
+   "label": "다운로드 로컬 캐시",
+   "parent": "sample-wet-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 시험 시 같은 파일 재사용.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cleaning-pipeline-smoke-test",
+   "label": "정제 파이프라인 스모크 테스트",
+   "parent": "sample-wet-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소량 샘플로 단계별 출력 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "crawl-data-size-estimation",
+   "label": "크롤 데이터 크기 추정",
+   "parent": "sample-wet-files",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파일 수×평균 크기로 규모 가늠.",
    "added": "2026-11-27",
    "related": []
   }
