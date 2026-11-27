@@ -54644,11 +54644,16 @@
    "label": "이름표 가린 품질 검수",
    "parent": "dedup-quality-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람이 섞어 읽고 맞히기.",
+   "summary": "제거/보존 문서를 섞어 이름표 가리고 맞히게 하는 검수. 정확 이항검정: 60/100 p=0.057, 65/100 p=0.004. 진짜 정답률 80%는 18문항, 70% 37, 60% 158문항 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "dedup-quality-check",
+    "removed-vs-kept-comparison",
+    "false-removal-audit"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "dedup-scope-choice",
@@ -92650,6 +92655,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "제거 범위와 임계값을 데이터셋 문서에 기록하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "exact-binomial-test",
+   "label": "정확 이항검정",
+   "parent": "blind-quality-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 개수가 우연(50%)과 다른지 정확한 p값으로 판단.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "statistical-power-sample-size",
+   "label": "검정력과 표본 크기",
+   "parent": "blind-quality-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차이를 잡으려면 몇 문항이 필요한지 계산하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "annotator-surface-cues",
+   "label": "검수자가 쓰는 얕은 단서",
+   "parent": "blind-quality-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "길이·서식 같은 단서로 맞히는 문제와 통제법.",
    "added": "2026-11-27",
    "related": []
   }
