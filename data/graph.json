@@ -56022,11 +56022,12 @@
    "label": "처리량 외삽",
    "parent": "classifier-inference-cost",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "소규모 측정으로 전체 비용 추정.",
+   "summary": "WET 587문서 측정: fastText 674문서/초(2000자로 자르면 2692), py3langid 449/1196. 1억 건 외삽 41시간→10.3시간(단일 프로세스). 표본 대표성·I/O 비선형성 주의.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "truncate-input-tokens",
@@ -95859,6 +95860,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공출현 기반 편향 측정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "benchmarking-warmup-median",
+   "label": "벤치마크 워밍업과 중앙값",
+   "parent": "throughput-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "반복 측정과 하드웨어 기록.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "parallelism-speedup",
+   "label": "병렬화와 속도 향상",
+   "parent": "throughput-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코어 수로 나눌 때의 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "io-vs-compute-bound",
+   "label": "I/O 병목 vs 연산 병목",
+   "parent": "throughput-extrapolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "처리 시간이 늘어나는 이유.",
    "added": "2026-11-27",
    "related": []
   }
