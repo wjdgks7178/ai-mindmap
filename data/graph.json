@@ -55791,11 +55791,12 @@
    "label": "비율 기반 비속어 필터",
    "parent": "bad-words-list-filter",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "일정 비율 이상일 때만 제거.",
+   "summary": "영어 210문서: 한 번이라도 12.4% 제거 → 비율>0.1% 10.0%, >0.3% 4.8%, >1% 1.4%. 걸린 26문서 중 10개는 1회 등장, 중앙값 1000단어당 2.0개.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "language-id-short-text",
@@ -95133,6 +95134,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "언어별 목록 구축 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "profanity-threshold-selection",
+   "label": "비속어 임계값 정하기",
+   "parent": "ratio-based-profanity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "용도별 임계값과 검토 표본.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "min-length-condition",
+   "label": "최소 길이 조건",
+   "parent": "ratio-based-profanity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧은 글에서 비율이 급등하는 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "word-boundary-matching",
+   "label": "단어 경계 매칭",
+   "parent": "ratio-based-profanity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부분 문자열 오탐을 피하는 방법.",
    "added": "2026-11-27",
    "related": []
   }
