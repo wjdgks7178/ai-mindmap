@@ -55486,11 +55486,12 @@
    "label": "정책 전이 vs 가중치 전이",
    "parent": "augmentation-transfer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "증강 정책 재사용과 사전학습 비교.",
+   "summary": "AutoAugment 논문 Table 4: ImageNet 정책을 가져와 FGVC 5종을 처음부터 학습해 오류율 하락(Flowers 6.7→4.6, Caltech-101 19.4→13.1 등). 정책 전이는 가중치 전이와 다르며 두 방식을 직접 비교한 실험은 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "symmetry-dependent-augmentation",
@@ -95326,6 +95327,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "다음 학습 버전에서 데이터 제외.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "autoaugment-direct-vs-transfer",
+   "label": "AutoAugment direct vs transfer",
+   "parent": "policy-transfer-vs-weight-transfer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직접 탐색과 전이의 비용 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "transfer-learning-basics",
+   "label": "전이 학습 기초",
+   "parent": "policy-transfer-vs-weight-transfer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전학습 후 미세조정의 원리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "fgvc-datasets",
+   "label": "FGVC 세부 분류 데이터셋",
+   "parent": "policy-transfer-vs-weight-transfer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Flowers·Pets·Aircraft·Cars.",
    "added": "2026-11-27",
    "related": []
   }
