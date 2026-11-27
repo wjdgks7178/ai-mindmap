@@ -55914,11 +55914,12 @@
    "label": "루브릭을 프롬프트로",
    "parent": "additive-scoring-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "평가 기준표를 LLM 지시로 옮기기.",
+   "summary": "FineWeb-Edu 주석 프롬프트: 가산식 5점 척도(+1씩), 100단어 근거 + 'Educational score: N' 형식. Llama-3 주석 450,000개로 회귀 분류기 학습, int_score≥3 권장, 5점 클래스 재현율 0.01.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "llm-score-consistency",
@@ -95564,6 +95565,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "브라우저가 PSL을 쓰는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "additive-scale-design",
+   "label": "가산식 척도 설계",
+   "parent": "rubric-to-prompt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준을 +1점씩 쌓는 루브릭.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "llm-annotation-to-classifier",
+   "label": "LLM 주석에서 분류기로",
+   "parent": "rubric-to-prompt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 모델 주석을 작은 모델로 증류.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "rare-class-recall",
+   "label": "희귀 클래스 재현율",
+   "parent": "rubric-to-prompt",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5점 클래스를 못 맞히는 이유.",
    "added": "2026-11-27",
    "related": []
   }
