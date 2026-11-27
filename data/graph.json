@@ -55878,11 +55878,12 @@
    "label": "URL 정규화",
    "parent": "surt-key",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "소문자·쿼리 정렬 등 같은 페이지 판정.",
+   "summary": "surt 0.3.1 실행: 스킴·www·:80·프래그먼트 제거, 쿼리 키 정렬, 중복 슬래시 병합, %7E→~, 호스트를 com,example)/ 형태로 역순. index.html은 유지, utm 파라미터는 별도 규칙 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "prefix-range-query",
@@ -95462,6 +95463,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 줄이 반복되는 문서 제거.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "canonical-link-element",
+   "label": "canonical 링크",
+   "parent": "url-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사이트가 선언한 대표 URL.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tracking-parameter-stripping",
+   "label": "추적 파라미터 제거",
+   "parent": "url-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "utm_* 등 중복 URL의 원인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "url-normalization-aggressiveness",
+   "label": "정규화 강도 선택",
+   "parent": "url-normalization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공격적·보수적 정규화의 대가.",
    "added": "2026-11-27",
    "related": []
   }
