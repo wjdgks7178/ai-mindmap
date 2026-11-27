@@ -55066,11 +55066,12 @@
    "label": "임베딩 공간 증강",
    "parent": "mixup-for-text",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "입력 대신 표현을 변형하는 방법들.",
+   "summary": "단어·문장·은닉층 벡터를 보간해 증강. TMix는 BERT 7·9·12층 믹스로 AG News(라벨 10개/클래스) 69.5→74.1%.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "bbox-format-conversion",
@@ -93319,6 +93320,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Mixup 평가에 쓰인 5개 데이터셋.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tmix-mixtext",
+   "label": "TMix·MixText",
+   "parent": "embedding-space-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "은닉층 보간+라벨 추정 준지도 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "label-guessing",
+   "label": "라벨 추정",
+   "parent": "embedding-space-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강본 예측 평균으로 라벨 없는 데이터 라벨링.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bert-layer-linguistic-roles",
+   "label": "BERT 층별 언어 정보",
+   "parent": "embedding-space-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구문·의미 정보가 층마다 다른 분포.",
    "added": "2026-11-27",
    "related": []
   }
