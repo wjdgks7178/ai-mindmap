@@ -55114,11 +55114,12 @@
    "label": "min_area 필터",
    "parent": "min-visibility-filter",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "남은 픽셀 면적으로 작은 조각 제거.",
+   "summary": "크롭 후 남은 면적이 min_area 미만이면 박스·라벨 제거. 실험: 남은 10000px가 min_area=15000에선 제거, 5000에선 유지. 비율 기준은 min_visibility.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "bbox-clipping",
@@ -93466,6 +93467,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 전 데이터 직접 훑기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "min-area-vs-resolution",
+   "label": "min_area와 해상도",
+   "parent": "min-area-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "리사이즈 후 면적 기준이 달라지는 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "label-dtype-after-augmentation",
+   "label": "증강 후 라벨 자료형",
+   "parent": "min-area-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정수 라벨이 float로 돌아오는 경우.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "small-object-detection-filtering",
+   "label": "작은 물체 필터링",
+   "parent": "min-area-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 박스 제거가 재현율에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
   }
