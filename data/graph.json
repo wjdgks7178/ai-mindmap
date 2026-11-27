@@ -54572,11 +54572,17 @@
    "label": "암기 감사",
    "parent": "memorization-mitigation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "추출 공격으로 배포 전 점검.",
+   "summary": "민감 문서의 앞 k토큰(여러 길이)을 프롬프트해 그리디 이어쓰기 일치를 보고 최대 일치가 기준 이상이면 FLAG. 직접 실행(gpt2): MIT·Apache 문구 24/24 FLAG, 내가 지은 문서 0~1/24 통과.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-mitigation",
+    "discoverability-phenomenon",
+    "extractable-memorization-definition",
+    "output-memorization-filter"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "transitive-clustering",
@@ -92688,6 +92694,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "길이·서식 같은 단서로 맞히는 문제와 통제법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "audit-threshold-setting",
+   "label": "감사 임계값 설정",
+   "parent": "memorization-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치 몇 %를 FLAG로 볼지 위험도에 맞춰 정하는 기준.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "audit-report-template",
+   "label": "암기 감사 보고서 양식",
+   "parent": "memorization-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서·k·일치·조치를 기록하는 표준 양식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sampling-based-audit",
+   "label": "샘플링 기반 감사",
+   "parent": "memorization-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "그리디 외에 샘플링 생성으로 암기를 점검하는 방법.",
    "added": "2026-11-27",
    "related": []
   }
