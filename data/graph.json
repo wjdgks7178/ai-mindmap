@@ -55509,11 +55509,12 @@
    "label": "공개 증강 정책 쓰기",
    "parent": "augmentation-transfer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라이브러리의 AutoAugment 정책 활용.",
+   "summary": "torchvision.transforms.v2의 AutoAugment(IMAGENET 기본)·RandAugment·TrivialAugmentWide·AugMix 사용. uint8 입력 요구라 Normalize 앞에 배치. 대칭성이 다른 데이터는 주의(문서만 읽음).",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "pivot-language-distance",
@@ -94521,6 +94522,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드·분할 반복으로 방향성 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "autoaugment-policy-contents",
+   "label": "AutoAugment 정책 내용",
+   "parent": "public-augmentation-policies",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책 안의 연산·확률·강도 쌍.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "uint8-vs-float-pipeline",
+   "label": "uint8와 float 파이프라인",
+   "parent": "public-augmentation-policies",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강·정규화 순서와 dtype.",
    "added": "2026-11-27",
    "related": []
   }
