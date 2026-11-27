@@ -55318,11 +55318,12 @@
    "label": "trafilatura 옵션",
    "parent": "text-extraction-warc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "favor_precision·recall·tables.",
+   "summary": "trafilatura 2.4.0으로 Wikipedia 1페이지 실험: 기본 8436자, favor_precision 8271자(줄 64→49), favor_recall은 동일, 표 제외 8086자, 링크 포함 15704자. 한 페이지라 일반화 금물.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "extractor-comparison",
@@ -94033,6 +94034,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "curl -D 로 응답 헤더 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "html-to-markdown-extraction",
+   "label": "HTML에서 마크다운 추출",
+   "parent": "trafilatura-options",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "trafilatura output_format 옵션.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "extraction-precision-recall",
+   "label": "추출 정밀도·재현율",
+   "parent": "trafilatura-options",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본문 추출을 정답과 비교하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "wikipedia-infobox-extraction",
+   "label": "위키 정보 상자 추출",
+   "parent": "trafilatura-options",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표로 나오는 정보 상자 처리.",
    "added": "2026-11-27",
    "related": []
   }
