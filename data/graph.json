@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "nodes": [
   {
    "id": "ai",
@@ -54005,11 +54005,14 @@
    "label": "접두사 트리 l 값",
    "parent": "minhash-lsh-forest",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "트리 수와 깊이의 정확도 트레이드오프.",
+   "summary": "LSH Forest의 l은 트리 수, 깊이=num_perm/l. 직접 실행(128, 20시드): l=2는 k개를 못 채우고 적중 2.6, l≥8은 k개 채움. 예산 작으면 깊이, 크면 트리.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "minhash-lsh"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "ann-vs-lsh",
@@ -90766,6 +90769,39 @@
    "priority": 5,
    "summary": "공개·검증 요구 동향.",
    "added": "2026-11-26",
+   "related": []
+  },
+  {
+   "id": "lsh-forest-query-2k",
+   "label": "2k 질의 후 재정렬",
+   "parent": "lsh-forest-prefix-trees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "k의 2배를 받아 정확 자카드로 다시 정렬하는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "lsh-forest-memory-cost",
+   "label": "Forest 메모리·속도 비용",
+   "parent": "lsh-forest-prefix-trees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트리 수 l이 늘 때 색인 크기와 질의 시간 변화.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "lsh-forest-vs-ann",
+   "label": "LSH Forest와 HNSW 비교",
+   "parent": "lsh-forest-prefix-trees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집합 자카드 top-k와 벡터 근사 최근접의 쓰임새 차이.",
+   "added": "2026-11-27",
    "related": []
   }
  ]
