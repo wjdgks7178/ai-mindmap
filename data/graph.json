@@ -54970,11 +54970,12 @@
    "label": "TrivialAugment vs RandAugment",
    "parent": "trivialaugment",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "변환 수·강도 처리·튜닝 비교.",
+   "summary": "RandAugment는 연산 N개·고정 강도 M을 튜닝, TrivialAugment는 이미지마다 연산 1개·강도 무작위로 튜닝 0. 논문 표에서 CIFAR-100 84.3 vs 83.3, ImageNet 78.1 vs 77.6.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "augmentation-baseline-practice",
@@ -93036,6 +93037,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "놓침은 유출, 과탐지는 데이터 손실.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "trivialaugment-torchvision-usage",
+   "label": "torchvision의 TrivialAugmentWide 사용",
+   "parent": "trivialaugment-vs-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "num_magnitude_bins=31 기본값과 사용 코드.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "randaugment-nm-tuning",
+   "label": "RandAugment N·M 튜닝",
+   "parent": "trivialaugment-vs-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "N, M을 어떻게 격자 탐색하나.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-search-overhead",
+   "label": "증강 탐색 비용",
+   "parent": "trivialaugment-vs-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "AutoAugment 수백 배 대 TrivialAugment 0 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "trivialaugment-wide-vs-standard",
+   "label": "TrivialAugment Wide vs 표준",
+   "parent": "trivialaugment-vs-randaugment",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "강도 범위 차이.",
    "added": "2026-11-27",
    "related": []
   }
