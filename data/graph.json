@@ -54085,11 +54085,14 @@
    "label": "중복 제거와 다양성",
    "parent": "paraphrase-dedup-limit",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "표현 다양성을 해치지 않는 비율.",
+   "summary": "SemDeDup은 LAION 50% 제거 시 손실 0.47%, C4 효율 약 15%. D4는 중복 제거+다양성 선택으로 6.7B 약 20% 효율. 제거 임계값은 희귀 주제 슬라이스와 같이 점검.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "semdedup"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "lcp-array",
@@ -90838,6 +90841,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "top-k 후보를 LLM이 같은 문제인지 판정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "d4-data-selection",
+   "label": "D4 데이터 선별",
+   "parent": "dedup-diversity-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복 제거와 다양성을 함께 쓰는 Meta의 선별 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dedup-epsilon-tuning",
+   "label": "SemDeDup ε 조절",
+   "parent": "dedup-diversity-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "목표 크기에 맞춰 코사인 임계값을 정하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "rare-slice-after-dedup",
+   "label": "중복 제거 후 희귀 슬라이스 점검",
+   "parent": "dedup-diversity-tradeoff",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지운 뒤 소수 주제 성능이 떨어졌는지 확인.",
    "added": "2026-11-27",
    "related": []
   }
