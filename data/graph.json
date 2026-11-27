@@ -55222,11 +55222,12 @@
    "label": "의존성 버전 고정",
    "parent": "library-version-api-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "requirements로 버전 기록.",
+   "summary": "requirements에 ==로 버전 기록. pip 문서의 3단계(고정·해시·휠 묶음). albumentations 하나가 albucore·opencv·pydantic까지 끌고 옴 — 전체 고정 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "deprecation-notices",
@@ -93806,6 +93807,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "이동·확대·회전·전단을 한 번에.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pip-hash-checking",
+   "label": "pip 해시 검사",
+   "parent": "pin-dependency-versions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "--hash로 파일 변조 방지.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pip-tools-requirements-in",
+   "label": "pip-tools와 requirements.in",
+   "parent": "pin-dependency-versions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직접 의존성과 고정본 분리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "virtual-environments",
+   "label": "가상환경",
+   "parent": "pin-dependency-versions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프로젝트별 패키지 격리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "wheelhouse-offline-install",
+   "label": "휠하우스 오프라인 설치",
+   "parent": "pin-dependency-versions",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인터넷 없이 의존성 묶음 설치.",
    "added": "2026-11-27",
    "related": []
   }
