@@ -54522,11 +54522,15 @@
    "label": "모델 계열별 암기 차이",
    "parent": "memorization-three-factors",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "계열을 바꾸면 스케일 규칙이 복잡해지는 이유.",
+   "summary": "같은 계열 안에서는 크기↑암기↑ 경향, 계열 간엔 복잡. 직접 실행(그리디 12토큰 프롬프트): GPT-2는 82M→124M→355M 증가, Pythia는 MIT 문구가 160M 30/30인데 410M 4/30. 직접 점검 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-three-factors",
+    "discoverability-phenomenon"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "dp-sgd",
@@ -92055,6 +92059,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "일치 시 막을지 출처를 달지 정하는 기준.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pythia-suite",
+   "label": "Pythia 모델 묶음",
+   "parent": "memorization-scaling-caveat",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 데이터·순서로 학습한 70M~12B 모델과 체크포인트.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "training-order-memorization",
+   "label": "학습 순서와 암기",
+   "parent": "memorization-scaling-caveat",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터를 보는 순서가 암기 여부에 미치는 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "model-selection-memorization-check",
+   "label": "모델 선정 시 암기 점검",
+   "parent": "memorization-scaling-caveat",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 모델에 같은 문구 세트를 돌려 비교하는 절차.",
    "added": "2026-11-27",
    "related": []
   }
