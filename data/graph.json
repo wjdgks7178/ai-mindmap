@@ -54625,11 +54625,15 @@
    "label": "제거·보존 집합 비교 실험",
    "parent": "dedup-quality-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "두 집합으로 소형 모델 학습해 비교.",
+   "summary": "전체·중복 제거본·무작위 제거 대조군으로 작은 모델 비교. 직접 실행(20newsgroups, 74개 0.7% 제거): 정확도 0.6920/0.6916/0.6922로 차이 없음→제거가 작으면 학습 비교로 품질 판별 불가, 대조군·시드 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "dedup-quality-check",
+    "lee-2021-dedup-paper"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "blind-quality-review",
@@ -92130,6 +92134,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "상위 군집의 대표 글을 읽고 원인을 분류하는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "random-drop-control",
+   "label": "무작위 제거 대조군",
+   "parent": "removed-vs-kept-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 수를 무작위로 빼 결과를 비교하는 대조 설계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ablation-study-basics",
+   "label": "어블레이션 기초",
+   "parent": "removed-vs-kept-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요소를 빼고 성능 변화를 보는 실험 설계.",
    "added": "2026-11-27",
    "related": []
   }
