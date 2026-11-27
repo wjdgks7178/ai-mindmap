@@ -54940,11 +54940,16 @@
    "label": "정규식 vs NER",
    "parent": "pii-in-training-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "형식 기반과 모델 기반 PII 탐지 비교.",
+   "summary": "정규식은 이메일·전화, NER은 이름·장소를 찾아 서로 보완. 직접 실행(bert-base-NER, 문장 5개): 정규식은 이름·주소 못 찾고 NER은 이메일·전화 놓침, NER은 선수 Jordan을 LOC로 오탐, 공적 개체도 태깅.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "pii-in-training-data",
+    "pii-formatter",
+    "korean-pii-regex"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "pii-recall-audit",
@@ -92951,6 +92956,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습 단계에 따라 증강 강도를 바꾸는 접근.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "public-entity-filter",
+   "label": "공적 개체 필터",
+   "parent": "pii-regex-vs-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공인·기업 이름을 개인정보에서 제외하는 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ner-model-domain-shift",
+   "label": "NER 도메인 이동",
+   "parent": "pii-regex-vs-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뉴스로 학습한 NER이 다른 분야에서 약해지는 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "korean-ner-models",
+   "label": "한국어 NER 모델",
+   "parent": "pii-regex-vs-ner",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한국어 이름·주소를 찾는 모델 선택과 평가.",
    "added": "2026-11-27",
    "related": []
   }
