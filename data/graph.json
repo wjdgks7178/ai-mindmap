@@ -54498,11 +54498,15 @@
    "label": "발견 가능성 현상",
    "parent": "memorization-three-factors",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "긴 문맥에서만 드러나는 암기.",
+   "summary": "짧은 프롬프트에선 안 나오다 문맥이 길면 드러나는 암기. GPT-J 6B 50토큰 33%→450토큰 65%. 직접 실행(gpt2): Apache 문구 k=2·4에서 0/30, k=8부터 30/30. GPL은 문맥 늘려도 일치가 줄어 변형 영향.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-three-factors",
+    "extractable-memorization-definition"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "memorization-scaling-caveat",
@@ -91794,6 +91798,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공격 척도를 자기 모델 점검에 쓰는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "multi-length-prompt-audit",
+   "label": "여러 길이 프롬프트 감사",
+   "parent": "discoverability-phenomenon",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "k를 바꿔가며 최대 일치를 보고하는 암기 감사 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "text-variant-memorization",
+   "label": "텍스트 변형과 암기",
+   "parent": "discoverability-phenomenon",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문구의 여러 버전 중 모델이 본 변형이 이어쓰기를 좌우하는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "context-length-log-linear",
+   "label": "문맥 길이와 로그-선형",
+   "parent": "discoverability-phenomenon",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문맥 토큰이 늘수록 추출 가능성이 로그 단위로 커지는 관계.",
    "added": "2026-11-27",
    "related": []
   }
