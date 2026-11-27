@@ -55378,11 +55378,12 @@
    "label": "도메인 전문가 증강 검토",
    "parent": "medical-flip-hazard",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "허용 목록 작성 절차.",
+   "summary": "변환마다 전문가에게 '라벨이 유지되는가'를 물어 허용·조건부·금지로 분류하고, 20~50장에 정답을 겹쳐 그려 확인. Albumentations 문서의 라벨 보존 기준을 절차화.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "empty-sample-rate",
@@ -94203,6 +94204,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "이미지-텍스트 쌍 증강 주의.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "stress-augmentation",
+   "label": "스트레스 증강",
+   "parent": "domain-expert-augmentation-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비현실적이어도 라벨이 유지되는 증강.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "label-noise-from-augmentation",
+   "label": "증강이 만드는 라벨 노이즈",
+   "parent": "domain-expert-augmentation-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 보존 실패의 결과.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-documentation",
+   "label": "증강 설정 문서화",
+   "parent": "domain-expert-augmentation-review",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 목록·강도·승인 기록.",
    "added": "2026-11-27",
    "related": []
   }
