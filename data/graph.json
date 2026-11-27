@@ -55554,11 +55554,12 @@
    "label": "EDA 네 가지 연산",
    "parent": "text-augmentation-label-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "SR·RI·RS·RD와 α 의미.",
+   "summary": "EDA: SR·RI·RS·RD 중 하나를 무작위로 적용, n=α·l. 논문: 평균 +0.8%p(전체)·+3.0%p(500개), 데이터 50%로 전체 학습과 동급. 권장 α=0.05~0.1, n_aug 4~16.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "protected-keywords",
@@ -94544,6 +94545,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "증강·정규화 순서와 dtype.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "wordnet-synonyms",
+   "label": "WordNet 동의어",
+   "parent": "eda-four-operations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동의어 교체의 사전 자원.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "stopwords-in-augmentation",
+   "label": "증강에서의 불용어",
+   "parent": "eda-four-operations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교체 대상에서 제외하는 단어.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-with-pretrained-lms",
+   "label": "사전학습 모델과 단순 증강",
+   "parent": "eda-four-operations",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 모델에서 EDA 효과가 줄어드는가.",
    "added": "2026-11-27",
    "related": []
   }
