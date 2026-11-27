@@ -91748,6 +91748,17 @@
    "summary": "라이선스·약관 같은 대량 복제 문구가 쉽게 추출되는 이유.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "memorization-nonexact-variants",
+   "label": "정확 일치 밖의 암기",
+   "parent": "extractable-memorization-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한두 토큰이 다른 근사 암기를 정의에 넣는 접근과 한계.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
