@@ -55768,11 +55768,12 @@
    "label": "금칙어 필터 정밀도와 재현율",
    "parent": "bad-words-list-filter",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "키워드 차단의 오탐 구조.",
+   "summary": "LDNOOBW 영어 403개로 영어 210문서 필터: 26문서(12.4%)가 61개 항목에 걸림. 로마숫자 XX·게임 사이트명·엔진명·고전 서적 등 오탐 사례 확인, 철자 변형·타 언어는 미탐. 정밀도 수치는 미측정.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "dialect-filtering-bias",
@@ -95099,6 +95100,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "필터가 언어별로 버리는 비율 보고.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "keyword-vs-classifier-filtering",
+   "label": "키워드 필터 vs 분류기",
+   "parent": "blocklist-precision-recall",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "맥락 무시와 모델 편향 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "manual-labeling-for-filter-eval",
+   "label": "필터 평가용 수동 라벨링",
+   "parent": "blocklist-precision-recall",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정밀도·재현율 측정용 표본 설계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "multilingual-blocklists",
+   "label": "다국어 금칙어 목록",
+   "parent": "blocklist-precision-recall",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어별 목록 구축 한계.",
    "added": "2026-11-27",
    "related": []
   }
