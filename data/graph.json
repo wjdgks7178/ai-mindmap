@@ -54762,11 +54762,15 @@
    "label": "지식 증류의 소프트 타깃",
    "parent": "soft-label-loss",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "교사 모델 확률을 타깃으로 쓰는 경우.",
+   "summary": "교사 확률 분포를 타깃으로 학생 학습. 직접 실행(digits, 은닉 256→8, 8시드): T=1은 하드 라벨과 동일(교사가 원-핫급), T=4는 +0.013(6/8 승)로 증거 약함. 온도로 클래스 관계를 드러냄.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "soft-label-loss",
+    "kl-divergence-vs-ce"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "cutmix-box-sampling",
@@ -92388,6 +92392,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "소프트 타깃에서는 하한 H(p)를 기준으로 학습 곡선을 읽는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "temperature-softmax",
+   "label": "소프트맥스 온도",
+   "parent": "knowledge-distillation-soft-targets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "로짓을 T로 나눠 분포를 평평하게 하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dark-knowledge",
+   "label": "암흑 지식",
+   "parent": "knowledge-distillation-soft-targets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 외 클래스 확률에 담긴 유사도 정보.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "distillation-student-capacity",
+   "label": "학생 용량과 증류 효과",
+   "parent": "knowledge-distillation-soft-targets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학생이 너무 작거나 크면 이득이 달라지는 이유.",
    "added": "2026-11-27",
    "related": []
   }
