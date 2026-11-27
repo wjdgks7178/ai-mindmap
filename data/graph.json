@@ -54863,11 +54863,16 @@
    "label": "대리 과제 함정",
    "parent": "randaugment-magnitude-tuning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "작은 데이터에서 찾은 증강이 큰 모델에 안 맞는 이유.",
+   "summary": "대리 과제(작은 데이터·짧은 학습)가 실제와 다를 수 있음. 직접 실행(digits CNN 4시드): 대리(100장·8에폭)는 정확도 0.10~0.18로 거의 못 배워 순위가 잡음, 실제(718장·30에폭)는 0.94~0.97. 대리가 학습 충분해야 의미.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "randaugment-magnitude-tuning",
+    "autoaugment-search-space",
+    "randaugment-grid-search"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "torchvision-randaugment",
@@ -92838,6 +92843,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "선택지 수를 곱해 공간 크기를 계산하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "proxy-convergence-check",
+   "label": "대리 수렴 확인",
+   "parent": "proxy-task-pitfall",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대리에서 기준선이 충분히 학습됐는지 확인하는 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "scale-dependent-optimum",
+   "label": "규모에 따라 이동하는 최적값",
+   "parent": "proxy-task-pitfall",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터·모델 크기에 따라 최적 증강 강도가 바뀌는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "final-confirmation-run",
+   "label": "최종 확인 학습",
+   "parent": "proxy-task-pitfall",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대리로 거른 후보를 실제 설정에서 재검증하는 단계.",
    "added": "2026-11-27",
    "related": []
   }
