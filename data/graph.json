@@ -54733,11 +54733,15 @@
    "label": "입력 드롭아웃과 Cutout",
    "parent": "cutout",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "무작위 화소 vs 연속 영역.",
+   "summary": "입력 드롭아웃은 흩어진 화소, Cutout은 연속 영역 삭제(논문: 이웃 화소 중복 회피). 직접 실행(digits 8x8, 면적 맞춤): 둘 다 0.976 안팎으로 구별 불가, 화소 드롭아웃 p 큰 값은 소폭 하락.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "cutout",
+    "cutout-patch-size"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "kl-divergence-vs-ce",
@@ -92315,6 +92319,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "후보 3~5개를 여러 시드로 비교하는 요령.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pixel-redundancy",
+   "label": "화소 중복성",
+   "parent": "input-dropout-vs-cutout",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이웃 화소가 비슷한 정보를 가져 일부를 지워도 복원되는 성질.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "spatial-dropout",
+   "label": "공간 드롭아웃",
+   "parent": "input-dropout-vs-cutout",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합성곱 특징맵에서 채널·영역 단위로 지우는 드롭아웃.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "occlusion-augmentation-family",
+   "label": "가림 증강 계열",
+   "parent": "input-dropout-vs-cutout",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Cutout, Random Erasing, GridMask 등 비교.",
    "added": "2026-11-27",
    "related": []
   }
