@@ -55962,11 +55962,12 @@
    "label": "특화와 일반 성능 균형",
    "parent": "classifier-threshold-tradeoff",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "교육 점수 필터의 벤치마크 영향.",
+   "summary": "FineWeb-Edu 1.3조 토큰(원본 약 8.7%): MMLU·ARC 크게 향상, 대신 금융·법률·엔터테인먼트·여행 주제가 줄고 일반 웹·소셜 도메인 퍼플렉서티는 FineWeb이 대체로 낮음. 임계값 3은 절충점.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "data-quantity-vs-quality",
@@ -95689,6 +95690,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터 양이 달라도 같은 토큰으로 학습.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "topic-distribution-shift",
+   "label": "필터 후 주제 분포 이동",
+   "parent": "specialization-vs-general",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터가 늘리고 줄이는 주제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "perplexity-domain-fit",
+   "label": "퍼플렉서티로 보는 도메인 적합도",
+   "parent": "specialization-vs-general",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Paloma 도메인 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mixing-specialized-and-general-data",
+   "label": "특화·일반 데이터 혼합",
+   "parent": "specialization-vs-general",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "혼합 비율 실험.",
    "added": "2026-11-27",
    "related": []
   }
