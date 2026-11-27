@@ -55842,11 +55842,12 @@
    "label": "한국어 종결 표현",
    "parent": "heuristic-filter-korean",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "다·요·죠·~ 등 구어 종결 처리.",
+   "summary": "WET 한국어 12문서 1197줄: 종결부호로 끝난 줄 9.6%, 마침표 없이 다·요·죠로 끝난 줄 2.7%. C4식 규칙 통과 8.8% vs 어미 완화 규칙 10.2%. 표본 작음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "char-count-vs-word-count",
@@ -95360,6 +95361,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "Flowers·Pets·Aircraft·Cars.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "korean-sentence-splitter",
+   "label": "한국어 문장 분리기",
+   "parent": "korean-sentence-endings",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어미·부호로 문장 경계 찾기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "colloquial-korean-markers",
+   "label": "구어체 표지(ㅋㅋ·~)",
+   "parent": "korean-sentence-endings",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "종결부호 대용 표현 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "menu-line-detection",
+   "label": "메뉴 줄 탐지",
+   "parent": "korean-sentence-endings",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧은 제목·메뉴 줄 판별.",
    "added": "2026-11-27",
    "related": []
   }
