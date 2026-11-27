@@ -54333,11 +54333,14 @@
    "label": "PIIFormatter 개인정보 치환",
    "parent": "datatrove-fineweb-example",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이메일·IP를 가리는 후처리.",
+   "summary": "이메일·공인 IPv4만 정규식 치환. 직접 실행: 이메일·공인 IP는 치환, 사설 IP 유지, 버전 1.2.3.4 오탐, 전화·카드·주민번호 미처리.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "datatrove-fineweb-example"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "idempotent-pipeline-step",
@@ -91387,6 +91390,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "영어 문장부호·불용어 가정이 다른 언어를 부당하게 거르는 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "korean-pii-regex",
+   "label": "한국형 개인정보 정규식",
+   "parent": "pii-formatter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주민번호·전화·계좌번호 패턴을 추가하는 법과 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ner-based-pii-detection",
+   "label": "NER 기반 개인정보 탐지",
+   "parent": "pii-formatter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이름·주소를 모델로 찾는 방식과 오탐.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pii-false-positive-audit",
+   "label": "개인정보 치환 오탐·미탐 점검",
+   "parent": "pii-formatter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플을 뽑아 정밀도·재현율을 재는 절차.",
    "added": "2026-11-27",
    "related": []
   }
