@@ -55330,11 +55330,12 @@
    "label": "추출기 비교",
    "parent": "text-extraction-warc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "trafilatura·readability 등 규모 평가.",
+   "summary": "trafilatura·readability·jusText를 5페이지에 적용: Wikipedia 문서에서 8436/3482/4069자, HN 목록형은 trafilatura만 3769자. 정답 없이 길이만 비교했으므로 우열 단정 불가.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "boilerplate-removal-effect",
@@ -94067,6 +94068,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "표로 나오는 정보 상자 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "justext-paragraph-classification",
+   "label": "jusText 문단 분류",
+   "parent": "extractor-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문단 길이·링크 밀도로 보일러플레이트 판정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "readability-algorithm",
+   "label": "readability 알고리즘",
+   "parent": "extractor-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "읽기 모드 본문 점수 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "extraction-benchmark-datasets",
+   "label": "본문 추출 벤치마크 데이터셋",
+   "parent": "extractor-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 라벨 있는 추출 평가 자료.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "listing-page-handling",
+   "label": "목록형 페이지 처리",
+   "parent": "extractor-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본문 문단 없는 페이지를 학습에 쓸지 결정.",
    "added": "2026-11-27",
    "related": []
   }
