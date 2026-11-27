@@ -6,9 +6,9 @@
 사진을 변형해 학습 자료를 늘리는 일을 요리에 비유하자. RandAugment는 "양념 2가지를 중간 세기로"라는 레시피를 맛보며 조정해야 한다. TrivialAugment는 매번 양념 하나와 세기를 주사위로 정한다. 놀랍게도 주사위 쪽이 레시피 조정 없이도 비슷하거나 낫다.
 
 ## 자세히
-- **RandAugment**: 연산 목록에서 N개를 무작위로 뽑아 전부 같은 강도 M으로 적용. N, M은 사람이 격자 탐색해야 한다(torchvision 기본값은 num_ops=2, magnitude=9 — 기억 기준, 확인 필요).
+- **RandAugment**: 연산 목록에서 N개를 무작위로 뽑아 전부 같은 강도 M으로 적용. 논문 기준 강도 m은 {0..30}, 개수 n은 {1,2,3}이며 N, M은 사람이 격자 탐색해야 한다(논문: 단일 학습 대비 최대 80배 탐색 비용).
 - **TrivialAugment**: 이미지마다 연산 하나와 강도를 균등 무작위로 뽑아 적용. 논문 표현: "parameter-free", 이미지당 증강 하나(arXiv 2103.10158, 2021).
-- 논문 표(추출본 기준, 정확도 %): CIFAR-10 98.2 vs 98.0, CIFAR-100 84.3 vs 83.3, SVHN 98.9 vs 99.0, ImageNet 78.1 vs 77.6 (TrivialAugment vs RandAugment). 열 순서는 추출 때문에 완전히 확실하지 않다.
+- 논문 표(추출본 기준, 정확도 %): CIFAR-10 98.2 vs 98.0, CIFAR-100 84.3 vs 83.3, SVHN 98.9 vs 99.0, ImageNet 78.1 vs 77.6 (TrivialAugment vs RandAugment).(논문 Table 1 직접 확인.)
 - 탐색 비용: AutoAugment 계열은 정책 탐색이 필요하지만 TrivialAugment는 0.
 - torchvision `TrivialAugmentWide`는 `num_magnitude_bins=31`이 기본값이며 uint8 텐서나 PIL 이미지를 받는다.
 - 한계: 이미지 분류 벤치마크 결과이며 의료·위성 등 다른 도메인에서도 우위인지는 별도 검증이 필요하다(주의).

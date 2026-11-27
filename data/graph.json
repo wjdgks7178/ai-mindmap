@@ -54982,11 +54982,12 @@
    "label": "증강 기준선 관행",
    "parent": "trivialaugment",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "새 증강은 단순 기준선과 비교.",
+   "summary": "새 증강은 같은 모델·증강 공간·반복 실행으로 TrivialAugment와 비교. 논문 Table 9: 같은 공간에서는 방법 간 차이가 작아짐(CIFAR-100 83.1 vs 83.54).",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "average-of-augmentation-distributions",
@@ -93081,6 +93082,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "강도 범위 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-search-space-matching",
+   "label": "증강 공간 맞추기",
+   "parent": "augmentation-baseline-practice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비교 전 연산·강도 범위를 동일하게.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-total-cost-comparison",
+   "label": "증강 총비용 비교",
+   "parent": "augmentation-baseline-practice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "탐색+학습 GPU 시간 대 정확도.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-repeated-runs-ci",
+   "label": "증강 실험 반복·신뢰구간",
+   "parent": "augmentation-baseline-practice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "10회 반복과 95% 신뢰구간.",
    "added": "2026-11-27",
    "related": []
   }
