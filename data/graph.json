@@ -54302,11 +54302,16 @@
    "label": "FineWeb 품질 필터들",
    "parent": "datatrove-fineweb-example",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Gopher·C4·FineWeb 필터의 역할 비교.",
+   "summary": "Gopher반복·Gopher품질·C4·FineWeb 필터 4종의 규칙과 사유 이름. 직접 실행: 합성 7종에서 필터마다 잡는 것이 달라 겹쳐 사용(같은 문장 40번은 C4 통과).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "datatrove-fineweb-example",
+    "training-data-deduplication",
+    "trafilatura-extraction"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "trafilatura-extraction",
@@ -91349,6 +91354,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "동적 페이지가 빈 결과로 나오는 이유와 대응.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "fineweb-edu-classifier",
+   "label": "FineWeb-Edu 분류기",
+   "parent": "fineweb-quality-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "교육적 가치를 모델로 점수화해 걸러 내는 FineWeb-Edu 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "exclusion-writer-audit",
+   "label": "제외 문서 샘플 검토",
+   "parent": "fineweb-quality-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "exclusion_writer로 저장한 거절 문서를 읽어 임계값 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "heuristic-filter-language-bias",
+   "label": "휴리스틱 필터의 언어 편향",
+   "parent": "fineweb-quality-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영어 문장부호·불용어 가정이 다른 언어를 부당하게 거르는 문제.",
    "added": "2026-11-27",
    "related": []
   }
