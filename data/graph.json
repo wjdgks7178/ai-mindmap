@@ -55497,11 +55497,12 @@
    "label": "대칭성에 의존하는 증강",
    "parent": "augmentation-transfer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "뒤집기가 MNIST에 안 맞는 이유.",
+   "summary": "8x8 숫자 MLP 5시드: 증강 없음 0.975, 좌우 뒤집기(라벨 유지) 0.962, 상하 0.960; 뒤집은 시험 이미지는 0.418. 라벨 불변이 아닌 변환은 해로움.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "public-augmentation-policies",
@@ -94498,6 +94499,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "M배 계산과 정확도 이득의 균형.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "digit-confusion-under-rotation",
+   "label": "회전할 때 헷갈리는 숫자(6·9)",
+   "parent": "symmetry-dependent-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "방향 의존 클래스 예.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "small-experiment-design",
+   "label": "소규모 실험 설계",
+   "parent": "symmetry-dependent-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드·분할 반복으로 방향성 확인.",
    "added": "2026-11-27",
    "related": []
   }
