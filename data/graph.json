@@ -92158,6 +92158,17 @@
    "summary": "요소를 빼고 성능 변화를 보는 실험 설계.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "null-result-reporting",
+   "label": "무변화 결과 보고하기",
+   "parent": "removed-vs-kept-comparison",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "차이가 없다는 결과를 실험 한계와 함께 기록하는 방법.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
