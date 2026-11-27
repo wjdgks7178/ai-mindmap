@@ -55687,11 +55687,12 @@
    "label": "IP 대역 목록 갱신",
    "parent": "crawler-ip-verification",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "synctoken으로 변경 추적.",
+   "summary": "Google 317·OpenAI 18·Bing 29개 접두사 목록과 AWS syncToken 형식 비교. Bing은 creationTime이 2024인데 Last-Modified는 2026-11이라 ETag·해시로 변경 감지 권장.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "data-lineage-record",
@@ -94963,6 +94964,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "UA 주장 대 실제 IP 집계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "http-conditional-requests",
+   "label": "HTTP 조건부 요청(ETag)",
+   "parent": "ip-range-list-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "If-None-Match와 304.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "list-integrity-validation",
+   "label": "목록 무결성 검증",
+   "parent": "ip-range-list-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "항목 수 급감·파싱 오류 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "gptbot-ip-list",
+   "label": "OpenAI GPTBot IP 목록",
+   "parent": "ip-range-list-refresh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공식 JSON과 사용법.",
    "added": "2026-11-27",
    "related": []
   }
