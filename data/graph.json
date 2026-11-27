@@ -55675,11 +55675,12 @@
    "label": "User-Agent 사칭",
    "parent": "crawler-ip-verification",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "헤더만으로 신원을 믿으면 안 되는 이유.",
+   "summary": "로컬 시험: Googlebot UA는 쉽게 위조되고 공개 대역 대조로 사칭이 드러남. X-Forwarded-For 위조를 믿으면 오검증되므로 소켓 실제 주소 또는 신뢰 프록시 값만 사용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "ip-range-list-refresh",
@@ -94929,6 +94930,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공식 크롤러의 역방향 이름 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "x-forwarded-for-trust",
+   "label": "X-Forwarded-For 신뢰 범위",
+   "parent": "spoofed-user-agent",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프록시 체인에서 믿을 수 있는 값.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "rate-limiting-unverified-crawlers",
+   "label": "미검증 크롤러 속도 제한",
+   "parent": "spoofed-user-agent",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검증 실패 트래픽 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "log-analysis-bot-traffic",
+   "label": "로그로 보는 봇 트래픽",
+   "parent": "spoofed-user-agent",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "UA 주장 대 실제 IP 집계.",
    "added": "2026-11-27",
    "related": []
   }
