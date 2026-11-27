@@ -54347,11 +54347,15 @@
    "label": "멱등 처리 단계",
    "parent": "resumable-data-pipelines",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "재실행해도 결과가 중복되지 않는 설계.",
+   "summary": "재실행해도 결과 동일한 단계. 직접 실행: append 3회=150줄, tmp+rename 3회=50줄. datatrove JsonlWriter는 rank별 파일 덮어쓰기라 2회 실행도 200문서.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "resumable-data-pipelines",
+    "datatrove-skip-completed"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "stale-completion-marker",
@@ -91459,6 +91463,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "입력·설정이 바뀌면 저장된 결과를 무효로 보는 원칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "atomic-write-rename",
+   "label": "원자적 쓰기와 rename",
+   "parent": "idempotent-pipeline-step",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임시 파일에 쓰고 교체해 중간 상태를 막는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "upsert-by-key",
+   "label": "키 기반 upsert",
+   "parent": "idempotent-pipeline-step",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DB·API에 고유 키로 쓰기해 재시도 중복을 막기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "deterministic-output-seeding",
+   "label": "결정적 출력과 시드 고정",
+   "parent": "idempotent-pipeline-step",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "난수·시각을 고정해 재실행 결과를 같게 하기.",
    "added": "2026-11-27",
    "related": []
   }
