@@ -54113,11 +54113,14 @@
    "label": "접미사 배열 메모리 비용",
    "parent": "suffix-array",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "거대 말뭉치를 조각 처리하는 이유.",
+   "summary": "입력 토큰당 8바이트, 350GB C4의 색인은 1.5TB. K조각 병렬 구성(96코어 768GB, 12시간 미만)과 디스크 스트리밍이 전제.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "training-data-deduplication"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "lee-2021-dedup-paper",
@@ -90910,6 +90913,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값 이상 이웃을 묶어 중복 구간을 만드는 스캔.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sa-is-algorithm",
+   "label": "SA-IS 알고리즘",
+   "parent": "suffix-array-memory-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접미사 배열을 선형 시간에 만드는 대표 알고리즘.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "suffix-array-pointer-width",
+   "label": "접미사 배열 포인터 비트 수",
+   "parent": "suffix-array-memory-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "32·40·48비트 포인터로 색인 크기 줄이기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dedup-index-sizing",
+   "label": "중복 제거 색인 용량 산정",
+   "parent": "suffix-array-memory-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "말뭉치 크기로 RAM·디스크를 미리 계산하는 법.",
    "added": "2026-11-27",
    "related": []
   }
