@@ -91230,6 +91230,17 @@
    "summary": "후보 쌍을 연결 성분으로 묶어 그룹 번호 부여.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "group-split-leak-audit",
+   "label": "그룹 분할 누수 점검",
+   "parent": "group-split-after-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분할 뒤 학습·시험 사이 남은 근접 중복을 재검사.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
