@@ -55162,11 +55162,12 @@
    "label": "RandomSizedBBoxSafeCrop",
    "parent": "bbox-safe-crop",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "크롭 후 크기를 다시 맞추는 변형.",
+   "summary": "박스 보존 크롭 후 height×width로 리사이즈(기본 선형 보간, 마스크는 최근접). 실험: 출력 항상 224x224, 박스 2개 유지. 가로세로 비가 달라 왜곡될 수 있음(추정).",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "small-object-crop-tradeoff",
@@ -93602,6 +93603,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드 고정 실험 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "aspect-ratio-preserving-resize",
+   "label": "가로세로 비 유지 리사이즈",
+   "parent": "random-sized-bbox-safe-crop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LongestMaxSize와 PadIfNeeded 조합.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "resize-distortion-effect",
+   "label": "리사이즈 왜곡의 영향",
+   "parent": "random-sized-bbox-safe-crop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "물체 형태가 늘어날 때 학습 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "opencv-interpolation-modes",
+   "label": "OpenCV 보간법",
+   "parent": "random-sized-bbox-safe-crop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NEAREST·LINEAR·AREA 차이.",
    "added": "2026-11-27",
    "related": []
   }
