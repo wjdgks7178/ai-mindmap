@@ -46,4 +46,4 @@ flowchart TD
 
 ## 더 읽을거리
 - [Deep Learning with Differential Privacy (Abadi 외 2016)](https://arxiv.org/abs/1607.00133) — DP로 딥러닝 학습(초록 확인).
-- [Opacus](https://opacus.ai/) — PyTorch용 DP 학습 라이브러리(위 ε 계산에 accountant를 직접 설치해 사용).
+- [Opacus](https://opacus.ai/) — PyTorch에 차분 프라이버시를 붙이는 오픈소스 라이브러리(열어 확인, 위 ε 계산에 accountant를 직접 설치해 사용).
