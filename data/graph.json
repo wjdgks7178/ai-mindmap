@@ -55090,11 +55090,12 @@
    "label": "박스 그려 보기 점검",
    "parent": "bbox-coordinate-formats",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "증강 전후 박스를 시각화해 확인.",
+   "summary": "수평 뒤집기 실행: 형식 맞으면 [340,50,540,250]로 흰 영역과 일치, coco로 오지정하면 [240,50,300,250]로 IoU 약 0.53인데 예외 없음. 그려 보기가 가장 빠른 점검.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "silent-data-bugs",
@@ -93387,6 +93388,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "yolo·cxcywh와 voc 코너 표기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bbox-range-validation",
+   "label": "박스 범위 자동 검사",
+   "parent": "draw-bbox-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폭·높이 0 이하·이미지 밖 박스 탐지.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bbox-iou",
+   "label": "박스 IoU",
+   "parent": "draw-bbox-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 박스 겹침 비율 계산.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-visual-qa",
+   "label": "증강 결과 시각 점검",
+   "parent": "draw-bbox-sanity-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강 샘플을 격자로 뽑아 보는 점검.",
    "added": "2026-11-27",
    "related": []
   }
