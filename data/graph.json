@@ -54909,11 +54909,15 @@
    "label": "정책 이식",
    "parent": "augmentation-policy-search",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "reduced CIFAR-10에서 찾은 정책을 다른 데이터에 쓰기.",
+   "summary": "재탐색 없이 정책 재사용. 논문: ImageNet 정책이 5개 세부 분류 데이터셋 오류를 19~32% 상대 감소(Caltech-101 19.4→13.1), CIFAR-10 정책이 CIFAR-100에서 개선, SVHN은 소폭. 해치지 않았고 가까운 데이터일수록 좋음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "augmentation-policy-search",
+    "autoaugment-search-space"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "efficient-augmentation-search",
@@ -92876,6 +92880,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "대리로 거른 후보를 실제 설정에서 재검증하는 단계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "relative-error-reduction",
+   "label": "상대 오류 감소율",
+   "parent": "policy-transfer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "절대 감소와 상대 감소를 구분해 읽는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "domain-similarity-and-transfer",
+   "label": "도메인 유사도와 이식",
+   "parent": "policy-transfer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원천·대상 데이터가 닮을수록 정책 이식이 안전한 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pretrained-vs-from-scratch-comparison",
+   "label": "사전학습 vs 처음부터 학습 비교",
+   "parent": "policy-transfer",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사전학습 모델과 처음부터 학습한 모델을 공정하게 비교하는 법.",
    "added": "2026-11-27",
    "related": []
   }
