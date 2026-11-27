@@ -54691,11 +54691,16 @@
    "label": "MixUp과 라벨 노이즈",
    "parent": "mixup-beta-alpha",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "α를 키워 암기를 어렵게 하는 가설.",
+   "summary": "라벨 40% 무작위 교체 digits: 일반 학습은 노이즈 라벨 92% 암기, 시험 0.701. MixUp α=16은 시험 0.903. 노이즈 없을 땐 큰 α가 손해(과소적합), 있으면 이득.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "mixup-beta-alpha",
+    "underfitting-from-mixup",
+    "label-error-detection"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "cutout-patch-size",
@@ -92240,6 +92245,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "섞은 데이터가 아닌 원본으로 학습 정확도를 재는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "noise-aware-alpha-choice",
+   "label": "노이즈 수준별 α 선택",
+   "parent": "mixup-label-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 노이즈 정도에 따라 최적 α가 달라지는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "symmetric-vs-asymmetric-label-noise",
+   "label": "대칭·비대칭 라벨 노이즈",
+   "parent": "mixup-label-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 노이즈와 체계적 노이즈의 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "clean-validation-set-need",
+   "label": "깨끗한 검증셋의 필요",
+   "parent": "mixup-label-noise-robustness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "노이즈 라벨로는 성능을 믿을 수 없어 소량의 정제 검증셋이 필요한 이유.",
    "added": "2026-11-27",
    "related": []
   }
