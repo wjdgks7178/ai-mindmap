@@ -91340,6 +91340,17 @@
    "summary": "Common Crawl의 원본 HTML과 미리 뽑은 텍스트.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "js-rendered-pages-extraction",
+   "label": "자바스크립트 렌더링 페이지 추출",
+   "parent": "trafilatura-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동적 페이지가 빈 결과로 나오는 이유와 대응.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
