@@ -54463,11 +54463,15 @@
    "label": "k-eidetic 암기",
    "parent": "training-data-extraction-attack",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 문서에만 나온 문장의 암기 정의.",
+   "summary": "추출 가능하면서 학습 문서 k개 이하에만 나온 문자열. GPT-2 XL 20만 샘플→1,800 후보 중 604 일치(33.5%). UUID 한 문서만이면 1-eidetic. 직접 계산 장난감으로 문서 빈도 세기.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "training-data-extraction-attack",
+    "memorization-measurement-50token"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "extractable-memorization-definition",
@@ -91682,6 +91686,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값과 근거 표본을 문서화해 재현 가능하게 하는 관행.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "membership-inference-metrics",
+   "label": "멤버십 추론 척도",
+   "parent": "k-eidetic-memorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "퍼플렉서티·zlib·소형 모델 비율로 학습 포함 여부를 가늠하는 척도.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "eidetic-vs-common-phrase",
+   "label": "암기 vs 흔한 문구",
+   "parent": "k-eidetic-memorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라이선스·약관처럼 많이 나오는 문구를 위험에서 구분하기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "k-estimation-with-index",
+   "label": "색인으로 k 세기",
+   "parent": "k-eidetic-memorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "접미사 배열로 문자열의 문서 빈도를 세는 방법.",
    "added": "2026-11-27",
    "related": []
   }
