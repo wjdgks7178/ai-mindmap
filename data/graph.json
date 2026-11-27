@@ -55651,11 +55651,12 @@
    "label": "옵트아웃 신호 지형",
    "parent": "tdm-reservation-protocol",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "robots·TDMRep·메타 태그 비교.",
+   "summary": "robots.txt(접근)·TDMRep(마이닝 권리 유보)·IETF AI Preferences 어휘(train-ai/search, y/n, 금지 우선, 권고적) 비교. RFC 9969(2026-05): 'robots.txt is broken', 집행·감사는 범위 밖.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "fcrdns",
@@ -94850,6 +94851,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정책이 요구하는 사전 연락.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ietf-aipref-vocabulary",
+   "label": "IETF AI 선호 어휘",
+   "parent": "opt-out-signal-landscape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "train-ai·search 두 범주와 결합 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "rfc-9969-iab-ai-control",
+   "label": "RFC 9969 IAB AI-CONTROL 보고서",
+   "parent": "opt-out-signal-landscape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "워크숍 결론과 표준화 후보.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "opt-out-signal-conflict-resolution",
+   "label": "옵트아웃 신호 충돌 해소",
+   "parent": "opt-out-signal-landscape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 신호가 어긋날 때 우선순위.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "crawler-compliance-logging",
+   "label": "크롤러 준수 기록",
+   "parent": "opt-out-signal-landscape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 신호를 언제 읽었는지 로그.",
    "added": "2026-11-27",
    "related": []
   }
