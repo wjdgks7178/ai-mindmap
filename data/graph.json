@@ -54889,11 +54889,15 @@
    "label": "AutoAugment 탐색 공간",
    "parent": "augmentation-policy-search",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "16연산·강도 10단계·확률 11단계.",
+   "summary": "연산 16종×강도 10×확률 11, 하위 정책=연산 2개, 정책=하위 정책 5개 → (16·10·11)^10≈2.9×10^32(직접 계산 2.85e32). LSTM+PPO, 축소 CIFAR-10 4000장·정책 약 15000개 시험. RandAugment 격자는 93칸.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "augmentation-policy-search",
+    "randaugment-magnitude-tuning"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "policy-transfer",
@@ -92801,6 +92805,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "후보 수×시드 수가 학습 횟수를 곱으로 늘리는 계산.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ppo-controller",
+   "label": "PPO 컨트롤러",
+   "parent": "autoaugment-search-space",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책을 샘플하고 검증 정확도를 보상으로 갱신하는 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "reduced-dataset-search",
+   "label": "축소 데이터 탐색",
+   "parent": "autoaugment-search-space",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전체가 아닌 일부 데이터로 정책을 탐색하는 이유와 위험.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "search-space-counting",
+   "label": "탐색 공간 크기 세기",
+   "parent": "autoaugment-search-space",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "선택지 수를 곱해 공간 크기를 계산하는 법.",
    "added": "2026-11-27",
    "related": []
   }
