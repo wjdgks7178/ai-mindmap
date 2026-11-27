@@ -55602,11 +55602,12 @@
    "label": "robots 파서 해석 차이",
    "parent": "robots-txt-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "파이썬 robotparser와 RFC 차이.",
+   "summary": "같은 규칙 7건 시험: 파이썬 3.11.18은 첫 일치·와일드카드 미지원으로 A·B·D·E가 RFC와 달랐고 3.13.18은 RFC와 일치. 파서 버전 고정과 단위 테스트 권장.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "robots-unavailable-status",
@@ -94680,6 +94681,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "파서로 허용·금지를 테스트하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "google-robots-parser",
+   "label": "Google robots 파서",
+   "parent": "robots-parser-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오픈소스 파서와 표준 구현 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "robots-conservative-default",
+   "label": "robots 보수적 기본값",
+   "parent": "robots-parser-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의심스러우면 금지로 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "python-version-behavior-diff",
+   "label": "파이썬 버전별 동작 차이",
+   "parent": "robots-parser-differences",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표준 라이브러리 변경 추적.",
    "added": "2026-11-27",
    "related": []
   }
