@@ -92792,6 +92792,17 @@
    "summary": "증강이 정답 의미를 바꾸는 과제와 판단법.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "grid-size-vs-cost",
+   "label": "격자 크기와 학습 비용",
+   "parent": "randaugment-grid-search",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 수×시드 수가 학습 횟수를 곱으로 늘리는 계산.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
