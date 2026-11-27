@@ -55566,11 +55566,12 @@
    "label": "보호 단어 목록",
    "parent": "text-augmentation-label-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "부정어·수치를 증강에서 제외.",
+   "summary": "간이 실험: RD p=0.1이면 부정어가 9.7%, 숫자가 10.0% 삭제되고, 1회 교환은 52%에서 부정어 위치 관계를 깸. 부정어·수치·핵심어를 증강 후보에서 제외.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "label-agreement-rate",
@@ -94578,6 +94579,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "큰 모델에서 EDA 효과가 줄어드는가.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "korean-negation-forms",
+   "label": "한국어 부정 표현",
+   "parent": "protected-keywords",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "않다·없다·아니다와 활용형.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "negation-in-sentiment-classification",
+   "label": "감성 분류에서 부정어의 역할",
+   "parent": "protected-keywords",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "부정어가 라벨을 뒤집는 경우.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "morphological-analysis-korean",
+   "label": "한국어 형태소 분석",
+   "parent": "protected-keywords",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어미 활용을 고려한 단어 단위 처리.",
    "added": "2026-11-27",
    "related": []
   }
