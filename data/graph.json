@@ -54548,11 +54548,16 @@
    "label": "출력 암기 필터",
    "parent": "memorization-mitigation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "생성 결과에서 학습 원문 일치를 걸러 내기.",
+   "summary": "출력을 색인과 대조해 N토큰 이상 일치하면 차단·출처 표시. Copilot은 약 150자 비교·1% 미만. 직접 실행(gpt2+12-gram): 라이선스 문구 두 출력 차단(60·43창), 새 문장 통과. 정확 일치만 잡음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-mitigation",
+    "training-data-extraction-attack",
+    "dp-sgd"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "memorization-audit",
@@ -92017,6 +92022,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "게시판·메일 데이터의 틀 부분을 떼어 내는 전처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bloom-filter-index",
+   "label": "블룸 필터 색인",
+   "parent": "output-memorization-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대규모 n-gram 색인을 작은 메모리로 보관하는 확률적 구조.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "near-match-evasion",
+   "label": "약간 바꾼 출력의 우회",
+   "parent": "output-memorization-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한두 토큰 변경으로 정확 일치 필터를 피하는 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "citation-vs-block-policy",
+   "label": "차단 vs 출처 표시 정책",
+   "parent": "output-memorization-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치 시 막을지 출처를 달지 정하는 기준.",
    "added": "2026-11-27",
    "related": []
   }
