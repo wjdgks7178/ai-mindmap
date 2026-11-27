@@ -55018,11 +55018,12 @@
    "label": "준지도 학습",
    "parent": "uda-consistency-training",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨 적고 라벨 없는 데이터 많을 때.",
+   "summary": "라벨 소량+라벨 없는 대량 데이터를 함께 사용. UDA는 강한 증강으로 일관성 학습해 IMDb 라벨 20개로 오류율 4.20, CIFAR-10 250개로 5.43 보고(논문 주장).",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "tfidf-word-replacement",
@@ -93206,6 +93207,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "바꿔도 정답이 유지되는 조건.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pseudo-labeling",
+   "label": "의사 라벨링",
+   "parent": "semi-supervised-learning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 예측을 라벨처럼 재학습에 사용.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "consistency-regularization",
+   "label": "일관성 정규화",
+   "parent": "semi-supervised-learning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "입력 잡음에도 같은 예측을 하도록 제약.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "self-supervised-vs-semi-supervised",
+   "label": "자기지도 vs 준지도",
+   "parent": "semi-supervised-learning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 활용 방식 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ssl-distribution-mismatch",
+   "label": "준지도의 분포 불일치 문제",
+   "parent": "semi-supervised-learning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 없는 데이터가 다른 분포일 때.",
    "added": "2026-11-27",
    "related": []
   }
