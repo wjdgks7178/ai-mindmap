@@ -54234,11 +54234,14 @@
    "label": "중복 제거 후 그룹 분할",
    "parent": "train-test-overlap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "중복 그룹을 같은 분할에 두기.",
+   "summary": "중복 그룹을 한쪽 분할에만 넣기. 직접 실행(합성, 신호 없음): 무작위 분할 정확도 1.00, 그룹 분할 0.51. GroupKFold·GroupShuffleSplit.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "training-data-deduplication"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "clean-subset-reporting",
@@ -91203,6 +91206,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "모델 카드에 겹침 비율과 방법을 적는 형식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "giant-group-handling",
+   "label": "거대 그룹 처리",
+   "parent": "group-split-after-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 템플릿이 데이터 대부분일 때 샘플링·가중치.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cluster-id-from-lsh",
+   "label": "LSH로 그룹 번호 만들기",
+   "parent": "group-split-after-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 쌍을 연결 성분으로 묶어 그룹 번호 부여.",
    "added": "2026-11-27",
    "related": []
   }
