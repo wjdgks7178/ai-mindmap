@@ -55639,11 +55639,12 @@
    "label": "TDM 정책 문서",
    "parent": "tdm-reservation-protocol",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "사람용·기계용 정책 형식.",
+   "summary": "tdm-policy는 허가 방법 문서 URL: text/html은 사람용, application/ld+json은 ODRL 프로파일 기계용(@type Offer, permission.action tdm:mine, duty obtainConsent·compensate). reservation 1일 때만 사용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "opt-out-signal-landscape",
@@ -94816,6 +94817,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "json→헤더→meta→문서 메타.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "odrl-basics",
+   "label": "ODRL 기초",
+   "parent": "tdm-policy-document",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권리 표현 언어 개념.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "json-ld-basics",
+   "label": "JSON-LD 기초",
+   "parent": "tdm-policy-document",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "@context와 의미 연결 데이터.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "obtain-consent-duty",
+   "label": "동의 구하기 의무(obtainConsent)",
+   "parent": "tdm-policy-document",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정책이 요구하는 사전 연락.",
    "added": "2026-11-27",
    "related": []
   }
