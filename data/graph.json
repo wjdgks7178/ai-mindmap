@@ -54707,11 +54707,15 @@
    "label": "Cutout 패치 크기",
    "parent": "cutout",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터셋별 최적 크기를 찾는 법.",
+   "summary": "패치가 너무 작으면 무효, 너무 크면 단서 소실. 직접 실행(digits 8x8 CNN 5시드): 변 0~4는 0.971~0.976로 차이 없음, 변 6은 0.963으로 하락. 새 데이터는 스윕 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "cutout",
+    "mixup-beta-alpha"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "cutout-boundary-rule",
@@ -92278,6 +92282,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "노이즈 라벨로는 성능을 믿을 수 없어 소량의 정제 검증셋이 필요한 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "patch-size-relative-to-object",
+   "label": "물체 대비 패치 크기",
+   "parent": "cutout-patch-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패치를 이미지가 아닌 물체 크기에 맞춰 정하는 관점.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-null-effect",
+   "label": "증강이 효과 없을 때",
+   "parent": "cutout-patch-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쉬운 데이터에서 증강이 이득을 못 주는 경우와 판단법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "hyperparameter-sweep-small",
+   "label": "소규모 하이퍼파라미터 스윕",
+   "parent": "cutout-patch-size",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 3~5개를 여러 시드로 비교하는 요령.",
    "added": "2026-11-27",
    "related": []
   }
