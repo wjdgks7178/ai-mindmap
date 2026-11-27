@@ -55937,11 +55937,12 @@
    "label": "수준 지정 지시",
    "parent": "additive-scoring-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "기술적 페이지 과대평가 방지.",
+   "summary": "FineWeb 논문: LLM이 arXiv 초록 같은 기술 페이지를 선호하지 않도록 초·중등 수준에 초점을 맞추게 프롬프트. 3~5점 기준에 수준 제한 문구 포함. 효과는 직접 측정하지 않음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "threshold-sweep-small-model",
@@ -95598,6 +95599,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "5점 클래스를 못 맞히는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "audience-specification-prompting",
+   "label": "독자 지정 프롬프팅",
+   "parent": "grade-level-focus-instruction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대상 독자를 명시해 평가 편향 조절.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "domain-adapted-edu-rubric",
+   "label": "도메인 맞춤 교육 루브릭",
+   "parent": "grade-level-focus-instruction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직무 교육용으로 기준 바꾸기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "edu-filter-source-bias",
+   "label": "교육 필터의 출처 편향",
+   "parent": "grade-level-focus-instruction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위키·학술 출처가 유리해지는 현상.",
    "added": "2026-11-27",
    "related": []
   }
