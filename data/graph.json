@@ -54676,11 +54676,15 @@
    "label": "MixUp 과소적합",
    "parent": "mixup-beta-alpha",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "α가 너무 크면 생기는 문제.",
+   "summary": "α가 크면 학습 입력이 흐려져 과소적합. 직접 실행(digits MLP 3시드): α=0.2 시험 0.981(기준 0.974), α≥4는 학습 정확도 0.99 안팎·시험 0.964~0.968. 쉬운 문제라 낙폭 작음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "mixup-beta-alpha",
+    "beta-distribution-shape"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "mixup-label-noise-robustness",
@@ -92203,6 +92207,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "양 끝에 질량이 몰린 분포가 의미하는 것.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "underfitting-diagnosis",
+   "label": "과소적합 진단",
+   "parent": "underfitting-from-mixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 손실·정확도로 과소적합을 구분하는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mixup-model-capacity",
+   "label": "MixUp과 모델 용량",
+   "parent": "underfitting-from-mixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 모델·긴 학습에서 이득이 커지는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "clean-train-accuracy-eval",
+   "label": "원본 기준 학습 정확도 측정",
+   "parent": "underfitting-from-mixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "섞은 데이터가 아닌 원본으로 학습 정확도를 재는 이유.",
    "added": "2026-11-27",
    "related": []
   }
