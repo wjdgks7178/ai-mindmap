@@ -55054,11 +55054,12 @@
    "label": "senMixup",
    "parent": "mixup-for-text",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "문장 벡터 혼합.",
+   "summary": "인코더(CNN·LSTM)가 만든 문장 벡터를 λ:1-λ로 보간. 논문: CNN TREC 90.2→92.1, LSTM SST-1 45.9→48.3, 임베딩 고정 시 SST-2는 하락.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "embedding-space-augmentation",
@@ -93285,6 +93286,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "4가지 임베딩 설정이 정규화에 미치는 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "manifold-mixup",
+   "label": "Manifold Mixup",
+   "parent": "senmixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "은닉층에서 섞는 일반화.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mixup-regularization-effect",
+   "label": "Mixup의 정규화 효과",
+   "parent": "senmixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 손실이 0이 안 되는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mixup-sentence-classification-benchmarks",
+   "label": "문장 분류 벤치마크 TREC·SST·MR",
+   "parent": "senmixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Mixup 평가에 쓰인 5개 데이터셋.",
    "added": "2026-11-27",
    "related": []
   }
