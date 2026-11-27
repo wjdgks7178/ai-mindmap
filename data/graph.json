@@ -54226,11 +54226,16 @@
    "label": "벤치마크 오염 점검",
    "parent": "train-test-overlap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 코퍼스에서 벤치마크 문자열 검색.",
+   "summary": "벤치마크 n-gram을 코퍼스 집합과 교집합 검사. 직접 실행(GSM8K train→test 질문): 13-gram 0.2%, 8-gram 4.7%, 5-gram 65.3%. n이 곧 오염의 정의. 겹친 건 문제 틀 템플릿.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "train-test-overlap",
+    "clean-subset-reporting",
+    "train-test-contamination-lsh"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "group-split-after-dedup",
@@ -91831,6 +91836,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "문맥 토큰이 늘수록 추출 가능성이 로그 단위로 커지는 관계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ngram-size-choice",
+   "label": "n-gram 크기 고르기",
+   "parent": "benchmark-contamination-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n이 작으면 흔한 표현까지, 크면 복사만 잡히는 트레이드오프.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "template-level-contamination",
+   "label": "문제 틀 수준 오염",
+   "parent": "benchmark-contamination-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "숫자·인물만 다른 같은 유형 문제의 겹침.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "korean-ngram-tokenization",
+   "label": "한국어 n-gram 토큰화",
+   "parent": "benchmark-contamination-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "띄어쓰기·형태소·서브워드 중 무엇으로 n-gram을 세나.",
    "added": "2026-11-27",
    "related": []
   }
