@@ -54848,11 +54848,15 @@
    "label": "RandAugment 격자 탐색",
    "parent": "randaugment-magnitude-tuning",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "N·M 후보 몇 개를 비교하는 절차.",
+   "summary": "N·M 후보를 격자로 시험, 기준선 N=0 포함, 시드 여러 개. 직접 실행(digits 16x16 CNN 3시드): 기준선 0.968이 최고, RandAugment 4칸은 0.959~0.967로 이득 없음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "randaugment-magnitude-tuning",
+    "torchvision-randaugment"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "proxy-task-pitfall",
@@ -92764,6 +92768,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "텐서 dtype과 증강 연산의 호환 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "baseline-first-rule",
+   "label": "기준선 먼저 원칙",
+   "parent": "randaugment-grid-search",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강·정칙화를 시험할 때 없음 조건을 함께 돌리는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "when-augmentation-hurts",
+   "label": "증강이 해가 될 때",
+   "parent": "randaugment-grid-search",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강이 정답 의미를 바꾸는 과제와 판단법.",
    "added": "2026-11-27",
    "related": []
   }
