@@ -54170,11 +54170,14 @@
    "label": "편집 유사도",
    "parent": "dedup-threshold-50-tokens",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "자카드 후보를 확정하는 2차 검증.",
+   "summary": "1−레벤슈타인/최대길이. NearDup은 자카드·편집 유사도 0.8 초과로 확정. 직접 계산: 순서 교체는 자카드 0.91인데 편집 유사도 0.41.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "minhash"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "memorization-measurement-50token",
@@ -91055,6 +91058,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "NearDup 41.5kWh 같은 계산 비용 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "banded-edit-distance",
+   "label": "제한 폭 편집 거리",
+   "parent": "edit-similarity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값이 있으면 대각선 띠만 계산해 빠르게 하는 기법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "text-normalization-before-compare",
+   "label": "비교 전 텍스트 정규화",
+   "parent": "edit-similarity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "NFC·공백·대소문자 정규화가 유사도에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
   }
