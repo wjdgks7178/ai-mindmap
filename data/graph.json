@@ -55723,11 +55723,12 @@
    "label": "머신 언러닝",
    "parent": "opt-out-limits-existing-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습된 모델에서 영향 줄이기.",
+   "summary": "SISA: 데이터를 샤드로 나눠 삭제 시 해당 샤드만 재학습(Purchase 4.63배·SVHN 2.45배 빠름, 논문). 토이 실험: 샤드 2·5·10개에서 정확도 0.970→0.956·0.956·0.948로 하락, 삭제 비용은 감소.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "c4-line-filters",
@@ -95281,6 +95282,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "요청 날짜·응답 보관.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sisa-training",
+   "label": "SISA 학습",
+   "parent": "machine-unlearning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샤드·슬라이스 기반 언러닝 프레임워크.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "approximate-unlearning",
+   "label": "근사 언러닝",
+   "parent": "machine-unlearning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영향 함수·기울기 방법과 검증 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "unlearning-verification",
+   "label": "언러닝 검증",
+   "parent": "machine-unlearning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정말 지워졌는지 확인하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "retrain-without-data",
+   "label": "제외 후 재학습",
+   "parent": "machine-unlearning",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다음 학습 버전에서 데이터 제외.",
    "added": "2026-11-27",
    "related": []
   }
