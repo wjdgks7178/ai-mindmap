@@ -55414,11 +55414,12 @@
    "label": "증강 통계 스크립트",
    "parent": "augmentation-sample-review",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "1000회 실행으로 분포 요약.",
+   "summary": "1000회 실행 요약 스크립트(17줄): 빈 샘플 28.2%, 샘플당 박스 수, 클래스별 생존율(구석 작은 박스 4%), 평균 면적 5530. 수정 전후 비교와 CI 기준에 사용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "augmentation-strength-limits",
@@ -94305,6 +94306,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드·비결정 연산 통제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ci-augmentation-thresholds",
+   "label": "증강 지표 CI 기준",
+   "parent": "augmentation-stats-script",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빈 샘플 비율 등에 임계값 두기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "extreme-sample-gallery",
+   "label": "극단 샘플 갤러리",
+   "parent": "augmentation-stats-script",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박스 0개·최대 크기 샘플 저장.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "multi-seed-confidence",
+   "label": "시드 반복과 오차 범위",
+   "parent": "augmentation-stats-script",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드를 바꿔 지표의 변동 보기.",
    "added": "2026-11-27",
    "related": []
   }
