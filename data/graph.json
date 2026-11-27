@@ -54609,11 +54609,16 @@
    "label": "군집 크기 분포 그리기",
    "parent": "duplicate-cluster-size",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "중복 제거 전 군집 히스토그램 점검.",
+   "summary": "군집 크기별 개수 표로 꼬리를 점검. 직접 실행(20newsgroups 9,373글, MinHash LSH 0.5): 크기1 8,996·2 154·3 14·4 2·5 1·14 1. 14짜리는 같은 서명 때문에 생긴 가짜 군집(내부 자카드 중앙값 0.31).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "duplicate-cluster-size",
+    "transitive-clustering",
+    "boilerplate-duplicates"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "removed-vs-kept-comparison",
@@ -92092,6 +92097,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "후보 모델에 같은 문구 세트를 돌려 비교하는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "lsh-candidate-verification",
+   "label": "LSH 후보 재검증",
+   "parent": "cluster-size-histogram",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 쌍을 정확 자카드로 확인해 가짜 연결을 줄이는 단계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "signature-line-removal",
+   "label": "서명 줄 제거",
+   "parent": "cluster-size-histogram",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "게시판·메일 글 끝의 서명을 규칙으로 제거하는 전처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cluster-inspection-sampling",
+   "label": "군집 표본 열어 보기",
+   "parent": "cluster-size-histogram",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상위 군집의 대표 글을 읽고 원인을 분류하는 절차.",
    "added": "2026-11-27",
    "related": []
   }
