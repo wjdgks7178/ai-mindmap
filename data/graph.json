@@ -54184,11 +54184,14 @@
    "label": "암기 측정 방식",
    "parent": "memorization-from-duplicates",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "50토큰 정확 일치로 암기를 세는 법.",
+   "summary": "무프롬프트 10만 샘플(512토큰, top-k 50)에서 학습 데이터와 50토큰 이상 정확 일치하는 토큰 비율. 프롬프트 방식은 앞 32토큰+편집 유사도 0.8. 정확 일치라 하한.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "edit-similarity"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "attribution-loss-dedup",
@@ -91131,6 +91134,41 @@
    "summary": "규모가 커질수록 암기가 늘어나는 경향.",
    "added": "2026-11-27",
    "related": []
+  },
+  {
+   "id": "paraphrased-memorization",
+   "label": "의역된 암기",
+   "parent": "memorization-measurement-50token",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확 일치로 못 잡는 의미 수준 암기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "memorization-audit-routine",
+   "label": "암기 점검 루틴",
+   "parent": "memorization-measurement-50token",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 버전마다 무프롬프트 샘플로 암기율을 기록하는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "memorization-threshold-knee",
+   "label": "일치 길이의 무릎(10토큰)",
+   "parent": "memorization-measurement-50token",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치 빈도가 10토큰 근처에서 꺾이는 현상과 임계 선택.",
+   "added": "2026-11-27",
+   "related": [
+    "top-k-sampling"
+   ]
   }
  ]
 }
