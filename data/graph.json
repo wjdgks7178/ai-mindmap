@@ -55126,11 +55126,12 @@
    "label": "박스 클리핑",
    "parent": "min-visibility-filter",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "경계 밖 좌표를 이미지 안으로 맞추기.",
+   "summary": "이미지 밖 박스 [580,400,700,520]: clip=False는 x_max 범위 ValueError, clip=True는 [580,400,640,480]로 자름. 클리핑은 데이터 오류를 덮을 수 있어 기록 권장.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "crop-label-consistency",
@@ -93500,6 +93501,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 박스 제거가 재현율에 미치는 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filter-invalid-bboxes",
+   "label": "유효하지 않은 박스 거르기",
+   "parent": "bbox-clipping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "폭·높이 0 박스 제거 옵션.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "annotation-out-of-bounds-audit",
+   "label": "경계 밖 어노테이션 감사",
+   "parent": "bbox-clipping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 도구 출력의 범위 이탈 집계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "padding-vs-clipping",
+   "label": "패딩 vs 클리핑",
+   "parent": "bbox-clipping",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박스를 자르거나 이미지를 키우는 선택.",
    "added": "2026-11-27",
    "related": []
   }
