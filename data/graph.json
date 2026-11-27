@@ -54785,11 +54785,16 @@
    "label": "CutMix 박스 샘플링",
    "parent": "cutmix-label-area",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "√(1−λ) 크기와 중심 균등 추출.",
+   "summary": "박스 변=√(1−λ)×변, 중심 균등, 경계 clip 후 실제 넓이로 λ 재계산. 32x32 시뮬레이션: 계획 넓이 평균 0.50, 실제 0.30, 62% 샘플에서 λ 차이 0.1 초과 → 재계산 필수.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "cutmix-label-area",
+    "cutout",
+    "mixup-beta-alpha"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "cutmix-variants",
@@ -92499,6 +92504,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "인스턴스가 회수될 때 작업을 다시 큐에 넣는 설정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "lambda-recalculation",
+   "label": "λ 재계산",
+   "parent": "cutmix-box-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 clip 이후 실제 넓이로 라벨 가중치를 고치는 단계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "area-vs-side-sqrt",
+   "label": "넓이와 √ 변환",
+   "parent": "cutmix-box-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변을 √(1−λ)로 정해야 넓이가 1−λ가 되는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cutmix-label-mismatch-check",
+   "label": "CutMix 라벨 불일치 점검",
+   "parent": "cutmix-box-sampling",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "계획 λ를 라벨에 쓰는 구현 오류를 찾는 방법.",
    "added": "2026-11-27",
    "related": []
   }
