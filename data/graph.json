@@ -54816,11 +54816,16 @@
    "label": "경계 클리핑의 영향",
    "parent": "cutmix-label-area",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "가장자리 중심일 때 면적 손실.",
+   "summary": "박스 중심이 가장자리일수록 잘려 붙는 넓이 감소. 32x32 계산: 모서리 중심은 가운데의 약 1/4, 변 중간 약 1/2. 균등 중심 평균 손실 λ=0.8 24%, 0.5 35%, 0.2 42%.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "cutmix-label-area",
+    "cutmix-box-sampling",
+    "cutmix-variants"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "randaugment-grid-search",
@@ -92574,6 +92579,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "박스가 가운데로 몰릴 때 생기는 가림·정보 편향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mask-area-heatmap",
+   "label": "마스크 넓이 히트맵",
+   "parent": "boundary-clipping-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중심 위치별 실제 붙는 넓이를 격자로 그리는 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "integer-truncation-in-box",
+   "label": "박스 변의 정수 내림",
+   "parent": "boundary-clipping-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "변을 정수로 내림해 생기는 작은 넓이 오차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bias-toward-original-image",
+   "label": "원본 쪽으로 치우친 혼합",
+   "parent": "boundary-clipping-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클리핑 때문에 혼합 비율 분포가 원본 쪽으로 쏠리는 현상.",
    "added": "2026-11-27",
    "related": []
   }
