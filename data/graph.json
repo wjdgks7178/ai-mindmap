@@ -55150,11 +55150,12 @@
    "label": "erosion_rate 설정",
    "parent": "bbox-safe-crop",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "박스 합집합을 줄여 크롭 자유도 높이기.",
+   "summary": "erosion_rate는 박스 합집합을 줄여 크롭 자유도를 높임. 실험: 0.0은 박스 전부 보존(크롭 최소 408x303), 0.6은 크롭 최소 176x127이고 박스가 0개 되는 경우 발생.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "random-sized-bbox-safe-crop",
@@ -93568,6 +93569,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "박스 중심 크롭 등 박스를 보존하는 크롭.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "atleastonebbox-random-crop",
+   "label": "AtLeastOneBBoxRandomCrop",
+   "parent": "erosion-rate-bbox-crop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박스 최소 하나만 보존하는 크롭.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "crop-diversity-vs-safety",
+   "label": "크롭 다양성 vs 안전",
+   "parent": "erosion-rate-bbox-crop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다양한 구도와 박스 보존 균형.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "random-seed-augmentation-repro",
+   "label": "증강 시드와 재현성",
+   "parent": "erosion-rate-bbox-crop",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "시드 고정 실험 방법.",
    "added": "2026-11-27",
    "related": []
   }
