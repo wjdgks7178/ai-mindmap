@@ -54801,11 +54801,15 @@
    "label": "CutMix 변형들",
    "parent": "cutmix-label-area",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Center Gaussian·Fixed-size·Scheduled.",
+   "summary": "논문 ablation(CIFAR-100): CutMix 14.47 < Scheduled 14.72 < Fixed 14.97 < Complete-label 15.17 < One-hot 15.89 < Center Gaussian 15.95, 기준선 16.45. 직접 계산: 가우시안 중심은 잘림 29%→4%지만 가운데로 몰림.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "cutmix-label-area",
+    "cutmix-box-sampling"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "boundary-clipping-effect",
@@ -92537,6 +92541,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "계획 λ를 라벨에 쓰는 구현 오류를 찾는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "scheduled-augmentation",
+   "label": "점진 증강 스케줄",
+   "parent": "cutmix-variants",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강 적용 확률을 학습 중 서서히 올리는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "label-mixing-ablation",
+   "label": "라벨 섞기 ablation",
+   "parent": "cutmix-variants",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "넓이 비례·원-핫·반반 라벨의 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "gaussian-center-bias",
+   "label": "가우시안 중심 편향",
+   "parent": "cutmix-variants",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박스가 가운데로 몰릴 때 생기는 가림·정보 편향.",
    "added": "2026-11-27",
    "related": []
   }
