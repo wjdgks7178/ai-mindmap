@@ -55699,11 +55699,12 @@
    "label": "데이터 계보 기록",
    "parent": "opt-out-limits-existing-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "수집 시점·소스·제외 규칙 기록.",
+   "summary": "출처·시점·해시·필터별 입출력 개수·도구 버전을 남기는 계보 기록. WET 샘플의 실제 716바이트 JSON 예 작성. 데이터시트(Gebru 외)는 초록만 읽음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "dataset-removal-request",
@@ -95224,6 +95225,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "언어 목록 순서와 비중.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "warc-record-id-tracking",
+   "label": "WARC 레코드 ID 추적",
+   "parent": "data-lineage-record",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 단위 계보 키.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "data-hashing-integrity",
+   "label": "데이터 해시와 무결성",
+   "parent": "data-lineage-record",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "SHA-256으로 입력 고정.",
    "added": "2026-11-27",
    "related": []
   }
