@@ -55711,11 +55711,12 @@
    "label": "데이터셋 삭제 요청",
    "parent": "opt-out-limits-existing-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "운영자별 제외 절차.",
+   "summary": "The Stack: Am I in The Stack 확인→GitHub opt-out 이슈, v1.1(2022-11-15)·v1.2(2023-02-09)까지 반영, 3개월 갱신 계획. Common Crawl: 법적 요청 전체 공개 목록(Opt-Out Ledger), 기존 아카이브 적용 범위는 글에 명시 없음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "machine-unlearning",
@@ -95247,6 +95248,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "SHA-256으로 입력 고정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "am-i-in-the-stack",
+   "label": "Am I in The Stack?",
+   "parent": "dataset-removal-request",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장소 포함 여부 확인 도구.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "opt-out-ledger",
+   "label": "Common Crawl 옵트아웃 원장",
+   "parent": "dataset-removal-request",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청 공개 목록의 성격.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "removal-request-record-keeping",
+   "label": "삭제 요청 기록 관리",
+   "parent": "dataset-removal-request",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "요청 날짜·응답 보관.",
    "added": "2026-11-27",
    "related": []
   }
