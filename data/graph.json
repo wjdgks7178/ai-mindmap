@@ -54461,11 +54461,15 @@
    "label": "차분 프라이버시 학습",
    "parent": "training-data-extraction-attack",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "추출을 줄이는 방어 기법.",
+   "summary": "내 데이터 유무와 결과가 e^ε배 이내로 비슷하게 하는 틀. 직접 시뮬레이션(개수+라플라스): ε 0.1→5에서 공격자 정확도 0.524→0.959, 이론 상한 이내. 학습 적용은 DP-SGD.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "dp-sgd",
+    "training-data-extraction-attack"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "k-eidetic-memorization",
@@ -91906,6 +91910,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "ε가 작을수록 강한 보장이라는 의미와 실무 기준의 모호함.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "laplace-mechanism",
+   "label": "라플라스 메커니즘",
+   "parent": "differential-privacy-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "민감도/ε 규모의 잡음을 더하는 기본 DP 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sequential-composition",
+   "label": "순차 합성과 프라이버시 예산",
+   "parent": "differential-privacy-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질의·학습을 반복할 때 ε가 누적되는 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "randomized-response",
+   "label": "무작위 응답 기법",
+   "parent": "differential-privacy-training",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설문에서 진실을 확률적으로 답하게 해 개인을 보호하는 고전 방법.",
    "added": "2026-11-27",
    "related": []
   }
