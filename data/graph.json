@@ -54287,11 +54287,15 @@
    "label": "작은 데이터의 병렬 오버헤드",
    "parent": "pipeline-executor-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "프로세스 기동 비용 vs 병렬 이득.",
+   "summary": "datatrove Local 실측: 800문서 workers 1=0.23s·4=0.67s(더 느림), 8만 문서 8.00s→2.73s. Amdahl 상한. 총 시간이 몇 초면 workers=1.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "pipeline-executor-types",
+    "datatrove-skip-completed"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "fineweb-quality-filters",
@@ -91275,6 +91279,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "예외가 나면 남은 조각이 멈추는 동작과 대응.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "amdahl-law",
+   "label": "암달의 법칙",
+   "parent": "parallel-overhead-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "직렬 부분이 병렬 향상의 상한을 정하는 법칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "process-start-cost",
+   "label": "프로세스 기동 비용",
+   "parent": "parallel-overhead-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "spawn·fork와 직렬화가 고정 비용이 되는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "task-count-vs-workers",
+   "label": "task 수와 workers 수 정하기",
+   "parent": "parallel-overhead-small-data",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "workers 배수로 task를 두고 너무 작지 않게 하는 기준.",
    "added": "2026-11-27",
    "related": []
   }
