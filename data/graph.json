@@ -54099,11 +54099,14 @@
    "label": "LCP 배열",
    "parent": "suffix-array",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "이웃 접미사의 공통 접두사 길이.",
+   "summary": "이웃 접미사의 공통 접두사 길이. Kasai는 LCP[next]>=LCP[prev]-1로 선형 시간(최대 2n 비교), 약 13n바이트. 직접 실행: 순진한 방식과 결과 일치, 복사 구간 2001 탐지.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "exact-substring-dedup"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "suffix-array-memory-cost",
@@ -90874,6 +90877,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "지운 뒤 소수 주제 성능이 떨어졌는지 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "kasai-algorithm",
+   "label": "Kasai 알고리즘",
+   "parent": "lcp-array",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LCP를 선형 시간에 만드는 방법과 증명 아이디어.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "plcp-array",
+   "label": "PLCP 배열",
+   "parent": "lcp-array",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텍스트 순서로 저장해 메모리를 줄이는 LCP 변형.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "lcp-repeat-extraction",
+   "label": "LCP로 반복 구간 추출",
+   "parent": "lcp-array",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값 이상 이웃을 묶어 중복 구간을 만드는 스캔.",
    "added": "2026-11-27",
    "related": []
   }
