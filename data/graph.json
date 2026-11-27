@@ -55950,11 +55950,12 @@
    "label": "소형 모델 임계값 스윕",
    "parent": "classifier-threshold-tradeoff",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "임계값마다 작은 모델로 비교.",
+   "summary": "FineWeb-Edu: FW-Edu-i(점수≥i) 데이터로 1.71B 모델을 28B 토큰 학습해 비교, 임계값 3이 종합 정확도 최고. 이후 350B 토큰으로 확인. 분류기 적용 6,000 H100 GPU시간.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "specialization-vs-general",
@@ -95655,6 +95656,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "LLM 점수와 사람 점수의 상관 측정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "two-stage-ablation",
+   "label": "2단계 소거 실험",
+   "parent": "threshold-sweep-small-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "싼 스윕 후 큰 실험으로 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "aggregate-benchmark-score",
+   "label": "벤치마크 종합 점수",
+   "parent": "threshold-sweep-small-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 벤치마크를 하나로 요약.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "fixed-token-budget-comparison",
+   "label": "고정 토큰 예산 비교",
+   "parent": "threshold-sweep-small-model",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 양이 달라도 같은 토큰으로 학습.",
    "added": "2026-11-27",
    "related": []
   }
