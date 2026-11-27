@@ -55450,11 +55450,12 @@
    "label": "결합 라벨 분포",
    "parent": "self-supervised-label-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "원래 라벨과 변환 라벨을 곱한 라벨 공간.",
+   "summary": "SLA: 원래 라벨×회전 라벨을 y=M·i+j 하나의 40개 클래스로 학습. 논문 Table 1: CIFAR-10 기준선 92.39, 회전 증강 90.44, 멀티태스크 90.79, SLA 92.50.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "aggregated-inference",
@@ -94407,6 +94408,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "표본 점검 항목 표.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "rotation-prediction-pretext",
+   "label": "회전 예측 사전과제",
+   "parent": "joint-label-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지 회전각 맞히기 자기지도.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "multi-task-loss-conflict",
+   "label": "멀티태스크 손실 충돌",
+   "parent": "joint-label-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불변성과 구분 목표의 충돌.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "label-space-expansion-cost",
+   "label": "라벨 공간 확장 비용",
+   "parent": "joint-label-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출력 헤드가 M배 커지는 영향.",
    "added": "2026-11-27",
    "related": []
   }
