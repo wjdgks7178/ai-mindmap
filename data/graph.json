@@ -55756,11 +55756,12 @@
    "label": "C4 규칙의 부작용",
    "parent": "c4-filter-rules",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "코드·시·비영어 오삭제.",
+   "summary": "C4 줄 규칙(종결부호+5단어)의 언어별 줄 유지율: 영어 16.9%, 중국어 0.4%, 일본어 0.5%, 독일어 10.9%. 공백 기준 단어 수가 CJK에 맞지 않음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "blocklist-precision-recall",
@@ -95065,6 +95066,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "중괄호 외 코드 문서 판별법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "multilingual-cleaning-rules",
+   "label": "다국어 정제 규칙",
+   "parent": "c4-side-effects",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어별 문자·토큰 기반 기준 설계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cjk-tokenization-basics",
+   "label": "CJK 토큰화 기초",
+   "parent": "c4-side-effects",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "띄어쓰기 없는 언어의 단어 세기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "language-wise-removal-rate",
+   "label": "언어별 제거율 모니터링",
+   "parent": "c4-side-effects",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터가 언어별로 버리는 비율 보고.",
    "added": "2026-11-27",
    "related": []
   }
