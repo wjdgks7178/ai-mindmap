@@ -55258,11 +55258,12 @@
    "label": "크롤 ID 읽기",
    "parent": "cc-paths-files",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "CC-MAIN-연도-주차 형식.",
+   "summary": "CC-MAIN-연도-주차. 직접 확인: CC-MAIN-2024-10 wet.paths.gz는 90,000개 파일·세그먼트 100개, 파일 타임스탬프가 2024-02-20~03-05로 수집에 약 2주(ISO 8~10주).",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "sample-wet-files",
@@ -93874,6 +93875,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "Range로 중단 지점부터 다운로드.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "crawl-overlap-dedup",
+   "label": "크롤 간 중복",
+   "parent": "cc-crawl-ids",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 크롤 합칠 때 같은 URL 중복.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "data-recency-cutoff",
+   "label": "데이터 최신성과 학습 컷오프",
+   "parent": "cc-crawl-ids",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롤 시기가 모델 지식 시점에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
   }
