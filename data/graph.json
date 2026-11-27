@@ -55102,11 +55102,12 @@
    "label": "조용한 데이터 버그",
    "parent": "bbox-coordinate-formats",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "오류 없이 성능을 깎는 입력 오류.",
+   "summary": "예외 없이 성능만 깎는 입력·라벨·전처리 오류. Karpathy 2019: 뒤집기 후 라벨 미반영 등. 처방은 데이터 직접 보기와 모델 입력 직전 시각화.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "min-area-filter",
@@ -93421,6 +93422,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "증강 샘플을 격자로 뽑아 보는 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "overfit-small-batch-test",
+   "label": "작은 표본 과적합 테스트",
+   "parent": "silent-data-bugs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소량 데이터로 손실 0 도달 확인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-unit-test",
+   "label": "증강 단위 테스트",
+   "parent": "silent-data-bugs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "뒤집기·자르기 후 박스·라벨 대응 자동 검사.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "flip-label-consistency",
+   "label": "뒤집기와 라벨 일관성",
+   "parent": "silent-data-bugs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "좌우 의존 라벨 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "become-one-with-the-data",
+   "label": "데이터와 하나 되기",
+   "parent": "silent-data-bugs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 전 데이터 직접 훑기.",
    "added": "2026-11-27",
    "related": []
   }
