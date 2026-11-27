@@ -91563,7 +91563,7 @@
    "related": []
   },
   {
-   "id": "rule-of-three",
+   "id": "audit-zero-found-bound",
    "label": "세 배 규칙(0건일 때 상한)",
    "parent": "false-removal-audit",
    "domain": "ai-data",
