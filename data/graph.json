@@ -55590,11 +55590,12 @@
    "label": "가장 긴 일치 규칙",
    "parent": "robots-txt-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Allow·Disallow 충돌 해소.",
+   "summary": "RFC 9309 §2.2.2: 일치 옥텟 수가 가장 많은 규칙이 우선, 동률은 Allow 권고. 파이썬 3.13.18 robotparser는 이를 따랐고 3.11.18은 첫 일치 순서라 정반대 결과.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "robots-parser-differences",
@@ -94646,6 +94647,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "역번역에 쓰인 영어-프랑스어 모델.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "robots-wildcard-and-anchor",
+   "label": "robots 와일드카드 *·$",
+   "parent": "robots-longest-match",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패턴 문법과 인코딩.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "rfc-9309-overview",
+   "label": "RFC 9309 개요",
+   "parent": "robots-longest-match",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Robots Exclusion Protocol 표준.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "robots-rule-testing",
+   "label": "robots 규칙 시험하기",
+   "parent": "robots-longest-match",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "파서로 허용·금지를 테스트하는 방법.",
    "added": "2026-11-27",
    "related": []
   }
