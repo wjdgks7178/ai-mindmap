@@ -55999,11 +55999,12 @@
    "label": "스승 편향 상속",
    "parent": "frozen-embedding-regression",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "LLM 주석의 편향이 분류기에 전이.",
+   "summary": "LLM 주석→분류기→15조 토큰 필터로 스승 편향이 전이. FineWeb-Edu는 교육·역사 주제 증가·금융/법률/엔터 감소, 성별·종교 연상이 다른 모양으로 이동. 분류기 5점 재현율 0.01.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "embedding-model-choice",
@@ -95825,6 +95826,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "원본 특징 기준선의 중요성.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filter-output-bias-audit",
+   "label": "필터 결과 편향 감사",
+   "parent": "teacher-bias-inheritance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터 전후 분포 비교.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "multi-annotator-llm-ensemble",
+   "label": "다중 LLM 주석 앙상블",
+   "parent": "teacher-bias-inheritance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 스승 평균으로 편향 완화.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "word-association-bias",
+   "label": "단어 연상 편향 분석",
+   "parent": "teacher-bias-inheritance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공출현 기반 편향 측정.",
    "added": "2026-11-27",
    "related": []
   }
