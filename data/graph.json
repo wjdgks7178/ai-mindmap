@@ -54570,11 +54570,15 @@
    "label": "전이적 군집화",
    "parent": "duplicate-cluster-size",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "A–C, B–C면 A·B·C를 한 군집으로.",
+   "summary": "이웃으로 이어지면 한 군집(union-find). 직접 실행: 이웃 자카드 0.78, 처음-끝 0.14인 12문서 사슬이 한 군집(66쌍 중 55쌍 임계 미만), 대표 방식은 2개씩 6군집. datatrove는 union-find 사용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "duplicate-cluster-size",
+    "minhash-lsh"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "boilerplate-duplicates",
@@ -91943,6 +91947,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "설문에서 진실을 확률적으로 답하게 해 개인을 보호하는 고전 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "single-linkage-chaining",
+   "label": "단일 연결의 사슬 효과",
+   "parent": "transitive-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 가까운 쌍만 보고 이으면 길게 늘어진 군집이 생기는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "center-based-dedup-clustering",
+   "label": "대표 문서 기반 군집",
+   "parent": "transitive-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대표와의 유사도만 보고 편입하는 방식의 장단점.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "oversized-cluster-review",
+   "label": "비정상 큰 군집 검토",
+   "parent": "transitive-clustering",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "군집 크기 분포의 꼬리를 점검하는 절차.",
    "added": "2026-11-27",
    "related": []
   }
