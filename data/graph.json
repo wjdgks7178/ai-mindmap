@@ -55663,11 +55663,12 @@
    "label": "FCrDNS",
    "parent": "crawler-ip-verification",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "역방향 후 정방향 DNS 일치 확인.",
+   "summary": "역방향 DNS 이름이 googlebot.com 등으로 끝나고 정방향 조회가 원래 IP를 돌려주면 검증(Google 문서). googlebot.json 317개 접두사로 66.249.66.1 포함·8.8.8.8 미포함 확인. 실제 DNS는 환경상 미시험.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "spoofed-user-agent",
@@ -94895,6 +94896,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "어떤 신호를 언제 읽었는지 로그.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "reverse-dns-ptr",
+   "label": "역방향 DNS(PTR 레코드)",
+   "parent": "fcrdns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IP에서 이름을 찾는 DNS.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cidr-range-matching",
+   "label": "CIDR 대역 대조",
+   "parent": "fcrdns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ipaddress로 IP가 대역에 속하는지 판별.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "crawler-hostname-patterns",
+   "label": "크롤러 호스트 이름 패턴",
+   "parent": "fcrdns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공식 크롤러의 역방향 이름 규칙.",
    "added": "2026-11-27",
    "related": []
   }
