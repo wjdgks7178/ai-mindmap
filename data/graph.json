@@ -55138,11 +55138,12 @@
    "label": "크롭과 라벨 일치",
    "parent": "min-visibility-filter",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "증강 후 이미지·라벨 대응 검수.",
+   "summary": "Crop 후 label_fields로 넘긴 라벨은 박스와 함께 필터됨(dog 제거, bird 잘림 유지). 문자열 라벨을 박스 열로 넣으면 변환 오류. len(bboxes)==len(labels) 단언 권장.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "erosion-rate-bbox-crop",
@@ -93534,6 +93535,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "박스를 자르거나 이미지를 키우는 선택.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "empty-crop-rate",
+   "label": "빈 크롭 비율",
+   "parent": "crop-label-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "크롭 후 박스 0개 이미지 비율 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "label-fields-usage",
+   "label": "label_fields 사용법",
+   "parent": "crop-label-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨을 박스와 함께 변환·필터하는 인자.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "crop-strategy-for-detection",
+   "label": "탐지용 크롭 전략",
+   "parent": "crop-label-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "박스 중심 크롭 등 박스를 보존하는 크롭.",
    "added": "2026-11-27",
    "related": []
   }
