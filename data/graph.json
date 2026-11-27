@@ -54529,11 +54529,15 @@
    "label": "DP-SGD",
    "parent": "memorization-mitigation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "개별 기록 영향을 제한하는 학습 알고리즘.",
+   "summary": "예제별 그래디언트 자르기+가우시안 잡음+ε 회계. 직접 실행(digits, numpy, Opacus accountant, δ=1e-5): σ 0→4에서 정확도 0.925→0.863, ε 47.9→1.3. 프라이버시-정확도 교환.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-mitigation",
+    "training-data-extraction-attack"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "output-memorization-filter",
@@ -91869,6 +91873,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "띄어쓰기·형태소·서브워드 중 무엇으로 n-gram을 세나.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "gradient-clipping-norm",
+   "label": "그래디언트 자르기",
+   "parent": "dp-sgd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예제 영향의 상한 C를 정하는 방법과 선택 기준.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "privacy-accountant",
+   "label": "프라이버시 회계",
+   "parent": "dp-sgd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "RDP·moments accountant로 ε를 누적 계산하는 도구.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "epsilon-interpretation",
+   "label": "ε 값 해석하기",
+   "parent": "dp-sgd",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ε가 작을수록 강한 보장이라는 의미와 실무 기준의 모호함.",
    "added": "2026-11-27",
    "related": []
   }
