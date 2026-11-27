@@ -55803,11 +55803,12 @@
    "label": "짧은 글 언어 식별",
    "parent": "langdetect-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "짧은 영어가 오판되는 이유.",
+   "summary": "py3langid 시험: 영어 13문장 중 확률 0.99 이상은 18단어 문장 1개뿐, 1단어(Hello→br)는 오판. 짧을수록 불확실. langdetect는 이 환경에서 빌드 실패해 대체 도구 사용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "paragraph-level-langid",
@@ -95167,6 +95168,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "부분 문자열 오탐을 피하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "langid-calibration",
+   "label": "언어 식별 확률 보정",
+   "parent": "language-id-short-text",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "식별기별 확률 값의 의미 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "min-length-langid-policy",
+   "label": "언어 식별 최소 길이 정책",
+   "parent": "language-id-short-text",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧은 글 판정 보류 규칙.",
    "added": "2026-11-27",
    "related": []
   }
