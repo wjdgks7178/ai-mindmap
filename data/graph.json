@@ -55233,11 +55233,12 @@
    "label": "사용 중단 경고 읽기",
    "parent": "library-version-api-drift",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "ShiftScaleRotate→Affine 같은 예고.",
+   "summary": "Albumentations 2.0.8에서 ShiftScaleRotate 생성 시 'Affine을 쓰라'는 UserWarning. BboxParams 인자명이 새 문서에선 coord_format으로 달라 설치 버전 시그니처 직접 확인 권장.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "http-range-request",
@@ -93772,6 +93773,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "해상도·앵커·타일링 전략.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "python-warnings-filter",
+   "label": "파이썬 warnings 필터",
+   "parent": "deprecation-notices",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경고를 에러로 승격하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "migration-guide-reading",
+   "label": "마이그레이션 가이드 읽기",
+   "parent": "deprecation-notices",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "릴리스 노트에서 바뀐 점 찾기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "albumentations-affine",
+   "label": "Affine 변환",
+   "parent": "deprecation-notices",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이동·확대·회전·전단을 한 번에.",
    "added": "2026-11-27",
    "related": []
   }
