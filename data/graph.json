@@ -54313,11 +54313,15 @@
    "label": "Trafilatura 본문 추출",
    "parent": "datatrove-fineweb-example",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "HTML에서 본문만 뽑는 단계.",
+   "summary": "HTML에서 본문·메타데이터만 추출. 직접 실행: 1103자 합성 HTML에서 499자 본문만, 태그 제거는 742자로 메뉴·쿠키 문구 잔존. FineWeb 예시는 WARC→Trafilatura(precision).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "datatrove-fineweb-example",
+    "training-data-deduplication"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "pii-formatter",
@@ -91312,6 +91316,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "workers 배수로 task를 두고 너무 작지 않게 하는 기준.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "trafilatura-precision-recall",
+   "label": "추출 정밀도와 재현율 옵션",
+   "parent": "trafilatura-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "favor_precision·favor_recall이 결과를 바꾸는 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "wet-vs-warc",
+   "label": "WET와 WARC 차이",
+   "parent": "trafilatura-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Common Crawl의 원본 HTML과 미리 뽑은 텍스트.",
    "added": "2026-11-27",
    "related": []
   }
