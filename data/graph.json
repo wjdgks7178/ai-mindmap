@@ -56034,11 +56034,12 @@
    "label": "입력 토큰 제한",
    "parent": "classifier-inference-cost",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "문서 앞부분만 분류해 비용 절감.",
+   "summary": "fastText 587문서: 앞 100자는 판정 12.9% 변동·유지율 0.274→0.179, 2000자는 판정 2.4% 변동·유지율 동일(0.274), 처리량 약 4배. 앞부분 편향·과제 의존성 주의.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "filter-order-cost",
@@ -95893,6 +95894,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "처리 시간이 늘어나는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "two-stage-classification",
+   "label": "2단계 분류",
+   "parent": "truncate-input-tokens",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "싼 판정 후 애매한 것만 정밀 판정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sliding-window-classification",
+   "label": "슬라이딩 윈도 분류",
+   "parent": "truncate-input-tokens",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "긴 문서를 조각내 모두 판정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "max-sequence-length",
+   "label": "모델의 최대 입력 길이",
+   "parent": "truncate-input-tokens",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "트랜스포머 입력 길이 제약.",
    "added": "2026-11-27",
    "related": []
   }
