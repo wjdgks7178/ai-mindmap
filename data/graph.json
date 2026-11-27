@@ -55029,11 +55029,12 @@
    "label": "TF-IDF 단어 치환",
    "parent": "uda-consistency-training",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정보량 낮은 단어를 바꾸는 증강.",
+   "summary": "낮은 TF-IDF 단어일수록 높은 확률로 교체(min(p·(C−TFIDF)/Z,1), p=0.7), 대체어도 키워드 아닌 단어 위주 샘플. UDA의 DBPedia 증강.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "wordmixup",
@@ -93172,6 +93173,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "낮은 온도로 확률분포를 뾰족하게.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "back-translation-augmentation",
+   "label": "역번역 증강",
+   "parent": "tfidf-word-replacement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "번역 후 되돌려 문장을 바꿈.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tfidf-basics",
+   "label": "TF-IDF 기초",
+   "parent": "tfidf-word-replacement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단어 중요도 점수 계산.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "text-augmentation-label-preservation",
+   "label": "텍스트 증강의 라벨 보존",
+   "parent": "tfidf-word-replacement",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "바꿔도 정답이 유지되는 조건.",
    "added": "2026-11-27",
    "related": []
   }
