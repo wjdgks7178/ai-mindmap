@@ -55732,11 +55732,12 @@
    "label": "C4 줄 단계 필터",
    "parent": "c4-filter-rules",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "종결부호·5단어·정책 문구.",
+   "summary": "C4 줄 규칙을 WET 샘플 영어 210문서에 적용: 종결부호 없음 81.0%, 5단어 미만 60.4%, 남은 줄 16.8%(글자 45.4%). 정상 짧은 문장도 손실되는 부작용.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "c4-page-filters",
@@ -94997,6 +94998,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공식 JSON과 사용법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "terminal-punctuation-by-language",
+   "label": "언어별 종결 부호",
+   "parent": "c4-line-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일본어 。 등 다국어 문장 끝 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "short-line-loss",
+   "label": "짧은 줄 손실 분석",
+   "parent": "c4-line-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5단어 미만 필터가 버리는 정상 문장.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filtered-sample-audit",
+   "label": "제거된 줄 샘플 감사",
+   "parent": "c4-line-filters",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버려진 줄을 표본으로 확인.",
    "added": "2026-11-27",
    "related": []
   }
