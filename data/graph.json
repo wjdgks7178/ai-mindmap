@@ -55196,11 +55196,12 @@
    "label": "이미지·마스크 보간 분리",
    "parent": "mask-augmentation-nearest",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "interpolation과 mask_interpolation.",
+   "summary": "마스크 클래스 ID(0,1,5,9)에 회전+리사이즈: NEAREST는 고유값 4개 유지, LINEAR는 10개로 새 ID 생성, CUBIC는 12개(원래 최대 9 초과). 마스크는 NEAREST로.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "soft-mask-argmax",
@@ -93636,6 +93637,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "NEAREST·LINEAR·AREA 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "soft-label-masks",
+   "label": "소프트 라벨 마스크",
+   "parent": "image-vs-mask-interpolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률 마스크에는 부드러운 보간 가능.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cubic-overshoot",
+   "label": "3차 보간 오버슈트",
+   "parent": "image-vs-mask-interpolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보간값이 원래 범위를 넘는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "segmentation-mask-formats",
+   "label": "세그멘테이션 마스크 형식",
+   "parent": "image-vs-mask-interpolation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스 ID 이미지 vs 원-핫 마스크.",
    "added": "2026-11-27",
    "related": []
   }
