@@ -55815,11 +55815,12 @@
    "label": "문단 단위 언어 판정",
    "parent": "langdetect-threshold",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "혼합 언어 문서 처리.",
+   "summary": "WET 587문서 중 181개(31%)가 헤더에 언어 2개 이상. 줄 단위 식별에서 영어/이탈리아어 42%씩인 문서 등 혼합 확인. 식별기 오류(zh→yue·la)도 관찰, 표본 15개로 일반화 금물.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "fasttext-langid",
@@ -95190,6 +95191,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "짧은 글 판정 보류 규칙.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "code-switching",
+   "label": "코드 스위칭",
+   "parent": "paragraph-level-langid",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문장 안에서 언어가 바뀌는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "parallel-multilingual-pages",
+   "label": "병렬 다국어 페이지",
+   "parent": "paragraph-level-langid",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "번역문이 나란히 있는 페이지 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "warc-language-header-multi",
+   "label": "WARC 헤더의 다중 언어 값",
+   "parent": "paragraph-level-langid",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "언어 목록 순서와 비중.",
    "added": "2026-11-27",
    "related": []
   }
