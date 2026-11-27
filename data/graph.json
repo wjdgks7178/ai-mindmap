@@ -55614,11 +55614,12 @@
    "label": "robots.txt 상태별 동작",
    "parent": "robots-txt-basics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "4xx·5xx·리다이렉트 처리.",
+   "summary": "RFC 9309: 4xx는 없음(접근 가능), 5xx는 완전 금지. 파이썬 robotparser(3.11·3.13)는 401·403을 전체 금지로 처리해 RFC보다 엄격, 404·410은 허용, 5xx는 금지.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "tdmrep-json-file",
@@ -94714,6 +94715,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "표준 라이브러리 변경 추적.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "robots-redirect-handling",
+   "label": "robots.txt 리다이렉트",
+   "parent": "robots-unavailable-status",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "5회 따라가기와 호스트 변경.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "robots-cache-ttl",
+   "label": "robots.txt 캐시 기간",
+   "parent": "robots-unavailable-status",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "24시간 권고와 접근 불가 예외.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "waf-403-vs-policy-403",
+   "label": "WAF 차단 403 vs 정책 403",
+   "parent": "robots-unavailable-status",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "403의 원인 구분.",
    "added": "2026-11-27",
    "related": []
   }
