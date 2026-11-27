@@ -55854,11 +55854,12 @@
    "label": "글자 수 vs 어절 수",
    "parent": "heuristic-filter-korean",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한국어 최소 길이 기준.",
+   "summary": "WET 3구간 언어별: 5단어 미만 줄 비율 영어 74%·한국어 67%·중국어 96%·일본어 90%. 공백 단어 수 기준은 중·일에 무력, 글자·토큰 수 기준이 더 공정.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "symbol-ratio-filter",
@@ -95394,6 +95395,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "짧은 제목·메뉴 줄 판별.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "token-count-length-filter",
+   "label": "토큰 수 길이 필터",
+   "parent": "char-count-vs-word-count",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토크나이저 기준 최소 길이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "unicode-script-detection",
+   "label": "유니코드 문자 체계 판별",
+   "parent": "char-count-vs-word-count",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한글·한자·가나 정규식 범위.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "eojeol-morpheme",
+   "label": "어절과 형태소",
+   "parent": "char-count-vs-word-count",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한국어 단위 개념.",
    "added": "2026-11-27",
    "related": []
   }
