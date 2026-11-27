@@ -55987,11 +55987,12 @@
    "label": "선형 프로브",
    "parent": "frozen-embedding-regression",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "동결 표현 위에 선형 헤드만 학습.",
+   "summary": "동결 인코더 위 선형 헤드만 학습. FineWeb-Edu 분류기가 사례. 토이 실험(0~4로 학습한 인코더, 5~9 프로브): 원본 픽셀 0.844/0.930/0.962가 동결 특징 0.716/0.872/0.942보다 높음 — 전이 실패 사례.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "teacher-bias-inheritance",
@@ -95791,6 +95792,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 줄 입력 요건.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "representation-transfer-failure",
+   "label": "표현 전이 실패",
+   "parent": "linear-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동결 표현이 새 과제 정보를 버리는 경우.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "partial-fine-tuning",
+   "label": "부분 미세조정",
+   "parent": "linear-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위쪽 일부 층만 풀어 학습.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "baseline-before-pretrained",
+   "label": "사전학습 전 기준선 비교",
+   "parent": "linear-probe",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "원본 특징 기준선의 중요성.",
    "added": "2026-11-27",
    "related": []
   }
