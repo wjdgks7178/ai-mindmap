@@ -54655,11 +54655,16 @@
    "label": "중복 제거 범위 선택",
    "parent": "dedup-quality-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "전역 vs 스냅샷별 결정 기준.",
+   "summary": "범위는 경계를 넘는 중복의 비율로 정함. 직접 실험(20newsgroups 검증쌍): 뉴스그룹을 넘는 쌍 6~9%, 무작위 2분할은 51%를 놓침. 제거량 전역 64/뉴스그룹별 59/무작위 33(0.8). FineWeb는 스냅샷별이 더 좋음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "dedup-quality-check",
+    "per-snapshot-vs-global-dedup",
+    "removed-vs-kept-comparison"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "beta-distribution-shape",
@@ -92612,6 +92617,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "클리핑 때문에 혼합 비율 분포가 원본 쪽으로 쏠리는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cross-posting-duplicates",
+   "label": "교차 게시 중복",
+   "parent": "dedup-scope-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 글이 여러 게시판·사이트에 올라가는 중복 유형.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "hybrid-dedup-stages",
+   "label": "경계별 후 전역 보조",
+   "parent": "dedup-scope-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계별 제거 뒤 거대 군집만 전역에서 제거하는 구성.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dedup-scope-metadata",
+   "label": "범위 메타데이터 기록",
+   "parent": "dedup-scope-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제거 범위와 임계값을 데이터셋 문서에 기록하는 방법.",
    "added": "2026-11-27",
    "related": []
   }
