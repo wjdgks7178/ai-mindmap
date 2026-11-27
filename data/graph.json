@@ -54956,11 +54956,14 @@
    "label": "PII 재현율 감사",
    "parent": "pii-in-training-data",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정답 세트로 남은 PII 측정.",
+   "summary": "정답 라벨을 붙인 소규모 표본으로 마스킹 후 남은 PII를 유형별 재현율로 측정. presidio-research는 템플릿 합성 문장으로 정밀도·재현율·오류를 계산.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "trivialaugment-vs-randaugment",
@@ -92989,6 +92992,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한국어 이름·주소를 찾는 모델 선택과 평가.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pii-gold-set-construction",
+   "label": "PII 정답 세트 만들기",
+   "parent": "pii-recall-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "템플릿 합성 vs 실제 표본 수동 라벨.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pii-span-vs-token-scoring",
+   "label": "PII 스팬·토큰 단위 채점",
+   "parent": "pii-recall-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 탐지도 채점 단위에 따라 점수가 달라짐.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pii-entity-mapping",
+   "label": "PII 개체 유형 매핑",
+   "parent": "pii-recall-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델마다 다른 라벨을 공통 유형으로 맞춤.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "pii-recall-vs-precision-tradeoff",
+   "label": "PII 재현율 vs 정밀도",
+   "parent": "pii-recall-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "놓침은 유출, 과탐지는 데이터 손실.",
    "added": "2026-11-27",
    "related": []
   }
