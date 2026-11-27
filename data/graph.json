@@ -54206,11 +54206,14 @@
    "label": "중복 횟수와 암기 확률",
    "parent": "memorization-from-duplicates",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "등장 횟수와 재현율의 관계.",
+   "summary": "재생성 비율은 등장 횟수와 초선형(10회→약 1000배, Kandpal 2022). Carlini 2022는 모델 크기·중복·프롬프트 길이에 로그-선형. 꼬리(많이 반복된 문장)부터 제거.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "lee-2021-dedup-paper"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "benchmark-contamination-check",
@@ -91095,6 +91098,39 @@
    "related": [
     "levenshtein-distance"
    ]
+  },
+  {
+   "id": "repeated-tail-sentences",
+   "label": "많이 반복된 꼬리 문장",
+   "parent": "duplicate-count-vs-memorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "약관·라이선스·서명처럼 수만 번 반복되는 문장 처리.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "extraction-attack-memorization",
+   "label": "학습 데이터 추출 공격",
+   "parent": "duplicate-count-vs-memorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "암기된 문장을 프롬프트로 끄집어내는 공격.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "memorization-scaling-model-size",
+   "label": "모델 크기와 암기",
+   "parent": "duplicate-count-vs-memorization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규모가 커질수록 암기가 늘어나는 경향.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
