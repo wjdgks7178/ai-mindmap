@@ -55293,11 +55293,12 @@
    "label": "파일 앞부분 샘플의 편향",
    "parent": "http-range-sampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "앞 구간이 대표성이 없을 수 있음.",
+   "summary": "WET 파일 107MB에서 앞·중간·끝 2MB 비교: 영어 비율 36%/50%/31%, 끝 구간만 .рф 8%. 표본오차(±4%p)보다 큰 차이라 앞부분 샘플은 대표성이 낮을 수 있음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "content-range-header",
@@ -93931,6 +93932,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "마지막 멤버가 잘렸을 때 대응.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "stratified-sampling-web-data",
+   "label": "웹 데이터 층화 샘플링",
+   "parent": "head-sample-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위치·파일을 분산해 뽑는 샘플링.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "language-id-warc-header",
+   "label": "WARC 언어 식별 헤더",
+   "parent": "head-sample-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "WARC-Identified-Content-Language 읽기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "sampling-error-estimate",
+   "label": "표본오차 추정",
+   "parent": "head-sample-bias",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "n=600에서 비율의 오차 범위.",
    "added": "2026-11-27",
    "related": []
   }
