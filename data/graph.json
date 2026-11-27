@@ -55042,11 +55042,12 @@
    "label": "wordMixup",
    "parent": "mixup-for-text",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단어 위치별 임베딩 혼합.",
+   "summary": "문장을 패딩해 단어 위치별로 임베딩을 λ:1-λ 보간, 라벨도 섞음(α=1). 논문: CNN Subj 90.6→92.9, MR 75.5→78.0, LSTM TREC 86.5→90.5.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "senmixup",
@@ -93251,6 +93252,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨 없는 데이터가 다른 분포일 때.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "beta-distribution-mixing-ratio",
+   "label": "Beta 분포와 혼합 비율 λ",
+   "parent": "wordmixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "α가 λ 분포를 결정하는 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mixup-word-order-misalignment",
+   "label": "Mixup의 단어 순서 불일치",
+   "parent": "wordmixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위치별 섞기의 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "embedding-fixed-vs-tuned",
+   "label": "임베딩 고정 vs 학습",
+   "parent": "wordmixup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "4가지 임베딩 설정이 정규화에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
   }
