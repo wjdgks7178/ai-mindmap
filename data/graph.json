@@ -55281,11 +55281,12 @@
    "label": "gzip 멤버 경계",
    "parent": "http-range-sampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "레코드별 압축이라 오프셋으로 접근.",
+   "summary": "WET 파일은 레코드별 gzip 멤버의 연속. 2MB 샘플에서 완전 멤버 588+잘린 1개, 100번째 멤버(오프셋 312317, 3181B)만 잘라 풀기 성공, 중간 오프셋은 header check 오류.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "head-sample-bias",
@@ -93897,6 +93898,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "크롤 시기가 모델 지식 시점에 미치는 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cdx-index",
+   "label": "CDX 색인",
+   "parent": "gzip-member-boundary",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "URL을 파일·오프셋·길이로 찾는 색인.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "gzip-concatenated-members",
+   "label": "gzip 이어 붙인 멤버",
+   "parent": "gzip-member-boundary",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 멤버를 연속해 읽는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "truncated-download-handling",
+   "label": "잘린 다운로드 처리",
+   "parent": "gzip-member-boundary",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 멤버가 잘렸을 때 대응.",
    "added": "2026-11-27",
    "related": []
   }
