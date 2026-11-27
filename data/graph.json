@@ -54441,11 +54441,15 @@
    "label": "퍼플렉서티 비율 척도",
    "parent": "training-data-extraction-attack",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "작은 모델·zlib 비율로 암기 판별.",
+   "summary": "큰 모델 퍼플렉서티를 작은 모델·zlib과 비교한 비율로 암기 후보만 가림. 직접 계산(gpt2 vs distilgpt2): MIT 라이선스 작은모델비 0.61·zlib비 0.016으로 최저, 반복 문구는 퍼플렉서티 낮아도 비율 높음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "training-data-extraction-attack",
+    "k-eidetic-memorization"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "differential-privacy-training",
@@ -91757,6 +91761,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "한두 토큰이 다른 근사 암기를 정의에 넣는 접근과 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "zlib-entropy-baseline",
+   "label": "zlib 엔트로피 기준",
+   "parent": "perplexity-ratio-metric",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "압축 길이로 글의 복잡도를 재는 기준과 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "distillation-reference-model",
+   "label": "증류 모델을 기준으로 쓸 때",
+   "parent": "perplexity-ratio-metric",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 기준 모델이 아닐 때 생기는 편향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "defender-self-audit",
+   "label": "방어자의 자기 점검",
+   "parent": "perplexity-ratio-metric",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공격 척도를 자기 모델 점검에 쓰는 절차.",
    "added": "2026-11-27",
    "related": []
   }
