@@ -54245,11 +54245,14 @@
    "label": "겹침 제외 점수 따로 보고",
    "parent": "train-test-overlap",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "오염 예제를 뺀 점수 병기.",
+   "summary": "GPT-3는 13-gram 겹침 dirty/clean으로 나눠 보고. PIQA 29% 겹침·82.3→79.3, DROP은 지문만 겹침. 전체·clean·dirty 세 값과 겹침 비율을 함께.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "train-test-contamination-lsh"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "datatrove-skip-completed",
@@ -91169,6 +91172,39 @@
    "related": [
     "top-k-sampling"
    ]
+  },
+  {
+   "id": "passage-vs-answer-overlap",
+   "label": "지문 겹침과 정답 겹침",
+   "parent": "clean-subset-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지문만 학습에 있고 정답은 없는 경우의 해석.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "clean-set-distribution-shift",
+   "label": "clean 부분집합의 분포 차이",
+   "parent": "clean-subset-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "남은 문항이 더 어려울 때 점수 차를 해석하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "model-card-contamination-section",
+   "label": "모델 카드의 오염 항목",
+   "parent": "clean-subset-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 카드에 겹침 비율과 방법을 적는 형식.",
+   "added": "2026-11-27",
+   "related": []
   }
  ]
 }
