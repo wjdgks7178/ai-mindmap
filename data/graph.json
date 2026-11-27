@@ -55306,11 +55306,12 @@
    "label": "Content-Range 헤더",
    "parent": "http-range-sampling",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "범위와 전체 크기 읽기.",
+   "summary": "206 응답의 content-range는 bytes 시작-끝/전체. 실험: 끝이 크기 초과면 끝까지로 줄여 206, 시작이 파일 밖이면 416과 bytes */180690. 일시 503은 재시도로 해결.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "trafilatura-options",
@@ -93999,6 +94000,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "파일 수×평균 크기로 규모 가늠.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "parallel-range-download",
+   "label": "Range 병렬 다운로드",
+   "parent": "content-range-header",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "구간을 나눠 동시에 받기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "http-retry-backoff",
+   "label": "HTTP 재시도와 백오프",
+   "parent": "content-range-header",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "503 같은 일시 오류 대응.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "http-headers-inspect",
+   "label": "HTTP 헤더 직접 보기",
+   "parent": "content-range-header",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "curl -D 로 응답 헤더 확인.",
    "added": "2026-11-27",
    "related": []
   }
