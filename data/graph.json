@@ -55366,11 +55366,12 @@
    "label": "좌우 라벨 동반 반전",
    "parent": "medical-flip-hazard",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "뒤집을 때 L/R 라벨도 교체.",
+   "summary": "HorizontalFlip은 박스·키포인트 좌표만 뒤집고 left/right 이름은 그대로(실험). Ultralytics flip_idx처럼 좌우 쌍을 정의해 라벨을 교체해야 함.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "domain-expert-augmentation-review",
@@ -94169,6 +94170,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "영상이 뒤집혔는지 탐지.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "flip-idx-keypoints",
+   "label": "flip_idx와 키포인트 쌍",
+   "parent": "laterality-label-flip",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "포즈 데이터 좌우 키포인트 재배열.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "patient-vs-image-orientation",
+   "label": "환자 기준 vs 화면 기준 좌우",
+   "parent": "laterality-label-flip",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "의료영상 표시 관례.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "text-caption-left-right-flip",
+   "label": "캡션 속 좌우 표현과 뒤집기",
+   "parent": "laterality-label-flip",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이미지-텍스트 쌍 증강 주의.",
    "added": "2026-11-27",
    "related": []
   }
