@@ -55916,7 +55916,7 @@
    "domain": "ai-data",
    "status": "done",
    "priority": 3,
-   "summary": "FineWeb-Edu 주석 프롬프트: 가산식 5점 척도(+1씩), 100단어 근거 + 'Educational score: N' 형식. Llama-3 주석 450,000개로 회귀 분류기 학습, int_score≥3 권장, 5점 클래스 재현율 0.01.",
+   "summary": "FineWeb-Edu 주석 프롬프트: 가산식 5점 척도(+1씩), 100단어 근거 + 'Educational score: N' 형식. Llama-3 주석(카드 450,000·논문 410,000)으로 회귀 분류기 학습, int_score≥3 권장, 5점 클래스 재현율 0.01.",
    "added": "2026-11-20",
    "related": [],
    "done": "2026-11-27"
@@ -55926,11 +55926,12 @@
    "label": "LLM 채점 일관성",
    "parent": "additive-scoring-prompt",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "프롬프트 민감도와 사람 보정.",
+   "summary": "MT-Bench 논문: 심판 LLM이 인간과 80% 이상 일치하나 위치 편향(순서 바꿨을 때 GPT-4 일관성 65.0%, Claude-v1 기본 23.8%)·장황함 공격 취약. 참조 정답 제공 시 수학 판정 실패 14/20→3/20.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "grade-level-focus-instruction",
@@ -95632,6 +95633,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "위키·학술 출처가 유리해지는 현상.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "position-bias-llm-judge",
+   "label": "LLM 심판의 위치 편향",
+   "parent": "llm-score-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서 교환 일관성 측정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "human-agreement-calibration",
+   "label": "사람 일치도 보정",
+   "parent": "llm-score-consistency",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 점수와 사람 점수의 상관 측정.",
    "added": "2026-11-27",
    "related": []
   }
