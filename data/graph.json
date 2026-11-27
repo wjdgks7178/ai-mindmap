@@ -55462,11 +55462,12 @@
    "label": "집계 추론",
    "parent": "self-supervised-label-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "변환별 예측을 합쳐 앙상블 효과.",
+   "summary": "변환 4종(회전) 예측의 로짓을 평균해 소프트맥스: SLA+AG는 CIFAR-10 94.50로 4모델 앙상블 94.36과 비슷(CIFAR-100 74.14 vs 74.82). 추론 비용 M배.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "self-distillation-sla",
@@ -94441,6 +94442,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "출력 헤드가 M배 커지는 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "ensemble-learning-basics",
+   "label": "앙상블 학습 기초",
+   "parent": "aggregated-inference",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 모델 예측을 합치는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "logit-averaging-vs-prob-averaging",
+   "label": "로짓 평균 vs 확률 평균",
+   "parent": "aggregated-inference",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합치는 위치에 따른 차이.",
    "added": "2026-11-27",
    "related": []
   }
