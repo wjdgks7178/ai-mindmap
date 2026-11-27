@@ -54402,11 +54402,15 @@
    "label": "오삭제 표본 감사",
    "parent": "exclusion-writer",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "제외 파일에서 무작위 점검.",
+   "summary": "제외 파일에서 사유별 무작위 표본을 사람이 판정해 오삭제율+Wilson 구간 보고. 시뮬레이션(실제 8.3%): N=100 구간 너비 0.109, ±3%p에는 약 315개.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "exclusion-writer",
+    "filter-reason-stats"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "filter-threshold-tuning",
@@ -91533,6 +91537,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "통계의 단계별 시간 비율로 병목 필터를 찾기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "false-keep-audit",
+   "label": "오통과 표본 감사",
+   "parent": "false-removal-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통과 파일에서 버렸어야 할 문서 비율을 재는 점검.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "inter-annotator-agreement-audit",
+   "label": "판정자 간 일치도",
+   "parent": "false-removal-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "감사 판정이 사람마다 다를 때 일치도를 재는 지표.",
    "added": "2026-11-27",
    "related": []
   }
