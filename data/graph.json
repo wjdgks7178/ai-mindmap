@@ -55974,11 +55974,12 @@
    "label": "데이터 양 대 품질",
    "parent": "classifier-threshold-tradeoff",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "임계값과 토큰 수의 관계.",
+   "summary": "FineWeb 토큰 흐름: 36조→스냅샷별 중복 제거 20조→FineWeb 15조→FineWeb-Edu 1.3조(약 8.7%). 통합 중복 제거(4조)는 성능 개선이 없었음. 필요 에폭≈학습 토큰/남은 토큰.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "linear-probe",
@@ -95723,6 +95724,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "혼합 비율 실험.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "epochs-and-data-repetition",
+   "label": "에폭과 데이터 반복",
+   "parent": "data-quantity-vs-quality",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 데이터 반복 학습의 효과.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "global-vs-per-snapshot-dedup",
+   "label": "전체 통합 vs 스냅샷별 중복 제거",
+   "parent": "data-quantity-vs-quality",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "FineWeb 중복 제거 실험.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "token-budget-planning",
+   "label": "학습 토큰 예산 계획",
+   "parent": "data-quantity-vs-quality",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필요 토큰·남은 토큰 계산.",
    "added": "2026-11-27",
    "related": []
   }
