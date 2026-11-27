@@ -55579,11 +55579,12 @@
    "label": "라벨 일치율",
    "parent": "text-augmentation-label-check",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "원 모델로 증강 문장을 분류해 확인.",
+   "summary": "20 Newsgroups 4주제 TF-IDF+LR(정확도 0.897): RD p=0.1→0.993, p=0.7→0.892 일치. RS는 1.000이지만 단어 주머니가 순서를 못 봐서 생기는 착시.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "robots-longest-match",
@@ -94748,6 +94749,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "403의 원인 구분.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "bag-of-words-limits",
+   "label": "단어 주머니 모델의 한계",
+   "parent": "label-agreement-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "순서를 보지 않는 표현.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-strength-selection-by-agreement",
+   "label": "일치율로 증강 강도 고르기",
+   "parent": "label-agreement-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기준 일치율 이상인 최대 강도 선택.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "human-review-sampling",
+   "label": "사람 검수 표본 추출",
+   "parent": "label-agreement-rate",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "불일치 샘플 우선 검수.",
    "added": "2026-11-27",
    "related": []
   }
