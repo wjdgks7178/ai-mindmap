@@ -55209,11 +55209,12 @@
    "label": "확률 마스크 보간 후 argmax",
    "parent": "mask-augmentation-nearest",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "범주 경계를 안전하게 다루는 대안.",
+   "summary": "원-핫 채널을 선형 보간 후 argmax하면 가짜 ID 없이 ID 마스크 복원. 실험(회전30°+0.5배): 최근접과 48/16384픽셀(0.3%)만 달랐음. 비용은 클래스 수 배.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "pin-dependency-versions",
@@ -93704,6 +93705,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "증강·로더를 CI에서 검증.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "one-hot-encoding-masks",
+   "label": "원-핫 마스크",
+   "parent": "soft-mask-argmax",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스별 채널로 마스크 표현.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "boundary-pixels-segmentation",
+   "label": "세그멘테이션 경계 픽셀",
+   "parent": "soft-mask-argmax",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경계 비중이 큰 작은 물체 문제.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "warpaffine-interpolation",
+   "label": "warpAffine과 보간 플래그",
+   "parent": "soft-mask-argmax",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "회전·축소에서 보간이 하는 일.",
    "added": "2026-11-27",
    "related": []
   }
