@@ -55354,11 +55354,12 @@
    "label": "우심증과 증강",
    "parent": "medical-flip-hazard",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "좌우 구조가 라벨인 경우 처리.",
+   "summary": "흉부 X선을 좌우 뒤집으면 심장이 오른쪽에 있는 우심증처럼 보임(arXiv 2407.09561 3.2.1). 위치가 진단 정보인 과제는 뒤집기 제외 또는 라벨 동반 변환.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "laterality-label-flip",
@@ -94135,6 +94136,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "템플릿 페이지가 만드는 군집.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "situs-inversus",
+   "label": "역위(situs inversus)",
+   "parent": "dextrocardia-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "장기 배치가 좌우 거울상인 상태.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "task-dependent-augmentation",
+   "label": "과제 의존적 증강 선택",
+   "parent": "dextrocardia-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "과제별로 허용 증강 정하기.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "medical-image-laterality-detection",
+   "label": "의료영상 좌우 판별",
+   "parent": "dextrocardia-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영상이 뒤집혔는지 탐지.",
    "added": "2026-11-27",
    "related": []
   }
