@@ -55890,11 +55890,12 @@
    "label": "접두사 범위 조회",
    "parent": "surt-key",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정렬 키로 도메인 전체 찾기.",
+   "summary": "WET 585개 SURT 키 정렬 후 bisect로 com,blogspot, 접두사 31개 구간 추출. uk,co, 접두사는 무관한 사이트 7개가 섞여 등록 도메인 경계(공개 접미사 목록) 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "public-suffix-list",
@@ -95496,6 +95497,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "공격적·보수적 정규화의 대가.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "binary-search-basics",
+   "label": "이진 탐색 기초",
+   "parent": "prefix-range-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정렬 목록에서 로그 시간 탐색.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "prefix-boundary-characters",
+   "label": "접두사 경계 문자",
+   "parent": "prefix-range-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "콤마·괄호로 도메인 경계 구분.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "domain-level-sampling",
+   "label": "도메인 단위 샘플링",
+   "parent": "prefix-range-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사이트별로 균등 추출.",
    "added": "2026-11-27",
    "related": []
   }
