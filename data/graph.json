@@ -54284,11 +54284,15 @@
    "label": "Slurm 배열 작업",
    "parent": "pipeline-executor-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "max_array_size와 작업 분할.",
+   "summary": "배열 번호→rank 복원: rank=배열번호+max_array_size×RUN_OFFSET, 한도 넘으면 여러 번 sbatch. 8000 task·한도 1001이면 8번 제출, workers는 %로 동시 실행 제한. 소스 로직 계산(sbatch 미실행).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "pipeline-executor-types",
+    "datatrove-fineweb-example"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "parallel-overhead-small-data",
@@ -92462,6 +92466,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "clip 방식과 이동 방식 구현이 결과에 미치는 영향.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tasks-per-job",
+   "label": "task 묶음 수",
+   "parent": "slurm-array-jobs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "slurm 작업 하나가 datatrove task 여러 개를 맡는 설정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "slurm-concurrency-limit",
+   "label": "동시 실행 제한",
+   "parent": "slurm-array-jobs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "배열 %N 제한과 공유 클러스터 예절.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "requeue-and-preemption",
+   "label": "재큐와 선점",
+   "parent": "slurm-array-jobs",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인스턴스가 회수될 때 작업을 다시 큐에 넣는 설정.",
    "added": "2026-11-27",
    "related": []
   }
