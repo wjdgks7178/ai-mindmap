@@ -54198,11 +54198,14 @@
    "label": "중복 제거와 출처 표기 손실",
    "parent": "memorization-from-duplicates",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "반복되는 출처 문구가 지워지는 부작용.",
+   "summary": "중복 제거는 사본의 출처·라이선스를 함께 버림. The Stack dedup 카드: 약 40% 중복, 같은 파일은 알파벳순 첫 저장소 정보만 표시. 제거된 사본 출처 목록 보관 제안.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "memorization-from-duplicates"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "duplicate-count-vs-memorization",
@@ -91608,6 +91611,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "실패한 단계만 skip_completed로 다시 돌리는 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "provenance-metadata",
+   "label": "출처 메타데이터 보관",
+   "parent": "attribution-loss-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 점마다 원본 URL·저장소·라이선스를 기록하는 설계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "license-aware-filtering",
+   "label": "라이선스 인식 필터링",
+   "parent": "attribution-loss-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "허용 라이선스만 남기는 필터와 탐지기의 정확도 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dedup-dups-field",
+   "label": "제거된 사본 목록 필드",
+   "parent": "attribution-loss-dedup",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "중복 제거 때 대표 하나에 사본 출처를 묶어 두는 방식.",
    "added": "2026-11-27",
    "related": []
   }
