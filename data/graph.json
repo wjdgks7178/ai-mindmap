@@ -54722,11 +54722,15 @@
    "label": "Cutout 경계 규칙",
    "parent": "cutout",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "경계 밖 허용 vs 50% 적용.",
+   "summary": "중심은 이미지 안 임의 좌표, 마스크는 경계 밖 허용(논문: 성능에 결정적). 32x32 s=16 계산: 경계 허용 평균 가려짐 19.1% vs 항상 안쪽 25.0%, 거의 안 가려진 예제 포함. 면적 분포만 본 계산.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "cutout",
+    "cutout-patch-size"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "input-dropout-vs-cutout",
@@ -92425,6 +92429,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "학생이 너무 작거나 크면 이득이 달라지는 이유.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mask-area-distribution",
+   "label": "마스크 면적 분포",
+   "parent": "cutout-boundary-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강이 만드는 가려짐 비율의 분포를 계산하는 법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "augmentation-apply-probability",
+   "label": "증강 적용 확률",
+   "parent": "cutout-boundary-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "증강을 일부 이미지에만 적용하는 비율과 효과.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "boundary-clipping-implementations",
+   "label": "경계 처리 구현 차이",
+   "parent": "cutout-boundary-rule",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "clip 방식과 이동 방식 구현이 결과에 미치는 영향.",
    "added": "2026-11-27",
    "related": []
   }
