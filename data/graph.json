@@ -54036,11 +54036,15 @@
    "label": "학습-평가 오염 탐지",
    "parent": "minhash-lsh-forest",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "유사 문서 top-k로 벤치마크 누출 점검.",
+   "summary": "13-gram은 교체율 30%에서 5/25만 탐지, MinHash Forest top-5는 24/25. 단 top-k는 항상 결과를 주므로 자카드 임계값 재확인 필요. 직접 실행 1회.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "data-contamination",
+    "clean-subset-reporting"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "semdedup",
@@ -90801,6 +90805,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "집합 자카드 top-k와 벡터 근사 최근접의 쓰임새 차이.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "contamination-threshold-choice",
+   "label": "오염 판정 임계값",
+   "parent": "train-test-contamination-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자카드·코사인 몇을 넘으면 오염인가.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "embedding-decontamination",
+   "label": "임베딩 기반 오염 제거",
+   "parent": "train-test-contamination-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코사인 0.8 기준 등 의미 유사 제거와 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "contamination-verify-llm-judge",
+   "label": "후보 LLM 최종 판정",
+   "parent": "train-test-contamination-lsh",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "top-k 후보를 LLM이 같은 문제인지 판정.",
    "added": "2026-11-27",
    "related": []
   }
