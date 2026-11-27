@@ -54262,11 +54262,14 @@
    "label": "skip_completed와 재개",
    "parent": "pipeline-executor-types",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "완료 표시로 중단 후 이어 돌리기.",
+   "summary": "task 완료마다 completions/에 빈 파일, 재실행 시 건너뜀. 직접 실행: rank 2 예외 후 재실행에서 0·1 건너뛰고 2·3만 처리. task 수 변경 금지, logging_dir 재사용 주의.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "pipeline-executor-types"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "slurm-array-jobs",
@@ -91239,6 +91242,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "분할 뒤 학습·시험 사이 남은 근접 중복을 재검사.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "datatrove-task-size",
+   "label": "task 크기 정하기",
+   "parent": "datatrove-skip-completed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "task가 크면 재시도 비용이 커지는 트레이드오프.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "datatrove-logging-dir-layout",
+   "label": "logging_dir 구조",
+   "parent": "datatrove-skip-completed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "completions·stats·logs 폴더와 stats.json 합산.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "datatrove-fail-fast-vs-continue",
+   "label": "실패 시 중단 vs 계속",
+   "parent": "datatrove-skip-completed",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "예외가 나면 남은 조각이 멈추는 동작과 대응.",
    "added": "2026-11-27",
    "related": []
   }
