@@ -56046,11 +56046,12 @@
    "label": "필터 순서와 비용",
    "parent": "classifier-inference-cost",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "싼 필터를 먼저 적용.",
+   "summary": "필터 5개(587문서) 비용·통과율 측정: 종결부호 줄 필터(44.7µs, 통과 0.47)를 앞에, fastText(380.7µs, 0.274)를 중간에 두면 예상 260 vs 최악 619µs/문서. 실측 230ms vs 421ms, 남은 문서 74개로 동일.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "annotation-sample-representativeness",
@@ -95927,6 +95928,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "트랜스포머 입력 길이 제약.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filter-independence-assumption",
+   "label": "필터 독립 가정",
+   "parent": "filter-order-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상관 있는 필터에서 순서 모델의 한계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "filter-removal-accounting",
+   "label": "필터별 제거량 기록",
+   "parent": "filter-order-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독립 적용으로 각 필터 영향 측정.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "cost-per-rejection-score",
+   "label": "탈락당 비용 점수",
+   "parent": "filter-order-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비용÷탈락률로 순서 정하기.",
    "added": "2026-11-27",
    "related": []
   }
