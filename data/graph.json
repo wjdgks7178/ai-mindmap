@@ -55627,11 +55627,12 @@
    "label": "tdmrep.json 파일",
    "parent": "tdm-reservation-protocol",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "location·tdm-reservation 규칙 배열.",
+   "summary": "/.well-known/tdmrep.json은 location·tdm-reservation(1 유보/0 비유보)·tdm-policy 규칙 배열. 우선순위 json<HTTP 헤더<HTML meta<EPUB·PDF 메타(뒤가 덮어씀), 일치 없으면 unset.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-27"
   },
   {
    "id": "tdm-policy-document",
@@ -94782,6 +94783,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "불일치 샘플 우선 검수.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tdm-reservation-http-header",
+   "label": "tdm-reservation HTTP 헤더",
+   "parent": "tdmrep-json-file",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권장되는 선언 방식.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tdm-meta-element",
+   "label": "TDM HTML meta 요소",
+   "parent": "tdmrep-json-file",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "HTML에서 TDM 예약 표시.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "tdm-precedence-order",
+   "label": "TDM 신호 우선순위",
+   "parent": "tdmrep-json-file",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "json→헤더→meta→문서 메타.",
    "added": "2026-11-27",
    "related": []
   }
