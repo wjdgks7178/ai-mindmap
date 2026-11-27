@@ -54662,11 +54662,14 @@
    "label": "베타 분포의 모양",
    "parent": "mixup-beta-alpha",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "α에 따라 U자·균등·종 모양.",
+   "summary": "Beta(α,α): α<1 U자, =1 균등, >1 종 모양, 분산 1/(4(2α+1)). 직접 계산: α=0.2에서 극단(0.1 미만/0.9 초과) 확률 0.673, α=4는 0.005. MixUp 혼합 강도 해석.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "mixup-beta-alpha"
+   ],
+   "done": "2026-11-27"
   },
   {
    "id": "underfitting-from-mixup",
@@ -92167,6 +92170,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "차이가 없다는 결과를 실험 한계와 함께 기록하는 방법.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "beta-variance-formula",
+   "label": "베타 분포 분산 공식",
+   "parent": "beta-distribution-shape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대칭 베타의 분산 1/(4(2α+1))와 α의 관계.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "mixup-alpha-selection",
+   "label": "MixUp α 고르기",
+   "parent": "beta-distribution-shape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터셋별 α 후보와 선택 절차.",
+   "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "u-shaped-distribution",
+   "label": "U자 분포 직관",
+   "parent": "beta-distribution-shape",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "양 끝에 질량이 몰린 분포가 의미하는 것.",
    "added": "2026-11-27",
    "related": []
   }
