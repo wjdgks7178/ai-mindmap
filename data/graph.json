@@ -88167,13 +88167,13 @@
    "domain": "physical-ai",
    "status": "done",
    "priority": 5,
-   "summary": "웹 시각-언어+로봇 궤적 공동 학습, 행동을 텍스트 토큰으로. 6,000회 평가에서 새 물체 일반화, 기초 추론, 사고의 연쇄로 다단계 문제.",
+   "summary": "VLM을 로봇 데이터와 웹 과제로 공동 미세조정, 행동을 텍스트 토큰으로. 6천 평가, 새 물체 일반화·새 명령·기초 추론·사고 연쇄 추론(초록). 정량 수치·모델 크기는 이번 출처에 없음.",
    "added": "2026-11-26",
    "related": [
     "openvla",
     "pi0"
    ],
-   "done": "2026-11-26"
+   "done": "2026-11-28"
   },
   {
    "id": "sim-to-real-gap",
@@ -100340,6 +100340,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "성능 유지한 채 서빙 비용 절감.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "actions-as-text",
+   "label": "행동을 텍스트로",
+   "parent": "rt-2",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동을 토큰으로 바꿔 언어와 같은 형식으로.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "emergent-reasoning-robot",
+   "label": "로봇의 창발적 추론",
+   "parent": "rt-2",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 데이터에 없던 의미 추론.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "rt-2-evaluation-trials",
+   "label": "RT-2 평가 시행",
+   "parent": "rt-2",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "6천 번 평가의 구성.",
    "added": "2026-11-28",
    "related": []
   }
