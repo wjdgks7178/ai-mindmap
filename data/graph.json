@@ -96080,11 +96080,12 @@
    "label": "모방 학습 vs 강화학습",
    "parent": "imitation-learning",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "보상 없이 따라 하기와 보상으로 시행착오하기의 비교.",
+   "summary": "모방=시연 필요·보상 불필요, 강화=보상·탐색 필요. ACT 80~90%(저자 보고), R1 초록 RL만으로 추론, robomimic: 오프라인 RL은 비최적 사람 데이터에 약함. 분야가 달라 직접 비교 아님.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "cvae-in-act",
@@ -99945,6 +99946,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "겹치는 예측을 섞어 끊김 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "imitation-then-rl",
+   "label": "모방 후 강화학습",
+   "parent": "imitation-vs-rl",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모방으로 시작해 RL로 다듬는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "offline-rl",
+   "label": "오프라인 강화학습",
+   "parent": "imitation-vs-rl",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고정 데이터로 RL을 하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reward-design-cost",
+   "label": "보상 설계 비용",
+   "parent": "imitation-vs-rl",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보상 정의의 어려움.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "demonstration-ceiling",
+   "label": "시연자 상한",
+   "parent": "imitation-vs-rl",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모방 성능이 시연 수준에 묶임.",
    "added": "2026-11-28",
    "related": []
   }
