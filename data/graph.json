@@ -5200,11 +5200,12 @@
    "label": "채점기 교정",
    "parent": "rubric-design",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "심사 LLM을 사람 채점과 맞추는 절차.",
+   "summary": "심판 LLM을 사람 라벨과 맞추는 절차. MT-bench: GPT-4-사람 S2 일치율 85% vs 사람끼리 81%. 수학 채점 실패 기본 14/20→CoT 6/20→참조 답 3/20(2023년 모델 기준).",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "position-bias",
@@ -97927,6 +97928,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "무승부 포함 여부에 따른 일치율 정의.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "agreement-rate",
+   "label": "일치율",
+   "parent": "grader-calibration",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 채점자가 같은 표를 던지는 확률.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "human-label-sampling",
+   "label": "사람 라벨 표본",
+   "parent": "grader-calibration",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교정용으로 소량 사람 채점을 모으기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "recalibrate-on-change",
+   "label": "변경 시 재교정",
+   "parent": "grader-calibration",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델·프롬프트가 바뀌면 다시 재기.",
    "added": "2026-11-28",
    "related": []
   }
