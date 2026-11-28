@@ -5759,11 +5759,12 @@
    "label": "언어별 토큰 수",
    "parent": "token-pricing",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "한국어가 영어보다 토큰이 더 드는 이유.",
+   "summary": "직접 측정(tiktoken, 문장 1개): cl100k_base 영어 16·한국어 48·일본어 45토큰, o200k_base 15·27·31토큰. 한국어/영어 비율 약 3배→1.8배. 표본 1개·번역문이라 일반화 금물.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "cost-estimation-sheet",
@@ -98391,6 +98392,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "청크 전략의 효과를 직접 측정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "token-cost-estimation-korean",
+   "label": "한국어 토큰 비용 추산",
+   "parent": "tokenizer-language",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실제 토큰 수로 비용 계산하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tokenizer-vocabulary-size",
+   "label": "토크나이저 어휘 크기",
+   "parent": "tokenizer-language",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어휘가 커지면 다국어 분할이 덜 잘게 되는 경향.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "token-counting-tools",
+   "label": "토큰 계산 도구",
+   "parent": "tokenizer-language",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공급사별 토큰 카운터 사용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "multilingual-token-fairness",
+   "label": "다국어 토큰 공정성",
+   "parent": "tokenizer-language",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "언어별 비용 격차 문제.",
    "added": "2026-11-28",
    "related": []
   }
