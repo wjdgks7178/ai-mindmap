@@ -56167,11 +56167,14 @@
    "label": "주석 표본 대표성",
    "parent": "annotate-then-distill",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "소량 표본이 전체를 대표해야 하는 이유.",
+   "summary": "FineWeb-Edu 모델 카드: 홀드아웃 46,867개 중 5점은 125개뿐, 5점 F1 0.02·매크로 F1 0.50(이진 F1 82%). 표본에 드문 구간은 못 배움. 모델 카드가 대표성·OOD 한계를 명시.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "gold-set-check",
@@ -101168,6 +101171,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "걸러 낸 데이터로 작은 모델을 학습해 평가하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "stratified-annotation-sampling",
+   "label": "층화 주석 표본",
+   "parent": "annotation-sample-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "희귀 점수 구간을 더 뽑아 균형 맞추기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "class-imbalance-in-annotations",
+   "label": "주석 클래스 불균형",
+   "parent": "annotation-sample-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "점수 분포가 한쪽에 쏠릴 때의 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ood-classifier-reannotation",
+   "label": "분포 밖 데이터 재주석",
+   "parent": "annotation-sample-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "적용 대상이 바뀌면 새 표본에 다시 라벨 달기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "llm-label-vs-human-label-check",
+   "label": "LLM 라벨 vs 사람 라벨 점검",
+   "parent": "annotation-sample-representativeness",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "사람 정답 소량으로 LLM 주석을 검증하기.",
    "added": "2026-11-28",
    "related": []
   }
