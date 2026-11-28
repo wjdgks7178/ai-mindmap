@@ -1205,11 +1205,12 @@
    "label": "AI를 학생으로 두고 가르치기",
    "parent": "feynman-technique",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "AI에게 순진한 학생 역할을 시켜 내 설명의 빈틈을 찾는 프롬프트 방식.",
+   "summary": "AI에게 초보 학생 역할을 시켜 설명하며 빈틈 찾기. Betty's Brain의 프로테제 효과 연구, 2025 LLM 실험은 오류 진단 시 평균 +0.72점(1~6점, 예비 결과).",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "curse-of-knowledge",
@@ -96943,6 +96944,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "답을 주지 않고 흐름만 잡는 교사.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "protege-effect",
+   "label": "프로테제 효과",
+   "parent": "explain-to-ai-student",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가르칠 때 더 많이 배우는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bettys-brain",
+   "label": "Betty's Brain",
+   "parent": "explain-to-ai-student",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가상 학생을 가르치는 Vanderbilt 학습 시스템.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "llm-protege-error-diagnosis",
+   "label": "LLM 오류 진단 학습",
+   "parent": "explain-to-ai-student",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일부러 틀린 LLM의 오류를 찾아내는 활동.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "naive-student-prompt",
+   "label": "순진한 학생 프롬프트",
+   "parent": "explain-to-ai-student",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "되묻기만 하게 하는 역할 지시문.",
    "added": "2026-11-28",
    "related": []
   }
