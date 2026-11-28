@@ -26737,11 +26737,12 @@
    "label": "Best-of-N 샘플링",
    "parent": "reward-model",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "여러 답 중 보상 점수 최고를 고르는 간단한 정렬 기법.",
+   "summary": "N개 생성 후 보상·검증 점수 최고를 선택. Snell 2024 초록: 적응적 연산 배분이 best-of-N 대비 4배+ 효율. 보상 과최적화 위험은 일반 지식.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "bradley-terry-model",
@@ -98718,6 +98719,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "과정 감독의 데이터 비용 부담.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reward-overoptimization",
+   "label": "보상 과최적화",
+   "parent": "best-of-n",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보상 모델의 허점을 이용해 점수만 오르는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "parallel-sampling",
+   "label": "병렬 샘플링",
+   "parent": "best-of-n",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "N개를 동시에 생성해 지연을 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "verifier-selection",
+   "label": "검증기 선택",
+   "parent": "best-of-n",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "점수를 내는 검증기의 종류.",
    "added": "2026-11-28",
    "related": []
   }
