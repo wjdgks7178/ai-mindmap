@@ -1296,11 +1296,12 @@
    "label": "지식 추적",
    "parent": "recursive-gap-filling",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "학습자가 무엇을 아는지 시간에 따라 추정하는 교육 AI 기술.",
+   "summary": "학습 기록으로 지식 상태를 시간에 따라 추정. Piech 2015 DKT: RNN으로 도메인 코딩 없이 여러 데이터셋에서 성과 예측 크게 향상(초록에 수치 없음).",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "zone-of-proximal-development",
@@ -97622,6 +97623,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "문장 구조를 바꿔 이해를 확인하는 평가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "deep-knowledge-tracing",
+   "label": "Deep Knowledge Tracing",
+   "parent": "knowledge-tracing",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "RNN으로 학습자 지식을 추적한 연구.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bayesian-knowledge-tracing",
+   "label": "베이지안 지식 추적",
+   "parent": "knowledge-tracing",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "숨은 상태 모델로 숙달을 추정하는 전통 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "adaptive-practice-recommendation",
+   "label": "적응형 문제 추천",
+   "parent": "knowledge-tracing",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추정된 약점에 맞춰 문제를 고르기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mastery-vs-prediction",
+   "label": "숙달 vs 예측 정확도",
+   "parent": "knowledge-tracing",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답 예측이 이해와 같지 않다는 점.",
    "added": "2026-11-28",
    "related": []
   }
