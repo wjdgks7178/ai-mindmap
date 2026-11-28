@@ -30301,11 +30301,12 @@
    "label": "굿하트의 법칙",
    "parent": "proxy-metric",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "지표가 목표가 되면 좋은 지표가 아니게 된다는 법칙.",
+   "summary": "1975 Goodhart 원 문장, Strathern 1997 짧은 형태 '측정이 목표가 되면 좋은 측정이 아니다'. 캠벨의 법칙과 관련. AI 연결은 Gao 2022 초록. 4가지 변형은 미조사.",
    "added": "2026-11-17",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "specification-gaming",
@@ -100800,6 +100801,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "여러 보상 모델로 허점 이용을 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "campbells-law",
+   "label": "캠벨의 법칙",
+   "parent": "goodharts-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사회 지표가 부패 압력에 노출.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "metric-gaming",
+   "label": "지표 조작",
+   "parent": "goodharts-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지표를 올리는 편법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ai-kpi-design",
+   "label": "AI 성과 지표 설계",
+   "parent": "goodharts-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용 횟수 등 지표의 부작용 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "goodhart-variants",
+   "label": "굿하트 변형",
+   "parent": "goodharts-law",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Manheim·Garrabrant의 분류(미조사).",
    "added": "2026-11-28",
    "related": []
   }
