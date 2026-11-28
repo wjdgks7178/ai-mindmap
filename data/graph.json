@@ -56909,11 +56909,15 @@
    "label": "라벨링 총비용 계산",
    "parent": "annotation-cost-comparison",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "단가·검수·재작업·골드 셋 합산.",
+   "summary": "총비용=건수×단가+검수+재작업+골드. Gilardi 2023: ChatGPT 건당 0.003달러 미만, MTurk 약 20배 저렴. 가상 계산(가정): 10만 건 크라우드 약 1.42만, LLM 단독 0.48만, LLM+검수 20% 약 1.13만 달러.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "annotation-cost-comparison",
+    "gold-set-check"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "llm-annotator-confidence-routing",
@@ -102681,6 +102685,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정보가 많은 소수 샘플만 골라 증강.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "labeling-cost-sensitivity",
+   "label": "라벨링 비용 민감도 분석",
+   "parent": "total-labeling-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "오류율·검수율 가정이 총비용에 미치는 영향.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "rework-cost-of-errors",
+   "label": "오류 재작업 비용",
+   "parent": "total-labeling-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 라벨을 다시 만드는 비용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "review-rate-tradeoff",
+   "label": "검수율 절충",
+   "parent": "total-labeling-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "검수를 늘릴수록 오류는 줄고 비용은 늘어남.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gold-set-cost",
+   "label": "골드 세트 제작 비용",
+   "parent": "total-labeling-cost",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답 세트를 만드는 데 드는 비용.",
    "added": "2026-11-28",
    "related": []
   }
