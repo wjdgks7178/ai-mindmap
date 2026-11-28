@@ -5661,11 +5661,12 @@
    "label": "검증 체크리스트",
    "parent": "discernment-skill",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "수치·인용·코드를 확인하는 순서.",
+   "summary": "수치·인용·코드를 위험 순으로 검증. 근거: AI Fluency의 배포 diligence(결과 검증·보증 책임), Chain-of-Verification 4단계(초안→검증 질문→독립 답변→수정; 초록, 수치 없음). 6단계 점검표는 내 정리.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "retry-budget",
@@ -99372,6 +99373,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "긴 작업의 중간 산출물 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "chain-of-verification",
+   "label": "Chain-of-Verification",
+   "parent": "verification-checklist",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델이 검증 질문을 만들어 스스로 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "citation-existence-check",
+   "label": "인용 실재 확인",
+   "parent": "verification-checklist",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "링크를 열어 내용이 실제로 있는지 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "high-risk-claim-marking",
+   "label": "고위험 주장 표시",
+   "parent": "verification-checklist",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "수치·법규 등 확인 우선 대상 표시.",
    "added": "2026-11-28",
    "related": []
   }
