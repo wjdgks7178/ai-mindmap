@@ -27534,11 +27534,12 @@
    "label": "롱테일 문제",
    "parent": "autonomous-driving",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "드문 상황이 무한히 많아 완전 자동화가 어려운 이유.",
+   "summary": "희귀·고위험 상황이 끝없이 많아 데이터 확대만으로 해결이 어려운 문제. curse of rarity(arXiv 2207.02749)는 희귀성과 고차원성의 결합으로 설명.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "robots-as-a-service",
@@ -96288,6 +96289,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "자율주행 인식·예측 공개 벤치마크.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "curse-of-rarity",
+   "label": "희귀성의 저주",
+   "parent": "long-tail-problem",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "안전 사건이 드물어 학습·검증이 어려운 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "scenario-mining",
+   "label": "시나리오 마이닝",
+   "parent": "long-tail-problem",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터 속 희귀 위험 사례를 찾는 작업.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "simulation-for-rare-events",
+   "label": "희귀 사건 시뮬레이션",
+   "parent": "long-tail-problem",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "합성 시나리오로 롱테일을 보충.",
    "added": "2026-11-28",
    "related": []
   }
