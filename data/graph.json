@@ -56785,11 +56785,15 @@
    "label": "OCR 오류 패턴",
    "parent": "machine-generated-web-text",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "철자 오류·누락 단어 등 예측 가능한 오류.",
+   "summary": "van Strien 2020: 한 글자 OCR 오류가 문장 분리를 깨고, 사람 NER F 0.87→0.63·GPE 0.76→0.54(품질 구간 1→4). 글자 모양 혼동(T→I, H→B). 영어 역사 신문 대상, 한국어는 미검증.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "multimodal",
+    "ai-generated-web-contamination"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "mt-translationese",
@@ -102585,6 +102589,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 깨끗한 데이터로 번역문 품질을 거르기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ocr-quality-bands",
+   "label": "OCR 품질 구간",
+   "parent": "ocr-error-patterns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Levenshtein 거리로 OCR 품질을 구간화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ocr-character-confusion",
+   "label": "OCR 글자 혼동",
+   "parent": "ocr-error-patterns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모양이 비슷한 글자로 잘못 읽는 패턴.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sentence-segmentation-fragility",
+   "label": "문장 분리의 취약성",
+   "parent": "ocr-error-patterns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 글자 오류가 문장 경계를 바꾸는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ocr-post-correction",
+   "label": "OCR 후처리 교정",
+   "parent": "ocr-error-patterns",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "글자 혼동 규칙과 사전으로 오류 고치기.",
    "added": "2026-11-28",
    "related": []
   }
