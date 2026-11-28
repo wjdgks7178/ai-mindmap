@@ -27838,11 +27838,12 @@
    "label": "로컬+API 혼합",
    "parent": "model-hosting-options",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "쉬운 작업은 로컬, 어려운 작업은 API로 보내는 구성.",
+   "summary": "라우터가 쉬운 질의는 로컬 소형, 어려운 질의는 API로. Hybrid LLM은 22%를 13B로 보내 품질 하락 1% 미만(논문 보고). RouteLLM의 독립 검증 절감률은 미확인.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "cost-per-success",
@@ -96695,6 +96696,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "같은 모델 급으로 비용을 비교하는 원칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "llm-router",
+   "label": "LLM 라우터",
+   "parent": "hybrid-local-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질의 난이도를 보고 모델을 고르는 구성요소.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "routellm",
+   "label": "RouteLLM",
+   "parent": "hybrid-local-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "선호 데이터로 학습한 오픈소스 라우팅 프레임워크.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "router-threshold-calibration",
+   "label": "라우팅 임계값 보정",
+   "parent": "hybrid-local-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비용-품질 균형을 질의 분포에 맞추기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "privacy-first-routing",
+   "label": "프라이버시 우선 라우팅",
+   "parent": "hybrid-local-api",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "민감 질의를 항상 로컬로 보내는 규칙.",
    "added": "2026-11-28",
    "related": []
   }
