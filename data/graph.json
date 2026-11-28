@@ -26702,11 +26702,12 @@
    "label": "KTO",
    "parent": "dpo",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "쌍 대신 좋다/나쁘다 단일 라벨로 학습하는 방법.",
+   "summary": "전망 이론 기반으로 쌍이 아닌 좋다/나쁘다 이진 신호만으로 정렬. 저자 주장: 1B~30B에서 선호 기반 방법과 동등 이상(초록). HALO 개념.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "preference-dataset",
@@ -98583,6 +98584,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "대표성과 다양성을 고려한 예시 고르기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "halo-loss",
+   "label": "HALO 손실",
+   "parent": "kto",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람의 편향을 담은 정렬 손실 계열.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "prospect-theory",
+   "label": "전망 이론",
+   "parent": "kto",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이득보다 손실에 민감한 인간 효용 모형.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "thumbs-feedback-data",
+   "label": "엄지 피드백 데이터",
+   "parent": "kto",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쌍이 아닌 단일 피드백 활용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "binary-signal-alignment",
+   "label": "이진 신호 정렬",
+   "parent": "kto",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "바람직/비바람직 라벨로 정렬.",
    "added": "2026-11-28",
    "related": []
   }
