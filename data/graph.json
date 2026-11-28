@@ -57039,11 +57039,15 @@
    "label": "C4 코퍼스 감사",
    "parent": "blocklist-filter-bias",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "C4 내용·출처·오염을 문서화한 연구.",
+   "summary": "Dodge 2021: C4를 메타데이터·포함·제외 3관점 감사. patents.google.com 최다(기계 번역·OCR), 미국 호스팅 51.3%, GLUE 입력 오염 최고 QNLI 문장 53.6%, 금지어 필터 AAE 42% 제거. 2019년 4월 크롤 기준.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-safety",
+    "excluded-data-report"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "classifier-toxicity-filter",
@@ -103369,6 +103373,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "출처를 밝히지 않는 모델의 한계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "patents-machine-translated-text",
+   "label": "특허 기계 번역 텍스트",
+   "parent": "c4-corpus-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "patents.google.com의 기계 번역·OCR 비중.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "glue-input-contamination",
+   "label": "GLUE 입력 오염",
+   "parent": "c4-corpus-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GLUE 테스트 입력이 C4에 포함된 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "target-text-contamination",
+   "label": "타깃 텍스트 오염",
+   "parent": "c4-corpus-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성 과제의 정답 텍스트가 말뭉치에 있는 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "audit-three-views",
+   "label": "감사의 세 관점",
+   "parent": "c4-corpus-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "메타데이터·포함·제외 텍스트로 나누어 문서화.",
    "added": "2026-11-28",
    "related": []
   }
