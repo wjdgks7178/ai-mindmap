@@ -57000,11 +57000,15 @@
    "label": "ablation 실험 설계",
    "parent": "nanotron-lighteval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한 번에 하나만 바꿔 비교.",
+   "summary": "데이터만 바꾸고 모델·토큰·평가 고정. FineWeb: 1.71B, 배치 200만 토큰, 280억 토큰, 버전당 서로 다른 표본·시드 2개, 고정 벤치마크 8개. 필터를 하나씩 추가해 누적 효과 확인.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "nanotron-lighteval"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "c4-corpus-audit",
@@ -102948,6 +102952,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "옵티마이저 상태를 GPU에 나눠 저장.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "control-variables-list",
+   "label": "통제 변수 목록",
+   "parent": "ablation-experiment-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "고정할 모델·토큰·시드·평가 항목 문서화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "adoption-criterion-preregistration",
+   "label": "채택 기준 사전 정하기",
+   "parent": "ablation-experiment-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "결과 보기 전에 채택 기준을 정해 두기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cumulative-filter-ablation",
+   "label": "누적 필터 ablation",
+   "parent": "ablation-experiment-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "필터를 하나씩 더하며 누적 효과 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "release-ablation-models",
+   "label": "ablation 모델 공개",
+   "parent": "ablation-experiment-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실험 모델을 공개해 재현 가능하게 하기.",
    "added": "2026-11-28",
    "related": []
   }
