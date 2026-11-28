@@ -5348,11 +5348,12 @@
    "label": "캐시 TTL",
    "parent": "prompt-caching",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "5분과 1시간 중 고르는 기준.",
+   "summary": "기본 5분(사용 시 무료 갱신), 1시간 TTL 선택 가능. 쓰기 5분 1.25배·1시간 2배·읽기 0.1배(모델별 예외 0.05·0.025배). Sonnet 5.5 예: 입력 $2, 쓰기 $2.5/$4, 읽기 $0.10(문서 2026-11-28).",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "cache-invalidation",
@@ -98006,6 +98007,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "미만이면 조용히 캐시되지 않는 한계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cache-write-multiplier",
+   "label": "캐시 쓰기 배수",
+   "parent": "cache-ttl",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "TTL별 쓰기 가격 배수 1.25배·2배.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cache-read-discount",
+   "label": "캐시 읽기 할인",
+   "parent": "cache-ttl",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "읽기 토큰이 기본가의 0.1배 이하인 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ttl-break-even",
+   "label": "TTL 손익 계산",
+   "parent": "cache-ttl",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "호출 간격으로 5분 vs 1시간을 고르는 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cache-refresh-on-use",
+   "label": "사용 시 갱신",
+   "parent": "cache-ttl",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쓸 때마다 수명이 무료 연장되는 규칙.",
    "added": "2026-11-28",
    "related": []
   }
