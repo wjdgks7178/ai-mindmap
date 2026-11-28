@@ -56788,11 +56788,15 @@
    "label": "데이터시트",
    "parent": "corpus-documentation-practice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터셋 문서화 선행 제안.",
+   "summary": "Gebru 2018 데이터시트: 동기·구성·수집·전처리·용도·배포·유지보수 7섹션 질문. 제작자 성찰+사용자 판단 정보. 데이터 카드·모델 카드의 원조. 자기 보고 한계는 남음.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "data-card-reading"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "excluded-data-report",
@@ -103838,6 +103842,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "EU DB 지침이 한국에서 직접 적용되지 않는 점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "datasheet-motivation-section",
+   "label": "데이터시트: 동기 섹션",
+   "parent": "datasheet-for-datasets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "왜·누가·누구를 위해 만들었나.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "datasheet-composition-section",
+   "label": "데이터시트: 구성 섹션",
+   "parent": "datasheet-for-datasets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "표본 대표성과 잡음·민감 내용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "datasheet-maintenance-section",
+   "label": "데이터시트: 유지보수 섹션",
+   "parent": "datasheet-for-datasets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "업데이트·버전 지원·연락처.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "datasheet-before-collection",
+   "label": "수집 전에 데이터시트 작성",
+   "parent": "datasheet-for-datasets",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질문에 먼저 답해 설계를 점검.",
    "added": "2026-11-28",
    "related": []
   }
