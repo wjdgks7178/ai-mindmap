@@ -10458,11 +10458,12 @@
    "label": "적응형 생각(adaptive thinking)",
    "parent": "reasoning-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "모델이 질문마다 생각 여부와 분량을 스스로 정하는 방식.",
+   "summary": "모델이 요청마다 생각 여부·분량을 스스로 결정. effort가 주 제어, 생각 토큰은 출력으로 과금·max_tokens에 포함. Opus 5.5는 항상 켜짐(공식 문서 2026-11-28).",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "effort-parameter",
@@ -97033,6 +97034,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "단순 하위 작업에 낮은 effort를 쓰는 패턴.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "interleaved-thinking",
+   "label": "인터리브 생각",
+   "parent": "adaptive-thinking",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구 호출 사이사이에 생각하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "between-tools-thinking",
+   "label": "between_tools 모드",
+   "parent": "adaptive-thinking",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구 사이에서만 생각하고 처음엔 바로 응답하는 설정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "thinking-block-handling",
+   "label": "생각 블록 다루기",
+   "parent": "adaptive-thinking",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이전 턴 생각 블록을 수정 없이 되돌려 보내기.",
    "added": "2026-11-28",
    "related": []
   }
