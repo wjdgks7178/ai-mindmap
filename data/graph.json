@@ -5762,11 +5762,12 @@
    "label": "출력 토큰 비용",
    "parent": "token-pricing",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "출력이 비싼 이유와 답변 길이 줄이기.",
+   "summary": "Claude 가격표(2026-11-28 열람): 출력 단가가 입력의 5배(Sonnet 5.5 $2/$10, Opus 5 $5/$25, Haiku 5.5 $0.10/$0.50). 생각 토큰도 출력 과금. 직접 계산: 입력 2,000+출력 500 = $0.009.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "tokenizer-language",
@@ -99496,6 +99497,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "ZDR 조직의 브라우저 직접 호출 금지.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "answer-length-control",
+   "label": "답변 길이 제어",
+   "parent": "output-token-cost",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트로 출력 길이를 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "structured-output-cost",
+   "label": "구조화 출력과 비용",
+   "parent": "output-token-cost",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "필요한 필드만 출력해 토큰 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "monthly-output-cost-estimate",
+   "label": "월 출력 비용 추정",
+   "parent": "output-token-cost",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "건수×출력 토큰×단가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "price-change-risk",
+   "label": "가격 변동 위험",
+   "parent": "output-token-cost",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가격표가 바뀌는 점과 재확인.",
    "added": "2026-11-28",
    "related": []
   }
