@@ -96152,11 +96152,12 @@
    "label": "Diffusion Policy",
    "parent": "umi-gripper",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "행동 생성에 확산 모델을 쓰는 정책.",
+   "summary": "행동을 조건부 확산(노이즈 제거)으로 생성. 저자 보고: 4 벤치마크 12과제에서 기존 최고 대비 평균 46.9%↑, 다봉 분포·고차원·안정 학습. 46.9%의 기준은 초록으로 미확인.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "relative-trajectory-action",
@@ -100204,6 +100205,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "최대치 표현의 해석 주의.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "multimodal-action-distribution",
+   "label": "다봉 행동 분포",
+   "parent": "diffusion-policy",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 상황에 여러 좋은 행동이 있는 경우.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "receding-horizon-control",
+   "label": "후퇴 시야 제어",
+   "parent": "diffusion-policy",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 계획을 내고 앞부분만 실행하며 다시 계획.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "denoising-diffusion",
+   "label": "노이즈 제거 확산",
+   "parent": "diffusion-policy",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "잡음에서 반복 정제로 샘플을 만드는 생성 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "diffusion-transformer-policy",
+   "label": "시계열 확산 트랜스포머",
+   "parent": "diffusion-policy",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시계열 행동에 쓰는 확산 트랜스포머.",
    "added": "2026-11-28",
    "related": []
   }
