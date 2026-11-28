@@ -56940,11 +56940,15 @@
    "label": "주석자 일치도 지표",
    "parent": "annotation-cost-comparison",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "코헨 카파 등 일치도 측정.",
+   "summary": "κ=(pₒ−pₑ)/(1−pₑ)(scikit-learn 문서). 직접 계산: 같은 90% 일치도 균형 라벨 κ 0.80, 쏠린 라벨 κ 0.23. 크리펜도르프 α는 여러 명·결측 허용. 일치도는 타당성이 아님.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "gold-set-check",
+    "reliability-vs-validity"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "data-privacy-in-annotation",
@@ -102778,6 +102782,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값을 맞추기 위한 사람 정답 데이터.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "prevalence-paradox-kappa",
+   "label": "유병률 역설(카파)",
+   "parent": "annotator-agreement-metrics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일치율이 같아도 쏠린 라벨에서 κ가 낮아지는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pairwise-vs-overall-agreement",
+   "label": "쌍별 vs 전체 일치도",
+   "parent": "annotator-agreement-metrics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자 쌍별 κ와 전체 α를 함께 보기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "human-agreement-ceiling",
+   "label": "사람 일치도 상한",
+   "parent": "annotator-agreement-metrics",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM 일치도를 해석하는 기준선.",
    "added": "2026-11-28",
    "related": []
   }
