@@ -5742,11 +5742,12 @@
    "label": "데이터 거주성",
    "parent": "api-vs-self-host",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "데이터가 어느 나라 서버에 있어야 하는지의 규제.",
+   "summary": "데이터가 저장·처리될 위치 요건. 추론 위치도 처리 행위, 거주성≠주권. 공급사 조건은 출처마다 엇갈려 현행 여부 확인 필요. 대부분 업체 블로그 요약, 한국 요건은 미조사.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "private-endpoint",
@@ -99676,6 +99677,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "API 업체 글의 이해관계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "data-sovereignty",
+   "label": "데이터 주권",
+   "parent": "data-residency",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "위치한 곳의 법과 접근 강제 권한.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "inference-location",
+   "label": "추론 위치",
+   "parent": "data-residency",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "API 호출이 처리되는 리전.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sccs-and-tia",
+   "label": "SCC와 이전 영향평가",
+   "parent": "data-residency",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "EEA 밖 이전의 일반 수단.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "korea-data-rules",
+   "label": "한국 데이터 규정",
+   "parent": "data-residency",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "국내 개인정보 규정 확인(미조사).",
    "added": "2026-11-28",
    "related": []
   }
