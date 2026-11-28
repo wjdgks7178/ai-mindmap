@@ -56295,11 +56295,15 @@
    "label": "데이터 표본 잡음",
    "parent": "two-seed-averaging",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "부분집합 선택이 점수에 미치는 영향.",
+   "summary": "FineWeb: 버전마다 다른 무작위 부분집합+다른 시드 2개 평균. Signal and Noise: SNR=신호÷체크포인트 잡음, 결정 정확도와 R=0.791. 고SNR 하위과제·체크포인트 평균·BPB로 개선. 재표집만의 잡음 수치는 미확인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "seed-noise-vs-effect"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "random-baseline-check",
@@ -101482,6 +101486,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "작게 거르고 유망한 것만 크게 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "benchmark-signal-to-noise",
+   "label": "벤치마크 신호 대 잡음비",
+   "parent": "data-subset-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "신호÷잡음으로 벤치마크의 비교 능력 재기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "checkpoint-averaging-eval",
+   "label": "체크포인트 평균 평가",
+   "parent": "data-subset-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마지막 체크포인트 점수를 평균해 잡음 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bits-per-byte-metric",
+   "label": "bits-per-byte 지표",
+   "parent": "data-subset-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확도 대신 로그우도 기반 지표를 쓰는 이유.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "decision-accuracy-small-scale",
+   "label": "소규모 결정 정확도",
+   "parent": "data-subset-noise",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 모델 순위가 큰 모델 순위를 맞히는 비율.",
    "added": "2026-11-28",
    "related": []
   }
