@@ -56310,11 +56310,15 @@
    "label": "무작위 기준선 점검",
    "parent": "benchmark-selection-small-scale",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "점수가 우연 수준인지 확인.",
+   "summary": "표준 기준선(MMLU 25%)만으론 부족: Yauney·Mimno 2024는 최대 무작위 기준선 제안, 표준 기준선 초과 결과의 20% 넘게가 이를 못 넘음. 이진 100문항·20회 시도 시 찍기 최고 기대 0.593(직접 계산).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "seed-noise-vs-effect"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "benchmark-truncation",
@@ -101530,6 +101534,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "작은 모델 순위가 큰 모델 순위를 맞히는 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "max-random-baseline",
+   "label": "최대 무작위 기준선",
+   "parent": "random-baseline-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 분류기 여러 개의 최대 정확도 기대값.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "validation-set-reuse",
+   "label": "검증셋 재사용 문제",
+   "parent": "random-baseline-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "프롬프트를 고르며 같은 검증셋을 반복해 쓰는 위험.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "answer-shuffle-robustness",
+   "label": "보기 섞기 견고성",
+   "parent": "random-baseline-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "보기 순서·내용을 바꿔도 점수가 유지되는가.",
    "added": "2026-11-28",
    "related": []
   }
