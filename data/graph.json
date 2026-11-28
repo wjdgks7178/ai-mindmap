@@ -56196,11 +56196,15 @@
    "label": "증류 분류기 평가",
    "parent": "annotate-then-distill",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "LLM 대비 일치율·F1 측정.",
+   "summary": "교사(LLM) 대비 F1은 중간 지표(FineWeb-Edu: 이진 F1 82%, 매크로 F1 0.50), 최종은 걸러 낸 데이터로 학습한 모델 성능. Kong 2024: 75% 제거로 FLOPs 70% 이하에 동일 품질(초록).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "gold-set-check"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "position-swap-judging",
@@ -101241,6 +101245,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "LLM이 사람 한 명을 대체 가능한지 TOST로 검정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "per-class-metrics",
+   "label": "클래스별 정밀도·재현율",
+   "parent": "distilled-classifier-eval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균 지표가 숨기는 희귀 클래스 약점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "threshold-sweep-f1",
+   "label": "임계값별 F1 곡선",
+   "parent": "distilled-classifier-eval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값을 바꿀 때 정밀도·재현율 변화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "llm-guided-document-selection",
+   "label": "LLM 안내 문서 선택",
+   "parent": "distilled-classifier-eval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Kong 2024: LLM 라벨 증류로 말뭉치 75% 제거.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "error-sample-inspection",
+   "label": "오분류 표본 눈검사",
+   "parent": "distilled-classifier-eval",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "틀린 문서를 직접 읽어 원인 찾기.",
    "added": "2026-11-28",
    "related": []
   }
