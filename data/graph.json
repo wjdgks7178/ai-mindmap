@@ -27496,11 +27496,12 @@
    "label": "CLIP의 한계",
    "parent": "embedding-clip",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "개수·공간 관계·편향 등 약점.",
+   "summary": "CLIP(4억 쌍, ImageNet 제로샷 ResNet-50 동급)의 약점: 속성 결합, 공간 관계, 개수, 부정에 약한 단어 주머니 행동. ARO 벤치마크로 측정, 원인은 가설 단계. 최근 프리프린트 수치는 낮은 신뢰.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "sae-levels",
@@ -97577,6 +97578,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "도메인 소형 모델로 비용 낮추기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "aro-benchmark",
+   "label": "ARO 벤치마크",
+   "parent": "clip-limitations",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "속성·관계·순서 이해를 시험하는 벤치마크.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "attribute-binding",
+   "label": "속성 결합",
+   "parent": "clip-limitations",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "색·모양을 올바른 개체에 연결하는 능력.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "contrastive-pretraining-shortcuts",
+   "label": "대조 학습의 지름길",
+   "parent": "clip-limitations",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색에 충분한 단서만 배우는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "compositional-evaluation",
+   "label": "구성적 평가",
+   "parent": "clip-limitations",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문장 구조를 바꿔 이해를 확인하는 평가.",
    "added": "2026-11-28",
    "related": []
   }
