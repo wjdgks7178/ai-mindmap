@@ -1848,14 +1848,15 @@
    "label": "BPE·서브워드 토크나이저",
    "parent": "token-tokenization",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "자주 나오는 글자쌍을 합쳐 어휘를 만드는 방식.",
+   "summary": "BPE 서브워드: 희귀 단어를 조각으로 인코딩. Sennrich 2015: WMT15에서 백오프 사전 기준선 대비 영독 +1.1, 영러 +1.3 BLEU(초록). 병합 절차 설명은 일반 지식.",
    "aka": [
     "BPE"
    ],
    "related": [],
-   "added": "2026-10-29"
+   "added": "2026-10-29",
+   "done": "2026-11-28"
   },
   {
    "id": "token-cost-language",
@@ -97419,6 +97420,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "생각이 아닌 결과·행동으로 점검하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "token-count-by-language",
+   "label": "언어별 토큰 수",
+   "parent": "bpe-subword",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 문장도 언어마다 토큰 수가 다른 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "unigram-tokenizer",
+   "label": "유니그램 토크나이저",
+   "parent": "bpe-subword",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "확률 모델 기반 서브워드 분할.",
    "added": "2026-11-28",
    "related": []
   }
