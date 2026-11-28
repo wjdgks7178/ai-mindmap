@@ -57069,11 +57069,15 @@
    "label": "제외 문서 감사",
    "parent": "blocklist-filter-bias",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "필터가 지운 표본을 사람이 검토.",
+   "summary": "Dodge 2021: 제외 문서 10만 표본을 TF-IDF·k-means 50 클러스터로 분석, 성적 내용 16개 클러스터=31%. 정규식 22개+PMI로 성적 지향 단어가 가장 잘 제외, lesbian 문서 22%·gay 36%는 비공격·비성적(50개씩 수작업).",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-safety",
+    "excluded-data-report"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "stop-word-filter",
@@ -103465,6 +103469,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "집단별 제거율·표본 검수·ablation 항목.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kmeans-topic-clustering",
+   "label": "k-means 주제 클러스터링",
+   "parent": "excluded-document-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TF-IDF 임베딩으로 문서를 주제별로 묶기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pointwise-mutual-information",
+   "label": "점별 상호정보량",
+   "parent": "excluded-document-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특정 단어와 필터 제외 사이의 연관 측정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "identity-term-regex-audit",
+   "label": "정체성 단어 정규식 감사",
+   "parent": "excluded-document-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정체성 언급을 정규식으로 잡아 제외율 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "manual-review-sampling",
+   "label": "수작업 검토 표본",
+   "parent": "excluded-document-audit",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "50개씩 직접 읽어 오탐 비율 계산.",
    "added": "2026-11-28",
    "related": []
   }
