@@ -5718,11 +5718,12 @@
    "label": "총소유비용 계산",
    "parent": "api-vs-self-host",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "GPU·전력·인력까지 넣은 실제 비용 계산법.",
+   "summary": "TCO=임대/감가+전력+인건비+여유 용량 등 ÷ 처리 토큰. OpenRouter 글은 인건비·피크 여유를 제외해 손익분기가 하한. 독립 교차 확인 안 함, 인건비·여유 수치는 조직별 입력.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "gpu-utilization",
@@ -99631,6 +99632,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "놀리는 시간에도 나가는 임대료.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "depreciation-vs-rent",
+   "label": "감가상각 vs 임대",
+   "parent": "tco-calculation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소유와 임대 GPU의 비용 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "engineering-cost-inclusion",
+   "label": "엔지니어링 비용 포함",
+   "parent": "tco-calculation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "유지보수 시간을 TCO에 넣기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cost-per-token-self-hosted",
+   "label": "자체 호스팅 토큰당 비용",
+   "parent": "tco-calculation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "월 TCO를 월 토큰으로 나누기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bias-of-vendor-analysis",
+   "label": "업체 분석의 편향",
+   "parent": "tco-calculation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "API 업체 글의 이해관계.",
    "added": "2026-11-28",
    "related": []
   }
