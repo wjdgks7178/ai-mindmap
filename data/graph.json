@@ -100711,11 +100711,12 @@
    "label": "Anderson-Darling 검정",
    "parent": "ks-test",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "꼬리에 더 민감한 적합도 검정.",
+   "summary": "KS를 변형한 적합도 검정, 꼬리에 더 큰 가중, 임계값은 분포별(NIST). 임계값 공개 분포 8종, 출처마다 상수 상이. 이동 탐지 용도는 이번 출처에 없음.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "two-sample-ks",
@@ -100935,6 +100936,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "두 법칙의 차이와 공통점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "a-squared-statistic",
+   "label": "A² 통계량",
+   "parent": "anderson-darling-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "꼬리 가중 적합도 통계량.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "distribution-specific-critical-values",
+   "label": "분포별 임계값",
+   "parent": "anderson-darling-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검정 분포마다 달라지는 임계값.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tail-sensitive-testing",
+   "label": "꼬리에 민감한 검정",
+   "parent": "anderson-darling-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "극단값 차이를 중시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "normality-validation-first",
+   "label": "정규성 먼저 검증",
+   "parent": "anderson-darling-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정규 가정 분석 전 분포 검증.",
    "added": "2026-11-28",
    "related": []
   }
