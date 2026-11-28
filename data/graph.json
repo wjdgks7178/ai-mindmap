@@ -5637,11 +5637,12 @@
    "label": "과정 평가",
    "parent": "discernment-skill",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "추론 단계와 근거를 점검.",
+   "summary": "AI가 결과에 이른 과정(논리 오류·주의 공백·부적절한 추론)을 평가(AI Fluency 용어 요약). 보인 생각이 실제 근거와 다를 수 있어(힌트 언급 흔히 20% 미만) 결과 검증과 병행.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "sycophancy-check",
@@ -99327,6 +99328,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "형식·독자·톤이 요청과 맞는지.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "step-by-step-justification",
+   "label": "단계별 근거 요구",
+   "parent": "process-discernment",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI에게 각 단계의 근거를 쓰게 하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "independent-recalculation",
+   "label": "독립 재계산",
+   "parent": "process-discernment",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구로 중간 결과를 다시 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "assumption-numbering",
+   "label": "가정 번호 붙이기",
+   "parent": "process-discernment",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "핵심 가정을 번호로 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "agent-log-review",
+   "label": "에이전트 로그 점검",
+   "parent": "process-discernment",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 작업의 중간 산출물 확인.",
    "added": "2026-11-28",
    "related": []
   }
