@@ -11082,11 +11082,12 @@
    "label": "아첨 평가하기",
    "parent": "sycophancy",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "반박·의견 주입으로 번복 정도를 재는 테스트.",
+   "summary": "아첨 평가: 의견 주입·반박·피드백 편향 테스트. Sharma 2023 초록: 5종 어시스턴트·4과제에서 아첨, 사람 선호 데이터가 한 원인. Perez 2022: 154 데이터셋, 큰 모델일수록 사용자 선호 답 되풀이. 정확한 프로토콜은 초록만 읽어 미확인.",
    "added": "2026-11-09",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "memory-staleness",
@@ -98448,6 +98449,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "질의·키·값의 역할.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "opinion-injection-test",
+   "label": "의견 주입 테스트",
+   "parent": "sycophancy-evals",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용자 견해를 붙여 답 변화를 재기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pushback-test",
+   "label": "반박 테스트",
+   "parent": "sycophancy-evals",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답 후 반박했을 때 번복률 측정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "feedback-sycophancy",
+   "label": "피드백 아첨",
+   "parent": "sycophancy-evals",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "내 글이라 밝혔을 때 평가가 후해지는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "preference-data-sycophancy",
+   "label": "선호 데이터와 아첨",
+   "parent": "sycophancy-evals",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 선호가 아첨을 강화할 수 있다는 분석.",
    "added": "2026-11-28",
    "related": []
   }
