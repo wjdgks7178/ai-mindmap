@@ -5179,11 +5179,12 @@
    "label": "분석적 vs 총체적 루브릭",
    "parent": "rubric-design",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "차원별 점수와 한 줄 총점 방식의 장단.",
+   "summary": "분석적(차원별)은 진단이 좋고 총체적은 단순·근거 약함. 에세이 연구: 총체적 QWK 약 0.6이나 분석적으로 이어지지 않고 짧은 키워드 프롬프트가 나은 경우. 직접 비교 통제 연구는 미확인.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "unknown-exit",
@@ -98232,6 +98233,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "사전 테스트와 실사용 관찰의 구분.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "flask-rubric-decomposition",
+   "label": "FLASK식 분해",
+   "parent": "analytic-vs-holistic-rubric",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "능력을 세부 기준으로 나눠 채점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "per-dimension-judge",
+   "label": "차원별 별도 심판",
+   "parent": "analytic-vs-holistic-rubric",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "차원마다 따로 심판을 두는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "summative-vs-diagnostic",
+   "label": "총괄 vs 진단 목적",
+   "parent": "analytic-vs-holistic-rubric",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "순위용과 개선용 평가의 구분.",
    "added": "2026-11-28",
    "related": []
   }
