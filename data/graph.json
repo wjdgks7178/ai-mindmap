@@ -32753,11 +32753,12 @@
    "label": "공변량 이동",
    "parent": "virtual-drift",
    "domain": "ai-applications",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "입력 분포가 변하는 통계 용어.",
+   "summary": "P(x) 변화, P(y|x) 동일한 이동. 입력만으로 통계 검정(KS 등) 탐지 가능, 배포 라벨 없으면 이 유형 위주. 대응은 데이터 보강·중요도 가중(내 정리). 검색 요약 기준.",
    "added": "2026-11-17",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "extrapolation-risk",
@@ -100586,6 +100587,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "최근 기간만 따로 평가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "input-monitoring",
+   "label": "입력 모니터링",
+   "parent": "covariate-shift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "운영 입력 분포를 감시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "new-domain-data-collection",
+   "label": "새 영역 데이터 수집",
+   "parent": "covariate-shift",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이동한 입력 영역의 데이터를 보강.",
    "added": "2026-11-28",
    "related": []
   }
