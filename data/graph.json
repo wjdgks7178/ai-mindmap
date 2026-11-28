@@ -10778,11 +10778,12 @@
    "label": "OSI 오픈소스 AI 정의",
    "parent": "open-vs-closed-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "4가지 자유와 데이터 정보·코드·파라미터 제공 요건.",
+   "summary": "OSAID 1.0: 사용·연구·수정·공유 4자유와 수정용 형태(데이터 정보·코드·파라미터) 접근. OSI는 Llama 라이선스를 오픈소스가 아니라고 밝힘. 공개일은 페이지에 없음.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "model-license",
@@ -97216,6 +97217,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "큰 모델의 풀이로 작은 모델을 가르치기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "osaid-data-information",
+   "label": "데이터 정보 요건",
+   "parent": "osi-open-source-ai",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 데이터 자체가 아닌 설명 공개를 요구하는 논쟁점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "preferred-form-for-modification",
+   "label": "수정에 적합한 형태",
+   "parent": "osi-open-source-ai",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "수정하려면 반드시 필요한 산출물 묶음.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "open-washing",
+   "label": "오픈 워싱",
+   "parent": "osi-open-source-ai",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오픈이라 부르지만 기준을 못 채우는 마케팅.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "osi-vs-meta-llama",
+   "label": "OSI와 Llama 논쟁",
+   "parent": "osi-open-source-ai",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "라이선스 제한과 오픈소스 정의의 충돌.",
    "added": "2026-11-28",
    "related": []
   }
