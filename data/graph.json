@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "nodes": [
   {
    "id": "ai",
@@ -27629,11 +27629,12 @@
    "label": "모방 학습",
    "parent": "teleoperation-data",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "사람 시연을 따라 하도록 정책을 배우는 방식.",
+   "summary": "시연(관찰-행동 쌍)을 지도학습으로 따라 하는 방식. 오차 누적 문제와 DAgger(2011), ACT/ALOHA(2023, 약 10분 시연으로 6과제 성공률 80~90%, 초록 기준).",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "demonstration-quality",
@@ -95962,6 +95963,28 @@
    "priority": 3,
    "summary": "비용÷탈락률로 순서 정하기.",
    "added": "2026-11-27",
+   "related": []
+  },
+  {
+   "id": "dagger-algorithm",
+   "label": "DAgger",
+   "parent": "imitation-learning",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정책이 방문한 상태에 전문가 교정을 덧붙이는 반복 알고리즘.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "imitation-vs-rl",
+   "label": "모방 학습 vs 강화학습",
+   "parent": "imitation-learning",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "보상 없이 따라 하기와 보상으로 시행착오하기의 비교.",
+   "added": "2026-11-28",
    "related": []
   }
  ]
