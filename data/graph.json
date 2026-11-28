@@ -5260,11 +5260,12 @@
    "label": "평가 포화",
    "parent": "regression-eval",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "통과율 100%에서 신호가 사라지는 현상.",
+   "summary": "포화=최신 모델 간 변별력 상실. HLE 논문은 MMLU 90% 초과를 지적, HLE는 약 2,500문항. GSM8K 포화는 미확인. 2차 자료의 HLE 최고 46.9%(2026-05)는 검증 약함.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "eval-in-ci",
@@ -98130,6 +98131,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "새 문제도 곧 학습에 포함될 가능성.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "saturation-noise-estimate",
+   "label": "포화와 잡음 추정",
+   "parent": "eval-saturation",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정체와 포화를 가르려면 잡음 폭이 필요.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hard-case-expansion",
+   "label": "어려운 사례 확충",
+   "parent": "eval-saturation",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통과율이 높을 때 평가 세트를 어렵게 보강.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "score-noise-band",
+   "label": "점수 잡음 폭",
+   "parent": "eval-saturation",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 번 실행한 점수의 편차.",
    "added": "2026-11-28",
    "related": []
   }
