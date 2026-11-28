@@ -56117,11 +56117,14 @@
    "label": "임베딩 모델 선택",
    "parent": "frozen-embedding-regression",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "품질 분류기용 임베딩 고르기.",
+   "summary": "임베딩은 속도·목표 과제 품질로 고른다. Luxical-One CPU 6,803문서/초 vs Qwen3-0.6B GPU 70(저자 측정). CQF 논문은 sBert만 검증. MTEB는 품질 분류 적합도를 보장 안 함.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "throughput-extrapolation",
@@ -101121,6 +101124,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "단어가 아니라 문맥으로 유해 글을 가르는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "luxical-distilled-embedding",
+   "label": "Luxical 증류 임베딩",
+   "parent": "embedding-model-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "TF-IDF와 작은 ReLU 망으로 큰 임베딩을 흉내 내기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "throughput-budget-planning",
+   "label": "채점 처리량 예산 계산",
+   "parent": "embedding-model-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문서 수로 필요한 초당 처리량을 구하는 법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "length-as-quality-proxy",
+   "label": "길이를 품질로 착각하기",
+   "parent": "embedding-model-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류기가 문장 길이를 품질 신호로 학습하는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "downstream-validation-of-filters",
+   "label": "필터의 다운스트림 검증",
+   "parent": "embedding-model-choice",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "걸러 낸 데이터로 작은 모델을 학습해 평가하기.",
    "added": "2026-11-28",
    "related": []
   }
