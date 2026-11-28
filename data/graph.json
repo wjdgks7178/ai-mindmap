@@ -56718,22 +56718,30 @@
    "label": "작성 시기 대리 지표",
    "parent": "c4-audit-dodge",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "인터넷 아카이브 최초 색인일.",
+   "summary": "C4: 인터넷 아카이브 최초 색인일을 작성일 대리로 사용. 65%만 색인, 100만 URL 표본의 약 92%가 2011~2019, 10~20년 전 글도 존재. 색인이 늦을 수 있어 근사값.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "web-source-distribution"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "geolocation-proxy",
    "label": "지리 대리 지표",
    "parent": "c4-audit-dodge",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "IP 호스팅 국가로 추정하는 한계.",
+   "summary": "C4 17.5만 URL의 IP 국가: 51.3% 미국, 인도 3.4%·필리핀 0.1%·파키스탄 0.06%·나이지리아 0.03%(미국 대비). 데이터센터·ISP 사본 때문에 불완전한 대리 지표. 작성자 정체성 추정은 윤리적 문제.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "web-source-distribution"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "datasheet-for-datasets",
@@ -102367,6 +102375,94 @@
    "status": "planned",
    "priority": 3,
    "summary": "많이 읽는 사이트와 코퍼스 비중의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ip2location-country-db",
+   "label": "IP→국가 데이터베이스",
+   "parent": "geolocation-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "IP 주소로 국가를 조회하는 DB와 한계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cdn-hosting-distortion",
+   "label": "CDN·데이터센터 호스팅 왜곡",
+   "parent": "geolocation-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "호스팅 위치가 실제 운영 국가와 다른 이유.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "regional-data-gap",
+   "label": "지역별 데이터 격차",
+   "parent": "geolocation-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "영어권 비미국 지역 대표성 부족.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "author-identity-inference-ethics",
+   "label": "작성자 정체성 추정 윤리",
+   "parent": "geolocation-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "글쓴이 특성을 추정하는 것의 한계와 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "wayback-machine-first-seen",
+   "label": "Wayback 최초 색인일",
+   "parent": "utterance-date-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Internet Archive 최초 색인 날짜의 의미.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "corpus-age-distribution",
+   "label": "코퍼스 시기 분포",
+   "parent": "utterance-date-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연도별 문서 비율과 낡은 정보 비중.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "long-tail-old-text",
+   "label": "오래된 글의 긴 꼬리",
+   "parent": "utterance-date-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "수집 시점 10~20년 전 글이 섞이는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "freshness-with-rag",
+   "label": "RAG로 최신성 보완",
+   "parent": "utterance-date-proxy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습 데이터가 낡았을 때 검색으로 보충.",
    "added": "2026-11-28",
    "related": []
   }
