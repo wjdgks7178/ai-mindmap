@@ -10451,11 +10451,12 @@
    "label": "테스트 시점 연산(Test-time compute)",
    "parent": "reasoning-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "훈련이 아니라 답을 낼 때 연산을 늘려 성능을 올리는 접근.",
+   "summary": "추론 때 연산을 늘려 성능 향상. Snell 2024: 난이도별 적응 배분이 best-of-N보다 4배+ 효율, 일부 조건에서 14배 큰 모델 능가(초록).",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "adaptive-thinking",
@@ -97170,6 +97171,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "온도·top-k·top-p를 함께 쓸 때의 순서.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "compute-optimal-allocation",
+   "label": "연산 최적 배분",
+   "parent": "test-time-compute",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트 난이도에 맞춰 추론 연산을 나누는 전략.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "inference-cost-latency-tradeoff",
+   "label": "추론 비용·지연 트레이드오프",
+   "parent": "test-time-compute",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오래 생각할수록 늘어나는 비용과 시간.",
    "added": "2026-11-28",
    "related": []
   }
