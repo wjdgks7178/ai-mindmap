@@ -5381,11 +5381,12 @@
    "label": "소프트 타깃",
    "parent": "distillation",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "교사의 확률 분포를 학습 신호로 쓰는 법.",
+   "summary": "교사 확률 분포를 학생의 학습 신호로. Hinton 2015 초록: 앙상블을 단일 모델로 압축, 상용 음향 모델 개선. 소프트 타깃·온도는 초록에 없고 본문 일반 지식으로 표기.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "synthetic-data",
@@ -99079,6 +99080,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "서버 내부 캐시와 API 비용 절감 기능의 구분.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "knowledge-distillation",
+   "label": "지식 증류",
+   "parent": "soft-targets",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 모델의 지식을 작은 모델로 옮기기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "distillation-temperature",
+   "label": "증류 온도",
+   "parent": "soft-targets",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분포를 부드럽게 만드는 매개변수.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "specialist-models",
+   "label": "전문가 모델",
+   "parent": "soft-targets",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "혼동되는 세부 클래스를 맡는 모델.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "logit-distillation-vs-text",
+   "label": "로짓 증류 vs 텍스트 증류",
+   "parent": "soft-targets",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분포 접근 가능 여부에 따른 방식.",
    "added": "2026-11-28",
    "related": []
   }
