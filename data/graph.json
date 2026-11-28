@@ -4810,12 +4810,12 @@
    "domain": "physical-ai",
    "status": "done",
    "priority": 4,
-   "summary": "분포 이동으로 롤아웃이 길수록 오차가 커짐. Ross 2010: i.i.d. 위반, 무후회 반복 학습(DAgger). 월드 모델 꿈 훈련 위험.",
+   "summary": "행동 복제의 오차 누적: Ross 2011 Theorem 2.1 J(π)≤J(π*)+T²ε, 타이트(최악 경우 상한). DAgger는 T에 선형 보장. 논문 PDF 본문 직접 확인.",
    "added": "2026-11-02",
    "related": [
     "model-predictive-control"
    ],
-   "done": "2026-11-26"
+   "done": "2026-11-28"
   },
   {
    "id": "tool-description-design",
@@ -99766,6 +99766,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "DPA에 적는 침해 통지 시한.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "t-squared-epsilon-bound",
+   "label": "T²ε 한계",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동 복제 오차의 이차 증가 상한.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "iid-violation-sequential",
+   "label": "순차 문제의 i.i.d. 위반",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "예측이 다음 입력을 바꾸는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "expert-recovery",
+   "label": "전문가의 복구 능력",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실수에서 회복 가능하면 결과가 나아짐.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "error-horizon-demo",
+   "label": "오차-시간 길이 실습",
+   "parent": "compounding-error",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "T와 ε로 상한을 계산해 보기.",
    "added": "2026-11-28",
    "related": []
   }
