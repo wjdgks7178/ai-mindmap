@@ -5156,11 +5156,12 @@
    "label": "갱신형 벤치마크",
    "parent": "data-contamination",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "학습 마감 이후 문제로 오염을 피하는 평가.",
+   "summary": "LiveBench: 최근 자료로 매월 새 문제, 정답값 자동 채점, 초록 기준 최상위 정확도 70% 미만(논문 시점). 오염·심판 편향 회피, 시점 간 비교 한계는 일반 논평.",
    "added": "2026-11-02",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "membership-inference",
@@ -98096,6 +98097,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "시간·사용자 입력을 뒤쪽에 두는 원칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "objective-ground-truth-scoring",
+   "label": "객관 정답 채점",
+   "parent": "live-benchmark",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답값과 자동 비교하는 채점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "time-comparison-problem",
+   "label": "시점 간 비교 문제",
+   "parent": "live-benchmark",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문제가 바뀌면 점수 비교가 어려워지는 점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "fresh-data-leakage-risk",
+   "label": "최신 자료 유출 위험",
+   "parent": "live-benchmark",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 문제도 곧 학습에 포함될 가능성.",
    "added": "2026-11-28",
    "related": []
   }
