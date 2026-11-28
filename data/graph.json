@@ -57095,11 +57095,15 @@
    "label": "규칙 필터 vs 모델 필터",
    "parent": "gopher-quality-heuristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "설명 가능성과 편향 비교.",
+   "summary": "규칙(Gopher: 단순·이해 쉬운 휴리스틱, 편향 최소화)과 모델(FineWeb-Edu MMLU 33→37, DCLM-Baseline 7B MMLU 64) 필터의 장단. FineWeb은 편향 위험으로 분류기 품질 필터 회피. 조합+집단별 감사 권장. 직접 비교 실험은 미확인.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-safety",
+    "stop-word-filter"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "non-english-heuristic-adaptation",
@@ -103417,6 +103421,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "메타데이터·포함·제외 텍스트로 나누어 문서화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "rule-then-model-pipeline",
+   "label": "규칙 후 모델 파이프라인",
+   "parent": "heuristic-vs-model-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "규칙으로 1차 정리, 모델 점수로 선별.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "explainability-of-filters",
+   "label": "필터의 설명 가능성",
+   "parent": "heuristic-vs-model-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "왜 지워졌는지 설명할 수 있는 정도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gold-source-similarity-filter",
+   "label": "골드 출처 유사도 필터",
+   "parent": "heuristic-vs-model-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "위키 같은 좋은 글과 닮은 정도로 선별.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "filter-bias-audit-checklist",
+   "label": "필터 편향 감사 체크리스트",
+   "parent": "heuristic-vs-model-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "집단별 제거율·표본 검수·ablation 항목.",
    "added": "2026-11-28",
    "related": []
   }
