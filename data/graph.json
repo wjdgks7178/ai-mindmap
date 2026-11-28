@@ -11257,11 +11257,12 @@
    "label": "맥락 생성 비용과 캐싱",
    "parent": "contextual-retrieval",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "프롬프트 캐싱으로 색인 비용을 줄이는 법.",
+   "summary": "프롬프트 캐싱으로 문서를 캐시하고 청크만 바꿔 맥락 생성. Anthropic 추정: 800토큰 청크·8k 문서·청크당 약 100토큰 맥락 가정에서 백만 문서 토큰당 약 $1.02 일회성. 현재 모델 가격으로 재계산 필요.",
    "added": "2026-11-09",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "dto-pattern",
@@ -98865,6 +98866,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "분할 방식이 검색에 미치는 영향.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sequential-chunk-processing",
+   "label": "청크 연속 처리",
+   "parent": "chunk-context-cost",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 문서 청크를 이어서 호출해 캐시 유지.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "indexing-cost-per-million-tokens",
+   "label": "백만 토큰당 색인 비용",
+   "parent": "chunk-context-cost",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문서 규모별 비용 환산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "model-price-recalculation",
+   "label": "모델 가격 재계산",
+   "parent": "chunk-context-cost",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "발표 시점과 현재 가격 차이 반영.",
    "added": "2026-11-28",
    "related": []
   }
