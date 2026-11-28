@@ -56617,11 +56617,15 @@
    "label": "s3a 프로토콜",
    "parent": "cc-s3-access",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "하둡·Spark에서 S3 접근.",
+   "summary": "하둡·Spark에서 s3a://로 S3 접근(EMR은 s3://). hadoop-common과 hadoop-aws 버전 동일, 익명은 AnonymousAWSCredentialsProvider(목록 맨 뒤). s3n 폐기. Spark 예시는 제안(미실행).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "cross-region-transfer-fees"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "cross-region-transfer-fees",
@@ -102223,6 +102227,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "가공 결과만 다른 곳으로 옮겨 전송량 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "anonymous-aws-credentials-provider",
+   "label": "익명 자격 증명 제공자",
+   "parent": "s3a-hadoop-protocol",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 버킷을 키 없이 읽는 S3A 설정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hadoop-aws-version-match",
+   "label": "hadoop-aws 버전 일치",
+   "parent": "s3a-hadoop-protocol",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "hadoop-common과 같은 버전을 써야 함.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "s3a-random-io-mode",
+   "label": "S3A 임의 읽기 모드",
+   "parent": "s3a-hadoop-protocol",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Parquet·ORC 같은 열 기반 파일용 입력 정책.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "emr-s3-scheme",
+   "label": "EMR의 s3:// 스킴",
+   "parent": "s3a-hadoop-protocol",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "EMR이 별도로 구현한 S3 접근 방식.",
    "added": "2026-11-28",
    "related": []
   }
