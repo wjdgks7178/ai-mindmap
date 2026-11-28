@@ -99117,11 +99117,12 @@
    "label": "지식 증류",
    "parent": "soft-targets",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "큰 모델의 지식을 작은 모델로 옮기기.",
+   "summary": "앙상블/큰 모델의 지식을 단일 작은 모델로 압축(Hinton 2015 초록): 상용 음향 모델 개선, 전문가 모델은 병렬로 빠르게 학습. 소프트 타깃·온도 설명은 본문 일반 지식.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "distillation-temperature",
@@ -100732,6 +100733,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "표본이 크면 사소한 차이도 유의해짐.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "student-teacher",
+   "label": "교사-학생 구조",
+   "parent": "knowledge-distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 모델이 작은 모델을 가르치는 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ensemble-compression",
+   "label": "앙상블 압축",
+   "parent": "knowledge-distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 모델의 예측을 하나로 압축.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "distillation-vs-quantization",
+   "label": "증류 vs 양자화",
+   "parent": "knowledge-distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지식 이전과 정밀도 축소의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "teacher-error-transfer",
+   "label": "교사 오류 전이",
+   "parent": "knowledge-distillation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교사의 실수가 학생에 전달되는 위험.",
    "added": "2026-11-28",
    "related": []
   }
