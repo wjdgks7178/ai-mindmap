@@ -57183,11 +57183,15 @@
    "label": "보일러플레이트 제거",
    "parent": "massiveweb-text-extraction",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "메뉴·광고·푸터 걷어내기.",
+   "summary": "FineWeb: WET은 보일러플레이트·메뉴가 많이 남아 WARC 직접 추출. 직접 실험(trafilatura 2.4.0): extract는 본문만(228자), html2txt는 메뉴·쿠키 문구 잔존(279자). 추출 뒤 중복·휴리스틱으로 추가 정리.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-infra",
+    "trafilatura-extractor"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "paraphrase-leak",
@@ -103934,6 +103938,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "제목·목록 서식을 유지한 텍스트 추출.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cookie-banner-text",
+   "label": "쿠키 안내 문구",
+   "parent": "boilerplate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "본문에 섞이는 쿠키 배너 텍스트.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "menu-nav-text-leak",
+   "label": "메뉴·내비게이션 텍스트 유입",
+   "parent": "boilerplate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "추출 실패 시 메뉴가 본문에 섞이는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "extraction-manual-qa",
+   "label": "추출 결과 눈검사",
+   "parent": "boilerplate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "무작위 100건으로 정밀도·재현율 추정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "shared-sitewide-phrases",
+   "label": "사이트 공통 반복 문구",
+   "parent": "boilerplate-removal",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 사이트의 상투구 중복.",
    "added": "2026-11-28",
    "related": []
   }
