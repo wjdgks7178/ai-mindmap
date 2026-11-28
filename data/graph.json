@@ -10767,11 +10767,12 @@
    "label": "오픈 가중치(open-weights)",
    "parent": "open-vs-closed-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "가중치만 공개하고 데이터·코드는 비공개일 수 있는 모델 배포 방식.",
+   "summary": "가중치는 공개하되 데이터·학습 코드는 비공개일 수 있는 배포. 사용 제한(군사 목적·대규모 기업)이 붙는 경우 많음. Meta는 Llama 4를 오픈 가중치로 칭함. 사용자 수 기준 수치는 미확인.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "osi-open-source-ai",
@@ -97261,6 +97262,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "라이선스 제한과 오픈소스 정의의 충돌.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "weights-only-release",
+   "label": "가중치만 공개",
+   "parent": "open-weights",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론은 되지만 재현은 어려운 공개 형태.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "self-hosting-open-model",
+   "label": "오픈 모델 자체 호스팅",
+   "parent": "open-weights",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "내려받은 가중치를 직접 서버에 올려 운용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "usage-restrictions-open-models",
+   "label": "오픈 모델 사용 제한",
+   "parent": "open-weights",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "규모·용도 기반 조항.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reproducibility-gap",
+   "label": "재현성 격차",
+   "parent": "open-weights",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 모델을 처음부터 만들 수 없는 한계.",
    "added": "2026-11-28",
    "related": []
   }
