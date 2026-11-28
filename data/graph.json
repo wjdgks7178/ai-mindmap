@@ -6034,11 +6034,12 @@
    "label": "제로 데이터 보관",
    "parent": "enterprise-data-terms",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "입력·출력을 저장하지 않는 옵션.",
+   "summary": "Anthropic 문서: Legacy ZDR은 응답 후 프롬프트·응답 비저장, 조직별 활성화. 콘솔·소비자 플랜·Managed Agents·일부 모델(30일 보관)은 제외, 플래그·법적 보존 예외. 한 공급사 기준.",
    "added": "2026-11-04",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "ip-indemnity",
@@ -99451,6 +99452,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "피해가 큰 칸의 최종 검증 규칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "covered-models-30day",
+   "label": "30일 보관 모델",
+   "parent": "zero-data-retention",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일부 모델이 요구하는 30일 보관.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "zdr-eligibility-table",
+   "label": "ZDR 적격 표",
+   "parent": "zero-data-retention",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기능별 ZDR 가능 여부 목록.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "retention-regardless",
+   "label": "계약과 무관한 보관",
+   "parent": "zero-data-retention",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "플래그 콘텐츠·법적 보존.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "backend-proxy-requirement",
+   "label": "백엔드 경유 요건",
+   "parent": "zero-data-retention",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "ZDR 조직의 브라우저 직접 호출 금지.",
    "added": "2026-11-28",
    "related": []
   }
