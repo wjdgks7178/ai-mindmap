@@ -56237,11 +56237,15 @@
    "label": "신뢰성과 타당성",
    "parent": "consistent-but-wrong",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "반복 일치 대 정답 일치.",
+   "summary": "Megahed 2025: 5회 반복 일치 0.93+(신뢰성 높음)이지만 시장 초과수익 예측 F1 0.49~0.54(우연 수준). 벤치마크 정확도 0.76~0.88. 일관성은 필요조건일 뿐.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "gold-set-check"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "cross-model-annotation",
@@ -101325,6 +101329,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "내용 같고 길이만 다른 두 답으로 편향 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "test-retest-reliability",
+   "label": "반복 측정 신뢰성",
+   "parent": "reliability-vs-validity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 입력을 여러 번 돌려 일치를 보는 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "codebook-for-llm-labeling",
+   "label": "LLM 라벨링 코드북",
+   "parent": "reliability-vs-validity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 정의와 판정 규칙을 문서화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "external-criterion-validity",
+   "label": "외부 기준 타당성",
+   "parent": "reliability-vs-validity",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨이 실제 결과를 예측하는지 검증.",
    "added": "2026-11-28",
    "related": []
   }
