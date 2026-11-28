@@ -1286,11 +1286,12 @@
    "label": "모르는 줄 모르는 것",
    "parent": "recursive-gap-filling",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "스스로 이름 붙이지 못하는 지식 공백. 탐지가 학습의 첫 관문.",
+   "summary": "학습자가 필요한 개념을 인식하지 못하는 문제(RPKT 2508.11892). 해법은 선행 개념 지도+아는지/모르는지 질문. 막연한 질문은 맥락 부족 문제, '무엇을 놓쳤나' 프롬프트의 통제 연구는 미확인.",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "knowledge-tracing",
@@ -97712,6 +97713,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "자동 추출 결과를 사람이 확인하는 절차.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "know-dont-know-diagnostic",
+   "label": "아는지/모르는지 진단",
+   "parent": "unknown-unknowns",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "용어 목록에 체크하게 하는 간단 진단.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gap-identification-prompt",
+   "label": "공백 확인 프롬프트",
+   "parent": "unknown-unknowns",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구체 맥락을 주고 이해 안 되는 점을 짚게 하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "overestimated-understanding",
+   "label": "이해도 과대평가",
+   "parent": "unknown-unknowns",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습자가 자기 이해를 높게 보는 경향.",
    "added": "2026-11-28",
    "related": []
   }
