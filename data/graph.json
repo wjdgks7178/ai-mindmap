@@ -56845,11 +56845,15 @@
    "label": "라벨 조건부 생성 증강",
    "parent": "llm-paraphrase-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "라벨을 앞에 붙여 새 문장 생성.",
+   "summary": "LAMBADA(AAAI 2020): GPT-2를 라벨+SEP+문장으로 미세조정, 10배 생성 후 기준 분류기로 같은 라벨만·확신도 상위 N. ATIS 클래스당 5개 BERT 53.3→75.7. TREC·WVA 이득은 작음.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "llm-paraphrase-augmentation",
+    "paraphrase-diversity-collapse"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "augmentation-prompt-design",
@@ -103092,6 +103096,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "임계값에 따라 달라지는 집단별 제거 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "lambada-augmentation",
+   "label": "LAMBADA 증강",
+   "parent": "conditional-text-generation-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨 조건부 GPT-2 생성과 분류기 필터.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "classifier-confidence-filtering",
+   "label": "분류기 확신도 필터링",
+   "parent": "conditional-text-generation-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성 문장을 확신도 순으로 걸러 쓰기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "few-shot-class-augmentation",
+   "label": "클래스당 소량 증강",
+   "parent": "conditional-text-generation-augmentation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "클래스당 5개 같은 극소량에서의 증강 효과.",
    "added": "2026-11-28",
    "related": []
   }
