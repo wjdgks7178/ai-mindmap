@@ -27138,11 +27138,12 @@
    "label": "에이전트 통합(integration)",
    "parent": "spec-kit",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "Copilot·Claude Code 등 여러 에이전트에 같은 절차를 붙이는 방식.",
+   "summary": "Spec Kit은 여러 코딩 에이전트에 같은 SDD 절차를 통합(공식 약 30개, 다른 글은 50+). 호출 형식이 /speckit.*, /speckit-*, $speckit-* 등으로 달라짐. Claude Code·Gemini CLI 공식 확인은 못 함.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "spec-as-source-of-truth",
@@ -96785,6 +96786,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "미세조정본을 업로드해 서빙하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "speckit-slash-commands",
+   "label": "Spec Kit 슬래시 명령",
+   "parent": "agent-integrations",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "/speckit.* 명령의 종류와 호출 형식 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "skills-mode-vs-commands-mode",
+   "label": "스킬 모드 vs 명령 모드",
+   "parent": "agent-integrations",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통합 설치 레이아웃의 두 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "agent-command-limits",
+   "label": "에이전트 명령 제한",
+   "parent": "agent-integrations",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인자 미지원 등 도구별 제약.",
    "added": "2026-11-28",
    "related": []
   }
