@@ -89889,11 +89889,12 @@
    "label": "행동 복제",
    "parent": "dagger",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "전문가 시연을 지도학습으로 모방.",
+   "summary": "시연 (상태, 행동)을 지도학습으로 모방. 전문가 상태 분포에서만 학습해 실행 분포와 불일치, 최악 T²ε. 개선: DAgger, 행동 묶음 예측. 시연 품질이 상한.",
    "added": "2026-11-26",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "no-regret-learning",
@@ -99855,6 +99856,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "DAgger 이전의 확률적 혼합 반복 학습.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "supervised-imitation",
+   "label": "지도학습식 모방",
+   "parent": "behavior-cloning",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "상태→행동 회귀·분류로 정책 학습.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bc-rnn",
+   "label": "BC-RNN",
+   "parent": "behavior-cloning",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "순환 신경망을 쓰는 행동 복제 정책.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "train-test-distribution-mismatch",
+   "label": "학습·실행 분포 불일치",
+   "parent": "behavior-cloning",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전문가 분포와 정책 분포의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "demonstration-cost",
+   "label": "시연 수집 비용",
+   "parent": "behavior-cloning",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동 복제의 데이터 병목.",
    "added": "2026-11-28",
    "related": []
   }
