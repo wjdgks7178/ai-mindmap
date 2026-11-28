@@ -56535,11 +56535,15 @@
    "label": "웹 스크래핑과 DB권",
    "parent": "database-right-sui-generis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 데이터 수집의 법적 쟁점.",
+   "summary": "Ryanair v PR Aviation(C-30/14, 2015-01-15): 비보호 DB엔 이용자 권리 조항 미적용, 약관으로 스크래핑 금지 가능(국내법 범위). 보호 DB는 추출·재이용 제한. DSM 4조 TDM·유보 표시는 일부만 확인. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "extraction-reutilization"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "athena-cc-index-query",
@@ -103225,6 +103229,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "대규모 학습 데이터에서 겹침을 찾는 자료구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ryanair-v-pr-aviation",
+   "label": "Ryanair v PR Aviation",
+   "parent": "scraping-database-right",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비보호 DB 스크래핑과 약관 판결.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dsm-directive-tdm-exception",
+   "label": "DSM 지침 TDM 예외",
+   "parent": "scraping-database-right",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "텍스트·데이터 마이닝 예외와 권리 유보.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "machine-readable-rights-reservation",
+   "label": "기계 판독 가능한 권리 유보",
+   "parent": "scraping-database-right",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웹 콘텐츠의 옵트아웃을 기계가 읽게 표시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "terms-of-use-privity",
+   "label": "약관의 상대적 효력",
+   "parent": "scraping-database-right",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "계약이 당사자만 구속하는 한계.",
    "added": "2026-11-28",
    "related": []
   }
