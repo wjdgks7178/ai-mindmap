@@ -4698,12 +4698,12 @@
    "domain": "physical-ai",
    "status": "done",
    "priority": 4,
-   "summary": "Llama 2+DINOv2·SigLIP 7B 오픈 VLA, 97만 시연 학습, 29과제에서 55B RT-2-X보다 +16.5%p, LoRA·양자화로 소비자 GPU 미세조정.",
+   "summary": "7B·97만 시연·Llama 2+DINOv2·SigLIP. 저자 보고: 29과제에서 RT-2-X(55B)보다 +16.5%p, LoRA 미세조정·양자화 가능(초록). 독립 재현 미확인.",
    "added": "2026-11-02",
    "related": [
     "flow-matching"
    ],
-   "done": "2026-11-26"
+   "done": "2026-11-28"
   },
   {
    "id": "cross-embodiment",
@@ -100296,6 +100296,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "정교한 양팔 조작의 대표 평가 과제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dinov2-siglip-encoder",
+   "label": "DINOv2+SigLIP 인코더",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 시각 특징을 합친 인코더.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "openvla-lora-finetune",
+   "label": "OpenVLA LoRA 미세조정",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소비자 GPU에서 적응.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "openvla-vs-rt2x",
+   "label": "OpenVLA vs RT-2-X",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "7분의 1 크기로 더 높은 성공률(보고).",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "vla-quantization",
+   "label": "VLA 양자화",
+   "parent": "openvla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "성능 유지한 채 서빙 비용 절감.",
    "added": "2026-11-28",
    "related": []
   }
