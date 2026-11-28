@@ -5336,11 +5336,12 @@
    "label": "캐시 중단점",
    "parent": "prompt-caching",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "cache_control을 붙일 위치 고르는 법.",
+   "summary": "cache_control은 매 요청 같은 마지막 블록에 붙인다. 쓰기는 중단점에서만, 읽기는 20블록 룩백, 중단점 최대 4개. 변하는 블록에 두면 쓰기만 반복. 최소 길이는 모델별 512~4,096토큰(문서 2026-11-28).",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "cache-ttl",
@@ -97961,6 +97962,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델·프롬프트가 바뀌면 다시 재기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "automatic-caching",
+   "label": "자동 캐싱",
+   "parent": "cache-breakpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "최상위 cache_control 한 줄로 중단점을 자동 이동.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "lookback-window-20",
+   "label": "20블록 룩백 창",
+   "parent": "cache-breakpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "캐시 항목을 찾는 최대 거리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "multiple-breakpoints",
+   "label": "다중 중단점",
+   "parent": "cache-breakpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 대화에서 룩백을 보강하는 추가 중단점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "minimum-cacheable-length",
+   "label": "최소 캐시 길이",
+   "parent": "cache-breakpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "미만이면 조용히 캐시되지 않는 한계.",
    "added": "2026-11-28",
    "related": []
   }
