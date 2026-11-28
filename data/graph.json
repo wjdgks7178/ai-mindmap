@@ -56498,11 +56498,15 @@
    "label": "모델 카드의 데이터 출처 표시",
    "parent": "produced-works-notice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 데이터 라이선스 고지 관행.",
+   "summary": "모델 카드(Mitchell 2019)와 HF 모델 카드: YAML datasets·license·base_model, 학습 데이터·한계·평가를 적음. ODC-By 출처 표시를 실무적으로 충족하는 방법. 모델이 파생물인지는 미확인. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "data-card-reading"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "extraction-reutilization",
@@ -103321,6 +103325,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "설명서가 언제 마지막으로 갱신됐는지 표시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hf-model-card-metadata",
+   "label": "HF 모델 카드 메타데이터",
+   "parent": "model-card-data-attribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "license·datasets·base_model 필드.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "intended-use-and-limits",
+   "label": "의도된 사용과 한계 서술",
+   "parent": "model-card-data-attribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델이 부적합한 맥락을 밝히는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "group-wise-performance-report",
+   "label": "집단별 성능 보고",
+   "parent": "model-card-data-attribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인구·문화 집단별 평가 결과 보고.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "undisclosed-training-data",
+   "label": "공개되지 않은 학습 데이터",
+   "parent": "model-card-data-attribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "출처를 밝히지 않는 모델의 한계.",
    "added": "2026-11-28",
    "related": []
   }
