@@ -1322,11 +1322,12 @@
    "label": "AI로 학습 경로 만들기",
    "parent": "recursive-gap-filling",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "AI에게 선행 개념을 묻고 순서 있는 학습 계획을 만들게 하는 프롬프트.",
+   "summary": "선행 개념 나열→내 수준 체크→모르는 부분만 단계 계획의 프롬프트 흐름(제안). 근거: LLM 제로샷 개념 그래프 F1 +3%, CGLLM TutorQA 최대 +26%(초록), Kent 프롬프트 은행의 맥락 포함 질문.",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "rag",
@@ -97746,6 +97747,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "학습자가 자기 이해를 높게 보는 경향.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "prerequisite-first-prompt",
+   "label": "선행 개념 먼저 묻기",
+   "parent": "ai-learning-path-prompt",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 계획 전에 의존 순서를 요청하는 패턴.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "weekly-learning-plan",
+   "label": "주 단위 학습 계획",
+   "parent": "ai-learning-path-prompt",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자료·확인 질문을 포함한 계획 형식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "verify-ai-plan",
+   "label": "AI 계획 검증",
+   "parent": "ai-learning-path-prompt",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교재 목차·전문가와 교차 확인.",
    "added": "2026-11-28",
    "related": []
   }
