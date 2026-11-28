@@ -10414,11 +10414,12 @@
    "label": "탐욕 디코딩",
    "parent": "temperature-sampling",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "항상 가장 확률 높은 토큰만 고르는 방식. 온도 0과 같다.",
+   "summary": "매 단계 argmax 토큰만 선택, 온도 0과 같음. Holtzman 2019 초록: 우도 최대화 디코딩은 따분하고 반복적인 글을 만들며 디코딩 전략이 품질을 크게 좌우.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "beam-search",
@@ -97112,6 +97113,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "한 번이 아니라 여러 번 돌려 분포로 보기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "argmax-decoding",
+   "label": "argmax 선택",
+   "parent": "greedy-decoding",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "확률 분포에서 최댓값 토큰을 고르는 연산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "decoding-choice-by-task",
+   "label": "작업별 디코딩 선택",
+   "parent": "greedy-decoding",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답형은 탐욕, 창작은 샘플링.",
    "added": "2026-11-28",
    "related": []
   }
