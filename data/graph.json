@@ -56548,11 +56548,15 @@
    "label": "데이터베이스권 보호 기간",
    "parent": "database-right-sui-generis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "15년과 상당한 변경 시 갱신.",
+   "summary": "지침 96/9/EC 10조: 완성 해 다음 해 1월 1일부터 15년, 만료 전 공개 시 최초 공개 다음 해부터, 상당한 변경·새 투자는 새 기간(10조 3항). 11조 수혜자 요건. EU 법이라 한국 직접 적용 안 됨. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "extraction-reutilization"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "scraping-database-right",
@@ -103790,6 +103794,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "데이터셋에서 뽑은 차트에 출처 문구 달기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "database-right-beneficiaries",
+   "label": "DB권 수혜자 요건",
+   "parent": "database-right-term",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "회원국 국민·공동체 내 법인 등 보호 대상 요건.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "substantial-new-investment",
+   "label": "상당한 새 투자",
+   "parent": "database-right-term",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DB 기간 갱신을 일으키는 변경 기준.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "snapshot-expiry-question",
+   "label": "오래된 스냅샷의 만료 문제",
+   "parent": "database-right-term",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "만료된 DB 권리와 남은 저작권을 구분.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "eu-law-korea-applicability",
+   "label": "EU 지침의 한국 적용 여부",
+   "parent": "database-right-term",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "EU DB 지침이 한국에서 직접 적용되지 않는 점.",
    "added": "2026-11-28",
    "related": []
   }
