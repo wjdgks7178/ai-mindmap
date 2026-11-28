@@ -56703,11 +56703,15 @@
    "label": "웹 출처 분포 분석",
    "parent": "c4-audit-dodge",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "상위 도메인·TLD 분포표 만들기.",
+   "summary": "Dodge 2021 C4 감사: patents.google.com이 최다, 위키·뉴스·학술 출판 상위, .gov·.mil 비중 큼, 비미국 영어권 TLD는 적음. 방문 순위와 다름. 도메인·TLD 표+누적곡선으로 쏠림 점검.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "domain-concentration-cap"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "utterance-date-proxy",
@@ -102319,6 +102323,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "한 주소가 막힐 때 다른 주소로 재시도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "top-domain-cumulative-curve",
+   "label": "상위 도메인 누적 곡선",
+   "parent": "web-source-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상위 N개 도메인이 차지하는 누적 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tld-representation",
+   "label": "TLD 대표성",
+   "parent": "web-source-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "국가별 최상위 도메인의 비중 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "filter-before-after-domain-shift",
+   "label": "필터 전후 도메인 변화",
+   "parent": "web-source-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "어떤 도메인이 필터로 많이 줄었는지.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "alexa-rank-vs-corpus-share",
+   "label": "방문 순위 vs 코퍼스 비중",
+   "parent": "web-source-distribution",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "많이 읽는 사이트와 코퍼스 비중의 차이.",
    "added": "2026-11-28",
    "related": []
   }
