@@ -5211,11 +5211,12 @@
    "label": "위치 편향",
    "parent": "judge-bias",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "순서가 점수를 좌우하는 문제.",
+   "summary": "MT-Bench 논문 Table 2: 기본 프롬프트 일관성 Claude-v1 23.8%, GPT-3.5 46.2%, GPT-4 65.0%, 대부분 첫째 위치 선호. 순서 교환 판정·퓨샷(GPT-4 65.0→77.5%)으로 완화. 2023년 모델 기준.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "verbosity-bias",
@@ -97780,6 +97781,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "교재 목차·전문가와 교차 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "name-bias-judge",
+   "label": "이름 편향",
+   "parent": "position-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "어시스턴트 이름(A)을 선호하는 편향.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "consistency-vs-accuracy",
+   "label": "일관성 vs 정확성",
+   "parent": "position-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "일관되다고 정확한 것은 아님.",
    "added": "2026-11-28",
    "related": []
   }
