@@ -56614,11 +56614,15 @@
    "label": "도메인 코퍼스 이용 조건",
    "parent": "domain-specific-corpus-cc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "공공 콘텐츠의 약관·개인정보 확인.",
+   "summary": "연방 저작물은 일반적으로 저작권 없음이나 제3자 콘텐츠·로고·권리 예외, 주·지방 정부는 저작권 가능(USA.gov). 워싱턴주는 기관별 정책 상이·공공기록 PII(검색 요약). 도메인별 조건·PII·스크래핑 조항 점검. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "domain-list-selection"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "s3a-hadoop-protocol",
@@ -103513,6 +103517,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "50개씩 직접 읽어 오탐 비율 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "federal-government-works",
+   "label": "미국 연방 정부 저작물",
+   "parent": "domain-corpus-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "일반적으로 저작권이 없으나 예외가 있는 저작물.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "state-local-government-copyright",
+   "label": "주·지방 정부 저작권",
+   "parent": "domain-corpus-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "연방 규정이 적용되지 않는 공공 저작물.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "public-records-pii",
+   "label": "공공기록 속 개인정보",
+   "parent": "domain-corpus-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공공기록법으로 공개된 문서에 포함된 PII.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "agency-level-terms-check",
+   "label": "기관별 이용 조건 확인표",
+   "parent": "domain-corpus-licensing",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "도메인별 저작권·이용 조건 링크 정리.",
    "added": "2026-11-28",
    "related": []
   }
