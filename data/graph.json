@@ -27815,11 +27815,12 @@
    "label": "호스팅 결정 체크리스트",
    "parent": "model-hosting-options",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "데이터·품질·호출량·역량으로 고르는 기준표.",
+   "summary": "자체 호스팅 vs API: 손익분기 부하=GPU 시간당 임대료÷같은 시간 API 비용. 교차점은 트래픽 패턴에 좌우, 출처 간 수치 충돌, 실제 비용은 GPU 가격의 3~5배라는 주장.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "dedicated-endpoint",
@@ -96661,6 +96662,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "경사로 파라미터를 직접 추정하는 시뮬.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "break-even-utilization",
+   "label": "손익분기 가동률",
+   "parent": "hosting-decision-checklist",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "GPU가 일해야 API보다 싸지는 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hidden-hosting-costs",
+   "label": "숨은 호스팅 비용",
+   "parent": "hosting-decision-checklist",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "운영 인력·장애 대응·유휴 비용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "same-class-comparison",
+   "label": "같은 급 비교",
+   "parent": "hosting-decision-checklist",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 모델 급으로 비용을 비교하는 원칙.",
    "added": "2026-11-28",
    "related": []
   }
