@@ -56661,11 +56661,15 @@
    "label": "n-그램 겹침 오염 측정",
    "parent": "benchmark-contamination-in-corpus",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "Brown 외 8~13그램 방식.",
+   "summary": "GPT-3 부록 C: N=예시 길이 5백분위수(최소 8·최대 13), 겹치면 dirty, clean 부분집합 재평가. 4분의 1 벤치마크가 50% 초과 flag지만 영향은 대부분 미미. 재진술·짧은 문항은 놓침(장난감 실험).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "exact-match-contamination"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "clean-score-reporting",
@@ -102090,6 +102094,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "대형 도메인이 코퍼스를 지배하는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "clean-subset-reevaluation",
+   "label": "clean 부분집합 재평가",
+   "parent": "ngram-overlap-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "dirty를 빼고 다시 채점해 오염 영향 보기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ngram-collision-false-positive",
+   "label": "n-gram 가짜 일치",
+   "parent": "ngram-overlap-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상투구·배경지식 겹침을 오염으로 오인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "paraphrase-contamination",
+   "label": "재진술 오염",
+   "parent": "ngram-overlap-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "말만 바꾼 평가 문제가 학습에 들어간 경우.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bloom-filter-vs-exact-overlap",
+   "label": "Bloom 필터 vs 정확 충돌",
+   "parent": "ngram-overlap-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "확률적 포함 검사와 Spark 정확 계산.",
    "added": "2026-11-28",
    "related": []
   }
