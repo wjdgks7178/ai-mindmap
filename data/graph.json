@@ -100018,11 +100018,12 @@
    "label": "개념 이동",
    "parent": "distribution-shift",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "입력-출력 관계가 바뀜.",
+   "summary": "입력-출력 관계가 바뀌는 이동. 정의가 논문마다 다름(P(y|x) 또는 P(X|Y)), 순수한 개념 이동은 현실에서 분리 어려움. 검색 요약 기준.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "drift-monitoring",
@@ -100541,6 +100542,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "정답 없는 운영 환경의 탐지 한계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "concept-drift-detection",
+   "label": "개념 이동 탐지",
+   "parent": "concept-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오류율 감시·온라인 검정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "label-delay",
+   "label": "라벨 지연",
+   "parent": "concept-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답이 늦게 들어와 탐지가 늦어지는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "policy-change-shift",
+   "label": "정책 변경에 의한 이동",
+   "parent": "concept-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "규정·정책 변화로 정답이 바뀜.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "windowed-evaluation",
+   "label": "윈도 기반 평가",
+   "parent": "concept-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "최근 기간만 따로 평가.",
    "added": "2026-11-28",
    "related": []
   }
