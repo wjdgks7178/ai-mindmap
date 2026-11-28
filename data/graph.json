@@ -56628,11 +56628,15 @@
    "label": "리전 간 전송 요금",
    "parent": "cc-s3-access",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "같은 리전 처리의 이유.",
+   "summary": "데이터는 us-east-1. 같은 리전 S3 전송 무료, 리전 간은 출발 리전 기준(예시 버지니아→오하이오 GB당 $0.01), 인터넷 아웃바운드는 월 100GB 무료 후 과금. 처리 클러스터를 us-east-1에.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "s3a-hadoop-protocol"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "cloudfront-mirror",
@@ -102175,6 +102179,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정확 일치로 확인된 최소 오염 수준.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "aws-data-transfer-pricing",
+   "label": "AWS 데이터 전송 요금 구조",
+   "parent": "cross-region-transfer-fees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "인바운드 무료·리전 간·인터넷 아웃바운드.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "same-region-processing",
+   "label": "같은 리전 처리 원칙",
+   "parent": "cross-region-transfer-fees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터 옆에서 계산하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "elastic-ip-load-balancer-cost",
+   "label": "탄력적 IP·로드 밸런서 트래픽 요금",
+   "parent": "cross-region-transfer-fees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "경유하면 라우팅 트래픽에 요금이 붙을 수 있음.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "result-only-egress",
+   "label": "결과물만 내보내기",
+   "parent": "cross-region-transfer-fees",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가공 결과만 다른 곳으로 옮겨 전송량 줄이기.",
    "added": "2026-11-28",
    "related": []
   }
