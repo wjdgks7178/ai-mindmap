@@ -10436,11 +10436,12 @@
    "label": "LLM 출력의 비결정성",
    "parent": "temperature-sampling",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "온도 0이어도 결과가 달라질 수 있는 이유와 대처.",
+   "summary": "temperature 0에서도 출력 변동: 주원인은 배치 비불변 커널(Thinking Machines). Qwen3-235B 1,000회 중 고유 80개, 103번째 토큰에서 분기. 배치 불변 커널 적용 시 전부 동일, 속도 비용 26→42초.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "test-time-compute",
@@ -97067,6 +97068,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "이전 턴 생각 블록을 수정 없이 되돌려 보내기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "batch-invariance",
+   "label": "배치 불변성",
+   "parent": "nondeterminism-llm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치 크기와 무관하게 같은 결과를 내는 커널 성질.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "floating-point-non-associativity",
+   "label": "부동소수점 비결합성",
+   "parent": "nondeterminism-llm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "더하는 순서에 따라 결과가 달라지는 성질.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "deterministic-inference-mode",
+   "label": "결정적 추론 모드",
+   "parent": "nondeterminism-llm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "속도를 희생해 재현성을 확보하는 설정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "multi-sample-eval",
+   "label": "다중 샘플 평가",
+   "parent": "nondeterminism-llm",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 번이 아니라 여러 번 돌려 분포로 보기.",
    "added": "2026-11-28",
    "related": []
   }
