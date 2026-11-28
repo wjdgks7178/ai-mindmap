@@ -56782,11 +56782,15 @@
    "label": "문서화 갱신",
    "parent": "corpus-documentation-practice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터 갱신 시 카드도 갱신.",
+   "summary": "FineWeb 카드 변경 이력: v1.1.0 중복 제거 버그로 11개 덤프 재처리, v1.3.0 미처리 문서 수정(약 4,000억 토큰 추가)·삭제 통지로 도메인 제거, v1.4.0까지. 데이터가 바뀌면 카드·버전·한계도 갱신.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "data-card-reading"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "ocr-error-patterns",
@@ -103273,6 +103277,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "계약이 당사자만 구속하는 한계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dataset-changelog-practice",
+   "label": "데이터셋 변경 이력 관행",
+   "parent": "documentation-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "버전·날짜·변경 내용을 카드에 기록.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dataset-bug-fix-reprocessing",
+   "label": "데이터 버그 수정과 재처리",
+   "parent": "documentation-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "공개 뒤 발견된 처리 버그를 고치고 재업로드.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "opt-out-removal-record",
+   "label": "옵트아웃 제거 기록",
+   "parent": "documentation-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "삭제 요청으로 제거한 항목을 이력에 남기기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "card-last-updated",
+   "label": "카드 최종 수정일 표시",
+   "parent": "documentation-maintenance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "설명서가 언제 마지막으로 갱신됐는지 표시.",
    "added": "2026-11-28",
    "related": []
   }
