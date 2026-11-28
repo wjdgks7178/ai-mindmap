@@ -56391,11 +56391,15 @@
    "label": "데이터 카드 읽기",
    "parent": "fineweb-pii-removal",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "무엇을 했고 안 했는지 확인.",
+   "summary": "Gebru 2018 데이터시트 제안, HF 데이터 카드=README+YAML. 읽는 순서: 라이선스→구성→전처리 한 것/안 한 것→PII→한계→변경 이력. FineWeb 카드는 전화번호 미처리·PII 잔존 경고를 명시.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "fineweb-license-terms"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "fineweb-license-terms",
@@ -101783,6 +101787,17 @@
    "status": "planned",
    "priority": 3,
    "summary": "CC 4.0에서 수정 사실을 밝히는 의무.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "card-self-report-limits",
+   "label": "카드의 자기 보고 한계",
+   "parent": "data-card-reading",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제작자 기술 내용을 샘플로 검증해야 하는 이유.",
    "added": "2026-11-28",
    "related": []
   }
