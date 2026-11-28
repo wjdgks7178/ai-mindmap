@@ -32668,14 +32668,14 @@
    "domain": "ai-applications",
    "status": "done",
    "priority": 4,
-   "summary": "두 수치형 분포가 같은지 보는 비모수 검정.",
+   "summary": "KS 검정: D=경험적 CDF와 이론 CDF의 최대 거리. 연속 분포 한정, 분포 완전 지정 필요(모수 추정 시 임계값 무효), 중심부에 민감(NIST). 두 표본 버전은 NIST 페이지에 없음.",
    "added": "2026-11-17",
    "related": [
     "drift-statistical-tests",
     "psi",
     "data-drift"
    ],
-   "done": "2026-11-17"
+   "done": "2026-11-28"
   },
   {
    "id": "chi-square-drift",
@@ -100699,6 +100699,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "극단적 가중치가 만드는 불안정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "anderson-darling-test",
+   "label": "Anderson-Darling 검정",
+   "parent": "ks-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "꼬리에 더 민감한 적합도 검정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "two-sample-ks",
+   "label": "두 표본 KS 검정",
+   "parent": "ks-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 표본이 같은 분포인지 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "large-sample-significance",
+   "label": "큰 표본의 유의성",
+   "parent": "ks-test",
+   "domain": "ai-applications",
+   "status": "planned",
+   "priority": 4,
+   "summary": "표본이 크면 사소한 차이도 유의해짐.",
    "added": "2026-11-28",
    "related": []
   }
