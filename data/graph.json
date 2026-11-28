@@ -27684,7 +27684,7 @@
    "domain": "physical-ai",
    "status": "done",
    "priority": 4,
-   "summary": "ALOHA: $20k급 오픈소스 양팔 원격조종. ACT: CVAE+트랜스포머, chunk 90, 50Hz, 과제당 시연 50개, 약 10분 시연으로 80~90%(초록).",
+   "summary": "ALOHA: $20k급 오픈소스 양팔 원격조종. ACT: CVAE+트랜스포머, chunk 100(논문 표), 50Hz, 과제당 시연 50개. 실제 6과제 성공률 96/92/88/84/64/20%(논문 본문), 초록의 80~90%는 일부 과제.",
    "added": "2026-11-16",
    "related": [],
    "done": "2026-11-28"
@@ -88392,7 +88392,7 @@
    "domain": "physical-ai",
    "status": "done",
    "priority": 5,
-   "summary": "여러 스텝 행동을 한 번에 예측해 유효 시야·판단 횟수를 줄임(ACT chunk 90, 50Hz: 에피소드당 약 7~11번 판단, 내 계산). 오차 누적 감소는 저자 주장, T²ε 해석은 내 해석.",
+   "summary": "여러 스텝 행동을 한 번에 예측. ACT ablation(논문 본문): k=1 평균 성공 1%, k=100 44%, 더 길면 약간 하락. chunk 크기 논문 표 100.",
    "added": "2026-11-26",
    "related": [],
    "done": "2026-11-28"
