@@ -27649,11 +27649,12 @@
    "label": "시연 데이터 품질",
    "parent": "teleoperation-data",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "조종자 편차·실패 시연·라벨링 문제.",
+   "summary": "robomimic(CoRL 2021): 6명 조작자 300개 시연을 Worse/Okay/Better로 나눈 혼합 품질 실험, 오프라인 RL은 비최적 사람 데이터에 약함. 사람 데이터는 비마르코프적.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "datasheets-for-datasets",
@@ -96322,6 +96323,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "합성 시나리오로 롱테일을 보충.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "robomimic-benchmark",
+   "label": "robomimic",
+   "parent": "demonstration-quality",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 시연 기반 학습을 비교하는 공개 프레임워크.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "non-markovian-demonstrations",
+   "label": "비마르코프 시연",
+   "parent": "demonstration-quality",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 행동이 과거 맥락에 의존하는 성질.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mixed-quality-data",
+   "label": "혼합 품질 데이터",
+   "parent": "demonstration-quality",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "숙련도가 다른 시연이 섞인 데이터 처리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "demonstration-filtering",
+   "label": "시연 필터링",
+   "parent": "demonstration-quality",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "저품질 시연을 걸러 내는 방법.",
    "added": "2026-11-28",
    "related": []
   }
