@@ -98765,11 +98765,12 @@
    "label": "보상 과최적화",
    "parent": "best-of-n",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "보상 모델의 허점을 이용해 점수만 오르는 현상.",
+   "summary": "대리 보상을 과하게 최적화하면 골드 성능이 감소(굿하트). Gao 2022 초록: RL과 best-of-n은 다른 함수형, 계수는 보상 모델 크기에 따라 예측 가능, KL·데이터 크기 영향. 합성 설정, 수치 미확인.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "parallel-sampling",
@@ -100777,6 +100778,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "교사의 실수가 학생에 전달되는 위험.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gold-vs-proxy-reward",
+   "label": "골드 vs 대리 보상",
+   "parent": "reward-overoptimization",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "진짜 기준과 학습된 대리 기준.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reward-model-ensemble",
+   "label": "보상 모델 앙상블",
+   "parent": "reward-overoptimization",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 보상 모델로 허점 이용을 줄이기.",
    "added": "2026-11-28",
    "related": []
   }
