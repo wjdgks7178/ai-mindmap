@@ -27591,11 +27591,12 @@
    "label": "휴머노이드 단가와 ROI",
    "parent": "humanoid-robots",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "가격·가동률·인건비로 따지는 도입 타당성.",
+   "summary": "G1 약 $13.5k, Digit 월 $8.5k 보도, 벤더 주장 2년 미만 ROI. JPMorgan 추정 사람 1명 몫에 로봇 약 2대. 가동 시간당 총비용으로 계산. 벤더·블로그 수치.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "aloha-act",
@@ -96412,6 +96413,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "인수 옵션·가격 맞춤권 등 조항.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cost-per-productive-hour",
+   "label": "생산 시간당 비용",
+   "parent": "humanoid-unit-economics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "총비용을 실제 일한 시간으로 나눈 값.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "robots-per-worker-ratio",
+   "label": "사람 대 로봇 비율",
+   "parent": "humanoid-unit-economics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 1명 몫에 필요한 로봇 수.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "robot-uptime",
+   "label": "로봇 가동률",
+   "parent": "humanoid-unit-economics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "충전·고장을 뺀 실제 작업 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "safety-integration-cost",
+   "label": "안전·통합 비용",
+   "parent": "humanoid-unit-economics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "울타리·인증·시스템 연동 비용.",
    "added": "2026-11-28",
    "related": []
   }
