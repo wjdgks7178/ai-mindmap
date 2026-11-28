@@ -5579,11 +5579,12 @@
    "label": "설명하기 역량",
    "parent": "delegation-skill",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "목표와 방식을 AI에게 정확히 전하는 역량.",
+   "summary": "AI Fluency의 설명하기: 결과물(형식·독자·스타일)·과정(단계 지시)·성능(협업 태도) 설명. 7항목 점검표는 내 정리, 효과 크기 미제시.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "collaboration-modes",
@@ -100024,6 +100025,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "운영 중 이동을 감시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "product-description",
+   "label": "결과물 설명",
+   "parent": "description-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "형식·독자·스타일 정의.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "process-description",
+   "label": "과정 설명",
+   "parent": "description-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI의 접근 방식·단계 안내.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "performance-description",
+   "label": "성능 설명",
+   "parent": "description-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "협업 중 AI의 태도·톤 지정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "request-checklist",
+   "label": "요청 점검표",
+   "parent": "description-skill",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "목적·독자·형식 등 7항목.",
    "added": "2026-11-28",
    "related": []
   }
