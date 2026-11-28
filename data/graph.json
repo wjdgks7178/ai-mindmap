@@ -56473,11 +56473,15 @@
    "label": "데이터셋 카드 라이선스 확인",
    "parent": "odc-by-vs-cc-by-odbl",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "함께 적용되는 약관 읽기.",
+   "summary": "C4 카드: odc-by + Common Crawl 약관에 구속. Wikipedia 카드: cc-by-sa-3.0·gfdl, 일부 추가 라이선스·퍼블릭 도메인. 메타데이터+본문 추가 약관+동일조건 여부를 함께 점검. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "share-alike"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "produced-work-definition",
@@ -103646,6 +103650,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "시드 1~2개로는 흔들림을 추정할 수 없음.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "also-bound-by-clause",
+   "label": "also bound by 조항",
+   "parent": "dataset-card-license-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라이선스 외에 함께 적용되는 약관 문장.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "license-comparison-table",
+   "label": "데이터셋 라이선스 비교표",
+   "parent": "dataset-card-license-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "후보 데이터셋의 조건을 한눈에 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gfdl-license",
+   "label": "GFDL",
+   "parent": "dataset-card-license-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "GNU 자유 문서 라이선스의 성격.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "intended-use-vs-license",
+   "label": "사용 목적과 라이선스 대조",
+   "parent": "dataset-card-license-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "상업·공개 배포·내부 연구별 허용 범위.",
    "added": "2026-11-28",
    "related": []
   }
