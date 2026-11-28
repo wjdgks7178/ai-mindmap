@@ -10487,11 +10487,12 @@
    "label": "검증 가능한 보상 강화학습(RLVR)",
    "parent": "reasoning-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "정답을 자동 채점할 수 있는 문제로 추론 능력을 키우는 훈련.",
+   "summary": "자동 채점 가능한 문제의 결과를 보상으로 쓰는 RL. DeepSeek-R1 초록: 사람 추론 예시 없이 RL만으로 추론 개발, 자기 점검·전략 전환 창발 보고. 수치는 초록에 없음.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "thinking-faithfulness",
@@ -97193,6 +97194,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "오래 생각할수록 늘어나는 비용과 시간.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "verifier-design",
+   "label": "검증기 설계",
+   "parent": "rl-verifiable-rewards",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답 비교·단위 테스트 등 자동 채점기 만들기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reasoning-distillation",
+   "label": "추론 증류",
+   "parent": "rl-verifiable-rewards",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 모델의 풀이로 작은 모델을 가르치기.",
    "added": "2026-11-28",
    "related": []
   }
