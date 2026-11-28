@@ -5602,11 +5602,12 @@
    "label": "업무 위험 매트릭스",
    "parent": "delegation-skill",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "피해 크기와 AI 적합도로 위임 여부를 정하는 표.",
+   "summary": "피해 크기×AI 적합도 2축 표(내 제안, 공식 프레임워크 아님). 근거: AI Fluency 위임 정의, NIST의 위험=피해×가능성. 점수는 주관적.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "platform-awareness",
@@ -99406,6 +99407,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "수치·법규 등 확인 우선 대상 표시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "harm-scoring",
+   "label": "피해 점수화",
+   "parent": "task-risk-matrix",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "금전·법적·평판·안전 피해를 점수로.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ai-suitability-scoring",
+   "label": "AI 적합도 점수화",
+   "parent": "task-risk-matrix",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검증 용이성·반복성·최신성으로 판단.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "delegation-worksheet",
+   "label": "위임 워크시트",
+   "parent": "task-risk-matrix",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "업무 목록을 표에 배치하는 양식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "high-harm-human-review",
+   "label": "고위험 사람 검토",
+   "parent": "task-risk-matrix",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "피해가 큰 칸의 최종 검증 규칙.",
    "added": "2026-11-28",
    "related": []
   }
