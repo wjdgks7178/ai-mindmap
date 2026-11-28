@@ -96066,11 +96066,12 @@
    "label": "DAgger",
    "parent": "imitation-learning",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "정책이 방문한 상태에 전문가 교정을 덧붙이는 반복 알고리즘.",
+   "summary": "정책이 방문한 상태에 전문가 행동을 받아 데이터셋을 누적하며 반복 학습(Algorithm 3.1, π_i=β_iπ*+(1-β_i)π̂_i). 오류 T에 선형 보장, Super Tux Kart·Mario·필기 인식 실험(논문 본문 확인).",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "imitation-vs-rl",
@@ -99810,6 +99811,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "T와 ε로 상한을 계산해 보기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "beta-mixing-schedule",
+   "label": "β 혼합 스케줄",
+   "parent": "dagger-algorithm",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전문가와 학습 정책을 섞는 비율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "follow-the-leader",
+   "label": "Follow-The-Leader",
+   "parent": "dagger-algorithm",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "지금까지의 모든 데이터에서 최선을 고르는 관점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "expert-query-cost",
+   "label": "전문가 호출 비용",
+   "parent": "dagger-algorithm",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습 중 전문가 질의 부담.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "smile-algorithm",
+   "label": "SMILe",
+   "parent": "dagger-algorithm",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "DAgger 이전의 확률적 혼합 반복 학습.",
    "added": "2026-11-28",
    "related": []
   }
