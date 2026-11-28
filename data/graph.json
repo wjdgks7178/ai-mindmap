@@ -5273,11 +5273,12 @@
    "label": "CI에서의 평가",
    "parent": "regression-eval",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "변경마다 자동으로 평가를 돌리는 습관.",
+   "summary": "에이전트 변경·모델 업그레이드마다 평가를 자동 실행하는 첫 방어선(Anthropic 글). 핵심 세트와 전체 세트 분리는 제안. CI 설정 방법은 글에 없음.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "emergent-abilities",
@@ -98187,6 +98188,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "능력 평가를 회귀 스위트로 편입.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "core-eval-subset",
+   "label": "핵심 평가 부분집합",
+   "parent": "eval-in-ci",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "PR마다 도는 작은 세트.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "nightly-full-eval",
+   "label": "야간 전체 평가",
+   "parent": "eval-in-ci",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시간·비용이 큰 세트를 주기적으로 실행.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "eval-gate-merge",
+   "label": "병합 게이트",
+   "parent": "eval-in-ci",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "통과율 하락 시 병합을 막는 규칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "production-monitoring-vs-eval",
+   "label": "모니터링 vs 평가",
+   "parent": "eval-in-ci",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사전 테스트와 실사용 관찰의 구분.",
    "added": "2026-11-28",
    "related": []
   }
