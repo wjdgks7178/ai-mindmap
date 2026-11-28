@@ -1274,11 +1274,12 @@
    "label": "선행 개념 그래프",
    "parent": "recursive-gap-filling",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "개념 사이의 \"이걸 알아야 저걸 안다\" 관계를 그린 지도.",
+   "summary": "개념 간 선행 의존을 방향 그래프로. LLM으로 선행 관계 추출·점수화 연구 다수(2402.14293, 2504.08856, 2508.11892), 수작업은 느리고 LLM 추출은 검토 필요. KST는 미조사.",
    "added": "2026-10-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "unknown-unknowns",
@@ -97667,6 +97668,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "정답 예측이 이해와 같지 않다는 점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "depends-on-vs-part-of",
+   "label": "depends-on vs part-of",
+   "parent": "prerequisite-graph",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "선행 관계와 구성 관계의 구분.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "llm-prerequisite-extraction",
+   "label": "LLM 선행 관계 추출",
+   "parent": "prerequisite-graph",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "LLM으로 개념 쌍의 선행 여부를 판단.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "on-the-fly-learning-path",
+   "label": "즉석 학습 경로",
+   "parent": "prerequisite-graph",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질문에서 선행 개념을 추출해 경로를 만들기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "expert-review-of-graph",
+   "label": "그래프 전문가 검토",
+   "parent": "prerequisite-graph",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자동 추출 결과를 사람이 확인하는 절차.",
    "added": "2026-11-28",
    "related": []
   }
