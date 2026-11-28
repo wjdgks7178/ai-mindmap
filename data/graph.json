@@ -10469,11 +10469,12 @@
    "label": "effort 파라미터",
    "parent": "reasoning-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "응답 전체의 노력(생각 깊이·토큰 사용)을 low~high로 조절하는 설정.",
+   "summary": "output_config.effort로 응답 전체 노력 조절(low/medium/high/xhigh/max). 기본은 대부분 high, Opus 5.5·Haiku 5.5는 medium. 소프트 신호이며 top-level 변경은 캐시를 깰 수 있음(공식 문서 2026-11-28).",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "rl-verifiable-rewards",
@@ -96988,6 +96989,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "되묻기만 하게 하는 역할 지시문.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "effort-sweep",
+   "label": "effort 스윕",
+   "parent": "effort-parameter",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자체 평가로 수준별 품질·비용을 비교하는 절차.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "per-message-effort",
+   "label": "메시지별 effort",
+   "parent": "effort-parameter",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "캐시를 보존하며 턴마다 effort를 바꾸는 베타 기능.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "max-tokens-thinking-budget",
+   "label": "max_tokens와 생각 예산",
+   "parent": "effort-parameter",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생각 토큰이 max_tokens에 포함되는 규칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "subagent-low-effort",
+   "label": "서브에이전트 low effort",
+   "parent": "effort-parameter",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단순 하위 작업에 낮은 effort를 쓰는 패턴.",
    "added": "2026-11-28",
    "related": []
   }
