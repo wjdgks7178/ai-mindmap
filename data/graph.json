@@ -26715,11 +26715,12 @@
    "label": "선호 데이터셋",
    "parent": "dpo",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "prompt·chosen·rejected로 이뤄진 정렬용 데이터.",
+   "summary": "prompt·chosen·rejected로 이뤄진 정렬용 데이터(TRL 문서). 명시적 프롬프트 권장, 짝 없는 유형은 KTO용, 선호→짝없음 변환 시 chosen/rejected가 실제 좋고 나쁜지 점검 경고.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "offline-vs-online-preference",
@@ -98752,6 +98753,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "점수를 내는 검증기의 종류.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "explicit-vs-implicit-prompt",
+   "label": "명시적 vs 암묵적 프롬프트",
+   "parent": "preference-dataset",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트를 별도 열로 둘지의 선택.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "unpaired-preference-format",
+   "label": "짝 없는 선호 형식",
+   "parent": "preference-dataset",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "completion과 label 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "preference-label-quality",
+   "label": "선호 라벨 품질",
+   "parent": "preference-dataset",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "라벨러 편향·길이 편향 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dataset-format-conversion",
+   "label": "데이터 형식 변환",
+   "parent": "preference-dataset",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대화형·표준 형식 간 변환.",
    "added": "2026-11-28",
    "related": []
   }
