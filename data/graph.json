@@ -5223,11 +5223,12 @@
    "label": "장황함 편향",
    "parent": "judge-bias",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "긴 답을 높게 쳐 주는 버릇.",
+   "summary": "반복 목록 공격(23개 답): 심판 실패율 Claude-v1 91.3%, GPT-3.5 91.3%, GPT-4 8.7%. 동일 답은 항상 무승부. 2023년 모델·인위적 공격 기준.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "self-preference-bias",
@@ -97803,6 +97804,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "일관되다고 정확한 것은 아님.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "length-controlled-comparison",
+   "label": "길이 통제 비교",
+   "parent": "verbosity-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "길이를 맞추거나 보정해 평가하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "judge-instruction-length",
+   "label": "길이 무시 지시",
+   "parent": "verbosity-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평가 프롬프트에 길이 영향 배제를 명시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "verbosity-in-real-use",
+   "label": "실제 대화의 장황함",
+   "parent": "verbosity-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인위 공격과 실사용 편향의 차이.",
    "added": "2026-11-28",
    "related": []
   }
