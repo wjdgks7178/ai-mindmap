@@ -56427,11 +56427,15 @@
    "label": "Share-alike",
    "parent": "odc-by-vs-cc-by-odbl",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "파생물도 같은 조건.",
+   "summary": "파생물을 같은 조건으로 공개하라는 요구. ODbL·CC BY-SA 4.0엔 있고 ODC-By 요약엔 없음(출처 표시만). 학습 모델이 파생물인지는 요약만으로 판단 불가. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "fineweb-license-terms",
+    "ai-safety"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "license-summary-vs-legal-text",
@@ -101735,6 +101739,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "정규식으로 번호를 지우기 어려운 이유.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "odbl-keep-open",
+   "label": "ODbL 열린 상태 유지",
+   "parent": "share-alike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기술 제한을 걸어도 제한 없는 버전을 함께 배포.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cc-by-sa-compatible-licenses",
+   "label": "CC BY-SA 호환 라이선스",
+   "parent": "share-alike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 조건으로 인정되는 다른 라이선스.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "model-as-derivative-question",
+   "label": "학습 모델은 파생물인가",
+   "parent": "share-alike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "share-alike 데이터로 학습한 모델의 법적 쟁점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "indicate-changes",
+   "label": "변경 사실 표시",
+   "parent": "share-alike",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CC 4.0에서 수정 사실을 밝히는 의무.",
    "added": "2026-11-28",
    "related": []
   }
