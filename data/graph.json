@@ -57026,11 +57026,15 @@
    "label": "분류기 기반 독성 필터",
    "parent": "blocklist-filter-bias",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "문맥을 보는 필터와 그 편향.",
+   "summary": "분류기는 맥락을 보지만 편향 유지: Sap 2019 AAE 트윗 최대 2배 공격적 분류, Welbl 2021 독성 완화가 소수 집단 글 커버리지 축소·자동 점수와 사람 평가 불일치. 집단별 제거율 감사 필요.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-safety",
+    "dialect-filtering-bias"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "excluded-document-audit",
@@ -103044,6 +103048,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "짧은 정상 글이 걸리는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dialect-priming-annotation",
+   "label": "방언 프라이밍 주석",
+   "parent": "classifier-toxicity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주석자에게 방언을 알려 편향 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "realtoxicityprompts",
+   "label": "RealToxicityPrompts",
+   "parent": "classifier-toxicity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LM 독성을 재는 프롬프트 데이터셋.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "toxicity-metric-human-disagreement",
+   "label": "독성 점수와 사람 평가 불일치",
+   "parent": "classifier-toxicity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "자동 점수와 사람 판단의 간극.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "threshold-by-group-removal",
+   "label": "임계값별 집단 제거율",
+   "parent": "classifier-toxicity-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임계값에 따라 달라지는 집단별 제거 비율.",
    "added": "2026-11-28",
    "related": []
   }
