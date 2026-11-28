@@ -57172,11 +57172,15 @@
    "label": "서식 보존 추출",
    "parent": "massiveweb-text-extraction",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "들여쓰기·글머리표 유지의 효과.",
+   "summary": "Gopher MassiveWeb: HTML 트리 구조로 블록 추출, 들여쓰기·줄바꿈·글머리표 보존. 직접 실행(trafilatura 2.4.0): 기본은 번호 목록→글머리표, markdown 출력은 # 제목·1. 2. 유지, 코드 펜스는 없음. 효과 검증은 ablation 필요.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-infra",
+    "trafilatura-extractor"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "boilerplate-removal",
@@ -103982,6 +103986,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 사이트의 상투구 중복.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "html-tree-block-extraction",
+   "label": "HTML 트리 블록 추출",
+   "parent": "format-preserving-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 수준 태그 묶음에서 응집된 텍스트 블록 찾기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "list-numbering-loss",
+   "label": "목록 번호 손실",
+   "parent": "format-preserving-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "기본 추출에서 번호가 글머리표로 바뀌는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "code-fence-in-extraction",
+   "label": "추출된 코드 블록 표시",
+   "parent": "format-preserving-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "코드 펜스가 붙지 않는 추출 결과 다루기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "format-symbol-token-cost",
+   "label": "서식 기호의 토큰 비용",
+   "parent": "format-preserving-extraction",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "마크다운 기호가 토큰을 늘리는 문제.",
    "added": "2026-11-28",
    "related": []
   }
