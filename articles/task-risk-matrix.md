@@ -22,7 +22,7 @@ quadrantChart
   title 업무 위험 매트릭스
   x-axis AI 적합도 낮음 --> AI 적합도 높음
   y-axis 피해 작음 --> 피해 큼
-  quadrant-1 증강 + 사람 검증
+  quadrant-1 증강과 사람 검증
   quadrant-2 사람 주도
   quadrant-3 증강 초안
   quadrant-4 자동화 후보
