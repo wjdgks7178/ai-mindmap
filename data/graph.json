@@ -5407,11 +5407,12 @@
    "label": "소형 언어모델",
    "parent": "distillation",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "작지만 특정 작업에 충분한 모델.",
+   "summary": "소형 모델 예: phi-3-mini 3.8B(MMLU 69%, MT-bench 8.38, 저자 주장), phi-3.5-MoE 활성 6.6B. 데이터 품질로 크기 절감. 벤치마크는 일반 업무를 대변하지 않음.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "ollama",
@@ -99158,6 +99159,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "합성 비율을 조절하는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "slm-vs-llm-routing",
+   "label": "소형·대형 라우팅",
+   "parent": "small-language-model",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "난이도에 따라 모델 크기를 고르기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "on-device-llm",
+   "label": "온디바이스 LLM",
+   "parent": "small-language-model",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "폰·노트북에서 직접 실행.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "data-quality-over-size",
+   "label": "크기보다 데이터 품질",
+   "parent": "small-language-model",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작은 모델에 고품질 데이터를 투자.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "moe-active-parameters",
+   "label": "MoE 활성 파라미터",
+   "parent": "small-language-model",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전문가 혼합에서 실제 쓰이는 파라미터.",
    "added": "2026-11-28",
    "related": []
   }
