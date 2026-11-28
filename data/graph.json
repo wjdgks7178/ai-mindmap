@@ -100498,6 +100498,43 @@
    "summary": "소량 실데이터로 격차를 보정.",
    "added": "2026-11-28",
    "related": []
+  },
+  {
+   "id": "paged-attention",
+   "label": "PagedAttention과 vLLM",
+   "parent": "vram-budgeting",
+   "domain": "ai-infra",
+   "status": "done",
+   "priority": 4,
+   "summary": "KV 캐시를 가상 메모리처럼 블록 단위로 관리해 낭비를 줄임. 저자 보고 FasterTransformer·Orca 대비 처리량 2~4배(SOSP 2023 초록).",
+   "added": "2026-11-28",
+   "done": "2026-11-28",
+   "related": [
+    "kv-quantization",
+    "attention-mechanism"
+   ]
+  },
+  {
+   "id": "prefix-sharing-kv",
+   "label": "접두 KV 공유",
+   "parent": "paged-attention",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청 간 같은 앞부분 캐시를 공유.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "serving-engine-comparison",
+   "label": "서빙 엔진 비교",
+   "parent": "paged-attention",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "vLLM 등 엔진의 처리량·지연 비교.",
+   "added": "2026-11-28",
+   "related": []
   }
  ]
 }
