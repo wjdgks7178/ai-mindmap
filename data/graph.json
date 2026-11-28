@@ -56450,11 +56450,15 @@
    "label": "라이선스 요약과 전문",
    "parent": "odc-by-vs-cc-by-odbl",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "요약은 법적 효력 없음.",
+   "summary": "요약은 법적 효력 없음(ODbL·CC 명시). ODC-By 1.0 전문: Produced Work·Publicly 정의, 상업 이용 명시, 4.2/4.3 고지 의무, 7.1 무보증. 전문이 기준. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "share-alike",
+    "fineweb-license-terms"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "dataset-card-license-check",
@@ -101835,6 +101839,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "패턴+주변 키워드로 오탐을 줄이는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "produced-work-notice-rule",
+   "label": "산출물 고지 규칙",
+   "parent": "license-summary-vs-legal-text",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Produced Work 공개 이용 시 출처 고지(4.3).",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "license-warranty-disclaimer",
+   "label": "라이선스 무보증 조항",
+   "parent": "license-summary-vs-legal-text",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "as is 제공과 법역별 예외.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "license-termination-clause",
+   "label": "라이선스 해지 조항",
+   "parent": "license-summary-vs-legal-text",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "권리 부여가 해지되는 조건(9조).",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "legal-review-checklist",
+   "label": "데이터 라이선스 법무 검토 체크리스트",
+   "parent": "license-summary-vs-legal-text",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "전문·추가 약관·공개 범위 확인 항목.",
    "added": "2026-11-28",
    "related": []
   }
