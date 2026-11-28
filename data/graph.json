@@ -56181,11 +56181,15 @@
    "label": "사람 정답 세트 점검",
    "parent": "annotate-then-distill",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "LLM 주석을 소량 사람 라벨로 검증.",
+   "summary": "LLM 주석을 사람 소량 라벨과 κ·α·F1로 비교. 통계적 튜링 테스트 논문 지침: 최소 80항목·주석자 4명. MovieLens는 통과, PolitiFact는 실패(GPT-4o mini 단일 프롬프트).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "llm-label-vs-human-label-check"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "distilled-classifier-eval",
@@ -101215,6 +101219,28 @@
    "status": "planned",
    "priority": 3,
    "summary": "사람 정답 소량으로 LLM 주석을 검증하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pabak",
+   "label": "PABAK 보정 카파",
+   "parent": "gold-set-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "쏠린 라벨 분포에서 κ가 낮아지는 문제 보정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "statistical-turing-test-annotation",
+   "label": "통계적 튜링 테스트(주석)",
+   "parent": "gold-set-check",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "LLM이 사람 한 명을 대체 가능한지 TOST로 검정.",
    "added": "2026-11-28",
    "related": []
   }
