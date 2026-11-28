@@ -11245,11 +11245,12 @@
    "label": "Contextual BM25",
    "parent": "contextual-retrieval",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "키워드 검색에도 맥락 청크를 쓰는 방식.",
+   "summary": "청크 앞에 문서 내 위치를 설명하는 맥락을 붙여 BM25도 색인. Anthropic 수치(상위 20 실패율 5.7% 기준): 임베딩 35%↓, +BM25 49%↓, +재순위 67%↓. 회사 발표.",
    "added": "2026-11-09",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "chunk-context-cost",
@@ -98831,6 +98832,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "사람 순위 기반 RLHF로 정렬한 모델.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "contextual-embeddings",
+   "label": "Contextual Embeddings",
+   "parent": "contextual-bm25",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "청크에 맥락을 붙여 임베딩.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "context-generation-prompt",
+   "label": "맥락 생성 프롬프트",
+   "parent": "contextual-bm25",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문서+청크를 주고 맥락 한 줄을 요청.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "chunk-boundary-overlap",
+   "label": "청크 경계·겹침",
+   "parent": "contextual-bm25",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "분할 방식이 검색에 미치는 영향.",
    "added": "2026-11-28",
    "related": []
   }
