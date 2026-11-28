@@ -56509,11 +56509,15 @@
    "label": "추출과 재이용",
    "parent": "database-right-sui-generis",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "지침의 두 핵심 행위 정의.",
+   "summary": "EU 지침 96/9/EC: 추출=전부·상당 부분을 다른 매체로 이동(7조2가), 재이용=공중 제공(7조2나), 반복 체계적 비상당 추출 제한(7조5), 적법 이용자 보호(8조), 기간 15년(10조). 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "license-summary-vs-legal-text"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "database-right-term",
@@ -101883,6 +101887,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "전문·추가 약관·공개 범위 확인 항목.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "substantial-part-test",
+   "label": "상당 부분 판단",
+   "parent": "extraction-reutilization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "질적·양적으로 상당 부분인지 보는 기준.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "repeated-systematic-extraction",
+   "label": "반복적·체계적 추출",
+   "parent": "extraction-reutilization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소량씩 계속 가져가는 행위의 제한.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "lawful-user-exception",
+   "label": "적법한 이용자 예외",
+   "parent": "extraction-reutilization",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "비상당 부분 사용은 막을 수 없다는 규정.",
    "added": "2026-11-28",
    "related": []
   }
