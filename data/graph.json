@@ -56981,11 +56981,15 @@
    "label": "lighteval 백엔드 선택",
    "parent": "nanotron-lighteval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "eval·vllm·accelerate 등 비교.",
+   "summary": "lighteval 진입점: eval(inspect-ai, 권장)·accelerate·nanotron·vllm·sglang·endpoint·custom. 1,000개+ 과제. 비교 전체에 같은 백엔드·설정 고정. README 명령은 미실행, Windows 미지원.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "ai-infra"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "ablation-experiment-design",
@@ -102852,6 +102856,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "외부 전송 없이 내부에서 라벨링하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "inspect-ai",
+   "label": "inspect-ai",
+   "parent": "lighteval-backends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "lighteval이 권장하는 평가 프레임워크.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "vllm-evaluation-backend",
+   "label": "vLLM 평가 백엔드",
+   "parent": "lighteval-backends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "빠른 서빙 엔진으로 대량 평가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "evaluation-config-pinning",
+   "label": "평가 설정 고정",
+   "parent": "lighteval-backends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "백엔드·배치·정밀도를 비교 전체에 고정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sample-level-results",
+   "label": "샘플 단위 결과 저장",
+   "parent": "lighteval-backends",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "문항별 출력을 남겨 오류를 디버깅.",
    "added": "2026-11-28",
    "related": []
   }
