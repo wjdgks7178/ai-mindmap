@@ -27558,11 +27558,12 @@
    "label": "협동 안전 로봇",
    "parent": "humanoid-robots",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "사람 곁에서 일해도 안전하도록 설계·인증한 로봇.",
+   "summary": "ISO 10218·ISO/TS 15066(2016)의 협동 운전 4방식: 감시 정지, 핸드 가이딩, 속도·분리 감시, 출력·힘 제한. 위험 평가는 로봇이 아닌 응용 전체 대상.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "figure-helix",
@@ -96514,6 +96515,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "큰 모델의 느린 추론과 제어 주기의 충돌.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "power-force-limiting",
+   "label": "출력·힘 제한",
+   "parent": "cooperatively-safe-robot",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "접촉 시 통증 임계값 이하로 힘을 제한하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "speed-separation-monitoring",
+   "label": "속도·분리 감시",
+   "parent": "cooperatively-safe-robot",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "거리에 따라 감속·정지하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "protective-separation-distance",
+   "label": "보호 분리 거리",
+   "parent": "cooperatively-safe-robot",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람과 위험 부위 간 최소 허용 거리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "application-risk-assessment",
+   "label": "응용 위험 평가",
+   "parent": "cooperatively-safe-robot",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "공구·작업물까지 포함한 위험 평가.",
    "added": "2026-11-28",
    "related": []
   }
