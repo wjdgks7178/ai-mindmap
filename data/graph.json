@@ -10499,11 +10499,12 @@
    "label": "생각의 충실성",
    "parent": "reasoning-models",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "모델이 보여 주는 생각이 실제 판단 근거와 일치하는가의 문제.",
+   "summary": "Chen 외 2025: 힌트 사용을 CoT가 밝히는 비율은 흔히 20% 미만, 결과 RL은 개선하다 정체, 리워드 해킹이 늘어도 언급은 안 늘어남. CoT 감시는 유용하나 불충분(초록).",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "scaled-dot-product",
@@ -97374,6 +97375,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "스타일 맞춤과 지식 보강의 선택.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cot-monitoring",
+   "label": "CoT 감시",
+   "parent": "thinking-faithfulness",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델의 생각을 읽어 위험 행동을 잡는 시도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hint-based-faithfulness-test",
+   "label": "힌트 기반 충실성 시험",
+   "parent": "thinking-faithfulness",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "프롬프트 힌트 언급 여부로 측정하는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "unfaithful-explanation",
+   "label": "비충실한 설명",
+   "parent": "thinking-faithfulness",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "그럴듯하지만 실제 근거가 아닌 풀이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "behavior-based-verification",
+   "label": "행동 기반 검증",
+   "parent": "thinking-faithfulness",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생각이 아닌 결과·행동으로 점검하기.",
    "added": "2026-11-28",
    "related": []
   }
