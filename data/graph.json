@@ -10426,11 +10426,12 @@
    "label": "빔 서치",
    "parent": "temperature-sampling",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "여러 후보 문장을 동시에 키우며 최고 점수 경로를 찾는 디코딩.",
+   "summary": "num_beams개 후보를 유지하며 전체 확률이 높은 문장 탐색. 장난감 예 0.36 vs 탐욕 0.2. 반복 문제 잔존, 번역·요약에 적합. 보장은 없음(HF 블로그).",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "nondeterminism-llm",
@@ -97135,6 +97136,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "정답형은 탐욕, 창작은 샘플링.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "length-normalization",
+   "label": "길이 정규화",
+   "parent": "beam-search",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 문장이 불리하지 않게 점수 보정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "beam-vs-sampling",
+   "label": "빔 vs 샘플링",
+   "parent": "beam-search",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정확한 출력과 다양한 출력의 선택.",
    "added": "2026-11-28",
    "related": []
   }
