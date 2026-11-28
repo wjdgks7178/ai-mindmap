@@ -27596,11 +27596,12 @@
    "label": "ALOHA와 ACT",
    "parent": "teleoperation-data",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "저가 양팔 원격조종 장치와 모방 학습 알고리즘.",
+   "summary": "ALOHA: $20k급 오픈소스 양팔 원격조종. ACT: CVAE+트랜스포머, chunk 90, 50Hz, 과제당 시연 50개, 약 10분 시연으로 80~90%(초록).",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "umi-gripper",
@@ -95984,6 +95985,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "보상 없이 따라 하기와 보상으로 시행착오하기의 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cvae-in-act",
+   "label": "ACT의 CVAE",
+   "parent": "aloha-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시연의 스타일 변동을 z로 모으고 추론 땐 z=0.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "temporal-ensembling",
+   "label": "시간 앙상블",
+   "parent": "aloha-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "겹치는 묶음 예측을 가중 평균해 부드럽게 만드는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bimanual-manipulation",
+   "label": "양팔 조작",
+   "parent": "aloha-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 팔 협응이 필요한 작업의 난점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mobile-aloha",
+   "label": "Mobile ALOHA",
+   "parent": "aloha-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "ALOHA에 이동 베이스를 얹은 확장.",
    "added": "2026-11-28",
    "related": []
   }
