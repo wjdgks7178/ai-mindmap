@@ -56499,11 +56499,15 @@
    "label": "공개적으로의 의미",
    "parent": "produced-works-notice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "통제 하 사람 제외 기준.",
+   "summary": "ODC-By 1.0: Publicly=본인과 본인이 과반 지분·지시권으로 통제하는 사람 외의 사람들. 공개 전달·공개 이용 시 4.2·4.3 고지 의무. 내부 사용은 해당 안 할 수 있으나 경계 사례는 법무 검토. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "license-summary-vs-legal-text"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "model-card-data-attribution",
@@ -103694,6 +103698,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "상업·공개 배포·내부 연구별 허용 범위.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "control-through-majority-ownership",
+   "label": "과반 지분 통제 기준",
+   "parent": "publicly-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통제하는 사람의 범위를 정하는 기준.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "internal-vs-public-use",
+   "label": "내부 사용과 공개 사용",
+   "parent": "publicly-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내부 공유와 외부 배포의 경계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "affiliate-partner-sharing",
+   "label": "계열사·협력사 공유",
+   "parent": "publicly-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "통제 범위 경계가 모호한 사례.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "publicly-convey-vs-use",
+   "label": "공개 전달 vs 공개 이용",
+   "parent": "publicly-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "DB 전달(4.2)과 산출물 이용(4.3)의 구분.",
    "added": "2026-11-28",
    "related": []
   }
