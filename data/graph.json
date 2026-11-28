@@ -56267,11 +56267,14 @@
    "label": "시드 잡음 대 효과 크기",
    "parent": "two-seed-averaging",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "차이가 잡음보다 큰지 판단.",
+   "summary": "Dodge 2020: 시드만 바꿔도 GLUE 소형 과제 점수가 크게 갈리고 best-of-N은 RTE·CoLA에서 약 7점 부풀림. Madaan 2024: 벤치마크 시드 분산 정의, 완성형 전환이 7B급 분산 감소. 평균±분산 보고.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "ablation-compute-budget",
@@ -101399,6 +101402,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "같은 지시가 모델마다 반대 효과.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "best-of-n-seed-inflation",
+   "label": "최고 시드 부풀림",
+   "parent": "seed-noise-vs-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "여러 시드 중 최고만 보고하면 효과가 과장됨.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "benchmark-seed-variance",
+   "label": "벤치마크 시드 분산",
+   "parent": "seed-noise-vs-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 모델을 다른 시드로 학습한 점수의 표준편차.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "completion-format-vs-multiple-choice",
+   "label": "완성형 vs 객관식 평가",
+   "parent": "seed-noise-vs-effect",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "객관식을 완성형으로 바꿔 분산 줄이기.",
    "added": "2026-11-28",
    "related": []
   }
