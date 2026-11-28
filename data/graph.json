@@ -5030,11 +5030,12 @@
    "label": "청크 확장과 부모 문서 검색",
    "parent": "chunking",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "작은 조각으로 찾고 큰 문맥을 돌려주는 방법.",
+   "summary": "작은 조각으로 검색하고 큰 부모 문맥을 반환하는 RAG 기법(문장 창, 부모 문서). 토큰 비용은 부모/자식 크기 비율만큼 증가, 증거는 엇갈림(한 벤치마크에서 문장 창 -23.8%). 공식 문서 미열람.",
    "added": "2026-11-02",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "hnsw-index",
@@ -98346,6 +98347,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "근사 검색의 핵심 트레이드오프.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sentence-window-retrieval",
+   "label": "문장 창 검색",
+   "parent": "chunk-expansion",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색된 문장 주변으로 창을 확장.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "parent-document-retriever",
+   "label": "부모 문서 검색기",
+   "parent": "chunk-expansion",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자식 조각 검색 후 부모 단위를 반환.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "index-vs-context-granularity",
+   "label": "색인 단위 vs 문맥 단위",
+   "parent": "chunk-expansion",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "검색용 크기와 답변용 크기를 분리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "chunking-evaluation",
+   "label": "청킹 평가",
+   "parent": "chunk-expansion",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "청크 전략의 효과를 직접 측정.",
    "added": "2026-11-28",
    "related": []
   }
