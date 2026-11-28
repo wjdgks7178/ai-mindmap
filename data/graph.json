@@ -56252,11 +56252,15 @@
    "label": "교차 모델 채점",
    "parent": "consistent-but-wrong",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "서로 다른 모델·프롬프트로 검증.",
+   "summary": "PoLL(Command R·Haiku·GPT-3.5): NQ κ 0.763 vs GPT-4 0.627, Arena 켄달 0.778 vs 0.667, 7~8배 저렴. HotpotQA는 Haiku 단독이 약간 우세. 자기 선호 편향 완화.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "gold-set-check"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "seed-noise-vs-effect",
@@ -101362,6 +101366,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "라벨이 실제 결과를 예측하는지 검증.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "poll-panel-of-llm-evaluators",
+   "label": "PoLL 평가 패널",
+   "parent": "cross-model-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "서로 다른 모델 패널이 단일 판사를 대체.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "max-voting-vs-average-pooling",
+   "label": "최대 투표 vs 평균 풀링",
+   "parent": "cross-model-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이진·점수형 라벨 합치기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "judge-prompt-sensitivity",
+   "label": "판사 프롬프트 민감성",
+   "parent": "cross-model-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 지시가 모델마다 반대 효과.",
    "added": "2026-11-28",
    "related": []
   }
