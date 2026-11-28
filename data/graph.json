@@ -56587,11 +56587,15 @@
    "label": "색인 언어 판정 정확도",
    "parent": "domain-specific-corpus-cc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "content_languages의 오류 가능성.",
+   "summary": "content_languages는 CLD2 추정. CommonLID: CLD2 F1 전체 49.5, 지원 68개 언어 79.3(최고·가장 빠름), 어느 모델도 75% 미만. 한국어는 벤치마크에 8줄뿐. 재판정+표본 검수 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "athena-cc-index-query"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "domain-corpus-licensing",
@@ -102005,6 +102009,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "동시 요청 제한과 재시도 지연.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "commonlid-benchmark",
+   "label": "CommonLID 벤치마크",
+   "parent": "index-language-accuracy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "웹 데이터 언어 판별을 사람이 주석한 평가 세트.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "glotlid",
+   "label": "GlotLID",
+   "parent": "index-language-accuracy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지원 언어가 많은 언어 판별 모델.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "lid-short-text-limit",
+   "label": "짧은 글 언어 판별 한계",
+   "parent": "index-language-accuracy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "CLD2는 200자 이상을 목표로 설계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "language-id-reclassification",
+   "label": "본문 언어 재판정",
+   "parent": "index-language-accuracy",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "색인값을 받은 텍스트로 다시 확인.",
    "added": "2026-11-28",
    "related": []
   }
