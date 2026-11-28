@@ -5041,11 +5041,12 @@
    "label": "HNSW 인덱스",
    "parent": "vector-db",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "계층 그래프 기반 근사 최근접 검색 알고리즘.",
+   "summary": "다층 근접 그래프로 위층에서 거칠게, 아래층에서 세밀하게 탐색하는 ANN. 초록: 로그 수준 복잡도 증가 주장·이전 방식 능가 주장(수치 없음). 근사 검색이라 정확성 보장 없음.",
    "added": "2026-11-02",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "pgvector",
@@ -98323,6 +98324,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "쿼리별 중요도를 곱해 조절.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hnsw-parameters",
+   "label": "HNSW 파라미터",
+   "parent": "hnsw-index",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연결 수·탐색 폭으로 정확도-속도 조절.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "recall-vs-latency",
+   "label": "재현율 vs 지연",
+   "parent": "hnsw-index",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "근사 검색의 핵심 트레이드오프.",
    "added": "2026-11-28",
    "related": []
   }
