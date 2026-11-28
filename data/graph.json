@@ -27608,11 +27608,12 @@
    "label": "UMI 그리퍼",
    "parent": "teleoperation-data",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "로봇 없이 손에 쥐고 시연 데이터를 모으는 장치.",
+   "summary": "손에 쥐는 그리퍼+GoPro로 로봇 없이 시연 수집. 컵 과제 시간당 UMI 111·맨손 231·원격조종 35개. diffusion policy, latency matching. 수치 성공률은 페이지에 없음.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "open-x-embodiment",
@@ -96029,6 +96030,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "ALOHA에 이동 베이스를 얹은 확장.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "latency-matching",
+   "label": "지연 맞추기",
+   "parent": "umi-gripper",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "추론 지연만큼 관찰·행동 시점을 보정하는 기법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "diffusion-policy",
+   "label": "Diffusion Policy",
+   "parent": "umi-gripper",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동 생성에 확산 모델을 쓰는 정책.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "relative-trajectory-action",
+   "label": "상대 궤적 행동 표현",
+   "parent": "umi-gripper",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "로봇별 좌표 차이를 줄이는 행동 표현.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "data-collection-throughput",
+   "label": "시연 수집 속도",
+   "parent": "umi-gripper",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시간당 시연 수와 장치 비교.",
    "added": "2026-11-28",
    "related": []
   }
