@@ -56281,11 +56281,14 @@
    "label": "ablation 연산 예산",
    "parent": "two-seed-averaging",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "70개 모델 80,000 H100시간 사례.",
+   "summary": "FineWeb: 1.71B 모델 70개+, H100 약 80,000시간. 필터 실험 280억 토큰, 중복 제거·누적 확인 3,500억 토큰. 후보×시드×토큰이 예산, 분산 작은 벤치마크로 한정해 절약.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "data-subset-noise",
@@ -101435,6 +101438,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "객관식을 완성형으로 바꿔 분산 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "chinchilla-token-budget",
+   "label": "친칠라 토큰 예산",
+   "parent": "ablation-compute-budget",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델 크기에 맞는 학습 토큰 수 어림.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "training-flops-estimate",
+   "label": "학습 FLOPs 어림",
+   "parent": "ablation-compute-budget",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "6×파라미터×토큰 공식으로 비용 추정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "small-scale-benchmark-truncation",
+   "label": "벤치마크 1,000문항 절단",
+   "parent": "ablation-compute-budget",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 벤치마크를 잘라 학습 중 평가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "staged-ablation-scale-up",
+   "label": "단계적 규모 확대 검증",
+   "parent": "ablation-compute-budget",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작게 거르고 유망한 것만 크게 확인.",
    "added": "2026-11-28",
    "related": []
   }
