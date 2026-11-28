@@ -27827,11 +27827,12 @@
    "label": "전용 엔드포인트",
    "parent": "model-hosting-options",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "업체 모델을 내 전용 용량으로 쓰는 방식.",
+   "summary": "전용 복제본에 분 단위 과금(토큰 무관). 가동률 약 40~50%가 서버리스 대비 교차(GMI Cloud 주장). H100 시간당 $2.6~4.5 범위, 날짜·출처 확인 필요.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "hybrid-local-api",
@@ -96740,6 +96741,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "민감 질의를 항상 로컬로 보내는 규칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "serverless-inference",
+   "label": "서버리스 추론",
+   "parent": "dedicated-endpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "토큰당 과금하는 공유 용량 추론.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cold-start",
+   "label": "콜드 스타트",
+   "parent": "dedicated-endpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "유휴 상태에서 깨울 때 생기는 지연.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reserved-capacity",
+   "label": "예약 용량",
+   "parent": "dedicated-endpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "약정으로 더 싸게 확보하는 GPU.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "finetuned-model-hosting",
+   "label": "파인튜닝 모델 호스팅",
+   "parent": "dedicated-endpoint",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "미세조정본을 업로드해 서빙하는 방식.",
    "added": "2026-11-28",
    "related": []
   }
