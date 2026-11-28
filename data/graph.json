@@ -89154,11 +89154,12 @@
    "label": "분포 이동",
    "parent": "compounding-error",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "학습과 실행 분포 차이.",
+   "summary": "배포 분포가 학습과 달라지는 현상: 공변량·라벨·개념 이동(정의가 논문마다 다름). 탐지는 KS 검정·DDM·마팅게일·KL, 배포 라벨 없으면 공변량 위주. 검색 요약 기준, 1차 논문 미열람.",
    "added": "2026-11-26",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "ha-world-models",
@@ -99990,6 +99991,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "모방 성능이 시연 수준에 묶임.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "label-shift",
+   "label": "라벨 이동",
+   "parent": "distribution-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "라벨 분포 P(y)가 바뀜.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "concept-shift",
+   "label": "개념 이동",
+   "parent": "distribution-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력-출력 관계가 바뀜.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "drift-monitoring",
+   "label": "드리프트 모니터링",
+   "parent": "distribution-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "운영 중 이동을 감시.",
    "added": "2026-11-28",
    "related": []
   }
