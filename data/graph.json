@@ -100251,6 +100251,53 @@
    "summary": "시계열 행동에 쓰는 확산 트랜스포머.",
    "added": "2026-11-28",
    "related": []
+  },
+  {
+   "id": "pi0-flow-model",
+   "label": "π0 (pi-zero)",
+   "parent": "vla",
+   "domain": "physical-ai",
+   "status": "done",
+   "priority": 4,
+   "summary": "VLM 위 플로 매칭 VLA, 여러 로봇 플랫폼 데이터로 학습(arXiv 2410.24164 초록). 제로샷·언어 지시·미세조정·빨래 개기 등 평가. 초록에 정량 수치 없음.",
+   "added": "2026-11-28",
+   "done": "2026-11-28",
+   "related": [
+    "diffusion-policy"
+   ]
+  },
+  {
+   "id": "cross-embodiment-pretraining",
+   "label": "다중 로봇 사전학습",
+   "parent": "pi0-flow-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 로봇 플랫폼 데이터로 함께 학습.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "high-level-vlm-policy",
+   "label": "상위 VLM 정책",
+   "parent": "pi0-flow-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "고수준 지시를 하위 정책에 내리는 VLM.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "laundry-folding-task",
+   "label": "빨래 개기 과제",
+   "parent": "pi0-flow-model",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정교한 양팔 조작의 대표 평가 과제.",
+   "added": "2026-11-28",
+   "related": []
   }
  ]
 }
