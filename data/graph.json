@@ -56955,11 +56955,15 @@
    "label": "라벨링 중 개인정보 문제",
    "parent": "annotation-cost-comparison",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "외부 API 전송 시 개인정보 위험.",
+   "summary": "외부 LLM API 전송=개인정보 처리 위험. OpenAI API는 기본 학습 미사용·로그 최대 30일·ZDR은 승인 필요. Anthropic 상용 제품은 기본 학습 미사용, 피드백 예외(최대 5년). 마스킹·최소 전송·사내 모델 검토. 법률 자문 아님.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-safety",
+    "extra-pii-pass"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "nanotron-3d-parallelism",
@@ -102815,6 +102819,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "LLM 일치도를 해석하는 기준선.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "data-residency-options",
+   "label": "데이터 거주 옵션",
+   "parent": "data-privacy-in-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "저장·처리 지역을 지정하는 기능.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pseudonymization-key-separation",
+   "label": "가명화와 복원 키 분리",
+   "parent": "data-privacy-in-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "라벨링용 가명 처리와 키 분리 보관.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "on-prem-model-labeling",
+   "label": "사내 모델 라벨링",
+   "parent": "data-privacy-in-annotation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "외부 전송 없이 내부에서 라벨링하기.",
    "added": "2026-11-28",
    "related": []
   }
