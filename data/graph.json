@@ -56138,11 +56138,12 @@
    "label": "순서 교환 채점",
    "parent": "llm-annotation-bias",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "두 순서에서 일치할 때만 승리 인정.",
+   "summary": "순서를 바꿔 2회 판정, 두 번 다 이긴 답만 승리·불일치는 무승부(MT-Bench 논문의 보수적 방식). 호출 2배. GPT-4-사람 일치율 S1 66%·S2 85%는 순서 교환 단독 효과가 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "length-score-correlation",
@@ -97882,6 +97883,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "소량 사람 채점으로 심판을 맞추기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tie-rate-monitoring",
+   "label": "무승부 비율 점검",
+   "parent": "position-swap-judging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "불일치가 많을 때 변별력 저하를 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "judge-call-cost-doubling",
+   "label": "심판 호출 2배 비용",
+   "parent": "position-swap-judging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "순서 교환의 비용 부담.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "label-flip-handling",
+   "label": "라벨 뒤집기 처리",
+   "parent": "position-swap-judging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "교환 후 승자 라벨을 올바로 해석하는 코드.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "agreement-setup-s1-s2",
+   "label": "S1·S2 일치율 설정",
+   "parent": "position-swap-judging",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "무승부 포함 여부에 따른 일치율 정의.",
    "added": "2026-11-28",
    "related": []
   }
