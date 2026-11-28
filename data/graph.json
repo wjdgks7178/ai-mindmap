@@ -5439,11 +5439,12 @@
    "label": "safetensors",
    "parent": "gguf-format",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "허깅페이스 표준 가중치 파일 형식.",
+   "summary": "텐서만 담는 안전·빠른(zero-copy) 형식, 부분 로딩 가능. GGUF는 메타데이터까지 포함. pickle 위험 메커니즘은 일반 지식, 문서의 형식 상세는 확인 못 함.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "quant-naming",
@@ -98944,6 +98945,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "같은 질문으로 비트별 품질 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pickle-risk",
+   "label": "pickle의 위험",
+   "parent": "safetensors",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "역직렬화 때 임의 코드가 실행될 수 있는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "partial-tensor-loading",
+   "label": "부분 텐서 로딩",
+   "parent": "safetensors",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "필요한 텐서·슬라이스만 읽기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gguf-vs-safetensors",
+   "label": "GGUF vs safetensors",
+   "parent": "safetensors",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "메타데이터 포함 여부와 용도 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "model-file-trust",
+   "label": "모델 파일 신뢰",
+   "parent": "safetensors",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "출처·해시 확인.",
    "added": "2026-11-28",
    "related": []
   }
