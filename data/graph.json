@@ -26811,11 +26811,12 @@
    "label": "파국적 망각",
    "parent": "sft",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "미세조정 중 기존 능력이 사라지는 현상.",
+   "summary": "새 학습 중 이전 능력을 잃는 현상. EWC(2016)는 중요 가중치 학습을 늦춤. LoRA Learns Less and Forgets Less(2024): 전체 미세조정이 더 배우지만 LoRA가 도메인 밖 능력을 더 보존, 전체는 10~100배 높은 순위 변화(검색 요약).",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "tf-idf",
@@ -98493,6 +98494,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "사람 선호가 아첨을 강화할 수 있다는 분석.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "elastic-weight-consolidation",
+   "label": "EWC",
+   "parent": "catastrophic-forgetting",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중요 가중치의 변화를 억제해 망각을 줄이는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "continual-learning",
+   "label": "지속 학습",
+   "parent": "catastrophic-forgetting",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과제를 순차로 배우며 기억을 유지하는 연구.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "general-capability-regression-test",
+   "label": "일반 능력 회귀 시험",
+   "parent": "catastrophic-forgetting",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "미세조정 후 일반 능력 유지 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "data-mixing-replay",
+   "label": "일반 데이터 혼합",
+   "parent": "catastrophic-forgetting",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기존 데이터를 섞어 망각을 줄이기.",
    "added": "2026-11-28",
    "related": []
   }
