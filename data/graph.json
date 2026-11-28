@@ -96466,11 +96466,12 @@
    "label": "VLA 모델",
    "parent": "figure-helix",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "시각·언어 입력에서 로봇 행동을 직접 내는 모델.",
+   "summary": "영상+언어→로봇 행동 모델. RT-2는 행동을 텍스트 토큰으로, OpenVLA는 7B·97만 시연·RT-2-X(55B) 대비 +16.5%p(저자 보고). 큰 모델의 지연이 한계.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "system-0-1-2-hierarchy",
@@ -96502,6 +96503,17 @@
    "status": "planned",
    "priority": 4,
    "summary": "행동을 갱신하는 빈도와 지연의 관계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "vla-latency-problem",
+   "label": "VLA 지연 문제",
+   "parent": "vla",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "큰 모델의 느린 추론과 제어 주기의 충돌.",
    "added": "2026-11-28",
    "related": []
   }
