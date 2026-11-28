@@ -56223,11 +56223,14 @@
    "label": "길이와 점수 상관",
    "parent": "llm-annotation-bias",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "장황함 편향 점검.",
+   "summary": "LC-AlpacaEval: 길이 항을 둔 GLM으로 길이 통제. GPT-4 승률 범위 22.9~64.3%→41.9~51.6%, Arena 스피어만 0.94→0.98. 상관만으로 편향 단정 불가, 같은 내용 쌍 시험 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "reliability-vs-validity",
@@ -101289,6 +101292,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "틀린 문서를 직접 읽어 원인 찾기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "length-controlled-winrate",
+   "label": "길이 통제 승률",
+   "parent": "length-score-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "길이 항을 0으로 놓은 반사실 승률.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "truncation-gaming",
+   "label": "응답 자르기 꼼수",
+   "parent": "length-score-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "응답을 짧게 잘라 평가를 속이는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "paired-length-probe",
+   "label": "길이만 바꾼 쌍 시험",
+   "parent": "length-score-correlation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "내용 같고 길이만 다른 두 답으로 편향 확인.",
    "added": "2026-11-28",
    "related": []
   }
