@@ -56561,11 +56561,15 @@
    "label": "오프셋으로 레코드 받기",
    "parent": "columnar-index-parquet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "warc 위치 열과 Range 요청 결합.",
+   "summary": "warc.gz는 레코드별 gzip 조각이라 Range bytes=off-(off+len-1)로 한 레코드만 복원 가능. 직접 실행: 206 응답, 오프셋 475·길이 451로 request 레코드 665바이트 복원.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "athena-cc-index-query"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "domain-list-selection",
@@ -101968,6 +101972,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "블로그 이후 스키마 변경 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "warc-record-types",
+   "label": "WARC 레코드 종류",
+   "parent": "record-fetch-by-offset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "warcinfo·request·response·metadata.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gzip-member-concatenation",
+   "label": "gzip 조각 이어붙임",
+   "parent": "record-fetch-by-offset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "레코드 단위로 독립 압축하는 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "polite-crawl-fetching",
+   "label": "예의 바른 대량 요청",
+   "parent": "record-fetch-by-offset",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "동시 요청 제한과 재시도 지연.",
    "added": "2026-11-28",
    "related": []
   }
