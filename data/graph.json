@@ -5360,11 +5360,12 @@
    "label": "캐시 무효화",
    "parent": "prompt-caching",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "앞부분이 바뀌면 뒤가 모두 깨지는 규칙.",
+   "summary": "tools→system→messages 계층에서 앞쪽 변경은 이후를 모두 무효화. 도구 정의 변경은 전체 무효, tool_choice는 messages만, effort·thinking 변경은 모델별. role system 메시지로 앞부분 보존(일부 모델). 문서 2026-11-28.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "soft-targets",
@@ -98051,6 +98052,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "쓸 때마다 수명이 무료 연장되는 규칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cumulative-prefix-hash",
+   "label": "누적 접두 해시",
+   "parent": "cache-invalidation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중단점까지 전체를 해시해 일치를 판단하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "system-message-append",
+   "label": "system 메시지 덧붙이기",
+   "parent": "cache-invalidation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "캐시를 보존하며 지침을 추가하는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tool-definition-stability",
+   "label": "도구 정의 안정화",
+   "parent": "cache-invalidation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "도구 설명을 고정해 캐시를 지키기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dynamic-content-placement",
+   "label": "동적 내용 배치",
+   "parent": "cache-invalidation",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시간·사용자 입력을 뒤쪽에 두는 원칙.",
    "added": "2026-11-28",
    "related": []
   }
