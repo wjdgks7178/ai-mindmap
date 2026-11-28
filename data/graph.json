@@ -4531,11 +4531,12 @@
    "label": "AI 위험 대장",
    "parent": "nist-ai-rmf",
    "domain": "ai-safety",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "식별한 AI 위험을 기록·추적하는 목록.",
+   "summary": "AI 위험을 가능성·영향·소유자·대응·점검 주기로 기록. NIST는 위험을 피해 크기와 발생 가능성의 함수로 정의, 공식 템플릿은 미확인. AI RMF 개정 진행 중.",
    "added": "2026-11-01",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "goal-misgeneralization",
@@ -96604,6 +96605,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "환경에 맞춰 로봇 형태를 고르는 원칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "risk-scoring",
+   "label": "위험 점수화",
+   "parent": "ai-risk-register",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가능성과 영향을 따로 매겨 합치는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "risk-owner",
+   "label": "위험 소유자",
+   "parent": "ai-risk-register",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "각 위험의 대응 책임자 지정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "risk-review-cadence",
+   "label": "위험 점검 주기",
+   "parent": "ai-risk-register",
+   "domain": "ai-safety",
+   "status": "planned",
+   "priority": 4,
+   "summary": "대장을 갱신하는 정기 일정.",
    "added": "2026-11-28",
    "related": []
   }
