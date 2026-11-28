@@ -10403,11 +10403,12 @@
    "label": "top-k 샘플링",
    "parent": "temperature-sampling",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "확률 상위 k개 토큰만 남기고 뽑는 방식.",
+   "summary": "상위 k개 후보 안에서 확률적 샘플링. k 고정이 한계(뾰족/평평한 분포 모두 문제), top-p가 보완. HF 블로그: top_k=50이 예시 중 가장 사람다움.",
    "added": "2026-11-08",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "greedy-decoding",
@@ -97158,6 +97159,17 @@
    "status": "planned",
    "priority": 4,
    "summary": "정확한 출력과 다양한 출력의 선택.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sampling-parameter-order",
+   "label": "샘플링 설정 조합",
+   "parent": "top-k-sampling",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "온도·top-k·top-p를 함께 쓸 때의 순서.",
    "added": "2026-11-28",
    "related": []
   }
