@@ -27519,11 +27519,12 @@
    "label": "로보택시 안전 지표",
    "parent": "autonomous-driving",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "사람 대비 충돌률 비교의 방법과 한계.",
+   "summary": "Waymo 발표(2026-06까지) 무인 2.713억 마일, 사람 벤치마크 대비 심각 부상 충돌 약 95%↓. 고속도로·눈 제외, 과실 미평가 등 한계를 페이지가 명시. 회사 자기 보고.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "long-tail-problem",
@@ -96108,6 +96109,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "기관 간 데이터 공유의 이점과 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "safety-case",
+   "label": "안전 사례",
+   "parent": "robotaxi-safety-metrics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시스템이 충분히 안전함을 논증하는 문서 틀.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "human-crash-benchmark",
+   "label": "사람 운전 벤치마크",
+   "parent": "robotaxi-safety-metrics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "경찰 신고·과소신고 보정으로 만드는 기준.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "nhtsa-sgo",
+   "label": "NHTSA SGO 보고",
+   "parent": "robotaxi-safety-metrics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자율주행 충돌 의무 보고 제도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "underreporting-adjustment",
+   "label": "과소신고 보정",
+   "parent": "robotaxi-safety-metrics",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "경찰 미신고 충돌을 반영하는 보정.",
    "added": "2026-11-28",
    "related": []
   }
