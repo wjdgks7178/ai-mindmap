@@ -27546,11 +27546,12 @@
    "label": "서비스형 로봇(RaaS)",
    "parent": "humanoid-robots",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "로봇을 사지 않고 월 구독으로 쓰는 도입 방식.",
+   "summary": "로봇을 월 구독·사용량 과금으로 쓰는 방식. 벤더 수치: Brightpick 월 $1,900~2,200/대, Formic 시간당 $8~15, DHL Makro 123대 월 $81,342. 마케팅 자료 주의.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "cooperatively-safe-robot",
@@ -96367,6 +96368,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "저품질 시연을 걸러 내는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "capex-vs-opex",
+   "label": "CapEx vs OpEx",
+   "parent": "robots-as-a-service",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자산 구매와 운영비 지출의 회계 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "usage-based-robot-pricing",
+   "label": "사용량 기반 로봇 과금",
+   "parent": "robots-as-a-service",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "가동 시간·작업 단위로 요금을 매기는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "vendor-lock-in",
+   "label": "벤더 종속",
+   "parent": "robots-as-a-service",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "특정 업체에 묶여 이동이 어려운 상태.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "raas-contract-terms",
+   "label": "RaaS 계약 조건",
+   "parent": "robots-as-a-service",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인수 옵션·가격 맞춤권 등 조항.",
    "added": "2026-11-28",
    "related": []
   }
