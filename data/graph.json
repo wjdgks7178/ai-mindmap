@@ -56860,11 +56860,15 @@
    "label": "증강 프롬프트 설계",
    "parent": "llm-paraphrase-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "말투·길이·난이도를 지정하는 프롬프트.",
+   "summary": "Li 2023: 맥락·생성(스타일·라벨·단어 수)·다양성 프롬프트. 퓨샷(실제 예시+베끼지 말 것)이 제로샷보다 평균 +10% 안팎, 실제 데이터에는 못 미침(RoBERTa 격차 6.7~16.9%), 과제 주관성 높을수록 격차 큼.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "llm-paraphrase-augmentation",
+    "conditional-text-generation-augmentation"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "cdx-server-load-etiquette",
@@ -103129,6 +103133,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "클래스당 5개 같은 극소량에서의 증강 효과.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "few-shot-example-prompting",
+   "label": "퓨샷 예시 프롬프트",
+   "parent": "augmentation-prompt-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "실제 예시를 넣고 베끼지 말라고 제한.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "diversity-prompt",
+   "label": "다양성 프롬프트",
+   "parent": "augmentation-prompt-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주기적으로 이전과 다르게 쓰라고 지시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "task-subjectivity-gap",
+   "label": "과제 주관성 격차",
+   "parent": "augmentation-prompt-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "주관적 과제일수록 합성 데이터의 한계가 큼.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "synthetic-vs-real-data-gap",
+   "label": "합성 vs 실제 데이터 격차",
+   "parent": "augmentation-prompt-design",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "합성 데이터 학습 모델이 실제보다 낮은 정도.",
    "added": "2026-11-28",
    "related": []
   }
