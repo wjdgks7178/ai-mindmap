@@ -5590,11 +5590,12 @@
    "label": "협업 모드",
    "parent": "delegation-skill",
    "domain": "literacy",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "자동화·증강·에이전시 세 가지 일 나누는 방식.",
+   "summary": "AI Fluency 용어 요약(CC BY-NC-SA): 자동화=지시→실행, 증강=사고 파트너, 에이전시=AI를 설정해 독립 수행. 모드 선택 기준은 내 정리.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "task-risk-matrix",
@@ -99203,6 +99204,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "전문가 혼합에서 실제 쓰이는 파라미터.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "automation-mode",
+   "label": "자동화 모드",
+   "parent": "collaboration-modes",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "구체 지시를 AI가 실행.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "augmentation-mode",
+   "label": "증강 모드",
+   "parent": "collaboration-modes",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람과 AI의 반복적 협업.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "agency-mode",
+   "label": "에이전시 모드",
+   "parent": "collaboration-modes",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "AI의 지식·행동 패턴을 설정해 위임.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mode-mixing",
+   "label": "모드 혼합",
+   "parent": "collaboration-modes",
+   "domain": "literacy",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 업무 안에서 모드가 섞이는 현실.",
    "added": "2026-11-28",
    "related": []
   }
