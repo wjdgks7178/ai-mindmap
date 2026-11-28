@@ -27150,11 +27150,12 @@
    "label": "명세가 진실의 원천",
    "parent": "spec-kit",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "코드 대신 의도 문서를 기준으로 삼는 관점.",
+   "summary": "Spec Kit 철학: 명세가 기준 산출물, 코드는 표현. 디버깅은 명세·계획 수정, 운영 피드백은 명세로 환류. 공식 절차 constitution→specify→plan→tasks→implement→converge. 효과는 문서의 주장.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "task-decomposition",
@@ -96819,6 +96820,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "인자 미지원 등 도구별 제약.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "power-inversion",
+   "label": "힘의 역전",
+   "parent": "spec-as-source-of-truth",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "코드가 명세를 섬기게 되는 관점 전환.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "intent-driven-development",
+   "label": "의도 주도 개발",
+   "parent": "spec-as-source-of-truth",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자연어 의도를 개발의 공용어로 삼는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "spec-code-sync",
+   "label": "명세-코드 동기화",
+   "parent": "spec-as-source-of-truth",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "명세가 낡지 않게 유지하는 규율.",
    "added": "2026-11-28",
    "related": []
   }
