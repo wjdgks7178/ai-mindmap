@@ -5786,11 +5786,12 @@
    "label": "비용 추산표",
    "parent": "token-pricing",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "요청 수와 토큰 수로 월 비용 계산.",
+   "summary": "월 비용=요청수×(입력×입력단가+출력×출력단가). 직접 계산(월 3만 요청·입력 1,500·출력 300): Haiku 5.5 $9, Sonnet 5.5 $180, Opus 5 $450. 단가는 2026-11-28 가격표 기준.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "effort-scaling-rule",
@@ -99541,6 +99542,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "가격표가 바뀌는 점과 재확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "token-measurement-sampling",
+   "label": "토큰 실측 표본",
+   "parent": "cost-estimation-sheet",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실제 요청으로 평균 토큰 재기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cost-headroom",
+   "label": "비용 여유분",
+   "parent": "cost-estimation-sheet",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사용량 변동 대비 여유.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "failed-retry-cost",
+   "label": "재시도 비용",
+   "parent": "cost-estimation-sheet",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실패·재시도 요청의 추가 비용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "model-cost-ratio",
+   "label": "모델 간 비용 비율",
+   "parent": "cost-estimation-sheet",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소형과 대형 모델의 비용 차이.",
    "added": "2026-11-28",
    "related": []
   }
