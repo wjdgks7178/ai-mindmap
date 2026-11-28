@@ -82085,11 +82085,12 @@
    "label": "커뮤니티 탐지(Leiden)",
    "parent": "graph-rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "그래프에서 촘촘히 연결된 묶음을 찾는 알고리즘.",
+   "summary": "Leiden은 Louvain의 연결 부실 문제를 해결. Louvain은 최대 25% 부실·16% 끊긴 커뮤니티(논문 실험), Leiden은 연결 보장 증명. GraphRAG 문서는 커뮤니티 탐지 단계를 설명(알고리즘명은 미확인).",
    "related": [],
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "done": "2026-11-28"
   },
   {
    "id": "graphrag-local-vs-global",
@@ -97487,6 +97488,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "개체·관계 유형을 정하고 유지하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "modularity",
+   "label": "모듈성(modularity)",
+   "parent": "community-detection-leiden",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "커뮤니티 분할 품질을 재는 지표.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "louvain-algorithm",
+   "label": "Louvain 알고리즘",
+   "parent": "community-detection-leiden",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연결 문제가 있는 전신 알고리즘.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "resolution-parameter",
+   "label": "해상도 매개변수",
+   "parent": "community-detection-leiden",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "묶음의 크기를 조절하는 설정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hierarchical-communities",
+   "label": "계층적 커뮤니티",
+   "parent": "community-detection-leiden",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 수준으로 묶어 요약하는 방식.",
    "added": "2026-11-28",
    "related": []
   }
