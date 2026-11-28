@@ -56576,11 +56576,15 @@
    "label": "도메인 목록 정하기",
    "parent": "domain-specific-corpus-cc",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "분야별 대상 도메인 선정.",
+   "summary": "도메인 목록이 코퍼스 성격을 정함. DAPT(2020)는 분야 이어학습 이득 근거. 시드→검색·웹 그래프 확장→페이지 수·쏠림·표본 검수. 순위 지표 파일은 미확인.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "athena-cc-index-query"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "index-language-accuracy",
@@ -102053,6 +102057,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "색인값을 받은 텍스트로 다시 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dapt-tapt",
+   "label": "DAPT와 TAPT",
+   "parent": "domain-list-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분야·과제 데이터로 이어서 사전학습.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "common-crawl-web-graph",
+   "label": "Common Crawl 웹 그래프",
+   "parent": "domain-list-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "호스트·도메인 링크 그래프 공개 데이터.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "domain-concentration-cap",
+   "label": "도메인 쏠림과 상한",
+   "parent": "domain-list-selection",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대형 도메인이 코퍼스를 지배하는 문제.",
    "added": "2026-11-28",
    "related": []
   }
