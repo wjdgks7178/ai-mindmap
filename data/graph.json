@@ -5235,11 +5235,12 @@
    "label": "자기 선호 편향",
    "parent": "judge-bias",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "자기 모델 답에 후한 경향.",
+   "summary": "MT-Bench 논문: GPT-4 자기 승률 +10%p, Claude-v1 +25%p, GPT-3.5는 자기 선호 없음. 저자도 자료 부족으로 편향 존재를 확정할 수 없다고 함.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "capability-eval",
@@ -97837,6 +97838,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "인위 공격과 실사용 편향의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cross-family-judge",
+   "label": "타 계열 심판",
+   "parent": "self-preference-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "평가 대상과 다른 모델 계열을 심판으로 쓰기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "multi-judge-ensemble",
+   "label": "다중 심판 혼합",
+   "parent": "self-preference-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 심판의 판정을 섞어 편향 완화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "style-confound",
+   "label": "문체 교란",
+   "parent": "self-preference-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "품질이 아닌 문체 차이가 평가에 섞이는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "human-sample-calibration",
+   "label": "사람 표본 보정",
+   "parent": "self-preference-bias",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소량 사람 채점으로 심판을 맞추기.",
    "added": "2026-11-28",
    "related": []
   }
