@@ -56692,11 +56692,15 @@
    "label": "오염 제외 점수 보고",
    "parent": "benchmark-contamination-in-corpus",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "겹침 예제 빼고 점수 병기.",
+   "summary": "clean 점수·n을 전체와 병기. GPT-3: 13-gram dirty 제외 재평가. Llama 2: 10토큰+ n-gram 오염 토큰 비율, Clean<20%·Dirty≥80% 두 방향 검사. HellaSwag 70B Clean 80.0 vs Not clean 89.5(표 추출 불완전).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "ngram-overlap-contamination"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "web-source-distribution",
@@ -103177,6 +103181,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "합성 데이터 학습 모델이 실제보다 낮은 정도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "token-level-contamination",
+   "label": "토큰 단위 오염 비율",
+   "parent": "clean-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "샘플 중 오염 토큰의 비율로 오염도를 재기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "two-sided-contamination-test",
+   "label": "양방향 오염 검사",
+   "parent": "clean-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "가장 깨끗한 집단은 낮고 가장 더러운 집단은 높은지 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "skipgram-budget",
+   "label": "skipgram 허용 예산",
+   "parent": "clean-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "몇 토큰 어긋남을 허용하며 매칭하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "suffix-array-overlap-search",
+   "label": "접미사 배열 겹침 탐색",
+   "parent": "clean-score-reporting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "대규모 학습 데이터에서 겹침을 찾는 자료구조.",
    "added": "2026-11-28",
    "related": []
   }
