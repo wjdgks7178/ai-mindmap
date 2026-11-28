@@ -96197,11 +96197,12 @@
    "label": "RT-1-X와 RT-2-X",
    "parent": "open-x-embodiment",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "Open X 데이터로 학습한 두 모델.",
+   "summary": "Open X 데이터로 학습한 RT-1-X(소규모 데이터에서 RT-1 대비 +50%)·RT-2-X(새 기술 평가에서 RT-2의 3배, 최대 55B). 프로젝트 페이지 저자 주장, 상대/절대 여부 미확인.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "data-pooling-robotics",
@@ -100373,6 +100374,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "6천 번 평가의 구성.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "emergent-skill-eval",
+   "label": "창발 기술 평가",
+   "parent": "rt-1-x-rt-2-x",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습에 없던 기술을 시험.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "small-data-domain",
+   "label": "소규모 데이터 영역",
+   "parent": "rt-1-x-rt-2-x",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터가 적은 조건의 성능 개선.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "x-suffix-meaning",
+   "label": "X 접미사의 의미",
+   "parent": "rt-1-x-rt-2-x",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 로봇 데이터로 학습했다는 표기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "baseline-fairness",
+   "label": "기준선 공정성",
+   "parent": "rt-1-x-rt-2-x",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비교 조건과 기준선 확인.",
    "added": "2026-11-28",
    "related": []
   }
