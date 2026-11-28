@@ -88389,11 +88389,12 @@
    "label": "행동 청킹",
    "parent": "action-tokenization",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "여러 시점 행동을 묶어 예측.",
+   "summary": "여러 스텝 행동을 한 번에 예측해 유효 시야·판단 횟수를 줄임(ACT chunk 90, 50Hz: 에피소드당 약 7~11번 판단, 내 계산). 오차 누적 감소는 저자 주장, T²ε 해석은 내 해석.",
    "added": "2026-11-26",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "autoregressive-vs-diffusion-vla",
@@ -99900,6 +99901,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "행동 복제의 데이터 병목.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "chunk-size-choice",
+   "label": "chunk 크기 선택",
+   "parent": "action-chunking",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "묶음이 길수록 반응성이 떨어짐.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "open-loop-execution-risk",
+   "label": "개방 루프 실행 위험",
+   "parent": "action-chunking",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "묶음 안에서 새 관찰에 반응 못 함.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "effective-horizon",
+   "label": "유효 시야",
+   "parent": "action-chunking",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "판단 횟수로 본 실질 의사결정 길이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "chunk-boundary-smoothing",
+   "label": "묶음 경계 부드럽게",
+   "parent": "action-chunking",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "겹치는 예측을 섞어 끊김 줄이기.",
    "added": "2026-11-28",
    "related": []
   }
