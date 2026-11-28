@@ -56970,11 +56970,15 @@
    "label": "nanotron의 3D 병렬",
    "parent": "nanotron-lighteval",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "데이터·텐서·파이프라인 병렬 조합.",
+   "summary": "GPU 수=DP×TP×PP. Megatron-LM: 인터리브 스케줄 처리량 +10%, 3,072 GPU에서 1조 파라미터 52% 효율. nanotron: 3D+expert 병렬, AFAB·1F1B, ZeRO-1. 설정 YAML 항목명은 미확인, 직접 실행 못 함.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-infra",
+    "nanotron-lighteval"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "lighteval-backends",
@@ -102900,6 +102904,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "문항별 출력을 남겨 오류를 디버깅.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "data-parallelism",
+   "label": "데이터 병렬",
+   "parent": "nanotron-3d-parallelism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델을 복제하고 배치를 나눠 처리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tensor-parallelism",
+   "label": "텐서 병렬",
+   "parent": "nanotron-3d-parallelism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 층의 행렬을 여러 GPU로 분할.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pipeline-parallelism",
+   "label": "파이프라인 병렬",
+   "parent": "nanotron-3d-parallelism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "층을 단계로 나눠 마이크로배치를 흘려보내기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "zero-1-optimizer",
+   "label": "ZeRO-1 옵티마이저",
+   "parent": "nanotron-3d-parallelism",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "옵티마이저 상태를 GPU에 나눠 저장.",
    "added": "2026-11-28",
    "related": []
   }
