@@ -57157,11 +57157,15 @@
    "label": "trafilatura 본문 추출기",
    "parent": "massiveweb-text-extraction",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "오픈소스 웹 본문 추출 라이브러리.",
+   "summary": "trafilatura 2.4.0을 직접 설치·실행: 메뉴·광고·푸터 제거, 제목·문단·목록 유지, markdown 출력 가능. 제작자 평가(2026-10-02, 990문서): 표준 F 0.926 > magic-html 0.889 > justext 0.862. 독일어 위주라 한국어는 별도 확인.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-infra",
+    "record-fetch-by-offset"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "format-preserving-extraction",
@@ -103886,6 +103890,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "질문에 먼저 답해 설계를 점검.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "extract-precision-vs-recall",
+   "label": "추출 정밀도 vs 재현율 모드",
+   "parent": "trafilatura-extractor",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "깨끗하게 vs 많이 가져오기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "extractor-benchmark-limits",
+   "label": "추출기 벤치마크의 한계",
+   "parent": "trafilatura-extractor",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "독일어 위주 평가와 한국어 적용 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "wet-vs-warc-extraction",
+   "label": "WET vs WARC 추출",
+   "parent": "trafilatura-extractor",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "WET의 보일러플레이트 잔존과 WARC 직접 추출.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "markdown-extraction-output",
+   "label": "마크다운 추출 출력",
+   "parent": "trafilatura-extractor",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "제목·목록 서식을 유지한 텍스트 추출.",
    "added": "2026-11-28",
    "related": []
   }
