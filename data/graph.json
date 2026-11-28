@@ -5476,11 +5476,12 @@
    "label": "KV 양자화",
    "parent": "kv-cache",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "KV 캐시 메모리를 줄이는 방법.",
+   "summary": "KIVI(2402.02750): 키는 채널별·값은 토큰별 2비트 양자화, 저자 보고 최대 메모리 2.6배↓·배치 4배·처리량 2.35~3.47배, 품질 거의 유지(주장).",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "router-training-data",
@@ -99034,6 +99035,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "모델 구조 값으로 메모리를 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "per-channel-vs-per-token",
+   "label": "채널별 vs 토큰별 양자화",
+   "parent": "kv-quantization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "키와 값의 최적 양자화 축이 다름.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kivi",
+   "label": "KIVI",
+   "parent": "kv-quantization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "튜닝 없는 2비트 KV 캐시 양자화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kv-cache-eviction",
+   "label": "KV 캐시 축출",
+   "parent": "kv-quantization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오래된 토큰을 버려 메모리를 줄이는 대안.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kv-vs-prompt-caching",
+   "label": "KV 캐시 vs 프롬프트 캐싱",
+   "parent": "kv-quantization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "서버 내부 캐시와 API 비용 절감 기능의 구분.",
    "added": "2026-11-28",
    "related": []
   }
