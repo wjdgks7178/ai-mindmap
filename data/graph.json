@@ -5428,11 +5428,12 @@
    "label": "VRAM 예산 계산",
    "parent": "llama-cpp",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "모델 크기와 컨텍스트로 메모리 가늠하기.",
+   "summary": "VRAM=가중치+KV 캐시+여유. Llama 3 8B형 KV 토큰당 128KiB(32층·KV 8·head 128·bf16), 8K≈1GiB·32K≈4GiB·128K≈16GiB(직접 계산). 8B Q4_K 가중치 약 4.21GiB.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "safetensors",
@@ -98989,6 +98990,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "출처·해시 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kv-cache-size-formula",
+   "label": "KV 캐시 크기 공식",
+   "parent": "vram-budgeting",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "층·헤드·차원·토큰으로 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "gqa-memory-saving",
+   "label": "GQA 메모리 절감",
+   "parent": "vram-budgeting",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "KV 헤드 수를 줄여 캐시를 줄이는 효과.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "concurrent-request-scaling",
+   "label": "동시 요청 스케일링",
+   "parent": "vram-budgeting",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "요청 수에 비례하는 KV 메모리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "config-json-reading",
+   "label": "config.json 읽기",
+   "parent": "vram-budgeting",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "모델 구조 값으로 메모리를 계산.",
    "added": "2026-11-28",
    "related": []
   }
