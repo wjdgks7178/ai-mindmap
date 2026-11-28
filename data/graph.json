@@ -5249,11 +5249,12 @@
    "label": "능력 평가",
    "parent": "regression-eval",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "새로 얼마나 잘하나를 재는 평가.",
+   "summary": "능력 평가는 낮은 통과율로 시작해 목표를 주고, 높아지면 100% 근처의 회귀 평가로 졸업(Anthropic 글). pass^k는 k번 모두 성공할 확률, 75%면 pass^3 약 42%.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "eval-saturation",
@@ -98164,6 +98165,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "여러 번 실행한 점수의 편차.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pass-at-k-vs-pass-hat-k",
+   "label": "pass@k vs pass^k",
+   "parent": "capability-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 번 성공 vs 모두 성공 확률.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "eval-graduation",
+   "label": "평가 졸업",
+   "parent": "capability-eval",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "능력 평가를 회귀 스위트로 편입.",
    "added": "2026-11-28",
    "related": []
   }
