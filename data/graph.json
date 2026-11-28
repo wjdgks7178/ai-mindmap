@@ -26759,11 +26759,12 @@
    "label": "과정 보상 모델",
    "parent": "reward-model",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "최종 답이 아닌 추론 단계별로 점수를 매기는 모델.",
+   "summary": "추론 단계별로 점수를 매기는 보상 모델. Lightman 2023 초록: MATH에서 과정 감독이 결과 감독을 크게 능가, 78%, PRM800K 80만 단계 라벨 공개. 수학 한정 결과.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "chat-template",
@@ -98673,6 +98674,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "LLM 심판 기반 정렬 평가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "outcome-supervision",
+   "label": "결과 감독",
+   "parent": "process-reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "최종 결과만 보상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "process-supervision",
+   "label": "과정 감독",
+   "parent": "process-reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중간 단계마다 피드백.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "prm800k",
+   "label": "PRM800K",
+   "parent": "process-reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "단계별 사람 라벨 80만 개 데이터.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "step-labeling-cost",
+   "label": "단계 라벨링 비용",
+   "parent": "process-reward-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "과정 감독의 데이터 비용 부담.",
    "added": "2026-11-28",
    "related": []
   }
