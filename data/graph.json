@@ -96105,11 +96105,12 @@
    "label": "시간 앙상블",
    "parent": "aloha-act",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "겹치는 묶음 예측을 가중 평균해 부드럽게 만드는 방법.",
+   "summary": "매 스텝 호출로 겹친 묶음의 같은 시점 예측을 w_i=exp(-m·i)로 가중 평균(m 작을수록 새 관찰 빨리 반영). 학습 비용 증가 없음, 추론 비용만 증가(ACT 논문 본문). 효과는 방법별로 다름.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "bimanual-manipulation",
@@ -100069,6 +100070,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "목적·독자·형식 등 7항목.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "exponential-weighting-m",
+   "label": "지수 가중 m",
+   "parent": "temporal-ensembling",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "새 관찰 반영 속도를 정하는 값.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "overlapping-chunks",
+   "label": "겹치는 묶음",
+   "parent": "temporal-ensembling",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "매 스텝 질의로 묶음이 겹치게 하는 실행.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "ensemble-vs-smoothing",
+   "label": "앙상블 vs 스무딩",
+   "parent": "temporal-ensembling",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 시점 예측 평균과 인접 시점 평균의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "inference-cost-per-step",
+   "label": "스텝당 추론 비용",
+   "parent": "temporal-ensembling",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "매 스텝 호출로 늘어나는 계산.",
    "added": "2026-11-28",
    "related": []
   }
