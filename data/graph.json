@@ -56546,11 +56546,15 @@
    "label": "Athena로 Common Crawl 색인 조회",
    "parent": "columnar-index-parquet",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "SQL로 언어·도메인 조건 선별.",
+   "summary": "Athena에서 ccindex Parquet 표를 SQL로 조회: 표 생성→MSCK REPAIR→crawl·subset 파티션 필터. 스캔량 과금(2018년 TiB당 $5, .no 예시 2.12MB). 한국어 SQL은 제안(미실행).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "columnar-index-parquet"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "record-fetch-by-offset",
@@ -101920,6 +101924,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "비상당 부분 사용은 막을 수 없다는 규정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "athena-scan-cost",
+   "label": "Athena 스캔 비용",
+   "parent": "athena-cc-index-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "스캔한 데이터량으로 과금되는 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "partition-pruning",
+   "label": "파티션 가지치기",
+   "parent": "athena-cc-index-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "WHERE로 파티션을 좁혀 스캔량 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "content-languages-list-values",
+   "label": "content_languages 목록 값",
+   "parent": "athena-cc-index-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ell,eng처럼 여러 언어가 한 칸에 들어간 경우.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cc-index-schema-versions",
+   "label": "색인 스키마 버전 확인",
+   "parent": "athena-cc-index-query",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "블로그 이후 스키마 변경 점검.",
    "added": "2026-11-28",
    "related": []
   }
