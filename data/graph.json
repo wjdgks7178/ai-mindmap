@@ -27498,11 +27498,12 @@
    "label": "종단간 자율주행",
    "parent": "autonomous-driving",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "센서 입력에서 조작까지 한 신경망이 내는 방식.",
+   "summary": "센서→주행 출력을 한 신경망으로. UniAD(CVPR 2023): 모듈 4+계획기 1을 쿼리로 연결, nuScenes 개방 루프 평가. Best Paper 후보(수상 여부 미확인).",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "lidar-vs-camera",
@@ -96243,6 +96244,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "레이더·LiDAR 없이 카메라만 쓰는 노선.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "modular-driving-stack",
+   "label": "모듈식 주행 스택",
+   "parent": "end-to-end-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "인식·예측·계획을 따로 만드는 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "negative-transfer",
+   "label": "부정적 전이",
+   "parent": "end-to-end-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "함께 학습한 과제가 서로 성능을 깎는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "open-loop-vs-closed-loop",
+   "label": "개방 vs 폐쇄 루프 평가",
+   "parent": "end-to-end-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기록 데이터 평가와 시뮬 주행 평가의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "nuscenes-benchmark",
+   "label": "nuScenes",
+   "parent": "end-to-end-driving",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "자율주행 인식·예측 공개 벤치마크.",
    "added": "2026-11-28",
    "related": []
   }
