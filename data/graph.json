@@ -5450,11 +5450,12 @@
    "label": "Q4_K_M 이름 읽기",
    "parent": "gguf-format",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "양자화 표기 해독법.",
+   "summary": "Q4_K_M: Q4=4비트, K=K-quants. HF 표 bpw: Q6_K 6.5625·Q5_K 5.5·Q4_K 4.5·Q3_K 3.4375·Q2_K 2.625. _S/_M/_L 의미는 미확인. 7B Q4_K 약 3.9GB 직접 계산.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "attention-mechanism",
@@ -98899,6 +98900,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "발표 시점과 현재 가격 차이 반영.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "k-quants",
+   "label": "K-quants",
+   "parent": "quant-naming",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "슈퍼블록 단위 스케일을 쓰는 양자화 계열.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "iq-importance-matrix",
+   "label": "IQ·중요도 행렬",
+   "parent": "quant-naming",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "중요도 정보를 쓰는 양자화.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bits-per-weight",
+   "label": "가중치당 비트 수",
+   "parent": "quant-naming",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "양자화 형식의 실효 비트.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "quality-loss-eval",
+   "label": "양자화 품질 손실 평가",
+   "parent": "quant-naming",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 질문으로 비트별 품질 비교.",
    "added": "2026-11-28",
    "related": []
   }
