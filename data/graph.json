@@ -56402,11 +56402,14 @@
    "label": "FineWeb 이용 조건",
    "parent": "fineweb-pii-removal",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "ODC-By와 Common Crawl 약관.",
+   "summary": "FineWeb: ODC-By 1.0(출처 표시) + Common Crawl 이용약관. 이메일·공개 IP만 치환, 전화번호 미처리, PII 잔존 경고. 원본 사이트 권리는 별개. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "extra-pii-pass",
@@ -101688,6 +101691,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "소규모에서 몇 개를 큰 규모로 올릴지.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "common-crawl-terms-of-use",
+   "label": "Common Crawl 이용약관",
+   "parent": "fineweb-license-terms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "이용 제한·면책·책임 상한.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "attribution-requirement",
+   "label": "출처 표시 의무",
+   "parent": "fineweb-license-terms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "ODC-By에서 공개 사용 시 지켜야 할 표기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "takedown-requests",
+   "label": "삭제 요청 처리",
+   "parent": "fineweb-license-terms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터셋에서 도메인·PII를 제거하는 절차.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "phone-number-false-positives",
+   "label": "전화번호 마스킹의 오탐",
+   "parent": "fineweb-license-terms",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정규식으로 번호를 지우기 어려운 이유.",
    "added": "2026-11-28",
    "related": []
   }
