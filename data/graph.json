@@ -88180,11 +88180,12 @@
    "label": "현실 격차",
    "parent": "domain-randomization",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 5,
-   "summary": "시뮬과 현실의 차이가 생기는 이유.",
+   "summary": "시뮬 성공 정책이 현실에서 실패하는 차이. 원인: 비강성·백래시·마모·유체 등 미모델 효과. 완화: 시스템 식별+랜덤화, 하드웨어 시험. 수치는 연구마다 설정이 달라 비교 불가.",
    "added": "2026-11-26",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "physics-randomization",
@@ -100451,6 +100452,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "학습이 어려워지고 보수적 정책이 되는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "hardware-validation",
+   "label": "하드웨어 검증",
+   "parent": "sim-to-real-gap",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "실제 로봇에서 전이를 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "simulator-fidelity",
+   "label": "시뮬레이터 충실도",
+   "parent": "sim-to-real-gap",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "현실 재현 정도와 비용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sim-to-sim-test",
+   "label": "sim-to-sim 시험",
+   "parent": "sim-to-real-gap",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "현실 대신 다른 시뮬로 전이를 시험.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "real-data-fine-tuning",
+   "label": "실데이터 미세조정",
+   "parent": "sim-to-real-gap",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "소량 실데이터로 격차를 보정.",
    "added": "2026-11-28",
    "related": []
   }
