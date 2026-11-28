@@ -84285,11 +84285,12 @@
    "label": "중요도 가중",
    "parent": "performance-drop-root-cause",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "운영 분포에 가까운 학습 샘플의 가중치를 높임.",
+   "summary": "w(x)=p_te(x)/p_tr(x)로 학습 손실을 가중(Shimodaira 2000, 2차 자료 요약). 가중 최대우도는 일관적, 비율은 추정 필요(KDE·KMM·KLIEP), λ 제곱으로 분산 완화, 가중치 2차 모멘트 유계 조건. 원 논문 미열람.",
    "related": [],
-   "added": "2026-11-26"
+   "added": "2026-11-26",
+   "done": "2026-11-28"
   },
   {
    "id": "labeling-guideline-drift",
@@ -100654,6 +100655,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "입력·출력·성능 지표를 따로 관리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "density-ratio-estimation",
+   "label": "밀도 비율 추정",
+   "parent": "importance-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "w(x)를 추정하는 방법들.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kernel-mean-matching",
+   "label": "커널 평균 매칭",
+   "parent": "importance-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비율을 직접 추정하는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tempered-weights",
+   "label": "완화된 가중치",
+   "parent": "importance-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "λ 제곱으로 분산을 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "weight-variance-problem",
+   "label": "가중치 분산 문제",
+   "parent": "importance-weighting",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 4,
+   "summary": "극단적 가중치가 만드는 불안정.",
    "added": "2026-11-28",
    "related": []
   }
