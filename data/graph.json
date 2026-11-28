@@ -96129,11 +96129,12 @@
    "label": "Mobile ALOHA",
    "parent": "aloha-act",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "ALOHA에 이동 베이스를 얹은 확장.",
+   "summary": "ALOHA+이동 베이스, 전신 원격조종·행동 복제. 정적 ALOHA 데이터와 co-training 시 과제당 50 시연으로 성공률 최대 90% 향상(저자 보고, 초록). 본문 수치 미열람.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "latency-matching",
@@ -100159,6 +100160,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "같은 관찰에서도 다른 궤적이 나오는 성질.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "co-training-static-data",
+   "label": "정적 데이터 co-training",
+   "parent": "mobile-aloha",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기존 데이터와 함께 학습해 적은 시연을 보완.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "whole-body-teleoperation",
+   "label": "전신 원격조종",
+   "parent": "mobile-aloha",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "베이스와 팔을 함께 조종.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mobile-manipulation",
+   "label": "이동 조작",
+   "parent": "mobile-aloha",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "이동하며 물건을 다루는 작업.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "max-gain-vs-average-gain",
+   "label": "최대 vs 평균 향상",
+   "parent": "mobile-aloha",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "최대치 표현의 해석 주의.",
    "added": "2026-11-28",
    "related": []
   }
