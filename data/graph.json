@@ -56647,11 +56647,15 @@
    "label": "CloudFront 주소",
    "parent": "cc-s3-access",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "ds5q9o….cloudfront.net 형식.",
+   "summary": "ds5q9oxwqwsfj.cloudfront.net과 data.commoncrawl.org는 같은 객체(ETag 동일, 둘 다 CloudFront 경유), Range 206 동작을 직접 확인. 어느 주소를 쓸지는 소량·대량·차단 여부로 결정.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "record-fetch-by-offset"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "exact-match-contamination",
@@ -102271,6 +102275,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "EMR이 별도로 구현한 S3 접근 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "http-etag-check",
+   "label": "ETag로 같은 객체 확인",
+   "parent": "cloudfront-mirror",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "두 주소가 같은 파일인지 헤더로 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cloudfront-pop-code",
+   "label": "CloudFront 거점 코드",
+   "parent": "cloudfront-mirror",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "x-amz-cf-pop 헤더가 알려 주는 응답 위치.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cache-hit-vs-miss",
+   "label": "캐시 Hit vs Miss",
+   "parent": "cloudfront-mirror",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "x-cache 헤더 읽는 법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mirror-fallback-strategy",
+   "label": "대체 주소 전환 전략",
+   "parent": "cloudfront-mirror",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "한 주소가 막힐 때 다른 주소로 재시도.",
    "added": "2026-11-28",
    "related": []
   }
