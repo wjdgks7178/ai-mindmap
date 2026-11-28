@@ -56488,11 +56488,15 @@
    "label": "산출물 정의",
    "parent": "produced-works-notice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "DB 내용 질의로 만든 작업물.",
+   "summary": "ODC-By 1.0: Produced Work=Contents의 전부·상당 부분을 검색·질의로 이용해 만든 작업물. 만드는 것은 고지 불필요, 공개 이용 시 출처 고지(4.3). DB 전달은 4.2. share-alike 없음. 학습 모델의 지위는 미결론. 법률 자문 아님.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "publicly-definition"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "publicly-definition",
@@ -103742,6 +103746,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "DB 전달(4.2)과 산출물 이용(4.3)의 구분.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "derivative-database",
+   "label": "파생 데이터베이스",
+   "parent": "produced-work-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터베이스를 수정·확장해 만든 DB.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "substantial-part-in-license",
+   "label": "라이선스의 상당 부분 기준",
+   "parent": "produced-work-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Produced Work 정의의 상당 부분 판단.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "notice-text-example",
+   "label": "출처 고지 문구 예시",
+   "parent": "produced-work-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "Contains information from DATABASE NAME ...",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "statistics-chart-attribution",
+   "label": "통계 차트의 출처 표시",
+   "parent": "produced-work-definition",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "데이터셋에서 뽑은 차트에 출처 문구 달기.",
    "added": "2026-11-28",
    "related": []
   }
