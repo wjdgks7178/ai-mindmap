@@ -27177,11 +27177,12 @@
    "label": "SDD 버그 수정 흐름",
    "parent": "spec-kit",
    "domain": "methodology",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "assess→fix→test로 버그를 명세 기반으로 고치는 절차.",
+   "summary": "버그를 명세·계획까지 추적해 수정. Spec Kit 핵심엔 공식 명령 없음, 커뮤니티 bugfix 확장(report/patch/verify, 5분류)과 FixIt(승인 후 수정) 존재. assess→fix→test는 1개 블로그 근거.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "library-first",
@@ -96853,6 +96854,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "명세가 낡지 않게 유지하는 규율.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bug-classification-spec",
+   "label": "명세 관점 버그 분류",
+   "parent": "bug-fix-workflow-sdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "spec gap·conflict·drift 등으로 원인을 가르기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "fixit-extension",
+   "label": "FixIt 확장",
+   "parent": "bug-fix-workflow-sdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "승인 후에만 코드를 수정하는 커뮤니티 확장.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "regression-test-first",
+   "label": "회귀 테스트 우선",
+   "parent": "bug-fix-workflow-sdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "수정 전 실패하는 테스트로 재현하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "when-to-skip-full-sdd",
+   "label": "전체 SDD 생략 기준",
+   "parent": "bug-fix-workflow-sdd",
+   "domain": "methodology",
+   "status": "planned",
+   "priority": 4,
+   "summary": "작은 버그에 사이클을 생략하는 판단.",
    "added": "2026-11-28",
    "related": []
   }
