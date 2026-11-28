@@ -56830,11 +56830,15 @@
    "label": "패러프레이즈 다양성 쏠림",
    "parent": "llm-paraphrase-augmentation",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "LLM 변형이 비슷한 문체로 몰리는 문제.",
+   "summary": "LLM 패러프레이즈는 개수만 늘고 다양성은 안 느는 문제. DoAug(2025): DPO로 먼 변형 선호, 12개 데이터셋 평균 +10.52%(Taboo +6.76%). Cegin 2024: 다양성은 taboo가 최고, 성능은 hints가 최고.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-generated-web-contamination",
+    "multi-pivot-mixing"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "conditional-text-generation-augmentation",
@@ -102633,6 +102637,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "글자 혼동 규칙과 사전으로 오류 고치기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "self-bleu",
+   "label": "Self-BLEU",
+   "parent": "paraphrase-diversity-collapse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "생성문끼리 겹침으로 다양성을 재는 지표.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "taboo-words-prompt",
+   "label": "금지어 프롬프트",
+   "parent": "paraphrase-diversity-collapse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "특정 단어를 쓰지 말라고 해 표현 넓히기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "diversity-vs-performance-gap",
+   "label": "다양성과 성능의 불일치",
+   "parent": "paraphrase-diversity-collapse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다양성이 높아도 다운스트림 성능은 별개일 수 있음.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "coreset-augmentation",
+   "label": "코어셋 선별 증강",
+   "parent": "paraphrase-diversity-collapse",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정보가 많은 소수 샘플만 골라 증강.",
    "added": "2026-11-28",
    "related": []
   }
