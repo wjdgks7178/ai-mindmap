@@ -5191,11 +5191,12 @@
    "label": "Unknown 출구",
    "parent": "rubric-design",
    "domain": "ai-evaluation",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "근거 부족 시 모른다고 답하게 하는 장치.",
+   "summary": "모델 채점기에 근거 부족 시 Unknown 반환 선택지를 줘 환각을 줄임(Anthropic 글 팁). 효과 수치는 글에 없음. Unknown 비율 측정은 제안.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "grader-calibration",
@@ -98266,6 +98267,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "순위용과 개선용 평가의 구분.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "human-review-queue",
+   "label": "사람 검토 큐",
+   "parent": "unknown-exit",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "Unknown을 사람에게 넘기는 흐름.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "abstention-abuse",
+   "label": "판단 유보 남용",
+   "parent": "unknown-exit",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "항상 Unknown으로 회피하는 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "judge-hallucination",
+   "label": "심판 환각",
+   "parent": "unknown-exit",
+   "domain": "ai-evaluation",
+   "status": "planned",
+   "priority": 4,
+   "summary": "근거 없이 판정을 지어내는 현상.",
    "added": "2026-11-28",
    "related": []
   }
