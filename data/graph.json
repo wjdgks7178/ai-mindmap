@@ -56325,11 +56325,15 @@
    "label": "벤치마크 1000샘플 절단",
    "parent": "benchmark-selection-small-scale",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "학습 중 평가 비용 줄이기.",
+   "summary": "FineWeb은 큰 벤치마크를 1,000문항으로 절단해 학습 중 평가. 직접 계산: n=1,000, p=0.5 SE 1.58%p·95% ±3.1%p, n=100은 ±9.8%p. 작은 차이는 절단 평가로 가리기 어려움. 시드 잡음은 별도.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "benchmark-variance-check"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "benchmark-variance-check",
@@ -103561,6 +103565,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "도메인별 저작권·이용 조건 링크 정리.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "binomial-standard-error",
+   "label": "이항 표준오차",
+   "parent": "benchmark-truncation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정답률의 표집 오차를 √(p(1−p)/n)로 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "paired-model-comparison",
+   "label": "짝지은 모델 비교",
+   "parent": "benchmark-truncation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "같은 문항으로 두 모델을 비교해 오차 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "fixed-truncated-subset",
+   "label": "고정된 절단 문항",
+   "parent": "benchmark-truncation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모든 실험에 같은 1,000문항 사용.",
    "added": "2026-11-28",
    "related": []
   }
