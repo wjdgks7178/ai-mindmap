@@ -96094,11 +96094,12 @@
    "label": "ACT의 CVAE",
    "parent": "aloha-act",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "시연의 스타일 변동을 z로 모으고 추론 땐 z=0.",
+   "summary": "ACT는 사람 시연의 스타일 변동을 CVAE의 z에 담아 학습, 테스트 때 인코더 폐기·z=0. 입력 1202×512 토큰, 출력 k×14, L1 손실, 목표 관절 위치 행동(ACT 논문 본문). CVAE 기여 ablation은 미확인.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "temporal-ensembling",
@@ -100114,6 +100115,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "매 스텝 호출로 늘어나는 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "l1-vs-l2-loss",
+   "label": "L1 vs L2 손실",
+   "parent": "cvae-in-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "L1이 행동 시퀀스를 더 정밀하게 모델링.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "target-vs-delta-joint",
+   "label": "목표 vs 델타 관절",
+   "parent": "cvae-in-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동 표현에 따른 성능 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cls-token-encoder",
+   "label": "[CLS] 토큰 인코더",
+   "parent": "cvae-in-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시퀀스를 한 벡터로 요약하는 토큰.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "human-demo-stochasticity",
+   "label": "사람 시연의 확률성",
+   "parent": "cvae-in-act",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "같은 관찰에서도 다른 궤적이 나오는 성질.",
    "added": "2026-11-28",
    "related": []
   }
