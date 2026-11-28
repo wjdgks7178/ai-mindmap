@@ -57048,11 +57048,15 @@
    "label": "불용어 필터",
    "parent": "gopher-quality-heuristics",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "the·of 등 2개 이상 포함 여부로 비문장 제거.",
+   "summary": "Gopher MassiveWeb: the/be/to/of/and/that/have/with 중 2개 미만이면 제거. 직접 구현: SEO·상품 목록은 제거, 짧은 정상 문장은 오탐, 코드 주석은 통과, 한국어는 전부 제거. 영어 전용.",
    "added": "2026-11-21",
-   "related": []
+   "related": [
+    "ai-safety",
+    "dialect-filtering-bias"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "heuristic-vs-model-filter",
@@ -102996,6 +103000,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "실험 모델을 공개해 재현 가능하게 하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "mean-word-length-filter",
+   "label": "평균 단어 길이 필터",
+   "parent": "stop-word-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "평균 단어 길이 3~10자 밖 문서 제거.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "symbol-to-word-ratio",
+   "label": "기호 대 단어 비율",
+   "parent": "stop-word-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "#·말줄임표 비율이 높은 문서 제거.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "korean-quality-heuristics",
+   "label": "한국어 품질 휴리스틱",
+   "parent": "stop-word-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "조사·어미 기반 한국어용 필터 규칙.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "heuristic-filter-false-positives",
+   "label": "휴리스틱 필터의 오탐",
+   "parent": "stop-word-filter",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "짧은 정상 글이 걸리는 문제.",
    "added": "2026-11-28",
    "related": []
   }
