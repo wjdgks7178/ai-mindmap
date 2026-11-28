@@ -5063,11 +5063,12 @@
    "label": "RRF(순위 합산)",
    "parent": "hybrid-search-bm25",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "여러 검색 결과의 순위를 점수 척도 없이 합치는 방법.",
+   "summary": "여러 검색 순위를 1/(rank+k)로 합산(k=60 권장, Azure 문서). 점수 척도 정규화 불필요. 직접 계산 예: d1 0.03252>d3 0.03227>d2 0.01613>d4 0.01587.",
    "added": "2026-11-02",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "bm25-formula",
@@ -98300,6 +98301,28 @@
    "status": "planned",
    "priority": 4,
    "summary": "근거 없이 판정을 지어내는 현상.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "semantic-reranker",
+   "label": "의미 재순위",
+   "parent": "reciprocal-rank-fusion",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "병합 후 의미 기반으로 다시 정렬.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "rrf-weighting",
+   "label": "RRF 가중",
+   "parent": "reciprocal-rank-fusion",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "쿼리별 중요도를 곱해 조절.",
    "added": "2026-11-28",
    "related": []
   }
