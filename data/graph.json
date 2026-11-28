@@ -26680,11 +26680,12 @@
    "label": "SimPO",
    "parent": "dpo",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "길이 정규화로 기준 모델 없이 선호를 학습하는 DPO 변형.",
+   "summary": "기준 모델 없이 평균 로그 확률을 보상으로 쓰고 목표 마진을 더한 선호 최적화. 저자 보고: DPO 대비 AlpacaEval 2 최대 +6.4, Arena-Hard 최대 +7.5, Gemma-2-9B-it 기반 72.4%·59.1%(초록).",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "ipo-loss",
@@ -98628,6 +98629,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "바람직/비바람직 라벨로 정렬.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "reference-free-reward",
+   "label": "기준 없는 보상",
+   "parent": "simpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "기준 모델 없이 보상을 정의하는 방식.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "target-reward-margin",
+   "label": "목표 보상 마진",
+   "parent": "simpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "선호·비선호 격차를 벌리는 항.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "length-normalization-preference",
+   "label": "선호 학습의 길이 정규화",
+   "parent": "simpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "긴 답이 유리해지는 편향을 줄이는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "alpacaeval-arena-hard",
+   "label": "AlpacaEval·Arena-Hard",
+   "parent": "simpo",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "LLM 심판 기반 정렬 평가.",
    "added": "2026-11-28",
    "related": []
   }
