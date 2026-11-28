@@ -5461,11 +5461,12 @@
    "label": "어텐션",
    "parent": "kv-cache",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "토큰 사이 관련도를 계산하는 핵심 연산.",
+   "summary": "토큰 간 관련도로 정보를 섞는 연산. 트랜스포머 논문 초록: 순환·합성곱 제거, WMT14 영독 28.4·영불 41.8 BLEU, 8 GPU 3.5일. 수식은 표준 정의(일반 지식).",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "kv-quantization",
@@ -98436,6 +98437,17 @@
    "status": "planned",
    "priority": 4,
    "summary": "언어별 비용 격차 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "query-key-value",
+   "label": "Q·K·V",
+   "parent": "attention-mechanism",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질의·키·값의 역할.",
    "added": "2026-11-28",
    "related": []
   }
