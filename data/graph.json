@@ -26750,11 +26750,12 @@
    "label": "Bradley-Terry 모델",
    "parent": "reward-model",
    "domain": "llm-basics",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "쌍대 비교를 점수로 바꾸는 통계 모델.",
+   "summary": "쌍 비교를 점수로 변환하는 모델, P(i>j)=exp(s_i)/(exp(s_i)+exp(s_j)) (표준 정의). 보상 모델·DPO·SimPO 목적의 바탕. InstructGPT·DPO 초록은 읽었으나 BT 가정 명시는 일반 지식.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "process-reward-model",
@@ -98797,6 +98798,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "대화형·표준 형식 간 변환.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "elo-rating",
+   "label": "Elo 레이팅",
+   "parent": "bradley-terry-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "온라인으로 갱신하는 쌍 비교 점수.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pairwise-consistency-assumption",
+   "label": "쌍 비교 일관성 가정",
+   "parent": "bradley-terry-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "하나의 점수로 설명 가능하다는 전제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "instructgpt",
+   "label": "InstructGPT",
+   "parent": "bradley-terry-model",
+   "domain": "llm-basics",
+   "status": "planned",
+   "priority": 4,
+   "summary": "사람 순위 기반 RLHF로 정렬한 모델.",
    "added": "2026-11-28",
    "related": []
   }
