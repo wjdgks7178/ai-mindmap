@@ -27582,11 +27582,12 @@
    "label": "바퀴형 vs 다리형",
    "parent": "humanoid-robots",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "범용성과 효율 사이의 로봇 형태 선택.",
+   "summary": "평지 효율은 바퀴, 계단·험지는 다리, 바퀴-다리 하이브리드는 복잡도 대가. 학술 프로토타입·업계 논평 기반이며 상용 실측 비교 미확인.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "humanoid-unit-economics",
@@ -96559,6 +96560,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "공구·작업물까지 포함한 위험 평가.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "wheel-legged-hybrid",
+   "label": "바퀴-다리 하이브리드",
+   "parent": "wheeled-vs-legged",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "두 이동 방식을 합친 로봇 형태.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "cost-of-transport",
+   "label": "운송 비용 지표",
+   "parent": "wheeled-vs-legged",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "거리·무게당 에너지 소모로 이동 효율 비교.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "stair-climbing",
+   "label": "계단 오르기",
+   "parent": "wheeled-vs-legged",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "다리형의 핵심 이점과 난점.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "body-task-matching",
+   "label": "몸과 작업 맞추기",
+   "parent": "wheeled-vs-legged",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "환경에 맞춰 로봇 형태를 고르는 원칙.",
    "added": "2026-11-28",
    "related": []
   }
