@@ -100006,11 +100006,12 @@
    "label": "라벨 이동",
    "parent": "distribution-shift",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "라벨 분포 P(y)가 바뀜.",
+   "summary": "P(y) 변화·P(x|y) 동일한 분포 이동(공변량 이동의 반대로 설명). 검색 요약 기준, 정의는 논문마다 다름. 배포 라벨 없으면 탐지 어려움.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "concept-shift",
@@ -100496,6 +100497,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "소량 실데이터로 격차를 보정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "class-prior-change",
+   "label": "클래스 사전확률 변화",
+   "parent": "label-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "클래스 비율이 시기별로 달라짐.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "threshold-recalibration",
+   "label": "임계값 재조정",
+   "parent": "label-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "비율 변화에 맞춰 결정 기준 수정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "label-shift-detection",
+   "label": "라벨 이동 탐지",
+   "parent": "label-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "순차 탐지기로 라벨 변화 감시.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "deployment-label-constraint",
+   "label": "배포 라벨 제약",
+   "parent": "label-shift",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "정답 없는 운영 환경의 탐지 한계.",
    "added": "2026-11-28",
    "related": []
   }
