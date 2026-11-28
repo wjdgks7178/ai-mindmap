@@ -55619,11 +55619,14 @@
    "label": "중간 언어 거리",
    "parent": "intermediate-language-choice",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "원문과 돌아온 문장의 임베딩 거리.",
+   "summary": "Ciolino 2021: bert-base-uncased 768차원 유클리드 거리. 덴마크어 2.08 최소, 타타르어 5.30 최대(표준편차 약 1.7~2.1). 클수록 일반화에 좋다는 건 가설, 번역 품질 저하와 섞임.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "back-translation"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "multi-pivot-mixing",
@@ -100980,6 +100983,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "정규 가정 분석 전 분포 검증.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "distance-vs-label-preservation",
+   "label": "거리 vs 라벨 보존",
+   "parent": "pivot-language-distance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "큰 거리가 의미 손상인지 다양성인지 가르는 검수.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "euclidean-vs-cosine-distance",
+   "label": "유클리드 vs 코사인 거리",
+   "parent": "pivot-language-distance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "임베딩 거리를 재는 두 방법의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sentence-embedding-pooling",
+   "label": "문장 임베딩 풀링",
+   "parent": "pivot-language-distance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "토큰 벡터를 문장 하나로 합치는 방법.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "bleu-score-limits",
+   "label": "BLEU 점수의 한계",
+   "parent": "pivot-language-distance",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "단어 겹침 점수가 의미를 못 재는 경우.",
    "added": "2026-11-28",
    "related": []
   }
