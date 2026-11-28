@@ -56372,11 +56372,15 @@
    "label": "Chinchilla 최적 학습량 ablation",
    "parent": "scale-transfer-of-ablations",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "모델 크기에 맞는 토큰 수.",
+   "summary": "Chinchilla 2022: 모델 크기와 토큰을 같이 키워야 함, 약 20토큰/파라미터는 어림값. FineWeb 280억 토큰은 1.71B에 약 16, 3,500억은 약 205. 추론 수요가 크면 더 오래 학습(Sardana 2024).",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-infra",
+    "ml-fundamentals"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "data-card-reading",
@@ -101592,6 +101596,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "제거 후 남은 데이터의 품질이 낮아지는 경우.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "overtraining-for-inference",
+   "label": "추론 비용을 위한 과학습",
+   "parent": "chinchilla-optimal-ablation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작게 만들고 오래 학습해 서빙 비용을 줄이기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "scaling-law-fit-quality",
+   "label": "스케일링 법칙 적합 품질",
+   "parent": "chinchilla-optimal-ablation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "복제 시도에서 드러난 적합 문제.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "kaplan-vs-chinchilla",
+   "label": "Kaplan vs Chinchilla",
+   "parent": "chinchilla-optimal-ablation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "모델을 키울지 데이터를 늘릴지의 두 가이드.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "tokens-per-parameter-ratio",
+   "label": "토큰/파라미터 비율",
+   "parent": "chinchilla-optimal-ablation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "학습량을 모델 크기로 나눈 척도.",
    "added": "2026-11-28",
    "related": []
   }
