@@ -82073,11 +82073,12 @@
    "label": "지식 그래프",
    "parent": "graph-rag",
    "domain": "knowledge-retrieval",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "개체와 관계를 점·선으로 저장한 구조.",
+   "summary": "개체=노드, 관계=엣지. GraphRAG는 LLM이 개체 그래프와 커뮤니티 요약을 만들어 전역 질문에 대응(약 100만 토큰에서 일반 RAG 대비 포괄성·다양성 향상, 저자 보고). 비용 수치는 문서에 없음.",
    "related": [],
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "done": "2026-11-28"
   },
   {
    "id": "community-detection-leiden",
@@ -97442,6 +97443,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "확률 모델 기반 서브워드 분할.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "entity-extraction-llm",
+   "label": "LLM 개체 추출",
+   "parent": "knowledge-graph",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "문서에서 개체·관계·주장을 뽑는 단계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "global-questions",
+   "label": "전역 질문",
+   "parent": "knowledge-graph",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "데이터 전체 주제를 묻는 질문 유형.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "graph-vs-vector-retrieval",
+   "label": "그래프 vs 벡터 검색",
+   "parent": "knowledge-graph",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "연결된 사실과 비슷한 텍스트 검색의 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "graph-schema-management",
+   "label": "그래프 스키마 관리",
+   "parent": "knowledge-graph",
+   "domain": "knowledge-retrieval",
+   "status": "planned",
+   "priority": 4,
+   "summary": "개체·관계 유형을 정하고 유지하기.",
    "added": "2026-11-28",
    "related": []
   }
