@@ -56650,11 +56650,15 @@
    "label": "정확 일치 오염 측정",
    "parent": "benchmark-contamination-in-corpus",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "정규화 후 정확 일치로 겹침 세기.",
+   "summary": "정규화 후 문자열 정확 일치로 오염 측정: 빠른 1차 필터. 재진술·번역엔 무력(LMSYS: 변형으로 학습한 13B 모델 MMLU 85.9). LLM 기반 탐지기 제안. 0건은 복사 오염 없음일 뿐.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "ngram-overlap-contamination"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "ngram-overlap-contamination",
@@ -102138,6 +102142,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "확률적 포함 검사와 Spark 정확 계산.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "translated-test-contamination",
+   "label": "번역된 평가 문제 오염",
+   "parent": "exact-match-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다른 언어로 옮긴 평가 항목이 학습에 섞임.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "text-normalization-for-matching",
+   "label": "일치 검사용 정규화",
+   "parent": "exact-match-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소문자·구두점·유니코드 공백 통일.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "contamination-lower-bound",
+   "label": "오염 하한선",
+   "parent": "exact-match-contamination",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "정확 일치로 확인된 최소 오염 수준.",
    "added": "2026-11-28",
    "related": []
   }
