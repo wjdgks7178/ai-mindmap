@@ -100031,11 +100031,12 @@
    "label": "드리프트 모니터링",
    "parent": "distribution-shift",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "운영 중 이동을 감시.",
+   "summary": "운영 중 입력·출력·성능 변화를 감시: 통계 검정·DDM·마팅게일·KL. 배포 라벨 없으면 공변량 이동 위주. 운영 설계 4단계는 내 정리. 검색 요약 기준.",
    "added": "2026-11-28",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "product-description",
@@ -100609,6 +100610,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "이동한 입력 영역의 데이터를 보강.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "baseline-period",
+   "label": "기준선 기간",
+   "parent": "drift-monitoring",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "변화 판단의 비교 기준을 정하기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "alert-threshold-design",
+   "label": "경보 임계값 설계",
+   "parent": "drift-monitoring",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "오탐·미탐 균형.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "rollback-retrain-playbook",
+   "label": "롤백·재학습 절차",
+   "parent": "drift-monitoring",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "경보 후 대응 순서.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "metric-separation",
+   "label": "지표 분리",
+   "parent": "drift-monitoring",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "입력·출력·성능 지표를 따로 관리.",
    "added": "2026-11-28",
    "related": []
   }
