@@ -27509,11 +27509,12 @@
    "label": "LiDAR vs 카메라 방식",
    "parent": "autonomous-driving",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "센서 구성에 따른 Waymo·Tesla 접근 차이.",
+   "summary": "Waymo: 카메라 29개+LiDAR+레이더(페이지 기준). Tesla FSD Supervised: 카메라 기반+운전자 상시 감독(문서 기준). 어느 쪽이 낫다는 단정은 근거 부족.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "robotaxi-safety-metrics",
@@ -96198,6 +96199,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "주의 상태를 카메라로 확인하는 장치.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sensor-fusion",
+   "label": "센서 융합",
+   "parent": "lidar-vs-camera",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "여러 센서 출력을 합쳐 하나의 인식으로 만드는 과정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "radar-sensing",
+   "label": "레이더 센싱",
+   "parent": "lidar-vs-camera",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "전파로 거리·속도를 재는 센서.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "sensor-redundancy",
+   "label": "센서 중복성",
+   "parent": "lidar-vs-camera",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "한 센서 실패를 다른 센서가 보완하는 설계.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "camera-only-approach",
+   "label": "카메라 전용 방식",
+   "parent": "lidar-vs-camera",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "레이더·LiDAR 없이 카메라만 쓰는 노선.",
    "added": "2026-11-28",
    "related": []
   }
