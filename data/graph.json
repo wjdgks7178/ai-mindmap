@@ -5729,11 +5729,12 @@
    "label": "GPU 활용률",
    "parent": "api-vs-self-host",
    "domain": "ai-infra",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "놀리는 시간이 토큰당 단가를 올리는 원리.",
+   "summary": "GPU 임대료는 유휴에도 고정, 활용률이 낮을수록 토큰당 비용↑. OpenRouter 글: 근무시간만이면 최대 24%, 24시간 배치 약 70%, 3090 월 약 $365, 수치는 하한(피크 여유·인건비 제외). API 중개 업체 글.",
    "added": "2026-11-03",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "data-residency",
@@ -99586,6 +99587,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "소형과 대형 모델의 비용 차이.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "utilization-raising",
+   "label": "활용률 높이기",
+   "parent": "gpu-utilization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "배치·통합·야간 작업 배치.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "peak-capacity-headroom",
+   "label": "피크 여유 용량",
+   "parent": "gpu-utilization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "스파이크 대비 추가 용량 비용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "per-user-tokens-per-second",
+   "label": "사용자당 초당 토큰",
+   "parent": "gpu-utilization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "3090 약 15토큰/초 같은 체감 속도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "idle-cost",
+   "label": "유휴 비용",
+   "parent": "gpu-utilization",
+   "domain": "ai-infra",
+   "status": "planned",
+   "priority": 4,
+   "summary": "놀리는 시간에도 나가는 임대료.",
    "added": "2026-11-28",
    "related": []
   }
