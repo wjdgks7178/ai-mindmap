@@ -56420,11 +56420,15 @@
    "label": "추가 PII 단계",
    "parent": "fineweb-pii-removal",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "한국 번호·주민번호 규칙 덧붙이기.",
+   "summary": "카드가 미처리한 전화번호·주민번호를 정규식+키워드 근접+체크섬 점수로 추가 마스킹. Purview 신뢰도 75/85. 직접 실행 예 포함. 이름은 NER 필요, 법무 검토 필요.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-safety",
+    "data-card-reading"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "share-alike",
@@ -101798,6 +101802,39 @@
    "status": "planned",
    "priority": 3,
    "summary": "제작자 기술 내용을 샘플로 검증해야 하는 이유.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "korean-rrn-pattern",
+   "label": "주민등록번호 패턴",
+   "parent": "extra-pii-pass",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "13자리 형식과 체크섬, 변형 표기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "pii-placeholder-masking",
+   "label": "PII 자리표시자 마스킹",
+   "parent": "extra-pii-pass",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "지우지 않고 토큰으로 치환해 구조 유지.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "proximity-keyword-confidence",
+   "label": "키워드 근접 신뢰도",
+   "parent": "extra-pii-pass",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "패턴+주변 키워드로 오탐을 줄이는 방식.",
    "added": "2026-11-28",
    "related": []
   }
