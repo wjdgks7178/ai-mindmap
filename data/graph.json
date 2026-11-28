@@ -56361,11 +56361,15 @@
    "label": "단계별 규모 검증",
    "parent": "scale-transfer-of-ablations",
    "domain": "ai-data",
-   "status": "planned",
+   "status": "done",
    "priority": 3,
-   "summary": "작은 규모 선별 후 큰 규모 재확인.",
+   "summary": "FineWeb: 280억 토큰으로 선별 후 3,500억 토큰에서 확인(FineWeb-Edu MMLU 33→37%, ARC 46→57%). 중복 제거는 작은 규모에서 안 보임. DCLM 412M~7B 다중 규모, 결정 정확도와 SNR R=0.791.",
    "added": "2026-11-20",
-   "related": []
+   "related": [
+    "ai-evaluation",
+    "chinchilla-optimal-ablation"
+   ],
+   "done": "2026-11-28"
   },
   {
    "id": "chinchilla-optimal-ablation",
@@ -101640,6 +101644,50 @@
    "status": "planned",
    "priority": 3,
    "summary": "학습량을 모델 크기로 나눈 척도.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "scale-sensitive-effects",
+   "label": "규모에 민감한 효과",
+   "parent": "staged-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "작은 규모에서 안 보이거나 뒤집히는 요인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "datacomp-lm",
+   "label": "DataComp-LM",
+   "parent": "staged-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "다중 규모 데이터 큐레이션 테스트베드.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "model-based-filtering",
+   "label": "모델 기반 필터링",
+   "parent": "staged-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "분류기·LLM 점수로 학습 데이터를 거르기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "candidate-shortlisting",
+   "label": "후보 압축 기준",
+   "parent": "staged-validation",
+   "domain": "ai-data",
+   "status": "planned",
+   "priority": 3,
+   "summary": "소규모에서 몇 개를 큰 규모로 올릴지.",
    "added": "2026-11-28",
    "related": []
   }
