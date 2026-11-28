@@ -27569,11 +27569,12 @@
    "label": "Figure Helix",
    "parent": "humanoid-robots",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "Figure의 휴머노이드용 VLA 모델.",
+   "summary": "Figure의 휴머노이드 VLA. System 2 VLM 약 7~9Hz + System 1 정책 200Hz(상체), Helix 02는 System 0 1kHz 추가. 속도는 회사 발표 기준.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "wheeled-vs-legged",
@@ -96457,6 +96458,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "울타리·인증·시스템 연동 비용.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "vla",
+   "label": "VLA 모델",
+   "parent": "figure-helix",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시각·언어 입력에서 로봇 행동을 직접 내는 모델.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "system-0-1-2-hierarchy",
+   "label": "System 0/1/2 계층",
+   "parent": "figure-helix",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "생각·운동·균형을 속도별로 나눈 제어 구조.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "whole-body-control",
+   "label": "전신 제어",
+   "parent": "figure-helix",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "균형·접촉까지 포함한 로봇 전체 제어.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "control-frequency",
+   "label": "제어 주기",
+   "parent": "figure-helix",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "행동을 갱신하는 빈도와 지연의 관계.",
    "added": "2026-11-28",
    "related": []
   }
