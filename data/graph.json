@@ -4726,12 +4726,12 @@
    "domain": "physical-ai",
    "status": "done",
    "priority": 4,
-   "summary": "시뮬 질감·조명 등을 무작위화해 현실 전이. Tobin 2017: 실이미지 없이 시뮬만으로 약 1.5cm 위치 추정, 어수선한 장면 집기.",
+   "summary": "시뮬 시각 요소를 무작위화해 현실을 또 하나의 변형으로(Tobin 2017): 비사실적 질감 검출기가 실제 물체를 약 1.5cm로 위치 추정, 시뮬 RGB만으로 실제 로봇 제어 첫 전이(저자 주장). 과도하면 보수적 정책 위험.",
    "added": "2026-11-02",
    "related": [
     "cross-embodiment"
    ],
-   "done": "2026-11-26"
+   "done": "2026-11-28"
   },
   {
    "id": "system-identification",
@@ -100418,6 +100418,39 @@
    "status": "planned",
    "priority": 4,
    "summary": "비교 조건과 기준선 확인.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "visual-randomization",
+   "label": "시각 랜덤화",
+   "parent": "domain-randomization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "질감·색·조명을 무작위로 바꾸기.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "plausible-range-randomization",
+   "label": "그럴듯한 범위 랜덤화",
+   "parent": "domain-randomization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "극단이 아닌 현실적 범위로 설정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "over-randomization-risk",
+   "label": "과도한 랜덤화 위험",
+   "parent": "domain-randomization",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "학습이 어려워지고 보수적 정책이 되는 문제.",
    "added": "2026-11-28",
    "related": []
   }
