@@ -27486,11 +27486,12 @@
    "label": "SAE 자율주행 레벨",
    "parent": "autonomous-driving",
    "domain": "physical-ai",
-   "status": "planned",
+   "status": "done",
    "priority": 4,
-   "summary": "운전 자동화 0~5단계와 책임 구분.",
+   "summary": "SAE J3016: 레벨 0~5는 책임·fallback 분담 분류. 레벨 2는 사람이 감시, 레벨 3은 사람이 넘겨받음, 레벨 4는 영역 한정 시스템 fallback. 법적 기준 아님, 2026판 존재 정황.",
    "added": "2026-11-16",
-   "related": []
+   "related": [],
+   "done": "2026-11-28"
   },
   {
    "id": "end-to-end-driving",
@@ -96153,6 +96154,50 @@
    "status": "planned",
    "priority": 4,
    "summary": "경찰 미신고 충돌을 반영하는 보정.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "odd",
+   "label": "운행 설계 영역(ODD)",
+   "parent": "sae-levels",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "시스템이 작동하도록 설계된 도로·날씨·속도 범위.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "dynamic-driving-task",
+   "label": "동적 운전 과업(DDT)",
+   "parent": "sae-levels",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "조향·가감속·감시 등 실시간 운전 업무.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "fallback-ready-user",
+   "label": "fallback 대기 사용자",
+   "parent": "sae-levels",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "레벨 3에서 넘겨받을 준비가 된 사람.",
+   "added": "2026-11-28",
+   "related": []
+  },
+  {
+   "id": "driver-monitoring",
+   "label": "운전자 감시",
+   "parent": "sae-levels",
+   "domain": "physical-ai",
+   "status": "planned",
+   "priority": 4,
+   "summary": "주의 상태를 카메라로 확인하는 장치.",
    "added": "2026-11-28",
    "related": []
   }
